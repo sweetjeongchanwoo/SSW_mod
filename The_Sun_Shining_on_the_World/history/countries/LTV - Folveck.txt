@@ -1,0 +1,33 @@
+capital = 64
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	Emergency_conscription
+	Protester
+	extensive_conscription
+	closed_economy
+	tot_economic_mobilisation
+	ssw_military_dictatorship
+}
+
+set_politics = {
+	ruling_party = authority_despotism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_despotism = 100
+}
+
+create_country_leader = {
+	name = "Paul Emil von Lettow-Vorbeck"
+	picture = "Portrait_Paul_Emil_von_Lettow_Vorbeck.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+}

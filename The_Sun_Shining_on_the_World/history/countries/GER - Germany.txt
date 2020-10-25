@@ -1,0 +1,135 @@
+﻿capital = 64
+oob = "GER_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+	GER_idea_1
+	Air_force_conspiracy
+	limited_conscription
+	export_focus
+	partial_economic_mobilisation
+	one_party_dictatorship
+}
+
+create_faction = Germania_Accords
+add_to_faction = GER
+add_to_faction = CZE
+add_to_faction = SLO
+add_to_faction = POL
+add_to_faction = DEN
+add_to_faction = NOR
+add_to_faction = HOL
+add_to_faction = BEL
+add_to_faction = NFR
+add_to_faction = VFR
+add_to_faction = CRO
+add_to_faction = BAL
+add_to_faction = UKR
+add_to_faction = MOS
+add_to_faction = CCS
+add_to_faction = ATL
+add_to_faction = TOG
+add_to_faction = WAF
+add_to_faction = MAF
+add_to_faction = MAD
+
+set_autonomy = {
+	target = CZE
+	autonomous_state = reichsprotectorate
+}
+set_autonomy = {
+	target = SLO
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = POL
+	autonomous_state = reichsprotectorate
+}
+set_autonomy = {
+	target = DEN
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = NOR
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = HOL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = BEL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = NFR
+	autonomous_state = military_occupation_territory
+}
+set_autonomy = {
+	target = CRO
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = BAL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = UKR
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = MOS
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = CCS
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = ATL
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = TOG
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = WAF
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = MAF
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = MAD
+	autonomous_state = reichskolonie
+}
+
+set_politics = {
+	ruling_party = national_socialism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialism = 100
+}
+
+create_country_leader = {
+	name = "Adolf Hitler"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "gfx/leaders/GER/Portrait_Adolf_Hitler.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism_ideology
+	traits = {
+		Drug_addict
+		Charisma
+	}
+}

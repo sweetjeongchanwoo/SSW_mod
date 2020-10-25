@@ -1,0 +1,21 @@
+﻿capital = 515
+
+add_ideas = {
+	civilian_economy
+}
+
+set_politics = {
+	ruling_party = anarchism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	anarchism= 100
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = "gfx/leaders/SAH/Portrait_Sahara_Desert.dds"
+}

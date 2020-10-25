@@ -1,0 +1,53 @@
+﻿1950.1.1 = {
+	capital = 276
+	oob = "CAN_1950"
+	set_cosmetic_tag = CAN_UK
+
+	set_convoys = 5
+
+	set_technology = {
+		infantry_weapons = 1
+	}
+
+	add_ideas = {
+		civilian_economy
+		George
+		CAN_idea_9
+	}
+
+	set_variable = {
+		var = commonwealth_Cooperation
+		value = 50
+	}
+
+	set_politics = {
+		ruling_party = social_democracy
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		social_democracy = 100
+	}
+
+	create_country_leader = {
+		name = "Louis_St.Laurent"
+		desc = "POLITICS_MACKENZIE_KING_DESC"
+		picture = "gfx/leaders/CAN/Portrait_Louis_St_Laurent.dds"
+		expire = "1977.1.1"
+		ideology = social_democracy_ideology
+		traits = {
+			#
+		}
+	}
+	create_country_leader = {
+		name = "George A. Drew"
+		desc = "POLITICS_MACKENZIE_KING_DESC"
+		picture = "gfx/leaders/CAN/Portrait_George_Alexander_Drew .dds"
+		expire = "1965.1.1"
+		ideology = social_conservatism_ideology
+		traits = {
+			#
+		}
+	}
+}

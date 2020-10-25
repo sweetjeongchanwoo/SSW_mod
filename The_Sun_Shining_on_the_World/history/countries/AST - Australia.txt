@@ -1,0 +1,41 @@
+1950.1.1 = {
+	capital = 868
+	oob = "AST_1950"
+	set_cosmetic_tag = AST_UK
+
+	set_convoys = 5
+
+	set_technology = {
+		infantry_weapons = 1
+	}
+
+	add_ideas = {
+		civilian_economy
+	}
+
+	set_variable = {
+		var = commonwealth_Cooperation
+		value = 50
+	}
+
+	set_politics = {
+		ruling_party = social_conservatism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		social_conservatism = 100
+	}
+
+	create_country_leader = {
+		name = "Sir Earle Page"
+		desc = "POLITICS_JOHN_CURTIN_DESC"
+		picture = "gfx/leaders/AST/Portrait_Sir_Earle_Page.dds"
+		expire = "1965.1.1"
+		ideology = social_conservatism_ideology
+		traits = {
+			#
+		}
+	}
+}

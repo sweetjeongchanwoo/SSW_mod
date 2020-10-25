@@ -1,0 +1,83 @@
+﻿capital = 2
+oob = "ITA_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	ITA_Umberto_II_king
+}
+
+create_faction = Rome_entente
+add_to_faction = ITA
+add_to_faction = LBA
+add_to_faction = NEA
+add_to_faction = BUL
+add_to_faction = SER
+add_to_faction = PAL
+add_to_faction = JOR
+add_to_faction = SUC
+add_to_faction = GIB
+add_to_faction = AFR
+add_to_faction = MOR
+
+set_autonomy = {
+	target = LBA
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = NEA
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = SER
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = EGY
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = PAL
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = JOR
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = SUC
+	autonomous_state = overseas_territory
+}
+set_autonomy = {
+	target = GIB
+	autonomous_state = overseas_territory
+}
+set_autonomy = {
+	target = AFR
+	autonomous_state = dominion
+}
+
+set_politics = {
+	ruling_party = national_fascism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_fascism = 100
+}
+
+create_country_leader = {
+	name = "Italo Balbo"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "gfx/leaders/ITA/Portrait_Italo_Balbo.dds"
+	expire = "1965.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+		Air_Force_founder
+	}
+}
