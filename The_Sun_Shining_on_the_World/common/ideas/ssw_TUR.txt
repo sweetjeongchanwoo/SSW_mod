@@ -723,5 +723,119 @@ ideas = {
 				      nuclear_production_factor = 0.1
 			}
 		}
+		#寛容さを示す
+		TUR_idea_43 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_factor = 0.20
+				non_core_manpower = 0.05
+			}
+		}
+		#過激派の弾圧
+		TUR_idea_44 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.05
+				political_power_factor = 0.40
+				non_core_manpower = -0.05
+				MONTHLY_POPULATION = 0.05
+			}
+		}
+		#諸民族への増税
+		TUR_idea_45 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		#真の平等を求めて
+		TUR_idea_46 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.05
+				non_core_manpower = 0.20
+			}
+		}
+		#主力艦建造計画
+		TUR_idea_47 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				capital_ship_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+			}
+		}
+		#補助艦建造計画
+		TUR_idea_48 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				screen_ship_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+			}
+		}
+		#潜水艦艦隊
+		TUR_idea_49 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				navy_submarine_attack_factor = 0.20
+				navy_submarine_defence_factor = 0.2
+			}
+		}
 	}
 }
