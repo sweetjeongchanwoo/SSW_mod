@@ -125,6 +125,7 @@ check_has_focus_tree_to_switch_to_democratic = {
 	NOT = { tag = CAN }
 	NOT = { tag = SAF }
 	NOT = { tag = AUS }
+	NOT = { tag = AUS }
 	NOT = { tag = NZL }
 	NOT = { tag = RAJ }
 	NOT = { tag = CZE }
@@ -576,6 +577,10 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
 	NOT = {
+		AND = {
+			FROM = { original_tag = YUG }
+			original_tag = ITA
+		}
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another

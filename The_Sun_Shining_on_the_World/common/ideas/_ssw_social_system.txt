@@ -19,7 +19,8 @@ ideas = {
 				}
 			}
 
-			picture = collective_anarchist_society
+			picture = GFX_idea_collective_anarchist_society
+			
 			modifier = {
 				political_power_factor = -1.00
 				conscription_factor = 0.5
@@ -57,7 +58,7 @@ ideas = {
 				}
 			}
 			
-			picture = one_party_dictatorship
+			picture = GFX_idea_one_party_dictatorship
 			modifier = {
 				political_power_factor = 0.25
 				consumer_goods_factor = -0.05
@@ -75,12 +76,12 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-					has_government = fascism
+#					has_government = fascism
 					factor = 2
 				}
 
    				modifier = {
-					has_government = communism
+#					has_government = communism
 					factor = 2
 				}
    			}
@@ -100,7 +101,8 @@ ideas = {
 				}
 			}
 			
-			picture = military_regime
+			picture = GFX_idea_military_regime
+
 			modifier = {
 				political_power_factor = 0.15
 				army_morale_factor = 0.1
@@ -117,7 +119,7 @@ ideas = {
 				   factor = 0.75
 				   
 				   modifier = {
-					has_government = militarism
+#					has_government = militarism
 					factor = 1.5
 				}
    			}
@@ -137,7 +139,8 @@ ideas = {
 				}
 			}
 			
-			picture = corporate_council_system
+			picture = GFX_idea_corporate_council_system
+
 			modifier = {
 			production_factory_efficiency_gain_factor = 0.1
 			line_change_production_efficiency_factor = 0.1
@@ -154,11 +157,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+#					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+#					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -177,7 +180,8 @@ ideas = {
 				}
 			}
 			
-			picture = leftist_government
+			picture = GFX_idea_leftist_government
+
 			modifier = {
 			political_power_factor = -0.1
 			consumer_goods_factor = 0.05
@@ -190,11 +194,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+#					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+#					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -213,7 +217,8 @@ ideas = {
 				}
 			}
 			
-			picture = rightist_government
+			picture = GFX_idea_rightist_government
+
 			modifier = {
 			political_power_factor = -0.1
 			war_support_factor = 0.1
@@ -225,11 +230,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+#					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+#					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -248,7 +253,8 @@ ideas = {
 				}
 			}
 			
-			picture = despotism
+			picture = GFX_idea_despotism
+
 			modifier = {
 			political_power_factor = 0.3
 			war_support_factor = 0.2
@@ -261,11 +267,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+#					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+#					has_government = neutrality
 					factor = 0.5
 				}
    			}

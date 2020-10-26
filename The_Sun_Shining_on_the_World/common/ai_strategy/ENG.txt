@@ -353,6 +353,7 @@ ENG_template_design_2 = {
 # lets make sure the allies dont overcommit to invasions early on
 careful_with_early_invasions = {
 	enable = {
+		date < 1943.1.1
 		if = {
 			limit = {
 				NOT = {
@@ -372,7 +373,6 @@ careful_with_early_invasions = {
 			is_in_faction_with = ENG			# anyone in allies
 			tag = FRA
 		}
-		date < 1943.1.1
 		NOT = {
 			SOV = {
 				has_war_with = GER
