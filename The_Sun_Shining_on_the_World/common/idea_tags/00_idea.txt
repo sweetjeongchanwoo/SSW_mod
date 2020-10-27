@@ -25,12 +25,11 @@ idea_categories = {
 	}
 
 	minister = {
-		slot = minister_of_foreign_affairs #外務大臣
-		slot = minister_of_finance #大蔵大臣
-		slot = minister_of_education #文科大臣
-		slot = minister_of_army #陸軍大臣
-		slot = navy_minister #海軍大臣
-
+		slot = political_leader	#政治首班
+		slot = minister_of_foreign_affairs	#外務大臣
+		slot = minister_of_finance	#財務大臣
+		slot = minister_of_education	#文科大臣
+		
 		cost = 0
 		removal_cost = 0
 	}
