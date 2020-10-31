@@ -209,6 +209,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/mountain8.dds"
 	}	
 	SpriteType = {
+		name = "GFX_urban_attacking_training_medium"
+		texturefile = "gfx/interface/technologies/urban_attacking_training.dds"
+	}	
+	SpriteType = {
+		name = "GFX_water_place_training_medium"
+		texturefile = "gfx/interface/technologies/water_place_training.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mountain_warfare_training_medium"
+		texturefile = "gfx/interface/technologies/mountain_warfare_training.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_jungle_warfare_training_medium"
+		texturefile = "gfx/interface/technologies/jungle_warfare_training.dds"
+	}	
+	SpriteType = {
+		name = "GFX_special_sniper_medium"
+		texturefile = "gfx/interface/technologies/special_sniper.dds"
+	}	
+	SpriteType = {
+		name = "GFX_non_supply_battle_medium"
+		texturefile = "gfx/interface/technologies/non_supply_battle.dds"
+	}	
+	SpriteType = {
+		name = "GFX_special_force_planning_medium"
+		texturefile = "gfx/interface/technologies/special_force_planning.dds"
+	}	
+
+	SpriteType = {
 		name = "GFX_mechanised_infantry4_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_4.dds"
 	}	
