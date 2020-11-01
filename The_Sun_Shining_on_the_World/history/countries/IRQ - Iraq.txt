@@ -20,3 +20,11 @@ set_politics = {
 set_popularities = {
 	authority_democracy= 100
 }
+
+create_country_leader = {
+	name = "Rashid Ali al Gaylani"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX/leaders/IRQ/Portrait_Rashid_Ali_al_Gaylani.dds"
+	expire = "1965.1.1"
+	ideology = authority_democracy_ideology
+}

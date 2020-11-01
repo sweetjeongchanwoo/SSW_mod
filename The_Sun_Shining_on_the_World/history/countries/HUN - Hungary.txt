@@ -20,3 +20,11 @@ set_politics = {
 set_popularities = {
 	authority_democracy= 100
 }
+
+create_country_leader = {
+	name = "Szombathelyi Ferenc"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX/leaders/HUN/Portrait_Ferenc_Szombathelyi.dds"
+	expire = "1965.1.1"
+	ideology = authority_democracy_ideology
+}
