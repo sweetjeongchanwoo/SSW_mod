@@ -9,6 +9,7 @@ set_technology = {
 }
 
 add_ideas = {
+	Parliamentary_democracy_rightist_administration
 	civilian_economy
 	MEN_idea_1
 }
@@ -24,9 +25,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "李守信"
+	name = "卓特巴扎普"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX/leaders/MEN/Portrait_Li_Shouxin.dds"
+	picture = "GFX/leaders/MEN/Portrait_Jodbajab.dds"
 	expire = "1965.1.1"
 	ideology = authority_democracy_ideology
 	traits = {

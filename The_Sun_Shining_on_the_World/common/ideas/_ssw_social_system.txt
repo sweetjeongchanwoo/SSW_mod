@@ -76,12 +76,12 @@ ideas = {
    				factor = 0.5
 
    				modifier = {
-#					has_government = fascism
+					has_government = fascism
 					factor = 2
 				}
 
    				modifier = {
-#					has_government = communism
+					has_government = communism
 					factor = 2
 				}
    			}
@@ -119,7 +119,7 @@ ideas = {
 				   factor = 0.75
 				   
 				   modifier = {
-#					has_government = militarism
+					has_government = militarism
 					factor = 1.5
 				}
    			}
@@ -157,11 +157,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-#					has_government = democratic
+					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-#					has_government = neutrality
+					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -194,11 +194,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-#					has_government = democratic
+					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-#					has_government = neutrality
+					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -230,11 +230,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-#					has_government = democratic
+					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-#					has_government = neutrality
+					has_government = neutrality
 					factor = 0.5
 				}
    			}
@@ -267,11 +267,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-#					has_government = democratic
+					has_government = democratic
 					factor = 2
 				}
 				modifier = {
-#					has_government = neutrality
+					has_government = neutrality
 					factor = 0.5
 				}
    			}

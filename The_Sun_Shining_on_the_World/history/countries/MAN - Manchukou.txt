@@ -9,6 +9,7 @@
 	}
 
 	add_ideas = {
+		Parliamentary_democracy_rightist_administration
 		civilian_economy
 	}
 	

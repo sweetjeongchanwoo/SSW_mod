@@ -2,17 +2,25 @@
 oob = "JAP_1950"
 
 set_convoys = 5
-
+set_stability = 0.2#baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+set_research_slots = 4
 set_technology = {
 	infantry_weapons = 1
 }
 
 add_ideas = {
+	Parliamentary_democracy_rightist_administration
 	JAP_Parasitic_landlord_system
 	SSW_jAP_disarmament_idea
 	SSW_jAP_zaibatsu
 	SSW_jAP_Peace_Preservation_Law
 	SSW_jAP_Japanese_spirit
+	SSW_JAP_Hirohito
+	SSW_JAP_Greater_East_Asian_Co_prosperity_Sphere
+	SSW_JAP_army_2
+	SSW_JAP_Post_war_recession
+	SSW_JAP_Equalize_the_Army_and_Navy_air_costs
 }
 
 create_faction = daitoa_kyoeiken
@@ -167,9 +175,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "久原房之助"
+	name = "芳澤謙吉"
 	desc = ""
-	picture = "Portrait_Fusanosuke_Kuhara.dds"
+	picture = "Portrait_Kenkichi_Yoshizawa.dds"
 	expire = "1989.1.1"
 	ideology = social_conservatism_ideology
 	traits = {

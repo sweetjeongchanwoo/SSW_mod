@@ -91,7 +91,27 @@ spriteTypes = {
 	spriteType = {
 		name = "spr_relocate_the_gold_reserves"
 		texturefile = "gfx/interface/ideas/spr_relocate_the_gold_reserves.dds"
-    }
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Military_Logistics"
+		texturefile = "gfx/interface/ideas/JAP/JAP_Military_Logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_parasitic_landlordism"
+		texturefile = "gfx/interface/ideas/JAP/JAP_parasitic_landlordism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Public_Order"
+		texturefile = "gfx/interface/ideas/JAP/JAP_Public_Order.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_Restricted_Military"
+		texturefile = "gfx/interface/ideas/JAP/JAP_Restricted_Military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_the_cost_geacps"
+		texturefile = "gfx/interface/ideas/JAP/JAP_the_cost_geacps.dds"
+	}
 #蒙古
     spriteType = {
 		name = "GFX_idea_De_Wang"

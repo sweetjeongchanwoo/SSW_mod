@@ -24,3 +24,9 @@ JAP_signs_of_disarmament = {
 		original_tag = JAP
 	}
 }
+
+JAP_lend_leace_law = {
+	allowed = {
+		original_tag = JAP
+	}
+}

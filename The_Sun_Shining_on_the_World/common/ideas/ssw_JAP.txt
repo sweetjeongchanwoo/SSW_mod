@@ -607,7 +607,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
-		JAP_Parasitic_landlord_system = {
+		SSW_JAP_Parasitic_landlord_system = {
 			allowed = {
 				always = yes
 			}
@@ -615,7 +615,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = great_depression
+			picture = JAP_parasitic_landlordism
 			modifier = {
 				stability_factor = -0.1
 				industrial_capacity_factory = -0.1
@@ -645,7 +645,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = chi_army_corruption
+			picture = JAP_Military_Logistics
 			modifier = {
 				conscription_factor = -0.3
 				production_speed_buildings_factor = 0.05
@@ -663,7 +663,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = chi_forced_conscription
+			picture = chi_army_corruption
 			modifier = {
 				conscription_factor = -0.5
 				production_speed_buildings_factor = 0.1
@@ -702,7 +702,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = anti_soviet_pact
+			picture = JAP_Public_Order
 			modifier = {
 				stability_factor = -0.05
 				communism_drift = -0.05
@@ -913,6 +913,632 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05
 				global_building_slots_factor = 0.2
 				equipment_conversion_speed = 0.1
+			}
+		}
+
+		SSW_JAP_reform_fifty = {
+			#五十年改革
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.25
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05	
+			}
+		}
+		SSW_JAP_Post_war_recession = {
+			#戦後の不景気
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_hyper_inflation5
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				consumer_goods_factor = 0.10
+				research_speed_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+				stability_factor = -0.15	
+			}
+		}
+		SSW_JAP_social_security = {
+			#緊縮政策の強硬
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_hyper_inflation4
+			modifier = {
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				consumer_goods_factor = 0.10
+				research_speed_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.05
+				stability_factor = -0.10
+			}
+		}
+		SSW_JAP_Shrink_due_to_lack_of_growth = {
+			#伸びんがために縮む
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_hyper_inflation3
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		SSW_JAP_Hirohito = {
+			#裕仁
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = jap_hirohito
+			modifier = {
+				stability_factor = 0.5
+				generate_wargoal_tension = 0.2
+			}
+		}
+		SSW_JAP_Further_cuts_in_military_spending = {
+			#軍事費の更なる削減
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = chi_forced_conscription
+			modifier = {
+				conscription_factor = -0.8
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				research_speed_factor = 0.20
+				production_speed_arms_factory_factor = -0.8
+			}
+		}
+		SSW_JAP_Further_Conglomerate_Growth = {
+			#更なる財閥の伸長
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_zaibatsu_ally
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.15
+				production_factory_max_efficiency_factor = 0.07
+				line_change_production_efficiency_factor = 0.07
+				production_speed_buildings_factor = 0.15
+				local_resources_factor = 0.07
+				global_building_slots_factor = 0.07
+				trade_laws_cost_factor = -0.3
+				communism_drift = 0.02
+			}
+		}
+		SSW_JAP_Conversion_to_the_Republic_of_China = {
+			#中国への転換
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_ichi_go
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				global_building_slots_factor = -0.05
+			}
+		}
+		SSW_JAP_yen_block = {
+			#円ブロック
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		SSW_JAP_Greater_East_Asian_Co_prosperity_Sphere = {
+			#大東亜共栄圏
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = JAP_the_cost_geacps
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		SSW_JAP_geacps_gold_block = {
+			#大東亜金ブロック
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		SSW_idea_JAP_Transition_to_the_wartime_system = {
+			#戦時体制への移行
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = chi_army_corruption3
+			modifier = {
+				production_speed_arms_factory_factor = 0.35
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		SSW_JAP_Hatoyama_memorandum = {
+			#鳩山上奏文
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.30
+			}
+		}
+		SSW_JAP_military_fascist_movement = {
+			#軍ファシズム運動
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				political_power_gain = -0.3
+				fascism_drift = 0.10
+				military_leader_cost_factor = -0.50
+			}
+		}
+		JAP_technological_superiority = {
+			#技術的優越
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_jap_supremacy_of_technology
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		SSW_JAP_mental_superiority = {
+			#精神的優越
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_jap_supremacy_of_will
+			modifier = {
+				training_time_factor = -0.1
+				conscription = 0.03
+				planning_speed = 0.10
+				max_planning = 0.10
+				research_speed_factor = -0.10
+			}
+		}
+		SSW_JAP_Interventionism = {
+			#介入主義
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = 
+			modifier = {
+				lend_lease_tension = -1.5
+				send_volunteers_tension = -1.5
+				send_volunteer_divisions_required = -1.5
+				send_volunteer_size = 9
+				join_faction_tension = -1
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.25
+			}
+		}
+		SSW_JAP_Re_establishment_of_the_Planning_Board = {
+			#企画院の再設置
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_reserve_divisions
+			modifier = {
+				mobilization_speed = 0.2
+				planning_speed = 0.10
+				max_planning = 0.10
+			}
+		}
+		SSW_JAP_General_Planning_Bureau = {
+			#綜合計画局の設置
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_reserve_divisions
+			modifier = {
+				mobilization_speed = 0.2
+				max_command_power = 0.2
+				planning_speed = 0.10
+				max_planning = 0.10
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SSW_JAP_Strengthening_the_Ministry_of_Greater_East_Asia = {
+			#切り離された占領地
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+		SSW_JAP_Smooth_Mobilization_of_Supplies = {
+			#物資動員法
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = hun_secret_rearmament
+			modifier = {
+				mobilization_speed = 0.5
+				conscription = 0.03
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SSW_JAP_Atomic_Energy_Basic_Law = {
+			#原子力基本法
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = hun_secret_rearmament
+			research_bonus = {
+				nuclear = 0.10
+			}
+		}
+		SSW_JAP_Lessons_from_the_Great_War = {
+			#大戦の教訓
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_license_production
+			modifier = {
+				training_time_factor = -0.1
+				conscription = 0.015
+				planning_speed = 0.05
+				max_planning = 0.10
+			}
+		}
+		SSW_JAP_Overseas_Dispatch_Act = {
+			#海外派遣法
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				lend_lease_tension = -0.5
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 4
+			}
+		}
+		SSW_JAP_war_load_Kishi = {
+			#教化
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				lend_lease_tension = -1.5
+				send_volunteers_tension = -1.5
+				send_volunteer_divisions_required = -1.5
+				send_volunteer_size = 4
+				join_faction_tension = -1
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.10
+			}
+		}
+		SSW_JAP_three_arow = {
+			#キシノミクス
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.5
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		SSW_JAP_Kishinomix_war_order = {
+			#戦時体制下のキシノミクス
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.5
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		SSW_JAP_army_2 = {
+			#制限された軍隊
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = JAP_Restricted_Military
+			research_bonus = {land_doctrine = -0.1}
+			modifier = {
+				army_speed_factor = -0.2
+				high_command_cost_factor = 1
+				air_chief_cost_factor = 1
+				army_chief_cost_factor = 1
+				navy_chief_cost_factor = 1
+				ai_desired_divisions_factor = -7
+				war_support_factor = -0.3
+			}
+		}
+		SSW_JAP_3S_production = {
+			#3s政策
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_prc_low_popular_support3
+			modifier = {
+				autonomy_gain = -1
+				subjects_autonomy_gain = 1
+			}
+		}
+		SSW_JAP_research_assistants = {
+			#研究助成
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_prc_low_popular_support3
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		SSW_JAP_Embracing_Cultural_DiversityS = {
+			#文化的多様性の受容
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		SSW_JAP_gadenintetsu = {
+			#我田引鉄
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		SSW_JAP_The_entertainmentism_of_the_national_railroad_business = {
+			#国鉄事業の娯楽
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		SSW_JAP_Establishment_of_Shonan_Bank = {
+			#外地特別銀行
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_foreign_capital
+			modifier = {
+				subjects_autonomy_gain = 3
+				local_resources_factor = 0.1
+			}
+		}
+		SSW_JAP_Equalize_the_Army_and_Navy_air_costs = {
+			#陸海軍の対立
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_foreign_capital
+			research_bonus = {land_doctrine = -0.1}
+			research_bonus = {naval_doctrine = -0.1}
+			modifier = {
+				army_org_Factor = -0.1
+				army_morale_factor = -0.1
+				amphibious_invasion = -0.10
+			}
+		}
+		SSW_JAP_Increased_military_spending = {
+			#一時的な軍事費の増加
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_generic_foreign_capital
+			research_bonus = {land_doctrine = 0.1}
+			research_bonus = {naval_doctrine = 0.1}
+			research_bonus = {infantry_weapons = 0.1}
+		}
+		SSW_JAP_Inte = {
+			#民主主義の介入
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = unknown
+			modifier = {
+				lend_lease_tension = -1.5
+				send_volunteers_tension = -1.5
+				send_volunteer_divisions_required = -1.5
+				send_volunteer_size = 9
+				join_faction_tension = -1
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.25
 			}
 		}
 	}
