@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = PER
+		victory_points = {
+			10782 1 
+		}
 		buildings = {
 			infrastructure = 2
 		}

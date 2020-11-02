@@ -5,6 +5,12 @@ state={
 	history={
 		add_core_of = WTR
 		owner = WTR
+		victory_points = {
+			1614 1
+		}
+		victory_points = {
+			1517 1 
+		}
 		buildings = {
 			infrastructure = 3
 

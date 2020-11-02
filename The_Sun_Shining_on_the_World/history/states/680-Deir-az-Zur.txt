@@ -8,13 +8,19 @@ state={
 	history={
 		owner = SYR
 		victory_points = {
+			1549 1
+		}
+		victory_points = {
+			6883 1
+		}
+		victory_points = {
 			3942 1
 		}
 		buildings = {
 			infrastructure = 2
 		}
 		add_core_of = SYR
-
+		add_core_of = KUR
 	}
 
 

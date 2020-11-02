@@ -4,18 +4,17 @@ state={
 	name="STATE_808"
 
 	history={
-		owner = BUL
+		owner = SIA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 8
 		}
-		add_core_of = SER
-		add_core_of = BUL
+		add_core_of = SIA
 
 	}
 
 	provinces={
-		11868 11857 11832 
+		 7408
 	}
-	manpower=98134
+	manpower=1300000
 	state_category=town
 }

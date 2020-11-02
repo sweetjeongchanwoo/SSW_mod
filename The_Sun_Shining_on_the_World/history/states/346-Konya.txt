@@ -7,6 +7,15 @@ state={
 	state_category = rural
 
 	history={
+		victory_points = {
+			9861 5
+		}
+		victory_points = {
+			6807 3
+		}
+		victory_points = {
+			784 1
+		}
 		owner = TUR
 		buildings = {
 			infrastructure = 3
@@ -20,6 +29,6 @@ state={
 	}
 
 	provinces={
-		940 3788 6807 6894 9755 9763 9811 11792 11860 13122 
+		784 869 940 3788 3876 6807 6894 9755 9763 9811 9861 11792 11860 13122 
 	}
 }
