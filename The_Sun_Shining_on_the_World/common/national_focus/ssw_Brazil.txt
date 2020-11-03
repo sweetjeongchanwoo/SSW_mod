@@ -581,8 +581,11 @@ target = URG
 		}
 		completion_reward = {
 			505 = {
-add_building_construction = {type = infrastructurelevel = 3
-instant_build = yes}
+	add_building_construction = {
+	type = infrastructure
+	level = 3
+	instant_build = yes
+	}
 }
 		}
 	}
@@ -602,10 +605,12 @@ instant_build = yes}
 		}
 		completion_reward = {
 			505 = {
-add_building_construction = {type = infrastructurelevel = 4
-instant_build = yes}
-
-}
+				add_building_construction = {　
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
 		}
 	}
 

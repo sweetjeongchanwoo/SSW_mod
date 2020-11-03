@@ -2435,7 +2435,7 @@ focus_tree = {
 			focus = SPR_guntai_kuugun
 		}
 		mutually_exclusive = {
-			focus = SPR_guntai_senryakuhakai
+			focus = SPR_guntai_senjyousien
 		}
 		mutually_exclusive = {
 			focus = SPR_guntai_sakusenseigou

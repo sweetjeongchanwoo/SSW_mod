@@ -1,3 +1,26 @@
+JAP_political_party = {
+	JAP_SEIYUKAI = {
+
+		icon = generic_form_nation
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+		}		
+		
+		cost = 10
+		
+		fire_only_once = no
+
+	}
+}
+
 JAP_Hanshin_Fulfillment = {
 	JAP_Enhancement_of_Kansai_infrastructure = { #関西周辺におけるインフラの充実
 		icon = generic_industry

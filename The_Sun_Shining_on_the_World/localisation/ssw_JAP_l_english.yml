@@ -634,6 +634,8 @@
  JAP_Keihin_Fulfillment:0 "京浜工業地帯の充実"
  JAP_cat_the_west_japan_heavy_industry_region_plan:0 "西日本工業地帯構想"
  JAP_cat_the_kanto_industry_region_plan:0 "関東工業地帯構想"
+ JAP_political_party:0 "政党"
+ JAP_political_party_desc:0 "我が国の政党は数多くあり、とても複雑なものとなっている。\nその中でも有力なのが、[GetSeiyukaiName]という保守政党と、それと長らく対峙してきた[GetMinseitoName]である。\n左派政党では、浅沼率いる[GetnihonsyakaiName]と[GetziyuutoName]で対立している。\n日本共産党は分裂しており、[GetNihonkyosanto_NosakaName]と[GetNihonkyosanto_TokudaName]に別れてしまっている。\n右派政権では、権威主義・国家結束主義・国家社会主義の政党合併が行われ、[GettoakensetsuName]という政党が結成された。\n最近は[GetDainipponsumeragiName]という、旧皇道派グループを集めた政党が結成されたみたいだ。\n我が国の運命を操るためには、政党を管理しなければならないのだ。\n\n[GetSeiyukaiValues][GetMinseitoValues][GetnihonsyakaiValues][GetziyuutoValues][GetNihonkyosanto_NosakaValues][GetNihonkyosanto_TokudaValues][GettoakensetsuValues][GetDainipponsumeragiValues]\n\n"
  JAP_signs_of_disarmament:0 "軍縮問題"
  JAP_lend_leace_law:0 "武器貸与法"
  JAP_dec_signs_of_disarmament:0 "軍縮の兆し"
@@ -654,3 +656,23 @@
  3_JAP_tt:0 "§Rこの宣言は諸外国からの反発を受けるかもしれない。"
  4_JAP_tt:0 "§G他の勢力に献金していれば、軍部への献金は不要になる。"
  5_JAP_tt:0 "§Gこの勢力はまだ小規模なため、右翼にも献金しなければならない。"
+
+#value
+ JAP_Seiyukai_political_party_values:0 "\n[GetSeiyukaiName]の§Y支持率§!: [?JAP.JAP_seiyukai_popularity|+0]"
+ JAP_Minseito_political_party_values:0 "\n[GetMinseitoName]の§Y支持率§!: [?JAP.JAP_minseito_popularity|+0]"
+ JAP_Dainipponsumeragi_political_party_values:0 "\n[GetDainipponsumeragiName]の§Y支持率§!: [?JAP.JAP_dainipponsumeragi_popularity|+0]"
+ JAP_Nihonkyosanto_Nosaka_political_party_values:0 "\n[GetNihonkyosanto_NosakaName]の§Y支持率§!: [?JAP.JAP_JAP_Nihonkyosanto_Nosaka_popularity_popularity|+0]"
+ JAP_Nihonkyosanto_Tokuda_political_party_values:0 "\n[GetNihonkyosanto_TokudaName]の§Y支持率§!: [?JAP.JAP_Nihonkyosanto_Tokuda_popularity|+0]"
+ JAP_nihonsyakai_political_party_values:0 "\n[GetnihonsyakaiName]の§Y支持率§!: [?JAP.JAP_nihonsyakai_popularity|+0]"
+ JAP_toakensetsu_political_party_values:0 "\n[GettoakensetsuName]の§Y支持率§!: [?JAP.JAP_toakensetsu_popularity|+0]"
+ JAP_ziyuuto_political_party_values:0 "\n[GetziyuutoName]の§Y支持率§!: [?JAP.JAP_ziyuuto_popularity|+0]"
+
+#localization_key
+ JAP_Seiyukai_name_and_icon:0 "£faction_jap_seiyukai §Y政友会§!"
+ JAP_Minseito_name_and_icon:0 "£faction_jap_minseito §Y民政党§!"
+ JAP_Dainipponsumeragi_name_and_icon:0 "£faction_jap_dainipponsumeragi §Y大日本皇党§!"
+ JAP_Nihonkyosanto_Nosaka_name_and_icon:0 "£faction_jap_Nihonkyosanto_Nosaka §Y日本共産党野坂派§!"
+ JAP_Nihonkyosanto_Tokuda_name_and_icon:0 "£faction_jap_Nihonkyosanto_Tokuda §Y日本共産党徳田派§!"
+ JAP_nihonsyakai_name_and_icon:0 "£faction_jap_nihonsyakai §Y日本社会党§!"
+ JAP_toakensetsu_name_and_icon:0 "£faction_jap_toakensetsu §Y東亜建設国民聯盟§!"
+ JAP_ziyuuto_name_and_icon:0 "£faction_jap_ziyuuto §Y自由党§!"

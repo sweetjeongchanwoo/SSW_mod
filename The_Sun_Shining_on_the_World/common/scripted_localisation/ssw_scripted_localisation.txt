@@ -1,0 +1,146 @@
+defined_text = {
+	name = GetSeiyukaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Seiyukai_name_and_icon
+	}
+}
+defined_text = {
+	name = GetMinseitoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Minseito_name_and_icon
+	}
+}
+defined_text = {
+	name = GetDainipponsumeragiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Dainipponsumeragi_name_and_icon
+	}
+}
+defined_text = {
+	name = GetNihonkyosanto_NosakaName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Nosaka_name_and_icon
+	}
+}
+defined_text = {
+	name = GetNihonkyosanto_TokudaName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Tokuda_name_and_icon
+	}
+}
+defined_text = {
+	name = GetnihonsyakaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_nihonsyakai_name_and_icon
+	}
+}
+defined_text = {
+	name = GettoakensetsuName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_toakensetsu_name_and_icon
+	}
+}
+defined_text = {
+	name = GetziyuutoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ziyuuto_name_and_icon
+	}
+}
+
+#########VALUES#########
+defined_text = {
+	name = GetSeiyukaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Seiyukai_political_party_values
+	}
+}
+defined_text = {
+	name = GetMinseitoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Minseito_political_party_values
+	}
+}
+defined_text = {
+	name = GetNihonkyosanto_NosakaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Nosaka_political_party_values
+	}
+}
+defined_text = {
+	name = GetDainipponsumeragiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Dainipponsumeragi_political_party_values
+	}
+}
+defined_text = {
+	name = GetNihonkyosanto_TokudaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Tokuda_political_party_values
+	}
+}
+defined_text = {
+	name = GetnihonsyakaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_nihonsyakai_political_party_values
+	}
+}
+defined_text = {
+	name = GettoakensetsuValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_toakensetsu_political_party_values
+	}
+}
+defined_text = {
+	name = GetziyuutoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ziyuuto_political_party_values
+	}
+}

@@ -1,0 +1,10 @@
+JAP_political_party_values = {
+	set_variable = { JAP_seiyukai_popularity = 44 }
+	set_variable = { JAP_minseito_popularity = 24 }
+	set_variable = { JAP_dainipponsumeragi_popularity = 24 }
+	set_variable = { JAP_Nihonkyosanto_Nosaka_popularity = 24 }
+	set_variable = { JAP_Nihonkyosanto_Tokuda_popularity = 24 }
+	set_variable = { JAP_nihonsyakai_popularity = 24 }
+	set_variable = { JAP_toakensetsu_popularity = 24 }
+	set_variable = { JAP_ziyuuto_popularity = 24 }
+}

@@ -1,3 +1,13 @@
+JAP_political_party = {
+	icon = generic_foreign_policy
+
+	picture = concessions_to_the_trade_unions
+
+	allowed = {
+		original_tag = JAP
+	}
+}
+
 JAP_Hanshin_Fulfillment = {
 	allowed = {
 		original_tag = JAP
