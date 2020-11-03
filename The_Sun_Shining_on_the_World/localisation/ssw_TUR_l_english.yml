@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿l_english:
  
  #################################################
@@ -5,6 +6,10 @@
  #################################################
  
  TUR_idea_1:0"後進的な軽工業社会"
+=======
+l_english:
+  TUR_idea_1:0"後進的な軽工業社会"
+>>>>>>> bc4d9641ae9d3b4498f1b5c776677bdd7df69ffa
   TUR_idea_1_desc:0"トルコ産業は繊維産業などの軽工業が主体であり、それらは技術的発展が著しく遅れた工場や、経済危機による資金の途絶が関わっている。この問題に早急に対応しなければ、我々は祖国を失ってしまうかもしれない。"
   TUR_idea_2:0"外交的孤立"
   TUR_idea_2_desc:0"第二次世界大戦に参加せず、ドイツからの干渉を受け入れなかったため、ドイツは我々と戦いによる関係の改善を求めている。主要なヨーロッパ諸国との関係はもはや戦争による解決しかありえないだろう。"
@@ -226,7 +231,27 @@
   TUR_suppression_of_islamic_extremism_desc:0""
   TUR_respect_for_ethnic_freedom:0"民族の自由を尊重"
   TUR_respect_for_ethnic_freedom_desc:0""
- 
+  TUR_creation_of the_submarine_fleet:0"潜水艦隊の創設"
+  TUR_creation_of the_submarine_fleet_desc:0""
+  TUR_creation_of_the_great_turkish_fleet:0"大トルコ艦隊の創設"
+  TUR_creation_of_the_great_turkish_fleet_desc:0""
+  TUR_creation_of_the_carrier_task_force:0"空母機動艦隊の創設"
+  TUR_creation_of_the_carrier_task_force_desc:0""
+  TUR_modernizing_the_air_force:0"空軍の現代化"
+  TUR_modernizing_the_air_force_desc:0""
+  TUR_expansion_of_the_radar_network:0"レーダー網の拡大"
+  TUR_expansion_of_the_radar_network_desc:0""
+  TUR_development_of_multi_role_fighter_aircraft:0"マルチロール戦闘機の開発"
+  TUR_development_of_multi_role_fighter_aircraft_desc:0""
+  TUR_development_of_heavy_fighter_aircraft:0"重戦闘機開発"
+  TUR_development_of_heavy_fighter_aircraft_desc:0""
+  TUR_large_ship_research:0"主力艦研究"
+  TUR_large_ship_research_desc:0""
+  TUR_auxiliary_vessel_research:0"小型艦研究"
+  TUR_auxiliary_vessel_research_desc:0""
+  TUR_specialization_in_landing_warfare:0"上陸戦への特化"
+  TUR_specialization_in_landing_warfare_desc:0""
+  
   1_TUR_elitism:0"§G我が国はエリート主義教育を推進する§!"
   1_TUR_Equal_Education:0"§G我が国は平等な教育を推奨する§!"
   1_TUR_fire_control:0"§G火力による制圧が、トルコ陸軍の未来を切り開くだろう§!"
