@@ -5,7 +5,7 @@ ideas = {
 			allowed = { #気にしなくていい
 				always = yes
 			}
-			allowed_civil_war = {　#内戦勃発時に国民精神が消えるかどうか
+			allowed_civil_war = {#内戦勃発時に国民精神が消えるかどうか
 				always = no
 			}
 			removal_cost = -1 #無視

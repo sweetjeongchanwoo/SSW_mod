@@ -254,7 +254,7 @@ country_event = { #integrate with egypt
 		EGY = {
 			add_state_core = 551
 			add_state_core = 549
-			add_state_core　= 767
+			add_state_core = 767
 		}
 	}
 	option = {
