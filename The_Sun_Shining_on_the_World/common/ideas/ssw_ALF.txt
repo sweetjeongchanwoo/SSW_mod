@@ -1,0 +1,20 @@
+ideas = { 
+    country = {
+        SSW_ideas_ALF_industry_ploblems = {  #ID
+			#産業の諸問題
+			allowed = { #気にしなくていい
+				always = yes
+			}
+			allowed_civil_war = {　#内戦勃発時に国民精神が消えるかどうか
+				always = no
+			}
+			removal_cost = -1 #無視
+			picture = generic_local_self_management #アイコンの画像
+			modifier = {
+				industrial_capacity_factory = -0.15 #生産速度-15％ 1.00だと100%
+				industrial_capacity_dockyard = -0.2
+                production_speed_buildings_factor = -0.1
+			}
+		}
+    }
+}

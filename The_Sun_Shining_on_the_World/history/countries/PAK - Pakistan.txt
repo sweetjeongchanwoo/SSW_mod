@@ -18,3 +18,13 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Liaquat Ali Khan"
+	desc = ""
+	picture = "gfx/leaders/PAK/Portrait_Liaquat_Ali_Khan.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

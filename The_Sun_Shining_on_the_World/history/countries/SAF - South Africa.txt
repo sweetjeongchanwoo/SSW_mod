@@ -20,3 +20,13 @@ set_politics = {
 set_popularities = {
 	authority_democracy= 100
 }
+
+create_country_leader = {
+	name = "Daniel Francois Malan"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_Daniel_Francois_Malan.dds"
+	ideology = authority_democracy_ideology
+	traits = {
+		#
+	}
+}

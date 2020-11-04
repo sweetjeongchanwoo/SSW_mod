@@ -1,0 +1,186 @@
+focus_tree = {
+	id = ALF_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALF
+		}
+	}
+	default = no
+	focus = {
+		id = ALF_Califolnia_plan
+		icon = GFX_goal_generic_construction
+		cost = 5.00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = ALF_Richmond_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Expansion_of_the_San_Francisco_Naval_Shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Cooperation_with_Japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Expansion_of_the_San_Francisco_Naval_Shipyard
+			focus = ALF_Richmond_Shipyards
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = ALF_California_Shipbuilding_Corporation
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Cooperation_with_Japan
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Okies_Employment_Promotion_Act
+		icon = GFX_goal_generic_consumer_goods
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Highway_System
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Okies_Employment_Promotion_Act
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = ALF_L_A_s_synthetic_industry
+		icon = GFX_goal_generic_construction2
+		cost = 9.00
+		prerequisite = {
+			focus = ALF_Okies_Employment_Promotion_Act
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = ALF_The_Revival_of_the_Automotive_Industry
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_L_A_s_synthetic_industry
+		}
+		prerequisite = {
+			focus = ALF_Highway_System
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Expansion_George_Air_Force_Base
+		icon = GFX_goal_generic_air_production
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Mergers_in_the_aircraft_industry
+		icon = GFX_goal_generic_production
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = ALF_McDonnell_Douglas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Mergers_in_the_aircraft_industry
+		}
+		prerequisite = {
+			focus = ALF_Expansion_George_Air_Force_Base
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ALF_The_Land_of_Aircraft
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_McDonnell_Douglas
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Industrial_Stabilization
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_The_Revival_of_the_Automotive_Industry
+		}
+		prerequisite = {
+			focus = ALF_The_Land_of_Aircraft
+		}
+		prerequisite = {
+			focus = ALF_California_Shipbuilding_Corporation
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ALF_Development_of_the_film_industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_Industrial_Stabilization
+		}
+		x = 8
+		y = 5
+
+	}
+}

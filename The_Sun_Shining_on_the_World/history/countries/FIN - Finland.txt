@@ -20,3 +20,13 @@ set_politics = {
 set_popularities = {
 	social_conservatism = 100
 }
+
+create_country_leader = {
+	name = "Urho Castrén"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Urho_Castre.dds"
+	ideology = social_conservatism_ideology
+	traits = {
+		#
+	}
+}
