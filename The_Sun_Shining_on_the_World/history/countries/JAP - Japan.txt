@@ -1,4 +1,4 @@
-﻿capital = 845
+﻿capital = 942
 oob = "JAP_1950"
 
 set_convoys = 5

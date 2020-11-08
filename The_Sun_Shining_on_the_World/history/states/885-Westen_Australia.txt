@@ -13,14 +13,8 @@ state={
 			infrastructure = 5
 			industrial_complex = 3
 			air_base = 6
-			7520 = {
-			naval_base = 1
-			}
 		}
 		add_core_of = AST
-		victory_points = {
-		7520 7
-		}
 		victory_points = {
 		4500 2
 		}
@@ -30,6 +24,6 @@ state={
 	}
 
 	provinces={
-		1537 1611 4453 4478 4500 4658 7450 7471 7496 7520 7649 7664 10388 10500 
+		1537 4453 4478 4500 4658 7471 7649
 	}
 }

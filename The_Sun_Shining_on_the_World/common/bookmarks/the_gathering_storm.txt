@@ -6,25 +6,6 @@ bookmarks = {
 		picture = ""
 		default_country = "JAP"
 
-		"FSA"={
-			history = ""
-			ideology = fascism
-			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		"GER"={
-			history = ""
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-
-			}
-		}
 		"ITA"={
 			history = ""
 			ideology = fascism
@@ -41,38 +22,14 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"VFR"={
+		"GER"={
 			history = ""
-			ideology = fascism
+			ideology = national_socialism
 			ideas = {
 			}
 			focuses = {
+
 			}
-		}
-		"RUS"={
-			history = ""
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-
-		}
-		"ENG"={
-			history = ""
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-
-
-
-
-		"---"={
-			history = ""
 		}
 
 ###############################################################################

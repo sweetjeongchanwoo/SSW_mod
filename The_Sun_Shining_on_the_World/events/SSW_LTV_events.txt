@@ -28,7 +28,7 @@ country_event = {
 			name = "Oberkommando der Wehrmacht"
 			picture = "portrait_military_kaigi.dds"
 			expire = "1965.1.1"
-			ideology = military
+			ideology = authority_despotism_ideology
 			traits = {
 				divided_interests
 			}
@@ -51,7 +51,7 @@ country_event = {
 			name = "Erwin von Witzleben"
 			picture = "Portrait_Germany_Erwin_von_Witzleben.dds"
 			expire = "1965.1.1"
-			ideology = military
+			ideology = authority_despotism_ideology
 			traits = {
 				great_survivor	
 			}
@@ -64,7 +64,7 @@ country_event = {
 			name = "Wilhelm Ritter von Leeb"
 			picture = "Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
 			expire = "1965.1.1"
-			ideology = military
+			ideology = authority_despotism_ideology
 			traits = {
 				sins_of_the_father	
 			}
@@ -77,7 +77,7 @@ country_event = {
 			name = "Erich Raeder"
 			picture = "Portrait_Germany_Erich_Raeder.dds"
 			expire = "1965.1.1"
-			ideology = military
+			ideology = authority_despotism_ideology
 		
 		traits = {
 			great_war_hero		

@@ -1,26 +1,24 @@
-
 state={
-	id=845
-	name="STATE_845"
-
+	id=942
+	name="STATE_942"
+	provinces={
+		1182 
+	}
 	history={
 		add_core_of = JAP
 		owner = JAP
+		victory_points = {
+			1182 50 
+		}
 		buildings = {
 			infrastructure = 10
-			arms_factory = 3
-			industrial_complex = 3
-			dockyard = 3
-			fuel_silo = 3
+			arms_factory = 6
+			industrial_complex = 6
 
 		}
 
 	}
-
-	provinces={
-		4184 4188 
-	}
-	manpower=14567000
+	manpower=0
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 }

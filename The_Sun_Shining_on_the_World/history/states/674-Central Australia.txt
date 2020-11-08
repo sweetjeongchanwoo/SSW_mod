@@ -2,6 +2,25 @@
 state={
 	id=674
 	name="STATE_674"
-	manpower = 1159
-	state_category = wasteland
+	manpower = 130000
+	
+	state_category = city
+
+	history={
+		owner = AST
+		victory_points = {
+			7564 10
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+		}
+		add_core_of = AST
+	}
+
+	provinces={
+		7564
+	}
 }
