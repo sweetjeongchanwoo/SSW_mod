@@ -5,7 +5,7 @@ state={
 	provinces={
 		848 1148 4004 7021 9981 11912 11958 12011 13243 
 	}
-	state_category=town
+	state_category=city
 	history={
 		owner = KOR
 		add_core_of = KOR

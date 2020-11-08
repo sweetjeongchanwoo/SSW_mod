@@ -6,6 +6,9 @@ state={
 	impassable = yes
 
 	history={
+		victory_points = {
+			10917 1 
+		}
 		owner = SAH
 		buildings = {
 			infrastructure = 1

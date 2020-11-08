@@ -15,9 +15,9 @@ state={
 		owner = FSA
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 0
-			arms_factory = 4
-			dockyard = 8
+			industrial_complex = 1
+			arms_factory = 3
+			dockyard = 4
 			air_base = 2
 			6845 = {
 				naval_base = 8
@@ -30,12 +30,6 @@ state={
 		}
 		victory_points = {
 			11800 15
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-				dockyard = 8
-			}
 		}
 
 	}

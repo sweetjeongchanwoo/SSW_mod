@@ -31,13 +31,6 @@ state={
 		victory_points = {
 			9713 15 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-
-			}
-
-		}
 
 	}
 
@@ -46,5 +39,5 @@ state={
 	}
 	manpower=5777248
 	buildings_max_level_factor=1.000
-	state_category=metropolis
+	state_category=megalopolis
 }

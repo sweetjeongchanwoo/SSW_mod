@@ -13,7 +13,7 @@ state={
 			industrial_complex = 1
 			dockyard = 2
 			air_base = 10
-			fuel_silo = 5
+			fuel_silo = 3
 			788 = {
 				naval_base = 10
 
@@ -25,12 +25,6 @@ state={
 		}
 		victory_points = {
 			10412 15
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 5
-			}
 		}
 
 	}

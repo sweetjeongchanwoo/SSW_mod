@@ -2,7 +2,7 @@ state={
 	id=852
 	name="STATE_852"
 	manpower = 1640686
-	state_category = rural
+	state_category = largy_city
 	
 	
 	history={
