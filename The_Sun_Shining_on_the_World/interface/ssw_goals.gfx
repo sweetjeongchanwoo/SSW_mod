@@ -446,15 +446,15 @@ spriteTypes = {
 #トルコ
 	SpriteType = {
 		name = "GFX_TUR_Sam"
-		texturefile = "gfx/interface/goals/TRU/SSW_TUR_goal_Sam.dds"
+		texturefile = "gfx/interface/goals/TUR/SSW_TUR_goal_Sam.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_Form_Roman_Empire"
-		texturefile = "gfx/interface/goals/TRU/SSW_TUR_form_the_roman_empire.dds"
+		texturefile = "gfx/interface/goals/TUR/SSW_TUR_form_the_roman_empire.dds"
 	}
 	SpriteType = {
 		name = "GFX_TUR_Child_Labour"
-		texturefile = "gfx/interface/goals/TRU/SSW_Child_Labour.dds"
+		texturefile = "gfx/interface/goals/TUR/SSW_Child_Labour.dds"
 	}
 
 }
