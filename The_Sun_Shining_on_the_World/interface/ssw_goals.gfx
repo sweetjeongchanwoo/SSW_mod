@@ -456,5 +456,21 @@ spriteTypes = {
 		name = "GFX_TUR_Child_Labour"
 		texturefile = "gfx/interface/goals/TUR/SSW_Child_Labour.dds"
 	}
+	SpriteType = {
+		name = "GFX_TUR_Ottoman_empire_flag"
+		texturefile = "gfx/interface/goals/TUR/ssw_TUR_empire_create.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_Ottoman_empire"
+		texturefile = "gfx/interface/goals/TUR/ssw_TUR_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_father_kemaru"
+		texturefile = "gfx/interface/goals/TUR/ssw_TUR_father.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_Union_middle_east"
+		texturefile = "gfx/interface/goals/TUR/ssw_TUR_middle_east.dds"
+	}
 
 }
