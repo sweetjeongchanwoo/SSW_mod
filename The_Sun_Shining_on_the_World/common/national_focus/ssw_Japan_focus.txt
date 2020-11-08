@@ -342,7 +342,7 @@ focus_tree = {
 		y = 0
 	completion_reward = {
 		add_political_power = 120
-		country_event = SSW_JAP.8
+		country_event = SSW_JAP.6
 	}
 
 	}
@@ -1895,7 +1895,6 @@ focus_tree = {
 			focus = JAP_select_Kishi
 		}
 		available = {
-				has_completed_focus = JAP_Shrink_due_to_lack_of_growth
 				has_country_flag = ssw_jap_flag_17
 				}
 		x = 38
