@@ -15,10 +15,6 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-create_faction = revolt_union
-add_to_faction = HGR
-add_to_faction = LTV
-
 set_politics = {
 	ruling_party = national_socialism
 	last_election = "1950.1.1"

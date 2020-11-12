@@ -1,10 +1,11 @@
 bookmarks = {
 	bookmark = {
-		name = ""
-		desc = ""
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
 		date = 1950.1.1.12
-		picture = ""
+		picture = "GFX_select_date_1936"
 		default_country = "JAP"
+		default = yes
 
 		"ITA"={
 			history = ""
@@ -147,6 +148,20 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+		}
+	}
+
+	bookmark = {
+		name = ""
+		desc = ""
+		date = 1950.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JAP"
+		"JAP"={
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {}
+			focuses = {}
 		}
 	}
 }

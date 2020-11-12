@@ -4,56 +4,47 @@ country_event = {
 	id = SSW_GER.1
 	title = SSW_GER.1.t
 	desc = SSW_GER.1.d
-	picture = GFX_Gebbers_speech
-
-	is_triggered_only = yes
-
+	picture = GFX_report_event_spr_franco_victory
+	fire_only_once = yes
+	major = yes
 	option = {
 		name = SSW_GER.1.a
-		GER = {
-			country_event = {
-				id = SSW_GER.2
-				days = 10
-			}
-		}
+		ai_chance = { factor = 1 }
+		country_event= { days = 30 id = SSW_GER.21 }
+		news_event = ssw.3
 	}
 }
-
+##Event: 万博開催
 country_event = {
 	id = SSW_GER.2
 	title = SSW_GER.2.t
 	desc = SSW_GER.2.d
-	picture = GFX_Himmler_speech
-
-	is_triggered_only = yes
-
+	picture = GFX_news_event_herman_goring
+	fire_only_once = yes
+	major = yes
 	option = {
 		name = SSW_GER.2.a
-		GER = {
-			country_event = {
-				id = SSW_GER.3
-				days = 10
-			}
+		ai_chance = { factor = 1 }
+		news_event= {
+			days = 30 
+			id = SSW_GER.3 
 		}
 	}
 }
-
-
-country_event = {
+##Event: ゲルマニア万博が開催
+news_event = {
 	id = SSW_GER.3
 	title = SSW_GER.3.t
 	desc = SSW_GER.3.d
-	picture = GFX_Gering_speech
-
-	is_triggered_only = yes
-
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+	major = yes
 	option = {
 		name = SSW_GER.3.a
-		GER = {
-			country_event = {
-				id = SSW_GER.4
-				days = 30
-			}
+		ai_chance = { factor = 1 }
+		country_event= {
+			days = 30 
+			id = SSW_GER.4
 		}
 	}
 }
@@ -62,12 +53,121 @@ country_event = {
 	id = SSW_GER.4
 	title = SSW_GER.4.t
 	desc = SSW_GER.4.d
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = SSW_GER.4.a
+		ai_chance = { factor = 1 }
+		country_event= {
+			days = 30 
+			id = SSW_GER.5
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.5
+	title = SSW_GER.5.t
+	desc = SSW_GER.5.d
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = SSW_GER.5.a
+		ai_chance = { factor = 1 }
+		country_event= {
+			days = 30 
+			id = SSW_GER.6 
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.6
+	title = SSW_GER.6.t
+	desc = SSW_GER.6.d
+	picture = GFX_report_event_german_reichstag_gathering
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = SSW_GER.6.a
+		ai_chance = { factor = 1 }
+		country_event= {
+			days = 30 
+			id = SSW_GER. 
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.7
+	title = SSW_GER.7.t
+	desc = SSW_GER.7.d
+	picture = GFX_Gebbers_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.7.a
+		GER = {
+			country_event = {
+				id = SSW_GER.8
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.8
+	title = SSW_GER.8.t
+	desc = SSW_GER.8.d
+	picture = GFX_Himmler_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.8.a
+		GER = {
+			country_event = {
+				id = SSW_GER.9
+				days = 10
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = SSW_GER.9
+	title = SSW_GER.9.t
+	desc = SSW_GER.9.d
+	picture = GFX_Gering_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.9.a
+		GER = {
+			country_event = {
+				id = SSW_GER.10
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.10
+	title = SSW_GER.10.t
+	desc = SSW_GER.10.d
 	picture = GFX_German_Civil_War
 
 	is_triggered_only = yes
 
 	option = {
-		name = SSW_GER.4.a
+		name = SSW_GER.10.a
 			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
 				remove_ideas = GER_idea_1
@@ -75,7 +175,7 @@ country_event = {
 				clr_global_flag = GER_civil_war
 			ENG = { set_global_flag = GER_civil_war }
 			VFR = { set_global_flag = GER_civil_war }
-			GER = { country_event = { id = SSW_GER.5 days = 1 } }
+			GER = { country_event = { id = SSW_GER.11 days = 1 } }
 			GER = { remove_state_core = 56 }
 			GER = { remove_state_core = 57 }
 			GER = { remove_state_core = 58 }
@@ -91,7 +191,7 @@ country_event = {
 			GER = { remove_state_core = 54 }
 			GER = { remove_state_core = 55 }
 			GER = { remove_state_core = 151 }
-			GER = { remove_state_core = 803 }
+			GER = { remove_state_core = 938 }
 			GER = { remove_state_core = 4 }
 			GER = { remove_state_core = 52 }
 			GER = { remove_state_core = 53 }
@@ -118,7 +218,7 @@ country_event = {
 			HLH = { transfer_state = 54 }
 			HLH = { transfer_state = 55 }
 			HLH = { transfer_state = 151 }
-			HLH = { transfer_state = 803 }
+			HLH = { transfer_state = 938 }
 			HLH = { add_state_core = 3 }
 			HLH = { add_state_core = 8 }
 			HLH = { add_state_core = 28 }
@@ -128,7 +228,7 @@ country_event = {
 			HLH = { add_state_core = 54 }
 			HLH = { add_state_core = 55 }
 			HLH = { add_state_core = 151 }
-			HLH = { add_state_core = 803 }
+			HLH = { add_state_core = 938 }
 			HGR = { transfer_state = 4 }
 			HGR = { transfer_state = 52 }
 			HGR = { transfer_state = 53 }
@@ -147,15 +247,15 @@ country_event = {
 
 
 country_event = {
-	id = SSW_GER.5
-	title = SSW_GER.5.t
-	desc = SSW_GER.5.d
+	id = SSW_GER.11
+	title = SSW_GER.11.t
+	desc = SSW_GER.11.d
 	picture = GFX_Gering_speech
 
 	is_triggered_only = yes
 
 	option = {
-		name = SSW_GER.5.a
+		name = SSW_GER.11.a
 		hidden_effect = {
 			random_unit_leader = {
 				limit = {
@@ -377,7 +477,7 @@ country_event = {
 			delete_unit_template_and_units = {Division_template = "Sicherungs-Division"}
 			delete_unit_template_and_units = {Division_template = "SS-Regiment"}
 			delete_unit_template_and_units = {Division_template = "Gebirgs-Division"}
-			GER = { country_event = { id = SSW_GER.6 days = 1 } }
+			GER = { country_event = { id = SSW_GER.12 days = 1 } }
 		}
 		custom_effect_tooltip = SSW_GER.5.b
 	}
@@ -385,23 +485,24 @@ country_event = {
 
 
 country_event = {
-	id = SSW_GER.6
-	title = SSW_GER.6.t
-	desc = SSW_GER.6.d
+	id = SSW_GER.12
+	title = SSW_GER.12.t
+	desc = SSW_GER.12.d
 	picture = GFX_Gering_speech
 
 	is_triggered_only = yes
 
 	option = {
-		name = SSW_GER.6.a
+		name = SSW_GER.12.a
 		hidden_effect = {
 			LTV = { country_event = { id = SSW_LTV.1  } }
 			HLH = { country_event = { id = SSW_HLH.1  } }
 			HGR = { country_event = { id = SSW_HGR.1  } }
 			load_oob = "GER_Civil_War"
-			GER = { country_event = { id = SSW_GER.7 days = 2 } }
+			GER = { country_event = { id = SSW_GER.13 days = 2 } }
 		}
 		GER = {
+			country_event = { id = SSW_GER.17 days = 5 }
 			add_ideas = tot_economic_mobilisation
 			add_ideas = service_by_requirement
 		}
@@ -410,22 +511,28 @@ country_event = {
 }
 
 country_event = {
-	id = SSW_GER.7
+	id = SSW_GER.13
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
 		HLH = { declare_war_on = { type = annex_everything    target = GER } }
+		HLH = { declare_war_on = { type = annex_everything    target = LTV } }
+		HLH = { declare_war_on = { type = annex_everything    target = HGR } }
 		LTV = { declare_war_on = { type = annex_everything    target = GER } }
+		LTV = { declare_war_on = { type = annex_everything    target = HLH } }
+		LTV = { declare_war_on = { type = annex_everything    target = HGR } }
 		HGR = { declare_war_on = { type = annex_everything    target = GER } }
+		HGR = { declare_war_on = { type = annex_everything    target = HLH } }
+		HGR = { declare_war_on = { type = annex_everything    target = LTV } }
 	}
 }
 
 
 
 country_event = {
-	id = SSW_GER.9
-	title = SSW_GER.9.t
-	desc = SSW_GER.9.d
+	id = SSW_GER.14
+	title = SSW_GER.14.t
+	desc = SSW_GER.14.d
 	picture = GFX_news_event_germany_victory
 	
 	major = yes
@@ -466,15 +573,15 @@ country_event = {
 	}
 	
 	option = {
-		name = SSW_GER.9.a
+		name = SSW_GER.14.a
 		add_war_support = 0.1
 	}
 }
 
 country_event = {
-	id = SSW_GER.10
-	title = SSW_GER.10.t
-	desc = SSW_GER.10.d
+	id = SSW_GER.15
+	title = SSW_GER.15.t
+	desc = SSW_GER.15.d
 	picture = GFX_news_event_germany_victory
 
 	fire_only_once = yes
@@ -525,15 +632,15 @@ country_event = {
 	}
 	
 	option = {
-		name = SSW_GER.10.a
+		name = SSW_GER.15.a
 		add_war_support = 0.1
 	}
 }
 
 country_event = {
-	id = SSW_GER.11
-	title = SSW_GER.11.t
-	desc = SSW_GER.11.d
+	id = SSW_GER.16
+	title = SSW_GER.16.t
+	desc = SSW_GER.16.d
 	picture = GFX_news_event_germany_victory
 
 	fire_only_once = yes
@@ -584,8 +691,90 @@ country_event = {
 	}
 	
 	option = {
-		name = SSW_GER.11.a
+		name = SSW_GER.16.a
 		add_war_support = 0.1
 	}
 
+}
+
+country_event = {
+	id = SSW_GER.17
+	title = SSW_GER.17.t
+	desc = SSW_GER.17.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.17.a
+		GER = {
+			country_event = {
+				id = SSW_GER.18
+				days = 10
+			}
+		}
+		set_autonomy = {
+			target = DEN
+			autonomy_state = autonomy_free
+		}	
+	}
+}
+
+country_event = {
+	id = SSW_GER.18
+	title = SSW_GER.18.t
+	desc = SSW_GER.18.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.18.a
+		set_autonomy = {
+			target = CRO
+			autonomy_state = autonomy_free
+		}	
+	}
+}
+
+country_event = {
+	id = SSW_GER.19
+	title = SSW_GER.19.t
+	desc = SSW_GER.19.d
+	picture = GFX_report_event_gre_megali_conference_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.19.a
+		GER = {
+			country_event = {
+				id = SSW_Hitler.1
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.20
+	title = SSW_GER.20.t
+	desc = SSW_GER.20.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.20.a
+		country_event = { id = SSW_GER.1 days = 30 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.21
+	title = SSW_GER.21.t
+	desc = SSW_GER.21.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.21.a
+		country_event= { days = 30 id = SSW_GER.2 }
+	}
 }

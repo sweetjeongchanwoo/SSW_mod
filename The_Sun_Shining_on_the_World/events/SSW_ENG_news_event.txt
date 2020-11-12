@@ -1,6 +1,6 @@
 add_namespace = news
 add_namespace = england_news
-#This file is made by chiyo
+
 news_event = {
 	id = england_news.1
 	title = england_news.1.t
@@ -53,8 +53,6 @@ news_event = {
 		name = england_news.2.c
 		trigger = { NOT ={ TAG = ENG TAG = CAN TAG = AST  TAG = NEL  TAG = NZL TAG = PIN TAG = JAP } }
 	}
-}
-
 	option = {
 		name = england_news.2.e
 		trigger = { TAG = JAP }

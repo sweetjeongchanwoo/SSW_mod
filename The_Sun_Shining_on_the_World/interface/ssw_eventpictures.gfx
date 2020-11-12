@@ -38,6 +38,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Attlee_speech.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_germania_plam"
+		texturefile = "gfx/event_pictures/report_event_germania_plam.dds"
+	}
+
 #フランス国	
 	spriteType = {
 		name = "GFX_Petan_dead"

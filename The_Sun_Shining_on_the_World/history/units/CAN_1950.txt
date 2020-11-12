@@ -1,5 +1,4 @@
 division_template = {
-	#This file is ade by chiyo
 	name = "Grenadier Guards"					#
 #	division_names_group = ENG_Inf_01
 	regiments = {
