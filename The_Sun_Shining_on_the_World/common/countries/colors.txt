@@ -495,7 +495,7 @@ MNT = {	#モンテネグロ
 
 UKR = {	#ウクライナ
 	color = rgb { 0 80 230 }
-	color_ui = rgb { 0 80 230 }	
+	color_ui = rgb { 0 80 230 }
 }
 
 ARM = {	#アルメニア
@@ -679,8 +679,8 @@ KUW = {	#クウェート
 }
 
 CYP = {	#キプロス
-	color = rgb {  255 204 0 }
-	color_ui = rgb {  255 204 0 }
+	color = rgb { 237 128 0 }
+	color_ui = rgb { 237 128 0 }
 }
 
 MLT = {	#マルタ
@@ -1356,7 +1356,7 @@ PAO ={	#太平洋
 
 ATL = {	#大西洋
 	color = rgb { 50 25 150 }
-	color_ui = rgb {  50 25 150  }
+	color_ui = rgb { 50 25 150 }
 }
 
 INO ={	#インド洋
@@ -1409,7 +1409,7 @@ NWA = {	#北西アフリカ
 	color_ui = rgb { 110 190 120 }
 }
 
-NWA = {	#北東アフリカ
+NEA = {	#北東アフリカ
 	color = rgb { 150 250 150 }
 	color_ui = rgb { 150 250 150 }
 }
@@ -1477,6 +1477,11 @@ STP = {	#サントメ・プリンシペ
 SKM = {	#シッキム
 	color = rgb { 253 36 30 }
 	color_ui = rgb { 253 36 30 }
+}
+
+PAT = {	#総主教領
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
 }
 
 HGR = {

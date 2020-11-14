@@ -44,6 +44,7 @@ add_to_faction = VIN
 add_to_faction = CAM
 add_to_faction = LAO
 add_to_faction = INS
+add_to_faction = MAL
 add_to_faction = BRN
 add_to_faction = INO
 add_to_faction = HAW
@@ -102,6 +103,10 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = INS
+	autonomous_state = imperial_protectirate
+}
+set_autonomy = {
+	target = MAL
 	autonomous_state = imperial_protectirate
 }
 set_autonomy = {

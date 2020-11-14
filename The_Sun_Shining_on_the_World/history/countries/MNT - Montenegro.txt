@@ -1,5 +1,6 @@
 ﻿capital = 105
-#oob = "MNT_1950"
+oob = "MNT_1950"
+set_cosmetic_tag = MNT_ITA
 
 set_technology = {
 	infantry_weapons = 1

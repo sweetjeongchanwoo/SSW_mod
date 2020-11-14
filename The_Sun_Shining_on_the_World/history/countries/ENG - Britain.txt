@@ -4,8 +4,9 @@ if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ENG_1950_Naval"
+	#set_naval_oob = "ENG_1950_Naval"
 }
+set_cosmetic_tag = ENG_GBRandNIR
 
 set_convoys = 5
 

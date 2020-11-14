@@ -1249,7 +1249,7 @@ category = radar_tech
 	#Focus for draft_campaign
 	focus = {
 		id = TUR_draft_campaign
-		icon = GFX_TUR_Sam
+		icon = GFX_TUR_draft_campaign-53890
 		x = 25
 		y = 5
 		cost = 5
@@ -1400,7 +1400,7 @@ category =  cat_superior_firepower
 			add_ideas=TUR_idea_21
 		}
 	}
-	#Focus for establishment_of the_turkish_national_tank_production_department
+	#Focus for establishment_of_the_turkish_national_tank_production_department
 	focus = {
 		id = TUR_establishment_of_the_turkish_national_tank_production_department
 		icon = GFX_focus_usa_guarantee_the_american_dream
@@ -1832,17 +1832,75 @@ category = tp_tech
   add_ideas=TUR_idea_53
 		}
 	}
+	#Focus for expulsion_of_orthodox_christians
+	focus = {
+		id = TUR_expulsion_of_orthodox_christians
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 45
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_call_the_ottomans_back }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for first_united_middle_east_conference
+	focus = {
+		id = TUR_first_united_middle_east_conference
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 52
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_movement_towards_unity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for islamic_central_highway
+	focus = {
+		id = TUR_islamic_central_highway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 54
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_economic_union }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for economic_union
+	focus = {
+		id = TUR_economic_union
+		icon = GFX_goal_generic_consumer_goods
+		x = 54
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_movement_towards_unity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	#Focus for pursuing_freedom
 	focus = {
 		id = TUR_pursuing_freedom
 		icon = GFX_goal_support_democracy
 		x = 53
-		y = 2
+		y = 3
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TUR_constitution_of_the_free_republic }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea =TUR_idea_38
+add_idea =TUR_idea_56
+}
 		}
 	}
 	#Focus for religious_bill
@@ -1916,23 +1974,41 @@ id =
 add_ideas=TUR_idea_36
 		}
 	}
-	#Focus for TEST
+	#Focus for transition_to_dictatorship
 	focus = {
-		id = TUR_test
-		icon = GFX_goal_unknown
-		x = 33
+		id = TUR_transition_to_dictatorship
+		icon = GFX_goal_support_fascism
+		x = 37
 		y = 4
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_pursuing_kemalism 
+		}
+		prerequisite = { 
+			focus = TUR_allowing_child_labor 
+		}
+		prerequisite = { 
+			focus = TUR_suppression_of_islamic_extremism 
+		}
+		prerequisite = { 
+			focus = TUR_raising_taxes_on_various_ethnic_groups 
+		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = TUR_idea_57
+add_idea =TUR_idea_58
+}
 		}
 	}
 	#Focus for strengthening_presidential_powers
 	focus = {
 		id = TUR_strengthening_presidential_powers
 		icon = GFX_goal_generic_political_pressure
-		x = 41
+		x = 44
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -1952,7 +2028,7 @@ add_idea =TUR_idea_37
 	focus = {
 		id = TUR_constitution_of_the_free_republic
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 51
+		x = 48
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -1973,12 +2049,18 @@ add_idea =TUR_idea_38
 		id = TUR_pursuing_kemalism
 		icon = GFX_focus_TUR_the_sun_language_theory
 		x = 39
-		y = 2
+		y = 3
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TUR_strengthening_presidential_powers }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = TUR_idea_37
+add_idea =TUR_idea_57
+}
 		}
 	}
 	#Focus for labor_bill
@@ -2026,7 +2108,7 @@ add_idea = TUR_idea_43
 	#Focus for allowing_child_labor
 	focus = {
 		id = TUR_allowing_child_labor
-		icon = GFX_TUR_Child_Labour
+		icon = GFX_goal_unknown
 		x = 41
 		y = 3
 		cost = 5
@@ -2035,6 +2117,9 @@ add_idea = TUR_idea_43
 		mutually_exclusive = { focus = TUR_adult_labor }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_54
 		}
 	}
 	#Focus for adult_labor
@@ -2049,6 +2134,9 @@ add_idea = TUR_idea_43
 		mutually_exclusive = { focus = TUR_allowing_child_labor }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_55
 		}
 	}
 	#Focus for suppression_of_islamic_extremism
@@ -2103,6 +2191,108 @@ add_idea = TUR_idea_44
 		}
 		completion_reward = {
 			add_ideas=TUR_idea_45
+		}
+	}
+	#Focus for search_of_more_freedom
+	focus = {
+		id = TUR_search_of_more_freedom
+		icon = GFX_focus_generic_treaty
+		x = 55
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_respect_for_ethnic_freedom 
+		}
+		prerequisite = { 
+			focus = TUR_tolerance_of_islamism 
+		}
+		prerequisite = { 
+			focus = TUR_adult_labor 
+		}
+		prerequisite = { 
+			focus = TUR_pursuing_freedom 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for call_the_ottomans_back
+	focus = {
+		id = TUR_call_the_ottomans_back
+		icon = GFX_goal_unknown
+		x = 46
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_tolerance_of_islamism
+			focus = TUR_respect_for_ethnic_freedom
+		}
+		prerequisite = { 
+			focus = TUR_raising_taxes_on_various_ethnic_groups
+		}
+		prerequisite = { 
+			focus = TUR_adult_labor
+		}
+		prerequisite = { 
+			focus = TUR_allowing_child_labor
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			change_tag_from=
+		}
+	}
+	#Focus for national_economy_comes_first
+	focus = {
+		id = TUR_national_economy_comes_first
+		icon = GFX_goal_generic_neutrality_focus
+		x = 56
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_search_of_more_freedom }
+		mutually_exclusive = { focus = TUR_movement_towards_unity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for movement_towards_unity
+	focus = {
+		id = TUR_movement_towards_unity
+		icon = GFX_goal_anschluss
+		x = 54
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_search_of_more_freedom 
+		}
+		prerequisite = { 
+			focus = TUR_respect_for_ethnic_freedom 
+		}
+		mutually_exclusive = { focus = TUR_national_economy_comes_first }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 135
+add_stability= 0.05
+		}
+	}
+	#Focus for purge_democratic_ministers
+	focus = {
+		id = TUR_purge_democratic_ministers
+		icon = GFX_focus_focus_fra_down_marianne
+		x = 47
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_call_the_ottomans_back }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 #End of focuses 
