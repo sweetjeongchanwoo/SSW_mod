@@ -799,7 +799,15 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				capital_ship_equipment = {
+				ship_hull_heavy_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+		ship_hull_cruiser_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+		ship_hull_carrier_equipment = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
@@ -816,7 +824,15 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				screen_ship_equipment = {
+				ship_hull_submarine_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+		ship_hull_light_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+		ship_hull_light_equipment = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
@@ -834,7 +850,7 @@ ideas = {
 			
 			modifier = {
 				navy_submarine_attack_factor = 0.20
-				navy_submarine_defence_factor = 0.2
+				navy_submarine_defence_factor = 0.20
 			}
 		}
 		#大トルコ艦隊
@@ -897,6 +913,85 @@ ideas = {
 				amphibious_invasion = 0.10
 				invasion_preparation= -0.30
 				no_supply_grace = 40
+			}
+		}
+		#児童労働を許容
+		TUR_idea_54 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		#労働基準法
+		TUR_idea_55 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		#真に自由なるトルコ
+		TUR_idea_56 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				conscription_factor = -0.10
+				mobilization_speed = 0.50
+			}
+		}
+		#ケマルの遺産
+		TUR_idea_57 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				conscription_factor = 0.30
+				non_core_manpower = -0.40
+			}
+		}
+		#小アジアの独裁体制
+		TUR_idea_58 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				fascism_drift = 0.50
+				drift_defence_factor = 0.5
 			}
 		}
 	}
