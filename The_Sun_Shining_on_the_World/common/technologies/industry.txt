@@ -1190,7 +1190,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 24 }
+			position = { x = 4 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -1217,43 +1217,6 @@ technologies = {
 		}
 	}
 
-	concentrated_industry11 = {
-
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
-
-		research_cost = 2
-		start_year = 1962
-		
-		folder = {
-			name = industry_folder
-			position = { x = 4 y = 28 }
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 5
-				date > "1962.1.9"
-			}
-			
-			modifier = {
-				factor = 20
-				date > "1962.1.1"
-			}			
-		}
-		
-		categories = {
-			industry
-			concentrated_industry_category
-		}
-		
-		ai_research_weights = {
-			offensive = -1.0
-		}
-	}
 	
 	dispersed_industry = {
 

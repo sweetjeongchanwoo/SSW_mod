@@ -9,7 +9,23 @@ bookmarks = {
 
 		"ITA"={
 			history = ""
-			ideology = fascism
+			ideology = national_fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = ""
+			ideology = social_democracy
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"RUS"={
+			history = ""
+			ideology = social_liberalism
 			ideas = {
 			}
 			focuses = {
@@ -18,6 +34,22 @@ bookmarks = {
 		"JAP"={
 			history = ""
 			ideology = authoritative_democracy
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"CHI"={
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"VFR"={
+			history = ""
+			ideology = national_fascism
 			ideas = {
 			}
 			focuses = {
