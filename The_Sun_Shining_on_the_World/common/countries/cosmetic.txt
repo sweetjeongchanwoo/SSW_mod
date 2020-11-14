@@ -1,21 +1,31 @@
-Great_Mongol = {
+Great_Mongol = {	#大蒙古
 	color = rgb { 92 92 92 }
 	color_ui = rgb { 92 92 92 }
 }
 
-KOR_JAP = {
-	color = rgb { 255 191 191 }
-	color_ui = rgb { 255 191 191 }
+OTT = {	#オスマン
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
 }
 
-JAM_JAP = {
-	color = rgb { 255 191 191 }
-	color_ui = rgb { 255 191 191 }
+Middle_East_Union = {	#中東連合
+	color = rgb { 85 102 0 }
+	color_ui = rgb { 85 102 0 }
 }
 
-SIN_JAP = {
+KOR_JAP = {	#日本領朝鮮
 	color = rgb { 255 191 191 }
-	color_ui = rgb { 255 191 191 }
+	color_ui = rgb { 240 170 110 }
+}
+
+PAO_JAP = {	#日本領大南洋諸島
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 70 220 220 }
+}
+
+SIN_JAP = {	#日本領昭南特別市
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 125 125 }
 }
 
 BRN_JAP = {
@@ -28,22 +38,22 @@ HAW_JAP = {
 	color_ui = rgb { 255 191 191 }
 }
 
-ARC_JAP = {
-	color = rgb { 255 191 191 }
-	color_ui = rgb { 255 191 191 }
-}
-
-PAO_JAP = {
-	color = rgb { 255 191 191 }
-	color_ui = rgb { 255 191 191 }
-}
-
 INO_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
 
 PAC_JAP = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 191 191 }
+}
+
+JAM_JAP = {
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 180 220 0 }
+}
+
+ARC_JAP = {
 	color = rgb { 255 191 191 }
 	color_ui = rgb { 255 191 191 }
 }
@@ -163,14 +173,19 @@ LBA_ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 
-TUN_ITA = {
+NEA_ITA = {
 	color = rgb { 67 127 63 }
 	color_ui = rgb { 87 165 82 }
 }
 
-NEA_ITA = {
+ALB_ITA = {	#イタリア領アルバニア
 	color = rgb { 67 127 63 }
-	color_ui = rgb { 87 165 82 }
+	color_ui = rgb { 149 45 102 }
+}
+
+MNT_ITA = {	#イタリア領モンテネグロ
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 77 90 105 }
 }
 
 SUC_ITA = {

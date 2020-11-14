@@ -679,8 +679,8 @@ KUW = {	#クウェート
 }
 
 CYP = {	#キプロス
-	color = rgb {  255 204 0 }
-	color_ui = rgb {  255 204 0 }
+	color = rgb { 237 128 0 }
+	color_ui = rgb { 237 128 0 }
 }
 
 MLT = {	#マルタ
@@ -1477,6 +1477,11 @@ STP = {	#サントメ・プリンシペ
 SKM = {	#シッキム
 	color = rgb { 253 36 30 }
 	color_ui = rgb { 253 36 30 }
+}
+
+PAT = {	#総主教領
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 255 204 0 }
 }
 
 HGR = {

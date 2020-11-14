@@ -20,6 +20,14 @@
  SOV_provisional_DEF:0 "ソビエト臨時政府"
  SOV_provisional_ADJ:0 "ソビエト臨時政府"
  
+ OTT:0 "オスマン帝国"
+ OTT_DEF:0 "オスマン帝国"
+ OTT_ADJ:0 "オスマン"
+ 
+ Middle_East_Union:0 "中東連合"
+ Middle_East_Union_DEF:0 "中東連合"
+ Middle_East_Union_ADJ:0 "中東"
+ 
 #共同管理国家
  CLC_JAPandCHI:0 "日華共同港都市"
  CLC_JAPandCHI_DEF:0 "日華共同港都市"

@@ -15,6 +15,8 @@ create_faction = Rome_entente
 add_to_faction = ITA
 add_to_faction = LBA
 add_to_faction = NEA
+add_to_faction = ALB
+add_to_faction = MNT
 add_to_faction = BUL
 add_to_faction = SER
 add_to_faction = PAL
@@ -31,6 +33,14 @@ set_autonomy = {
 set_autonomy = {
 	target = NEA
 	autonomous_state = colony
+}
+set_autonomy = {
+	target = ALB
+	autonomous_state = overseas_territory
+}
+set_autonomy = {
+	target = MNT
+	autonomous_state = overseas_territory
 }
 set_autonomy = {
 	target = SER

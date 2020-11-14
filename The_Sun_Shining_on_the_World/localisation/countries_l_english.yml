@@ -56,6 +56,10 @@
  INS_DEF:0 "インドネシア"
  INS_ADJ:0 "インドネシア"
  
+ MAL:0 "マラヤ"
+ MAL_DEF:0 "マラヤ"
+ MAL_ADJ:0 "マラヤ"
+ 
  BRN:0 "ブルネイ"
  BRN_DEF:0 "ブルネイ"
  BRN_ADJ:0 "ブルネイ"
@@ -628,10 +632,6 @@
  LEB_DEF:0 "レバノン"
  LEB_ADJ:0 "レバノン"
  
- MAL:0 "マラヤ"
- MAL_DEF:0 "マラヤ"
- MAL_ADJ:0 "マラヤ"
- 
  MLD:0 "モルディブ"
  MLD_DEF:0 "モルディブ"
  MLD_ADJ:0 "モルディブ"
@@ -672,6 +672,10 @@
  MLT:0 "マルタ"
  MLT_DEF:0 "マルタ"
  MLT_ADJ:0 "マルタ"
+ 
+ PAT:0 "総主教領"
+ PAT_DEF:0 "総主教領"
+ PAT_ADJ:0 "総主教領"
  
  SWI:0 "スイス"
  SWI_DEF:0 "スイス"
