@@ -1,0 +1,50 @@
+HGR_war_Support_from_Italy = {
+	HGR_war_Requesting_assistance_from_Italy = { #歩兵装備の支援を要請
+		icon = generic_industry
+		available = {
+            country_exists = ITA
+            ITA = {
+                has_equipment = {
+                    infantry_equipment_1 > 999
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 30 #        civilian_factory_use = 7
+		fire_only_once = no
+#		visible = {
+#			has_completed_focus = HGR_war_Blackshirt_Volunteers
+#		}
+		complete_effect = {
+            ITA = {
+            country_event = SSW_HGR.2
+            }
+		}
+    }
+    HGR_war_Requesting_assistance_from_Italy = { #支援装備の支援を要請
+		icon = generic_industry
+		available = {
+            country_exists = ITA
+            ITA = {
+                has_equipment = {
+                    support_equipment_1 > 499
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 30 #        civilian_factory_use = 7
+		fire_only_once = no
+#		visible = {
+#			has_completed_focus = HGR_war_Blackshirt_Volunteers
+#		}
+		complete_effect = {
+            ITA = {
+            country_event = SSW_HGR.3
+            }
+		}
+    }
+}

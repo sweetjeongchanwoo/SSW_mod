@@ -1,0 +1,12 @@
+HGR_war_Support_from_Italy = {
+
+    icon = generic_industry
+	
+    allowed = {
+	    original_tag = HGR
+    }
+    
+    visible = {
+        has_completed_focus = HGR_war_Blackshirt_Volunteers
+    }
+}

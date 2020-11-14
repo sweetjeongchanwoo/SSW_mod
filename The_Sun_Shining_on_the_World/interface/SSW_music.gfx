@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_gunka_album_art"
+		texturefile = "gfx/gunka_album_art.dds"
+		noOfFrames = 2
+	}	
+
+}

@@ -5,6 +5,7 @@ country_event = {
 	title = SSW_GER.1.t
 	desc = SSW_GER.1.d
 	picture = GFX_report_event_spr_franco_victory
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
@@ -20,6 +21,7 @@ country_event = {
 	title = SSW_GER.2.t
 	desc = SSW_GER.2.d
 	picture = GFX_news_event_herman_goring
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
@@ -37,6 +39,7 @@ news_event = {
 	title = SSW_GER.3.t
 	desc = SSW_GER.3.d
 	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
@@ -54,6 +57,7 @@ country_event = {
 	title = SSW_GER.4.t
 	desc = SSW_GER.4.d
 	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
@@ -71,6 +75,7 @@ country_event = {
 	title = SSW_GER.5.t
 	desc = SSW_GER.5.d
 	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
@@ -88,15 +93,12 @@ country_event = {
 	title = SSW_GER.6.t
 	desc = SSW_GER.6.d
 	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 	option = {
 		name = SSW_GER.6.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER. 
-		}
 	}
 }
 
@@ -152,7 +154,7 @@ country_event = {
 		GER = {
 			country_event = {
 				id = SSW_GER.10
-				days = 30
+				days = 20
 			}
 		}
 	}
@@ -241,6 +243,10 @@ country_event = {
 			HGR = { add_state_core = 102 }
 			HGR = { add_state_core = 152 }
 			HGR = { add_state_core = 153 }
+			country_event = { 
+				id = SSW_GER.22
+				hours = 1
+			}
 		}
 	}
 }
@@ -776,5 +782,35 @@ country_event = {
 	option = {
 		name = SSW_GER.21.a
 		country_event= { days = 30 id = SSW_GER.2 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.22
+	title = SSW_GER.22.t
+	desc = SSW_GER.22.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.22.a
+	}
+	option = {
+		name = SSW_GER.22.b
+		GER = {
+			change_tag_from = LTV
+		}
+	}
+	option = {
+		name = SSW_GER.22.c
+		GER = {
+			change_tag_from = HLH
+		}
+	}
+	option = {
+		name = SSW_GER.22.d
+		GER = {
+			change_tag_from = HGR
+		}
 	}
 }

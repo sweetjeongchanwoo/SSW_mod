@@ -1,0 +1,51 @@
+﻿l_english:
+#国家方針
+ HGR_war_army_reorganization:0 "陸軍再編"
+ HGR_war_Luftwaffe:0 "ルフトヴァッフェ"
+ HGR_war_Distribution_of_shovels:0 "スコップの配布"
+ HGR_war_Issuance_of_interwar_banknotes:0 "戦間紙幣の発行"
+ HGR_war_Tank_Development:0 "戦車開発"
+ HGR_war_air_force_reform:0 "空軍改革"
+ HGR_war_firearms_development:0 "火器開発"
+ HGR_war_tradition:0 "伝統"
+ HGR_war_conversion:0 "転換"
+ HGR_war_Fight_for_Goering:0 "ゲーリングのために戦え！"
+ HGR_war_Reichsbank:0 "ライヒスバンク"
+ HGR_war_universal_conscription:0 "国民皆兵"
+ HGR_war_Temporary_Arsenal_Hermann_Goering:0 "臨時工廠ヘルマン・ゲーリング"
+ HGR_war_The_familys_military_needs:0 "家庭的軍需"
+ HGR_war_economic_recovery:0 "経済回復"
+ HGR_war_indiscriminate_conscription:0 "無差別徴兵"
+ HGR_war_For_the_sake_of_unity:0 "統一のために！"
+ HGR_war_subdue:0 "平定"
+ HGR_war_Goering_s_Volunteers:0 "ゲーリング義勇隊"
+ HGR_war_Blackshirt_Volunteers:0 "黒シャツ義勇隊"
+
+#イベント
+ SSW_HGR.1.t:0 "内戦"
+ SSW_HGR.1.d:0 "帝国を分断する内戦がおこった。我々はGeoring総統の元、裏切者達と戦わなければならない。"
+ SSW_HGR.1.a:0 "備えよ"
+ SSW_HGR.2.t:0 "ゲーリング政府が歩兵装備の支援を要請"
+ SSW_HGR.2.d:0 "我が国と友好的な姿勢を保ってきたGeoringが、歩兵装備の支援を要請してきた。欧州の覇権を制するために、ゲーリング政府に支援すべきだろう"
+ SSW_HGR.2.a:0 "武器庫を開けろ"
+ SSW_HGR.2.b:0 "無理だ"
+ SSW_HGR.3.t:0 "ゲーリング政府が支援装備の支援を要請"
+ SSW_HGR.3.d:0 "我が国と友好的な姿勢を保ってきたGeoringが、歩兵装備の支援を要請してきた。欧州の覇権を制するために、ゲーリング政府に支援すべきだろう"
+ SSW_HGR.4.a:0 "武器庫を開けろ"
+ SSW_HGR.4.b:0 "無理だ"
+
+#アイデア
+ HGR_war_idea_1:0 "ルフトヴァッフェ"
+ HGR_war_idea_2:0 "戦間紙幣の発行"
+ HGR_war_idea_3:0 "国民スコップの配布"
+ HGR_war_idea_4:0 "ライヒスバンク"
+ HGR_war_idea_5:0 "国民皆兵"
+ HGR_war_idea_6:0 "崩壊した経済"
+ HGR_war_idea_8:0 "反発"
+
+#ディシジョン
+ HGR_war_Support_from_Italy:0 "イタリアからの支援"
+ HGR_war_Requesting_assistance_from_Italy:0 "歩兵装備の支援を要請"
+
+#ツールチップ
+ HGR_war_01_tt:0 "§G義勇隊を募集することができる"

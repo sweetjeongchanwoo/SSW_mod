@@ -1775,7 +1775,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1800,7 +1800,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1810,6 +1810,10 @@ focus_tree = {
 					swap_ideas = {
 							remove_idea = SSW_jAP_disarmament_idea
 							add_idea = SSW_jAP_kuhara_disarmament
+					}
+					hidden_effect = {
+						country_event = SSW_JAP.9
+						days = 10
 					}
 		}
 
@@ -1823,7 +1827,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1849,7 +1853,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1869,7 +1873,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1910,7 +1914,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1933,7 +1937,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1952,7 +1956,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -1978,7 +1982,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -2004,7 +2008,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -2027,7 +2031,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -2371,7 +2375,7 @@ focus_tree = {
 									province = 7617
 								}
 						}
-				}
+			}
 
 	}
 	focus = {
@@ -4969,7 +4973,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}
@@ -4996,7 +5000,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "芳澤謙吉"
+				name = "Kenkichi Yoshizawa"
 				ruling_only = yes
 			}
 		}

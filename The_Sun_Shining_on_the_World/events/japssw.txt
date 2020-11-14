@@ -173,13 +173,9 @@ country_event = {#軍部贈賄事件
 	desc = SSW_JAP.9.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	trigger = {
 		has_country_flag = ssw_jap_flag_15
-		date > 1950.1.30
 	}
 
 	immediate = {

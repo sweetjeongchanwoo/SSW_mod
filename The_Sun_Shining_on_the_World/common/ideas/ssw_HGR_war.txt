@@ -1,0 +1,130 @@
+ideas = {
+	country = {
+		HGR_war_idea_1 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                air_air_superiority_attack_factor = 0.1
+                air_air_superiority_defence_factor = 0.1
+                air_air_superiority_agility_factor = 0.05
+			}
+        }
+
+        HGR_war_idea_2 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+        }
+        HGR_war_idea_3 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                max_dig_in = 1
+                dig_in_speed_factor = 0.25
+                supply_consumption_factor = -0.1
+                out_of_supply_factor = -0.1
+			}
+        }
+        HGR_war_idea_4 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+        }
+        HGR_war_idea_5 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                mobilization_speed = 0.2
+                war_support_weekly = 0.05
+                conscription = 0.05
+			}
+        }
+        HGR_war_idea_6 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                production_factory_max_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                industrial_capacity_factory = -0.15
+                consumer_goods_factor = 0.1
+			}
+        }
+        HGR_war_idea_7 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                targeted_modifier = { tag = GER attack_bonus_against = 0.2 }
+                targeted_modifier = { tag = HLH attack_bonus_against = 0.2 }
+                targeted_modifier = { tag = LTV attack_bonus_against = 0.2 }
+			}
+        }
+        HGR_war_idea_8 = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1#わかんね
+
+			allowed_civil_war = {always = yes}
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+                attack_bonus_against = -0.2
+                defense_bonus_against = -0.2
+			}
+        }
+    }
+}
