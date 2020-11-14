@@ -3,18 +3,15 @@ division_template = {
 	division_names_group = GER_Inf_01
 	is_locked = yes
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-   		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 1 y = 0 }
+		miliria = { x = 1 y = 1 }
 	}
 }
 division_template = {
-	name = "Artillery-division"					
+	name = "Göring Armee"					
 	division_names_group = GER_Inf_01
 	is_locked = no
 	regiments = {
@@ -27,11 +24,31 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Artillery-division"					
+	division_names_group = GER_Inf_01
+	is_locked = no
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+	}
+	support = {
+		artillery_brigade = { x = 0 y = 0 }
 	}
 }
 

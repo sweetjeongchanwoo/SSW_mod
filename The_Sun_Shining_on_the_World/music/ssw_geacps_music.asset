@@ -1,0 +1,7 @@
+
+# MAIN THEME
+music = {
+	name = "Battoutai"
+	file = "Battoutai.ogg"
+	volume = 0.65
+}
