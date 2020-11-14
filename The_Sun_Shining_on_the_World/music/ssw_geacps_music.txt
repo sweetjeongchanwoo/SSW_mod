@@ -1,0 +1,11 @@
+
+music_station = "ssw_geacps_music"
+
+music = {
+	song = "Battoutai"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

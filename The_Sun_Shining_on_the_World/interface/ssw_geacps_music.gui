@@ -1,7 +1,7 @@
 guiTypes = {
 
 	containerWindowType = {
-		name = "gunka_faceplate"
+		name = "ssw_faceplate"
 		position = { x =0 y=0 }
 		size = { width = 590 height = 46 }
 
@@ -112,13 +112,13 @@ guiTypes = {
 	}
 	
 	containerWindowType={
-		name = "gunka_stations_entry"
+		name = "ssw_stations_entry"
 		size = { width = 162 height = 130 }
 		
 		checkBoxType = {
 			name = "select_station_button"
 			position = { x = 0 y = 0 }
-			quadTextureSprite = "GFX_gunka_album_art"
+			quadTextureSprite = "GFX_ssw_geacps_music_album_art"
 			clicksound = decisions_ui_button
 		}
 	}
