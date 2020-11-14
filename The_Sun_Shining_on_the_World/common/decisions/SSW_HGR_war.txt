@@ -14,10 +14,8 @@ HGR_war_Support_from_Italy = {
 		}
 		cost = 30 #        civilian_factory_use = 7
 		fire_only_once = no
-#		visible = {
-#			has_completed_focus = HGR_war_Blackshirt_Volunteers
-#		}
-		complete_effect = {
+        days_remove = 30
+		remove_effect = {
             ITA = {
             country_event = SSW_HGR.2
             }
@@ -38,13 +36,838 @@ HGR_war_Support_from_Italy = {
 		}
 		cost = 30 #        civilian_factory_use = 7
 		fire_only_once = no
-#		visible = {
-#			has_completed_focus = HGR_war_Blackshirt_Volunteers
-#		}
-		complete_effect = {
+        days_remove = 30
+		remove_effect = {
             ITA = {
             country_event = SSW_HGR.3
             }
 		}
     }
+}
+
+HGR_civill_war_militia = {
+	HGR_recruiting_Vienna = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 4
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				4 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Munich = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 52
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				52 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Stuttgart = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 50
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				50 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Zurich = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 151
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				151 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Berne = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 3
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				3 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Strasbourg = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 28
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				28 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Frankfurt = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 55
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				55 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Cologne = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 51
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				51 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Dortmund = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 57
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				57 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Hanover = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 59
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				59 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Hamburg = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 58
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				58 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Berlin = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 64
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				64 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Leipzig = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 65
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				65 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Konigsberg = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 763
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				763 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
+
+	HGR_recruiting_Danzig = {
+        icon = ger_reichskommissariats
+		available = {
+			controls_state = 85
+		}
+		visible = {
+			always = yes
+		}
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		cost = 50
+
+		remove_effect = {
+			custom_effect_tooltip = HGR_war_01_tt
+			hidden_effect = {	
+				85 = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					prioritize = {
+						64
+					}
+					create_unit = {
+						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+				}
+			}
+		}
+	}
 }

@@ -97,5 +97,28 @@ ideas = {
 			}
 			
 		}
+
+		GER_war_ideas_1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = 
+			modifier = {
+				air_ace_generation_chance_factor = -0.10
+				enemy_army_bonus_air_superiority_factor = 0.05
+				army_bonus_air_superiority_factor = -0.05
+				air_accidents_factor = 0.05
+				air_night_penalty = 0.1
+				air_weather_penalty = 0.1
+				experience_gain_air_factor = -0.1
+			}
+			
+		}
 	}
 }

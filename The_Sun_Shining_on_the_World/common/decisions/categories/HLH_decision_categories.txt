@@ -1,9 +1,9 @@
-GER_civill_war_militia = {
+HLH_civill_war_militia = {
 
     icon = military_operation
 	
     allowed = {
-	    original_tag = GER
+	    original_tag = HLH
     }
     
 }

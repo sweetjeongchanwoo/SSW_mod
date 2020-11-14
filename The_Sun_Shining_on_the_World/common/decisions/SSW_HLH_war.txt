@@ -1,6 +1,6 @@
-GER_civill_war_militia = {
-	GER_recruiting_Vienna = {
-		icon = ger_reichskommissariats
+HLH_civill_war_militia = {
+	HLH_recruiting_Vienna = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 4
 		}
@@ -18,7 +18,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				4 = {
 					limit = {
@@ -31,31 +31,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Munich = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Munich = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 52
 		}
@@ -73,7 +73,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				52 = {
 					limit = {
@@ -86,31 +86,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Stuttgart = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Stuttgart = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 50
 		}
@@ -128,7 +128,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				50 = {
 					limit = {
@@ -141,31 +141,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Zurich = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Zurich = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 151
 		}
@@ -183,7 +183,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				151 = {
 					limit = {
@@ -196,31 +196,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Berne = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Berne = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 3
 		}
@@ -238,7 +238,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				3 = {
 					limit = {
@@ -251,31 +251,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Strasbourg = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Strasbourg = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 28
 		}
@@ -293,7 +293,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				28 = {
 					limit = {
@@ -306,31 +306,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Frankfurt = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Frankfurt = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 55
 		}
@@ -348,7 +348,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				55 = {
 					limit = {
@@ -361,31 +361,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Cologne = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Cologne = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 51
 		}
@@ -403,7 +403,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				51 = {
 					limit = {
@@ -416,31 +416,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Dortmund = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Dortmund = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 57
 		}
@@ -458,7 +458,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				57 = {
 					limit = {
@@ -471,31 +471,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Hanover = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Hanover = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 59
 		}
@@ -513,7 +513,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				59 = {
 					limit = {
@@ -526,31 +526,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Hamburg = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Hamburg = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 58
 		}
@@ -568,7 +568,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				58 = {
 					limit = {
@@ -581,31 +581,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Berlin = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Berlin = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 64
 		}
@@ -623,7 +623,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				64 = {
 					limit = {
@@ -636,31 +636,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Leipzig = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Leipzig = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 65
 		}
@@ -678,7 +678,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				65 = {
 					limit = {
@@ -691,31 +691,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Konigsberg = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Konigsberg = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 763
 		}
@@ -733,7 +733,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				763 = {
 					limit = {
@@ -746,31 +746,31 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}
 		}
 	}
 
-	GER_recruiting_Danzig = {
-		icon = ger_reichskommissariats
+	HLH_recruiting_Danzig = {
+        icon = ger_reichskommissariats
 		available = {
 			controls_state = 85
 		}
@@ -788,7 +788,7 @@ GER_civill_war_militia = {
 		cost = 50
 
 		remove_effect = {
-			custom_effect_tooltip = HGR_war_01_tt
+			custom_effect_tooltip = HLH_war_01_tt
 			hidden_effect = {	
 				85 = {
 					limit = {
@@ -801,23 +801,23 @@ GER_civill_war_militia = {
 					}
 					create_unit = {
 						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 					create_unit = {
 						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = GER
+						owner = HLH
 					}
 				}
 			}

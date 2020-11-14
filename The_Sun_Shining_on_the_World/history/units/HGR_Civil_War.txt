@@ -1,5 +1,22 @@
 division_template = {
-	name = "Civil-war-division"					
+	name = "kooperative Miliz"					
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+   		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+	}
+}
+division_template = {
+	name = "Freiwillige Miliz"					
 	division_names_group = GER_Inf_01
 	is_locked = yes
 	regiments = {
@@ -32,7 +49,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Artillery-division"					
+	name = "Landwaffe"					
 	division_names_group = GER_Inf_01
 	is_locked = no
 	regiments = {
@@ -54,31 +71,74 @@ division_template = {
 
 units = {
 	division= {
-		name = "1.Artillery-division"
+		name = "1.Göring Armee"
 		location = 11666
-		division_template = "Artillery-division"
-		start_experience_factor = 0.3
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
 	}
 
 	division= {
-		name = "2.Artillery-division"
+		name = "2.Göring Armee"
 		location = 11666
-		division_template = "Artillery-division"
-		start_experience_factor = 0.3
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
 	}
 	division= {
-		name = "3.Artillery-division"
+		name = "3.Göring Armee"
 		location = 11666
-		division_template = "Artillery-division"
-		start_experience_factor = 0.3
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
 	}
 
 	division= {
-		name = "4.Artillery-division"
+		name = "4.Göring Armee"
 		location = 11666
-		division_template = "Artillery-division"
-		start_experience_factor = 0.3
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
 	}
+
+	division= {
+		name = "5.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
+	division= {
+		name = "6.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
+	division= {
+		name = "7.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
+	division= {
+		name = "8.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
+	division= {
+		name = "9.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
+	division= {
+		name = "10.Göring Armee"
+		location = 11666
+		division_template = "Göring Armee"
+		start_experience_factor = 0.7
+	}
+
 
 	division= {	
 		division_name = {
@@ -86,7 +146,7 @@ units = {
 			name_order = 1
 		}
 		location = 9633
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -96,7 +156,7 @@ units = {
 			name_order = 1
 		}
 		location = 9633
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -106,7 +166,7 @@ units = {
 			name_order = 1
 		}
 		location = 9633
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -116,7 +176,7 @@ units = {
 			name_order = 1
 		}
 		location = 6678
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -126,7 +186,7 @@ units = {
 			name_order = 1
 		}
 		location = 6678
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -136,7 +196,7 @@ units = {
 			name_order = 1
 		}
 		location = 6678
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -146,7 +206,7 @@ units = {
 			name_order = 1
 		}
 		location = 6680
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -156,7 +216,7 @@ units = {
 			name_order = 1
 		}
 		location = 6680
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -166,7 +226,7 @@ units = {
 			name_order = 1
 		}
 		location = 6680
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -176,7 +236,7 @@ units = {
 			name_order = 1
 		}
 		location = 11638
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -187,7 +247,7 @@ units = {
 			name_order = 1
 		}
 		location = 11638
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -197,7 +257,7 @@ units = {
 			name_order = 1
 		}
 		location = 11638
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -207,7 +267,7 @@ units = {
 			name_order = 1
 		}
 		location = 11638
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -217,7 +277,7 @@ units = {
 			name_order = 1
 		}
 		location = 9666
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -227,7 +287,7 @@ units = {
 			name_order = 1
 		}
 		location = 9666
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -237,7 +297,7 @@ units = {
 			name_order = 1
 		}
 		location = 9666
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -247,7 +307,7 @@ units = {
 			name_order = 1
 		}
 		location = 708
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -257,7 +317,7 @@ units = {
 			name_order = 1
 		}
 		location = 708
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -267,7 +327,7 @@ units = {
 			name_order = 1
 		}
 		location = 708
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -277,7 +337,7 @@ units = {
 			name_order = 1
 		}
 		location = 6540
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -287,7 +347,7 @@ units = {
 			name_order = 1
 		}
 		location = 6540
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -297,7 +357,7 @@ units = {
 			name_order = 1
 		}
 		location = 6540
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -307,7 +367,7 @@ units = {
 			name_order = 1
 		}
 		location = 3299
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -317,7 +377,7 @@ units = {
 			name_order = 1
 		}
 		location = 3299
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -327,7 +387,7 @@ units = {
 			name_order = 1
 		}
 		location = 3299
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -337,7 +397,7 @@ units = {
 			name_order = 1
 		}
 		location = 571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -347,7 +407,7 @@ units = {
 			name_order = 1
 		}
 		location = 571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -357,7 +417,7 @@ units = {
 			name_order = 1
 		}
 		location = 571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -367,7 +427,7 @@ units = {
 			name_order = 1
 		}
 		location = 586
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -377,7 +437,7 @@ units = {
 			name_order = 1
 		}
 		location = 586
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -387,7 +447,7 @@ units = {
 			name_order = 1
 		}
 		location = 586
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -397,7 +457,7 @@ units = {
 			name_order = 1
 		}
 		location = 3571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -407,7 +467,7 @@ units = {
 			name_order = 1
 		}
 		location = 3571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -417,7 +477,7 @@ units = {
 			name_order = 1
 		}
 		location = 3571
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -427,7 +487,7 @@ units = {
 			name_order = 1
 		}
 		location = 11497
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -437,7 +497,7 @@ units = {
 			name_order = 1
 		}
 		location = 11497
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -447,7 +507,7 @@ units = {
 			name_order = 1
 		}
 		location = 11497
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -457,7 +517,7 @@ units = {
 			name_order = 1
 		}
 		location = 532
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -467,7 +527,7 @@ units = {
 			name_order = 1
 		}
 		location = 532
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -477,7 +537,7 @@ units = {
 			name_order = 1
 		}
 		location = 532
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -487,7 +547,7 @@ units = {
 			name_order = 1
 		}
 		location = 732
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -497,7 +557,7 @@ units = {
 			name_order = 1
 		}
 		location = 732
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -507,7 +567,7 @@ units = {
 			name_order = 1
 		}
 		location = 732
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -517,7 +577,7 @@ units = {
 			name_order = 1
 		}
 		location = 6723
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -527,7 +587,7 @@ units = {
 			name_order = 1
 		}
 		location = 6723
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -537,7 +597,7 @@ units = {
 			name_order = 1
 		}
 		location = 9527
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -547,7 +607,7 @@ units = {
 			name_order = 1
 		}
 		location = 9527
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -557,7 +617,7 @@ units = {
 			name_order = 1
 		}
 		location = 3718
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
 
@@ -567,8 +627,58 @@ units = {
 			name_order = 1
 		}
 		location = 3718
-		division_template = "Civil-war-division"
+		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 692
+		division_template = "Landwaffe"
+		start_experience_factor = 1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 692
+		division_template = "Landwaffe"
+		start_experience_factor = 1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 692
+		division_template = "Landwaffe"
+		start_experience_factor = 1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Landwaffe"
+		start_experience_factor = 1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11666
+		division_template = "Landwaffe"
+		start_experience_factor = 1
 	}
 }
 air_wings = {

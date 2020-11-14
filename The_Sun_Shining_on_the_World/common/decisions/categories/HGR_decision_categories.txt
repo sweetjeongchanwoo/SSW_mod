@@ -10,3 +10,13 @@ HGR_war_Support_from_Italy = {
         has_completed_focus = HGR_war_Blackshirt_Volunteers
     }
 }
+
+HGR_civill_war_militia = {
+
+    icon = military_operation
+	
+    allowed = {
+	    original_tag = HGR
+    }
+    
+}

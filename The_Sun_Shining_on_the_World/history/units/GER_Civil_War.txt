@@ -1,4 +1,22 @@
 division_template = {
+	name = "kooperative Miliz"					
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+   		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
 	name = "Civil-war-division"					
 	division_names_group = GER_Inf_01
 	is_locked = yes

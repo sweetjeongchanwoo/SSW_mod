@@ -1,21 +1,35 @@
 division_template = {
-	name = "Civil-war-division"					
+	name = "kooperative Miliz"					
 	division_names_group = GER_Inf_01
 	is_locked = yes
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-   		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+   		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
 	}
-	support = {
-		engineer = { x = 0 y = 0 }
+}
+division_template = {
+	name = "Menschen Schutzstaffel"				
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 1 y = 0 }
+		miliria = { x = 1 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Artillery-division"					
+	name = "Himmler Armee"					
 	division_names_group = GER_Inf_01
 	is_locked = no
 	regiments = {
@@ -28,55 +42,96 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Schutzstaffel"					
+	division_names_group = GER_Inf_01
+	is_locked = no
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+	}
+	support = {
+		artillery_brigade = { x = 0 y = 0 }
 	}
 }
 
 units = {
 	division= {
-		name = "1.Artillery-division"
+		name = "1.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "2.Artillery-division"
+		name = "2.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "3.Artillery-division"
+		name = "3.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "4.Artillery-division"
+		name = "4.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "4.Artillery-division"
+		name = "5.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "4.Artillery-division"
+		name = "6.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "4.Artillery-division"
+		name = "7.Himmler Armee"
 		location = 9517
-		division_template = "Artillery-division"
+		division_template = "Himmler Armee"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "8.Himmler Armee"
+		location = 9517
+		division_template = "Himmler Armee"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "9.Himmler Armee"
+		location = 9517
+		division_template = "Himmler Armee"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "10.Himmler Armee"
+		location = 9517
+		division_template = "Himmler Armee"
 		start_experience_factor = 0.3
 	}
 	
@@ -86,7 +141,7 @@ units = {
 			name_order = 1
 		}
 		location = 3512
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	
@@ -96,7 +151,7 @@ units = {
 			name_order = 1
 		}
 		location = 3512
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -106,7 +161,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -116,7 +171,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -126,7 +181,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -136,7 +191,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -146,7 +201,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -156,7 +211,7 @@ units = {
 			name_order = 1
 		}
 		location = 6469
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -168,7 +223,7 @@ units = {
 			name_order = 1
 		}
 		location = 9482
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -178,7 +233,7 @@ units = {
 			name_order = 1
 		}
 		location = 9482
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -188,7 +243,7 @@ units = {
 			name_order = 1
 		}
 		location = 9482
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -198,7 +253,7 @@ units = {
 			name_order = 1
 		}
 		location = 9482
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -208,7 +263,7 @@ units = {
 			name_order = 1
 		}
 		location = 9482
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -219,7 +274,7 @@ units = {
 			name_order = 1
 		}
 		location = 9547
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -229,7 +284,7 @@ units = {
 			name_order = 1
 		}
 		location = 9547
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -239,7 +294,7 @@ units = {
 			name_order = 1
 		}
 		location = 11533
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -249,7 +304,7 @@ units = {
 			name_order = 1
 		}
 		location = 11533
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -259,7 +314,7 @@ units = {
 			name_order = 1
 		}
 		location = 564
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -269,7 +324,7 @@ units = {
 			name_order = 1
 		}
 		location = 564
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -279,7 +334,7 @@ units = {
 			name_order = 1
 		}
 		location = 9524
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -289,7 +344,7 @@ units = {
 			name_order = 1
 		}
 		location = 9524
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -299,7 +354,7 @@ units = {
 			name_order = 1
 		}
 		location = 11445
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -309,7 +364,7 @@ units = {
 			name_order = 1
 		}
 		location = 11445
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -319,7 +374,7 @@ units = {
 			name_order = 1
 		}
 		location = 11445
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -329,7 +384,7 @@ units = {
 			name_order = 1
 		}
 		location = 11445
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -339,7 +394,7 @@ units = {
 			name_order = 1
 		}
 		location = 13116
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -349,7 +404,7 @@ units = {
 			name_order = 1
 		}
 		location = 13116
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -359,7 +414,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -369,7 +424,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -379,7 +434,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -389,7 +444,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -399,7 +454,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -409,7 +464,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -419,7 +474,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -429,7 +484,7 @@ units = {
 			name_order = 1
 		}
 		location = 6421
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 
@@ -439,7 +494,7 @@ units = {
 			name_order = 1
 		}
 		location = 3474
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -448,7 +503,7 @@ units = {
 			name_order = 1
 		}
 		location = 3474
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -457,7 +512,7 @@ units = {
 			name_order = 1
 		}
 		location = 11404
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -466,7 +521,7 @@ units = {
 			name_order = 1
 		}
 		location = 11404
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -475,7 +530,7 @@ units = {
 			name_order = 1
 		}
 		location = 9416
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -484,7 +539,7 @@ units = {
 			name_order = 1
 		}
 		location = 9416
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -493,7 +548,7 @@ units = {
 			name_order = 1
 		}
 		location = 11544
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -502,7 +557,7 @@ units = {
 			name_order = 1
 		}
 		location = 11544
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -511,7 +566,7 @@ units = {
 			name_order = 1
 		}
 		location = 561
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -520,7 +575,7 @@ units = {
 			name_order = 1
 		}
 		location = 561
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -529,7 +584,7 @@ units = {
 			name_order = 1
 		}
 		location = 11529
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -538,7 +593,7 @@ units = {
 			name_order = 1
 		}
 		location = 11529
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -547,7 +602,7 @@ units = {
 			name_order = 1
 		}
 		location = 9545
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -556,7 +611,7 @@ units = {
 			name_order = 1
 		}
 		location = 9545
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -565,7 +620,7 @@ units = {
 			name_order = 1
 		}
 		location = 11499
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -574,7 +629,7 @@ units = {
 			name_order = 1
 		}
 		location = 11499
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -583,7 +638,7 @@ units = {
 			name_order = 1
 		}
 		location = 3690
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -592,7 +647,7 @@ units = {
 			name_order = 1
 		}
 		location = 3690
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -601,7 +656,7 @@ units = {
 			name_order = 1
 		}
 		location = 9655
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -610,7 +665,7 @@ units = {
 			name_order = 1
 		}
 		location = 9655
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -619,7 +674,7 @@ units = {
 			name_order = 1
 		}
 		location = 11623
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -628,7 +683,7 @@ units = {
 			name_order = 1
 		}
 		location = 11623
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -637,7 +692,7 @@ units = {
 			name_order = 1
 		}
 		location = 661
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -646,7 +701,7 @@ units = {
 			name_order = 1
 		}
 		location = 661
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -655,7 +710,7 @@ units = {
 			name_order = 1
 		}
 		location = 3660
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -664,7 +719,57 @@ units = {
 			name_order = 1
 		}
 		location = 3660
-		division_template = "Civil-war-division"
+		division_template = "Menschen Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9517
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9517
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 663
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+	
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 663
+		division_template = "Schutzstaffel"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6469
+		division_template = "Schutzstaffel"
 		start_experience_factor = 0.1
 	}
 }

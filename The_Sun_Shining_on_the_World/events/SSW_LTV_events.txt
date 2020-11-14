@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = SSW_LTV.1.a
 		load_oob = "LTV_Civil_War"
+		add_ideas = GER_war_ideas_1
 	}
 }
 
