@@ -1,6 +1,12 @@
 LTV_civill_war_militia = {
 
     icon = military_operation
+
+    available = {
+		 has_war_with = GER
+        has_war_with = HLH
+        has_war_with = LTV	
+	}
 	
     allowed = {
 	    original_tag = LTV

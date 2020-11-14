@@ -8,7 +8,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = german_advisors
 			
 			modifier = {
                 air_air_superiority_attack_factor = 0.1
@@ -25,7 +25,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = generic_economic_increase
 			
 			modifier = {
                 consumer_goods_factor = -0.05
@@ -39,7 +39,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = generic_infantry_bonus
 			
 			modifier = {
                 max_dig_in = 1
@@ -56,7 +56,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = new_deal
 			
 			modifier = {
                 consumer_goods_factor = -0.05
@@ -70,7 +70,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = spa_la_division_azul
 			
 			modifier = {
                 mobilization_speed = 0.2
@@ -86,7 +86,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = idea_chi_hyper_inflation5
 			
 			modifier = {
                 production_factory_max_efficiency_factor = -0.15
@@ -103,7 +103,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = generic_intel_bonus
 			
 			modifier = {
                 targeted_modifier = { tag = GER attack_bonus_against = 0.2 }
@@ -119,7 +119,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = idea_chi_war_of_resistance3
 			
 			modifier = {
                 attack_bonus_against = -0.2
@@ -134,7 +134,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription
+			picture = german_advisors
 			
 			modifier = {
                 air_ace_generation_chance_factor = 0.10

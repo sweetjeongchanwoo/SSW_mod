@@ -108,7 +108,7 @@ ideas = {
 				always = no
 			}
 
-			#picture = 
+			picture = air_war_plans_division_focus
 			modifier = {
 				air_ace_generation_chance_factor = -0.10
 				enemy_army_bonus_air_superiority_factor = 0.05

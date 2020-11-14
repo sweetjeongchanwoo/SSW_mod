@@ -62,7 +62,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -117,7 +117,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -172,7 +172,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -227,7 +227,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -282,7 +282,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -337,7 +337,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -392,7 +392,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -447,7 +447,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -502,7 +502,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -557,7 +557,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -612,7 +612,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -667,7 +667,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -722,7 +722,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -777,7 +777,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt
@@ -832,7 +832,7 @@ HGR_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = HGR_war_01_tt

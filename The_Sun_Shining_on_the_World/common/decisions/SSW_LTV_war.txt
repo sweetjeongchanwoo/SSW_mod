@@ -15,7 +15,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -70,7 +70,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -125,7 +125,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -180,7 +180,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -235,7 +235,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -290,7 +290,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -345,7 +345,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -400,7 +400,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -455,7 +455,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -510,7 +510,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -565,7 +565,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -620,7 +620,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -675,7 +675,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -730,7 +730,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
@@ -785,7 +785,7 @@ LTV_civill_war_militia = {
 			factor = 10
 		}
 
-		cost = 50
+		cost = 20
 
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
