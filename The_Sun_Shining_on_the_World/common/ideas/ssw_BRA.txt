@@ -25,9 +25,8 @@ ideas = {
 			picture = nti_soviet_pact
 			modifier = {
 				anarchism_drift = -0.05
-				communism_drift = -0.05
-				syndicalism_drift = -0.05
-				socialism_drift = -0.04
+				progressive_communism_drift = -0.05
+				classical_communism_drift = -0.05
 				social_democracy_drift = -0.03
 			}
 		}

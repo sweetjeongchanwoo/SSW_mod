@@ -842,11 +842,11 @@ completion_reward = {
 		completion_reward = {
 			RUS = {
 				set_politics = {
-				ruling_party = authoritative_democracy
+				ruling_party = authority_democracy
 			}
 		}
 		add_popularity = {
-			ideology = authoritative_democracy
+			ideology = authority_democracy
 			popularity = 0.84
 		}
 			RUS = {

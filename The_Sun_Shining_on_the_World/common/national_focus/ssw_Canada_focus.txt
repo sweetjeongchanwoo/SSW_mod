@@ -65,7 +65,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = CAN_idea_2
 			set_politics = {
-				ruling_party = authoritative_democracy
+				ruling_party = authority_democracy
 				elections_allowed = no
 			}
 		}

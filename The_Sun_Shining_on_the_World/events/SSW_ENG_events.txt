@@ -88,10 +88,10 @@ country_event = {
 
 	option = {
 		name = SSW_ENG.7.a
-	add_popularity = { ideology = conservatism popularity = 0.12 }
-	remove_popularity = { ideology = liberalism popularity = 0.12 }
+	add_popularity = { ideology = social_conservatism popularity = 0.12 }
+	remove_popularity = { ideology = social_liberalism popularity = 0.12 }
 	set_politics = {
-		ruling_party = conservatism
+		ruling_party = social_conservatism
 			election_frequency = 60
 			elections_allowed = yes
 		}

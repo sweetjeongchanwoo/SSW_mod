@@ -191,7 +191,7 @@ ideas = {
 			removal_cost = -1
 			picture = anti_soviet_pact
 			modifier = {
-				authoritative_democracy_drift = 0.1
+				authority_democracy_drift = 0.1
 				political_power_gain = -0.25
 			}
 		}

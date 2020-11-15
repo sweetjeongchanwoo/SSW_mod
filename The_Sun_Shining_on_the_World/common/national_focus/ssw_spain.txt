@@ -437,10 +437,10 @@ focus_tree = {
 			remove_ideas = { spr_debahu_03 }
 			SPR = {
 					set_politics = {
-					ruling_party = militarism 
+					ruling_party = authority_despotism_ideology 
 				}
 			add_popularity = {
-					ideology = militarism 
+					ideology = authority_despotism_ideology 
 					popularity = 0.61
 				}
 	add_political_power = 40
@@ -449,7 +449,7 @@ focus_tree = {
 		desc = "POLITICS_MILITARY_JUNTA_DESC"
 		picture = "GFX_portrait_SPA_military_junta"
 		expire = "1965.1.1"
-		ideology = militarism   
+		ideology = authority_despotism_ideology   
 		traits = {
 			divided_interests
 		}
@@ -552,7 +552,7 @@ focus_tree = {
 		completion_reward = {
 			SPR = {
 			add_popularity = {
-					ideology = militarism 
+					ideology = authority_despotism_ideology 
 					popularity = 1
 				}
 	add_political_power = 60
@@ -1579,11 +1579,11 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			SPR = {
-					set_politics = {
-					ruling_party = neutrality  
+				set_politics = {
+					ruling_party = authority_despotism  
 				}
-			add_popularity = {
-					ideology = neutrality  
+				add_popularity = {
+					ideology = authority_despotism  
 					popularity = 0.87
 				}
 	add_political_power = 40
@@ -1592,7 +1592,7 @@ focus_tree = {
 		desc = "POLITICS_JUAN_III_DESC"
 		picture = ""
 		expire = "1965.1.1"
-		ideology = neutrality 
+		ideology = authority_despotism_ideology 
 		traits = {
 			
 		}

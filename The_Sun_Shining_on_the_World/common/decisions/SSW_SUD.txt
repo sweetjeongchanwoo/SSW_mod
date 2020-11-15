@@ -392,7 +392,7 @@ SUD_religious_confrontation_decision = {
 		    add_stability = -0.06
 			add_war_support = 0.05
 			add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.02
 			}
 			SUD_advantage_muslims = yes	
@@ -425,7 +425,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		    add_stability = 0.05
 			add_war_support = -0.06
 			add_popularity = {
-				ideology = fascism
+				ideology = national_fascism
 				popularity = 0.02
 			}
 			SUD_advantage_church = yes	
@@ -457,7 +457,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		
 		remove_effect = {
 			add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.05
 			}
 			SUD_advantage_church = yes	
@@ -491,7 +491,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		
 		remove_effect = {
 			add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.05
 			}
 			SUD_advantage_muslims = yes	
@@ -525,7 +525,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		
 		remove_effect = {
 			add_popularity = {
-				ideology = fascism
+				ideology = national_fascism
 				popularity = 0.05
 			}
 			SUD_advantage_church = yes	
@@ -548,7 +548,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		cost = 25
 		
 		available = {
-		    has_government = conservatism
+		    has_government = social_conservatism
 			NOT = { has_idea = SUD_absolute_advantage_of_islam }
 			NOT = { has_country_flag = SUD_does_anyother_religious_policy }
 		}
@@ -577,7 +577,7 @@ clr_country_flag = SUD_does_anyother_religious_policy
 		cost = 25
 		
 		available = {
-		    has_government = fascism
+		    has_government = national_fascism
 			NOT = { has_idea = SUD_absolute_advantage_of_church }
 			NOT = { has_country_flag = SUD_does_anyother_religious_policy }
 		}

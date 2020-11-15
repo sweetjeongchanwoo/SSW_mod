@@ -125,7 +125,7 @@ focus_tree = {
 			add_stability = 0.20
 			fascism_drift = 0.06
 			set_party_name = {
-				ideology = fascism
+				ideology = national_fascism
 				name = OKL_Ku_Klux_Klan
 			}
 		}
@@ -360,7 +360,7 @@ focus_tree = {
 			add_ideas = war_economy
 			create_country_leader = {
 				name = Edward_L._Jackson
-				ideology = fascism
+				ideology = national_fascism
 			}
 		}
 

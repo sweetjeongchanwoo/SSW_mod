@@ -962,7 +962,7 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 0.1 }
 		completion_reward = {
 		    add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.25
 			}
 			add_ideas = SUD_hizb_al_umma
@@ -979,12 +979,12 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 			focus = SUD_support_for_the_hizb_al_umma
 		}
 		available = {
-		    conservatism > 0.5
+		    social_conservatism > 0.5
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			set_politics = {
-				ruling_party = conservatism
+				ruling_party = social_conservatism
 			}
 		}
 		x = 27
@@ -1001,7 +1001,7 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 		    add_stability = 0.1
 			add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.15
 			}
 		}
@@ -1325,7 +1325,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 		}
 		available = {
 		    compare_autonomy_progress_ratio> 0.9
-			conservatism > 0.80
+			social_conservatism > 0.80
 		}
 		ai_will_do = { factor = 10 }
 		completion_reward = {

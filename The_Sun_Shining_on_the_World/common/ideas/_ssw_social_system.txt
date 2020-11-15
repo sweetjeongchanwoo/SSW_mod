@@ -1,14 +1,9 @@
 ####ちょこグルが作ったよ　ディスコ→ちょこグル#1476　バグがあったら教えてください
-
 ideas = {
-
 	social_system = { 
-	
 		law = yes
-		
 		#Lessons of History
 		collectivist_anarchism = {
-
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -74,14 +69,23 @@ ideas = {
 
 			ai_will_do = {
    				factor = 0.5
-
    				modifier = {
-					has_government = fascism
+					has_government = progressive_communism
 					factor = 2
 				}
 
    				modifier = {
-					has_government = communism
+					has_government = classical_communism
+					factor = 2
+				}
+				
+   				modifier = {
+					has_government = national_fascism
+					factor = 2
+				}
+				
+   				modifier = {
+					has_government = national_socialism
 					factor = 2
 				}
    			}
@@ -119,12 +123,11 @@ ideas = {
 				   factor = 0.75
 				   
 				   modifier = {
-					has_government = militarism
+					has_government = authority_democracy
 					factor = 1.5
 				}
    			}
 		}
-		
 		#Diplomatic Efforts
 		Corporate_council_system = {
 
@@ -157,11 +160,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+					has_government = social_liberalism
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+					has_government = authority_despotism_ideology
 					factor = 0.5
 				}
    			}
@@ -194,11 +197,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+					has_government = social_liberalism
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+					has_government = authority_despotism_ideology
 					factor = 0.5
 				}
    			}
@@ -230,11 +233,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+					has_government = social_liberalism
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+					has_government = authority_despotism_ideology
 					factor = 0.5
 				}
    			}
@@ -267,11 +270,11 @@ ideas = {
    				factor = 0.5
 				
    				modifier = {
-					has_government = democratic
+					has_government = social_liberalism
 					factor = 2
 				}
 				modifier = {
-					has_government = neutrality
+					has_government = authority_despotism_ideology
 					factor = 0.5
 				}
    			}

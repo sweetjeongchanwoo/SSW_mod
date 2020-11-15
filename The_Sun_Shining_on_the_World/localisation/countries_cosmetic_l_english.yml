@@ -20,6 +20,10 @@
  SOV_provisional_DEF:0 "ソビエト臨時政府"
  SOV_provisional_ADJ:0 "ソビエト臨時政府"
  
+ BRA_empire:0 "ブラジル帝国"
+ BRA_empire_DEF:0 "ブラジル帝国"
+ BRA_empire_ADJ:0 "ブラジル"
+ 
  OTT:0 "オスマン帝国"
  OTT_DEF:0 "オスマン帝国"
  OTT_ADJ:0 "オスマン"

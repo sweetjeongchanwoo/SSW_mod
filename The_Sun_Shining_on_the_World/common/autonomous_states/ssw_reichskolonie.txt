@@ -20,7 +20,7 @@ autonomy_state = {
 
 	allowed = {
 		OVERLORD = { original_tag = GER }
-		OVERLORD = { has_government = nazism }
+		OVERLORD = { has_government = national_socialism }
 		OR = {
 			tag = TOG
 			tag = WAF
