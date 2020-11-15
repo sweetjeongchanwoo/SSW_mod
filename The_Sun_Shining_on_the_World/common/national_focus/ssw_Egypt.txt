@@ -466,11 +466,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_popularity = {
-				ideology = fascism
+				ideology = national_fascism
 				popularity = 0.2
 			}
 			add_popularity = {
-				ideology = nazism
+				ideology = national_socialism
 				popularity = 0.2
 			}
 			nazism_drift = 0.1
@@ -492,11 +492,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_popularity = {
-				ideology = conservatism
+				ideology = social_conservatism
 				popularity = 0.1
 			}
 			add_popularity = { 
-				ideology = democratic
+				ideology = social_liberalism
 				popularity = 0.1
 			}
 			democratic_drift = 0.1
@@ -538,13 +538,13 @@ focus_tree = {
 		completion_reward = {
 			set_politics = {
 				parties = {
-					democratic = {
+					social_liberalism = {
 						popularity = 0
 					}
-					fascism = {
+					national_fascism = {
 						popularity = 75
 						ruling_party = {
-							fascism
+							national_fascism
 						}
 					}
 				}
@@ -570,16 +570,16 @@ focus_tree = {
 		completion_reward = {
 			set_politics = {
 				parties = {
-					democratic = {
+					social_liberalism = {
 						popularity = 10
 					}
-					fascism = {
+					national_fascism = {
 						popularity = 0
-						conservatism = {
+						social_conservatism = {
 							popularity = 60
 						}
 						ruling_party = {
-							conservatism
+							social_conservatism
 						}
 					}
 				}

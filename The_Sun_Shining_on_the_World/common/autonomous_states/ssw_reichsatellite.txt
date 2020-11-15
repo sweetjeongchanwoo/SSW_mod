@@ -22,11 +22,11 @@ autonomy_state = {
 		OR = {
 			AND = {
 				OVERLORD = { original_tag = GER }
-				has_government = nazism
+				has_government = national_socialism
 			}
 			AND = {
 				OVERLORD = { original_tag = ITA }
-				has_government = fascism
+				has_government = national_fascism
 			}
 		}
 		

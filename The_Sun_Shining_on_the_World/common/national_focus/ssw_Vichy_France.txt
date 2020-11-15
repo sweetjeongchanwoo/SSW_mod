@@ -255,7 +255,45 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = SPR_professional_military_1
 				}
+<<<<<<< HEAD
 
+=======
+			}
+		}
+	}
+	focus = {
+		id = VFR_16
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5
+		prerequisite = {
+			focus = VFR_15
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			add_popularity = {
+				ideology = progressive_communism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = classical_communism
+				popularity = -1
+			}
+		}
+	}
+	focus = {
+		id = VFR_17
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5
+		prerequisite = {
+			focus = VFR_15
+		}
+		x = 5
+		y = 8
+		completion_reward = {
+			add_ideas = CZE_national_fascism_idea
+		}
+>>>>>>> e3312483d60a4c708885a5564d6bc9d338fbff17
 	}
 	focus = {
 		id = VFR_27

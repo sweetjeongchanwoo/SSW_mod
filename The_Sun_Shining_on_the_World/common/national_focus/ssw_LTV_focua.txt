@@ -446,10 +446,10 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			set_politics = {
-				ruling_party = fascism    
+				ruling_party = national_fascism    
 			}
 		add_popularity = {
-				ideology = fascism    
+				ideology = national_fascism    
 				popularity = 0.87
 			}  
 					add_ideas = ltv_ideas_12
@@ -1073,11 +1073,12 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			LTV = {
-					set_politics = {
-					ruling_party = neutrality  
+				set_cosmetic_tag = GER_empire
+				set_politics = {
+					ruling_party = authority_despotism  
 				}
-			add_popularity = {
-					ideology = neutrality  
+				add_popularity = {
+					ideology = authority_despotism  
 					popularity = 0.87
 				}
 	add_political_power = 40
@@ -1086,7 +1087,7 @@ focus_tree = {
 		desc = "POLITICS_LOUIS_FERDINAND_I_DESC"
 		picture = "LTV_king1_"
 		expire = "1965.1.1"
-		ideology = neutrality 
+		ideology = authority_despotism_ideology 
 		traits = {
 			
 		}

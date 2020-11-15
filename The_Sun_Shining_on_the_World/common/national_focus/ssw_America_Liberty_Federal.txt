@@ -133,7 +133,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = social_liberalism
 				popularity = -0.3
 			}
 		}
@@ -220,7 +220,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democracy
+				ideology = social_liberalism
 				popularity = 0.1
 			}
 		}

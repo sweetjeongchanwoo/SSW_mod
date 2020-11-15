@@ -157,7 +157,7 @@ ideas = {
 		EGY_blood_and_land = {
 			allowed = {	always = yes	}
 			removal_cost = -1
-			allowed = allowed_civil_war = {	always = yes	}
+			allowed_civil_war = {	always = yes	}
 			modifier  = {
 				stability_factor = 0.01
 				MONTHLY_POPULATION = 0.1

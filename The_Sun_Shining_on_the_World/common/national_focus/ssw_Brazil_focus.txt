@@ -154,10 +154,11 @@ category = land_doctrine
 			factor = 1
 		}
 		completion_reward = {
+			set_cosmetic_tag = BRA_empire
 			set_politics= {
- ruling_party = neutrality 
-elections_allowed = no 
-}
+				ruling_party = authority_despotism
+				elections_allowed = no 
+			}
 		}
 	}
 
@@ -581,12 +582,12 @@ target = URG
 		}
 		completion_reward = {
 			505 = {
-	add_building_construction = {
-	type = infrastructure
-	level = 3
-	instant_build = yes
-	}
-}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -605,10 +606,10 @@ target = URG
 		}
 		completion_reward = {
 			505 = {
-				add_building_construction = {　
-				type = infrastructure
-				level = 4
-				instant_build = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
 				}
 			}
 		}
@@ -1222,10 +1223,10 @@ modifier = TAG_friend_country
 		}
 		completion_reward = {
 			set_capital= 505
-set_political_party= { 
-ideology = conservative 
-popularity = 0.5 
-}
+			set_political_party= { 
+				ideology = social_conservatism 
+				popularity = 0.5 
+			}
 		}
 	}
 
@@ -1301,7 +1302,7 @@ target = ARG
 			factor = 1
 		}
 		completion_reward = {
-			conservatism_drift = 0.1
+			social_conservatism_drift = 0.1
 		}
 	}
 
@@ -1320,9 +1321,9 @@ target = ARG
 		}
 		completion_reward = {
 			set_politics= {
- ruling_party = conservatism 
-elections_allowed = yes 
-}
+				ruling_party = social_conservatism 
+				elections_allowed = yes 
+			}
 		}
 	}
 
@@ -1380,7 +1381,7 @@ elections_allowed = yes
 		}
 		completion_reward = {
 			set_politics= {
- ruling_party = authoritative_democracy 
+ ruling_party = authority_democracy 
 elections_allowed = no 
 }
 		}

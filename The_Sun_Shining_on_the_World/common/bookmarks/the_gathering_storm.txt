@@ -109,7 +109,7 @@ bookmarks = {
 		"CHI"={
 			minor = yes
 			history = ""
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 
 			}
@@ -129,7 +129,7 @@ bookmarks = {
 		"PIN"={
 			minor = yes
 			history = ""
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 
 			}
@@ -149,7 +149,7 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = ""
-			ideology = democratic
+			ideology = social_liberalism
 			ideas = {
 
 			}
@@ -159,7 +159,7 @@ bookmarks = {
 		"SOV"={
 			minor = yes
 			history = ""
-			ideology = communism
+			ideology = classical_communism
 			ideas = {
 
 			}
