@@ -347,7 +347,7 @@ focus_tree = {
 							type = infantry_equipment_0
 							amount = 4400
 							producer = GER
-						}
+					}
 				}
 
 	}

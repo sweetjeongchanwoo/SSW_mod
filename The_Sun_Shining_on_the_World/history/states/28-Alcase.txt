@@ -4,7 +4,7 @@ state={
 	name="STATE_28" # Alsace-Lorraine
 	manpower = 2075600
 	
-	state_category = city
+	state_category = largy_city
 	resources={
 		steel=100 # was: 236
 	}
@@ -19,32 +19,33 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
+			arms_factory = 2
 			549 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			678 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			3629 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			6529 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			9503 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			9559 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			11502 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			anti_air_building = 5
@@ -53,11 +54,6 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = VFR
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={

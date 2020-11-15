@@ -11,51 +11,19 @@ country_event = {
 	option = {
 		name = SSW_HGR.1.a
 		load_oob = "HGR_Civil_War"
+		unlock_decision_category_tooltip = HGR_civill_war_militia
 	}
 }
 
-country_event = {
+news_event = {
 	id = SSW_HGR.2
 	title = SSW_HGR.2.t
 	desc = SSW_HGR.2.d
-	picture = GFX_report_event_hitler_croatia_handshake
+	picture = GFX_news_event_017
 
 	is_triggered_only = yes
 
 	option = {
 		name = SSW_HGR.2.a
-		ITA  = {
-			send_equipment = {
-				equipment = infantry_equipment
-				amount = 1000
-				target = HGR
-			}
-		}
-	}
-	option = {
-		name = SSW_HGR.2.b
-	}
-}
-
-country_event = {
-	id = SSW_HGR.3
-	title = SSW_HGR.3.t
-	desc = SSW_HGR.3.d
-	picture = GFX_report_event_hitler_croatia_handshake
-
-	is_triggered_only = yes
-
-	option = {
-		name = SSW_HGR.3.a
-		ITA  = {
-			send_equipment = {
-				equipment = support_equipment
-				amount = 500
-				target = HGR
-			}
-		}
-	}
-	option = {
-		name = SSW_HGR.3.b
 	}
 }

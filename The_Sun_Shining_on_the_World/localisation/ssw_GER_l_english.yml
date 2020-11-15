@@ -182,7 +182,7 @@
  Allied_forces_2:0 "同盟国の陸軍"
  GER_dominance:0 "傀儡各国の軍をドイツ国防軍下の陸軍とする"
  GER_allied:0 "すべての陸軍の地位を平等とする"
- GER_war_ideas_1 "空軍の空洞化"
+ GER_war_ideas_1:0 "空軍の空洞化"
 
 #ツールチップ
  GER_Germania_plan_bypass_tt:0 "総統が死亡した"

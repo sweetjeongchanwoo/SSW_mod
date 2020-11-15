@@ -19,16 +19,10 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
-
+			radar_station = 1
+			synthetic_refinery = 3
 		}
 		add_core_of = GER
-
-		1939.1.1 ={
-			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
-			}
-		}
 	}
 
 	provinces={

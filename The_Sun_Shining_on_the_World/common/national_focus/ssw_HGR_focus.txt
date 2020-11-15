@@ -1,0 +1,923 @@
+focus_tree = {
+	id = ssw_HGR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HGR
+		}
+	}
+	default = no
+	focus = {
+		id = HGR_Recovering_from_Civil_War
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 7.00
+		x = 11
+		y = 0
+		completion_reward = {
+			add_timed_idea = {
+				idea = HGR_war_idea_15
+				days = 450
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Army_Reform
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = HGR_Iron_Man_fleet
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		x = 37
+		y = 0
+
+	}
+	focus = {
+		id = HGR_Alliance_with_Italy
+		icon = GFX_focus_befriend_italy
+		cost = 5.00
+		x = 46
+		y = 0
+
+	}
+	focus = {
+		id = HGR_The_Fuhrer_Army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 32
+		y = 0
+
+	}
+	focus = {
+		id = HGR_Dealing_with_partisans
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Recovering_from_Civil_War
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			unlock_decision_category_tooltip = HGR_Umgang_mit_dem_Widerstand
+			add_ideas = HGR_war_idea_16
+		}
+
+	}
+	focus = {
+		id = HGR_Prohibition_of_anti_establishment_movements
+		icon = GFX_focus_cze_german_puppet
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Dealing_with_partisans
+		}
+		
+		available = {
+			62 = {
+					is_core_of = HGR
+			}
+			64 = {
+					is_core_of = HGR
+			}
+			60 = {
+					is_core_of = HGR
+			}
+			69 = {
+					is_core_of = HGR
+			}
+			74 = {
+					is_core_of = HGR
+			}
+			67 = {
+					is_core_of = HGR
+			}
+			66 = {
+					is_core_of = HGR
+			}
+			68 = {
+					is_core_of = HGR
+			}
+			63 = {
+					is_core_of = HGR
+			}
+			86 = {
+					is_core_of = HGR
+			}
+			72 = {
+					is_core_of = HGR
+			}
+			762 = {
+					is_core_of = HGR
+			}
+			87 = {
+					is_core_of = HGR
+			}
+			98 = {
+					is_core_of = HGR
+			}
+			85 = {
+					is_core_of = HGR
+			}
+			5 = {
+					is_core_of = HGR
+			}
+			97 = {
+					is_core_of = HGR
+			}
+			763 = {
+					is_core_of = HGR
+			}
+			188 = {
+					is_core_of = HGR
+			}
+			54 = {
+					is_core_of = HGR
+			}
+			50 = {
+					is_core_of = HGR
+			}
+			151 = {
+					is_core_of = HGR
+			}
+			3 = {
+					is_core_of = HGR
+			}
+			28 = {
+					is_core_of = HGR
+			}
+			42 = {
+					is_core_of = HGR
+			}
+			55 = {
+					is_core_of = HGR
+			}
+			8 = {
+					is_core_of = HGR
+			}
+			938 = {
+					is_core_of = HGR
+			}
+			51 = {
+					is_core_of = HGR
+			}
+			58 = {
+					is_core_of = HGR
+			}
+			812 = {
+					is_core_of = HGR
+			}
+			57 = {
+					is_core_of = HGR
+			}
+			59 = {
+					is_core_of = HGR
+			}
+			56 = {
+					is_core_of = HGR
+			}
+			61 = {
+					is_core_of = HGR
+			}
+		}
+
+		x = 1
+		y = 2
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = HGR_war_idea_17
+				days = 365
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Fuhrer_Gering
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HGR_Recovering_from_Civil_War
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			create_country_leader = {
+				name = "Göring Führer"
+				desc = ""
+				picture = "gfx/leaders/HGR/Goering.dds"
+				expire = "1965.1.1"
+				ideology = national_socialism_ideology
+				traits = {
+
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_restructuring_of_the_ministry
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Fuhrer_Gering
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+
+		}
+
+	}
+	focus = {
+		id = HGR_Imperial_Nature_Conservation_Act
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Recovering_from_Civil_War
+		}
+		x = 7
+		y = 1
+		completion_reward = {
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = HGR_welfare_guarantee
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Imperial_Nature_Conservation_Act
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+			add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = HGR_Full_recovery
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = HGR_welfare_guarantee
+		}
+		prerequisite = {
+			focus = HGR_restructuring_of_the_ministry
+		}
+		prerequisite = {
+			focus = HGR_Prohibition_of_anti_establishment_movements
+		}
+		x = 4
+		y = 3
+		completion_reward = {
+			remove_ideas = HGR_war_idea_12
+		}
+
+	}
+	focus = {
+		id = HGR_Resumption_of_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Recovering_from_Civil_War
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			news_event = SSW_HGR.2
+		}
+
+	}
+	focus = {
+		id = HGR_Hermann_Goring_Shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Resumption_of_trade
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+
+
+	}
+	focus = {
+		id = HGR_Harbour_preparation
+		icon = GFX_goal_generic_position_armies
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Resumption_of_trade
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			add_building_construction = {
+				type = naval
+				level = 5
+				instant_build = yes
+				province = 85
+			}
+			add_building_construction = {
+				type = naval
+				level = 3
+				instant_build = yes
+				province = 9388
+			}
+			add_building_construction = {
+				type = naval
+				level = 3
+				instant_build = yes
+				province = 9347
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Promoting_Solidarity
+		icon = GFX_goal_generic_national_unity
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Harbour_preparation
+		}
+		prerequisite = {
+			focus = HGR_Hermann_Goring_Shipyard
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			remove_ideas = {
+				HGR_war_idea_14
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Second_Four_Year_Plan
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Recovering_from_Civil_War
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = HGR_war_idea_18
+				days = 1460
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Transformation_of_the_Military_Industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Second_Four_Year_Plan
+		}
+		x = 15
+		y = 2
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Air_Force_Expansion_and_Reform
+		icon = GFX_goal_generic_air_production
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Transformation_of_the_Military_Industry
+			focus = HGR_Second_Four_Year_Plan
+		}
+		x = 17
+		y = 3
+		completion_reward = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Attracting_Italian_Companies
+		icon = GFX_focus_befriend_italy
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Air_Force_Expansion_and_Reform
+		}
+		prerequisite = {
+			focus = HGR_Transformation_of_the_Military_Industry
+		}
+		mutually_exclusive = {
+			focus = HGR_national_development
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = HGR_Fabrica_Dalmi_Pietro_Beretta_Plant
+		icon = GFX_goal_generic_production2
+		cost = 8.00
+		prerequisite = {
+			focus = HGR_Attracting_Italian_Companies
+		}
+		x = 15
+		y = 5
+		completion_reward = {
+			add_ideas = HGR_war_idea_19
+		}
+
+	}
+	focus = {
+		id = HGR_Promotion_of_private_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Second_Four_Year_Plan
+		}
+		x = 21
+		y = 2
+
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_Development_of_steel_resources
+		icon = GFX_focus_generic_steel
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Promotion_of_private_industry
+			focus = HGR_Second_Four_Year_Plan
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 67
+			}
+			add_resource = {
+				type = steel
+				amount = 25
+				state = 152
+			}
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 69
+			}
+			add_resource = {
+				type = steel
+				amount = 22
+				state = 60
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_national_development
+		icon = GFX_focus_generic_license_production
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Development_of_steel_resources
+		}
+		prerequisite = {
+			focus = HGR_Promotion_of_private_industry
+		}
+		mutually_exclusive = {
+			focus = HGR_Attracting_Italian_Companies
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = HGR_National_Factory_Hermann_Gering
+		icon = GFX_goal_generic_production
+		cost = 8.00
+		prerequisite = {
+			focus = HGR_national_development
+		}
+		x = 21
+		y = 5
+
+		completion_reward = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = HGR_autarky
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = HGR_National_Factory_Hermann_Gering
+			focus = HGR_Fabrica_Dalmi_Pietro_Beretta_Plant
+		}
+		x = 18
+		y = 6
+
+		completion_reward = {
+			add_ideas = HGR_war_idea_19
+		}
+	}
+	focus = {
+		id = HGR_Doctrinal_Development
+		icon = GFX_goal_generic_army_doctrines
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Army_Reform
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = HGR_The_eturn
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Army_Reform
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = HGRThe_New_Tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = HGR_Doctrinal_Development
+		}
+		prerequisite = {
+			focus = HGR_The_eturn
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = HGR_Cooperation_with_Italy
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Army_Reform
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = HGR_Landfe
+		icon = GFX_goal_demand_sudetenland
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Cooperation_with_Italy
+			focus = HGR_The_eturn
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = HGR_exotic_doctrine
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Army_Reform
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = HGR_Development_of_unique_infantry_equipment
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		prerequisite = {
+			focus = HGR_exotic_doctrine
+		}
+		prerequisite = {
+			focus = HGR_Cooperation_with_Italy
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = HGR_back_on_my_feet
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_Development_of_unique_infantry_equipment
+		}
+		prerequisite = {
+			focus = HGR_Landfe
+		}
+		prerequisite = {
+			focus = HGRThe_New_Tank
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = HGR_find_fault_with_a_bomb
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_The_Fuhrer_Army
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = HGR_blitz
+		icon = GFX_goal_generic_cavalry
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_find_fault_with_a_bomb
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = HGR_Development_of_jet_aircraft
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_The_Fuhrer_Army
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = HGR_Development_of_the_helicopter
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_Development_of_jet_aircraft
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = HGR_spirit_of_national_defense
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_Development_of_the_helicopter
+		}
+		prerequisite = {
+			focus = HGR_blitz
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = HGR_Fleet_shotgun_doctrine
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Iron_Man_fleet
+		}
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = HGR_Air_Supportis
+		icon = GFX_goal_generic_navy_carrier
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Iron_Man_fleet
+		}
+		x = 39
+		y = 1
+
+	}
+	focus = {
+		id = HGR_maritime_combat_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Air_Supportis
+		}
+		prerequisite = {
+			focus = HGR_Fleet_shotgun_doctrine
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = HGR_Cooperation_with_the_Italian_Navy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_maritime_combat_doctrine
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = HGR_colonial_question
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Alliance_with_Italy
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = HGR_Croatia_problem
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_colonial_question
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = HGR_Partition_of_France
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_colonial_question
+		}
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = HGR_ENG_Inviolable_Treaty
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_Alliance_with_Italy
+		}
+		x = 46
+		y = 1
+
+	}
+	focus = {
+		id = HGR_The_German_Empire_in_the_World
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_ENG_Inviolable_Treaty
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = HGR_Goering_Memorandum
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = HGR_The_German_Empire_in_the_World
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = HGR_To_the_Aegean_Sea
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_Goering_Memorandum
+		}
+		mutually_exclusive = {
+			focus = HGR_To_Iberia
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = HGR_Selection_for_the_State_Commissioner_s_District
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HGR_Alliance_with_Italy
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = HGR_commandeering_from_the_service
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Selection_for_the_State_Commissioner_s_District
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = HGR_To_Iberia
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = HGR_Goering_Memorandum
+		}
+		mutually_exclusive = {
+			focus = HGR_To_the_Aegean_Sea
+		}
+		x = 50
+		y = 5
+
+	}
+	focus = {
+		id = HGR_Second_Betrayal
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_To_Iberia
+		}
+		x = 50
+		y = 6
+
+	}
+	focus = {
+		id = HGR_Redevelopment_of_resources
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HGR_Selection_for_the_State_Commissioner_s_District
+		}
+		x = 51
+		y = 2
+
+	}
+	focus = {
+		id = HGR_Kicking_a_dead_bear
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = HGR_To_the_Aegean_Sea
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = HGR_The_Dichotomy_of_the_World
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HGR_Second_Betrayal
+			focus = HGR_Kicking_a_dead_bear
+		}
+		x = 46
+		y = 7
+
+	}
+}

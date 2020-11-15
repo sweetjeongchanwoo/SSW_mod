@@ -180,6 +180,13 @@ focus_tree = {
 				level = 2
 				instant_build = yes
 			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+			}
+			add_ideas = {
+				HGR_war_idea_10
+			}
 		}
 	}
 	focus = {
@@ -206,7 +213,8 @@ focus_tree = {
 		x = 9
 		y = 1
 		completion_reward = {
-			activate_decision = HGR_war_Requesting_assistance_from_Italy
+			custom_effect_tooltip = HGR_war_01_tt
+			unlock_decision_category_tooltip = HGR_war_Support_from_Italy
 			hidden_effect = {
 				division_template = {
 					name = "Esercito tedesco di volontari"
@@ -214,41 +222,48 @@ focus_tree = {
 	
 					is_locked = no
 					regiments = {
-						militia = {
+						motorized = {
 							x = 0
 							y = 0
 						}
-						militia = {
+						motorized = {
 							x = 0
 							y = 1
 						}
-						militia = {
+						motorized = {
 							x = 0
-							y = 2
+							y = 3
 						}
-						militia = {
+						motorized = {
+							x = 0
+							y = 4
+						}
+						motorized = {
 							x = 1
 							y = 0
 						}
-						militia = {
+						mechanized = {
 							x = 1
 							y = 1
 						}
-						militia = {
+						mechanized = {
 							x = 1
 							y = 2
 						}
-						militia = {
+						mechanized = {
+							x = 1
+							y = 3
+						}
+						mechanized = {
+							x = 1
+							y = 4
+						}
+						mechanized = {
 							x = 2
 							y = 0
 						}
-						militia = {
-							x = 2
-							y = 1
-						}
-						militia = {
-							x = 3
-							y = 0
+						support = {
+							artillery_brigade = { x = 0 y = 0 }
 						}
 					}
 				}
@@ -262,19 +277,23 @@ focus_tree = {
 						64
 					}
 					create_unit = {
-						division = "name = \"1. Gering Armee\" division_template = \"Gering Armee\" start_experience_factor = 0.3"
+						division = "name = \"1. Esercito tedesco di volontari\" division_template = \"Esercito tedesco di volontari\" start_experience_factor = 0.3"
 						owner = HGR
 					}
 					create_unit = {
-						division = "name = \"2. Gering Armee\" division_template = \"Gering Armee\" start_experience_factor = 0.3"
+						division = "name = \"2. Esercito tedesco di volontari\" division_template = \"Esercito tedesco di volontari\" start_experience_factor = 0.3"
 						owner = HGR
 					}
 					create_unit = {
-						division = "name = \"3. Gering Armee\" division_template = \"Gering Armee\" start_experience_factor = 0.3"
+						division = "name = \"3. Esercito tedesco di volontari\" division_template = \"Esercito tedesco di volontari\" start_experience_factor = 0.3"
 						owner = HGR
 					}
 					create_unit = {
-						division = "name = \"4. Gering Armee\" division_template = \"Gering Armee\" start_experience_factor = 0.3"
+						division = "name = \"4. Esercito tedesco di volontari\" division_template = \"Esercito tedesco di volontari\" start_experience_factor = 0.3"
+						owner = HGR
+					}
+					create_unit = {
+						division = "name = \"5. Esercito tedesco di volontari\" division_template = \"Esercito tedesco di volontari\" start_experience_factor = 0.3"
 						owner = HGR
 					}
 				}
@@ -294,7 +313,15 @@ focus_tree = {
 		y = 2
 
 		completion_reward = {
-			add_ideas = HGR_war_idea_1 
+			add_ideas = HGR_war_idea_1
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_3
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_3
+				amount = 250
+			}
 		}
 
 	}
@@ -398,7 +425,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
-				amount = 500
+				amount = 1000
 			}
 			add_ideas = HGR_war_idea_3
 		}
@@ -432,6 +459,11 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			remove_ideas = HGR_war_idea_8
+			add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 5000
+							producer = HGR
+			}
 		}
 
 	}
@@ -473,8 +505,40 @@ focus_tree = {
 		prerequisite = {
 			focus = HGR_war_For_the_sake_of_unity
 		}
+
+		available = {
+			has_war = no
+		}
+
 		x = 7
 		y = 8
+
+		completion_reward = {
+			custom_effect_tooltip = HGR_war_02_tt
+			hidden_effect = {
+				load_focus_tree = ssw_HGR_focus
+				add_ideas = {
+					HGR_war_idea_12
+					HGR_war_idea_13
+					HGR_war_idea_14
+					limited_conscription
+					partial_economic_mobilisation					
+				}
+				remove_ideas = {
+					Protester
+					Emergency_conscription
+					HGR_war_idea_1
+					HGR_war_idea_2
+					HGR_war_idea_3
+					HGR_war_idea_4
+					HGR_war_idea_5
+					HGR_war_idea_7
+					HGR_war_idea_9
+					HGR_war_idea_10
+					HGR_war_idea_11
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -492,6 +556,13 @@ focus_tree = {
 				level = 2
 				instant_build = yes
 			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+			}
+			add_ideas = {
+				HGR_war_idea_11
+			}
 		}
 
 	}
@@ -507,6 +578,10 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			add_ideas = HGR_war_idea_7
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 5000
+			}
 		}
 	}
 }
