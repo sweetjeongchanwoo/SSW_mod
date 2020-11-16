@@ -53,3 +53,16 @@ HGR_Umgang_mit_dem_Widerstand = {
         has_completed_focus = HGR_Dealing_with_partisans
     }
 }
+
+HGR_dec_cat_national_development = {
+
+    icon = military_operation
+
+    allowed = {
+	    original_tag = HGR
+    }
+
+    visible = {
+        has_completed_focus = HGR_national_development
+    }
+}
