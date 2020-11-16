@@ -229,12 +229,117 @@ country_event = {#内閣総辞職
 	}
 	option = {#松野鶴平
 		name = SSW_JAP.10.c
+		trigger = {
+			has_completed_focus = JAP_Shrink_due_to_lack_of_growth
+		}
 		complete_national_focus = JAP_select_Kuhara
 		retire_country_leader = yes
 		create_country_leader = {
     		name = "Tsuruhe Matsuno"
     		desc = ""
     		picture = "Portrait_Matsuno_Tsuruhe.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+}
+
+country_event = {#内閣総辞職
+	id = SSW_JAP.11
+	title = SSW_JAP.11.t
+	desc = SSW_JAP.11.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+
+	option = {#岸再任
+		name = SSW_JAP.11.a
+		complete_national_focus = JAP_Nobusuke_Kishi_reappointment
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Nobusuke Kishi"
+    		desc = ""
+    		picture = "Portrait_Kishi_Nobusuke.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+	option = {#鳩山再任
+		name = SSW_JAP.11.a
+		complete_national_focus = JAP_Hatoyama_Ichiro_reappointment
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Ichiro Hatoyama"
+    		desc = ""
+    		picture = "Portrait_Hatoyama_Ichiro.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+	option = {#吉田再任
+		name = SSW_JAP.11.a
+		complete_national_focus = JAP_Shigeru_Yosdida_coming_to_power
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Shigeru Yoshida"
+    		desc = ""
+    		picture = "Portrait_Yoshida_Shigeru.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+}
+
+country_event = {#内閣総辞職
+	id = SSW_JAP.12
+	title = SSW_JAP.12.t
+	desc = SSW_JAP.12.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+
+	option = {#uyoku
+		name = SSW_JAP.12.a
+		complete_national_focus = JAP_Nobusuke_Kishi_reappointment
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Kichiro Hiranuma"
+    		desc = ""
+    		picture = "Portrait_Kichiro_Hiranuma.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+	option = {#
+		name = SSW_JAP.12.a
+		complete_national_focus = JAP_Hatoyama_Ichiro_reappointment
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Fumimaro Konoe"
+    		desc = ""
+    		picture = "Portrait_Fumimaro_Konoe.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+	option = {#吉田再任
+		name = SSW_JAP.12.a
+		complete_national_focus = JAP_Shigeru_Yosdida_coming_to_power
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Shunroku Hata"
+    		desc = ""
+    		picture = "Portrait_Shunroku_Hata.dds"
     		expire = "1965.1.1"
     		ideology = social_conservatism_ideology
     		traits = {

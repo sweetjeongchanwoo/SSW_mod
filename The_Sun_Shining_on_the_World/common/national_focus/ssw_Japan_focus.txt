@@ -1258,7 +1258,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 			ARC = {
@@ -1296,7 +1296,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 			ARC = {
@@ -1338,7 +1338,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 					has_equipment = {
@@ -1468,7 +1468,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -1476,7 +1476,7 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1.0s
 				uses = 1
 				category = nuclear
 			}
@@ -1493,7 +1493,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -1513,7 +1513,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -1534,7 +1534,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -1557,7 +1557,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -1596,7 +1596,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1616,7 +1616,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1639,7 +1639,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1660,7 +1660,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1681,7 +1681,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1698,7 +1698,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1726,7 +1726,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -1751,7 +1751,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 			ALF = {
@@ -5230,7 +5230,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5247,7 +5247,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5264,7 +5264,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5339,7 +5339,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5356,7 +5356,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5373,7 +5373,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5400,7 +5400,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5417,7 +5417,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -5445,7 +5445,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5465,7 +5465,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5482,7 +5482,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5502,7 +5502,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5519,7 +5519,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5536,7 +5536,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5568,7 +5568,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "近衛文麿"
+				name = "Fumimaro Konoe"
 				ruling_only = yes
 			}
 		}
@@ -5623,7 +5623,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5640,7 +5640,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5657,7 +5657,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5676,7 +5676,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5700,7 +5700,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5722,7 +5722,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5743,7 +5743,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "畑俊六"
+				name = "Shunroku Hata"
 				ruling_only = yes
 			}
 		}
@@ -5763,7 +5763,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5787,7 +5787,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5819,7 +5819,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5836,7 +5836,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5853,7 +5853,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5873,7 +5873,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5902,7 +5902,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5922,7 +5922,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "吉田茂"
+				name = "Shigeru Yoshida"
 				ruling_only = yes
 			}
 		}
@@ -5946,7 +5946,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "鳩山一郎"
+				name = "Ichiro Hatoyama"
 				ruling_only = yes
 			}
 		}
@@ -5970,7 +5970,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6009,7 +6009,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6029,7 +6029,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6049,7 +6049,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6073,7 +6073,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6107,7 +6107,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6127,7 +6127,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6148,7 +6148,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6171,7 +6171,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6193,7 +6193,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6220,7 +6220,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6249,7 +6249,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6266,7 +6266,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6283,7 +6283,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6306,7 +6306,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6324,7 +6324,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "岸信介"
+				name = "Nobusuke Kishi"
 				ruling_only = yes
 			}
 		}
@@ -6500,7 +6500,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -6517,7 +6517,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -6534,7 +6534,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}
@@ -6566,7 +6566,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_leader = {
-				name = "平沼騏一郎"
+				name = "Kichiro Hiranuma"
 				ruling_only = yes
 			}
 		}

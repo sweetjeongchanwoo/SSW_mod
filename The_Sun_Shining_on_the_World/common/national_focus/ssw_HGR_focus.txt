@@ -70,6 +70,9 @@ focus_tree = {
 			is_puppet = no
 			has_government = national_socialism
 			has_war = no
+			NOT = {
+				has_idea = HGR_war_idea_14
+			}
 			ITA = {
 				has_war = no
 				NOT = { has_war_with = HGR }

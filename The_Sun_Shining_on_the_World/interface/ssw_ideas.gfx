@@ -168,4 +168,9 @@ spriteTypes = {
 		name = "GFX_idea_BBC_tv"
 		texturefile = "gfx/interface/ideas/ENG/BBC_tv.dds"
 	}
+#ゲーリング
+spriteType = {
+	name = "GFX_idea_hgr_Georing_Memorandum"
+	texturefile = "gfx/interface/ideas/HGR/hgr_Georing_Memorandum.dds"
+}
 }
