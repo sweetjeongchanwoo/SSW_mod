@@ -99,7 +99,6 @@
  special_force_planning:0 "特殊部隊立案"
  special_force_planning_desc:0 "説明"
 
-urban_attacking_training
  tech_mountaineers4:0 "山岳歩兵 IV"
  tech_mountaineers4_desc:0 "改良型の山岳装備です。"
  tech_mountaineers5:0 "山岳歩兵 V"
@@ -132,6 +131,14 @@ urban_attacking_training
  night_vision5_desc:0 "改良型の暗視装置です。"
  night_vision6:0 "暗視装置 VI"
  night_vision6_desc:0 "改良型の暗視装置です。"
+#支援装備#
+ support_equipment_1:0 "前大戦型支援装備"
+
+ support_equipment_2:0 "改良型支援装備"
+ support_equipment_2_desc:0 "なんか支援するやつ"
+ support_equipment_3:0 "発展型支援装備"
+ support_equipment_3_desc:0 ""
+
 #日本#
 	#装備名#
  JAP_infantry_equipment_4:0 "四式自動小銃"

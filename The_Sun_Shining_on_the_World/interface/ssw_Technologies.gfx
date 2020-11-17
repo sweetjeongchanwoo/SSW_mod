@@ -353,6 +353,19 @@ spriteTypes = {
 		name = "GFX_ssw_infantry_weapons5_medium"
 		texturefile = "gfx/interface/technologies/infantry_equipment_8.dds"
 	}
+#éxâáï∫â»#
+	SpriteType = {
+		name = "GFX_support_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_3.dds"
+	}
 
 #éYã∆ãZèp#
 	SpriteType = {
