@@ -13253,3 +13253,7 @@
 13252;159;194;105;land;false;plains;6
 13253;7;42;240;lake;false;lakes;0
 13254;255;91;200;land;true;plains;6
+13255;215;175;175;land;false;desert;7
+13256;215;175;18;land;true;desert;7
+13257;215;150;18;land;false;desert;7
+13258;21;150;18;land;false;desert;7

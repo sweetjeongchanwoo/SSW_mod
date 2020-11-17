@@ -52,7 +52,7 @@ ideas = {
 
 	# 軍事顧問
 	army_chief = {
-		Kenji_Doihara = { #顧問の名前
+		CHI_Kenji_Doihara = { #顧問の名前
 			
 			picture = CHI_political_advisor_Doihara
 			
