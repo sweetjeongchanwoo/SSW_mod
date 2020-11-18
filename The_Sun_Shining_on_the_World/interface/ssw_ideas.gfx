@@ -1,5 +1,11 @@
 spriteTypes = {
 #スロットのアイコンを定義
+#社会体制#
+	spriteType = {#社会体制#
+		name = "GFX_idea_slot_social_system"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
 #外務大臣#
 	spriteType = {#外務大臣#
 		name = "GFX_idea_slot_minister_of_foreign_affairs"
@@ -32,31 +38,31 @@ spriteTypes = {
 #アイデアのアイコンを定義
 #社会体制
 	SpriteType = { 
-		name = "GFX_idea_corporate_council_system"
+		name = "GFX_idea_ssw_corporate_council_system"
 		texturefile = "gfx/interface/ideas/social_system/idea_corporate_council_system.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_collective_anarchist_society"
+		name = "GFX_idea_ssw_collectivist_anarchism"
 		texturefile = "gfx/interface/ideas/social_system/idea_collective_anarchist_society.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_despotism"
+		name = "GFX_idea_ssw_despotism"
 		texturefile = "gfx/interface/ideas/social_system/idea_despotism.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_leftist_government"
+		name = "GFX_idea_ssw_parliamentary_democracy_leftist_administration"
 		texturefile = "gfx/interface/ideas/social_system/idea_leftist_government.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_military_regime"
+		name = "GFX_idea_ssw_military_dictatorship"
 		texturefile = "gfx/interface/ideas/social_system/idea_military_regime.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_one_party_dictatorship"
+		name = "GFX_idea_ssw_one_party_dictatorship"
 		texturefile = "gfx/interface/ideas/social_system/idea_one_party_dictatorship.dds"
 	}
 	SpriteType = { 
-		name = "GFX_idea_rightist_government"
+		name = "GFX_idea_ssw_parliamentary_democracy_rightist_administration"
 		texturefile = "gfx/interface/ideas/social_system/idea_rightist_government.dds"
 	}
 #日本

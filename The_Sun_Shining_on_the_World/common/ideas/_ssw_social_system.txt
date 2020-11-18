@@ -3,7 +3,7 @@ ideas = {
 	social_system = { 
 		law = yes
 		#Lessons of History
-		collectivist_anarchism = {
+		ssw_collectivist_anarchism = {
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		
-		one_party_dictatorship = {
+		ssw_one_party_dictatorship = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -129,7 +129,7 @@ ideas = {
    			}
 		}
 		#Diplomatic Efforts
-		Corporate_council_system = {
+		ssw_corporate_council_system = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -170,7 +170,7 @@ ideas = {
    			}
 		}
 
-		Parliamentary_democracy_leftist_administration = {
+		ssw_parliamentary_democracy_leftist_administration = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -207,7 +207,7 @@ ideas = {
    			}
 		}
 
-		Parliamentary_democracy_rightist_administration = {
+		ssw_parliamentary_democracy_rightist_administration = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -243,7 +243,7 @@ ideas = {
    			}
 		}
 
-		Despotism = {
+		ssw_despotism = {
 
 			available = {
 				custom_trigger_tooltip = {

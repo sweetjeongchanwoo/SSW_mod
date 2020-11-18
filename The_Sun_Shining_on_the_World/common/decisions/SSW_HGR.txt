@@ -140,59 +140,59 @@ HGR_Umgang_mit_dem_Widerstand = {
 		}
     }
     HGR_Dealing_with_the_Goebbelsite_Resistance_overschlaen = {
-		icon = generic_industry
-		available = {
-            has_equipment = {
-                infantry_equipment_1 > 499
-            }
-            divisions_in_state = {
-                type = infantry
-                  size > 2
-                state = 67
-            }
+	icon = generic_industry
+	available = {
+        	has_equipment = {
+                	infantry_equipment_1 > 499
 		}
-		ai_will_do = {
-			factor = 100
-		}
-		fire_only_once = yes
+		divisions_in_state = {
+                	type = infantry
+                	size > 2
+                	state = 67
+            	}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+	fire_only_once = yes
         days_remove = 100
 		remove_effect = {
 			67 = {
-                add_core_of = HGR
-            }
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-                amount = -500
-                producer = HGR
-            }
+        		        add_core_of = HGR
+            		}
+            		add_equipment_to_stockpile = {
+               	 		type = infantry_equipment
+                		amount = -500
+                		producer = HGR
+            		}
 		}
-    }
-    HGR_Dealing_with_the_Goebbelsite_Resistance_Niederschleife = {
+	}
+	HGR_Dealing_with_the_Goebbelsite_Resistance_Niederschleife = {
 		icon = generic_industry
 		available = {
-            has_equipment = {
-                infantry_equipment_1 > 499
-            }
-            divisions_in_state = {
-                type = infantry
-                  size > 2
-                state = 66
-            }
+			has_equipment = {
+				infantry_equipment_1 > 499
+            		}
+            		divisions_in_state = {
+                		type = infantry
+                	 	size > 2
+                		state = 66
+            		}
 		}
 		ai_will_do = {
 			factor = 100
 		}
 		fire_only_once = yes
-        days_remove = 100
+        	days_remove = 100
 		remove_effect = {
 			66 = {
-                add_core_of = HGR
-            }
-            add_equipment_to_stockpile = {
-                type = infantry_equipment
-                amount = -500
-                producer = HGR
-            }
+				add_core_of = HGR
+            		}
+            		add_equipment_to_stockpile = {
+                		type = infantry_equipment
+                		amount = -500
+                		producer = HGR
+            		}
 		}
     }
     HGR_Dealing_with_the_Goebbelsite_Resistance_ostmark = {

@@ -7,13 +7,13 @@
  social_system:0 "社会体制"
  head_of_gov_available:0 "社会体制は手動で変更できません。\n今後のあなたと周辺国の行動によって左右されます。"
 #社会体制
- collectivist_anarchism:0 "集産的無政府主義社会"
- one_party_dictatorship:0 "一党独裁"
+ ssw_collectivist_anarchism:0 "集産的無政府主義社会"
+ ssw_one_party_dictatorship:0 "一党独裁"
  ssw_military_dictatorship:0 "軍事政権"
- Corporate_council_system:0 "企業評議会制"
- Despotism:0 "専制政治"
- Parliamentary_democracy_leftist_administration:0 "議会民主主義左派政権"
- Parliamentary_democracy_rightist_administration:0 "議会民主主義右派政権"
+ ssw_corporate_council_system:0 "企業評議会制"
+ ssw_despotism:0 "専制政治"
+ ssw_parliamentary_democracy_leftist_administration:0 "議会民主主義左派政権"
+ ssw_parliamentary_democracy_rightist_administration:0 "議会民主主義右派政権"
 
 #経済法
  social_anarchism_economy:0 "無政府主義経済"
