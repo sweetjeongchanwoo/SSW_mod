@@ -40,6 +40,49 @@ technologies = {
 		
 
 	}
+	radio = {
+
+		# units with radios can more efficiently join combats when there is room
+		land_reinforce_rate = 0.05
+		
+#		path = {
+#			leads_to_tech = radio_detection 
+#			research_cost_coeff = 1
+#		}
+		
+		research_cost = 1.75
+		
+#		folder = {
+#			name = electronics_folder
+#			position = { x = -2 y = 2 }
+#		}
+		
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 0 } # x = 12 y = 0
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 6
+				has_war = yes
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				factor = 5
+				date > "1939.8.1"
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
 	
 	radio_detection = {
 
@@ -1877,7 +1920,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 	}
 
-
+#ちょっと保留#
 
 
 	SLT = {#ソリッド・ロジック・テクノロジ
