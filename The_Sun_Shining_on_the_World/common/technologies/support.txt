@@ -2466,6 +2466,716 @@ technologies = {
 			}
 		}
 	}
+	tech_comfort_unit2 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+		path = {
+			leads_to_tech = tech_comfort_unit3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @1946 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_comfort_unit3 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+		path = {
+			leads_to_tech = tech_comfort_unit4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @1948 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_comfort_unit4 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit2
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 16 y = @1950 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_comfort_unit5 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+		path = {
+			leads_to_tech = tech_comfort_unit6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1952
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @1952 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_comfort_unit6 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit6
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1954
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @1954 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	tech_sniper_unit1 = {
+
+		enable_subunits = {
+			sniper
+		}
+		path = {
+			leads_to_tech = tech_sniper_unit2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_engineers6 = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_sniper_unit2 = {
+
+		path = {
+			leads_to_tech = tech_sniper_unit3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @1946 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_sniper_unit3 = {
+
+		path = {
+			leads_to_tech = tech_sniper_unit4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @1948 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_sniper_unit4 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit2
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 18 y = @1950 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_sniper_unit5 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+		path = {
+			leads_to_tech = tech_sniper_unit6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1952
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @1952 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_sniper_unit6 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit6
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1954
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @1954 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	tech_morter_unit1 = {
+
+		enable_subunits = {
+			sniper
+		}
+		path = {
+			leads_to_tech = tech_morter_unit2
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			tech_engineers6 = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 20 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_morter_unit2 = {
+
+		path = {
+			leads_to_tech = tech_morter_unit3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 20 y = @1946 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_morter_unit3 = {
+
+		path = {
+			leads_to_tech = tech_morter_unit4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1948
+		folder = {
+			name = support_folder
+			position = { x = 20 y = @1948 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_morter_unit4 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit2
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = 20 y = @1950 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_morter_unit5 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+		path = {
+			leads_to_tech = tech_morter_unit6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1952
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1952 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+	tech_morter_unit6 = {
+
+		enable_subunits = {
+			comfort_unit
+		}
+#		path = {
+#			leads_to_tech = tech_comfort_unit6
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 1.5
+		start_year = 1954
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @1954 }
+		}
+		
+		categories = {
+			support_tech
+			signal_company_tech
+			electronics
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
 
 
 }
