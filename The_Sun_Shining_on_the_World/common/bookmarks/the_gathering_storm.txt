@@ -32,7 +32,7 @@ bookmarks = {
 			}
 		}
 		"JAP"={
-			history = ""
+			history = "SSW_JAP_GATHERING_STORM_DESC"
 			ideology = authoritative_democracy
 			ideas = {
 			}
