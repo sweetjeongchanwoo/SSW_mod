@@ -40,15 +40,15 @@ static const float3 NightAmbientNegZ = float3(0.8, 0.8, 0.8);  // bottom
 // ------------------    Specular       -------------------------
 // --------------------------------------------------------------
 static const float SPECULAR_WIDTH 				= 15.0;
-static const float SPECULAR_MULTIPLIER			= 1.0;
+static const float SPECULAR_MULTIPLIER			= 1.5;
 static const float MAP_SPECULAR_WIDTH			= 15.0;
 
 // --------------------------------------------------------------
 // ------------------    TERRAIN        -------------------------
 // --------------------------------------------------------------
-static const float CITY_LIGHTS_TILING 			= 0.09103;
-static const float CITY_LIGHTS_INTENSITY 		= 5.5;
-static const float CITY_LIGHTS_BLOOM_FACTOR 	= 0.3;
+static const float CITY_LIGHTS_TILING 			= 0.3600;
+static const float CITY_LIGHTS_INTENSITY 		= 6.5;
+static const float CITY_LIGHTS_BLOOM_FACTOR 	= 1.3;
 
 static const float TERRAIN_TILE_FREQ 			= 128.0f;
 static const float MAP_NUM_TILES 				= 4.0f;
@@ -189,7 +189,7 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 // --------------------------------------------------------------
 
 static const float GB_CAM_MIN = 100.0f;
-static const float GB_CAM_MAX = 200.0f;
+static const float GB_CAM_MAX = 600.0f;
 static const float GB_CAM_MAX_FILLING_CLAMP = 0.95f; // 0 to 1 value for clamping the fill when camera is at max distance
 static const float GB_THRESHOLD = 0.1f; // interpolation time
 static const float GB_THRESHOLD2 = 0.35f; // interpolation time
@@ -225,7 +225,7 @@ static const float MAP_ARROW_NORMALS_STR_WATER = 0.08f;
 // ------------------    PARTICLES   ----------------------------
 // --------------------------------------------------------------
 static const float PARTICLE_FADE_START_DISTANCE = 100;
-static const float PARTICLE_FADE_STOP_DISTANCE = 350;
+static const float PARTICLE_FADE_STOP_DISTANCE = 500;
 
 // --------------------------------------------------------------
 // -------------    RIM LIGHT (PDXMESH)   -----------------------
