@@ -57,9 +57,9 @@
  NC_lathe1:0 "基礎型数値制御加工"
  NC_lathe1_desc:0 "誰か書いて…(・ω・)"
  NC_lathe2:0 "改良型数値制御加工"
- NC_lathe2_desc :0 "詳しい人に任せた。"
+ NC_lathe2_desc:0 "詳しい人に任せた。"
  NC_lathe3:0 "発展型数値制御加工"
- NC_lathe3_desc :0 "詳しい人に任せた。"
+ NC_lathe3_desc:0 "詳しい人に任せた。"
 
  modern_oil_processing1:0 "現代型石油生成技術 I"
  modern_oil_processing1_desc:0 "石油ドバー"
