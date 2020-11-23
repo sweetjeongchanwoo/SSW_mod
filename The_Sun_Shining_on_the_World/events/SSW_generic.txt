@@ -1,0 +1,977 @@
+add_namespace = ssw_generic_focus
+country_event = {
+	id = ssw_generic_focus.1
+	title = ssw_generic_focus.1.title
+	desc = ssw_generic_focus.1.desc
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ssw_generic_focus.1.a
+		ai_chance = { factor = 10 }
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
+			if = {
+				limit = {
+					country_exists = GER
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = GER
+					}
+				}
+				add_opinion_modifier = { target = GER modifier = SSW_generic_technology_licensing }
+				GER = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+			}
+			if = {
+				limit = {
+					country_exists = LTV
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = LTV
+					}
+				}
+				add_opinion_modifier = { target = LTV modifier = SSW_generic_technology_licensing }
+				LTV = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+			}
+			if = {
+				limit = {
+					country_exists = HLH
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HGR
+						has_war_with = HLH
+					}
+				}
+				add_opinion_modifier = { target = HLH modifier = SSW_generic_technology_licensing }
+				HLH = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+			}
+			if = {
+				limit = {
+					country_exists = HGR
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HLH
+						has_war_with = HGR
+					}
+				}
+				add_opinion_modifier = { target = HGR modifier = SSW_generic_technology_licensing }
+				HGR = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+			}
+		}
+		hidden_effect = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
+			if = {
+				limit = {
+					country_exists = GER
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = GER
+					}
+				}
+				add_opinion_modifier = { target = GER modifier = SSW_generic_technology_licensing }
+				GER = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LTV
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = LTV
+					}
+				}
+				add_opinion_modifier = { target = LTV modifier = SSW_generic_technology_licensing }
+				LTV = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HLH
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HGR
+						has_war_with = HLH
+					}
+				}
+				add_opinion_modifier = { target = HLH modifier = SSW_generic_technology_licensing }
+				HLH = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HGR
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HLH
+						has_war_with = HGR
+					}
+				}
+				add_opinion_modifier = { target = HGR modifier = SSW_generic_technology_licensing }
+				HGR = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.1.b
+		ai_chance = { factor = 10 }
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}
+			add_opinion_modifier = { target = ITA modifier = SSW_generic_technology_licensing }
+			ITA = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+		}
+		hidden_effect = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}
+			add_opinion_modifier = { target = ITA modifier = SSW_generic_technology_licensing }
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.1.c
+		ai_chance = { factor = 10 }
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.5
+				uses = 4
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_opinion_modifier = { target = ENG modifier = SSW_generic_technology_licensing }
+			ENG = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+		}
+		hidden_effect = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.5
+				uses = 4
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+			add_opinion_modifier = { target = ENG modifier = SSW_generic_technology_licensing }
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.1.d
+		ai_chance = { factor = 10 }
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+			add_opinion_modifier = { target = JAP modifier = SSW_generic_technology_licensing }
+			JAP = { add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing } }
+		}
+		hidden_effect = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+			add_opinion_modifier = { target = JAP modifier = SSW_generic_technology_licensing }
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.1.e
+		ai_chance = { factor = 10 }
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
+		}
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			technology = early_fighter
+			technology = fighter1
+			technology = fighter2
+			technology = fighter3
+			technology = heavy_fighter1
+			technology = heavy_fighter2
+			technology = heavy_fighter3
+		}
+		add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 1.0
+			uses = 1
+			technology = strategic_bomber1
+			technology = strategic_bomber2
+			technology = strategic_bomber3
+			category = tactical_bomber
+		}
+		add_tech_bonus = {
+			name = sub_op_bonus
+			bonus = 0.5
+			uses = 2
+			technology = convoy_interdiction_ti
+			technology = unrestricted_submarine_warfare
+			technology = wolfpacks
+			technology = advanced_submarine_warfare
+			technology = combined_operations_raiding
+		}
+		add_tech_bonus = {
+			name = fleet_in_being_bonus
+			bonus = 1.0
+			uses = 1
+			category = fleet_in_being_tree
+		}
+		hidden_effect = {
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssw_generic_focus.2
+	title = ssw_generic_focus.2.title
+	desc = ssw_generic_focus.2.desc
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ssw_generic_focus.2.a
+		ai_chance = { factor = 10 }
+		add_ideas = SSW_military_youth_focus
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = GER
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = GER
+					}
+				}
+				add_opinion_modifier = { target = GER modifier = SSW_generic_technology_licensing }
+				GER = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = LTV
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+						has_war_with = LTV
+					}
+				}
+				add_opinion_modifier = { target = LTV modifier = SSW_generic_technology_licensing }
+				LTV = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HLH
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HGR
+						has_war_with = HLH
+					}
+				}
+				add_opinion_modifier = { target = HLH modifier = SSW_generic_technology_licensing }
+				HLH = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HGR
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HLH
+						has_war_with = HGR
+					}
+				}
+				add_opinion_modifier = { target = HGR modifier = SSW_generic_technology_licensing }
+				HGR = {
+					add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+					add_ai_strategy = { type = alliance id = ROOT value = 100 }
+					add_ai_strategy = { type = protect id = ROOT value = 100 }
+					add_ai_strategy = { type = send_volunteers_desire id = ROOT value = 100 }
+					add_ai_strategy = { type = support id = ROOT value = 100 }
+				}
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.2.b
+		ai_chance = { factor = 10 }
+		add_ideas = SSW_militarism_focus
+		hidden_effect = {
+			add_opinion_modifier = { target = ITA modifier = SSW_generic_technology_licensing }
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.2.c
+		ai_chance = { factor = 10 }
+		add_ideas = SSW_industrial_revolution_of_britain
+		hidden_effect = {
+			add_opinion_modifier = { target = ENG modifier = SSW_generic_technology_licensing }
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.2.d
+		ai_chance = { factor = 10 }
+		add_ideas = SSW_superior_will
+		hidden_effect = {
+			add_opinion_modifier = { target = JAP modifier = SSW_generic_technology_licensing }
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -20 }
+				add_ai_strategy = { type = protect id = ROOT value = -20 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -20 }
+				add_ai_strategy = { type = support id = ROOT value = -20 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_focus.2.e
+		ai_chance = { factor = 10 }
+		add_ideas = SSW_deterrence
+		hidden_effect = {
+			GER = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			HGR = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			HLH = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			LTV = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			ITA = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			ENG = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+			JAP = {
+				add_opinion_modifier = { target = ROOT modifier = SSW_sense_of_distrust }
+				add_ai_strategy = { type = alliance id = ROOT value = -50 }
+				add_ai_strategy = { type = protect id = ROOT value = -50 }
+				add_ai_strategy = { type = send_volunteers_desire id = ROOT value = -50 }
+				add_ai_strategy = { type = support id = ROOT value = -50 }
+			}
+		}
+	}
+}
