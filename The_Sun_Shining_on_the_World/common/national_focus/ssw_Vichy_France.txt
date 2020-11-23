@@ -7,7 +7,6 @@ focus_tree = {
 			tag = VFR
 		}
 	}
-	continuous_focus_position = { x = 100 y = 1400 }
 	default = no
 	focus = {
 		id = VFR_1
@@ -255,45 +254,7 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = SPR_professional_military_1
 				}
-<<<<<<< HEAD
 
-=======
-			}
-		}
-	}
-	focus = {
-		id = VFR_16
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
-		prerequisite = {
-			focus = VFR_15
-		}
-		x = 3
-		y = 8
-		completion_reward = {
-			add_popularity = {
-				ideology = progressive_communism
-				popularity = -1
-			}
-			add_popularity = {
-				ideology = classical_communism
-				popularity = -1
-			}
-		}
-	}
-	focus = {
-		id = VFR_17
-		icon = GFX_focus_chi_mission_to_germany
-		cost = 5
-		prerequisite = {
-			focus = VFR_15
-		}
-		x = 5
-		y = 8
-		completion_reward = {
-			add_ideas = CZE_national_fascism_idea
-		}
->>>>>>> e3312483d60a4c708885a5564d6bc9d338fbff17
 	}
 	focus = {
 		id = VFR_27
@@ -509,6 +470,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = VFR_29
+			focus = VFR_96
 		}
 		x = 18
 		y = 2
@@ -753,6 +715,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_next
 		}
+		mutually_exclusive = {
+			focus = VFR_38
+		}
 		x = 27
 		y = 2
 
@@ -918,18 +883,6 @@ focus_tree = {
 			focus = VFR_107
 		}
 		x = 29
-		y = 7
-
-	}
-	focus = {
-		id = VFR_110
-		icon = GFX_focus_generic_vichy_france_triumphant
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_109
-			focus = VFR_101
-		}
-		x = 24
 		y = 7
 
 	}
@@ -1242,6 +1195,18 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VFR_110
+		icon = GFX_focus_generic_vichy_france_triumphant
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_108
+			focus = VFR_101
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
 		id = VFR_89
 		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
@@ -1543,18 +1508,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VFR_109
+		id = VFR_108
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = VFR_106
-			focus = VFR_105
-			focus = VFR_107
-		}
-		prerequisite = {
-			focus = VFR_106
-			focus = VFR_105
-			focus = VFR_107
+			focus = VFR_102
 		}
 		x = 25
 		y = 6

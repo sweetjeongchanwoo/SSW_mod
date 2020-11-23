@@ -41,3 +41,14 @@ set_politics = {
 set_popularities = {
 	authority_democracy= 100
 }
+
+create_country_leader = {
+	name = "António de Oliveira Salazar"
+	desc = ""
+	picture = "gfx/leaders/POR/Portrait_Antonio_de_Oliveira_Salazar.dds"
+	expire = "1965.1.1"
+	ideology = authority_democracy_ideology
+	traits = {
+		#
+	}
+}

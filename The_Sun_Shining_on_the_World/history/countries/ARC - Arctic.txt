@@ -23,4 +23,16 @@
 	set_popularities = {
 		authority_despotism = 100
 	}
+
+	create_country_leader = {
+		name = "Yasuo Yamasaki"
+		desc = ""
+		picture = "gfx/leaders/ARC/Portrait_Yasuo_Yamasaki.dds"
+		expire = "1965.1.1"
+		ideology = authority_despotism_ideology
+		traits = {
+			#
+		}
+	}
 }
+

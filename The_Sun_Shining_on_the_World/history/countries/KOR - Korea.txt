@@ -22,3 +22,14 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Nobuyuki Abe"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_Nobuyuki_Abe.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

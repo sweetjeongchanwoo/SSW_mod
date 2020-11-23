@@ -22,3 +22,14 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Boshiro Hosogaya"
+	desc = ""
+	picture = "gfx/leaders/ARC/Portrait_Boshiro_Hosogaya.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

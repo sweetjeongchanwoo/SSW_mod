@@ -18,3 +18,14 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Sheng Shicai"
+	desc = ""
+	picture = "gfx/leaders/SIK/Portrait_Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}
