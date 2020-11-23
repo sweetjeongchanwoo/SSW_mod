@@ -290,6 +290,9 @@ focus_tree = {
 		id = JAP_Kishinomikusu
 		icon = GFX_goal_unknown
 		cost = 7.00
+		prerequisite = {
+			focus = JAP_select_Kishi
+		}
 		x = 22
 		y = 6
 			available = {
@@ -509,22 +512,21 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
-			available = {
-					SNI = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
+		available = {
+				SIN = {
+						AND = {
+								is_in_faction_with = ROOT
+								is_subject_of = ROOT
 						}
 				}
-			completion_reward = {
-					SIN = {
-							add_ideas = {
-									idea = SSW_JAP_Establishment_of_Shonan_Bank
-								}
+		}
+		completion_reward = {
+				SIN = {
+						add_ideas = {
+								SSW_JAP_Establishment_of_Shonan_Bank
 						}
 				}
-
+		}
 	}
 	focus = {
 		id = JAP_Japanese_Settlement_in_the_Caribbean
@@ -553,8 +555,8 @@ focus_tree = {
 					JAM = {
 							add_manpower = 10000
 							add_ideas = {
-									idea = SSW_JAP_Establishment_of_Shonan_Bank
-								}
+									SSW_JAP_Establishment_of_Shonan_Bank
+							}
 						}
 					BAC = {
 							add_manpower = 10000
@@ -585,7 +587,7 @@ focus_tree = {
 			completion_reward = {
 					BRN = {
 							add_ideas = {
-									idea = SSW_JAP_Establishment_of_Shonan_Bank
+									SSW_JAP_Establishment_of_Shonan_Bank
 								}
 						}
 				}
@@ -647,37 +649,37 @@ focus_tree = {
 			completion_reward = {
 					BRN = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					JAM = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					PAC = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					INO = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					CLC = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					PAO = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 					SIN = {
 							add_ideas = {
-									idea = SSW_JAP_research_assistants
+									SSW_JAP_research_assistants
 								}
 						}
 				}
@@ -737,7 +739,7 @@ focus_tree = {
 							target = PAO
 							transfer_troops = yes
 						}
-					233 = {
+					632 = {
 							add_core_of = JAP
 						}
 					726 = {
@@ -937,7 +939,7 @@ focus_tree = {
 							target = KOR
 							transfer_troops = yes
 						}
-					802 = {
+					937 = {
 							add_core_of = JAP
 						}
 					860 = {
@@ -961,7 +963,7 @@ focus_tree = {
 					854 = {
 							add_core_of = JAP
 						}
-					801 = {
+					936 = {
 							add_core_of = JAP
 						}
 					852 = {
@@ -1205,6 +1207,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -1297,7 +1302,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-
+		completion_reward = {
+			set_country_flag = ssw_jap_flag_18
+		}
 	}
 	focus = {
 		id = JAP_Inclined_production

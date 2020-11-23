@@ -118,6 +118,10 @@ spriteTypes = {
 		name = "GFX_idea_JAP_the_cost_geacps"
 		texturefile = "gfx/interface/ideas/JAP/JAP_the_cost_geacps.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kenkichi_Yoshizawa"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kenkichi_Yoshizawa.dds"
+	}
 #蒙古
     spriteType = {
 		name = "GFX_idea_De_Wang"

@@ -15,7 +15,7 @@ set_variable = {
 }
 
 add_ideas = {
-	Parliamentary_democracy_rightist_administration
+	ssw_parliamentary_democracy_rightist_administration
 	JAP_Parasitic_landlord_system
 	SSW_jAP_disarmament_idea
 	SSW_jAP_zaibatsu
@@ -26,6 +26,7 @@ add_ideas = {
 	SSW_JAP_army_2
 	SSW_JAP_Post_war_recession
 	SSW_JAP_Equalize_the_Army_and_Navy_air_costs
+	ssw_JAP_Kenkichi_Yoshizawa
 }
 
 create_faction = daitoa_kyoeiken
