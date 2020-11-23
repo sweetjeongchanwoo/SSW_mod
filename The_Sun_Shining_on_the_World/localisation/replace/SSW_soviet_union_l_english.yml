@@ -1,9 +1,22 @@
 ﻿l_english:
-##### NF #####
- 
-##### IDEAS #####
- 
-##### TOOLTIP #####
- 
+##### PARTIES #####
+ SOV_communism_party:0 "全連邦共産党(正統派)"
+ SOV_democratic_party:0 "トルドヴィキ(中道派)"
+ SOV_fascism_party:0 "ロシア・ファシスト党"
+ USSR_neutrality_party:0 "軍事政権"
+ USSR_anarchism_party:0 "武装労働者戦線"
+ USSR_progressive_communism_party:0 "全連邦共産党(革新派)"
+ USSR_classical_communism_party:0 "全連邦共産党(穏健派)"
+ USSR_social_democracy_party:0 "トルドヴィキ(左派)"
+ USSR_social_liberalism_party:0 "トルドヴィキ(右派)"
+ USSR_social_conservatism_party:0 "保守党"
+ USSR_authority_democracy_party:0 "王党派"
+ USSR_authority_despotism_party:0 "王党派"
+ USSR_national_fascism_party:0 "ロシア・ファシスト党"
+ USSR_national_socialism_party:0 "ロシア・ナチズム党"
+ USSR_corporatocracism_party:0 "ロシア産業同盟"
+##### TRAITS #####
+ hero_of_soviet:0 "ソ連邦英雄"
+ lonely_soldier:0 "孤高の軍人"
 ##### EVENTS #####
  

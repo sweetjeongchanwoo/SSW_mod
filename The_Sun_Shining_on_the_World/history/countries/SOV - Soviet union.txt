@@ -9,6 +9,76 @@ set_technology = {
 }
 
 add_ideas = {
+	ivan_konev
+	scraping_the_barrel
+}
+declare_war_on = {
+	target = RUS
+	type = annex_everything
+}
+
+set_party_name = {
+	ideology = neutrality
+	long_name = USSR_neutrality_party
+	name = USSR_neutrality_party
+}
+set_party_name = {
+	ideology = anarchism
+	long_name = USSR_anarchism_party
+	name = USSR_anarchism_party
+}
+set_party_name = {
+	ideology = progressive_communism
+	long_name = USSR_progressive_communism_party
+	name = USSR_progressive_communism_party
+}
+set_party_name = {
+	ideology = classical_communism
+	long_name = USSR_classical_communism_party
+	name = USSR_classical_communism_party
+}
+set_party_name = {
+	ideology = social_democracy
+	long_name = USSR_social_democracy_party
+	name = USSR_social_democracy_party
+}
+set_party_name = {
+	ideology = social_liberalism
+	long_name = USSR_social_liberalism_party
+	name = USSR_social_liberalism_party
+}
+set_party_name = {
+	ideology = social_conservatism
+	long_name = USSR_social_conservatism_party
+	name = USSR_social_conservatism_party
+}
+set_party_name = {
+	ideology = authority_democracy
+	long_name = USSR_authority_democracy_party
+	name = USSR_authority_democracy_party
+}
+set_party_name = {
+	ideology = authority_despotism
+	long_name = USSR_authority_despotism_party
+	name = USSR_authority_despotism_party
+}
+set_party_name = {
+	ideology = national_fascism
+	long_name = USSR_national_fascism_party
+	name = USSR_national_fascism_party
+}
+set_party_name = {
+	ideology = national_socialism
+	long_name = USSR_national_socialism_party
+	name = USSR_national_socialism_party
+}
+set_party_name = {
+	ideology = corporatocracism
+	long_name = USSR_corporatocracism_party
+	name = USSR_corporatocracism_party
+}
+
+add_ideas = {
 	civilian_economy
 }
 
@@ -18,16 +88,63 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	classical_communism = 100
+	classical_communism = 61
+	progressive_communism = 30
+	social_democracy = 8
+	national_socialism = 1
 }
 
+#1964～ "Leonid Brezhnev"
+
 create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
-	expire = "1953.3.1"
-	ideology = classical_communism_ideology
+	name = "Anarchism Union"
+	desc = ""
+	picture = "gfx/leaders/ANS/Portrait_Anarchism_Union.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_ideology
 	traits = {
 	}
+}
+create_country_leader = {
+	name = "Ivan Konev"
+	desc = "POLITICS_IVAN_KONEV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	expire = "1973.5.21"
+	ideology = stalinism
+	traits = {
+		hero_of_soviet
+	}
+}
+create_country_leader = {
+	name = "Ivan Konev"
+	desc = "POLITICS_IVAN_KONEV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	expire = "1973.5.21"
+	ideology = progressive_communism_ideology
+	traits = {
+		hero_of_soviet
+	}
+}
+create_country_leader = {
+	name = "Ivan Konev"
+	desc = "POLITICS_IVAN_KONEV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	expire = "1973.5.21"
+	ideology = classical_communism_ideology
+	traits = {
+		hero_of_soviet
+	}
+}
+
+create_corps_commander = {
+	name = "Ivan Konev"
+	portrait_path = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	traits = { armor_officer harsh_leader politically_connected }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 5
 }
