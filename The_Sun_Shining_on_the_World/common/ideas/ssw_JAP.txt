@@ -1545,7 +1545,7 @@ ideas = {
 
 	###政治首班###
 	political_leader = {
-		ssw_JAP_Kenkichi_Yoshizawa = {
+		Kenkichi_Yoshizawa = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -1554,7 +1554,9 @@ ideas = {
 				}
 			}
 				
-
+			allowed = {
+				tag = JAP
+			}
 
 			picture = JAP_cab_Kenkichi_Yoshizawa
 				
