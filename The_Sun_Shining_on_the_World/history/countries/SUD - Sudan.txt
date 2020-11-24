@@ -43,7 +43,7 @@
 	create_country_leader = {
 		name = "Pietro Gazzera"
 		desc = "POLITICS_EDWIN_BARCLAY_DESC"
-		picture = "gfx/leaders/SUD/Portrait_Pietro_Gazzera.dds"
+		picture = "gfx/leaders/SUD/Portrait_AOI_Pietro_Gazzera.dds"
 		expire = "1965.1.1"
 		ideology = national_fascism_ideology
 		traits = {
