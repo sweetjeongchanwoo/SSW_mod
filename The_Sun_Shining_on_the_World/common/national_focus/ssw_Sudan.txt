@@ -826,10 +826,21 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 					amount = 12
 				}
 			}
+			custom_effect_tooltip = SUD_discover_the_oil_field_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SUD_southern_resources
+						}
+					}
+					set_country_flag = SUD_oil_field_expand_without_resources_develop
+				}
+			}
 		}
 		x = 21
 		y = 3
-
+search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SUD_promote_the_slavery
@@ -951,7 +962,7 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SUD_support_for_the_hizb_al_umma
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
 		prerequisite = {
 			focus = SUD_abolish_to_divide_and_conquer
@@ -1024,18 +1035,20 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 		}
 		ai_will_do = { factor = 0.1 }
 		completion_reward = {
+			retire_country_leader = yes
 		    create_country_leader = {
 				name = "Husein Al-Shafei"
 				desc = "POLITICS_EDWIN_BARCLAY_DESC"
 				picture = "gfx/leaders/SUD/Portrait_Husein_al_shafei.dds"
 				expire = "1965.1.1"
-				ideology = fascism_ideology
+				ideology = national_fascism_ideology
 				traits = {
 					#
 				}
 			}
 			add_opinion_modifier = { target = EGY modifier = large_increase }
 			EGY = { add_opinion_modifier = { target = SUD modifier = large_increase } }
+			set_cosmetic_tag = SUD_EGY
 		}
 		x = 31
 		y = 2
