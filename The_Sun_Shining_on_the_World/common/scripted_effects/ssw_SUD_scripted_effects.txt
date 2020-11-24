@@ -15,7 +15,7 @@ SUD_advantage_muslims = {
 		}
 		swap_ideas = {
 			remove_idea = SUD_advantage_of_church
-			add_idea = SUD_religious_confrontation#均衡
+			add_idea = SUD_religious_confrontation　　　　#均衡
 		}
 	}
 	else_if = {
@@ -59,7 +59,7 @@ SUD_advantage_church = {
 		}
 		swap_ideas = {
 			remove_idea = SUD_advantage_of_islam
-			add_idea = SUD_religious_confrontation#均衡
+			add_idea = SUD_religious_confrontation　　　　#均衡
 		}
 	}
 	else_if = {
