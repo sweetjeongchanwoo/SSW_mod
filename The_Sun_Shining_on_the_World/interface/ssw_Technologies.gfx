@@ -356,91 +356,108 @@ spriteTypes = {
 #éxâáï∫â»#
 	SpriteType = {
 		name = "GFX_support_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_support_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_support_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_support_1_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_support_2_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_support_3_medium"
-		texturefile = "gfx/interface/technologies/support_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/support_tech/support_equipment_3.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_engineers5_medium"
-		texturefile = "gfx/interface/technologies/tech_engineers5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_engineers5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_engineers6_medium"
-		texturefile = "gfx/interface/technologies/tech_engineers6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_engineers6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_recon5_medium"
-		texturefile = "gfx/interface/technologies/tech_recon5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_recon5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_recon6_medium"
-		texturefile = "gfx/interface/technologies/tech_recon6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_recon6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_military_police5_medium"
-		texturefile = "gfx/interface/technologies/tech_military_police5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_military_police5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_military_police6_medium"
-		texturefile = "gfx/interface/technologies/tech_military_police6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_military_police6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_maintenance_company5_medium"
-		texturefile = "gfx/interface/technologies/tech_maintenance_company5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_maintenance_company5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_maintenance_company6_medium"
-		texturefile = "gfx/interface/technologies/tech_maintenance_company6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_maintenance_company6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_field_hospital5_medium"
-		texturefile = "gfx/interface/technologies/tech_field_hospital5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_field_hospital5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_field_hospital6_medium"
-		texturefile = "gfx/interface/technologies/tech_field_hospital6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_field_hospital6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_logistics_company5_medium"
-		texturefile = "gfx/interface/technologies/tech_logistics_company5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_logistics_company5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_logistics_company6_medium"
-		texturefile = "gfx/interface/technologies/tech_logistics_company6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_logistics_company6.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_tech_signal_company5_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company5.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_signal_company5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_signal_company6_medium"
-		texturefile = "gfx/interface/technologies/tech_signal_company6.dds"
+		texturefile = "gfx/interface/technologies/support_tech/tech_signal_company6.dds"
 	}
+	SpriteType = {
+		name = "GFX_tech_combined_engineer1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_combined_engineer1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_combined_engineer2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_combined_engineer2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_logistics_officer1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_logistics_officer1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_logistics_officer2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_logistics_officer2.dds"
+	}
+
 
 #éYã∆ãZèp#
 	SpriteType = {

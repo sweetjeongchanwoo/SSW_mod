@@ -360,7 +360,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1400 height = 800
+					width = 600 height = 800
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -509,7 +509,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=140 y=780 }
-				size = { width = 1740 height = 430 }
+				size = { width = 1540 height = 430 }
 				clipping = no
 
 				background = {
@@ -521,7 +521,18 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=150 y=1060 }
-				size = { width = 1720 height = 140 }
+				size = { width = 1520 height = 140 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}
+			}
+			containerWindowType = {
+				name = "tiled_research_bg_3"
+				position = { x=750 y=1350 }
+				size = { width = 900 height = 280 }
 				clipping = no
 
 				background = {
@@ -532,7 +543,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "tech_support_tree"
-				position = { x = 150 y = 160 }
+				position = { x = 140 y = 160 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -545,6 +556,12 @@ guiTypes = {
 			gridboxtype = {
 				name = "motorised_infantry_tree"
 				position = { x = -470 y = 300 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			gridboxtype = {
+				name = "support_weapons2_tree"
+				position = { x = 240 y = 160 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
