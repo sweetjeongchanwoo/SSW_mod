@@ -17,10 +17,10 @@ spriteTypes = {
 		name = "GFX_idea_slot_minister_of_finance"
 		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
 	}
-#文科大臣#
+#内務大臣#
 
 	spriteType = {
-		name = "GFX_idea_slot_minister_of_education"
+		name = "GFX_idea_slot_minister_of_interior"
 		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
 	}
 #陸軍大臣#
@@ -121,6 +121,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Kenkichi_Yoshizawa"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kenkichi_Yoshizawa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Etsuziro_Uehara"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Etsuziro_Uehara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Mamoru_Shigemitsu"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Mamoru_Shigemitsu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Shigeru_Yoshida"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Shigeru_Yoshida.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Okinori_Kaya"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Okinori_Kaya.dds"
 	}
 #蒙古
     spriteType = {
