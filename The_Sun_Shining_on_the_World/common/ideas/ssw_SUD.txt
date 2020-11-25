@@ -437,7 +437,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 	}
-	minister_of_education = {
+	minister_of_interior = {
 		SUD_al_khalifa_al_hassan = {
 		    picture = al_khalifa_al_hassan
 			allowed = {
