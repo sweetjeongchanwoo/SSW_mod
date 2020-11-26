@@ -509,8 +509,8 @@ GEO = {	#ジョージア
 }
 
 KAZ = {	#カザフスタン
-	color = rgb { 75 184 203 }
-	color_ui = rgb { 75 184 203 }
+	color = rgb { 0 175 202 }
+	color_ui = rgb { 0 175 202 }
 }
 
 AZR = {	#アゼルバイジャン
@@ -1482,6 +1482,71 @@ SKM = {	#シッキム
 PAT = {	#総主教領
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
+}
+
+BHR = {	#バーレーン
+	color = rgb { 206 17 38 }
+	color_ui = rgb { 206 17 38 }
+}
+
+TLS = {	#東ティモール
+	color = rgb { 255 199 38 }
+	color_ui = rgb { 255 199 38 }
+}
+
+ADR = {	#アンドラ
+	color = rgb { 254 223 0 }
+	color_ui = rgb { 254 223 0}
+}
+
+LIE = {	#リヒテンシュタイン
+	color = rgb { 0 43 127 }
+	color_ui = rgb { 0 43 127 }
+}
+
+SMR = {	#サンマリノ
+	color = rgb { 94 182 228 }
+	color_ui = rgb { 94 182 228 }
+}
+
+VAC = {	#バチカン
+	color = rgb { 255 244 0 }
+	color_ui = rgb { 255 244 0 }
+}
+
+MCO = {	#モナコ
+	color = rgb { 243 107 122 }
+	color_ui = rgb { 243 107 122 }
+}
+
+CRI = {	#クリミア
+	color = rgb { 0 204 255 }
+	color_ui = rgb { 0 204 255 }
+}
+
+KAR = {	#カラカルパクスタン
+	color = rgb { 247 189 41 }
+	color_ui = rgb { 247 189 41 }
+}
+
+COM = {	#コモロ
+	color = rgb { 61 142 51 }
+	color_ui = rgb { 61 142 51 }
+}
+
+SSD = {	#南スーダン
+	color = rgb { 15 71 175 }
+	color_ui = rgb { 15 71 175 }
+}
+
+SYC = {	#セーシェル
+	color = rgb { 130 75 120 }
+	color_ui = rgb { 130 75 120 }
+}
+
+MUS = {	#モーリシャス
+	color = rgb { 130 110 255 }
+	color_ui = rgb { 130 110 255 }
 }
 
 HGR = {

@@ -1,4 +1,4 @@
-﻿capital = 773
+﻿capital = 290
 oob = "RIF_1950"
 set_cosmetic_tag = RIF_SPR
 

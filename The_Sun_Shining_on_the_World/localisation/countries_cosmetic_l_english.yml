@@ -32,6 +32,10 @@
  Middle_East_Union_DEF:0 "中東連合"
  Middle_East_Union_ADJ:0 "中東"
  
+ Roman_Empire:0 "ローマ帝国"
+ Roman_Empire_DEF:0 "ローマ帝国"
+ Roman_Empire_ADJ:0 "ローマ"
+ 
 #共同管理国家
  CLC_JAPandCHI:0 "日華共同港都市"
  CLC_JAPandCHI_DEF:0 "日華共同港都市"
