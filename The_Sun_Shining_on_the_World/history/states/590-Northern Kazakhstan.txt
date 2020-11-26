@@ -7,7 +7,9 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = WTR
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = SOV
 		add_core_of = WTR
 		victory_points = {
 			4333 1
@@ -15,8 +17,6 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = SOV
-		#add_core_of = WTR
 	}
 
 	provinces={

@@ -1,0 +1,23 @@
+state = {
+	id = 969
+	name = "STATE_969"
+	manpower = 39300
+	
+	state_category = rural
+	
+	history={
+		owner = KAZ
+		add_core_of = KAZ
+		add_core_of = SOV
+		add_core_of = WTR
+		add_core_of = KAR
+		add_core_of = UZB
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		7541 10348 10395 12233 12474 12454 13207 1721
+	}
+}

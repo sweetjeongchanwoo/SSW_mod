@@ -14,6 +14,11 @@ Middle_East_Union = {	#中東連合
 	color_ui = rgb { 85 102 0 }
 }
 
+Roman_Empire = {	#ローマ帝国
+	color = rgb { 159 8 7 }
+	color_ui = rgb { 159 8 7 }
+}
+
 #共同統治国家
 CLC_JAPandCHI = {	#日華共同港都市
 	color = rgb { 255 191 191 }
@@ -274,23 +279,23 @@ STP_POR = {	#葡領サントメ・プリンシペ
 	color_ui = rgb { 115 95 50 }
 }
 
-ANG_POR = {	葡領アンゴラ
+ANG_POR = {	#葡領アンゴラ
 	color = rgb { 20 100 85 }
 	color_ui = rgb { 37 140 61 }
 }
 
-MZB_POR = {	葡領モザンビーク
+MZB_POR = {	#葡領モザンビーク
 	color = rgb { 20 100 85 }
 	color_ui = rgb { 112 62 90 }
 }
 
-GNB_POR = {	葡領ギニア
+GNB_POR = {	#葡領ギニア
 	color = rgb { 20 100 85 }
 	color_ui = rgb { 153 102 0 }
 }
 
 #エジプト王国
-EGY_ITA = {	#伊埃領スーダン
+SUD_EGY = {	#伊埃領スーダン
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 204 102 0 }
 }
