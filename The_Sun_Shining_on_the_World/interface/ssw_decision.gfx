@@ -4,4 +4,9 @@ spriteTypes = {
 		name = "GFX_common_wealth_decision"
 		texturefile = "gfx/interface/decisions/common_wealth_decision.dds"
 	}
+
+	SpriteType = { 
+		name = "GFX_land_reform_decision"
+		texturefile = "gfx/interface/decisions/land_reform_decision.dds"
+	}
 }

@@ -40,3 +40,14 @@ JAP_lend_leace_law = {
 		original_tag = JAP
 	}
 }
+
+JAP_dec_cat_Agricultural_Land_Reform = {#農地改革
+	icon = eng_concessions_to_the_trade_unions
+	picture = GFX_land_reform_decision
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+        has_completed_focus = JAP_Agricultural_Land_Reform
+    }
+}

@@ -28,7 +28,7 @@ idea_categories = {
 		slot = political_leader	#政治首班
 		slot = minister_of_foreign_affairs	#外務大臣
 		slot = minister_of_finance	#財務大臣
-		slot = minister_of_interior	#文科大臣
+		slot = minister_of_interior	#内務大臣
 		slot = minister_of_army #軍需大臣
 		
 		cost = 0

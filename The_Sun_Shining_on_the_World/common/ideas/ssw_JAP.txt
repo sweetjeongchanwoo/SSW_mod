@@ -1563,16 +1563,15 @@ ideas = {
 
 			picture = JAP_cab_Kenkichi_Yoshizawa
 				
-			modifier = {
-				political_power_factor = 0.07
-			}
+			traits = { economic_organizer }
 				
 			cancel_if_invalid = no
+		}
 	}
 
 	###外務大臣###
 	minister_of_foreign_affairs = {
-		JAP_Kenkichi_Yoshizawa = {
+		JAP_Mamoru_Shigemitsu = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -1588,18 +1587,18 @@ ideas = {
 				tag = JAP
 			}
 
-			picture = JAP_cab_Kenkichi_Yoshizawa
+			picture = JAP_cab_Mamoru_Shigemitsu
 				
-			modifier = {
-				political_power_factor = 0.07
-			}
+			traits = { reluctant_interventionist }
 				
 			cancel_if_invalid = no
+		}
 	}
+
 
 	###財務大臣###
 	minister_of_finance = {
-		JAP_Kenkichi_Yoshizawa = {
+		JAP_Okinori_Kaya = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -1615,18 +1614,17 @@ ideas = {
 				tag = JAP
 			}
 
-			picture = JAP_cab_Kenkichi_Yoshizawa
+			picture = JAP_cab_Okinori_Kaya
 				
-			modifier = {
-				political_power_factor = 0.07
-			}
+			traits = { financial_expert }
 				
 			cancel_if_invalid = no
+		}
 	}
 
-	###財務大臣###
-	minister_of_finance = {
-		JAP_Kenkichi_Yoshizawa = {
+	###内務大臣###
+	minister_of_interior = {
+		JAP_Etsuziro_Uehara = {
 
 			available = {
 				custom_trigger_tooltip = {
@@ -1642,12 +1640,40 @@ ideas = {
 				tag = JAP
 			}
 
-			picture = JAP_cab_Kenkichi_Yoshizawa
+			picture = JAP_cab_Etsuziro_Uehara
 				
-			modifier = {
-				political_power_factor = 0.07
+			traits = { prince_of_terror }
+				
+			cancel_if_invalid = no
+		}
+	}
+
+	###軍需大臣###
+	minister_of_army = {
+		JAP_Shigeru_Yoshida = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Shigeru_Yoshida
+				
+			traits = { 
+				hawk
+				conservative_grandee
 			}
 				
 			cancel_if_invalid = no
+		}
 	}
 }

@@ -1494,6 +1494,10 @@ focus_tree = {
 		x = 41
 		y = 6
 
+		completion_reward = {
+			unlock_decision_category_tooltip = JAP_dec_cat_Agricultural_Land_Reform
+		}
+
 	}
 	focus = {
 		id = JAP_Compromise_with_the_aristocracy
@@ -1504,6 +1508,10 @@ focus_tree = {
 		}
 		x = 38
 		y = 7
+
+		bypass = {
+			has_country_flag = ssw_jap_flag_23
+		}
 
 	}
 	focus = {
@@ -1607,6 +1615,11 @@ focus_tree = {
 		}
 		x = 39
 		y = 8
+
+		bypass = {
+			has_country_flag = ssw_jap_flag_23
+		}
+
 
 	}
 	focus = {
@@ -1719,17 +1732,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_Agricultural_Land_Adjustment_Act
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = JAP_Agricultural_Land_Reform
-		}
-		x = 41
-		y = 7
-
-	}
-	focus = {
 		id = JAP_Self_farming_Special_Measures_Act
 		icon = GFX_goal_unknown
 		cost = 6.00
@@ -1738,6 +1740,11 @@ focus_tree = {
 		}
 		x = 43
 		y = 7
+
+		bypass = {
+			has_country_flag = ssw_jap_flag_23
+		}
+
 
 	}
 	focus = {
@@ -1750,14 +1757,23 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Pursuing_the_Tohoku_problem
 		}
-		prerequisite = {
-			focus = JAP_Pursuing_the_Tohoku_problem
-		}
-		prerequisite = {
-			focus = JAP_Agricultural_Land_Adjustment_Act
+		available = {
+			has_country_flag = ssw_jap_flag_20_2
+			has_country_flag = ssw_jap_flag_19_2
+			has_country_flag = ssw_jap_flag_21
+			has_country_flag = ssw_jap_flag_22_2
 		}
 		x = 41
 		y = 9
+
+		bypass = {
+			has_country_flag = ssw_jap_flag_23
+		}
+
+
+		completion_reward = {
+			remove_ideas = SSW_JAP_Parasitic_landlord_system
+		}
 
 	}
 	focus = {
