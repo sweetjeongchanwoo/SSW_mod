@@ -14,9 +14,25 @@ focus_tree = {
 		cost = 3.00
 		x = 74
 		y = 0
-			available = {
-					has_country_flag = dec_00
-				}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_country_flag = dec_00
+		}
+		available = {
+
+		}
+
+		bypass = {
+			has_government = communism
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -258,11 +274,30 @@ focus_tree = {
 		cost = 5.00
 		x = 28
 		y = 0
-			completion_reward = {
-					add_political_power = 120
-					country_event = SSW_JAP.6
-				}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
 
+		}
+
+		bypass = {
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+			hidden_effect = {
+				country_event = SSW_JAP.6
+			}
+		}
 	}
 	focus = {
 		id = JAP_select_Hatoyama
@@ -359,9 +394,21 @@ focus_tree = {
 		}
 		x = 10
 		y = 1
-			available = {
-					is_faction_leader = yes
-				}
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			is_faction_leader = yes
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
 					every_country = {
 							limit = {
@@ -384,17 +431,30 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
-			available = {
-					ARC = {
-							OR = {
-									has_full_control_of_state = 637
-									has_full_control_of_state = 562
-									has_full_control_of_state = 644
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			is_faction_leader = yes
+			ARC = {
+				OR = {
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 644
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					add_resource = {
 							type = oil
@@ -430,17 +490,30 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
-			available = {
-					ARC = {
-							OR = {
-									has_full_control_of_state = 637
-									has_full_control_of_state = 562
-									has_full_control_of_state = 644
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+			is_faction_leader = yes
+			ARC = {
+				OR = {
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 644
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					annex_country = {
 							target = ARC
@@ -470,20 +543,29 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
-					ARC = {
-							OR = {
-									has_full_control_of_state = 637
-									has_full_control_of_state = 562
-									has_full_control_of_state = 644
-									is_in_faction_with = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			is_faction_leader = yes
+			ARC = {
+				OR = {
+					has_full_control_of_state = 637
+					has_full_control_of_state = 562
+					has_full_control_of_state = 644
+					is_in_faction_with = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					SIB = {
 							annex_country = {
@@ -513,13 +595,23 @@ focus_tree = {
 		x = 8
 		y = 2
 		available = {
-				SIN = {
-						AND = {
-								is_in_faction_with = ROOT
-								is_subject_of = ROOT
-						}
+			is_faction_leader = yes
+			SIN = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
 		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 				SIN = {
 						add_ideas = {
@@ -537,20 +629,33 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
-			available = {
-					JAM = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					PAC = {
-							OR = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			is_faction_leader = yes
+			JAM = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
+			PAC = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_MANPOWER }
 			completion_reward = {
 					JAM = {
 							add_manpower = 10000
@@ -576,21 +681,31 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
-			available = {
-					BRN = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		available = {
+			is_faction_leader = yes
+			BRN = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
-			completion_reward = {
-					BRN = {
-							add_ideas = {
-									SSW_JAP_Establishment_of_Shonan_Bank
-								}
-						}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			BRN = {
+				add_ideas = {
+					SSW_JAP_Establishment_of_Shonan_Bank
 				}
+			}
+		}
 
 	}
 	focus = {
@@ -608,44 +723,57 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
-			available = {
-					JAM = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					PAC = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					BRN = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					INO = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					CLC = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
-					SIN = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			JAM = {
+				AND = {
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
 				}
+			}
+			PAC = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			BRN = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			INO = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			CLC = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			SIN = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_RESEARCH }
 			completion_reward = {
 					BRN = {
 							add_ideas = {
@@ -697,14 +825,27 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-			available = {
-					PAO = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_faction_leader = yes
+			PAO = {
+				AND = {
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					PAO = {
 							add_autonomy_ratio = {
@@ -726,14 +867,27 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
-			available = {
-					PAO = {
-							AND = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			is_faction_leader = yes
+			PAO = {
+				AND = {
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					annex_country = {
 							target = PAO
@@ -888,15 +1042,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-			available = {
-					KOR = {
-							OR = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			KOR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
-
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_The_Korean_Improvement_Law
@@ -907,15 +1072,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
-			available = {
-					KOR = {
-							OR = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			KOR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
-
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_Annexation_to_the_interior
@@ -926,14 +1102,26 @@ focus_tree = {
 		}
 		x = 17
 		y = 4
-			available = {
-					KOR = {
-							OR = {
-									is_in_faction_with = ROOT
-									is_subject_of = ROOT
-								}
-						}
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			KOR = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					annex_country = {
 							target = KOR
@@ -1156,12 +1344,28 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_country_leader = {
+					name = "Kenkichi Yoshizawa"
+					ruling_only = yes
+			}
+		}
+
+		bypass = {
+			has_war = yes
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 50
 					add_timed_idea = {
@@ -1180,12 +1384,28 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			has_country_leader = {
+					name = "Kenkichi Yoshizawa"
+					ruling_only = yes
+			}
+		}
+
+		bypass = {
+			has_war = yes
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SSW_jAP_disarmament_idea
@@ -1232,12 +1452,28 @@ focus_tree = {
 		}
 		x = 32
 		y = 2
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			has_country_leader = {
+					name = "Kenkichi Yoshizawa"
+					ruling_only = yes
+			}
+		}
+
+		bypass = {
+			has_war = yes
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SSW_JAP_Post_war_recession
@@ -1258,12 +1494,28 @@ focus_tree = {
 		}
 		x = 28
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+			has_country_leader = {
+					name = "Kenkichi Yoshizawa"
+					ruling_only = yes
+			}
+		}
+
+		bypass = {
+			has_war = yes
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_ideas = SSW_jAP_gold_standard_idea
 				}
@@ -1278,12 +1530,28 @@ focus_tree = {
 		}
 		x = 28
 		y = 4
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			has_country_leader = {
+					name = "Kenkichi Yoshizawa"
+					ruling_only = yes
+			}
+		}
+
+		bypass = {
+			has_war = yes
+			not = {
+				has_government = social_conservatism
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 30
 					swap_ideas = {
@@ -1528,6 +1796,23 @@ focus_tree = {
 		}
 		x = 47
 		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					every_country = {
 							limit = {
@@ -1547,9 +1832,29 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
-			available = {
-					controls_state = 685
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			PAC = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
 				}
+			}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					random_owned_controlled_state = {
 							prioritize = { 685 }
@@ -1578,6 +1883,33 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			PAC = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			country_exists = PAN
+		}
+
+		bypass = {
+			not = {
+				country_exists = PAN
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -1595,6 +1927,38 @@ focus_tree = {
 		}
 		x = 39
 		y = 4
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			PAC = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			and = {
+				country_exists = CUB
+				country_exists = HAI
+				country_exists = DOM
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = CUB
+				country_exists = HAI
+				country_exists = DOM
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					create_wargoal = {
 							type = puppet_wargoal_focus
@@ -1639,6 +2003,23 @@ focus_tree = {
 		}
 		x = 42
 		y = 2
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					PRU = {
 							random_owned_controlled_state = {
@@ -1734,6 +2115,23 @@ focus_tree = {
 		}
 		x = 41
 		y = 3
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					add_ideas = JAP_zaibatsu_shihai_idea
 				}
@@ -1796,16 +2194,27 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					dismantle_faction = yes
 					create_faction = Pacific_Rim_CoProsperity_Sphere
 					add_to_faction = SIA
-					ALF = {
-							country_event = {
-									id = SSW_JAPAN_event_for_america.105
-									days = 1
-								}
-						}
 					MEX = {
 							country_event = {
 									id = SSW_JAPAN_event_for_america.1
@@ -1824,6 +2233,31 @@ focus_tree = {
 		}
 		x = 47
 		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = MEX
+			MEX = {
+				has_war = no
+				is_major = no
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = MEX
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_ideas = jap_mex_economy_rule_idea_japan_side
 					MEX = {
@@ -1841,6 +2275,30 @@ focus_tree = {
 		}
 		x = 45
 		y = 3
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = MEX
+			MEX = {
+				has_war = no
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = MEX
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					MEX = {
 							add_ideas = JAP_militaly_member_idea
@@ -1904,6 +2362,30 @@ focus_tree = {
 		}
 		x = 47
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = ALF
+			ALF = {
+				has_war = yes
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = ALF
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_ideas = JAP_kamikaze_giyutai_idea
 				}
@@ -1918,6 +2400,33 @@ focus_tree = {
 		}
 		x = 49
 		y = 3
+		ai_will_do = {
+			factor = 6
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = MEX
+			MEX = {
+				has_war = no
+				owns_state = 477
+				owns_state = 476
+				owns_state = 482
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = MEX
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					add_resource = {
 							type = oil
@@ -1957,6 +2466,35 @@ focus_tree = {
 		}
 		x = 52
 		y = 2
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			and = {
+				country_exists = PRU
+				country_exists = ARG
+				country_exists = COL
+				country_exists = ECU
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = PRU
+				country_exists = ARG
+				country_exists = COL
+				country_exists = ECU
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					PRU = {
 							add_ideas = JAP_nanbei_toushi_idea
@@ -1985,6 +2523,35 @@ focus_tree = {
 		}
 		x = 51
 		y = 3
+		ai_will_do = {
+			factor = 12
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			and = {
+				country_exists = COL
+			}
+			COL = {
+				owns_state = 493
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = COL
+				COL = {
+					owns_state = 493
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					COL = {
 							give_resource_rights = {
@@ -2004,6 +2571,35 @@ focus_tree = {
 		}
 		x = 53
 		y = 3
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			and = {
+				country_exists = ECU
+			}
+			ECU = {
+				owns_state = 649
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = ECU
+				ECU = {
+					owns_state = 649
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 			completion_reward = {
 					ECU = {
 							country_event = {
@@ -2038,13 +2634,25 @@ focus_tree = {
 		}
 		x = 47
 		y = 4
-			completion_reward = {
-					add_popularity = {
-							ideology = authoritative_democracy
-							popularity = 0.15
-						}
-					add_ideas = JAP_nikkeijin_kyoryoku_idea
-				}
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = JAP_nikkeijin_kyoryoku_idea
+		}
 
 	}
 	focus = {
@@ -2056,8 +2664,39 @@ focus_tree = {
 		}
 		x = 55
 		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			and = {
+				country_exists = ECU
+				country_exists = BRA
+				country_exists = COL
+				country_exists = ARG
+				country_exists = VEN
+			}
+		}
+
+		bypass = {
+			not = {
+				country_exists = ECU
+				country_exists = BRA
+				country_exists = COL
+				country_exists = ARG
+				country_exists = VEN
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
-					PAN = {
+					ECU = {
 							add_ideas = JAP_america_yen_idea
 						}
 					COL = {
@@ -2087,6 +2726,27 @@ focus_tree = {
 		}
 		x = 55
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = CHL
+		}
+
+		bypass = {
+			not = {
+				country_exists = CHL
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					CHL = {
 							add_timed_idea = {
@@ -2106,6 +2766,27 @@ focus_tree = {
 		}
 		x = 55
 		y = 4
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			country_exists = CHL
+		}
+
+		bypass = {
+			not = {
+				country_exists = CHL
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					CHL = {
 							random_owned_controlled_state = {
