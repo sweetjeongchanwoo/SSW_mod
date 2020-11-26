@@ -304,7 +304,7 @@ country_event = {#内閣総辞職
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	option = {#uyoku
+	option = {#平沼
 		name = SSW_JAP.12.a
 		complete_national_focus = JAP_Nobusuke_Kishi_reappointment
 		retire_country_leader = yes
@@ -345,5 +345,303 @@ country_event = {#内閣総辞職
     		traits = {
     		}
 		}
+	}
+}
+
+country_event = {#新潟県内で小作争議が発生
+	id = SSW_JAP.13
+	title = SSW_JAP.13.t
+	desc = SSW_JAP.13.d
+	picture = report_event_american_hunger_march
+	is_triggered_only = yes
+
+	option = {#平沼
+		name = SSW_JAP.13.a
+		JAP = {
+			country_event = {
+				id = SSW_JAP.14
+				days = 15
+			}
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {#小作争議が全国へ拡大
+	id = SSW_JAP.14
+	title = SSW_JAP.14.t
+	desc = SSW_JAP.14.d
+	picture = report_event_american_hunger_march
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP.14.a
+		hidden_effect = {
+			set_country_flag = ssw_jap_flag_event
+		}
+		JAP = {
+			country_event = {
+				id = SSW_JAP.15
+			}
+		}
+		534 = {
+			set_demilitarized_zone = yes
+		}
+		844 = {
+			set_demilitarized_zone = yes
+		}
+		533 = {
+			set_demilitarized_zone = yes
+		}
+		535 = {
+			set_demilitarized_zone = yes
+		}
+		846 = {
+			set_demilitarized_zone = yes
+		}
+		530 = {
+			set_demilitarized_zone = yes
+		}
+		528 = {
+			set_demilitarized_zone = yes
+		}
+		851 = {
+			set_demilitarized_zone = yes
+		}
+		843 = {
+			set_demilitarized_zone = yes
+		}
+		536 = {
+			set_demilitarized_zone = yes
+		}
+		850 = {
+			set_demilitarized_zone = yes
+		}
+		add_ideas = SSW_JAP_Riot
+		add_stability = -0.05
+		add_popularity = { ideology = social_liberalism popularity = 0.06 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.06 }
+	}
+}
+
+country_event = {#全国暴動への対処
+	id = SSW_JAP.15
+	title = SSW_JAP.15.t
+	desc = SSW_JAP.15.d
+	picture = report_event_canada_treaty
+	trigger = {
+		has_country_flag = ssw_jap_flag_event
+	}
+	fire_only_once = no
+
+	option = {#報道を規制せよ
+		name = SSW_JAP.15.a
+		clr_country_flag = ssw_jap_flag_event
+		random_list = {
+			60 = {
+				JAP = {
+					country_event = {
+						id = SSW_JAP.19
+					}
+				}
+			} 
+			40 = {
+				JAP = {
+					country_event = {
+						id = SSW_JAP.16
+					}
+				}
+			} 
+		}			
+	}
+	option = {#報道を規制してはならない
+		name = SSW_JAP.15.b
+		set_country_flag = ssw_jap_flag_24
+		add_political_power = -100
+		JAP = {
+			country_event = {
+				id = SSW_JAP.17
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = {#暴動の拡散を阻止
+	id = SSW_JAP.16
+	title = SSW_JAP.16.t
+	desc = SSW_JAP.16.d
+	picture = GFX_report_event_canada_treaty
+	fire_only_once = yes
+
+	option = {
+		name = SSW_JAP.16.a
+		hidden_effect = {
+		set_country_flag = ssw_jap_flag_event
+			JAP = {
+				country_event = {
+					id = SSW_JAP.15
+					days = 10
+				}
+			}
+		}
+	}
+}
+
+country_event = {#暴動による破壊活動と農村の占拠
+	id = SSW_JAP.17
+	title = SSW_JAP.17.t
+	desc = SSW_JAP.17.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		has_country_flag = ssw_jap_flag_24
+	}
+	fire_only_once = no
+
+	option = {
+		name = SSW_JAP.17.a
+		JAP = {
+			country_event = {
+				id = SSW_JAP.17
+				days = 20
+			}
+		}
+		random_owned_controlled_state = {
+			random_list = {
+				33 = { 
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				33 = {
+					damage_building = {
+						type = arms_factory
+						damage = 1
+					}
+				} 
+				34 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				} 
+			}
+		}
+		add_popularity = { ideology = social_liberalism popularity = 0.01 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.01 }
+	}
+}
+
+country_event = {#暴動の鎮圧
+	id = SSW_JAP.18
+	title = SSW_JAP.18.t
+	desc = SSW_JAP.18.d
+	picture = GFX_report_event_czech_soldiers_01
+	is_triggered_only = yes
+
+	option = {#もう大丈夫だ
+		name = SSW_JAP.18.a
+		remove_ideas = SSW_JAP_Riot
+		hidden_effect = {
+			clr_country_flag = ssw_jap_flag_24
+			JAP = {
+				country_event = {
+					id = SSW_JAP.20
+					days = 20
+				}
+			}
+		}
+	}
+}
+
+country_event = {#報道規制の失敗
+	id = SSW_JAP.19
+	title = SSW_JAP.19.t
+	desc = SSW_JAP.19.d
+	picture = GFX_report_event_canada_treaty
+	fire_only_once = yes
+
+	option = {
+		name = SSW_JAP.19.a
+		add_stability = -0.05
+		JAP = {
+			country_event = {
+				id = SSW_JAP.21
+			}
+		} 
+	}
+}
+
+country_event = {#賀川豊彦が演説
+	id = SSW_JAP.20
+	title = SSW_JAP.20.t
+	desc = SSW_JAP.20.d
+	picture = GFX_Kagawa_Toyohiko_speech
+	is_triggered_only = yes
+
+	option = {#彼らの要求を受け入れよう
+		name = SSW_JAP.20.a
+		remove_ideas = SSW_JAP_Parasitic_landlord_system
+		534 = {
+			set_demilitarized_zone = no
+		}
+		844 = {
+			set_demilitarized_zone = no
+		}
+		533 = {
+			set_demilitarized_zone = no
+		}
+		535 = {
+			set_demilitarized_zone = no
+		}
+		846 = {
+			set_demilitarized_zone = no
+		}
+		530 = {
+			set_demilitarized_zone = no
+		}
+		528 = {
+			set_demilitarized_zone = no
+		}
+		851 = {
+			set_demilitarized_zone = no
+		}
+		843 = {
+			set_demilitarized_zone = no
+		}
+		536 = {
+			set_demilitarized_zone = no
+		}
+		850 = {
+			set_demilitarized_zone = no
+		}
+		add_popularity = { ideology = social_liberalism popularity = 0.12 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.12 }
+		hidden_effect = {
+			set_stability = 0.45
+		}
+	}
+}
+
+country_event = {#暴動の更なる拡大
+	id = SSW_JAP.21
+	title = SSW_JAP.21.t
+	desc = SSW_JAP.21.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#報道を規制してはならない
+		name = SSW_JAP.21.a
+		add_political_power = -100
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.17
+					days = 20
+				}
+			}
+		}
+		set_country_flag = ssw_jap_flag_24
 	}
 }

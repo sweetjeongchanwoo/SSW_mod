@@ -1541,6 +1541,20 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 		}
+		SSW_JAP_Riot = {
+			#暴動
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
 	}
 
 	###政治首班###

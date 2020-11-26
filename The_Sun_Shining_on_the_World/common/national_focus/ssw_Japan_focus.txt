@@ -1513,6 +1513,11 @@ focus_tree = {
 			has_country_flag = ssw_jap_flag_23
 		}
 
+		completion_reward = {
+			custom_effect_tooltip = 8_JAP_tt
+			clr_country_flag = ssw_jap_flag_24
+		}
+
 	}
 	focus = {
 		id = JAP_line_pacific_economy
@@ -1620,6 +1625,9 @@ focus_tree = {
 			has_country_flag = ssw_jap_flag_23
 		}
 
+		completion_reward = {
+			custom_effect_tooltip = 9_JAP_tt
+		}
 
 	}
 	focus = {
@@ -1745,7 +1753,9 @@ focus_tree = {
 			has_country_flag = ssw_jap_flag_23
 		}
 
-
+		completion_reward = {
+			custom_effect_tooltip = 7_JAP_tt
+		}
 	}
 	focus = {
 		id = JAP_Landlord_Security
@@ -1773,6 +1783,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = SSW_JAP_Parasitic_landlord_system
+			custom_effect_tooltip = 10_JAP_tt
 		}
 
 	}
@@ -4359,7 +4370,7 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_Re_establishment_of_the_Planning_Board
+							SSW_JAP_Re_establishment_of_the_Planning_Board
 						}
 				}
 
@@ -4379,7 +4390,7 @@ focus_tree = {
 		y = 18
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_General_Planning_Bureau
+							SSW_JAP_General_Planning_Bureau
 						}
 				}
 
@@ -4609,7 +4620,7 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
-					random_owned_controlled_state = {
+				random_owned_controlled_state = {
 							limit = {
 									free_building_slots = {
 											building = synthetic_refinery
@@ -4639,7 +4650,7 @@ focus_tree = {
 							name = "Fumimaro Konoe"
 							ruling_only = yes
 						}
-				}
+			}
 			completion_reward = {
 					if = {
 							limit = {
@@ -4674,7 +4685,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_Interventionism
+							SSW_JAP_Interventionism
 						}
 				}
 
@@ -4750,7 +4761,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_mental_superiority
+							SSW_JAP_mental_superiority
 						}
 				}
 
@@ -4775,7 +4786,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = {
-							idea = JAP_technological_superiority
+							JAP_technological_superiority
 						}
 				}
 
@@ -4862,7 +4873,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_Smooth_Mobilization_of_Supplies
+							SSW_JAP_Smooth_Mobilization_of_Supplies
 						}
 				}
 
@@ -5244,7 +5255,7 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_ideas = {
-							idea = SSW_JAP_Overseas_Dispatch_Act
+							SSW_JAP_Overseas_Dispatch_Act
 						}
 				}
 

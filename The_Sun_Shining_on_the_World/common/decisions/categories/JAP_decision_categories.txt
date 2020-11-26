@@ -51,3 +51,14 @@ JAP_dec_cat_Agricultural_Land_Reform = {#農地改革
         has_completed_focus = JAP_Agricultural_Land_Reform
     }
 }
+
+JAP_dec_cat_Riot_suppression = {#暴動の鎮圧
+	icon = generic_political_actions
+	picture = GFX_JAP_Riot_decision
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+        has_country_flag = ssw_jap_flag_23
+    }
+}
