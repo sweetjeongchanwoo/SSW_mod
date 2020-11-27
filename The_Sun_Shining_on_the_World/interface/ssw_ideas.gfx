@@ -139,6 +139,22 @@ spriteTypes = {
 		name = "GFX_idea_JAP_cab_Okinori_Kaya"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Okinori_Kaya.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Hachiro_Arita"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Hachiro_Arita.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Isse_Ugaki"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Isse_Ugaki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Sachio_Sakurauchi"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Sachio_Sakurauchi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Tadao_Oasa"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Tadao_Oasa.dds"
+	}
 #蒙古
     spriteType = {
 		name = "GFX_idea_De_Wang"

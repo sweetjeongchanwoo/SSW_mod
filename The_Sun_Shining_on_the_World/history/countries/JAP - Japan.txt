@@ -10,7 +10,7 @@ set_technology = {
 }
 
 set_variable = { 
-	var = JAP_political_party
+	var = JAP_seiyukai_popularity
 	value = 50
 }
 
