@@ -83,4 +83,50 @@ spriteTypes = {
 		texturefile = "gfx/texticons/faction_jap_ziyuuto.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_faction_jap_dainipponsekiseikai"
+		texturefile = "gfx/texticons/faction_jap_dainipponsekiseikai.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_kenkyukai"
+		texturefile = "gfx/texticons/faction_jap_kenkyukai.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_Kouten_Kokyukai"
+		texturefile = "gfx/texticons/faction_jap_Kouten_Kokyukai.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_nihonhuxasizumu"
+		texturefile = "gfx/texticons/faction_jap_nihonhuxasizumu.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_Nihonkokkasyakaito"
+		texturefile = "gfx/texticons/faction_jap_Nihonkokkasyakaito.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_RonoSyakaito"
+		texturefile = "gfx/texticons/faction_jap_RonoSyakaito.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_syakai_kurabu"
+		texturefile = "gfx/texticons/faction_jap_syakai_kurabu.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_Tohokai"
+		texturefile = "gfx/texticons/faction_jap_Tohokai.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_faction_jap_zaibatsu_rengo"
+		texturefile = "gfx/texticons/faction_jap_zaibatsu_rengo.dds"
+		legacy_lazy_load = no
+	}
+	
 }

@@ -9,11 +9,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-set_variable = { 
-	var = JAP_seiyukai_popularity
-	value = 50
-}
-
 add_ideas = {
 	ssw_parliamentary_democracy_rightist_administration
 	SSW_JAP_Parasitic_landlord_system
@@ -526,3 +521,49 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+set_variable = { 
+	var = JAP_seiyukai_popularity
+	value = 50
+}
+set_variable = { 
+	var = JAP_Kenkyukai_popularity
+	value = 13
+}
+set_variable = { 
+	var = JAP_minseito_popularity
+	value = 34
+}
+set_variable = { 
+	var = JAP_ziyuuto_popularity
+	value = 21
+}
+set_variable = { 
+	var = JAP_dainipponsumeragi_popularity
+	value = 5
+}
+set_variable = {
+	var = JAP_Nihonkyosanto_Nosaka_popularity
+	value = 4
+}
+set_variable = { 
+	var = JAP_Nihonkyosanto_Tokuda_popularity
+	value = 2
+}
+set_variable = { 
+	var = JAP_nihonsyakai_popularity
+	value = 15
+}
+set_variable = { 
+	var = JAP_syakaikurabu_popularity
+	value = 18
+}
+set_variable = { 
+	var = JAP_toakensetsu_popularity
+	value = 11
+}
+
+#内務
+set_variable = { JAP_faction_low_increase = 3 }
+set_variable = { JAP_faction_low_decrease = -3 }
+set_variable = { JAP_faction_days_reenable_low = 14 }

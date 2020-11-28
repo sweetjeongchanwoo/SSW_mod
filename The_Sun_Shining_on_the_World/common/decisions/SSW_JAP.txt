@@ -1,23 +1,387 @@
 JAP_political_party = {
-	JAP_SEIYUKAI = {
-
+	JAP_SEIYUKAI_Town_Hall_Passage = {
 		icon = generic_form_nation
-		
 		ai_will_do = {
-			factor = 100
+			factor = 80
 		}
-		
 		allowed = {
 			original_tag = JAP
 		}
-
 		available = {
-		}		
-		
-		cost = 10
-		
+		}
+		cost = 20
 		fire_only_once = no
-
+		days_remove = 14
+		remove_effect = {
+			JAP_seiyukai_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_SEIYUKAI_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_seiyukai_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_KENKYUKAI_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_kenkyukai_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_KENKYUKAI_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_kenkyukai_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_MINSEITO_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_minseito_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_MINSEITO_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_minseito_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_ZIYUUTO_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_ziyuuto_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_ZIYUUTO_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_kenkyukai_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONSYAKAITO_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_nihonsyakai_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONSYAKAITO_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_nihonsyakai_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_SYAKAIKURABU_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_syakaikurabu_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_SYAKAIKURABU_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_syakaikurabu_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONKYOSANTO_NOSAKA_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_Nihonkyosanto_Nosaka_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONKYOSANTO_NOSAKA_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_Nihonkyosanto_Nosaka_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONKYOSANTO_TOKUDA_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_Nihonkyosanto_Tokuda_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_NIHONKYOSANTO_TOKUDA_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_bolstered_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_Nihonkyosanto_Tokuda_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_TOAKENSETSUKOKUMINRENME_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_toakensetsu_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_TOAKENSETSUKOKUMINRENME_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_toakensetsu_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_DAINIPPONSUMERAGITO_Town_Hall_Passage = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_formationd_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_formationd_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_dainipponsumeragi_low_popularity_increase_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
+	}
+	JAP_DAINIPPONSUMERAGITO_Interference_with_activities = {
+		icon = generic_form_nation
+		ai_will_do = {
+			factor = 10
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		available = {
+			has_country_flag = ssw_party_formationd_flag
+		}
+		visible = {
+			has_country_flag = ssw_party_formationd_flag
+		}
+		cost = 20
+		fire_only_once = no
+		days_remove = 14
+		remove_effect = {
+			JAP_dainipponsumeragi_Tokuda_low_popularity_decrease_effect = yes
+			custom_effect_tooltip = JAP_cooperation_faction_speech_cd_tt
+		}
 	}
 }
 
@@ -42,7 +406,7 @@ JAP_Hanshin_Fulfillment = {
 		visible = {
 			has_completed_focus = JAP_expand_the_hanshin_industrial_region
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_01
             847 = {
@@ -81,7 +445,7 @@ JAP_Hanshin_Fulfillment = {
 		visible = {
 			has_completed_focus = JAP_expand_the_hanshin_industrial_region
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_02
             849 = {
@@ -318,7 +682,7 @@ JAP_Keihin_Fulfillment = {
 		visible = {
 			has_completed_focus = JAP_expand_the_keihin_industrial_region
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_08
             533 = {
@@ -359,7 +723,7 @@ JAP_cat_the_west_japan_heavy_industry_region_plan = {
 		visible = {
 			has_completed_focus = JAP_the_kyushu_large_factory
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_09
             528 = {
@@ -398,7 +762,7 @@ JAP_cat_the_west_japan_heavy_industry_region_plan = {
 		visible = {
 			has_completed_focus = JAP_the_kinki_large_factory
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_10
             531 = {
@@ -500,7 +864,7 @@ JAP_cat_the_kanto_industry_region_plan = {
 	JAP_dec_the_sendai_large_factory = { #仙台大工場の建設
 		icon = generic_industry
 		available = {
-			num_of_civilian_factories_available_for_projects > 15
+			num_of_civilian_factories_available_for_projects > 20
 			owns_state = 533
 			controls_state = 533
 		}
@@ -510,12 +874,12 @@ JAP_cat_the_kanto_industry_region_plan = {
 		cost = 0 
 		fire_only_once = yes
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 20
 		}
 		visible = {
 			has_completed_focus = JAP_the_sendai_large_factory
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_13
             533 = {
@@ -530,7 +894,7 @@ JAP_cat_the_kanto_industry_region_plan = {
 	JAP_dec_the_nigata_large_factory = { #新潟大造船所の建設
 		icon = generic_industry
 		available = {
-			num_of_civilian_factories_available_for_projects > 15
+			num_of_civilian_factories_available_for_projects > 20
 			owns_state = 534
 			controls_state = 534
 		}
@@ -540,12 +904,12 @@ JAP_cat_the_kanto_industry_region_plan = {
 		cost = 0 
 		fire_only_once = yes
 		modifier = {
-			civilian_factory_use = 15
+			civilian_factory_use = 20
 		}
 		visible = {
 			has_completed_focus = JAP_the_nigata_large_factory
 		}
-		days_remove = 150
+		days_remove = 200
 		remove_effect = {
 			set_country_flag = dec_14
             534 = {
@@ -558,196 +922,6 @@ JAP_cat_the_kanto_industry_region_plan = {
 		}
 	}
 }
-JAP_signs_of_disarmament = {
-		JAP_dec_signs_of_disarmament = { #軍縮の兆し
-		icon = generic_industry
-		available = {
-			has_completed_focus = JAP_Kuhara_disarmament
-		}
-		days_mission_timeout = 200
-
-		fire_only_once = yes
-
-		timeout_effect = {
-			country_event = {
-				id = SSW_JAP.1
-				days = 1
-			}
-		}
-
-		remove_effect = {
-		}
-		}
-		JAP_dec_Donations_to_the_military = { #軍部に献金
-		icon = generic_industry
-		available = {
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		cost = 50
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-			custom_effect_tooltip = 4_JAP_tt
-		}
-		}
-
-	JAP_dec_Donations_to_the_right_wing = { #右翼に献金
-		icon = generic_industry
-		available = {
-			not = {
-				has_decision = JAP_dec_Donations_to_the_KoutenKokyuj
-				has_decision = JAP_dec_Appointment of politicians from conglomerates
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 50
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-		}
-	}
-	JAP_dec_Donations_to_the_KoutenKokyujo = { #皇典講究所への献金
-		icon = generic_industry
-		available = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 50
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-			custom_effect_tooltip = 5_JAP_tt
-		}
-	}
-	JAP_dec_Appointment_of_politicians_from_conglomerates = { #財閥系政治家の登用
-		icon = generic_industry
-		available = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 50
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-			custom_effect_tooltip = 5_JAP_tt
-		}
-	}
-	JAP_dec_Donations_to_the_ToaKensetsuKokuminRenme = { #東亜建設国民聯盟へ献金
-		icon = generic_industry
-		available = {
-			has_decision = JAP_dec_Donations_to_the_right_wing
-			not = {
-				has_decision = JAP_dec_Donations_to_the_NihonKakushinTo
-				has_decision = JAP_dec_Donations_to_the_NihonkokkaRonoTo
-				has_decision = JAP_dec_Donations_to_the_DainipponSumeragiTo
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 25
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-		}
-	}
-	JAP_dec_Donations_to_the_NihonKakushinTo = { #日本革新党へ献金
-		icon = generic_industry
-		available = {
-			has_decision = JAP_dec_Donations_to_the_right_wing
-			not = {
-				has_decision = JAP_dec_Donations_to_the_ToaKensetsuKokuminRenme
-				has_decision = JAP_dec_Donations_to_the_NihonkokkaRonoTo
-				has_decision = JAP_dec_Donations_to_the_DainipponSumeragiTo
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 25
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-		}
-	}
-	JAP_dec_Donations_to_the_NihonkokkaRonoTo = { #日本国家労農党へ献金
-		icon = generic_industry
-		available = {
-			has_decision = JAP_dec_Donations_to_the_right_wing
-			not = {
-				has_decision = JAP_dec_Donations_to_the_ToaKensetsuKokuminRenme
-				has_decision = JAP_dec_Donations_to_the_NihonKakushinTo
-				has_decision = JAP_dec_Donations_to_the_DainipponSumeragiTo
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 25
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-		}
-	}
-	JAP_dec_Donations_to_the_DainipponSumeragiTo = { #大日本皇党へ献金
-		icon = generic_industry
-		available = {
-			has_decision = JAP_dec_Donations_to_the_right_wing
-			not = {
-				has_decision = JAP_dec_Donations_to_the_ToaKensetsuKokuminRenme
-				has_decision = JAP_dec_Donations_to_the_NihonKakushinTo
-				has_decision = JAP_dec_Donations_to_the_NihonkokkaRonoTo
-			}
-			has_country_flag = ssw_jap_flag_16
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		cost = 25
-		fire_only_once = yes
-		modifier = {
-		}
-		visible = {
-		}
-		complete_effect = {
-			set_country_flag = ssw_jap_flag_15
-		}
-	}
-}
 
 JAP_dec_cat_Agricultural_Land_Reform = {
 	JAP_dec_Anticipation_of_a_riot = {#暴動の予感
@@ -756,15 +930,11 @@ JAP_dec_cat_Agricultural_Land_Reform = {
 			has_completed_focus = JAP_Landlord_Security
 		}
 		allowed = { tag = JAP }            
-
-		activation = {                     
-			has_completed_focus = JAP_Agricultural_Land_Reform   
-		}
 		is_good = yes    
 
 		selectable_mission = yes 
 		fire_only_once = yes
-		days_mission_timeout = 5  
+		days_mission_timeout = 365
 		timeout_effect = {            
 			JAP = {
 				country_event = {
@@ -933,7 +1103,7 @@ JAP_dec_cat_Agricultural_Land_Reform = {
 		}
 		cost = 50
 		fire_only_once = yes
-		days_remove = 150
+		days_remove = 200
 		modifier = {
 			political_power_factor = -0.2
 		}
