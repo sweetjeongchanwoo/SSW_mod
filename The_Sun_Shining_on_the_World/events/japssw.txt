@@ -133,7 +133,7 @@ country_event = {
 	}
 }
 
-country_event = {#右翼と軍人による大規模な反政府活動
+country_event = {#芳澤謙吉の暗殺
 	id = SSW_JAP.7
 	title = SSW_JAP.7.t
 	desc = SSW_JAP.7.d
@@ -142,7 +142,37 @@ country_event = {#右翼と軍人による大規模な反政府活動
 
 	option = {
 		name = SSW_JAP.7.a
-		load_focus_tree = ssw_japan_authority_focus
+		JAP = {
+			country_event = {
+				id = SSW_JAP.28
+				days = 1
+			}
+		}
+		create_country_leader = {
+    		name = "Rinzi Naikaku"
+    		desc = ""
+    		picture = "Portrait_Souri_Huzai.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+}
+
+country_event = {#久原房之助が就任
+	id = SSW_JAP.8
+	title = SSW_JAP.8.t
+	desc = SSW_JAP.8.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP.8.a
+		country_event = {
+			id = SSW_JAP.9
+			days = 3
+		}
 		create_country_leader = {
     		name = "Fusanosuke Kuhara"
     		desc = ""
@@ -155,39 +185,18 @@ country_event = {#右翼と軍人による大規模な反政府活動
 	}
 }
 
-country_event = {#芳澤内閣総辞職
-	id = SSW_JAP.8
-	title = SSW_JAP.8.t
-	desc = SSW_JAP.8.d
-	picture = GFX_report_event_second_vienna_award_pact
-	is_triggered_only = yes
-
-	option = {
-		name = SSW_JAP.8.a
-	}
-}
-
-country_event = {#軍部贈賄事件
+country_event = {#軍縮法案の強制採決
 	id = SSW_JAP.9
 	title = SSW_JAP.9.t
 	desc = SSW_JAP.9.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = ssw_jap_flag_15
-	}
-
-	immediate = {
-	}
-
 	option = {
 		name = SSW_JAP.9.a
-		JAP = {
-			country_event = {
-				id = SSW_JAP.10
-				days = 10
-			}
+		swap_ideas = {
+			remove_idea = SSW_jAP_disarmament_idea
+			add_idea = SSW_jAP_kuhara_disarmament
 		}
 	}
 }
@@ -352,7 +361,7 @@ country_event = {#新潟県内で小作争議が発生
 	id = SSW_JAP.13
 	title = SSW_JAP.13.t
 	desc = SSW_JAP.13.d
-	picture = report_event_american_hunger_march
+	picture = GFX_report_event_american_hunger_march
 	is_triggered_only = yes
 
 	option = {#平沼
@@ -371,7 +380,7 @@ country_event = {#小作争議が全国へ拡大
 	id = SSW_JAP.14
 	title = SSW_JAP.14.t
 	desc = SSW_JAP.14.d
-	picture = report_event_american_hunger_march
+	picture = GFX_report_event_american_hunger_march
 	is_triggered_only = yes
 
 	option = {
@@ -428,7 +437,7 @@ country_event = {#全国暴動への対処
 	id = SSW_JAP.15
 	title = SSW_JAP.15.t
 	desc = SSW_JAP.15.d
-	picture = report_event_canada_treaty
+	picture = GFX_report_event_canada_treaty
 	trigger = {
 		has_country_flag = ssw_jap_flag_event
 	}
@@ -643,5 +652,205 @@ country_event = {#暴動の更なる拡大
 			}
 		}
 		set_country_flag = ssw_jap_flag_24
+	}
+}
+
+country_event = {#第二次軍縮法案の提出
+	id = SSW_JAP.22
+	title = SSW_JAP.22.t
+	desc = SSW_JAP.22.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#議会は踊る、されど進まず
+		name = SSW_JAP.22.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#陸軍が反対
+	id = SSW_JAP.23
+	title = SSW_JAP.23.t
+	desc = SSW_JAP.23.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#軍人が政治に口出しするな
+		name = SSW_JAP.23.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#賛成が過半数を割る
+	id = SSW_JAP.24
+	title = SSW_JAP.24.t
+	desc = SSW_JAP.24.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.4
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#なんてことだ
+		name = SSW_JAP.24.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#畑俊六の演説
+	id = SSW_JAP.25
+	title = SSW_JAP.25.t
+	desc = SSW_JAP.25.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.7
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#余計なことを
+		name = SSW_JAP.25.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#決断
+	id = SSW_JAP.26
+	title = SSW_JAP.26.t
+	desc = SSW_JAP.26.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+	}
+
+	option = {#採決
+		name = SSW_JAP.26.a
+		add_political_power = -10
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.27
+					days = 10
+				}
+			}
+		}
+	}
+
+	option = {#破棄
+		name = SSW_JAP.26.b
+		add_political_power = -10
+		hidden_effect = {
+			JAP ={
+				country_event = {
+					id = SSW_JAP.1
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+country_event = {#軍部のクーデター
+	id = SSW_JAP.27
+	title = SSW_JAP.27.t
+	desc = SSW_JAP.27.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+	}
+
+	option = {#民主
+		name = SSW_JAP.27.a
+		add_political_power = -25
+		trigger = {
+			not = {
+				has_country_flag = {
+					ssw_jap_flag_right_wing_1
+					ssw_jap_flag_military_1
+				}
+			}
+		}
+		JAP = {
+			country_event = {
+				id = SSW_JAP.7
+				days = 1
+			}
+		}
+	}
+
+	option = {#権威ー右翼
+		name = SSW_JAP.27.b
+		trigger = {
+			has_country_flag = ssw_jap_flag_right_wing_1
+		}
+		add_political_power = -25
+	}
+
+	option = {#権威ー軍人
+		name = SSW_JAP.27.c
+		trigger = {
+			has_country_flag = ssw_jap_flag_military_1
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = {#陛下が憤慨
+	id = SSW_JAP.28
+	title = SSW_JAP.28.t
+	desc = SSW_JAP.28.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+	}
+
+
+	option = {#逆賊を取り締まれ
+		name = SSW_JAP.28.a
+		add_political_power = -10
+		country_event = {
+			id = SSW_JAP.8
+			days = 1
+		}
 	}
 }

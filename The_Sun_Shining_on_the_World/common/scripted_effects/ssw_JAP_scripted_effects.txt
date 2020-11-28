@@ -1,10 +1,239 @@
 JAP_political_party_values = {
-	set_variable = { JAP_seiyukai_popularity = 44 }
+	set_variable = { JAP_seiyukai_popularity = 24 }
+	set_variable = { JAP_Kenkyukai_popularity = 24 }
 	set_variable = { JAP_minseito_popularity = 24 }
+	set_variable = { JAP_ziyuuto_popularity = 24 }
 	set_variable = { JAP_dainipponsumeragi_popularity = 24 }
 	set_variable = { JAP_Nihonkyosanto_Nosaka_popularity = 24 }
 	set_variable = { JAP_Nihonkyosanto_Tokuda_popularity = 24 }
 	set_variable = { JAP_nihonsyakai_popularity = 24 }
+	set_variable = { JAP_syakaikurabu_popularity = 24 }
+	set_variable = { JAP_DainipponSekiseikai_popularity = 24 }
+	set_variable = { JAP_NihonFuxasizumu_popularity = 24 }
+	set_variable = { JAP_Nihonkokkasyakaito_popularity = 24 }
+	set_variable = { JAP_Ronosyakaito_popularity = 24 }
 	set_variable = { JAP_toakensetsu_popularity = 24 }
-	set_variable = { JAP_ziyuuto_popularity = 24 }
+	set_variable = { JAP_ZaibatsuRenmei_popularity = 24 }
+	set_variable = { JAP_KotenKokyukai_popularity = 24 }
+	set_variable = { JAP_faction_days_reenable_low = 14 }
+}
+
+#政友会
+JAP_seiyukai_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_seiyukai_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_seiyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_seiyukai_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_seiyukai_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_seiyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#研究会
+JAP_kenkyukai_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_kenkyukai_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_Kenkyukai_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Kenkyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_kenkyukai_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_kenkyukai_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_Kenkyukai_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Kenkyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#民政党
+JAP_minseito_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_minseito_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_minseito_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_minseito_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_minseito_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_minseito_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_minseito_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_minseito_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#自由党
+JAP_ziyuuto_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_ziyuuto_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_ziyuuto_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_ziyuuto_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_ziyuuto_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_ziyuuto_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#大日本皇党
+JAP_dainipponsumeragi_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_dainipponsumeragi_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_dainipponsumeragi_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_dainipponsumeragi_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_dainipponsumeragi_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_dainipponsumeragi_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_dainipponsumeragi_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_dainipponsumeragi_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#日本共産党野坂派
+JAP_Nihonkyosanto_Nosaka_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_Nihonkyosanto_Nosaka_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_Nihonkyosanto_Nosaka_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Nihonkyosanto_Nosaka_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_Nihonkyosanto_Nosaka_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_Nihonkyosanto_Nosaka_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_Nihonkyosanto_Nosaka_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Nihonkyosanto_Nosaka_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#日本共産党徳田派
+JAP_Nihonkyosanto_Tokuda_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_Nihonkyosanto_Tokuda_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_Nihonkyosanto_Tokuda_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_Nihonkyosanto_Tokuda_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_Nihonkyosanto_Tokuda_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_Nihonkyosanto_Tokuda_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_Nihonkyosanto_Tokuda_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_Nihonkyosanto_Tokuda_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#日本社会党
+JAP_nihonsyakai_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_nihonsyakai_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_nihonsyakai_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_nihonsyakai_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_nihonsyakai_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_nihonsyakai_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_nihonsyakai_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_nihonsyakai_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#社会クラブ
+JAP_syakaikurabu_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_syakaikurabu_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_syakaikurabu_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_syakaikurabu_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_syakaikurabu_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_syakaikurabu_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_syakaikurabu_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_syakaikurabu_popularity
+		min = 0
+		max = 100
+	}
+}
+
+#東亜建設国民聯盟
+JAP_toakensetsu_low_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_toakensetsu_tt
+	custom_effect_tooltip = JAP_low_popularity_increase_tt
+	add_to_variable = { JAP_toakensetsu_popularity = JAP_faction_low_increase }
+	clamp_variable = {
+		var = JAP_toakensetsu_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_toakensetsu_low_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_toakensetsu_tt
+	custom_effect_tooltip = JAP_low_popularity_decrease_tt
+	add_to_variable = { JAP_toakensetsu_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_toakensetsu_popularity
+		min = 0
+		max = 100
+	}
 }

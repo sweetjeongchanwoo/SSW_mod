@@ -1,4 +1,7 @@
 JAP_political_party = {
+
+	priority = 43
+
 	icon = generic_foreign_policy
 
 	picture = concessions_to_the_trade_unions
@@ -30,6 +33,9 @@ JAP_cat_the_kanto_industry_region_plan = {
 }
 
 JAP_signs_of_disarmament = {
+
+	priority = 42
+
 	allowed = {
 		original_tag = JAP
 	}
@@ -47,12 +53,10 @@ JAP_dec_cat_Agricultural_Land_Reform = {#農地改革
 	allowed = {
 		original_tag = JAP
 	}
-	visible = {
-        has_completed_focus = JAP_Agricultural_Land_Reform
-    }
 }
 
 JAP_dec_cat_Riot_suppression = {#暴動の鎮圧
+	priority = 41
 	icon = generic_political_actions
 	picture = GFX_JAP_Riot_decision
 	allowed = {
