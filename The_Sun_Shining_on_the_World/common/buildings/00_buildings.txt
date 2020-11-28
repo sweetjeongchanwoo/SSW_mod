@@ -1,15 +1,9 @@
 buildings = {
-
-	# show_on_map:
-	#    if provincial = yes, then show_on_map = X is amount per each province
-	#    if provincial = no, then show_on_map = X is amount per state
-
-
 	infrastructure = {
 		base_cost = 3000
 		icon_frame = 3
 		infrastructure = yes
-		max_level = 20
+		max_level = 20	#最大レベルを10から20へ変更
 		value = 1
 
 		show_modifier = yes
@@ -153,7 +147,7 @@ buildings = {
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
-		max_level = 10 # This is the max unlock level
+		max_level = 10	#最大レベルを6から10へ変更
 		damage_factor = 0.5
 		value = 4
 	}
@@ -176,7 +170,7 @@ buildings = {
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
-		max_level = 5 # This is the max unlock level
+		max_level = 5 	#最大レベルを1から5へ変更
 		shares_slots = yes
 		value = 10
 		infrastructure_construction_effect = yes
