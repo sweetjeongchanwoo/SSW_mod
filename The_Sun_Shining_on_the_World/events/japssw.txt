@@ -198,6 +198,7 @@ country_event = {#軍縮法案の強制採決
 			remove_idea = SSW_jAP_disarmament_idea
 			add_idea = SSW_jAP_kuhara_disarmament
 		}
+		set_country_flag = ssw_jap_flag_17
 	}
 }
 

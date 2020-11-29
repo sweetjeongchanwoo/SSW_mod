@@ -472,5 +472,14 @@ spriteTypes = {
 		name = "GFX_TUR_Union_middle_east"
 		texturefile = "gfx/interface/goals/TUR/ssw_TUR_middle_east.dds"
 	}
+	#イタリア
+	SpriteType = {
+		name = "GFX_ITA_Caesar_side"
+		texturefile = "gfx/interface/goals/ITA/ITA_Caesar_side.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_Caesar"
+		texturefile = "gfx/interface/goals/ITA/ITA_Caesar.dds"
+	}
 
 }

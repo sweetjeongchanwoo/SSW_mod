@@ -10,6 +10,8 @@
 
 	add_ideas = {
 		civilian_economy
+		INS_idea_00
+		INS_idea_000
 	}
 
 	set_politics = {

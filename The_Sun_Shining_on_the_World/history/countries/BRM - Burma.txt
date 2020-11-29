@@ -44,7 +44,7 @@
 		name = "Ba Maw"
 		picture = "gfx/leaders/BRM/Portrait_Bar_Maw.dds"
 		expire = "1965.1.1"
-		ideology = social_liberalism_ideology
+		ideology = authority_democracy_ideology
 		traits = {
 			#
 		}
