@@ -457,6 +457,89 @@ spriteTypes = {
 		name = "GFX_tech_logistics_officer2_medium"
 		texturefile = "gfx/interface/technologies/support_tech/tech_logistics_officer2.dds"
 	}
+	SpriteType = {
+		name = "GFX_tech_communication_reconnaissance1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_communication_reconnaissance1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_communication_reconnaissance2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_communication_reconnaissance2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_comfort_unit1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_comfort_unit2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_comfort_unit3_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_comfort_unit4_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_comfort_unit5_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_comfort_unit6_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_comfort_unit2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_sniper_unit1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_sniper_unit2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_sniper_unit3_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_sniper_unit4_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_sniper_unit5_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_sniper_unit6_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_sniper_unit2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_morter_unit1_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_morter_unit2_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_morter_unit3_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_morter_unit4_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_morter_unit5_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_morter_unit6_medium"
+		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
+	}
 
 
 #éYã∆ãZèp#

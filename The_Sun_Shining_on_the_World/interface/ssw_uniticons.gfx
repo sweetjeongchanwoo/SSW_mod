@@ -1,4 +1,4 @@
-#ì¬c‚Î‚¢‚¨‚¸@‰½‚©‚ ‚ê‚Î˜A—‚­‚¾‚³‚¢
+#ï¿½ì¬ï¿½cï¿½Î‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î˜Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 spriteTypes = {
 #large Unit Icons
 	spriteType = {
@@ -74,4 +74,44 @@ spriteTypes = {
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" 
 		noOfFrames = 2
 	}
+
+	#ã“ã“ã‹ã‚‰ä¸‹ã¯ä½•ã®æ„å‘³ã‚‚ã‚ã‚Šã¾ã›ã‚“
+############################## Mod Units - NATO ##########################################
+spriteType = {
+	name = "GFX_nato_unit_garrison_icon_small"
+	texturefile = "gfx/interface/counters/divisions_small/nato_unit_garrison_icon_small.dds"
+	legacy_lazy_load = no
+}	
+
+spriteType = {
+	name = "GFX_nato_unit_militia_icon_small"
+	texturefile = "gfx/interface/counters/divisions_small/unit_militia_icon_small.dds"
+	legacy_lazy_load = no
+}	
+
+spriteType = {
+	name = "GFX_nato_unit_police_infantry_icon_small"
+	texturefile = "gfx/interface/counters/divisions_small/nato_unit_police_infantry_icon_small.dds"
+	legacy_lazy_load = no
+}
+spriteType = {
+	name = "GFX_unit_garrison_icon_small"
+	texturefile = "/interface/counters/divisions_small/unit_garrison_icon_small.dds"
+	legacy_lazy_load = no
+	noOfFrames = 2		
+}
+
+spriteType = {
+	name = "GFX_unit_militia_icon_small"
+	texturefile = "/interface/counters/divisions_small/unit_militia_icon_small.dds"
+	legacy_lazy_load = no
+	noOfFrames = 2		
+}
+
+spriteType = {
+	name = "GFX_unit_police_infantry_icon_small"
+	texturefile = "/interface/counters/divisions_small/unit_police_infantry_icon_small.dds"
+	legacy_lazy_load = no
+	noOfFrames = 2		
+}
 
