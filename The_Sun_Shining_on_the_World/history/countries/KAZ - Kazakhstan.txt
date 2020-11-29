@@ -18,3 +18,14 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Ismail Yusupov"
+	desc = ""
+	picture = "gfx/leaders/KAZ/Portrait_Ismail_Yusupov.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}
