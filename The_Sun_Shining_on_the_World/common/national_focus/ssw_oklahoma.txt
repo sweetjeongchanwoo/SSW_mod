@@ -11,18 +11,17 @@ focus_tree = {
 	focus = {
 		id = OKL_effort_to_improve_economy
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
+		cost = 10
 		x = 2
 		y = 0
 		completion_reward = {
 			add_political_power = 120
 		}
-
 	}
 	focus = {
 		id = OKL_military_reconstruction
 		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
+		cost = 10
 		x = 12
 		y = 0
 		completion_reward = {
@@ -30,12 +29,11 @@ focus_tree = {
 			navy_experience = 25
 			air_experience = 25
 		}
-
 	}
 	focus = {
 		id = OKL_military_industry_complex
 		icon = GFX_focus_generic_tank_production
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_effort_to_improve_economy
 		}
@@ -52,12 +50,11 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_industrialization
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_military_industry_complex
 		}
@@ -73,12 +70,11 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_armanent_1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_industrialization
 		}
@@ -94,12 +90,11 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_political_distrust
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_effort_to_improve_economy
 		}
@@ -107,14 +102,13 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_political_power = 150
-			add_stability = -0.10
+			add_stability = -0.1
 		}
-
 	}
 	focus = {
 		id = OKL_reconstruct_KKK
 		icon = GFX_focus_eng_organise_the_blackshirts
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_political_distrust
 		}
@@ -122,19 +116,18 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_political_power = 150
-			add_stability = 0.20
+			add_stability = 0.2
 			fascism_drift = 0.06
 			set_party_name = {
 				ideology = national_fascism
 				name = OKL_Ku_Klux_Klan
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_black_serf
 		icon = GFX_focus_cze_german_puppet
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_reconstruct_KKK
 		}
@@ -143,12 +136,11 @@ focus_tree = {
 		completion_reward = {
 			conscription = 0.02
 		}
-
 	}
 	focus = {
 		id = OKL_focus_on_the_army
 		icon = GFX_goal_rhineland
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_military_reconstruction
 		}
@@ -158,18 +150,16 @@ focus_tree = {
 			army_experience = 20
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = land_doctrine
 			}
-
 		}
-
 	}
 	focus = {
 		id = OKL_effort_for_mechanization
 		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_focus_on_the_army
 		}
@@ -180,7 +170,7 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				name = mech_army_bonus
 				technology = basic_medium_tank
@@ -189,12 +179,11 @@ focus_tree = {
 				technology = mechanised_infantry
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_fire_artillery
 		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_effort_for_mechanization
 		}
@@ -202,18 +191,17 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1
 				uses = 3
 				name = artillery_bonus
 				technology = artillety
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_expand_quantity
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_focus_on_the_army
 		}
@@ -225,12 +213,11 @@ focus_tree = {
 		completion_reward = {
 			add_mobilization_speed = 0.2
 		}
-
 	}
 	focus = {
 		id = OKL_doctrine_research
 		icon = GFX_goal_generic_position_armies
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_expand_quantity
 		}
@@ -239,17 +226,16 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 2
 				category = land_doctrine
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_white_army
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_focus_on_the_army
 		}
@@ -261,12 +247,11 @@ focus_tree = {
 		completion_reward = {
 			add_spetial_forces_cap = 0.05
 		}
-
 	}
 	focus = {
 		id = OKL_mental_superiority
 		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_white_army
 		}
@@ -277,12 +262,11 @@ focus_tree = {
 			army_attack_factor = 0.1
 			army_morale_factor = 0.1
 		}
-
 	}
 	focus = {
 		id = OKL_using_black_mens
 		icon = GFX_goal_continuous_restrict_freedom
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_focus_on_the_army
 		}
@@ -294,12 +278,11 @@ focus_tree = {
 		completion_reward = {
 			conscription = 0.02
 		}
-
 	}
 	focus = {
 		id = OKL_forced_assult
 		icon = GFX_focus_spr_masters_of_our_own_fate
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_using_black_mens
 		}
@@ -309,12 +292,11 @@ focus_tree = {
 			land_reinforce_rate = 0.08
 			army_morale_factor = 0.1
 		}
-
 	}
 	focus = {
 		id = OKL_air_force_strengthening
 		icon = GFX_goal_generic_air_bomber
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_military_reconstruction
 		}
@@ -323,34 +305,32 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = OKL_air_force_strengthening
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = OKL_air_force_strengthening
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				category = cat_heavy_fighter
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_research_doctrine
 		icon = GFX_goal_generic_air_doctrine
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_air_force_strengthening
 		}
 		x = 17
 		y = 2
-
 	}
 	focus = {
 		id = OKL_white_power
 		icon = GFX_goal_generic_attack_allies
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_reconstruct_KKK
 		}
@@ -363,12 +343,11 @@ focus_tree = {
 				ideology = national_fascism
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_reconquest_of_america
 		icon = GFX_focus_generic_strike_at_democracy3
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_public_works
 			focus = OKL_hard_labor
@@ -398,23 +377,21 @@ focus_tree = {
 				expire = 0
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_public_works
 		icon = GFX_focus_generic_africa_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_white_power
 		}
 		x = 2
 		y = 4
-
 	}
 	focus = {
 		id = OKL_hard_labor
 		icon = GFX_focus_prc_infiltration
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_black_serf
 		}
@@ -425,17 +402,16 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_stability = -0.05
-			add_production_speed_industrial_complex_factor = 0.10
-			add_production_speed_arms_factory_factor = 0.10
+			add_production_speed_industrial_complex_factor = 0.1
+			add_production_speed_arms_factory_factor = 0.1
 			add_production_speed_dockyard_factor = 0.05
 			add_industrial_capacity_factory = 0.05
 		}
-
 	}
 	focus = {
 		id = OKL_exclusion_movement
 		icon = GFX_focus_generic_coastal_fort
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_black_serf
 		}
@@ -447,12 +423,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 		}
-
 	}
 	focus = {
 		id = OKL_navy_strenghening
 		icon = GFX_focus_generic_cruiser2
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_military_reconstruction
 		}
@@ -461,17 +436,16 @@ focus_tree = {
 		completion_reward = {
 			naval_equipment_upgrade_xp_cost = -0.1
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1
 				uses = 2
 				category = naval_doctrine
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_research_doctrine
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_air_force_strengthening
 		}
@@ -479,18 +453,17 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1
 				uses = 2
 				name = air_doc_bonus
 				category = air_doctrine
 			}
 		}
-
 	}
 	focus = {
 		id = OKL_armanent_2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 10
 		prerequisite = {
 			focus = OKL_armanent_1
 		}
@@ -506,6 +479,5 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
 }
