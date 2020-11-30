@@ -1,4 +1,6 @@
-
+####################################
+#This is made by Chiyo  Chiyo THX!!#
+####################################
 focus_tree = {
 	id = ssw_Great_Britain_focus
 	country = {

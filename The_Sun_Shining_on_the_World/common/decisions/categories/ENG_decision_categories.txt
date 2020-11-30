@@ -1,3 +1,6 @@
+####################################
+#This is made by Chiyo  Chiyo THX!!#
+####################################
 ENG_USA_civil_war = {
 	allowed = {
 		original_tag = ENG

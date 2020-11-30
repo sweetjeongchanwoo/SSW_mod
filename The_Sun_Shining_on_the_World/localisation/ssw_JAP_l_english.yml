@@ -772,6 +772,8 @@
  JAP_DAINIPPONSUMERAGITO_Town_Hall_Passage_desc:0 "[GetDainipponsumeragiName]が全国各地で街宣活動することを支援する"
  JAP_DAINIPPONSUMERAGITO_Interference_with_activities:0 "[GetDainipponsumeragiName]の活動を妨害"
  JAP_DAINIPPONSUMERAGITO_Interference_with_activities_desc:0 "[GetDainipponsumeragiName]が全国各地で政治活動することを妨害する"
+ JAP_dec_cat_gea_gold_block:0 "大東亜金ブロック"
+ JAP_dec_cat_gea_gold_block_desc:0 "新政権が打ち出した大東亜金ブロックというシステムは、戦後不況を乗り切るためのものである。我が国が始めた金本位制を大東亜共栄圏内で行い、経済を活性化させるのだ。しかし、我が国は30年前に金本位制のせいで経済的危機を味わった。同じ過ちを繰り返さないように、各国の経済状況を調整しなければならない。\n\n[GetManMenSibFlag]\n[CHI.GetFlag]"
 
 #tooltip
  1_JAP_tt:0 "§G我が国は民主主義を一貫して、新たな時代に突入するだろう"
@@ -823,6 +825,7 @@
  JAP_KotenKokyukai_political_party_values:0 "\n[GetKotenKokyukaiName]の§Y支持率§!: [?JAP.JAP_KotenKokyukai_popularity|+0]"
 
 #localization_key
+ JAP_ManMenSib_flag:0 "£faction_MAN £faction_MEN £faction_SIB"
  JAP_Seiyukai_name_and_icon:0 "£faction_jap_seiyukai §Y政友会§!"
  JAP_Kenkyukai_name_and_icon:0 "£faction_jap_kenkyukai §Y研究会§!"
  JAP_Minseito_name_and_icon:0 "£faction_jap_minseito §Y民政党§!"

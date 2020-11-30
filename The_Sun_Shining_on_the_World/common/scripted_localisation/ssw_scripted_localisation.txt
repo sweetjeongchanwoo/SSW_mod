@@ -1,3 +1,39 @@
+defined_text = {#満蒙西
+	name = GetManMenSibFlag
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ManMenSib_flag
+	}
+}
+defined_text = {#中緬泰
+	name = GetChiFlag
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Chi_flag
+	}
+}
+defined_text = {#インドシナ
+	name = GetIndochinaFlag
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Indochina_flag
+	}
+}
+defined_text = {#印マ比
+	name = GetSiaBrmMalFlag
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_SiaBrmMal_flag
+	}
+}
 defined_text = {#政友会
 	name = GetSeiyukaiName
 	text = {
@@ -152,6 +188,15 @@ defined_text = {#皇典講究会
 	}
 }
 #########VALUES#########
+defined_text = {#
+	name = GetSeiyukaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Seiyukai_political_party_values
+	}
+}
 defined_text = {#政友会
 	name = GetSeiyukaiValues
 	text = {

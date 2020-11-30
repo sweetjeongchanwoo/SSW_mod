@@ -1286,31 +1286,21 @@ JAP_dec_cat_Riot_suppression = {
 
 JAP_dec_cat_gea_gold_block = {
 	JAP_dec_Issuance_of_Manchukuo_s_convertible_paper_money = {#満州で兌換紙幣を発行
-	icon = eng_trade_unions_support
-	available = {
+		icon = eng_trade_unions_support
+		available = {
 		has_idea = SSW_jAP_gold_standard_idea
-	}
-	ai_will_do = {
-		factor = 100
-	}
-	cost = 25	
-	fire_only_once = yes
-	days_remove = 50
-	modifier = {
-		civilian_factory_use = 3
-	}
-	remove_effect = {
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -200
-			producer = JAP
 		}
-		add_manpower = -100
-		JAP = {
-			country_event = {
-				id = SSW_JAP.18
-			}
+		ai_will_do = {
+			factor = 100
 		}
-	}
+		cost = 25	
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			
+		}
 	}
 }
