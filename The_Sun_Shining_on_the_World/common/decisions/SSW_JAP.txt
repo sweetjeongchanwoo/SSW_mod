@@ -1457,16 +1457,32 @@ JAP_dec_cat_gea_gold_block = {
 		}
 		cost = 20
 		fire_only_once = no
-		days_remove = 45
+		days_remove = 10
 		modifier = {
 			civilian_factory_use = 1
 		}
 		remove_effect = {
 			custom_effect_tooltip = ssw_JAP_Support_for_economic_activities_tt
-			JAP_SIB_low_gold_system_increase_effect = yes
-			JAP_MAN_low_gold_system_increase_effect = yes
-			JAP_MEN_low_gold_system_increase_effect = yes
+			for_each_loop = {
+				array = JAP.id
+				value = JAP_SIB
+				JAP_SIB = {
+					kill_country_leader = yes
+				}
+			
+#				v_country = { kill_country_leader = yes }
+			}
 			custom_effect_tooltip = JAP_gold_system_fifty_five_tt
+		}
+	}
+	ssw_dec_JAP_test = {
+		icon = hol_attract_foreign_investors
+		fire_only_once = no
+		days_remove = 5
+		remove_effect = {
+				add_to_array = { JAP.id = JAP }
+				add_to_array = { JAP.id = MAN }
+				add_to_array = { JAP.id = MEN }
 		}
 	}
 }

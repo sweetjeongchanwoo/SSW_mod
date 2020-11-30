@@ -33,6 +33,12 @@ gea_gold_system = {
 	set_variable = { Phi_gold_system = 25 }
 }
 
+array_test = {
+	add_to_array = { ssw_JAP_test = JAP }
+	add_to_array = { ssw_JAP_test = MAN }
+	add_to_array = { ssw_JAP_test = MEN }
+}
+
 JAP_SIB_low_gold_system_increase_effect = {#シベリア
 	custom_effect_tooltip = JAP_SIB_tt
 	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
@@ -86,6 +92,27 @@ JAP_MEN_low_gold_system_increase_effect = {#蒙古
 	}
 }
 JAP_MEN_low_gold_system_decrease_effect = {#蒙古
+	custom_effect_tooltip = JAP_MEN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Men_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Men_gold_system
+		min = 0
+		max = 100
+	}
+}
+
+JAP_MEN_low_gold_system_increase_effect = {#中国
+	custom_effect_tooltip = JAP_MEN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Men_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Men_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_MEN_low_gold_system_decrease_effect = {#中国
 	custom_effect_tooltip = JAP_MEN_tt
 	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
 	add_to_variable = { Men_gold_system = JAP_faction_low_five_decrease }
