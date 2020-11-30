@@ -3694,35 +3694,10 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-#				instantTextBoxType = {
-#					name = "wonderweapon_year3"
-#					position = { x = 0 y = 260 }
-#					textureFile = ""
-#					font = "hoi_36header"
-#					borderSize = {x = 0 y = 4}
-#					text = "1935"
-#					maxWidth = 130
-#					maxHeight = 32
-#					format = left
-#					Orientation = "UPPER_LEFT"
-#				}
-
-#				instantTextBoxType = {
-#					name = "wonderweapon_year4"
-#					position = { x = 0 y = 380 }
-#					textureFile = ""
-#					font = "hoi_36header"
-#					borderSize = {x = 0 y = 4}
-#					text = "1936"
-#					maxWidth = 130
-#					maxHeight = 32
-#					format = left
-#					Orientation = "UPPER_LEFT"
-#				}
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 260 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3735,20 +3710,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 620 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1939"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year7"
-					position = { x = 0 y = 740 }
+					position = { x = 0 y = 380 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3760,21 +3722,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year8"
-					position = { x = 0 y = 860 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1941"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year9"
-					position = { x = 0 y = 980 }
+					name = "wonderweapon_year7"
+					position = { x = 0 y = 500 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3786,21 +3735,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year10"
-					position = { x = 0 y = 1100 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1943"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year11"
-					position = { x = 0 y = 1220 }
+					name = "wonderweapon_year8"
+					position = { x = 0 y = 620 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3812,21 +3748,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year12"
-					position = { x = 0 y = 1340 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1945"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year13"
-					position = { x = 0 y = 1460 }
+					name = "wonderweapon_year9"
+					position = { x = 0 y = 740 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3838,21 +3761,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year14"
-					position = { x = 0 y = 1580 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1947"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year15"
-					position = { x = 0 y = 1700 }
+					name = "wonderweapon_year10"
+					position = { x = 0 y = 860 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3864,21 +3774,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year16"
-					position = { x = 0 y = 1820 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1949"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year17"
-					position = { x = 0 y = 1940 }
+					name = "wonderweapon_year11"
+					position = { x = 0 y = 980 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3890,21 +3787,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year18"
-					position = { x = 0 y = 2060 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1951"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year19"
-					position = { x = 0 y = 2180 }
+					name = "wonderweapon_year12"
+					position = { x = 0 y = 1100 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3916,21 +3800,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year20"
-					position = { x = 0 y = 2300 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1953"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year21"
-					position = { x = 0 y = 2420 }
+					name = "wonderweapon_year13"
+					position = { x = 0 y = 1240 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3942,21 +3813,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year22"
-					position = { x = 0 y = 2540 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1955"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year23"
-					position = { x = 0 y = 2660 }
+					name = "wonderweapon_year14"
+					position = { x = 0 y = 1360 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3968,21 +3826,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year24"
-					position = { x = 0 y = 2780 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1957"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year25"
-					position = { x = 0 y = 2900 }
+					name = "wonderweapon_year15"
+					position = { x = 0 y = 1480 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3994,21 +3839,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year26"
-					position = { x = 0 y = 3020 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1959"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year27"
-					position = { x = 0 y = 3140 }
+					name = "wonderweapon_year16"
+					position = { x = 0 y = 1600 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -4020,21 +3852,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year28"
-					position = { x = 0 y = 3260 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1961"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year29"
-					position = { x = 0 y = 3380 }
+					name = "wonderweapon_year17"
+					position = { x = 0 y = 1720 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -4046,21 +3865,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "wonderweapon_year30"
-					position = { x = 0 y = 3500 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1963"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "wonderweapon_year31"
-					position = { x = 0 y = 3620 }
+					name = "wonderweapon_year18"
+					position = { x = 0 y = 1840 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -4070,6 +3876,7 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
+
 				
 
 			}
