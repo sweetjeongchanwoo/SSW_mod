@@ -68,3 +68,19 @@ JAP_dec_cat_gea_gold_block = {#大東亜金ブロック
 	}
 }
 
+Other_dec_cat_gea_gold_block = {#大東亜金ブロックへの介入
+	priority = 35
+	icon = generic_economy
+	picture = decision_cat_picture_fatherland_front
+	visible = { 
+		FROM = { 
+			 OR = {
+				  tag = GER
+				  tag = ENG
+				  tag = ITA
+				  tag = RUS
+			 } 
+		} 
+   }
+}
+

@@ -31,12 +31,9 @@ gea_gold_system = {
 	set_variable = { Ins_gold_system = 25 }
 	set_variable = { Mal_gold_system = 25 }
 	set_variable = { Phi_gold_system = 25 }
-}
-
-array_test = {
-	add_to_array = { ssw_JAP_test = JAP }
-	add_to_array = { ssw_JAP_test = MAN }
-	add_to_array = { ssw_JAP_test = MEN }
+	set_variable = { Ast_gold_system = 25 }
+	set_variable = { Nzl_gold_system = 25 }
+	set_variable = { Nin_gold_system = 25 }
 }
 
 JAP_SIB_low_gold_system_increase_effect = {#シベリア
@@ -102,27 +99,246 @@ JAP_MEN_low_gold_system_decrease_effect = {#蒙古
 	}
 }
 
-JAP_MEN_low_gold_system_increase_effect = {#中国
-	custom_effect_tooltip = JAP_MEN_tt
+JAP_CHI_low_gold_system_increase_effect = {#中国
+	custom_effect_tooltip = JAP_CHI_tt
 	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
-	add_to_variable = { Men_gold_system = JAP_faction_low_five_increase }
+	add_to_variable = { Chi_gold_system = JAP_faction_low_five_increase }
 	clamp_variable = {
-		var = Men_gold_system
+		var = Chi_gold_system
 		min = 0
 		max = 100
 	}
 }
-JAP_MEN_low_gold_system_decrease_effect = {#中国
-	custom_effect_tooltip = JAP_MEN_tt
+JAP_CHI_low_gold_system_decrease_effect = {#中国
+	custom_effect_tooltip = JAP_CHI_tt
 	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
-	add_to_variable = { Men_gold_system = JAP_faction_low_five_decrease }
+	add_to_variable = { Chi_gold_system = JAP_faction_low_five_decrease }
 	clamp_variable = {
-		var = Men_gold_system
+		var = Chi_gold_system
 		min = 0
 		max = 100
 	}
 }
-
+JAP_BRM_low_gold_system_increase_effect = {#ビルマ
+	custom_effect_tooltip = JAP_BRM_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Brm_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Brm_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_BRM_low_gold_system_decrease_effect = {#ビルマ
+	custom_effect_tooltip = JAP_BRM_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Brm_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Brm_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_SIA_low_gold_system_increase_effect = {#シャム
+	custom_effect_tooltip = JAP_SIA_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Sia_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Sia_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_SIA_low_gold_system_decrease_effect = {#シャム
+	custom_effect_tooltip = JAP_SIA_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Sia_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Sia_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_VIN_low_gold_system_increase_effect = {#ベトナム
+	custom_effect_tooltip = JAP_VIN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Vin_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Vin_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_VIN_low_gold_system_decrease_effect = {#ベトナム
+	custom_effect_tooltip = JAP_VIN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Vin_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Vin_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_LAO_low_gold_system_increase_effect = {#ラオス
+	custom_effect_tooltip = JAP_LAO_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Lao_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Lao_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_LAO_low_gold_system_decrease_effect = {#ラオス
+	custom_effect_tooltip = JAP_LAO_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Lao_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Lao_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_CAM_low_gold_system_increase_effect = {#カンボジア
+	custom_effect_tooltip = JAP_CAM_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Cam_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Cam_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_CAM_low_gold_system_decrease_effect = {#カンボジア
+	custom_effect_tooltip = JAP_CAM_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Cam_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Cam_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_MAL_low_gold_system_increase_effect = {#マラヤ
+	custom_effect_tooltip = JAP_MAL_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Mal_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Mal_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_MAL_low_gold_system_decrease_effect = {#マラヤ
+	custom_effect_tooltip = JAP_MAL_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Mal_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Mal_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_INS_low_gold_system_increase_effect = {#インドネシア
+	custom_effect_tooltip = JAP_INS_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Ins_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Ins_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_INS_low_gold_system_decrease_effect = {#インドネシア
+	custom_effect_tooltip = JAP_INS_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Ins_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Ins_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_PHI_low_gold_system_increase_effect = {#フィリピン
+	custom_effect_tooltip = JAP_PHI_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Phi_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Phi_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_PHI_low_gold_system_decrease_effect = {#フィリピン
+	custom_effect_tooltip = JAP_PHI_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Phi_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Phi_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_AST_low_gold_system_increase_effect = {#オーストラリア
+	custom_effect_tooltip = JAP_AST_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Ast_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Ast_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_AST_low_gold_system_decrease_effect = {#オーストラリア
+	custom_effect_tooltip = JAP_AST_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Ast_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Ast_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_NZL_low_gold_system_increase_effect = {#ニュージーランド
+	custom_effect_tooltip = JAP_NZL_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Nzl_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Nzl_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_NZL_low_gold_system_decrease_effect = {#ニュージーランド
+	custom_effect_tooltip = JAP_NZL_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Nzl_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Nzl_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_NIN_low_gold_system_increase_effect = {#インド
+	custom_effect_tooltip = JAP_NIN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Nin_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Nin_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_NIN_low_gold_system_decrease_effect = {#インド
+	custom_effect_tooltip = JAP_NIN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Nin_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Nin_gold_system
+		min = 0
+		max = 100
+	}
+}
 #政友会
 JAP_seiyukai_low_popularity_increase_effect = {
 	custom_effect_tooltip = JAP_seiyukai_tt

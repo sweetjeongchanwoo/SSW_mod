@@ -619,6 +619,18 @@ set_variable = {
 	var = Phi_gold_system
 	value = 50
 }
+set_variable = { 
+	var = Nin_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Ast_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Nzl_gold_system
+	value = 50
+}
 ##################################################
 ##################大東亜金ブロック##################
 ##################################################
