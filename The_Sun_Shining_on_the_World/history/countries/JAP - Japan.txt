@@ -638,7 +638,7 @@ set_variable = {
 #内務
 set_variable = { JAP_faction_low_increase = 3 }
 set_variable = { JAP_faction_low_five_increase = 5 }
-set_variable = { JAP_faction_low_five_decrease = -5 }
+set_variable = { JAP_faction_low_five_decrease = -10 }
 set_variable = { JAP_faction_low_decrease = -3 }
 set_variable = { JAP_faction_days_reenable_low = 14 }
 set_variable = { JAP_faction_days_reenable_low_fifty_five = 45 }
