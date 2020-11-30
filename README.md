@@ -1,11 +1,11 @@
-# ƒ[ƒJƒ‹Mod‚Å“®‚©‚·•û–@
+# ãƒ­ãƒ¼ã‚«ãƒ«Modã§å‹•ã‹ã™æ–¹æ³•
 
-1. git“à‚ÌuThe_Sun_Shining_on_the_Worldv‚ÆuThe_Sun_Shining_on_the_World.modv‚ğ
-	uƒhƒLƒ…ƒƒ“ƒg/Paradox Interactive/Hearts of Iron IV/modv‚É“ü‚ê‚éB
-1.  uThe_Sun_Shining_on_the_World.modv‚ğƒƒ‚’ “™‚ÅŠJ‚­B
-1.  3s–Ú‚É‚ ‚éupath = ""v‚Ì""‚Ì’†‚ÉuThe_Sun_Shining_on_the_Worldv‚ÌƒtƒHƒ‹ƒ_‚ÌêŠ‚ğ“\‚è•t‚¯‚éB
+1. gitå†…ã®ã€ŒThe_Sun_Shining_on_the_Worldã€ã¨ã€ŒThe_Sun_Shining_on_the_World.modã€ã‚’
+	ã€Œãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ/Paradox Interactive/Hearts of Iron IV/modã€ã«å…¥ã‚Œã‚‹ã€‚
+1.  ã€ŒThe_Sun_Shining_on_the_World.modã€ã‚’ãƒ¡ãƒ¢å¸³ç­‰ã§é–‹ãã€‚
+1.  3è¡Œç›®ã«ã‚ã‚‹ã€Œpath = ""ã€ã®""ã®ä¸­ã«ã€ŒThe_Sun_Shining_on_the_Worldã€ã®ãƒ•ã‚©ãƒ«ãƒ€ã®å ´æ‰€ã‚’è²¼ã‚Šä»˜ã‘ã‚‹ã€‚
 
-	—áuC:/Users/ƒ†[ƒU[–¼/Documents\Paradox Interactive/Hearts of Iron IV/mod/The_Sun_Shining_on_the_Worldv
-	¦ƒ}[ƒN‚Å‚Í“®‚«‚Ü‚¹‚ñ
+	ä¾‹ã€ŒC:/Users/ãƒ¦ãƒ¼ã‚¶ãƒ¼å/Documents/Paradox Interactive/Hearts of Iron IV/mod/The_Sun_Shining_on_the_Worldã€
+	â€»ï¿¥ãƒãƒ¼ã‚¯ã§ã¯å‹•ãã¾ã›ã‚“
 
-	’ˆÓ: ƒ†[ƒU[–¼‚âƒhƒLƒ…ƒƒ“ƒg‚È‚Ç‚ª“ú–{Œê‚É‚È‚Á‚Ä‚¢‚éê‡”½‰f‚³‚ê‚È‚¢‚Ì‚ÅƒtƒHƒ‹ƒ_‚ÌêŠ‚ğ“ú–{Œê‚ÌƒtƒHƒ‹ƒ_‚ğŒo—R‚µ‚È‚¢êŠ‚ÉˆÚ“®‚³‚¹‚Äpath‚É‘Å‚¿‚ŞƒeƒLƒXƒg‚à‚»‚ÌêŠ‚É•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
+	æ³¨æ„: ãƒ¦ãƒ¼ã‚¶ãƒ¼åã‚„ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆãªã©ãŒæ—¥æœ¬èªã«ãªã£ã¦ã„ã‚‹å ´åˆåæ˜ ã•ã‚Œãªã„ã®ã§ãƒ•ã‚©ãƒ«ãƒ€ã®å ´æ‰€ã‚’æ—¥æœ¬èªã®ãƒ•ã‚©ãƒ«ãƒ€ã‚’çµŒç”±ã—ãªã„å ´æ‰€ã«ç§»å‹•ã•ã›ã¦pathã«æ‰“ã¡è¾¼ã‚€ãƒ†ã‚­ã‚¹ãƒˆã‚‚ãã®å ´æ‰€ã«å¤‰æ›´ã—ã¦ãã ã•ã„ã€‚
