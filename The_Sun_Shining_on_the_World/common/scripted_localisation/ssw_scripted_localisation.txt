@@ -1,39 +1,3 @@
-defined_text = {#満蒙西
-	name = GetManMenSibFlag
-	text = {
-		trigger = {
-			original_tag = JAP
-		}
-		localization_key = JAP_ManMenSib_flag
-	}
-}
-defined_text = {#中緬泰
-	name = GetChiFlag
-	text = {
-		trigger = {
-			original_tag = JAP
-		}
-		localization_key = JAP_Chi_flag
-	}
-}
-defined_text = {#インドシナ
-	name = GetIndochinaFlag
-	text = {
-		trigger = {
-			original_tag = JAP
-		}
-		localization_key = JAP_Indochina_flag
-	}
-}
-defined_text = {#印マ比
-	name = GetSiaBrmMalFlag
-	text = {
-		trigger = {
-			original_tag = JAP
-		}
-		localization_key = JAP_SiaBrmMal_flag
-	}
-}
 defined_text = {#政友会
 	name = GetSeiyukaiName
 	text = {
@@ -188,13 +152,114 @@ defined_text = {#皇典講究会
 	}
 }
 #########VALUES#########
-defined_text = {#
-	name = GetSeiyukaiValues
+defined_text = {#シベリア
+	name = GetSibValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_idea = JAP_Okinori_Kaya
+		}
+		localization_key = JAP_Sib_values
+	}
+}
+defined_text = {#満州
+	name = GetManValues
 	text = {
 		trigger = {
 			original_tag = JAP
 		}
-		localization_key = JAP_Seiyukai_political_party_values
+		localization_key = JAP_Man_values
+	}
+}
+defined_text = {#蒙古
+	name = GetMenValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Men_values
+	}
+}
+defined_text = {#中国
+	name = GetChiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Chi_values
+	}
+}
+defined_text = {#ビルマ
+	name = GetBrmValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Brm_values
+	}
+}
+defined_text = {#タイ
+	name = GetSiaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Sia_values
+	}
+}
+defined_text = {#ベトナム
+	name = GetVinValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Vin_values
+	}
+}
+defined_text = {#カンボジア
+	name = GetCamValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Cam_values
+	}
+}
+defined_text = {#ラオス
+	name = GetLaoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+
+		}
+		localization_key = JAP_Lao_values
+	}
+}
+defined_text = {#マラヤ
+	name = GetMalValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Mal_values
+	}
+}
+defined_text = {#インドネシア
+	name = GetInsValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Ins_values
+	}
+}
+defined_text = {#比島
+	name = GetPhiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Phi_values
 	}
 }
 defined_text = {#政友会

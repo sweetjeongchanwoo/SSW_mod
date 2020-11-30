@@ -521,7 +521,9 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-
+########################################
+##################政党##################
+########################################
 set_variable = { 
 	var = JAP_seiyukai_popularity
 	value = 50
@@ -562,8 +564,69 @@ set_variable = {
 	var = JAP_toakensetsu_popularity
 	value = 11
 }
+########################################
+##################政党##################
+########################################
+
+##################################################
+##################大東亜金ブロック##################
+##################################################
+set_variable = { 
+	var = Sib_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Man_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Men_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Chi_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Brm_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Sia_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Vin_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Cam_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Lao_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Mal_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Ins_gold_system
+	value = 50
+}
+set_variable = { 
+	var = Phi_gold_system
+	value = 50
+}
+##################################################
+##################大東亜金ブロック##################
+##################################################
 
 #内務
 set_variable = { JAP_faction_low_increase = 3 }
+set_variable = { JAP_faction_low_five_increase = 5 }
+set_variable = { JAP_faction_low_five_decrease = -5 }
 set_variable = { JAP_faction_low_decrease = -3 }
 set_variable = { JAP_faction_days_reenable_low = 14 }
+set_variable = { JAP_faction_days_reenable_low_fifty_five = 45 }

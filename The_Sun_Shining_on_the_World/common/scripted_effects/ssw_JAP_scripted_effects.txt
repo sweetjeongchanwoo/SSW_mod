@@ -16,6 +16,84 @@ JAP_political_party_values = {
 	set_variable = { JAP_ZaibatsuRenmei_popularity = 24 }
 	set_variable = { JAP_KotenKokyukai_popularity = 24 }
 	set_variable = { JAP_faction_days_reenable_low = 14 }
+	set_variable = { JAP_faction_days_reenable_low_fifty_five = 45 }
+}
+gea_gold_system = {
+	set_variable = { Sib_gold_system = 25 }
+	set_variable = { Man_gold_system = 25 }
+	set_variable = { Men_gold_system = 25 }
+	set_variable = { Chi_gold_system = 25 }
+	set_variable = { Brm_gold_system = 25 }
+	set_variable = { Sia_gold_system = 25 }
+	set_variable = { Vin_gold_system = 25 }
+	set_variable = { Cam_gold_system = 25 }
+	set_variable = { Lao_gold_system = 25 }
+	set_variable = { Ins_gold_system = 25 }
+	set_variable = { Mal_gold_system = 25 }
+	set_variable = { Phi_gold_system = 25 }
+}
+
+JAP_SIB_low_gold_system_increase_effect = {#シベリア
+	custom_effect_tooltip = JAP_SIB_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Sib_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Sib_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_SIB_low_gold_system_decrease_effect = {#シベリア
+	custom_effect_tooltip = JAP_SIB_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Sib_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Sib_gold_system
+		min = 0
+		max = 100
+	}
+}
+
+JAP_MAN_low_gold_system_increase_effect = {#満州
+	custom_effect_tooltip = JAP_MAN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Man_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Man_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_MAN_low_gold_system_decrease_effect = {#満州
+	custom_effect_tooltip = JAP_MAN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Man_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Man_gold_system
+		min = 0
+		max = 100
+	}
+}
+
+JAP_MEN_low_gold_system_increase_effect = {#蒙古
+	custom_effect_tooltip = JAP_MEN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_increase_tt
+	add_to_variable = { Men_gold_system = JAP_faction_low_five_increase }
+	clamp_variable = {
+		var = Men_gold_system
+		min = 0
+		max = 100
+	}
+}
+JAP_MEN_low_gold_system_decrease_effect = {#蒙古
+	custom_effect_tooltip = JAP_MEN_tt
+	custom_effect_tooltip = JAP_low_JAP_gold_system_decrease_tt
+	add_to_variable = { Men_gold_system = JAP_faction_low_five_decrease }
+	clamp_variable = {
+		var = Men_gold_system
+		min = 0
+		max = 100
+	}
 }
 
 #政友会
