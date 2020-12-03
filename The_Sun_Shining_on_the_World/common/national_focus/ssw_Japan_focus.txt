@@ -311,57 +311,71 @@ focus_tree = {
 
 	}
 	focus = {
-		id = JAP_dec_Submission_of_the_Second_Disarmament_Bill
-		icon = GFX_goal_unknown
+		id = JAP_Submission_of_the_Second_Disarmament_Bill
+		icon = GFX_focus_JAP_ssw_second_dissarament
 		cost = 9.00
 		x = 45
 		y = 0
-			ai_will_do = {
-					factor = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_government = social_conservatism
+			}
+		bypass = {
+			not = {
+				has_government = social_conservatism
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		select_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.22
+					days = 1
 				}
-			available = {
-					has_government = social_conservatism
-				}
-			bypass = {
-					not = {
-							has_government = social_conservatism
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			select_effect = {
-					JAP = {
-							country_event = {
-									id = SSW_JAP.22
-									days = 1
-								}
-						}
-					set_country_flag = JAP_Disarmament_started
-				}
-			completion_reward = {
-					country_event = {
-							id = SSW_JAP.26
-						}
-				}
-
+			}
+			set_country_flag = JAP_Disarmament_started
+		}
+		completion_reward = {
+			country_event = {
+				id = SSW_JAP.26
+			}
+		}
 	}
 	focus = {
 		id = JAP_select_Shigeru_Yoshida
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_yoshida
 		cost = 1.00
 		x = 52
 		y = 1
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		available = {
-			has_country_flag = ssw_jap_flag_17
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 11_JAP_tt
 		}
 	}
 	focus = {
@@ -373,12 +387,26 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_The_Rise_of_Kenzo_Matsumura
 		}
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SSW_jAP_kuhara_disarmament
@@ -424,7 +452,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Arctic_Development
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_the_arctic_japan_takushoku_bank
 		cost = 3.00
 		prerequisite = {
 			focus = JAP_abolishing_the_dollar_in_the_colonies.
@@ -581,7 +609,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Cutting_the_Civil
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_the_industry_of_asia_development
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_abolishing_the_dollar_in_the_colonies.
@@ -592,7 +620,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Establishment_of_Shonan_Bank
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_expand_the_shonan_bank
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Cutting_the_Civil
@@ -845,7 +873,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_abolition_Chosenyen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_change_the_korean_yen
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_Dispersal_of_the_Pacific_Agency
@@ -913,7 +941,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_south_america_zaibatsu
-		icon = GFX_focus_jap_zaibatsu
+		icon = GFX_focus_JAP_the_greater_east_asia_zaibatsu
 		cost = 4.00
 		prerequisite = {
 			focus = JAP_line_pacific_economy
@@ -1023,7 +1051,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_south_america_to_zaibatsu
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_jap_zaibatsu
 		cost = 4.00
 		prerequisite = {
 			focus = JAP_south_america_zaibatsu
@@ -1406,50 +1434,49 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-			ai_will_do = {
-					factor = 9
+		available = {
+			is_faction_leader = yes
+			is_major = yes
+			has_war = no
+			and = {
+				country_exists = PRU
+				country_exists = ARG
+				country_exists = COL
+				country_exists = ECU
+			}
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		bypass = {
+			not = {
+				country_exists = PRU
+				country_exists = ARG
+				country_exists = COL
+				country_exists = ECU
 				}
-			available = {
-					is_faction_leader = yes
-					is_major = yes
-					has_war = no
-					and = {
-							country_exists = PRU
-							country_exists = ARG
-							country_exists = COL
-							country_exists = ECU
-						}
-				}
-			bypass = {
-					not = {
-							country_exists = PRU
-							country_exists = ARG
-							country_exists = COL
-							country_exists = ECU
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_INDUSTRY }
-			completion_reward = {
-					PRU = {
-							add_ideas = JAP_nanbei_toushi_idea
-						}
-					ARG = {
-							add_ideas = JAP_nanbei_toushi_idea
-						}
-					COL = {
-							add_ideas = JAP_nanbei_toushi_idea
-						}
-					ECU = {
-							add_ideas = JAP_nanbei_toushi_idea
-						}
-					JAP = {
-							add_ideas = JAP_nanbei_toushi_idea
-						}
-				}
-
+			}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			PRU = {
+				add_ideas = JAP_nanbei_toushi_idea
+			}
+			ARG = {
+				add_ideas = JAP_nanbei_toushi_idea
+			}
+			COL = {
+				add_ideas = JAP_nanbei_toushi_idea
+			}
+			ECU = {
+				add_ideas = JAP_nanbei_toushi_idea
+			}
+			JAP = {
+				add_ideas = JAP_nanbei_toushi_idea
+			}
+		}
 	}
 	focus = {
 		id = JAP_corombia_sangyo
@@ -1605,19 +1632,35 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_select_Iemasa_Tokugawa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_tokugawa
 		cost = 1.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 24
 		y = 1
 		available = {
 			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 13_JAP_tt
 		}
 
 	}
@@ -1628,6 +1671,27 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_select_Iemasa_Tokugawa
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 24
 		y = 2
 
@@ -1639,6 +1703,27 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Local_Special_Act
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 22
 		y = 3
 
@@ -1650,6 +1735,27 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Compromise_with_the_military
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 22
 		y = 4
 
@@ -1661,6 +1767,27 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Local_Special_Act
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 26
 		y = 3
 
@@ -1672,6 +1799,27 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Reduced_maintenance_costs
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 26
 		y = 4
 
@@ -1686,25 +1834,62 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Cooperation_with_Innovation
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 13_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_kenkyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Iemasa Tokugawa"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 24
 		y = 5
 
 	}
 	focus = {
 		id = JAP_select_Hatoyama
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_hatoyama
 		cost = 10.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 31
 		y = 1
 		available = {
 			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 11_JAP_tt
 		}
 
 	}
@@ -1717,29 +1902,59 @@ focus_tree = {
 		}
 		x = 31
 		y = 2
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
 		id = JAP_Atomic_Energy_Basic_Law
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_hatoyama_nuke
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_contractual_compliance
 		}
 		x = 29
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 			completion_reward = {
 					add_tech_bonus = {
 							bonus = 1.0s
@@ -1752,11 +1967,32 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Cutting_the_Civil_Service_Budge
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Einstein_invait
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Atomic_Energy_Basic_Law
 		}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		x = 29
 		y = 4
 
@@ -1770,12 +2006,27 @@ focus_tree = {
 		}
 		x = 33
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					remove_ideas = SSW_jAP_disarmament_idea
 				}
@@ -1783,19 +2034,34 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Provision_of_popular_entertainment
-		icon = GFX_focus_generic_royal_wedding
+		icon = GFX_focus_JAP_entetainmentism
 		cost = 4.00
 		prerequisite = {
 			focus = JAP_Countering_the_Momentum_of_Disarmament
 		}
 		x = 33
 		y = 4
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
 					add_stability = 0.1
 				}
@@ -1813,12 +2079,27 @@ focus_tree = {
 		}
 		x = 31
 		y = 5
-			available = {
-					has_country_leader = {
-							name = "Ichiro Hatoyama"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Ichiro Hatoyama"
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_ideas = SSW_JAP_Hatoyama_memorandum
 					custom_effect_tooltip = 3_JAP_tt
@@ -1827,37 +2108,71 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_select_Kishi
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_kishi
 		cost = 1.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 38
 		y = 1
 		available = {
 			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 11_JAP_tt
 		}
 
 	}
 	focus = {
 		id = JAP_Kishinomikusu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Kishinomix
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_select_Kishi
 		}
 		x = 38
 		y = 2
-			available = {
-					has_country_leader = {
-							name = "Nobusuke Kishi"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 40
 					remove_ideas = { SSW_JAP_Shrink_due_to_lack_of_growth }
@@ -1873,12 +2188,30 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Nobusuke Kishi"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 40
 					add_ideas = SSW_JAP_three_arow
@@ -1894,6 +2227,30 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	}
 	focus = {
@@ -1905,12 +2262,30 @@ focus_tree = {
 		}
 		x = 40
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Nobusuke Kishi"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
 					add_political_power = 40
 					add_stability = 0.05
@@ -1926,6 +2301,30 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -1940,37 +2339,68 @@ focus_tree = {
 		}
 		x = 38
 		y = 5
-			available = {
-					has_country_leader = {
-							name = "Nobusuke Kishi"
-							ruling_only = yes
-						}
+		available = {
+			has_country_flag = ssw_jap_flag_17
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
-			completion_reward = {
-					add_political_power = 120
-					CHI = {
-							add_ideas = {
-									idea = SSW_JAP_3S_production
-								}
-						}
-				}
+			}
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+			has_country_leader = {
+				name = "Nobusuke Kishi"
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+			CHI = {
+				add_ideas = SSW_JAP_3S_production
+			}
+		}
 
 	}
 	focus = {
 		id = JAP_select_Kuhara
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_kuhara
 		cost = 10.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 45
 		y = 1
 		available = {
-			has_country_flag = ssw_jap_flag_17
+			has_country_leader = {
+				name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity greater_than_or_equals > JAP_minseito_popularity }
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 11_JAP_tt
 		}
 
 	}
@@ -1983,29 +2413,35 @@ focus_tree = {
 		}
 		x = 45
 		y = 2
-			ai_will_do = {
-					factor = 3
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_ideas = SSW_jAP_gold_standard_idea
+			hidden_effect = {
+				country_event = {
+				id = SSW_JAP.46
+				days = 365
 				}
-			bypass = {
-					has_war = yes
-					not = {
-							has_government = social_conservatism
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			completion_reward = {
-					add_ideas = SSW_jAP_gold_standard_idea
-				}
-
+			}
+		}
 	}
 	focus = {
 		id = JAP_Further_Conglomerate_Growth
@@ -2016,12 +2452,26 @@ focus_tree = {
 		}
 		x = 43
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SSW_jAP_zaibatsu
@@ -2032,19 +2482,33 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_yen_block
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_yen_block_kuhara
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Further_Conglomerate_Growth
 		}
 		x = 43
 		y = 4
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					every_country = {
 							limit = {
@@ -2064,12 +2528,26 @@ focus_tree = {
 		}
 		x = 47
 		y = 3
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					add_ideas = SSW_JAP_gadenintetsu
 				}
@@ -2077,19 +2555,33 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_The_entertainmentism_of_the_national_railroad_business
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_country_train_entettainment
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_gadenintetsu
 		}
 		x = 47
 		y = 4
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 			completion_reward = {
 					add_stability = 0.1
 					swap_ideas = {
@@ -2101,7 +2593,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Daito_Gold_Block
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_geacps_gold_block_system
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_The_entertainmentism_of_the_national_railroad_business
@@ -2111,12 +2603,26 @@ focus_tree = {
 		}
 		x = 45
 		y = 5
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			has_country_leader = {
+			name = "Fusanosuke Kuhara"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					remove_ideas = SSW_jAP_gold_standard_idea
 					swap_ideas = {
@@ -2135,25 +2641,26 @@ focus_tree = {
 		}
 		x = 52
 		y = 2
-			ai_will_do = {
-					factor = 8
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
-			bypass = {
-					has_war = yes
-					not = {
-							has_government = social_conservatism
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 50
 					add_timed_idea = {
@@ -2170,12 +2677,36 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_reform_fifty
 		}
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+			not = {
+				has_idea = SSW_JAP_reform_fifty
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		x = 50
 		y = 3
-			completion_reward = {
-
-}
-
+		completion_reward = {
+			country_event = {
+				id = SSW_JAP.42
+			}
+		}
 	}
 	focus = {
 		id = JAP_Pursuing_the_Tohoku_problem
@@ -2184,13 +2715,30 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Merger_with_Democracy_Club
 		}
+
 		x = 50
 		y = 4
-			bypass = {
-					has_country_flag = ssw_jap_flag_23
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
-					custom_effect_tooltip = 9_JAP_tt
 				}
 
 	}
@@ -2201,10 +2749,29 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_reform_fifty
 		}
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		x = 54
 		y = 3
 			completion_reward = {
-					unlock_decision_category_tooltip = JAP_dec_cat_Agricultural_Land_Reform
 				}
 
 	}
@@ -2217,11 +2784,27 @@ focus_tree = {
 		}
 		x = 54
 		y = 4
-			bypass = {
-					has_country_flag = ssw_jap_flag_23
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_ > 49 }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 			completion_reward = {
-					custom_effect_tooltip = 9_JAP_tt
 				}
 
 	}
@@ -2237,6 +2820,26 @@ focus_tree = {
 		}
 		x = 52
 		y = 5
+		available = {
+			has_country_leader = {
+				name = "Shigeru Yoshida"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 11_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_seiyukai_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -2248,12 +2851,27 @@ focus_tree = {
 		}
 		x = 57
 		y = 3
-			bypass = {
-					has_country_flag = ssw_jap_flag_23
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
-					custom_effect_tooltip = 8_JAP_tt
-					clr_country_flag = ssw_jap_flag_24
 				}
 
 	}
@@ -2266,25 +2884,26 @@ focus_tree = {
 		}
 		x = 57
 		y = 4
-			ai_will_do = {
-					factor = 4
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
-			bypass = {
-					has_war = yes
-					not = {
-							has_government = social_conservatism
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = SSW_JAP_Post_war_recession
@@ -2295,19 +2914,34 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_The_Rise_of_Kenzo_Matsumura
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_matsumura
 		cost = 1.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 59
 		y = 1
 		available = {
-			has_country_flag = ssw_jap_flag_17
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 12_JAP_tt
 		}
 
 	}
@@ -2320,11 +2954,27 @@ focus_tree = {
 		}
 		x = 61
 		y = 3
-			bypass = {
-					has_country_flag = ssw_jap_flag_23
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
-					custom_effect_tooltip = 7_JAP_tt
 				}
 
 	}
@@ -2337,25 +2987,26 @@ focus_tree = {
 		}
 		x = 61
 		y = 4
-			ai_will_do = {
-					factor = 2
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
-			available = {
-					has_country_leader = {
-							name = "Kenkichi Yoshizawa"
-							ruling_only = yes
-						}
-				}
-			bypass = {
-					has_war = yes
-					not = {
-							has_government = social_conservatism
-						}
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			completion_reward = {
 					add_political_power = 30
 					swap_ideas = {
@@ -2377,36 +3028,61 @@ focus_tree = {
 		}
 		x = 59
 		y = 5
-			available = {
-					has_country_flag = ssw_jap_flag_20_2
-					has_country_flag = ssw_jap_flag_19_2
-					has_country_flag = ssw_jap_flag_21
-					has_country_flag = ssw_jap_flag_22_2
+		available = {
+			has_country_leader = {
+				name = "Kenzo Matsumura"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
 				}
-			bypass = {
-					has_country_flag = ssw_jap_flag_23
-				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
-					remove_ideas = SSW_JAP_Parasitic_landlord_system
-					custom_effect_tooltip = 10_JAP_tt
+
 				}
 
 	}
 	focus = {
 		id = JAP_The_Rise_of_Masanori_Katsu
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_focus_katsu
 		cost = 1.00
 		prerequisite = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		x = 66
 		y = 1
 		available = {
-			has_country_flag = ssw_jap_flag_17
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = 12_JAP_tt
 		}
 
 	}
@@ -2419,7 +3095,26 @@ focus_tree = {
 		}
 		x = 66
 		y = 2
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_Siberian_problem
@@ -2430,7 +3125,26 @@ focus_tree = {
 		}
 		x = 64
 		y = 3
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = JAP_Together
@@ -2441,7 +3155,26 @@ focus_tree = {
 		}
 		x = 64
 		y = 4
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_Arctic_Issue
@@ -2452,7 +3185,26 @@ focus_tree = {
 		}
 		x = 68
 		y = 3
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_Democracy_Alliance
@@ -2463,7 +3215,26 @@ focus_tree = {
 		}
 		x = 68
 		y = 4
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 	focus = {
 		id = JAP_The_Russian_expansion_of_conglomerates
@@ -2477,7 +3248,26 @@ focus_tree = {
 		}
 		x = 66
 		y = 5
-
+		available = {
+			has_country_leader = {
+				name = "Masanori Katsu"
+			}
+			custom_trigger_tooltip = {
+				tooltip = 12_JAP_tt
+				hidden_trigger = {
+					check_variable = { JAP_minseito_popularity > 49 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_the_republic_navy
@@ -4352,7 +5142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Annexation_to_the_interior
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_incorporate_korea_to_the_mainland
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_The_Korean_Improvement_Law

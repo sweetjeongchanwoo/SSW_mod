@@ -155,6 +155,66 @@ spriteTypes = {
 		name = "GFX_idea_JAP_cab_Tadao_Oasa"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Tadao_Oasa.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Hayato_Ikeda"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Hayato_Ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Eifu_Moriya"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Eifu_Moriya.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ichimin_tako"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ichimin_tako.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ichiro_Hatoyama"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ichiro_Hatoyama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kunitoshi_Tsukumo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kunitoshi_Tsukumo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Masajiro_Kawashima"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Masajiro_Kawashima.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Minosru_Togo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Minosru_Togo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Nobusuke_Kishi"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Nobusuke_Kishi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Yoshisuke_Ayukawa"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Yoshisuke_Ayukawa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Eisaku_Sato"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Eisaku_Sato.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kakue_Tanaka"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kakue_Tanaka.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Katsuo_Okazaki"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Katsuo_Okazaki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ryugo_Hashimoto"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ryugo_Hashimoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Shigesaburo_Maeo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Shigesaburo_Maeo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Takeo_Ohashi"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Takeo_Ohashi.dds"
+	}
 #蒙古
     spriteType = {
 		name = "GFX_idea_De_Wang"

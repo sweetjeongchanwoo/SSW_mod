@@ -23,8 +23,8 @@ focus_tree = {
 		id = VFR_69
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
-		x = 39
-		y = 1
+		x = 45
+		y = 0
 			completion_reward = {
 					army_experience = 25
 				}
@@ -34,7 +34,7 @@ focus_tree = {
 		id = VFR_79
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
-		x = 36
+		x = 47
 		y = 7
 			completion_reward = {
 					add_ideas = French_mediterranean_fleet
@@ -45,7 +45,7 @@ focus_tree = {
 		id = VFR_85
 		icon = GFX_goal_generic_build_airforce
 		cost = 5.00
-		x = 42
+		x = 54
 		y = 7
 			completion_reward = {
 					air_experience = 30
@@ -53,19 +53,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VFR_74
-		icon = GFX_goal_rhineland
+		id = VFR_112
+		icon = GFX_goal_unknown
 		cost = 5.00
-		x = 42
-		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = land_doc_bonus
-							bonus = 1
-							uses = 2
-							category = land_doctrine
-						}
-				}
+		mutually_exclusive = {
+			focus = VFR_100
+		}
+		x = 34
+		y = 4
 
 	}
 	focus = {
@@ -788,6 +783,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = VFR_99
+			focus = VFR_112
 		}
 		x = 29
 		y = 4
@@ -805,23 +801,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VFR_107
-		icon = GFX_goal_unknown
-		cost = 3.00
-		prerequisite = {
-			focus = VFR_103
-		}
-		prerequisite = {
-			focus = VFR_103
-		}
-		mutually_exclusive = {
-			focus = VFR_105
-		}
-		x = 27
-		y = 6
-
-	}
-	focus = {
 		id = VFR_104
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 5.00
@@ -829,6 +808,18 @@ focus_tree = {
 			focus = VFR_100
 		}
 		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = VFR_122
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_112
+			focus = VFR_100
+		}
+		x = 32
 		y = 5
 
 	}
@@ -846,6 +837,9 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_103
 		}
+		prerequisite = {
+			focus = VFR_122
+		}
 		mutually_exclusive = {
 			focus = VFR_107
 			focus = VFR_106
@@ -855,11 +849,34 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VFR_107
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = VFR_103
+		}
+		prerequisite = {
+			focus = VFR_103
+		}
+		prerequisite = {
+			focus = VFR_122
+		}
+		mutually_exclusive = {
+			focus = VFR_105
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
 		id = VFR_106
 		icon = GFX_goal_unknown
 		cost = 3.00
 		prerequisite = {
 			focus = VFR_104
+		}
+		prerequisite = {
+			focus = VFR_122
 		}
 		mutually_exclusive = {
 			focus = VFR_105
@@ -887,16 +904,106 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VFR_125
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_112
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = VFR_126
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_112
+		}
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = VFR_121
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = VFR_126
+		}
+		prerequisite = {
+			focus = VFR_125
+		}
+		prerequisite = {
+			focus = VFR_122
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = VFR_123
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_121
+		}
+		mutually_exclusive = {
+			focus = VFR_124
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = VFR_124
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_121
+		}
+		mutually_exclusive = {
+			focus = VFR_123
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = VFR_127
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_124
+			focus = VFR_123
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = VFR_118
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_69
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
 		id = VFR_70
 		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
 		prerequisite = {
-			focus = VFR_69
+			focus = VFR_118
 		}
 		mutually_exclusive = {
 			focus = VFR_72
 		}
-		x = 36
+		x = 39
 		y = 2
 			completion_reward = {
 					add_tech_bonus = {
@@ -915,7 +1022,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_70
 		}
-		x = 36
+		x = 39
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
@@ -928,13 +1035,306 @@ focus_tree = {
 
 	}
 	focus = {
+		id = VFR_114
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_71
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = VFR_72
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_118
+		}
+		mutually_exclusive = {
+			focus = VFR_70
+			focus = VFR_75
+		}
+		x = 42
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 1
+							category = motorized_equipment
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_73
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_72
+		}
+		x = 42
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_116
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = VFR_73
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = VFR_75
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_118
+		}
+		mutually_exclusive = {
+			focus = VFR_72
+		}
+		x = 45
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = CZE_inf_and_artillery_advancement
+							bonus = 1
+							ahead_reduction = 2
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_74
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_75
+		}
+		x = 45
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_115
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = VFR_74
+		}
+		x = 45
+		y = 4
+
+	}
+	focus = {
+		id = VFR_117
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_69
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = VFR_129
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_117
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = VFR_130
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_117
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
+		id = VFR_128
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_130
+		}
+		prerequisite = {
+			focus = VFR_129
+		}
+		x = 49
+		y = 3
+
+	}
+	focus = {
+		id = VFR_119
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_128
+		}
+		x = 49
+		y = 4
+
+	}
+	focus = {
+		id = VFR_76
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_115
+			focus = VFR_116
+			focus = VFR_114
+		}
+		prerequisite = {
+			focus = VFR_119
+		}
+		x = 47
+		y = 5
+			completion_reward = {
+					army_experience = 35
+					add_ideas = Military_reform
+				}
+
+	}
+	focus = {
+		id = VFR_78
+		icon = GFX_focus_up_joan_of_arc
+		cost = 20.00
+		prerequisite = {
+			focus = VFR_76
+		}
+		x = 45
+		y = 6
+			completion_reward = {
+					add_ideas = Seeking_freedom
+				}
+
+	}
+	focus = {
+		id = VFR_77
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_76
+		}
+		x = 49
+		y = 6
+			completion_reward = {
+					add_ideas = Determination
+				}
+
+	}
+	focus = {
+		id = VFR_86
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_85
+		}
+		x = 52
+		y = 8
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_bomber_modernization
+							bonus = 1
+							uses = 1
+							category = cas_bomber
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_87
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_86
+		}
+		x = 50
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_carrier_warfare_experiments
+							bonus = 1
+							uses = 2
+							category = cat_base_strike
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_88
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_86
+		}
+		x = 52
+		y = 11
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_strategic_bomber_effort
+							bonus = 1
+							uses = 2
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_110
+		icon = GFX_focus_generic_vichy_france_triumphant
+		cost = 5.00
+		prerequisite = {
+			focus = VFR_108
+			focus = VFR_101
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
 		id = VFR_80
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
 		prerequisite = {
 			focus = VFR_79
 		}
-		x = 36
+		x = 47
 		y = 8
 			completion_reward = {
 					add_ideas = Expansion_of_shipyards
@@ -948,7 +1348,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_80
 		}
-		x = 36
+		x = 47
 		y = 9
 			completion_reward = {
 					navy_experience = 25
@@ -972,7 +1372,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VFR_83
 		}
-		x = 34
+		x = 45
 		y = 10
 			completion_reward = {
 					navy_experience = 25
@@ -982,141 +1382,6 @@ focus_tree = {
 							uses = 2
 							category = bb_tech
 							category = bc_tech
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_72
-		icon = GFX_goal_generic_army_tanks
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_69
-		}
-		mutually_exclusive = {
-			focus = VFR_70
-			focus = VFR_75
-		}
-		x = 39
-		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1
-							uses = 1
-							category = motorized_equipment
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_73
-		icon = GFX_focus_generic_tank_production
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_72
-		}
-		x = 39
-		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1
-							uses = 2
-							category = armor
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_75
-		icon = GFX_goal_generic_small_arms
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_69
-		}
-		mutually_exclusive = {
-			focus = VFR_72
-		}
-		x = 42
-		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = CZE_inf_and_artillery_advancement
-							bonus = 1
-							ahead_reduction = 2
-							uses = 2
-							category = infantry_weapons
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_76
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_73
-			focus = VFR_75
-			focus = VFR_71
-		}
-		x = 39
-		y = 4
-			completion_reward = {
-					army_experience = 35
-					add_ideas = Military_reform
-				}
-
-	}
-	focus = {
-		id = VFR_78
-		icon = GFX_focus_up_joan_of_arc
-		cost = 20.00
-		prerequisite = {
-			focus = VFR_76
-		}
-		x = 37
-		y = 5
-			completion_reward = {
-					add_ideas = Seeking_freedom
-				}
-
-	}
-	focus = {
-		id = VFR_86
-		icon = GFX_goal_generic_CAS
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_85
-		}
-		x = 40
-		y = 8
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_bomber_modernization
-							bonus = 1
-							uses = 1
-							category = cas_bomber
-							category = tactical_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_87
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_86
-		}
-		x = 39
-		y = 9
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_carrier_warfare_experiments
-							bonus = 1
-							uses = 2
-							category = cat_base_strike
 						}
 				}
 
@@ -1134,7 +1399,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VFR_82
 		}
-		x = 38
+		x = 49
 		y = 10
 			completion_reward = {
 					add_tech_bonus = {
@@ -1154,56 +1419,11 @@ focus_tree = {
 			focus = VFR_82
 			focus = VFR_83
 		}
-		x = 36
+		x = 47
 		y = 11
 			completion_reward = {
 					add_ideas = Beyond_the_Atlantic
 				}
-
-	}
-	focus = {
-		id = VFR_88
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_86
-		}
-		x = 40
-		y = 11
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_strategic_bomber_effort
-							bonus = 1
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = VFR_77
-		icon = GFX_focus_focus_fra_revolution_upmost
-		cost = 10.00
-		prerequisite = {
-			focus = VFR_76
-		}
-		x = 41
-		y = 5
-			completion_reward = {
-					add_ideas = Determination
-				}
-
-	}
-	focus = {
-		id = VFR_110
-		icon = GFX_focus_generic_vichy_france_triumphant
-		cost = 5.00
-		prerequisite = {
-			focus = VFR_108
-			focus = VFR_101
-		}
-		x = 24
-		y = 7
 
 	}
 	focus = {
@@ -1213,7 +1433,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_85
 		}
-		x = 44
+		x = 56
 		y = 8
 			completion_reward = {
 					add_tech_bonus = {
@@ -1232,7 +1452,7 @@ focus_tree = {
 		prerequisite = {
 			focus = VFR_89
 		}
-		x = 44
+		x = 56
 		y = 11
 			completion_reward = {
 					add_tech_bonus = {
@@ -1270,6 +1490,7 @@ focus_tree = {
 			focus = VFR_37
 			focus = VFR_24
 			focus = VFR_111
+			focus = VFR_127
 		}
 		x = 14
 		y = 9
@@ -1304,6 +1525,7 @@ focus_tree = {
 			focus = VFR_24
 			focus = VFR_46
 			focus = VFR_111
+			focus = VFR_127
 		}
 		x = 8
 		y = 9
@@ -1528,6 +1750,17 @@ focus_tree = {
 		}
 		x = 27
 		y = 8
+
+	}
+	focus = {
+		id = VFR_113
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = VFR_76
+		}
+		x = 47
+		y = 6
 
 	}
 }

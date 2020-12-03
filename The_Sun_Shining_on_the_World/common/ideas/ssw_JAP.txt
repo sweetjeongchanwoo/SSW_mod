@@ -1569,6 +1569,258 @@ ideas = {
 				consumer_goods_factor = -0.04
 			}
 		}
+		JAP_research_organization_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			research_speed_factor = 0.10
+			}
+		}
+		JAP_increase_in_research_budget_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			research_speed_factor = 0.20
+			}
+		}
+		JAP_japanese_archipelago_remodeling_plan_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			economy_cost_factor = -0.15
+			political_power_factor = -0.15
+			consumer_goods_factor = 0.05
+			}
+		}
+		JAP_complete_remodeling_plan_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+		JAP_daitoa_factory_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.15
+			industrial_capacity_dockyard = 0.15
+			}
+		}
+		JAP_setouchi_industrial_area_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			production_speed_dockyard_factor = 0.12
+			industrial_capacity_dockyard = 0.10
+			refit_ic_cost = -0.10
+			}
+		}
+
+		JAP_priority_to_the_west_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+
+		JAP_priority_to_the_east_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+		JAP_keihin_keiyo_industrial_zone_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		JAP_advanced_electronics_industry_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		JAP_the_expansion_of_japanese_companies_idea_daitoa_side = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			targeted_modifier = {
+			TAG = JAP
+			extra_trade_to_target_factor = 0.25
+			trade_cost_for_target_factor = -0.25
+			}
+		}
+		JAP_high_quality_automotive_industry_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			army_armor_speed_factor = 0.10
+			motorized_attack_factor = 0.10
+			motorized_defense_factor = 0.05
+			}
+		}
+		JAP_new_drilling_technology_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			local_resources_factor = 0.15
+			}
+		}
+		JAP_Yoshida_revolution_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
 	}
 
 	###政治首班###
@@ -1592,6 +1844,50 @@ ideas = {
 			picture = JAP_cab_Kenkichi_Yoshizawa
 				
 			traits = { economic_organizer }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ichiro_Hatoyama = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ichiro_Hatoyama
+				
+			traits = { A_taciturn_hawk }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Nobusuke_Kishi = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Nobusuke_Kishi
+				
+			traits = { Specters_of_Showa }
 				
 			cancel_if_invalid = no
 		}
@@ -1632,6 +1928,65 @@ ideas = {
 			picture = JAP_cab_Hachiro_Arita
 				
 			traits = { tenacious_negotiator }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Eifu_Moriya = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Eifu_Moriya
+				
+			traits = { editor }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Katsuo_Okazaki = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Katsuo_Okazaki
+				
+			traits = { 
+				Modern_day_vermin
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kakue_Tanaka = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kakue_Tanaka
+				
+			traits = { 
+				Big_names_in_architecture
+				up_coming_young_man
+			}
 				
 			cancel_if_invalid = no
 		}
@@ -1679,6 +2034,89 @@ ideas = {
 				
 			cancel_if_invalid = no
 		}
+		JAP_Ichimin_tako = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ichimin_tako
+				
+			traits = {
+				economist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Yoshisuke_Ayukawa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Yoshisuke_Ayukawa
+				
+			traits = {
+				captain_of_industry
+				finance_graduate
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Shigesaburo_Maeo = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Shigesaburo_Maeo
+				
+			traits = {
+				economist
+				hard_working_businessman
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ryugo_Hashimoto = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ryugo_Hashimoto
+				
+			traits = {
+				economic_organizer
+				socialite_connections
+			}
+				
+			cancel_if_invalid = no
+		}
 	}
 
 	###内務大臣###
@@ -1718,6 +2156,68 @@ ideas = {
 			traits = {
 				Political_sleeper
 				Ruthless_decision_maker
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Hayato_Ikeda = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Hayato_Ikeda
+				
+			traits = {
+				lieutenant_of_industry
+				prince_of_terror
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Masajiro_Kawashima = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Masajiro_Kawashima
+				
+			traits = {
+				lieutenant_of_industry
+				demon_spawned_by_vanity
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Takeo_Ohashi = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Takeo_Ohashi
+				
+			traits = {
+				Collusion_with_the_Lawyer
 			}
 				
 			cancel_if_invalid = no
@@ -1764,6 +2264,48 @@ ideas = {
 			traits = { 
 				retired_officer
 				the_legitimist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kunitoshi_Tsukumo = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kunitoshi_Tsukumo
+				
+			traits = { 
+				thoroughgoing_rationalist
+				dealbroker
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Eisaku_Sato = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Eisaku_Sato
+				
+			traits = { 
+				war_industrialist
+				Politicians_skilled_in_the_art_of_execution
 			}
 				
 			cancel_if_invalid = no
