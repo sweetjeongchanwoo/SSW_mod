@@ -1,12 +1,13 @@
 state = {
 	id = 930
 	name = "STATE_930"
-	manpower = 0
+	manpower = 10
 	state_category = rural
 	
 	history = {
 		owner = NWA
 		add_core_of = NWA
+		add_core_of = NGR
 	}
 	
 	provinces = {

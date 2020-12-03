@@ -1,0 +1,53 @@
+original_colony_tag = {
+	OR = {
+		#日本
+		original_tag = KOR
+		original_tag = PAO
+		original_tag = CLC
+		original_tag = SIN
+		original_tag = BRN
+		original_tag = HAW
+		original_tag = JAM
+		original_tag = PAC
+		original_tag = INO
+		original_tag = ARC
+		#ドイツ
+		original_tag = CZE
+		original_tag = POL
+		original_tag = NOR
+		original_tag = HOL
+		original_tag = BEL
+		original_tag = NFR
+		original_tag = BAL
+		original_tag = UKR
+		original_tag = MOS
+		original_tag = CCS
+		original_tag = MAD
+		original_tag = TOG
+		original_tag = MAF
+		original_tag = WAF
+		original_tag = ATL
+		#イタリア
+		original_tag = LBA
+		original_tag = NEA
+		original_tag = ALB
+		original_tag = MNT
+		original_tag = SUC
+		original_tag = GIB
+		#イギリス
+		#フランス
+		original_tag = MOR
+		original_tag = NWA
+		original_tag = EQA
+		#スペイン
+		original_tag = RIF
+		original_tag = WES
+		original_tag = EQG
+		#ポルトガル
+		original_tag = ANG
+		original_tag = MZB
+		original_tag = GNB
+		original_tag = CPV
+		original_tag = STP
+	}
+}

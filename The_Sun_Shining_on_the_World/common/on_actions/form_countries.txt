@@ -1,46 +1,46 @@
 on_actions = {
 	on_annex = {
-        effect = {
-            if = {
-                limit = {   
-                    original_tag = ENG
-                    ENG = {
-                        NOT = { has_cosmetic_tag = ENG_GBR }
-                        NOT = { has_cosmetic_tag = ENG_GBRandNIR }
-                        NOT = { has_cosmetic_tag = ENG_GBRandIRE }
-                        owns_state = 121
-                        owns_state = 120
-                        owns_state = 133
-                        owns_state = 136
-                    }
-                }
-                ENG = { set_cosmetic_tag = ENG_GBR  }
-            }
-        }
-    }
+		effect = {
+			if = {
+				limit = {   
+					original_tag = ENG
+					ENG = {
+						NOT = { has_cosmetic_tag = ENG_GBR }
+						NOT = { has_cosmetic_tag = ENG_GBRandNIR }
+						NOT = { has_cosmetic_tag = ENG_GBRandIRE }
+						owns_state = 121
+						owns_state = 120
+						owns_state = 133
+						owns_state = 136
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_GBR  }
+			}
+		}
+	}
 	on_annex = {
-        effect = {
-            if = {
-                limit = {   
-                    original_tag = ENG
-                    ENG = {
-                        NOT = { has_cosmetic_tag = ENG_GBRandNIR }
-                        NOT = { has_cosmetic_tag = ENG_GBRandIRE }
-                        owns_state = 121
-                        owns_state = 120
-                        owns_state = 133
-                        owns_state = 136
-                        owns_state = 139
-                    }
-                }
-                ENG = { set_cosmetic_tag = ENG_GBRandNIR  }
-            }
-        }
-    }
+		effect = {
+			if = {
+				limit = {   
+					original_tag = ENG
+					ENG = {
+						NOT = { has_cosmetic_tag = ENG_GBRandNIR }
+						NOT = { has_cosmetic_tag = ENG_GBRandIRE }
+						owns_state = 121
+						owns_state = 120
+						owns_state = 133
+						owns_state = 136
+						owns_state = 139
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_GBRandNIR  }
+			}
+		}
+	}
 	on_annex = {
-        effect = {
-            if = {
-                limit = {   
+		effect = {
+			if = {
+			limit = {   
                     original_tag = ENG
                     ENG = {
                         NOT = { has_cosmetic_tag = ENG_GBRandIRE }

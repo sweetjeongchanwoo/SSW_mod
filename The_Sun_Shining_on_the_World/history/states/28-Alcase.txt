@@ -4,7 +4,7 @@ state={
 	name="STATE_28" # Alsace-Lorraine
 	manpower = 2075600
 	
-	state_category = largy_city
+	state_category = large_city
 	resources={
 		steel=100 # was: 236
 	}

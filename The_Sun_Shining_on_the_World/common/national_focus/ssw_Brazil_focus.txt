@@ -22,9 +22,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier= { 
-target = JAP 
-modifier = TAG_friend_country 
-}
+			target = JAP 
+			modifier = TAG_friend_country 
+		}
 		}
 	}
 
@@ -253,9 +253,6 @@ target = PAR
 		prerequisite = { focus = BRA_CaFLscSi }
 		mutually_exclusive = { 
 			focus = BRA_NbrUZMcw 
-		}
-		mutually_exclusive = { 
-			focus = BRA_ 
 		}
 		ai_will_do = {
 			factor = 1
@@ -663,8 +660,7 @@ target = URG
 		prerequisite = { focus = BRA_fqdOTPsV }
 		mutually_exclusive = { 
 			focus = BRA_hMnXIfPZ 
-			focus = BRA_iQdPamqs 
-			focus = BRA_ 
+			focus = BRA_iQdPamqs
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
@@ -775,8 +771,7 @@ instant_build = yes}
 		prerequisite = { focus = BRA_fqdOTPsV }
 		mutually_exclusive = { 
 			focus = BRA_sIOfWxCP 
-			focus = BRA_hMnXIfPZ 
-			focus = BRA_ 
+			focus = BRA_hMnXIfPZ
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
@@ -1294,8 +1289,7 @@ target = ARG
 		cost = 10
 		available_if_capitulated = yes
 		mutually_exclusive = { 
-			focus = BRA_tFLBiXTv 
-			focus = BRA_ 
+			focus = BRA_tFLBiXTv
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
