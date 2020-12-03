@@ -24,6 +24,14 @@
  BRA_empire_DEF:0 "ブラジル帝国"
  BRA_empire_ADJ:0 "ブラジル"
  
+ GER_empire:0 "ドイツ帝国"
+ GER_empire_DEF:0 "ドイツ帝国"
+ GER_empire_ADJ:0 "ドイツ"
+ 
+ RUS_empire:0 "ロシア帝国"
+ RUS_empire_DEF:0 "ロシア帝国"
+ RUS_empire_ADJ:0 "ロシア"
+ 
  OTT:0 "オスマン帝国"
  OTT_DEF:0 "オスマン帝国"
  OTT_ADJ:0 "オスマン"

@@ -319,6 +319,8 @@
  
  RUS:0 "ロシア"
  RUS_DEF:0 "ロシア"
+ RUS_classical_communism:0 "ロシア社会主義共和国"
+ RUS_classical_communism_DEF:0 "ロシア社会主義共和国"
  RUS_ADJ:0 "ロシア"
  
  SOV:0 "ソビエト連邦"
@@ -579,9 +581,9 @@
  DOM_DEF:0 "ドミニカーナ"
  DOM_ADJ:0 "ドミニカーナ"
  
- EUC:0 "エクアドル"
- EUC_DEF:0 "エクアドル"
- EUC_ADJ:0 "エクアドル"
+ ECU:0 "エクアドル"
+ ECU_DEF:0 "エクアドル"
+ ECU_ADJ:0 "エクアドル"
  
  ELS:0 "エルサルバドル"
  ELS_DEF:0 "エルサルバドル"
@@ -684,9 +686,13 @@
  QAT_DEF:0 "カタール"
  QAT_ADJ:0 "カタール"
  
- SRL_:0 "スリランカ"
+ SRL:0 "スリランカ"
  SRL_DEF:0 "スリランカ"
  SRL_ADJ:0 "スリランカ"
+ 
+ TLS:0 "東ティモール"
+ TLS_DEF:0 "東ティモール"
+ TLS_ADJ:0 "東ティモール"
  
 #ヨーロッパ
  AUS:0 "オーストリア"

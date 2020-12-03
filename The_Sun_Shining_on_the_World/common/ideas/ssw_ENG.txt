@@ -4,11 +4,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			
+			picture = British_sick
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_arms_factory_factor = -0.3
@@ -20,11 +20,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			
+			picture = British_sick
 			modifier = {
 				consumer_goods_factor = 0.15
 				production_speed_arms_factory_factor = -0.2
@@ -36,11 +36,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = British_sick			
+			picture = British_sick
 			modifier = {
 				consumer_goods_factor = 0.1
 				production_speed_arms_factory_factor = 0.05
@@ -52,11 +52,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = stiff_upper_lip			
+			picture = stiff_upper_lip
 			modifier = {
 			}
 			
@@ -65,7 +65,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
@@ -91,11 +91,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = vickers_armstrong_eng			
+			picture = vickers_armstrong_eng
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
@@ -105,11 +105,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = vickers_armstrong_eng			
+			picture = vickers_armstrong_eng
 			modifier = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
@@ -119,11 +119,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_research_bonus			
+			picture = generic_research_bonus
 			modifier = {
 				research_speed_factor = 0.05
 			}
@@ -133,11 +133,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = FRA_factory_strikes			
+			picture = FRA_factory_strikes
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -147,11 +147,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = ast_all_in			
+			picture = ast_all_in
 			modifier = {
 				local_resources_factor = 0.1
 			}
@@ -161,11 +161,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = man_five_year_plan_industry			
+			picture = man_five_year_plan_industry
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 			}
@@ -191,11 +191,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = Elizabeth			
+			picture = Elizabeth
 			modifier = {
 				research_speed_factor = 0.05
 			}
@@ -204,11 +204,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = george_vi			
+			picture = george_vi
 			traits = {
 				commonwealth_leader
 				chronic_disease
@@ -218,11 +218,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = hol_caved_to_the_british			
+			picture = hol_caved_to_the_british
 			modifier = {
 				stability_factor = -0.1
 				conscription_factor = -0.3
@@ -233,11 +233,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = Welfare_state			
+			picture = Welfare_state
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
@@ -247,11 +247,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_goods_red_bonus			
+			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
@@ -261,11 +261,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = generic_goods_red_bonus			
+			picture = generic_goods_red_bonus
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
@@ -275,11 +275,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
 			}
-			picture = BBC_tv			
+			picture = BBC_tv
 			modifier = {
 				drift_defence_factor = 0.2
 				opinion_gain_monthly_factor = 0.15
