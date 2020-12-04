@@ -9,6 +9,9 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	PER_Landlord_System_idea
+	PER_The_illiterate_populace
+	PER_Agrarian_Society
 }
 
 set_politics = {
