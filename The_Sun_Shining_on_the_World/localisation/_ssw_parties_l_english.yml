@@ -1,16 +1,16 @@
 ﻿l_english:
 #日本
- JAP_anarchism_party:0 "日本無政府主義連合"
- JAP_progressive_communism_party:0 ""
- JAP_classical_communism_party:0 ""
+ JAP_anarchism_party:0 "日本アナキスト連盟"
+ JAP_progressive_communism_party:0 "日本共産党"
+ JAP_classical_communism_party:0 "日本共産党"
  JAP_social_democracy_party:0 "日本社会党"
- JAP_social_liberalism_party:0 ""
+ JAP_social_liberalism_party:0 "立憲民政党"
  JAP_social_conservatism_party:0 "立憲政友会"
- JAP_authority_democracy_party:0 ""
- JAP_authority_despotism_party:0 ""
- JAP_national_fascism_party:0 "東方会"
- JAP_national_socialism_party:0 ""
- JAP_corporatocracism_party:0 "財閥"
+ JAP_authority_democracy_party:0 "東亜建設国民聯盟"
+ JAP_authority_despotism_party:0 "東亜建設国民聯盟"
+ JAP_national_fascism_party:0 "東亜建設国民聯盟"
+ JAP_national_socialism_party:0 東亜建設国民聯盟
+ JAP_corporatocracism_party:0 "財閥連盟"
  
 #ドイツ
  GER_anarchism_party:0 "APPD"
