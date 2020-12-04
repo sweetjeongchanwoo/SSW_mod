@@ -89,10 +89,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_eight_steel_one_roof.dds"
 	}
 	spriteType = {
-		name = ""
-		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_greater_east_asia_zaibatsu.dds"
-	}
-	spriteType = {
 		name = "GFX_ocus_JAP_the_indonesia_company"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_indonesia_company.dds"
 	}
@@ -287,6 +283,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_JAP_yen_block_kuhara"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_yen_block_kuhara.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_ssw_second_dissarament"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Martial_law"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Martial_law.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_land_lord"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_land_lord.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Longest_day_in_Japan"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Longest_day_in_Japan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_National_Spiritual_Mobilization_Movement"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_National_Spiritual_Mobilization_Movement.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_New_Konoe_Order"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_New_Konoe_Order.dds"
 	}
 #ゲーリング・ドイツ
     spriteType = {

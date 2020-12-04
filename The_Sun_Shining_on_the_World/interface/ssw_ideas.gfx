@@ -120,100 +120,196 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Kenkichi_Yoshizawa"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kenkichi_Yoshizawa.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kenkichi_Yoshizawa.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Etsuziro_Uehara"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Etsuziro_Uehara.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Etsuziro_Uehara.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Mamoru_Shigemitsu"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Mamoru_Shigemitsu.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Mamoru_Shigemitsu.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Shigeru_Yoshida"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Shigeru_Yoshida.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Shigeru_Yoshida.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Okinori_Kaya"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Okinori_Kaya.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Okinori_Kaya.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Hachiro_Arita"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Hachiro_Arita.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Hachiro_Arita.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Isse_Ugaki"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Isse_Ugaki.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Isse_Ugaki.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Sachio_Sakurauchi"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Sachio_Sakurauchi.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Sachio_Sakurauchi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Tadao_Oasa"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Tadao_Oasa.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Tadao_Oasa.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Hayato_Ikeda"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Hayato_Ikeda.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Hayato_Ikeda.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Eifu_Moriya"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Eifu_Moriya.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Eifu_Moriya.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Ichimin_tako"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ichimin_tako.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ichimin_tako.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Ichiro_Hatoyama"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ichiro_Hatoyama.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ichiro_Hatoyama.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Kunitoshi_Tsukumo"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kunitoshi_Tsukumo.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kunitoshi_Tsukumo.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Masajiro_Kawashima"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Masajiro_Kawashima.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Masajiro_Kawashima.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Minosru_Togo"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Minosru_Togo.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Minosru_Togo.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Nobusuke_Kishi"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Nobusuke_Kishi.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Nobusuke_Kishi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Yoshisuke_Ayukawa"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Yoshisuke_Ayukawa.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Yoshisuke_Ayukawa.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Eisaku_Sato"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Eisaku_Sato.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Eisaku_Sato.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Kakue_Tanaka"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Kakue_Tanaka.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kakue_Tanaka.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Katsuo_Okazaki"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Katsuo_Okazaki.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Katsuo_Okazaki.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Ryugo_Hashimoto"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Ryugo_Hashimoto.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ryugo_Hashimoto.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Shigesaburo_Maeo"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Shigesaburo_Maeo.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Shigesaburo_Maeo.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_JAP_cab_Takeo_Ohashi"
-		texturefile = "gfx/interface/ideas/JAP/idea_JAP_cab_Takeo_Ohashi.dds"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Takeo_Ohashi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Syoki_Ichimanda"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Syoki_Ichimanda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ichiro_Kono"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ichiro_Kono.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Matsutaro_Shoriki"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Matsutaro_Shoriki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Aiichiro_Fujiyama"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Aiichiro_Fujiyama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Gen_Sugiyama"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Gen_Sugiyama.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ginjiro_Fujiwara"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ginjiro_Fujiwara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Hiroya_Ino"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Hiroya_Ino.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Hisatada_Hirose"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Hisatada_Hirose.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Iesato_Tokugawa"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Iesato_Tokugawa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kenryo_Sato"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kenryo_Sato.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kenzo_Matsumura"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kenzo_Matsumura.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Masanori_Katsu"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Masanori_Katsu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Masatsune_Ogura"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Masatsune_Ogura.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Munetaka_Tokugawa"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Munetaka_Tokugawa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Naoki_Hoshino"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Naoki_Hoshino.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Rikisan_Hirano"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Rikisan_Hirano.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Ryoichi_Sasakawa"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Ryoichi_Sasakawa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Saburo_Endo"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Saburo_Endo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Sadajiro_Toyota"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Sadajiro_Toyota.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Tadashige_Shimadu"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Tadashige_Shimadu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Takeo_Miki"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Takeo_Miki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Fumimaro_Konoe"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Fumimaro_Konoe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Kichiro_Hiranuma"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Kichiro_Hiranuma.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_JAP_cab_Syunroku_Hata"
+		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Syunroku_Hata.dds"
 	}
 #蒙古
     spriteType = {

@@ -982,7 +982,7 @@ country_event = {#外務大臣の登用
 		}
 		add_ideas = JAP_Katsuo_Okazaki
 	}
-	option = {#岡崎勝男を登用しよう
+	option = {#田中角栄を登用しよう
 		name = SSW_JAP.47.b
 		add_political_power = -10
 		JAP = {
@@ -990,10 +990,11 @@ country_event = {#外務大臣の登用
 				id = SSW_JAP.48
 			}
 		}
+		add_ideas = JAP_Kakue_Tanaka
 	}
-	option = {#岡崎勝男を登用しよう
+	option = {#いや、必要ないだろう
 		name = SSW_JAP.47.c
-		add_political_power = -10
+		add_political_power = 10
 		JAP = {
 			country_event = {
 				id = SSW_JAP.48
@@ -1017,8 +1018,9 @@ country_event = {#財務大臣の登用
 				id = SSW_JAP.49
 			}
 		}
+		add_ideas = JAP_Shigesaburo_Maeo
 	}
-	option = {#岡崎勝男を登用しよう
+	option = {#橋本龍伍を登用しよう
 		name = SSW_JAP.48.b
 		add_political_power = -10
 		JAP = {
@@ -1026,14 +1028,130 @@ country_event = {#財務大臣の登用
 				id = SSW_JAP.49
 			}
 		}
+		add_ideas = JAP_Ryugo_Hashimoto
 	}
-	option = {#岡崎勝男を登用しよう
+	option = {#いや、必要ないだろう
 		name = SSW_JAP.48.c
-		add_political_power = -10
+		add_political_power =10
 		JAP = {
 			country_event = {
 				id = SSW_JAP.49
 			}
 		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.49
+	title = SSW_JAP.49.t
+	desc = SSW_JAP.49.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#大橋武夫を登用しよう
+		name = SSW_JAP.49.a
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.50
+			}
+		}
+		add_ideas = JAP_Takeo_Ohashi
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.49.b
+		add_political_power = 10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.50
+			}
+		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.50
+	title = SSW_JAP.50.t
+	desc = SSW_JAP.50.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#佐藤栄作を登用しよう
+		name = SSW_JAP.50.a
+		add_political_power = -10
+		add_ideas = JAP_Eisaku_Sato
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.50.b
+		add_political_power = 10
+	}
+}
+
+country_event = {#限定的再軍備
+	id = SSW_JAP.51
+	title = SSW_JAP.51.t
+	desc = SSW_JAP.51.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#陸軍の宣伝をしよう
+		name = SSW_JAP.51.a
+		add_political_power = -10
+	}
+	option = {#辞めておくべきだ
+		name = SSW_JAP.51.b
+		JAP_seiyukai_low_popularity_increase_effect = yes
+		JAP_minseito_low_popularity_decrease_effect = yes
+	}
+}
+
+country_event = {#緊縮政策の提案
+	id = SSW_JAP.52
+	title = SSW_JAP.52.t
+	desc = SSW_JAP.52.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#素晴らしい政策だ！
+		name = SSW_JAP.52.a
+		random_list = {
+			50 = {
+				country_event = SSW_JAP.53
+			}
+			50 = {
+				country_event = SSW_JAP.54
+			}
+		}
+	}
+}
+
+country_event = {#限定的再軍備
+	id = SSW_JAP.53
+	title = SSW_JAP.53.t
+	desc = SSW_JAP.53.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#政友会の馬鹿野郎
+		name = SSW_JAP.53.a
+		JAP_seiyukai_low_popularity_increase_effect = yes
+		JAP_minseito_low_popularity_decrease_effect = yes
+		add_political_power = -10
+	}
+}
+
+country_event = {#緊縮政策の施行
+	id = SSW_JAP.54
+	title = SSW_JAP.54.t
+	desc = SSW_JAP.54.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#素晴らしい決断だ
+		name = SSW_JAP.54.a
+		add_ideas = SSW_JAP_social_security
+		complete_national_focus = JAP_social_security
+		JAP_minseito_low_popularity_increase_effect = yes
+		JAP_seiyukai_low_popularity_decrease_effect = yes
 	}
 }
