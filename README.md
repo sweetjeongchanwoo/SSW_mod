@@ -6,6 +6,6 @@
 1.  3行目にある「path = ""」の""の中に「The_Sun_Shining_on_the_World」のフォルダの場所を貼り付ける。
 
 	例「C:/Users/ユーザー名/Documents/Paradox Interactive/Hearts of Iron IV/mod/The_Sun_Shining_on_the_World」
-	※￥マークでは動きません
+	**※￥マークでは動きません
 
 	注意: ユーザー名やドキュメントなどが日本語になっている場合反映されないのでフォルダの場所を日本語のフォルダを経由しない場所に移動させてpathに打ち込むテキストもその場所に変更してください。
