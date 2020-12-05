@@ -185,7 +185,6 @@
 ##### IDEAS #####
  SSW_generic_technology_licensing:0 "国家間の信頼"
  SSW_sense_of_distrust:0 "不信感"
- SSW_support_civil_war:0 "内戦中の支援"
  SSW_militarism_focus:0 "軍国主義的精神"
  SSW_military_youth_focus:0 "軍事的青少年団体の拡張"
  SSW_superior_will:0 "日本式精神的優越"
@@ -201,7 +200,6 @@
  strengthen_air:0 "核兵器を前提とした空軍"
  idea_extra_tech_speed:0 "科学者を優待"
 ##### TOOLTIP #####
- ssw_unlock_focuses_tt:0 "§Cこの国家方針はイベントなどによって自動で達成される。 §!\n"
  hire_italian_tt:0 "イタリア人の軍事顧問を§G雇う§!が、 イタリアと交戦すると§R召還§!されるだろう。 "
 ##### EVENTS #####
  ssw_generic_focus.1.title:0 "中立主義外交 - 技術"
