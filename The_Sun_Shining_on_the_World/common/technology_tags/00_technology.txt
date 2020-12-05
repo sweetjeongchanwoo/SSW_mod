@@ -83,6 +83,9 @@ technology_categories = {
 	logistics_tech
 	signal_company_tech
 	maintenance_company_tech
+	comfort_tech
+	sniper_tech
+	mortar_tech
 	naval_mines
 	concentrated_industry_category
 	dispersed_industry_category

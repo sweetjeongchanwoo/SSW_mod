@@ -101,7 +101,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 2 }
+			position = { x = -4 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -134,7 +134,7 @@ technologies = {
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 6 }
+			position = { x = -4 y = 3 }
 		}
 		
 		ai_will_do = {
@@ -180,7 +180,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 8 }
+			position = { x = -4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -224,7 +224,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 10 }
+			position = { x = -4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -264,7 +264,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 12 }
+			position = { x = -4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -312,7 +312,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 14 }
+			position = { x = -4 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -348,7 +348,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 16 }
+			position = { x = -4 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -386,7 +386,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 18 }
+			position = { x = -4 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -428,7 +428,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 20 }
+			position = { x = -4 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -466,7 +466,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 22 }
+			position = { x = -4 y = 20 }
 		}
 		
 		ai_will_do = {
@@ -504,7 +504,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 24 }
+			position = { x = -4 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -546,7 +546,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 26 }
+			position = { x = -4 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -584,7 +584,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 30 }
+			position = { x = -4 y = 26 }
 		}
 		
 		ai_will_do = {
@@ -622,7 +622,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 34 }
+			position = { x = -4 y = 29 }
 		}
 		
 		ai_will_do = {
@@ -660,7 +660,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 36 }
+			position = { x = -4 y = 32 }
 		}
 		
 		ai_will_do = {
@@ -702,7 +702,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -4 y = 38 }
+			position = { x = -4 y = 36 }
 		}
 		
 		ai_will_do = {
@@ -724,43 +724,6 @@ technologies = {
 		}
 	}
 
-	synthetic_aperture_radar = {
-
-		# radar boost in air/sea combat depends on radar level
-
-		path = {
-			leads_to_tech = synthetic_aperture_radar_2
-			research_cost_coeff = 1
-		}
-		
-		static_anti_air_hit_chance_factor = 0.2
-		
-		research_cost = 1.25
-		start_year = 1955
-		
-		folder = {
-			name = electronics_folder
-			position = { x = -4 y = 40 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					tag = ITA
-					tag = JAP
-				}
-				factor = 5
-			}
-		}
-
-		
-		
-		categories = {
-			electronics
-			radar_tech
-		}
-	}
 
 	synthetic_aperture_radar_2 = {
 
@@ -1138,7 +1101,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 4 }
+			position = { x = 2 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -1177,7 +1140,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 10 }
+			position = { x = 2 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1234,7 +1197,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -1266,7 +1229,7 @@ technologies = {
 relay_type_calculator_1 = {#リレー式計算機
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.03
 
 		
 		research_cost = 2.5
@@ -1274,7 +1237,7 @@ relay_type_calculator_1 = {#リレー式計算機
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 6 y = 16 }
+			position = { x = 5 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -1302,7 +1265,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.05
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -1328,7 +1291,7 @@ relay_type_calculator_1 = {#リレー式計算機
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 18 }
+			position = { x = 2 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -1356,7 +1319,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	transistor_1 = {#トランジスタ
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = transistor_2
@@ -1368,7 +1331,7 @@ relay_type_calculator_1 = {#リレー式計算機
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 20 }
+			position = { x = 0 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1396,7 +1359,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	transistor_2 = {#トランジスタⅡ
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = early_computer_system
@@ -1408,7 +1371,7 @@ relay_type_calculator_1 = {#リレー式計算機
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 22 }
+			position = { x = 0 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -1437,7 +1400,7 @@ relay_type_calculator_1 = {#リレー式計算機
 magnetic_recording_medium_1 = {#磁気記録システム１
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = magnetic_recording_medium_2
@@ -1449,7 +1412,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 20 }
+			position = { x = 4 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1477,7 +1440,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	magnetic_recording_medium_2 = {#磁気記録システム2
 
 		# small boost to research speed
-		research_speed_factor = 0.02
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = early_computer_system
@@ -1489,7 +1452,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 22 }
+			position = { x = 4 y = 16 }
 		}
 		
 		ai_will_do = {
@@ -1517,7 +1480,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	early_computer_system = {#初期型コンピューター
 
 		# small boost to research speed
-		research_speed_factor = 0.02
+		research_speed_factor = 0.16
 		
 		path = {
 			leads_to_tech = developmental_program_1
@@ -1538,6 +1501,144 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 
 		research_cost = 2.5
 		start_year = 1951
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+
+	developmental_program_1 = {#プログラム研究１
+
+		# small boost to research speed
+		research_speed_factor = 0.02
+
+
+		path = {
+			leads_to_tech = computer_system_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_control_system_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1952
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+
+	integrated_circuit_1 = {#集積回路１
+
+		# small boost to research speed
+		research_speed_factor = 0.02
+
+		path ={
+			leads_to_tech = computer_system_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1953
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 3
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+		}
+		
+		categories = {
+			electronics
+			encryption_tech
+			decryption_tech
+			computing_tech
+		}
+	}
+
+	computer_system_1 = {#電子式コンピューター１
+
+		# small boost to research speed
+		research_speed_factor = 0.2
+
+		path ={
+			leads_to_tech = developmental_program_2
+			research_cost_coeff = 1
+		}
+		path ={
+			leads_to_tech = integrated_circuit_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = decryption_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = encryption_5 
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2.5
+		start_year = 1954
 		
 		folder = {
 			name = electronics_folder
@@ -1566,19 +1667,23 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 	}
 
-	developmental_program_1 = {#プログラム研究１
+	developmental_program_2 = {#プログラム開発２
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.10
 
-
-		path = {
-			leads_to_tech = computer_system_1
+		path ={
+			leads_to_tech = computer_system_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = fire_control_system_5
+			research_cost_coeff = 1
+		}
+
 		
 		research_cost = 2.5
-		start_year = 1952
+		start_year = 1956
 		
 		folder = {
 			name = electronics_folder
@@ -1607,18 +1712,19 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 	}
 
-	integrated_circuit_1 = {#集積回路１
+	integrated_circuit_2 = {#集積回路２
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.10
 
 		path ={
-			leads_to_tech = computer_system_1
+			leads_to_tech = computer_system_2
 			research_cost_coeff = 1
 		}
+
 		
 		research_cost = 2.5
-		start_year = 1953
+		start_year = 1955
 		
 		folder = {
 			name = electronics_folder
@@ -1647,145 +1753,10 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 	}
 
-	computer_system_1 = {#電子式コンピューター１
-
-		# small boost to research speed
-		research_speed_factor = 0.07
-
-		path ={
-			leads_to_tech = developmental_program_2
-			research_cost_coeff = 1
-		}
-		path ={
-			leads_to_tech = integrated_circuit_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = decryption_5
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = encryption_5 
-			research_cost_coeff = 1
-		}
-
-		
-		research_cost = 2.5
-		start_year = 1954
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 28 }
-		}
-		
-		ai_will_do = {
-			factor = 3
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
-			}
-		}
-		
-		categories = {
-			electronics
-			encryption_tech
-			decryption_tech
-			computing_tech
-		}
-	}
-
-	developmental_program_2 = {#プログラム開発２
-
-		# small boost to research speed
-		research_speed_factor = 0.07
-
-		path ={
-			leads_to_tech = computer_system_2
-			research_cost_coeff = 1
-		}
-
-		
-		research_cost = 2.5
-		start_year = 1956
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 30 }
-		}
-		
-		ai_will_do = {
-			factor = 3
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
-			}
-		}
-		
-		categories = {
-			electronics
-			encryption_tech
-			decryption_tech
-			computing_tech
-		}
-	}
-
-	integrated_circuit_2 = {#集積回路２
-
-		# small boost to research speed
-		research_speed_factor = 0.07
-
-		path ={
-			leads_to_tech = computer_system_2
-			research_cost_coeff = 1
-		}
-
-		
-		research_cost = 2.5
-		start_year = 1955
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 4 y = 30 }
-		}
-		
-		ai_will_do = {
-			factor = 3
-			
-			modifier = {
-				factor = 3
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 3
-				date > "1943.1.1"
-			}
-		}
-		
-		categories = {
-			electronics
-			encryption_tech
-			decryption_tech
-			computing_tech
-		}
-	}
-
 	computer_system_2 = {#改良型電子コンピューター
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.25
 
 		path ={
 			leads_to_tech = harddisk_drive
@@ -1810,7 +1781,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 32 }
+			position = { x = 2 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -1837,10 +1808,14 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	harddisk_drive = {#ハードディスクdrive
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.25
 
 		path ={
 			leads_to_tech = advanced_encryption_
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fire_control_system_6
 			research_cost_coeff = 1
 		}
 
@@ -1887,7 +1862,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	hybrid_IC = {#複合集積回路
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.05
 
 		
 		research_cost = 2.5
@@ -2066,7 +2041,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 10 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -2109,7 +2084,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 14 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -2152,7 +2127,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 18 }
+			position = { x = 0 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2195,11 +2170,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 24 }
-		}
-		path = {
-			leads_to_tech = fire_control_system_4
-			research_cost_coeff = 1
+			position = { x = 0 y = 18 }
 		}
 		ai_will_do = {
 			factor = 1.75
@@ -2230,21 +2201,17 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	}
 	encryption_5 = {
 
-		# encryption 3
+		# encryption 5
 		encryption = 1
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
 		start_year = 1944
-		path = {
-			leads_to_tech = fire_control_system_5
-			research_cost_coeff = 1
-		}
 
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 28 }
+			position = { x = 0 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -2276,21 +2243,17 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	}
 	encryption_6 = {
 
-		# encryption 3
+		# encryption 6
 		encryption = 1
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
 		research_cost = 1
 		start_year = 1944
-		path = {
-			leads_to_tech = fire_control_system_6
-			research_cost_coeff = 1
-		}
 
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 32 }
+			position = { x = 0 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -2333,7 +2296,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 10 }
+			position = { x = 5 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -2372,7 +2335,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 14 }
+			position = { x = 5 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -2411,7 +2374,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 18 }
+			position = { x = 5 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2449,7 +2412,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 24 }
+			position = { x = 5 y = 18 }
 		}
 		
 		ai_will_do = {
@@ -2482,7 +2445,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 28 }
+			position = { x = 5 y = 24 }
 		}
 		
 		ai_will_do = {
@@ -2515,7 +2478,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 5 y = 32 }
+			position = { x = 5 y = 30 }
 		}
 		
 		ai_will_do = {
@@ -2552,7 +2515,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -2594,7 +2557,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		}
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -2637,7 +2600,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 16 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -2662,7 +2625,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_4 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_4
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2673,7 +2636,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 26 }
+			position = { x = 0 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -2698,7 +2661,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_5 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_5
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2709,7 +2672,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 30 }
+			position = { x = 0 y = 28 }
 		}
 		
 		ai_will_do = {
@@ -2735,7 +2698,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_6 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_6
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2746,7 +2709,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 		
 		folder = {
 			name = electronics_folder
-			position = { x = -2 y = 34 }
+			position = { x = 0 y = 36 }
 		}
 		
 		ai_will_do = {

@@ -10,11 +10,22 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_despotism
+	ruling_party = classical_communism
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authority_despotism = 100
+	classical_communism = 100
+}
+
+create_country_leader = {
+	name = "Ammosov Maxim Kirovich"
+	desc = ""
+	picture = "gfx/leaders/KYR/Portrait_Ammosov_Maxim_Kirovich.dds"
+	expire = "1965.1.1"
+	ideology = classical_communism_ideology
+	traits = {
+		#
+	}
 }

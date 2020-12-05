@@ -8,6 +8,9 @@ state={
 
 	history={
 		owner = GER
+		add_core_of = CRI
+		add_core_of = SOV
+		add_core_of = UKR
 		victory_points = {
 			3686 20
 		}
@@ -30,8 +33,6 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SOV
-                add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2

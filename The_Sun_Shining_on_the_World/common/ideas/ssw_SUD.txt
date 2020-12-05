@@ -413,11 +413,11 @@ ideas = {
 			modifier = {
 			    conscription_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.02
-				conservatism_drift = 0.10
+				social_conservatism_drift = 0.10
 			}
 		}
 	}
-	minister_of_Foreign_Affairs = {
+	minister_of_foreign_affairs = {
 		SUD_muhammad_ahmad_mahgoub = {
 		    picture = muhammad_mahgoub
 			allowed = {
@@ -427,7 +427,7 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 	}
-	minister_of_Finance = {
+	minister_of_finance = {
 		SUD_sayed_abdallah_khalil = {
 		    picture = sudan_khalil
 			allowed = {
@@ -437,7 +437,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 	}
-	minister_of_Education = {
+	minister_of_interior = {
 		SUD_al_khalifa_al_hassan = {
 		    picture = al_khalifa_al_hassan
 			allowed = {
@@ -448,7 +448,8 @@ ideas = {
 		}
 	}
 	tank_manufacturer = {
-	designer = yes
+	
+		designer = yes
 	
 		fiat = {
 			

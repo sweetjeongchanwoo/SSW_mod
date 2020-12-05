@@ -18,3 +18,14 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+
+create_country_leader = {
+	name = "Mufti Ziyauddinhan ibn Eshon Babahan"
+	desc = ""
+	picture = "gfx/leaders/UZB/Portrait_Mufti_Ziyauddinhan_ibn_Eshon_Babahan.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

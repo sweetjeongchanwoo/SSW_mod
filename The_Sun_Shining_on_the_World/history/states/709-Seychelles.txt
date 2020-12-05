@@ -9,6 +9,7 @@ state={
 	{
 		owner = MAD
 		add_core_of = MAD
+		add_core_of = SYC
 		buildings = {
 			infrastructure = 3
 			2188 = {

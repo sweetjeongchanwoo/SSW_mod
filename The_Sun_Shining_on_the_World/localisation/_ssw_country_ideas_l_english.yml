@@ -22,4 +22,6 @@
  political_leader:0 "政府首班"
  minister_of_foreign_affairs:0 "外務大臣"
  minister_of_finance:0 "財務大臣"
- minister_of_education:0 "文科大臣"
+ minister_of_interior:0 "内務大臣"
+ minister_of_army:0 "軍需大臣"
+ head_of_cab_available:0 "政治首班は手動で変更できません。\n今後のあなたと周辺国の行動によって左右されます。"

@@ -24,6 +24,14 @@
  BRA_empire_DEF:0 "ブラジル帝国"
  BRA_empire_ADJ:0 "ブラジル"
  
+ GER_empire:0 "ドイツ帝国"
+ GER_empire_DEF:0 "ドイツ帝国"
+ GER_empire_ADJ:0 "ドイツ"
+ 
+ RUS_empire:0 "ロシア帝国"
+ RUS_empire_DEF:0 "ロシア帝国"
+ RUS_empire_ADJ:0 "ロシア"
+ 
  OTT:0 "オスマン帝国"
  OTT_DEF:0 "オスマン帝国"
  OTT_ADJ:0 "オスマン"
@@ -31,6 +39,10 @@
  Middle_East_Union:0 "中東連合"
  Middle_East_Union_DEF:0 "中東連合"
  Middle_East_Union_ADJ:0 "中東"
+ 
+ Roman_Empire:0 "ローマ帝国"
+ Roman_Empire_DEF:0 "ローマ帝国"
+ Roman_Empire_ADJ:0 "ローマ"
  
 #共同管理国家
  CLC_JAPandCHI:0 "日華共同港都市"

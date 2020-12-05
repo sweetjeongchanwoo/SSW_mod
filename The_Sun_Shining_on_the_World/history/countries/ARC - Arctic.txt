@@ -1,5 +1,5 @@
 ﻿1950.1.1 = {
-	capital = 232
+	capital = 463
 	oob = "ARC_1950"
 	set_cosmetic_tag = ARC_JAP
 
@@ -23,4 +23,16 @@
 	set_popularities = {
 		authority_despotism = 100
 	}
+
+	create_country_leader = {
+		name = "Yasuo Yamasaki"
+		desc = ""
+		picture = "gfx/leaders/ARC/Portrait_Yasuo_Yamasaki.dds"
+		expire = "1965.1.1"
+		ideology = authority_despotism_ideology
+		traits = {
+			#
+		}
+	}
 }
+

@@ -12,6 +12,10 @@ spriteTypes = {
 		name = "4-36168"
 		texturefile = "gfx/event_pictures/4-36168.dds"
 	}
+	SpriteType = {	##Icon For: 第4回大東亜会議
+		name = "GFX_Kagawa_Toyohiko_speech"
+		texturefile = "gfx/event_pictures/Kagawa_Toyohiko_speech.dds"
+	}
 #ドイツ
 	spriteType = {
 		name = "GFX_Gebbers_speech"

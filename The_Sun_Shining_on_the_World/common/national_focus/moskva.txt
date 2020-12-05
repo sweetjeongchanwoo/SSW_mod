@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = 4_year_plan
+		id = MOS_4_year_plan
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		x = 8
@@ -19,11 +19,11 @@ focus_tree = {
         }
 	}
 	focus = {
-		id = Focus_on_of_north
+		id = MOS_Focus_on_of_north
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
-			focus = 4_year_plan
+			focus = MOS_4_year_plan
 		}
 		mutually_exclusive = {
 			focus = Development_around_Moscow
@@ -55,7 +55,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = Focus_on_of_north
+			focus = MOS_Focus_on_of_north
 		}
 		x = 6
         y = 2
@@ -84,10 +84,10 @@ focus_tree = {
 		icon = GFX_focus_ger_strike_at_the_source
 		cost = 10.00
 		prerequisite = {
-			focus = 4_year_plan
+			focus = MOS_4_year_plan
 		}
 		mutually_exclusive = {
-			focus = Focus_on_of_north
+			focus = MOS_Focus_on_of_north
 		}
 		x = 10
 		y = 1
@@ -307,7 +307,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Second_4_year_plan
+		id = Second_MOS_4_year_plan
 		icon = GFX_focus_generic_industry_2
 		cost = 10.00
 		prerequisite = {
@@ -340,7 +340,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10.00
 		prerequisite = {
-			focus = Second_4_year_plan
+			focus = Second_MOS_4_year_plan
 		}
 		mutually_exclusive = {
 			focus = Development_of_Al-Hagelinsk
@@ -368,7 +368,7 @@ focus_tree = {
 		icon = GFX_focus_por_recover_brazil
 		cost = 10.00
 		prerequisite = {
-			focus = Second_4_year_plan
+			focus = Second_MOS_4_year_plan
 		}
 		mutually_exclusive = {
 			focus = Cut_down_the_trees
@@ -488,7 +488,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10.00
 		prerequisite = {
-			focus = Second_4_year_plan
+			focus = Second_MOS_4_year_plan
 		}
 		x = 12
 		y = 8

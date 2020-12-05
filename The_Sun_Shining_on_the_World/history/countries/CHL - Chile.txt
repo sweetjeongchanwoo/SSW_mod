@@ -18,5 +18,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	progressive_communism = 100
+	progressive_communism = 40
+	classical_communism = 20
+	social_conservatism = 20
+	national_fascism = 10
+	national_socialism = 10
 }

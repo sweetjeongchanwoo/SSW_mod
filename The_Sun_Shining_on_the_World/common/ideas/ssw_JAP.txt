@@ -964,14 +964,13 @@ ideas = {
 			removal_cost = -1
 			picture = chi_hyper_inflation4
 			modifier = {
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
-				production_speed_arms_factory_factor = -0.10
-				production_speed_industrial_complex_factor = -0.10
-				consumer_goods_factor = 0.10
-				research_speed_factor = -0.5
-				production_factory_efficiency_gain_factor = -0.05
-				stability_factor = -0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.04
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		SSW_JAP_Shrink_due_to_lack_of_growth = {
@@ -1060,12 +1059,11 @@ ideas = {
 			removal_cost = -1
 			picture = jap_ichi_go
 			modifier = {
-				consumer_goods_factor = 0.05
-				stability_factor = -0.10
-				production_factory_max_efficiency_factor = -0.05
-				line_change_production_efficiency_factor = -0.05
-				production_speed_buildings_factor = -0.05
-				global_building_slots_factor = -0.05
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
 			}
 		}
 		SSW_JAP_yen_block = {
@@ -1361,7 +1359,7 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.5
+				industrial_capacity_dockyard = 0.05
 				production_speed_arms_factory_factor = 0.1
 			}
 		}
@@ -1541,5 +1539,1831 @@ ideas = {
 				justify_war_goal_time = -0.25
 			}
 		}
+		SSW_JAP_Riot = {
+			#暴動
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		SSW_JAP_gea_gold = {
+			#共栄圏の金
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = spr_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+		JAP_research_organization_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			research_speed_factor = 0.10
+			}
+		}
+		JAP_increase_in_research_budget_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			research_speed_factor = 0.20
+			}
+		}
+		JAP_japanese_archipelago_remodeling_plan_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			economy_cost_factor = -0.15
+			political_power_factor = -0.15
+			consumer_goods_factor = 0.05
+			}
+		}
+		JAP_complete_remodeling_plan_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+		JAP_daitoa_factory_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.15
+			industrial_capacity_dockyard = 0.15
+			}
+		}
+		JAP_setouchi_industrial_area_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			production_speed_dockyard_factor = 0.12
+			industrial_capacity_dockyard = 0.10
+			refit_ic_cost = -0.10
+			}
+		}
+
+		JAP_priority_to_the_west_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+
+		JAP_priority_to_the_east_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			}
+		}
+		JAP_keihin_keiyo_industrial_zone_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		JAP_advanced_electronics_industry_idea = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			production_factory_max_efficiency_factor = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		JAP_the_expansion_of_japanese_companies_idea_daitoa_side = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			targeted_modifier = {
+			TAG = JAP
+			extra_trade_to_target_factor = 0.25
+			trade_cost_for_target_factor = -0.25
+			}
+		}
+		JAP_high_quality_automotive_industry_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			army_armor_speed_factor = 0.10
+			motorized_attack_factor = 0.10
+			motorized_defense_factor = 0.05
+			}
+		}
+		JAP_new_drilling_technology_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			#picture =
+			
+			modifier = {
+			local_resources_factor = 0.15
+			}
+		}
+		JAP_Yoshida_revolution_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		JAP_Minimum_Wage_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+
+	###政治首班###
+	political_leader = {
+		JAP_Kenkichi_Yoshizawa = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kenkichi_Yoshizawa
+				
+			traits = { economic_organizer }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ichiro_Hatoyama = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ichiro_Hatoyama
+				
+			traits = { A_taciturn_hawk }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Nobusuke_Kishi = {
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Nobusuke_Kishi
+				
+			traits = { Specters_of_Showa }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Shigeru_Yoshida_p = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Shigeru_Yoshida
+				
+			traits = { 
+				hawk
+				conservative_grandee
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Iesato_Tokugawa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Iesato_Tokugawa
+				
+			traits = { 
+				old_figurehead
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kenzo_Matsumura = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kenzo_Matsumura
+				
+			traits = { 
+				Politicians_skilled_in_the_art_of_execution
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Masanori_Katsu = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Masanori_Katsu
+				
+			traits = { 
+				appeaser
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Fumimaro_Konoe = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Fumimaro_Konoe
+				
+			traits = { 
+				liberal_aristocrat
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Syunroku_Hata = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Syunroku_Hata
+				
+			traits = { 
+				Heroes_of_the_last_war
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kichiro_Hiranuma = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kichiro_Hiranuma
+				
+			traits = { 
+				Right_Wing_Leaders
+			}
+				
+			cancel_if_invalid = no
+		}
+	}
+
+	###外務大臣###
+	minister_of_foreign_affairs = {
+		JAP_Mamoru_Shigemitsu = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Mamoru_Shigemitsu
+				
+			traits = { reluctant_interventionist }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Hachiro_Arita = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Hachiro_Arita
+				
+			traits = { tenacious_negotiator }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Eifu_Moriya = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Eifu_Moriya
+				
+			traits = { editor }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Katsuo_Okazaki = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Katsuo_Okazaki
+				
+			traits = { 
+				Modern_day_vermin
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kakue_Tanaka = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kakue_Tanaka
+				
+			traits = { 
+				Big_names_in_architecture
+				up_coming_young_man
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Aiichiro_Fujiyama = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Aiichiro_Fujiyama
+				
+			traits = { 
+				reluctant_interventionist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Tadashige_Shimadu = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				has_country_leader = {
+					name = "Iemasa Tokugawa"
+						ruling_only = yes
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Tadashige_Shimadu
+				
+			traits = { 
+				retired_officer
+
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Hiroya_Ino = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Hiroya_Ino
+				
+			traits = { 
+				silent_workhorse
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kenzo_Matsumura_gaimu = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kenzo_Matsumura
+				
+			traits = { 
+				tenacious_negotiator
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Gen_Sugiyama = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Gen_Sugiyama
+				
+			traits = { 
+				backroom_windbag
+			}
+				
+			cancel_if_invalid = no
+		}
+	}
+
+
+	###財務大臣###
+	minister_of_finance = {
+		JAP_Okinori_Kaya = {
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Okinori_Kaya
+				
+			traits = { financial_expert }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Sachio_Sakurauchi = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Sachio_Sakurauchi
+				
+			traits = {
+				dealbroker
+				headstrong
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ichimin_tako = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ichimin_tako
+				
+			traits = {
+				economist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Yoshisuke_Ayukawa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Yoshisuke_Ayukawa
+				
+			traits = {
+				captain_of_industry
+				finance_graduate
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Shigesaburo_Maeo = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Shigesaburo_Maeo
+				
+			traits = {
+				economist
+				hard_working_businessman
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ryugo_Hashimoto = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ryugo_Hashimoto
+				
+			traits = {
+				economic_organizer
+				socialite_connections
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Syoki_Ichimanda = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Syoki_Ichimanda
+				
+			traits = { 
+				technocrat
+				hard_working_businessman
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ginjiro_Fujiwara = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				has_country_leader = {
+					name = "Iemasa Tokugawa"
+						ruling_only = yes
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ginjiro_Fujiwara
+				
+			traits = { 
+				tenacious_negotiator
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ryoichi_Sasakawa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ryoichi_Sasakawa
+				
+			traits = { 
+				war_industrialist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Naoki_Hoshino = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Naoki_Hoshino
+				
+			traits = { 
+				captain_of_industry
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Masanori_Katsu_zaimu = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Masanori_Katsu
+				
+			traits = { 
+				financial_expert
+			}
+				
+			cancel_if_invalid = no
+		}
+	}
+
+	###内務大臣###
+	minister_of_interior = {
+		JAP_Etsuziro_Uehara = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Etsuziro_Uehara
+				
+			traits = { prince_of_terror }
+				
+			cancel_if_invalid = no
+		}
+		JAP_Tadao_Oasa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Tadao_Oasa
+				
+			traits = {
+				Political_sleeper
+				Ruthless_decision_maker
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Hayato_Ikeda = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Hayato_Ikeda
+				
+			traits = {
+				lieutenant_of_industry
+				prince_of_terror
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Masajiro_Kawashima = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Masajiro_Kawashima
+				
+			traits = {
+				lieutenant_of_industry
+				demon_spawned_by_vanity
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Takeo_Ohashi = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Takeo_Ohashi
+				
+			traits = {
+				Collusion_with_the_Lawyer
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Matsutaro_Shoriki = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Matsutaro_Shoriki
+				
+			traits = {
+				Ruthless_decision_maker
+				Modern_day_vermin
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Munetaka_Tokugawa = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				has_country_leader = {
+					name = "Iemasa Tokugawa"
+						ruling_only = yes
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Munetaka_Tokugawa
+				
+			traits = {
+				education_reformer
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Rikisan_Hirano = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Rikisan_Hirano
+				
+			traits = {
+				smooth_talking_con_man
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kenryo_Sato = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kenryo_Sato
+				
+			traits = {
+				headstrong
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Takeo_Miki = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Takeo_Miki
+				
+			traits = {
+				tenacious_negotiator
+			}
+				
+			cancel_if_invalid = no
+		}
+	}
+
+	###軍需大臣###
+	minister_of_army = {
+		JAP_Shigeru_Yoshida = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_country_leader = {
+						name = "Shigeru Yoshida"
+						ruling_only = yes
+					}
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Shigeru_Yoshida
+				
+			traits = { 
+				hawk
+				conservative_grandee
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Isse_Ugaki = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenzo Matsumura"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Masanori Katsu"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Isse_Ugaki
+				
+			traits = { 
+				retired_officer
+				the_legitimist
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Kunitoshi_Tsukumo = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Kunitoshi_Tsukumo
+				
+			traits = { 
+				thoroughgoing_rationalist
+				dealbroker
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Eisaku_Sato = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Eisaku_Sato
+				
+			traits = { 
+				war_industrialist
+				Politicians_skilled_in_the_art_of_execution
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Ichiro_Kono = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Ichiro_Kono
+				
+			traits = { 
+				Ambitious_Demagogue
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Masatsune_Ogura = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Masatsune_Ogura
+				
+			traits = { 
+				finance_graduate
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Hisatada_Hirose = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				has_country_leader = {
+					name = "Iemasa Tokugawa"
+						ruling_only = yes
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Hisatada_Hirose
+				
+			traits = { 
+				armaments_organizer
+			}
+				
+			cancel_if_invalid = no
+		}
+		JAP_Sadajiro_Toyota = {
+
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+				}
+				OR = {
+					has_country_leader = {
+						name = "Kenkichi Yoshizawa"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Fusanosuke Kuhara"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ichiro Hatoyama"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Nobusuke Kishi"
+						ruling_only = yes
+					}
+				}
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_cab_Sadajiro_Toyota
+				
+			traits = { 
+				quartermaster_general
+			}
+				
+			cancel_if_invalid = no
+		}
+
 	}
 }

@@ -23,8 +23,9 @@ SUD_investment_from_the_overlord = {
 		days_remove = 200
 		
 		modifier = {
-			EGY = { civilian_factory_use = 1
-			consumer_goods_factor = -0.05
+			EGY = { 
+				civilian_factory_use = 1
+				consumer_goods_factor = -0.05
 			}
 		}
 		remove_effect = {
@@ -101,7 +102,7 @@ SUD_investment_from_the_overlord = {
 		
 		available = {
 			has_completed_focus = SUD_development_of_the_nile_coastal
-			has_ideas = SUD_risk_of_disease
+			has_idea = SUD_risk_of_disease
 		}
 		
 		cost = 300

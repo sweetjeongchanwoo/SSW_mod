@@ -1,4 +1,4 @@
-﻿capital = 800
+﻿capital = 935
 oob = "SIN_1950"
 set_cosmetic_tag = SIN_JAP
 

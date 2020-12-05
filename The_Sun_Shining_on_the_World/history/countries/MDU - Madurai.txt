@@ -22,9 +22,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Tanguturi Prakasam"
+	name = "Annadurai"
 	desc = ""
-	picture = "gfx/leaders/MDU/Portrait_Tanguturi_Prakasam.dds"
+	picture = "gfx/leaders/MDU/Portrait_Annadurai.dds"
 	expire = "1965.1.1"
 	ideology = authority_despotism_ideology
 	traits = {

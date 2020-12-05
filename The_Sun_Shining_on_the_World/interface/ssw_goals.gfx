@@ -89,10 +89,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_eight_steel_one_roof.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_the_greater_east_asia_zaibatsu"
-		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_greater_east_asia_zaibatsu.dds"
-	}
-	spriteType = {
 		name = "GFX_ocus_JAP_the_indonesia_company"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_indonesia_company.dds"
 	}
@@ -131,6 +127,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_JAP_the_greater_east_asia_commonwealth_plan"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_greater_east_asia_commonwealth_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_the_greater_east_asia_zaibatsu"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_greater_east_asia_zaibatsu.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_JAP_incorporate_korea_to_the_mainland"
@@ -217,17 +217,97 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_burmese_plantation_agriculture.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_the_burmese_plantation_agriculture"
-		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_burmese_plantation_agriculture.dds"
-	}
-	spriteType = {
 		name = "GFX_focus_JAP_the_indochina_office"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_the_indochina_office.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_JAP_open_the_fertile_great_plain_of_manchuria"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_open_the_fertile_great_plain_of_manchuria.dds"
-    }
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_yoshida"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_yoshida.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_tokugawa"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_tokugawa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_matsumura"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_matsumura.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_kuhara"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_kuhara.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_kishi"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_kishi.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_katsu"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_katsu.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_focus_hatoyama"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_focus_hatoyama.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_entetainmentism"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_entetainmentism.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_hatoyama_nuke"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_hatoyama_nuke.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_copporation_arab"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_copporation_arab.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_geacps_gold_block_system"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_geacps_gold_block_system.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_country_train_entettainment"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_country_train_entettainment.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Kishinomix"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Kishinomix.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Einstein_invait"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Einstein_invait.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_yen_block_kuhara"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_yen_block_kuhara.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_JAP_ssw_second_dissarament"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Martial_law"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Martial_law.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_land_lord"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_land_lord.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Longest_day_in_Japan"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Longest_day_in_Japan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_National_Spiritual_Mobilization_Movement"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_National_Spiritual_Mobilization_Movement.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_New_Konoe_Order"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_New_Konoe_Order.dds"
+	}
 #ゲーリング・ドイツ
     spriteType = {
 		name = "GFX_focus_Gering_ico"
@@ -258,10 +338,10 @@ spriteTypes = {
 		name = "GFX_focus_BRM_dokuritu_ha"
 		texturefile = "gfx/interface/goals/BRM/focus_BRM_dokuritu_ha.dds"
 	}
-	SpriteType = {
-		name = "GFX_focus_LTV_kokki"
-		texturefile = "gfx/interface/goals/BRM/focus_LTV_kokki.dds"
-	}
+#	SpriteType = {
+#		name = "GFX_focus_LTV_kokki"
+#		texturefile = "gfx/interface/goals/BRM/focus_LTV_kokki.dds"
+#	}
 #イギリス
 	SpriteType = {
 		name = "GFX_focus_1950_vote"
@@ -471,6 +551,15 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_TUR_Union_middle_east"
 		texturefile = "gfx/interface/goals/TUR/ssw_TUR_middle_east.dds"
+	}
+	#イタリア
+	SpriteType = {
+		name = "GFX_ITA_Caesar_side"
+		texturefile = "gfx/interface/goals/ITA/ITA_Caesar_side.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_Caesar"
+		texturefile = "gfx/interface/goals/ITA/ITA_Caesar.dds"
 	}
 
 }

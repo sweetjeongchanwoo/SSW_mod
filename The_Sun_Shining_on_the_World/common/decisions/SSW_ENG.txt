@@ -1,3 +1,6 @@
+####################################
+#This is made by Chiyo  Chiyo THX!!#
+####################################
 ENG_USA_civil_war = {
 	ENG_CAN_avoid_UTC = {
 		icon = generic_operation

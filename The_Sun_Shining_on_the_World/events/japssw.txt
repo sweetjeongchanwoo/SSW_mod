@@ -6,9 +6,6 @@ country_event = { #国民軍縮運動の発生
 	desc = SSW_JAP.1.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
 	option = {
 		name = SSW_JAP.1.a
 		add_political_power = -25
@@ -20,7 +17,6 @@ country_event = { #国民軍縮運動の発生
 				days = 15
 			}
 		}
-		ai_chance = { factor = 10}
 	}
 }
 
@@ -30,9 +26,6 @@ country_event = { #国民軍縮運動の拡大
 	desc = SSW_JAP.2.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
 	option = {
 		name = SSW_JAP.2.a
 		add_political_power = -50
@@ -54,9 +47,6 @@ country_event = { #賀川豊彦が演説する
 	desc = SSW_JAP.3.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
 	option = {
 		name = SSW_JAP.3.a
 		add_political_power = 25
@@ -78,9 +68,6 @@ country_event = { #自由党の台頭
 	desc = SSW_JAP.4.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
 	option = {
 		name = SSW_JAP.4.a
 		add_political_power = 50
@@ -133,7 +120,7 @@ country_event = {
 	}
 }
 
-country_event = {#右翼と軍人による大規模な反政府活動
+country_event = {#芳澤謙吉の暗殺
 	id = SSW_JAP.7
 	title = SSW_JAP.7.t
 	desc = SSW_JAP.7.d
@@ -142,7 +129,37 @@ country_event = {#右翼と軍人による大規模な反政府活動
 
 	option = {
 		name = SSW_JAP.7.a
-		load_focus_tree = ssw_japan_authority_focus
+		JAP = {
+			country_event = {
+				id = SSW_JAP.28
+				days = 1
+			}
+		}
+		create_country_leader = {
+    		name = "Rinzi Naikaku"
+    		desc = ""
+    		picture = "Portrait_Souri_Huzai.dds"
+    		expire = "1965.1.1"
+    		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+}
+
+country_event = {#久原房之助が就任
+	id = SSW_JAP.8
+	title = SSW_JAP.8.t
+	desc = SSW_JAP.8.d
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP.8.a
+		country_event = {
+			id = SSW_JAP.9
+			days = 3
+		}
 		create_country_leader = {
     		name = "Fusanosuke Kuhara"
     		desc = ""
@@ -155,40 +172,20 @@ country_event = {#右翼と軍人による大規模な反政府活動
 	}
 }
 
-country_event = {#芳澤内閣総辞職
-	id = SSW_JAP.8
-	title = SSW_JAP.8.t
-	desc = SSW_JAP.8.d
-	picture = GFX_report_event_second_vienna_award_pact
-	is_triggered_only = yes
-
-	option = {
-		name = SSW_JAP.8.a
-	}
-}
-
-country_event = {#軍部贈賄事件
+country_event = {#軍縮法案の強制採決
 	id = SSW_JAP.9
 	title = SSW_JAP.9.t
 	desc = SSW_JAP.9.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = ssw_jap_flag_15
-	}
-
-	immediate = {
-	}
-
 	option = {
 		name = SSW_JAP.9.a
-		JAP = {
-			country_event = {
-				id = SSW_JAP.10
-				days = 10
-			}
+		swap_ideas = {
+			remove_idea = SSW_jAP_disarmament_idea
+			add_idea = SSW_jAP_kuhara_disarmament
 		}
+		set_country_flag = ssw_jap_flag_17
 	}
 }
 
@@ -199,47 +196,48 @@ country_event = {#内閣総辞職
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	option = {#鳩山
+	option = {#吉田茂
 		name = SSW_JAP.10.a
-		complete_national_focus = JAP_select_Hatoyama
-		retire_country_leader = yes
-		create_country_leader = {
-    		name = "Ichiro Hatoyama"
-    		desc = ""
-    		picture = "Portrait_Hatoyama_Ichiro.dds"
-    		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
-    		traits = {
-    		}
-		}
-	}
-	option = {#岸
-		name = SSW_JAP.10.b
-		complete_national_focus = JAP_select_Kishi
-		retire_country_leader = yes
-		create_country_leader = {
-    		name = "Nobusuke Kishi"
-    		desc = ""
-    		picture = "Portrait_Kishi_Nobusuke.dds"
-    		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
-    		traits = {
-    		}
-		}
-	}
-	option = {#松野鶴平
-		name = SSW_JAP.10.c
 		trigger = {
-			has_completed_focus = JAP_Shrink_due_to_lack_of_growth
+			hidden_trigger = {
+				check_variable = {
+					var = JAP_seiyukai_popularity
+					value = JAP_minseito_popularity
+					compare = greater_than_or_equals
+				}
+			}
 		}
-		complete_national_focus = JAP_select_Kuhara
+		complete_national_focus = JAP_select_Shigeru_Yoshida
 		retire_country_leader = yes
 		create_country_leader = {
-    		name = "Tsuruhe Matsuno"
+    		name = "Shigeru Yoshida"
     		desc = ""
-    		picture = "Portrait_Matsuno_Tsuruhe.dds"
+    		picture = "Portrait_Shigeru_Yoshida.dds"
     		expire = "1965.1.1"
     		ideology = social_conservatism_ideology
+    		traits = {
+    		}
+		}
+	}
+	option = {#松村謙三
+		name = SSW_JAP.10.b
+		trigger = {
+			hidden_trigger = {
+				check_variable = {
+					var = JAP_minseito_popularity
+					value = JAP_seiyukai_popularity
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		complete_national_focus = JAP_The_Rise_of_Kenzo_Matsumura
+		retire_country_leader = yes
+		create_country_leader = {
+    		name = "Kenzo Matsumura"
+    		desc = ""
+    		picture = "Portrait_Kenzo_Matsumura.dds"
+    		expire = "1965.1.1"
+    		ideology = social_liberalism_ideology
     		traits = {
     		}
 		}
@@ -253,9 +251,14 @@ country_event = {#内閣総辞職
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	option = {#岸再任
+	trigger = {
+		has_country_flag = ssw_jap_flag_26
+#		has_country_flag 
+	}
+
+	option = {#岸
 		name = SSW_JAP.11.a
-		complete_national_focus = JAP_Nobusuke_Kishi_reappointment
+		complete_national_focus = JAP_select_Kishi
 		retire_country_leader = yes
 		create_country_leader = {
     		name = "Nobusuke Kishi"
@@ -267,28 +270,14 @@ country_event = {#内閣総辞職
     		}
 		}
 	}
-	option = {#鳩山再任
-		name = SSW_JAP.11.a
-		complete_national_focus = JAP_Hatoyama_Ichiro_reappointment
+	option = {#鳩山
+		name = SSW_JAP.11.b
+		complete_national_focus = JAP_select_Hatoyama
 		retire_country_leader = yes
 		create_country_leader = {
     		name = "Ichiro Hatoyama"
     		desc = ""
     		picture = "Portrait_Hatoyama_Ichiro.dds"
-    		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
-    		traits = {
-    		}
-		}
-	}
-	option = {#吉田再任
-		name = SSW_JAP.11.a
-		complete_national_focus = JAP_Shigeru_Yosdida_coming_to_power
-		retire_country_leader = yes
-		create_country_leader = {
-    		name = "Shigeru Yoshida"
-    		desc = ""
-    		picture = "Portrait_Yoshida_Shigeru.dds"
     		expire = "1965.1.1"
     		ideology = social_conservatism_ideology
     		traits = {
@@ -304,46 +293,865 @@ country_event = {#内閣総辞職
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
 
-	option = {#uyoku
+	option = {#徳川
 		name = SSW_JAP.12.a
-		complete_national_focus = JAP_Nobusuke_Kishi_reappointment
+		complete_national_focus = JAP_select_Iemasa_Tokugawa
 		retire_country_leader = yes
 		create_country_leader = {
-    		name = "Kichiro Hiranuma"
+    		name = "Iemasa Tokugawa"
     		desc = ""
-    		picture = "Portrait_Kichiro_Hiranuma.dds"
+    		picture = "Portrait_Iemasa_Tokugawa.dds"
     		expire = "1965.1.1"
     		ideology = social_conservatism_ideology
     		traits = {
     		}
 		}
 	}
-	option = {#
-		name = SSW_JAP.12.a
-		complete_national_focus = JAP_Hatoyama_Ichiro_reappointment
+	option = {#勝
+		name = SSW_JAP.12.b
+		complete_national_focus = JAP_The_Rise_of_Masanori_Katsu
 		retire_country_leader = yes
 		create_country_leader = {
-    		name = "Fumimaro Konoe"
+    		name = "Masanori Katsu"
     		desc = ""
-    		picture = "Portrait_Fumimaro_Konoe.dds"
+    		picture = "Portrait_Masanori_Katsu.dds"
     		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
+    		ideology = social_liberalism_ideology
     		traits = {
     		}
 		}
 	}
-	option = {#吉田再任
-		name = SSW_JAP.12.a
-		complete_national_focus = JAP_Shigeru_Yosdida_coming_to_power
-		retire_country_leader = yes
-		create_country_leader = {
-    		name = "Shunroku Hata"
-    		desc = ""
-    		picture = "Portrait_Shunroku_Hata.dds"
-    		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
-    		traits = {
-    		}
+}
+
+country_event = {#新潟県内で小作争議が発生
+	id = SSW_JAP.13
+	title = SSW_JAP.13.t
+	desc = SSW_JAP.13.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+
+	option = {#平沼
+		name = SSW_JAP.13.a
+		JAP = {
+			country_event = {
+				id = SSW_JAP.14
+				days = 15
+			}
 		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {#小作争議が全国へ拡大
+	id = SSW_JAP.14
+	title = SSW_JAP.14.t
+	desc = SSW_JAP.14.d
+	picture = GFX_report_event_american_hunger_march
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP.14.a
+		hidden_effect = {
+			set_country_flag = ssw_jap_flag_event
+		}
+		JAP = {
+			country_event = {
+				id = SSW_JAP.15
+			}
+		}
+		534 = {
+			set_demilitarized_zone = yes
+		}
+		844 = {
+			set_demilitarized_zone = yes
+		}
+		533 = {
+			set_demilitarized_zone = yes
+		}
+		535 = {
+			set_demilitarized_zone = yes
+		}
+		846 = {
+			set_demilitarized_zone = yes
+		}
+		530 = {
+			set_demilitarized_zone = yes
+		}
+		528 = {
+			set_demilitarized_zone = yes
+		}
+		851 = {
+			set_demilitarized_zone = yes
+		}
+		843 = {
+			set_demilitarized_zone = yes
+		}
+		536 = {
+			set_demilitarized_zone = yes
+		}
+		850 = {
+			set_demilitarized_zone = yes
+		}
+		add_ideas = SSW_JAP_Riot
+		add_stability = -0.05
+		add_popularity = { ideology = social_liberalism popularity = 0.06 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.06 }
+	}
+}
+
+country_event = {#全国暴動への対処
+	id = SSW_JAP.15
+	title = SSW_JAP.15.t
+	desc = SSW_JAP.15.d
+	picture = GFX_report_event_canada_treaty
+	trigger = {
+		has_country_flag = ssw_jap_flag_event
+	}
+	fire_only_once = no
+
+	option = {#報道を規制せよ
+		name = SSW_JAP.15.a
+		clr_country_flag = ssw_jap_flag_event
+		random_list = {
+			60 = {
+				JAP = {
+					country_event = {
+						id = SSW_JAP.19
+					}
+				}
+			} 
+			40 = {
+				JAP = {
+					country_event = {
+						id = SSW_JAP.16
+					}
+				}
+			} 
+		}			
+	}
+	option = {#報道を規制してはならない
+		name = SSW_JAP.15.b
+		set_country_flag = ssw_jap_flag_24
+		add_political_power = -100
+		JAP = {
+			country_event = {
+				id = SSW_JAP.17
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = {#暴動の拡散を阻止
+	id = SSW_JAP.16
+	title = SSW_JAP.16.t
+	desc = SSW_JAP.16.d
+	picture = GFX_report_event_canada_treaty
+	fire_only_once = yes
+
+	option = {
+		name = SSW_JAP.16.a
+		hidden_effect = {
+		set_country_flag = ssw_jap_flag_event
+			JAP = {
+				country_event = {
+					id = SSW_JAP.15
+					days = 10
+				}
+			}
+		}
+	}
+}
+
+country_event = {#暴動による破壊活動と農村の占拠
+	id = SSW_JAP.17
+	title = SSW_JAP.17.t
+	desc = SSW_JAP.17.d
+	picture = GFX_report_event_worker_protests
+	trigger = {
+		has_country_flag = ssw_jap_flag_24
+	}
+	fire_only_once = no
+
+	option = {
+		name = SSW_JAP.17.a
+		JAP = {
+			country_event = {
+				id = SSW_JAP.17
+				days = 20
+			}
+		}
+		random_owned_controlled_state = {
+			random_list = {
+				33 = { 
+					damage_building = {
+						type = infrastructure
+						damage = 1
+					}
+				}
+				33 = {
+					damage_building = {
+						type = arms_factory
+						damage = 1
+					}
+				} 
+				34 = {
+					damage_building = {
+						type = industrial_complex
+						damage = 1
+					}
+				} 
+			}
+		}
+		add_popularity = { ideology = social_liberalism popularity = 0.01 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.01 }
+	}
+}
+
+country_event = {#暴動の鎮圧
+	id = SSW_JAP.18
+	title = SSW_JAP.18.t
+	desc = SSW_JAP.18.d
+	picture = GFX_report_event_czech_soldiers_01
+	is_triggered_only = yes
+
+	option = {#もう大丈夫だ
+		name = SSW_JAP.18.a
+		remove_ideas = SSW_JAP_Riot
+		hidden_effect = {
+			clr_country_flag = ssw_jap_flag_24
+			JAP = {
+				country_event = {
+					id = SSW_JAP.20
+					days = 20
+				}
+			}
+		}
+	}
+}
+
+country_event = {#報道規制の失敗
+	id = SSW_JAP.19
+	title = SSW_JAP.19.t
+	desc = SSW_JAP.19.d
+	picture = GFX_report_event_canada_treaty
+	fire_only_once = yes
+
+	option = {
+		name = SSW_JAP.19.a
+		add_stability = -0.05
+		JAP = {
+			country_event = {
+				id = SSW_JAP.21
+			}
+		} 
+	}
+}
+
+country_event = {#賀川豊彦が演説
+	id = SSW_JAP.20
+	title = SSW_JAP.20.t
+	desc = SSW_JAP.20.d
+	picture = GFX_Kagawa_Toyohiko_speech
+	is_triggered_only = yes
+
+	option = {#彼らの要求を受け入れよう
+		name = SSW_JAP.20.a
+		remove_ideas = SSW_JAP_Parasitic_landlord_system
+		534 = {
+			set_demilitarized_zone = no
+		}
+		844 = {
+			set_demilitarized_zone = no
+		}
+		533 = {
+			set_demilitarized_zone = no
+		}
+		535 = {
+			set_demilitarized_zone = no
+		}
+		846 = {
+			set_demilitarized_zone = no
+		}
+		530 = {
+			set_demilitarized_zone = no
+		}
+		528 = {
+			set_demilitarized_zone = no
+		}
+		851 = {
+			set_demilitarized_zone = no
+		}
+		843 = {
+			set_demilitarized_zone = no
+		}
+		536 = {
+			set_demilitarized_zone = no
+		}
+		850 = {
+			set_demilitarized_zone = no
+		}
+		add_popularity = { ideology = social_liberalism popularity = 0.12 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.12 }
+		hidden_effect = {
+			set_stability = 0.45
+		}
+	}
+}
+
+country_event = {#暴動の更なる拡大
+	id = SSW_JAP.21
+	title = SSW_JAP.21.t
+	desc = SSW_JAP.21.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#報道を規制してはならない
+		name = SSW_JAP.21.a
+		add_political_power = -100
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.17
+					days = 20
+				}
+			}
+		}
+		set_country_flag = ssw_jap_flag_24
+	}
+}
+
+country_event = {#第二次軍縮法案の提出
+	id = SSW_JAP.22
+	title = SSW_JAP.22.t
+	desc = SSW_JAP.22.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#議会は踊る、されど進まず
+		name = SSW_JAP.22.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#陸軍が反対
+	id = SSW_JAP.23
+	title = SSW_JAP.23.t
+	desc = SSW_JAP.23.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.1
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#軍人が政治に口出しするな
+		name = SSW_JAP.23.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#賛成が過半数を割る
+	id = SSW_JAP.24
+	title = SSW_JAP.24.t
+	desc = SSW_JAP.24.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.4
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#なんてことだ
+		name = SSW_JAP.24.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#畑俊六の演説
+	id = SSW_JAP.25
+	title = SSW_JAP.25.t
+	desc = SSW_JAP.25.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		focus_progress = {
+			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			progress > 0.7
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#余計なことを
+		name = SSW_JAP.25.a
+		add_political_power = -10
+	}
+}
+
+country_event = {#決断
+	id = SSW_JAP.26
+	title = SSW_JAP.26.t
+	desc = SSW_JAP.26.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+	}
+
+	option = {#採決
+		name = SSW_JAP.26.a
+		add_political_power = -10
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.27
+					days = 10
+				}
+			}
+		}
+	}
+
+	option = {#破棄
+		name = SSW_JAP.26.b
+		add_political_power = -10
+		hidden_effect = {
+			JAP ={
+				country_event = {
+					id = SSW_JAP.1
+					days = 7
+				}
+			}
+		}
+	}
+}
+
+country_event = {#東京事変
+	id = SSW_JAP.27
+	title = SSW_JAP.27.t
+	desc = SSW_JAP.27.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+	}
+
+	option = {#民主
+		name = SSW_JAP.27.a
+		add_political_power = -25
+		trigger = {
+			not = {
+				has_country_flag = {
+					ssw_jap_flag_right_wing_1
+					ssw_jap_flag_military_1
+				}
+			}
+		}
+		JAP = {
+			country_event = {
+				id = SSW_JAP.7
+				days = 1
+			}
+		}
+	}
+
+	option = {#権威ー右翼
+		name = SSW_JAP.27.b
+		trigger = {
+			has_country_flag = ssw_jap_flag_right_wing_1
+		}
+		add_political_power = -25
+	}
+
+	option = {#権威ー軍人
+		name = SSW_JAP.27.c
+		trigger = {
+			has_country_flag = ssw_jap_flag_military_1
+		}
+		add_political_power = -25
+	}
+}
+
+country_event = {#陛下が憤慨
+	id = SSW_JAP.28
+	title = SSW_JAP.28.t
+	desc = SSW_JAP.28.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	trigger = {
+		tag = JAP
+	}
+
+
+	option = {#逆賊を取り締まれ
+		name = SSW_JAP.28.a
+		add_political_power = -10
+		country_event = {
+			id = SSW_JAP.8
+			days = 1
+		}
+	}
+}
+
+country_event = {#農地改革
+	id = SSW_JAP.41
+	title = SSW_JAP.41.t
+	desc = SSW_JAP.41.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		has_country_flag = ssw_jap_flag_19_2
+			has_country_flag = ssw_jap_flag_20_2
+			has_country_flag = ssw_jap_flag_21
+			has_country_flag = ssw_jap_flag_22_2
+	}
+
+
+	option = {#悪習の終焉だ
+		name = SSW_JAP.41.a
+		add_political_power = 50
+		JAP = {
+			remove_ideas = SSW_JAP_Parasitic_landlord_system
+		}
+	}
+}
+
+country_event = {#吉田首相が急進的な政策を打ち出す
+	id = SSW_JAP.42
+	title = SSW_JAP.42.t
+	desc = SSW_JAP.42.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#急進的政策は国民の不信感を募らせるだけだ...
+		name = SSW_JAP.42.a
+		add_political_power = -25
+		random_list = {
+			80 = {
+				JAP = {
+					country_event = {
+					id = SSW_JAP.43
+					days = 3
+					}
+				}
+			}
+			20 = {
+				JAP = {
+					country_event = {
+					id = SSW_JAP.45
+					days = 3
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {#公務員が反発
+	id = SSW_JAP.43
+	title = SSW_JAP.43.t
+	desc = SSW_JAP.43.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#軍縮問題のような気運が再来するのか...
+		name = SSW_JAP.43.a
+		add_political_power = -25
+		JAP = {
+			country_event = {
+				id = SSW_JAP.44
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {#吉田内閣の崩壊
+	id = SSW_JAP.44
+	title = SSW_JAP.44.t
+	desc = SSW_JAP.44.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#後任は誰だ？
+		name = SSW_JAP.44.a
+		add_political_power = -25
+		set_country_flag = ssw_jap_flag_26
+		JAP = {
+			country_event = {
+				id = SSW_JAP.11
+				days = 3
+			}
+		}
+		if = {
+			limit = {
+				has_ideas = JAP_Yoshida_revolution_idea
+			}
+			remove_ideas = JAP_Yoshida_revolution_idea
+		}
+	}
+}
+
+country_event = {#吉田改革の実施
+	id = SSW_JAP.45
+	title = SSW_JAP.45.t
+	desc = SSW_JAP.45.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#国民の反発は大きい...
+		name = SSW_JAP.45.a
+		add_political_power = -25
+		add_ideas = JAP_Yoshida_revolution_idea
+		hidden_effect = {
+			JAP = {
+				country_event = {
+				id = SSW_JAP.43
+				days = 90
+				}
+			}
+		}
+	}
+}
+
+country_event = {#梅津事件
+	id = SSW_JAP.46
+	title = SSW_JAP.46.t
+	desc = SSW_JAP.46.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#斜陽の時世だ
+		name = SSW_JAP.46.a
+		add_political_power = -25
+		hidden_effect = {
+			JAP = {
+				country_event = {
+				id = SSW_JAP.10
+				days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {#外務大臣の登用
+	id = SSW_JAP.47
+	title = SSW_JAP.47.t
+	desc = SSW_JAP.47.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#岡崎勝男を登用しよう
+		name = SSW_JAP.47.a
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.48
+			}
+		}
+		add_ideas = JAP_Katsuo_Okazaki
+	}
+	option = {#田中角栄を登用しよう
+		name = SSW_JAP.47.b
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.48
+			}
+		}
+		add_ideas = JAP_Kakue_Tanaka
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.47.c
+		add_political_power = 10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.48
+			}
+		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.48
+	title = SSW_JAP.48.t
+	desc = SSW_JAP.48.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#前尾繁三郎を登用しよう
+		name = SSW_JAP.48.a
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.49
+			}
+		}
+		add_ideas = JAP_Shigesaburo_Maeo
+	}
+	option = {#橋本龍伍を登用しよう
+		name = SSW_JAP.48.b
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.49
+			}
+		}
+		add_ideas = JAP_Ryugo_Hashimoto
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.48.c
+		add_political_power =10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.49
+			}
+		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.49
+	title = SSW_JAP.49.t
+	desc = SSW_JAP.49.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#大橋武夫を登用しよう
+		name = SSW_JAP.49.a
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.50
+			}
+		}
+		add_ideas = JAP_Takeo_Ohashi
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.49.b
+		add_political_power = 10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.50
+			}
+		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.50
+	title = SSW_JAP.50.t
+	desc = SSW_JAP.50.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#佐藤栄作を登用しよう
+		name = SSW_JAP.50.a
+		add_political_power = -10
+		add_ideas = JAP_Eisaku_Sato
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.50.b
+		add_political_power = 10
+	}
+}
+
+country_event = {#限定的再軍備
+	id = SSW_JAP.51
+	title = SSW_JAP.51.t
+	desc = SSW_JAP.51.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#陸軍の宣伝をしよう
+		name = SSW_JAP.51.a
+		add_political_power = -10
+	}
+	option = {#辞めておくべきだ
+		name = SSW_JAP.51.b
+		JAP_seiyukai_low_popularity_increase_effect = yes
+		JAP_minseito_low_popularity_decrease_effect = yes
+	}
+}
+
+country_event = {#緊縮政策の提案
+	id = SSW_JAP.52
+	title = SSW_JAP.52.t
+	desc = SSW_JAP.52.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#素晴らしい政策だ！
+		name = SSW_JAP.52.a
+		random_list = {
+			50 = {
+				country_event = SSW_JAP.53
+			}
+			50 = {
+				country_event = SSW_JAP.54
+			}
+		}
+	}
+}
+
+country_event = {#限定的再軍備
+	id = SSW_JAP.53
+	title = SSW_JAP.53.t
+	desc = SSW_JAP.53.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#政友会の馬鹿野郎
+		name = SSW_JAP.53.a
+		JAP_seiyukai_low_popularity_increase_effect = yes
+		JAP_minseito_low_popularity_decrease_effect = yes
+		add_political_power = -10
+	}
+}
+
+country_event = {#緊縮政策の施行
+	id = SSW_JAP.54
+	title = SSW_JAP.54.t
+	desc = SSW_JAP.54.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#素晴らしい決断だ
+		name = SSW_JAP.54.a
+		add_ideas = SSW_JAP_social_security
+		complete_national_focus = JAP_social_security
+		JAP_minseito_low_popularity_increase_effect = yes
+		JAP_seiyukai_low_popularity_decrease_effect = yes
 	}
 }

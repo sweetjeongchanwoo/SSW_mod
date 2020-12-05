@@ -1,4 +1,4 @@
-####ちょこグルが作ったよ　ディスコ→ちょこグル#1476　バグがあったら教えてください
+####ちょこグルが作ったよ　ディスコ→ちょこグル#1476 バグがあったら教えてください
 ideas = {
 	social_system = { 
 		law = yes
@@ -164,7 +164,7 @@ ideas = {
 					factor = 2
 				}
 				modifier = {
-					has_government = authority_despotism_ideology
+					has_government = authority_despotism
 					factor = 0.5
 				}
    			}
@@ -201,7 +201,7 @@ ideas = {
 					factor = 2
 				}
 				modifier = {
-					has_government = authority_despotism_ideology
+					has_government = authority_despotism
 					factor = 0.5
 				}
    			}
@@ -237,7 +237,7 @@ ideas = {
 					factor = 2
 				}
 				modifier = {
-					has_government = authority_despotism_ideology
+					has_government = authority_despotism
 					factor = 0.5
 				}
    			}
@@ -274,7 +274,7 @@ ideas = {
 					factor = 2
 				}
 				modifier = {
-					has_government = authority_despotism_ideology
+					has_government = authority_despotism
 					factor = 0.5
 				}
    			}
