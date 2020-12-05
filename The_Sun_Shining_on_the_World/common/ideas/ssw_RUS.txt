@@ -1,5 +1,375 @@
 ideas = {
+	political_leader = {
+		RUS_andrey_vlasov = {
+			picture = SSW_RUS_andrey_vlasov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			traits = { father_of_russia_rebuild }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+		RUS_vladimir_kryuchkov = {
+			picture = SSW_RUS_vladimir_kryuchkov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			traits = { president_of_the_council_of_ministers }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+	}
+	minister_of_foreign_affairs = {
+		RUS_alexander_kerensky = {
+			picture = SSW_RUS_alexander_kerensky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			traits = { good_at_trading }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+	}
+	minister_of_finance = {
+		konstantin_rodzaevsky = {
+			picture = konstantin_rodzaevsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { active_nationalist }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_pavel_sudoplatov = {
+			picture = SSW_RUS_pavel_sudoplatov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { veteran_communist }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	minister_of_interior = {
+		RUS_vladimir_nabokov = {
+			picture = SSW_RUS_vladimir_nabokov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			traits = { kind_liberal }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+	}
+	minister_of_army = {
+		RUS_andrey_vlasov_minister_of_army = {
+			name = RUS_andrey_vlasov
+			picture = SSW_RUS_andrey_vlasov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			traits = { former_white_army }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+	}
 	country = {
+		RUS_bunker_idea = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				dig_in_speed_factor = 0.15
+				defence = 0.15
+				production_speed_bunker_factor = 0.45
+			}
+		}
+		RUS_soviet_heritage = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SPR_masters_of_our_own_fate
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.25
+				training_time_factor = -0.2
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		mos_ideas_1 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SSW_attack_germany
+			modifier = {
+				war_support_weekly = -0.02
+			}
+		}
+		bal_ideas_1 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SSW_attack_germany
+			modifier = {
+				war_support_weekly = -0.02
+			}
+		}
+		ukr_ideas_1 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SSW_attack_germany
+			modifier = {
+				war_support_weekly = -0.02
+			}
+		}
+		ccs_ideas_1 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SSW_attack_germany
+			modifier = {
+				war_support_weekly = -0.02
+			}
+		}
+		RUS_ural_strike = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				local_resources_factor = -0.2
+			}
+		}
+		RUS_trade_union_demand = {
+			picture = generic_goods_red_bonus
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				line_change_production_efficiency_factor = -0.2
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		RUS_towards_the_recapture_of_moscow_idea = {
+			name = RUS_towards_the_recapture_of_moscow
+			picture = generic_oppression
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.2
+				army_attack_factor = 0.2
+			}
+		}
+		RUS_for_the_war_with_germany_idea = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = MOS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = BAL
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = CCS
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = HLH
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = HGR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = LTV
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		RUS_for_the_war_with_japan_idea = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ARC
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = SIB
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = MEN
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		RUS_focus_on_economy_idea = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			available = { original_tag = RUS }
+			picture = generic_manpower_bonus
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_dockyard_factor = 0.20
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		RUS_focus_on_strength_idea = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			available = { original_tag = RUS }
+			picture = generic_infantry_bonus
+			modifier = {
+				conscription_factor = 0.10
+				training_time_army_factor = -0.10
+				production_speed_bunker_factor = 0.20
+				send_volunteer_size = 2
+			}
+		}
+		RUS_unions_in_charge = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			available = { original_tag = RUS }
+			picture = generic_communism_drift_bonus
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		RUS_cultural_revolution_idea = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			available = { original_tag = RUS }
+			picture = generic_communism_drift_bonus
+			modifier = {
+				stability_weekly = 0.01
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+		RUS_totalist_industry = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			available = { original_tag = RUS }
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		nkvd = {
+			removal_cost = -1
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				operative_slot = 1
+			}
+		}
+		RUS_people_economy_idea = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_morale_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		RUS_focus_on_education_idea = {
+			picture = generic_research_bonus
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
 		RUS_idea_1 = {
 			
 			allowed = {always = yes}
@@ -822,16 +1192,10 @@ ideas = {
 						
 					removal_cost = -1
 						picture = anti_soviet_pact
-
 						modifier = {
 							conscription_factor = -0.3
 							stability_factor = -0.2
-							}
+						}
 				}
-
-
-
-
-
 	}
 }

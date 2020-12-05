@@ -11,6 +11,8 @@ set_technology = {
 add_ideas = {
 	ivan_konev
 	scraping_the_barrel
+	ssw_one_party_dictatorship
+	civilian_economy
 }
 declare_war_on = {
 	target = RUS
@@ -76,10 +78,6 @@ set_party_name = {
 	ideology = corporatocracism
 	long_name = USSR_corporatocracism_party
 	name = USSR_corporatocracism_party
-}
-
-add_ideas = {
-	civilian_economy
 }
 
 set_politics = {

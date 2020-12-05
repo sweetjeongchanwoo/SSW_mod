@@ -1,0 +1,274 @@
+reintegrate_states = {
+	reintegrate_146 = {
+		icon = generic_operation
+		available = {
+			owns_state = 146
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 146
+			NOT = { 146 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 146
+		}
+	}
+	reintegrate_147 = {
+		icon = generic_operation
+		available = {
+			owns_state = 147
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 147
+			NOT = { 147 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 147
+		}
+	}
+	reintegrate_213 = {
+		icon = generic_operation
+		available = {
+			owns_state = 213
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 213
+			NOT = { 213 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 213
+		}
+	}
+	reintegrate_215 = {
+		icon = generic_operation
+		available = {
+			owns_state = 215
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 215
+			NOT = { 215 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 215
+		}
+	}
+	reintegrate_216 = {
+		icon = generic_operation
+		available = {
+			owns_state = 216
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 216
+			NOT = { 216 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 216
+		}
+	}
+	reintegrate_722 = {
+		icon = generic_operation
+		available = {
+			owns_state = 722
+		}
+		fire_only_once = no
+		visible = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			owns_state = 722
+			NOT = { 722 = { is_core_of = ROOT } }
+		}
+		ai_will_do = { factor = 10 }
+		days_remove = 70
+		cost = 50
+		remove_effect = {
+			add_state_core = 722
+		}
+	}
+}
+interventio_in_german_civil_war = {
+	support_nazism = {
+		icon = ger_reichskommissariats
+		available = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+			has_equipment = { infantry_equipment > 1499 }
+			GER = {
+				OR = {
+					has_war_with = LTV
+					has_war_with = HLH
+					has_war_with = HGR
+				}
+			}
+			NOT = { has_country_flag = support_germany }
+		}
+		cost = 100
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+		}
+		complete_effect = {
+			army_experience = 20
+			send_equipment = { target = GER type = infantry_equipment amount = 1500 }
+			GER = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			hidden_effect = {
+				set_country_flag = support_germany
+				GER = {
+					add_ai_strategy = { type = alliance id = ROOT value = 50 }
+					add_ai_strategy = { type = protect id = ROOT value = 50 }
+					add_ai_strategy = { type = support id = ROOT value = 50 }
+				}
+			}
+		}
+	}
+	support_vorbeck = {
+		icon = ger_reichskommissariats
+		available = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+			has_equipment = { infantry_equipment > 1499 }
+			LTV = {
+				OR = {
+					has_war_with = GER
+					has_war_with = HLH
+					has_war_with = HGR
+				}
+			}
+			NOT = { has_country_flag = support_germany }
+		}
+		cost = 100
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+		}
+		complete_effect = {
+			army_experience = 20
+			send_equipment = { target = LTV type = infantry_equipment amount = 1500 }
+			LTV = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			hidden_effect = {
+				set_country_flag = support_germany
+				LTV = {
+					add_ai_strategy = { type = alliance id = ROOT value = 50 }
+					add_ai_strategy = { type = protect id = ROOT value = 50 }
+					add_ai_strategy = { type = support id = ROOT value = 50 }
+				}
+			}
+		}
+	}
+	support_himmler = {
+		icon = ger_reichskommissariats
+		available = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+			has_equipment = { infantry_equipment > 1499 }
+			HLH = {
+				OR = {
+					has_war_with = GER
+					has_war_with = LTV
+					has_war_with = HGR
+				}
+			}
+			NOT = { has_country_flag = support_germany }
+		}
+		cost = 100
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+		}
+		complete_effect = {
+			army_experience = 20
+			send_equipment = { target = HLH type = infantry_equipment amount = 1500 }
+			HLH = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			hidden_effect = {
+				set_country_flag = support_germany
+				HLH = {
+					add_ai_strategy = { type = alliance id = ROOT value = 50 }
+					add_ai_strategy = { type = protect id = ROOT value = 50 }
+					add_ai_strategy = { type = support id = ROOT value = 50 }
+				}
+			}
+		}
+	}
+	support_goring = {
+		icon = ger_reichskommissariats
+		available = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+			has_equipment = { infantry_equipment > 1499 }
+			HGR = {
+				OR = {
+					has_war_with = GER
+					has_war_with = LTV
+					has_war_with = HLH
+				}
+			}
+			NOT = { has_country_flag = support_germany }
+		}
+		cost = 100
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			has_completed_focus = RUS_interventio_in_german_civil_war
+			tag = RUS
+		}
+		complete_effect = {
+			army_experience = 20
+			send_equipment = { target = HGR type = infantry_equipment amount = 1500 }
+			HGR = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			hidden_effect = {
+				set_country_flag = support_germany
+				HGR = {
+					add_ai_strategy = { type = alliance id = ROOT value = 50 }
+					add_ai_strategy = { type = protect id = ROOT value = 50 }
+					add_ai_strategy = { type = support id = ROOT value = 50 }
+				}
+			}
+		}
+	}
+}

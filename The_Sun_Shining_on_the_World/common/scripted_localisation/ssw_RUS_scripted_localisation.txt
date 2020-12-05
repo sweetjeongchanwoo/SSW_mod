@@ -1,0 +1,52 @@
+defined_text = {
+	name = GetRepublicArmyName
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_cosmetic_tag = RUS_empire
+		}
+		localization_key = RUS_EMPEROR_ARMY
+	}
+	text = {
+		localization_key = RUS_REPUBLIC_ARMY
+	}
+}
+defined_text = {
+	name = GetRepublicNavyName
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_cosmetic_tag = RUS_empire
+		}
+		localization_key = RUS_EMPEROR_NAVY
+	}
+	text = {
+		localization_key = RUS_REPUBLIC_NAVY
+	}
+}
+defined_text = {
+	name = GetRepublicAirName
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_cosmetic_tag = RUS_empire
+		}
+		localization_key = RUS_EMPEROR_AIR
+	}
+	text = {
+		localization_key = RUS_REPUBLIC_AIR
+	}
+}
+defined_text = {
+	name = GetRepublicIndustrializationName
+	text = {
+		trigger = {
+			original_tag = RUS
+			has_cosmetic_tag = RUS_empire
+		}
+		localization_key = RUS_EMPEROR_INDUSTRIALIZATION
+	}
+	text = {
+		localization_key = RUS_REPUBLIC_INDUSTRIALIZATION
+	}
+}
