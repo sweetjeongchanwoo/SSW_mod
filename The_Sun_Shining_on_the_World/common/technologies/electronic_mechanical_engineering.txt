@@ -1229,7 +1229,7 @@ technologies = {
 relay_type_calculator_1 = {#リレー式計算機
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.03
 
 		
 		research_cost = 2.5
@@ -1265,7 +1265,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.05
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -1319,7 +1319,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	transistor_1 = {#トランジスタ
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = transistor_2
@@ -1359,7 +1359,7 @@ relay_type_calculator_1 = {#リレー式計算機
 	transistor_2 = {#トランジスタⅡ
 
 		# small boost to research speed
-		research_speed_factor = 0.06
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = early_computer_system
@@ -1400,7 +1400,7 @@ relay_type_calculator_1 = {#リレー式計算機
 magnetic_recording_medium_1 = {#磁気記録システム１
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = magnetic_recording_medium_2
@@ -1440,7 +1440,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	magnetic_recording_medium_2 = {#磁気記録システム2
 
 		# small boost to research speed
-		research_speed_factor = 0.02
+		research_speed_factor = 0.01
 		
 		path = {
 			leads_to_tech = early_computer_system
@@ -1480,7 +1480,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	early_computer_system = {#初期型コンピューター
 
 		# small boost to research speed
-		research_speed_factor = 0.02
+		research_speed_factor = 0.16
 		
 		path = {
 			leads_to_tech = developmental_program_1
@@ -1532,7 +1532,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	developmental_program_1 = {#プログラム研究１
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.02
 
 
 		path = {
@@ -1577,7 +1577,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	integrated_circuit_1 = {#集積回路１
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.02
 
 		path ={
 			leads_to_tech = computer_system_1
@@ -1617,7 +1617,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	computer_system_1 = {#電子式コンピューター１
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.2
 
 		path ={
 			leads_to_tech = developmental_program_2
@@ -1670,7 +1670,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	developmental_program_2 = {#プログラム開発２
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.10
 
 		path ={
 			leads_to_tech = computer_system_2
@@ -1715,7 +1715,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	integrated_circuit_2 = {#集積回路２
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.10
 
 		path ={
 			leads_to_tech = computer_system_2
@@ -1756,7 +1756,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	computer_system_2 = {#改良型電子コンピューター
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.25
 
 		path ={
 			leads_to_tech = harddisk_drive
@@ -1808,7 +1808,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	harddisk_drive = {#ハードディスクdrive
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.25
 
 		path ={
 			leads_to_tech = advanced_encryption_
@@ -1862,7 +1862,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	hybrid_IC = {#複合集積回路
 
 		# small boost to research speed
-		research_speed_factor = 0.07
+		research_speed_factor = 0.05
 
 		
 		research_cost = 2.5
@@ -2201,7 +2201,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	}
 	encryption_5 = {
 
-		# encryption 3
+		# encryption 5
 		encryption = 1
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
@@ -2243,7 +2243,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	}
 	encryption_6 = {
 
-		# encryption 3
+		# encryption 6
 		encryption = 1
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
@@ -2625,7 +2625,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_4 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_4
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2661,7 +2661,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_5 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_5
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2698,7 +2698,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 	fire_control_system_6 = {
 
 		enable_equipment_modules = { 
-			ship_fire_control_system_3
+			ship_fire_control_system_6
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"

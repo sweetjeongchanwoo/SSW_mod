@@ -509,7 +509,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=140 y=780 }
-				size = { width = 1540 height = 430 }
+				size = { width = 1540 height = 570 }
 				clipping = no
 
 				background = {
@@ -532,7 +532,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg_3"
 				position = { x=750 y=1350 }
-				size = { width = 900 height = 280 }
+				size = { width = 930 height = 280 }
 				clipping = no
 
 				background = {
@@ -3697,7 +3697,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year5"
-					position = { x = 0 y = 260 }
+					position = { x = 0 y = 320 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3710,7 +3710,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year6"
-					position = { x = 0 y = 380 }
+					position = { x = 0 y = 500 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3723,7 +3723,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year7"
-					position = { x = 0 y = 500 }
+					position = { x = 0 y = 680 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3736,7 +3736,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year8"
-					position = { x = 0 y = 620 }
+					position = { x = 0 y = 850 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3749,7 +3749,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year9"
-					position = { x = 0 y = 740 }
+					position = { x = 0 y = 1020 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3762,7 +3762,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year10"
-					position = { x = 0 y = 860 }
+					position = { x = 0 y = 1190 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3775,7 +3775,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year11"
-					position = { x = 0 y = 980 }
+					position = { x = 0 y = 1360 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3788,7 +3788,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year12"
-					position = { x = 0 y = 1100 }
+					position = { x = 0 y = 1530 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3801,7 +3801,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year13"
-					position = { x = 0 y = 1240 }
+					position = { x = 0 y = 1700 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3814,7 +3814,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year14"
-					position = { x = 0 y = 1360 }
+					position = { x = 0 y = 1870 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3827,7 +3827,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year15"
-					position = { x = 0 y = 1480 }
+					position = { x = 0 y = 2040 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3840,7 +3840,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year16"
-					position = { x = 0 y = 1600 }
+					position = { x = 0 y = 2210 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3853,7 +3853,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "wonderweapon_year17"
-					position = { x = 0 y = 1720 }
+					position = { x = 0 y = 2380 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -3864,18 +3864,6 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-				instantTextBoxType = {
-					name = "wonderweapon_year18"
-					position = { x = 0 y = 1840 }
-					textureFile = ""
-					font = "hoi_36header"
-					borderSize = {x = 0 y = 4}
-					text = "1964"
-					maxWidth = 130
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
 
 				
 

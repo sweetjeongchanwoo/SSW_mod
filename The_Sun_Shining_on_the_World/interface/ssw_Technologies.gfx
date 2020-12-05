@@ -540,7 +540,61 @@ spriteTypes = {
 		name = "GFX_tech_morter_unit6_medium"
 		texturefile = "gfx/interface/technologies/support_tech/tech_morter_unit2.dds"
 	}
+#ìdéqã@äBçHäw
+	SpriteType = {
+		name = "GFX_encryption_4_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/encryption4.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_5_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/encryption5.dds"
+	}
+	SpriteType = {
+		name = "GFX_encryption_6_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/encryption6.dds"
+	}
 
+	SpriteType = {
+		name = "GFX_decryption_4_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/decryption4.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_5_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/decryption5.dds"
+	}
+	SpriteType = {
+		name = "GFX_decryption_6_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/decryption6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_transistor_1_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/transistor_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_transistor_2_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/transistor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_magnetic_recording_medium_1_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/magnetic_recording_medium_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_magnetic_recording_medium_2_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/magnetic_recording_medium_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_developmental_program_1_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/developmental_program_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_developmental_program_2_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/developmental_program_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_harddisk_drive_medium"
+		texturefile = "gfx/interface/technologies/electronics_tech/harddisk_drive.dds"
+	}
 
 #éYã∆ãZèp#
 	SpriteType = {
