@@ -1,3 +1,4 @@
+#国民精神
 ideas = {
 	country = {
 		PER_Landlord_System_idea = {
@@ -164,8 +165,222 @@ ideas = {
 			}
 		}
 
+		PER_Attracting_Overseas_Design_Companies = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				license_purchase_cost = -0.2
+				license_production_speed = 0.5
 			}
 		}
+
+		PER_As_many_as_one_shot = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.2	
+			}
+		}
+
+		PER_Make_Use_of_Know_How = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				equipment_conversion_speed = 0.10
+				production_factory_max_efficiency_factor = 0.1	
+			}
+		}
+
+		PER_Mobile_Warfare = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				army_speed_factor = 0.10
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+			}
+		}
+		PER_Breakthrough_Tactics = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_armor_speed_factor = 0.10
+				no_supply_grace = 24
+			}
+		}
+
+		PER_Large_scale_battle_plans = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				max_planning = 0.25	
+				army_org_Factor = 0.10	
+				max_dig_in = 2
+			}
+		}
+
+		PER_Defense_Tactics = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.25
+				recon_factor = 0.10
+			}
+		}
+
+		PER_The_Modern_Army = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				army_org_Factor = 0.05
+				offence = 0.10
+				training_time_army_factor = -0.20
+			}
+		}
+
+		PER_Grooming_Tactics = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.10
+				naval_retreat_chance = 0.40
+				naval_retreat_speed = 0.20
+
+			}
+		}
+
+		PER_Protection_of_the_transportation_network = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				navy_submarine_detection_factor = 0.20
+			}
+		}
+	}
+		#軍需品設計社
+		
+			materiel_manufacturer = {
+				 designer = yes
+		PER_Mouser_Iranian_Branch = {
+			allowed = {
+                original_tag = PER
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			cost = 150
+			removal_cost = 10
+			available = {
+				has_completed_focus = PER_Army_4
+			}
+			
+				research_bonus = {
+				infantry_weapons = 0.15
+			}
+				 equipment_bonus = {
+                infantry_equipment = {
+                    soft_attack = 0.10
+
+                }
+                          }
+			
+			}
+
+			PER_Fiat_Automobile_Tehran_Branch = {
+			allowed = {
+                original_tag = PER
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			cost = 150
+			removal_cost = 10
+			available = {
+				has_completed_focus = PER_Army_5
+			}
+			
+				research_bonus = {
+				motorised_infantry = 0.15
+			}
+				 equipment_bonus = {
+                motorised_infantry = {
+                    maximum_speed = 0.10
+
+                }
+                          }
+			
+			}
+			}
+		
+	
+}
+
+	
+		
 	
 
 
