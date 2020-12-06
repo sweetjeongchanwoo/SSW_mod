@@ -1,0 +1,13 @@
+soundeffect = { 
+	name = anpo_protets_bigevent
+	loop = no
+	sounds = {
+		sound = anpo_protets_bigevent_sound
+		}
+	is3d = no #
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.5
+	fade_in = 1
+	fade_out = 3
+}

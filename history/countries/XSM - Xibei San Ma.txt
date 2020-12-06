@@ -1,0 +1,32 @@
+capital = 604
+#oob = "XSM_1950"
+set_cosmetic_tag = XSM_CHI
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+}
+
+set_politics = {
+	ruling_party = authority_despotism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_despotism = 100
+}
+
+create_country_leader = {
+	name = "Ma Hongkui"
+	desc = ""
+	picture = "gfx/leaders/XSM/Portrait_Ma_Hongkui.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

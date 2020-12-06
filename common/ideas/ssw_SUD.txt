@@ -1,0 +1,782 @@
+ideas = {
+	country = {
+		SUD_overload_invest = {
+			# スーダンに投資している間、宗主国に付与する国民精神
+			picture = generic_infantry_bonus
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				civilian_factory_use = 1
+				consumer_goods_factor = -0.05
+			}
+		}
+		SUD_unprepared_armament = {
+			picture = generic_infantry_bonus
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = -0.2
+				command_power_gain = -0.5
+				experience_loss_factor = 0.1
+			}
+		}
+		SUD_divide_and_conquer = {
+			picture = SPR_disbanded_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.2
+				conscription_factor = -0.2
+			}
+		}
+		SUD_divide_and_conquer_2 = {
+			picture = SPR_disbanded_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.2
+				conscription_factor = -0.1
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SUD_risk_of_disease = {
+			picture = prc_the_long_march
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		SUD_disease = {
+			picture = generic_purge
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				conscription_factor = -0.1
+				consumer_goods_factor = 0.05
+				MONTHLY_POPULATION = -0.5
+			}
+		}
+		SUD_absolute_advantage_of_islam = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				industrial_capacity_factory = -0.1
+				war_support_factor = 0.1
+			}
+		}
+		SUD_advantage_of_islam = {
+			picture = raj_marginalized_muslim_community
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.005
+				industrial_capacity_factory = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		SUD_religious_confrontation = {
+			picture = generic_neutrality_drift_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		SUD_advantage_of_church = {
+			picture = MEX_church_power_3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		SUD_absolute_advantage_of_church = {
+			picture = MEX_church_power_5
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				war_support_factor = -0.1
+			}
+		}
+		SUD_italian_and_egyptian_condominium = {
+			picture = generic_disjointed_gov
+			allowed = {
+				is_in_faction_with = ITA
+				is_subject_of = EGY
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = -0.1
+			}
+		}
+		SUD_cooperative_governance_1 = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = -0.2
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		SUD_cooperative_governance_2 = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = -1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_factor = 0.25
+			}
+		}
+		SUD_rebillious_governance = {
+			picture = SPR_political_violence
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 0.1
+				stability_factor = -0.15
+				war_support_factor = 0.1
+			}
+		}
+		SUD_italian_military_training = {
+			picture = generic_infantry_bonus
+			allowed = {
+				is_in_faction_with = ITA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		SUD_local_production_for_local_consumption = {
+			picture = generic_local_self_management
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				MONTHLY_POPULATION = 0.01
+			}
+		}
+		SUD_investment_for_infrastructure = {
+			picture = generic_build_infrastructure
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		SUD_merowe_dam = {
+			picture = por_hydroelectric_power
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SUD_resources_mining = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.25
+			}
+		}
+		SUD_gold_mine = {
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		SUD_sudan_army_1 = {
+			picture = MEX_politicised_army_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.2
+			}
+		}
+		SUD_sudan_army_2 = {
+			picture = MEX_politicised_army_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.2
+				acclimatization_hot_climate_gain_factor = 0.2
+			}
+		}
+		SUD_sudanese_general_staff = {
+			picture = general_staff
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				experience_gain_army = 0.01
+			}
+		}
+		SUD_pilot_training = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+			}
+		}
+		SUD_steel_for_weapons = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		SUD_payment = {
+			picture = SPR_relocate_the_gold_reserves
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		SUD_slavery = {
+			picture = ast_classify_aliens
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.03
+			}
+		}
+		SUD_large_plantation = {
+			picture = ast_classify_aliens
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.03
+			}
+		}
+		SUD_hizb_al_umma = {
+			picture = chi_war_of_resistance
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.02
+				social_conservatism_drift = 0.1
+			}
+		}
+	}
+	minister_of_foreign_affairs = {
+		SUD_muhammad_ahmad_mahgoub = {
+			picture = muhammad_mahgoub
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+		}
+	}
+	minister_of_finance = {
+		SUD_sayed_abdallah_khalil = {
+			picture = sudan_khalil
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	minister_of_interior = {
+		SUD_al_khalifa_al_hassan = {
+			picture = al_khalifa_al_hassan
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				backroom_backstabber
+			}
+		}
+	}
+	tank_manufacturer = {
+		designer = yes
+		fiat = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = {
+				tank_manufacturer
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		beretta = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = {
+				infantry_equipment_manufacturer
+			}
+		}
+		lancia = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			traits = {
+				motorized_equipment_manufacturer
+			}
+		}
+		breda = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = {
+				artillery_manufacturer
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		macchi = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				light_aircraft_manufacturer
+			}
+		}
+		savoia_marchetti = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				medium_aircraft_manufacturer
+			}
+		}
+		caproni = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				naval_aircraft_manufacturer
+			}
+		}
+		sudan_airways = {
+			picture = generic_air_research
+			allowed = {
+				original_tag = SUD
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				heavy_aircraft_manufacturer
+			}
+		}
+	}
+	industrial_concern = {
+		SUD_CBOS = {
+			picture = CBOS
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				central_bank
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		danieli = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = {
+				industrial_concern
+			}
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		crda = {
+			allowed = {
+				original_tag = SUD
+			}
+			available = {
+				NOT = {
+					has_war_with = ITA
+				}
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = {
+				naval_manufacturer
+			}
+		}
+	}
+	army_chief = {
+		SUD_ibrahim_abboud = {
+			picture = ibrahim_abboud
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	theorist = {
+		SUD_mt = {
+			ledger = army
+			picture = generic_army_african_6
+			allowed = {
+				original_tag = SUD
+			}
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		SUD_nt = {
+			ledger = navy
+			picture = generic_navy_african_3
+			allowed = {
+				original_tag = SUD
+			}
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+			traits = {
+				naval_theorist
+			}
+		}
+		SUD_awt = {
+			ledger = air
+			picture = generic_air_african_2
+			allowed = {
+				original_tag = SUD
+			}
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+	high_command = {
+		SUD_ar = {
+			ledger = army
+			picture = generic_army_african_5
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				army_regrouping_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SUD_ai2 = {
+			ledger = army
+			picture = generic_army_african_3
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				army_infantry_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SUD_aa2 = {
+			ledger = army
+			picture = generic_army_african_2
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				army_armored_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SUD_acas = {
+			ledger = air
+			picture = generic_air_african_2
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		SUD_ncs = {
+			ledger = navy
+			picture = generic_navy_african_2
+			allowed = {
+				original_tag = SUD
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
