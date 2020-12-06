@@ -598,7 +598,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = political_violence
+						picture = SPR_political_violence
 						
 							modifier = {
 								intelligence_agency_defense = 0.25
@@ -631,7 +631,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = victors_of_the_great_War
+						picture = generic_foreign_capital
 						
 							modifier = {
 								stability_factor = 0.1
@@ -778,7 +778,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = deluge
+						picture = FRA_la_deluge
 						
 							
 								targeted_modifier = { tag = MOS attack_bonus_against = 0.2 }
@@ -1072,7 +1072,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = forced_conscription
+						picture = generic_manpower_bonus
 
 						modifier = {
 							conscription = 0.05			

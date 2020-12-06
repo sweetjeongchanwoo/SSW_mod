@@ -685,7 +685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_republic_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_RUS_army
 		dynamic = yes
 		cost = 10.00
 		ai_will_do = { factor = 10 }

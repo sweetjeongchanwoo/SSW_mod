@@ -1,0 +1,189 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_RUS_vlasovist_flag_shine"
+		texturefile = "gfx/interface/goals/rus/focus_RUS_vlasovist_flag.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus/focus_RUS_vlasovist_flag.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_vlasovist_true_shine"
+		texturefile = "gfx/interface/goals/rus/focus_RUS_vlasovist_true.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/rus/focus_RUS_vlasovist_true.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_army_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_army.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_army.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_flag_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_flag.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_flag.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_heavy_armour_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_heavy_armour.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_heavy_armour.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_monarchy_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_monarchy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_monarchy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_seize_railway_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_seize_railway.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_seize_railway.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_white_legacy_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_white_legacy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_white_legacy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_RUS_wine_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_wine.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_RUS_wine.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_SER_yugoslavia_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+	SpriteType = {
+		name = "GFX_focus_SER_yugoslavism_shine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavism.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavism.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+	}
+}
