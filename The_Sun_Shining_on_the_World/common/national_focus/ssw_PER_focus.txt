@@ -304,6 +304,16 @@ completion_reward = {
 		x = 9
 		y = 4
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+				
+		}
+
 	}
 	focus = {
 		id = PER_Modernization_11
@@ -1959,6 +1969,7 @@ completion_reward = {
 		}
 		x = 70
 		y = 2
+		
 
 	}
 	focus = {
@@ -2097,7 +2108,7 @@ completion_reward = {
 		y = 4
 
 	}
-	focus = {
+	 focus = {
 		id = PER_Air_14
 		icon = GFX_focus_wonderweapons
 		cost = 5.00
@@ -2107,5 +2118,20 @@ completion_reward = {
 		x = 76
 		y = 5
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
 	}
 }
+
+
+
+
+	
