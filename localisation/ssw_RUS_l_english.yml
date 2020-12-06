@@ -137,7 +137,6 @@
  RUS_EMPEROR_AIR:0 "帝国空軍の拡充"
 ##### FOCUS DESC #####
  RUS_NF:0 "ロシアの国家方針"
- russia_focus:0 "ロシア帝国の国家方針"
  RUS_russian_economic_problems_desc:0 "我々はまだ独立したての国家であり、多くの経済問題を抱えている。 "
  RUS_industrial_grant_desc:0 "工場への助成金を出し、 生産業を支援しよう。 "
  RUS_industrial_development_in_urals_desc:0 "ウラル地方は我々に残された重要な土地である。 "
