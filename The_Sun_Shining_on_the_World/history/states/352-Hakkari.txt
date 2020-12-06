@@ -8,24 +8,13 @@ state={
 
 	history={
 		owner = TUR
+		add_core_of = TUR
+		add_core_of = KUR
 		victory_points = {
 			12476 1 
 		}
 		buildings = {
 			infrastructure = 2
-		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			add_core_of = KUR
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = TUR
-			add_core_of = KUR
 		}
 	}
 

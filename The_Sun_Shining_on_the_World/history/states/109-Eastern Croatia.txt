@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = CRO
+		add_core_of = CRO
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -15,10 +16,9 @@ state={
 		victory_points = {
 			11581 15 
 		}
-		add_core_of = CRO
 	}
 
 	provinces={
-		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
+		624 3592 3596 3627 6647 9595 9611 11581 11594
 	}
 }

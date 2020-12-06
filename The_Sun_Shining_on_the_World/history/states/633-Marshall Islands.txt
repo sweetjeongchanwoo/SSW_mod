@@ -9,6 +9,7 @@ state={
 	history={
 		owner = PAO
 		add_core_of = PAO
+		add_core_of = MHL
 		add_core_of = FSM
 		buildings = {
 			infrastructure = 3

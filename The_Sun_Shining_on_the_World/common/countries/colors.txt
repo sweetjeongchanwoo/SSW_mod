@@ -1549,6 +1549,31 @@ MUS = {	#モーリシャス
 	color_ui = rgb { 130 110 255 }
 }
 
+KIR = {	#キリバス
+	color = rgb { 200 16 16 }
+	color_ui = rgb { 200 16 16 }
+}
+
+PLW = {	#パラオ
+	color = rgb { 0 153 255 }
+	color_ui = rgb { 0 153 255 }
+}
+
+MHL = {	#マーシャル諸島
+	color = rgb { 221 117 0 }
+	color_ui = rgb { 221 117 0 }
+}
+
+GRL = {	#グリーンランド
+	color = rgb { 0 128 0 }
+	color_ui = rgb { 0 128 0 }
+}
+
+NRU = {	#ナウル
+	color = rgb { 43 69 111 }
+	color_ui = rgb { 43 69 111 }
+}
+
 HGR = {
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }

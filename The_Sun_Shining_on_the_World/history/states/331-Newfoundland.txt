@@ -9,6 +9,7 @@ state={
 	history={
 		owner = NFL
 		add_core_of = NFL
+		add_core_of = CAN
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

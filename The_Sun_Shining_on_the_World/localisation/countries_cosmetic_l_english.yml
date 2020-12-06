@@ -11,30 +11,10 @@
  ENG_GBRandIRE:0 "イギリス"
  ENG_GBRandIRE_DEF:0 "イギリス"
  ENG_GBRandIRE_ADJ:0 "イギリス"
- 
+  
  Great_Mongol:0 "蒙古帝国"
  Great_Mongol_DEF:0 "蒙古帝国"
  Great_Mongol_ADJ:0 "大蒙古"
- 
- SOV_provisional:0 "ソビエト臨時政府"
- SOV_provisional_DEF:0 "ソビエト臨時政府"
- SOV_provisional_ADJ:0 "ソビエト臨時政府"
- 
- BRA_empire:0 "ブラジル帝国"
- BRA_empire_DEF:0 "ブラジル帝国"
- BRA_empire_ADJ:0 "ブラジル"
- 
- GER_empire:0 "ドイツ帝国"
- GER_empire_DEF:0 "ドイツ帝国"
- GER_empire_ADJ:0 "ドイツ"
- 
- RUS_empire:0 "ロシア帝国"
- RUS_empire_DEF:0 "ロシア帝国"
- RUS_empire_ADJ:0 "ロシア"
- 
- OTT:0 "オスマン帝国"
- OTT_DEF:0 "オスマン帝国"
- OTT_ADJ:0 "オスマン"
  
  Middle_East_Union:0 "中東連合"
  Middle_East_Union_DEF:0 "中東連合"
@@ -43,6 +23,40 @@
  Roman_Empire:0 "ローマ帝国"
  Roman_Empire_DEF:0 "ローマ帝国"
  Roman_Empire_ADJ:0 "ローマ"
+ 
+#帝政復古
+ BRA_empire:0 "ブラジル帝国"
+ BRA_empire_DEF:0 "ブラジル帝国"
+ BRA_empire_ADJ:0 "ブラジル"
+ 
+ GER_empire:0 "ドイツ帝国"
+ GER_empire_DEF:0 "ドイツ帝国"
+ GER_empire_ADJ:0 "ドイツ"
+ 
+ OTT:0 "オスマン帝国"
+ OTT_DEF:0 "オスマン帝国"
+ OTT_ADJ:0 "オスマン"
+ 
+ RUS_empire:0 "ロシア帝国"
+ RUS_empire_DEF:0 "ロシア帝国"
+ RUS_empire_ADJ:0 "ロシア"
+ 
+#ソビエト
+ SOV_provisional:0 "ソビエト臨時政府"
+ SOV_provisional_DEF:0 "ソビエト臨時政府"
+ SOV_provisional_ADJ:0 "ソビエト臨時政府"
+ 
+ RUS_SOV:0 "ロシア・ソビエト共和国"
+ RUS_SOV_DEF:0 "ロシア・ソビエト共和国"
+ RUS_SOV_ADJ:0 "ロシア・ソビエト"
+ 
+ UKR_SOV:0 "ウクライナ・ソビエト共和国"
+ UKR_SOV_DEF:0 "ウクライナ・ソビエト共和国"
+ UKR_SOV_ADJ:0 "ウクライナ・ソビエト"
+ 
+ BLR_SOV:0 "白ロシア・ソビエト共和国"
+ BLR_SOV_DEF:0 "白ロシア・ソビエト共和国"
+ BLR_SOV_ADJ:0 "白ロシア・ソビエト"
  
 #共同管理国家
  CLC_JAPandCHI:0 "日華共同港都市"

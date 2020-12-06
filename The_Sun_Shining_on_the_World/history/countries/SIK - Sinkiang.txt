@@ -1,5 +1,6 @@
 capital = 617
 #oob = "SIK_1950"
+set_cosmetic_tag = SIK_CHI
 
 set_technology = {
 	infantry_weapons = 1

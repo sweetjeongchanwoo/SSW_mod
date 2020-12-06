@@ -6,6 +6,8 @@ state={
 
 	history={
 		owner = BAL
+		add_core_of = BAL
+		add_core_of = EST
 		victory_points = {
 			9221 1 
 		}
@@ -17,7 +19,6 @@ state={
 			}
 
 		}
-		add_core_of = BAL
 
 	}
 

@@ -5,7 +5,6 @@ state={
 	history={
 		owner = TAJ
 		add_core_of = TAJ
-		add_core_of = SOV
 		add_core_of = WTR
 		victory_points = {
 			1384 1

@@ -13,6 +13,8 @@ state={
 
 	history={
 		owner = GER
+		add_core_of = GER
+		add_core_of = AUS
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
@@ -32,7 +34,6 @@ state={
 		#victory_points = {
 		#	11612 3
 		#}
-		add_core_of = GER
 	}
 
 	provinces={

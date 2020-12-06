@@ -12,6 +12,8 @@ state={
 
 	history={
 		owner = NFR
+		add_core_of = NFR
+		add_core_of = VFR
 		victory_points = {
 			3652 5 
 		}
@@ -20,7 +22,6 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = NFR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3

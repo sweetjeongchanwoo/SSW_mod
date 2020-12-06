@@ -8,6 +8,7 @@ state=
 	{
 		owner = PAO
 		add_core_of = PAO
+		add_core_of = PLW
 		add_core_of = FSM
 		buildings = {
 			infrastructure = 3

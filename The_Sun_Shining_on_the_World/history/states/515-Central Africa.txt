@@ -6,10 +6,11 @@ state={
 	impassable = yes
 
 	history={
+		owner = SAH
+		add_core_of = NGR
 		victory_points = {
 			10917 1 
 		}
-		owner = SAH
 		buildings = {
 			infrastructure = 1
 

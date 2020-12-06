@@ -9,6 +9,7 @@ state={
 	history={
 		owner = AFR
 		add_core_of = AFR
+		add_core_of = ALG
 		buildings = {
 			infrastructure = 0
 		}

@@ -1,5 +1,5 @@
 on_actions = {
-	on_annex = {	#‘‰Æ‚ğ•¹‡‚µ‚½
+	on_annex = {	#å›½å®¶ã‚’ä½µåˆã—ãŸæ™‚
 		effect = {
 			every_country = {
 				limit = {
@@ -10,7 +10,7 @@ on_actions = {
 			}
 		}
 	}
-	on_subject_free = {	#˜ø™S‘‚ª“Æ—§‚µ‚½
+	on_subject_free = {	#å‚€å„¡å›½ãŒç‹¬ç«‹ã—ãŸæ™‚
 		effect = {
 			if = {
 				limit = {
@@ -20,7 +20,7 @@ on_actions = {
 			}
 		}
 	}
-	on_release_as_free = {	#“Æ—§‘‚Æ‚µ‚Ä‰ğ•ú‚µ‚½
+	on_release_as_free = {	#ç‹¬ç«‹å›½ã¨ã—ã¦è§£æ”¾ã—ãŸæ™‚
 		effect = {
 			if = {
 				limit = {	original_colony_tag = yes	}
@@ -29,96 +29,81 @@ on_actions = {
 		}
 	}
 	
-	on_puppet = {	#u˜a‰ï‹c‚Å‚Ì˜ø™S‘÷—§‚Ì
+#	on_puppet = {	#è¬›å’Œä¼šè­°ã§ã®å‚€å„¡å›½æ¨¹ç«‹ã®æ™‚
+#		effect = {}
+#	}
+#	on_release_as_puppet = {	#å‚€å„¡å›½ã¨ã—ã¦è§£æ”¾ã—ãŸæ™‚
+#		effect = {}
+#	}
+}
+
+on_actions = {
+	on_annex = {
 		effect = {
-			is_abandoned_colony_tag = KOR
-			is_abandoned_colony_tag = PAO
-			is_abandoned_colony_tag = CLC
-			is_abandoned_colony_tag = SIN
-			is_abandoned_colony_tag = BRN
-			is_abandoned_colony_tag = HAW
-			is_abandoned_colony_tag = JAM
-			is_abandoned_colony_tag = PAC
-			is_abandoned_colony_tag = INO
-			is_abandoned_colony_tag = ARC
-			is_abandoned_colony_tag = CZE
-			is_abandoned_colony_tag = POL
-			is_abandoned_colony_tag = NOR
-			is_abandoned_colony_tag = HOL
-			is_abandoned_colony_tag = BEL
-			is_abandoned_colony_tag = NFR
-			is_abandoned_colony_tag = BAL
-			is_abandoned_colony_tag = UKR
-			is_abandoned_colony_tag = MOS
-			is_abandoned_colony_tag = CCS
-			is_abandoned_colony_tag = MAD
-			is_abandoned_colony_tag = TOG
-			is_abandoned_colony_tag = MAF
-			is_abandoned_colony_tag = WAF
-			is_abandoned_colony_tag = ATL
-			is_abandoned_colony_tag = LBA
-			is_abandoned_colony_tag = NEA
-			is_abandoned_colony_tag = ALB
-			is_abandoned_colony_tag = MNT
-			is_abandoned_colony_tag = SUC
-			is_abandoned_colony_tag = GIB
-			is_abandoned_colony_tag = MOR
-			is_abandoned_colony_tag = NWA
-			is_abandoned_colony_tag = EQA
-			is_abandoned_colony_tag = RIF
-			is_abandoned_colony_tag = WES
-			is_abandoned_colony_tag = EQG
-			is_abandoned_colony_tag = ANG
-			is_abandoned_colony_tag = MZB
-			is_abandoned_colony_tag = GNB
-			is_abandoned_colony_tag = CPV
-			is_abandoned_colony_tag = STP
+			if = {
+				limit = {
+					AND = {
+						tag = CZE
+						CZE = {
+							owns_state = 70
+							owns_state = 71
+						}
+						SLO = {	exists = no	}
+					}
+				}
+				set_cosmetic_tag = CZEandSLO
+			}
+			if = {
+				limit = {
+					AND = {
+						tag = MEN
+						MEN = {
+							owns_state = 330
+						}
+						MON = {	exists = no	}
+					}
+				}
+				set_cosmetic_tag = Great_Mongol
+			}
 		}
 	}
-	on_release_as_puppet = {	#˜ø™S‘‚Æ‚µ‚Ä‰ğ•ú‚µ‚½
+	on_release_as_free = {
 		effect = {
-			is_abandoned_colony_tag = KOR
-			is_abandoned_colony_tag = PAO
-			is_abandoned_colony_tag = CLC
-			is_abandoned_colony_tag = SIN
-			is_abandoned_colony_tag = BRN
-			is_abandoned_colony_tag = HAW
-			is_abandoned_colony_tag = JAM
-			is_abandoned_colony_tag = PAC
-			is_abandoned_colony_tag = INO
-			is_abandoned_colony_tag = ARC
-			is_abandoned_colony_tag = CZE
-			is_abandoned_colony_tag = POL
-			is_abandoned_colony_tag = NOR
-			is_abandoned_colony_tag = HOL
-			is_abandoned_colony_tag = BEL
-			is_abandoned_colony_tag = NFR
-			is_abandoned_colony_tag = BAL
-			is_abandoned_colony_tag = UKR
-			is_abandoned_colony_tag = MOS
-			is_abandoned_colony_tag = CCS
-			is_abandoned_colony_tag = MAD
-			is_abandoned_colony_tag = TOG
-			is_abandoned_colony_tag = MAF
-			is_abandoned_colony_tag = WAF
-			is_abandoned_colony_tag = ATL
-			is_abandoned_colony_tag = LBA
-			is_abandoned_colony_tag = NEA
-			is_abandoned_colony_tag = ALB
-			is_abandoned_colony_tag = MNT
-			is_abandoned_colony_tag = SUC
-			is_abandoned_colony_tag = GIB
-			is_abandoned_colony_tag = MOR
-			is_abandoned_colony_tag = NWA
-			is_abandoned_colony_tag = EQA
-			is_abandoned_colony_tag = RIF
-			is_abandoned_colony_tag = WES
-			is_abandoned_colony_tag = EQG
-			is_abandoned_colony_tag = ANG
-			is_abandoned_colony_tag = MZB
-			is_abandoned_colony_tag = GNB
-			is_abandoned_colony_tag = CPV
-			is_abandoned_colony_tag = STP
+			if = {
+				limit = {
+					AND = {
+						tag = MEN
+						MON = {	exists = yes	}
+					}
+				}
+				MEN = {	drop_cosmetic_tag = yes	}
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						tag = MEN
+						MON = {	exists = yes	}
+					}
+				}
+				MEN = {	drop_cosmetic_tag = yes	}
+			}
+		}
+	}
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						tag = MEN
+						MON = {	exists = yes	}
+					}
+				}
+				MEN = {	drop_cosmetic_tag = yes	}
+			}
 		}
 	}
 }

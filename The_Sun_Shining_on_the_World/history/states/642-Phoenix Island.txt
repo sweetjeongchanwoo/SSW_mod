@@ -9,6 +9,7 @@ state={
 	history={
 		owner = PAO
 		add_core_of = PAO
+		add_core_of = KIR
 		buildings = {
 			infrastructure = 3
 			13050 = {
