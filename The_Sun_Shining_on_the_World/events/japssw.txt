@@ -9,8 +9,10 @@ country_event = { #国民軍縮運動の発生
 	option = {
 		name = SSW_JAP.1.a
 		add_political_power = -25
-			add_popularity = { ideology = social_liberalism popularity = 0.06 }
-		remove_popularity = { ideology = social_conservatism popularity = 0.06 }
+		JAP = {
+			JAP_seiyukai_medium_popularity_decrease_effect = yes
+			JAP_ziyuuto_medium_popularity_increase_effect = yes
+		}
 		JAP = {
 			country_event = {
 				id = SSW_JAP.2
@@ -30,8 +32,10 @@ country_event = { #国民軍縮運動の拡大
 		name = SSW_JAP.2.a
 		add_political_power = -50
 		ai_chance = { factor = 10}
-		add_popularity = { ideology = social_liberalism popularity = 0.12 }
-		remove_popularity = { ideology = social_conservatism popularity = 0.12 }
+		JAP = {
+			JAP_seiyukai_medium_popularity_decrease_effect = yes
+			JAP_ziyuuto_medium_popularity_increase_effect = yes
+		}
 		JAP = {
 			country_event = {
 				id = SSW_JAP.3
@@ -51,8 +55,10 @@ country_event = { #賀川豊彦が演説する
 		name = SSW_JAP.3.a
 		add_political_power = 25
 		ai_chance = { factor = 10}
-		add_popularity = { ideology = social_liberalism popularity = 0.20 }
-		remove_popularity = { ideology = social_conservatism popularity = 0.20 }
+		JAP = {
+			JAP_seiyukai_medium_popularity_decrease_effect = yes
+			JAP_ziyuuto_medium_popularity_increase_effect = yes
+		}
 		JAP = {
 			country_event = {
 				id = SSW_JAP.4
@@ -71,13 +77,26 @@ country_event = { #自由党の台頭
 	option = {
 		name = SSW_JAP.4.a
 		add_political_power = 50
-		ai_chance = { factor = 10}
-		add_popularity = { ideology = social_liberalism popularity = 0.20 }
-		remove_popularity = { ideology = social_conservatism popularity = 0.20 }
+		ai_chance = { factor = 10 }
+		add_popularity = { ideology = social_liberalism popularity = 0.30 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.30 }
 		set_politics = {
 		ruling_party = social_liberalism
 			election_frequency = 60
 			elections_allowed = yes
+		}
+		set_party_name = {
+			ideology = social_liberalism
+			name = JAP_social_ziyuuto_party
+		}
+		create_country_leader = {
+			name = "Kagawa Toyohiko"
+			desc = ""
+			picture = "Mokichi_Kagawa.dds"
+			expire = "1965.1.1"
+			ideology = social_liberalism_ideology
+			traits = {
+			}
 		}
 	}
 }
@@ -320,6 +339,9 @@ country_event = {#内閣総辞職
     		traits = {
     		}
 		}
+		set_politics = {
+			ruling_party = social_liberalism
+		}
 	}
 }
 
@@ -393,9 +415,21 @@ country_event = {#小作争議が全国へ拡大
 			set_demilitarized_zone = yes
 		}
 		add_ideas = SSW_JAP_Riot
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.31
+					days = 15
+				}
+			}
+		}
 		add_stability = -0.05
 		add_popularity = { ideology = social_liberalism popularity = 0.06 }
 		remove_popularity = { ideology = social_conservatism popularity = 0.06 }
+		add_popularity = { ideology = classical_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
+		add_popularity = { ideology = progressive_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
 	}
 }
 
@@ -504,6 +538,10 @@ country_event = {#暴動による破壊活動と農村の占拠
 			}
 		}
 		add_popularity = { ideology = social_liberalism popularity = 0.01 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.01 }
+		add_popularity = { ideology = classical_communism popularity = 0.01 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.01 }
+		add_popularity = { ideology = progressive_communism popularity = 0.01 }
 		remove_popularity = { ideology = social_conservatism popularity = 0.01 }
 	}
 }
@@ -818,6 +856,218 @@ country_event = {#陛下が憤慨
 			id = SSW_JAP.8
 			days = 1
 		}
+	}
+}
+
+country_event = {
+	id = SSW_JAP.29#経済危機
+	title = SSW_JAP.29.t
+	desc = SSW_JAP.29.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_JAP.29.a
+	}
+	option = {
+		name = SSW_JAP.29.b
+	}
+}
+country_event = {
+	id = SSW_JAP.30#経済崩壊
+	title = SSW_JAP.30.t
+	desc = SSW_JAP.30.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+	
+
+	option = {
+		name = SSW_JAP.30.a
+	}
+	option = {
+		name = SSW_JAP.30.b
+	}
+}
+country_event = {
+	id = SSW_JAP.31 #社会主義者の台頭
+	title = SSW_JAP.31.t
+	desc = SSW_JAP.31.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.31.a
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = SSW_JAP.32
+					days = 30
+				}
+			}
+		}
+		add_popularity = { ideology = classical_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
+		add_popularity = { ideology = progressive_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
+	}
+}
+country_event = {
+	id = SSW_JAP.32  #極左達の演説
+	title = SSW_JAP.32.t
+	desc = SSW_JAP.32.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.32.a
+		add_popularity = { ideology = classical_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
+		add_popularity = { ideology = progressive_communism popularity = 0.03 }
+		remove_popularity = { ideology = social_conservatism popularity = 0.03 }
+	}
+}
+country_event = {
+	id = SSW_JAP.33 #世論の左傾化
+	title = SSW_JAP.33.t
+	desc = SSW_JAP.33.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.33.a
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.59
+				days = 30
+			}
+		}
+	}
+}
+country_event = {
+	id = SSW_JAP.34 #決断の時
+	title = SSW_JAP.34.t
+	desc = SSW_JAP.34.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.34.a
+		PRJ = {
+			change_tag_from = JAP
+		}
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.60
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = SSW_JAP.34.b
+		JSF = {
+			change_tag_from = JAP
+		}
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.60
+				days = 10
+			}
+		}
+	}
+	option = {
+		name = SSW_JAP.34.c
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.60
+				days = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = SSW_JAP.35 #大東亜金ブロックの完遂
+	title = SSW_JAP.35.t
+	desc = SSW_JAP.35.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.35.a
+	}
+	option = {
+		name = SSW_JAP.35.b
+	}
+	option = {
+		name = SSW_JAP.35.c
+	}
+}
+country_event = {
+	id = SSW_JAP.36 #朝鮮の内地編入法案
+	title = SSW_JAP.36.t
+	desc = SSW_JAP.36.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.36.a
+	}
+	option = {
+		name = SSW_JAP.36.b
+	}
+}
+country_event = {
+	id = SSW_JAP.36 #釜山暴動
+	title = SSW_JAP.37.t
+	desc = SSW_JAP.37.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.37.a
+	}
+	option = {
+		name = SSW_JAP.37.b
+	}
+}
+country_event = {
+	id = SSW_JAP.38 #朝鮮独立戦争
+	title = SSW_JAP.38.t
+	desc = SSW_JAP.38.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.38.a
+	}
+	option = {
+		name = SSW_JAP.38.b
+	}
+}
+news_event = {
+	id = SSW_JAP.39 #NEWS朝鮮独立戦争
+	title = SSW_JAP.39.t
+	desc = SSW_JAP.39.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+	option = {
+		name = SSW_JAP.39.a
+	}
+	option = {
+		name = SSW_JAP.39.b
+	}
+}
+country_event = {
+	id = SSW_JAP.40 #朝鮮の内地編入
+	title = SSW_JAP.40.t
+	desc = SSW_JAP.40.d
+	is_triggered_only = yes
+	picture = GFX_report_event_gre_city_devastated
+
+	option = {
+		name = SSW_JAP.40.a
+	}
+	option = {
+		name = SSW_JAP.40.b
 	}
 }
 
@@ -1153,5 +1403,163 @@ country_event = {#緊縮政策の施行
 		complete_national_focus = JAP_social_security
 		JAP_minseito_low_popularity_increase_effect = yes
 		JAP_seiyukai_low_popularity_decrease_effect = yes
+	}
+}
+
+country_event = {#外務大臣の登用
+	id = SSW_JAP.55
+	title = SSW_JAP.55.t
+	desc = SSW_JAP.55.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#岡崎勝男を登用しよう
+		name = SSW_JAP.55.a
+		add_political_power = -10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.56
+			}
+		}
+		add_ideas = JAP_Eifu_MOriya
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.55.c
+		add_political_power = 10
+		JAP = {
+			country_event = {
+				id = SSW_JAP.56
+			}
+		}
+	}
+}
+
+country_event = {#財務大臣の登用
+	id = SSW_JAP.56
+	title = SSW_JAP.56.t
+	desc = SSW_JAP.56.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#前尾繁三郎を登用しよう
+		name = SSW_JAP.56.a
+		add_political_power = -10
+		add_ideas = JAP_Ichimin_tako
+	}
+	option = {#いや、必要ないだろう
+		name = SSW_JAP.56.c
+		add_political_power =10
+	}
+}
+
+country_event = {#地主による抗議
+	id = SSW_JAP.57
+	title = SSW_JAP.57.t
+	desc = SSW_JAP.57.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#善処しよう
+		name = SSW_JAP.57.a
+		add_political_power = -10
+		add_ideas = JAP_Landlord_defiance_idea
+	}
+	option = {#法案は撤回しよう
+		name = SSW_JAP.57.c
+		add_political_power =-10
+		add_stability = 0.03
+	}
+}
+
+country_event = {#戒厳令
+	id = SSW_JAP.58
+	title = SSW_JAP.58.t
+	desc = SSW_JAP.58.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#このまま継続すれば...
+		name = SSW_JAP.58.a
+		add_political_power = -50
+		add_ideas = JAP_Martial_law
+		add_stability = -0.2
+	}
+}
+
+country_event = {#世田谷革命
+	id = SSW_JAP.59
+	title = SSW_JAP.59.t
+	desc = SSW_JAP.59.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+	trigger = {
+		complete_national_focus = JAP_Together
+		complete_national_focus = JAP_Democracy_Alliance
+	}
+
+	option = {#
+		name = SSW_JAP.59.a
+		hidden_effect = {
+		PRJ = { transfer_state = 531 }
+		PRJ = { transfer_state = 848 }
+		PRJ = { transfer_state = 529 }
+		PRJ = { transfer_state = 849 }
+		PRJ = { transfer_state = 530 }
+		PRJ = { transfer_state = 850 }
+		PRJ = { transfer_state = 528 }
+		PRJ = { transfer_state = 851 }
+		PRJ = { add_state_core = 531 }
+		PRJ = { add_state_core = 848 }
+		PRJ = { add_state_core = 529 }
+		PRJ = { add_state_core = 849 }
+		PRJ = { add_state_core = 530 }
+		PRJ = { add_state_core = 850 }
+		PRJ = { add_state_core = 528 }
+		PRJ = { add_state_core = 851 }
+		JSF = { transfer_state = 843 }
+		JSF = { transfer_state = 536 }
+		JSF = { transfer_state = 534 }
+		JSF = { transfer_state = 555 }
+		JSF = { transfer_state = 537 }
+		JSF = { transfer_state = 655 }
+		JSF = { transfer_state = 533 }
+		JSF = { transfer_state = 844 }
+		JSF = { add_state_core = 843 }
+		JSF = { add_state_core = 536 }
+		JSF = { add_state_core = 534 }
+		JSF = { add_state_core = 555 }
+		JSF = { add_state_core = 537 }
+		JSF = { add_state_core = 655 }
+		JSF = { add_state_core = 533 }
+		JSF = { add_state_core = 844 }
+		delete_unit_template_and_units = {Division_template = "Infantry Division"}
+		delete_unit_template_and_units = {Division_template = "Artillery Division"}
+		delete_unit_template_and_units = {Division_template = "Mechanized Division"}
+		}
+		custom_effect_tooltip = JAP_communism_civill_war_1_tt
+	}
+}
+
+country_event = {#民兵の徴募
+	id = SSW_JAP.60
+	title = SSW_JAP.60.t
+	desc = SSW_JAP.60.d
+	picture = GFX_report_event_gre_city_devastated
+	fire_only_once = yes
+
+	option = {#
+		name = SSW_JAP.60.a
+		
+		hidden_effect = {
+			PRJ = {
+				load_oob = "PRJ_Civil_War"
+			}
+			JSF = {
+				load_oob = "JSF_Civil_War"
+			}
+			JAP = {
+				load_oob = "JAP_Civil_War_communism"
+			}
+		}
 	}
 }

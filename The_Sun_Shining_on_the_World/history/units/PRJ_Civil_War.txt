@@ -1,0 +1,212 @@
+division_template = {
+	name = "Militia"					
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+   		militia = { x = 1 y = 3 }
+		militia = { x = 1 y = 4 }
+	}
+}
+division_template = {
+	name = "Militia Division"					
+	division_names_group = GER_Inf_01
+	is_locked = yes
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+   		militia = { x = 1 y = 0 }
+		miliria = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1136
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1136
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11960
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11960
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4054
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4054
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7072
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1092
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1092
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1092
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9950
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4170
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4170
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4170
+		division_template = "Militia Division"
+		start_experience_factor = 0.1
+	}
+}

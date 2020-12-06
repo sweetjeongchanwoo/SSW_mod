@@ -1,6 +1,10 @@
 spriteTypes = {
 #日本
     spriteType = {
+		name = "GFX_focus_cze_german_puppet"
+		texturefile = "gfx/interface/goals/focus_cze_german_puppet.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_JAP_revise_banknotes"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_revise_banknotes.dds"
 	}
@@ -307,6 +311,78 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_JAP_New_Konoe_Order"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_New_Konoe_Order.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Hatoyama_memorandum"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Hatoyama_memorandum.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Hirohito_and_Hatoyama"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Hirohito_and_Hatoyama.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Japan_Nuke"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Japan_Nuke.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_jet_fighter_Nakajima"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_jet_fighter_Nakajima.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Konoe_Dictatorship"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Konoe_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Military_Control"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Military_Control.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_National_Unity"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_National_Unity.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Restricted_rearmament"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_National_Unity.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Yoshida_Dictatorship"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Yoshida_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Yoshida_revolution"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Yoshida_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Army_Propaganda"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Army_Propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_ChuoSyuken"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_ChuoSyuken.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Dictorship_of_kishi"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Dictorship_of_kishi.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Fukeiki"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Fukeiki.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Kinsyuku"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Kinsyuku.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Review_of_the_General_Mobilization_Act"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Review_of_the_General_Mobilization_Act.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_The_Greater_East_Asia_Initiative"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_The_Greater_East_Asia_Initiative.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_JAP_Lessons_from_the_Second_Great_War"
+		texturefile = "gfx/interface/goals/JAP/focus_JAP_Lessons_from_the_Second_Great_War.dds"
 	}
 #ゲーリング・ドイツ
     spriteType = {

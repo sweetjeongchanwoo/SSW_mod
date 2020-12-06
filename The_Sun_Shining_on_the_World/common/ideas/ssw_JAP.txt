@@ -1837,6 +1837,41 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		JAP_Landlord_defiance_idea = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		JAP_Martial_law = {
+			allowed = {
+			is_puppet_of = JAP
+			}
+
+			allowed_civil_war = {
+			always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				weekly_stability = 0.01
+			}
+		}
 	}
 
 	###政治首班###
@@ -3365,5 +3400,28 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
+	}
+	theorist = {
+		JAP_Einstein_and_Hideki = {
+			available = {
+				always = no
+			}
+				
+			allowed = {
+				tag = JAP
+			}
+
+			picture = JAP_adviser_Einstein_and_Hideki
+				
+			research_bonus = {
+				nuclear = 0.25
+			}
+
+			traits = { 
+				combination_of_physicists
+			}
+				
+			cancel_if_invalid = no
+		}
 	}
 }

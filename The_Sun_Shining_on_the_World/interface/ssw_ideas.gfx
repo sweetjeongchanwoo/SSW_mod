@@ -311,6 +311,10 @@ spriteTypes = {
 		name = "GFX_idea_JAP_cab_Syunroku_Hata"
 		texturefile = "gfx/interface/ideas/JAP/cab/idea_JAP_cab_Syunroku_Hata.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_JAP_adviser_Einstein_and_Hideki"
+		texturefile = "gfx/interface/ideas/JAP/adviser/idea_JAP_adviser_Einstein_and_Hideki.dds"
+	}
 #蒙古
     spriteType = {
 		name = "GFX_idea_De_Wang"

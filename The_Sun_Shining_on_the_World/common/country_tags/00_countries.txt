@@ -288,7 +288,11 @@ TRI	= "countries/South America.txt"	#トリニダード・トバゴ
 URG	= "countries/South America.txt"	#ウルグアイ
 VEN	= "countries/South America.txt"	#ベネズエラ
 
-###################################
+################内戦################
+
 HGR	= "countries/Western Europe.txt"
 HLH	= "countries/Western Europe.txt"
 LTV	= "countries/Western Europe.txt"
+
+PRJ = "countries/Asia.txt"
+JSF = "countries/Asia.txt"

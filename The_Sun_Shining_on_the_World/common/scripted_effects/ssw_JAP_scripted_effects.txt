@@ -360,6 +360,27 @@ JAP_seiyukai_low_popularity_decrease_effect = {
 		max = 100
 	}
 }
+JAP_seiyukai_medium_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_seiyukai_tt
+	custom_effect_tooltip = JAP_midium_popularity_increase_tt
+	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_seiyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_seiyukai_medium_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_seiyukai_tt
+	custom_effect_tooltip = JAP_midium_popularity_decrease_tt
+	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_medium_decrease }
+	clamp_variable = {
+		var = JAP_seiyukai_popularity
+		min = 0
+		max = 100
+	}
+}
+
 
 #研究会
 JAP_kenkyukai_low_popularity_increase_effect = {
@@ -420,6 +441,26 @@ JAP_ziyuuto_low_popularity_decrease_effect = {
 	custom_effect_tooltip = JAP_ziyuuto_tt
 	custom_effect_tooltip = JAP_low_popularity_decrease_tt
 	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_low_decrease }
+	clamp_variable = {
+		var = JAP_ziyuuto_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_ziyuuto_medium_popularity_increase_effect = {
+	custom_effect_tooltip = JAP_ziyuuto_tt
+	custom_effect_tooltip = JAP_midium_popularity_increase_tt
+	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_medium_increase }
+	clamp_variable = {
+		var = JAP_ziyuuto_popularity
+		min = 0
+		max = 100
+	}
+}
+JAP_ziyuuto_medium_popularity_decrease_effect = {
+	custom_effect_tooltip = JAP_ziyuuto_tt
+	custom_effect_tooltip = JAP_midium_popularity_decrease_tt
+	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_medium_decrease }
 	clamp_variable = {
 		var = JAP_ziyuuto_popularity
 		min = 0

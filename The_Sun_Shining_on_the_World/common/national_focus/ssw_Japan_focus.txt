@@ -1695,7 +1695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Compromise_with_the_military
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Local_Special_Act
@@ -1726,7 +1726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Cooperation_with_Innovation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Compromise_with_the_military
@@ -1788,7 +1788,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Cutting_the_Civil_Service_Budget
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Reduced_maintenance_costs
@@ -1819,7 +1819,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Don_t_shrink_it
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_united_netherlands
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_Cutting_the_Civil_Service_Budget
@@ -1913,7 +1913,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
+		completion_reward = {
+			add_political_power = 100
+			set_party_name = {
+				ideology = social_conservatism
+				name = JAP_Ziminto_party
+			}
+		}
 	}
 	focus = {
 		id = JAP_Atomic_Energy_Basic_Law
@@ -1983,6 +1989,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		x = 29
 		y = 4
+		completion_reward = { 
+			add_ideas = JAP_Einstein_and_Hideki
+		}
 
 	}
 	focus = {
@@ -2067,7 +2076,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Hatoyama_memorandum
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Hatoyama_memorandum
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Provision_of_popular_entertainment
@@ -2226,7 +2235,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Economic_eform_950_Copy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_three_arow
@@ -2256,6 +2265,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			country_event = {
+				id = SSW_JAP.55
+			}
+		}
 
 	}
 	focus = {
@@ -2298,7 +2312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Economic_eform_950
-		icon = GFX_goal_JAP_ssw_second_dissarament
+		icon = GFX_goal_generic_consumer_goods
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_New_Life_Insurance
@@ -2337,7 +2351,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_3S_production
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cze_german_puppet
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_Economic_eform_950
@@ -2679,7 +2693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Merger_with_Democracy_Club
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Yoshida_revolution
 		cost = 7.00
 		prerequisite = {
 			focus = JAP_reform_fifty
@@ -2717,7 +2731,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Pursuing_the_Tohoku_problem
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tripartite_pact
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Merger_with_Democracy_Club
@@ -2754,7 +2768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Agricultural_Land_Reform
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_commonwealth_build_infantry
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_reform_fifty
@@ -2791,7 +2805,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Pursuing_the_Tohoku_problem_Copy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Army_Propaganda
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Agricultural_Land_Reform
@@ -2828,7 +2842,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Raising_the_minimum_wage
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_self_management
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Pursuing_the_Tohoku_problem_Copy
@@ -2867,7 +2881,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Compromise_with_the_aristocracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Kinsyuku
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Further_cuts_in_military_spending
@@ -2971,7 +2985,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Self_farming_Special_Measures_Act
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_ChuoSyuken
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Further_cuts_in_military_spending
@@ -3006,7 +3020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Shrink_due_to_lack_of_growth
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Self_farming_Special_Measures_Act
@@ -3045,7 +3059,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Landlord_Security
-		icon = GFX_goal_unknown
+		icon = GFX_focus_JAP_Fukeiki
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_Shrink_due_to_lack_of_growth
@@ -3142,6 +3156,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+				id = SSW_JAP.57
+			}
+		}
 	}
 	focus = {
 		id = JAP_Siberian_problem
@@ -3172,6 +3191,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = -50
+		}
 	}
 	focus = {
 		id = JAP_Together
@@ -3202,6 +3225,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = { ideology = social_liberalism popularity = 0.16 }
+			remove_popularity = { ideology = social_conservatism popularity = 0.16 }
+		}
 	}
 	focus = {
 		id = JAP_Arctic_Issue
@@ -3232,6 +3260,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = -0.15
+			add_popularity = { ideology = social_conservatism popularity = 0.05 }
+			remove_popularity = { ideology = classical_communism popularity = 0.05 }
+			add_popularity = { ideology = social_conservatism popularity = 0.05 }
+			remove_popularity = { ideology = progressive_communism popularity = 0.05 }
+		}
 	}
 	focus = {
 		id = JAP_Democracy_Alliance
@@ -3252,6 +3287,7 @@ focus_tree = {
 					check_variable = { JAP_minseito_popularity > 49 }
 				}
 			}
+			has_completed_focus = JAP_Together
 		}
 		ai_will_do = {
 			factor = 0
@@ -3262,6 +3298,15 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			country_event = {
+				id = SSW_JAP.58
+			}
+			country_event = {
+				id = SSW_JAP.33
+				days = 30
+			}
+		}
 	}
 	focus = {
 		id = JAP_The_Russian_expansion_of_conglomerates
@@ -3285,6 +3330,12 @@ focus_tree = {
 					check_variable = { JAP_minseito_popularity > 49 }
 				}
 			}
+			JSF = {
+				exists = yes
+			}
+			PRJ = {
+				exists = yes
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -3295,6 +3346,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_country_flag = big_event_custom_anpo_protets
+				country_event = {
+					id = SSW_JAP.34
+					days = 15
+				}
+		}
 	}
 	focus = {
 		id = JAP_the_republic_navy

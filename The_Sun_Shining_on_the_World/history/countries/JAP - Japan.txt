@@ -145,7 +145,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	social_conservatism = 100
+	social_conservatism = 48
+	social_democracy = 12
+	social_liberalism = 30
+	authority_democracy = 5
+	authority_despotism = 5
 }
 
 create_country_leader = {
@@ -176,9 +180,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Toyohiko Kagawa"
+	name = "Kenzo Matsumura"
 	desc = ""
-	picture = "Mokichi_Kagawa.dds"
+	picture = "Portrait_Kenzo_Matsumura.dds"
 	expire = "1989.1.1"
 	ideology = social_liberalism_ideology
 	traits = {
@@ -637,6 +641,8 @@ set_variable = {
 
 #内務
 set_variable = { JAP_faction_low_increase = 3 }
+set_variable = { JAP_faction_medium_decrease = -6 }
+set_variable = { JAP_faction_medium_increase = 6 }
 set_variable = { JAP_faction_low_five_increase = 5 }
 set_variable = { JAP_faction_low_five_decrease = -10 }
 set_variable = { JAP_faction_low_decrease = -3 }
