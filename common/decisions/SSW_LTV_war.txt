@@ -1,6 +1,6 @@
 LTV_civill_war_militia = {
 	LTV_recruiting_Vienna = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 4
 		}
@@ -8,54 +8,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				4 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 4
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 4
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 4
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 4
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 4
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Munich = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 52
 		}
@@ -63,54 +62,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				52 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Stuttgart = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 50
 		}
@@ -118,54 +116,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				50 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Zurich = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 151
 		}
@@ -173,54 +170,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				151 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 151
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 151
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 151
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 151
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 151
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Berne = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 3
 		}
@@ -228,54 +224,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				3 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 3
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 3
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 3
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 3
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 3
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Strasbourg = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 28
 		}
@@ -283,54 +278,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				28 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 28
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 28
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 28
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 28
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 28
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Frankfurt = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 55
 		}
@@ -338,54 +332,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				55 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 55
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 55
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 55
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 55
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 55
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Cologne = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 51
 		}
@@ -393,54 +386,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				51 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 51
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 51
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 51
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 51
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 51
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Dortmund = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 57
 		}
@@ -448,54 +440,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				57 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 57
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 57
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 57
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 57
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 57
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Hanover = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 59
 		}
@@ -503,54 +494,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				59 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 59
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 59
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 59
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 59
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 59
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Hamburg = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 58
 		}
@@ -558,54 +548,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				58 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 58
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 58
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 58
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 58
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 58
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Berlin = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 64
 		}
@@ -613,54 +602,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				64 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 64
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Leipzig = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 65
 		}
@@ -668,54 +656,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				65 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 65
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 65
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 65
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 65
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 65
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Konigsberg = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 763
 		}
@@ -723,54 +710,53 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				763 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 763
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 763
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 763
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 763
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 763
+						}
 					}
 				}
 			}
 		}
 	}
-
 	LTV_recruiting_Danzig = {
-        icon = ger_reichskommissariats
+		icon = ger_reichskommissariats
 		available = {
 			controls_state = 85
 		}
@@ -778,46 +764,46 @@ LTV_civill_war_militia = {
 			always = yes
 		}
 		days_remove = 30
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		cost = 20
-
 		remove_effect = {
 			custom_effect_tooltip = LTV_war_01_tt
-			hidden_effect = {	
+			hidden_effect = {
 				85 = {
-					limit = {
-						ROOT = {
-							has_full_control_of_state = PREV
+					if = {
+						limit = {
+							ROOT = {
+								has_full_control_of_state = PREV
+							}
 						}
-					}
-					prioritize = {
-						64
-					}
-					create_unit = {
-						division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
-					}
-					create_unit = {
-						division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
-						owner = LTV
+						create_unit = {
+							division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 85
+						}
+						create_unit = {
+							division = "name = \"2. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 85
+						}
+						create_unit = {
+							division = "name = \"3. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 85
+						}
+						create_unit = {
+							division = "name = \"4. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 85
+						}
+						create_unit = {
+							division = "name = \"5. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0.3"
+							owner = LTV
+							prioritize_location = 85
+						}
 					}
 				}
 			}
