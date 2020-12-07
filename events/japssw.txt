@@ -655,6 +655,9 @@ country_event = {#暴動の更なる拡大
 				}
 			}
 		}
+		country_event = {
+			id = SSW_JAP.12
+		}
 		set_country_flag = ssw_jap_flag_24
 	}
 }
@@ -679,11 +682,11 @@ country_event = {#陸軍が反対
 	picture = GFX_report_event_gre_city_devastated
 	fire_only_once = yes
 
-	trigger = {
+	trigger = {l
 		tag = JAP
-		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		NOT = { has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill }
 		focus_progress = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 			progress > 0.1
 		}
 	}
@@ -707,9 +710,9 @@ country_event = {#賛成が過半数を割る
 
 	trigger = {
 		tag = JAP
-		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		NOT = { has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill }
 		focus_progress = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 			progress > 0.4
 		}
 	}
@@ -733,9 +736,9 @@ country_event = {#畑俊六の演説
 
 	trigger = {
 		tag = JAP
-		NOT = { has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill }
+		NOT = { has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill }
 		focus_progress = {
-			focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 			progress > 0.7
 		}
 	}
@@ -759,7 +762,7 @@ country_event = {#決断
 
 	trigger = {
 		tag = JAP
-		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+		has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill
 	}
 
 	option = {#採決
@@ -798,7 +801,7 @@ country_event = {#東京事変
 
 	trigger = {
 		tag = JAP
-		has_completed_focus = JAP_dec_Submission_of_the_Second_Disarmament_Bill
+		has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill
 	}
 
 	option = {#民主
@@ -1491,11 +1494,7 @@ country_event = {#世田谷革命
 	title = SSW_JAP.59.t
 	desc = SSW_JAP.59.d
 	picture = GFX_report_event_gre_city_devastated
-	fire_only_once = yes
-	trigger = {
-		complete_national_focus = JAP_Together
-		complete_national_focus = JAP_Democracy_Alliance
-	}
+	is_triggered_only = yes
 
 	option = {#
 		name = SSW_JAP.59.a
@@ -1537,6 +1536,10 @@ country_event = {#世田谷革命
 		delete_unit_template_and_units = {Division_template = "Mechanized Division"}
 		}
 		custom_effect_tooltip = JAP_communism_civill_war_1_tt
+		country_event = {
+			id = SSW_JAP.60
+			days = 10
+		}
 	}
 }
 
@@ -1545,7 +1548,7 @@ country_event = {#民兵の徴募
 	title = SSW_JAP.60.t
 	desc = SSW_JAP.60.d
 	picture = GFX_report_event_gre_city_devastated
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {#
 		name = SSW_JAP.60.a
@@ -1559,6 +1562,36 @@ country_event = {#民兵の徴募
 			}
 			JAP = {
 				load_oob = "JAP_Civil_War_communism"
+			}
+		}
+		country_event = {
+			id = SSW_JAP.61
+			days = 10
+		}
+	}
+}
+
+country_event = {#民兵の徴募
+	id = SSW_JAP.61
+	title = SSW_JAP.61.t
+	desc = SSW_JAP.61.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#
+		name = SSW_JAP.61.a
+		hidden_effect = {
+			PRJ = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+			JSF = {
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
 			}
 		}
 	}
