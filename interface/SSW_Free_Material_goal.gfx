@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_RUS_army"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_army.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_flag"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_heavy_armour"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_heavy_armour.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_monarchy"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_seize_railway"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_seize_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_white_legacy"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_white_legacy.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_RUS_wine"
+		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_wine.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SER_yugoslavia"
+		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavia.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_SER_yugoslavism"
+		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavism.dds"
+	}
+}

@@ -1,0 +1,396 @@
+add_namespace = ssw_rus_communism
+country_event = {
+	id = ssw_rus_communism.1000
+	title = ssw_rus_communism.1000.title
+	desc = ssw_rus_communism.1000.desc
+	picture = GFX_report_event_generic_rally
+	trigger = {
+		tag = RUS
+		date > 1950.5.1
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = ssw_rus_communism.1000.a
+		ai_chance = { factor = 70 }
+		custom_effect_tooltip = communism_down_tt
+		add_stability = 0.05
+		add_popularity = {
+			ideology = classical_communism
+			popularity = -0.03
+		}
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_communism.1000.b
+		ai_chance = { factor = 30 }
+		custom_effect_tooltip = communism_up_tt
+		add_stability = -0.05
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.03
+		}
+		hidden_effect = { country_event = { id = ssw_rus_communism.1001 days = 70 } }
+	}
+}
+
+country_event = {
+	id = ssw_rus_communism.1001
+	title = ssw_rus_communism.1001.title
+	desc = ssw_rus_communism.1001.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1001.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = communism_down_tt
+		add_stability = -0.05
+		add_popularity = {
+			ideology = classical_communism
+			popularity = -0.03
+		}
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_communism.1001.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = communism_up_tt
+		add_timed_idea = { idea = RUS_ural_strike days = 365 }
+		add_stability = -0.1
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.03
+		}
+		hidden_effect = { country_event = { id = ssw_rus_communism.1002 days = 70 } }
+	}
+}
+
+country_event = {
+	id = ssw_rus_communism.1002
+	title = ssw_rus_communism.1002.title
+	desc = ssw_rus_communism.1002.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1002.a
+		ai_chance = { factor = 30 }
+		custom_effect_tooltip = communism_down_tt
+		add_stability = -0.1
+		add_popularity = {
+			ideology = classical_communism
+			popularity = -0.05
+		}
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_communism.1002.b
+		ai_chance = { factor = 70 }
+		custom_effect_tooltip = communism_up_tt
+		add_timed_idea = { idea = RUS_trade_union_demand days = 365 }
+		add_stability = -0.15
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.05
+		}
+		hidden_effect = { country_event = { id = ssw_rus_communism.1003 days = 70 } }
+	}
+}
+country_event = {
+	id = ssw_rus_communism.1003
+	title = ssw_rus_communism.1003.title
+	desc = ssw_rus_communism.1003.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1003.a
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = communism_down_tt
+		add_stability = -0.15
+		add_popularity = {
+			ideology = classical_communism
+			popularity = -0.07
+		}
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_communism.1003.b
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = communism_up_tt
+		add_stability = -0.2
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.07
+		}
+		set_party_name = {
+			ideology = progressive_communism
+			long_name = RUS_progressive_communism_party_ppr_long
+			name = RUS_progressive_communism_party_ppr
+		}
+		set_party_name = {
+			ideology = classical_communism
+			long_name = RUS_classical_communism_party_ppr_long
+			name = RUS_classical_communism_party_ppr
+		}
+		hidden_effect = { country_event = { id = ssw_rus_communism.1004 days = 70 } }
+	}
+}
+country_event = {
+	id = ssw_rus_communism.1004
+	title = ssw_rus_communism.1004.title
+	desc = ssw_rus_communism.1004.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1004.a
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = communism_down_tt
+		add_stability = -0.2
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = -0.07
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = -0.07
+		}
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_communism.1004.b
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = communism_up_tt
+		add_stability = -0.25
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = anarchism
+			popularity = 0.07
+		}
+		if = {
+			limit = { has_idea = konstantin_rodzaevsky }
+			remove_ideas = konstantin_rodzaevsky
+			add_ideas = RUS_pavel_sudoplatov
+		}
+		hidden_effect = { country_event = { id = ssw_rus_communism.1005 days = 77 } }
+	}
+}
+country_event = {
+	id = ssw_rus_communism.1005
+	title = ssw_rus_communism.1005.title
+	desc = ssw_rus_communism.1005.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1005.a
+		ai_chance = { factor = 0 }
+		add_stability = -0.05
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = {
+			set_country_flag = slightly_tyrannical_government
+			news_event = { id = ssw_rus_communism.1006 hours = 6 }
+		}
+	}
+	option = {
+		name = ssw_rus_communism.1005.b
+		ai_chance = { factor = 100 }
+		set_politics = {
+			ruling_party = classical_communism
+			elections_allowed = no
+		}
+		if = {
+			limit = { has_idea = ssw_despotism }
+			swap_ideas = {
+				remove_idea = ssw_despotism
+				add_idea = ssw_one_party_dictatorship
+			}
+		}
+		if = {
+			limit = { has_idea = RUS_andrey_vlasov }
+			swap_ideas = {
+				remove_idea = RUS_andrey_vlasov
+				add_idea = RUS_vladimir_kryuchkov
+			}
+		}
+		add_stability = -0.05
+		complete_national_focus = RUS_rise_of_the_communist_republic
+		hidden_effect = {
+			if = {
+				limit = { has_idea = rus_debahu3 }
+				remove_ideas = rus_debahu3
+			}
+			news_event = { id = ssw_rus_communism.1007 hours = 6 }
+			country_event = { id = ssw_rus_communism.1008 days = 14 }
+			create_country_leader = {
+				name = "Vladimir Kryuchkov"
+				desc = "POLITICS_VLADIMIR_KRYUCHKOV_DESC"
+				picture = "gfx/leaders/RUS/Portrait_Russia_Vladimir_Kryuchkov.dds"
+				expire = "1965.1.1"
+				ideology = classical_communism_ideology
+				traits = {
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = ssw_rus_communism.1006
+	title = ssw_rus_communism.1006.title
+	desc = ssw_rus_communism.1006.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1006.a
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+	option = {
+		name = ssw_rus_communism.1006.b
+		trigger = { 
+			OR = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+}
+news_event = {
+	id = ssw_rus_communism.1007
+	title = ssw_rus_communism.1007.title
+	desc = ssw_rus_communism.1007.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1007.a
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+	option = {
+		name = ssw_rus_communism.1007.b
+		trigger = { 
+			OR = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+}
+country_event = {
+	id = ssw_rus_communism.1008
+	title = ssw_rus_communism.1008.title
+	desc = ssw_rus_communism.1008.desc
+	picture = GFX_report_event_soviet_purge_speech
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1008.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = kryuchkov_secretary_tt
+		add_popularity = {
+			ideology = classical_communism
+			popularity = 0.15
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_country_leader = { ruling_only = yes name = "Vladimir Kryuchkov" } }
+				add_country_leader_trait = general_secretary_of_the_russia
+				set_country_flag = communism_1
+			}
+		}
+	}
+	option = {
+		name = ssw_rus_communism.1008.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = furtseva_secretary_tt
+		add_popularity = {
+			ideology = progressive_communism
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = progressive_communism
+			elections_allowed = no
+		}
+		hidden_effect = {
+			retire_ideology_leader = classical_communism
+			create_country_leader = {
+				name = "Yekaterina Furtseva"
+				desc = "POLITICS_YEKATERINA_FURTSEVA_DESC"
+				picture = "gfx/leaders/RUS/Portrait_Russia_Yekaterina_Furtseva.dds"
+				expire = "1965.1.1"
+				ideology = progressive_communism_ideology
+				female = yes
+				traits = { general_secretary_of_the_russia }
+			}
+		}
+	}
+}
+news_event = {
+	id = ssw_rus_communism.1009
+	title = ssw_rus_communism.1009.title
+	desc = ssw_rus_communism.1009.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_communism.1009.a
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+	option = {
+		name = ssw_rus_communism.1009.b
+		trigger = { 
+			OR = {
+				has_government = communism
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+	}
+}

@@ -1,0 +1,199 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1950.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JAP"
+		default = yes
+
+		"ITA"={
+			history = ""
+			ideology = national_fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = ""
+			ideology = social_democracy
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"RUS"={
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"JAP"={
+			history = "SSW_JAP_GATHERING_STORM_DESC"
+			ideology = authoritative_democracy
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"CHI"={
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"VFR"={
+			history = ""
+			ideology = national_fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"GER"={
+			history = ""
+			ideology = national_socialism
+			ideas = {
+			}
+			focuses = {
+
+			}
+		}
+
+###############################################################################
+		"CAN"={
+			minor = yes
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"ALF"={
+			minor = yes
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"MAN"={
+			minor = yes
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"MEN"={
+			minor = yes
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"NIN"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"PIN"={
+			minor = yes
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"UTC"={
+			minor = yes
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"AST"={
+			minor = yes
+			history = ""
+			ideology = social_liberalism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"SOV"={
+			minor = yes
+			history = ""
+			ideology = classical_communism
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+		"SPR"={
+			minor = yes
+			history = ""
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+
+	bookmark = {
+		name = ""
+		desc = ""
+		date = 1950.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JAP"
+		"JAP"={
+			history = ""
+			ideology = authoritative_democracy
+			ideas = {}
+			focuses = {}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+ideas = {
+	political_leader = {
+		ivan_konev = {
+			picture = ivan_konev
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = SOV }
+			traits = { lonely_soldier }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+		}
+	}
+	minister_of_foreign_affairs = {
+		
+	}
+	minister_of_finance = {
+		
+	}
+	minister_of_interior = {
+		
+	}
+	minister_of_army = {
+		
+	}
+}

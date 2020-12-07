@@ -1,0 +1,41 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	TAG_friend_country = {
+		value = 50
+	}
+	TEX_defence_america_op = {
+		value = -20
+   	}
+
+    	TEX_defence_mexicoz_op = {
+        	value = -20
+    	}
+
+    	TEX_bunker_america_op = {
+        	value = -50
+    	}
+
+   	TEX_bunker_mexico_op = {
+        	value = -50
+    	}
+	ssw_new_emb = {
+		trade = yes
+		value = -90
+	}
+	ssw_new_emb_opinion = {
+		value = -75
+	}
+	ssw_emb_lifted = {
+		value = 20
+		decay = 10
+	}
+}

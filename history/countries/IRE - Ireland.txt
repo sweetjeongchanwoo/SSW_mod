@@ -1,0 +1,33 @@
+﻿capital = 113
+oob = "IRE_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+}
+
+set_politics = {
+	ruling_party = social_liberalism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_liberalism= 100
+}
+
+create_country_leader = {
+	name = "E'amon de Valera"
+	desc = "POLITICS_EAMON_DE_VALERA_DESC"
+	picture = "gfx/leaders/IRE/Portrait_E_amon_de_Valera.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
+	}
+}

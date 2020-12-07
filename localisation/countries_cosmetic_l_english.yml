@@ -1,0 +1,346 @@
+﻿l_english:
+#国家形成
+ ENG_GBR:0 "イギリス"
+ ENG_GBR:0 "イギリス"
+ ENG_GBR:0 "イギリス"
+ 
+ ENG_GBRandNIR:0 "イギリス"
+ ENG_GBRandNIR_DEF:0 "イギリス"
+ ENG_GBRandNIR_ADJ:0 "イギリス"
+ 
+ ENG_GBRandIRE:0 "イギリス"
+ ENG_GBRandIRE_DEF:0 "イギリス"
+ ENG_GBRandIRE_ADJ:0 "イギリス"
+  
+ Great_Mongol:0 "蒙古帝国"
+ Great_Mongol_DEF:0 "蒙古帝国"
+ Great_Mongol_ADJ:0 "大蒙古"
+ 
+ Middle_East_Union:0 "中東連合"
+ Middle_East_Union_DEF:0 "中東連合"
+ Middle_East_Union_ADJ:0 "中東"
+ 
+ Roman_Empire:0 "ローマ帝国"
+ Roman_Empire_DEF:0 "ローマ帝国"
+ Roman_Empire_ADJ:0 "ローマ"
+ 
+#帝政復古
+ BRA_empire:0 "ブラジル帝国"
+ BRA_empire_DEF:0 "ブラジル帝国"
+ BRA_empire_ADJ:0 "ブラジル"
+ 
+ GER_empire:0 "ドイツ帝国"
+ GER_empire_DEF:0 "ドイツ帝国"
+ GER_empire_ADJ:0 "ドイツ"
+ 
+ OTT:0 "オスマン帝国"
+ OTT_DEF:0 "オスマン帝国"
+ OTT_ADJ:0 "オスマン"
+ 
+ RUS_empire:0 "ロシア帝国"
+ RUS_empire_DEF:0 "ロシア帝国"
+ RUS_empire_ADJ:0 "ロシア"
+ 
+#ソビエト
+ SOV_provisional:0 "ソビエト臨時政府"
+ SOV_provisional_DEF:0 "ソビエト臨時政府"
+ SOV_provisional_ADJ:0 "ソビエト臨時政府"
+ 
+ RUS_SOV:0 "ロシア・ソビエト共和国"
+ RUS_SOV_DEF:0 "ロシア・ソビエト共和国"
+ RUS_SOV_ADJ:0 "ロシア・ソビエト"
+ 
+ UKR_SOV:0 "ウクライナ・ソビエト共和国"
+ UKR_SOV_DEF:0 "ウクライナ・ソビエト共和国"
+ UKR_SOV_ADJ:0 "ウクライナ・ソビエト"
+ 
+ BLR_SOV:0 "白ロシア・ソビエト共和国"
+ BLR_SOV_DEF:0 "白ロシア・ソビエト共和国"
+ BLR_SOV_ADJ:0 "白ロシア・ソビエト"
+ 
+#共同管理国家
+ CLC_JAPandCHI:0 "日華共同港都市"
+ CLC_JAPandCHI_DEF:0 "日華共同港都市"
+ CLC_JAPandCHI_ADJ:0 "共同港都市"
+ 
+ SUD_ITAandEGY:0 "伊埃領スーダン"
+ SUD_ITAandEGY_DEF:0 "伊埃領スーダン"
+ SUD_ITAandEGY_ADJ:0 "伊埃領スーダン"
+ 
+#大日本帝国
+ KOR_JAP:0 "日本領朝鮮"
+ KOR_JAP_DEF:0 "日本領朝鮮"
+ KOR_JAP_ADJ:0 "日領朝鮮"
+ 
+ PAO_JAP:0 "日本領大南洋諸島"
+ PAO_JAP_DEF:0 "日本領大南洋諸島"
+ PAO_JAP_ADJ:0 "日領大南洋諸島"
+ 
+ CLC_JAP:0 "日本領中国租借及び租界地"
+ CLC_JAP_DEF:0 "日本領中国租借及び租界地"
+ CLC_JAP_ADJ:0 "日領租借租界地"
+ 
+ SIN_JAP:0 "日本領昭南特別市"
+ SIN_JAP_DEF:0 "日本領昭南特別市"
+ SIN_JAP_ADJ:0 "日領シンガポール"
+ 
+ BRN_JAP:0 "日本領文莱王国"
+ BRN_JAP_DEF:0 "日本領文莱王国"
+ BRN_JAP_ADJ:0 "日領ブルネイ"
+ 
+ HAW_JAP:0 "日本領布哇王国"
+ HAW_JAP_DEF:0 "日本領布哇王国"
+ HAW_JAP_ADJ:0 "日領ハワイ"
+ 
+ INO_JAP:0 "日本領印度洋"
+ INO_JAP_DEF:0 "日本領印度洋"
+ INO_JAP_ADJ:0 "日領インド洋"
+ 
+ JAM_JAP:0 "日本領茶舞賀"
+ JAM_JAP_DEF:0 "日本領茶舞賀"
+ JAM_JAP_ADJ:0 "日領ジャマイカ"
+ 
+ PAC_JAP:0 "日本華舞運河"
+ PAC_JAP_DEF:0 "日本領華舞運河"
+ PAC_JAP_ADJ:0 "日領パナマ運河"
+ 
+ ARC_JAP:0 "日本領北極"
+ ARC_JAP_DEF:0 "日本領北極"
+ ARC_JAP_ADJ:0 "日領北極"
+ 
+#ドイツ国
+ CZE_GER:0 "独領チェコ"
+ CZE_GER_DEF:0 "独領チェコ"
+ CZE_GER_national_socialism:0 "ベーメン・メーレン保護領"
+ CZE_GER_national_socialism_DEF:0 "ベーメン・メーレン保護領"
+ CZE_GER_ADJ:0 "独領チェコ"
+ 
+ POL_GER:0 "独領ポーランド"
+ POL_GER_DEF:0 "独領ポーランド"
+ POL_GER_national_socialism:0 "ポーランド総督府"
+ POL_GER_national_socialism_DEF:0 "ポーランド総督府"
+ POL_GER_ADJ:0 "独領ポーランド"
+ 
+ NOR_GER:0 "独領ノルウェー"
+ NOR_GER_DEF:0 "独領ノルウェー"
+ NOR_GER_national_socialism:0 "ノルヴェーゲン国家弁務官区"
+ NOR_GER_national_socialism_DEF:0 "ノルヴェーゲン国家弁務官区"
+ NOR_GER_ADJ:0 "独領ノルウェー"
+ 
+ HOL_GER:0 "独領オランダ"
+ HOL_GER_DEF:0 "独領オランダ"
+ HOL_GER_national_socialism:0 "ホラント国家弁務官区"
+ HOL_GER_national_socialism_DEF:0 "ホラント国家弁務官区"
+ HOL_GER_ADJ:0 "独領オランダ"
+ 
+ BEL_GER:0 "独領ベルギー"
+ BEL_GER_DEF:0 "独領ベルギー"
+ BEL_GER_national_socialism:0 "ベルギエン国家弁務官区"
+ BEL_GER_national_socialism_DEF:0 "ベルギエン国家弁務官区"
+ BEL_GER_ADJ:0 "独領ベルギー"
+ 
+ NFR_GER:0 "独領北フランス"
+ NFR_GER_ADJ:0 "独領北フランス"
+ NFR_GER_national_socialism:0 "北フランス国家弁務官区"
+ NFR_GER_national_socialism_DEF:0 "北フランス国家弁務官区"
+ NFR_GER_ADJ:0 "独領北仏"
+ 
+ ATL_GER:0 "独領大西洋"
+ ATL_GER_DEF:0 "独領大西洋"
+ ATL_GER_national_socialism:0 "アトランティシャ国家植民地"
+ ATL_GER_national_socialism_DEF:0 "アトランティシャ国家植民地"
+ ATL_GER_ADJ:0 "独領大西洋"
+ 
+ TOG_GER:0 "独領トーゴ"
+ TOG_GER_DEF:0 "独領トーゴ"
+ TOG_GER_national_socialism:0 "トーゴ国家植民地"
+ TOG_GER_national_socialism_DEF:0 "トーゴ国家植民地"
+ TOG_GER_ADJ:0 "独領トーゴ"
+ 
+ WAF_GER:0 "独領西アフリカ"
+ WAF_GER_DEF:0 "独領西アフリカ"
+ WAF_GER_national_socialism:0 "ヴェストアフリカ国家植民地"
+ WAF_GER_national_socialism_DEF:0 "ヴェストアフリカ国家植民地"
+ WAF_GER_ADJ:0 "独領西アフリカ"
+ 
+ MAF_GER:0 "独領ミッテルアフリカ"
+ MAF_GER_ADJ:0 "独領ミッテルアフリカ"
+ MAF_GER_national_socialism:0 "ミッテルアフリカ国家植民地"
+ MAF_GER_national_socialism_DEF:0 "ミッテルアフリカ国家植民地"
+ MAF_GER_ADJ:0 "独領中部アフリカ"
+ 
+ MAD_GER:0 "独領マダガスカル"
+ MAD_GER_DEF:0 "独領マダガスカル"
+ MAD_GER_national_socialism:0 "マダガスカル国家植民地"
+ MAD_GER_national_socialism_DEF:0 "マダガスカル国家植民地"
+ MAD_GER_ADJ:0 "独領マダガスカル"
+ 
+ BAL_GER:0 "独領オストラント"
+ BAL_GER_DEF:0 "独領オストラント"
+ BAL_GER_national_socialism:0 "オストラント国家弁務官区"
+ BAL_GER_national_socialism_DEF:0 "オストラント国家弁務官区"
+ BAL_GER_ADJ:0 "独領オストラント"
+ 
+ UKR_GER:0 "独領ウクライナ"
+ UKR_GER_DEF:0 "独領ウクライナ"
+ UKR_GER_national_socialism:0 "ウクライナ国家弁務官区"
+ UKR_GER_national_socialism_DEF:0 "ウクライナ国家弁務官区"
+ UKR_GER_ADJ:0 "独領ウクライナ"
+ 
+ MOS_GER:0 "独領モスクワ"
+ MOS_GER_DEF:0 "独領モスクワ"
+ MOS_GER_national_socialism:0 "モスクワ国家弁務官区"
+ MOS_GER_national_socialism_DEF:0 "モスクワ国家弁務官区"
+ MOS_GER_ADJ:0 "独領モスクワ"
+ 
+ CCS_GER:0 "独領コーカサス"
+ CCS_GER_DEF:0 "独領コーカサス"
+ CCS_GER_national_socialism:0 "カフカス国家弁務官区"
+ CCS_GER_national_socialism_DEF:0 "カフカス国家弁務官区"
+ CCS_GER_ADJ:0 "独領コーカサス"
+ 
+#イタリア王国
+ LBA_ITA:0 "伊領リビア"
+ LBA_ITA_DEF:0 "伊領リビア"
+ LBA_ITA_ADJ:0 "伊領リビア"
+ 
+ NEA_ITA:0 "伊領東アフリカ"
+ NEA_ITA_DEF:0 "伊領東アフリカ"
+ NEA_ITA_ADJ:0 "伊領東アフリカ"
+ 
+ ALB_ITA:0 "伊領アルバニア"
+ ALB_ITA_DEF:0 "伊領アルバニア"
+ ALB_ITA_ADJ:0 "伊領アルバニア"
+ 
+ MNT_ITA:0 "伊領モンテネグロ"
+ MNT_ITA_DEF:0 "伊領モンテネグロ"
+ MNT_ITA_ADJ:0 "伊領モンテネグロ"
+ 
+ SUD_ITA:0 "伊領スーダン"
+ SUD_ITA_DEF:0 "伊領スーダン"
+ SUD_ITA_ADJ:0 "伊領スーダン"
+ 
+ GIB_ITA:0 "伊領ジブラルタル"
+ GIB_ITA_DEF:0 "伊領ジブラルタル"
+ GIB_ITA_ADJ:0 "伊領ジブラルタル"
+ 
+ SUC_ITA:0 "伊領スエズ運河"
+ SUC_ITA_DEF:0 "伊領スエズ運河"
+ SUC_ITA_ADJ:0 "伊領スエズ運河"
+ 
+#大英帝国
+ CAN_UK:0 "カナダ連邦"
+ CAN_UK_DEF:0 "カナダ連邦"
+ CAN_UK_ADJ:0 "カナダ"
+ 
+ NFL_UK:0 "ニューファンドランド王国"
+ NFL_UK_DEF:0 "ニューファンドランド王国"
+ NFL_UK_ADJ:0 "ニューファンドランド"
+ 
+ AST_UK:0 "オーストラリア連邦"
+ AST_UK_DEF:0 "オーストラリア連邦"
+ AST_UK_ADJ:0 "オーストラリア"
+ 
+ NZL_UK:0 "ニュージーランド王国"
+ NZL_UK_DEF:0 "ニュージーランド王国"
+ NZL_UK_ADJ:0 "ニュージーランド"
+ 
+ NEL_UK:0 "ニューイングランド王国"
+ NEL_UK_DEF:0 "ニューイングランド王国"
+ NEL_UK_ADJ:0 "ニューイングランド"
+ 
+#フランス共和国
+ NWA_FRA:0 "仏領西アフリカ"
+ NWA_FRA_DEF:0 "仏領西アフリカ"
+ NWA_FRA_ADJ:0 "仏領西アフリカ"
+ 
+ EQA_FRA:0 "仏領赤道"
+ EQA_FRA_DEF:0 "仏領赤道アフリカ"
+ EQA_FRA_ADJ:0 "仏領赤道アフリカ"
+ 
+ MOR_FRA:0 "仏領モロッコ"
+ MOR_FRA_DEF:0 "領モロッコ"
+ MOR_FRA_ADJ:0 "仏領モロッコ"
+ 
+#ヴィシー・フランス
+ NWA_VFR:0 "ヴィシー仏領西アフリカ"
+ NWA_VFR_DEF:0 "ヴィシー仏領西アフリカ"
+ NWA_VFR_ADJ:0 "ヴィシー仏領西アフリカ"
+ 
+ EQA_VFR:0 "ヴィシー仏領赤道"
+ EQA_VFR_DEF:0 "ヴィシー仏領赤道アフリカ"
+ EQA_VFR_ADJ:0 "ヴィシー仏領赤道アフリカ"
+ 
+ MOR_VFR:0 "ヴィシー仏領モロッコ"
+ MOR_VFR_DEF:0 "ヴィシー領モロッコ"
+ MOR_VFR_ADJ:0 "ヴィシー仏領モロッコ"
+ 
+#アルジェ・フランス
+ NWA_AFR:0 "アルジェ仏領西アフリカ"
+ NWA_AFR_DEF:0 "アルジェ仏領西アフリカ"
+ NWA_AFR_ADJ:0 "アルジェ仏領西アフリカ"
+ 
+ EQA_AFR:0 "アルジェ仏領赤道"
+ EQA_AFR_DEF:0 "アルジェ仏領赤道アフリカ"
+ EQA_AFR_ADJ:0 "アルジェ仏領赤道アフリカ"
+ 
+ MOR_AFR:0 "アルジェ仏領モロッコ"
+ MOR_AFR_DEF:0 "アルジェ領モロッコ"
+ MOR_AFR_ADJ:0 "アルジェ仏領モロッコ"
+ 
+#自由フランス
+ NWA_FFR:0 "自由仏領西アフリカ"
+ NWA_FFR_DEF:0 "自由仏領西アフリカ"
+ NWA_FFR_ADJ:0 "自由仏領西アフリカ"
+ 
+ EQA_FFR:0 "自由仏領赤道"
+ EQA_FFR_DEF:0 "自由仏領赤道アフリカ"
+ EQA_FFR_ADJ:0 "自由仏領赤道アフリカ"
+ 
+ MOR_FFR:0 "自由仏領モロッコ"
+ MOR_FFR_DEF:0 "自由領モロッコ"
+ MOR_FFR_ADJ:0 "自由仏領モロッコ"
+ 
+#スペイン帝国
+ RIF_SPR:0 "西領モロッコ"
+ RIF_SPR_DEF:0 "西領モロッコ"
+ RIF_SPR_ADJ:0 "西領モロッコ"
+ 
+ WES_SPR:0 "西領サハラ"
+ WES_SPR_DEF:0 "西領サハラ"
+ WES_SPR_ADJ:0 "西領サハラ"
+ 
+ EQG_SPR:0 "西領ギニア"
+ EQG_SPR_DEF:0 "西領ギニア"
+ EQG_SPR_ADJ:0 "西領ギニア"
+ 
+#ポルトガル共和国
+ CPV_POR:0 "葡領カーボベルデ"
+ CPV_POR_DEF:0 "葡領カーボベルデ"
+ CPV_POR_ADJ:0 "葡領カーボベルデ"
+ 
+ STP_POR:0 "葡領サントメ・プリンシペ"
+ STP_POR_DEF:0 "葡領サントメ・プリンシペ"
+ STP_POR_ADJ:0 "葡領サントメ・プリンシペ"
+ 
+ GNB_POR:0 "葡領ギニア"
+ GNB_POR_DEF:0 "葡領ギニア"
+ GNB_POR_ADJ:0 "葡領ギニア"
+ 
+ MZB_POR:0 "葡領モザンビーク"
+ MZB_POR_DEF:0 "葡領モザンビーク"
+ MZB_POR_ADJ:0 "葡領モザンビーク"
+ 
+ ANG_POR:0 "葡領アンゴラ"
+ ANG_POR_DEF:0 "葡領アンゴラ"
+ ANG_POR_DEF:0 "葡領アンゴラ"
+ 
+#中華民国
+ CLC_CHI:0 "中国行政特区"
+ CLC_CHI_DEF:0 "中国行政特区"
+ CLC_CHI_ADJ:0 "中国行政特区"
+ 
+#エジプト王国
+ SUD_EGY:0 "埃領スーダン"
+ SUD_EGY_DEF:0 "埃領スーダン"
+ SUD_EGY_ADJ:0 "埃領スーダン"

@@ -1,0 +1,10 @@
+
+ssw_JAP_state_development_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_fortify_the_borders
+
+	local_building_slots_factor = 0.20
+	state_production_speed_buildings_factor = 0.15
+	state_resources_factor = 0.15
+}

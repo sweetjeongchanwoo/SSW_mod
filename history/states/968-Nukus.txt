@@ -1,0 +1,22 @@
+state = {
+	id = 968
+	name = "STATE_968"
+	manpower = 39300
+	
+	state_category = rural
+	
+	history={
+		owner = KAR
+		add_core_of = KAR
+		add_core_of = UZB
+		add_core_of = WTR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {	1614 1	}
+	}
+	
+	provinces = {
+		1479 1614
+	}
+}

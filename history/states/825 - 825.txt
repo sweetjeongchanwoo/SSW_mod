@@ -1,0 +1,27 @@
+
+state={
+	id=825
+	name="STATE_825"
+
+	history={
+		victory_points = {
+		1238 1
+		}
+		owner = TRV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = NIN
+		add_core_of = PIN
+		add_core_of = TRV
+
+	}
+
+	provinces={
+		1238 1321 
+	}
+	manpower=9000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,22 @@
+﻿capital = 311
+#oob = "BZS_1950"
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+add_ideas = {
+	civilian_economy
+}
+
+set_politics = {
+	ruling_party = social_liberalism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_liberalism = 100
+}

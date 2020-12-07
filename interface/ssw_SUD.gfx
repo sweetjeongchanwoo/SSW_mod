@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 15
+	}	
+	spriteType = {
+		name = "GFX_idea_CBOS"
+		texturefile = "gfx/interface/ideas/SUD/idea_CBOS.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_sudan_khalil"
+		texturefile = "gfx/interface/ideas/SUD/idea_sudan_khalil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_al_khalifa_al_hassan"
+		texturefile = "gfx/interface/ideas/SUD/idea_al_khalifa_al_hassan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ibrahim_abboud"
+		texturefile = "gfx/interface/ideas/SUD/idea_ibrahim_abboud.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_muhammad_mahgoub"
+		texturefile = "gfx/interface/ideas/SUD/idea_muhammad_mahgoub.dds"
+	}
+}

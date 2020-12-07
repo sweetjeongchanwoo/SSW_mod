@@ -1,0 +1,14 @@
+GER_civill_war_militia = {
+
+    icon = military_operation
+	
+    allowed = {
+	    original_tag = GER
+    }
+
+    visible = {
+        has_war_with = HGR
+        has_war_with = HLH
+        has_war_with = LTV
+    }
+}

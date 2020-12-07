@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_alexander_kerensky"
+		textureFile = "gfx/interface/ideas/idea_minister_alexander_kerensky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_andrey_vlasov"
+		textureFile = "gfx/interface/ideas/idea_minister_andrey_vlasov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_vladimir_nabokov"
+		textureFile = "gfx/interface/ideas/idea_minister_vladimir_nabokov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_pavel_sudoplatov"
+		textureFile = "gfx/interface/ideas/idea_minister_pavel_sudoplatov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_attack_germany"
+		textureFile = "gfx/interface/ideas/idea_country_attack_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_vladimir_kryuchkov"
+		textureFile = "gfx/interface/ideas/idea_minister_vladimir_kryuchkov.dds"
+	}
+}

@@ -1,0 +1,221 @@
+﻿capital = 965
+oob = "GER_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+	improved_infantry_weapons = 1
+	advanced_infantry_weapons = 1
+	infantry_weapons2 = 1
+	ssw_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	ssw_infantry_weapons2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	night_vision2 = 1
+	support_weapons3 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	infantry_at3 = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	amphibious_mechanized_infantry = 1
+	amphibious_mechanized_infantry_2 = 1
+	armored_car1 = 1
+	armored_car2 = 1
+	armored_car3 = 1
+	marines = 1
+	marines2 = 1
+	marines3 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	paratroopers3 = 1
+	tech_mountaineers = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers3 = 1
+	tech_special_forces = 1
+	improved_special_forces = 1
+	survival_training = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1
+	tech_engineers4 = 1
+	tech_recon = 1
+	tech_recon1 = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_recon4 =  1
+	tech_military_police = 1
+	tech_military_police2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	early_fighter = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CAS3 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	jet_fighter1 = 1
+	jet_fighter2 = 1
+	jet_cas1 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	heavy_fighter2 = 1
+	heavy_fighter3 = 1
+	heavy_fighter4 = 1
+	tactical_bomber1 = 1
+	tactical_bomber2 = 1
+	tactical_bomber3 = 1
+	jet_tactical_bomber1 = 1
+	jet_tactical_bomber2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	strategic_bomber3 = 1
+	scout_plane1 = 1
+	scout_plane2 = 1
+}
+
+add_ideas = {
+	civilian_economy
+	GER_idea_1
+	Air_force_conspiracy
+	limited_conscription
+	export_focus
+	partial_economic_mobilisation
+	one_party_dictatorship
+}
+
+create_faction = Germania_Accords
+add_to_faction = GER
+add_to_faction = CZE
+add_to_faction = SLO
+add_to_faction = POL
+add_to_faction = DEN
+add_to_faction = NOR
+add_to_faction = HOL
+add_to_faction = BEL
+add_to_faction = NFR
+add_to_faction = VFR
+add_to_faction = CRO
+add_to_faction = BAL
+add_to_faction = UKR
+add_to_faction = MOS
+add_to_faction = CCS
+add_to_faction = ATL
+add_to_faction = TOG
+add_to_faction = WAF
+add_to_faction = MAF
+add_to_faction = MAD
+
+set_autonomy = {
+	target = CZE
+	autonomous_state = reichsprotectorate
+}
+set_autonomy = {
+	target = SLO
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = POL
+	autonomous_state = reichsprotectorate
+}
+set_autonomy = {
+	target = DEN
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = NOR
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = HOL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = BEL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = NFR
+	autonomous_state = military_occupation_territory
+}
+set_autonomy = {
+	target = CRO
+	autonomous_state = reichsatellite
+}
+set_autonomy = {
+	target = BAL
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = UKR
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = MOS
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = CCS
+	autonomous_state = reichskommissariat
+}
+set_autonomy = {
+	target = ATL
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = TOG
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = WAF
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = MAF
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = MAD
+	autonomous_state = reichskolonie
+}
+
+set_politics = {
+	ruling_party = national_socialism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_socialism = 100
+}
+
+create_country_leader = {
+	name = "Adolf Hitler"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "gfx/leaders/GER/Portrait_Adolf_Hitler.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism_ideology
+	traits = {
+		Drug_addict
+		Charisma
+	}
+}

@@ -1,7 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_ssw_geacps_music_album_art"
-		texturefile = "gfx/interface/topbar/toolbar/musicplayer/ssw_geacps_music_album_art.dds"
-		noOfFrames = 2
-	}
-}

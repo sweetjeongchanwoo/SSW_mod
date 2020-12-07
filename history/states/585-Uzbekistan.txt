@@ -1,0 +1,22 @@
+state={
+	id=585
+	name="STATE_585"
+
+	history={
+		owner = TMS
+		add_core_of = TMS
+		add_core_of = UZB
+		add_core_of = WTR
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	provinces={
+		 10435 12324 12465
+	}
+	manpower=1033721
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

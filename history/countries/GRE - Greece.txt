@@ -1,0 +1,33 @@
+﻿capital = 836
+oob = "GRE_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {
+	ruling_party = authority_democracy
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_democracy= 100
+}
+
+create_country_leader = {
+	name = "Ioannis Rallis"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gfx/leaders/GRE/Portrait_Ioannis_Rallis.dds"
+	expire = "1965.1.1"
+	ideology = authority_democracy_ideology
+	traits = {
+		#
+	}
+}

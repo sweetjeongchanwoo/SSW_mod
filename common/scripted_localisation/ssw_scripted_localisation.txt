@@ -1,0 +1,465 @@
+defined_text = {#政友会
+	name = GetSeiyukaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Seiyukai_name_and_icon
+	}
+}
+defined_text = {#研究会
+	name = GetKenkyukaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Kenkyukai_name_and_icon
+	}
+}
+defined_text = {#民政党
+	name = GetMinseitoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Minseito_name_and_icon
+	}
+}
+defined_text = {#自由党
+	name = GetziyuutoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ziyuuto_name_and_icon
+	}
+}
+defined_text = {#日本共産党-野坂派
+	name = GetNihonkyosanto_NosakaName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Nosaka_name_and_icon
+	}
+}
+defined_text = {#日本共産党-徳田派
+	name = GetNihonkyosanto_TokudaName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Tokuda_name_and_icon
+	}
+}
+defined_text = {#日本社会党
+	name = GetnihonsyakaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_nihonsyakai_name_and_icon
+	}
+}
+defined_text = {#社会クラブ
+	name = GetsyakaikurabuName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_syakaikurabu_name_and_icon
+	}
+}
+defined_text = {#大日本赤誠会
+	name = GetDainipponSekiseikaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_DainipponSekiseikai_name_and_icon
+	}
+}
+defined_text = {#東方会
+	name = GetTohokaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Tohokai_name_and_icon
+	}
+}
+defined_text = {#日本ファシズム党
+	name = GetNihonFuxasizumuName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_NihonFuxasizumu_name_and_icon
+	}
+}
+defined_text = {#日本国家社会党
+	name = GetNihonkokkasyakaitoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkokkasyakaito_name_and_icon
+	}
+}
+defined_text = {#労農社会党
+	name = GetRonosyakaitoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Ronosyakaito_name_and_icon
+	}
+}
+defined_text = {#東亜建設国民聯盟
+	name = GettoakensetsuName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_toakensetsu_name_and_icon
+	}
+}
+defined_text = {#大日本皇党
+	name = GetDainipponsumeragiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Dainipponsumeragi_name_and_icon
+	}
+}
+defined_text = {#財閥連盟
+	name = GetZaibatsuRenmeiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ZaibatsuRenmei_name_and_icon
+	}
+}
+defined_text = {#皇典講究会
+	name = GetKotenKokyukaiName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_KotenKokyukai_name_and_icon
+	}
+}
+#########VALUES#########
+defined_text = {#シベリア
+	name = GetSibValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = SIB
+		}
+		localization_key = JAP_Sib_values
+	}
+}
+defined_text = {#満州
+	name = GetManValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = MAN
+		}
+		localization_key = JAP_Man_values
+	}
+}
+defined_text = {#蒙古
+	name = GetMenValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = MEN
+		}
+		localization_key = JAP_Men_values
+	}
+}
+defined_text = {#中国
+	name = GetChiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = CHI
+		}
+		localization_key = JAP_Chi_values
+	}
+}
+defined_text = {#ビルマ
+	name = GetBrmValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = BRM
+		}
+		localization_key = JAP_Brm_values
+	}
+}
+defined_text = {#タイ
+	name = GetSiaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = SIA
+		}
+		localization_key = JAP_Sia_values
+	}
+}
+defined_text = {#ベトナム
+	name = GetVinValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = VIN
+		}
+		localization_key = JAP_Vin_values
+	}
+}
+defined_text = {#カンボジア
+	name = GetCamValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = CAM
+		}
+		localization_key = JAP_Cam_values
+	}
+}
+defined_text = {#ラオス
+	name = GetLaoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = LAO
+
+		}
+		localization_key = JAP_Lao_values
+	}
+}
+defined_text = {#マラヤ
+	name = GetMalValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = MAL
+		}
+		localization_key = JAP_Mal_values
+	}
+}
+defined_text = {#インドネシア
+	name = GetInsValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = INS
+		}
+		localization_key = JAP_Ins_values
+	}
+}
+defined_text = {#比島
+	name = GetPhiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = PHI
+		}
+		localization_key = JAP_Phi_values
+	}
+}
+defined_text = {#インド
+	name = GetNinValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = NIN
+		}
+		localization_key = JAP_Nin_values
+	}
+}
+defined_text = {#オーストラリア
+	name = GetAstValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = AST
+		}
+		localization_key = JAP_Ast_values
+	}
+}
+defined_text = {#NZ
+	name = GetNzlValues
+	text = {
+		trigger = {
+			original_tag = JAP
+			is_in_faction_with = NZL
+		}
+		localization_key = JAP_Nzl_values
+	}
+}
+defined_text = {#政友会
+	name = GetSeiyukaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Seiyukai_political_party_values
+	}
+}
+defined_text = {#研究会
+	name = GetKenkyukaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Kenkyukai_political_party_values
+	}
+}
+defined_text = {#民政党
+	name = GetMinseitoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Minseito_political_party_values
+	}
+}
+defined_text = {#自由党
+	name = GetziyuutoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ziyuuto_political_party_values
+	}
+}
+defined_text = {#日本共産党-野坂派
+	name = GetNihonkyosanto_NosakaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Nosaka_political_party_values
+	}
+}
+defined_text = {#日本共産党-徳田派
+	name = GetNihonkyosanto_TokudaValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkyosanto_Tokuda_political_party_values
+	}
+}
+defined_text = {#日本社会党
+	name = GetnihonsyakaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_nihonsyakai_political_party_values
+	}
+}
+defined_text = {#社会クラブ
+	name = GetsyakaikurabuValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_syakaikurabu_political_party_values
+	}
+}
+defined_text = {#大日本赤誠会
+	name = GetDainipponSekiseikaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_DainipponSekiseikai_political_party_values
+	}
+}
+defined_text = {#東方会
+	name = GetTohokaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Tohokai_political_party_values
+	}
+}
+defined_text = {#日本ファシズム党
+	name = GetNihonFuxasizumuValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_NihonFuxasizumu_political_party_values
+	}
+}
+defined_text = {#日本国家社会党
+	name = GetNihonkokkasyakaitoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Nihonkokkasyakaito_political_party_values
+	}
+}
+defined_text = {#労農社会党
+	name = GetRonosyakaitoValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Ronosyakaito_political_party_values
+	}
+}
+defined_text = {#東亜建設国民聯盟
+	name = GettoakensetsuValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_toakensetsu_political_party_values
+	}
+}
+defined_text = {#大日本皇党
+	name = GetDainipponsumeragiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_Dainipponsumeragi_political_party_values
+	}
+}
+defined_text = {#財閥連盟
+	name = GetZaibatsuRenmeiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_ZaibatsuRenmei_political_party_values
+	}
+}
+defined_text = {#皇典講究会
+	name = GetKotenKokyukaiValues
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_KotenKokyukai_political_party_values
+	}
+}
+
+defined_text = {
+	name = GetDecisionCooldownTooltip
+	text = {
+		localization_key = JAP_days_re_enable_tt
+	}
+}

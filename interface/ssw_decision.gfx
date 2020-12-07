@@ -1,0 +1,21 @@
+spriteTypes = {
+#decision
+    SpriteType = { 
+		name = "GFX_common_wealth_decision"
+		texturefile = "gfx/interface/decisions/common_wealth_decision.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_land_reform_decision"
+		texturefile = "gfx/interface/decisions/land_reform_decision.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_JAP_Riot_decision"
+		texturefile = "gfx/interface/decisions/JAP_Riot_decision.dds"
+	}
+	SpriteType = { 
+		name = "GFX_JAP_party"
+		texturefile = "gfx/interface/decisions/JAP_party.dds"
+	}
+}

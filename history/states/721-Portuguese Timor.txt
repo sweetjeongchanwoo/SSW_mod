@@ -1,0 +1,24 @@
+state = {
+	id = 721
+	name = "STATE_721"
+	manpower = 390604
+	
+	state_category = pastoral
+	
+	history = {
+		owner = INS
+		add_core_of = INS
+		add_core_of = TLS
+		buildings = {
+			infrastructure = 3
+			12190 ={
+				naval_base = 1
+			}
+		}
+		victory_points = { 12190	1 }
+	}
+	
+	provinces = {
+		1326 12178 12190 13001 
+	}
+}

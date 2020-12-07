@@ -1,0 +1,20 @@
+state = {
+	id = 971
+	name = "STATE_971"
+	manpower = 39300
+	
+	state_category = rural
+	
+	history={
+		owner = SER
+		add_core_of = SER
+		add_core_of = CRO
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		11577 11580
+	}
+}

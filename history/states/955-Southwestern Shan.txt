@@ -1,0 +1,19 @@
+state = {
+	id = 955
+	name = "STATE_955"
+	manpower = "944600"
+	state_category = town
+	
+	history = {
+		owner = BRM
+		add_core_of = BRM
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		1607 4585 4654 7603
+	}
+}
