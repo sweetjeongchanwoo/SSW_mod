@@ -1,4 +1,5 @@
 ﻿l_english:
+#国家方針
  SUD_investment_from_the_overlord:0 "宗主国からの投資"
  SUD_investment_from_the_overlord_desc:0 "我が国は貧困で開発が進んでいない。 イギリス人の遺産を発展させつつ宗主国から投資を行ってもらい発展させねばならない。"
  SUD_continue_the_condominium:0 "共同主権の維持"
@@ -104,7 +105,8 @@
  SUD_dockyards_desc:0 "造船所の増築は輸送船や戦闘用の艦船の建造に転用できる。"
  SUD_expand_port_sudan:0 "ポートスーダンの拡張"
  SUD_expand_port_sudan_desc:0 "ポートスーダンは我が国唯一の主要港である。 紅海に面しており他国の貿易路にも面しているため、 この港に注力すればその恩恵を享受することができるかもしれない。"
- #decisions
+ 
+#ディシジョン
  SUD_investment_from_egypt:0 "エジプトによる投資"
  SUD_investment_from_italy:0 "イタリアによる投資"
  SUD_resources_development:0 "資源開発"
@@ -169,6 +171,7 @@
  sudan_airways:0 "スーダン航空"
  #traits
  central_bank:0 "国家の中央銀行"
+ 
  #events
  sudan.1.t:0 "スーダンからの提案"
  sudan.1.d:0 "[SUD.GetNameDef]は現在装備が不足しており、 兵士一人一人に歩兵銃はおろか銃弾でさえ満足に補給がなされない状況に陥っている。 そのため、 宗主国である我々に兵器の売却を求めてきた。　"
@@ -202,21 +205,3 @@
  sudan.5.t:0 "カイロ合意"
  sudan.5.d:0 "様々な外交努力の結果我々は[ITA.GetNameDef]と[EGY.GetNameDef]の両国に我々の自治を認めさせることができた。 [ITA.GetLeader]は不服である、 という態度を見せているが我々を独立国として歓迎するようだ。　"
  sudan.5.a:0 "スーダン万歳!"
- #parties
- SUD_national_fascism_party:0 "総督政府"
- SUD_national_fascism_party_long:0 "イタリア・エジプト領スーダン総督政府"
- SUD_social_conservatism_party:0 "ウンマ党［Hizb al-Umma］"
- SUD_anarchism_party:0 "スーダン・コミューン"
- SUD_progressive_communism_party:0 "HSS"
- SUD_progressive_communism_party_long:0 "スーダン共産党［Al-Hizb al-Shuyui al-Sudani］"
- SUD_classical_communism_party:0 "HSS"
- SUD_classical_communism_party_long:0 "スーダン共産党［Al-Hizb al-Shuyui al-Sudani］"
- SUD_social_democracy_party:0 "HB"
- SUD_social_democracy_party_long:0 "バアス党［Ḥizb Al-Ba‘th］"
- SUD_social_liberalism_party:0 "HSTS"
- SUD_social_liberalism_party_long:0 "スーダン人民解放戦線［Al-Ḥarakat ash-Shaʿbiyyat liTaḥrīr as-Sūdān］"
- SUD_authority_democracy_party:0 "MW"
- SUD_authority_democracy_party_long:0 "国民会議［al-Mu'tamar al-Waṭanī］"
- SUD_authority_despotism_party:0 "JIQ"
- SUD_authority_despotism_party_long:0 "民族イスラム戦線［al-Jabhah al-Islāmīyah al-Qawmīyah］"
- SUD_national_socialism_party:0 "スーダン・ナチス党"

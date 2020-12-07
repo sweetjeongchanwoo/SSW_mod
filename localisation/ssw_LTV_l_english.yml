@@ -185,7 +185,8 @@
  LTV_guntai_dorunie:0 "ドルニエ社の協力"
  LTV_guntai_ryakubaku:0 "戦略爆撃機の改良"
  LTV_guntai_kaku:0 "核技術の研究"
-
+ 
+#国民精神
  ltv_ideas_01:0 "突撃歩兵部隊"
  ltv_ideas_02:0 "緊急動員"
  ltv_ideas_03:0 "ドイツ参謀本部"
@@ -257,6 +258,7 @@
  ltv_debahu_1:0 "分裂した祖国"
  ltv_debahu_2:0 "東西南の経済格差"
 
+#イベント
  SSW_LTV.1.t:0 "戦争への備え"
  SSW_LTV.1.d:0 "ゲッベルス政権との戦いのときが迫っている・・・"
  SSW_LTV.1.a:0 "兵を集めよ！"
@@ -352,6 +354,7 @@
  SSW_LTV.1444.t:0 "ハノーファー会議の終結"
  SSW_LTV.1444.d:0 "ハノーファー会議は終結した。ドイツは三分割され、海外植民地の多くを失う結果となった。 それでも三人の指導者は「ゲッベルスの手下になるよりかはマシだ」と言い続けるだろう"
  SSW_LTV.1444.a:0 "次は[LTV.GetLeader]と[HGR.GetLeader]二人を裁く裁判でお会いしよう"
+ 
 #ディシジョン
  LTV_civill_war_militia:0 "民兵の徴募"
  LTV_recruiting_Vienna:0 "ウィーンでの徴募"
