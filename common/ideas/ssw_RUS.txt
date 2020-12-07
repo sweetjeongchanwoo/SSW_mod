@@ -482,27 +482,22 @@ ideas = {
 
             modifier = {
 				production_speed_buildings_factor = 0.1	
-				}
 			}
-			
-				rus_ideas_05 = {
-					allowed = {
-						original_tag = RUS
-					}
-		
-					allowed_civil_war = {
-						always = yes
-					}
-		
-					removal_cost = -1
-		
-					picture = man_five_year_plan_industry
-		
-					modifier = {
-						production_factory_max_efficiency_factor = 0.15
-						industrial_capacity_factory = 0.15
-						}
-					}
+		}
+		rus_ideas_05 = {
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
 					rus_ideas_05A = {
 						allowed = {
 							original_tag = RUS

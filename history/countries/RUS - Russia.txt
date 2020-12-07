@@ -50,13 +50,102 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Andrey Vlasov"
-	picture = "Portrait_Russia_Andrey_Vlasov.dds"
+	portrait_path = "gfx/leaders/RUS/Portrait_Russia_Andrey_Vlasov.dds"
 	traits = { winter_specialist infantry_officer }
+	id = 412
 	skill = 5
 	attack_skill = 4
 	defense_skill = 3
-	planning_skill = 3
+	planning_skill = 4
 	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Konstantin Rokossovsky"
+	id = 402
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
+	traits = {  armor_officer trait_cautious brilliant_strategist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Kirill Meretskov"
+	id = 10000
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Kirill_Meretskov.dds"
+	traits = { trait_reckless infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Andrey Yeryomenko"
+	id = 10001
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Yeryomenko.dds"
+	traits = { cavalry_officer trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Yakov Cherevichenko"
+	id = 10002
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Yakov_Cherevichenko.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nikandr Chibisov"
+	id = 10003
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Nikolai Berzarin"
+	id = 10004
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Nikolai_Berzarin.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Gordey Levchenko"
+	id = 406
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Gordey_Levchenko.dds"
+	traits = { green_water_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Arseniy Golovko"
+	id = 409
+	portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Arseniy_Golovko.dds"
+	traits = { arctic_water_expert spotter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 3
 }
