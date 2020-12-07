@@ -347,29 +347,21 @@
  UZB_DEF:0 "ウズベキスタン"
  UZB_ADJ:0 "ウズベキスタン"
  
-#旧中華領国家
- GXC:0 "広西軍閥"
- GXC_DEF:0 "広西軍閥"
- GXC_ADJ:0 "広西"
- 
- SHX:0 "山西軍閥"
- SHX_DEF:0 "山西軍閥"
- SHX_ADJ:0 "山西"
- 
- SIK:0 "新疆軍閥"
- SIK_DEF:0 "新疆軍閥"
+#旧中華領国家 
+ SIK:0 "新疆"
+ SIK_DEF:0 "新疆"
  SIK_ADJ:0 "新疆"
   
  TIB:0 "チベット"
  TIB_DEF:0 "チベット"
  TIB_ADJ:0 "チベット"
  
- XSM:0 "馬家軍閥"
- XSM_DEF:0 "馬家軍閥"
- XSM_ADJ:0 "馬家"
+ XSM:0 "馬軍"
+ XSM_DEF:0 "馬軍"
+ XSM_ADJ:0 "馬軍"
  
- YUN:0 "雲南軍閥"
- YUN_DEF:0 "雲南軍閥"
+ YUN:0 "雲南"
+ YUN_DEF:0 "雲南"
  YUN_ADJ:0 "雲南"
  
 #旧インド領国家
@@ -1156,3 +1148,12 @@
  YUG:0 "ユーゴスラビア"
  YUG_DEF:0 "ユーゴスラビア"
  YUG_ADJ:0 "ユーゴスラビア"
+ 
+#中華
+ GXC:0 "広西"
+ GXC_DEF:0 "広西"
+ GXC_ADJ:0 "広西"
+ 
+ SHX:0 "山西"
+ SHX_DEF:0 "山西"
+ SHX_ADJ:0 "山西"

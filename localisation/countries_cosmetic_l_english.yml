@@ -340,6 +340,10 @@
  CLC_CHI_DEF:0 "中国行政特区"
  CLC_CHI_ADJ:0 "中国行政特区"
  
+ YUN_CHI:0 "雲南軍閥"
+ YUN_CHI_DEF:0 "雲南軍閥"
+ YUN_CHI_ADJ:0 "雲南"
+ 
 #エジプト王国
  SUD_EGY:0 "埃領スーダン"
  SUD_EGY_DEF:0 "埃領スーダン"
