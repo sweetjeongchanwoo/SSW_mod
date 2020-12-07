@@ -1,0 +1,24 @@
+
+PER_dec_cat_Agricultural_Land_Reform = {#農地改革
+	priority = 44
+	icon = eng_concessions_to_the_trade_unions
+	picture = GFX_land_reform_decision
+	
+	visible = {
+		has_completed_focus = PER_Modernization_6
+		tag = PER
+	}
+}
+
+PER_dec_The_end_of_reform = {#暴動の鎮圧
+	priority = 43
+	icon = generic_political_actions
+	picture = GFX_PER_Riot_decision
+	allowed = {
+		
+	}
+	visible = {
+        has_country_flag = ssw_per_flag_23
+    }
+}
+

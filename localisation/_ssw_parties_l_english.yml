@@ -55,6 +55,25 @@
  ITA_national_socialism_party:0 ""
  ITA_corporatocracism_party:0 ""
  
+#スーダン
+ SUD_national_fascism_party:0 "総督政府"
+ SUD_national_fascism_party_long:0 "イタリア・エジプト領スーダン総督政府"
+ SUD_social_conservatism_party:0 "ウンマ党［Hizb al-Umma］"
+ SUD_anarchism_party:0 "スーダン・コミューン"
+ SUD_progressive_communism_party:0 "HSS"
+ SUD_progressive_communism_party_long:0 "スーダン共産党［Al-Hizb al-Shuyui al-Sudani］"
+ SUD_classical_communism_party:0 "HSS"
+ SUD_classical_communism_party_long:0 "スーダン共産党［Al-Hizb al-Shuyui al-Sudani］"
+ SUD_social_democracy_party:0 "HB"
+ SUD_social_democracy_party_long:0 "バアス党［Ḥizb Al-Ba‘th］"
+ SUD_social_liberalism_party:0 "HSTS"
+ SUD_social_liberalism_party_long:0 "スーダン人民解放戦線［Al-Ḥarakat ash-Shaʿbiyyat liTaḥrīr as-Sūdān］"
+ SUD_authority_democracy_party:0 "MW"
+ SUD_authority_democracy_party_long:0 "国民会議［al-Mu'tamar al-Waṭanī］"
+ SUD_authority_despotism_party:0 "JIQ"
+ SUD_authority_despotism_party_long:0 "民族イスラム戦線［al-Jabhah al-Islāmīyah al-Qawmīyah］"
+ SUD_national_socialism_party:0 "スーダン・ナチス党"
+ 
 #満州
  MAN_anarchism_party:0 "満州アナキスト連盟"
  MAN_progressive_communism_party:0 ""
@@ -96,3 +115,17 @@
  CAN_national_fascism_party:0 ""
  CAN_national_socialism_party:0 ""
  CAN_corporatocracism_party:0 ""
+ 
+#ロシア
+ RUS_progressive_communism_party:0 "ロシア社会主義運動(革新派)"
+ RUS_progressive_communism_party_ppr_long:0 "ロシア人民党"
+ RUS_classical_communism_party:0 "ロシア社会主義運動(穏健派)"
+ RUS_classical_communism_party_ppr_long:0 "ロシア人民党"
+ RUS_social_democracy_party:0 "トルドヴィキ(左派)"
+ RUS_social_liberalism_party:0 "トルドヴィキ(右派)"
+ RUS_social_conservatism_party:0 "保守党"
+ RUS_authority_democracy_party:0 "ロシア愛国同盟"
+ RUS_national_fascism_party:0 "ロシア・ファシスト党"
+ RUS_national_socialism_party:0 "ロシア・ナチズム党"
+ RUS_progressive_communism_party_ppr:0 "PPR"
+ RUS_classical_communism_party_ppr:0 "PPR"
