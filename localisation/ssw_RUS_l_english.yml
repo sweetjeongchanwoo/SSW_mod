@@ -1,5 +1,5 @@
 ﻿l_english:
-##### FOCUS TITLE #####
+#国家方針
  RUS_russian_economic_problems:0 "ロシア経済問題"
  RUS_industrial_grant:0 "工業助成金"
  RUS_industrial_development_in_urals:0 "ウラルでの工業発展"
@@ -137,7 +137,6 @@
  RUS_EMPEROR_AIR:0 "帝国空軍の拡充"
 ##### FOCUS DESC #####
  RUS_NF:0 "ロシアの国家方針"
- russia_focus:0 "ロシア帝国の国家方針"
  RUS_russian_economic_problems_desc:0 "我々はまだ独立したての国家であり、多くの経済問題を抱えている。 "
  RUS_industrial_grant_desc:0 "工場への助成金を出し、 生産業を支援しよう。 "
  RUS_industrial_development_in_urals_desc:0 "ウラル地方は我々に残された重要な土地である。 "
@@ -257,20 +256,8 @@
  RUS_russian_greatest_glory_desc:0 "帝国時代からの栄光を取り返す時が来た！ "
  RUS_the_monkey_doesnt_need_a_pool_desc:0 "東洋の島国に太平洋は宝の持ち腐れだ。 "
  RUS_industrial_development_in_urals_desc:0 "ウラル地方は我々に残された重要な土地である。 "
-##### DECISION #####
- reintegrate_states:0 "領有州の統合"
- reintegrate_146:0 "カレリアの再統合"
- reintegrate_147:0 "サッラの再統合"
- reintegrate_213:0 "ムルマンスクの再統合"
- reintegrate_215:0 "オネガの再統合"
- reintegrate_216:0 "オロネツの再統合"
- reintegrate_722:0 "ペツァモの再統合"
- interventio_in_german_civil_war:0 "ドイツ内戦への介入"
- support_nazism:0 "ゲッベルスを支援"
- support_vorbeck:0 "フォルベックを支援"
- support_himmler:0 "ヒムラーを支援"
- support_goring:0 "ゲーリングを支援"
-##### IDEAS #####
+ 
+#国民精神
  SSW_compromise_with_democracies:0 "民主主義者との妥協政策"
  RUS_ural_strike:0 "鉱夫のストライキ"
  RUS_trade_union_demand:0 "労働改革"
@@ -339,14 +326,21 @@
  bal_ideas_1:0 "ロシアからの呼びかけ"
  ukr_ideas_1:0 "ロシアからの呼びかけ"
  ccs_ideas_1:0 "ロシアからの呼びかけ"
-##### TRAITS #####
- father_of_russia_rebuild:0 "ロシア再建の父"
- good_at_trading:0 "取引上手"
- active_nationalist:0 "活発な民族主義者"
- kind_liberal:0 "心優しき自由主義者"
- former_white_army:0 "ロシア白軍の経験"
- president_of_the_council_of_ministers:0 "閣僚会議議長"
- general_secretary_of_the_russia:0 "ロシア人民党書記長"
+ 
+#ディシジョン
+ reintegrate_states:0 "領有州の統合"
+ reintegrate_146:0 "カレリアの再統合"
+ reintegrate_147:0 "サッラの再統合"
+ reintegrate_213:0 "ムルマンスクの再統合"
+ reintegrate_215:0 "オネガの再統合"
+ reintegrate_216:0 "オロネツの再統合"
+ reintegrate_722:0 "ペツァモの再統合"
+ interventio_in_german_civil_war:0 "ドイツ内戦への介入"
+ support_nazism:0 "ゲッベルスを支援"
+ support_vorbeck:0 "フォルベックを支援"
+ support_himmler:0 "ヒムラーを支援"
+ support_goring:0 "ゲーリングを支援"
+ 
 ##### TOOLTIP #####
  communism_down_tt:0 "共産主義者を§G弾圧§!する。 "
  communism_up_tt:0 "共産主義者の影響力が§R上昇§!する。 "
@@ -358,6 +352,7 @@
  start_return_tt:0 "§Gモスクワ帰還の準備が始まる。 §!"
  russian_old_core:0 "ロシアの旧領"
  lock_minister_available_tt:0 "この閣僚は手動で変更できません。 "
+ 
 ##### NF #####
  RUS_rise_of_the_communist_republic:0 "社会主義共和国の台頭"
  RUS_rise_of_the_communist_republic_desc:0 "社会主義派による運動はロシアを変えた。 かつての栄光を取り戻し、 世界に復讐するために… "
@@ -413,21 +408,8 @@
  RUS_kill_japanese_desc:0 "我々の理想の実現のためにも、 シベリアやウラジオストクを奪還しなければならない。 "
  RUS_revive_soviet:0 "ソビエト連邦"
  RUS_revive_soviet_desc:0 "ついにソビエトの栄光を取り戻す時が来た。 そして、 我々の古き傷は完全に消え去った。 過去の屈辱は永遠に忘れない！ "
-##### PARTIES #####
- RUS_progressive_communism_party:0 "ロシア社会主義運動(革新派)"
- RUS_classical_communism_party:0 "ロシア社会主義運動(穏健派)"
- RUS_social_democracy_party:0 "トルドヴィキ(左派)"
- RUS_social_liberalism_party:0 "トルドヴィキ(右派)"
- RUS_social_conservatism_party:0 "保守党"
- RUS_authority_democracy_party:0 "ロシア愛国同盟"
- RUS_national_fascism_party:0 "ロシア・ファシスト党"
- RUS_national_socialism_party:0 "ロシア・ナチズム党"
- RUS_progressive_communism_party_ppr:0 "PPR"
- RUS_classical_communism_party_ppr:0 "PPR"
-##### PARTIES LONG #####
- RUS_progressive_communism_party_ppr_long:0 "ロシア人民党"
- RUS_classical_communism_party_ppr_long:0 "ロシア人民党"
-##### EVENTS #####
+ 
+##### イベント #####
  ssw_rus_communism.1000.title:0 "メーデーのデモ"
  ssw_rus_communism.1000.desc:0 "共産主義者やサンディカリスト達がメーデーに合わせて大規模なデモを行った。 彼らは資本の再分配や共有、 労働条件の改善、 そして左派政党の活動の容認を要求している。 どうやらそのデモで幾人が重軽傷を負うなどの事態が発生したようだが… "
  ssw_rus_communism.1000.a:0 "全員捕まえろ！ "
@@ -516,5 +498,3 @@
  ssw_rus.13.desc:0 "ロシア軍の快進撃は留まるところを知らず、遂にウラジオストクが陥落した。　ロシアは旧領の回復を条件に和平を提案しているが、我々はこれを呑むべきだろうか"
  ssw_rus.13.a:0 "和平すべきだ"
  ssw_rus.13.b:0 "徹底抗戦だ！"
-##### FACTION NAME #####
- eurasia_union:0 "ユーラシア連合"

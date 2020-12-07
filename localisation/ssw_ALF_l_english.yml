@@ -1,4 +1,5 @@
 ﻿l_english:
+#国家方針
  ALF_Califolnia_plan:0 "カリフォルニア計画"
  ALF_Mergers_in_the_aircraft_industry:0 "航空機産業の合併"
  ALF_McDonnell_Douglas:0 "マクドネル・ダグラス"
@@ -15,6 +16,6 @@
  ALF_Industrial_Stabilization:0 "産業の安定化"
  ALF_Development_of_the_film_industry:0 "映画産業の発展"
 
-###ideas-国民精神###
+#国民精神
  SSW_ideas_ALF_industry_ploblems:0 "産業の諸問題"
  SSW_ideas_ALF_industry_ploblems_desc:0 "我が国の産業は、内戦による多くの問題を抱えている。"

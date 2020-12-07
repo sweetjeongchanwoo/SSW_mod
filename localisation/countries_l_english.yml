@@ -91,14 +91,7 @@
  SIA:0 "シャム"
  SIA_DEF:0 "シャム"
  SIA_ADJ:0 "シャム"
-
-###日本内戦
- PRJ:0 "日本社会主義人民共和国"
- PRJ_DEF:0 "日本社会主義人民共和国"
- PRJ_ADJ:0 "日本"
- JSF:0 "日本社会主義戦線"
- JSF_DEF:0 "日本社会主義戦線"
- JSF_ADJ:0 "日本"
+ 
 #ゲルマニア合意
  GER:0 "ドイツ"
  GER_DEF:0 "ドイツ"
@@ -340,6 +333,10 @@
  RUS_DEF:0 "ロシア"
  RUS_classical_communism:0 "ロシア社会主義共和国"
  RUS_classical_communism_DEF:0 "ロシア社会主義共和国"
+ RUS_national_fascism:0 "ロシア国"
+ RUS_national_fascism_DEF:0 "ロシア国"
+ RUS_national_socialism:0 "ロシア国"
+ RUS_national_socialism_DEF:0 "ロシア国"
  RUS_ADJ:0 "ロシア"
  
  SOV:0 "ソビエト連邦"
@@ -494,8 +491,8 @@
  ROM_DEF:0 "ルーマニア"
  ROM_ADJ:0 "ルーマニア"
  
- SER:0 "セルビア"
- SER_DEF:0 "セルビア"
+ SER:0 "セルビア王国"
+ SER_DEF:0 "セルビア王国"
  SER_ADJ:0 "セルビア"
  
  SMR:0 "サンマリノ"
@@ -662,6 +659,15 @@
  HLH:0 "ヒムラー・ドイツ臨時政府"
  HLH_DEF:0 "ヒムラードイツ臨時政府"
  HLH_ADJ:0 "ヒムラー・ドイツ"
+ 
+#日本内戦
+ PRJ:0 "日本社会主義人民共和国"
+ PRJ_DEF:0 "日本社会主義人民共和国"
+ PRJ_ADJ:0 "日本"
+ 
+ JSF:0 "日本社会主義戦線"
+ JSF_DEF:0 "日本社会主義戦線"
+ JSF_ADJ:0 "日本"
  
 ############################################
 #アジア
