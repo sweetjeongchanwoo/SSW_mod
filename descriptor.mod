@@ -1,10 +1,9 @@
-name = "The Sun Shining on the World"
-remote_file_id = "2125746876"
-path = ""
-version = "1.9.3"
-supported_version = "1.10.*"
-dependencies = { "Japanese Language mod" }
-tags = {
+name="The Sun Shining on the World"
+version="1.9.3"
+dependencies={
+	"Japanese Language mod"
+}
+tags={
 	"Gameplay"
 	"Historical"
 	"National Focuses"
@@ -37,3 +36,6 @@ replace_path="common/units/names_ships"
 replace_path="events"
 replace_path="history/countries"
 replace_path="history/units"
+supported_version="1.10.*"
+path=""
+remote_file_id="2125746876"
