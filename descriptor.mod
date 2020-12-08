@@ -1,5 +1,5 @@
 name="The Sun Shining on the World"
-version="1.9.3"
+version="1.10"
 dependencies={
 	"Japanese Language mod"
 }
