@@ -70,11 +70,11 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		instantTextBoxType = {
 			name = "text"
-			position = {  x= 50 y = -190 }
+			position = {  x= 170 y = -190 }
 			font = "Bomb_24"
 			text = "BE_ANPO_PROTETS_D" ######## HERE GOES THE DESCRIPTION ###########
-			maxWidth = 455
-			maxHeight = 173
+			maxWidth = 520
+			maxHeight = 190
 			fixedsize = yes
 			format = right
 			Orientation = lower_left
