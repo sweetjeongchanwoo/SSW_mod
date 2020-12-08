@@ -195,8 +195,10 @@ country_event = {
 		}
 		if = {
 			limit = { has_idea = konstantin_rodzaevsky }
-			remove_ideas = konstantin_rodzaevsky
-			add_ideas = RUS_pavel_sudoplatov
+			swap_ideas = {
+				remove_idea = konstantin_rodzaevsky
+				add_idea = RUS_pavel_sudoplatov
+			}
 		}
 		hidden_effect = { country_event = { id = ssw_rus_communism.1005 days = 77 } }
 	}
