@@ -9,7 +9,7 @@ country_event = {#アメリカ連邦が石油の採掘利権を要求！
 
 	trigger = {
 		tag = LUI
-		has_war = no
+		has_war = yes#開発版だから
 		is_subject = no
 		is_in_faction = no
         has_global_flag = MAF_NoAttack_Portugal
@@ -21,7 +21,9 @@ country_event = {#アメリカ連邦が石油の採掘利権を要求！
 		}
 		name = SSW_USA_Civil_War.1.a
 		FSA = {
-			country_event = SSW_USA_Civil_War.2
+			country_event = {
+				id = SSW_USA_Civil_War.2
+			}
 		}
 	}
 
@@ -53,7 +55,9 @@ country_event = {#ルイジアナが拒否！
 		}
 		name = SSW_USA_Civil_War.2.a
 		UTC = {
-			country_event = SSW_USA_Civil_War.3
+			country_event = {
+				id = SSW_USA_Civil_War.3
+			}
 		}
         declare_war_on = {
             target = LUI
@@ -89,7 +93,9 @@ country_event = {#アメリカ連邦が戦争を始めた！！
 		}
 		name = SSW_USA_Civil_War.3.a
 		ALF = {
-			country_event = SSW_USA_Civil_War.3
+			country_event = { 
+				SSW_USA_Civil_War.4
+			}
 		}
         declare_war_on = {
             target = {
