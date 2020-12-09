@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = VFR
+		owner = AFR
 		add_core_of = AFR
 		add_core_of = ALG
 
