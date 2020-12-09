@@ -110,16 +110,6 @@ create_country_leader = {
 	desc = "POLITICS_IVAN_KONEV_DESC"
 	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
 	expire = "1973.5.21"
-	ideology = stalinism
-	traits = {
-		hero_of_soviet
-	}
-}
-create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
-	expire = "1973.5.21"
 	ideology = progressive_communism_ideology
 	traits = {
 		hero_of_soviet
@@ -138,6 +128,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Ivan Konev"
+	id = 408
 	portrait_path = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
 	traits = { armor_officer harsh_leader politically_connected }
 	skill = 5

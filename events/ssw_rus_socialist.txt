@@ -195,8 +195,10 @@ country_event = {
 		}
 		if = {
 			limit = { has_idea = konstantin_rodzaevsky }
-			remove_ideas = konstantin_rodzaevsky
-			add_ideas = RUS_pavel_sudoplatov
+			swap_ideas = {
+				remove_idea = konstantin_rodzaevsky
+				add_idea = RUS_pavel_sudoplatov
+			}
 		}
 		hidden_effect = { country_event = { id = ssw_rus_communism.1005 days = 77 } }
 	}
@@ -269,7 +271,6 @@ news_event = {
 		name = ssw_rus_communism.1006.a
 		trigger = {
 			NOT = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
@@ -280,7 +281,6 @@ news_event = {
 		name = ssw_rus_communism.1006.b
 		trigger = { 
 			OR = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
@@ -298,7 +298,6 @@ news_event = {
 		name = ssw_rus_communism.1007.a
 		trigger = {
 			NOT = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
@@ -309,7 +308,6 @@ news_event = {
 		name = ssw_rus_communism.1007.b
 		trigger = { 
 			OR = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
@@ -375,7 +373,6 @@ news_event = {
 		name = ssw_rus_communism.1009.a
 		trigger = {
 			NOT = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
@@ -386,7 +383,6 @@ news_event = {
 		name = ssw_rus_communism.1009.b
 		trigger = { 
 			OR = {
-				has_government = communism
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism

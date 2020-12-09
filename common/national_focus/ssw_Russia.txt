@@ -1284,7 +1284,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 		completion_reward = {
-			ITA = { country_event = generic.2 }
+			ITA = { country_event = { id = ssw_faction.4 } }
 		}
 	}
 	focus = {
@@ -1612,9 +1612,7 @@ focus_tree = {
 		x = 20
 		y = 3
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_09A
-			}
+			add_ideas = rus_ideas_09A
 		}
 	}
 	focus = {
@@ -1628,10 +1626,13 @@ focus_tree = {
 		x = 24
 		y = 3
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_10
+			if = {
+				limit = { has_idea = rus_ideas_09 }
+				swap_ideas = {
+					remove_idea = rus_ideas_09
+					add_idea = rus_ideas_10
+				}
 			}
-			remove_ideas = { rus_ideas_09 }
 		}
 	}
 	focus = {
@@ -1648,10 +1649,13 @@ focus_tree = {
 		x = 22
 		y = 4
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_11
+			if = {
+				limit = { has_idea = rus_ideas_09 }
+				swap_ideas = {
+					remove_idea = rus_ideas_10
+					add_idea = rus_ideas_11
+				}
 			}
-			remove_ideas = { rus_ideas_10 }
 		}
 	}
 	focus = {
@@ -1697,9 +1701,12 @@ focus_tree = {
 		x = 24
 		y = 7
 		completion_reward = {
-			remove_ideas = { rus_ideas_12A }
-			RUS = {
-				add_ideas = rus_ideas_12B
+			if = {
+				limit = { has_idea = rus_ideas_12A }
+				swap_ideas = {
+					remove_idea = rus_ideas_12A
+					add_idea = rus_ideas_12B
+				}
 			}
 		}
 	}
@@ -2970,7 +2977,7 @@ focus_tree = {
 						NOT = { has_war_with = RUS }
 					}
 				}
-				PER = { country_event = { id = generic.5 } }
+				PER = { country_event = { id = ssw_faction.1 } }
 			}
 			if = {
 				limit = {
@@ -2981,7 +2988,7 @@ focus_tree = {
 						NOT = { has_war_with = RUS }
 					}
 				}
-				AFG = { country_event = { id = generic.5 } }
+				AFG = { country_event = { id = ssw_faction.1 } }
 			}
 			if = {
 				limit = {
@@ -2992,7 +2999,7 @@ focus_tree = {
 						NOT = { has_war_with = RUS }
 					}
 				}
-				TUR = { country_event = { id = generic.5 } }
+				TUR = { country_event = { id = ssw_faction.1 } }
 			}
 		}
 	}

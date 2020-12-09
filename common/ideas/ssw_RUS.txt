@@ -482,27 +482,22 @@ ideas = {
 
             modifier = {
 				production_speed_buildings_factor = 0.1	
-				}
 			}
-			
-				rus_ideas_05 = {
-					allowed = {
-						original_tag = RUS
-					}
-		
-					allowed_civil_war = {
-						always = yes
-					}
-		
-					removal_cost = -1
-		
-					picture = man_five_year_plan_industry
-		
-					modifier = {
-						production_factory_max_efficiency_factor = 0.15
-						industrial_capacity_factory = 0.15
-						}
-					}
+		}
+		rus_ideas_05 = {
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
 					rus_ideas_05A = {
 						allowed = {
 							original_tag = RUS
@@ -598,7 +593,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = political_violence
+						picture = SPR_political_violence
 						
 							modifier = {
 								intelligence_agency_defense = 0.25
@@ -631,7 +626,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = victors_of_the_great_War
+						picture = generic_victors_of_ww1
 						
 							modifier = {
 								stability_factor = 0.1
@@ -778,7 +773,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = deluge
+						picture = FRA_la_deluge
 						
 							
 								targeted_modifier = { tag = MOS attack_bonus_against = 0.2 }
@@ -1072,7 +1067,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = forced_conscription
+						picture = generic_manpower_bonus
 
 						modifier = {
 							conscription = 0.05			

@@ -9,6 +9,8 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 620 y = 1700 }
 	default = no
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
 	focus = {
 		id = JAP_the_third_greater_east_asia_conference
 		icon = GFX_focus_JAP_the_third_greater_east_asia_conference
@@ -23,8 +25,8 @@ focus_tree = {
 					
 				}
 			available = {
-
-}
+				
+			}
 			bypass = {
 					has_government = communism
 				}
@@ -277,7 +279,7 @@ focus_tree = {
 			factor = 5
 		}
 		available = {
-
+			has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		bypass = {
 			not = {
@@ -2109,7 +2111,7 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = SSW_JAP_Hatoyama_memorandum
 					custom_effect_tooltip = 3_JAP_tt
-				}
+			}
 
 	}
 	focus = {
@@ -5501,6 +5503,23 @@ focus_tree = {
 		}
 		x = 45
 		y = 6
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+			or = {
+				has_completed_focus = JAP_3S_production
+				has_completed_focus = JAP_Hatoyama_memorandum
+			}
+			
+
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					add_political_power = 100
 					add_stability = 0.1
@@ -5509,13 +5528,24 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Embracing_Cultural_Diversity
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_Womens_political_participation
 		}
 		x = 42
 		y = 7
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					every_country = {
 							limit = {
@@ -5531,13 +5561,24 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_research_assistants
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 5.00
 		prerequisite = {
 			focus = JAP_Womens_political_participation
 		}
 		x = 48
 		y = 7
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 			completion_reward = {
 					add_ideas = SSW_JAP_research_assistants
 				}
@@ -5558,6 +5599,17 @@ focus_tree = {
 		}
 		x = 44
 		y = 8
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 					custom_effect_tooltip = 1_JAP_tt
 				}
@@ -5585,7 +5637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Transition_to_the_wartime_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_tank_production
 		cost = 6.00
 		prerequisite = {
 			focus = JAP_The_Beginning_of_the_Discourse
@@ -5593,6 +5645,17 @@ focus_tree = {
 		}
 		x = 45
 		y = 10
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 			available = {
 					has_war_support > 0.4
 				}

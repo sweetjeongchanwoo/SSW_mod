@@ -301,16 +301,6 @@ SUD_EGY = {	#伊埃領スーダン
 }
 
 #中華民国
-SIK_CHI = {	#雲南軍閥
-	color = rgb { 255 215 0 }
-	color_ui = rgb { 255 215 0 }
-}
-
-XSM_CHI = {	#馬家軍閥
-	color = rgb { 255 215 0 }
-	color_ui = rgb { 255 215 0 }
-}
-
 YUN_CHI = {	#雲南軍閥
 	color = rgb { 255 215 0 }
 	color_ui = rgb { 255 215 0 }

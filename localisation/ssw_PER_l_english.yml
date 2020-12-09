@@ -21,6 +21,7 @@
  PER_The_Modern_Army:0 "近代的なイラン軍"
  PER_Grooming_Tactics:0 "群狼戦術"
  PER_Protection_of_the_transportation_network:0 "輸送網の保護"
+ 
 #イベント
  sswper.1.title:0 "改革の開始"
  sswper.1.desc:0 "モハンマド・レザー・シャー・パフラヴィーは「白色革命」に必要な資金及び資材が十分な量集まったとして改革の開始を宣言した。\n\nまた、同時に改革を妨害する議会（これはあくまで国王の言葉だが）の改革終了までの停止も宣言し、国内メディアの間では国王の賞賛と批判の記事が入り混じり、飛び交っている。"
@@ -43,9 +44,11 @@
  sswper.7.title:0 "イタリア政府との連携"
  sswper.7.desc:0 "改革への不満の声が大きくなる中、シャーはイタリア政府と協力して改革を進めていくことを発表した。\n\n既に成功を収めている先進国による支援は国民を安心させたが、一部の熱心なイスラム教徒たちはキリスト教徒、しかも総本山であるイタリアとの連携はイスラム教を軽視しているとして批判の声を上げている。"
  sswper.7.a:0 "仲間は多いほうがいい"
+ 
 #設計社
  PER_Mouser_Iranian_Branch:0 "マウザー製作テヘラン支部"
  PER_Fiat_Automobile_Tehran_Branch:0 "フィアット自動車テヘラン支部"
+ 
 #ディシジョン
   #農地改革
   PER_dec_cat_Agricultural_Land_Reform:0 "農地改革"
@@ -66,7 +69,8 @@
   ssw_per_flag_2_2:0 "森林・牧草地・水源の国有化を完了させた"
   ssw_per_flag_3:0 "農地改革に反対している豪族たちを落ち着かせた"
   ssw_per_flag_4_2:0 "新たな農地を手に入れた小作農たちを支援した"
-#NF
+  
+#国家方針
  PER_Modernization_1:0 "国家の西欧化"
  PER_Modernization_2:0 "ドイツの産業機械"
  PER_Modernization_3:0 "日本の輸送船を購入"
