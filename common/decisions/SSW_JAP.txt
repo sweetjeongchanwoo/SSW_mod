@@ -937,7 +937,7 @@ JAP_dec_cat_Agricultural_Land_Reform = {
 
 		selectable_mission = yes 
 		fire_only_once = yes
-		days_mission_timeout = 365
+		days_mission_timeout = 730
 		timeout_effect = {            
 			JAP = {
 				country_event = {
