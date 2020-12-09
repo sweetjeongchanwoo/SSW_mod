@@ -23,6 +23,11 @@ set_autonomy = {
 	autonomous_state = colony
 }
 
+set_autonomy = {
+	target = MOR
+	autonomous_state = dominion
+}
+
 set_politics = {
 	ruling_party = national_fascism
 	last_election = "1950.1.1"

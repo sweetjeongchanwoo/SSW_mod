@@ -6,7 +6,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = SAH
+		owner = NWA
 		add_core_of = NGR
 		victory_points = {
 			10917 1 
