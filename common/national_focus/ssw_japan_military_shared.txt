@@ -6,7 +6,7 @@ shared_focus = {
 			focus = JAP_marginal_expansion
 		}
 		available = {
-		threat > 0.40
+		has_war_support > 0.40
 		}
 		ai_will_do = {
 		base = 150
