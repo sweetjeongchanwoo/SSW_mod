@@ -1,6 +1,6 @@
 ideas = {
     country = {
-          Review_of_the_French_economy = {
+        Review_of_the_French_economy = {
 
             allowed = {always = no}
 
@@ -8,64 +8,33 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = spr_relocate_the_gold_reserves
+            picture = Spr_seize_the_gold_reserves.png
 
             modifier = {consumer_goods_factor = -0.03}
         }
-
-        Religious_government = {
-
-          allowed = {always = no}
-
-          removal_cost = -1
-
-          allowed_civil_war = {always = yes}
-
-          picture = spr_relocate_the_gold_reserves
-
-          modifier = {production_factory_efficiency_gain_factor = 0.05
-          political_power_gain = 0.2 }
-      }
-
-          Petan_Law = {
-
+        Petain_Law = {
             allowed = {always = no}
 
             removal_cost = -1
 
             allowed_civil_war = {always = yes}
 
-            picture = triumphant_will
+            picture = Fra_undividable.png
 
             modifier = {production_speed_buildings_factor = 0.1}
         }
-
-        Unstable_regime = {
-
-          allowed = {always = no}
-
-          removal_cost = -1
-
-         allowed_civil_war = {always = yes}
-
-         picture = anti_soviet_pact
-
-         modifier = {political_power_cost = -0.25}
-    }
-          Keep_going = {
-
+        Economic_revolution = {
             allowed = {always = no}
 
             removal_cost = -1
 
-           allowed_civil_war = {always = yes}
+            allowed_civil_war = {always = yes}
 
-           picture = FRA_motorized_focus
+            picture = Generic_production_bonus.png
 
-           modifier = {army_speed_factor = 0.2}
-      }
-
-          Repression = {
+            modifier = {production_speed_buildings_factor = -0.05}
+        }
+        Reichsbank = {
 
             allowed = {always = no}
 
@@ -73,12 +42,11 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = FRA_scw_intervention_republicans_focus.dds
+            picture = Generic_goods_red_bonus.png
 
-            modifier = {production_speed_buildings_factor = 0.25}
+            modifier = {consumer_goods_factor = 0.02}
         }
-
-          Economic_revolution = {
+        France_Nazism = {
 
             allowed = {always = no}
 
@@ -86,11 +54,47 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = generic_production_bonus
+            picture = Generic_fascism_drift_bonus.png
 
-            modifier = {production_speed_buildings_factor = 0.05}
+            modifier = {enemy_partisan_effect = -0.10}
         }
-        Seeking_freedom = {
+        dictator = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Triumphant_will.png
+
+            modifier = {political_power_gain = -0.25}
+        }
+        Integrated_French_political_party = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Idea_generic_deal_with_the_devil.png
+
+            modifier = {stability_weekly = 0.01}
+        }
+        Saint_of_the_Salvation = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = Victors_of_the_Great_War.png
+
+            modifier = {planning_speed = 0.20}
+        }
+        Beyond_the_Atlantic = {
 
           allowed = {always = no}
 
@@ -98,13 +102,11 @@ ideas = {
 
           allowed_civil_war = {always = yes}
 
-          picture = generic_intel_bonus
+          picture = Generic_navy_bonus.png
 
-          modifier = {army_attack_factor = 0.25}
-      }
-
-
-          Reichsbank = {
+          modifier = {industrial_capacity_dockyard = 0.20}
+        }
+        Atlantic_wall = {
 
             allowed = {always = no}
 
@@ -112,137 +114,32 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = Generic_goods_red_bonus
+            picture = Fortification_Focus.png
 
-            modifier = {consumer_goods_factor = -0.02}
+            modifier = {production_speed_coastal_bunker_factor = 0.20}
+        }
+        Slave_to_germany = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = anti_soviet_pact.dds
+
+            modifier = {
+            production_speed_arms_factory_factor = 0.1
+            planning_speed = 0.25}
         }
 
-        French_Peoples_Front = {
+        French_mediterranean_fleet = {
 
             allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = idea_saf_ossewabrandwag_fascism.dds
-
-            modifier = {army_core_attack_factor = 0.1}
-        }
-
-          France_nazism = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Generic_fascism_drift_bonus
-
-            modifier = {political_power_factor = 0.10}
-        }
-          Integrated_french_government = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = idea_generic_deal_with_the_devil.dds
-
-            modifier = {political_power_cost = -0.10}
-        }
-
-          dictator = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Triumphant_will
-
-            modifier = {political_power_gain = 0.25}
-        }
-
-          Integrated_French_political_party = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Idea_generic_deal_with_the_devil.dds
-
-            modifier = {stability_weekly = 0.01}
-        }
-
-
-          Saint_of_the_Salvation = {
-
-            allowed = {always = no}
-
-            removal_cost = -1
-
-            allowed_civil_war = {always = yes}
-
-            picture = Victors_of_the_Great_War.dds
-
-            modifier = {planning_speed = 0.20}
-          }
-
-            Beyond_the_Atlantic = {
-
-              allowed = {always = no}
 
               removal_cost = -1
 
-              allowed_civil_war = {always = yes}
-
-              picture = Generic_navy_bonus.dds
-
-              modifier = {industrial_capacity_dockyard = 0.20}
-            }
-
-
-              Atlantic_wall = {
-
-                allowed = {always = no}
-
-                removal_cost = -1
-
-                allowed_civil_war = {always = yes}
-
-                picture = Fortification_Focus.dds
-
-                modifier = {production_speed_coastal_bunker_factor = 0.20}
-              }
-
-              Slave_to_germany = {
-
-                allowed = {always = no}
-
-                removal_cost = -1
-
-                allowed_civil_war = {always = yes}
-
-                picture = anti_soviet_pact.dds
-
-                modifier = {production_speed_arms_factory_factor = 0.1
-                planning_speed = 0.25}
-                }
-
-              French_mediterranean_fleet = {
-
-              allowed = {always = no}
-
-              removal_cost = -1
-
-              allowed_civil_war = {always = yes}
+            allowed_civil_war = {always = yes}
 
               picture = idea_generic_coastal_defense_ships.dds
 
@@ -330,7 +227,7 @@ ideas = {
 
             }
           
-              Technical_agreement = {
+            Technical_agreement = {
 
              allowed = {always = no}
 
@@ -341,6 +238,237 @@ ideas = {
               picture = Generic_constitutional_guarantee.dds
 
              modifier = {research_speed_factor = 0.04}
+        　　}
+
+            Defeated_army = {
+        
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_saf_history_of_segregation_2
+
+            modifier = {
+                war_support_factor = -0.4
+                army_org_Factor = -0.2
+                training_time_factor = -0.3
+                conscription = -0.7
+                surrender_limit = -0.5
+            }
         }
-    }
+        Defeated_army_2 = {
+        
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_saf_history_of_segregation_2
+
+            modifier = {
+                army_org_Factor = -0.2
+                training_time_factor = -0.3
+                conscription = -0.7
+                surrender_limit = -0.5
+            }
+        }
+        Defeated_army_3 = {
+        
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_saf_history_of_segregation_2
+
+            modifier = {
+                army_org_Factor = -0.2
+                conscription = -0.7
+                surrender_limit = -0.5
+            }
+        }
+        Defeated_army_4 = {
+        
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_saf_history_of_segregation_2
+
+            modifier = {
+                conscription = -0.7
+                surrender_limit = -0.5
+            }
+        }
+        Defeated_army_5 = {
+        
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_saf_history_of_segregation_2
+
+            modifier = {
+                surrender_limit = -0.5
+            }
+        }
+        Confusion_of_the_General_Staff = {
+            
+            allowed = {always = no}
+            
+            removal_cost = -1
+
+            picture = idea_chi_incompetent_officers
+
+            modifier = {
+                max_planning = -0.75
+                land_doctrine = -0.5
+            }
+        }
+        Confusion_of_the_General_Staff_2 = {
+            
+            allowed = {always = no}
+            
+            removal_cost = -1
+
+            picture = idea_chi_incompetent_officers
+
+            modifier = {
+                land_doctrine = -0.5
+            }
+        }
+        Opposition_Purge = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_purge
+
+            modifier = {
+                stability_factor = -0.2
+            }
+        } 
+        Democratic_Republic_under_themilitary_junta = {
+
+            allowed = {always = no}
+            
+            removal_cost = -1
+
+            picture = generic_manpower_bonus
+
+            modifier = {
+                political_power_gain = -0.5
+                stability_factor = -0.3
+            }
+        }
+        Restoration_of_the_old_republican_constitution = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_constitutional_guarantee
+
+            modifier = {
+                stability_factor = 0.1
+                political_power_gain = 0.5
+            }
+        }
+        Republican_rebellion = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_chi_war_of_resistance3
+
+            modifier = {
+
+            }
+        }
+        Parliamentary_resurrection = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = generic_democratic_drift_bonus
+
+            modifier = {
+                stability_factor = 0.2
+            }
+        }
+        Emphasis_on_thermal_power = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_artillery_regiments
+
+            modifier = {
+                army_artillery_attack_factor = 0.1
+                army_artillery_defence_factor = 0.1
+                artillery_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+                anti_air_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+                anti_tank_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+            }           
+        }
+        Focus_on_armor = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_acquire_tanks
+
+            modifier = {
+                army_armor_attack_factor = 0.1
+                army_armor_defence_factor = 0.1
+                armor = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+
+            }
+        }
+        Focus_on_infantry = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_war_preparation
+
+            modifier = {
+                army_infantry_attack_factor = 0.1
+                army_infantry_defence_factor = 0.1	
+                infantry_equipment = {
+                    build_cost_ic = -0.2
+					instant = yes
+                }
+            }
+        }
+        New_French_Army = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            picture = idea_generic_reserve_divisions
+
+            modifier = {
+                army_org_Factor = 0.2
+                training_time_factor = 0.3
+                conscription = 0.02
+            }
+        }
 }
