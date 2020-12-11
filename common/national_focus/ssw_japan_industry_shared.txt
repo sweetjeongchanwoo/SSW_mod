@@ -401,7 +401,6 @@ shared_focus = {
 				remove_idea = JAP_japanese_archipelago_remodeling_plan_idea
 				add_idea = JAP_complete_remodeling_plan_idea
 			}
-			remove_ideas = SSW_JAP_Post_war_recession
 		}
 		x = 0
 		y = 6

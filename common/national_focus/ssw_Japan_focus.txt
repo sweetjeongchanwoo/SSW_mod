@@ -9,6 +9,8 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 620 y = 1700 }
 	default = no
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
 	focus = {
 		id = JAP_the_third_greater_east_asia_conference
 		icon = GFX_focus_JAP_the_third_greater_east_asia_conference
@@ -23,8 +25,8 @@ focus_tree = {
 					
 				}
 			available = {
-
-}
+				
+			}
 			bypass = {
 					has_government = communism
 				}
@@ -277,7 +279,7 @@ focus_tree = {
 			factor = 5
 		}
 		available = {
-
+			has_completed_focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
 		bypass = {
 			not = {

@@ -154,6 +154,7 @@ country_event = {#芳澤謙吉の暗殺
 				days = 1
 			}
 		}
+		set_country_flag = ssw_JAP_not_die_Kenkichi_Yoshizawa
 		create_country_leader = {
     		name = "Rinzi Naikaku"
     		desc = ""
@@ -671,7 +672,6 @@ country_event = {#第二次軍縮法案の提出
 
 	option = {#議会は踊る、されど進まず
 		name = SSW_JAP.22.a
-		add_political_power = -10
 	}
 }
 
@@ -697,7 +697,7 @@ country_event = {#陸軍が反対
 
 	option = {#軍人が政治に口出しするな
 		name = SSW_JAP.23.a
-		add_political_power = -10
+		add_political_power = -5
 	}
 }
 
@@ -723,7 +723,7 @@ country_event = {#賛成が過半数を割る
 
 	option = {#なんてことだ
 		name = SSW_JAP.24.a
-		add_political_power = -10
+		add_political_power = -5
 	}
 }
 
@@ -749,7 +749,7 @@ country_event = {#畑俊六の演説
 
 	option = {#余計なことを
 		name = SSW_JAP.25.a
-		add_political_power = -10
+		add_political_power = -5
 	}
 }
 
@@ -854,7 +854,7 @@ country_event = {#陛下が憤慨
 
 	option = {#逆賊を取り締まれ
 		name = SSW_JAP.28.a
-		add_political_power = -10
+		stability_factor = -0.05
 		country_event = {
 			id = SSW_JAP.8
 			days = 1
@@ -1594,5 +1594,21 @@ country_event = {#民兵の徴募
 				}
 			}
 		}
+	}
+}
+
+country_event = {#
+	id = SSW_JAP.62
+	title = SSW_JAP.62.t
+	desc = SSW_JAP.62.d
+	picture = GFX_report_event_gre_city_devastated
+	is_triggered_only = yes
+
+	option = {#
+		name = SSW_JAP.62.a
+
+	}
+	option = {#
+		name = SSW_JAP.62.b
 	}
 }

@@ -1885,7 +1885,9 @@ ideas = {
 				}
 				NOT = {
 					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_country_flag = ssw_JAP_not_die_Kenkichi_Yoshizawa
 				}
+				
 			}
 				
 			allowed = {
