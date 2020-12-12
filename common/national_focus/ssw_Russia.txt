@@ -53,17 +53,17 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism
 		cost = 5
 		ai_will_do = { factor = 0 }
-		x = -4
+		x = -6
 		y = 0
 		available = {
 			hidden_trigger = { always = no }
 		}
-		select_effect = {
-			add_stability = 0.05
+		allow_branch = {
+			always = yes
 		}
+		select_effect = {}
 		completion_reward = {
 			custom_effect_tooltip = ssw_unlock_focuses_tt
-			add_war_support = 0.05
 			add_popularity = {
 				ideology = anarchism
 				popularity = 0.1
@@ -82,12 +82,12 @@ focus_tree = {
 		id = RUS_kryuchkov_politics
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = RUS_rise_of_the_communist_republic }
-		mutually_exclusive = { focus = RUS_furtseva_politics }
+		mutually_exclusive = { focus = RUS_furtseva_politics focus = RUS_anarchist_politics }
 		available = {
 			has_country_leader = { ruling_only = yes name = "Vladimir Kryuchkov" }
 			hidden_trigger = { has_country_flag = communism_1 }
 		}
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = RUS_rise_of_the_communist_republic
 		cost = 10
@@ -271,15 +271,1102 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = RUS_anarchist_politics
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		prerequisite = { focus = RUS_rise_of_the_communist_republic }
+		mutually_exclusive = {
+			focus = RUS_kryuchkov_politics
+			focus = RUS_furtseva_politics
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		x = -4
+		y = 1
+		relative_position_id = RUS_rise_of_the_communist_republic
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = ssw_unlock_focuses_tt
+			add_stability = -0.05
+			add_war_support = 0.15
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.15
+			}
+			if = {
+				limit = { NOT = { has_idea = RUS_collectivized_society_for_ssw } }
+				add_ideas = RUS_collectivized_society_for_ssw
+			}
+			if = {
+				limit = { NOT = { has_idea = closed_economy } }
+				add_ideas = closed_economy
+			}
+			add_ideas = {
+				RUS_anarchist_society_1
+				RUS_disbanded_army_1
+			}
+		}
+	}
+	focus = {
+		id = RUS_the_maximum_concession
+		prerequisite = { focus = RUS_anarchist_politics }
+		icon =  GFX_focus_generic_concessions
+		x = -1
+		y = 1
+		relative_position_id = RUS_anarchist_politics
+		cost = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = RUS_the_maximum_concession
+			set_global_flag = russia_return_moscow
+		}
+	}
+	focus = {
+		id = RUS_appropriate_the_means_of_production
+		prerequisite = { focus = RUS_the_maximum_concession }
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_maximum_concession
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_autogestion
+		prerequisite = { focus = RUS_appropriate_the_means_of_production }
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		relative_position_id = RUS_appropriate_the_means_of_production
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_collectivization_and_workers_control
+		prerequisite = { focus = RUS_autogestion }
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+		relative_position_id = RUS_autogestion
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_maintaining_the_fire
+		prerequisite = { focus = RUS_anarchist_politics }
+		icon = GFX_goal_generic_propaganda
+		x = 1
+		y = 1
+		relative_position_id = RUS_anarchist_politics
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = RUS_anarchist_public_transport
+		}
+	}
+	focus = {
+		id = RUS_agrarian_collectivization
+		prerequisite = { focus = RUS_maintaining_the_fire }
+		icon = GFX_goal_generic_national_unity
+		x = 0
+		y = 1
+		relative_position_id = RUS_maintaining_the_fire
+		cost = 5
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_arm_the_people
+		prerequisite = { focus = RUS_agrarian_collectivization }
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+		relative_position_id = RUS_agrarian_collectivization
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_mujeres_libres
+		prerequisite = { focus = RUS_arm_the_people }
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = RUS_arm_the_people
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = RUS_anarchist_society_1
+					NOT = { has_country_flag = RUS_anachism_flag }
+				}
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_1
+					add_idea = RUS_anarchist_society_2
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_2 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_2
+					add_idea = RUS_anarchist_society_3
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_3 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_3
+					add_idea = RUS_anarchist_society_4
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_4 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_4
+					add_idea = RUS_anarchist_society_5
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_5 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_5
+					add_idea = RUS_anarchist_society_6
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_6 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_6
+					add_idea = RUS_anarchist_society_7
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_7 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_7
+					add_idea = RUS_anarchist_society_8
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_8 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_8
+					add_idea = RUS_anarchist_society_9
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_9 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_9
+					add_idea = RUS_anarchist_society_10
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_10 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_10
+					add_idea = RUS_anarchist_society_11
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_11 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_11
+					add_idea = RUS_anarchist_society_12
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_12 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_12
+					add_idea = RUS_anarchist_society_13
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_13 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_13
+					add_idea = RUS_anarchist_society_14
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_14 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_14
+					add_idea = RUS_anarchist_society_15
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_15 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_15
+					add_idea = RUS_anarchist_society_16
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_16 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_16
+					add_idea = RUS_anarchist_society_17
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_17 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_17
+					add_idea = RUS_anarchist_society_18
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_18 NOT = { has_country_flag = RUS_anachism_flag } }
+				swap_ideas = {
+					remove_idea = RUS_anarchist_society_18
+					add_idea = RUS_anarchist_society_19
+				}
+				set_country_flag = { flag = RUS_anachism_flag value = 1 days = 2 }
+			}
+			if = {
+				limit = { has_idea = RUS_anarchist_society_19 }
+				add_war_support = 0.05
+			}
+		}
+	}
+	focus = {
+		id = RUS_global_defense_council
+		prerequisite = { focus = RUS_mujeres_libres }
+		prerequisite = { focus = RUS_collectivization_and_workers_control }
+		icon = GFX_goal_generic_alliance
+		x = -1
+		y = 1
+		relative_position_id = RUS_mujeres_libres
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = SPR_global_defense_council_tt_2
+		}
+	}
+	focus = {
+		id = RUS_defense_council
+		prerequisite = {
+			focus = RUS_global_defense_council
+			focus = RUS_right_war
+			focus = RUS_kill_japanese
+		}
+		icon = GFX_goal_generic_defence
+		x = 2
+		y = 1
+		relative_position_id = RUS_global_defense_council
+		cost = 10
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { has_idea = rus_debahu2 }
+				remove_ideas = rus_debahu2
+			}
+			add_ideas = RUS_defense_council_idea
+		}
+	}
+	focus = {
 		id = RUS_furtseva_politics
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = RUS_rise_of_the_communist_republic }
-		mutually_exclusive = { focus = RUS_kryuchkov_politics }
+		mutually_exclusive = { focus = RUS_kryuchkov_politics focus = RUS_anarchist_politics }
 		available = {
 			has_country_leader = { ruling_only = yes name = "Yekaterina Furtseva" }
 			hidden_trigger = { NOT = { has_country_flag = communism_1 } }
 		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = RUS_rise_of_the_communist_republic
 		cost = 10
@@ -557,11 +1644,23 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			if = {
-				limit = { has_idea = rus_debahu1 }
+				limit = {
+					has_idea = rus_debahu1
+					NOT = { has_idea = RUS_people_economy_idea }
+				}
 				swap_ideas = {
 					remove_idea = rus_debahu1
 					add_idea = RUS_people_economy_idea
 				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = rus_debahu1
+						has_idea = RUS_people_economy_idea
+					}
+				}
+				add_ideas = RUS_people_economy_idea
 			}
 		}
 	}
@@ -628,11 +1727,23 @@ focus_tree = {
 				annex_country = { target = CCS transfer_troops = yes }
 			}
 			if = {
-				limit = { has_idea = rus_debahu2 }
+				limit = {
+					has_idea = rus_debahu2
+					NOT = { has_idea = RUS_soviet_heritage }
+				}
 				swap_ideas = {
 					remove_idea = rus_debahu2
 					add_idea = RUS_soviet_heritage
 				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = rus_debahu2
+						has_idea = RUS_soviet_heritage
+					}
+				}
+				add_ideas = RUS_soviet_heritage
 			}
 			if = {
 				limit = { has_completed_focus = RUS_approaching_japan }
@@ -656,7 +1767,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = ssw_rus_communism.1009 hours = 6 }
 				drop_cosmetic_tag = yes
-				set_cosmetic_tag = RUS_SOV
+				set_cosmetic_tag = SOV
 				if = {
 					limit = { controls_state = 219 }
 					set_capital = 219
@@ -747,6 +1858,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = RUS_only_one_russia
 					has_completed_focus = RUS_revive_soviet
+					has_completed_focus = RUS_memory_of_the_empire
 				}
 				controls_state = 12
 				controls_state = 137
@@ -895,11 +2007,9 @@ focus_tree = {
 			focus = RUS_expansion_of_munitions_industry
 		}
 		x = 3
-		y = 4	
+		y = 4
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_01
-			}
+			add_ideas = rus_ideas_01
 		}
 	}
 	focus = {
@@ -956,9 +2066,7 @@ focus_tree = {
 		x = 7
 		y = 3
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_02
-			}
+			add_ideas = rus_ideas_02
 		}
 	}
 	focus = {
@@ -993,7 +2101,7 @@ focus_tree = {
 		x = 11
 		y = 3
 		completion_reward = {
-			RUS = { add_ideas = rus_ideas_03 }
+			add_ideas = rus_ideas_03
 		}
 	}
 	focus = {
@@ -1010,9 +2118,7 @@ focus_tree = {
 		x = 9
 		y = 4
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_04
-			}
+			add_ideas = rus_ideas_04
 		}
 	}
 	focus = {
@@ -1030,10 +2136,19 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			add_ideas = rus_ideas_05
-			remove_ideas = {
-				rus_debahu1
-				rus_ideas_01
-				rus_ideas_04
+			if = {
+				limit = { has_idea = rus_debahu1 }
+				remove_ideas = rus_debahu1
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_idea = rus_ideas_01 }
+					remove_ideas = rus_ideas_01
+				}
+				if = {
+					limit = { has_idea = rus_ideas_04 }
+					remove_ideas = rus_ideas_04
+				}
 			}
 		}
 	}
@@ -2961,9 +4076,8 @@ focus_tree = {
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = RUS_i_no_longer_need_help
-		}
+		prerequisite = { focus = RUS_i_no_longer_need_help }
+		bypass = { has_completed_focus = RUS_military_dictatorship }
 		x = 52
 		y = 11
 		completion_reward = {
@@ -3049,9 +4163,7 @@ focus_tree = {
 		x = 48
 		y = 14
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_35
-			}
+			add_ideas = rus_ideas_35
 		}
 	}
 	focus = {
@@ -3065,10 +4177,38 @@ focus_tree = {
 		x = 52
 		y = 13
 		completion_reward = {
-			RUS = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+			}
+			hidden_effect = {
 				create_wargoal = {
 					type = annex_everything
-					target = ENG
+					target = FIN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = KAR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = KAZ
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = TAJ
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = TMS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = UZB
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = KYR
 				}
 			}
 		}
@@ -3162,6 +4302,831 @@ focus_tree = {
 				uses = 4
 				category = rocketry
 			}
+		}
+	}
+	focus = {
+		id = RUS_the_great_coup
+		icon = GFX_focus_RUS_vlasovist_flag
+		allow_branch = {
+			always = yes
+		}
+		x = 26
+		y = 11
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = ssw_unlock_focuses_tt
+			set_global_flag = russia_return_moscow
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.25
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MOS
+						is_core_of = UKR
+						is_core_of = CCS
+						is_core_of = BAL
+						is_core_of = SOV
+					}
+					NOT = { is_core_of = RUS }
+				}
+				add_core_of = RUS
+			}
+		}
+	}
+	focus = {
+		id = RUS_rise_of_the_empire
+		icon = GFX_focus_RUS_monarchy
+		prerequisite = { focus = RUS_the_great_coup }
+		mutually_exclusive = { focus = RUS_the_dictatorship }
+		x = 6
+		y = 1
+		relative_position_id = RUS_the_great_coup
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = RUS_the_dictatorship
+		icon = GFX_focus_RUS_army
+		prerequisite = { focus = RUS_the_great_coup }
+		mutually_exclusive = { focus = RUS_rise_of_the_empire }
+		x = -6
+		y = 1
+		relative_position_id = RUS_the_great_coup
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = RUS_military_dictatorship
+		icon = GFX_focus_RUS_white_legacy
+		prerequisite = { focus = RUS_the_dictatorship }
+		mutually_exclusive = {
+			focus = RUS_reinforcement_nazism
+			focus = RUS_reinforcement_nationalism
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_dictatorship
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_government = authority_despotism } }
+				set_politics = { ruling_party = authority_despotism elections_allowed = no }
+			}
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = RUS_russian_cooperation
+		prerequisite = { focus = RUS_military_dictatorship }
+		icon = GFX_goal_generic_major_alliance
+		x = -1
+		y = 1
+		relative_position_id = RUS_military_dictatorship
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			create_faction = russian_cooperation
+			if = {
+				limit = {
+					PER = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				PER = { country_event = { id = ssw_faction.1 } }
+			}
+			if = {
+				limit = {
+					AFG = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				AFG = { country_event = { id = ssw_faction.1 } }
+			}
+			if = {
+				limit = {
+					IRQ = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				IRQ = { country_event = { id = ssw_faction.1 } }
+			}
+			if = {
+				limit = {
+					TUR = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				TUR = { country_event = { id = ssw_faction.1 } }
+			}
+			if = {
+				limit = {
+					SIK = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				SIK = { country_event = { id = ssw_faction.1 } }
+			}
+		}
+	}
+	focus = {
+		id = RUS_delete_germany
+		prerequisite = {
+			focus = RUS_russian_cooperation
+			focus = RUS_military_alliance
+		}
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 0
+		y = 2
+		relative_position_id = RUS_russian_cooperation
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOS
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CCS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BAL
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LTV
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HLH
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HGR
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_delete_finland
+		prerequisite = { focus = RUS_military_dictatorship }
+		icon = GFX_focus_RUS_heavy_armour
+		x = 1
+		y = 1
+		relative_position_id = RUS_military_dictatorship
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = FIN
+					NOT = { is_core_of = RUS }
+				}
+				add_core_of = RUS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
+		}
+	}
+	focus = {
+		id = RUS_delete_japan
+		prerequisite = {
+			focus = RUS_delete_finland
+			focus = RUS_military_alliance
+		}
+		icon = GFX_focus_por_remember_olivenca
+		x = 0
+		y = 2
+		relative_position_id = RUS_delete_finland
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ARC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MEN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+	}
+	focus = {
+		id = RUS_military_alliance
+		prerequisite = {
+			focus = RUS_russian_cooperation
+			focus = RUS_delete_finland
+		}
+		available = {
+			is_faction_leader = yes
+		}
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		relative_position_id = RUS_delete_finland
+		cost = 10
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					SPR = {
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = { has_war_with = RUS }
+					}
+				}
+				SPR = { country_event = { id = ssw_faction.1 } }
+				else = {
+					diplomatic_relation = { country = SPR relation = non_aggression_pact }
+					add_political_power = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_reinforcement_nazism
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = RUS_the_dictatorship }
+		mutually_exclusive = {
+			focus = RUS_military_dictatorship
+			focus = RUS_reinforcement_nationalism
+		}
+		x = 2
+		y = 1
+		relative_position_id = RUS_the_dictatorship
+		cost = 1
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_government = national_socialism } }
+				set_politics = { ruling_party = national_socialism elections_allowed = no }
+			}
+			if = {
+				limit = { has_idea = rus_ideas_38 }
+				remove_ideas = rus_ideas_38
+			}
+			if = {
+				limit = { has_idea = RUS_andrey_vlasov }
+				swap_ideas = {
+					remove_idea = RUS_andrey_vlasov
+					add_idea = RUS_konstantin_rodzaevsky_political_leader
+				}
+			}
+			if = {
+				limit = { has_idea = ssw_military_dictatorship }
+				swap_ideas = {
+					remove_idea = ssw_military_dictatorship
+					add_idea = ssw_one_party_dictatorship
+				}
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = RUS_in_exchange_for_subordination
+		prerequisite = { focus = RUS_reinforcement_nazism }
+		icon = GFX_goal_generic_propaganda
+		available = { country_exists = GER }
+		bypass = { NOT = { country_exists = GER } }
+		x = 1
+		y = 1
+		relative_position_id = RUS_reinforcement_nazism
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			GER = { country_event = { id = ssw_rus_communism.1010 hours = 6 } }
+		}
+	}
+	focus = {
+		id = RUS_recapture_the_east
+		prerequisite = { focus = RUS_in_exchange_for_subordination }
+		icon = GFX_focus_attack_japan
+		x = 0
+		y = 1
+		relative_position_id = RUS_in_exchange_for_subordination
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ARC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SIB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MAN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MEN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+	}
+	focus = {
+		id = RUS_to_the_south
+		prerequisite = { focus = RUS_recapture_the_east }
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 0
+		y = 1
+		relative_position_id = RUS_recapture_the_east
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = KAR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAZ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TAJ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TMS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UZB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KYR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AFG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SAU
+			}
+		}
+	}
+	focus = {
+		id = RUS_reinforcement_nationalism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_the_dictatorship }
+		mutually_exclusive = {
+			focus = RUS_military_dictatorship
+			focus = RUS_reinforcement_nazism
+		}
+		x = -2
+		y = 1
+		relative_position_id = RUS_the_dictatorship
+		cost = 10
+		ai_will_do = { factor = 9 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_government = national_fascism } }
+				set_politics = { ruling_party = national_fascism elections_allowed = no }
+			}
+			if = {
+				limit = { has_idea = rus_ideas_38 }
+				remove_ideas = rus_ideas_38
+			}
+			if = {
+				limit = { has_idea = RUS_andrey_vlasov }
+				swap_ideas = {
+					remove_idea = RUS_andrey_vlasov
+					add_idea = RUS_anastasy_vonsiatsky
+				}
+			}
+			if = {
+				limit = { has_idea = ssw_military_dictatorship }
+				swap_ideas = {
+					remove_idea = ssw_military_dictatorship
+					add_idea = ssw_one_party_dictatorship
+				}
+			}
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = RUS_pure_fascism_alliance
+		prerequisite = { focus = RUS_reinforcement_nationalism }
+		icon = GFX_focus_befriend_italy
+		available = {
+			country_exists = ITA
+			ITA = {
+				is_faction_leader = yes
+				has_opinion = { target = ROOT value > 49 }
+			}
+		}
+		bypass = {
+			OR = {
+				is_subject_of = ITA
+				is_in_faction_with = ITA
+				ITA = { is_faction_leader = no }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_reinforcement_nationalism
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			ITA = { country_event = { id = ssw_faction.4 } }
+		}
+	}
+	focus = {
+		id = RUS_the_heavenly_death
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = RUS_pure_fascism_alliance }
+		x = 0
+		y = 1
+		relative_position_id = RUS_pure_fascism_alliance
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOS
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CCS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BAL
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LTV
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HLH
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HGR
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_the_russian_miracle
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = RUS_the_heavenly_death }
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_heavenly_death
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = {
+				limit = { is_owned_and_controlled_by = RUS }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_memory_of_the_empire
+		icon = GFX_focus_RUS_flag
+		prerequisite = {
+			focus = RUS_the_russian_miracle
+			focus = RUS_delete_germany
+			focus = RUS_to_the_south
+			focus = RUS_delete_japan
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_delete_germany
+		cost = 5
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = rus_ideas_39
+		}
+	}
+	focus = {
+		id = RUS_national_style
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus = RUS_the_dictatorship
+			focus = RUS_rise_of_the_empire
+		}
+		x = 6
+		y = 1
+		relative_position_id = RUS_the_dictatorship
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = {
+				rus_ideas_06
+				rus_ideas_11
+				rus_ideas_12
+				extensive_conscription
+			}
+		}
+	}
+	focus = {
+		id = RUS_recovery_turkestan
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = RUS_national_style }
+		x = 1
+		y = 1
+		relative_position_id = RUS_national_style
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = KAR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KAZ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TAJ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TMS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = UZB
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KYR
+			}
+		}
+	}
+	focus = {
+		id = RUS_supporting_research_institutes
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RUS_recovery_turkestan }
+		x = 0
+		y = 1
+		relative_position_id = RUS_recovery_turkestan
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = RUS_focus_on_education_idea
+		}
+	}
+	focus = {
+		id = RUS_infrastructure_development
+		icon = GFX_focus_RUS_wine
+		prerequisite = { focus = RUS_supporting_research_institutes }
+		x = 0
+		y = 1
+		relative_position_id = RUS_supporting_research_institutes
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_recovery_finland
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = RUS_national_style }
+		x = -1
+		y = 1
+		relative_position_id = RUS_national_style
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+			}
+		}
+	}
+	focus = {
+		id = RUS_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = RUS_recovery_finland }
+		text = armor_effort
+		x = 0
+		y = 1
+		relative_position_id = RUS_recovery_finland
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				uses = 4
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = RUS_strengthening_the_wehrmacht
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = RUS_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = RUS_armor_effort
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = RUS_strengthening_the_wehrmacht_idea
+		}
+	}
+	focus = {
+		id = RUS_expansion_of_support
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = RUS_strengthening_the_wehrmacht }
+		prerequisite = { focus = RUS_infrastructure_development }
+		x = 1
+		y = 1
+		relative_position_id = RUS_strengthening_the_wehrmacht
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.25
+			}
+			add_stability = 0.05
 		}
 	}
 }
