@@ -1711,4 +1711,304 @@ SpriteType = {
         }
         legacy_lazy_load = no
 	}
+	SpriteType = {
+        name = "GFX_ITA_Balbo_Face_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_Face.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_Face.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_Face.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Balbo_nukes_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_nukes.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_nukes.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Balbo_nukes.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Flag_Burning-ger-ita_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Flag_Burning-ger-ita.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Flag_Burning-ger-ita.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Flag_Burning-ger-ita.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Genoese_family_crest_icons_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Genoese_family_crest_icons.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Genoese_family_crest_icons.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Genoese_family_crest_icons.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_oil_and_slush_fund_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_oil_and_slush_fund.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_oil_and_slush_fund.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_oil_and_slush_fund.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Rocket_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Rocket.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Rocket.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Rocket.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Roma_nukes_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Roma_nukes.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Roma_nukes.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Roma_nukes.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Savoie_family_crest_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITA_Savoie_family_crest.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Savoie_family_crest.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITA_Savoie_family_crest.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
+	SpriteType = {
+        name = "GFX_ITA_Italian-Gernan_shine"
+        texturefile = "gfx/interface/goals/ITA/SSW_ITAItalian-Gernan.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITAItalian-Gernan.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+	animation = {
+            animationmaskfile = "gfx/interface/goals/ITA/SSW_ITAItalian-Gernan.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = 90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+	}
 }
