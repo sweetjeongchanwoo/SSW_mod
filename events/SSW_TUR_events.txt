@@ -1,4 +1,7 @@
 add_namespace = SSW_TUR
+#上のもので、タグ?のようなものを設定し、.1・.1.tなどと記述し、(例SSW_TUR.1.t)として、イベントの情報をまとめましょう。
+#数字の後に来るtやd,a,b,cはそれぞれt=タイトル、d=内容、a.b.c=各選択肢の文になっています
+#localisationファイルにて、SSW_TUR.1.t:0"トルコについて"のように記述して日本語化させましょう
 country_event = {
 	id = SSW_TUR.1
 	title = SSW_TUR.1.t
@@ -30,6 +33,7 @@ country_event = {
 		complete_national_focus = TUR_elitism
 	}
 }
+#産業の現状
 country_event = {
 	id = SSW_TUR.3
 	title = SSW_TUR.3.t
@@ -44,6 +48,7 @@ country_event = {
 		name = SSW_TUR.3.a
 	}
 }
+#陸軍再建について
 country_event = {
 	id = SSW_TUR.4
 	title = SSW_TUR.4.t
@@ -58,6 +63,7 @@ country_event = {
 		name = SSW_TUR.4.a
 	}
 }
+#ドクトリンの選択
 country_event = {
 	id = SSW_TUR.5
 	title = SSW_TUR.5.t
@@ -78,9 +84,10 @@ country_event = {
 	}
 	option = {
 		name = SSW_TUR.5.c
-		complete_national_focus = TUR_mechanized_unit
+		complete_national_focus = TUR_operating_mechanized_unit
 	}
 }
+#宗教法案
 country_event = {
 	id = SSW_TUR.6
 	title = SSW_TUR.6.t
@@ -95,6 +102,7 @@ country_event = {
 		name = SSW_TUR.6.a
 	}
 }
+#労働法案
 country_event = {
 	id = SSW_TUR.7
 	title = SSW_TUR.7.t
@@ -109,6 +117,7 @@ country_event = {
 		name = SSW_TUR.7.a
 	}
 }
+#人民法案
 country_event = {
 	id = SSW_TUR.8
 	title = SSW_TUR.8.t
@@ -123,3 +132,338 @@ country_event = {
 		name = SSW_TUR.8.a
 	}
 }
+#第一次中東会議
+country_event = {
+	id = SSW_TUR.9
+	title = SSW_TUR.9.t
+	desc = SSW_TUR.9.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = SSW_TUR.9.a
+		country_event= {
+id = SSW_TUR.10
+}
+	}
+}
+#中東会議続き
+country_event = {
+	id = SSW_TUR.10
+	title = SSW_TUR.10.t
+	desc = SSW_TUR.10.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = SSW_TUR.10.a
+	}
+}
+#中東統一会議
+country_event = {
+	id = SSW_TUR.11
+	title = SSW_TUR.11.t
+	desc = SSW_TUR.11.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = SSW_TUR.11.a
+	}
+}
+#中東統一の提案シリア
+country_event = {
+	id = SSW_TUR.12
+	title = SSW_TUR.12.t
+	desc = SSW_TUR.12.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.12.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = SYR
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.12.b
+		TUR = {
+		annex_country = { target = SYR
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案イラク
+country_event = {
+	id = SSW_TUR.13
+	title = SSW_TUR.13.t
+	desc = SSW_TUR.13.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.13.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = IRQ
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.13.b
+		TUR = {
+		annex_country = { target = IRQ
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案ヨルダン
+country_event = {
+	id = SSW_TUR.14
+	title = SSW_TUR.14.t
+	desc = SSW_TUR.14.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.14.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = JOR
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.14.b
+		TUR = {
+		annex_country = { target = JOR
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案パレスチナ
+country_event = {
+	id = SSW_TUR.15
+	title = SSW_TUR.15.t
+	desc = SSW_TUR.15.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.15.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = PAL
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.15.b
+		TUR = {
+		annex_country = { target = PAL
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案イラン
+country_event = {
+	id = SSW_TUR.16
+	title = SSW_TUR.16.t
+	desc = SSW_TUR.16.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.16.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = PER
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.16.b
+		TUR = {
+		annex_country = { target = PER
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案サウジ・アラビア
+country_event = {
+	id = SSW_TUR.17
+	title = SSW_TUR.17.t
+	desc = SSW_TUR.17.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.17.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = SAU
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.17.b
+		TUR = {
+		annex_country = { target = SAU
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案アラブ首長国連邦
+country_event = {
+	id = SSW_TUR.18
+	title = SSW_TUR.18.t
+	desc = SSW_TUR.18.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.18.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = UAE
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.18.b
+		TUR = {
+		annex_country = { target = UAE
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案オマーン
+country_event = {
+	id = SSW_TUR.19
+	title = SSW_TUR.19.t
+	desc = SSW_TUR.19.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.19.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = OMA
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.19.b
+		TUR = {
+		annex_country = { target = OMA
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#中東統一の提案イエメン
+country_event = {
+	id = SSW_TUR.20
+	title = SSW_TUR.20.t
+	desc = SSW_TUR.20.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.20.a
+		TUR = {
+		create_wargoal = {
+                    type = annex_everything
+                    target = YEM
+                }
+                }
+	}
+	#統一に賛成
+	option = {
+		name = SSW_TUR.20.b
+		TUR = {
+		annex_country = { target = YEM
+		transfer_troops = yes
+		}
+		}
+	}
+}
+#憲法について
+country_event = {
+	id = SSW_TUR.21
+	title = SSW_TUR.21.t
+	desc = SSW_TUR.21.d
+	picture = GFX_Attlee_speech
+
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	#統一に反対
+	option = {
+		name = SSW_TUR.21.a
+	}
+}
+
+
