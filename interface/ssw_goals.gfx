@@ -637,5 +637,4 @@ spriteTypes = {
 		name = "GFX_ITA_Caesar"
 		texturefile = "gfx/interface/goals/ITA/ITA_Caesar.dds"
 	}
-
 }

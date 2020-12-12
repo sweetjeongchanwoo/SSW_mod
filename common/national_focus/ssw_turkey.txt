@@ -638,6 +638,9 @@ add_idea = TUR_idea_12
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas=TUR_idea_64
+		}
 	}
 	#Focus for end_of_the_economic_crisis
 	focus = {
@@ -689,6 +692,9 @@ add_idea = TUR_idea_12
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas=TUR_idea_63
+		}
 	}
 	#Focus for collaboration_with_japanese_companies
 	focus = {
@@ -710,6 +716,9 @@ add_idea = TUR_idea_12
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_62
 		}
 	}
 	#Focus for advanced_textile_industry
@@ -1041,16 +1050,20 @@ category = artillery
 			add_ideas=TUR_idea_26
 		}
 	}
-	#Focus for TEST
+	#Focus for expansion_of_the_airfield
 	focus = {
-		id = TUR_test
-		icon = GFX_goal_unknown
-		x = 16
-		y = 3
-		cost = 10
+		id = TUR_expansion_of_the_airfield
+		icon = GFX_goal_generic_build_airforce
+		x = 33
+		y = 9
+		cost = 5
 		available_if_capitulated = yes
+		prerequisite = { focus = TUR_expansion_of_the_radar_network }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_59
 		}
 	}
 	#Focus for army_reconstruction_plan
@@ -1059,7 +1072,7 @@ category = artillery
 		icon = GFX_goal_rhineland
 		x = 25
 		y = 0
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -1071,16 +1084,29 @@ country_event = {
 			}
 		}
 	}
-	#Focus for TEST2
+	#Focus for bombers_update
 	focus = {
-		id = TUR_test2
-		icon = GFX_goal_unknown
-		x = 16
-		y = 0
-		cost = 10
+		id = TUR_bombers_update
+		icon = GFX_goal_generic_air_bomber
+		x = 31
+		y = 9
+		cost = 4
 		available_if_capitulated = yes
+		prerequisite = { focus = TUR_development_of_heavy_fighter_aircraft }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5 
+uses = 1
+category = tactical_bomber 
+}
+  add_tech_bonus= {
+ bonus = 1.5 
+uses = 1
+category = cat_strategic_bomber 
+}
 		}
 	}
 	#Focus for tactical_plan
@@ -1089,7 +1115,7 @@ country_event = {
 		icon = GFX_goal_generic_territory_or_war
 		x = 25
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = { focus = TUR_army_reconstruction_plan }
 		ai_will_do = {
@@ -1249,7 +1275,7 @@ category = radar_tech
 	#Focus for draft_campaign
 	focus = {
 		id = TUR_draft_campaign
-		icon = GFX_TUR_draft_campaign-53890
+		icon = GFX_TUR_Sam
 		x = 25
 		y = 5
 		cost = 5
@@ -1624,7 +1650,7 @@ category = air_doctrine
 }
 		}
 	}
-	#Focus for creation_of the_submarine_fleet
+	#Focus for creation_of_the_submarine_fleet
 	focus = {
 		id = TUR_creation_of_the_submarine_fleet
 		icon = GFX_goal_generic_navy_submarine
@@ -1720,7 +1746,6 @@ category = radar_tech
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TUR_modernizing_the_air_force }
-		mutually_exclusive = { focus = TUR_development_of_heavy_fighter_aircraft }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1741,7 +1766,6 @@ category = light_fighter
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = TUR_modernizing_the_air_force }
-		mutually_exclusive = { focus = TUR_development_of_multi_role_fighter_aircraft }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1832,6 +1856,177 @@ category = tp_tech
   add_ideas=TUR_idea_53
 		}
 	}
+	#Focus for battle_support
+	focus = {
+		id = TUR_battle_support
+		icon = GFX_focus_usa_escort_fighters
+		x = 29
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_development_of_multi_role_fighter_aircraft 
+			focus = TUR_development_of_heavy_fighter_aircraft 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus= {
+ bonus = 1.5 
+uses = 1
+category = battlefield_support_tree
+}
+  add_tech_bonus= {
+ bonus = 1.5 
+uses = 1
+category = cas_bomber
+}
+		}
+	}
+	#Focus for bosphorus_fortress
+	focus = {
+		id = TUR_bosphorus_fortress
+		icon = GFX_focus_GRE_stage_an_incident_in_the_bosporus
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_plans_to_fortify_key_cities }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			797= {
+add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 9833
+province = 11829
+}
+}
+797 = {
+add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+province = 9833
+province = 11829
+}
+}
+add_timed_idea= { 
+idea =TUR_idea_61
+days = 100
+}
+		}
+	}
+	#Focus for plans_to_fortify_key_cities
+	focus = {
+		id = TUR_plans_to_fortify_key_cities
+		icon = GFX_goal_generic_fortify_city
+		x = 25
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_the_mighty_turkish_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_60
+		}
+	}
+	#Focus for dardanelles_fortress
+	focus = {
+		id = TUR_dardanelles_fortress
+		icon = GFX_focus_generic_coastal_fort
+		x = 26
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_plans_to_fortify_key_cities }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			341= {
+add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 849
+}
+}
+340= {
+add_building_construction = {
+    type = bunker
+    level = 3
+    instant_build = yes
+    province = 9887
+province = 6864
+}
+}
+341 = {
+add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = 849
+}
+}
+340= {
+add_building_construction = {
+    type = coastal_bunker
+    level = 3
+    instant_build = yes
+    province = 9887
+province = 6864
+}
+}
+add_timed_idea= { 
+idea =TUR_idea_61
+days = 100
+}
+		}
+	}
+	#Focus for reclaiming_the_caucasus_region
+	focus = {
+		id = TUR_reclaiming_the_caucasus_region
+		icon = GFX_goal_generic_forceful_treaty
+		x = 40
+		y = 7
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_reconquest_of_the_caucasus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim= 230
+  add_state_claim= 231 
+ add_state_claim= 229
+		}
+	}
+	#Focus for reconquest_of_the_caucasus
+	focus = {
+		id = TUR_reconquest_of_the_caucasus
+		icon = GFX_focus_TUR_misak_i_milli
+		x = 40
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_expulsion_of_orthodox_christians 
+			focus = TUR_politics_by_wushu 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 799
+		}
+	}
 	#Focus for expulsion_of_orthodox_christians
 	focus = {
 		id = TUR_expulsion_of_orthodox_christians
@@ -1844,44 +2039,11 @@ category = tp_tech
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	#Focus for first_united_middle_east_conference
-	focus = {
-		id = TUR_first_united_middle_east_conference
-		icon = GFX_focus_rom_royal_dictatorship
-		x = 52
-		y = 6
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = TUR_movement_towards_unity }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	#Focus for islamic_central_highway
-	focus = {
-		id = TUR_islamic_central_highway
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 54
-		y = 7
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = TUR_economic_union }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	#Focus for economic_union
-	focus = {
-		id = TUR_economic_union
-		icon = GFX_goal_generic_consumer_goods
-		x = 54
-		y = 6
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = TUR_movement_towards_unity }
-		ai_will_do = {
-			factor = 1
+		completion_reward = {
+			PAT ={
+set_state_owner= 341
+add_core_of= 341
+}
 		}
 	}
 	#Focus for pursuing_freedom
@@ -1967,11 +2129,6 @@ add_idea = TUR_idea_39
 			factor = 1
 		}
 		completion_reward = {
-			country_event= {
-days = 1 
-id = 
-}
-add_ideas=TUR_idea_36
 		}
 	}
 	#Focus for transition_to_dictatorship
@@ -2047,7 +2204,7 @@ add_idea =TUR_idea_38
 	#Focus for pursuing_kemalism
 	focus = {
 		id = TUR_pursuing_kemalism
-		icon = GFX_focus_TUR_the_sun_language_theory
+		icon = GFX_TUR_father_kemaru
 		x = 39
 		y = 3
 		cost = 5
@@ -2108,7 +2265,7 @@ add_idea = TUR_idea_43
 	#Focus for allowing_child_labor
 	focus = {
 		id = TUR_allowing_child_labor
-		icon = GFX_goal_unknown
+		icon = GFX_TUR_Child_Labour
 		x = 41
 		y = 3
 		cost = 5
@@ -2216,11 +2373,15 @@ add_idea = TUR_idea_44
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_stability= 0.15  
+add_ideas=TUR_idea_69
+		}
 	}
 	#Focus for call_the_ottomans_back
 	focus = {
 		id = TUR_call_the_ottomans_back
-		icon = GFX_goal_unknown
+		icon = GFX_TUR_Ottoman_empire
 		x = 46
 		y = 4
 		cost = 5
@@ -2242,21 +2403,9 @@ add_idea = TUR_idea_44
 			factor = 1
 		}
 		completion_reward = {
-			change_tag_from=
-		}
-	}
-	#Focus for national_economy_comes_first
-	focus = {
-		id = TUR_national_economy_comes_first
-		icon = GFX_goal_generic_neutrality_focus
-		x = 56
-		y = 5
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = TUR_search_of_more_freedom }
-		mutually_exclusive = { focus = TUR_movement_towards_unity }
-		ai_will_do = {
-			factor = 1
+			set_cosmetic_tag= OTT
+add_stability = 0.10
+add_war_support = 0.10
 		}
 	}
 	#Focus for movement_towards_unity
@@ -2273,7 +2422,6 @@ add_idea = TUR_idea_44
 		prerequisite = { 
 			focus = TUR_respect_for_ethnic_freedom 
 		}
-		mutually_exclusive = { focus = TUR_national_economy_comes_first }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2293,6 +2441,634 @@ add_stability= 0.05
 		prerequisite = { focus = TUR_call_the_ottomans_back }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05 
+set_political_party= { 
+ideology = social_democracy 
+popularity = -0.10
+}
+  set_political_party= { 
+ideology = social_liberalism
+popularity = -0.10
+}
+  set_political_party= { 
+ideology = social_conservatism
+popularity = -0.10
+}
+  set_political_party= { 
+ideology = authority_despotism
+popularity = 0.30
+}
+		}
+	}
+	#Focus for guardian_of_islam
+	focus = {
+		id = TUR_guardian_of_islam
+		icon = GFX_focus_hol_united_netherlands
+		x = 46
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_expulsion_of_orthodox_christians 
+		}
+		prerequisite = { 
+			focus = TUR_purge_democratic_ministers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_65
+		}
+	}
+	#Focus for acquisition_of_middle_east_concessions
+	focus = {
+		id = TUR_acquisition_of_middle_east_concessions
+		icon = GFX_focus_TUR_taking_over_defense_of_the_gulf
+		x = 43
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_expulsion_of_orthodox_christians 
+			focus = TUR_politics_by_wushu 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_threat = 8
+		}
+	}
+	#Focus for politics_by_statement
+	focus = {
+		id = TUR_politics_by_statement
+		icon = GFX_goal_generic_national_unity
+		x = 36
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_transition_to_dictatorship }
+		mutually_exclusive = { focus = TUR_politics_by_wushu }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10  
+add_war_support= 0.10  
+add_political_power= 100
+		}
+	}
+	#Focus for politics_by_wushu
+	focus = {
+		id = TUR_politics_by_wushu
+		icon = GFX_goal_generic_dangerous_deal
+		x = 38
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_transition_to_dictatorship }
+		mutually_exclusive = { focus = TUR_politics_by_statement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_70
+		}
+	}
+	#Focus for interest_in_the_east
+	focus = {
+		id = TUR_interest_in_the_east
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 42
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_acquisition_of_middle_east_concessions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim= 676 
+ add_state_claim= 419  
+add_state_claim= 421
+		}
+	}
+	#Focus for interest_in_the_south
+	focus = {
+		id = TUR_interest_in_the_south
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 44
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_acquisition_of_middle_east_concessions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim= 677
+  add_state_claim= 680 
+ add_state_claim= 554 
+ add_state_claim= 553
+		}
+	}
+	#Focus for restoration_old_territories
+	focus = {
+		id = TUR_restoration_old_territories
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 42
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_integratio_north 
+		}
+		prerequisite = { 
+			focus = TUR_reconquest_east 
+		}
+		prerequisite = { 
+			focus = TUR_reconquest_south 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = form_country_iran_iraq_syria
+			hidden_effect = {
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				553= { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+675 = { add_core_of = ROOT }
+676 = { add_core_of = ROOT }
+291 = { add_core_of = ROOT }
+656 = { add_core_of = ROOT }
+419 = { add_core_of = ROOT }
+420 = { add_core_of = ROOT }
+421 = { add_core_of = ROOT }
+417 = { add_core_of = ROOT }
+413 = { add_core_of = ROOT }
+411 = { add_core_of = ROOT }
+266 = { add_core_of = ROOT }
+418 = { add_core_of = ROOT }
+416 = { add_core_of = ROOT }
+412 = { add_core_of = ROOT }
+414 = { add_core_of = ROOT }
+410 = { add_core_of = ROOT }
+		}
+	}
+} #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
+	#Focus for thought_control
+	focus = {
+		id = TUR_thought_control
+		icon = GFX_goal_generic_propaganda
+		x = 37
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_politics_by_wushu 
+			focus = TUR_politics_by_statement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= -2341  
+add_ideas=TUR_idea_66
+		}
+	}
+	#Focus for militarist_education
+	focus = {
+		id = TUR_militarist_education
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 37
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_thought_control }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.10  
+add_ideas=TUR_idea_67
+		}
+	}
+	#Focus for first_middle_east_conference
+	focus = {
+		id = TUR_first_middle_east_conference
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 54
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_movement_towards_unity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+id =SSW_TUR.9
+}
+SYR ={
+country_event= {
+id =SSW_TUR.9
+}
+}
+IRQ = {
+country_event= {
+id =SSW_TUR.9
+}
+}
+JOR ={
+country_event= {
+id =SSW_TUR.9
+}
+}
+PAL ={
+country_event= {
+id =SSW_TUR.9
+}
+}
+PER ={
+country_event= {
+id =SSW_TUR.9
+}
+}
+SAU={
+country_event= {
+id =SSW_TUR.9
+}
+}
+UAE={
+country_event= {
+id =SSW_TUR.9
+}
+}
+OMA={
+country_event= {
+id =SSW_TUR.9
+}
+}
+YEM={
+country_event= {
+id =SSW_TUR.9
+}
+}
+		}
+	}
+	#Focus for resource_development
+	focus = {
+		id = TUR_resource_development
+		icon = GFX_goal_generic_construction2
+		x = 52
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_first_middle_east_conference }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource= { 
+type = oil 
+amount = 10
+state = 799
+}
+SAU ={
+  add_resource= { 
+type = oil 
+amount = 20
+state = 292
+}
+}
+IRQ ={
+  add_resource= { 
+type = oil 
+amount = 20
+state =291
+}
+}
+PER ={
+  add_resource= { 
+type = oil 
+amount = 20
+state =413 
+}
+}
+		}
+	}
+	#Focus for towards_integration
+	focus = {
+		id = TUR_towards_integration
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 56
+		y = 7
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_first_middle_east_conference }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	#Focus for black_gold
+	focus = {
+		id = TUR_black_gold
+		icon = GFX_goal_unknown
+		x = 52
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_resource_development }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_68
+add_resource= { 
+type = oil 
+amount = 10
+state = 799
+}
+SAU ={
+  add_resource= { 
+type = oil 
+amount = 20
+state = 292
+}
+}
+IRQ ={
+  add_resource= { 
+type = oil 
+amount = 20
+state =291
+}
+}
+PER ={
+  add_resource= { 
+type = oil 
+amount = 20
+state =413 
+}
+}
+		}
+	}
+	#Focus for to_the_peninsula
+	focus = {
+		id = TUR_to_the_peninsula
+		icon = GFX_goal_unknown
+		x = 56
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_towards_integration }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			TUR ={
+add_to_faction= SAU 
+ add_to_faction= OMA  
+add_to_faction= UAE  
+add_to_faction= YEM  
+add_to_faction=JOR
+add_to_faction=PAL
+}
+		}
+	}
+	#Focus for to_the_east
+	focus = {
+		id = TUR_to_the_east
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 58
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_towards_integration }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			TUR ={
+add_to_faction= SYR
+ add_to_faction= IRQ 
+add_to_faction=PER  
+add_to_faction= AFG  
+}
+		}
+	}
+	#Focus for ethnic_harmony
+	focus = {
+		id = TUR_ethnic_harmony
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		x = 54
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_first_middle_east_conference }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			release= KUR
+		}
+	}
+	#Focus for unity_in_the_middle_east
+	focus = {
+		id = TUR_unity_in_the_middle_east
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 56
+		y = 10
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TUR_ethnic_harmony 
+		}
+		prerequisite = { 
+			focus = TUR_to_the_east 
+		}
+		prerequisite = { 
+			focus = TUR_to_the_peninsula 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for the_idea_of_unified_nation
+	focus = {
+		id = TUR_the_idea_of_unified_nation
+		icon = GFX_focus_TUR_pivot_to_the_past
+		x = 56
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_unity_in_the_middle_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+id = SSW_TUR.11
+}
+		}
+	}
+	#Focus for achieving_unity
+	focus = {
+		id = TUR_achieving_unity
+		icon = GFX_TUR_Union_middle_east
+		x = 56
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_the_idea_of_unified_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SYR ={
+country_event= {
+id =SSW_TUR.12
+}
+}
+IRQ = {
+country_event= {
+id =SSW_TUR.13
+}
+}
+JOR ={
+country_event= {
+id =SSW_TUR.14
+}
+}
+PAL ={
+country_event= {
+id =SSW_TUR.15
+}
+}
+PER ={
+country_event= {
+id =SSW_TUR.16
+}
+}
+SAU={
+country_event= {
+id =SSW_TUR.17
+}
+}
+UAE={
+country_event= {
+id =SSW_TUR.18
+}
+}
+OMA={
+country_event= {
+id =SSW_TUR.19
+}
+}
+YEM={
+country_event= {
+id =SSW_TUR.20
+}
+}
+		}
+	}
+	#Focus for declaration_united_country
+	focus = {
+		id = TUR_declaration_united_country
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 56
+		y = 13
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_achieving_unity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_cosmetic_tag= Middle_East_Union
+		}
+	}
+	#Focus for reorganisation_janicelli
+	focus = {
+		id = TUR_reorganisation_janicelli
+		icon = GFX_focus_generic_little_entente
+		x = 46
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_guardian_of_islam }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas=TUR_idea_71
+		}
+	}
+	#Focus for integratio_north
+	focus = {
+		id = TUR_integratio_north
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 40
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_reclaiming_the_caucasus_region }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = CCS
+}
+		}
+	}
+	#Focus for reconquest_east
+	focus = {
+		id = TUR_reconquest_east
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
+		x = 42
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_interest_in_the_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = IRQ
+}
+  create_wargoal= { 
+type = annex_everything 
+target = PER
+}
+		}
+	}
+	#Focus for reconquest_south
+	focus = {
+		id = TUR_reconquest_south
+		icon = GFX_focus_TUR_support_the_golden_square
+		x = 44
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = TUR_interest_in_the_south }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SYR
+}
 		}
 	}
 #End of focuses 

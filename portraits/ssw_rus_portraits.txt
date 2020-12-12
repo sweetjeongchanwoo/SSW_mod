@@ -1,0 +1,76 @@
+RUS = {
+	army = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_3.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_4.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_land_5.dds"
+			"gfx/leaders/SOV/portrait_soviet_pdxcon_magic_winner.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_1.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_2.dds"
+			"gfx/leaders/SOV/Portrait_Soviet_Generic_navy_3.dds"
+		}
+	}
+	political = {
+		anarchism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+			}
+		}
+		progressive_communism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+			}
+		}
+		classical_communism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+			}
+		}
+		social_democracy = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+			}
+		}
+		social_liberalism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+			}
+		}
+		social_conservatism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+			}
+		}
+		authority_democracy = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
+			}
+		}
+		authority_despotism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+		national_fascism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+		national_socialism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+		corporatocracism = {
+			male = { 
+				"gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+			}
+		}
+	}
+}

@@ -23,4 +23,16 @@ spriteTypes = {
 		name = "GFX_idea_SSW_RUS_vladimir_kryuchkov"
 		textureFile = "gfx/interface/ideas/idea_minister_vladimir_kryuchkov.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_anastasy_vonsiatsky"
+		textureFile = "gfx/interface/ideas/idea_minister_anastasy_vonsiatsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_memory_of_the_empire"
+		textureFile = "gfx/interface/ideas/idea_country_memory_of_the_empire.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_strengthening_the_wehrmacht"
+		textureFile = "gfx/interface/ideas/idea_country_strengthening_the_wehrmacht.tga"
+	}
 }
