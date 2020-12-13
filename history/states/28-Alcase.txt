@@ -53,7 +53,7 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = VFR
+		add_core_of = FRA
 	}
 
 	provinces={

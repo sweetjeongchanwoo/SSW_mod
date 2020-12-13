@@ -215,7 +215,7 @@ MOR_FRA = {	#仏領モロッコ
 }
 
 TUN_FRA = {	#仏領チュニジア
-	color = rgb { 80 168 181 }
+	color = rgb { 57 113 228 }
 	color_ui = rgb { 102 51 0 }
 }
 

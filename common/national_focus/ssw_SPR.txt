@@ -587,12 +587,12 @@ focus_tree = {
 		x = 15
 		y = 6
 		bypass = {		
-			has_war_with = VFR
+			has_war_with = FRA
 		}
 		completion_reward = {
 			create_wargoal = {
 					type = annex_everything
-					target = VFR
+					target = FRA
 				}
 			}
 

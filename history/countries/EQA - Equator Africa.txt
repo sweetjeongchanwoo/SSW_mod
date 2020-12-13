@@ -1,6 +1,6 @@
 capital = 772
 oob = "EQA_1950"
-set_cosmetic_tag = EQA_VFR
+set_cosmetic_tag = EQA_FRA
 
 set_convoys = 5
 

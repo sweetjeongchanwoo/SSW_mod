@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = VFR
+			tag = FRA
 		}
 	}
 	default = no
@@ -1399,7 +1399,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = VFR_84
+		id = FRA_84
 		icon = GFX_focus_generic_cruiser2
 		cost = 5.00
 		prerequisite = {
