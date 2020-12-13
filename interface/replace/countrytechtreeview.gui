@@ -1223,21 +1223,28 @@ guiTypes = {
 			}
 
 			gridboxtype = {
-				name = "gw_artillery_tree"
+				name = "artillery1_tree"
 				position = { x = 10% y = 120 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
-				name = "1gw_artillery_tree"
+				name = "rocket_artillery_tree"
 				position = { x = 10% y = 100 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
-				name = "2gw_artillery_tree"
+				name = "antiair1_tree"
+				position = { x = 10% y = 100 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "antitank1_tree"
 				position = { x = 10% y = 100 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
