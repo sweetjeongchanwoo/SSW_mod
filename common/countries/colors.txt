@@ -1384,19 +1384,9 @@ BRN = {	#ブルネイ
 	color_ui = rgb { 245 225 20 }
 }
 
-FFR = {	#自由フランス
-	color = rgb { 100 100 255 }
-	color_ui = rgb { 100 100 255 }
-}
-
 VFR = {	#ヴィシー・フランス
 	color = rgb { 80 168 181 }
 	color_ui = rgb { 80 168 181 }
-}
-
-AFR = {	#アルジェ・フランス
-	color = rgb { 0 18 127 }
-	color_ui = rgb { 0 18 127 }
 }
 
 RIF = {	#リーフ

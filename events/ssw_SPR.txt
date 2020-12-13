@@ -14,12 +14,12 @@ country_event = {
 
     option = {
 		name = ssw_spr.1.a
-                ITA = {
-					annex_country = { 
-						target = AFR
-						transfer_troops = yes 
-					}
-				}
+#				ITA = {
+#					annex_country = { 
+#						target = AFR
+#						transfer_troops = yes 
+#					}
+#				}
 				RIF = {
 					annex_country = { 
 						target = MOR
@@ -494,12 +494,12 @@ country_event = {
 
     option = {
 		name = ssw_spr.6.a
-		ITA = {
-			annex_country = { 
-				target = AFR
-				transfer_troops = yes 
-			}
-		}
+#		ITA = {
+#			annex_country = { 
+#				target = AFR
+#				transfer_troops = yes 
+#			}
+#		}
 		RIF = {
 			annex_country = { 
 				target = MOR

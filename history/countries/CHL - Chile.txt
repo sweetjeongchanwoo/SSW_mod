@@ -24,3 +24,13 @@ set_popularities = {
 	national_fascism = 10
 	national_socialism = 10
 }
+
+create_country_leader = {
+	name = "Stalin?"
+	picture = "gfx/leaders/CHL/Portrait_Jughashvili.dds"
+	expire = "1965.1.1"
+	ideology = progressive_communism_ideology
+	traits = {
+		#
+	}
+}
