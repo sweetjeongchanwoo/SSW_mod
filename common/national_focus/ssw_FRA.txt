@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = FRA
+			tag = VFR
 		}
 	}
 	default = no
@@ -203,9 +203,6 @@ focus_tree = {
 		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_4
-		}
-		prerequisite = {
 			focus = FRA_10
 		}
 		x = 6
@@ -230,12 +227,8 @@ focus_tree = {
 		x = 6
 		y = 5
 			completion_reward = {
-					add_stability = 0.3
-					add_named_threat = {
-							name = "驚異的な胸囲"
-							Threat = 10
-						}
-				}
+			
+			}
 
 	}
 	focus = {
@@ -304,10 +297,9 @@ focus_tree = {
 		x = 12
 		y = 4
 			completion_reward = {
-					world_event = {
-							id = Marcel_Dare_seizes_power
-						}
-				}
+
+			}
+				
 
 	}
 	focus = {
@@ -877,6 +869,24 @@ focus_tree = {
 				}
 
 	}
+		focus = {
+		id = FRA_102
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_71
+		}
+		x = 42
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 2
+							category = armor
+						}
+				}
+		}
 	focus = {
 		id = FRA_77
 		icon = GFX_goal_unknown
@@ -941,13 +951,13 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 8.00
 		prerequisite = {
-			focus = FRA_76
+			focus = FRA_102
 		}
 		x = 42
 		y = 4
 			completion_reward = {
 					add_ideas = Focus_on_armor
-				}
+			}
 
 	}
 	focus = {
@@ -1067,7 +1077,7 @@ focus_tree = {
 		icon = GFX_goal_rhineland
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_71
+			focus = FRA_74
 		}
 		x = 45
 		y = 3
@@ -1399,7 +1409,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_84
+		id = VFR_84
 		icon = GFX_focus_generic_cruiser2
 		cost = 5.00
 		prerequisite = {
