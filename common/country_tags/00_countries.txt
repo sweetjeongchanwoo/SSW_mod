@@ -113,7 +113,6 @@ CAT	= "countries/Western Europe.txt"	#カタルーニャ
 COR	= "countries/Western Europe.txt"	#コルシカ
 CYP	= "countries/Western Europe.txt"	#キプロス
 DEN	= "countries/Western Europe.txt"	#デンマーク
-FFR	= "countries/Western Europe.txt"	#自由フランス
 FRA	= "countries/Western Europe.txt"	#フランス
 FSA	= "countries/Western Europe.txt"	#アメリカ連邦
 GER	= "countries/Western Europe.txt"	#ドイツ
