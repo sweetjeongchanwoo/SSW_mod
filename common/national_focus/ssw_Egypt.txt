@@ -1900,11 +1900,10 @@ target = TUN
 								create_wargoal = {
 type = puppet_wargoal_focus
 target = MOR
-						create_wargoal = {
-type = puppet_wargoal_focus
-target = AFR
-
-		}
+#		create_wargoal = {
+#			type = puppet_wargoal_focus
+#			target = AFR
+#		}
 	}
 		}
 	}

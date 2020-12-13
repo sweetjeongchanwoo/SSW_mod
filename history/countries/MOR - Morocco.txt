@@ -1,7 +1,7 @@
 ﻿1950.1.1 = {
 	capital = 461
 	oob = "MOR_1950"
-	set_cosmetic_tag = MOR_AFR
+	set_cosmetic_tag = MOR_VFR
 
 	set_convoys = 5
 
