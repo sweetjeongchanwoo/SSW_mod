@@ -1,0 +1,911 @@
+focus_tree = {
+	id = ssw_mexico_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEX
+		}
+	}
+	##### ARMY #####
+	focus = {
+		id = MEX_army_effort
+		icon = GFX_focus_MEX_army
+		x = 3
+		y = 0
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = MEX_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = MEX_army_effort }
+		bypass = { has_tech = motorised_infantry }
+		x = -2
+		y = 1
+		relative_position_id = MEX_army_effort
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+	focus = {
+		id = MEX_large_scale_battle_plan
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_motorization_effort }
+		prerequisite = { focus = MEX_army_reform }
+		relative_position_id = MEX_motorization_effort
+		mutually_exclusive = { focus = MEX_overwhelming_firepower }
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+	focus = {
+		id = MEX_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = MEX_large_scale_battle_plan }
+		x = 0
+		y = 1
+		relative_position_id = MEX_large_scale_battle_plan
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_2
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 3
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+			}
+		}
+	}
+	focus = {
+		id = MEX_army_reform
+		icon = GFX_goal_continuous_armor_production
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_army_effort }
+		relative_position_id = MEX_army_effort
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_1
+		}
+	}
+	focus = {
+		id = MEX_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = MEX_army_effort }
+		x = 2
+		y = 1
+		relative_position_id = MEX_army_effort
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = MEX_overwhelming_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		x = 0
+		y = 1
+		relative_position_id = MEX_equipment_effort
+		prerequisite = { focus = MEX_equipment_effort }
+		prerequisite = { focus = MEX_army_reform }
+		mutually_exclusive = { focus = MEX_large_scale_battle_plan }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = MEX_artillery_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = MEX_overwhelming_firepower }
+		x = 0
+		y = 1
+		relative_position_id = MEX_overwhelming_firepower
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = MEX_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = {
+			focus = MEX_overwhelming_firepower
+			focus = MEX_large_scale_battle_plan
+		}
+		x = -2
+		y = 1
+		relative_position_id = MEX_overwhelming_firepower
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 3
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = MEX_planned_strategy
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = MEX_special_forces }
+		x = 0
+		y = 1
+		relative_position_id = MEX_special_forces
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_3
+		}
+	}
+	focus = {
+		id = MEX_armored_tactics
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		prerequisite = { focus = MEX_armor_effort }
+		x = 0
+		y = 1
+		relative_position_id = MEX_armor_effort
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_4
+		}
+	}
+	focus = {
+		id = MEX_artillery_killing
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MEX_artillery_effort }
+		x = 0
+		y = 1
+		relative_position_id = MEX_artillery_effort
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_5
+		}
+	}
+	focus = {
+		id = MEX_antiaircraft_bombardment
+		icon = GFX_focus_generic_paratrooper
+		x = 1
+		y = 1
+		relative_position_id = MEX_artillery_killing
+		prerequisite = {
+			focus = MEX_artillery_killing
+			focus = MEX_armored_tactics
+			focus = MEX_planned_strategy
+		}
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = mex_ideas_6
+		}
+	}
+	focus = {
+		id = MEX_conscription_expansion
+		icon = GFX_goal_generic_dangerous_deal
+		x = -1
+		y = 1
+		relative_position_id = MEX_artillery_killing
+		prerequisite = {
+			focus = MEX_artillery_killing
+			focus = MEX_armored_tactics
+			focus = MEX_planned_strategy
+		}
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = mex_ideas_7
+		}
+	}
+	focus = {
+		id = MEX_logistics_review
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		relative_position_id = MEX_planned_strategy
+		prerequisite = {
+			focus = MEX_artillery_killing
+			focus = MEX_armored_tactics
+			focus = MEX_planned_strategy
+		}
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_8
+		}
+	}
+	focus = {
+		id = MEX_corresponding_to_the_climate
+		icon = GFX_focus_TUR_the_sun_language_theory
+		x = -1
+		y = 1
+		relative_position_id = MEX_planned_strategy
+		prerequisite = {
+			focus = MEX_artillery_killing
+			focus = MEX_armored_tactics
+			focus = MEX_planned_strategy
+		}
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_9
+		}
+	}
+	focus = {
+		id = MEX_aztec_spirit
+		icon = GFX_goal_support_fascism
+		x = -1
+		y = 1
+		relative_position_id = MEX_conscription_expansion
+		prerequisite = { focus = MEX_antiaircraft_bombardment }
+		prerequisite = { focus = MEX_conscription_expansion }
+		prerequisite = { focus = MEX_logistics_review }
+		prerequisite = { focus = MEX_corresponding_to_the_climate }
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = mex_ideas_10
+		}
+	}
+	##### NAVY #####
+	focus = {
+		id = MEX_navy
+		icon = GFX_focus_MEX_navy
+		cost = 10
+		x = 10
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = MEX_navy
+				bonus = 1
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_grand_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = { focus = MEX_navy }
+		mutually_exclusive = { focus = MEX_protect_trade }
+		x = -1
+		y = 1
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_grand_navy
+				bonus = 1
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_naval_glory
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = { focus = MEX_grand_navy }
+		x = -2
+		y = 2
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_naval_glory
+				bonus = 1
+				uses = 1
+				category = cat_fleet_in_being
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10
+		prerequisite = { focus = MEX_naval_glory }
+		mutually_exclusive = { focus = MEX_carriers }
+		x = -3
+		y = 3
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_battleships
+				bonus = 1
+				uses = 2
+				category = bb_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_battle_cruisers
+		icon = GFX_focus_generic_cruiser2
+		cost = 10
+		prerequisite = { focus = MEX_battleships }
+		x = -3
+		y = 4
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.5
+				ahead_reduction = 2
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_carriers
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		prerequisite = { focus = MEX_naval_glory }
+		mutually_exclusive = { focus = MEX_battleships }
+		x = -1
+		y = 3
+		relative_position_id = MEX_navy
+		ai_will_do = {
+			factor = 10
+			modifier = { factor = 20 has_war = yes }
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_carriers
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_naval_aircraft
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = { focus = MEX_carriers }
+		x = -1
+		y = 4
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_naval_aircraft
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_marines
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		prerequisite = {
+			focus = MEX_grand_navy
+			focus = MEX_protect_trade
+		}
+		x = 0
+		y = 2
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_marines
+				bonus = 1
+				uses = 1
+				category = marine_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_protect_trade
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		prerequisite = { focus = MEX_navy }
+		mutually_exclusive = { focus = MEX_grand_navy }
+		x = 1
+		y = 1
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_protect_trade
+				bonus = 1
+				uses = 2
+				category = cat_trade_interdiction
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_coast_guard
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10
+		prerequisite = { focus = MEX_protect_trade }
+		x = 2
+		y = 2
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_coast_guard
+				bonus = 1
+				uses = 1
+				category = cat_trade_interdiction
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_destroyers
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+		prerequisite = { focus = MEX_coast_guard }
+		mutually_exclusive = { focus = MEX_submarines }
+		x = 1
+		y = 3
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_destroyers
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_heavy_cruisers
+		icon = GFX_focus_generic_cruiser2
+		cost = 10
+		prerequisite = { focus = MEX_destroyers }
+		x = 1
+		y = 4
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_heavy_cruisers
+				bonus = 1
+				uses = 2
+				category = ca_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		prerequisite = { focus = MEX_coast_guard }
+		mutually_exclusive = { focus = MEX_destroyers }
+		x = 3
+		y = 3
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_submarines
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_light_cruisers
+		icon = GFX_focus_generic_destroyer
+		cost = 10
+		prerequisite = { focus = MEX_submarines }
+		x = 3
+		y = 4
+		relative_position_id = MEX_navy
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_light_cruisers
+				bonus = 1
+				uses = 2
+				category = cl_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	##### Air #####
+	focus = {
+		id = MEX_air
+		icon = GFX_focus_MEX_air_force
+		cost = 10
+		x = 17
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = MEX_pilot_training
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = { focus = MEX_air }
+		x = -2
+		y = 1
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = MEX_pilot_training
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_air_ports
+		icon = GFX_goal_expand_the_luftwaffe
+		cost = 10
+		prerequisite = { focus = MEX_air }
+		x = 0
+		y = 1
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			277 = {
+				if = {
+					limit = { is_owned_by = MEX }
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			480 = {
+				if = {
+					limit = { is_owned_by = MEX }
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = MEX_paratroopers
+		icon = GFX_focus_generic_paratrooper
+		cost = 10
+		prerequisite = { focus = MEX_air }
+		x = 2
+		y = 1
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_paratroopers
+				bonus = 1
+				uses = 1
+				category = para_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_air_supremecy
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = { focus = MEX_pilot_training }
+		prerequisite = { focus = MEX_air_ports }
+		prerequisite = { focus = MEX_paratroopers }
+		mutually_exclusive = { focus = MEX_army_air_support }
+		x = -1
+		y = 2
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = { focus = MEX_air_supremecy }
+		x = -1
+		y = 3
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_army_air_support
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		cost = 10
+		prerequisite = { focus = MEX_paratroopers }
+		prerequisite = { focus = MEX_air_ports }
+		prerequisite = { focus = MEX_pilot_training }
+		mutually_exclusive = { focus = MEX_air_supremecy }
+		x = 1
+		y = 2
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_army_air_support
+				bonus = 1
+				uses = 2
+				category = cat_battlefield_support
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+		prerequisite = { focus = MEX_army_air_support }
+		x = 1
+		y = 3
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_bombers
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_radar
+		icon = GFX_goal_generic_radar
+		cost = 10
+		prerequisite = {
+			focus = MEX_fighters
+			focus = MEX_bombers
+		}
+		x = -2
+		y = 4
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = MEX_radar
+				bonus = 0.5
+				uses = 2
+				category = radar_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_expand_air_ports
+		icon = GFX_goal_generic_air_production
+		cost = 10
+		prerequisite = {
+			focus = MEX_fighters
+			focus = MEX_bombers
+		}
+		x = 0
+		y = 4
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			476 = {
+				if = {
+					limit = { is_owned_by = MEX }
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			483 = {
+				if = {
+					limit = { is_owned_by = MEX }
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = MEX_air_defense
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = {
+			focus = MEX_bombers
+			focus = MEX_fighters
+		}
+		x = 2
+		y = 4
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_tech = interwar_antiair } }
+				set_technology = { interwar_antiair = 1 }
+			}
+			if = {
+				limit = { owns_state = 277 }
+				277 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = { owns_state = 478 }
+				478 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = MEX_air_defense
+				bonus = 1
+				uses = 1
+				technology = antiair1
+				technology = antiair2
+				technology = antiair3
+				technology = antiair4
+				technology = antiair5
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = MEX_rule_the_skies
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10
+		prerequisite = { focus = MEX_expand_air_ports }
+		prerequisite = { focus = MEX_air_defense }
+		prerequisite = { focus = MEX_radar }
+		x = 0
+		y = 5
+		relative_position_id = MEX_air
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				name = MEX_rule_the_skies
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+}

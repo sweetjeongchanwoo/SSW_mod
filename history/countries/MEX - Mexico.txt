@@ -1,7 +1,7 @@
 ﻿capital = 277
 oob = "MEX_1950"
 
-set_convoys = 5
+set_convoys = 15000
 
 set_technology = {
 	infantry_weapons = 1
@@ -9,25 +9,30 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	ssw_parliamentary_democracy_rightist_administration
+	MEX_manuel_gomez_morin
 }
 
 set_politics = {
-	ruling_party = social_liberalism
+	ruling_party = social_conservatism
 	last_election = "1950.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	social_liberalism = 100
+	social_conservatism = 65
+	progressive_communism = 20
+	social_liberalism = 15
 }
 
 create_country_leader = {
 	name = "Manuel Gómez Morín"
 	desc = "POLITICS_LAZARO_CARDENAS_DESC"
-	picture = "gfx/leaders/MEX/Portrait_Manuel_Gomez_Morin.dds"
-	expire = "1965.1.1"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Manuel_Gomez_Morin.dds"
+	expire = "1972.4.19"
 	ideology = social_conservatism_ideology
 	traits = {
-		#
+		the_gentleman_president
+		financial_expert
 	}
 }
