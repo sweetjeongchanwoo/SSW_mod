@@ -5,7 +5,7 @@ state={
 	state_category = town
 
 	history={
-		owner = ITA
+		owner = VFR
 		add_core_of = ITA
 		add_core_of = VFR
 		victory_points = {

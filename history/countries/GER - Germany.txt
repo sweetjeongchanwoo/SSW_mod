@@ -194,6 +194,10 @@ set_autonomy = {
 	autonomous_state = reichskolonie
 }
 set_autonomy = {
+	target = DJI
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
 	target = MAD
 	autonomous_state = reichskolonie
 }
