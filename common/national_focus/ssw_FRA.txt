@@ -1,10 +1,10 @@
 focus_tree = {
-	id = ssw_Vichy_France
+	id = ssw_France
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = VFR
+			tag = FRA
 		}
 	}
 	default = no
