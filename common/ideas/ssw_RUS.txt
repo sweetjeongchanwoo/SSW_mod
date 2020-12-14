@@ -4,7 +4,8 @@ ideas = {
 		RUS_collectivized_society_for_ssw = {
 			picture = SPR_collectivized_society
 			name = SPR_collectivized_society
-			allowed = { always = yes }
+			allowed = { original_tag = RUS }
+			available = { has_government = anarchism }
 			removal_cost = -1
 			modifier = {
 				resistance_target = -0.2
