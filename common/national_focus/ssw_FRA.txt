@@ -66,6 +66,32 @@ focus_tree = {
 		cost = 10.00
 		x = 18
 		y = 5
+		prerequisite ={
+			focus = FRA_45
+		}
+
+	}
+	focus = {
+	    id = FRA_103
+	    icon = GFX_goal_unknown
+	    cost = 10.00
+	    x = 16
+	    y = 5
+		prerequisite ={
+			focus = FRA_46
+		}
+
+	}
+	focus = {
+	    id = FRA_104
+	    icon = GFX_goal_unknown
+	    cost = 10.00
+	    x = 20
+	    y = 5
+		prerequisite = {
+			focus = FRA_47
+		}
+
 
 	}
 	focus = {
@@ -74,6 +100,11 @@ focus_tree = {
 		cost = 10.00
 		x = 18
 		y = 6
+		prerequisite = {
+			focus = FRA_48
+			focus = FRA_104
+			focus = FRA_103
+		}
 
 	}
 	focus = {
@@ -108,15 +139,8 @@ focus_tree = {
 		x = 2
 		y = 2
 			completion_reward = {
-					create_navy_leader = {
-							name = "François Darlan"
-							desc = ""
-							picture = ""
-							traits = {
-
-}
-						}
-				}
+				
+			}
 
 	}
 	focus = {
@@ -1295,7 +1319,7 @@ focus_tree = {
 		x = 2
 		y = 5
 			completion_reward = {
-					add_ideas = SPA_mandatory_pre_military_training_1
+					add_ideas = a
 				}
 
 	}
