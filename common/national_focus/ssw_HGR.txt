@@ -1055,10 +1055,10 @@ focus_tree = {
 #				add_state_core = 322
 #			}
 			EQA = {
-				end_puppet = VFR
+				end_puppet = FRA
 			}
 			NWA = {
-				end_puppet = VFR
+				end_puppet = FRA
 			}
 			ITA = {
 				puppet = EQA

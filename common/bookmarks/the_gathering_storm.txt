@@ -47,7 +47,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"VFR"={
+		"FRA"={
 			history = ""
 			ideology = national_fascism
 			ideas = {

@@ -737,7 +737,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = VFR
+				target = FRA
 			}
 		}
 
@@ -3081,7 +3081,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = VFR
+				target = FRA
 			}
 		}
 

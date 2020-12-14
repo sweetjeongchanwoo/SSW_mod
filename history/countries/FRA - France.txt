@@ -1,0 +1,74 @@
+﻿capital = 26
+oob = "FRA_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+	Unstable_regime
+	volunteer_only
+	export_focus
+	dictator
+	Expansion_of_shipyards
+	Beyond_the_Atlantic
+	French_mediterranean_fleet
+	Military_reform
+	Confusion_of_the_General_Staff
+	Confusion_of_the_General_Staff_2
+	Democratic_Republic_under_themilitary_junta
+	Restoration_of_the_old_republican_constitution
+	Republican_rebellion
+	Focus_on_armor
+	Focus_on_infantry
+	New_French_Army
+	Emphasis_on_thermal_power
+	Restoration_of_the_old_republican_constitution
+	Opposition_Purge
+	Defeated_army
+	Defeated_army_2
+	Defeated_army_3
+	Defeated_army_4
+	Defeated_army_5
+	Review_of_the_French_economy
+}
+
+set_autonomy = {
+	target = NWA
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = EQA
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = TUN
+	autonomous_state = colony
+}
+set_autonomy = {
+	target = MOR
+	autonomous_state = colony
+}
+
+set_politics = {
+	ruling_party = national_fascism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_fascism = 100
+}
+
+create_country_leader = {
+	name = "Philippe Petain"
+	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
+	picture = "gfx/leaders/FRA/Portrait_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+	}
+}

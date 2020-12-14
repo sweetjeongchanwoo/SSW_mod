@@ -1,0 +1,1612 @@
+focus_tree = {
+	id = ssw_France
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	default = no
+	focus = {
+		id = FRA_1
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10.00
+		x = 6
+		y = 0
+			completion_reward = {
+					add_ideas = Review_of_the_French_economy
+				}
+
+	}
+	focus = {
+		id = FRA_69
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 46
+		y = 0
+			completion_reward = {
+					army_experience = 25
+				}
+
+	}
+	focus = {
+		id = FRA_91
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		x = 43
+		y = 8
+			completion_reward = {
+					add_ideas = French_mediterranean_fleet
+				}
+
+	}
+	focus = {
+		id = FRA_96
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		x = 50
+		y = 8
+			completion_reward = {
+					air_experience = 30
+				}
+
+	}
+	focus = {
+		id = FRA_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = FRA_48
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = FRA_49
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = FRA_50
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = FRA_next
+		icon = GFX_focus_generic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_1
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = FRA_2
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2.00
+		prerequisite = {
+			focus = FRA_next
+		}
+		mutually_exclusive = {
+			focus = FRA_3
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					create_navy_leader = {
+							name = "François Darlan"
+							desc = ""
+							picture = ""
+							traits = {
+
+}
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_6
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_2
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_ideas = CZE_national_fascism_idea
+				}
+
+	}
+	focus = {
+		id = FRA_3
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2.00
+		prerequisite = {
+			focus = FRA_next
+		}
+		mutually_exclusive = {
+			focus = FRA_2
+			focus = FRA_4
+		}
+		x = 6
+		y = 2
+			completion_reward = {
+					add_stability = -0.05
+					create_country_leader = {
+							name = "Jacques Doriot"
+							desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+							picture = GFX_portrait_fra_jacques_doriot
+							expire = "1965.1.1"
+							ideology = nazism_ideology
+							traits = { eager_collaborator }
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_10
+		icon = GFX_focus_befriend_italy
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_3
+		}
+		x = 6
+		y = 3
+			completion_reward = {
+					add_opinion_modifier = {
+							target = ITA
+							modifier = medium_increase
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_4
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_next
+		}
+		mutually_exclusive = {
+			focus = FRA_3
+		}
+		x = 11
+		y = 2
+			completion_reward = {
+					country_event = {
+							id = Marcel_Dare_Leader_1
+						}
+					would_event = {
+							id = Marcel_Dare_Leader_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_11
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_10
+		}
+		x = 6
+		y = 4
+			completion_reward = {
+					GER = {
+							add_opinion_modifier = {
+									target = FRA
+									modifier = HOL_germany_is_the_greater_threat
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_12
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_11
+		}
+		x = 6
+		y = 5
+			completion_reward = {
+			
+			}
+
+	}
+	focus = {
+		id = FRA_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_4
+		}
+		x = 9
+		y = 3
+			completion_reward = {
+					add_ideas = Opposition_Purge
+				}
+
+	}
+	focus = {
+		id = FRA_13
+		icon = GFX_goal_generic_attack_allies
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_4
+		}
+		x = 11
+		y = 3
+			completion_reward = {
+					add_ideas = dictator
+				}
+
+	}
+	focus = {
+		id = FRA_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_14
+		}
+		prerequisite = {
+			focus = FRA_13
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = FRA_15
+		icon = GFX_focus_spr_crush_the_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_4
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = FRA_16
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_15
+		}
+		prerequisite = {
+			focus = FRA_13
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+
+			}
+				
+
+	}
+	focus = {
+		id = FRA_19
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 4.00
+		prerequisite = {
+			focus = FRA_16
+		}
+		prerequisite = {
+			focus = FRA_17
+		}
+		x = 11
+		y = 5
+			completion_reward = {
+					add_war_support = 0.2
+				}
+
+	}
+	focus = {
+		id = FRA_23
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_21
+		}
+		mutually_exclusive = {
+			focus = FRA_22
+		}
+		x = 18
+		y = 2
+			completion_reward = {
+					add_ideas = French_Peoples_Front
+				}
+
+	}
+	focus = {
+		id = FRA_44
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_23
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = FRA_46
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_44
+		}
+		mutually_exclusive = {
+			focus = FRA_45
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = FRA_45
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_44
+		}
+		mutually_exclusive = {
+			focus = FRA_47
+			focus = FRA_46
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = FRA_47
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_44
+		}
+		mutually_exclusive = {
+			focus = FRA_45
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = FRA_22
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_21
+		}
+		mutually_exclusive = {
+			focus = FRA_24
+			focus = FRA_23
+		}
+		x = 24
+		y = 2
+			completion_reward = {
+					add_ideas = Democratic_Republic_under_themilitary_junta
+					world_event = {
+							id = Alphonse_Juan_coup_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_25
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_22
+		}
+		x = 23
+		y = 3
+			completion_reward = {
+					add_ideas = Parliamentary_resurrection
+				}
+
+	}
+	focus = {
+		id = FRA_29
+		icon = GFX_goal_icon_Mollet
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_25
+		}
+		prerequisite = {
+			focus = FRA_25
+		}
+		mutually_exclusive = {
+			focus = FRA_27
+		}
+		x = 22
+		y = 4
+			completion_reward = {
+					world_event = {
+							id = Guy_Mollet_To_the_president
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_26
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_22
+		}
+		x = 25
+		y = 3
+			completion_reward = {
+					add_ideas = Restoration_of_the_old_republican_constitution
+				}
+
+	}
+	focus = {
+		id = FRA_27
+		icon = GFX_goal_icon_icon_Mendes
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_26
+			focus = FRA_25
+		}
+		prerequisite = {
+			focus = FRA_26
+		}
+		prerequisite = {
+			focus = FRA_25
+		}
+		mutually_exclusive = {
+			focus = FRA_29
+			focus = FRA_28
+		}
+		x = 24
+		y = 4
+			completion_reward = {
+					world_event = {
+							id = Pierre_Mendes_France_To_the_president
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_28
+		icon = GFX_goal_icon_Rene
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_26
+		}
+		mutually_exclusive = {
+			focus = FRA_27
+		}
+		x = 26
+		y = 4
+			completion_reward = {
+					world_event = {
+							id = a
+						}
+				}
+			completion_reward = {
+					world_event = {
+							id = Rene_Jules_Gustave_Coty_To_the_president
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_30
+		icon = GFX_focus_fra_french_union
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_28
+			focus = FRA_27
+			focus = FRA_29
+		}
+		x = 24
+		y = 5
+			completion_reward = {
+					world_event = {
+							id = Republican_revival
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_31
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_30
+		}
+		x = 24
+		y = 6
+			completion_reward = {
+					war_support_factor = 0.2
+					production_factory_efficiency_gain_factor = 0.2
+					industrial_capacity_factory = 0.1
+					consumer_goods_factor = -0.1
+				}
+
+	}
+	focus = {
+		id = FRA_51
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_50
+		}
+		mutually_exclusive = {
+			focus = FRA_52
+		}
+		x = 25
+		y = 10
+			completion_reward = {
+					add_ideas = Religious_government
+				}
+
+	}
+	focus = {
+		id = FRA_52
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_50
+		}
+		mutually_exclusive = {
+			focus = FRA_51
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = FRA_53
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_52
+			focus = FRA_51
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = FRA_54
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_53
+		}
+		mutually_exclusive = {
+			focus = FRA_55
+		}
+		x = 23
+		y = 12
+
+	}
+	focus = {
+		id = FRA_55
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_53
+		}
+		mutually_exclusive = {
+			focus = FRA_54
+			focus = FRA_56
+		}
+		x = 25
+		y = 12
+
+	}
+	focus = {
+		id = FRA_57
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_53
+		}
+		mutually_exclusive = {
+			focus = FRA_56
+		}
+		x = 29
+		y = 12
+
+	}
+	focus = {
+		id = FRA_56
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_53
+		}
+		mutually_exclusive = {
+			focus = FRA_57
+			focus = FRA_55
+		}
+		x = 27
+		y = 12
+
+	}
+	focus = {
+		id = FRA_58
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_57
+			focus = FRA_56
+			focus = FRA_55
+			focus = FRA_54
+		}
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = FRA_24
+		icon = GFX_focus_generic_home_defense
+		cost = 3.00
+		prerequisite = {
+			focus = FRA_21
+		}
+		mutually_exclusive = {
+			focus = FRA_22
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = FRA_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_24
+		}
+		mutually_exclusive = {
+			focus = FRA_33
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = FRA_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_24
+		}
+		mutually_exclusive = {
+			focus = FRA_34
+			focus = FRA_32
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = FRA_35
+		icon = GFX_focus_generic_monarchy_2
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_33
+			focus = FRA_32
+		}
+		mutually_exclusive = {
+			focus = FRA_36
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = FRA_37
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_35
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = FRA_40
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_37
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = FRA_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_24
+		}
+		mutually_exclusive = {
+			focus = FRA_33
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = FRA_36
+		icon = GFX_focus_generic_monarchy_1
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_34
+			focus = FRA_33
+		}
+		mutually_exclusive = {
+			focus = FRA_35
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = FRA_39
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_36
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = FRA_41
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_39
+			focus = FRA_37
+		}
+		x = 30
+		y = 6
+			completion_reward = {
+					add_ideas = { FRA_la_deluge }
+				}
+
+	}
+	focus = {
+		id = FRA_42
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_39
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = FRA_70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_69
+		}
+		x = 42
+		y = 1
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Confusion_of_the_General_Staff
+							add_idea = Confusion_of_the_General_Staff_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_73
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_70
+		}
+		mutually_exclusive = {
+			focus = FRA_71
+		}
+		x = 39
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = arty_bonus
+							bonus = 1
+							uses = 2
+							category = artillery
+						}
+					swap_ideas = {
+							remove_idea = Confusion_of_the_General_Staff_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_75
+		icon = GFX_goal_generic_army_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_73
+		}
+		x = 39
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = RAJ_vickers_berthier_gun
+							bonus = 1
+							uses = 1
+							category = infantry_weapons
+						}
+				}
+
+	}
+		focus = {
+		id = FRA_102
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_71
+		}
+		x = 42
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 2
+							category = armor
+						}
+				}
+		}
+	focus = {
+		id = FRA_77
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_75
+		}
+		x = 39
+		y = 4
+			completion_reward = {
+					add_ideas = Emphasis_on_thermal_power
+				}
+
+	}
+	focus = {
+		id = FRA_71
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_70
+		}
+		mutually_exclusive = {
+			focus = FRA_73
+			focus = FRA_74
+		}
+		x = 42
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 1
+							category = motorized_equipment
+						}
+					swap_ideas = {
+							remove_idea = Confusion_of_the_General_Staff_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_76
+		icon = GFX_focus_generic_tank_production
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_71
+		}
+		x = 42
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_78
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_102
+		}
+		x = 42
+		y = 4
+			completion_reward = {
+					add_ideas = Focus_on_armor
+			}
+
+	}
+	focus = {
+		id = FRA_79
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = FRA_76
+		}
+		x = 45
+		y = 4
+			completion_reward = {
+					add_ideas = Focus_on_infantry
+				}
+
+	}
+	focus = {
+		id = FRA_81
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_79
+			focus = FRA_78
+			focus = FRA_77
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = FRA_92
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_91
+		}
+		x = 43
+		y = 10
+			completion_reward = {
+					add_ideas = Expansion_of_shipyards
+				}
+
+	}
+	focus = {
+		id = FRA_93
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_92
+		}
+		x = 43
+		y = 11
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1
+							uses = 2
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_94
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_93
+		}
+		mutually_exclusive = {
+			focus = FRA_95
+		}
+		x = 41
+		y = 12
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = bb_bonus
+							bonus = 1
+							uses = 2
+							category = bb_tech
+							category = bc_tech
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_74
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_70
+		}
+		mutually_exclusive = {
+			focus = FRA_71
+		}
+		x = 45
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = CZE_inf_and_artillery_advancement
+							bonus = 1
+							ahead_reduction = 2
+							uses = 2
+							category = infantry_weapons
+						}
+					swap_ideas = {
+							remove_idea = Confusion_of_the_General_Staff_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_76
+		icon = GFX_goal_rhineland
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_74
+		}
+		x = 45
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_72
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_69
+		}
+		x = 50
+		y = 1
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Defeated_army
+							add_idea = Defeated_army_2
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_80
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_72
+		}
+		x = 49
+		y = 2
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Defeated_army_2
+							add_idea = Defeated_army_3
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_82
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_72
+		}
+		x = 51
+		y = 2
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Defeated_army_2
+							add_idea = Defeated_army_4
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_83
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_82
+		}
+		prerequisite = {
+			focus = FRA_80
+		}
+		x = 50
+		y = 3
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Defeated_army_5
+							add_idea = New_French_Army
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_84
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_83
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = FRA_85
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_84
+		}
+		x = 50
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Defeated_army_2
+							add_idea = Defeated_army_5
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_86
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_81
+		}
+		prerequisite = {
+			focus = FRA_85
+		}
+		x = 46
+		y = 6
+			completion_reward = {
+					army_experience = 35
+					add_ideas = Military_reform
+				}
+
+	}
+	focus = {
+		id = FRA_87
+		icon = GFX_focus_up_joan_of_arc
+		cost = 20.00
+		prerequisite = {
+			focus = FRA_86
+		}
+		x = 44
+		y = 7
+			completion_reward = {
+					add_ideas = Seeking_freedom
+				}
+
+	}
+	focus = {
+		id = FRA_90
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_86
+		}
+		x = 48
+		y = 7
+			completion_reward = {
+					add_ideas = Determination
+				}
+
+	}
+	focus = {
+		id = FRA_7
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_6
+		}
+		prerequisite = {
+			focus = FRA_5
+		}
+		x = 1
+		y = 1
+		relative_position_id = FRA_5
+			completion_reward = {
+					add_popularity = {
+							ideology = communism
+							popularity = -1
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_5
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_2
+		}
+		x = 1
+		y = 3
+			completion_reward = {
+					add_popularity = {
+							ideology = Nazism
+							popularity = 0.3
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_9
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_8
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = FRA_8
+		icon = GFX_focus_fra_milice
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_7
+		}
+		x = 2
+		y = 5
+			completion_reward = {
+					add_ideas = SPA_mandatory_pre_military_training_1
+				}
+
+	}
+	focus = {
+		id = FRA_43
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_42
+			focus = FRA_40
+		}
+		prerequisite = {
+			focus = FRA_41
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = FRA_99
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_96
+		}
+		x = 48
+		y = 10
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_bomber_modernization
+							bonus = 1
+							uses = 1
+							category = cas_bomber
+							category = tactical_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_101
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_99
+		}
+		x = 46
+		y = 11
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_carrier_warfare_experiments
+							bonus = 1
+							uses = 2
+							category = cat_base_strike
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_100
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_99
+		}
+		x = 48
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = JAP_strategic_bomber_effort
+							bonus = 1
+							uses = 2
+							category = cat_strategic_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_20
+		icon = GFX_focus_generic_vichy_france_triumphant
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_19
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = FRA_95
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_101
+		}
+		prerequisite = {
+			focus = FRA_93
+		}
+		mutually_exclusive = {
+			focus = FRA_94
+		}
+		x = 45
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = cv_bonus
+							bonus = 1
+							uses = 2
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = VFR_84
+		icon = GFX_focus_generic_cruiser2
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_94
+			focus = FRA_95
+		}
+		x = 43
+		y = 13
+			completion_reward = {
+					add_ideas = Beyond_the_Atlantic
+				}
+
+	}
+	focus = {
+		id = FRA_97
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_96
+		}
+		x = 52
+		y = 9
+			completion_reward = {
+					add_tech_bonus = {
+							name = light_air
+							bonus = 1
+							uses = 1
+							category = light_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_98
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_97
+		}
+		x = 52
+		y = 12
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_modernization
+							bonus = 1
+							uses = 1
+							category = cat_heavy_fighter
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_88
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_86
+		}
+		x = 46
+		y = 7
+			completion_reward = {
+					set_technology = {
+							bicycle_infantry = 1
+						}
+				}
+
+	}
+	focus = {
+		id = FRA_60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_58
+		}
+		mutually_exclusive = {
+			focus = FRA_61
+		}
+		x = 23
+		y = 14
+
+	}
+	focus = {
+		id = FRA_61
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_58
+		}
+		mutually_exclusive = {
+			focus = FRA_62
+			focus = FRA_60
+		}
+		x = 25
+		y = 14
+
+	}
+	focus = {
+		id = FRA_62
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_58
+		}
+		mutually_exclusive = {
+			focus = FRA_61
+			focus = FRA_63
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = FRA_64
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_60
+		}
+		x = 23
+		y = 15
+
+	}
+	focus = {
+		id = FRA_65
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_61
+		}
+		x = 25
+		y = 15
+
+	}
+	focus = {
+		id = FRA_66
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_62
+		}
+		prerequisite = {
+			focus = FRA_63
+		}
+		mutually_exclusive = {
+			focus = FRA_67
+		}
+		x = 27
+		y = 15
+
+	}
+	focus = {
+		id = FRA_67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_62
+		}
+		prerequisite = {
+			focus = FRA_63
+		}
+		mutually_exclusive = {
+			focus = FRA_66
+			focus = FRA_68
+		}
+		x = 29
+		y = 15
+
+	}
+	focus = {
+		id = FRA_68
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_62
+		}
+		prerequisite = {
+			focus = FRA_63
+		}
+		mutually_exclusive = {
+			focus = FRA_67
+		}
+		x = 31
+		y = 15
+
+	}
+	focus = {
+		id = FRA_63
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = FRA_58
+		}
+		mutually_exclusive = {
+			focus = FRA_62
+		}
+		x = 30
+		y = 14
+
+	}
+}

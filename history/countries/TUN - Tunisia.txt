@@ -1,6 +1,6 @@
-﻿capital = 458
+capital = 458
 oob = "TUN_1950"
-set_cosmetic_tag = TUN_VFR
+set_cosmetic_tag = TUN_FRA
 
 set_technology = {
 	infantry_weapons = 1
