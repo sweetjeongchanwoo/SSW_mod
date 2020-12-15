@@ -280,7 +280,7 @@ country_event = {
 		LTV = {
 			country_event = { id = SSW_LTV.10 days = 1 }
 		}
-		VFR = {
+		FRA = {
 			annex_country = { 
 				target = NFR
 				transfer_troops = yes 

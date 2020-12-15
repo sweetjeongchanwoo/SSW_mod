@@ -4275,9 +4275,7 @@ focus_tree = {
 		x = 56
 		y = 14
 		completion_reward = {
-			RUS = {
-				add_ideas = rus_ideas_37
-			}
+			RUS = { add_ideas = rus_ideas_37 }
 		}
 	}
 	focus = {
@@ -4647,19 +4645,9 @@ focus_tree = {
 				limit = { has_idea = rus_ideas_38 }
 				remove_ideas = rus_ideas_38
 			}
-			if = {
-				limit = { has_idea = RUS_andrey_vlasov }
-				swap_ideas = {
-					remove_idea = RUS_andrey_vlasov
-					add_idea = RUS_konstantin_rodzaevsky_political_leader
-				}
-			}
-			if = {
-				limit = { has_idea = ssw_military_dictatorship }
-				swap_ideas = {
-					remove_idea = ssw_military_dictatorship
-					add_idea = ssw_one_party_dictatorship
-				}
+			add_ideas = {
+				RUS_konstantin_rodzaevsky_political_leader
+				ssw_one_party_dictatorship
 			}
 			add_popularity = {
 				ideology = national_socialism
@@ -4789,23 +4777,13 @@ focus_tree = {
 				limit = { NOT = { has_government = national_fascism } }
 				set_politics = { ruling_party = national_fascism elections_allowed = no }
 			}
+			add_ideas = {
+				RUS_anastasy_vonsiatsky
+				ssw_one_party_dictatorship
+			}
 			if = {
 				limit = { has_idea = rus_ideas_38 }
 				remove_ideas = rus_ideas_38
-			}
-			if = {
-				limit = { has_idea = RUS_andrey_vlasov }
-				swap_ideas = {
-					remove_idea = RUS_andrey_vlasov
-					add_idea = RUS_anastasy_vonsiatsky
-				}
-			}
-			if = {
-				limit = { has_idea = ssw_military_dictatorship }
-				swap_ideas = {
-					remove_idea = ssw_military_dictatorship
-					add_idea = ssw_one_party_dictatorship
-				}
 			}
 			add_popularity = {
 				ideology = national_fascism
