@@ -16,50 +16,6 @@ add_ideas = {
 	Defeated_army
 }
 
-create_country_leader = {
-	name = "Edouard Daladier"
-	desc = "POLITICS_EDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		stout_defender
-	}
-}
-
-create_country_leader = {
-	name = "Pierre Laval"
-	desc = "POLITICS_EDOUARD_DALADIER_DESC"
-	picture = GFX_portrait_fra_pierre_laval
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		stout_defender
-	}
-}
-
-create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
-	expire = "1965.1.1"
-	ideology = 	stalinism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Philippe Petain"
-	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
-	picture = "gfx/leaders/VFR/Portrait_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
