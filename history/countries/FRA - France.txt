@@ -12,29 +12,8 @@ add_ideas = {
 	Unstable_regime
 	volunteer_only
 	export_focus
-	dictator
-	Expansion_of_shipyards
-	Beyond_the_Atlantic
-	French_mediterranean_fleet
-	Military_reform
 	Confusion_of_the_General_Staff
-	Confusion_of_the_General_Staff_2
-	Democratic_Republic_under_themilitary_junta
-	Restoration_of_the_old_republican_constitution
-	Republican_rebellion
-	Focus_on_armor
-	Focus_on_infantry
-	New_French_Army
-	Emphasis_on_thermal_power
-	Restoration_of_the_old_republican_constitution
-	Opposition_Purge
 	Defeated_army
-	Defeated_army_2
-	Defeated_army_3
-	Defeated_army_4
-	Defeated_army_5
-	Review_of_the_French_economy
-	Seeking_freedom
 }
 
 create_country_leader = {
