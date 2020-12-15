@@ -26,7 +26,7 @@ country_event = {
     }
     option = {
         name = SSW_FRA.2.a
-    FRA = {add_stability = -0.5
+    VFR = {add_stability = -0.5
            kill_country_leader = FRA
           }
 
