@@ -114,6 +114,20 @@ focus_tree = {
 		cost = 10.00
 		x = 32
 		y = 14
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+
+		}
 
 	}
 	focus = {
@@ -122,6 +136,23 @@ focus_tree = {
 		cost = 10.00
 		x = 22
 		y = 14
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = authority_democracy
+				popularity = 50
+			}
+
+		}
 
 	}
 	focus = {
@@ -130,6 +161,27 @@ focus_tree = {
 		cost = 10.00
 		x = 41
 		y = 14
+		available = {
+			always = no
+		}
+
+		available = {
+			always = no
+		}
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = national_fascism
+				popularity = 50
+			}
+
+		}
 
 	}
 	focus = {
@@ -305,7 +357,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-
+				custom_effect_tooltip = agrarian_reform_tooltip
 }
 
 	}
@@ -521,14 +573,26 @@ focus_tree = {
 		id = PER_Authoritarian_Democracy_2
 		icon = GFX_focus_TUR_turanist_ambition
 		cost = 5.00
+		available = {
+			has_country_flag = PER_conservatives
+		}
 		prerequisite = {
 			focus = PER_Authoritarian_Democracy_1
 		}
-		mutually_exclusive = {
-			focus = PER_Authoritarian_Democracy_3
-		}
+		
 		x = 19
 		y = 16
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = PER_The_illiterate_populace_3
+							add_idea = PER_Education_at_the_Madrasa
+						}
+				}
 
 	}
 	focus = {
@@ -540,6 +604,18 @@ focus_tree = {
 		}
 		x = 20
 		y = 17
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_Agrarian_Society_3
+		}
+
+		
 
 	}
 	focus = {
@@ -674,19 +750,41 @@ focus_tree = {
 		x = 22
 		y = 16
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_SAVAK
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_3
 		icon = GFX_goal_continuous_boost_freedom
 		cost = 5.00
+		available = {
+			has_country_flag = PER_liberal
+		}
 		prerequisite = {
 			focus = PER_Authoritarian_Democracy_1
 		}
-		mutually_exclusive = {
-			focus = PER_Authoritarian_Democracy_2
-		}
+		
 		x = 25
 		y = 16
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = PER_Agrarian_Society_3
+							add_idea = PER_Gradual_economic_reform
+						}
+				}
 
 	}
 	focus = {
@@ -698,6 +796,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 17
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_The_illiterate_populace_3
+		}
 
 	}
 	focus = {
@@ -714,6 +822,16 @@ focus_tree = {
 		x = 22
 		y = 18
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.8
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_8
@@ -725,6 +843,17 @@ focus_tree = {
 		x = 20
 		y = 19
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power	= 50
+			add_stability = 0.05
+		}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_9
@@ -735,6 +864,17 @@ focus_tree = {
 		}
 		x = 24
 		y = 19
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power	= -100
+			add_stability = -0.15
+		}
 
 	}
 	focus = {
@@ -898,6 +1038,16 @@ focus_tree = {
 		x = 29
 		y = 16
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_assault_party
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Fascist_3
@@ -909,6 +1059,16 @@ focus_tree = {
 		x = 32
 		y = 16
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_Cooperation_with_SS
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Fascist_4
@@ -919,6 +1079,15 @@ focus_tree = {
 		}
 		x = 35
 		y = 16
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					custom_effect_tooltip = Pan-Iranianism_tooltip
+				}
+
 
 	}
 	focus = {
@@ -937,6 +1106,16 @@ focus_tree = {
 		x = 32
 		y = 17
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = SS_penetration_tooltip
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_6
@@ -947,6 +1126,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 18
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_German_Technical_Advisory_Group
+						}
+				}
 
 	}
 	focus = {
@@ -959,6 +1148,16 @@ focus_tree = {
 		x = 32
 		y = 19
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.9
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Fascist_8
@@ -969,6 +1168,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 20
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+		}
 
 	}
 	focus = {
@@ -1048,6 +1257,16 @@ focus_tree = {
 		x = 34
 		y = 20
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_12
@@ -1059,6 +1278,17 @@ focus_tree = {
 		x = 34
 		y = 21
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_13
@@ -1069,6 +1299,16 @@ focus_tree = {
 		}
 		x = 34
 		y = 22
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_Agrarian_Society_3
+		}
 
 	}
 	focus = {
@@ -1148,6 +1388,16 @@ focus_tree = {
 		x = 38
 		y = 16
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_The_illiterate_populace_3
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_5
@@ -1158,6 +1408,11 @@ focus_tree = {
 		}
 		x = 38
 		y = 17
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
 
 	}
 	focus = {
@@ -1210,6 +1465,10 @@ focus_tree = {
 		}
 		x = 41
 		y = 16
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
 
 	}
 	focus = {
@@ -1221,6 +1480,15 @@ focus_tree = {
 		}
 		x = 41
 		y = 17
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					custom_effect_tooltip = Pan-Iranianism_tooltip
+				}
+
 
 	}
 	focus = {
@@ -1308,6 +1576,16 @@ focus_tree = {
 		x = 44
 		y = 16
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_Agrarian_Society_3
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_7
@@ -1318,6 +1596,16 @@ focus_tree = {
 		}
 		x = 44
 		y = 17
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_Modern_oil_extraction_equipment
+						}
+				}
 
 	}
 	focus = {
@@ -1336,6 +1624,17 @@ focus_tree = {
 		x = 41
 		y = 18
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_9
@@ -1346,6 +1645,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 19
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.12
+						}
+				}
 
 	}
 	focus = {
@@ -1358,6 +1667,17 @@ focus_tree = {
 		x = 44
 		y = 20
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_10
@@ -1368,6 +1688,17 @@ focus_tree = {
 		}
 		x = 38
 		y = 20
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
 
 	}
 	focus = {
@@ -1380,6 +1711,17 @@ focus_tree = {
 		x = 39
 		y = 21
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.10
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_14
@@ -1390,6 +1732,17 @@ focus_tree = {
 		}
 		x = 43
 		y = 21
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.10
+		}
 
 	}
 	focus = {
@@ -2255,6 +2608,17 @@ focus_tree = {
 		x = 30
 		y = 21
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_11
@@ -2265,6 +2629,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 22
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_The_illiterate_populace_3
+		}
 
 	}
 	focus = {
@@ -2280,6 +2654,16 @@ focus_tree = {
 		x = 32
 		y = 23
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.10
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Fascist_15
@@ -2290,6 +2674,16 @@ focus_tree = {
 		}
 		x = 32
 		y = 24
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.11
+						}
+				}
 
 	}
 	focus = {
@@ -2302,6 +2696,17 @@ focus_tree = {
 		x = 32
 		y = 25
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -200
+			add_stability = 0.1
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_17
@@ -2312,6 +2717,16 @@ focus_tree = {
 		}
 		x = 35
 		y = 26
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = { add_to_faction = PER }	
+		}
 
 	}
 	focus = {
@@ -2335,6 +2750,25 @@ focus_tree = {
 		x = 29
 		y = 26
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 413
+			}
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 412
+			}
+		}
+
 	}
 	focus = {
 		id = PER_Fascist_20
@@ -2355,6 +2789,16 @@ focus_tree = {
 		x = 32
 		y = 27
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_nazi
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_10
@@ -2369,6 +2813,16 @@ focus_tree = {
 		x = 22
 		y = 20
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_Compromised_reforms
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_11
@@ -2379,6 +2833,16 @@ focus_tree = {
 		}
 		x = 22
 		y = 21
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power	= 150
+		}
 
 	}
 	focus = {
@@ -2391,11 +2855,45 @@ focus_tree = {
 		x = 22
 		y = 22
 
+		ai_will_do = {
+					factor = 8
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_opinion_modifier = {
+							target = GER
+							modifier = large_increase
+						}
+					reverse_add_opinion_modifier = {
+							target = GER
+							modifier = large_increase
+						}
+						add_opinion_modifier = {
+							target = JAP
+							modifier = large_increase
+						}
+					reverse_add_opinion_modifier = {
+							target = JAP
+							modifier = large_increase
+						}
+						add_opinion_modifier = {
+							target = ITA
+							modifier = large_increase
+						}
+					reverse_add_opinion_modifier = {
+							target = ITA
+							modifier = large_increase
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_13
 		icon = GFX_focus_chi_mission_to_germany
 		cost = 5.00
+		available = {
+			has_country_flag = GER_civil_war
+		}
 		prerequisite = {
 			focus = PER_Authoritarian_Democracy_12
 		}
@@ -2407,6 +2905,16 @@ focus_tree = {
 		}
 		x = 19
 		y = 23
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			GER = { add_to_faction = PER }	
+		}
 
 	}
 	focus = {
@@ -2425,6 +2933,16 @@ focus_tree = {
 		x = 25
 		y = 23
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			ITA = { add_to_faction = PER }	
+		}
+
 	}
 	focus = {
 		id = PER_Authoritarian_Democracy_15
@@ -2441,6 +2959,15 @@ focus_tree = {
 		}
 		x = 22
 		y = 23
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP = { add_to_faction = PER }	
+		}
 
 	}
 	focus = {
@@ -2459,6 +2986,18 @@ focus_tree = {
 		x = 22
 		y = 24
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = {
+							idea = PER_constitutional_state
+						}
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_12
@@ -2469,6 +3008,16 @@ focus_tree = {
 		}
 		x = 41
 		y = 20
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_green_shirt
+						}
+				}
 
 	}
 	focus = {
@@ -2487,6 +3036,20 @@ focus_tree = {
 		x = 41
 		y = 22
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = national_fascism
+				popularity = 50
+			}
+
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_16
@@ -2497,6 +3060,17 @@ focus_tree = {
 		}
 		x = 41
 		y = 23
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+		}
 
 	}
 	focus = {
@@ -2509,6 +3083,17 @@ focus_tree = {
 		x = 41
 		y = 24
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.10
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_18
@@ -2520,6 +3105,16 @@ focus_tree = {
 		x = 41
 		y = 25
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_Iranian_giant_eagle
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_19
@@ -2530,6 +3125,16 @@ focus_tree = {
 		}
 		x = 38
 		y = 26
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			ITA = { add_to_faction = PER }	
+		}
 
 	}
 	focus = {
@@ -2553,6 +3158,25 @@ focus_tree = {
 		x = 44
 		y = 26
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 30
+				state = 413
+			}
+			add_resource = {
+				type = oil
+				amount = 15
+				state = 412
+			}
+		}
+
 	}
 	focus = {
 		id = PER_Cooperation_with_italy_22
@@ -2573,6 +3197,16 @@ focus_tree = {
 		x = 41
 		y = 27
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_faci
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Absolutism_1
@@ -2583,6 +3217,17 @@ focus_tree = {
 		}
 		x = 9
 		y = 14
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_SAVAK
+						}
+				}
+		
 
 	}
 	focus = {
@@ -2595,16 +3240,38 @@ focus_tree = {
 		x = 4
 		y = 16
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+
 	}
 	focus = {
 		id = PER_Absolutism_3
 		icon = GFX_goal_generic_attack_allies
-		cost = 2.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_Absolutism_1
 		}
 		x = 9
 		y = 16
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -200
+			add_stability = -0.2
+		}
 
 	}
 	focus = {
@@ -2617,27 +3284,59 @@ focus_tree = {
 		x = 14
 		y = 16
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+		}
+
 	}
 	focus = {
 		id = PER_Absolutism_5
 		icon = GFX_focus_rom_royal_dictatorship
-		cost = 2.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_Absolutism_3
 		}
 		x = 9
 		y = 17
 
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					add_ideas = {
+							idea = PER_Aryanism
+						}
+				}
+
 	}
 	focus = {
 		id = PER_Absolutism_6
 		icon = GFX_goal_generic_propaganda
-		cost = 2.00
+		cost = 10.00
 		prerequisite = {
 			focus = PER_Absolutism_5
 		}
 		x = 9
 		y = 18
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = PER_Aryanism
+							add_idea = PER_Aryanism_2
+						}
+				}
 
 	}
 	focus = {
@@ -2650,6 +3349,17 @@ focus_tree = {
 		x = 5
 		y = 17
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+
 	}
 	focus = {
 		id = PER_Absolutism_8
@@ -2660,6 +3370,16 @@ focus_tree = {
 		}
 		x = 6
 		y = 18
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_The_illiterate_populace_3
+		}
 
 	}
 	focus = {
@@ -2672,6 +3392,17 @@ focus_tree = {
 		x = 13
 		y = 17
 
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+
 	}
 	focus = {
 		id = PER_Absolutism_10
@@ -2682,12 +3413,23 @@ focus_tree = {
 		}
 		x = 12
 		y = 18
+		
+
+		ai_will_do = {
+		factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PER_Agrarian_Society_3
+		}
 
 	}
 	focus = {
 		id = PER_Absolutism_11
 		icon = GFX_focus_generic_monarchy_1
-		cost = 1.00
+		cost = 20.00
 		prerequisite = {
 			focus = PER_Absolutism_10
 		}
@@ -2698,7 +3440,17 @@ focus_tree = {
 			focus = PER_Absolutism_8
 		}
 		x = 9
-		y = 20
+		y = 19
+
+		ai_will_do = {
+					factor = 10
+				}
+			available_if_capitulated = no
+			completion_reward = {
+					country_event = {
+							id = sswper.13
+						}
+				}
 
 	}
 }
