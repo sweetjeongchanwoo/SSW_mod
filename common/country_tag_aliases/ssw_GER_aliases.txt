@@ -1,0 +1,14 @@
+#	HGR = {
+#		original_tag = GER
+#		has_focus_tree = GER_Georing
+#	}
+
+#	LTV = {
+#		original_tag = GER
+#		has_country_flag = ssw_LTV
+#	}
+
+#	HLH = {
+#		original_tag = GER
+#		has_country_flag = SPR_anarchist_spain_flag
+#	}

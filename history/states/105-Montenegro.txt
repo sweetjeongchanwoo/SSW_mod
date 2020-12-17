@@ -7,10 +7,8 @@ state={
 	}
 
 	history={
-		victory_points = {
-			9809 15
-		}
-		owner = MNT
+		owner = SER
+		add_core_of = SER
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 3
@@ -21,7 +19,8 @@ state={
 			}
 
 		}
-
+		
+		victory_points = {	9809 15	}
 	}
 
 	provinces={
