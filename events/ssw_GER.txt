@@ -8,6 +8,12 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.2
+		}
+	}
 	option = {
 		name = SSW_GER.1.a
 		ai_chance = { factor = 1 }
@@ -23,6 +29,12 @@ country_event = {
 	picture = GFX_news_event_herman_goring
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.3
+		}
+	}
 	major = yes
 	option = {
 		name = SSW_GER.2.a
@@ -41,6 +53,12 @@ news_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.6
+		}
+	}
 	major = yes
 	option = {
 		name = SSW_GER.3.a
@@ -59,6 +77,12 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.7
+		}
+	}
 	major = yes
 	option = {
 		name = SSW_GER.4.a
@@ -77,6 +101,12 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.8
+		}
+	}
 	major = yes
 	option = {
 		name = SSW_GER.5.a
@@ -95,6 +125,12 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.9
+		}
+	}
 	major = yes
 	option = {
 		name = SSW_GER.6.a
@@ -172,9 +208,19 @@ country_event = {
 		name = SSW_GER.10.a
 			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
+				add_ideas = {
+					if = {
+       					every_country = {
+							limit = {
+								is_in_faction_with = GER
+							}
+    					}   
+    				idea = GER_war_ideas_2
+					}
+					GER_war_ideas_1
+				}
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
-				add_ideas = GER_war_ideas_1
 				clr_global_flag = GER_civil_war
 			ENG = { set_global_flag = GER_civil_war }
 			FRA = { set_global_flag = GER_civil_war }
@@ -769,7 +815,7 @@ country_event = {
 	
 	option = {
 		name = SSW_GER.20.a
-		country_event = { id = SSW_GER.1 days = 30 }
+		country_event = { id = SSW_GER.1 }
 	}
 }
 
@@ -779,7 +825,12 @@ country_event = {
 	desc = SSW_GER.21.d
 	picture = GFX_report_event_germania_plam
 	is_triggered_only = yes
-	
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.2
+		}
+	}
 	option = {
 		name = SSW_GER.21.a
 		country_event= { days = 30 id = SSW_GER.2 }
