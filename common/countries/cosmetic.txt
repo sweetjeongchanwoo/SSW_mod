@@ -19,6 +19,11 @@ Roman_Empire = {	#ローマ帝国
 	color_ui = rgb { 159 8 7 }
 }
 
+DET-UKR = {	#ドニエストル・ウクライナ
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 51 153 255 }
+}
+
 #共同統治国家
 CLC_JAPandCHI = {	#日華共同港都市
 	color = rgb { 255 191 191 }
