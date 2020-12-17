@@ -4,9 +4,9 @@ state={
 	name="STATE_939"
 
 	history={
-		owner = ITA
+		owner = FRA
+		add_core_of = FRA
 		add_core_of = ITA
-		add_core_of = VFR
 		victory_points = {
 			9909 15 
 		}

@@ -22,8 +22,6 @@ add_to_faction = PAL
 add_to_faction = JOR
 add_to_faction = SUC
 add_to_faction = GIB
-add_to_faction = AFR
-add_to_faction = MOR
 
 set_autonomy = {
 	target = LBA
@@ -60,10 +58,6 @@ set_autonomy = {
 set_autonomy = {
 	target = GIB
 	autonomous_state = overseas_territory
-}
-set_autonomy = {
-	target = AFR
-	autonomous_state = dominion
 }
 
 set_politics = {

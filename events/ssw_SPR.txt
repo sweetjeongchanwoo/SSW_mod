@@ -14,12 +14,12 @@ country_event = {
 
     option = {
 		name = ssw_spr.1.a
-                ITA = {
-					annex_country = { 
-						target = AFR
-						transfer_troops = yes 
-					}
-				}
+#				ITA = {
+#					annex_country = { 
+#						target = AFR
+#						transfer_troops = yes 
+#					}
+#				}
 				RIF = {
 					annex_country = { 
 						target = MOR
@@ -494,12 +494,12 @@ country_event = {
 
     option = {
 		name = ssw_spr.6.a
-		ITA = {
-			annex_country = { 
-				target = AFR
-				transfer_troops = yes 
-			}
-		}
+#		ITA = {
+#			annex_country = { 
+#				target = AFR
+#				transfer_troops = yes 
+#			}
+#		}
 		RIF = {
 			annex_country = { 
 				target = MOR
@@ -602,7 +602,7 @@ country_event = {
 		}
 		ai_chance = { factor = 10}
 		news_event = { id = ssw_spr.41 }
-		VFR = {
+		FRA = {
 			country_event = { id = ssw_spr.42 }
 		}
 			}
@@ -665,7 +665,7 @@ country_event = {
 	option = {
 		name = ssw_spr.42.a
 		GER = {
-			puppet = VFR
+			puppet = FRA
 		}
 		ai_chance = { factor = 1 }				
 			}

@@ -106,7 +106,7 @@ buildings = {
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
-		max_level = 5 # This is the max unlock level
+		max_level = 10 #最大レベルを5から10へ変更
 		damage_factor = 0.1
 		value = 1
 	}
@@ -147,7 +147,7 @@ buildings = {
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
-		max_level = 10	#最大レベルを6から10へ変更
+		max_level = 12	#最大レベルを6から12へ変更
 		damage_factor = 0.5
 		value = 4
 	}

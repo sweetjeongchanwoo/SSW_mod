@@ -137,12 +137,22 @@ WAF_GER = {	#独領西アフリカ
 	color_ui = rgb { 0 120 95 }
 }
 
+DJI_GER = {	#独領トーゴ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 102 0 }
+}
+
 MAF_GER = {	#独領中部アフリカ
 	color = rgb { 102 89 86 }
 	color_ui = rgb { 90 140 90 }
 }
 
 MAD_GER = {	#独領マダガスカル
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 170 150 120 }
+}
+
+DJI_GER = {	#独領ジブチ
 	color = rgb { 102 89 86 }
 	color_ui = rgb { 170 150 120 }
 }
@@ -204,6 +214,11 @@ MOR_FRA = {	#仏領モロッコ
 	color_ui = rgb { 102 51 0 }
 }
 
+TUN_FRA = {	#仏領チュニジア
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 102 51 0 }
+}
+
 #ヴィシー・フランス
 NWA_VFR = {	#ヴィシー仏領西アフリカ
 	color = rgb { 80 168 181 }
@@ -220,35 +235,8 @@ MOR_VFR = {	#ヴィシー仏領モロッコ
 	color_ui = rgb { 102 51 0 }
 }
 
-#アルジェ・フランス
-NWA_AFR = {	#アルジェ仏領西アフリカ
-	color = rgb { 0 18 127 }
-	color_ui = rgb { 110 190 120 }
-}
-
-EQA_AFR = {	#アルジェ仏領赤道アフリカ
-	color = rgb { 0 18 127 }
-	color_ui = rgb { 155 210 205 }
-}
-
-MOR_AFR = {	#アルジェ仏領モロッコ
-	color = rgb { 0 18 127 }
-	color_ui = rgb { 102 51 0 }
-}
-
-#自由フランス
-NWA_FFR = {	#自由仏領西アフリカ
-	color = rgb { 100 100 255 }
-	color_ui = rgb { 110 190 120 }
-}
-
-EQA_FFR = {	#自由仏領赤道アフリカ
-	color = rgb { 100 100 255 }
-	color_ui = rgb { 155 210 205 }
-}
-
-MOR_FFR = {	#自由仏領モロッコ
-	color = rgb { 100 100 255 }
+TUN_VFR = {	#ヴィシー仏領チュニジア
+	color = rgb { 80 168 181 }
 	color_ui = rgb { 102 51 0 }
 }
 

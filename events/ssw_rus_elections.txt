@@ -37,3 +37,108 @@ country_event = {
 		hidden_effect = { set_country_flag = democratic_government }
 	}
 }
+country_event = {
+	id = ssw_rus_elections.2
+	title = ssw_rus_elections.2.title
+	desc = ssw_rus_elections.2.desc
+	picture = GFX_report_event_albanian_king_zog
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_elections.2.a
+		ai_chance = { factor = 90 }
+		complete_national_focus = RUS_rise_of_the_republic
+		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus_elections.2.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = army_coup_tt
+		add_stability = -0.15
+		add_war_support = -0.15
+		hidden_effect = {
+			country_event = { id = ssw_rus_elections.3 days = 210 }
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.15
+			}
+		}
+	}
+}
+country_event = {
+	id = ssw_rus_elections.3
+	title = ssw_rus_elections.3.title
+	desc = ssw_rus_elections.3.desc
+	picture = GFX_report_event_albanian_king_zog
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_elections.3.a
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = authority_despotism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = authority_despotism
+			elections_allowed = no
+		}
+		if = {
+			limit = { has_idea = ssw_despotism }
+			swap_ideas = {
+				remove_idea = ssw_despotism
+				add_idea = ssw_military_dictatorship
+			}
+		}
+		if = {
+			limit = { has_idea = rus_debahu2 }
+			remove_ideas = rus_debahu2
+		}
+		if = {
+			limit = { has_idea = rus_debahu3 }
+			swap_ideas = {
+				remove_idea = rus_debahu3
+				add_idea = rus_ideas_38
+			}
+		}
+		complete_national_focus = RUS_the_great_coup
+		hidden_effect = {
+			news_event = { id = ssw_rus_elections.4 hours = 6 }
+			set_party_name = {
+				ideology = authority_despotism
+				long_name = rus_ideas_38
+				name = rus_ideas_38
+			}
+			create_country_leader = {
+				name = "Andrey Vlasov"
+				desc = "POLITICS_ANDREY_VLASOV_DESC"
+				picture = "gfx/leaders/RUS/Portrait_Russia_Andrey_Vlasov.dds"
+				expire = "1965.1.1"
+				ideology = authority_despotism_ideology
+				traits = {
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = ssw_rus_elections.4
+	title = ssw_rus_elections.4.title
+	desc = ssw_rus_elections.4.desc
+	picture = GFX_news_event_008
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_elections.4.a
+		trigger = { original_tag = RUS }
+	}
+	option = {
+		name = ssw_rus_elections.4.b
+		trigger = { NOT = { original_tag = RUS } }
+	}
+}

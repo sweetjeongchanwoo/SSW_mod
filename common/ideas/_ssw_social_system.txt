@@ -29,7 +29,7 @@ ideas = {
 				surrender_limit = -0.2
 			}
 			
-			cancel_if_invalid = yes
+			cancel_if_invalid = no
 			
 			ai_will_do = {
 				   factor = 0.75

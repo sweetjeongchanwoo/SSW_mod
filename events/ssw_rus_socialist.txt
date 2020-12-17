@@ -19,8 +19,7 @@ country_event = {
 			ideology = classical_communism
 			popularity = -0.03
 		}
-		complete_national_focus = RUS_rise_of_the_republic
-		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
+		hidden_effect = { country_event = { id = ssw_rus_elections.2 days = 70 } }
 	}
 	option = {
 		name = ssw_rus_communism.1000.b
@@ -193,13 +192,7 @@ country_event = {
 			ideology = anarchism
 			popularity = 0.07
 		}
-		if = {
-			limit = { has_idea = konstantin_rodzaevsky }
-			swap_ideas = {
-				remove_idea = konstantin_rodzaevsky
-				add_idea = RUS_pavel_sudoplatov
-			}
-		}
+		add_ideas = { RUS_pavel_sudoplatov }
 		hidden_effect = { country_event = { id = ssw_rus_communism.1005 days = 77 } }
 	}
 }
@@ -226,19 +219,9 @@ country_event = {
 			ruling_party = classical_communism
 			elections_allowed = no
 		}
-		if = {
-			limit = { has_idea = ssw_despotism }
-			swap_ideas = {
-				remove_idea = ssw_despotism
-				add_idea = ssw_one_party_dictatorship
-			}
-		}
-		if = {
-			limit = { has_idea = RUS_andrey_vlasov }
-			swap_ideas = {
-				remove_idea = RUS_andrey_vlasov
-				add_idea = RUS_vladimir_kryuchkov
-			}
+		add_ideas = {
+			RUS_vladimir_kryuchkov
+			ssw_one_party_dictatorship
 		}
 		add_stability = -0.05
 		complete_national_focus = RUS_rise_of_the_communist_republic
@@ -249,15 +232,6 @@ country_event = {
 			}
 			news_event = { id = ssw_rus_communism.1007 hours = 6 }
 			country_event = { id = ssw_rus_communism.1008 days = 14 }
-			create_country_leader = {
-				name = "Vladimir Kryuchkov"
-				desc = "POLITICS_VLADIMIR_KRYUCHKOV_DESC"
-				picture = "gfx/leaders/RUS/Portrait_Russia_Vladimir_Kryuchkov.dds"
-				expire = "1965.1.1"
-				ideology = classical_communism_ideology
-				traits = {
-				}
-			}
 		}
 	}
 }
@@ -323,7 +297,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_communism.1008.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 40 }
 		custom_effect_tooltip = kryuchkov_secretary_tt
 		add_popularity = {
 			ideology = classical_communism
@@ -339,7 +313,7 @@ country_event = {
 	}
 	option = {
 		name = ssw_rus_communism.1008.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 30 }
 		custom_effect_tooltip = furtseva_secretary_tt
 		add_popularity = {
 			ideology = progressive_communism
@@ -349,17 +323,23 @@ country_event = {
 			ruling_party = progressive_communism
 			elections_allowed = no
 		}
+	}
+	option = {
+		name = ssw_rus_communism.1008.c
+		ai_chance = { factor = 30 }
+		custom_effect_tooltip = anarchist_secretary_tt
+		add_popularity = {
+			ideology = anarchism
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = anarchism
+			elections_allowed = no
+		}
+		add_ideas = ssw_collectivist_anarchism
 		hidden_effect = {
 			retire_ideology_leader = classical_communism
-			create_country_leader = {
-				name = "Yekaterina Furtseva"
-				desc = "POLITICS_YEKATERINA_FURTSEVA_DESC"
-				picture = "gfx/leaders/RUS/Portrait_Russia_Yekaterina_Furtseva.dds"
-				expire = "1965.1.1"
-				ideology = progressive_communism_ideology
-				female = yes
-				traits = { general_secretary_of_the_russia }
-			}
+			complete_national_focus = RUS_anarchist_politics
 		}
 	}
 }
@@ -388,5 +368,115 @@ news_event = {
 				has_government = classical_communism
 			}
 		}
+	}
+}
+country_event = {
+	id = ssw_rus_communism.1010
+	title = ssw_rus.14.title
+	desc = ssw_rus.14.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus.14.a
+		ai_chance = { factor = 90 }
+		if = {
+			limit = { is_faction_leader = yes }
+			add_to_faction = RUS
+		}
+		if = {
+			limit = { is_faction_leader = no }
+			diplomatic_relation = { country = RUS relation = non_aggression_pact }
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = RUS
+					is_claimed_by = RUS
+				}
+				is_owned_and_controlled_by = GER
+				NOT = {
+					is_core_of = GER
+					is_claimed_by = GER
+				}
+			}
+			RUS = { transfer_state = PREV }
+		}
+		if = {
+			limit = { MOS = { is_subject_of = GER } }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_claimed_by = RUS
+					}
+					is_owned_and_controlled_by = MOS
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				RUS = { transfer_state = PREV }
+			}
+		}
+		if = {
+			limit = { BAL = { is_subject_of = GER } }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_claimed_by = RUS
+					}
+					is_owned_and_controlled_by = BAL
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				RUS = { transfer_state = PREV }
+			}
+		}
+		if = {
+			limit = { UKR = { is_subject_of = GER } }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_claimed_by = RUS
+					}
+					OR = {
+						is_owned_and_controlled_by = UKR
+						is_owned_and_controlled_by = POL
+					}
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				RUS = { transfer_state = PREV }
+			}
+		}
+		if = {
+			limit = { CCS = { is_subject_of = GER } }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_claimed_by = RUS
+					}
+					is_owned_and_controlled_by = CCS
+					NOT = {
+						is_core_of = GER
+						is_claimed_by = GER
+					}
+				}
+				RUS = { transfer_state = PREV }
+			}
+		}
+		RUS = { country_event = { id = ssw_faction.5 hours = 6 } }
+	}
+	option = {
+		name = ssw_rus.14.b
+		ai_chance = { factor = 10 }
+		RUS = { country_event = { id = ssw_faction.6 hours = 6 } }
 	}
 }

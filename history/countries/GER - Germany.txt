@@ -1,4 +1,4 @@
-﻿capital = 965
+capital = 965
 oob = "GER_1950"
 
 set_convoys = 5
@@ -113,7 +113,7 @@ add_to_faction = NOR
 add_to_faction = HOL
 add_to_faction = BEL
 add_to_faction = NFR
-add_to_faction = VFR
+add_to_faction = FRA
 add_to_faction = CRO
 add_to_faction = BAL
 add_to_faction = UKR
@@ -191,6 +191,10 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = MAF
+	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = DJI
 	autonomous_state = reichskolonie
 }
 set_autonomy = {
