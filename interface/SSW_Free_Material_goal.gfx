@@ -27,12 +27,4 @@ spriteTypes = {
 		name = "GFX_focus_RUS_wine"
 		texturefile = "gfx/interface/goals/Free_Material/focus_RUS_wine.dds"
 	}
-	spriteType = {
-		name = "GFX_focus_SER_yugoslavia"
-		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavia.dds"
-	}
-	spriteType = {
-		name = "GFX_focus_SER_yugoslavism"
-		texturefile = "gfx/interface/goals/Free_Material/focus_SER_yugoslavism.dds"
-	}
 }

@@ -50,7 +50,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_rise_of_the_communist_republic
-		icon = GFX_focus_prc_agrarian_socialism
+		icon = GFX_focus_RUS_rise_of_the_communist_republic
 		cost = 5
 		ai_will_do = { factor = 0 }
 		x = -6
@@ -80,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_kryuchkov_politics
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_RUS_kryuchkov_politics
 		prerequisite = { focus = RUS_rise_of_the_communist_republic }
 		mutually_exclusive = { focus = RUS_furtseva_politics focus = RUS_anarchist_politics }
 		available = {
@@ -272,7 +272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_anarchist_politics
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		icon = GFX_focus_RUS_anarchist_politics
 		prerequisite = { focus = RUS_rise_of_the_communist_republic }
 		mutually_exclusive = {
 			focus = RUS_kryuchkov_politics
@@ -1343,7 +1343,7 @@ focus_tree = {
 			focus = RUS_right_war
 			focus = RUS_kill_japanese
 		}
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_RUS_defense_council
 		x = 2
 		y = 1
 		relative_position_id = RUS_global_defense_council
@@ -1359,7 +1359,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_furtseva_politics
-		icon = GFX_goal_support_communism
+		icon = GFX_focus_RUS_furtseva_politics
 		prerequisite = { focus = RUS_rise_of_the_communist_republic }
 		mutually_exclusive = { focus = RUS_kryuchkov_politics focus = RUS_anarchist_politics }
 		available = {
@@ -1666,7 +1666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_revive_soviet
-		icon = GFX_focus_spr_masters_of_our_own_fate
+		icon = GFX_focus_RUS_revive_soviet
 		cost = 10.00
 		ai_will_do = { factor = 10 }
 		prerequisite = {
@@ -1767,7 +1767,7 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = ssw_rus_communism.1009 hours = 6 }
 				drop_cosmetic_tag = yes
-				set_cosmetic_tag = SOV
+				set_cosmetic_tag = RUS_SOV
 				if = {
 					limit = { controls_state = 219 }
 					set_capital = 219
@@ -4275,7 +4275,9 @@ focus_tree = {
 		x = 56
 		y = 14
 		completion_reward = {
-			RUS = { add_ideas = rus_ideas_37 }
+			RUS = {
+				add_ideas = rus_ideas_37
+			}
 		}
 	}
 	focus = {
@@ -4645,9 +4647,19 @@ focus_tree = {
 				limit = { has_idea = rus_ideas_38 }
 				remove_ideas = rus_ideas_38
 			}
-			add_ideas = {
-				RUS_konstantin_rodzaevsky_political_leader
-				ssw_one_party_dictatorship
+			if = {
+				limit = { has_idea = RUS_andrey_vlasov }
+				swap_ideas = {
+					remove_idea = RUS_andrey_vlasov
+					add_idea = RUS_konstantin_rodzaevsky_political_leader
+				}
+			}
+			if = {
+				limit = { has_idea = ssw_military_dictatorship }
+				swap_ideas = {
+					remove_idea = ssw_military_dictatorship
+					add_idea = ssw_one_party_dictatorship
+				}
 			}
 			add_popularity = {
 				ideology = national_socialism
@@ -4777,13 +4789,23 @@ focus_tree = {
 				limit = { NOT = { has_government = national_fascism } }
 				set_politics = { ruling_party = national_fascism elections_allowed = no }
 			}
-			add_ideas = {
-				RUS_anastasy_vonsiatsky
-				ssw_one_party_dictatorship
-			}
 			if = {
 				limit = { has_idea = rus_ideas_38 }
 				remove_ideas = rus_ideas_38
+			}
+			if = {
+				limit = { has_idea = RUS_andrey_vlasov }
+				swap_ideas = {
+					remove_idea = RUS_andrey_vlasov
+					add_idea = RUS_anastasy_vonsiatsky
+				}
+			}
+			if = {
+				limit = { has_idea = ssw_military_dictatorship }
+				swap_ideas = {
+					remove_idea = ssw_military_dictatorship
+					add_idea = ssw_one_party_dictatorship
+				}
 			}
 			add_popularity = {
 				ideology = national_fascism

@@ -6,32 +6,28 @@ set_technology = {
 }
 add_ideas = {
 	civilian_economy
-	ssw_parliamentary_democracy_rightist_administration
-	MEX_manuel_gomez_morin
+	ssw_parliamentary_democracy_leftist_administration
+	MEX_lazaro_cardenas
+	mex_ideas_18
 }
-set_stability = 0.6
-set_war_support = 0.7
+country_lock_all_division_template = yes
+set_stability = 0.05
+set_war_support = 0.05
 set_politics = {
-	ruling_party = social_conservatism
+	ruling_party = social_democracy
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	social_conservatism = 45
+	social_conservatism = 20
 	progressive_communism = 20
-	social_democracy = 20
+	social_democracy = 45
 	social_liberalism = 15
 }
+country_event = { id = ssw_mex.1 days = 120 }
 
-#Vicente Lombardo is a classical communist
-#Valentín Campa is a progressive communist
-#Lázaro Cárdenas is a social democrat
 #Adolfo Ruiz Cortines is a next social democrat
-#Raúl Salinas Lozano is a social liberalist
-#Juan Andreu is an authority despotist
-#Salvador Abascal is a national fascist
-#Lázaro Cárdenas is a corporatocracist
 
 create_country_leader = {
 	name = "Anarchism Union"
@@ -41,6 +37,39 @@ create_country_leader = {
 	ideology = anarchism_ideology
 	traits = {
 	}
+}
+create_country_leader = {
+	name = "Valentín Campa"
+	desc = "POLITICS_VALENTIN_CAMPA_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Valentin_Campa_ssw.dds"
+	expire = "1999.11.25"
+	ideology = progressive_communism_ideology
+	traits = { railroad_enthusiast }
+}
+create_country_leader = {
+	name = "Vicente Lombardo"
+	desc = "POLITICS_VICENTE_LOMBARDO_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Vicente_Lombardo_ssw.dds"
+	expire = "1968.11.16"
+	ideology = classical_communism_ideology
+	traits = { the_dean_of_mexican_marxism }
+}
+create_country_leader = {
+	name = "Lázaro Cárdenas"
+	desc = "POLITICS_LAZARO_CARDENAS_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Lazaro_Cardenas.dds"
+	expire = "1970.10.19"
+	ideology = social_democracy_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Raúl Salinas Lozano"
+	desc = "POLITICS_RAUL_LOZANO_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Raul_Salinas_Lozano_ssw.dds"
+	expire = "2004.2.23"
+	ideology = social_liberalism_ideology
+	traits = { smooth_talking_charmer }
 }
 create_country_leader = {
 	name = "Manuel Gómez Morín"
@@ -62,5 +91,41 @@ create_country_leader = {
 	traits = {
 		the_gentleman_president
 		financial_expert
+	}
+}
+create_country_leader = {
+	name = "Juan Andreu"
+	desc = "POLITICS_JUAN_ANDREU_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Juan_Andreu_ssw.dds"
+	expire = "1965.10.9"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Salvador Abascal"
+	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Salvador_Abascal_ssw.dds"
+	expire = "2000.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Victor Serge"
+	desc = "POLITICS_VICTOR_SERGE_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Victor_Serge_ssw.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Lázaro Cárdenas"
+	desc = "POLITICS_LAZARO_CARDENAS_DESC"
+	picture = "gfx/leaders/MEX/Portrait_Mexico_Lazaro_Cardenas.dds"
+	expire = "1970.10.19"
+	ideology = corporatocracism_ideology
+	traits = {
 	}
 }

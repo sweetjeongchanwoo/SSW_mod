@@ -4,8 +4,7 @@ ideas = {
 		RUS_collectivized_society_for_ssw = {
 			picture = SPR_collectivized_society
 			name = SPR_collectivized_society
-			allowed = { original_tag = RUS }
-			available = { has_government = anarchism }
+			allowed = { always = yes }
 			removal_cost = -1
 			modifier = {
 				resistance_target = -0.2
@@ -1786,8 +1785,8 @@ ideas = {
 			removal_cost = -1
 			picture = SSW_memory_of_the_empire
 			modifier = {
-				conscription = 0.25
-				conscription_factor = 0.25
+				conscription = 0.05
+				conscription_factor = 0.20
 				training_time_factor = -0.1
 			}
 		}
