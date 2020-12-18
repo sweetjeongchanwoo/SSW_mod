@@ -320,6 +320,231 @@ ideas = {
 				navy_submarine_detection_factor = 0.20
 			}
 		}
+		PER_Education_at_the_Madrasa = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+
+		PER_Gradual_economic_reform = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				political_power_factor = -0.2
+			}
+		}
+
+		PER_Compromised_reforms = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				political_power_factor = 0.1
+				add_stability = 0.2
+			}
+		}
+
+		PER_constitutional_state = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				stability_weekly = 0.05
+				drift_defence_factor = 0.4
+				trade_opinion_factor = 0.4
+			}
+		}
+
+		PER_assault_party = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		PER_Cooperation_with_SS = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.2
+			}
+		}
+
+		PER_German_Technical_Advisory_Group = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+
+		PER_nazi = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.50
+				conscription_factor = 0.10
+				attrition = -0.1
+			}
+		}
+
+		PER_faci = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				justify_war_goal_time = -0.20
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.20
+				terrain_penalty_reduction = 0.25
+			}
+		}
+
+		PER_Modern_oil_extraction_equipment = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				fuel_gain_factor = 0.5
+			}
+		}
+
+		PER_green_shirt = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		PER_Iranian_giant_eagle = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				war_support_factor = 0.20
+				surrender_limit = 0.25
+			}
+		}
+
+		PER_SAVAK = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				operative_slot = 1
+				resistance_target = -0.4
+				root_out_resistance_effectiveness_factor = 0.5
+			}
+		}
+
+		PER_Aryanism = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				political_power_gain = 0.25
+				war_support_factor = 0.25
+			}
+		}
+
+		PER_Aryanism_2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_local_self_management
+			modifier = {
+				political_power_gain = 0.5
+				war_support_factor = 0.5
+			}
+		}
 	}
 		#軍需品設計社
 		

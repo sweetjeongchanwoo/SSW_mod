@@ -24,6 +24,14 @@
  Roman_Empire_DEF:0 "ローマ帝国"
  Roman_Empire_ADJ:0 "ローマ"
  
+ DET-UKR:0 "ドニエストル・ウクライナ"
+ DET-UKR_DEF:0 "ドニエストル・ウクライナ"
+ DET-UKR_ADJ:0 "ドニエストル・ウクライナ"
+ 
+ DET-MOL:0 "沿ドニエストル・モルドバ"
+ DET-MOL_DEF:0 "沿ドニエストル・モルドバ"
+ DET-MOL_ADJ:0 "沿ドニエストル・モルドバ"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"

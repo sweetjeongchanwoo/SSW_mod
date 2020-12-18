@@ -51,7 +51,9 @@ country_event = {
 	option = {
 		name = sswper.4.a
 		ai_chance = { factor = 1}
-		add_political_power= -25
+		add_political_power = -25
+		set_country_flag = PER_conservatives
+		complete_national_focus = PER_Authoritarian_Democracy_1
 	}
 }
 ##Event: テクノクラートへの譲歩
@@ -65,6 +67,8 @@ country_event = {
 		name = sswper.5.a
 		ai_chance = { factor = 1}
 		add_political_power= -25
+		set_country_flag = PER_liberal
+		complete_national_focus = PER_Authoritarian_Democracy_1
 	}
 }
 ##Event: 王たちの王
@@ -94,5 +98,179 @@ country_event = {
 		
 
 
+	}
+}
+
+##Event: 反対派の対処
+country_event = {
+	id = sswper.8
+	title = sswper.8.title
+	desc = sswper.8.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.8.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 改革の継続
+country_event = {
+	id = sswper.9
+	title = sswper.9.title
+	desc = sswper.9.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.9.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 対価
+country_event = {
+	id = sswper.10
+	title = sswper.10.title
+	desc = sswper.10.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.10.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 鷲が孵る朝
+country_event = {
+	id = sswper.11
+	title = sswper.11.title
+	desc = sswper.11.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.11.a
+		set_politics = {
+				ruling_party = national_socialism
+				popularity = 50
+			}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 議会問題
+country_event = {
+	id = sswper.12
+	title = sswper.12.title
+	desc = sswper.12.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.12.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 白色革命
+country_event = {
+	id = sswper.13
+	title = sswper.13.title
+	desc = sswper.13.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.13.a
+		hidden_effect = {
+			set_country_flag = Iranian_Civil_War
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: デモ隊
+country_event = {
+	id = sswper.14
+	title = sswper.14.title
+	desc = sswper.14.desc
+	picture = GFX_event_test
+	trigger = {
+		has_country_flag = Iranian_Civil_War
+	}
+	mean_time_to_happen = {
+	days = 0.1
+	}
+	fire_only_once = yes
+	option = {
+		name = sswper.14.a
+		hidden_effect = {
+			set_country_flag = Iranian_Civil_War_2
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 発砲
+country_event = {
+	id = sswper.15
+	title = sswper.15.title
+	desc = sswper.15.desc
+	picture = GFX_event_test
+	trigger = {
+		has_country_flag = Iranian_Civil_War_2
+	}
+	mean_time_to_happen = {
+	days = 0.1
+	}
+	fire_only_once = yes
+	option = {
+		name = sswper.15.a
+		hidden_effect = {
+			set_country_flag = Iranian_Civil_War_3
+		}
+
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 崩壊
+country_event = {
+	id = sswper.16
+	title = sswper.16.title
+	desc = sswper.16.desc
+	picture = GFX_event_test
+	trigger = {
+		has_country_flag = Iranian_Civil_War_3
+	}
+	mean_time_to_happen = {
+	days = 0.1
+	}
+	fire_only_once = yes
+	option = {
+		name = sswper.16.a
+		hidden_effect = {
+			set_country_flag = Iranian_Civil_War_4
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: クルド反乱
+country_event = {
+	id = sswper.17
+	title = sswper.17.title
+	desc = sswper.17.desc
+	picture = GFX_event_test
+	trigger = {
+		has_country_flag = Iranian_Civil_War_4
+	}
+	mean_time_to_happen = {
+	days = 0.01
+	}
+	fire_only_once = yes
+	option = {
+		name = sswper.17.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: イラン内戦
+news_event = {
+	id = sswper.18
+	title = sswper.18.title
+	desc = sswper.18.desc
+	picture = GFX_news_event_german_volunteers
+	fire_only_once = yes
+	option = {
+		name = sswper.18.a
+		ai_chance = { factor = 1}
 	}
 }

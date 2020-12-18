@@ -1,0 +1,24 @@
+state = {
+	id = 974
+	name = "STATE_974"
+	manpower = 444900
+	
+	state_category = city
+	
+	history={
+		owner = INS
+		add_core_of = INS
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 3
+			1208 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {	1208 1	}
+	}
+	
+	provinces = {
+		1208 2117 4216 4396 7443 8091 10269 10285 12283 12905
+	}
+}
