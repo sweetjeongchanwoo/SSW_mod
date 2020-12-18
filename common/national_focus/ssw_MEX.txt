@@ -913,8 +913,8 @@ focus_tree = {
 		id = MEX_industrial_effort
 		icon = GFX_goal_generic_production2
 		text = industrial_effort
-		x = 14
-		y = 6
+		x = 24
+		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
@@ -932,7 +932,6 @@ focus_tree = {
 	focus = {
 		id = MEX_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		text = construction_effort
 		prerequisite = { focus = MEX_industrial_effort }
 		x = 0
 		y = 1
@@ -1003,10 +1002,157 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = MEX_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MEX_construction_effort }
+		x = 0
+		y = 2
+		relative_position_id = MEX_construction_effort
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MEX_construction_effort_2 }
+		prerequisite = { focus = MEX_reclamation_of_wasteland }
+		prerequisite = { focus = MEX_excavation_focus }
+		prerequisite = { focus = MEX_industrial_science }
+		prerequisite = { focus = MEX_streamlining_the_manufacturing_process }
+		x = 0
+		y = 2
+		relative_position_id = MEX_construction_effort_2
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
 		id = MEX_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MEX_industrial_effort }
-		text = production_effort
 		x = 2
 		y = 1
 		relative_position_id = MEX_industrial_effort
@@ -1050,10 +1196,126 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = MEX_production_effort }
+		x = 0
+		y = 2
+		relative_position_id = MEX_production_effort
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = MEX_production_effort_2 }
+		prerequisite = { focus = MEX_reclamation_of_wasteland }
+		prerequisite = { focus = MEX_excavation_focus }
+		prerequisite = { focus = MEX_industrial_science }
+		prerequisite = { focus = MEX_streamlining_the_manufacturing_process }
+		x = 0
+		y = 2
+		relative_position_id = MEX_production_effort_2
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1170,6 +1432,446 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_architecture_dockyard_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MEX_architecture_dockyard }
+		relative_position_id = MEX_architecture_dockyard
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_architecture_dockyard_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MEX_architecture_dockyard_2 }
+		prerequisite = { focus = MEX_reclamation_of_wasteland }
+		prerequisite = { focus = MEX_excavation_focus }
+		prerequisite = { focus = MEX_industrial_science }
+		prerequisite = { focus = MEX_streamlining_the_manufacturing_process }
+		relative_position_id = MEX_architecture_dockyard_2
+		x = 0
+		y = 2
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_improvement_of_working_environment
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_effort }
+		prerequisite = { focus = MEX_production_effort }
+		prerequisite = { focus = MEX_architecture_dockyard }
+		relative_position_id = MEX_architecture_dockyard
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -1
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_11
+		}
+	}
+	focus = {
+		id = MEX_establishment_of_research_institute
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_effort }
+		prerequisite = { focus = MEX_production_effort }
+		prerequisite = { focus = MEX_architecture_dockyard }
+		relative_position_id = MEX_architecture_dockyard
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_12
+		}
+	}
+	focus = {
+		id = MEX_construction_company
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_effort }
+		prerequisite = { focus = MEX_production_effort }
+		prerequisite = { focus = MEX_architecture_dockyard }
+		relative_position_id = MEX_production_effort
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = -1
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_13
+		}
+	}
+	focus = {
+		id = MEX_cooperation_with_the_syndicate
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_effort }
+		prerequisite = { focus = MEX_production_effort }
+		prerequisite = { focus = MEX_architecture_dockyard }
+		relative_position_id = MEX_production_effort
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_14
+			add_popularity = { ideology = progressive_communism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = MEX_reclamation_of_wasteland
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_improvement_of_working_environment }
+		relative_position_id = MEX_improvement_of_working_environment
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+		completion_reward = {
+			add_ideas = mex_ideas_15
+			every_state = {
+				limit = { is_owned_and_controlled_by = MEX }
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = MEX_excavation_focus
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_establishment_of_research_institute }
+		relative_position_id = MEX_establishment_of_research_institute
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+	focus = {
+		id = MEX_industrial_science
+		icon = GFX_focus_generic_industry_2
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_company }
+		relative_position_id = MEX_construction_company
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+		completion_reward = {
+			add_ideas = mex_ideas_16
+		}
+	}
+	focus = {
+		id = MEX_streamlining_the_manufacturing_process
+		icon = GFX_goal_generic_production
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_cooperation_with_the_syndicate }
+		relative_position_id = MEX_cooperation_with_the_syndicate
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				technology = basic_machine_tools
+				technology = improved_machine_tools
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
+			}
+		}
+	}
+	focus = {
+		id = MEX_mexican_miracle
+		icon = GFX_focus_MEX_flag_mexico
+		cost = 10
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = MEX_construction_effort_3 }
+		prerequisite = { focus = MEX_production_effort_3 }
+		prerequisite = { focus = MEX_architecture_dockyard_3 }
+		relative_position_id = MEX_construction_effort_3
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = mex_ideas_17
+		}
+	}
+	##### LEFTIST #####
+	focus = {
+		id = MEX_leftist
+		available = { hidden_trigger = { always = no } }
+		mutually_exclusive = { focus = MEX_rightist }
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 30
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = ssw_unlock_focuses_tt
+			add_popularity = {
+				ideology = progressive_communism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.15
+			}
+		}
+	}
+	##### RIGHTIST #####
+	focus = {
+		id = MEX_rightist
+		available = { hidden_trigger = { always = no } }
+		mutually_exclusive = { focus = MEX_leftist }
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		x = 42
+		y = 0
+		completion_reward = {
+			custom_effect_tooltip = ssw_unlock_focuses_tt
+			add_popularity = {
+				ideology = social_conservatism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.1
 			}
 		}
 	}

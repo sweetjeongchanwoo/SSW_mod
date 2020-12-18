@@ -1,0 +1,4 @@
+MEX_social_democracy_policy = {
+	allowed = { original_tag = MEX }
+	visible = { original_tag = MEX }
+}

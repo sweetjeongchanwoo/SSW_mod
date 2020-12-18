@@ -16,6 +16,22 @@ ideas = {
 			traits = { Charisma }
 			modifier = { political_power_factor = 0.05 }
 		}
+		MEX_lazaro_cardenas = {
+			picture = SSW_MEX_lazaro_cardenas
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { Charisma }
+			modifier = { war_support_factor = 0.05 }
+		}
 	}
 	minister_of_foreign_affairs = {
 		
@@ -135,6 +151,86 @@ ideas = {
 				training_time_army_factor = -0.15
 				army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
+			}
+		}
+		mex_ideas_11 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		mex_ideas_12 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		mex_ideas_13 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SPR_collectivized_society
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		mex_ideas_14 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		mex_ideas_15 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				global_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		mex_ideas_16 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		mex_ideas_17 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FRA_la_deluge
+			modifier = {
+				industry_repair_factor = 0.3
+				production_speed_buildings_factor = 0.3
+			}
+		}
+		mex_ideas_18 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SPR_political_violence
+			modifier = {
+				custom_modifier_tooltip = start_mexico_civilwar_tt
 			}
 		}
 	}

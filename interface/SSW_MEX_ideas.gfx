@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_idea_SSW_MEX_manuel_gomez_morin"
 		textureFile = "gfx/interface/ideas/MEX/idea_minister_manuel_gomez_morin.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SSW_MEX_lazaro_cardenas"
+		textureFile = "gfx/interface/ideas/MEX/idea_minister_lazaro_cardenas.dds"
+	}
 }
