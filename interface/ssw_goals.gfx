@@ -289,7 +289,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_yen_block_kuhara.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_JAP_ssw_second_dissarament"
+		name = "GFX_focus_JAP_ssw_second_dissarament"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds"
 	}
 	spriteType = {

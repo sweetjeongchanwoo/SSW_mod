@@ -384,7 +384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Submission_of_the_Second_Disarmament_Bill
-		icon = GFX_goal_JAP_ssw_second_dissarament
+		icon = GFX_focus_JAP_ssw_second_dissarament_shine
 		cost = 9.00
 		x = 45
 		y = 0
