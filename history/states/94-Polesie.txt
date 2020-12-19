@@ -4,6 +4,8 @@ state={
 
 	history={
 		owner = BAL
+		add_core_of = BAL
+		add_core_of = BLR
 		buildings = {
 			infrastructure = 3
 
@@ -14,7 +16,6 @@ state={
 		victory_points = {
 			560 1
 		}
-		add_core_of = BAL
 	}
 
 	provinces={

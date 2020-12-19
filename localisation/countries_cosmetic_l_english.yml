@@ -32,6 +32,10 @@
  DET-MOL_DEF:0 "沿ドニエストル・モルドバ"
  DET-MOL_ADJ:0 "沿ドニエストル・モルドバ"
  
+ MEX_rebellion:0 "メキシコ反乱軍"
+ MEX_rebellion_DEF:0 "メキシコ反乱軍"
+ MEX_rebellion_ADJ:0 "メキシコ反乱軍"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
@@ -48,6 +52,10 @@
  RUS_empire:0 "ロシア帝国"
  RUS_empire_DEF:0 "ロシア帝国"
  RUS_empire_ADJ:0 "ロシア"
+ 
+ MEX_empire:0 "メキシコ帝国"
+ MEX_empire_DEF:0 "メキシコ帝国"
+ MEX_empire_ADJ:0 "メキシコ"
  
 #ソビエト
  SOV_provisional:0 "ソビエト臨時政府"

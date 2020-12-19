@@ -9,6 +9,7 @@ state={
 		owner = CCS
 		add_core_of = CCS
 		add_core_of = AZR
+		add_core_of = SOV
 		victory_points = {
 			7661 15 
 		}
