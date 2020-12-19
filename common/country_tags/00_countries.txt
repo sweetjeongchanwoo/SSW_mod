@@ -296,3 +296,6 @@ LTV	= "countries/Western Europe.txt"
 
 PRJ = "countries/Asia.txt"
 JSF = "countries/Asia.txt"
+
+IIR	= "countries/Middle East.txt"	#イスラーム・イラン
+CIR	= "countries/Middle East.txt"	#共産イラン
