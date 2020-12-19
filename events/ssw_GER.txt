@@ -6,19 +6,11 @@ country_event = {
 	desc = SSW_GER.1.d
 	picture = GFX_report_event_spr_franco_victory
 	is_triggered_only = yes
-	fire_only_once = yes
 	major = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.2
-		}
-	}
 	option = {
 		name = SSW_GER.1.a
 		ai_chance = { factor = 1 }
-		country_event= { days = 30 id = SSW_GER.21 }
-		news_event = ssw.3
+		country_event= { days = 15 id = SSW_GER.21 }
 	}
 }
 ##Event: 万博開催
@@ -29,18 +21,12 @@ country_event = {
 	picture = GFX_news_event_herman_goring
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.3
-		}
-	}
 	major = yes
 	option = {
 		name = SSW_GER.2.a
 		ai_chance = { factor = 1 }
 		news_event= {
-			days = 30 
+			days = 10
 			id = SSW_GER.3 
 		}
 	}
@@ -53,20 +39,10 @@ news_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.6
-		}
-	}
 	major = yes
 	option = {
 		name = SSW_GER.3.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.4
-		}
 	}
 }
 
@@ -80,17 +56,13 @@ country_event = {
 	trigger = {
 		focus_progress = {
 		focus = GER_ssw_focus1
-			progress > 0.7
+			progress > 0.5
 		}
 	}
 	major = yes
 	option = {
 		name = SSW_GER.4.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.5
-		}
 	}
 }
 
@@ -104,17 +76,13 @@ country_event = {
 	trigger = {
 		focus_progress = {
 		focus = GER_ssw_focus1
-			progress > 0.8
+			progress > 0.7
 		}
 	}
 	major = yes
 	option = {
 		name = SSW_GER.5.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.6 
-		}
 	}
 }
 
@@ -217,7 +185,7 @@ country_event = {
     					}   
     				idea = GER_war_ideas_2
 					}
-					GER_war_ideas_1
+					idea = GER_war_ideas_1
 				}
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
@@ -815,7 +783,7 @@ country_event = {
 	
 	option = {
 		name = SSW_GER.20.a
-		country_event = { id = SSW_GER.1 }
+		country_event = { id = SSW_GER.1 days = 5 }
 	}
 }
 
@@ -825,15 +793,9 @@ country_event = {
 	desc = SSW_GER.21.d
 	picture = GFX_report_event_germania_plam
 	is_triggered_only = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.2
-		}
-	}
 	option = {
 		name = SSW_GER.21.a
-		country_event= { days = 30 id = SSW_GER.2 }
+		country_event= { days = 15 id = SSW_GER.2 }
 	}
 }
 
