@@ -7,6 +7,8 @@ leader_traits = {
 	}
 	Air_Force_founder = {
 		random = no
+		war_support_factor = 0.10
+		experience_gain_air_factor = 0.20
 	}
 	Charisma = {
 		random = no
