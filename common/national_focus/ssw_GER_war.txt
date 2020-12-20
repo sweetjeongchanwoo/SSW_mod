@@ -112,6 +112,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = GER_idea_1
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -248,10 +249,76 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			hidden_effect = {
-				set_country_flag = attack_rebels				
+			division_template = {
+				name = "Goebbels Aufteilung"
+				priority = 2
+				# division_namesgroup = GER_INF_01 仮修正 division_templateにdivision_namesgroupという指定はないはずです
+				is_locked = no
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					artillery_brigade = {
+						x = 2
+						y = 1
+					}
+					artillery_brigade = {
+						x = 2
+						y = 2
+					}
+				}
 			}
-			unlock_decision_tooltip = attack_rebel
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = {
+						has_full_control_of_state = PREV
+					}
+				}
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"2. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"3. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"4. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+			}
 		}
 	}
 	focus = {
@@ -267,20 +334,7 @@ focus_tree = {
 			factor = 40
 		}
 		completion_reward = {
-			if = {
-				limit = {  
-					has_idea = commandeer
-				}
-
-				swap_ideas = {
-					remove_idea = commandeer
-					add_idea = commandeer_2
-				}
-			}
-			else = {
-				add_ideas = commandeer
-			}
-
+			add_ideas = GER_equipment_seisan
 		}
 	}
 	focus = {
@@ -298,7 +352,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = military_and_peope_offensive
-				days = 20
+				days = 100
 			}
 		}
 	}
@@ -400,6 +454,9 @@ focus_tree = {
 		y = 7
 		ai_will_do = {
 			factor = 10
+		}
+		completion_reward = {
+			add_ideas = GER_Focke_Wulf
 		}
 	}
 	

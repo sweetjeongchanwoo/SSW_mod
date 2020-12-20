@@ -824,3 +824,29 @@ GER_civill_war_militia = {
 		}
 	}
 }
+
+GER_is_debug = {
+	GER_is_debug_1 = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			country_event = { id = SSW_GER.10 }
+		}
+	}
+	GER_is_debug_2 = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			annex_country = {
+				target = HLH
+				transfer_troops = no
+			}
+			annex_country = {
+				target = HGR
+				transfer_troops = no
+			}
+			annex_country = {
+				target = LTV
+				transfer_troops = no
+			}
+		}
+	}
+}
