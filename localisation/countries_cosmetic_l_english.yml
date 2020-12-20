@@ -36,6 +36,10 @@
  MEX_rebellion_DEF:0 "メキシコ反乱軍"
  MEX_rebellion_ADJ:0 "メキシコ反乱軍"
  
+ North_America:0 "北米連邦"
+ North_America_DEF:0 "北米連邦"
+ North_America_ADJ:0 "北アメリカ"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
