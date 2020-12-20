@@ -112,6 +112,7 @@ country_event = { #芳澤首相の暗殺
 	}
 	option = {
 		name = SSW_JAP.5.a
+		set_country_flag = ssw_JAP_not_die_Kenkichi_Yoshizawa
 		load_focus_tree = ssw_japan_authority_focus
 		create_country_leader = {
     		name = "Fusanosuke Kuhara"
@@ -312,21 +313,6 @@ country_event = {#内閣総辞職
 	desc = SSW_JAP.12.d
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
-
-	option = {#徳川
-		name = SSW_JAP.12.a
-		complete_national_focus = JAP_select_Iemasa_Tokugawa
-		retire_country_leader = yes
-		create_country_leader = {
-    		name = "Iemasa Tokugawa"
-    		desc = ""
-    		picture = "Portrait_Iemasa_Tokugawa.dds"
-    		expire = "1965.1.1"
-    		ideology = social_conservatism_ideology
-    		traits = {
-    		}
-		}
-	}
 	option = {#勝
 		name = SSW_JAP.12.b
 		complete_national_focus = JAP_The_Rise_of_Masanori_Katsu
@@ -1203,6 +1189,11 @@ country_event = {#梅津事件
 	desc = SSW_JAP.46.d
 	picture = GFX_report_event_gre_city_devastated
 	is_triggered_only = yes
+	trigger = {
+		has_country_leader = {
+			name = "Fusanosuke Kuhara"
+		}
+	}
 
 	option = {#斜陽の時世だ
 		name = SSW_JAP.46.a
