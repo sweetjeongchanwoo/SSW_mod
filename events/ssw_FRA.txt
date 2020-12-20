@@ -69,18 +69,7 @@ world_event = {
     opition = {
         Marcel_Dare_Leader_2.a
     }
-} 
-country_event = {
-    id = Alphonse_Juan_coup
-    days = 10
-    titile = Alphonse_Juan_coup.t
-    desc = Alphonse_Juan_coup.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Alphonse_Juan_coup.a
-    }
-} 
+}  
 world_event = {
     id = Alphonse_Juan_Grasp_the_administration
     days = 10

@@ -319,4 +319,198 @@ ideas = {
                 conscription = 0.02
             }
         }
+        Determination = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = generic_infantry_bonus
+
+            modifier = {army_morale_factor = 0.1}
+
+        }
+        Seeking_freedom = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = 
+
+            modifier = {
+                mobilization_speed = 0.2
+                army_morale_factor = 0.2
+                army_attack_factor = 0.1
+            }
+        }
+        Millis_strong = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture =
+
+            modifier = {
+                resistance_target = -0.2
+                operative_slot = 1
+                political_power_gain = 0.1
+            }
+        }
+        France_first = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = 
+
+            modifier = {
+                stability_factor = 0.1
+                conscription_factor = 0.1
+                army_org_Factor = 0.15
+            }
+        }
+        Rose_shirt_mobilization = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture =
+            
+            modifier = {
+                conscription = 0.01
+                special_forces_cap = 0.1
+                special_forces_min = 100
+            }
+        }
+        France_Black_shirts = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = 
+
+            modifier = {
+                special_forces_cap = 0.1
+                resistance_target = -0.2
+                conscription_factor = 0.15
+            }
+        }
+        NEW_repubulic = {
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = 
+
+            modifier = {
+                stability_factor = 0.15
+                research_speed_factor = 0.05
+            }
+        }
+        NEW_repubulic_2 = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = 
+
+            modifier = {
+                stability_factor = 0.15
+                research_speed_factor = 0.05
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+        Unstable_influence_with_Germany = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture =
+
+            modifier = {
+                stability_factor = -0.2
+            }
+        }
+        Stable_influence_with_Germany = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture
+
+            modifier = {
+                stability_factor = 0.2
+            }
+        }
+        National_revanchism = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture
+
+            modifier = {
+                offence = 0.2
+                HGR_attack_bonus_against = 0.2
+                LTV_attack_bonus_against = 0.2
+                HLH_attack_bonus_against = 0.2
+                GER_attack_bonus_against = 0.2
+            }
+        }
+        Preparing_for_war = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture
+
+            modifier = {
+                offence = 0.1
+                HGR_attack_bonus_against = 0.1
+                LTV_attack_bonus_against = 0.1
+                HLH_attack_bonus_against = 0.1
+                GER_attack_bonus_against = 0.1
+                NFR_attack_bonus_against = 0.1
+                HGR_defense_bonus_against = 0.1
+                LTV_defense_bonus_against = 0.1
+                HLH_defense_bonus_against = 0.1
+                GER_defense_bonus_against = 0.1
+                NFR_defense_bonus_against = 0.1
+            }
+        }
 }

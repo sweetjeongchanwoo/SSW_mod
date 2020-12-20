@@ -57,15 +57,28 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 24
-		y = 0
-
+		y = 2
+		prerequisite = {
+			focus = FRA_next
+		}
+		mutually_exclusive = {
+			focus = FRA_3
+            focus = FRA_4
+			focus = FRA_21
+			focus = FRA_2
+		}
+		completion_reward = {
+			swap_ideas = {
+			    remove_idea = Unstable_influence_with_Germany
+			}
+		}
 	}
 	focus = {
 		id = FRA_48
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		x = 18
-		y = 5
+		y = 6
 		prerequisite ={
 			focus = FRA_45
 		}
@@ -74,9 +87,9 @@ focus_tree = {
 	focus = {
 	    id = FRA_103
 	    icon = GFX_goal_unknown
-	    cost = 10.00
+	    cost = 5.00
 	    x = 16
-	    y = 5
+	    y = 6
 		prerequisite ={
 			focus = FRA_46
 		}
@@ -85,9 +98,9 @@ focus_tree = {
 	focus = {
 	    id = FRA_104
 	    icon = GFX_goal_unknown
-	    cost = 10.00
+	    cost = 5.00
 	    x = 20
-	    y = 5
+	    y = 6
 		prerequisite = {
 			focus = FRA_47
 		}
@@ -97,9 +110,9 @@ focus_tree = {
 	focus = {
 		id = FRA_49
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		x = 18
-		y = 6
+		y = 7
 		prerequisite = {
 			focus = FRA_48
 			focus = FRA_104
@@ -110,7 +123,7 @@ focus_tree = {
 	focus = {
 		id = FRA_50
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		x = 26
 		y = 9
 
@@ -135,12 +148,17 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_3
+			focus = FRA_4
+			focus = FRA_21
 		}
 		x = 2
 		y = 2
-			completion_reward = {
-				
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Unstable_influence_with_Germany
+				add_idea = Stable_influence_with_Germany
 			}
+		}
 
 	}
 	focus = {
@@ -158,7 +176,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_3
+		id = FRA_4
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 2.00
 		prerequisite = {
@@ -167,20 +185,24 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_2
 			focus = FRA_4
+			focus = FRA_21
 		}
-		x = 6
+		x = 11
 		y = 2
 			completion_reward = {
-					add_stability = -0.05
-					create_country_leader = {
-							name = "Jacques Doriot"
-							desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-							picture = GFX_portrait_fra_jacques_doriot
-							expire = "1965.1.1"
-							ideology = nazism_ideology
-							traits = { eager_collaborator }
-						}
-				}
+			　　add_stability = -0.05
+				create_country_leader = {
+						name = "Jacques Doriot"
+						desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+						picture = GFX_portrait_fra_jacques_doriot
+						expire = "1965.1.1"
+						ideology = nazism_ideology
+						traits = { eager_collaborator }
+				    }
+		        swap_ideas = {
+		        remove_idea = Unstable_influence_with_Germany
+		        }
+		}	
 
 	}
 	focus = {
@@ -201,7 +223,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_4
+		id = FRA_3
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
@@ -209,17 +231,16 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_3
+			focus = FRA_2
+			focus = FRA_21
 		}
-		x = 11
+		x = 6
 		y = 2
-			completion_reward = {
-					country_event = {
-							id = Marcel_Dare_Leader_1
-						}
-					would_event = {
-							id = Marcel_Dare_Leader_2
-						}
-				}
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = Unstable_influence_with_Germany
+			}
+		}
 
 	}
 	focus = {
@@ -256,6 +277,21 @@ focus_tree = {
 
 	}
 	focus = {
+	    id = FRA_105
+	    icon = GFX_goal_unknown
+	    cost = 5.00
+	    prerequisite = {
+		focus = FRA_12
+	    }
+		x = 6
+		y = 6
+			completion_reward = {
+			add_ideas = France_Black_shirts
+			
+		}
+
+	}
+	focus = {
 		id = FRA_14
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -286,7 +322,7 @@ focus_tree = {
 	focus = {
 		id = FRA_17
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_14
 		}
@@ -311,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = FRA_16
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_15
 		}
@@ -339,8 +375,12 @@ focus_tree = {
 		x = 11
 		y = 5
 			completion_reward = {
-					add_war_support = 0.2
+				add_war_support = 0.2
+                add_ideas = {
+					National_revanchism
 				}
+					
+			}
 
 	}
 	focus = {
@@ -352,9 +392,10 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_22
+			focus = FRA_24
 		}
 		x = 18
-		y = 2
+		y = 3
 			completion_reward = {
 					add_ideas = French_Peoples_Front
 				}
@@ -363,32 +404,33 @@ focus_tree = {
 	focus = {
 		id = FRA_44
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_23
 		}
 		x = 18
-		y = 3
+		y = 4
 
 	}
 	focus = {
 		id = FRA_46
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_44
 		}
 		mutually_exclusive = {
 			focus = FRA_45
+			focus = FRA_47
 		}
 		x = 16
-		y = 4
+		y = 5
 
 	}
 	focus = {
 		id = FRA_45
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_44
 		}
@@ -397,21 +439,22 @@ focus_tree = {
 			focus = FRA_46
 		}
 		x = 18
-		y = 4
+		y = 5
 
 	}
 	focus = {
 		id = FRA_47
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_44
 		}
 		mutually_exclusive = {
 			focus = FRA_45
+			focus = FRA_46
 		}
 		x = 20
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -426,12 +469,9 @@ focus_tree = {
 			focus = FRA_23
 		}
 		x = 24
-		y = 2
+		y = 3
 			completion_reward = {
 					add_ideas = Democratic_Republic_under_themilitary_junta
-					world_event = {
-							id = Alphonse_Juan_coup_2
-						}
 				}
 
 	}
@@ -443,7 +483,7 @@ focus_tree = {
 			focus = FRA_22
 		}
 		x = 23
-		y = 3
+		y = 4
 			completion_reward = {
 					add_ideas = Parliamentary_resurrection
 				}
@@ -461,13 +501,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_27
+			focus = FRA_28
 		}
 		x = 22
-		y = 4
+		y = 5
 			completion_reward = {
 					world_event = {
 							id = Guy_Mollet_To_the_president
-						}
+					}
+					swap_ideas = {
+						remove_idea = {
+							Democratic_Republic_under_themilitary_junta
+						} 
+					}
 				}
 
 	}
@@ -479,7 +525,7 @@ focus_tree = {
 			focus = FRA_22
 		}
 		x = 25
-		y = 3
+		y = 4
 			completion_reward = {
 					add_ideas = Restoration_of_the_old_republican_constitution
 				}
@@ -504,11 +550,16 @@ focus_tree = {
 			focus = FRA_28
 		}
 		x = 24
-		y = 4
+		y = 5
 			completion_reward = {
 					world_event = {
 							id = Pierre_Mendes_France_To_the_president
-						}
+					}
+					swap_ideas = {
+						remove_idea = {
+							Democratic_Republic_under_themilitary_junta
+						} 
+					}
 				}
 
 	}
@@ -521,18 +572,19 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_27
+			focus = FRA_29
 		}
 		x = 26
-		y = 4
-			completion_reward = {
-					world_event = {
-							id = a
-						}
-				}
+		y = 5
 			completion_reward = {
 					world_event = {
 							id = Rene_Jules_Gustave_Coty_To_the_president
-						}
+					}
+					swap_ideas = {
+						remove_idea = {
+							Democratic_Republic_under_themilitary_junta
+						} 
+					}
 				}
 
 	}
@@ -546,11 +598,14 @@ focus_tree = {
 			focus = FRA_29
 		}
 		x = 24
-		y = 5
+		y = 6
 			completion_reward = {
 					world_event = {
 							id = Republican_revival
-						}
+					}
+					add_ideas = {
+                        NEW_repubulic
+					}
 				}
 
 	}
@@ -562,19 +617,19 @@ focus_tree = {
 			focus = FRA_30
 		}
 		x = 24
-		y = 6
+		y = 7
 			completion_reward = {
-					war_support_factor = 0.2
-					production_factory_efficiency_gain_factor = 0.2
-					industrial_capacity_factory = 0.1
-					consumer_goods_factor = -0.1
+				swap_ideas = {
+					remove_idea = NEW_repubulic
+					add_idea = NEW_repubulic_2
 				}
+			}
 
 	}
 	focus = {
 		id = FRA_51
 		icon = GFX_goal_generic_propaganda
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_50
 		}
@@ -584,14 +639,14 @@ focus_tree = {
 		x = 25
 		y = 10
 			completion_reward = {
-					add_ideas = Religious_government
+					add_ideas = Preparing_for_war
 				}
 
 	}
 	focus = {
 		id = FRA_52
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_50
 		}
@@ -605,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = FRA_53
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_52
 			focus = FRA_51
@@ -617,12 +672,14 @@ focus_tree = {
 	focus = {
 		id = FRA_54
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_53
 		}
 		mutually_exclusive = {
 			focus = FRA_55
+			focus = FRA_56
+			focus = FRA_57
 		}
 		x = 23
 		y = 12
@@ -631,13 +688,14 @@ focus_tree = {
 	focus = {
 		id = FRA_55
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_53
 		}
 		mutually_exclusive = {
 			focus = FRA_54
 			focus = FRA_56
+			focus = FRA_57
 		}
 		x = 25
 		y = 12
@@ -646,12 +704,14 @@ focus_tree = {
 	focus = {
 		id = FRA_57
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_53
 		}
 		mutually_exclusive = {
 			focus = FRA_56
+			focus = FRA_55
+			focus = FRA_54
 		}
 		x = 29
 		y = 12
@@ -660,13 +720,14 @@ focus_tree = {
 	focus = {
 		id = FRA_56
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_53
 		}
 		mutually_exclusive = {
 			focus = FRA_57
 			focus = FRA_55
+			focus = FRA_54
 		}
 		x = 27
 		y = 12
@@ -675,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = FRA_58
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_57
 			focus = FRA_56
@@ -687,6 +748,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = FRA_106
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_58
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
 		id = FRA_24
 		icon = GFX_focus_generic_home_defense
 		cost = 3.00
@@ -695,29 +767,32 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_22
+			focus = FRA_23
+
 		}
 		x = 30
-		y = 2
+		y = 3
 
 	}
 	focus = {
 		id = FRA_32
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = FRA_24
 		}
 		mutually_exclusive = {
 			focus = FRA_33
+			focus = FRA_34
 		}
 		x = 28
-		y = 3
+		y = 4
 
 	}
 	focus = {
 		id = FRA_33
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = FRA_24
 		}
@@ -726,7 +801,7 @@ focus_tree = {
 			focus = FRA_32
 		}
 		x = 30
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -741,18 +816,18 @@ focus_tree = {
 			focus = FRA_36
 		}
 		x = 29
-		y = 4
+		y = 5
 
 	}
 	focus = {
 		id = FRA_37
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_35
 		}
 		x = 29
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -763,21 +838,22 @@ focus_tree = {
 			focus = FRA_37
 		}
 		x = 28
-		y = 6
+		y = 7
 
 	}
 	focus = {
 		id = FRA_34
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = FRA_24
 		}
 		mutually_exclusive = {
 			focus = FRA_33
+			focus = FRA_32
 		}
 		x = 32
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -792,7 +868,7 @@ focus_tree = {
 			focus = FRA_35
 		}
 		x = 31
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -803,33 +879,32 @@ focus_tree = {
 			focus = FRA_36
 		}
 		x = 31
-		y = 5
+		y = 6
 
 	}
 	focus = {
 		id = FRA_41
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_39
 			focus = FRA_37
 		}
 		x = 30
-		y = 6
+		y = 7
 			completion_reward = {
-					add_ideas = { FRA_la_deluge }
 				}
 
 	}
 	focus = {
 		id = FRA_42
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_39
 		}
 		x = 32
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -858,6 +933,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_71
+			focus = FRA_74
 		}
 		x = 39
 		y = 2
@@ -1010,6 +1086,7 @@ focus_tree = {
 		x = 42
 		y = 5
 
+
 	}
 	focus = {
 		id = FRA_92
@@ -1079,6 +1156,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_71
+			focus = FRA_73
 		}
 		x = 45
 		y = 2
@@ -1180,32 +1258,33 @@ focus_tree = {
 		y = 3
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = Defeated_army_5
-							add_idea = New_French_Army
+							remove_idea = Defeated_army_2
+							add_idea =  { New_French_Army
 						}
+					}
 				}
-
-	}
-	focus = {
-		id = FRA_84
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = FRA_83
-		}
-		x = 50
-		y = 4
 
 	}
 	focus = {
 		id = FRA_85
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = FRA_84
 		}
 		x = 50
 		y = 5
+
+	}
+	focus = {
+		id = FRA_84
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_83
+		}
+		x = 50
+		y = 4
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = Defeated_army_2
@@ -1256,8 +1335,8 @@ focus_tree = {
 		x = 48
 		y = 7
 			completion_reward = {
-					add_ideas = Determination
-				}
+				add_ideas = Determination
+			}
 
 	}
 	focus = {
@@ -1275,7 +1354,9 @@ focus_tree = {
 		relative_position_id = FRA_5
 			completion_reward = {
 					add_popularity = {
-							ideology = communism
+							ideology = classical_communism_ideology
+							popularity = -1
+							ideology = progressive_communism_ideology
 							popularity = -1
 						}
 				}
@@ -1319,7 +1400,7 @@ focus_tree = {
 		x = 2
 		y = 5
 			completion_reward = {
-					add_ideas = a
+					add_ideas = Millis_strong
 				}
 
 	}
@@ -1335,7 +1416,7 @@ focus_tree = {
 			focus = FRA_41
 		}
 		x = 30
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -1488,7 +1569,7 @@ focus_tree = {
 	focus = {
 		id = FRA_88
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_86
 		}
@@ -1504,73 +1585,77 @@ focus_tree = {
 	focus = {
 		id = FRA_60
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = FRA_58
+			focus = FRA_106
 		}
 		mutually_exclusive = {
 			focus = FRA_61
+			focus = FRA_62
+			focus = FRA_63
 		}
 		x = 23
-		y = 14
+		y = 15
 
 	}
 	focus = {
 		id = FRA_61
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = FRA_58
+			focus = FRA_106
 		}
 		mutually_exclusive = {
 			focus = FRA_62
 			focus = FRA_60
+			focus = FRA_63
 		}
 		x = 25
-		y = 14
+		y = 15
 
 	}
 	focus = {
 		id = FRA_62
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = FRA_58
+			focus = FRA_106
 		}
 		mutually_exclusive = {
 			focus = FRA_61
 			focus = FRA_63
+			focus = FRA_60
 		}
 		x = 28
-		y = 14
+		y = 15
 
 	}
 	focus = {
 		id = FRA_64
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_60
 		}
 		x = 23
-		y = 15
+		y = 16
 
 	}
 	focus = {
 		id = FRA_65
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_61
 		}
 		x = 25
-		y = 15
+		y = 16
 
 	}
 	focus = {
 		id = FRA_66
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_62
 		}
@@ -1581,13 +1666,13 @@ focus_tree = {
 			focus = FRA_67
 		}
 		x = 27
-		y = 15
+		y = 16
 
 	}
 	focus = {
 		id = FRA_67
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_62
 		}
@@ -1599,13 +1684,13 @@ focus_tree = {
 			focus = FRA_68
 		}
 		x = 29
-		y = 15
+		y = 16
 
 	}
 	focus = {
 		id = FRA_68
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_62
 		}
@@ -1616,21 +1701,21 @@ focus_tree = {
 			focus = FRA_67
 		}
 		x = 31
-		y = 15
+		y = 16
 
 	}
 	focus = {
 		id = FRA_63
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = FRA_58
+			focus = FRA_106
 		}
 		mutually_exclusive = {
 			focus = FRA_62
 		}
 		x = 30
-		y = 14
+		y = 15
 
 	}
 }
