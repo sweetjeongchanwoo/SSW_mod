@@ -1,0 +1,203 @@
+focus_tree = {
+	id = ITA_select_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+    }
+    #ローマが征く道
+    focus = {
+        id = ITA_focus_Rome_Conquered
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 1.40
+        available = {
+        }
+        x = 6
+        y = 0
+        completion_reward = {
+			country_event = {
+                    custom_effect_tooltip =　ssw_ITA_Rome_Conquered
+				id = SSW_ITA.2
+                    }
+        }
+	}
+	#ドゥーチェの下で
+    focus = {
+        id = ITA_focus_Duce
+		icon = GFX_goal_support_fascism
+		cost = 2.14
+		prerequisite = {
+			focus = ITA_focus_Rome_Conquered
+			}
+			mutually_exclusive = { 
+				focus = ITA_focus_Kings
+				focus = ITA_focus_Free
+				 }
+        available = {
+        }
+        x = 2
+        y = 2
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Duce
+			country_event = {
+				id = SSW_ITA.3
+				}
+        }
+	}
+	#王の下で
+    focus = {
+        id = ITA_focus_Kings
+        icon = GFX_focus_eng_imperial_federation
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Rome_Conquered
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_Duce
+			focus = ITA_focus_Free
+             }
+        available = {
+        }
+        x = 6
+        y = 2
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Kings
+        }
+	}
+	#自由のもとで
+    focus = {
+        id = ITA_focus_Free
+        icon = GFX_goal_support_democracy
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Rome_Conquered
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_Duce
+			focus = ITA_focus_Kings
+             }
+        available = {
+        }
+        x = 10
+        y = 2
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Free
+        }
+	}
+	#バルボによって
+    focus = {
+        id = ITA_focus_by_Balbo
+        icon = GFX_ITA_Balbo_Face
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Duce
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_by_Mussolini
+             }
+        available = {
+        }
+        x = 1
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_by_Balbo
+        }
+	}
+	#ムッソリーニによって
+    focus = {
+        id = ITA_focus_by_Mussolini
+        icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Duce
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_by_Balbo
+             }
+        available = {
+        }
+        x = 3
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_by_Mussolini
+        }
+	}
+	#サヴォイア家によって
+    focus = {
+        id = ITA_focus_Savoia
+        icon = GFX_ITA_Savoie_family_crest
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Kings
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_Genoa
+             }
+        available = {
+        }
+        x = 5
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Savoia
+        }
+	}
+	#ジェノヴァ家によって
+    focus = {
+        id = ITA_focus_Genoa
+        icon = GFX_ITA_Genoese_family_crest_icons
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Kings
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_Savoia
+             }
+        available = {
+        }
+        x = 7
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Genoa
+        }
+	}
+	#カエサルにならう
+    focus = {
+        id = ITA_focus_Caesar
+        icon = GFX_ITA_Caesar_side
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Free
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_equality
+             }
+        available = {
+        }
+        x = 9
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_Caesar
+        }
+	}
+	#平等に
+    focus = {
+        id = ITA_focus_equality
+        icon = GFX_goal_generic_war_with_comintern
+        cost = 2.14
+        prerequisite = {
+             focus = ITA_focus_Free
+             }
+        mutually_exclusive = { 
+			focus = ITA_focus_Caesar
+             }
+        available = {
+        }
+        x = 11
+        y = 4
+        completion_reward = {
+          custom_effect_tooltip =　ssw_ITA_equality
+        }
+    }
+}

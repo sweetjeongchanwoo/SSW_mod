@@ -164,6 +164,7 @@ CCS	= "countries/Eastern Europe.txt"	#コーカサス
 CRI	= "countries/Eastern Europe.txt"	#クリミア
 CRO	= "countries/Eastern Europe.txt"	#クロアチア
 CZE	= "countries/Eastern Europe.txt"	#チェコ
+DET	= "countries/Eastern Europe.txt"	#ドニエストル
 EGR	= "countries/Eastern Europe.txt"	#東ドイツ
 EST	= "countries/Eastern Europe.txt"	#エストニア
 FIN	= "countries/Eastern Europe.txt"	#フィンランド
@@ -295,3 +296,6 @@ LTV	= "countries/Western Europe.txt"
 
 PRJ = "countries/Asia.txt"
 JSF = "countries/Asia.txt"
+
+IIR	= "countries/Middle East.txt"	#イスラーム・イラン
+CIR	= "countries/Middle East.txt"	#共産イラン

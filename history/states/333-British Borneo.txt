@@ -2,7 +2,7 @@ state=
 {
 	id=333
 	name="STATE_333"
-	manpower = 889800
+	manpower = 444900
 	resources={
 		rubber=40 # was: 72
 		oil=12 # was: 18
@@ -13,20 +13,15 @@ state=
 	history=
 	{
 		owner = INS
-		victory_points = {
-			1208 1
-		}
 		buildings = {
 			infrastructure = 3
-			1208 = {
-				naval_base = 1
-			}
 		}
 		add_core_of = MAL
 		add_core_of = INS
+		add_claim_by = PHI
 	}
 
 	provinces={
-		1208 1306 1335 2117 4216 4282 4338 4396 7358 7443 8091 10143 10199 10212 10240 10269 10285 12171 12186 12228 12283 12905 
+		1306 1335 4282 4338 7358 10212 10199 10143 10240 12171 12186 12228
 	}
 }

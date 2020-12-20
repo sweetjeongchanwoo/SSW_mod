@@ -89,8 +89,8 @@ YUG = {	#ユーゴスラビア
 }
 
 SER = {	#セルビア
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 77 90 105 }
+	color_ui = rgb { 77 90 105 }
 }
 
 SWI = {	#スイス
@@ -489,8 +489,8 @@ LAO = {	#ラオス
 }
 
 MNT = {	#モンテネグロ
-	color = rgb { 77 90 105 }
-	color_ui = rgb { 77 90 105 }
+	color = rgb { 160 110 110 }
+	color_ui = rgb { 160 110 110 }
 }
 
 UKR = {	#ウクライナ
@@ -869,8 +869,8 @@ WES = {	#西サハラ
 }
 
 CAY = {	#カイエンヌ
-	color = rgb { 51 153 255 }
-	color_ui = rgb { 51 153 255 }
+	color = rgb { 7 137 48 }
+	color_ui = rgb { 7 137 48 }
 }
 
 MLD = {	#モルディブ
@@ -1564,6 +1564,11 @@ NRU = {	#ナウル
 	color_ui = rgb { 43 69 111 }
 }
 
+DET = {	#ドニエストル
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 153 51 }
+}
+
 HGR = {
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }
@@ -1589,3 +1594,12 @@ JSF = {
 	color_ui = rgb { 80 0 0 }
 }
 
+IIR ={	#イスラム・イラン
+	color = rgb { 35 159 64 }
+	color_ui = rgb { 35 159 64 }
+}
+
+CIR ={	#共産イラン
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}
