@@ -176,6 +176,13 @@ country_event = {
 		name = SSW_GER.10.a
 			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
+				every_country = {
+    				limit = {
+        				is_in_faction_with = GER
+    				}   
+    				add_ideas = GER_war_ideas_2
+				}
+				set_global_flag = big_event_custom_german_civil_war
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
 				clr_global_flag = GER_civil_war
@@ -507,6 +514,7 @@ country_event = {
 			HGR = { country_event = { id = SSW_HGR.1  } }
 			load_oob = "GER_Civil_War"
 			GER = { country_event = { id = SSW_GER.13 days = 2 } }
+			CZE = { country_event = { id = SSW_GER.23 days = 5 } }
 		}
 		GER = {
 			country_event = { id = SSW_GER.17 days = 5 }
@@ -808,9 +816,38 @@ country_event = {
 		}
 	}
 	option = {
-		name = SSW_GER.22.d
+		name = SSW_GER.22.e
 		HGR = {
 			change_tag_from = GER
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.23
+	title = SSW_GER.23.t
+	desc = SSW_GER.23.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.23.a
+		CZE = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HLH
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HGR
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = LTV
+				hostility_reason = asked_to_join
+			}
 		}
 	}
 }
