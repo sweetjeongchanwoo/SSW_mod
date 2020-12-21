@@ -286,7 +286,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
 		prerequisite = {
-			focus = HIMMLER_nerobefehl
+			focus = HIMMLER_forced_labor_of_prisoners
 		}
 		x = 7
 		y = 2
@@ -323,7 +323,7 @@ focus_tree = {
 			focus = HIMMLER_secure_the_armories
 		}
 		prerequisite = {
-			focus = HIMMLER_nerobefehl
+			focus = HIMMLER_forced_labor_of_prisoners
 		}
 		x = 5
 		y = 3
