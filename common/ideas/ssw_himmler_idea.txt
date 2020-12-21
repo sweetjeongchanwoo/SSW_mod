@@ -304,7 +304,7 @@ ideas = {
 				army_org_factor = 0.1
 				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
-				out_of_supply_factor = -0.2
+				winter_attrition_factor = 0.5
 			}
 		}
 		HIMMLER_waffen_ss_6 = {
@@ -324,7 +324,7 @@ ideas = {
 				army_org_factor = 0.1
 				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
-				out_of_supply_factor = -0.2
+				winter_attrition_factor = 0.5
 				army_speed_factor = 0.1
 			}
 		}
@@ -345,7 +345,7 @@ ideas = {
 				army_org_factor = 0.1
 				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
-				out_of_supply_factor = -0.2
+				winter_attrition_factor = 0.5
 				army_speed_factor = 0.1
 				army_morale_factor = 0.1
 			}
