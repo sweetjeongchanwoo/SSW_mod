@@ -112,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_adolf_hitler
 		icon = GFX_focus_leipstandarte
-		cost = 5.00
+		cost = 10.00
 		x = 0
 		y = 0
 		completion_reward = {
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_das_reich
 		icon = GFX_focus_das_reich
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_adolf_hitler
 		}
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_totemkopf
 		icon = GFX_focus_totemkopf
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_das_reich
 		}
@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_wiking
 		icon = GFX_focus_wiking
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_totemkopf
 		}
@@ -173,7 +173,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_nord
 		icon = GFX_focus_nord
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_wiking
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_prinz_eugen
 		icon = GFX_focus_prinz_eugen
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_nord
 		}
@@ -601,7 +601,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_florian_geyer
 		icon = GFX_focus_florian_geyer
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
 			focus = HIMMLER_prinz_eugen
 		}
