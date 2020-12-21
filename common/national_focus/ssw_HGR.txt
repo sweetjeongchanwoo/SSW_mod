@@ -19,6 +19,15 @@ focus_tree = {
 		}
 		x = 11
 		y = 0
+		ai_will_do = {
+			factor = 100
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
 				idea = HGR_war_idea_15
@@ -38,6 +47,14 @@ focus_tree = {
 		}
 		x = 26
 		y = 0
+		ai_will_do = {
+			factor = 28
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 					army_experience = 30
 		}
@@ -53,6 +70,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 0
+		ai_will_do = {
+			factor = 5
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_building_construction = {
 				type = dockyard
@@ -81,6 +106,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 0
+		ai_will_do = {
+			factor = 120
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 				create_faction = Koutetsu_Dome
 				HGR = {
@@ -100,6 +133,14 @@ focus_tree = {
 		}
 		x = 32
 		y = 0
+		ai_will_do = {
+			factor = 31
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 					bonus = 1
@@ -118,6 +159,14 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		ai_will_do = {
+			factor = 90
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			unlock_decision_category_tooltip = HGR_Umgang_mit_dem_Widerstand
 			add_ideas = HGR_war_idea_16
@@ -131,7 +180,15 @@ focus_tree = {
 		prerequisite = {
 			focus = HGR_Dealing_with_partisans
 		}
-		
+		ai_will_do = {
+			factor = 100
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		available = {
 			62 = {
 					is_core_of = HGR
@@ -260,6 +317,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 1
+		ai_will_do = {
+			factor = 80
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			create_country_leader = {
 				name = "Göring Führer"
@@ -283,6 +348,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
+		ai_will_do = {
+			factor = 70
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 
 		}
@@ -297,6 +370,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
+		ai_will_do = {
+			factor = 70
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -311,6 +393,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.15
 		}
@@ -334,6 +425,14 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = HGR_war_idea_12
 		}
@@ -348,6 +447,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 1
+		ai_will_do = {
+			factor = 49
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			news_event = SSW_HGR.2
 		}
@@ -362,6 +469,15 @@ focus_tree = {
 		}
 		x = 10
 		y = 2
+		ai_will_do = {
+			factor = 48
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = dockyard
@@ -381,6 +497,15 @@ focus_tree = {
 		}
 		x = 12
 		y = 2
+		ai_will_do = {
+			factor = 47
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = naval
@@ -415,6 +540,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		ai_will_do = {
+			factor = 46
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = {
 				HGR_war_idea_14
@@ -431,6 +564,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
+		ai_will_do = {
+			factor = 75
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
 				idea = HGR_war_idea_18
@@ -453,6 +595,15 @@ focus_tree = {
 		}
 		x = 15
 		y = 2
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = arms_factory
@@ -477,6 +628,15 @@ focus_tree = {
 		}
 		x = 17
 		y = 3
+		ai_will_do = {
+			factor = 37
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = arms_factory
@@ -507,6 +667,14 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			country_event = SSW_HGR.7
 		}
@@ -526,6 +694,15 @@ focus_tree = {
 		}
 		x = 15
 		y = 5
+		ai_will_do = {
+			factor = 62
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HGR_war_idea_19
 		}
@@ -546,7 +723,15 @@ focus_tree = {
 		
 		x = 21
 		y = 2
-
+		ai_will_do = {
+			factor = 39
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = industrial_complex
@@ -571,6 +756,15 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
+		ai_will_do = {
+			factor = 38
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_resource = {
 				type = steel
@@ -615,6 +809,14 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
+		ai_will_do = {
+			factor = 51
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			unlock_decision_category_tooltip = HGR_dec_cat_national_development
 		}
@@ -634,7 +836,15 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-
+		ai_will_do = {
+			factor = 63
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = industrial_complex
@@ -659,7 +869,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
-
+		ai_will_do = {
+			factor = 80
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HGR_war_idea_20
 		}
@@ -673,7 +891,14 @@ focus_tree = {
 		}
 		x = 23
 		y = 1
-
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_The_eturn
@@ -684,6 +909,15 @@ focus_tree = {
 		}
 		x = 25
 		y = 1
+		ai_will_do = {
+			factor = 27
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = HGR_war_idea_27
 		}
@@ -700,6 +934,14 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
+		ai_will_do = {
+			factor = 9
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 					add_tech_bonus = {
 					bonus = 1
@@ -718,6 +960,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 1
+		ai_will_do = {
+			factor = 26
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = HGR_war_idea_28
 		}
@@ -732,6 +983,15 @@ focus_tree = {
 		}
 		x = 26
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = HGR_war_idea_26
 		}
@@ -745,7 +1005,14 @@ focus_tree = {
 		}
 		x = 29
 		y = 1
-
+		ai_will_do = {
+			factor = 24
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_Development_of_unique_infantry_equipment
@@ -759,6 +1026,14 @@ focus_tree = {
 		}
 		x = 28
 		y = 2
+		ai_will_do = {
+			factor = 8
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 					add_tech_bonus = {
 					bonus = 1
@@ -791,6 +1066,14 @@ focus_tree = {
 		}
 		x = 26
 		y = 3
+		ai_will_do = {
+			factor = 20
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = HGR_war_idea_13
 		}
@@ -804,6 +1087,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 1
+		ai_will_do = {
+			factor = 29
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	completion_reward = {
 		add_tech_bonus = {
 					bonus = 1
@@ -827,6 +1118,14 @@ focus_tree = {
 		}
 		x = 31
 		y = 2
+		ai_will_do = {
+			factor = 29
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = HGR_war_idea_21
 		}
@@ -840,6 +1139,14 @@ focus_tree = {
 		}
 		x = 33
 		y = 1
+		ai_will_do = {
+			factor = 28
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 					bonus = 1
@@ -857,7 +1164,14 @@ focus_tree = {
 		}
 		x = 33
 		y = 2
-
+		ai_will_do = {
+			factor = 27
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_spirit_of_national_defense
@@ -871,7 +1185,14 @@ focus_tree = {
 		}
 		x = 32
 		y = 3
-
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_Fleet_shotgun_doctrine
@@ -885,6 +1206,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 1
+		ai_will_do = {
+			factor = 4
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				name = bc_tech
@@ -906,6 +1235,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 1
+		ai_will_do = {
+			factor = 3
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_tech
@@ -927,6 +1264,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
+		ai_will_do = {
+			factor = 2
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doctrine
@@ -945,7 +1290,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
-
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_colonial_question
@@ -966,6 +1318,14 @@ focus_tree = {
 		}
 		x = 42
 		y = 1
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			country_event = SSW_HGR.3
 		}
@@ -994,6 +1354,15 @@ focus_tree = {
 
 		x = 41
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			CRO = {
 				end_puppet = HGR
@@ -1023,6 +1392,15 @@ focus_tree = {
 		}
 		x = 43
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			NFR = {
 				set_state_controller = 24
@@ -1087,6 +1465,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 1
+		ai_will_do = {
+			factor = 70
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			diplomatic_relation = {
 				country = ENG
@@ -1110,6 +1496,15 @@ focus_tree = {
 		}
 		x = 46
 		y = 3
+		ai_will_do = {
+			factor = 60
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
@@ -1124,6 +1519,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = HGR_war_idea_25
 		}
@@ -1145,6 +1548,15 @@ focus_tree = {
 		}
 		x = 42
 		y = 5
+		ai_will_do = {
+			factor = 40
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1170,6 +1582,15 @@ focus_tree = {
 		}
 		x = 50
 		y = 1
+		ai_will_do = {
+			factor = 80
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = HGR_commandeering_from_the_service
@@ -1185,6 +1606,15 @@ focus_tree = {
 		}
 		x = 49
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			NFR = {
 				add_ideas = HGR_war_idea_23
@@ -1241,6 +1671,15 @@ focus_tree = {
 		}
 		x = 50
 		y = 5
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1267,6 +1706,15 @@ focus_tree = {
 		}
 		x = 50
 		y = 6
+		ai_will_do = {
+			factor = 36
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1289,6 +1737,15 @@ focus_tree = {
 		}
 		x = 51
 		y = 2
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -1327,6 +1784,15 @@ focus_tree = {
 		}
 		x = 42
 		y = 6
+		ai_will_do = {
+			factor = 36
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1345,11 +1811,28 @@ focus_tree = {
 		}
 		available = {
 				has_war_support > 0.99
+				JAP = {
+					exists = yes
+					is_puppet = no
+				}
 		}
 		x = 46
 		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			custom_effect_tooltip = HGR_war_04_tt
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
 		}
 	}
 }

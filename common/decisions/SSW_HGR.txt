@@ -1053,3 +1053,29 @@ HGR_dec_cat_national_development = {
 		}
     }
 }
+
+HGR_is_debug = {
+    HGR_debug_1 = {
+        icon = ger_mefo_bills
+		complete_effect = {
+			complete_national_focus = HGR_war_For_the_sake_of_unity
+		}
+    }
+    HGR_is_debug_2 = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			annex_country = {
+				target = HLH
+				transfer_troops = no
+			}
+			annex_country = {
+				target = GER
+				transfer_troops = no
+			}
+			annex_country = {
+				target = LTV
+				transfer_troops = no
+			}
+		}
+	}
+}

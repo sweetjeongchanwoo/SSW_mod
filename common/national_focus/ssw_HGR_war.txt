@@ -17,7 +17,14 @@ focus_tree = {
 		cost = 10.00
 		x = 7
 		y = 0
-
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = HGR_war_01_tt
 			hidden_effect = {
@@ -100,7 +107,14 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = HGR_war_01_tt
 			hidden_effect = {
@@ -159,7 +173,15 @@ focus_tree = {
 		}
 		x = 3
 		y = 2
-
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HGR_war_idea_2
 		}
@@ -174,6 +196,15 @@ focus_tree = {
 		}
 		x = 1
 		y = 4
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = arms_factory
@@ -198,6 +229,15 @@ focus_tree = {
 		}
 		x = 3
 		y = 4
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = HGR_war_idea_4
 		}
@@ -212,6 +252,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
+		ai_will_do = {
+			factor = 30
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = HGR_war_01_tt
 			unlock_decision_category_tooltip = HGR_war_Support_from_Italy
@@ -311,7 +359,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = HGR_war_idea_1
 			add_equipment_to_stockpile = {
@@ -334,7 +389,14 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-
+		ai_will_do = {
+			factor = 32
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -353,6 +415,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
+		ai_will_do = {
+			factor = 42
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -379,7 +449,14 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-
+		ai_will_do = {
+			factor = 17
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 	}
 	focus = {
 		id = HGR_war_Tank_Development
@@ -390,6 +467,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		ai_will_do = {
+			factor =46
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -411,6 +496,14 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
+		ai_will_do = {
+			factor = 18
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
 	}
 	focus = {
@@ -422,6 +515,14 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
+		ai_will_do = {
+			factor = 30
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
@@ -440,6 +541,15 @@ focus_tree = {
 		}
 		x = 11
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_ideas = HGR_war_idea_5
 		}
@@ -457,6 +567,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 5
+		ai_will_do = {
+			factor = 37
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = HGR_war_idea_8
 			add_equipment_to_stockpile = {
@@ -476,6 +594,14 @@ focus_tree = {
 		}
 		x = 3
 		y = 6
+		ai_will_do = {
+			factor = 25
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			remove_ideas = HGR_war_idea_6 
 		}
@@ -490,6 +616,15 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
+		ai_will_do = {
+			factor = 24
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = {
 			tot_economic_mobilisation
@@ -512,7 +647,14 @@ focus_tree = {
 
 		x = 7
 		y = 8
-
+		ai_will_do = {
+			factor = 60
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = HGR_war_02_tt
 			hidden_effect = {
@@ -550,6 +692,15 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
+		ai_will_do = {
+			factor = 15
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_building_construction = {
 				type = arms_factory
@@ -576,6 +727,15 @@ focus_tree = {
 		}
 		x = 7
 		y = 7
+		ai_will_do = {
+			factor = 45
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
 			add_ideas = HGR_war_idea_7
 			add_equipment_to_stockpile = {
