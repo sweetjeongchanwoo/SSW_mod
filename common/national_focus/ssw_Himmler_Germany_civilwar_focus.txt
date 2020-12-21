@@ -256,10 +256,10 @@ focus_tree = {
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10.00
 		prerequisite = {
-			focus = HIMMLER_ensuring_the_loyalty_of_ss
+			focus = HIMMLER_expropriation_of_industrial_land
 		}
-		x = 5
-		y = 1
+		x = 7
+		y = 4
 			available = {
 					has_country_flag = HLH_SS_loyal_us
 				}
@@ -277,6 +277,7 @@ focus_tree = {
 						days = 730
 					}
 				}
+				custom_effect_tooltip = HIMMLER_nerobefehl_tt
 			}
 
 	}
@@ -354,13 +355,13 @@ focus_tree = {
 		icon = GFX_focus_cze_german_puppet
 		cost = 10.00
 		prerequisite = {
-			focus = HIMMLER_expropriation_of_industrial_land
+			focus = HIMMLER_ensuring_the_loyalty_of_ss
 		}
 		completion_reward = {
 			add_ideas = HIMMLER_forced_labor_of_prisoners
 		}
-		x = 7
-		y = 4
+		x = 5
+		y = 1
 
 	}
 	focus = {
