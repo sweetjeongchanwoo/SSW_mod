@@ -384,6 +384,11 @@ spriteTypes = {
 		name = "GFX_focus_JAP_Lessons_from_the_Second_Great_War"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_Lessons_from_the_Second_Great_War.dds"
 	}
+#ドイツ　
+	spriteType = {
+		name = "GFX_focus_germania_plan"
+		texturefile = "gfx/interface/goals/ger/focus_germania_plan.dds"
+	}
 #ゲーリング・ドイツ
     spriteType = {
 		name = "GFX_focus_Gering_ico"
