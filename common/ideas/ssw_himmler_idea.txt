@@ -124,7 +124,7 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = LTV
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.15
 			}
 		}
 		HIMMLER_forced_labor_of_prisoners = {
@@ -159,11 +159,11 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = HGR
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.15
 			}
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.25
+				attack_bonus_against = 0.15
 			}
 		}
 		HIMMLER_cooperate_with_arrested_wehrmacht_officers = {
@@ -195,7 +195,7 @@ ideas = {
 			
 			removal_cost = -1
 			modifier = {
-				stability_weekly = -0.003
+				stability_weekly = -0.03
 				war_support_weekly = 0.005
 			}
 		}
@@ -212,7 +212,7 @@ ideas = {
 			
 			removal_cost = -1
 			modifier = {
-				political_power_gain = 1
+				political_power_gain = 0.5
 				stability_factor = 0.1
 				war_support_factor = 0.05
 			}
@@ -265,7 +265,7 @@ ideas = {
 				war_support_factor = 0.2
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
-				breakthrough_factor = 0.25
+				breakthrough_factor = 0.2
 			}
 		}
 		HIMMLER_waffen_ss_4 = {
@@ -283,7 +283,7 @@ ideas = {
 				war_support_factor = 0.2
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
-				breakthrough_factor = 0.25
+				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
 			}
 		}
@@ -302,7 +302,7 @@ ideas = {
 				war_support_factor = 0.2
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
-				breakthrough_factor = 0.25
+				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
 				out_of_supply_factor = -0.2
 			}
@@ -322,7 +322,7 @@ ideas = {
 				war_support_factor = 0.2
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
-				breakthrough_factor = 0.25
+				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
 				out_of_supply_factor = -0.2
 				army_speed_factor = 0.1
@@ -343,11 +343,11 @@ ideas = {
 				war_support_factor = 0.2
 				army_attack_factor = 0.1
 				army_org_factor = 0.1
-				breakthrough_factor = 0.25
+				breakthrough_factor = 0.2
 				army_defence_factor = 0.1
 				out_of_supply_factor = -0.2
 				army_speed_factor = 0.1
-				army_morale_factor = 0.3
+				army_morale_factor = 0.2
 			}
 		}
 		HIMMLER_pol_div = {
