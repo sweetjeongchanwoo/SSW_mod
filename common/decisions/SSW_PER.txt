@@ -240,3 +240,383 @@ PER_dec_Ensuring_the_security_of_small_farmers_in_the_Tohoku = {#東北小作農
 		}
 	}
 }
+
+PER_dec_Pan_Iranism = {
+	PER_war_propaganda = {#戦意高揚
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				            custom_trigger_tooltip = {
+                tooltip = war_propaganda_tooltip
+                hidden_trigger = {
+                   not = {has_country_flag = ssw_per_war_propaganda}
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 50
+		days_remove = 50
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_war_support = 0.2
+			set_country_flag = ssw_per_war_propaganda
+		}
+	}
+	PER_Retaking_Baghdad = {#対イラク(請求権)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				has_country_flag = ssw_per_war_propaganda
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+		}
+		days_remove = 20
+		modifier = {
+			
+		}
+		remove_effect = {
+			set_country_flag = ssw_per_flag_Retaking_Baghdad
+			PER = { add_state_claim = 676 }
+			PER = { add_state_claim = 291 }
+			
+		}
+	}
+
+	PER_Retaking_Baghdad_2 = {#対イラク(開戦)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				not = {291 = {is_controlled_by = PER}}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			has_country_flag = ssw_per_flag_Retaking_Baghdad
+		}
+		days_remove = 7
+		modifier = {
+			
+		}
+		remove_effect = {
+			clr_country_flag = ssw_per_war_propaganda
+			declare_war_on = {
+			type = take_claimed_state
+			target = IRQ
+			}
+		}
+	}
+	PER_Retaking_Baghdad_3 = {#対イラク(中核化)
+		icon = eng_trade_unions_support
+		available = {
+			291 = {is_controlled_by = PER}
+			676 = {is_controlled_by = PER}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			291 = {is_controlled_by = PER}
+			676 = {is_controlled_by = PER}
+		}
+		days_remove = 100
+		modifier = {
+			stability_weekly = -0.02
+			resistance_target = 0.3	
+		}
+		remove_effect = {
+			PER = { add_state_core = 676 }
+			PER = { add_state_core = 291 }
+			
+		}
+	}
+	PER_Retaking_kabble = {#対アフガン(請求権)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				has_country_flag = ssw_per_war_propaganda
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+		}
+		days_remove = 20
+		modifier = {
+			
+		}
+		remove_effect = {
+			set_country_flag = ssw_per_flag_Retaking_kabble
+			PER = { add_state_claim = 415 }
+			PER = { add_state_claim = 267 }
+			
+		}
+	}
+
+	PER_Retaking_kabble_2 = {#対アフガン(開戦)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				not = {267 = {is_controlled_by = PER}}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			has_country_flag = ssw_per_flag_Retaking_kabble
+		}
+		days_remove = 7
+		modifier = {
+			
+		}
+		remove_effect = {
+			clr_country_flag = ssw_per_war_propaganda
+			declare_war_on = {
+			type = take_claimed_state
+			target = AFG
+			}
+		}
+	}
+	PER_Retaking_kabble_3 = {#対アフガン(中核化)
+		icon = eng_trade_unions_support
+		available = {
+			415 = {is_controlled_by = PER}
+			267 = {is_controlled_by = PER}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			415 = {is_controlled_by = PER}
+			267 = {is_controlled_by = PER}
+		}
+		days_remove = 100
+		modifier = {
+			stability_weekly = -0.02
+			resistance_target = 0.3	
+		}
+		remove_effect = {
+			PER = { add_state_core = 415 }
+			PER = { add_state_core = 267 }
+			
+		}
+	}
+	PER_Retaking_Asihabad = {#対トルクメニスタン(請求権)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				has_country_flag = ssw_per_war_propaganda
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+		}
+		days_remove = 20
+		modifier = {
+			
+		}
+		remove_effect = {
+			set_country_flag = ssw_per_flag_Retaking_Asihabad
+			PER = { add_state_claim = 584 }
+			PER = { add_state_claim = 585 }
+			
+		}
+	}
+
+	PER_Retaking_Asihabad_2 = {#対トルクメニスタン(開戦)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				not = {584 = {is_controlled_by = PER}}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			has_country_flag = ssw_per_flag_Retaking_Asihabad
+		}
+		days_remove = 7
+		modifier = {
+			
+		}
+		remove_effect = {
+			clr_country_flag = ssw_per_war_propaganda
+			declare_war_on = {
+			type = take_claimed_state
+			target = TMS
+			}
+		}
+	}
+	PER_Retaking_Asihabad_3 = {#対トルクメニスタン(中核化)
+		icon = eng_trade_unions_support
+		available = {
+			584 = {is_controlled_by = PER}
+			585 = {is_controlled_by = PER}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			584 = {is_controlled_by = PER}
+			585 = {is_controlled_by = PER}
+		}
+		days_remove = 100
+		modifier = {
+			stability_weekly = -0.02
+			resistance_target = 0.3	
+		}
+		remove_effect = {
+			PER = { add_state_core = 584 }
+			PER = { add_state_core = 585 }
+			
+		}
+	}
+	PER_Retaking_Pakistan = {#対パキスタン(請求権)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				has_country_flag = ssw_per_war_propaganda
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+		}
+		days_remove = 20
+		modifier = {
+			
+		}
+		remove_effect = {
+			set_country_flag = ssw_per_flag_Retaking_Pakistan
+			PER = { add_state_claim = 444 }
+			
+		}
+	}
+
+	PER_Retaking_Pakistan_2 = {#対パキスタン(開戦)
+		icon = eng_trade_unions_support
+		available = {
+				has_war = no
+				not = {444 = {is_controlled_by = PER}}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			has_country_flag = ssw_per_flag_Retaking_Pakistan
+		}
+		days_remove = 7
+		modifier = {
+			
+		}
+		remove_effect = {
+			clr_country_flag = ssw_per_war_propaganda
+			declare_war_on = {
+			type = take_claimed_state
+			target = PAK
+			}
+		}
+	}
+	PER_Retaking_Pakistan_3 = {#対パキスタン(中核化)
+		icon = eng_trade_unions_support
+		available = {
+			444 = {is_controlled_by = PER}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 150
+		fire_only_once = yes
+		visible = {
+			444 = {is_controlled_by = PER}
+		}
+		days_remove = 100
+		modifier = {
+			stability_weekly = -0.02
+			resistance_target = 0.3	
+		}
+		remove_effect = {
+			PER = { add_state_core = 444 }
+			
+		}
+	}
+	PER_Bahrain_Issue = {#バーレーン問題
+		icon = eng_trade_unions_support
+		available = {
+			has_country_flag = ssw_per_war_propaganda
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 50
+		fire_only_once = yes
+		visible = {
+		}
+		days_remove = 50
+		modifier = {
+		}
+		remove_effect = {
+			PER = {  add_state_core = 959 }
+			set_country_flag = ssw_per_flag_Bahrain_Issue
+			country_event = { 
+				id = sswper.19
+			}
+		}
+	}
+	PER_Bahrain_Issue_2 = {#シーア派の扇動
+		icon = eng_trade_unions_support
+		available = {
+			has_country_flag = ssw_per_flag_Bahrain_Issue
+		}
+		ai_will_do = {
+			factor = 20
+		}
+		cost = 20
+		fire_only_once = yes
+		visible = {
+			has_country_flag = ssw_per_flag_Bahrain_Issue
+		}
+		days_remove = 70
+		modifier = {
+		}
+		remove_effect = {
+			country_event = { 
+				id = sswper.20
+			}
+		}
+	}
+}

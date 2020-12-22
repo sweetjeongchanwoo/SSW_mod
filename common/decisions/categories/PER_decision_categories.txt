@@ -22,3 +22,16 @@ PER_dec_The_end_of_reform = {#暴動の鎮圧
     }
 }
 
+PER_dec_Pan_Iranism = {#汎イラン主義
+	priority = 44
+	icon = eng_concessions_to_the_trade_unions
+	picture = GFX_land_reform_decision
+	
+	visible = {
+		OR = {has_completed_focus = PER_Authoritarian_Democracy_11
+			has_completed_focus = PER_Cooperation_with_italy_6
+			has_completed_focus = PER_Fascist_4
+		}
+		tag = PER
+	}
+}
