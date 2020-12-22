@@ -668,6 +668,7 @@ focus_tree = {
 				}
 				remove_ideas = {
 					Protester
+					HGR_war_idea_10_neo
 					Emergency_conscription
 					HGR_war_idea_1
 					HGR_war_idea_2

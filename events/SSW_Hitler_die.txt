@@ -1,6 +1,6 @@
 add_namespace = SSW_Hitler
 
-country_event = {
+news_event = {
 	id = SSW_Hitler.1
 	title = SSW_Hitler.1.t
 	desc = SSW_Hitler.1.d

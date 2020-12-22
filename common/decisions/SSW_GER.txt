@@ -850,3 +850,308 @@ GER_is_debug = {
 		}
 	}
 }
+
+GER_civill_war_plan = {
+	GER_dec_war_plan_GER = {
+		icon = generic_ignite_civil_war
+		available = {
+    		command_power > 20
+		}
+		visible = {
+			has_war_with = GER
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_timed_idea = {
+				idea = GER_war_idea_3
+				days = 30
+			}
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_plan_HGR = {
+		icon = generic_ignite_civil_war
+		available = {
+    		command_power > 20
+		}
+		visible = {
+			has_war_with = HGR
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_timed_idea = {
+				idea = GER_war_idea_4
+				days = 30
+			}
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_plan_HLH = {
+		icon = generic_ignite_civil_war
+		available = {
+    		command_power > 20
+		}
+		visible = {
+			has_war_with = HLH
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_timed_idea = {
+				idea = GER_war_idea_6
+				days = 30
+			}
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_plan_LTV = {
+		icon = generic_ignite_civil_war
+		available = {
+    		command_power > 20
+		}
+		visible = {
+			has_war_with = LTV
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_timed_idea = {
+				idea = GER_war_idea_5
+				days = 30
+			}
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+}
+GER_civill_war_propaganda = {
+	GER_dec_war_propaganda_GER = {
+		icon = generic_nationalism
+		available = {
+    		command_power > 20
+			has_equipment = {
+				strat_bomber_equipment > 9
+			}
+		}
+		visible = {
+			has_war_with = GER
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment
+				amount = -5
+			}
+			hidden_effect = {
+				GER = {
+				random_owned_controlled_state = {
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			}
+			}
+			custom_effect_tooltip = GER_gel_war_2_tt
+			
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_propaganda_HGR = {
+		icon = generic_nationalism
+		available = {
+    		command_power > 20
+			has_equipment = {
+				strat_bomber_equipment > 9
+			}
+		}
+		visible = {
+			has_war_with = HGR
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment
+				amount = -5
+			}
+			hidden_effect = {
+				HGR = {
+				random_owned_controlled_state = {
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			}
+			}
+			custom_effect_tooltip = GER_gel_war_2_tt
+			
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_propaganda_HLH = {
+		icon = generic_nationalism
+		available = {
+    		command_power > 20
+			has_equipment = {
+				strat_bomber_equipment > 9
+			}
+		}
+		visible = {
+			has_war_with = HLH
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment
+				amount = -5
+			}
+			hidden_effect = {
+				HLH = {
+				random_owned_controlled_state = {
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			}
+			}
+			custom_effect_tooltip = GER_gel_war_2_tt
+			
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+	GER_dec_war_propaganda_LTV = {
+		icon = generic_nationalism
+		available = {
+    		command_power > 20
+			has_equipment = {
+				strat_bomber_equipment > 9
+			}
+		}
+		visible = {
+			has_war_with = LTV
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_re_enable = 60
+		days_remove = 10
+		cost = 10
+		remove_effect = {
+			add_command_power = -20
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment
+				amount = -5
+			}
+			hidden_effect = {
+				LTV = {
+				random_owned_controlled_state = {
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+				create_unit = {
+					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+					owner = Root
+					allow_spawning_on_enemy_provs = yes
+				}
+			}
+			}
+			}
+			custom_effect_tooltip = GER_gel_war_2_tt
+			
+			custom_effect_tooltip = GER_gel_war_1_tt
+		}
+	}
+}

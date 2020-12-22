@@ -183,12 +183,17 @@ country_event = {
     				add_ideas = GER_war_ideas_2
 				}
 				set_global_flag = big_event_custom_german_civil_war
+				set_country_flag = GER_dec_civil_war
+				HLH = { set_country_flag = GER_dec_civil_war }
+				LTV = { set_country_flag = GER_dec_civil_war }
+				HGR = { set_country_flag = GER_dec_civil_war }
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
 				clr_global_flag = GER_civil_war
 				ENG = { set_global_flag = GER_civil_war }
 				FRA = { set_global_flag = GER_civil_war }
 				GER = { country_event = { id = SSW_GER.11 days = 1 } }
+				GER = { country_event = { id = SSW_GER.24 days = 1 } }
 				GER = { remove_state_core = 56 }
 				GER = { remove_state_core = 57 }
 				GER = { remove_state_core = 58 }
@@ -760,7 +765,7 @@ country_event = {
 	option = {
 		name = SSW_GER.19.a
 		GER = {
-			country_event = {
+			news_event = {
 				id = SSW_Hitler.1
 				days = 30
 			}
@@ -849,5 +854,164 @@ country_event = {
 				hostility_reason = asked_to_join
 			}
 		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.24
+	title = SSW_GER.24.t
+	desc = SSW_GER.24.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.24.a
+		hidden_effect = {
+			remove_unit_leader = 1
+			remove_unit_leader = 2
+			remove_unit_leader = 3
+			remove_unit_leader = 4
+			remove_unit_leader = 5
+			remove_unit_leader = 6
+			remove_unit_leader = 7
+			remove_unit_leader = 8
+			remove_unit_leader = 9
+			remove_unit_leader = 10
+			remove_unit_leader = 11
+			remove_unit_leader = 12
+			remove_unit_leader = 13
+			remove_unit_leader = 14
+			remove_unit_leader = 15
+			remove_unit_leader = 16
+			remove_unit_leader = 17
+			remove_unit_leader = 18
+			remove_unit_leader = 19
+			remove_unit_leader = 20
+			remove_unit_leader = 21
+			remove_unit_leader = 22
+			remove_unit_leader = 23
+			remove_unit_leader = 24
+			remove_unit_leader = 25
+			remove_unit_leader = 26
+			remove_unit_leader = 27
+			remove_unit_leader = 28
+			remove_unit_leader = 29
+			remove_unit_leader = 30
+			remove_unit_leader = 31
+		}
+		custom_effect_tooltip = GER_gel_war_3_tt
+		GER = { country_event = { id = SSW_GER.25 } }
+	}
+}
+
+country_event = {
+	id = SSW_GER.25
+	title = SSW_GER.25.t
+	desc = SSW_GER.25.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.25.a
+		create_corps_commander = {
+			name = "Hans Jeschonnek"
+			picture = "Portrait_Hans_Jeschonnek.dds"
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Erich Walther"
+		picture = "Portrait_Erich_Walther.dds"
+		traits = {
+			war_hero
+			commando
+			Paratroopers
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 4
+		}
+		create_corps_commander = {
+		name = "Ernst Udet"
+		picture = "Portrait_Ernst_Udet.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hans Kroh"
+		picture = "Portrait_Hans_Kroh.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+			planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Günther Korten"
+		picture = "Portrait_Gunther_Korten.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Kurt Arthur Benno Student"
+		picture = "Portrait_Kurt_Arthur_Benno_Student.dds"
+		traits = {
+		trickster
+		commando
+		Paratroopers
+		}
+			skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+		}
+		create_corps_commander = {
+		name = "Alfred Schlemm"
+		picture = "Portrait_Alfred_Schlemm.dds"
+		traits = {
+		harsh_leader
+		paratroopers
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hermann-Bernhard Ramcke"
+		picture = "Portrait_Hermann_Bernhard_Ramcke.dds"
+		traits = {
+		commando
+		paratroopers
+		war_hero
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 2
+		}
+		GER = { country_event = { id = SSW_GER.25 } }
 	}
 }

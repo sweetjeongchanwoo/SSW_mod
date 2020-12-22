@@ -138,5 +138,69 @@ ideas = {
 			}
 			
 		}
+		GER_war_idea_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_4 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = HGR
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_5 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = LTV
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_6 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = HLH
+				attack_bonus_against = 0.15
+			}
+		}
 	}
 }

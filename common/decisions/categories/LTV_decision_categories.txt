@@ -7,8 +7,6 @@ LTV_civill_war_militia = {
     }
 
     visible = {
-        has_war_with = GER
-        has_war_with = HLH
-        has_war_with = HGR
+        has_country_flag = GER_dec_civil_war
     }
 }
