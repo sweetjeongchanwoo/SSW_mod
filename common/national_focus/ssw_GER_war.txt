@@ -21,10 +21,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-		available = {
-		}
 		bypass = {
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			division_template = {
 				name = "Goebbels Aufteilung"
@@ -110,8 +111,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			remove_ideas = GER_idea_1
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -126,6 +134,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 35
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			64 = {
 				add_extra_state_shared_building_slots = 2
@@ -149,6 +163,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 15
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
@@ -168,6 +187,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 15
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				remove_building = {
@@ -202,6 +227,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			if = {
 				limit = {
@@ -227,6 +257,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 10
 			add_ideas = missing_upper_echelon
@@ -247,11 +281,82 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-				set_country_flag = attack_rebels				
+			division_template = {
+				name = "Goebbels Aufteilung"
+				priority = 2
+				# division_namesgroup = GER_INF_01 仮修正 division_templateにdivision_namesgroupという指定はないはずです
+				is_locked = no
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					artillery_brigade = {
+						x = 2
+						y = 1
+					}
+					artillery_brigade = {
+						x = 2
+						y = 2
+					}
+				}
 			}
-			unlock_decision_tooltip = attack_rebel
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = {
+						has_full_control_of_state = PREV
+					}
+				}
+				prioritize = {
+					64
+				}
+				create_unit = {
+					division = "name = \"1. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"2. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"3. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+				create_unit = {
+					division = "name = \"4. Goebbels Aufteilung\" division_template = \"Goebbels Aufteilung\" start_experience_factor = 0.3"
+					owner = GER
+				}
+			}
 		}
 	}
 	focus = {
@@ -266,21 +371,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
-			if = {
-				limit = {  
-					has_idea = commandeer
-				}
-
-				swap_ideas = {
-					remove_idea = commandeer
-					add_idea = commandeer_2
-				}
-			}
-			else = {
-				add_ideas = commandeer
-			}
-
+			add_ideas = GER_equipment_seisan
 		}
 	}
 	focus = {
@@ -295,10 +392,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			add_timed_idea = {
 				idea = military_and_peope_offensive
-				days = 20
+				days = 100
 			}
 		}
 	}
@@ -315,6 +417,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 35
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			division_template = {
 				name = "Goebbels Aufteilung"
@@ -401,6 +508,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = GER_Focke_Wulf
+		}
 	}
 	
 	focus = {
@@ -423,6 +538,11 @@ focus_tree = {
 		}
 		x = 9
 		y = 9
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 		completion_reward = {
 			custom_effect_tooltip = JGB_new_NF
 			hidden_effect = {

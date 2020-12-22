@@ -329,7 +329,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -361,7 +374,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -1644,7 +1670,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1675,7 +1714,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1706,7 +1758,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1737,7 +1802,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1768,7 +1846,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1799,7 +1890,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1833,7 +1937,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 13_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_kenkyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1866,7 +1983,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1899,7 +2029,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1936,7 +2079,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -1973,7 +2129,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2009,7 +2178,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2043,7 +2225,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2092,7 +2287,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2127,7 +2335,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2160,7 +2381,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2210,7 +2444,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2248,7 +2495,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2287,7 +2547,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2325,7 +2598,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2367,7 +2653,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_country_leader = {
@@ -2397,7 +2696,7 @@ focus_tree = {
 	focus = {
 		id = JAP_select_Kuhara
 		icon = GFX_focus_JAP_focus_kuhara
-		cost = 10.00
+		cost = 1.0
 		prerequisite = {
 			focus = JAP_Submission_of_the_Second_Disarmament_Bill
 		}
@@ -2446,7 +2745,21 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
+					
 				}
 			}
 		}
@@ -2485,7 +2798,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2522,7 +2848,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2561,7 +2900,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2595,7 +2947,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2636,7 +3001,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2646,14 +3024,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-			completion_reward = {
-					remove_ideas = SSW_jAP_gold_standard_idea
-					swap_ideas = {
-							remove_idea = SSW_JAP_yen_block
-							add_idea = SSW_JAP_geacps_gold_block
-						}
-				}
-
+		completion_reward = {
+			custom_effect_tooltip = JAP_geacps_gold_block_tt
+		}
 	}
 	focus = {
 		id = JAP_reform_fifty
@@ -2671,7 +3044,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2707,7 +3093,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			not = {
@@ -2748,7 +3147,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2821,7 +3233,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_ > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2861,7 +3286,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 11_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_seiyukai_popularity > 49 }
+					OR = {
+						check_variable = { JAP_seiyukai_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_minseito_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2897,7 +3335,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2933,7 +3384,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -2968,7 +3432,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3001,7 +3478,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3036,7 +3526,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3078,7 +3581,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3112,7 +3628,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3145,7 +3674,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3180,7 +3722,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3214,7 +3769,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3249,7 +3817,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 		}
@@ -3286,7 +3867,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			has_completed_focus = JAP_Together
@@ -3329,7 +3923,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = 12_JAP_tt
 				hidden_trigger = {
-					check_variable = { JAP_minseito_popularity > 49 }
+					OR = {
+						check_variable = { JAP_minseito_popularity > 49 }
+					}
+					OR = {
+						check_variable = { JAP_Kenkyukai_popularity < 49 }
+						check_variable = { JAP_seiyukai_popularity < 49 }
+						check_variable = { JAP_ziyuuto_popularity < 49 }
+						check_variable = { JAP_dainipponsumeragi_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Nosaka_popularity < 49 }
+						check_variable = { JAP_Nihonkyosanto_Tokuda_popularity < 49 }
+						check_variable = { JAP_nihonsyakai_popularity < 49 }
+						check_variable = { JAP_syakaikurabu_popularity < 49 }
+						check_variable = { JAP_toakensetsu_popularity < 49 }
+					}
 				}
 			}
 			JSF = {

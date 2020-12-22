@@ -133,7 +133,8 @@ ideas = {
 
 			picture = air_war_plans_division_focus
 			modifier = {
-					ai_join_ally_desire_factor = -100
+				ai_join_ally_desire_factor = -10000
+				ai_call_ally_desire_factor = -10000
 			}
 			
 		}

@@ -12,3 +12,16 @@ GER_civill_war_militia = {
         has_war_with = LTV
     }
 }
+
+GER_is_debug = {
+
+    icon = military_operation
+	
+    allowed = {
+	    original_tag = GER
+    }
+
+    visible = {
+        is_debug = yes
+    }
+}
