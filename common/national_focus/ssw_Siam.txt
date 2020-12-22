@@ -8,6 +8,8 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 350 y = 2000 }
+	
 	focus = {
 		id = sia_change_country_name
 		icon = GFX_goal_unknown
@@ -468,7 +470,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 2
-
+		completion_reward = {
+            army_experience = 10
+        }
 	}
 	focus = {
 		id = sia_royal_thailand_navy
@@ -482,7 +486,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
-
+		completion_reward = {
+            navy_experience = 10
+        }
 	}
 	focus = {
 		id = sia_royalist_purge
@@ -584,7 +590,9 @@ focus_tree = {
 		}
 		x = 42
 		y = 2
-
+		completion_reward = {
+            air_experience = 10
+        }
 	}
 	focus = {
 		id = sia_learn_technologies_from_japan
