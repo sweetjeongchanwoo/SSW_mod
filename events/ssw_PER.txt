@@ -170,12 +170,16 @@ country_event = {
 	id = sswper.13
 	title = sswper.13.title
 	desc = sswper.13.desc
+	is_triggered_only = yes
 	picture = GFX_event_test
 	fire_only_once = yes
 	option = {
 		name = sswper.13.a
 		hidden_effect = {
-			set_country_flag = Iranian_Civil_War
+			country_event = { 
+				id = sswper.14
+				days = 5
+			}
 		}
 		ai_chance = { factor = 1}
 	}
@@ -186,17 +190,15 @@ country_event = {
 	title = sswper.14.title
 	desc = sswper.14.desc
 	picture = GFX_event_test
-	trigger = {
-		has_country_flag = Iranian_Civil_War
-	}
-	mean_time_to_happen = {
-	days = 0.1
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = sswper.14.a
 		hidden_effect = {
-			set_country_flag = Iranian_Civil_War_2
+			country_event = { 
+				id = sswper.15
+				days = 3
+			}
 		}
 		ai_chance = { factor = 1}
 	}
@@ -207,17 +209,15 @@ country_event = {
 	title = sswper.15.title
 	desc = sswper.15.desc
 	picture = GFX_event_test
-	trigger = {
-		has_country_flag = Iranian_Civil_War_2
-	}
-	mean_time_to_happen = {
-	days = 0.1
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = sswper.15.a
 		hidden_effect = {
-			set_country_flag = Iranian_Civil_War_3
+			country_event = { 
+				id = sswper.16
+				days = 5
+			}
 		}
 
 		ai_chance = { factor = 1}
@@ -229,17 +229,33 @@ country_event = {
 	title = sswper.16.title
 	desc = sswper.16.desc
 	picture = GFX_event_test
-	trigger = {
-		has_country_flag = Iranian_Civil_War_3
-	}
-	mean_time_to_happen = {
-	days = 0.1
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = sswper.16.a
 		hidden_effect = {
-			set_country_flag = Iranian_Civil_War_4
+			set_global_flag = Iranian_Civil_War
+			country_event = { 
+				id = sswper.17
+				days = 3
+			}
+				CIR = { transfer_state = 411 }
+				CIR = { transfer_state = 412 }
+				CIR = { transfer_state = 413 }
+				CIR = { add_state_core = 411 }
+				CIR = { add_state_core = 412 }
+				CIR = { add_state_core = 413 }
+				IIR = { transfer_state = 417 }
+				IIR = { transfer_state = 420 }
+				IIR = { transfer_state = 266 }
+				IIR = { transfer_state = 416 }
+				IIR = { transfer_state = 418 }
+				IIR = { add_state_core = 417 }
+				IIR = { add_state_core = 420 }
+				IIR = { add_state_core = 266 }
+				IIR = { add_state_core = 416 }
+				IIR = { add_state_core = 418 }
+			
 		}
 		ai_chance = { factor = 1}
 	}
@@ -250,16 +266,14 @@ country_event = {
 	title = sswper.17.title
 	desc = sswper.17.desc
 	picture = GFX_event_test
-	trigger = {
-		has_country_flag = Iranian_Civil_War_4
-	}
-	mean_time_to_happen = {
-	days = 0.01
-	}
+	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = sswper.17.a
 		ai_chance = { factor = 1}
+		KUR = { transfer_state = 419 }
+		KUR = { transfer_state = 421 }
+		
 	}
 }
 ##Event: イラン内戦
@@ -272,5 +286,32 @@ news_event = {
 	option = {
 		name = sswper.18.a
 		ai_chance = { factor = 1}
+	}
+}
+##Event: バーレーン問題
+country_event = {
+	id = sswper.19
+	title = sswper.19.title
+	desc = sswper.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.19.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: バーレーンの離脱
+country_event = {
+	id = sswper.20
+	title = sswper.20.title
+	desc = sswper.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.20.a
+		ai_chance = { factor = 1}
+		PER = { transfer_state = 959 }
 	}
 }

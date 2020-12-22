@@ -101,7 +101,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_utilize_the_gestapo
 		icon = GFX_focus_gestapo
-		cost = 10.00
+		cost = 5.00
 		x = 17
 		y = 0
 		completion_reward = {
@@ -112,7 +112,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_adolf_hitler
 		icon = GFX_focus_leipstandarte
-		cost = 10.00
+		cost = 7.5
 		x = 0
 		y = 0
 		completion_reward = {
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_das_reich
 		icon = GFX_focus_das_reich
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_adolf_hitler
 		}
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_totemkopf
 		icon = GFX_focus_totemkopf
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_das_reich
 		}
@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_wiking
 		icon = GFX_focus_wiking
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_totemkopf
 		}
@@ -173,7 +173,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_nord
 		icon = GFX_focus_nord
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_wiking
 		}
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_prinz_eugen
 		icon = GFX_focus_prinz_eugen
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_nord
 		}
@@ -207,7 +207,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_cult_to_ancient_german_religion
 		icon = GFX_goal_generic_propaganda
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = HIMMLER_ensuring_the_loyalty_of_ss
 		}
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_gott_nicht_mit_uns
 		icon = GFX_focus_mex_triumph_over_the_cristeros
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = HIMMLER_cult_to_ancient_german_religion
 		}
@@ -254,7 +254,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_nerobefehl
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = HIMMLER_expropriation_of_industrial_land
 		}
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_secure_the_armories
 		icon = GFX_focus_generic_combined_arms
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = HIMMLER_forced_labor_of_prisoners
 		}
@@ -318,7 +318,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_expropriation_of_industrial_land
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = HIMMLER_secure_the_armories
 		}
@@ -353,7 +353,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_forced_labor_of_prisoners
 		icon = GFX_focus_cze_german_puppet
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = HIMMLER_ensuring_the_loyalty_of_ss
 		}
@@ -367,7 +367,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_meine_ehre_heisst_treue
 		icon = GFX_focus_meine_ehre_heist_treue
-		cost = 10.00
+		cost = 6
 		prerequisite = {
 			focus = HIMMLER_ensuring_the_loyalty_of_ss
 		}
@@ -381,7 +381,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_auslandische_freiwillige_der_waffen_ss
 		icon = GFX_focus_generic_manpower
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_meine_ehre_heisst_treue
 		}
@@ -404,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_kick_out_the_traitors
 		icon = GFX_goal_generic_attack_allies
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = HIMMLER_utilize_the_gestapo
 		}
@@ -430,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_rather_totemkopf_than_hakenkreuz
 		icon = GFX_goal_generic_CAS
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = HIMMLER_kick_out_the_traitors
 		}
@@ -447,7 +447,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_purge_in_ss
 		icon = GFX_focus_purge_ss
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = HIMMLER_utilize_the_gestapo
 		}
@@ -462,7 +462,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_strengthen_sd
 		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
+		cost = 7
 		prerequisite = {
 			focus = HIMMLER_utilize_the_gestapo
 		}
@@ -479,7 +479,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_nacht_und_nebel
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
+		cost = 7
 		prerequisite = {
 			focus = HIMMLER_purge_in_ss
 		}
@@ -547,7 +547,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_polizei_division
 		icon = GFX_focus_porizeidiv
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_utilize_the_gestapo
 		}
@@ -561,7 +561,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_cooperate_with_arrested_wehrmacht_officers
 		icon = GFX_focus_generic_military_mission
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = HIMMLER_strengthen_sd
 			focus = HIMMLER_polizei_division
@@ -602,7 +602,7 @@ focus_tree = {
 	focus = {
 		id = HIMMLER_florian_geyer
 		icon = GFX_focus_florian_geyer
-		cost = 10.00
+		cost = 7.5
 		prerequisite = {
 			focus = HIMMLER_prinz_eugen
 		}
