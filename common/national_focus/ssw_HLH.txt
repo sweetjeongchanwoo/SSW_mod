@@ -7,6 +7,7 @@ focus_tree = {
 			tag = HLH
 		}
 	}
+	continuous_focus_position = { x = 0 y = 1400 }
 	default = no
 	focus = {
 		id = HLH_1
@@ -79,7 +80,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = HIMMLER_7
-				days = 200
+				days = 100
 			} 
 			
 		}
@@ -109,7 +110,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			hidden_effect = {
-				
+				every_owned_state = {
+					add_core_of = HLH
+				}
+				set_rule = {
+					can_not_declare_war = no
+				}
 			}
 			custom_effect_tooltip = ssw_HLH_1_tt
 			add_timed_idea = {
@@ -145,7 +151,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = HIMMLER_8
-				days = 200
+				days = 300
 			} 
 			
 		}
@@ -176,14 +182,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			hidden_effect = {
-				every_owned_state = {
-					add_core_of = HLH
-				}
 				set_rule = {
 					can_not_declare_war = no
 				}
 			}
-			custom_effect_tooltip = ssw_HLH_2_tt
+			custom_effect_tooltip = ssw_HLH_1_tt
 		}
 	}
 	focus = {
@@ -209,7 +212,26 @@ focus_tree = {
 		}
 		x = 11
 		y = 1
-
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = HLH_12
@@ -220,6 +242,35 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_idea = HIMMLER_1
+		}
+		bypass = {
+			NOT = {
+				has_idea = HIMMLER_1
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				
+			}
+			swap_ideas = {
+				remove_idea = HIMMLER_1
+				add_idea = HIMMLER_10
+			}
+		}
 
 	}
 	focus = {
@@ -231,6 +282,35 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_idea = HIMMLER_10
+		}
+		bypass = {
+			NOT = {
+				has_idea = HIMMLER_10
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				
+			}
+			swap_ideas = {
+				remove_idea = HIMMLER_10
+				add_idea = HIMMLER_11
+			}
+		}
 
 	}
 	focus = {
@@ -242,6 +322,47 @@ focus_tree = {
 		}
 		x = 15
 		y = 1
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+					59 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}	
+					}
+					152 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}	
+					}
+					65 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}	
+					}
+					64= {
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}	
+					}
+		}
 
 	}
 	focus = {
@@ -253,6 +374,26 @@ focus_tree = {
 		}
 		x = 15
 		y = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -264,6 +405,26 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -278,6 +439,20 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
+		ai_will_do = {
+			factor = 5
+	  }
+	  available = {
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	  completion_reward = {
+		add_stability = 0.15
+	  }
 
 	}
 	focus = {
@@ -289,6 +464,21 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_ideas = HIMMLER_16
+			
+		}
 
 	}
 	focus = {
@@ -322,7 +512,20 @@ focus_tree = {
 		}
 		x = 17
 		y = 5
-
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			remove_ideas = HIMMLER_5
+		}
 	}
 	focus = {
 		id = HLH_21
@@ -333,6 +536,23 @@ focus_tree = {
 		}
 		x = 16
 		y = 6
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = HIMMLER_13
+				days = 100
+			}
+		}
 
 	}
 	focus = {
@@ -344,7 +564,23 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
-
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_timed_idea = {
+				idea = HIMMLER_12
+				days = 100
+			}
+		}
 	}
 	focus = {
 		id = HLH_23
@@ -358,6 +594,33 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			NOT =	{
+				has_idea = HIMMLER_12
+				has_idea = HIMMLER_13
+			}
+			has_idea = HIMMLER_11
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = HIMMLER_11
+			add_timed_idea = {
+				idea = HIMMLER_14
+				days = 100
+			}
+			}
+			custom_effect_tooltip = ssw_HLH_2_tt
+			
+		}
 
 	}
 	focus = {
@@ -369,6 +632,26 @@ focus_tree = {
 		}
 		x = 15
 		y = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -380,6 +663,26 @@ focus_tree = {
 		}
 		x = 19
 		y = 8
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -391,6 +694,26 @@ focus_tree = {
 		}
 		x = 19
 		y = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -752,6 +1075,26 @@ focus_tree = {
 		}
 		x = 15
 		y = 9
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -766,6 +1109,21 @@ focus_tree = {
 		}
 		x = 17
 		y = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = HIMMLER_15
+			
+		}
 
 	}
 	focus = {
