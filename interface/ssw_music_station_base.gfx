@@ -1,0 +1,9 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_SSW_music_album_art" #画像定義
+        texturefile = "gfx/music/SSW_music_album_art.dds" #ファイル定義
+        noOfFrames = 2 #分割画像
+    }
+
+}
