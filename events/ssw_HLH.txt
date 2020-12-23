@@ -69,6 +69,7 @@ country_event = {
 			HIMMLER_1
 			HIMMLER_3
 			HIMMLER_4
+			HIMMLER_5
 		}
 		if = {
 			limit = {
@@ -81,6 +82,8 @@ country_event = {
 			remove_ideas = HLH_nerobefehl_for_himmler
 		}
 		load_focus_tree = HLH
-
+		set_rule = {
+			can_not_declare_war = yes
+		}
 	}
 }

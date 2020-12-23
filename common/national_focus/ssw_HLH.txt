@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 5
+			add = 20
 			tag = HLH
 		}
 	}
@@ -38,7 +38,20 @@ focus_tree = {
 		}
 		x = 4
 		y = 1
-
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = HIMMLER_6
+		}
 	}
 	focus = {
 		id = HLH_3
@@ -52,7 +65,24 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
-
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = HIMMLER_7
+				days = 200
+			} 
+			
+		}
 	}
 	focus = {
 		id = HLH_4
@@ -63,6 +93,30 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+			NOT = {
+				has_idea = HIMMLER_7
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+				
+			}
+			custom_effect_tooltip = ssw_HLH_1_tt
+			add_timed_idea = {
+				idea = HIMMLER_9
+				days = 730
+			} 
+		}
 
 	}
 	focus = {
@@ -76,7 +130,25 @@ focus_tree = {
 			focus = HLH_3
 		}
 		x = 6
-		y = 2
+		y = 2 
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = HIMMLER_8
+				days = 200
+			} 
+			
+		}
 
 	}
 	focus = {
@@ -88,7 +160,31 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
-
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+			NOT ={
+				has_idea = HIMMLER_8
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					add_core_of = HLH
+				}
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+			custom_effect_tooltip = ssw_HLH_2_tt
+		}
 	}
 	focus = {
 		id = HLH_9
