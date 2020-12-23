@@ -123,3 +123,157 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+#元帥
+create_field_marshal = {
+	name = "Hermann Wilhelm Göring"
+	picture = "Portrait_Gering.dds"
+	traits = {
+		inspirational_leader
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Job-Wilhelm Georg Erwin von Witzleben"
+	picture = "Portrait_Job_Wilhelm_Georg_Erwin_von_Witzleben.dds"
+	traits = {
+		expert_delegator
+		inspirational_leader
+		
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+create_field_marshal = {
+	name = "Robert von Greim"
+	picture = "Portrait_Robert_von_Greim.dds"
+	traits = {
+		organizer
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Adolf Josef Ferdinand Galland"
+	picture = "Portrait_Adolf_Josef_Ferdinand_Galland.dds"
+	traits = {
+		
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Josef Kammhuber"
+	picture = "Portrait_Josef_Kammhuber.dds"
+	traits = {
+		inspirational_leader
+		career_officer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Karl Koller"
+	picture = "Portrait_Karl_Koller.dds"
+	traits = {
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Rudolf von Bünau"
+	picture = "Portrait_Rudolf_von_Bunau.dds"
+	traits = {
+		infantry_leader
+		Infantry_Expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Erhard Alfred Richard oskar Milch"
+	picture = "Portrait_Erhard_Alfred_Richard_oskar_Milch.dds"
+	traits = {
+		infantry_leader
+		Infantry_Expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Karl-Lothar Schulz"
+	picture = "Portrait_Karl_Lothar_Schulz.dds"
+	traits = {
+		paratroopers
+		trait_engineer
+		career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sebastian Ludwig Heilmann"
+	picture = "Portrait_Sebastian_Ludwig_Heilmann.dds"
+	traits = {
+		paratroopers
+		career_officer
+		trickster
+		Guerilla_Fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Karl-Heinrich Bodenschatz"
+	picture = "Portrait_Karl_Heinrich_Bodenschatz.dds"
+	traits = {
+		paratroopers
+		career_officer
+		trickster
+		Guerilla_Fighter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

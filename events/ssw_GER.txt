@@ -6,19 +6,11 @@ country_event = {
 	desc = SSW_GER.1.d
 	picture = GFX_report_event_spr_franco_victory
 	is_triggered_only = yes
-	fire_only_once = yes
 	major = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.2
-		}
-	}
 	option = {
 		name = SSW_GER.1.a
 		ai_chance = { factor = 1 }
-		country_event= { days = 30 id = SSW_GER.21 }
-		news_event = ssw.3
+		country_event= { days = 15 id = SSW_GER.21 }
 	}
 }
 ##Event: 万博開催
@@ -29,18 +21,12 @@ country_event = {
 	picture = GFX_news_event_herman_goring
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.3
-		}
-	}
 	major = yes
 	option = {
 		name = SSW_GER.2.a
 		ai_chance = { factor = 1 }
 		news_event= {
-			days = 30 
+			days = 10
 			id = SSW_GER.3 
 		}
 	}
@@ -53,20 +39,10 @@ news_event = {
 	picture = GFX_report_event_german_reichstag_gathering
 	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.6
-		}
-	}
 	major = yes
 	option = {
 		name = SSW_GER.3.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.4
-		}
 	}
 }
 
@@ -80,17 +56,13 @@ country_event = {
 	trigger = {
 		focus_progress = {
 		focus = GER_ssw_focus1
-			progress > 0.7
+			progress > 0.5
 		}
 	}
 	major = yes
 	option = {
 		name = SSW_GER.4.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.5
-		}
 	}
 }
 
@@ -104,17 +76,13 @@ country_event = {
 	trigger = {
 		focus_progress = {
 		focus = GER_ssw_focus1
-			progress > 0.8
+			progress > 0.7
 		}
 	}
 	major = yes
 	option = {
 		name = SSW_GER.5.a
 		ai_chance = { factor = 1 }
-		country_event= {
-			days = 30 
-			id = SSW_GER.6 
-		}
 	}
 }
 
@@ -208,93 +176,91 @@ country_event = {
 		name = SSW_GER.10.a
 			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
 			hidden_effect = {
-				add_ideas = {
-					if = {
-       					every_country = {
-							limit = {
-								is_in_faction_with = GER
-							}
-    					}   
-    				idea = GER_war_ideas_2
-					}
-					GER_war_ideas_1
+				every_country = {
+    				limit = {
+        				is_in_faction_with = GER
+    				}   
+    				add_ideas = GER_war_ideas_2
 				}
+				set_global_flag = big_event_custom_german_civil_war
+				set_country_flag = GER_dec_civil_war
+				HLH = { set_country_flag = GER_dec_civil_war }
+				LTV = { set_country_flag = GER_dec_civil_war }
+				HGR = { set_country_flag = GER_dec_civil_war }
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
 				clr_global_flag = GER_civil_war
-			ENG = { set_global_flag = GER_civil_war }
-			FRA = { set_global_flag = GER_civil_war }
-			GER = { country_event = { id = SSW_GER.11 days = 1 } }
-			GER = { remove_state_core = 56 }
-			GER = { remove_state_core = 57 }
-			GER = { remove_state_core = 58 }
-			GER = { remove_state_core = 59 }
-			GER = { remove_state_core = 61 }
-			GER = { remove_state_core = 812 }
-			GER = { remove_state_core = 3 }
-			GER = { remove_state_core = 8 }
-			GER = { remove_state_core = 28 }
-			GER = { remove_state_core = 42 }
-			GER = { remove_state_core = 50 }
-			GER = { remove_state_core = 51 }
-			GER = { remove_state_core = 54 }
-			GER = { remove_state_core = 55 }
-			GER = { remove_state_core = 151 }
-			GER = { remove_state_core = 938 }
-			GER = { remove_state_core = 4 }
-			GER = { remove_state_core = 52 }
-			GER = { remove_state_core = 53 }
-			GER = { remove_state_core = 102 }
-			GER = { remove_state_core = 152 }
-			GER = { remove_state_core = 153 }
-			LTV = { transfer_state = 56 }
-			LTV = { transfer_state = 57 }
-			LTV = { transfer_state = 58 }
-			LTV = { transfer_state = 59 }
-			LTV = { transfer_state = 61 }
-			LTV = { transfer_state = 812 }
-			LTV = { add_state_core = 56 }
-			LTV = { add_state_core = 57 }
-			LTV = { add_state_core = 58 }
-			LTV = { add_state_core = 59 }
-			LTV = { add_state_core = 61 }
-			HLH = { transfer_state = 3 }
-			HLH = { transfer_state = 8 }
-			HLH = { transfer_state = 28 }
-			HLH = { transfer_state = 42 }
-			HLH = { transfer_state = 50 }
-			HLH = { transfer_state = 51 }
-			HLH = { transfer_state = 54 }
-			HLH = { transfer_state = 55 }
-			HLH = { transfer_state = 151 }
-			HLH = { transfer_state = 938 }
-			HLH = { add_state_core = 3 }
-			HLH = { add_state_core = 8 }
-			HLH = { add_state_core = 28 }
-			HLH = { add_state_core = 42 }
-			HLH = { add_state_core = 50 }
-			HLH = { add_state_core = 51 }
-			HLH = { add_state_core = 54 }
-			HLH = { add_state_core = 55 }
-			HLH = { add_state_core = 151 }
-			HLH = { add_state_core = 938 }
-			HGR = { transfer_state = 4 }
-			HGR = { transfer_state = 52 }
-			HGR = { transfer_state = 53 }
-			HGR = { transfer_state = 102 }
-			HGR = { transfer_state = 152 }
-			HGR = { transfer_state = 153 }
-			HGR = { add_state_core = 4 }
-			HGR = { add_state_core = 52 }
-			HGR = { add_state_core = 53 }
-			HGR = { add_state_core = 102 }
-			HGR = { add_state_core = 152 }
-			HGR = { add_state_core = 153 }
-			country_event = { 
-				id = SSW_GER.22
-				hours = 1
+				ENG = { set_global_flag = GER_civil_war }
+				FRA = { set_global_flag = GER_civil_war }
+				GER = { country_event = { id = SSW_GER.11 days = 1 } }
+				GER = { country_event = { id = SSW_GER.24 days = 1 } }
+				GER = { remove_state_core = 56 }
+				GER = { remove_state_core = 57 }
+				GER = { remove_state_core = 58 }
+				GER = { remove_state_core = 59 }
+				GER = { remove_state_core = 61 }
+				GER = { remove_state_core = 812 }
+				GER = { remove_state_core = 3 }
+				GER = { remove_state_core = 8 }
+				GER = { remove_state_core = 28 }
+				GER = { remove_state_core = 42 }
+				GER = { remove_state_core = 50 }
+				GER = { remove_state_core = 51 }
+				GER = { remove_state_core = 54 }
+				GER = { remove_state_core = 55 }
+				GER = { remove_state_core = 151 }
+				GER = { remove_state_core = 938 }
+				GER = { remove_state_core = 4 }
+				GER = { remove_state_core = 52 }
+				GER = { remove_state_core = 53 }	
+				GER = { remove_state_core = 102 }
+				GER = { remove_state_core = 152 }
+				GER = { remove_state_core = 153 }
+				LTV = { transfer_state = 56 }	
+				LTV = { transfer_state = 57 }	
+				LTV = { transfer_state = 58 }
+				LTV = { transfer_state = 59 }
+				LTV = { transfer_state = 61 }
+				LTV = { transfer_state = 812 }
+				LTV = { add_state_core = 56 }
+				LTV = { add_state_core = 57 }
+				LTV = { add_state_core = 58 }
+				LTV = { add_state_core = 59 }
+				LTV = { add_state_core = 61 }
+				HLH = { transfer_state = 3 }
+				HLH = { transfer_state = 8 }
+				HLH = { transfer_state = 28 }
+				HLH = { transfer_state = 42 }
+				HLH = { transfer_state = 50 }
+				HLH = { transfer_state = 51 }
+				HLH = { transfer_state = 54 }
+				HLH = { transfer_state = 55 }
+				HLH = { transfer_state = 151 }
+				HLH = { transfer_state = 938 }
+				HLH = { add_state_core = 3 }
+				HLH = { add_state_core = 8 }
+				HLH = { add_state_core = 28 }
+				HLH = { add_state_core = 42 }
+				HLH = { add_state_core = 50 }
+				HLH = { add_state_core = 51 }
+				HLH = { add_state_core = 54 }
+				HLH = { add_state_core = 55 }
+				HLH = { add_state_core = 151 }
+				HLH = { add_state_core = 938 }
+				HGR = { transfer_state = 4 }
+				HGR = { transfer_state = 52 }
+				HGR = { transfer_state = 53 }
+				HGR = { transfer_state = 102 }
+				HGR = { transfer_state = 152 }
+				HGR = { transfer_state = 153 }
+				HGR = { add_state_core = 4 }
+				HGR = { add_state_core = 52 }
+				HGR = { add_state_core = 53 }
+				HGR = { add_state_core = 102 }
+				HGR = { add_state_core = 152 }
+				HGR = { add_state_core = 153 }
+				GER = { country_event = { id = SSW_GER.22 } }
 			}
-		}
 	}
 }
 
@@ -553,6 +519,7 @@ country_event = {
 			HGR = { country_event = { id = SSW_HGR.1  } }
 			load_oob = "GER_Civil_War"
 			GER = { country_event = { id = SSW_GER.13 days = 2 } }
+			CZE = { country_event = { id = SSW_GER.23 days = 5 } }
 		}
 		GER = {
 			country_event = { id = SSW_GER.17 days = 5 }
@@ -798,7 +765,7 @@ country_event = {
 	option = {
 		name = SSW_GER.19.a
 		GER = {
-			country_event = {
+			news_event = {
 				id = SSW_Hitler.1
 				days = 30
 			}
@@ -815,7 +782,7 @@ country_event = {
 	
 	option = {
 		name = SSW_GER.20.a
-		country_event = { id = SSW_GER.1 }
+		country_event = { id = SSW_GER.1 days = 5 }
 	}
 }
 
@@ -825,15 +792,9 @@ country_event = {
 	desc = SSW_GER.21.d
 	picture = GFX_report_event_germania_plam
 	is_triggered_only = yes
-	trigger = {
-		focus_progress = {
-		focus = GER_ssw_focus1
-			progress > 0.2
-		}
-	}
 	option = {
 		name = SSW_GER.21.a
-		country_event= { days = 30 id = SSW_GER.2 }
+		country_event= { days = 15 id = SSW_GER.2 }
 	}
 }
 
@@ -860,9 +821,197 @@ country_event = {
 		}
 	}
 	option = {
-		name = SSW_GER.22.d
+		name = SSW_GER.22.e
 		HGR = {
 			change_tag_from = GER
 		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.23
+	title = SSW_GER.23.t
+	desc = SSW_GER.23.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.23.a
+		CZE = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HLH
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HGR
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = LTV
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.24
+	title = SSW_GER.24.t
+	desc = SSW_GER.24.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.24.a
+		hidden_effect = {
+			remove_unit_leader = 1
+			remove_unit_leader = 2
+			remove_unit_leader = 3
+			remove_unit_leader = 4
+			remove_unit_leader = 5
+			remove_unit_leader = 6
+			remove_unit_leader = 7
+			remove_unit_leader = 8
+			remove_unit_leader = 9
+			remove_unit_leader = 10
+			remove_unit_leader = 11
+			remove_unit_leader = 12
+			remove_unit_leader = 13
+			remove_unit_leader = 14
+			remove_unit_leader = 15
+			remove_unit_leader = 16
+			remove_unit_leader = 17
+			remove_unit_leader = 18
+			remove_unit_leader = 19
+			remove_unit_leader = 20
+			remove_unit_leader = 21
+			remove_unit_leader = 22
+			remove_unit_leader = 23
+			remove_unit_leader = 24
+			remove_unit_leader = 25
+			remove_unit_leader = 26
+			remove_unit_leader = 27
+			remove_unit_leader = 28
+			remove_unit_leader = 29
+			remove_unit_leader = 30
+			remove_unit_leader = 31
+		}
+		custom_effect_tooltip = GER_gel_war_3_tt
+		GER = { country_event = { id = SSW_GER.25 } }
+	}
+}
+
+country_event = {
+	id = SSW_GER.25
+	title = SSW_GER.25.t
+	desc = SSW_GER.25.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.25.a
+		create_corps_commander = {
+			name = "Hans Jeschonnek"
+			picture = "Portrait_Hans_Jeschonnek.dds"
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Erich Walther"
+		picture = "Portrait_Erich_Walther.dds"
+		traits = {
+			war_hero
+			commando
+			Paratroopers
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 4
+		}
+		create_corps_commander = {
+		name = "Ernst Udet"
+		picture = "Portrait_Ernst_Udet.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hans Kroh"
+		picture = "Portrait_Hans_Kroh.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+			planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Günther Korten"
+		picture = "Portrait_Gunther_Korten.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Kurt Arthur Benno Student"
+		picture = "Portrait_Kurt_Arthur_Benno_Student.dds"
+		traits = {
+		trickster
+		commando
+		Paratroopers
+		}
+			skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+		}
+		create_corps_commander = {
+		name = "Alfred Schlemm"
+		picture = "Portrait_Alfred_Schlemm.dds"
+		traits = {
+		harsh_leader
+		paratroopers
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hermann-Bernhard Ramcke"
+		picture = "Portrait_Hermann_Bernhard_Ramcke.dds"
+		traits = {
+		commando
+		paratroopers
+		war_hero
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 2
+		}
+		GER = { country_event = { id = SSW_GER.25 } }
 	}
 }

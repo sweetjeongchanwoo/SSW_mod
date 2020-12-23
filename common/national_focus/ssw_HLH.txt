@@ -1,0 +1,719 @@
+focus_tree = {
+	id = HLH
+	country = {
+		factor = 0
+		modifier = {
+			add = 5
+			tag = HLH
+		}
+	}
+	default = no
+	focus = {
+		id = HLH_1
+		icon = GFX_goal_unknown
+		cost = 7.00
+		x = 13
+		y = 0
+		ai_will_do = {
+  			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = HLH_2
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_1
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = HLH_3
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_2
+		}
+		mutually_exclusive = {
+			focus = HLH_Copy
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = HLH_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HLH_3
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = HLH_Copy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_2
+		}
+		mutually_exclusive = {
+			focus = HLH_3
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = HLH_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HLH_Copy
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = HLH_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = HLH_8
+		}
+		prerequisite = {
+			focus = HLH_4
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = HLH_11
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_1
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = HLH_12
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_11
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = HLH_13
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_12
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = HLH_14
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_1
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = HLH_15
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_14
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = HLH_16
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_15
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = HLH_17
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_16
+		}
+		prerequisite = {
+			focus = HLH_13
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = HLH_29
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_17
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = HLH_31
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_29
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = HLH_30
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_29
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = HLH_20
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_17
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = HLH_21
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_20
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = HLH_22
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_20
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = HLH_23
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_22
+		}
+		prerequisite = {
+			focus = HLH_21
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = HLH_24
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_23
+		}
+		x = 15
+		y = 8
+
+	}
+	focus = {
+		id = HLH_26
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_23
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = HLH_27
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_26
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = HLH_37
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_1
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = HLH_40
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_37
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = HLH_43
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_40
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = HLH_41
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_40
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = HLH_44
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_41
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = HLH_38
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_37
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = HLH_51
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_38
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = HLH_46
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_37
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = HLH_48
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_46
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = HLH_49
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_48
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = HLH_47
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_46
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = HLH_50
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_47
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = HLH_52
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_1
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = HLH_53
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_52
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = HLH_62
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_53
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = HLH_54
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_53
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = HLH_Copy_Copy
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_54
+		}
+		x = 35
+		y = 4
+
+	}
+	focus = {
+		id = HLH_61
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_52
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = HLH_64
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_61
+		}
+		x = 37
+		y = 5
+
+	}
+	focus = {
+		id = HLH_65
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_64
+		}
+		prerequisite = {
+			focus = HLH_51
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = HLH_55
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_52
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = HLH_56
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_55
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = HLH_59
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_56
+		}
+		x = 39
+		y = 4
+
+	}
+	focus = {
+		id = HLH_18
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_17
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = HLH_19
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_18
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = HLH_32
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_30
+		}
+		prerequisite = {
+			focus = HLH_31
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = HLH_33
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_32
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = HLH_35
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_32
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = HLH_36
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_35
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = HLH_34
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_33
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = HLH_39
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_34
+		}
+		prerequisite = {
+			focus = HLH_36
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = HLH_25
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_24
+		}
+		x = 15
+		y = 9
+
+	}
+	focus = {
+		id = HLH_28
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_27
+		}
+		prerequisite = {
+			focus = HLH_25
+		}
+		x = 17
+		y = 10
+
+	}
+	focus = {
+		id = HLH_45
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_43
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = HLH_63
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_62
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = HLH_58
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_55
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = HLH_60
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = HLH_58
+		}
+		x = 41
+		y = 4
+
+	}
+}

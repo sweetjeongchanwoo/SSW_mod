@@ -877,7 +877,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 1239 height = 1900
+					width = 1239 height = 1300
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -903,7 +903,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 405 y = 20 }
+					position = { x = 45 y = 0 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -916,7 +916,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 655 y = 20 }
+					position = { x = 360 y = 0 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -929,7 +929,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_artillery"
-					position = { x = 105 y = 20 }
+					position = { x = -390 y = 0 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -942,7 +942,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_air"
-					position = { x = -14 y = 20  }
+					position = { x = 750 y = 0  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1224,13 +1224,6 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "artillery1_tree"
-				position = { x = 10% y = 120 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "rocket_artillery_tree"
 				position = { x = 10% y = 100 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }

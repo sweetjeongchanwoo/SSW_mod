@@ -11,20 +11,6 @@ HGR_war_Support_from_Italy = {
     }
 }
 
-HGR_civill_war_militia = {
-
-    icon = military_operation
-
-    allowed = {
-	    original_tag = HGR
-    }
-
-    visible = {
-        has_war_with = GER
-        has_war_with = HLH
-        has_war_with = LTV
-    }
-}
 
 HGR_civill_war_militia = {
 
@@ -35,9 +21,7 @@ HGR_civill_war_militia = {
     }
 
     visible = {
-        has_war_with = GER
-        has_war_with = HLH
-        has_war_with = LTV
+        has_country_flag = GER_dec_civil_war
     }
 }
 
@@ -64,5 +48,31 @@ HGR_dec_cat_national_development = {
 
     visible = {
         has_completed_focus = HGR_national_development
+    }
+}
+
+HGR_dec_cat_oil_italy = {
+
+    icon = military_operation
+
+    allowed = {
+	    original_tag = HGR
+    }
+
+    visible = {
+        has_country_flag = GER_dec_civil_war
+    }
+}
+
+HGR_is_debug = {
+
+    icon = military_operation
+	
+    allowed = {
+	    original_tag = HGR
+    }
+
+    visible = {
+        is_debug = yes
     }
 }

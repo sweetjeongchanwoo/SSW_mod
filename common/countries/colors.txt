@@ -1594,3 +1594,12 @@ JSF = {
 	color_ui = rgb { 80 0 0 }
 }
 
+IIR ={	#イスラム・イラン
+	color = rgb { 35 159 64 }
+	color_ui = rgb { 35 159 64 }
+}
+
+CIR ={	#共産イラン
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}

@@ -17,6 +17,58 @@ spriteTypes = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
     }
+    SpriteType = {
+        name = "GFX_focus_JAP_the_third_greater_east_asia_conference" #iconのところで定義する物を●●●のところに入れる 例:GFX_ENG_1950vote_shine
+        texturefile = "gfx/interface/goals/JAP/focus_JAP_the_third_greater_east_asia_conference.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/JAP/focus_JAP_the_third_greater_east_asia_conference.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+    SpriteType = {
+        name = "GFX_focus_JAP_ssw_second_dissarament_shine" #iconのところで定義する物を●●●のところに入れる 例:GFX_ENG_1950vote_shine
+        texturefile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds" #ファイルの場所
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds" #ファイルの場所
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+            animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+            animationlooping = yes            # yes or no ;)
+            animationtime = 0.75                # in seconds
+            animationdelay = 1.0            # in seconds
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "scrolling"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+    }
+#ドイツ
+SpriteType = {
+    name = "GFX_focus_germania_plan_shine" #iconのところで定義する物を●●●のところに入れる 例:GFX_ENG_1950vote_shine
+    texturefile = "gfx/interface/goals/ger/focus_germania_plan.dds" #ファイルの場所
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/interface/goals/JAP/focus_germania_plan.dds" #ファイルの場所
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"     # <- the animated file
+        animationrotation = -90.0        # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = yes            # yes or no ;)
+        animationtime = 0.75                # in seconds
+        animationdelay = 1.0            # in seconds
+        animationblendmode = "add"       #add, multiply, overlay
+        animationtype = "scrolling"      #scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+}
 #ゲーリング・ドイツ
     SpriteType = {
         name = "GFX_focus_Gering_ico_shine" #iconのところで定義する物を●●●のところに入れる 例:GFX_ENG_1950vote_shine

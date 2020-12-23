@@ -289,7 +289,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_yen_block_kuhara.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_JAP_ssw_second_dissarament"
+		name = "GFX_focus_JAP_ssw_second_dissarament"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_ssw_second_dissarament.dds"
 	}
 	spriteType = {
@@ -383,6 +383,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_JAP_Lessons_from_the_Second_Great_War"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_Lessons_from_the_Second_Great_War.dds"
+	}
+#ドイツ　
+	spriteType = {
+		name = "GFX_focus_germania_plan"
+		texturefile = "gfx/interface/goals/ger/focus_germania_plan.dds"
 	}
 #ゲーリング・ドイツ
     spriteType = {

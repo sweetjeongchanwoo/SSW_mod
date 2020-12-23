@@ -182,6 +182,23 @@ ideas = {
 			modifier = {
                 industrial_capacity_factory = 0.1
 			}
+		}
+		
+		HGR_war_idea_10_neo = {
+			
+			allowed = {always = yes} 
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = man_five_year_plan_tank
+			
+			modifier = {
+				max_fuel_factor = 2
+				fuel_gain_factor_from_states = 2
+				fuel_gain_factor = 2
+			}
         }
 
 #################国家方針切り替え#################

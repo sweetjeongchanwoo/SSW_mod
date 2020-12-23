@@ -8,9 +8,10 @@ bookmarks = {
 		default = yes
 
 		"ITA"={
-			history = ""
+			history = "SSW_ITA_GATHERING_STORM_DESC"
 			ideology = national_fascism
 			ideas = {
+			ITA_Umberto_II_king
 			}
 			focuses = {
 			}

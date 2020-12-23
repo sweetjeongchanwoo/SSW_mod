@@ -139,6 +139,17 @@ set_technology = {
 	fuel_refining6 = 1
 }
 
+create_import = {
+		resource = 	oil
+		factories = 3
+		exporter = ALF
+}
+create_import = {
+		resource = 	Rubber
+		factories = 2
+		exporter = INS
+}
+
 add_ideas = {
 	ssw_parliamentary_democracy_rightist_administration
 	SSW_JAP_Parasitic_landlord_system
