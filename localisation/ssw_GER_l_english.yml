@@ -268,3 +268,5 @@
  GER_dec_war_propaganda_LTV_desc:0 "爆撃機で伝単を散布し、反体制派を蜂起させるのだ"
  GER_dec_war_propaganda_HLH:0 "ヒムラー派への工作"
  GER_dec_war_propaganda_HLH_desc:0 "爆撃機で伝単を散布し、反体制派を蜂起させるのだ"
+ GER_dec_Weapons_capture:0 "装備の鹵獲"
+ GER_dec_Weapons_capture_desc:0 戦場に残された装備を鹵獲するため、小規模な民兵を組織する

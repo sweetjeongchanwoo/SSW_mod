@@ -855,7 +855,7 @@ GER_civill_war_plan = {
 	GER_dec_war_plan_GER = {
 		icon = generic_ignite_civil_war
 		available = {
-    		command_power > 20
+    		command_power > 10
 		}
 		visible = {
 			has_war_with = GER
@@ -867,7 +867,7 @@ GER_civill_war_plan = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_timed_idea = {
 				idea = GER_war_idea_3
 				days = 30
@@ -878,7 +878,7 @@ GER_civill_war_plan = {
 	GER_dec_war_plan_HGR = {
 		icon = generic_ignite_civil_war
 		available = {
-    		command_power > 20
+    		command_power > 10
 		}
 		visible = {
 			has_war_with = HGR
@@ -890,7 +890,7 @@ GER_civill_war_plan = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_timed_idea = {
 				idea = GER_war_idea_4
 				days = 30
@@ -901,7 +901,7 @@ GER_civill_war_plan = {
 	GER_dec_war_plan_HLH = {
 		icon = generic_ignite_civil_war
 		available = {
-    		command_power > 20
+    		command_power > 10
 		}
 		visible = {
 			has_war_with = HLH
@@ -913,7 +913,7 @@ GER_civill_war_plan = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_timed_idea = {
 				idea = GER_war_idea_6
 				days = 30
@@ -924,7 +924,7 @@ GER_civill_war_plan = {
 	GER_dec_war_plan_LTV = {
 		icon = generic_ignite_civil_war
 		available = {
-    		command_power > 20
+    		command_power > 10
 		}
 		visible = {
 			has_war_with = LTV
@@ -936,7 +936,7 @@ GER_civill_war_plan = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_timed_idea = {
 				idea = GER_war_idea_5
 				days = 30
@@ -944,12 +944,66 @@ GER_civill_war_plan = {
 			custom_effect_tooltip = GER_gel_war_1_tt
 		}
 	}
+	GER_dec_Weapons_capture = {
+		icon = ger_military_buildup
+		available = {
+    		has_army_experience > 5
+		}
+		visible = {
+			OR = {
+				has_war_with = GER
+				has_war_with = HLH
+				has_war_with = LTV
+				has_war_with = HRG
+			}
+		}
+		ai_will_do = {
+			factor = 300
+		}
+		days_remove = 5
+		remove_effect = {
+			army_experience = -5
+			random_list = {
+				50 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 100
+						producer = GER
+					}
+				}
+				30 = {
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 50
+						producer = GER
+					}
+				}
+				20 = {
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 30
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = mechanized_equipment
+						amount = 20
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = strat_bomber_equipment
+						amount = 10
+						producer = GER
+					}
+				}
+			}
+		}
+	}
 }
 GER_civill_war_propaganda = {
 	GER_dec_war_propaganda_GER = {
 		icon = generic_nationalism
 		available = {
-    		command_power > 20
+    		command_power > 10
 			has_equipment = {
 				strat_bomber_equipment > 9
 			}
@@ -964,7 +1018,7 @@ GER_civill_war_propaganda = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_equipment_to_stockpile = {
 				type = strat_bomber_equipment
 				amount = -5
@@ -1001,7 +1055,7 @@ GER_civill_war_propaganda = {
 	GER_dec_war_propaganda_HGR = {
 		icon = generic_nationalism
 		available = {
-    		command_power > 20
+    		command_power > 10
 			has_equipment = {
 				strat_bomber_equipment > 9
 			}
@@ -1016,7 +1070,7 @@ GER_civill_war_propaganda = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_equipment_to_stockpile = {
 				type = strat_bomber_equipment
 				amount = -5
@@ -1053,7 +1107,7 @@ GER_civill_war_propaganda = {
 	GER_dec_war_propaganda_HLH = {
 		icon = generic_nationalism
 		available = {
-    		command_power > 20
+    		command_power > 10
 			has_equipment = {
 				strat_bomber_equipment > 9
 			}
@@ -1068,7 +1122,7 @@ GER_civill_war_propaganda = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_equipment_to_stockpile = {
 				type = strat_bomber_equipment
 				amount = -5
@@ -1105,7 +1159,7 @@ GER_civill_war_propaganda = {
 	GER_dec_war_propaganda_LTV = {
 		icon = generic_nationalism
 		available = {
-    		command_power > 20
+    		command_power > 10
 			has_equipment = {
 				strat_bomber_equipment > 9
 			}
@@ -1120,7 +1174,7 @@ GER_civill_war_propaganda = {
 		days_remove = 10
 		cost = 10
 		remove_effect = {
-			add_command_power = -20
+			add_command_power = -10
 			add_equipment_to_stockpile = {
 				type = strat_bomber_equipment
 				amount = -5
