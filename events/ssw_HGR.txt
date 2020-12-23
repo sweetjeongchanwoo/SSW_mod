@@ -114,3 +114,29 @@ country_event = {
 		add_ideas = HGR_war_idea_31
 	}
 }
+
+country_event = {
+	id = SSW_HGR.8
+	title = SSW_HGR.8.t
+	desc = SSW_HGR.8.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = GER_dec_civil_war
+		NOT = {
+			AND = {
+				GER = { exists = yes }
+				LTV = { exists = yes }
+				HGR = { exists = yes }
+			}
+		}
+	}
+
+	option = {
+		name = SSW_HGR.8.a
+		clr_global_flag = GER_dec_civil_war
+		add_ideas = HGR_war_idea_29
+	}
+}
