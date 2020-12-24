@@ -184,7 +184,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_2
-			focus = FRA_4
+			focus = FRA_3
 			focus = FRA_21
 		}
 		x = 11
@@ -230,7 +230,7 @@ focus_tree = {
 			focus = FRA_next
 		}
 		mutually_exclusive = {
-			focus = FRA_3
+			focus = FRA_4
 			focus = FRA_2
 			focus = FRA_21
 		}
@@ -1314,7 +1314,7 @@ focus_tree = {
 	focus = {
 		id = FRA_87
 		icon = GFX_focus_up_joan_of_arc
-		cost = 20.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_86
 		}
