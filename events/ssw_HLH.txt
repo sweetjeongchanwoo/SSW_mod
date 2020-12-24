@@ -15,3 +15,75 @@ country_event = {
 		add_ideas = GER_war_ideas_1
 	}
 }
+
+country_event = {
+	id = SSW_HLH.2
+	title = SSW_HLH.2.t
+	desc = SSW_HLH.2.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = GER_dec_civil_war
+		NOT = {
+			AND = {
+				GER = { exists = yes }
+				LTV = { exists = yes }
+				HGR = { exists = yes }
+			}
+		}
+	}
+
+	option = {
+		name = SSW_HLH.2.a
+		clr_global_flag = GER_dec_civil_war
+			hidden_effect = {
+				remove_ideas = {
+					Protester
+					Emergency_conscription
+					GER_idea_1
+					GER_war_ideas_1
+					HLH_nerobefehl_for_others
+					HLH_ancient_religion
+					HIMMLER_kick_out_the_traitors
+					HLH_gestapo
+					HLH_gestapo_2
+					HLH_annihilate_the_anti_nazi
+					HIMMLER_forced_labor_of_prisoners
+					HLH_hunt_down_the_apostate
+					HIMMLER_cooperate_with_arrested_wehrmacht_officers
+					HIMMLER_nacht_und_nebel
+					HIMMLER_meine_ehre_heisst_treue
+					HIMMLER_waffen_ss
+					HIMMLER_waffen_ss_2
+					HIMMLER_waffen_ss_3
+					HIMMLER_waffen_ss_4
+					HIMMLER_waffen_ss_5
+					HIMMLER_waffen_ss_6
+					HIMMLER_waffen_ss_7
+					HIMMLER_pol_div
+				}
+			}
+		add_ideas = {
+			HIMMLER_1
+			HIMMLER_3
+			HIMMLER_4
+			HIMMLER_5
+		}
+		if = {
+			limit = {
+				has_idea = HLH_nerobefehl_for_himmler
+			}
+			add_timed_idea = {
+				idea = HIMMLER_2
+				days = 730
+			}
+			remove_ideas = HLH_nerobefehl_for_himmler
+		}
+		load_focus_tree = HLH
+		set_rule = {
+			can_not_declare_war = yes
+		}
+	}
+}

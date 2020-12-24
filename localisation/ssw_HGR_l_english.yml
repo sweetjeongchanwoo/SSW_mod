@@ -138,6 +138,7 @@
  HGR_war_idea_29:0 "産業での連携"
  HGR_war_idea_30:0 "電子工学での連携"
  HGR_war_idea_31:0 "民需産業での連携"
+ HGR_war_idea_10_neo:0 "イタリアの石油支援"
 
 #ディシジョン
  HGR_war_Support_from_Italy:0 "イタリアからの支援"
@@ -160,6 +161,9 @@
  HGR_recruiting_Leipzig:0 "ライプツィヒでの徴募"
  HGR_recruiting_Konigsberg:0 "ケーニヒスベルクでの徴募"
  HGR_recruiting_Danzig:0 "ダンツィヒでの徴募"
+ HGR_dec_cat_oil_italy:0 "イタリアとの交渉"
+ HGR_dec_cat_oil_italy_desc:0 "航空機はあるものの、我々には石油がない。この問題はイタリアから支援を受けるしか解決方法はない。"
+ HGR_dec_oil_italy:0 "悪魔の取引"
 
  HGR_Umgang_mit_dem_Widerstand:0 "レジスタンスの対処"
  HGR_Dealing_with_the_Goebbelsite_Resistance_foie_pommerne:0 "フォアポンメルンでのゲッベルス派レジスタンスの対処"
@@ -203,7 +207,7 @@
  HGR_Arms_Factory:0 "軍需産業への投資"
 
 #ツールチップ
- HGR_war_01_tt:0 "§G義勇隊を募集することができる"
- HGR_war_02_tt:0 "§Gゲーリング総統がドイツを統一するのだ"
- HGR_war_03_tt:0 "§R我が国は内戦によって世界から孤立してしまった"
- HGR_war_04_tt:0 "§G鋼鉄同盟が世界の覇権国となる。"
+ HGR_war_01_tt:0 "§G義勇隊を募集することができる§!"
+ HGR_war_02_tt:0 "§Gゲーリング総統がドイツを統一するのだ§!"
+ HGR_war_03_tt:0 "§R我が国は内戦によって世界から孤立してしまった§!"
+ HGR_war_04_tt:0 "§G鋼鉄同盟が世界の覇権国となる§!"
