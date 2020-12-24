@@ -14,6 +14,16 @@
  sniper_unit_desc:0 "狙撃兵は敵の指揮系統を破壊し、相対的にこちらの統制を引き上げることを目的にした部隊です。"
  morter_unit:0 "迫撃砲中隊"
  morter_unit_desc:0 "迫撃砲は精度において野砲や戦車砲に劣りますが、その火力と小型兵器故の機動性の高さは状況によりそれらをも上回る能力を発揮します。"
+ anti_air_missile_brigade:0 "対空ミサイル"
+ anti_air_missile_brigade_desc:0 "飛来する敵の航空機を撃ち落とせ！"
+ mot_anti_air_missile_brigade:0 "自動車化対空ミサイル"
+ mot_anti_air_missile_brigade_desc:0 "自動車によってけん引することで機動性を維持しつつ対空砲よりも高い対空攻撃能力を発揮します。"
+ anti_air_missile:0 "支援対空ミサイル"
+ anti_air_missile_desc:0 "飛来する敵の航空機を撃ち落とせ！"
+#アーキタイプ
+ anti_air_missile_equipment:0 "地対空ミサイル"
+ anti_air_missile_equipment_desc:0 "HIMAD用の地対空ミサイルは、最も初期から運用されてきたものである。遠距離で敵機を探知・捕捉する必要があるので、かなり大規模な設備が必要となる。
+艦船発射型のものは艦対空ミサイルと呼ばれており、基本的な原理は同一であるが、動揺する艦上での運用や風浪への対策が必要であり、また、運用形態も異なることから特別な配慮が必要となるので、設計段階から考慮されていない限りは、別々に開発されることが多い。ただし、SHORADシステムは、過酷な野戦環境に対応するように開発されていることから、艦載対応も比較的容易であり、アメリカのチャパラルやフランスのクロタルのように転用された例もある。"
 #技術・装備
  mechanized_equipment_4:0 "装甲兵員輸送車 IV"
  mechanized_equipment_4_short:0 "機械化 IV"
@@ -270,14 +280,20 @@
  tech_morter_unit6:0 "迫撃砲兵 VI"
  tech_morter_unit6_desc:0 "説明"
 #砲兵#
+
+ antiairmissile1:0 "地対空ミサイル I"
+ antiairmissile1_desc:0 "地対空ミサイルは、地上から空中目標に対して発射されるミサイルである。空中で動き回る目標を正確にとらえ続ける技術は、未だ完全なものとは言えないが、将来的には従来の対空砲を完全に代替し、敵航空機に対する強力な切り札になるであろう。"
+ antiairmissile2:0 "地対空ミサイル II"
+ antiairmissile2_desc:0 "地対空ミサイルは、地上から空中目標に対して発射されるミサイルである。空中で動き回る目標を正確にとらえ続ける技術は、未だ完全なものとは言えないが、将来的には従来の対空砲を完全に代替し、敵航空機に対する強力な切り札になるであろう。"
+ antiairmissile3:0 "地対空ミサイル III"
+ antiairmissile3_desc:0 "研究の進歩により、従来の迎撃戦闘機では到達不可能な高度を飛行する敵航空機であったとしても、最新の地対空ミサイルを用いることで対処することができる。"
+
  artillery5:0 "高度改良型砲兵改良 I"
  artillery5_desc:0 "野戦砲を改良します。"
  artillery6:0 "高度改良型砲兵改良 II"
  artillery6_desc:0 "野戦砲を改良します。"
- artillery8:0 "発展型砲兵改良 I"
- artillery8_desc:0 "野戦砲を改良します。"
- artillery9:0 "発展型砲兵改良 II"
- artillery9_desc:0 "野戦砲を改良します。"
+ artillery7:0 "発展型砲兵改良 I"
+ artillery7_desc:0 "野戦砲を改良します。"
 
  antiair6:0 "高度改良型対空火器改良 I"
  antiair6_desc:0 "対空火器を改良します。"

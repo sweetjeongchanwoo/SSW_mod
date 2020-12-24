@@ -5,7 +5,11 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_1
 		}
-		
+		enable_subunits = {
+			artillery
+			artillery_brigade
+			mot_artillery_brigade
+		}
 		path = {
 			leads_to_tech = artillery2 
 			research_cost_coeff = 1
@@ -321,10 +325,10 @@ technologies = {
 			leads_to_tech = artillery_improvement4
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = artillery_shrapnel_improvement1
-			research_cost_coeff = 1
-		}		research_cost = 2
+		#path = {
+		#	leads_to_tech = artillery_shrapnel_improvement1
+		#	research_cost_coeff = 1
+		#}		research_cost = 2
 
 		start_year = 1942
 		
@@ -466,10 +470,10 @@ technologies = {
 			leads_to_tech = artillery_improvement5
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = artillery_shrapnel_improvement2
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = artillery_shrapnel_improvement2
+		#	research_cost_coeff = 1
+		#}
 		research_cost = 2
 
 		start_year = 1942
@@ -612,10 +616,10 @@ technologies = {
 			leads_to_tech = artillery_improvement6
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = artillery_shrapnel_improvement3
-			research_cost_coeff = 1
-		}
+		#path = {
+		#	leads_to_tech = artillery_shrapnel_improvement3
+		#	research_cost_coeff = 1
+		#}
 		research_cost = 2
 
 		start_year = 1942
@@ -1112,6 +1116,11 @@ technologies = {
 
 		enable_equipments = {
 			anti_air_equipment_1
+		}
+		enable_subunits = {
+			anti_air
+			anti_air_brigade
+			mot_anti_air_brigade
 		}
 
 		tech_air_damage_factor = -0.02
@@ -1645,11 +1654,105 @@ technologies = {
 		
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 1956
 		
 		folder = {
 			name = artillery_folder
 			position = { x = 6 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	antiair7 = {
+
+		enable_equipments = {
+			anti_air_equipment_7
+		}
+
+		tech_air_damage_factor = -0.02
+		
+#		path = {
+#			leads_to_tech = antiair8
+#			research_cost_coeff = 1
+#		}
+		path = {
+			leads_to_tech = antiair_improvement7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1958
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	antiair_improvement7 = {
+
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+
+		tech_air_damage_factor = -0.02
+		
+
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1679,21 +1782,25 @@ technologies = {
 		enable_equipments = {
 			anti_air_missile_equipment_1
 		}
+		enable_subunits = {
+			anti_air_missile
+			anti_air_missile_brigade
+			mot_anti_air_missile_brigade
+		}
 
-		tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = antiairmissile2
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = antiairmissile_improvement2
+			leads_to_tech = antiairmissile_improvement1
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1952
 		
 		folder = {
 			name = artillery_folder
@@ -1719,6 +1826,193 @@ technologies = {
 		
 		categories = {
 			artillery
+			anti_air_missile
+		}
+	}
+	antiairmissile_improvement1 = {
+
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+
+		
+
+		
+		research_cost = 1
+
+		start_year = 1955
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+			anti_air_missile
+		}
+	}
+	antiairmissile2 = {
+
+		enable_equipments = {
+			anti_air_missile_equipment_2
+		}
+
+		
+		path = {
+			leads_to_tech = antiairmissile3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antiairmissile_improvement2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1956
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+			anti_air_missile
+		}
+	}
+	antiairmissile_improvement2 = {
+
+		anti_air = {
+			air_attack = 0.1
+		}
+		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+
+		
+
+		
+		research_cost = 1
+
+		start_year = 1960
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+			anti_air_missile
+		}
+	}
+	antiairmissile3 = {
+
+		enable_equipments = {
+			anti_air_missile_equipment_3
+		}
+
+		
+		path = {
+			leads_to_tech = antiairmissile4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = antiairmissile_improvement3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1956
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			artillery
+			anti_air_missile
 		}
 	}
 
@@ -1727,7 +2021,11 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
-		
+		enable_subunits = {
+			anti_tank
+			anti_tank_brigade
+			mot_anti_tank_brigade
+		}
 		path = {
 			leads_to_tech = antitank2
 			research_cost_coeff = 1
