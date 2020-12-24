@@ -670,5 +670,40 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+		HIMMLER_17 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.35
+				training_time_army_factor = -0.1
+				army_morale_factor = 0.1
+				conscription = 0.01
+				experience_loss_factor = -0.1
+				minimum_training_level = -0.1
+			}
+		}
+		HIMMLER_18 = {
+			picture = prc_the_long_march2
+			allowed = {
+				has_war_support > 0.5
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.01
+			}
+		}
 	}
 }

@@ -490,6 +490,23 @@ focus_tree = {
 		}
 		x = 8
 		y = 6
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HIMMLER_16
+				add_idea = HIMMLER_17
+			}
+		}
 
 	}
 	focus = {
@@ -501,7 +518,24 @@ focus_tree = {
 		}
 		x = 10
 		y = 6
-
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_war_support > 0.55
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HIMMLER_16
+				add_idea = HIMMLER_17
+			}
+		}
 	}
 	focus = {
 		id = HLH_20
