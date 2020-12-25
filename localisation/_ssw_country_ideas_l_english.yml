@@ -25,3 +25,5 @@
  minister_of_interior:0 "内務大臣"
  minister_of_army:0 "軍需大臣"
  head_of_cab_available:0 "政治首班は手動で変更できません。\n今後のあなたと周辺国の行動によって左右されます。"
+ vacancy_pl:0 "空席"
+ vacancy_tt:0 "効果を得ることができない。 "

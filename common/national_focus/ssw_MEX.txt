@@ -54,6 +54,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_motorization_effort }
 		prerequisite = { focus = MEX_army_reform }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_motorization_effort
 		mutually_exclusive = { focus = MEX_overwhelming_firepower }
 		x = 0
@@ -70,6 +71,7 @@ focus_tree = {
 		id = MEX_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = MEX_large_scale_battle_plan }
+		available = { has_global_flag = mexican_civil_war }
 		x = 0
 		y = 1
 		relative_position_id = MEX_large_scale_battle_plan
@@ -96,6 +98,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_army_effort }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_army_effort
 		x = 0
 		y = 1
@@ -134,6 +137,7 @@ focus_tree = {
 		relative_position_id = MEX_equipment_effort
 		prerequisite = { focus = MEX_equipment_effort }
 		prerequisite = { focus = MEX_army_reform }
+		available = { has_global_flag = mexican_civil_war }
 		mutually_exclusive = { focus = MEX_large_scale_battle_plan }
 		completion_reward = {
 			add_tech_bonus = {
@@ -147,6 +151,7 @@ focus_tree = {
 		id = MEX_artillery_effort
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = MEX_overwhelming_firepower }
+		available = { has_global_flag = mexican_civil_war }
 		x = 0
 		y = 1
 		relative_position_id = MEX_overwhelming_firepower
@@ -170,6 +175,7 @@ focus_tree = {
 			focus = MEX_overwhelming_firepower
 			focus = MEX_large_scale_battle_plan
 		}
+		available = { has_global_flag = mexican_civil_war }
 		x = -2
 		y = 1
 		relative_position_id = MEX_overwhelming_firepower
@@ -190,6 +196,7 @@ focus_tree = {
 		id = MEX_planned_strategy
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = MEX_special_forces }
+		available = { has_global_flag = mexican_civil_war }
 		x = 0
 		y = 1
 		relative_position_id = MEX_special_forces
@@ -205,6 +212,7 @@ focus_tree = {
 		id = MEX_armored_tactics
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		prerequisite = { focus = MEX_armor_effort }
+		available = { has_global_flag = mexican_civil_war }
 		x = 0
 		y = 1
 		relative_position_id = MEX_armor_effort
@@ -220,6 +228,7 @@ focus_tree = {
 		id = MEX_artillery_killing
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = MEX_artillery_effort }
+		available = { has_global_flag = mexican_civil_war }
 		x = 0
 		y = 1
 		relative_position_id = MEX_artillery_effort
@@ -242,6 +251,7 @@ focus_tree = {
 			focus = MEX_armored_tactics
 			focus = MEX_planned_strategy
 		}
+		available = { has_global_flag = mexican_civil_war }
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
@@ -261,6 +271,7 @@ focus_tree = {
 			focus = MEX_armored_tactics
 			focus = MEX_planned_strategy
 		}
+		available = { has_global_flag = mexican_civil_war }
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
@@ -280,6 +291,7 @@ focus_tree = {
 			focus = MEX_armored_tactics
 			focus = MEX_planned_strategy
 		}
+		available = { has_global_flag = mexican_civil_war }
 		cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -299,6 +311,7 @@ focus_tree = {
 			focus = MEX_armored_tactics
 			focus = MEX_planned_strategy
 		}
+		available = { has_global_flag = mexican_civil_war }
 		cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -317,6 +330,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_conscription_expansion }
 		prerequisite = { focus = MEX_logistics_review }
 		prerequisite = { focus = MEX_corresponding_to_the_climate }
+		available = { has_global_flag = mexican_civil_war }
 		cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -933,6 +947,7 @@ focus_tree = {
 		id = MEX_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = MEX_industrial_effort }
+		available = { has_global_flag = mcw_over }
 		x = 0
 		y = 1
 		relative_position_id = MEX_industrial_effort
@@ -1153,6 +1168,7 @@ focus_tree = {
 		id = MEX_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = MEX_industrial_effort }
+		available = { has_global_flag = mcw_over }
 		x = 2
 		y = 1
 		relative_position_id = MEX_industrial_effort
@@ -1325,6 +1341,7 @@ focus_tree = {
 		id = MEX_architecture_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MEX_industrial_effort }
+		available = { has_global_flag = mcw_over }
 		relative_position_id = MEX_industrial_effort
 		x = -2
 		y = 1
@@ -1675,6 +1692,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_construction_effort }
 		prerequisite = { focus = MEX_production_effort }
 		prerequisite = { focus = MEX_architecture_dockyard }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_architecture_dockyard
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = -1
@@ -1691,6 +1709,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_construction_effort }
 		prerequisite = { focus = MEX_production_effort }
 		prerequisite = { focus = MEX_architecture_dockyard }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_architecture_dockyard
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 1
@@ -1707,6 +1726,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_construction_effort }
 		prerequisite = { focus = MEX_production_effort }
 		prerequisite = { focus = MEX_architecture_dockyard }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_production_effort
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = -1
@@ -1723,6 +1743,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_construction_effort }
 		prerequisite = { focus = MEX_production_effort }
 		prerequisite = { focus = MEX_architecture_dockyard }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_production_effort
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 1
@@ -1738,6 +1759,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_improvement_of_working_environment }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_improvement_of_working_environment
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
@@ -1756,6 +1778,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_establishment_of_research_institute }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_establishment_of_research_institute
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
@@ -1778,6 +1801,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_construction_company }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_construction_company
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
@@ -1792,6 +1816,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = MEX_cooperation_with_the_syndicate }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_cooperation_with_the_syndicate
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
@@ -1817,6 +1842,7 @@ focus_tree = {
 		prerequisite = { focus = MEX_construction_effort_3 }
 		prerequisite = { focus = MEX_production_effort_3 }
 		prerequisite = { focus = MEX_architecture_dockyard_3 }
+		available = { has_global_flag = mexican_civil_war }
 		relative_position_id = MEX_construction_effort_3
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
@@ -1828,7 +1854,10 @@ focus_tree = {
 	##### LEFTIST #####
 	focus = {
 		id = MEX_leftist
-		available = { hidden_trigger = { always = no } }
+		available = {
+			has_global_flag = mexican_civil_war
+			hidden_trigger = { always = no }
+		}
 		mutually_exclusive = { focus = MEX_rightist }
 		icon = GFX_goal_generic_national_unity
 		cost = 10
@@ -1848,16 +1877,1175 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = MEX_concessions_to_the_trade_unions
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		text = ENG_concessions_to_the_trade_unions
+		prerequisite = { focus = MEX_leftist }
+		mutually_exclusive = { focus = MEX_steady_as_she_goes }
+		x = -1
+		y = 1
+		relative_position_id = MEX_leftist
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = progressive_communism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = MEX_fuse_the_parties
+		icon = GFX_focus_spa_fuse_the_parties
+		prerequisite = { focus = MEX_concessions_to_the_trade_unions }
+		x = -1
+		y = 2
+		relative_position_id = MEX_concessions_to_the_trade_unions
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = { ruling_party = progressive_communism elections_allowed = yes }
+			set_party_name = {
+				ideology = progressive_communism
+				long_name = MEX_social_democracy_party_long
+				name = MEX_social_democracy_party
+			}
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = progressive_communism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.05
+			}
+			add_ideas = {
+				ssw_one_party_dictatorship
+				MEX_valentin_campa
+			}
+			hidden_effect = { news_event = { id = ssw_mex.7 hours = 6 } }
+		}
+	}
+	focus = {
+		id = MEX_welfare
+		icon = GFX_goal_generic_consumer_goods
+		text = SSW_generic_welfare
+		prerequisite = { focus = MEX_concessions_to_the_trade_unions }
+		x = 1
+		y = 2
+		relative_position_id = MEX_concessions_to_the_trade_unions
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = SSW_generic_welfare
+			hidden_effect = { log = "[GetDateText]: [Root.GetName]: completion focus ssw generic_welfare" }
+		}
+	}
+	focus = {
+		id = MEX_industrial_collectivization
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = MEX_fuse_the_parties }
+		prerequisite = { focus = MEX_welfare }
+		x = 1
+		y = 1
+		relative_position_id = MEX_fuse_the_parties
+		bypass = {
+			NOT = {
+				any_owned_state = {
+					is_core_of = MEX
+					is_controlled_by = MEX
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_revolutionary_spirit
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = MEX_industrial_collectivization }
+		x = 0
+		y = 1
+		relative_position_id = MEX_industrial_collectivization
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_19
+		}
+	}
+	focus = {
+		id = MEX_claim_superiority
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = MEX_fuse_the_parties }
+		x = 0
+		y = 3
+		relative_position_id = MEX_fuse_the_parties
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = { ideology = progressive_communism popularity = 0.1 }
+		}
+	}
+	focus = {
+		id = MEX_incite_the_people
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = MEX_welfare }
+		x = 0
+		y = 3
+		relative_position_id = MEX_welfare
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_popularity = { ideology = progressive_communism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = MEX_determine_the_enemy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = MEX_claim_superiority }
+		prerequisite = { focus = MEX_incite_the_people }
+		available = { has_global_flag = mcw_over }
+		x = -1
+		y = 1
+		relative_position_id = MEX_incite_the_people
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 180
+			create_faction = american_popular_unity
+		}
+	}
+	focus = {
+		id = MEX_liberation_of_latin_america
+		icon = GFX_focus_spa_the_war_of_vengeance
+		prerequisite = { focus = MEX_determine_the_enemy }
+		x = 0
+		y = 1
+		relative_position_id = MEX_determine_the_enemy
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					ATL = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ATL
+				}
+			}
+			if = {
+				limit = {
+					PAC = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PAC
+				}
+			}
+			if = {
+				limit = {
+					ARG = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ARG
+				}
+			}
+			if = {
+				limit = {
+					BOL = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = BOL
+				}
+			}
+			if = {
+				limit = {
+					BRA = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = BRA
+				}
+			}
+			if = {
+				limit = {
+					CHL = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = CHL
+				}
+			}
+			if = {
+				limit = {
+					COL = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = COL
+				}
+			}
+			if = {
+				limit = {
+					COS = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = COS
+				}
+			}
+			if = {
+				limit = {
+					CUB = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = CUB
+				}
+			}
+			if = {
+				limit = {
+					DOM = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = DOM
+				}
+			}
+			if = {
+				limit = {
+					ECU = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ECU
+				}
+			}
+			if = {
+				limit = {
+					ELS = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ELS
+				}
+			}
+			if = {
+				limit = {
+					GUA = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = GUA
+				}
+			}
+			if = {
+				limit = {
+					HAI = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HAI
+				}
+			}
+			if = {
+				limit = {
+					HON = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HON
+				}
+			}
+			if = {
+				limit = {
+					JAM = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = JAM
+				}
+			}
+			if = {
+				limit = {
+					NIC = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = NIC
+				}
+			}
+			if = {
+				limit = {
+					PAN = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PAN
+				}
+			}
+			if = {
+				limit = {
+					PAR = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PAR
+				}
+			}
+			if = {
+				limit = {
+					PRU = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PRU
+				}
+			}
+			if = {
+				limit = {
+					URG = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = URG
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_revenge_on_spain
+		icon = GFX_focus_por_remember_olivenca
+		prerequisite = { focus = MEX_liberation_of_latin_america }
+		x = -1
+		y = 1
+		relative_position_id = MEX_liberation_of_latin_america
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					SPR = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SPR
+				}
+				else = {
+					add_war_support = 0.05
+					add_political_power = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_new_order_in_the_pacific_ocean
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = MEX_liberation_of_latin_america }
+		x = 1
+		y = 1
+		relative_position_id = MEX_liberation_of_latin_america
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = JAP
+				}
+				else = { add_political_power = 50 }
+			}
+			if = {
+				limit = {
+					PHI = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PHI
+				}
+				else = { add_political_power = 50 }
+			}
+			if = {
+				limit = {
+					AST = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = AST
+				}
+				else = { add_political_power = 50 }
+			}
+			if = {
+				limit = {
+					NZL = {
+						exists = yes
+						NOT = { has_government = progressive_communism }
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = NZL
+				}
+				else = { add_political_power = 50 }
+			}
+		}
+	}
+	focus = {
+		id = MEX_volksmarine
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = MEX_new_order_in_the_pacific_ocean }
+		prerequisite = { focus = MEX_revenge_on_spain }
+		x = -1
+		y = 1
+		relative_position_id = MEX_new_order_in_the_pacific_ocean
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_20
+		}
+	}
+	focus = {
+		id = MEX_steady_as_she_goes
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = MEX_leftist }
+		mutually_exclusive = { focus = MEX_concessions_to_the_trade_unions }
+		x = 1
+		y = 1
+		relative_position_id = MEX_leftist
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = social_democracy
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_on_democracy
+		icon = GFX_focus_generic_self_management
+		prerequisite = {
+			focus = MEX_steady_as_she_goes
+			focus = MEX_protect_your_freedom
+		}
+		x = 3
+		y = 1
+		relative_position_id = MEX_steady_as_she_goes
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 150
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = cardenas_survives
+						has_country_flag = cardenas_resign
+					}
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.35
+				}
+			}
+			if = {
+				limit = { has_country_flag = cardenas_dead }
+				add_popularity = {
+					ideology = social_liberalism
+					popularity = 0.35
+				}
+			}
+			if = {
+				limit = { has_completed_focus = MEX_protect_your_freedom }
+				add_popularity = {
+					ideology = social_conservatism
+					popularity = 0.35
+				}
+			}
+			hidden_effect = { news_event = { id = ssw_mex.8 hours = 6 } }
+		}
+	}
+	focus = {
+		id = MEX_enact_constitutions
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = MEX_focus_on_democracy }
+		x = -2
+		y = 1
+		relative_position_id = MEX_focus_on_democracy
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = MEX_privatization_of_munitions_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = MEX_focus_on_democracy }
+		x = 2
+		y = 1
+		relative_position_id = MEX_focus_on_democracy
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_extra_tech_speed
+		text = SSW_extra_tech_speed
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = MEX_privatization_of_munitions_factory }
+		x = 0
+		y = 1
+		relative_position_id = MEX_privatization_of_munitions_factory
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL } 
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = idea_extra_tech_speed
+		}
+	}
+	focus = {
+		id = MEX_massive_military_reforms
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = MEX_enact_constitutions }
+		x = 0
+		y = 1
+		relative_position_id = MEX_enact_constitutions
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_21
+		}
+	}
+	focus = {
+		id = MEX_largescale_incitement
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = MEX_massive_military_reforms }
+		prerequisite = { focus = MEX_extra_tech_speed }
+		x = 2
+		y = 1
+		relative_position_id = MEX_massive_military_reforms
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.15
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = cardenas_survives
+						has_country_flag = cardenas_resign
+					}
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.15
+				}
+			}
+			if = {
+				limit = { has_country_flag = cardenas_dead }
+				add_popularity = {
+					ideology = social_liberalism
+					popularity = 0.15
+				}
+			}
+			if = {
+				limit = { has_completed_focus = MEX_protect_your_freedom }
+				add_popularity = {
+					ideology = social_conservatism
+					popularity = 0.15
+				}
+				set_politics = { ruling_party = social_conservatism elections_allowed = yes }
+				add_ideas = {
+					ssw_parliamentary_democracy_rightist_administration
+					MEX_manuel_gomez_morin
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_administrative_reform
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = MEX_largescale_incitement }
+		x = 0
+		y = 1
+		relative_position_id = MEX_largescale_incitement
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 200
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = cardenas_survives
+						has_country_flag = cardenas_resign
+					}
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_country_flag = cardenas_dead }
+				add_popularity = {
+					ideology = social_liberalism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = MEX_protect_your_freedom }
+				add_popularity = {
+					ideology = social_conservatism
+					popularity = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_investing_in_public_welfare
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = MEX_administrative_reform }
+		available = { has_global_flag = mcw_over }
+		x = 0
+		y = 1
+		relative_position_id = MEX_administrative_reform
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = SSW_generic_welfare
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_toward_unification_of_north_america
+		icon = GFX_focus_mex_jefe_maximo
+		prerequisite = { focus = MEX_investing_in_public_welfare }
+		mutually_exclusive = { focus = MEX_cooperation_japan }
+		x = -1
+		y = 1
+		relative_position_id = MEX_investing_in_public_welfare
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LFF
+						is_core_of = ALF
+						is_core_of = UTC
+						is_core_of = ANS
+						is_core_of = OKL
+						is_core_of = TEX
+						is_core_of = LUI
+						is_core_of = BLS
+						is_core_of = FSA
+						is_core_of = NEL
+						is_core_of = HAW
+						is_core_of = CAN
+						is_core_of = NFL
+						state = 463
+						state = 650
+					}
+					NOT = { is_core_of = MEX }
+				}
+				add_core_of = MEX
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = LFF
+						original_tag = ALF
+						original_tag = UTC
+						original_tag = ANS
+						original_tag = OKL
+						original_tag = TEX
+						original_tag = LUI
+						original_tag = BLS
+						original_tag = FSA
+						original_tag = NEL
+						original_tag = HAW
+						original_tag = CAN
+						original_tag = NFL
+						original_tag = ARC
+					}
+					NOT = { original_tag = MEX }
+				}
+				create_wargoal = { 
+					type = annex_everything
+					target = PREV
+					expire = 0
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_cooperation_japan
+		text = SSW_cooperation_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = MEX_investing_in_public_welfare }
+		mutually_exclusive = { focus = MEX_toward_unification_of_north_america }
+		available = {
+			country_exists = JAP
+			NOT = { has_war_with = JAP }
+		}
+		x = 1
+		y = 1
+		relative_position_id = MEX_investing_in_public_welfare
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+			add_opinion_modifier = { target = JAP modifier = SSW_generic_technology_licensing }
+			JAP = {
+				add_opinion_modifier = { target = MEX modifier = SSW_generic_technology_licensing }
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_north_america
+		icon = GFX_focus_eng_imperial_federation
+		prerequisite = { focus = MEX_toward_unification_of_north_america }
+		available = {
+			all_state = { 
+				OR = {
+					NOT = { is_core_of = MEX }
+					is_controlled_by = MEX
+				}
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = MEX_toward_unification_of_north_america
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_cosmetic_tag = North_America
+			hidden_effect = { news_event = { id = ssw_mex.5 hours = 6 } }
+		}
+	}
+	focus = {
+		id = MEX_join_faction_of_japan
+		text = SSW_join_faction_of_japan
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = MEX_cooperation_japan }
+		available = {
+			JAP = {
+				exists = yes
+				is_faction_leader = yes
+			}
+			NOT = { has_war_with = JAP }
+		}
+		bypass = {
+			OR = {
+				is_subject_of = JAP
+				is_in_faction_with = JAP
+				JAP = { is_faction_leader = no }
+				JAP = { exists = no }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = MEX_cooperation_japan
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					JAP = {
+						is_faction_leader = yes
+						OR = {
+							has_government = social_democracy
+							has_government = social_liberalism
+							has_government = social_conservatism
+							has_government = authority_democracy
+						}
+					}
+					OR = {
+						has_government = social_democracy
+						has_government = social_liberalism
+						has_government = social_conservatism
+						has_government = authority_democracy
+					}
+				}
+				JAP = { country_event = { id = ssw_faction.4 } }
+				else = {
+					diplomatic_relation = { country = JAP relation = non_aggression_pact }
+					add_war_support = 0.05
+					add_political_power = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_protect_your_freedom
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = MEX_rightist }
+		mutually_exclusive = { focus = MEX_ultimate_patriotism }
+		x = -1
+		y = 1
+		relative_position_id = MEX_rightist
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = social_conservatism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = MEX_towards_peace
+		icon = GFX_focus_MEX_flag_mexico
+		prerequisite = {
+			focus = MEX_join_faction_of_japan
+			focus = MEX_north_america
+		}
+		x = -1
+		y = 1
+		relative_position_id = MEX_join_faction_of_japan
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
 	##### RIGHTIST #####
 	focus = {
 		id = MEX_rightist
-		available = { hidden_trigger = { always = no } }
+		available = {
+			has_global_flag = mexican_civil_war
+			hidden_trigger = { always = no }
+		}
 		mutually_exclusive = { focus = MEX_leftist }
 		icon = GFX_goal_generic_political_pressure
 		cost = 10
 		ai_will_do = { factor = 10 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		x = 42
+		x = 38
 		y = 0
 		completion_reward = {
 			custom_effect_tooltip = ssw_unlock_focuses_tt
@@ -1873,6 +3061,955 @@ focus_tree = {
 				ideology = national_fascism
 				popularity = 0.1
 			}
+		}
+	}
+	focus = {
+		id = MEX_ultimate_patriotism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = MEX_rightist }
+		mutually_exclusive = { focus = MEX_protect_your_freedom }
+		x = 1
+		y = 1
+		relative_position_id = MEX_rightist
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = MEX_extra_tech_speed_2
+		text = SSW_extra_tech_speed
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = MEX_ultimate_patriotism }
+		x = 0
+		y = 1
+		relative_position_id = MEX_ultimate_patriotism
+		cost = 10
+		ai_will_do = { factor = 10 }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL } 
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = idea_extra_tech_speed
+		}
+	}
+	focus = {
+		id = MEX_massive_military_reforms_2
+		icon = GFX_focus_ger_oppose_hitler
+		text = MEX_massive_military_reforms
+		prerequisite = { focus = MEX_extra_tech_speed_2 }
+		x = 0
+		y = 1
+		relative_position_id = MEX_extra_tech_speed_2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_21
+		}
+	}
+	focus = {
+		id = MEX_privatization_of_munitions_factory_2
+		text = MEX_privatization_of_munitions_factory
+		icon = GFX_focus_MEX_develop
+		prerequisite = { focus = MEX_massive_military_reforms_2 }
+		x = 0
+		y = 1
+		relative_position_id = MEX_massive_military_reforms_2
+		cost = 10
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_concessions_to_the_sinarquista
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = MEX_ultimate_patriotism }
+		available = { has_global_flag = mcw_over }
+		mutually_exclusive = { focus = MEX_team_up_with_monarchists }
+		x = -1
+		y = 4
+		relative_position_id = MEX_ultimate_patriotism
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = MEX_regime_change
+		icon = GFX_focus_MEX_sinarquist_coup
+		prerequisite = { focus = MEX_concessions_to_the_sinarquista }
+		x = 0
+		y = 1
+		relative_position_id = MEX_concessions_to_the_sinarquista
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = { ruling_party = national_fascism elections_allowed = no }
+			add_popularity = {
+				ideology = national_fascism
+				popularity = 0.15
+			}
+			add_ideas = {
+				ssw_one_party_dictatorship
+				MEX_salvador_abascal
+			}
+			hidden_effect = { news_event = { id = ssw_mex.9 hours = 6 } }
+		}
+	}
+	focus = {
+		id = MEX_team_up_with_monarchists
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = MEX_ultimate_patriotism }
+		available = { has_global_flag = mcw_over }
+		mutually_exclusive = { focus = MEX_concessions_to_the_sinarquista }
+		x = 1
+		y = 4
+		relative_position_id = MEX_ultimate_patriotism
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = MEX_invite_the_emperor
+		icon = GFX_focus_MEX_empire
+		prerequisite = { focus = MEX_team_up_with_monarchists }
+		x = 0
+		y = 1
+		relative_position_id = MEX_team_up_with_monarchists
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_politics = { ruling_party = authority_despotism elections_allowed = no }
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.1
+			}
+			add_ideas = {
+				mex_ideas_23
+				MEX_juan_andreu
+				ssw_despotism
+			}
+			effect_tooltip = {
+				create_country_leader = {
+					name = "Felix von Habsburg"
+					desc = "POLITICS_FELIX_VON_HABSBURG_DESC"
+					picture = "gfx/leaders/AUS/Portrait_Austria_Felix_von_Habsburg.dds"
+					expire = "2011.9.6"
+					ideology = authority_despotism_ideology
+					traits = {
+						autocratic_imperialist
+						the_sacred_king
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_cosmetic_tag = MEX_rebellion }
+					drop_cosmetic_tag = yes
+				}
+				set_cosmetic_tag = MEX_empire
+				retire_ideology_leader = authority_despotism
+				create_country_leader = {
+					name = "Felix von Habsburg"
+					desc = "POLITICS_FELIX_VON_HABSBURG_DESC"
+					picture = "gfx/leaders/AUS/Portrait_Austria_Felix_von_Habsburg.dds"
+					expire = "2011.9.6"
+					ideology = authority_despotism_ideology
+					traits = {
+						autocratic_imperialist
+						the_sacred_king
+					}
+				}
+				news_event = { id = ssw_mex.6 hours = 6 }
+			}
+		}
+	}
+	focus = {
+		id = MEX_memories_of_naval_battles
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {
+			focus = MEX_invite_the_emperor
+			focus = MEX_regime_change
+		}
+		x = -1
+		y = 1
+		relative_position_id = MEX_invite_the_emperor
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_22
+		}
+	}
+	focus = {
+		id = MEX_recovery_of_central_american_territory
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = MEX_memories_of_naval_battles }
+		x = 0
+		y = 1
+		relative_position_id = MEX_memories_of_naval_battles
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = GUA
+						original_tag = ELS
+						original_tag = NIC
+						original_tag = HON
+						original_tag = COS
+					}
+				}
+				create_wargoal = { 
+					type = annex_everything
+					target = PREV
+					expire = 0
+				}
+			}
+			if = {
+				limit = { has_completed_focus = MEX_regime_change }
+				create_wargoal = { 
+					type = annex_everything
+					target = PAN
+					expire = 0
+				}
+				every_state = {
+					limit = {
+						is_core_of = PAN
+						NOT = { is_core_of = MEX }
+					}
+					add_core_of = MEX
+				}
+			}
+			if = {
+				limit = { NOT = { 312 = { is_core_of = MEX } } }
+				add_state_core = 312
+			}
+			if = {
+				limit = { NOT = { 313 = { is_core_of = MEX } } }
+				add_state_core = 313
+			}
+			if = {
+				limit = { NOT = { 314 = { is_core_of = MEX } } }
+				add_state_core = 314
+			}
+			if = {
+				limit = { NOT = { 316 = { is_core_of = MEX } } }
+				add_state_core = 316
+			}
+			if = {
+				limit = { NOT = { 317 = { is_core_of = MEX } } }
+				add_state_core = 317
+			}
+		}
+	}
+	focus = {
+		id = MEX_puppet_in_south_america
+		icon = GFX_focus_por_recover_latin_america
+		prerequisite = { focus = MEX_recovery_of_central_american_territory }
+		x = 0
+		y = 1
+		relative_position_id = MEX_recovery_of_central_american_territory
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = ARG
+						original_tag = BOL
+						original_tag = BRA
+						original_tag = CHL
+						original_tag = COL
+						original_tag = ECU
+						original_tag = PAR
+						original_tag = PRU
+						original_tag = URG
+						original_tag = VEN
+					}
+				}
+				create_wargoal = { 
+					type = puppet_wargoal_focus
+					target = PREV
+					expire = 0
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_join_faction_of_italy
+		text = SSW_join_faction_of_italy
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = MEX_regime_change }
+		available = {
+			ITA = {
+				exists = yes
+				is_faction_leader = yes
+			}
+			NOT = { has_war_with = ITA }
+		}
+		bypass = {
+			OR = {
+				is_subject_of = ITA
+				is_in_faction_with = ITA
+				ITA = { is_faction_leader = no }
+				ITA = { exists = no }
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = MEX_regime_change
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					ITA = {
+						is_faction_leader = yes
+						OR = {
+							has_government = national_fascism
+							has_government = national_socialism
+							has_government = corporatocracism
+						}
+					}
+					OR = {
+						has_government = national_fascism
+						has_government = national_socialism
+						has_government = corporatocracism
+					}
+				}
+				ITA = { country_event = { id = ssw_faction.4 } }
+				else = {
+					diplomatic_relation = { country = ITA relation = non_aggression_pact }
+					add_war_support = 0.05
+					add_political_power = 100
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_revenge_on_spain_2
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = MEX_join_faction_of_italy }
+		x = 0
+		y = 1
+		relative_position_id = MEX_join_faction_of_italy
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = { SPR = { exists = yes } }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = SPR
+				}
+				else = {
+					add_war_support = 0.05
+					add_political_power = 50
+				}
+			}
+			if = {
+				limit = { POR = { exists = yes } }
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = POR
+				}
+				else = {
+					add_war_support = 0.05
+					add_political_power = 50
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_look_at_the_air_force
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = MEX_revenge_on_spain_2 }
+		x = 0
+		y = 1
+		relative_position_id = MEX_revenge_on_spain_2
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 6
+				category = air_doctrine
+			}
+			add_ideas = mex_ideas_24
+		}
+	}
+	focus = {
+		id = MEX_completed_nationalism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = MEX_puppet_in_south_america }
+		prerequisite = { focus = MEX_look_at_the_air_force }
+		x = 0
+		y = 1
+		relative_position_id = MEX_puppet_in_south_america
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_25
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MEX_mexico_agreement
+		icon = GFX_focus_spa_supremacy_of_the_communion
+		prerequisite = { focus = MEX_invite_the_emperor }
+		mutually_exclusive = { focus = MEX_join_the_kaiser }
+		x = 2
+		y = 1
+		relative_position_id = MEX_invite_the_emperor
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					any_other_country = {
+						has_country_leader = {
+							ruling_only = yes
+							name = "Otto von Habsburg"
+						}
+						NOT = { has_war_with = MEX }
+					}
+				}
+				random_other_country = {
+					limit = {
+						has_country_leader = {
+							ruling_only = yes
+							name = "Otto von Habsburg"
+						}
+						NOT = { has_war_with = MEX }
+					}
+					country_event = { id = ssw_faction.4 }
+				}
+				else = {
+					create_faction = mexico_holy_alliance
+					add_political_power = 150
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_join_the_kaiser
+		icon = GFX_focus_ger_return_of_the_kaiser
+		prerequisite = { focus = MEX_invite_the_emperor }
+		mutually_exclusive = { focus = MEX_mexico_agreement }
+		available = {
+			LTV = {
+				exists = yes
+				is_faction_leader = yes
+			}
+			NOT = { has_war_with = LTV }
+		}
+		x = 4
+		y = 1
+		relative_position_id = MEX_invite_the_emperor
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			LTV = { country_event = { id = ssw_faction.4 } }
+		}
+	}
+	focus = {
+		id = MEX_recover_north_america
+		icon = GFX_focus_eng_unite_the_anglosphere
+		prerequisite = {
+			focus = MEX_mexico_agreement
+			focus = MEX_join_the_kaiser
+		}
+		x = -1
+		y = 1
+		relative_position_id = MEX_mexico_agreement
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = LFF
+						original_tag = ALF
+						original_tag = ANS
+						original_tag = OKL
+						original_tag = TEX
+					}
+				}
+				create_wargoal = { 
+					type = annex_everything
+					target = PREV
+					expire = 0
+				}
+			}
+			if = {
+				limit = { NOT = { 374 = { is_core_of = MEX } } }
+				add_state_core = 374
+			}
+			if = {
+				limit = { NOT = { 375 = { is_core_of = MEX } } }
+				add_state_core = 375
+			}
+			if = {
+				limit = { NOT = { 376 = { is_core_of = MEX } } }
+				add_state_core = 376
+			}
+			if = {
+				limit = { NOT = { 377 = { is_core_of = MEX } } }
+				add_state_core = 377
+			}
+			if = {
+				limit = { NOT = { 378 = { is_core_of = MEX } } }
+				add_state_core = 378
+			}
+			if = {
+				limit = { NOT = { 379 = { is_core_of = MEX } } }
+				add_state_core = 379
+			}
+			if = {
+				limit = { NOT = { 380 = { is_core_of = MEX } } }
+				add_state_core = 380
+			}
+			if = {
+				limit = { NOT = { 382 = { is_core_of = MEX } } }
+				add_state_core = 382
+			}
+			if = {
+				limit = { NOT = { 383 = { is_core_of = MEX } } }
+				add_state_core = 383
+			}
+			if = {
+				limit = { NOT = { 385 = { is_core_of = MEX } } }
+				add_state_core = 385
+			}
+			if = {
+				limit = { NOT = { 386 = { is_core_of = MEX } } }
+				add_state_core = 386
+			}
+			if = {
+				limit = { NOT = { 387 = { is_core_of = MEX } } }
+				add_state_core = 387
+			}
+			if = {
+				limit = { NOT = { 813 = { is_core_of = MEX } } }
+				add_state_core = 813
+			}
+			if = {
+				limit = { NOT = { 895 = { is_core_of = MEX } } }
+				add_state_core = 895
+			}
+			if = {
+				limit = { NOT = { 896 = { is_core_of = MEX } } }
+				add_state_core = 896
+			}
+			if = {
+				limit = { NOT = { 897 = { is_core_of = MEX } } }
+				add_state_core = 897
+			}
+			if = {
+				limit = { NOT = { 898 = { is_core_of = MEX } } }
+				add_state_core = 898
+			}
+			if = {
+				limit = { NOT = { 899 = { is_core_of = MEX } } }
+				add_state_core = 899
+			}
+			if = {
+				limit = { NOT = { 900 = { is_core_of = MEX } } }
+				add_state_core = 900
+			}
+			if = {
+				limit = { NOT = { 901 = { is_core_of = MEX } } }
+				add_state_core = 901
+			}
+			if = {
+				limit = { NOT = { 902 = { is_core_of = MEX } } }
+				add_state_core = 902
+			}
+			if = {
+				limit = { NOT = { 903 = { is_core_of = MEX } } }
+				add_state_core = 903
+			}
+			if = {
+				limit = { NOT = { 904 = { is_core_of = MEX } } }
+				add_state_core = 904
+			}
+			if = {
+				limit = { NOT = { 905 = { is_core_of = MEX } } }
+				add_state_core = 905
+			}
+		}
+	}
+	focus = {
+		id = MEX_hostility_to_democracy
+		icon = GFX_goal_generic_occupy_states_coastal
+		prerequisite = {
+			focus = MEX_mexico_agreement
+			focus = MEX_join_the_kaiser
+		}
+		x = -1
+		y = 1
+		relative_position_id = MEX_join_the_kaiser
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 150
+			every_other_country = {
+				limit = {
+					OR = {
+						has_government = social_democracy
+						has_government = social_liberalism
+						has_government = social_conservatism
+						has_government = authority_democracy
+					}
+					is_subject = no
+					NOT = { original_tag = MEX }
+				}
+				add_opinion_modifier = { target = MEX modifier = SSW_sense_of_distrust }
+				hidden_effect = {
+					add_ai_strategy = { type = alliance id = MEX value = -50 }
+					add_ai_strategy = { type = protect id = MEX value = -50 }
+					add_ai_strategy = { type = send_volunteers_desire id = MEX value = -50 }
+					add_ai_strategy = { type = support id = MEX value = -50 }
+					MEX = {
+						add_opinion_modifier = { target = PREV modifier = SSW_sense_of_distrust }
+						add_ai_strategy = { type = alliance id = PREV value = -50 }
+						add_ai_strategy = { type = protect id = PREV value = -50 }
+						add_ai_strategy = { type = send_volunteers_desire id = PREV value = -50 }
+						add_ai_strategy = { type = support id = PREV value = -50 }
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_attack_uk
+		icon = GFX_focus_attack_britain
+		prerequisite = { focus = MEX_hostility_to_democracy }
+		x = 0
+		y = 1
+		relative_position_id = MEX_hostility_to_democracy
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = MEX_attack_japan
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = MEX_attack_uk }
+		bypass = {
+			OR = {
+				has_war_with = JAP
+				NOT = { country_exists = JAP }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = MEX_attack_uk
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = MEX_puppetization_of_caribbean
+		icon = GFX_focus_spa_the_war_of_vengeance
+		prerequisite = {
+			focus = MEX_mexico_agreement
+			focus = MEX_join_the_kaiser
+		}
+		x = 1
+		y = 1
+		relative_position_id = MEX_join_the_kaiser
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = CUB
+						original_tag = DOM
+						original_tag = HAI
+					}
+				}
+				create_wargoal = { 
+					type = puppet_wargoal_focus
+					target = PREV
+					expire = 0
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_oil_concession
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = MEX_puppetization_of_caribbean }
+		x = 0
+		y = 1
+		relative_position_id = MEX_puppetization_of_caribbean
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = SAU
+						original_tag = YEM
+						original_tag = OMA
+					}
+				}
+				create_wargoal = { 
+					type = puppet_wargoal_focus
+					target = PREV
+					expire = 0
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_securing_rubber_resources
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = MEX_oil_concession }
+		x = 0
+		y = 1
+		relative_position_id = MEX_oil_concession
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_other_country = {
+				limit = {
+					OR = {
+						original_tag = MAL
+						original_tag = INS
+						original_tag = SIA
+					}
+				}
+				create_wargoal = { 
+					type = puppet_wargoal_focus
+					target = PREV
+					expire = 0
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_constitution_for_peace
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = MEX_recover_north_america }
+		x = 0
+		y = 2
+		relative_position_id = MEX_recover_north_america
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.25
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = MEX_meiou
+		icon = GFX_focus_ger_revive_kaiserreich
+		prerequisite = { focus = MEX_constitution_for_peace }
+		prerequisite = { focus = MEX_attack_japan }
+		prerequisite = { focus = MEX_securing_rubber_resources }
+		x = 0
+		y = 1
+		relative_position_id = MEX_attack_japan
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = mex_ideas_23
+						has_idea = mex_ideas_26
+					}
+				}
+				add_ideas = mex_ideas_26
+			}
+			if = {
+				limit = {
+					has_idea = mex_ideas_23
+					NOT = { has_idea = mex_ideas_26 }
+				}
+				swap_ideas = {
+					remove_idea = mex_ideas_23
+					add_idea = mex_ideas_26
+				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_completion_of_plans
+		icon = GFX_focus_generic_royal_wedding
+		prerequisite = {
+			focus = MEX_volksmarine
+			focus = MEX_towards_peace
+			focus = MEX_completed_nationalism
+			focus = MEX_meiou
+		}
+		x = 0
+		y = 2
+		relative_position_id = MEX_towards_peace
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available_if_capitulated = yes
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = mex_ideas_27
 		}
 	}
 }

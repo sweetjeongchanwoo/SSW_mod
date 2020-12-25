@@ -129,3 +129,59 @@ create_country_leader = {
 	traits = {
 	}
 }
+##### GENERAL #####
+create_corps_commander = { #RIGHTIST
+	name = "Heliodoro Charis"
+	id = 41
+	gfx = "GFX_portrait_mex_heliodoro_charis"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = { #RIGHTIST
+	name = "Luis Farell"
+	id = 42
+	gfx = "GFX_portrait_mex_luis_farell"
+	traits = { war_hero }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = { #LEFTIST
+	name = "Abelardo L. Rodríguez"
+	id = 43
+	gfx = "GFX_portrait_mex_abelardo_rodriguez"
+	traits = { politically_connected } # President prior to Cardenas
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = { #LEFTIST
+	name = "Manuel Ávila Camacho"
+	id = 44
+	gfx = "GFX_portrait_mex_avila_military"
+	traits = { politically_connected } # Future president
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_navy_leader = { #RIGHTIST
+	name = "Heriberto Jara Corona"
+	id = 45
+	gfx = "GFX_portrait_mex_heriberto_corona"
+	traits = { navy_media_personality }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
