@@ -1,0 +1,12 @@
+music_station = "SSW_music"
+
+music = {
+	song = "Battoutai"
+    chance = {
+        modifier = {
+			factor = 5
+			tag = SOV
+			has_war = yes
+		}	
+	}	
+}

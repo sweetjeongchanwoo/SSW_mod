@@ -449,5 +449,325 @@ ideas = {
 				air_equipment = -0.35
 			}
 		}
+		HIMMLER_5 = {
+			picture = ger_mefo_bills
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+					stability_weekly = 0.007
+				consumer_goods_factor = 0.1
+			}
+		}
+		HIMMLER_6 = {
+			picture = ger_mefo_bills
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				operative_slot = 1
+				intel_network_gain = 0.4
+				resistance_damage_to_garrison = -0.25
+			}
+		}
+		HIMMLER_7 = {
+			picture = generic_purge
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+					stability_weekly = -0.01
+			}
+		}
+		HIMMLER_8 = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+					political_power_factor = -0.2
+			}
+		}
+		HIMMLER_9 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+					political_power_factor = -0.2
+					stability_factor = -0.2
+					war_support_factor = -0.2
+					conscription_factor = -0.99
+			}
+		}
+		HIMMLER_10 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.4
+				civilian_factory_use = 10
+				conscription = -0.03
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				consumer_goods_factor = 0.07
+			}
+		}
+		HIMMLER_11 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				civilian_factory_use = 5
+				conscription = -0.015
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.04
+			}
+		}
+		HIMMLER_12 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		HIMMLER_13 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		HIMMLER_14 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				civilian_factory_use = 2
+				conscription = -0.01
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				consumer_goods_factor = 0.01
+			}
+		}
+		HIMMLER_15 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.07
+			}
+		}
+		HIMMLER_16 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.35
+				training_time_army_factor = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+		HIMMLER_17 = {
+			picture = prc_the_long_march2
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.35
+				training_time_army_factor = -0.1
+				army_morale_factor = 0.1
+				conscription = 0.01
+				experience_loss_factor = -0.1
+				minimum_training_level = -0.1
+			}
+		}
+		HIMMLER_18 = {
+			picture = prc_the_long_march2
+			allowed = {
+				has_war_support > 0.5
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.01
+			}
+		}
+		HIMMLER_19 = {
+			picture = eng_service_overseas
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		HIMMLER_20 = {
+			picture = prc_the_long_march2
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				air_strategic_bomber_attack_factor = 0.01
+				air_strategic_bomber_defence_factor = 0.01
+				air_strategic_bomber_agility_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
+		HIMMLER_21 = {
+			picture = prc_the_long_march2
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+				air_equipment = 0.1		
+			}
+		}
+		HIMMLER_22 = {
+			picture = prc_the_long_march2
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			modifier = {
+				conscription = 0.1
+				non_core_manpower = 0.1
+			}
+		}
 	}
 }
