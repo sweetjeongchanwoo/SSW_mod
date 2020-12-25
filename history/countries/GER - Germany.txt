@@ -124,6 +124,8 @@ add_to_faction = TOG
 add_to_faction = WAF
 add_to_faction = MAF
 add_to_faction = MAD
+add_to_faction = CRI
+add_to_faction = PET
 
 set_autonomy = {
 	target = CZE
@@ -200,6 +202,14 @@ set_autonomy = {
 set_autonomy = {
 	target = MAD
 	autonomous_state = reichskolonie
+}
+set_autonomy = {
+	target = CRI
+	autonomous_state = reichsland
+}
+set_autonomy = {
+	target = PET
+	autonomous_state = reichsland
 }
 
 set_politics = {

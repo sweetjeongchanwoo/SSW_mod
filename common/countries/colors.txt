@@ -1569,6 +1569,11 @@ DET = {	#ドニエストル
 	color_ui = rgb { 0 153 51 }
 }
 
+PET = {	#ペテルブルク
+	color = rgb { 237 28 36 }
+	color_ui = rgb { 237 28 36 }
+}
+
 HGR = {
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }
