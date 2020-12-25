@@ -80,10 +80,19 @@ country_event = {
     }
 }
 
+country_event = {
+    id = FRA_ita_Allince
+    titile = FRA_ita_Allince.t
+    desc = FRA_ita_Allince.d
+    picture = 
+    is_triggered_only =yes
+    option
+}
+
 
 world_event = {
     id =  Military_coup
-    days = 10
+    days = 1
     titile = Military_coup.t
     desc = Military_coup.d
     fire_on_lnly_once = yes

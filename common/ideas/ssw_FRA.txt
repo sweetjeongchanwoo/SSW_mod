@@ -315,7 +315,7 @@ ideas = {
 
             modifier = {
                 army_org_Factor = 0.2
-                training_time_factor = 0.3
+                training_time_factor = -0.3
                 conscription = 0.02
             }
         }

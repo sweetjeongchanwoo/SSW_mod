@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = FRA_1
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 10.00
+		cost = 5.00
 		x = 6
 		y = 0
 			completion_reward = {
@@ -22,7 +22,7 @@ focus_tree = {
 	focus = {
 		id = FRA_69
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10.00
+		cost = 5.00
 		x = 46
 		y = 0
 			completion_reward = {
@@ -121,11 +121,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = Unstable_influence_with_Germany
-						}
-				}
+		completion_reward = {
+			remove_ideas = Unstable_influence_with_Germany
+		}
 
 	}
 	focus = {
@@ -173,9 +171,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-			completion_reward = {
+		completion_reward = { 
 
-}
+        }
 
 	}
 	focus = {
@@ -216,9 +214,7 @@ focus_tree = {
 							ideology = nazism_ideology
 							traits = { eager_collaborator }
 						}
-					swap_ideas = {
-							remove_idea = Unstable_influence_with_Germany
-						}
+					remove_ideas = Unstable_influence_with_Germany
 				}
 
 	}
@@ -231,10 +227,6 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-			completion_reward = {
-					add_ideas = Opposition_Purge
-				}
-
 	}
 	focus = {
 		id = FRA_13
@@ -262,6 +254,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		completion_reward = {
+			add_ideas = Rose_shirt_mobilization
+		}
 
 	}
 	focus = {
@@ -273,6 +268,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+		completion_reward = {
+			add_ideas = Opposition_Purge
+		}
 
 	}
 	focus = {
@@ -325,10 +323,8 @@ focus_tree = {
 		x = 24
 		y = 2
 			completion_reward = {
-					swap_ideas = {
-							remove_idea = Unstable_influence_with_Germany
-						}
-				}
+				remove_idea = Unstable_influence_with_Germany
+			}
 
 	}
 	focus = {
@@ -1223,13 +1219,16 @@ focus_tree = {
 		}
 		x = 50
 		y = 3
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = Defeated_army_2
-							add_idea = Defeated_army_5
-					}
-					
-				}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army_4
+				add_idea = Defeated_army_5
+			}
+			swap_ideas = {
+				remove_idea = Defeated_army_3
+				add_idea = Defeated_army_5
+			}										
+		}
 
 	}
 	focus = {
@@ -1243,7 +1242,7 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					swap_ideas = {
-							remove_idea = Defeated_army_2
+							remove_idea = Defeated_army_5
 							add_idea = New_French_Army
 						}
 				}
