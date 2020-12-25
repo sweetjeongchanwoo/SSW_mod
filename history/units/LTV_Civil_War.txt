@@ -153,46 +153,6 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 321
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 293
@@ -203,68 +163,9 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 293
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 5
 		}
 		location = 268
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 268
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 268
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 268
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 268
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location = 11276
 		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
@@ -285,56 +186,6 @@ units = {
 			name_order = 8
 		}
 		location = 9294
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 9294
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 9294
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 9294
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location = 9294
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location = 9238
 		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
@@ -372,27 +223,7 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 14
-		}
-		location = 11468
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 15
-		}
-		location = 11402
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
 		}
 		location = 11402
 		division_template = "Bürgerarmee"
@@ -412,27 +243,7 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 18
-		}
-		location = 6513
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 19
-		}
-		location = 3355
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
 		}
 		location = 3355
 		division_template = "Bürgerarmee"
@@ -452,27 +263,7 @@ units = {
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 22
-		}
-		location = 11431
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
 			name_order = 23
-		}
-		location = 9443
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
 		}
 		location = 9443
 		division_template = "Bürgerarmee"
@@ -503,16 +294,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
-		}
-		location = 6513
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
 		}
 		location = 6513
 		division_template = "Bürgerarmee"

@@ -155,46 +155,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9633
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9633
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6678
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6678
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 6678
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
@@ -206,57 +166,6 @@ units = {
 			name_order = 1
 		}
 		location = 6680
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6680
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6680
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11638
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11638
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11638
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
@@ -286,67 +195,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 9666
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9666
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 708
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 708
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 708
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6540
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 6540
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
@@ -376,67 +225,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3299
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3299
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 571
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 571
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 571
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 586
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 586
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
@@ -466,46 +255,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 3571
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3571
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11497
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 11497
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 11497
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
@@ -517,46 +266,6 @@ units = {
 			name_order = 1
 		}
 		location = 532
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 532
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 532
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 732
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 732
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
 	}
@@ -586,26 +295,6 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6723
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9527
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
 		location = 9527
 		division_template = "Freiwillige Miliz"
 		start_experience_factor = 0.1
@@ -621,15 +310,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3718
-		division_template = "Freiwillige Miliz"
-		start_experience_factor = 0.1
-	}
 
 	division= {	
 		division_name = {
