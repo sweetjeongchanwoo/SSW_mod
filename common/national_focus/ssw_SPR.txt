@@ -434,27 +434,7 @@ focus_tree = {
 		x = 17
 		y = 2
 		completion_reward = {
-			remove_ideas = { spr_debahu_03 }
-			SPR = {
-					set_politics = {
-					ruling_party = authority_despotism_ideology 
-				}
-			add_popularity = {
-					ideology = authority_despotism_ideology 
-					popularity = 0.61
-				}
-	add_political_power = 40
-	create_country_leader = {
-		name = "Military Junta"
-		desc = "POLITICS_MILITARY_JUNTA_DESC"
-		picture = "GFX_portrait_SPA_military_junta"
-		expire = "1965.1.1"
-		ideology = authority_despotism_ideology   
-		traits = {
-			divided_interests
-		}
-	}
-				}
+		
 		}
 
 	}
