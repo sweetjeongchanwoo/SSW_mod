@@ -4296,6 +4296,9 @@ focus_tree = {
 		prerequisite = { focus = SSW_towards_the_construction_of_a_nuclear_power_plant }
 		x = 0
 		y = 1
+		available = {
+			has_tech = nuclear
+		}
 		relative_position_id = SSW_strengthen_air
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }

@@ -947,7 +947,7 @@ GER_civill_war_plan = {
 	GER_dec_Weapons_capture = {
 		icon = ger_military_buildup
 		available = {
-    		has_army_experience > 5
+    		has_army_experience > 30
 		}
 		visible = {
 			OR = {
@@ -960,41 +960,11 @@ GER_civill_war_plan = {
 		ai_will_do = {
 			factor = 300
 		}
-		days_remove = 5
+		days_remove = 30
 		remove_effect = {
-			army_experience = -5
-			random_list = {
-				50 = {
-					add_equipment_to_stockpile = {
-						type = infantry_equipment
-						amount = 100
-						producer = GER
-					}
-				}
-				30 = {
-					add_equipment_to_stockpile = {
-						type = support_equipment
-						amount = 50
-						producer = GER
-					}
-				}
-				20 = {
-					add_equipment_to_stockpile = {
-						type = artillery_equipment
-						amount = 30
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = mechanized_equipment
-						amount = 20
-						producer = GER
-					}
-					add_equipment_to_stockpile = {
-						type = strat_bomber_equipment
-						amount = 10
-						producer = GER
-					}
-				}
+			army_experience = -30
+			country_event = {
+				id = SSW_GER.26
 			}
 		}
 	}
@@ -1014,7 +984,7 @@ GER_civill_war_propaganda = {
 		ai_will_do = {
 			factor = 100
 		}
-		days_re_enable = 60
+		days_re_enable = 120
 		days_remove = 10
 		cost = 10
 		remove_effect = {
@@ -1023,33 +993,10 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			hidden_effect = {
-				GER = {
-				random_owned_controlled_state = {
-				prioritize = {
-					64
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			}
-			}
+			country_event = { id = SSW_GER.28 }
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
-			custom_effect_tooltip = GER_gel_war_1_tt
+			custom_effect_tooltip = GER_gel_war_3_tt
 		}
 	}
 	GER_dec_war_propaganda_HGR = {
@@ -1066,7 +1013,7 @@ GER_civill_war_propaganda = {
 		ai_will_do = {
 			factor = 100
 		}
-		days_re_enable = 60
+		days_re_enable = 120
 		days_remove = 10
 		cost = 10
 		remove_effect = {
@@ -1075,33 +1022,10 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			hidden_effect = {
-				HGR = {
-				random_owned_controlled_state = {
-				prioritize = {
-					64
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			}
-			}
+			country_event = { id = SSW_GER.31 }
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
-			custom_effect_tooltip = GER_gel_war_1_tt
+			custom_effect_tooltip = GER_gel_war_3_tt
 		}
 	}
 	GER_dec_war_propaganda_HLH = {
@@ -1118,7 +1042,7 @@ GER_civill_war_propaganda = {
 		ai_will_do = {
 			factor = 100
 		}
-		days_re_enable = 60
+		days_re_enable = 120
 		days_remove = 10
 		cost = 10
 		remove_effect = {
@@ -1127,33 +1051,10 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			hidden_effect = {
-				HLH = {
-				random_owned_controlled_state = {
-				prioritize = {
-					64
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			}
-			}
+			country_event = { id = SSW_GER.29 }
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
-			custom_effect_tooltip = GER_gel_war_1_tt
+			custom_effect_tooltip = GER_gel_war_3_tt
 		}
 	}
 	GER_dec_war_propaganda_LTV = {
@@ -1170,7 +1071,7 @@ GER_civill_war_propaganda = {
 		ai_will_do = {
 			factor = 100
 		}
-		days_re_enable = 60
+		days_re_enable = 120
 		days_remove = 10
 		cost = 10
 		remove_effect = {
@@ -1179,33 +1080,10 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			hidden_effect = {
-				LTV = {
-				random_owned_controlled_state = {
-				prioritize = {
-					64
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-				create_unit = {
-					division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
-					owner = Root
-					allow_spawning_on_enemy_provs = yes
-				}
-			}
-			}
-			}
+			country_event = { id = SSW_GER.30 }
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
-			custom_effect_tooltip = GER_gel_war_1_tt
+			custom_effect_tooltip = GER_gel_war_3_tt
 		}
 	}
 }

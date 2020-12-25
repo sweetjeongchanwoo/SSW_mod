@@ -87,3 +87,318 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = SSW_HLH.3
+	title = SSW_HLH.3.t
+	desc = SSW_HLH.3.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.3.a
+		HLH = {
+			annex_country = {
+				target = FIN
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.3.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.4
+	title = SSW_HLH.4.t
+	desc = SSW_HLH.4.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.4.a
+		create_wargoal = {
+			type = annex_everything
+			target = FIN
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.5
+	title = SSW_HLH.5.t
+	desc = SSW_HLH.5.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.5.a
+		HLH = {
+			annex_country = {
+				target = SEW
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.5.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.6
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.6
+	title = SSW_HLH.6.t
+	desc = SSW_HLH.6.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.6.a
+		create_wargoal = {
+			type = annex_everything
+			target = SWE
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.7
+	title = SSW_HLH.7.t
+	desc = SSW_HLH.7.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.7.a
+		HLH = {
+			annex_country = {
+				target = NOR
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.7.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.8
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.8
+	title = SSW_HLH.8.t
+	desc = SSW_HLH.8.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.8.a
+		create_wargoal = {
+			type = annex_everything
+			target = NOR
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.9
+	title = SSW_HLH.9.t
+	desc = SSW_HLH.9.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.9.a
+		HLH = {
+			annex_country = {
+				target = PER
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.9.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.10
+	title = SSW_HLH.10.t
+	desc = SSW_HLH.10.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.10.a
+		create_wargoal = {
+			type = annex_everything
+			target = PER
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.11
+	title = SSW_HLH.11.t
+	desc = SSW_HLH.11.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.11.a
+		HLH = {
+			annex_country = {
+				target = IRQ
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.11.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.12
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.12
+	title = SSW_HLH.12.t
+	desc = SSW_HLH.12.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.12.a
+		create_wargoal = {
+			type = annex_everything
+			target = IRQ
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.13
+	title = SSW_HLH.13.t
+	desc = SSW_HLH.13.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.13.a
+		HLH = {
+			annex_country = {
+				target = TUR
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = SSW_HLH.13.b
+		HLH = {
+			country_event = {
+			id = SSW_HLH.14
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.14
+	title = SSW_HLH.14.t
+	desc = SSW_HLH.14.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.14.a
+		create_wargoal = {
+			type = annex_everything
+			target = TUR
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.15
+	title = SSW_HLH.15.t
+	desc = SSW_HLH.15.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.15.a
+		ai_chance = {
+			base = 10
+		}
+		IRE = {
+			set_state_controller = 119
+		}
+	}
+	option = {
+		name = SSW_HLH.15.b
+		ai_chance = {
+			base = 50
+		}
+		IRE = {
+			country_event = {
+				id = SSW_HLH.16
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_HLH.16
+	title = SSW_HLH.16.t
+	desc = SSW_HLH.16.d
+	picture = GFX_report_event_hitler_croatia_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_HLH.16.a
+		ai_chance = {
+			base = 10
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ENG
+		}
+	}
+}
