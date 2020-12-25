@@ -11,6 +11,9 @@ country_event = {
         add_political_power = 100
 	}
 }
+
+#ペタン死亡
+
 country_event = {
     id = SSW_FRA.2
     title = SSW_FRA.2.t
@@ -21,16 +24,44 @@ country_event = {
         tag = FRA
         date > 1950.1.10 #1951.7.10　#日にち
         }
-    mean_time_to_happen = {
-        days = 1
     }
     option = {
         name = SSW_FRA.2.a
-    VFR = {add_stability = -0.5
-           kill_country_leader = FRA
-          }
+        FRA = {
+            add_stability = -0.5
+            kill_country_leader = FRA
+        }
+        country_event = {
+            id = SSW_FRA.4
+            days = 1
+        }
+}
 
+#指導者決定
+
+country_event = {
+    id = SSW_FRA.4
+    titile = SSW_FRA.4
+    desc = SSW_FRA.2.d
+
+    fire_on_lnly_once = yes
+    
+    option = {
+        name = SSW_FRA.4.a
+        has_country_flag = FRA_great_game
+        has_contry_flag = FRA_Darnand_leader
+    }    
+    option = {
+        name = SSW_FRA.4.b
+        has_country_flag = FRA_great_game
+        has_country_flag = FRA_Laval_leader
     }
+    option = {
+        name = SSW_FRA.4.c
+        has_country_flag = FRA_great_game
+        has_country_flag = FRA_Doriot_leader
+    }  
+
 }
 country_event = {
     id = SSW_FRA.3 #イベントのid add_namespaceに書いたものに準ずる
@@ -48,6 +79,8 @@ country_event = {
         set_capital = 16
     }
 }
+
+
 world_event = {
     id =  Military_coup
     days = 10
@@ -61,7 +94,7 @@ world_event = {
 }
 world_event = {
     id = Republican_revival
-    days = 10
+    days = 1
     titile = Republican_revival.t
     desc = Republican_revival.d
     is_triggered_only = yes
@@ -72,7 +105,7 @@ world_event = {
 } 
 world_event = {
     id = Return_of_Napoleon
-    days = 10
+    days = 1
     titile = Return of Napoleon.t
     desc = Return of Napoleon.d
     is_triggered_only = yes
@@ -84,7 +117,7 @@ world_event = {
 
 world_event = {
     id = Guy_Mollet_To_the_president
-    days = 10
+    days = 1
     titile = Guy_Mollet_To_the_president.t
     desc = Guy_Mollet_To_the_president.d
     fire_on_lnly_once = yes
@@ -93,31 +126,33 @@ world_event = {
         Guy_Mollet_To_the_president.a
     }
 }
+
 world_event = {
     id = Pierre_Mendes_France_To_the_president
-    days = 10
-    titile = Pierre_Mendès_France_To_the_president.t
-    desc = Pierre_Mendès_France_To_the_president.d
+    days = 1
+    titile = Pierre_Mendes_France_To_the_president.t
+    desc = Pierre_Mendes_France_To_the_president.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     opition = {
-        Pierre_Mendès_France_To_the_president.a
+        Pierre_Mendes_France_To_the_president.a
     }
 }
+
 world_event = {
     id = Rene_Jules_Gustave_Coty_To_the_president
-    days = 10
-    titile = René_Jules_Gustave_Coty_To_the_president.t
-    desc = René_Jules_Gustave_Coty_To_the_president.d
+    days = 1
+    titile = Rene_Jules_Gustave_Coty_To_the_president.t
+    desc = Rene_Jules_Gustave_Coty_To_the_president.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     opition = {
-        René_Jules_Gustave_Coty_To_the_president.a
+        Rene_Jules_Gustave_Coty_To_the_president.a
     }
 }
 world_event = {
     id = Alphonse_Juan_Grasp_the_administration
-    days = 10
+    days = 1
     titile = Military_coup.t
     desc = Military_coup.d
     fire_on_lnly_once = yes
@@ -128,7 +163,7 @@ world_event = {
 }
 country_event = {
     id =  Military_coup
-    days = 10
+    days = 1
     titile = Military_coup.t
     desc = Military_coup.d
     fire_on_lnly_once = yes

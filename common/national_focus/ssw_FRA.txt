@@ -1226,8 +1226,9 @@ focus_tree = {
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = Defeated_army_2
-							add_idea = { New_French_Army }
-						}
+							add_idea = Defeated_army_5
+					}
+					
 				}
 
 	}
@@ -1243,7 +1244,7 @@ focus_tree = {
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = Defeated_army_2
-							add_idea = Defeated_army_5
+							add_idea = New_French_Army
 						}
 				}
 
