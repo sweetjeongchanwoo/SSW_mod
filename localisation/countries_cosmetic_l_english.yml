@@ -161,8 +161,8 @@
  
  NFR_GER:0 "独領北フランス"
  NFR_GER_ADJ:0 "独領北フランス"
- NFR_GER_national_socialism:0 "北フランス国家弁務官区"
- NFR_GER_national_socialism_DEF:0 "北フランス国家弁務官区"
+ NFR_GER_national_socialism:0 "独国防軍フランス占領地"
+ NFR_GER_national_socialism_DEF:0 "独国防軍フランス占領地"
  NFR_GER_ADJ:0 "独領北仏"
  
  ATL_GER:0 "独領大西洋"
@@ -224,6 +224,18 @@
  CCS_GER_national_socialism:0 "カフカス国家弁務官区"
  CCS_GER_national_socialism_DEF:0 "カフカス国家弁務官区"
  CCS_GER_ADJ:0 "独領コーカサス"
+ 
+ CRI_GER:0 "独領クリミア"
+ CRI_GER_DEF:0 "独領クリミア"
+ CRI_GER_national_socialism:0 "ゴーテンガウ国家直轄地"
+ CRI_GER_national_socialism_DEF:0 "ゴーテンガウ国家直轄地"
+ CRI_GER_ADJ:0 "独領クリミア"
+ 
+ PET_GER:0 "独領ペテルブルク"
+ PET_GER_DEF:0 "独領ペテルブルク"
+ PET_GER_national_socialism:0 "ルーデンドルフ国家直轄地"
+ PET_GER_national_socialism_DEF:0 "ルーデンドルフ国家直轄地"
+ PET_GER_ADJ:0 "独領ペテルブルク"
  
 #イタリア王国
  LBA_ITA:0 "伊領リビア"

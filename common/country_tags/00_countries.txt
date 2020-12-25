@@ -180,6 +180,7 @@ MNT	= "countries/Eastern Europe.txt"	#モンテネグロ
 MOL	= "countries/Eastern Europe.txt"	#モルドバ
 MOS	= "countries/Eastern Europe.txt"	#モスクワ
 PAT	= "countries/Eastern Europe.txt"	#総主教領
+PET	= "countries/Eastern Europe.txt"	#ペトログラード
 POL	= "countries/Eastern Europe.txt"	#ポーランド
 ROM	= "countries/Eastern Europe.txt"	#ルーマニア
 RUS	= "countries/Eastern Europe.txt"	#ロシア

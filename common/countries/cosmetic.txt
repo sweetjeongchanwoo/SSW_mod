@@ -167,6 +167,16 @@ ATL_GER = {	#独領大西洋
 	color_ui = rgb { 50 25 150 }
 }
 
+CRI_GER = {	#独領クリミア
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 0 204 255 }
+}
+
+PET_GER = {	#独領ペテルブルク
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 237 28 36 }
+}
+
 #イタリア王国
 LBA_ITA = {	#伊領リビア
 	color = rgb { 67 127 63 }
