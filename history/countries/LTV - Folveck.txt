@@ -95,6 +95,7 @@ set_technology = {
 add_ideas = {
 	Emergency_conscription
 	Protester
+	ltv_ideas_66
 	extensive_conscription
 	closed_economy
 	tot_economic_mobilisation

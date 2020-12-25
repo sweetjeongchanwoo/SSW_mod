@@ -1,4 +1,4 @@
-#�쐬�c�΂������@��������ΘA����������
+#???c????????@????????ΘA??????????
 spriteTypes = {
 #large Unit Icons
 	spriteType = {
@@ -37,6 +37,12 @@ spriteTypes = {
 		noOfFrames = 2
 	} 
 
+	spriteType = {
+		name = "GFX_unit_militia_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_militia_icon.dds"
+		noOfFrames = 2
+	} 
+
 
 #Small Unit Icons
 	spriteType = {
@@ -72,6 +78,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_morter_unit_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_militia_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_militia_icon.dds" 
 		noOfFrames = 2
 	}
 
@@ -115,3 +126,4 @@ spriteType = {
 	noOfFrames = 2		
 }
 
+}
