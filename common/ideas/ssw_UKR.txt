@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+		UKR_negociate_natives = {
+			picture = por_ogme
+			modifier = {
+				conscription_factor = -0.95
+			}
+		}
+	}
+}
