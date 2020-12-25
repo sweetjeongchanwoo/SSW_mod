@@ -48,37 +48,15 @@ country_event = {
         set_capital = 16
     }
 }
-country_event = {
-    id = Marcel_Dare_Leader
-    days = 10
-    titile = Marcel_Dare_becomes_leader.t
-    desc = Marcel_Dare_becomes_leader.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Marcel_Dare_Leader.a
-    }
-} 
 world_event = {
-    id = Marcel_Dare_Leader_2
+    id =  Military_coup
     days = 10
-    titile = Marcel_Dare_becomes_leader_2.t
-    desc = Marcel_Dare_becomes_leader_2.d
+    titile = Military_coup.t
+    desc = Military_coup.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     opition = {
-        Marcel_Dare_Leader_2.a
-    }
-}  
-world_event = {
-    id = Alphonse_Juan_Grasp_the_administration
-    days = 10
-    titile = Alphonse_Juan_coup.t
-    desc = Alphonse_Juan_coup.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Alphonse_Juan_coup.a
+        Military_coup.a
     }
 }
 world_event = {
@@ -103,17 +81,7 @@ world_event = {
        Return of Napoleon.a
     }
 } 
-world_event = {
-    id = Marcel_Dare_seizes_power
-    days = 10
-    titile = Marcel_Dare_seizes_power.t
-    desc = Marcel_Dare_seizes_power.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Marcel_Dare_seizes_power.a
-    }
-} 
+
 world_event = {
     id = Guy_Mollet_To_the_president
     days = 10
@@ -147,4 +115,28 @@ world_event = {
         René_Jules_Gustave_Coty_To_the_president.a
     }
 }
+world_event = {
+    id = Alphonse_Juan_Grasp_the_administration
+    days = 10
+    titile = Military_coup.t
+    desc = Military_coup.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    opition = {
+        Military_coup.a
+    }
+}
+country_event = {
+    id =  Military_coup
+    days = 10
+    titile = Military_coup.t
+    desc = Military_coup.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    opition = {
+        Military_coup.a
+        Military_coup.b
+    }
+}
+
 

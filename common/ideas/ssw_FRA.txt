@@ -8,7 +8,7 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = Spr_seize_the_gold_reserves.png
+            picture = Spr_seize_the_gold_reserves.dds
 
             modifier = {consumer_goods_factor = -0.03}
         }
@@ -20,7 +20,7 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = Triumphant_will.png
+            picture = Triumphant_will.dds
 
             modifier = {political_power_gain = -0.25}
         }
@@ -32,7 +32,7 @@ ideas = {
 
           allowed_civil_war = {always = yes}
 
-          picture = Generic_navy_bonus.png
+          picture = Generic_navy_bonus
 
           modifier = {industrial_capacity_dockyard = 0.20}
         }
@@ -44,7 +44,7 @@ ideas = {
 
             allowed_civil_war = {always = yes}
 
-            picture = Fortification_Focus.png
+            picture = Fortification_Focus
 
             modifier = {production_speed_coastal_bunker_factor = 0.20}
         }
@@ -94,12 +94,12 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2
+            picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
                 war_support_factor = -0.4
                 army_org_Factor = -0.2
-                training_time_factor = -0.3
+                training_time_factor = 0.3
                 conscription = -0.7
                 surrender_limit = -0.5
             }
@@ -110,11 +110,11 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2
+            picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
                 army_org_Factor = -0.2
-                training_time_factor = -0.3
+                training_time_factor = 0.3
                 conscription = -0.7
                 surrender_limit = -0.5
             }
@@ -125,7 +125,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2
+            picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
                 army_org_Factor = -0.2
@@ -139,7 +139,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2
+            picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
                 conscription = -0.7
@@ -152,7 +152,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2
+            picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
                 surrender_limit = -0.5
@@ -164,7 +164,7 @@ ideas = {
             
             removal_cost = -1
 
-            picture = idea_chi_incompetent_officers
+            picture = idea_chi_incompetent_officers.dds
 
             modifier = {
                 max_planning = -0.75
@@ -177,7 +177,7 @@ ideas = {
             
             removal_cost = -1
 
-            picture = idea_chi_incompetent_officers
+            picture = idea_chi_incompetent_officers.dds
 
             modifier = {
                 land_doctrine = -0.5
@@ -189,7 +189,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_purge
+            picture = idea_generic_purge.dds
 
             modifier = {
                 stability_factor = -0.2
@@ -201,7 +201,7 @@ ideas = {
             
             removal_cost = -1
 
-            picture = generic_manpower_bonus
+            picture = generic_manpower_bonus.dds
 
             modifier = {
                 political_power_gain = -0.5
@@ -214,7 +214,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_constitutional_guarantee
+            picture = idea_generic_constitutional_guarantee.dds
 
             modifier = {
                 stability_factor = 0.1
@@ -227,7 +227,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_chi_war_of_resistance3
+            picture = idea_chi_war_of_resistance3.dds
 
             modifier = {
 
@@ -239,7 +239,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_democratic_drift_bonus
+            picture = generic_democratic_drift_bonus.dds
 
             modifier = {
                 stability_factor = 0.2
@@ -251,7 +251,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_artillery_regiments
+            picture = idea_generic_artillery_regiments.dds
 
             modifier = {
                 army_artillery_attack_factor = 0.1
@@ -276,7 +276,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_acquire_tanks
+            picture = idea_generic_acquire_tanks.dds
 
             modifier = {
                 army_armor_attack_factor = 0.1
@@ -294,7 +294,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_war_preparation
+            picture = idea_generic_war_preparation.dds
 
             modifier = {
                 army_infantry_attack_factor = 0.1
@@ -311,7 +311,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_reserve_divisions
+            picture = idea_generic_reserve_divisions.dds
 
             modifier = {
                 army_org_Factor = 0.2
@@ -327,7 +327,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = generic_infantry_bonus
+            picture = generic_infantry_bonus.dds
 
             modifier = {army_morale_factor = 0.1}
 
@@ -340,7 +340,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = 
+            picture = idea_unknown
 
             modifier = {
                 mobilization_speed = 0.2
@@ -356,7 +356,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture =
+            picture = idea_unknown
 
             modifier = {
                 resistance_target = -0.2
@@ -372,7 +372,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = 
+            picture = idea_unknown
 
             modifier = {
                 stability_factor = 0.1
@@ -388,7 +388,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture =
+            picture = idea_unknown
             
             modifier = {
                 conscription = 0.01
@@ -404,7 +404,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = 
+            picture = idea_unknown
 
             modifier = {
                 special_forces_cap = 0.1
@@ -419,7 +419,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = 
+            picture = idea_unknown
 
             modifier = {
                 stability_factor = 0.15
@@ -434,7 +434,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = 
+            picture = idea_unknown
 
             modifier = {
                 stability_factor = 0.15
@@ -451,7 +451,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture =
+            picture = idea_unknown
 
             modifier = {
                 stability_factor = -0.2
@@ -465,7 +465,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture
+            picture = idea_unknown
 
             modifier = {
                 stability_factor = 0.2
@@ -479,14 +479,17 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture
+            picture = idea_unknown
 
             modifier = {
                 offence = 0.2
-                HGR_attack_bonus_against = 0.2
-                LTV_attack_bonus_against = 0.2
-                HLH_attack_bonus_against = 0.2
-                GER_attack_bonus_against = 0.2
+            } 
+
+            targeted_modifier = {   
+                tag = HGR attack_bonus_against = 0.2
+                tag = LTV attack_bonus_against = 0.2
+                tag = HLH attack_bonus_against = 0.2
+                tag = GER attack_bonus_against = 0.2
             }
         }
         Preparing_for_war = {
@@ -497,20 +500,23 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture
+            picture = idea_unknown
 
             modifier = {
                 offence = 0.1
-                HGR_attack_bonus_against = 0.1
-                LTV_attack_bonus_against = 0.1
-                HLH_attack_bonus_against = 0.1
-                GER_attack_bonus_against = 0.1
-                NFR_attack_bonus_against = 0.1
-                HGR_defense_bonus_against = 0.1
-                LTV_defense_bonus_against = 0.1
-                HLH_defense_bonus_against = 0.1
-                GER_defense_bonus_against = 0.1
-                NFR_defense_bonus_against = 0.1
-            }
+            } 
+
+            targeted_modifier = {
+                tag = HGR attack_bonus_against = 0.1
+                tag = LTV attack_bonus_against = 0.1
+                tag = HLH attack_bonus_against = 0.1
+                tag = GER attack_bonus_against = 0.1
+                tag = NFR attack_bonus_against = 0.1
+                tag = HGR defense_bonus_against = 0.1
+                tag = LTV defense_bonus_against = 0.1
+                tag = HLH defense_bonus_against = 0.1
+                tag = GER defense_bonus_against = 0.1
+                tag = NFR defense_bonus_against = 0.1
+            } 
         }
 }

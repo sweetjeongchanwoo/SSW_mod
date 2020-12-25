@@ -64,7 +64,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_3
             focus = FRA_4
-			focus = FRA_21
 			focus = FRA_2
 		}
 		completion_reward = {
@@ -285,9 +284,8 @@ focus_tree = {
 	    }
 		x = 6
 		y = 6
-			completion_reward = {
+		completion_reward = {
 			add_ideas = France_Black_shirts
-			
 		}
 
 	}
@@ -969,23 +967,23 @@ focus_tree = {
 				}
 
 	}
-		focus = {
-		id = FRA_102
-		icon = GFX_focus_generic_tank_production
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_71
+	focus = {
+	    id = FRA_102
+	    icon = GFX_focus_generic_tank_production
+	    cost = 5.00
+	    prerequisite = {
+		    focus = FRA_71
 		}
 		x = 42
 		y = 3
 			completion_reward = {
 					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1
-							uses = 2
-							category = armor
-						}
-				}
+						name = armor_bonus
+						bonus = 1
+						uses = 2
+						category = armor
+					}
+			}
 		}
 	focus = {
 		id = FRA_77
@@ -998,7 +996,7 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_ideas = Emphasis_on_thermal_power
-				}
+			}
 
 	}
 	focus = {
@@ -1354,9 +1352,9 @@ focus_tree = {
 		relative_position_id = FRA_5
 			completion_reward = {
 					add_popularity = {
-							ideology = classical_communism_ideology
+							ideology = classical_communism
 							popularity = -1
-							ideology = progressive_communism_ideology
+							ideology = progressive_communism
 							popularity = -1
 						}
 				}
