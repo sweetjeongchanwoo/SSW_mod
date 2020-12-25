@@ -192,6 +192,7 @@ country_event = {
 				clr_global_flag = GER_civil_war
 				ENG = { set_global_flag = GER_civil_war }
 				FRA = { set_global_flag = GER_civil_war }
+				GER = { country_event =  { id = SSW_GER.32 days = 1 } }
 				GER = { country_event = { id = SSW_GER.11 days = 1 } }
 				GER = { country_event = { id = SSW_GER.24 days = 1 } }
 				LTV = { transfer_state = 56 }	
@@ -835,43 +836,6 @@ country_event = {
 
 }
 
-country_event = {
-	id = SSW_GER.17
-	title = SSW_GER.17.t
-	desc = SSW_GER.17.d
-	picture = GFX_report_event_german_reichstag_gathering
-	is_triggered_only = yes
-	
-	option = {
-		name = SSW_GER.17.a
-		GER = {
-			country_event = {
-				id = SSW_GER.18
-				days = 10
-			}
-		}
-		set_autonomy = {
-			target = DEN
-			autonomy_state = autonomy_free
-		}	
-	}
-}
-
-country_event = {
-	id = SSW_GER.18
-	title = SSW_GER.18.t
-	desc = SSW_GER.18.d
-	picture = GFX_report_event_german_reichstag_gathering
-	is_triggered_only = yes
-	
-	option = {
-		name = SSW_GER.18.a
-		set_autonomy = {
-			target = CRO
-			autonomy_state = autonomy_free
-		}	
-	}
-}
 
 country_event = {
 	id = SSW_GER.19
@@ -1406,6 +1370,32 @@ country_event = {
 				allow_spawning_on_enemy_provs = yes
 			}
 		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.32
+	title = SSW_GER.32.t
+	desc = SSW_GER.32.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.32.a
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			}   
+			end_puppet = GER
+
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			} 
+			leave_faction = yes
 		}
 	}
 }

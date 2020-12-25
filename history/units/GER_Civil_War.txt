@@ -67,7 +67,7 @@ division_template = {
 		mechanized = { x = 3 y = 0 }
 	}
 	support = {
-		artillery_brigade = { x = 0 y = 0 }
+		artiller = { x = 0 y = 0 }
 	}
 }
 
