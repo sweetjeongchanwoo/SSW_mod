@@ -14,6 +14,7 @@ add_ideas = {
 	export_focus
 	Confusion_of_the_General_Staff
 	Defeated_army
+	Unstable_influence_with_Germany
 }
 
 set_autonomy = {

@@ -11,7 +11,7 @@ country_event = {
 		start_civil_war = {
 			ruling_party = social_democracy
 			ideology = authority_democracy
-			size = 0.5
+			size = 0.4
 			capital = 474
 			states = { 311 474 475 476 482 483 484 }
 		}
@@ -34,7 +34,11 @@ country_event = {
 					original_tag = MEX
 					has_government = authority_democracy
 				}
-				add_ideas = MEX_manuel_gomez_morin
+				set_cosmetic_tag = MEX_rebellion
+				add_ideas = {
+					MEX_manuel_gomez_morin
+					ssw_parliamentary_democracy_rightist_administration
+				}
 				set_stability = 0.5
 				set_war_support = 0.7
 				set_popularities = {
@@ -47,6 +51,20 @@ country_event = {
 				unlock_national_focus = MEX_rightist
 				country_lock_all_division_template = no
 				remove_ideas = mex_ideas_18
+				save_event_target_as = authority_democrat_mexico_civil_war
+				every_unit_leader = { set_nationality = MEX }
+				MEX = {
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 41
+								has_id = 42
+								has_id = 45
+							}
+						}
+						set_nationality = event_target:authority_democrat_mexico_civil_war
+					}
+				}
 			}
 			news_event = { id = ssw_mex.2 hours = 6 }
 		}
@@ -54,18 +72,24 @@ country_event = {
 	option = {
 		name = ssw_mex.0.b
 		ai_chance = { factor = 50 }
-		start_civil_war = {
-			ruling_party = authority_democracy
-			ideology = social_democracy
-			size = 0.4
-			capital = 277
-			states = { 277 477 478 479 480 481 485 }
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = social_democracy
+				size = 0.4
+			}
 		}
 		hidden_effect = {
+			set_politics = { ruling_party = authority_democracy elections_allowed = yes }
 			set_global_flag = mexican_civil_war
+			retire_ideology_leader = progressive_communism
 			retire_ideology_leader = social_democracy
 			retire_ideology_leader = corporatocracism
-			add_ideas = MEX_manuel_gomez_morin
+			set_cosmetic_tag = MEX_rebellion
+			#set_cosmetic_tag = MEX_empire
+			add_ideas = {
+				MEX_manuel_gomez_morin
+				ssw_parliamentary_democracy_rightist_administration
+			}
 			set_capital = 474
 			set_stability = 0.5
 			set_war_support = 0.7
@@ -78,11 +102,17 @@ country_event = {
 			unlock_national_focus = MEX_rightist
 			country_lock_all_division_template = no
 			remove_ideas = mex_ideas_18
-			random_other_country = {
-				limit = {
-					original_tag = MEX
-					has_government = social_democracy
-				}
+			create_dynamic_country = {
+				original_tag = MEX
+				set_politics = { ruling_party = social_democracy elections_allowed = yes }
+				transfer_state = 277
+				transfer_state = 477
+				transfer_state = 478
+				transfer_state = 479
+				transfer_state = 480
+				transfer_state = 481
+				transfer_state = 485
+				set_capital = 277
 				create_country_leader = {
 					name = "Valentín Campa"
 					desc = "POLITICS_VALENTIN_CAMPA_DESC"
@@ -91,7 +121,19 @@ country_event = {
 					ideology = progressive_communism_ideology
 					traits = { railroad_enthusiast }
 				}
-				add_ideas = MEX_lazaro_cardenas
+				create_country_leader = {
+					name = "Lázaro Cárdenas"
+					desc = "POLITICS_LAZARO_CARDENAS_DESC"
+					picture = "gfx/leaders/MEX/Portrait_Mexico_Lazaro_Cardenas.dds"
+					expire = "1970.10.19"
+					ideology = social_democracy_ideology
+					traits = {
+					}
+				}
+				add_ideas = {
+					MEX_lazaro_cardenas
+					ssw_parliamentary_democracy_leftist_administration
+				}
 				set_stability = 0.6
 				set_war_support = 0.6
 				set_popularities = {
@@ -103,6 +145,26 @@ country_event = {
 				unlock_national_focus = MEX_leftist
 				country_lock_all_division_template = no
 				remove_ideas = mex_ideas_18
+				MEX = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.4
+					}
+					declare_war_on = { target = PREV type = civil_war }
+				}
+				save_event_target_as = social_democrat_mexico_civil_war
+				every_unit_leader = { set_nationality = MEX }
+				MEX = {
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 43
+								has_id = 44
+							}
+						}
+						set_nationality = event_target:social_democrat_mexico_civil_war
+					}
+				}
 			}
 			news_event = { id = ssw_mex.2 hours = 6 }
 		}
@@ -118,6 +180,7 @@ country_event = {
 		name = ssw_mex.1.a
 		ai_chance = { factor = 50 }
 		add_stability = -0.1
+		hidden_effect = { set_country_flag = cardenas_survives }
 	}
 	option = {
 		name = ssw_mex.1.b
@@ -125,7 +188,6 @@ country_event = {
 		add_stability = 0.3
 		complete_national_focus = MEX_leftist
 		retire_ideology_leader = social_democracy
-		retire_ideology_leader = corporatocracism
 		create_country_leader = {
 			name = "Adolfo Ruiz Cortines"
 			desc = "POLITICS_ADOLFO_RUIZ_CORTINES_DESC"
@@ -136,6 +198,12 @@ country_event = {
 			}
 		}
 		hidden_effect = {
+			add_ideas = {
+				ssw_parliamentary_democracy_leftist_administration
+				MEX_adolfo_ruiz_cortines
+			}
+			set_country_flag = cardenas_resign
+			retire_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war
 			set_global_flag = mcw_over
 			country_lock_all_division_template = no
@@ -147,13 +215,15 @@ country_event = {
 		name = ssw_mex.1.c
 		ai_chance = { factor = 25 }
 		add_stability = 0.3
+		complete_national_focus = MEX_leftist
+		kill_ideology_leader = social_democracy
 		set_politics = {
 			ruling_party = social_liberalism
 			elections_allowed = yes
 		}
 		add_popularity = {
 			ideology = social_liberalism
-			popularity = 0.4
+			popularity = 0.1
 		}
 		add_popularity = {
 			ideology = social_conservatism
@@ -181,6 +251,12 @@ country_event = {
 				traits = {
 				}
 			}
+			add_ideas = {
+				ssw_parliamentary_democracy_leftist_administration
+				MEX_raul_salinas_lozano
+			}
+			set_country_flag = cardenas_dead
+			kill_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war
 			set_global_flag = mcw_over
 			country_lock_all_division_template = no
@@ -209,22 +285,48 @@ news_event = {
 	title = ssw_mex.3.title
 	desc = ssw_mex.3.desc
 	picture = GFX_news_event_033
+	fire_only_once = yes
 	trigger = {
 		has_global_flag = mexican_civil_war
-		NOT = { has_global_flag = mcw_over }
-		MEX = { has_civil_war = no }
+		any_country = {
+			original_tag = MEX
+			has_war = no
+			has_full_control_of_state = 277
+			has_full_control_of_state = 311
+			has_full_control_of_state = 474
+			has_full_control_of_state = 475
+			has_full_control_of_state = 476
+			has_full_control_of_state = 477
+			has_full_control_of_state = 478
+			has_full_control_of_state = 479
+			has_full_control_of_state = 480
+			has_full_control_of_state = 481
+			has_full_control_of_state = 482
+			has_full_control_of_state = 483
+			has_full_control_of_state = 484
+			has_full_control_of_state = 485
+		}
 	}
 	mean_time_to_happen = { days = 2 }
 	immediate = {
-		if = {
-			limit = { MEX = { has_completed_focus = MEX_rightist } }
-			set_global_flag = nationalist_victory_of_mexico
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_global_flag = mcw_over } }
+				set_global_flag = mcw_over
+			}
+			if = {
+				limit = { MEX = { has_completed_focus = MEX_rightist } }
+				set_global_flag = nationalist_victory_of_mexico
+			}
+			if = {
+				limit = { MEX = { has_completed_focus = MEX_leftist } }
+				set_global_flag = republican_victory_of_mexico
+			}
+			if = {
+				limit = { has_cosmetic_tag = MEX_rebellion }
+				drop_cosmetic_tag = yes
+			}
 		}
-		if = {
-			limit = { MEX = { has_completed_focus = MEX_leftist } }
-			set_global_flag = republican_victory_of_mexico
-		}
-		set_global_flag = mcw_over
 	}
 	option = {
 		name = ssw_mex.3.a
@@ -247,6 +349,81 @@ news_event = {
 	}
 	option = {
 		name = ssw_mex.4.b
+		trigger = { NOT = { original_tag = MEX } }
+	}
+}
+news_event = {
+	id = ssw_mex.5
+	title = ssw_mex.5.title
+	desc = ssw_mex.5.desc
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = ssw_mex.5.a
+		trigger = { original_tag = MEX }
+	}
+	option = {
+		name = ssw_mex.5.b
+		trigger = { NOT = { original_tag = MEX } }
+	}
+}
+news_event = {
+	id = ssw_mex.6
+	title = ssw_mex.6.title
+	desc = ssw_mex.6.desc
+	picture = GFX_news_event_royal_visit
+	is_triggered_only = yes
+	option = {
+		name = ssw_mex.6.a
+		trigger = { original_tag = MEX }
+	}
+	option = {
+		name = ssw_mex.6.b
+		trigger = { NOT = { original_tag = MEX } }
+	}
+}
+news_event = {
+	id = ssw_mex.7
+	title = ssw_mex.7.title
+	desc = ssw_mex.7.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_mex.7.a
+		trigger = { original_tag = MEX }
+	}
+	option = {
+		name = ssw_mex.7.b
+		trigger = { NOT = { original_tag = MEX } }
+	}
+}
+news_event = {
+	id = ssw_mex.8
+	title = ssw_mex.8.title
+	desc = ssw_mex.8.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_mex.8.a
+		trigger = { original_tag = MEX }
+	}
+	option = {
+		name = ssw_mex.8.b
+		trigger = { NOT = { original_tag = MEX } }
+	}
+}
+news_event = {
+	id = ssw_mex.9
+	title = ssw_mex.9.title
+	desc = ssw_mex.9.desc
+	picture = GFX_news_event_french_parade
+	is_triggered_only = yes
+	option = {
+		name = ssw_mex.9.a
+		trigger = { original_tag = MEX }
+	}
+	option = {
+		name = ssw_mex.9.b
 		trigger = { NOT = { original_tag = MEX } }
 	}
 }
