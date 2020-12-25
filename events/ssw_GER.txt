@@ -1387,6 +1387,9 @@ country_event = {
 		every_country = {
 			limit = {
 				is_in_faction_with = GER
+				NOT = {
+					tag = cze
+				}
 			}   
 			end_puppet = GER
 
