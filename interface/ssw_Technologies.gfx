@@ -835,6 +835,46 @@ spriteTypes = {
 		name = "GFX_computer_system_2_medium"
 		texturefile = "gfx/interface/technologies/electronics_tech/computer_system_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_PRI_scope_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRI_scope_2_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRI_scope_3_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_radome_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_radome_2_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_radome_3_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_Aircraft_Radar_Alert_System_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_pulse_Doppler_radar_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_pulse_Doppler_radar_2_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
+	SpriteType = {
+		name = "GFX_pulse_Doppler_radar_3_medium"
+		texturefile = "gfx/interface/technologies/radio_detection.dds"
+	}
 
 #éYã∆ãZèp#
 	SpriteType = {
