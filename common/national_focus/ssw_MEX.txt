@@ -2849,10 +2849,12 @@ focus_tree = {
 					}
 					NOT = { original_tag = MEX }
 				}
-				create_wargoal = { 
-					type = annex_everything
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 		}
@@ -3367,10 +3369,12 @@ focus_tree = {
 						original_tag = COS
 					}
 				}
-				create_wargoal = { 
-					type = annex_everything
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 			if = {
@@ -3437,10 +3441,12 @@ focus_tree = {
 						original_tag = VEN
 					}
 				}
-				create_wargoal = { 
-					type = puppet_wargoal_focus
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 		}
@@ -3659,10 +3665,12 @@ focus_tree = {
 						original_tag = TEX
 					}
 				}
-				create_wargoal = { 
-					type = annex_everything
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 			if = {
@@ -3874,10 +3882,12 @@ focus_tree = {
 						original_tag = HAI
 					}
 				}
-				create_wargoal = { 
-					type = puppet_wargoal_focus
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 		}
@@ -3902,10 +3912,12 @@ focus_tree = {
 						original_tag = OMA
 					}
 				}
-				create_wargoal = { 
-					type = puppet_wargoal_focus
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 		}
@@ -3930,10 +3942,12 @@ focus_tree = {
 						original_tag = SIA
 					}
 				}
-				create_wargoal = { 
-					type = puppet_wargoal_focus
-					target = PREV
-					expire = 0
+				MEX = {
+					create_wargoal = { 
+						type = annex_everything
+						target = PREV
+						expire = 0
+					}
 				}
 			}
 		}
