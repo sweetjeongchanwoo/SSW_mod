@@ -1,4 +1,93 @@
 ideas = {
+	political_leader = {
+		vacancy_pl = {
+			picture = SSW_vacancy
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_foreign_affairs = {
+		vacancy_mfa = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_finance = {
+		vacancy_mf = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_interior = {
+		vacancy_mi = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_army = {
+		vacancy_ma = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
 	country = {
 		SSW_militarism_focus = {
 			allowed = {

@@ -1,7 +1,7 @@
 ideas = {
 	political_leader = {
 		ivan_konev = {
-			picture = ivan_konev
+			picture = SSW_SOV_ivan_konev
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_cab_available

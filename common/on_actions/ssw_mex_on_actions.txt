@@ -1,0 +1,310 @@
+on_actions = {
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = anarchism
+				}
+				add_ideas = {
+					ssw_collectivist_anarchism
+					vacancy_pl
+					vacancy_mfa
+					vacancy_mf
+					vacancy_mi
+					vacancy_ma
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = progressive_communism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_valentin_campa
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = classical_communism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_vicente_lombardo
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_lazaro_cardenas
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_adolfo_ruiz_cortines
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_liberalism
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_raul_salinas_lozano
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_conservatism
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_rightist_administration
+					MEX_manuel_gomez_morin
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_democracy
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_rightist_administration
+					MEX_manuel_gomez_morin
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_despotism
+				}
+				add_ideas = {
+					MEX_juan_andreu
+					ssw_despotism
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_fascism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_salvador_abascal
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_socialism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_victor_serge
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_corporate_council_system
+					MEX_lazaro_cardenas
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_corporate_council_system
+					MEX_adolfo_ruiz_cortines
+				}
+			}
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = anarchism
+				}
+				add_ideas = {
+					ssw_collectivist_anarchism
+					vacancy_pl
+					vacancy_mfa
+					vacancy_mf
+					vacancy_mi
+					vacancy_ma
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = progressive_communism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_valentin_campa
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = classical_communism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_vicente_lombardo
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_lazaro_cardenas
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_adolfo_ruiz_cortines
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_liberalism
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_leftist_administration
+					MEX_raul_salinas_lozano
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_conservatism
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_rightist_administration
+					MEX_manuel_gomez_morin
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_democracy
+				}
+				add_ideas = {
+					ssw_parliamentary_democracy_rightist_administration
+					MEX_manuel_gomez_morin
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_despotism
+				}
+				add_ideas = {
+					MEX_juan_andreu
+					ssw_despotism
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_fascism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_salvador_abascal
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_socialism
+				}
+				add_ideas = {
+					ssw_one_party_dictatorship
+					MEX_victor_serge
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_corporate_council_system
+					MEX_lazaro_cardenas
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_corporate_council_system
+					MEX_adolfo_ruiz_cortines
+				}
+			}
+		}
+	}
+}
