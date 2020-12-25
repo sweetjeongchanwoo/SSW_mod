@@ -1,9 +1,9 @@
 ideas = {
 	country = {
-		UKR_negociate_natives = {
+		UKR_opposed_occupation = {
 			picture = por_ogme
 			modifier = {
-				conscription_factor = -0.95
+				conscription_factor = -0.93
 			}
 		}
 	}

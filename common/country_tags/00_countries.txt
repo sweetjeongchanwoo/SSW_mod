@@ -190,6 +190,7 @@ SLV	= "countries/Eastern Europe.txt"	#スロベニア
 SOV	= "countries/Eastern Europe.txt"	#ソビエト
 TRA	= "countries/Eastern Europe.txt"	#トランシルヴァニア
 UKR	= "countries/Eastern Europe.txt"	#ウクライナ国家弁務官区
+UPR	= "countries/Eastern Europe.txt"	#ウクライナ人民共和国
 YUG	= "countries/Eastern Europe.txt"	#ユーゴスラビア
 
 #アフリカ

@@ -17,6 +17,7 @@ country_event = {
 # Ukrainian Insurgent Army starts resistance
 country_event = {
 	id = ssw_UKR.2
+	# add_to_array = { <name> = <value> }
 	title = ssw_UKR.2.title
 	desc = ssw_UKR.2.desc
 	picture = GFX_report_event_second_vienna_award_pact
@@ -26,64 +27,187 @@ country_event = {
 	}
 	trigger = {
 		tag = UKR
+		NOT = {
+			country_exists = UPR
+		}
 	}
 	option = {
 		name = ssw_UKR.2.a
+		UPR = {
+			add_state_core = 73
+			add_state_core = 89
+			add_state_core = 91
+			add_state_core = 93
+			add_state_core = 199
+			add_state_core = 201
+			add_state_core = 202
+			add_state_core = 203
+			add_state_core = 197
+			add_state_core = 226
+			add_state_core = 259
+			add_state_core = 193
+			add_state_core = 196
+			add_state_core = 200
+			add_state_core = 227
+			add_state_core = 221
+			add_state_core = 225
+			add_state_core = 228
+			add_state_claim = 240
+			add_state_claim = 224
+			add_state_core = 218
+			add_state_core = 809
+			add_state_core = 137
+		}
 		remove_state_core = 93
 		remove_state_core = 201
 		remove_state_core = 199
-		add_resistance_target = {
-			id = 93
-			amount = 100
-			occupier = UKR
-			days = 365
+		every_owned_state = {
+			start_resistance = yes
 		}
-		add_resistance_target = {
-			id = 201
-			amount = 100
-			occupier = UKR
-			days = 365
+		93 = {
+			add_resistance_target = {
+				amount = 100
+				days = 365
+			}
 		}
-		add_resistance_target = {
-			id = 199
-			amount = 100
-			occupier = UKR
-			days = 365
+		201 = {
+			add_resistance_target = {
+				amount = 100
+				days = 365
+			}
+		}
+		199 = {
+			add_resistance_target = {
+				amount = 100
+				days = 365
+			}
 		}
 	}
 }
 
-# Ukrainian Insurgent Army expands their activity
+# Initiate Ukrainian Insurgency
 country_event = {
 	id = ssw_UKR.3
 	title = ssw_UKR.3.title
 	desc = ssw_UKR.3.desc
-	picture = GFX_report_event_second_vienna_award_pact
 	fire_only_once = yes
+	picture = GFX_report_event_second_vienna_award_pact
 	mean_time_to_happen = {
-		days = 3
+		days = 7
 	}
 	trigger = {
 		tag = UKR
-		GER = {
+		UKR = {
 			NOT = {
-				has_country_leader = {
-					name = "Adolf Hitler"
-					ruling_only = yes
+				is_subject_of = GER
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			UPR = {
+				transfer_state = 93
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
 				}
+			}
+			# add_to_temp_array = {
+			# 	temp = 93
+			# }
+			# add_to_temp_array = {
+			# 	temp = 201
+			# }
+			# add_to_temp_array = {
+			# 	temp = 199
+			# }
+			# for_each_scope_loop = {
+			# 	array = temp
+			# 	create_unit = {
+			# 		division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.8"
+			# 		owner = UPR
+			# 	}
+			# }
+			93 = {
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+					owner = UPR
+				}
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+					owner = UPR
+				}
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+					owner = UPR
+				}
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+					owner = UPR
+				}
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+					owner = UPR
+				}
+			}
+			country_event = {
+				id = ssw_UKR.4
+				days = 7
+				random_days = 7
 			}
 		}
 	}
 	option = {
-		name = ssw_UKR.32.a
-		93 = {
-			add_resistance = 50
+		name = ssw_UKR.3.a
+	}
+}
+
+# Ukrainian Insurgency - 199
+country_event = {
+	id = ssw_UKR.4
+	title = ssw_UKR.4.title
+	desc = ssw_UKR.4.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	# fire_only_once = no
+	trigger = {
+		tag = UKR
+		has_war_with = UPR
+	}
+	immediate = {
+		# hidden_effect = {
+		# UKR = {
+		random_controlled_state = {
+			UPR = {
+				set_state_controller = PREV
+			}
+			create_unit = {
+				division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.1"
+				owner = UPR
+			}
+			UKR = {
+				set_state_controller = PREV
+			}
 		}
-		201 = {
-			add_resistance = 50
+		# UPR = {
+		# 	set_state_controller = 197
+		# }
+		# 197 = {
+		# 	create_unit = {
+		# 		division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.8"
+		# 		owner = UPR
+		# 	}
+		# }
+		# }
+		# }
+		country_event = {
+			id = ssw_UKR.4
+			days = 7
+			random_days = 7
 		}
-		199 = {
-			add_resistance = 50
-		}
+		# }
+	}
+	option = {
+		name = ssw_UKR.4.a
 	}
 }
