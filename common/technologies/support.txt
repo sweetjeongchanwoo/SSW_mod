@@ -3135,10 +3135,6 @@ technologies = {
 			}
 
 		}
-
-		enable_subunits = {
-			comfort_unit
-		}
 #		path = {
 #			leads_to_tech = tech_comfort_unit2
 #			research_cost_coeff = 1

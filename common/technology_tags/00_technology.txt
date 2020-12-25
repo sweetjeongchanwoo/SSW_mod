@@ -93,6 +93,8 @@ technology_categories = {
 	naval_minesweeping
 	naval_minelaying
 	cat_scout_plane
+#SSW#
+	anti_air_missile
 }
 
 technology_folders = {

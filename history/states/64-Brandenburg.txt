@@ -1,7 +1,7 @@
 state = {
 	id = 64
 	name = "STATE_64"
-	manpower = 8685029
+	manpower = 4345029
 	buildings_max_level_factor = 1
 	
 	state_category = megalopolis
@@ -22,6 +22,6 @@ state = {
 	}
 	
 	provinces={
-		375 478 3367 3499 3522 6487 9428 9456 9496 9560 11219 11359 11415 11444 11505
+		375 3367 3499 3522 6487 9428 9456 9560 11219 11359 
 	}
 }
