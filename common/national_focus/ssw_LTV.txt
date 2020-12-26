@@ -31,10 +31,6 @@ focus_tree = {
 									instant_build = yes
 								}
 						}
-					country_event = {
-							id = SSW_LTV.2
-							days = 7
-						}
 				}
 
 	}
