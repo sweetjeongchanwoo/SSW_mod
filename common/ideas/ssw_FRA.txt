@@ -519,4 +519,50 @@ ideas = {
                 tag = NFR defense_bonus_against = 0.1
             } 
         }
+        French_Peoples_Front = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                progressive_communism_drift = 0.03
+                classical_communism_droft = 0.03
+            }
+        }
+        Charismatic_dictator = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+               political_power_gain = 0.3
+               stability_factor = 0.3 
+            }
+        
+        }
+        Do_it_for_France = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pllowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                conscription = 0.05
+                army_morale_factor = 0.4
+            }
+        }
 }

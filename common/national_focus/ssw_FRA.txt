@@ -103,8 +103,8 @@ focus_tree = {
 		x = 3
 		y = 3
 			completion_reward = {
-					add_ideas = CZE_national_fascism_idea
-				}
+				add_ideas = CZE_national_fascism_idea
+			}
 
 	}
 	focus = {
@@ -171,10 +171,14 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
-		completion_reward = { 
-
-        }
-
+		completion_reward = {
+			ITA = {
+				country_event = {
+					id = FRA_ita_Allince
+					days = 1
+				}
+        	}
+		}
 	}
 	focus = {
 		id = FRA_105
@@ -185,9 +189,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 6
-			completion_reward = {
-					add_ideas = France_Black_shirts
-				}
+		completion_reward = {
+			add_ideas = France_Black_shirts
+		}
 
 	}
 	focus = {
@@ -227,6 +231,10 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+
+		completion_reward = {
+			war_support_factor = 0.15
+		}
 	}
 	focus = {
 		id = FRA_13
@@ -269,7 +277,10 @@ focus_tree = {
 		x = 13
 		y = 3
 		completion_reward = {
-			add_ideas = Opposition_Purge
+			add_timed_idea = {
+			idea = my_idea
+			days = 180
+			}
 		}
 
 	}
@@ -286,8 +297,8 @@ focus_tree = {
 		x = 12
 		y = 4
 			completion_reward = {
-
-}
+				add_ideas = Do_it_for_France
+		}
 
 	}
 	focus = {
@@ -304,7 +315,10 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					add_war_support = 0.2
-					add_ideas = { National_revanchism }
+					swap_ideas = {
+						remove_idea
+					}
+					add_ideas =  National_revanchism 
 				}
 
 	}
@@ -341,8 +355,8 @@ focus_tree = {
 		x = 18
 		y = 3
 			completion_reward = {
-					add_ideas = French_Peoples_Front
-				}
+				add_ideas = French_Peoples_Front
+			}
 
 	}
 	focus = {
@@ -354,6 +368,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+		completion_reward = {
+			country_event = 1st_Peoples_Council
+		}
 
 	}
 	focus = {
@@ -475,8 +492,25 @@ focus_tree = {
 		x = 23
 		y = 4
 			completion_reward = {
-					add_ideas = Parliamentary_resurrection
-				}
+				add_ideas = Parliamentary_resurrection
+			}
+
+	}
+	focus = {
+		id = FRA_107
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = FRA_26
+		}
+		prerequisite = {
+			focus = FRA_25
+		}
+		x = 24
+		y = 5
+			completion_reward = {
+				add_ideas = Parliamentary_resurrection
+			}
 
 	}
 	focus = {
@@ -484,26 +518,20 @@ focus_tree = {
 		icon = GFX_goal_icon_Mollet
 		cost = 3.00
 		prerequisite = {
-			focus = FRA_25
-		}
-		prerequisite = {
-			focus = FRA_25
+			focus = FRA_107
 		}
 		mutually_exclusive = {
 			focus = FRA_27
 			focus = FRA_28
 		}
 		x = 22
-		y = 5
+		y = 6
 			completion_reward = {
-					world_event = {
-							id = Guy_Mollet_To_the_president
-						}
-					swap_ideas = {
-							remove_idea = { Democratic_Republic_under_themilitary_junta }
-						}
+				world_event = {
+					id = Guy_Mollet_To_the_president
 				}
-
+				remove_ideas = Democratic_Republic_under_themilitary_junta
+			}
 	}
 	focus = {
 		id = FRA_26
@@ -524,29 +552,21 @@ focus_tree = {
 		icon = GFX_goal_icon_icon_Mendes
 		cost = 3.00
 		prerequisite = {
-			focus = FRA_26
-			focus = FRA_25
-		}
-		prerequisite = {
-			focus = FRA_26
-		}
-		prerequisite = {
-			focus = FRA_25
+			focus = FRA_107
 		}
 		mutually_exclusive = {
 			focus = FRA_29
 			focus = FRA_28
 		}
 		x = 24
-		y = 5
+		y = 6
 			completion_reward = {
-					world_event = {
-							id = Pierre_Mendes_France_To_the_president
+				world_event = {
+					id = Pierre_Mendes_France_To_the_president
 						}
-					swap_ideas = {
-							remove_idea = { Democratic_Republic_under_themilitary_junta }
-						}
-				}
+				remove_ideas = Democratic_Republic_under_themilitary_junta
+						
+			}
 
 	}
 	focus = {
@@ -554,22 +574,21 @@ focus_tree = {
 		icon = GFX_goal_icon_Rene
 		cost = 3.00
 		prerequisite = {
-			focus = FRA_26
+			focus = FRA_107
 		}
 		mutually_exclusive = {
 			focus = FRA_29
 			focus = FRA_27
 		}
 		x = 26
-		y = 5
+		y = 6
 			completion_reward = {
-					world_event = {
-							id = Rene_Jules_Gustave_Coty_To_the_president
-						}
-					swap_ideas = {
-							remove_idea = { Democratic_Republic_under_themilitary_junta }
-						}
-				}
+				world_event = {
+					id = Rene_Jules_Gustave_Coty_To_the_president
+					}
+				remove_ideas = Democratic_Republic_under_themilitary_junta
+				
+			}
 
 	}
 	focus = {
@@ -582,13 +601,13 @@ focus_tree = {
 			focus = FRA_29
 		}
 		x = 24
-		y = 6
+		y = 7
 			completion_reward = {
 					world_event = {
-							id = Republican_revival
-						}
-					add_ideas = { NEW_repubulic }
-				}
+						id = Republican_revival
+					}
+				add_ideas =  NEW_repubulic 
+			}
 
 	}
 	focus = {
@@ -599,7 +618,7 @@ focus_tree = {
 			focus = FRA_30
 		}
 		x = 24
-		y = 7
+		y = 8
 			completion_reward = {
 					swap_ideas = {
 							remove_idea = NEW_repubulic
@@ -621,8 +640,8 @@ focus_tree = {
 		x = 25
 		y = 10
 			completion_reward = {
-					add_ideas = Preparing_for_war
-				}
+				add_ideas = Preparing_for_war
+			}
 
 	}
 	focus = {
@@ -637,6 +656,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 10
+
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = FRA_NFR_Return
+					days = 1
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -663,24 +691,10 @@ focus_tree = {
 			focus = FRA_56
 			focus = FRA_57
 		}
-		x = 23
+		x = 24
 		y = 12
 
-	}
-	focus = {
-		id = FRA_55
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_53
-		}
-		mutually_exclusive = {
-			focus = FRA_54
-			focus = FRA_56
-			focus = FRA_57
-		}
-		x = 25
-		y = 12
+		boost
 
 	}
 	focus = {
@@ -695,7 +709,7 @@ focus_tree = {
 			focus = FRA_55
 			focus = FRA_56
 		}
-		x = 29
+		x = 28
 		y = 12
 
 	}
@@ -711,7 +725,7 @@ focus_tree = {
 			focus = FRA_55
 			focus = FRA_57
 		}
-		x = 27
+		x = 26
 		y = 12
 
 	}
@@ -1301,8 +1315,8 @@ focus_tree = {
 		x = 48
 		y = 7
 			completion_reward = {
-					add_ideas = Determination
-				}
+				add_ideas = Determination
+			}
 
 	}
 	focus = {
@@ -1339,11 +1353,11 @@ focus_tree = {
 		relative_position_id = FRA_5
 			completion_reward = {
 					add_popularity = {
-							ideology = classical_communism
-							popularity = -1
-							ideology = progressive_communism
-							popularity = -1
-						}
+						ideology = classical_communism
+						popularity = -0.1
+						ideology = progressive_communism
+						popularity = -0.1
+					}
 				}
 
 	}
@@ -1358,7 +1372,7 @@ focus_tree = {
 		y = 3
 			completion_reward = {
 					add_popularity = {
-							ideology = Nazism
+							ideology = national_socialism
 							popularity = 0.3
 						}
 				}
@@ -1472,6 +1486,11 @@ focus_tree = {
 		x = 11
 		y = 6
 
+		completion_reward = {
+			remove_idea = dictator
+			add_ideas = Charismatic_dictator
+		}
+
 	}
 	focus = {
 		id = FRA_95
@@ -1561,10 +1580,10 @@ focus_tree = {
 		x = 46
 		y = 7
 			completion_reward = {
-					set_technology = {
-							bicycle_infantry = 1
-						}
+				set_technology = {
+					bicycle_infantry = 1
 				}
+			}
 
 	}
 	focus = {

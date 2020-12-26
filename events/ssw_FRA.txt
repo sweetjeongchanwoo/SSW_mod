@@ -80,14 +80,6 @@ country_event = {
     }
 }
 
-country_event = {
-    id = FRA_ita_Allince
-    titile = FRA_ita_Allince.t
-    desc = FRA_ita_Allince.d
-    picture = 
-    is_triggered_only =yes
-    option
-}
 
 
 world_event = {
@@ -178,9 +170,69 @@ country_event = {
     fire_on_lnly_once = yes
     is_triggered_only = yes
     opition = {
-        Military_coup.a
-        Military_coup.b
+        Military_coup.a   
+    }
+    option = {
+        Military_coup.b  
+    } 
+}
+country_event = {
+	id = FRA_NFR_Return
+	title = FRA_NFR_Return.t
+	desc = FRA_NFR_Return.d
+	is_triggered_only = yes
+	
+    trigger = {
+		FROM = {
+			exists = yes
+			is_faction_leader = yes
+			NOT = { has war with = ROOT }
+		}
+		is subject = no
+    }
+	option = {
+        name = FRA_NFR_Return.a
+        annex_country = {
+        target = NFR
+        transfer_troops = yes
+        }
+	}
+
+    option = {
+        name = FRA_NFR_Return.b
     }
 }
+country_event = {
+    id = FRA_ita_Allince
+    titile = FRA_ita_Allince.t
+    desc = FRA_ita_Allince.d 
+    is_triggered_only = yes
 
+    option = {
+        name = FRA_ita_Allince.a
+        Rome_entente = { add_to_faction = FRA }
+    }
 
+    option = {
+        name = FRA_ita_Allince.b
+    }
+}
+country_event = {
+    id = 1st_Peoples_Council
+    titile = 1st_Peoples_Council.t
+    desc = 1st_Peoples_Council.d
+    is_triggered_only = yes
+
+    option = {
+        name = 1st_Peoples_Council.a
+        complete_national_focus = FRA_45
+    }
+    option = {
+        name = 1st_Peoples_Council.b
+        complete_national_focus = FRA_47
+    }
+    option = {
+        name = 1st_Peoples_Council.c
+        complete_national_focus = FRA_46
+    }
+}
