@@ -42,7 +42,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				surrender_limit = 0.5
+				surrender_limit = 0.1
 			}
 		}
 		Air_force_conspiracy = {
