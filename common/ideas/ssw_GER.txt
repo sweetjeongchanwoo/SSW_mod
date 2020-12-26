@@ -42,7 +42,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				surrender_limit = 10.0
+				surrender_limit = 0.1
 			}
 		}
 		Air_force_conspiracy = {
@@ -81,9 +81,10 @@ ideas = {
 			}
 		}
 
-		Colonial_goverment = {
+		Colonial_government = {
 			allowed = {
 				always = yes
+				is_puppet = yes
 			}
 			removal_cost = -1
 
@@ -200,6 +201,21 @@ ideas = {
 			targeted_modifier = {
 				tag = HLH
 				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_7 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			hidden_modifier = {
+				ai_focus_aggressive_factor = 100
 			}
 		}
 	}

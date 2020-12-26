@@ -288,6 +288,13 @@
  antiairmissile3:0 "地対空ミサイル III"
  antiairmissile3_desc:0 "研究の進歩により、従来の迎撃戦闘機では到達不可能な高度を飛行する敵航空機であったとしても、最新の地対空ミサイルを用いることで対処することができる。"
 
+ antiair_improvement7:0 "最終型対空砲"
+ antiair_improvement7_desc:0 "とっても強いよ。"
+
+ artillery7:0 "最終型野砲"
+ artillery7_desc:0 "とても強い"
+
+
  artillery5:0 "高度改良型砲兵改良 I"
  artillery5_desc:0 "野戦砲を改良します。"
  artillery6:0 "高度改良型砲兵改良 II"

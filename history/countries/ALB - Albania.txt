@@ -10,6 +10,7 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	ITA_Umberto_II_king
 }
 
 set_politics = {

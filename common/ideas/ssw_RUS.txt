@@ -4,7 +4,8 @@ ideas = {
 		RUS_collectivized_society_for_ssw = {
 			picture = SPR_collectivized_society
 			name = SPR_collectivized_society
-			allowed = { always = yes }
+			allowed = { original_tag = RUS }
+			available = { has_government = anarchism }
 			removal_cost = -1
 			modifier = {
 				resistance_target = -0.2
@@ -92,34 +93,25 @@ ideas = {
 	minister_of_foreign_affairs = {
 		RUS_alexander_kerensky = {
 			picture = SSW_RUS_alexander_kerensky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
+			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
 			allowed = { original_tag = RUS }
 			traits = { good_at_trading }
+			cost = 150
 			ai_will_do = { factor = 1 }
-			cancel_if_invalid = no
 		}
 	}
 	minister_of_finance = {
 		konstantin_rodzaevsky = {
 			picture = konstantin_rodzaevsky
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_idea = RUS_pavel_sudoplatov
 				}
 			}
-			removal_cost = -1
-			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { active_nationalist }
+			cost = 150
 			ai_will_do = { factor = 1 }
 		}
 		RUS_pavel_sudoplatov = {
@@ -130,29 +122,28 @@ ideas = {
 					always = no
 					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
 				}
+				OR = {
+					has_government = anarchism
+					has_government = progressive_communism
+					has_government = classical_communism
+				}
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { veteran_communist }
+			cost = 0
 			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_interior = {
 		RUS_vladimir_nabokov = {
 			picture = SSW_RUS_vladimir_nabokov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
+			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
 			allowed = { original_tag = RUS }
 			traits = { kind_liberal }
+			cost = 150
 			ai_will_do = { factor = 1 }
-			cancel_if_invalid = no
 		}
 	}
 	minister_of_army = {
@@ -160,17 +151,17 @@ ideas = {
 			name = RUS_andrey_vlasov
 			picture = SSW_RUS_andrey_vlasov
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_government = anarchism
+					has_government = progressive_communism
+					has_government = classical_communism
 				}
 			}
-			removal_cost = -1
 			allowed = { original_tag = RUS }
 			traits = { former_white_army }
+			cost = 150
 			ai_will_do = { factor = 1 }
-			cancel_if_invalid = no
 		}
 	}
 	country = {

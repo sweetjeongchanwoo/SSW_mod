@@ -1,4 +1,5 @@
 ideas = {
+	##### PRESIDENT #####
 	political_leader = {
 		MEX_manuel_gomez_morin = {
 			picture = SSW_MEX_manuel_gomez_morin
@@ -16,10 +17,63 @@ ideas = {
 			traits = { Charisma }
 			modifier = { political_power_factor = 0.05 }
 		}
+		MEX_adolfo_ruiz_cortines = {
+			picture = SSW_MEX_adolfo_ruiz_cortines
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_country_flag = cardenas_resign
+					has_country_flag = cardenas_dead
+				}
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { silent_workhorse }
+		}
+		MEX_juan_andreu = {
+			picture = SSW_MEX_juan_andreu
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { national_integralist }
+		}
+		MEX_raul_salinas_lozano = {
+			picture = SSW_MEX_raul_salinas_lozano
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { appeaser }
+		}
 		MEX_lazaro_cardenas = {
 			picture = SSW_MEX_lazaro_cardenas
 			available = {
-				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_country_flag = cardenas_resign
+					has_country_flag = cardenas_dead
+				}
 				custom_trigger_tooltip = {
 					tooltip = head_of_cab_available
 					always = no
@@ -32,18 +86,408 @@ ideas = {
 			traits = { Charisma }
 			modifier = { war_support_factor = 0.05 }
 		}
+		MEX_salvador_abascal = {
+			picture = SSW_MEX_salvador_abascal
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { the_silver_president }
+		}
+		MEX_valentin_campa = {
+			picture = SSW_MEX_valentin_campa
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { ambitious_union_boss }
+		}
+		MEX_vicente_lombardo_ssw = {
+			picture = SSW_MEX_vicente_lombardo
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { veteran_communist }
+		}
+		MEX_victor_serge = {
+			picture = SSW_MEX_victor_serge
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				custom_trigger_tooltip = {
+					tooltip = head_of_cab_available
+					always = no
+				}
+			}
+			removal_cost = -1
+			allowed = { original_tag = MEX }
+			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
+			traits = { prince_of_terror }
+		}
 	}
+	##### RIGHTIST #####
 	minister_of_foreign_affairs = {
-		
+		MEX_aaron_saenz_ssw = {
+			picture = SSW_MEX_aaron_saenz
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { hawk }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
 	}
 	minister_of_finance = {
-		
+		MEX_fernando_rodarte_fernandez = {
+			picture = SSW_MEX_fernando_rodarte_fernandez
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { war_industrialist }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
 	}
 	minister_of_interior = {
-		
+		MEX_alfonso_junco = {
+			picture = SSW_MEX_alfonso_junco
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { compassionate_gentleman }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
 	}
 	minister_of_army = {
-		
+		MEX_juan_andreu_minister_of_army = {
+			picture = SSW_MEX_juan_andreu
+			name = MEX_juan_andreu
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { stout_defender }
+			modifier = { army_defence_factor = 0.1 }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	##### LEFTIST #####
+	minister_of_foreign_affairs = {
+		MEX_adolfo_ruiz_cortines_minister_of_foreign_affairs = {
+			picture = SSW_MEX_adolfo_ruiz_cortines
+			name = MEX_adolfo_ruiz_cortines
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { smooth_talking_charmer }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		MEX_emilio_portes_gil = {
+			picture = SSW_MEX_emilio_portes_gil
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { headstrong }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	minister_of_finance = {
+		MEX_fidel_velazquez = {
+			picture = SSW_MEX_fidel_velazquez
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { economic_reformer }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		MEX_rosendo_salazar = {
+			picture = SSW_MEX_rosendo_salazar
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { captain_of_industry }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	minister_of_interior = {
+		MEX_manuel_avila_camacho = {
+			picture = SSW_MEX_manuel_avila_camacho
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { backroom_backstabber }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+		MEX_luis_n_morones = {
+			picture = SSW_MEX_luis_n_morones
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { education_reformer }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	minister_of_army = {
+		MEX_abelardo_l_rodriguez = {
+			picture = SSW_MEX_abelardo_l_rodriguez
+			available = {
+				NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			visible = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			allowed = { original_tag = MEX }
+			traits = { revolutionary_general }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	##### USUALLY #####
+	theorist = {
+		MEX_gilberto_limon_marquez = {
+			ledger = army
+			picture = SSW_MEX_gilberto_limon_marquez
+			allowed = { original_tag = MEX }
+			research_bonus = { land_doctrine = 0.10 }
+			traits = { military_theorist }
+		}
+		MEX_agustin_olachea = {
+			ledger = air
+			picture = SSW_MEX_agustin_olachea
+			allowed = { original_tag = MEX }
+			research_bonus = { air_doctrine = 0.10 }
+			traits = { air_warfare_theorist }
+		}
+	}
+	army_chief = {
+		MEX_matias_santos_ramos_ssw = {
+			name = MEX_matias_santos_ramos
+			picture = SSW_MEX_matias_santos_ramos
+			allowed = { original_tag = MEX }
+			traits = { army_chief_defensive_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	air_chief = {
+		MEX_antonio_cardenas_rodriguez_ssw = {
+			name = MEX_antonio_cardenas_rodriguez
+			picture = SSW_MEX_antonio_cardenas_rodriguez
+			allowed = { original_tag = MEX }
+			traits = { air_air_combat_training_3 }
+			ai_will_do = { factor = 1 }
+		}
+		MEX_luis_farell_ssw = {
+			picture = SSW_MEX_luis_farell
+			name = MEX_luis_farell
+			allowed = { original_tag = MEX }
+			available = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			traits = { air_chief_ground_support_2 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	navy_chief = {
+		MEX_heriberto_corona_ssw = {
+			picture = SSW_MEX_heriberto_corona
+			name = MEX_heriberto_corona
+			allowed = { original_tag = MEX }
+			available = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			traits = { navy_chief_decisive_battle_1 }
+			ai_will_do = { factor = 1 }
+		}
+	}
+	high_command = {
+		MEX_luis_farell_high_command_ssw = {
+			ledger = air
+			name = MEX_luis_farell
+			picture = SSW_MEX_luis_farell
+			allowed = { original_tag = MEX }
+			available = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_rightist
+				}
+			}
+			traits = { air_strategic_bombing_2 }
+			ai_will_do = { factor = 1 }
+		}
+		MEX_manuel_avila_camacho_high_command = {
+			ledger = army
+			name = MEX_manuel_avila_camacho
+			picture = SSW_MEX_manuel_avila_camacho
+			allowed = { original_tag = MEX }
+			available = {
+				OR = {
+					has_global_flag = mcw_over
+					has_completed_focus = MEX_leftist
+				}
+			}
+			traits = { army_regrouping_2 }
+			ai_will_do = { factor = 1 }
+		}
+		MEX_jose_gonzalo_escobar_ssw = {
+			ledger = army
+			name = MEX_jose_gonzalo_escobar
+			picture = SSW_MEX_jose_gonzalo_escobar
+			allowed = { original_tag = MEX }
+			traits = { army_cavalry_3 }
+			ai_will_do = { factor = 1 }
+		}
 	}
 	country = {
 		mex_ideas_1 = {
@@ -230,7 +674,150 @@ ideas = {
 			removal_cost = -1
 			picture = SPR_political_violence
 			modifier = {
+				disabled_ideas = 1
 				custom_modifier_tooltip = start_mexico_civilwar_tt
+			}
+		}
+		mex_ideas_19 = {
+			allowed = { original_tag = MEX }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			available = { has_government = progressive_communism }
+			picture = generic_communism_drift_bonus
+			modifier = { progressive_communism_drift = 0.05 }
+		}
+		mex_ideas_20 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.2
+				navy_capital_ship_defence_factor = 0.15
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		mex_ideas_21 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				air_strategic_bomber_attack_factor = 0.1
+				air_strategic_bomber_defence_factor = 0.1
+				air_strategic_bomber_agility_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
+		mex_ideas_22 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = MTG_naval_treaty_adherent
+			modifier = {
+				navy_capital_ship_attack_factor = 0.2
+				navy_capital_ship_defence_factor = 0.15
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		mex_ideas_23 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				army_defence_factor = 0.15
+				army_attack_factor = 0.15
+				army_speed_factor = 0.15
+				air_close_air_support_agility_factor = 0.05
+				air_strategic_bomber_agility_factor = 0.05
+				air_cas_present_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				conscription = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		mex_ideas_24 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_air_bonus
+			modifier = {
+				army_bonus_air_superiority_factor = 0.15
+				air_night_penalty = -0.15
+				air_weather_penalty = -0.15
+				air_air_superiority_attack_factor = 0.05
+				air_air_superiority_defence_factor = 0.05
+				air_close_air_support_attack_factor = 0.05
+				air_close_air_support_defence_factor = 0.05
+			}
+			research_bonus = {
+				battlefield_support_tree = 0.15
+				jet_technology = 0.15
+			}
+		}
+		mex_ideas_25 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		mex_ideas_26 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = FRA_la_deluge
+			modifier = {
+				army_defence_factor = 0.15
+				army_attack_factor = 0.15
+				army_speed_factor = 0.15
+				air_close_air_support_agility_factor = 0.05
+				air_strategic_bomber_agility_factor = 0.05
+				air_cas_present_factor = 0.1
+				naval_speed_factor = 0.1
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				conscription = 0.15
+				conscription_factor = 0.25
+				training_time_army_factor = -0.25
+			}
+		}
+		mex_ideas_27 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
 			}
 		}
 	}

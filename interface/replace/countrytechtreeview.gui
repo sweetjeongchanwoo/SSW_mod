@@ -903,7 +903,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 45 y = 0 }
+					position = { x = 55 y = 140 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -916,7 +916,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 360 y = 0 }
+					position = { x = 365 y = 0 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3934,7 +3934,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
-					position = { x = 1200 y = 220 }
+					position = { x = 1150 y = 220 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
@@ -3973,7 +3973,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "atomic_research_tree"
-				position = { x=955 y=292 }
+				position = { x=905 y=292 }
 				size = { width = 680 height = 500 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"

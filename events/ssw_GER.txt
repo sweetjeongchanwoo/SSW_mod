@@ -192,30 +192,9 @@ country_event = {
 				clr_global_flag = GER_civil_war
 				ENG = { set_global_flag = GER_civil_war }
 				FRA = { set_global_flag = GER_civil_war }
+				GER = { country_event =  { id = SSW_GER.32 days = 1 } }
 				GER = { country_event = { id = SSW_GER.11 days = 1 } }
 				GER = { country_event = { id = SSW_GER.24 days = 1 } }
-				GER = { remove_state_core = 56 }
-				GER = { remove_state_core = 57 }
-				GER = { remove_state_core = 58 }
-				GER = { remove_state_core = 59 }
-				GER = { remove_state_core = 61 }
-				GER = { remove_state_core = 812 }
-				GER = { remove_state_core = 3 }
-				GER = { remove_state_core = 8 }
-				GER = { remove_state_core = 28 }
-				GER = { remove_state_core = 42 }
-				GER = { remove_state_core = 50 }
-				GER = { remove_state_core = 51 }
-				GER = { remove_state_core = 54 }
-				GER = { remove_state_core = 55 }
-				GER = { remove_state_core = 151 }
-				GER = { remove_state_core = 938 }
-				GER = { remove_state_core = 4 }
-				GER = { remove_state_core = 52 }
-				GER = { remove_state_core = 53 }	
-				GER = { remove_state_core = 102 }
-				GER = { remove_state_core = 152 }
-				GER = { remove_state_core = 153 }
 				LTV = { transfer_state = 56 }	
 				LTV = { transfer_state = 57 }	
 				LTV = { transfer_state = 58 }
@@ -227,6 +206,55 @@ country_event = {
 				LTV = { add_state_core = 58 }
 				LTV = { add_state_core = 59 }
 				LTV = { add_state_core = 61 }
+				LTV = { add_state_core = 3 }
+				LTV = { add_state_core = 8 }
+				LTV = { add_state_core = 28 }
+				LTV = { add_state_core = 42 }
+				LTV = { add_state_core = 50 }
+				LTV = { add_state_core = 51 }
+				LTV = { add_state_core = 54 }
+				LTV = { add_state_core = 55 }
+				LTV = { add_state_core = 151 }
+				LTV = { add_state_core = 938 }
+				LTV = { add_state_core = 3 }
+				LTV = { add_state_core = 8 }
+				LTV = { add_state_core = 28 }
+				LTV = { add_state_core = 42 }
+				LTV = { add_state_core = 50 }
+				LTV = { add_state_core = 51 }
+				LTV = { add_state_core = 54 }
+				LTV = { add_state_core = 55 }
+				LTV = { add_state_core = 151 }
+				LTV = { add_state_core = 938 }
+				LTV = { add_state_core = 4 }
+				LTV = { add_state_core = 52 }
+				LTV = { add_state_core = 53 }
+				LTV = { add_state_core = 102 }
+				LTV = { add_state_core = 152 }
+				LTV = { add_state_core = 153 }
+				LTV = { add_state_core = 69 }
+				LTV = { add_state_core = 60 }
+				LTV = { add_state_core = 65 }
+				LTV = { add_state_core = 64 }
+				LTV = { add_state_core = 966 }
+				LTV = { add_state_core = 965 }
+				LTV = { add_state_core = 62 }
+				LTV = { add_state_core = 63 }
+				LTV = { add_state_core = 68 }
+				LTV = { add_state_core = 66 }
+				LTV = { add_state_core = 74 }
+				LTV = { add_state_core = 67 }
+				LTV = { add_state_core = 762 }
+				LTV = { add_state_core = 87 }
+				LTV = { add_state_core = 86 }
+				LTV = { add_state_core = 85 }
+				LTV = { add_state_core = 5 }
+				LTV = { add_state_core = 98 }
+				LTV = { add_state_core = 97 }
+				LTV = { add_state_core = 763 }
+				LTV = { add_state_core = 188 }
+				LTV = { add_state_core = 72 }
+
 				HLH = { transfer_state = 3 }
 				HLH = { transfer_state = 8 }
 				HLH = { transfer_state = 28 }
@@ -237,6 +265,11 @@ country_event = {
 				HLH = { transfer_state = 55 }
 				HLH = { transfer_state = 151 }
 				HLH = { transfer_state = 938 }
+				HLH = { add_state_core = 56 }
+				HLH = { add_state_core = 57 }
+				HLH = { add_state_core = 58 }
+				HLH = { add_state_core = 59 }
+				HLH = { add_state_core = 61 }
 				HLH = { add_state_core = 3 }
 				HLH = { add_state_core = 8 }
 				HLH = { add_state_core = 28 }
@@ -247,18 +280,104 @@ country_event = {
 				HLH = { add_state_core = 55 }
 				HLH = { add_state_core = 151 }
 				HLH = { add_state_core = 938 }
+				HLH = { add_state_core = 3 }
+				HLH = { add_state_core = 8 }
+				HLH = { add_state_core = 28 }
+				HLH = { add_state_core = 42 }
+				HLH = { add_state_core = 50 }
+				HLH = { add_state_core = 51 }
+				HLH = { add_state_core = 54 }
+				HLH = { add_state_core = 55 }
+				HLH = { add_state_core = 151 }
+				HLH = { add_state_core = 938 }
+				HLH = { add_state_core = 4 }
+				HLH = { add_state_core = 52 }
+				HLH = { add_state_core = 53 }
+				HLH = { add_state_core = 102 }
+				HLH = { add_state_core = 152 }
+				HLH = { add_state_core = 153 }
+				HLH = { add_state_core = 69 }
+				HLH = { add_state_core = 60 }
+				HLH = { add_state_core = 65 }
+				HLH = { add_state_core = 64 }
+				HLH = { add_state_core = 966 }
+				HLH = { add_state_core = 965 }
+				HLH = { add_state_core = 62 }
+				HLH = { add_state_core = 63 }
+				HLH = { add_state_core = 68 }
+				HLH = { add_state_core = 66 }
+				HLH = { add_state_core = 74 }
+				HLH = { add_state_core = 67 }
+				HLH = { add_state_core = 762 }
+				HLH = { add_state_core = 87 }
+				HLH = { add_state_core = 86 }
+				HLH = { add_state_core = 85 }
+				HLH = { add_state_core = 5 }
+				HLH = { add_state_core = 98 }
+				HLH = { add_state_core = 97 }
+				HLH = { add_state_core = 763 }
+				HLH = { add_state_core = 188 }
+				HLH = { add_state_core = 72 }
+
 				HGR = { transfer_state = 4 }
 				HGR = { transfer_state = 52 }
 				HGR = { transfer_state = 53 }
 				HGR = { transfer_state = 102 }
 				HGR = { transfer_state = 152 }
 				HGR = { transfer_state = 153 }
+				HGR = { add_state_core = 56 }
+				HGR = { add_state_core = 57 }
+				HGR = { add_state_core = 58 }
+				HGR = { add_state_core = 59 }
+				HGR = { add_state_core = 61 }
+				HGR = { add_state_core = 3 }
+				HGR = { add_state_core = 8 }
+				HGR = { add_state_core = 28 }
+				HGR = { add_state_core = 42 }
+				HGR = { add_state_core = 50 }
+				HGR = { add_state_core = 51 }
+				HGR = { add_state_core = 54 }
+				HGR = { add_state_core = 55 }
+				HGR = { add_state_core = 151 }
+				HGR = { add_state_core = 938 }
+				HGR = { add_state_core = 3 }
+				HGR = { add_state_core = 8 }
+				HGR = { add_state_core = 28 }
+				HGR = { add_state_core = 42 }
+				HGR = { add_state_core = 50 }
+				HGR = { add_state_core = 51 }
+				HGR = { add_state_core = 54 }
+				HGR = { add_state_core = 55 }
+				HGR = { add_state_core = 151 }
+				HGR = { add_state_core = 938 }
 				HGR = { add_state_core = 4 }
 				HGR = { add_state_core = 52 }
 				HGR = { add_state_core = 53 }
 				HGR = { add_state_core = 102 }
 				HGR = { add_state_core = 152 }
 				HGR = { add_state_core = 153 }
+				HGR = { add_state_core = 69 }
+				HGR = { add_state_core = 60 }
+				HGR = { add_state_core = 65 }
+				HGR = { add_state_core = 64 }
+				HGR = { add_state_core = 966 }
+				HGR = { add_state_core = 965 }
+				HGR = { add_state_core = 62 }
+				HGR = { add_state_core = 63 }
+				HGR = { add_state_core = 68 }
+				HGR = { add_state_core = 66 }
+				HGR = { add_state_core = 74 }
+				HGR = { add_state_core = 67 }
+				HGR = { add_state_core = 762 }
+				HGR = { add_state_core = 87 }
+				HGR = { add_state_core = 86 }
+				HGR = { add_state_core = 85 }
+				HGR = { add_state_core = 5 }
+				HGR = { add_state_core = 98 }
+				HGR = { add_state_core = 97 }
+				HGR = { add_state_core = 763 }
+				HGR = { add_state_core = 188 }
+				HGR = { add_state_core = 72 }
 				GER = { country_event = { id = SSW_GER.22 } }
 			}
 	}
@@ -717,43 +836,6 @@ country_event = {
 
 }
 
-country_event = {
-	id = SSW_GER.17
-	title = SSW_GER.17.t
-	desc = SSW_GER.17.d
-	picture = GFX_report_event_german_reichstag_gathering
-	is_triggered_only = yes
-	
-	option = {
-		name = SSW_GER.17.a
-		GER = {
-			country_event = {
-				id = SSW_GER.18
-				days = 10
-			}
-		}
-		set_autonomy = {
-			target = DEN
-			autonomy_state = autonomy_free
-		}	
-	}
-}
-
-country_event = {
-	id = SSW_GER.18
-	title = SSW_GER.18.t
-	desc = SSW_GER.18.d
-	picture = GFX_report_event_german_reichstag_gathering
-	is_triggered_only = yes
-	
-	option = {
-		name = SSW_GER.18.a
-		set_autonomy = {
-			target = CRO
-			autonomy_state = autonomy_free
-		}	
-	}
-}
 
 country_event = {
 	id = SSW_GER.19
@@ -1012,6 +1094,360 @@ country_event = {
 		planning_skill = 1
 		logistics_skill = 2
 		}
-		GER = { country_event = { id = SSW_GER.25 } }
 	}
 }
+
+country_event = {
+	id = SSW_GER.26
+	title = SSW_GER.26.t
+	desc = SSW_GER.26.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.26.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 50
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 30
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 20
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 10
+			producer = GER
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.27
+	title = SSW_GER.27.t
+	desc = SSW_GER.27.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.27.a
+			load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
+			hidden_effect = {
+				every_country = {
+    				limit = {
+        				is_in_faction_with = GER
+    				}   
+    				add_ideas = GER_war_ideas_2
+				}
+				set_global_flag = big_event_custom_german_civil_war
+				set_country_flag = GER_dec_civil_war
+				HLH = { set_country_flag = GER_dec_civil_war }
+				LTV = { set_country_flag = GER_dec_civil_war }
+				HGR = { set_country_flag = GER_dec_civil_war }
+				remove_ideas = GER_idea_1
+				remove_ideas = Air_force_conspiracy
+				clr_global_flag = GER_civil_war
+				ENG = { set_global_flag = GER_civil_war }
+				FRA = { set_global_flag = GER_civil_war }
+				GER = { country_event = { id = SSW_GER.11 days = 1 } }
+				GER = { country_event = { id = SSW_GER.24 days = 1 } }
+				GER = { remove_state_core = 56 }
+				GER = { remove_state_core = 57 }
+				GER = { remove_state_core = 58 }
+				GER = { remove_state_core = 59 }
+				GER = { remove_state_core = 61 }
+				GER = { remove_state_core = 812 }
+				GER = { remove_state_core = 3 }
+				GER = { remove_state_core = 8 }
+				GER = { remove_state_core = 28 }
+				GER = { remove_state_core = 42 }
+				GER = { remove_state_core = 50 }
+				GER = { remove_state_core = 51 }
+				GER = { remove_state_core = 54 }
+				GER = { remove_state_core = 55 }
+				GER = { remove_state_core = 151 }
+				GER = { remove_state_core = 938 }
+				GER = { remove_state_core = 4 }
+				GER = { remove_state_core = 52 }
+				GER = { remove_state_core = 53 }	
+				GER = { remove_state_core = 102 }
+				GER = { remove_state_core = 152 }
+				GER = { remove_state_core = 153 }
+				LTV = { transfer_state = 56 }	
+				LTV = { transfer_state = 57 }	
+				LTV = { transfer_state = 58 }
+				LTV = { transfer_state = 59 }
+				LTV = { transfer_state = 61 }
+				LTV = { transfer_state = 812 }
+				LTV = { add_state_core = 56 }
+				LTV = { add_state_core = 57 }
+				LTV = { add_state_core = 58 }
+				LTV = { add_state_core = 59 }
+				LTV = { add_state_core = 61 }
+				HLH = { transfer_state = 3 }
+				HLH = { transfer_state = 8 }
+				HLH = { transfer_state = 28 }
+				HLH = { transfer_state = 42 }
+				HLH = { transfer_state = 50 }
+				HLH = { transfer_state = 51 }
+				HLH = { transfer_state = 54 }
+				HLH = { transfer_state = 55 }
+				HLH = { transfer_state = 151 }
+				HLH = { transfer_state = 938 }
+				HLH = { add_state_core = 3 }
+				HLH = { add_state_core = 8 }
+				HLH = { add_state_core = 28 }
+				HLH = { add_state_core = 42 }
+				HLH = { add_state_core = 50 }
+				HLH = { add_state_core = 51 }
+				HLH = { add_state_core = 54 }
+				HLH = { add_state_core = 55 }
+				HLH = { add_state_core = 151 }
+				HLH = { add_state_core = 938 }
+				HGR = { transfer_state = 4 }
+				HGR = { transfer_state = 52 }
+				HGR = { transfer_state = 53 }
+				HGR = { transfer_state = 102 }
+				HGR = { transfer_state = 152 }
+				HGR = { transfer_state = 153 }
+				HGR = { add_state_core = 4 }
+				HGR = { add_state_core = 52 }
+				HGR = { add_state_core = 53 }
+				HGR = { add_state_core = 102 }
+				HGR = { add_state_core = 152 }
+				HGR = { add_state_core = 153 }
+				GER = { country_event = { id = SSW_GER.22 } }
+			}
+	}
+}
+
+country_event = {
+	id = SSW_GER.28
+	title = SSW_GER.28.t
+	desc = SSW_GER.28.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.28.a
+			GER = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.29
+	title = SSW_GER.29.t
+	desc = SSW_GER.29.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.29.a
+			HLH = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.30
+	title = SSW_GER.30.t
+	desc = SSW_GER.30.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.30.a
+			LTV = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.31
+	title = SSW_GER.31.t
+	desc = SSW_GER.31.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.31.a
+			HGR = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.32
+	title = SSW_GER.32.t
+	desc = SSW_GER.32.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.32.a
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+				NOT = {
+					tag = cze
+				}
+			}   
+			end_puppet = GER
+
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+			} 
+			leave_faction = yes
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.34
+	title = SSW_GER.34.t
+	desc = SSW_GER.34.d
+	picture = GFX_German_Civil_War
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = GER_dec_civil_war
+		AND = {
+			HGR = { exists = no }
+			HLH = { exists = no }
+			LTV = { exists = no }
+		}
+	}
+
+	option = {
+		name = SSW_GER.34.a
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "kooperative Miliz"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Deutscher Volkssturm"
+			}
+			load_focus_tree = ssw_Gebbels_Germany_focus
+			add_ideas = Scars_of_the_civil_war
+			add_ideas = Resistance_Gering
+			add_ideas = Resistance_himmler
+			add_ideas = Resistance_Popular_Front
+			add_ideas = limited_conscription
+			add_ideas = free_trade
+			add_ideas = civilian_economy
+			remove_ideas = {
+				GER_idea_1
+				GER_war_ideas_2
+				missing_upper_echelon
+				GER_equipment_seisan
+				GER_Focke_Wulf
+				commandeer
+			}
+		}
+		set_equipment_fraction = 0.95
+	}
+}
+
+
