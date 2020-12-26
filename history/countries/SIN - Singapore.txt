@@ -10,7 +10,8 @@ set_technology = {
 
 add_ideas = {
 	Colonial_goverment
-	civilian_economy
+	SSW_JAP_Hirohito
+	Colonial_goverment
 }
 
 set_politics = {

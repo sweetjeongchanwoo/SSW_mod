@@ -152,13 +152,13 @@ create_import = {
 }
 
 add_ideas = {
+	SSW_JAP_Hirohito
 	ssw_parliamentary_democracy_rightist_administration
 	SSW_JAP_Parasitic_landlord_system
 	SSW_jAP_disarmament_idea
 	SSW_jAP_zaibatsu
 	SSW_jAP_Peace_Preservation_Law
 	SSW_jAP_Japanese_spirit
-	SSW_JAP_Hirohito
 	SSW_JAP_Greater_East_Asian_Co_prosperity_Sphere
 	SSW_JAP_army_2
 	SSW_JAP_Post_war_recession
