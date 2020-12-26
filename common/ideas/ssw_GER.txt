@@ -42,7 +42,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				surrender_limit = 0.5
+				surrender_limit = 0.1
 			}
 		}
 		Air_force_conspiracy = {
@@ -81,9 +81,10 @@ ideas = {
 			}
 		}
 
-		Colonial_goverment = {
+		Colonial_government = {
 			allowed = {
 				always = yes
+				is_puppet = yes
 			}
 			removal_cost = -1
 

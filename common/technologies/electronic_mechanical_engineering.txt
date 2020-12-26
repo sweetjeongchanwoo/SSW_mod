@@ -211,6 +211,10 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_3
 		}
+		enable_building = {
+			building = radar_station
+			level = 3
+		}
 
 		static_anti_air_hit_chance_factor = 0.2
 		
@@ -257,6 +261,10 @@ technologies = {
 		path = {
 			leads_to_tech = advanced_centimetric_radar 
 			research_cost_coeff = 1
+		}
+		enable_building = {
+			building = radar_station
+			level = 4
 		}
 		
 		research_cost = 1.25
@@ -340,7 +348,11 @@ technologies = {
 			leads_to_tech = PRI_scope_2
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 5
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -378,7 +390,11 @@ technologies = {
 			leads_to_tech = PRI_scope_3
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -414,6 +430,10 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 4
+		}
+		enable_building = {
+			building = radar_station
+			level = 7
 		}
 
 		path = {
@@ -458,7 +478,11 @@ technologies = {
 			leads_to_tech = radome_2
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 8
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -496,7 +520,11 @@ technologies = {
 			leads_to_tech = radome_3
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 9
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -532,6 +560,10 @@ technologies = {
 		enable_building = {
 			building = radar_station
 			level = 5
+		}
+		enable_building = {
+			building = radar_station
+			level = 10
 		}
 
 		path = {
@@ -576,7 +608,11 @@ technologies = {
 			leads_to_tech = pulse_Doppler_radar
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 11
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -614,7 +650,11 @@ technologies = {
 			leads_to_tech = pulse_Doppler_radar_2
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 12
+		}
+
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -652,7 +692,11 @@ technologies = {
 			leads_to_tech = pulse_Doppler_radar_3
 			research_cost_coeff = 1
 		}
-		
+		enable_building = {
+			building = radar_station
+			level = 13
+		}
+	
 		static_anti_air_hit_chance_factor = 0.2
 		
 		research_cost = 1.25
@@ -687,7 +731,7 @@ technologies = {
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
-			level = 6
+			level = 14
 		}
 
 		path = {

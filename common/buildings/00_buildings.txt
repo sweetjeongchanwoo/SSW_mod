@@ -147,7 +147,7 @@ buildings = {
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
-		max_level = 12	#最大レベルを6から12へ変更
+		max_level = 15	#最大レベルを6から15へ変更
 		damage_factor = 0.5
 		value = 4
 	}
