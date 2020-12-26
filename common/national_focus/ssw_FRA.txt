@@ -889,7 +889,7 @@ focus_tree = {
 		y = 7
 			completion_reward = {
 
-}
+		}
 
 	}
 	focus = {
