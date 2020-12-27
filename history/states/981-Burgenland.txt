@@ -1,0 +1,18 @@
+state = {
+	id = 981
+	name = "STATE_981"
+	manpower = 270000
+	state_category = large_city
+	
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = AUS
+		add_core_of = HUN
+		buildings = {	infrastructure = 7	}
+	}
+	
+	provinces = {
+		3700 9661 11630
+	}
+}
