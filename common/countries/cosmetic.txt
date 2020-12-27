@@ -24,6 +24,47 @@ DET-UKR = {	#ドニエストル・ウクライナ
 	color_ui = rgb { 51 153 255 }
 }
 
+#モスクワ国家弁務官区崩壊
+RUS_empire = {	#ロシア帝国
+	color = rgb { 55 88 83 }
+	color_ui = rgb { 55 88 83 }
+}
+
+RUS_liberalist = {	#自由主義ロシア
+	color = rgb { 73 29 103 }
+	color_ui = rgb { 73 29 103 }
+}
+
+RUS_nobles = {	#貴族評議会
+	color = rgb { 127 79 22 }
+	color_ui = rgb { 127 79 22 }
+}
+
+MOS_archbishop = {	#大主教領
+	color = rgb { 105 142 106 }
+	color_ui = rgb { 105 142 106 }
+}
+
+RUS_rall = {	#ロシアの空解放同盟
+	color = rgb { 85 47 31 }
+	color_ui = rgb { 85 47 31 }
+}
+
+RUS_arufnl = {	#全ロシア民族解放統一戦線
+	color = rgb { 168 46 78 }
+	color_ui = rgb { 168 46 78 }
+}
+
+RUS_arufnl = {	#大天使ミハイル
+	color = rgb { 112 41 26 }
+	color_ui = rgb { 112 41 26 }
+}
+
+RUS_blackorder = {	#ブラック・オーダー
+	color = rgb { 52 82 123 }
+	color_ui = rgb { 52 82 123 }
+}
+
 #共同統治国家
 CLC_JAPandCHI = {	#日華共同港都市
 	color = rgb { 255 191 191 }

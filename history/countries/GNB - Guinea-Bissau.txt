@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	civilian_economy
 }
 

@@ -1,0 +1,21 @@
+state={
+	id = 982
+	name = "STATE_982"
+	state_category = rural
+	manpower = 3723600
+	buildings_max_level_factor=1.000
+
+	history={
+		owner = TOG
+		add_core_of = TOG
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		8039
+	}
+}
