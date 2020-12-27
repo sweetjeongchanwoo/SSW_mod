@@ -7,6 +7,7 @@ focus_tree = {
 			tag = ALF
 		}
 	}
+	continuous_focus_position = { x = 0 y = 2000 }
 	default = no
 	focus = {
 		id = ALF_Califolnia_plan
@@ -28,7 +29,7 @@ focus_tree = {
 		id = ALF_49
 		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 38
+		x = 31
 		y = 7
 
 	}
@@ -44,7 +45,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ALF_Expansion_of_the_San_Francisco Naval_Shipyard
+		id = ALF_Expansion_of_the_San_Francisco_Naval_Shipyard
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.00
 		prerequisite = {
@@ -59,7 +60,7 @@ focus_tree = {
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		cost = 7.00
 		prerequisite = {
-			focus = ALF_Expansion_of_the_San_Francisco Naval_Shipyard
+			focus = ALF_Expansion_of_the_San_Francisco_Naval_Shipyard
 			focus = ALF_Richmond_Shipyards
 		}
 		x = 3
@@ -341,23 +342,52 @@ focus_tree = {
 		id = ALF_50
 		icon = GFX_goal_unknown
 		cost = 7.00
+		x = -3
+		y = 1
+		relative_position_id = ALF_49
 		prerequisite = {
-			focus = ALF_49
+        	focus = ALF_49
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 35
-		y = 8
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_52
 		icon = GFX_goal_unknown
 		cost = 5.00
+		x = -2
+		y = 1
+		relative_position_id = ALF_50
 		prerequisite = {
-			focus = ALF_50
+        	focus = ALF_50
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 33
-		y = 9
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_19
@@ -411,46 +441,90 @@ focus_tree = {
 		id = ALF_23
 		icon = GFX_goal_unknown
 		cost = 6.00
-		prerequisite = {
-			focus = ALF_22
-			focus = ALF_18
-		}
 		x = 32
 		y = 5
+		prerequisite = {
+			focus = ALF_18
+			focus = ALF_22
+		}
 
 	}
 	focus = {
 		id = ALF_53
 		icon = GFX_goal_unknown
 		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_50
 		prerequisite = {
-			focus = ALF_50
+        	focus = ALF_50
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 35
-		y = 9
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_54
 		icon = GFX_goal_unknown
 		cost = 5.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_53
 		prerequisite = {
 			focus = ALF_53
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 35
-		y = 10
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_55
 		icon = GFX_goal_unknown
 		cost = 7.00
+		x = -1
+		y = 1
+		relative_position_id = ALF_54
 		prerequisite = {
 			focus = ALF_54
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 34
-		y = 11
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_25
@@ -489,22 +563,51 @@ focus_tree = {
 		id = ALF_57
 		icon = GFX_goal_unknown
 		cost = 7.00
+		x = 1
+		y = 1
+		relative_position_id = ALF_54
 		prerequisite = {
 			focus = ALF_54
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 36
-		y = 11
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_58
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_57
 		prerequisite = {
 			focus = ALF_57
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 36
-		y = 12
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -571,33 +674,77 @@ focus_tree = {
 		id = ALF_51
 		icon = GFX_goal_unknown
 		cost = 7.00
+		x = 3
+		y = 1
+		relative_position_id = ALF_49
 		prerequisite = {
-			focus = ALF_49
+        	focus = ALF_49
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 41
-		y = 8
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_65
 		icon = GFX_goal_unknown
 		cost = 4.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_51
 		prerequisite = {
 			focus = ALF_51
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 41
-		y = 9
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_71
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = -1
+		y = 1
+		relative_position_id = ALF_65
 		prerequisite = {
 			focus = ALF_65
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 40
-		y = 10
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
@@ -606,10 +753,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = ALF_29
-		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
 		}
 		x = 42
 		y = 2
@@ -622,10 +765,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_44
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 42
 		y = 3
 
@@ -637,10 +776,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_45
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 42
 		y = 4
 
@@ -649,46 +784,103 @@ focus_tree = {
 		id = ALF_69
 		icon = GFX_goal_unknown
 		cost = 4.00
+		x = 2
+		y = 1
+		relative_position_id = ALF_51
 		prerequisite = {
 			focus = ALF_51
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 43
-		y = 9
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_66
 		icon = GFX_goal_unknown
 		cost = 8.00
+		x = 1
+		y = 1
+		relative_position_id = ALF_65
 		prerequisite = {
-			focus = ALF_69
 			focus = ALF_65
+			focus = ALF_69
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 42
-		y = 10
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_67
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_66
 		prerequisite = {
 			focus = ALF_66
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 42
-		y = 11
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_68
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_67
 		prerequisite = {
 			focus = ALF_67
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 42
-		y = 12
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_33
@@ -711,10 +903,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_33
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 46
 		y = 2
 
@@ -725,10 +913,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = ALF_41
-		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
 		}
 		x = 46
 		y = 3
@@ -741,10 +925,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_42
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 46
 		y = 4
 
@@ -756,10 +936,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_43
 			focus = ALF_46
-		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
 		}
 		x = 44
 		y = 5
@@ -802,7 +978,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ALF_Development_of_the_film industry
+		id = ALF_Development_of_the_film_industry
 		icon = GFX_goal_unknown
 		cost = 6.00
 		prerequisite = {
@@ -884,10 +1060,6 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_47
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 44
 		y = 6
 
@@ -898,10 +1070,6 @@ focus_tree = {
 		cost = 6.00
 		prerequisite = {
 			focus = ALF_36
-		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
 		}
 		x = 50
 		y = 4
@@ -915,10 +1083,6 @@ focus_tree = {
 			focus = ALF_39
 			focus = ALF_38
 		}
-		mutually_exclusive = {
-			focus = ALF_8
-			focus = ALF_19
-		}
 		x = 49
 		y = 5
 
@@ -927,81 +1091,182 @@ focus_tree = {
 		id = ALF_59
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 3
+		y = 1
+		relative_position_id = ALF_50
 		prerequisite = {
-			focus = ALF_50
-		}
-		prerequisite = {
+        	focus = ALF_50
 			focus = ALF_51
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 38
-		y = 9
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_56
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_55
 		prerequisite = {
 			focus = ALF_55
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 34
-		y = 12
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_60
 		icon = GFX_goal_unknown
 		cost = 7.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_59
 		prerequisite = {
 			focus = ALF_59
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 38
-		y = 10
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_61
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_60
 		prerequisite = {
 			focus = ALF_60
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 38
-		y = 11
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_62
 		icon = GFX_goal_unknown
 		cost = 8.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_61
 		prerequisite = {
 			focus = ALF_61
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 38
-		y = 12
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_63
 		icon = GFX_goal_unknown
 		cost = 5.00
+		x = -1
+		y = 1
+		relative_position_id = ALF_62
 		prerequisite = {
 			focus = ALF_62
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 37
-		y = 13
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 
 	}
 	focus = {
 		id = ALF_64
 		icon = GFX_goal_unknown
 		cost = 10.00
+		x = 1
+		y = 1
+		relative_position_id = ALF_62
 		prerequisite = {
 			focus = ALF_62
+    	}
+		ai_will_do = {
+				factor = 5
 		}
-		x = 39
-		y = 13
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
 	}
 	focus = {
 		id = ALF_70
@@ -1010,8 +1275,394 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_69
 		}
-		x = 44
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = ALF_69
+		prerequisite = {
+			focus = ALF_69
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = ALF_to_unity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 56
+		y = 1
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Socialist_bulwark
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_to_unity
+		prerequisite = {
+        	focus = ALF_to_unity
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Seattle_s_Air_Defense
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Socialist_bulwark
+		prerequisite = {
+        	focus = ALF_Socialist_bulwark
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Transporting_weapons_to_the_South
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Seattle_s_Air_Defense
+		prerequisite = {
+        	focus = ALF_Seattle_s_Air_Defense
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Organization_of_the_National_Guard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = -4
+		y = 1
+		relative_position_id = ALF_to_unity
+		prerequisite = {
+        	focus = ALF_to_unity
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Allegiance_to_Freedom
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Organization_of_the_National_Guard
+		prerequisite = {
+        	focus = ALF_Organization_of_the_National_Guard
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Free_League_League_Corps
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Allegiance_to_Freedom
+		prerequisite = {
+        	focus = ALF_Allegiance_to_Freedom
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_The_Law_Against_Dissidents
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 4
+		y = 1
+		relative_position_id = ALF_to_unity
+		prerequisite = {
+        	focus = ALF_to_unity
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Incite
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_The_Law_Against_Dissidents
+		prerequisite = {
+			focus = ALF_The_Law_Against_Dissidents
+		}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_integrated
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Incite
+		prerequisite = {
+			focus = ALF_Incite
+		}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_The_Fate_of_America
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Transporting_weapons_to_the_South
+		prerequisite = {
+			focus = ALF_Transporting_weapons_to_the_South
+		}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Recovering_from_Civil_War
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 12
+		y = 6
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_open_economy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_Recovering_from_Civil_War
+		prerequisite = {
+        	focus = ALF_Recovering_from_Civil_War
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ALF_Sacramento_Trials
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 0
+		y = 1
+		relative_position_id = ALF_open_economy
+		prerequisite = {
+        	focus = ALF_open_economy
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ALF_Industrial_Investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = ALF_open_economy
+		prerequisite = {
+        	focus = ALF_open_economy
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
 	}
 }
