@@ -94,7 +94,7 @@ focus_tree = {
 			focus = FRA_next
 		}
 		mutually_exclusive = {
-			focus = FRA_New France
+			focus = FRA_New_France
 			focus = FRA_Laval
 			focus = FRA_Dorio
 		}
@@ -129,7 +129,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Darnand
-			focus = FRA_New France
+			focus = FRA_New_France
 			focus = FRA_Dorio
 		}
 		x = 6
@@ -216,7 +216,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_Darnand
 			focus = FRA_Laval
-			focus = FRA_New France
+			focus = FRA_New_France
 		}
 		x = 11
 		y = 2
@@ -413,7 +413,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Three-year_plan
+		id = FRA_Three_year_plan
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
