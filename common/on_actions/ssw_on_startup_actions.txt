@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+
+			every_country = {
+				limit = { is_ai = no }
+				set_variable = { SSW_Opening_Screen = 1 }
+			}
+
+	}
+}

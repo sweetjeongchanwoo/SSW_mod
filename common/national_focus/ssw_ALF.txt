@@ -1,0 +1,1017 @@
+focus_tree = {
+	id = ALF_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALF
+		}
+	}
+	default = no
+	focus = {
+		id = ALF_Califolnia_plan
+		icon = GFX_goal_generic_construction
+		cost = 5.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = ALF_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 38
+		y = 0
+
+	}
+	focus = {
+		id = ALF_49
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = ALF_Richmond_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Expansion_of_the_San_Francisco Naval_Shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Cooperation_with_Japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Expansion_of_the_San_Francisco Naval_Shipyard
+			focus = ALF_Richmond_Shipyards
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = ALF_California_Shipbuilding_Corporation
+		icon = GFX_goal_generic_navy_battleship
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Cooperation_with_Japan
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = ALF_1
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ALF_2
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_1
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = ALF_3
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_2
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Okies_Employment_Promotion_Act
+		icon = GFX_goal_generic_consumer_goods
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Highway_System
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Okies_Employment_Promotion_Act
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = ALF_L_A_s_synthetic_industry
+		icon = GFX_goal_generic_construction2
+		cost = 9.00
+		prerequisite = {
+			focus = ALF_Okies_Employment_Promotion_Act
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ALF_The_Revival_of_the_Automotive_Industry
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_L_A_s_synthetic_industry
+		}
+		prerequisite = {
+			focus = ALF_Highway_System
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ALF_4
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = ALF_5
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_4
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = ALF_6
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_5
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Expansion_George_Air_Force_Base
+		icon = GFX_goal_generic_air_production
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = ALF_Mergers_in_the_aircraft_industry
+		icon = GFX_goal_generic_production
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Califolnia_plan
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = ALF_McDonnell_Douglas
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_Mergers_in_the_aircraft_industry
+		}
+		prerequisite = {
+			focus = ALF_Expansion_George_Air_Force_Base
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = ALF_The_Land_of_Aircraft
+		icon = GFX_goal_generic_air_fighter
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_McDonnell_Douglas
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = ALF_Industrial_Stabilization
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_The_Revival_of_the_Automotive_Industry
+		}
+		prerequisite = {
+			focus = ALF_The_Land_of_Aircraft
+		}
+		prerequisite = {
+			focus = ALF_California_Shipbuilding_Corporation
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = ALF_8
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_7
+		}
+		mutually_exclusive = {
+			focus = ALF_19
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = ALF_17
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_8
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = ALF_12
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_17
+		}
+		mutually_exclusive = {
+			focus = ALF_10
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = ALF_13
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_12
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = ALF_15
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_8
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = ALF_16
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_15
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = ALF_18
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_16
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = ALF_50
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_49
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = ALF_52
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ALF_50
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = ALF_19
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_7
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_29
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = ALF_20
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_19
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = ALF_21
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_20
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = ALF_22
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_21
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = ALF_23
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_22
+			focus = ALF_18
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = ALF_53
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ALF_50
+		}
+		x = 35
+		y = 9
+
+	}
+	focus = {
+		id = ALF_54
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ALF_53
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = ALF_55
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_54
+		}
+		x = 34
+		y = 11
+
+	}
+	focus = {
+		id = ALF_25
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_19
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = ALF_26
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_25
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = ALF_27
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_26
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = ALF_57
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_54
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = ALF_58
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_57
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = ALF_29
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_7
+		}
+		mutually_exclusive = {
+			focus = ALF_19
+			focus = ALF_33
+		}
+		x = 40
+		y = 1
+
+	}
+	focus = {
+		id = ALF_30
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_29
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = ALF_31
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_30
+		}
+		x = 40
+		y = 3
+
+	}
+	focus = {
+		id = ALF_32
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_31
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = ALF_28
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_32
+			focus = ALF_27
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ALF_51
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_49
+		}
+		x = 41
+		y = 8
+
+	}
+	focus = {
+		id = ALF_65
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ALF_51
+		}
+		x = 41
+		y = 9
+
+	}
+	focus = {
+		id = ALF_71
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_65
+		}
+		x = 40
+		y = 10
+
+	}
+	focus = {
+		id = ALF_44
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_29
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = ALF_45
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_44
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = ALF_46
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_45
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = ALF_69
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = ALF_51
+		}
+		x = 43
+		y = 9
+
+	}
+	focus = {
+		id = ALF_66
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_69
+			focus = ALF_65
+		}
+		x = 42
+		y = 10
+
+	}
+	focus = {
+		id = ALF_67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_66
+		}
+		x = 42
+		y = 11
+
+	}
+	focus = {
+		id = ALF_68
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_67
+		}
+		x = 42
+		y = 12
+
+	}
+	focus = {
+		id = ALF_33
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_7
+		}
+		mutually_exclusive = {
+			focus = ALF_29
+		}
+		x = 49
+		y = 1
+
+	}
+	focus = {
+		id = ALF_41
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_33
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 46
+		y = 2
+
+	}
+	focus = {
+		id = ALF_42
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_41
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 46
+		y = 3
+
+	}
+	focus = {
+		id = ALF_43
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_42
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = ALF_47
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_43
+			focus = ALF_46
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = ALF_34
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_33
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = ALF_35
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_34
+		}
+		mutually_exclusive = {
+			focus = ALF_36
+		}
+		x = 48
+		y = 3
+
+	}
+	focus = {
+		id = ALF_38
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_35
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = ALF_Development_of_the_film industry
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_Industrial_Stabilization
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = ALF_10
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_17
+		}
+		mutually_exclusive = {
+			focus = ALF_12
+		}
+		x = -1
+		y = 2
+		relative_position_id = ALF_8
+
+	}
+	focus = {
+		id = ALF_11
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_10
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = ALF_14
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_13
+		}
+		prerequisite = {
+			focus = ALF_11
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = ALF_36
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_34
+		}
+		mutually_exclusive = {
+			focus = ALF_35
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = ALF_24
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_23
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = ALF_48
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_47
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = ALF_39
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_36
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = ALF_40
+		icon = GFX_goal_unknown
+		cost = 6.00
+		prerequisite = {
+			focus = ALF_39
+			focus = ALF_38
+		}
+		mutually_exclusive = {
+			focus = ALF_8
+			focus = ALF_19
+		}
+		x = 49
+		y = 5
+
+	}
+	focus = {
+		id = ALF_59
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_50
+		}
+		prerequisite = {
+			focus = ALF_51
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = ALF_56
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_55
+		}
+		x = 34
+		y = 12
+
+	}
+	focus = {
+		id = ALF_60
+		icon = GFX_goal_unknown
+		cost = 7.00
+		prerequisite = {
+			focus = ALF_59
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = ALF_61
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_60
+		}
+		x = 38
+		y = 11
+
+	}
+	focus = {
+		id = ALF_62
+		icon = GFX_goal_unknown
+		cost = 8.00
+		prerequisite = {
+			focus = ALF_61
+		}
+		x = 38
+		y = 12
+
+	}
+	focus = {
+		id = ALF_63
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ALF_62
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = ALF_64
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_62
+		}
+		x = 39
+		y = 13
+
+	}
+	focus = {
+		id = ALF_70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ALF_69
+		}
+		x = 44
+		y = 10
+
+	}
+}
