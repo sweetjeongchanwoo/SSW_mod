@@ -63,6 +63,9 @@ focus_tree = {
 		cost = 5.00
 		x = 6
 		y = 1
+		prerequisite = {
+			focus = FRA_Review_ecomoy
+		}
 
 	}
 	focus = {
@@ -71,13 +74,16 @@ focus_tree = {
 		cost = 5.00
 		x = 42
 		y = 3
+		prerequisite = {
+			focus = FRA_Blitzkrieg
+		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1
 				uses = 2
 				category = armor
-				}
+			}
 		}
 	}
 	focus = {
@@ -327,7 +333,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_New France
+		id = FRA_New_France
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -349,7 +355,7 @@ focus_tree = {
 		icon = GFX_goal_generic_war_with_comintern
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_New France
+			focus = FRA_New_France
 		}
 		mutually_exclusive = {
 			focus = FRA_Resumption_of_Election_Politics
@@ -363,7 +369,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_First_People's_Council
+		id = FRA_First_Peoples_Council
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -381,7 +387,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_First_People's_Council
+			focus = FRA_First_Peoples_Council
 		}
 		mutually_exclusive = {
 			focus = FRA_Marxism_Leninism
@@ -396,7 +402,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_First_People's_Council
+			focus = FRA_First_Peoples_Council
 		}
 		mutually_exclusive = {
 			focus = FRA_Populism
@@ -433,7 +439,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_First_People's_Council
+			focus = FRA_First_Peoples_Council
 		}
 		mutually_exclusive = {
 			focus = FRA_Populism
@@ -465,14 +471,13 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
-
 	}
 	focus = {
 		id = FRA_Resumption_of_Election_Politics
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_New France
+			focus = FRA_New_France
 		}
 		mutually_exclusive = {
 			focus = FRA_Rise_of_Communism
@@ -483,7 +488,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = Democratic_Republic_under_themilitary_junta
 		}
-
 	}
 	focus = {
 		id = FRA_Resurrection_of_Parliament
@@ -688,7 +692,7 @@ focus_tree = {
 			focus = FRA_Military_Plan
 		}
 		mutually_exclusive = {
-			focus = FRA_Establishment _of _Entente_Camp
+			focus = FRA_Establishment_of_Entente_Camp
 			focus = FRA_Establishment_of_Fifth_International
 		}
 		x = 24
@@ -696,7 +700,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Establishment _of _Entente_Camp
+		id = FRA_Establishment_of_Entente_Camp
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -719,7 +723,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Maintain_the_status_quo
-			focus = FRA_Establishment _of _Entente_Camp
+			focus = FRA_Establishment_of_Entente_Camp
 		}
 		x = 28
 		y = 12
@@ -731,7 +735,7 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = FRA_Establishment_of_Fifth_International
-			focus = FRA_Establishment _of _Entente_Camp
+			focus = FRA_Establishment_of_Entente_Camp
 			focus = FRA_Maintain_the_status_quo
 		}
 		x = 26
@@ -784,7 +788,7 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		cost = 3.00
 		prerequisite = {
-			focus = FRA_New France
+			focus = FRA_New_France
 		}
 		mutually_exclusive = {
 			focus = FRA_Rise_of_Communism
@@ -795,7 +799,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Bourbon's_Return
+		id = FRA_Bourbons_Return
 		icon = GFX_goal_unknown
 		cost = 2.00
 		prerequisite = {
@@ -817,7 +821,7 @@ focus_tree = {
 			focus = FRA_Rise_of_the_Monarchiens
 		}
 		mutually_exclusive = {
-			focus = FRA_Bourbon's_Return
+			focus = FRA_Bourbons_Return
 			focus = FRA_Return_of_Bonapardo
 		}
 		x = 30
@@ -830,7 +834,7 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = FRA_Return_of_Orleans
-			focus = FRA_Bourbon's_Return
+			focus = FRA_Bourbons_Return
 		}
 		mutually_exclusive = {
 			focus = FRA_Authoritative_Monarchy
@@ -869,7 +873,7 @@ focus_tree = {
 			focus = FRA_Rise_of_the_Monarchiens
 		}
 		mutually_exclusive = {
-			focus = FRA_Bourbon's_Return
+			focus = FRA_Bourbons_Return
 			focus = FRA_Return_of_Orleans
 		}
 		x = 32
@@ -912,9 +916,9 @@ focus_tree = {
 		}
 		x = 30
 		y = 7
-			completion_reward = {
+		completion_reward = {
 
-}
+		}
 
 	}
 	focus = {
@@ -969,7 +973,6 @@ focus_tree = {
 				remove_idea = Confusion_of_the_General_Staff_2
 			}
 		}
-
 	}
 	focus = {
 		id = FRA_Modernization_of_equipment
@@ -1066,36 +1069,13 @@ focus_tree = {
 				remove_idea = Confusion_of_the_General_Staff_2
 			}
 		}
-
-	}
-	focus = {
-		id = FRA_102
-		icon = GFX_focus_generic_tank_production
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Blitzkrieg
-		}
-		prerequisite = {
-			focus = FRA_Blitzkrieg
-		}
-		x = 42
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-						name = armor_bonus
-						bonus = 1
-						uses = 2
-						category = armor
-			}
-		}
-
 	}
 	focus = {
 		id = FRA_Strengthening_French_tanks
 		icon = GFX_goal_unknown
 		cost = 8.00
 		prerequisite = {
-			focus = FRA_102
+			focus = FRA_French_tank
 		}
 		x = 42
 		y = 4
@@ -1150,7 +1130,6 @@ focus_tree = {
 				remove_idea = Confusion_of_the_General_Staff_2
 			}
 		}
-
 	}
 	focus = {
 		id = FRA_Planned_Offensive
