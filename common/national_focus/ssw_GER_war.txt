@@ -517,47 +517,4 @@ focus_tree = {
 			add_ideas = GER_Focke_Wulf
 		}
 	}
-	
-	focus = {
-		id = JGB_end
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = JGB_totugekitai
-		}
-		available = {
-			NOT = {
-				country_exists = HGR
-			}
-			NOT = {
-				country_exists = HLH
-			}
-			NOT = {
-				country_exists = LTV
-			}
-		}
-		x = 9
-		y = 9
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			custom_effect_tooltip = JGB_new_NF
-			hidden_effect = {
-				delete_unit_template_and_units = {
-					Division_template = "Civil-war-division"
-				}
-				delete_unit_template_and_units = {
-					Division_template = "Artillery-division"
-				}
-				load_focus_tree = ssw_Gebbels_Germany_focus
-				add_ideas = Scars_of_the_civil_war
-				add_ideas = Resistance_Gering
-				add_ideas = Resistance_himmler
-				add_ideas = Resistance_Popular_Front
-			}
-		}
-	}
 }

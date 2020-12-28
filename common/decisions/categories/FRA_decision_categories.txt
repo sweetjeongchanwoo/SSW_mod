@@ -1,0 +1,48 @@
+FRA_petan_die = { #ID
+    priority = 100
+    icon = intervention_overseas
+	
+    allowed = {
+	    original_tag = FRA
+    }
+
+    visible = {
+        has_country_flag 
+    }
+}
+FRA_Darnand_leader = {
+    priority = 100
+    icon = intervention_overseas
+
+    allowed = {
+        original_tag = FRA
+    }
+
+    visible = {
+        has_country_flag 
+    }
+}
+FRA_Laval_leader = {
+    priority = 100
+    icon = intervention_overseas
+
+    allowed = {
+        original_tag = FRA
+    }
+
+    visible = {
+        has_country_flag 
+    }
+}
+FRA_Doriot_leader = {
+    priority = 100
+    icon = intervention_overseas
+
+    allowed = {
+        original_tag = FRA
+    }
+
+    visible = {
+        has_country_flag 
+    }
+}

@@ -25,7 +25,7 @@ division_template = {
 		militia = { x = 0 y = 1 }
 		militia = { x = 0 y = 2 }
    		militia = { x = 1 y = 0 }
-		miliria = { x = 1 y = 1 }
+		militia = { x = 1 y = 1 }
 	}
 }
 
@@ -187,104 +187,10 @@ units = {
 		division_template = "Goebbels Armee"
 		start_experience_factor = 0.3
 	}
-	division= {
-		name = "4.Goebbels Armee"
-		location = 6521
-		division_template = "Goebbels Armee"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "1.Goebbels Armee"
-		location = 6521
-		division_template = "Goebbels Armee"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "2.Goebbels Armee"
-		location = 6521
-		division_template = "Goebbels Armee"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "3.Goebbels Armee"
-		location = 6521
-		division_template = "Goebbels Armee"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "4.Goebbels Armee"
-		location = 6521
-		division_template = "Goebbels Armee"
-		start_experience_factor = 0.3
-	}
-	
-
-
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9388
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 23
 		}
 		location = 9388
 		division_template = "Deutscher Volkssturm"
@@ -300,15 +206,12 @@ units = {
 		division_template = "Deutscher Volkssturm"
 		start_experience_factor = 0.1
 	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
+	
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3340
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -321,14 +224,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3258
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -341,44 +241,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 26
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3367
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 11219
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 27
-		}
-		location = 11219
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 11359
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -391,14 +258,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 11359
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -411,24 +275,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 11359
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
-		location = 11359
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -451,14 +302,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 29
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3522
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 	
 	division= {	
@@ -471,14 +319,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 30
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 6487
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 	
 	division= {	
@@ -491,14 +336,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 425
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 	
 	division= {	
@@ -511,14 +353,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3561
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 	
 	division= {	
@@ -531,42 +370,11 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
+	division= {
+		name = "1.Goebbels Armee"
 		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
+		division_template = "Goebbels Armee"
+		start_experience_factor = 0.3
 	}
 
 	division= {	
@@ -589,25 +397,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location = 3500
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 
 	
 	division= {	
@@ -620,15 +409,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 34
-		}
-		location = 482
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -640,15 +420,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 35
-		}
-		location = 9497
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -660,15 +431,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 36
-		}
-		location = 9441
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -680,15 +442,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 37
-		}
-		location = 6470
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -720,15 +473,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 39
-		}
-		location = 9555
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -740,15 +484,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 40
-		}
-		location = 7857
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -760,15 +495,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location = 5283
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 	
 	division= {	
 		division_name = {
@@ -780,15 +506,6 @@ units = {
 		start_experience_factor = 0.1
 	}
 
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 543
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
 
 	division= {	
 		division_name = {
@@ -804,46 +521,6 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
-		}
-		location = 543
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 543
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 543
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 543
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 42
 		}
 		location = 543
 		division_template = "Deutscher Volkssturm"
@@ -899,44 +576,13 @@ units = {
 		division_template = "Deutscher Volkssturm"
 		start_experience_factor = 0.1
 	}
-
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 557
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 557
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 557
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 557
-		division_template = "Deutscher Volkssturm"
+		location = 6521
+		division_template = "Wehrmacht"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -944,8 +590,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 3646
-		division_template = "Deutscher Volkssturm"
+		location = 6521
+		division_template = "Wehrmacht"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -953,98 +599,8 @@ units = {
 			is_name_ordered = yes
 			name_order = 44
 		}
-		location = 3666
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 698
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 521
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 11516
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 5291
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 3646
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 3666
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 698
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 521
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 11516
-		division_template = "Deutscher Volkssturm"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location = 5291
-		division_template = "Deutscher Volkssturm"
+		location = 6521
+		division_template = "Wehrmacht"
 		start_experience_factor = 0.1
 	}
 	division= {	

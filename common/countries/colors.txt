@@ -1384,11 +1384,6 @@ BRN = {	#ブルネイ
 	color_ui = rgb { 245 225 20 }
 }
 
-VFR = {	#ヴィシー・フランス
-	color = rgb { 80 168 181 }
-	color_ui = rgb { 80 168 181 }
-}
-
 RIF = {	#リーフ
 	color = rgb { 0 100 50 }
 	color_ui = rgb { 0 100 50 }
@@ -1572,6 +1567,56 @@ DET = {	#ドニエストル
 PET = {	#ペテルブルク
 	color = rgb { 237 28 36 }
 	color_ui = rgb { 237 28 36 }
+}
+
+BUR = {	#ブリヤート
+	color = rgb { 0 57 166 }
+	color_ui = rgb { 0 57 166 }
+}
+
+ALT = {	#アルタイ
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 51 153 255 }
+}
+
+KBR = {	#カバルダ・バルカル
+	color = rgb { 137 173 130 }
+	color_ui = rgb { 137 173 130 }
+}
+
+NOS = {	#北オセチア
+	color = rgb { 124 141 140 }
+	color_ui = rgb { 124 141 140 }
+}
+
+SOS = {	#南オセチア
+	color = rgb { 255 141 140 }
+	color_ui = rgb { 255 141 140 }
+}
+
+CHE = {	#チェチェン
+	color = rgb { 43 115 56 }
+	color_ui = rgb { 43 115 56 }
+}
+
+DAG = {	#ダゲスタン
+	color = rgb { 214 189 239 }
+	color_ui = rgb { 214 189 239 }
+}
+
+ING = {	#イングーシ
+	color = rgb { 255 221 30 }
+	color_ui = rgb { 255 221 30 }
+}
+
+KRC = {	#カラチャイ・チェルケス
+	color = rgb { 193 147 154 }
+	color_ui = rgb { 193 147 154 }
+}
+
+EKA = {	#エカテリノダール
+	color = rgb { 193 147 154 }
+	color_ui = rgb { 193 147 154 }
 }
 
 HGR = {

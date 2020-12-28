@@ -1,0 +1,39 @@
+RU0 = {	#ロシア帝国
+	orginal_tag = RUS
+	has_country_flag = MOS_empire_countryflag
+}
+
+RU1 = {	#ロシア自由主義共和国
+	original_tag = RUS
+	has_country_flag = MOS_liberalist_countryflag
+}
+
+RU2 = {	#ロシア貴族評議会
+	original_tag = RUS
+	has_country_flag = MOS_nobles_countryflag
+}
+
+RU3 = {	#大主教領
+	original_tag = RUS
+	has_country_flag = MOS_archbishop_countryflag
+}
+
+RU4 = {	#ロシアの空解放同盟
+	original_tag = RUS
+	has_country_flag = MOS_rall_countryflag
+}
+
+RU5 = {	#全ロシア民族解放統一戦線
+	original_tag = RUS
+	has_country_flag = MOS_arufnl_countryflag
+}
+
+RU6 = {	#大天使ミハイル国
+	original_tag = RUS
+	has_country_flag = MOS_mikhail_countryflag
+}
+
+RU7 = {	#ブラック・オーダー
+	original_tag = RUS
+	has_country_flag = MOS_blackorder_countryflag
+}

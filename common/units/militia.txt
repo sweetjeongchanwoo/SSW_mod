@@ -1,6 +1,6 @@
 sub_units = {
 
-militia = {
+	militia = {
 		sprite = infantry
 		map_icon_category = infantry
 
