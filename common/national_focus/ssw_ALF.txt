@@ -1665,4 +1665,30 @@ focus_tree = {
 
 		}
 	}
+
+	focus = {
+		id = ALF_Rebuilding_infrastructure
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = -2
+		y = 1
+		relative_position_id = ALF_open_economy
+		prerequisite = {
+        	focus = ALF_open_economy
+    	}
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+	}
 }

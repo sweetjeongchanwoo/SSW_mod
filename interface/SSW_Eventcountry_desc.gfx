@@ -65,4 +65,14 @@ spriteTypes = {
 		name = "GFX_SSW_OpeningScreen_Poster_Japan"
 		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_Japan.dds"
 	}
+
+	spriteType = {
+		name = "GFX_SSW_OpeningScreen_Poster_Serbia"
+		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_Serbia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SSW_OpeningScreen_Poster_Portugal"
+		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_Portugal.dds"
+	}
 }
