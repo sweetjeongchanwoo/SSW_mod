@@ -7,7 +7,17 @@ ALF_cat_dec_Militia  = { #カテゴリーID
     	tag = ALF #この場合、ディシジョンを踏める
 	}
 
-#    visible = {
-#        has_completed_focus = ALF_Organization_of_the_National_Guard #見えるようになる条件
-#    }
+    visible = {
+        has_completed_focus = ALF_Organization_of_the_National_Guard #見えるようになる条件
+    }
+}
+
+ALF_cat_dec_infullence_mafia  = { #カテゴリーID
+	priority = 100 #優先順位
+	icon = gre_investment_decisions #アイコン
+    picture = government_in_exile #説明の画像
+
+	available = {
+    	tag = ALF #この場合、ディシジョンを踏める
+	}
 }
