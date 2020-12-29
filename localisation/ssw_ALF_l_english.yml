@@ -162,8 +162,16 @@
  ALF_realignment_of_American_forces:0 "米軍再編"
  ALF_realignment_of_American_forces_desc:0 "準備は整った。再び、世界を警察するための崇高なるアメリカ陸軍を立て直す必要がある。"
 
-
-
 #国民精神
  SSW_ideas_ALF_industry_ploblems:0 "産業の諸問題"
  SSW_ideas_ALF_industry_ploblems_desc:0 "我が国の産業は、内戦による多くの問題を抱えている。"
+ SSW_ideas_ALF_Okies:0 "オーキー雇用法"
+ SSW_ideas_ALF_Okies_desc:0 "オクラホマの失業者達を受け入れ、内戦の勝利のための糧とする。"
+ SSW_ideas_ALF_science_war:0 "科学戦"
+
+#ディシジョン
+ ALF_cat_dec_Militia:0 "民兵の募集"
+ alf_dec_militia_Washington:0 "ワシントンでの民兵の徴募"
+
+#ツールチップ
+ SSW_militia_was_tt:0 "§Gワシントンで民兵を募集することができる§!"

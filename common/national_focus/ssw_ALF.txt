@@ -12,9 +12,67 @@ focus_tree = {
 	focus = {
 		id = ALF_Califolnia_plan
 		icon = GFX_goal_generic_construction
-		cost = 5.00
+		cost = 3.00
 		x = 12
 		y = 0
+		ai_will_do = {
+				factor = 100
+		}
+		available = {
+		}
+		bypass = {
+			LFF = {
+				exists = no
+			}
+			UTC = {
+				exists = no
+			}
+			FSA = {
+				exists = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			897 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			898 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			378 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -23,7 +81,29 @@ focus_tree = {
 		cost = 5.00
 		x = 38
 		y = 0
-
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+		}
+		bypass = {
+			LFF = {
+				exists = no
+			}
+			UTC = {
+				exists = no
+			}
+			FSA = {
+				exists = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = ALF_49
@@ -120,6 +200,22 @@ focus_tree = {
 		}
 		x = 12
 		y = 1
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = {
+				SSW_ideas_ALF_Okies
+			}
+		}
 
 	}
 	focus = {
@@ -546,7 +642,33 @@ focus_tree = {
 		}
 		x = 36
 		y = 3
-
+		ai_will_do = {
+			factor = 70
+		}
+		available = {
+		}
+		bypass = {
+			LFF = {
+				exists = no
+			}
+			UTC = {
+				exists = no
+			}
+			FSA = {
+				exists = no
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = ALF_27
@@ -1085,7 +1207,20 @@ focus_tree = {
 		}
 		x = 49
 		y = 5
-
+		ai_will_do = {
+				factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = SSW_ideas_ALF_science_war
+		}
 	}
 	focus = {
 		id = ALF_59
@@ -1300,28 +1435,40 @@ focus_tree = {
 	focus = {
 		id = ALF_to_unity
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		x = 56
 		y = 1
 		ai_will_do = {
-				factor = 5
+				factor = 100
 		}
 		available = {
+			has_war_support > 0.7
 		}
 		bypass = {
+			LFF = {
+				exists = no
+			}
+			UTC = {
+				exists = no
+			}
+			FSA = {
+				exists = no
+			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-
+			add_war_support = 0.05
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = ALF_Socialist_bulwark
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 4
 		x = 0
 		y = 1
 		relative_position_id = ALF_to_unity
@@ -1340,7 +1487,30 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 1756
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = 10573
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6897
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 4796
+			}
 		}
 	}
 	focus = {
