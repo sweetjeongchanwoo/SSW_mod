@@ -90,13 +90,6 @@ country_event = {
 			elections_allowed = no
 		}
 		if = {
-			limit = { has_idea = ssw_despotism }
-			swap_ideas = {
-				remove_idea = ssw_despotism
-				add_idea = ssw_military_dictatorship
-			}
-		}
-		if = {
 			limit = { has_idea = rus_debahu2 }
 			remove_ideas = rus_debahu2
 		}
@@ -110,11 +103,6 @@ country_event = {
 		complete_national_focus = RUS_the_great_coup
 		hidden_effect = {
 			news_event = { id = ssw_rus_elections.4 hours = 6 }
-			set_party_name = {
-				ideology = authority_despotism
-				long_name = rus_ideas_38
-				name = rus_ideas_38
-			}
 			create_country_leader = {
 				name = "Andrey Vlasov"
 				desc = "POLITICS_ANDREY_VLASOV_DESC"
@@ -132,6 +120,7 @@ news_event = {
 	title = ssw_rus_elections.4.title
 	desc = ssw_rus_elections.4.desc
 	picture = GFX_news_event_008
+	major = yes
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_elections.4.a

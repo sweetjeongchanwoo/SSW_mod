@@ -1,8 +1,8 @@
-division_template = {
-	name = "Infantry Division"
+division_template = { #師団のテンプレート
+	name = "Infantry Division" #師団の名前
 	
-	regiments = {
-		infantry = { x = 0 y = 0 }
+	regiments = { #師団の配置
+		infantry = { x = 0 y = 0 } #師団の配置（位置） infantry = 歩兵
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
@@ -13,7 +13,7 @@ division_template = {
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
 	}
-    support = {
+    support = { #支援中隊
         engineer = { x = 0 y = 0 }
         recon = { x = 0 y = 1 }
         field_hospital = { x = 0 y = 2 }
@@ -21,15 +21,107 @@ division_template = {
         artillery = { x = 0 y = 4 }
     }
 }
-units = {
+division_template = { #師団のテンプレート
+	name = "Militia" #師団の名前
 	
-	division = {
-		name = "Infantry Division"
-		location = 9814
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 0.9
+	regiments = { #師団の配置
+		militia = { x = 0 y = 0 } #師団の配置（位置）
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+		militia = { x = 0 y = 4 }
 	}
-	
-
+}
+units = { #初期師団
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 9814 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_equipment_factor = 1 #充足
+		start_experience_factor = 0.5 #経験値
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 9671 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 9713 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 7315 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 1756 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 10573 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 6899 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 4796 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 10602 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 10672 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 4668 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 10582 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
+	division = { #師団
+		name = "Infantry Division" #ここに師団名を書く
+		location = 12124 #配置するプロビ
+		division_template = "Infantry Division" #テンプレート
+		start_experience_factor = 0.5 #経験値
+		start_equipment_factor = 1 #充足
+	}
 }
