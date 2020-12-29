@@ -51,7 +51,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 1
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 	focus = {
 		id = sia_anti_china_rhetoric
@@ -119,7 +126,14 @@ focus_tree = {
 		}
 		x = 10
 		y = 3
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 	focus = {
 		id = sia_new_government_organization
@@ -130,7 +144,14 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_political_power = 120
+		}
 	}
 	focus = {
 		id = sia_coap_failure
