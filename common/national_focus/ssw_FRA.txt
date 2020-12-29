@@ -465,7 +465,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_Three-year_plan
+			focus = FRA_Three_year_plan
 			focus = FRA_Art_is_a_revolution
 			focus = FRA_Do_not_extinguish_the_blackflame
 		}
