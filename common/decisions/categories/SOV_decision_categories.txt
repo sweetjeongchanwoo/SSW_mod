@@ -8,6 +8,16 @@ RUS_the_seeds_of_revolution = {
 		has_completed_focus = RUS_global_defense_council
 	}
 }
+RUS_ussr_revives = {
+	icon = generic_formable_nations
+	picture = GFX_decision_soviet_union
+	allowed = { tag = RUS }
+	visible = {
+		has_completed_focus = RUS_revive_soviet
+		has_idea = RUS_soviet_heritage
+		tag = RUS
+	}
+}
 reintegrate_states = {
 	allowed = {
 		OR = {
