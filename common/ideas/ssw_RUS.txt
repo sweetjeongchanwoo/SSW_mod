@@ -28,8 +28,8 @@ ideas = {
 		}
 	}
 	political_leader = {
-		RUS_sascha_schapiro = {
-			picture = SSW_RUS_sascha_schapiro
+		RUS_andrey_vlasov = {
+			picture = SSW_RUS_andrey_vlasov
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = lock_minister_available_tt
@@ -38,10 +38,10 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
-			traits = { anarchist_zeal }
+			traits = { father_of_russia_rebuild }
 			ai_will_do = { factor = 1 }
+			cancel_if_invalid = no
 		}
 		RUS_vladimir_kryuchkov = {
 			picture = SSW_RUS_vladimir_kryuchkov
@@ -53,87 +53,10 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { president_of_the_council_of_ministers }
 			ai_will_do = { factor = 1 }
-		}
-		RUS_alexander_kerensky_political_leader = {
-			picture = alexander_kerensky
-			#picture = konstantin_rokossovsky
-			name = alexander_kerensky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { resolute_social_democrat }
-			ai_will_do = { factor = 1 }
-		}
-		RUS_ariadna_tyrkova_williams = {
-			picture = SSW_RUS_ariadna_tyrkova_williams
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { silent_workhorse }
-			ai_will_do = { factor = 1 }
-		}
-		RUS_felix_yusupov = {
-			picture = SSW_RUS_felix_yusupov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { conservative_grandee }
-			ai_will_do = { factor = 1 }
-		}
-		RUS_andrey_vlasov = {
-			picture = SSW_RUS_andrey_vlasov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { father_of_russia_rebuild }
-			ai_will_do = { factor = 1 }
-		}
-		RUS_poa = {
-			picture = SSW_RUS_poa
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { strong_organization }
-			ai_will_do = { factor = 1 }
 		}
 		RUS_konstantin_rodzaevsky_political_leader = {
 			picture = konstantin_rodzaevsky
@@ -166,124 +89,31 @@ ideas = {
 			traits = { tenacious_negotiator }
 			ai_will_do = { factor = 1 }
 		}
-		RUS_igor_ivanovich_sikorsky = {
-			picture = SSW_RUS_igor_ivanovich_sikorsky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { inventive_genius }
-			ai_will_do = { factor = 1 }
-		}
 	}
 	minister_of_foreign_affairs = {
-		RUS_serafima_hopner = {
-			picture = SSW_RUS_serafima_hopner
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = {
-				militant_socialist
-				red_suffragette
-			}
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
 		RUS_alexander_kerensky = {
-			picture = alexander_kerensky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
+			picture = SSW_RUS_alexander_kerensky
+			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
 			allowed = { original_tag = RUS }
 			traits = { good_at_trading }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_ivan_ilyin = {
-			picture = SSW_RUS_ivan_ilyin
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { rearmer }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_nikolai_khokhlov = {
-			picture = SSW_RUS_nikolai_khokhlov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { tenacious_negotiator }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_arseny_nesmelov = {
-			picture = SSW_RUS_arseny_nesmelov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { hawk }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_boris_brasol = {
-			picture = SSW_RUS_boris_brasol
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { prince_of_terror }
-			cost = 0
+			cost = 150
 			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_finance = {
+		konstantin_rodzaevsky = {
+			picture = konstantin_rodzaevsky
+			available = {
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_idea = RUS_pavel_sudoplatov
+				}
+			}
+			allowed = { original_tag = RUS }
+			traits = { active_nationalist }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
 		RUS_pavel_sudoplatov = {
 			picture = SSW_RUS_pavel_sudoplatov
 			available = {
@@ -291,6 +121,11 @@ ideas = {
 					tooltip = lock_minister_available_tt
 					always = no
 					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+				OR = {
+					has_government = anarchism
+					has_government = progressive_communism
+					has_government = classical_communism
 				}
 			}
 			removal_cost = -1
@@ -300,224 +135,32 @@ ideas = {
 			cost = 0
 			ai_will_do = { factor = 1 }
 		}
-		RUS_anna_wolkoff = {
-			picture = SSW_RUS_anna_wolkoff
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { economist }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_sofia_panina = {
-			picture = SSW_RUS_sofia_panina
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { financial_expert }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		konstantin_rodzaevsky = {
-			picture = konstantin_rodzaevsky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { active_nationalist }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_lev_okhotin = {
-			picture = SSW_RUS_lev_okhotin
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { war_profiteer }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
 	}
 	minister_of_interior = {
-		RUS_fyodor_kulakov = {
-			picture = SSW_RUS_fyodor_kulakov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { education_reformer }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
 		RUS_vladimir_nabokov = {
 			picture = SSW_RUS_vladimir_nabokov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
+			available = { NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED } }
 			allowed = { original_tag = RUS }
 			traits = { kind_liberal }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_igor_stravinsky = {
-			picture = SSW_RUS_igor_stravinsky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = {
-				compassionate_gentleman
-				anti_communist
-			}
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_nikolai_markov = {
-			picture = SSW_RUS_nikolai_markov
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { economic_organizer }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_sergey_taboritsky = {
-			picture = SSW_RUS_sergey_taboritsky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { genial_anti_revolutionary }
-			cost = 0
+			cost = 150
 			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_army = {
-		RUS_konstantin_vershinin = {
-			picture = SSW_RUS_konstantin_vershinin
-			name = konstantin_vershinin
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { experienced_in_the_red_army_era }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_sergei_bunyachenko = {
-			picture = SSW_RUS_sergei_bunyachenko
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { armaments_organizer }
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
-		RUS_bronislav_kaminski = {
-			picture = SSW_RUS_bronislav_kaminski
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = {
-				armaments_aficionado
-				fascist_militia_leader
-			}
-			cost = 0
-			ai_will_do = { factor = 1 }
-		}
 		RUS_andrey_vlasov_minister_of_army = {
 			name = RUS_andrey_vlasov
 			picture = SSW_RUS_andrey_vlasov
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				NOT = {
+					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
+					has_government = anarchism
+					has_government = progressive_communism
+					has_government = classical_communism
 				}
 			}
-			removal_cost = -1
-			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { former_white_army }
-			cost = 0
+			cost = 150
 			ai_will_do = { factor = 1 }
 		}
 	}
@@ -2136,19 +1779,6 @@ ideas = {
 				conscription = 0.05
 				conscription_factor = 0.20
 				training_time_factor = -0.1
-			}
-		}
-		rus_ideas_40 = {
-			allowed = { original_tag = RUS }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			picture = generic_communism_drift_bonus
-			modifier = {
-				conscription = 0.03
-				conscription_factor = 0.25
-				training_time_factor = -0.2
-				stability_factor = 0.05
-				war_support_factor = 0.05
 			}
 		}
 	}

@@ -677,38 +677,3 @@ RUS_the_seeds_of_revolution = {
 		}
 	}
 }
-RUS_ussr_revives = {
-	formable_ussr = {
-		icon = generic_form_nation
-		available = {
-			has_completed_focus = RUS_revive_soviet
-			146 = { is_core_of = RUS }
-			147 = { is_core_of = RUS }
-			722 = { is_core_of = RUS }
-			all_state = { 
-				OR = {
-					NOT = { is_core_of = RUS }
-					is_controlled_by = RUS
-				}
-			}
-		}
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = { factor = 10 }
-		visible = {
-			has_completed_focus = RUS_revive_soviet
-			has_idea = RUS_soviet_heritage
-			tag = RUS
-		}
-		complete_effect = {
-			set_cosmetic_tag = SOV
-			if = {
-				limit = { NOT = { has_idea = rus_ideas_40 } }
-				swap_ideas = {
-					remove_idea = RUS_soviet_heritage
-					add_idea = rus_ideas_40
-				}
-			}
-		}
-	}
-}

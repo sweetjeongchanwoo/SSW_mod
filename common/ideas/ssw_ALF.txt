@@ -16,34 +16,5 @@ ideas = {
                 production_speed_buildings_factor = -0.1
 			}
 		}
-		SSW_ideas_ALF_Okies = {  #ID
-			allowed = { 
-				always = yes
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = -1 
-			picture = generic_goods_red_bonus 
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-			}
-		}
-
-		SSW_ideas_ALF_science_war = {  #ID
-			allowed = { 
-				always = yes
-			}
-			allowed_civil_war = {
-				always = no
-			}
-			removal_cost = -1 
-			picture = generic_goods_red_bonus 
-			research_bonus = {
-				land_doctrine = 0.1
-			}
-		}
     }
 }

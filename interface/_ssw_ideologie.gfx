@@ -5,11 +5,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_progressive_communism_group"
-		texturefile = "gfx/interface/ideologies/progressive_communism.dds"
+		texturefile = "gfx/interface/ideologies/.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_classical_communism_group"
-		texturefile = "gfx/interface/ideologies/classical_communism.dds"
+		texturefile = "gfx/interface/ideologies/.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_social_democracy_group"
@@ -29,7 +29,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_authority_despotism_group"
-		texturefile = "gfx/interface/ideologies/authority_despotism.dds"
+		texturefile = "gfx/interface/ideologies/.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_national_fascism_group"
@@ -41,6 +41,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_corporatocracism_group"
-		texturefile = "gfx/interface/ideologies/corporatocracism.dds"
+		texturefile = "gfx/interface/ideologies/.dds"
 	}
 }

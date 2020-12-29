@@ -219,6 +219,10 @@ country_event = {
 			ruling_party = classical_communism
 			elections_allowed = no
 		}
+		add_ideas = {
+			RUS_vladimir_kryuchkov
+			ssw_one_party_dictatorship
+		}
 		add_stability = -0.05
 		complete_national_focus = RUS_rise_of_the_communist_republic
 		hidden_effect = {
@@ -236,7 +240,6 @@ news_event = {
 	title = ssw_rus_communism.1006.title
 	desc = ssw_rus_communism.1006.desc
 	picture = GFX_news_event_french_parade
-	major = yes
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_communism.1006.a
@@ -264,7 +267,6 @@ news_event = {
 	title = ssw_rus_communism.1007.title
 	desc = ssw_rus_communism.1007.desc
 	picture = GFX_news_event_french_parade
-	major = yes
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_communism.1007.a
@@ -334,6 +336,7 @@ country_event = {
 			ruling_party = anarchism
 			elections_allowed = no
 		}
+		add_ideas = ssw_collectivist_anarchism
 		hidden_effect = {
 			retire_ideology_leader = classical_communism
 			complete_national_focus = RUS_anarchist_politics
@@ -345,7 +348,6 @@ news_event = {
 	title = ssw_rus_communism.1009.title
 	desc = ssw_rus_communism.1009.desc
 	picture = GFX_news_event_french_parade
-	major = yes
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_communism.1009.a

@@ -128,7 +128,6 @@
  RUS_social_liberalism_party:0 "ロシア立憲自由党"
  RUS_social_conservatism_party:0 "祖国党"
  RUS_authority_democracy_party:0 "ロシア愛国同盟"
- RUS_authority_despotism_party:0 "軍事政権"
  RUS_national_fascism_party:0 "全ロシア国家革命労働者党"
  RUS_national_socialism_party:0 "ロシア・ファシスト党"
  RUS_corporatocracism_party:0 "自由経済企業連盟"
@@ -155,6 +154,10 @@
  MEX_corporatocracism_party:0 "PEMEX"
 
 #ソビエト
+ SOV_communism_party:0 "全連邦共産党(正統派)"
+ SOV_democratic_party:0 "トルドヴィキ(中道派)"
+ SOV_fascism_party:0 "ロシア・ファシスト党"
+ SOV_neutrality_party:0 "軍事政権"
  SOV_anarchism_party:0 "武装労働者戦線"
  SOV_progressive_communism_party:0 "全連邦共産党(革新派)"
  SOV_classical_communism_party:0 "全連邦共産党(穏健派)"

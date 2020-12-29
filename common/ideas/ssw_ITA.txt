@@ -9,24 +9,21 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
-		#南北格差
-		ITA_idea_1 = {
+		#アウトラーダ
+		outlarda = {
 			allowed = {
-				always = no
+				always = yes
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.10
-				political_power_gain = -0.3
-				conscription = -0.025
-				production_factory_max_efficiency_factor = -0.30
+				production_speed_infrastructure_factor = 0.15
 			}
 		}
-		#軍事傾倒の経済
-		ITA_idea_2 = {
+		#アウトラーダ_NF変更後
+		outlarda_after = {
 			allowed = {
 				always = no
 			}
@@ -35,19 +32,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.20
-				conscription = -0.01
-				stability_weekly = -0.005
-				industrial_capacity_factory = 0.10
-				local_resources_factor = 0.10
-				production_speed_arms_factory_factor = 0.30
-				production_speed_industrial_complex_factor = -0.30
-				economy_cost_factor = 2.0
-				consumer_goods_factor = -0.10
+				production_speed_infrastructure_factor = 0.2
 			}
 		}
-		#平等を目指して
-		ITA_idea_3 = {
+		#経済開発省
+		Economic_development_Ministry = {
 			allowed = {
 				always = no
 			}
@@ -55,15 +44,15 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
+			research_bonus = {
+				industry = -0.08
+			}
 			modifier = {
-				stability_factor = -0.05
-				political_power_gain = -0.20
-				conscription = -0.020
-				production_factory_max_efficiency_factor = -0.20
+				global_building_slots_factor = 0.1
 			}
 		}
-		#役割の明確化
-		ITA_idea_4 = {
+		#イタリアの４ヵ年計画
+		Italy_4_year_plan = {
 			allowed = {
 				always = no
 			}
@@ -72,35 +61,25 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.08
-				political_power_gain = -0.20
-				conscription = -0.025
-				production_factory_max_efficiency_factor = -0.10
+				consumer_goods_factor = 0.1
 			}
 		}
-		#民間主導へ
-		ITA_idea_5 = {
+		#南北問題
+		South_north_question = {
 			allowed = {
-				always = no
+				always = yes
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.10
-				conscription = -0.005
-				stability_weekly = -0.0003
-				industrial_capacity_factory = 0.08
-				local_resources_factor = 0.08
-				production_speed_arms_factory_factor = 0.20
-				production_speed_industrial_complex_factor = -0.20
-				economy_cost_factor = 2.0
-				consumer_goods_factor = -0.10
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05
 			}
 		}
-		#現状維持
-		ITA_idea_6 = {
+		#外国人労働者の受け入れ
+		South_north_question_after = {
 			allowed = {
 				always = no
 			}
@@ -109,18 +88,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.15
-				stability_weekly = -0.0005
-				industrial_capacity_factory = 0.08
-				local_resources_factor = 0.08
-				production_speed_arms_factory_factor = 0.40
-				production_speed_industrial_complex_factor = -0.40
-				economy_cost_factor = 2.0
-				consumer_goods_factor = -0.10
+				stability_factor = -0.1
+				conscription = 0.01
 			}
 		}
-		#移民との軋轢
-		ITA_idea_7 = {
+		#市民権
+		Citizenship = {
 			allowed = {
 				always = no
 			}
@@ -129,14 +102,57 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.10
+				stability_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		#死ぬまで働け
+		overwork = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
 				war_support_factor = -0.15
-				conscription_factor = 0.10
-				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.4
+				production_factory_max_efficiency_factor = 0.2
 			}
 		}
-		#南部産業の強化
-		ITA_idea_8 = {
+		#貧弱な陸軍
+		Weak_army = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = -0.15
+				army_org_Factor = -0.2
+				production_factory_max_efficiency_factor = 0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+		}
+		#ウンベルト2世
+		Umberto_2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+		#満足した国民
+		Umberto_2_after = {
 			allowed = {
 				always = no
 			}
@@ -145,27 +161,40 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
-				global_building_slots_factor = 0.15
+				stability_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				justify_war_goal_time = 2
+				conscription = -0.2
 			}
 		}
-		#北部産業の強化
-		ITA_idea_9 = {
+		#イタリア式の造船
+		Italian_style_shipbuilding = {
 			allowed = {
-				always = no
+				always = yes
 			}
 			allowed_civil_war = {
 				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_arms_factory_factor = 0.10
-				local_resources_factor = 0.10
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		#メイド・イン・イタリー
+		Made_in_Italy = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		#ドゥーチェのもとで
-		ITA_idea_10 = {
+		#イタリア式の電撃戦
+		Italian_style_blitzkrieg = {
 			allowed = {
 				always = no
 			}
@@ -174,12 +203,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				national_fascism_drift = 0.10
-				national_socialism_drift = 0.10
+				army_armor_speed_factor = 0.15
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.15
 			}
 		}
-		#王のもとで
-		ITA_idea_11 = {
+		#砲兵による戦場支援
+		Artillery_in_support_of_the_battlefield = {
 			allowed = {
 				always = no
 			}
@@ -188,12 +218,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				authority_democracy_drift = 0.10
-				authority_despotism_drift = 0.10
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.15
+				enemy_army_bonus_air_superiority_factor = -0.15
 			}
 		}
-		#自由のもとで
-		ITA_idea_12 = {
+		#計画的な作戦立案
+		Planned_Operational_Planning = {
 			allowed = {
 				always = no
 			}
@@ -202,13 +233,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				social_democracy_drift = 0.10
-				social_liberalism_drift = 0.10
-				social_conservatism_drift = 0.10
+				max_planning = 0.25
+				army_org_Factor = 0.15
+				land_reinforce_rate = 0.5
 			}
 		}
-		#市民権の付与
-		ITA_idea_13 = {
+		#大量動員戦略
+		mass_mobilization_strategy = {
 			allowed = {
 				always = no
 			}
@@ -217,14 +248,14 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.05
-				production_factory_max_efficiency_factor = 0.05
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.10
+				conscription_factor = 0.03
+				training_time_factor = -0.25
+				attrition = -0.1
+				supply_consumption_factor = -0.25
 			}
 		}
-		#過酷な処置
-		ITA_idea_14 = {
+		#新生イタリア軍
+		The_New_Italian_Army = {
 			allowed = {
 				always = no
 			}
@@ -233,13 +264,29 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = 0.10
-				consumer_goods_factor = 0.05
-				industrial_capacity_factory = 0.10
+				conscription_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.1
+				attrition = -0.2
 			}
 		}
-		#兵器生産への熟練
-		ITA_idea_15 = {
+		#深刻な資金格差
+		The_Serious_Funding_Gap = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.03
+				production_factory_start_efficiency_factor = -0.05
+			}
+		}
+		#是正された資金格差
+		Corrected_funding_gap = {
 			allowed = {
 				always = no
 			}
@@ -248,14 +295,69 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				artillery_equipment = {
-                    build_cost_ic = -0.10
-                    instant = yes
-				}
-				infantry_equipment = {
-                    build_cost_ic = -0.10
-                    instant = yes
-                }
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		#大イタリア空軍
+		the_Grand_Italian_Air_Force = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.15
+				army_bonus_air_superiority_factor = 0.25
+				air_air_superiority_attack_factor = 0.15
+				air_air_superiority_defence_factor = 0.15
+			}
+		}
+		#戦闘機に特化
+		Improving_the_efficiency_of_fighter_production = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_air_superiority_attack_factor = 0.15
+				air_air_superiority_defence_factor = 0.15
+				air_interception_attack_factor = 0.15
+				air_interception_defence_factor = 0.15
+			}
+		}
+		#爆撃機に特化
+		Improving_the_efficiency_of_bomber_production = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_strategic_bomber_attack_factor = 0.25
+				air_strategic_bomber_defence_factor = 0.25
+				air_strategic_bomber_agility_factor = 0.25
+				air_strategic_bomber_bombing_factor = 0.25
+			}
+		}
+		#国民の防空意識
+		Public_Awareness_of_Air_Defense = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industry_air_damage_factor = -0.15
+				production_speed_radar_station_factor = 0.25
 			}
 		}
 	}
