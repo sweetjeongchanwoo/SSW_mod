@@ -1085,7 +1085,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Expansion_of_shipyard
+		id = FRA_Expansion_of_shipyard_1
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 5.00
 		prerequisite = {
