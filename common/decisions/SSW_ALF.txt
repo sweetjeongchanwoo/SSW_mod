@@ -46,18 +46,6 @@ ALF_cat_dec_infullence_mafia = { #カテゴリーID
 		}
 		allowed = {
 			original_tag = ALF #踏めるようになる条件
-			NOT = {
-					has_decision = alf_dec_Clean_up_mafia_ties_from_politics
-			}
-			NOT = {
-					has_decision = alf_dec_Wipe_out_the_mafia
-			}
-			NOT = {
-					has_decision = alf_dec_Contact_with_the_mafia_in_political_circles
-			}
-			NOT = {
-					has_decision = alf_dec_Backing_the_Mafia
-			}
 		}
 		visible = { #見えるようになる条件
 			has_idea = SSW_ideas_influence_1
@@ -81,10 +69,14 @@ ALF_cat_dec_infullence_mafia = { #カテゴリーID
 		ai_will_do = {
 			factor = 70 #AIが踏む確率
 		}
-		allowed = {
+		available = {
 			original_tag = ALF #踏めるようになる条件
 			NOT = {
-					has_decision = alf_dec_Arresting_the_Mafia
+				AND = {
+					has_decision = alf_dec_Wipe_out_the_mafia
+					has_decision = alf_dec_Contact_with_the_mafia_in_political_circles
+					has_decision = alf_dec_Backing_the_Mafia
+				}
 			}
 		}
 		visible = { #見えるようになる条件
@@ -115,6 +107,9 @@ ALF_cat_dec_infullence_mafia = { #カテゴリーID
 			}
 			NOT = {
 					has_decision = alf_dec_Clean_up_mafia_ties_from_politics
+			}
+			NOT = {
+					has_decision = alf_dec_Backing_the_Mafia
 			}
 		}
 		visible = { #見えるようになる条件
