@@ -666,7 +666,7 @@ ideas = {
 			allowed = { original_tag = MEX }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = ENG_tackle_capitalism
+			picture = eng_tackle_capitalism
 			modifier = {
 				heat_attrition_factor = -0.15
 				winter_attrition_factor = -0.15
