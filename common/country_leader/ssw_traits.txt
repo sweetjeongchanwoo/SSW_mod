@@ -151,4 +151,19 @@ leader_traits = {
 	combination_of_physicists = {
 		random = no
 	}
+	Tax_Reformer = {
+		random = no
+		economy_cost_factor = -0.50
+		consumer_goods_factor = -0.05
+	}
+	Rational_Communist = {
+		random = no
+		political_power_gain = 0.30
+		stability_factor = 0.05
+	}
+	Mastering_Market_Control = {
+		random = no
+		trade_laws_cost_factor = -0.50
+		min_export = -0.05
+	}
 }
