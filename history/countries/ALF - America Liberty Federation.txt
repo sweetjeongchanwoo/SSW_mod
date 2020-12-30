@@ -11,6 +11,7 @@ set_technology = {
 add_ideas = {
 	civilian_economy
 	SSW_ideas_ALF_industry_ploblems
+	SSW_ideas_influence_2
 }
 
 set_politics = {
