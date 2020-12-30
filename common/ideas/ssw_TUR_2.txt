@@ -37,6 +37,38 @@ political_leader = {
 
        cancel_if_invalid = no
    }
+   TUR_Faik_Ahmet_Barutçu = {
+
+    available = {
+               always = no
+    }
+
+    allowed = {
+        tag = TUR
+    }
+
+    picture =JAP_cab_Shigesaburo_Maeo
+
+    traits = { Establisher_of_democratic_order }
+
+    cancel_if_invalid = no
+}
+TUR_Celâl_Bayar = {
+
+    available = {
+               always = no
+    }
+
+    allowed = {
+        tag = TUR
+    }
+
+    picture =JAP_cab_Shigesaburo_Maeo
+
+    traits = { Reformer_of_Turkish_Economy }
+
+    cancel_if_invalid = no
+}
 }
 ###内務大臣###
 minister_of_interior = {
@@ -53,6 +85,28 @@ minister_of_interior = {
        picture = JAP_cab_Shigesaburo_Maeo
 
        traits = { Mastering_Market_Control }
+
+       cancel_if_invalid = no
+   }
+}
+###外務大臣###
+minister_of_foreign_affairs = {
+   TUR_Hikmet_Bayur = {
+
+       available = {
+                  always = no
+       }
+
+       allowed = {
+           tag = TUR
+       }
+
+       picture = JAP_cab_Shigesaburo_Maeo
+
+       traits = { 
+        veteran_diplomat
+        Education_Minister
+ }
 
        cancel_if_invalid = no
    }

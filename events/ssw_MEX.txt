@@ -295,6 +295,10 @@ news_event = {
 				set_global_flag = mcw_over
 			}
 			if = {
+				limit = { NOT = { has_global_flag = mcw_news } }
+				set_global_flag = mcw_news
+			}
+			if = {
 				limit = { MEX = { has_completed_focus = MEX_rightist } }
 				set_global_flag = nationalist_victory_of_mexico
 			}
@@ -311,10 +315,24 @@ news_event = {
 	option = {
 		name = ssw_mex.3.a
 		trigger = { original_tag = MEX }
+		hidden_effect = {
+			if = {
+				limit = { has_cosmetic_tag = MEX_rebellion }
+				drop_cosmetic_tag = yes
+			}
+			set_global_flag = mcw_news
+		}
 	}
 	option = {
 		name = ssw_mex.3.b
 		trigger = { NOT = { original_tag = MEX } }
+		hidden_effect = {
+			if = {
+				limit = { has_cosmetic_tag = MEX_rebellion }
+				drop_cosmetic_tag = yes
+			}
+			set_global_flag = mcw_news
+		}
 	}
 }
 news_event = {

@@ -993,9 +993,7 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			GER = {
-				country_event = { id = SSW_GER.28 }
-			}
+			country_event = { id = SSW_GER.28 }
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
 			custom_effect_tooltip = GER_gel_war_3_tt

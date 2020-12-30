@@ -168,10 +168,27 @@
  SSW_ideas_ALF_Okies:0 "オーキー雇用法"
  SSW_ideas_ALF_Okies_desc:0 "オクラホマの失業者達を受け入れ、内戦の勝利のための糧とする。"
  SSW_ideas_ALF_science_war:0 "科学戦"
+ SSW_ideas_influence_1:0 "苛烈なマフィアの影響"
+ SSW_ideas_influence_2:0 "高いマフィアの影響"
+ SSW_ideas_influence_3:0 "マフィアと政府の拮抗"
+ SSW_ideas_influence_4:0 "マフィアの影響"
+ SSW_ideas_influence_5:0 "低いマフィアの影響"
 
 #ディシジョン
  ALF_cat_dec_Militia:0 "民兵の募集"
  alf_dec_militia_Washington:0 "ワシントンでの民兵の徴募"
+ ALF_cat_dec_infullence_mafia:0 "マフィアの影響"
+ alf_dec_Clean_up_mafia_ties_from_politics:0 "政界からのマフィアとのつながりを一掃"
+ alf_dec_Wipe_out_the_mafia:0 "マフィアの一掃"
+ alf_dec_Backing_the_Mafia:0 "マフィアへの裏金"
+ alf_dec_Contact_with_the_mafia_in_political_circles:0 "政界でマフィアとの接触"
+ alf_dec_Arresting_the_Mafia:0 "マフィアの摘発"
+ alf_dec_Acceptance_of_Narcotics:0 "麻薬の容認"
+ alf_dec_Drug_busts:0 "麻薬の摘発"
+ alf_dec_Expulsion_of_the_Mafia:0 "マフィアの追放"
+ alf_dec_Eradicating_the_Mafia:0 "マフィアの根絶"
+ alf_dec_Ignore_the_expansion_of_the_mafia:0 "マフィアの無視"
+ alf_dec_Receive_assistance:0 "支援を受け取る"
 
 #ツールチップ
  SSW_militia_was_tt:0 "§Gワシントンで民兵を募集することができる§!"

@@ -6,6 +6,7 @@ on_actions = {
 				limit = { is_ai = no }
 				set_variable = { SSW_Opening_Screen = 1 }
 			}
+		}
 
 	}
 }
