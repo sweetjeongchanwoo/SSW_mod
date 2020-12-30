@@ -176,6 +176,8 @@ ideas = {
 
             modifier = {
                 max_planning = -0.75
+            }
+            research_bonus = {
                 land_doctrine = -0.5
             }
         }
@@ -187,7 +189,7 @@ ideas = {
 
             picture = idea_chi_incompetent_officers.dds
 
-            modifier = {
+            research_bonus = {
                 land_doctrine = -0.5
             }
         }
@@ -264,10 +266,12 @@ ideas = {
             modifier = {
                 army_artillery_attack_factor = 0.1
                 army_artillery_defence_factor = 0.1
+            } 
+            equipment_bonus = {
                 artillery_equipment = {
 					build_cost_ic = -0.2
 					instant = yes
-				}
+				} 
                 anti_air_equipment = {
 					build_cost_ic = -0.2
 					instant = yes
@@ -276,7 +280,7 @@ ideas = {
 					build_cost_ic = -0.2
 					instant = yes
 				}
-            }           
+            }        
         }
         Focus_on_armor = {
 
@@ -289,11 +293,12 @@ ideas = {
             modifier = {
                 army_armor_attack_factor = 0.1
                 army_armor_defence_factor = 0.1
+            }
+            equipment_bonus = {
                 armor = {
 					build_cost_ic = -0.2
 					instant = yes
-				}
-
+				}  
             }
         }
         Focus_on_infantry = {
@@ -307,10 +312,12 @@ ideas = {
             modifier = {
                 army_infantry_attack_factor = 0.1
                 army_infantry_defence_factor = 0.1	
+            }
+            equipment_bonus = {
                 infantry_equipment = {
                     build_cost_ic = -0.2
 					instant = yes
-                }
+                }   
             }
         }
         New_French_Army = {
@@ -490,7 +497,7 @@ ideas = {
             picture = idea_unknown
 
             modifier = {
-                offence = 0.2
+                army_defence_factor = 0.2
             } 
 
             targeted_modifier = {   
@@ -511,7 +518,7 @@ ideas = {
             picture = idea_unknown
 
             modifier = {
-                offence = 0.1
+                army_defence_factor = 0.1
             } 
 
             targeted_modifier = {
