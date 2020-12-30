@@ -1,0 +1,999 @@
+focus_tree = {
+	id = ssw_UKR
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+			# original_tag = UKR
+		}
+	}
+	#Focus for 航空隊の新設 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_UpjwGfvT
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_ZvNULdGg
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for 軍事訓練 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_ZvNULdGg
+		icon = GFX_goal_generic_military_sphere
+		x = 1
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+	#Focus for キエフの開発 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_obQMzwBl
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_QmoJcYZh
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+	#Focus for 都市開発計画 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_QmoJcYZh
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for 人民共和国海軍の復興 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_uBMmefCl
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_sJwdXzrW
+		}
+		prerequisite = {
+			focus = UKR_TzhDlfxv
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 民族主義の高揚 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_SkxtUfDo
+		icon = GFX_focus_hol_united_netherlands
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_fIOmdGTa
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 独立戦争 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_fIOmdGTa
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = UKR_mtYrwcNb
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 工業立国への転換 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_TGPOigIF
+		icon = GFX_focus_generic_industry_3
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_pNMyjlPJ
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ウクライナ人への教育 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_pNMyjlPJ
+		icon = GFX_focus_research2
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_yLOuwlqF
+			focus = UKR_sJwdXzrW
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 中央ラーダの再設置 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_ZGKRudiv
+		icon = GFX_focus_eng_the_kings_party
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_yLOuwlqF
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ウクライナ人との協力 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_yLOuwlqF
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_mtYrwcNb
+		}
+		mutually_exclusive = {
+			focus = UKR_hkaWqXMm
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ロシア人との協力 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_hkaWqXMm
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_mtYrwcNb
+		}
+		mutually_exclusive = {
+			focus = UKR_yLOuwlqF
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ロシア義勇兵の徴募 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_YvxIePRL
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_hkaWqXMm
+		}
+		prerequisite = {
+			focus = UKR_RTYNGyza
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 露独協力政権 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_ELIofZds
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_hkaWqXMm
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ドイツ精鋭部隊 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_erQvPAzU
+		icon = GFX_focus_ger_oppose_hitler
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_RTYNGyza
+		}
+		mutually_exclusive = {
+			focus = UKR_SEcBIuLP
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 現地人の大規模徴兵 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_SEcBIuLP
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_RTYNGyza
+		}
+		mutually_exclusive = {
+			focus = UKR_erQvPAzU
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 統治安定化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_mtYrwcNb
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = {
+			focus = UKR_fIOmdGTa
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#Focus for 徴兵問題 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_RTYNGyza
+		icon = GFX_goal_rhineland
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_mtYrwcNb
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 航空基地の増設 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_ECkpyeKt
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_UpjwGfvT
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for 蜂起軍との交渉 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_BKEYanlg
+		icon = GFX_goal_generic_position_armies
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_ZGKRudiv
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 内戦への支援 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_kSthGWsB
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_HMXVKOWh
+		}
+		mutually_exclusive = {
+			focus = UKR_hzfxCtiU
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 独立路線 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_hzfxCtiU
+		icon = GFX_goal_continuous_boost_freedom
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_HMXVKOWh
+		}
+		mutually_exclusive = {
+			focus = UKR_kSthGWsB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 新政権の非承認 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_FJBwUpsZ
+		icon = GFX_focus_attack_germany
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_hzfxCtiU
+		}
+		mutually_exclusive = {
+			focus = UKR_EhZavNwQ
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 造船所の拡大 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_TzhDlfxv
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_WtMrsfHA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+	#Focus for ムィコーラウ～キエフ鉄道 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_YVrZIyki
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_WtMrsfHA
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for 拡大 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_CAdsbgyc
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_sJwdXzrW
+			focus = UKR_FJBwUpsZ
+			focus = UKR_EhZavNwQ
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 我々の立場 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_HMXVKOWh
+		icon = GFX_goal_generic_propaganda
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ムィコーラウ港の拡大 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_WtMrsfHA
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_QmoJcYZh
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+	#Focus for ワルシャワ～キエフ鉄道 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_hmapHlNz
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_obQMzwBl
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for キエフ大学への補助金 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_tCZqjPoz
+		icon = GFX_focus_research2
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_obQMzwBl
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ヒンデンブルク～キエフ鉄道 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_NPDwYgzZ
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_jeKISQNl
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for ヒンデンブルクの開発 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_jeKISQNl
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_QmoJcYZh
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+		}
+	}
+	#Focus for クバーニの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_FHBUxQTl
+		icon = GFX_goal_generic_territory_or_war
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_aTctHXAx
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 国民ラーダの統合 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_SXOMCiLD
+		icon = GFX_focus_generic_military_academy
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_sJwdXzrW
+		}
+		prerequisite = {
+			focus = UKR_iALTbwsS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 大ウクライナの宣言 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_LPmkUtCV
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_cjLfVRpH
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ドイツ人の国外追放 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_qrKaLmuM
+		icon = GFX_focus_attack_germany
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_WOrIAjoJ
+		}
+		mutually_exclusive = {
+			focus = UKR_szUPGZCi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 居住許可 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_szUPGZCi
+		icon = GFX_focus_chi_mission_to_germany
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_WOrIAjoJ
+		}
+		mutually_exclusive = {
+			focus = UKR_qrKaLmuM
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ウクライナ国民ラーダの帰還 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_iALTbwsS
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_fIOmdGTa
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 多様性の擁護 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_nCyIqpHx
+		icon = GFX_focus_usa_union_representation_act
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_dtuIWOqP
+		}
+		mutually_exclusive = {
+			focus = UKR_jQZItTSU
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ウクライナ化政策 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_WUbiKNjG
+		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_jQZItTSU
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ドイツ人問題 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_WOrIAjoJ
+		icon = GFX_goal_generic_dangerous_deal
+		x = 24
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_sJwdXzrW
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ロシア人問題 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_dtuIWOqP
+		icon = GFX_goal_generic_forceful_treaty
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_cjLfVRpH
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ウクライナ国民主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_jQZItTSU
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_dtuIWOqP
+		}
+		mutually_exclusive = {
+			focus = UKR_nCyIqpHx
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for クリミアの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_aTctHXAx
+		icon = GFX_goal_generic_territory_or_war
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_CAdsbgyc
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for オデッサの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_lzYNyLcB
+		icon = GFX_focus_rom_preserve_romania
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_CAdsbgyc
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for カルパチアの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_MhYVftFu
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_xzOPZmWC
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for レムコの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_lvnXWLHR
+		icon = GFX_focus_invite_yugoslavia
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_xzOPZmWC
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 西ウクライナの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_xzOPZmWC
+		icon = GFX_goal_generic_territory_or_war
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_CAdsbgyc
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for ドイツ義勇兵の徴募 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_YFSpmTch
+		icon = GFX_focus_chi_mission_to_germany
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_RTYNGyza
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 第五次ウニヴェルサール宣言 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_sJwdXzrW
+		icon = GFX_focus_eng_decolonization
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_SkxtUfDo
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 復帰 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_EhZavNwQ
+		icon = GFX_goal_continuous_restrict_freedom
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_kSthGWsB
+		}
+		mutually_exclusive = {
+			focus = UKR_FJBwUpsZ
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for 中核地域の統一 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_cjLfVRpH
+		icon = GFX_goal_generic_national_unity
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = UKR_sJwdXzrW
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#End of focuses 
+}
