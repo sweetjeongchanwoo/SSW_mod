@@ -1,9 +1,11 @@
 focus_tree = {
 	id = ITA_Balbo_Focus_Tree
+	tag
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
+			tag = ITA
 		}
 	}
 	#産業の現状
