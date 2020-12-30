@@ -31,28 +31,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_French_Underground_Fleet
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 5.00
-		x = 43
-		y = 8
-			completion_reward = {
-					add_ideas = French_mediterranean_fleet
-				}
-
-	}
-	focus = {
-		id = FRA_French_Air_Force
-		icon = GFX_goal_generic_build_airforce
-		cost = 5.00
-		x = 50
-		y = 8
-			completion_reward = {
-					air_experience = 30
-				}
-
-	}
-	focus = {
 		id = FRA_French_Foreign_Policy
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -1060,65 +1038,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Expansion_of_shipyard
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_French_Underground_Fleet
-		}
-		x = 43
-		y = 10
-			completion_reward = {
-					add_ideas = Expansion_of_shipyards
-				}
-
-	}
-	focus = {
-		id = FRA_French_cruiser
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Expansion_of_shipyard
-		}
-		x = 43
-		y = 11
-			completion_reward = {
-					navy_experience = 25
-					add_tech_bonus = {
-							name = cr_bonus
-							bonus = 1
-							uses = 2
-							category = cl_tech
-							category = ca_tech
-						}
-				}
-
-	}
-	focus = {
-		id = FRA_Ultimate_Fleet
-		icon = GFX_goal_generic_navy_battleship
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_French_cruiser
-		}
-		mutually_exclusive = {
-			focus = FRA_Partnership_with_an_aircraft_carrie
-		}
-		x = 41
-		y = 12
-			completion_reward = {
-					navy_experience = 25
-					add_tech_bonus = {
-							name = bb_bonus
-							bonus = 1
-							uses = 2
-							category = bb_tech
-							category = bc_tech
-						}
-				}
-
-	}
-	focus = {
 		id = FRA_Development_of_Infantry_Equipment
 		icon = GFX_goal_generic_small_arms
 		cost = 5.00
@@ -1421,64 +1340,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Supporting_ground_troops
-		icon = GFX_goal_generic_CAS
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_French_Air_Force
-		}
-		x = 48
-		y = 10
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_bomber_modernization
-							bonus = 1
-							uses = 1
-							category = cas_bomber
-							category = tactical_bomber
-						}
-				}
-
-	}
-	focus = {
-		id = FRA_Naval_Air_Corps
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Supporting_ground_troops
-		}
-		x = 46
-		y = 11
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_carrier_warfare_experiments
-							bonus = 1
-							uses = 2
-							category = cat_base_strike
-						}
-				}
-
-	}
-	focus = {
-		id = FRA_Focus_on_bombers
-		icon = GFX_goal_generic_air_bomber
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Supporting_ground_troops
-		}
-		x = 48
-		y = 12
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_strategic_bomber_effort
-							bonus = 1
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
-
-	}
-	focus = {
 		id = FRA_France_First
 		icon = GFX_focus_generic_vichy_france_triumphant
 		cost = 5.00
@@ -1490,84 +1351,6 @@ focus_tree = {
 			completion_reward = {
 					remove_idea = dictator
 					add_ideas = Charismatic_dictator
-				}
-
-	}
-	focus = {
-		id = FRA_Partnership_with_an_aircraft_carrie
-		icon = GFX_goal_generic_navy_carrier
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Naval_Air_Corps
-		}
-		prerequisite = {
-			focus = FRA_French_cruiser
-		}
-		mutually_exclusive = {
-			focus = FRA_Ultimate_Fleet
-		}
-		x = 45
-		y = 12
-			completion_reward = {
-					add_tech_bonus = {
-							name = cv_bonus
-							bonus = 1
-							uses = 2
-							category = cv_tech
-						}
-				}
-
-	}
-	focus = {
-		id = FRA_Beyond_the_Pacific_Ocean
-		icon = GFX_focus_generic_cruiser2
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Ultimate_Fleet
-			focus = FRA_Partnership_with_an_aircraft_carrie
-		}
-		x = 43
-		y = 13
-			completion_reward = {
-					add_ideas = Beyond_the_Atlantic
-				}
-
-	}
-	focus = {
-		id = FRA_Absolute_Air_Superiority
-		icon = GFX_goal_generic_air_fighter
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_French_Air_Force
-		}
-		x = 52
-		y = 9
-			completion_reward = {
-					add_tech_bonus = {
-							name = light_air
-							bonus = 1
-							uses = 1
-							category = light_fighter
-						}
-				}
-
-	}
-	focus = {
-		id = FRA_Large_Air_Corps
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_Absolute_Air_Superiority
-		}
-		x = 52
-		y = 12
-			completion_reward = {
-					add_tech_bonus = {
-							name = fighter_modernization
-							bonus = 1
-							uses = 1
-							category = cat_heavy_fighter
-						}
 				}
 
 	}
