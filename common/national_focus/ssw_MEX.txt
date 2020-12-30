@@ -2869,6 +2869,14 @@ focus_tree = {
 			country_exists = JAP
 			NOT = { has_war_with = JAP }
 		}
+		bypass = {
+			OR = {
+				is_subject_of = JAP
+				is_in_faction_with = JAP
+				JAP = { is_faction_leader = no }
+				JAP = { exists = no }
+			}
+		}
 		x = 1
 		y = 1
 		relative_position_id = MEX_investing_in_public_welfare

@@ -151,4 +151,37 @@ leader_traits = {
 	combination_of_physicists = {
 		random = no
 	}
+	Tax_Reformer = {
+		random = no
+		economy_cost_factor = -0.50
+		consumer_goods_factor = -0.05
+	}
+	Rational_Communist = {
+		random = no
+		political_power_gain = 0.30
+		stability_factor = 0.05
+	}
+	Mastering_Market_Control = {
+		random = no
+		trade_laws_cost_factor = -0.50
+		min_export = -0.05
+	}
+	Establisher_of_democratic_order = {
+		random = no
+		drift_defence_factor = 0.20
+		trade_opinion_factor = 0.25
+	}
+	Reformer_of_Turkish_Economy = {
+		random = no
+		stability_factor = 0.05
+		consumer_goods_factor = -0.05
+	}
+	veteran_diplomat = {
+		random = no
+		opinion_gain_monthly_factor = 0.15
+	}
+	Education_Minister = {
+		random = no
+		research_speed_factor = 0.05
+	}
 }

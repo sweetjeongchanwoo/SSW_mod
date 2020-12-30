@@ -1,10 +1,12 @@
 #アジア
+ALT	= "countries/Asia.txt"	#アルタイ
 ARC	= "countries/Asia.txt"	#北極
 BAN	= "countries/Asia.txt"	#バングラデシュ
 BHU	= "countries/Asia.txt"	#ブータン
 BOM	= "countries/Asia.txt"	#ボンベイ
 BRM	= "countries/Asia.txt"	#ビルマ
 BRN	= "countries/Asia.txt"	#ブルネイ
+BUR	= "countries/Asia.txt"	#ブリヤート
 CAM	= "countries/Asia.txt"	#カンボジア
 CHI	= "countries/Asia.txt"	#中華民国
 CLC	= "countries/Asia.txt"	#中国租借及び租界地
@@ -69,16 +71,24 @@ YUN	= "countries/Asia.txt"	#雲南
 #中東
 AFG	= "countries/Middle East.txt"	#アフガニスタン
 BHR	= "countries/Middle East.txt"	#バーレーン
+CHE	= "countries/Middle East.txt"	#チェチェン
+DAG	= "countries/Middle East.txt"	#ダゲスタン
+EKA	= "countries/Middle East.txt"	#エカテリノダール
+ING	= "countries/Middle East.txt"	#イングーシ
 IRQ	= "countries/Middle East.txt"	#イラク
 ISR	= "countries/Middle East.txt"	#イスラエル
 JOR	= "countries/Middle East.txt"	#ヨルダン
+KBR	= "countries/Middle East.txt"	#カバルダ・バルカル
+KRC	= "countries/Middle East.txt"	#カラチャイ・チェルケス
 KUR	= "countries/Middle East.txt"	#クルディスタン
 KUW	= "countries/Middle East.txt"	#クウェート
+NOS	= "countries/Middle East.txt"	#北オセチア
 LEB	= "countries/Middle East.txt"	#レバノン
 OMA	= "countries/Middle East.txt"	#オマーン
 PAL	= "countries/Middle East.txt"	#パレスチナ
 PER	= "countries/Middle East.txt"	#イラン
 SAU	= "countries/Middle East.txt"	#サウジアラビア
+SOS	= "countries/Middle East.txt"	#南オセチア
 SUC	= "countries/Middle East.txt"	#スエズ運河
 SYR	= "countries/Middle East.txt"	#シリア
 TUR	= "countries/Middle East.txt"	#トルコ
@@ -100,7 +110,6 @@ WLS	= "countries/Commonwealth.txt"	#ウェールズ
 #西欧
 ADR	= "countries/Western Europe.txt"	#アンドラ
 ADU	= "countries/Western Europe.txt"	#アンダルシア
-AFR	= "countries/Western Europe.txt"	#アルジェ・フランス
 ALF	= "countries/Western Europe.txt"	#アメリカ自由連盟
 ANS	= "countries/Western Europe.txt"	#無政府州
 ATL	= "countries/Western Europe.txt"	#大西洋
@@ -148,7 +157,6 @@ TEX	= "countries/Western Europe.txt"	#テキサス
 USA	= "countries/Western Europe.txt"	#アメリカ合衆国
 UTC	= "countries/Western Europe.txt"	#三社連合
 VAC	= "countries/Western Europe.txt"	#バチカン
-VFR	= "countries/Western Europe.txt"	#ヴィシー・フランス
 WGR	= "countries/Western Europe.txt"	#西ドイツ
 WUR	= "countries/Western Europe.txt"	#ヴュルテンベルク
 

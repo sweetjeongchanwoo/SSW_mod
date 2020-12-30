@@ -1,31 +1,178 @@
 spriteTypes = {
+	##### LEADERS #####
 	spriteType = {
-		name = "GFX_idea_SSW_RUS_alexander_kerensky"
-		textureFile = "gfx/interface/ideas/RUS/idea_minister_alexander_kerensky.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SSW_RUS_andrey_vlasov"
-		textureFile = "gfx/interface/ideas/RUS/idea_minister_andrey_vlasov.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SSW_RUS_vladimir_nabokov"
-		textureFile = "gfx/interface/ideas/RUS/idea_minister_vladimir_nabokov.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SSW_RUS_pavel_sudoplatov"
-		textureFile = "gfx/interface/ideas/RUS/idea_minister_pavel_sudoplatov.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SSW_attack_germany"
-		textureFile = "gfx/interface/ideas/RUS/idea_country_attack_germany.dds"
+		name = "GFX_idea_SSW_RUS_sascha_schapiro"
+		textureFile = "gfx/interface/ideas/RUS/leaders/idea_leader_sascha_schapiro.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SSW_RUS_vladimir_kryuchkov"
 		textureFile = "gfx/interface/ideas/RUS/idea_minister_vladimir_kryuchkov.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_SSW_RUS_ariadna_tyrkova_williams"
+		textureFile = "gfx/interface/ideas/RUS/leaders/idea_leader_ariadna_tyrkova_williams.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_felix_yusupov"
+		textureFile = "gfx/interface/ideas/RUS/leaders/idea_leader_felix_yusupov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_andrey_vlasov"
+		textureFile = "gfx/interface/ideas/RUS/idea_minister_andrey_vlasov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_poa"
+		textureFile = "gfx/interface/ideas/RUS/leaders/idea_leader_poa.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_SSW_RUS_anastasy_vonsiatsky"
 		textureFile = "gfx/interface/ideas/RUS/idea_minister_anastasy_vonsiatsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_igor_ivanovich_sikorsky"
+		textureFile = "gfx/interface/ideas/RUS/leaders/idea_leader_igor_ivanovich_sikorsky.dds"
+	}
+	##### DEMOCRAT MINISTERS #####
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_vladimir_nabokov"
+		textureFile = "gfx/interface/ideas/RUS/idea_minister_vladimir_nabokov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_anna_wolkoff"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_anna_wolkoff.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_bronislav_kaminski"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_bronislav_kaminski.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_igor_stravinsky"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_igor_stravinsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_ivan_ilyin"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_ivan_ilyin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_nikolai_khokhlov"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_nikolai_khokhlov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_sergei_bunyachenko"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_sergei_bunyachenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_sofia_panina"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_democrat_sofia_panina.dds"
+	}
+	##### COMMUNIST MINISTERS #####
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_pavel_sudoplatov"
+		textureFile = "gfx/interface/ideas/RUS/idea_minister_pavel_sudoplatov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_konstantin_vershinin"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_communist_air_konstantin_vershinin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_fyodor_kulakov"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_communist_fyodor_kulakov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_serafima_hopner"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_communist_serafima_hopner.dds"
+	}
+	##### NATIONALIST MINISTERS #####
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_arseny_nesmelov"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_arseny_nesmelov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_boris_brasol"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_boris_brasol.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_lev_okhotin"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_lev_okhotin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_nikolai_markov"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_nikolai_markov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_sergey_taboritsky"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_sergey_taboritsky.dds"
+	}
+	spriteType = { #still
+		name = "GFX_idea_SSW_RUS_mikhail_matkovsky"
+		textureFile = "gfx/interface/ideas/RUS/ministers/idea_minister_nationalist_mikhail_matkovsky.dds"
+	}
+	##### COMPANY #####
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_aircraft_manufacturer_mig"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_mig.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_aircraft_manufacturer_suchoi"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_suchoi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_industrial_concern_bashneft"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_bashneft.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_industrial_concern_sberbank"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_sberbank.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_materiel_manufacturer_gaz"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_gaz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_materiel_manufacturer_uaz"
+		textureFile = "gfx/interface/ideas/RUS/companies/idea_company_uaz.dds"
+	}
+	##### ARMY #####
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_alexander_novikov"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_air_alexander_novikov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_andrey_yeryomenko"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_army_andrey_yeryomenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_kirill_meretskov"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_army_kirill_meretskov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_nikandr_chibisov"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_army_nikandr_chibisov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_nikolai_berzarin"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_army_nikolai_berzarin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_yakov_cherevichenko"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_army_yakov_cherevichenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_arseniy_golovko"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_navy_arseniy_golovko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_RUS_gordey_levchenko"
+		textureFile = "gfx/interface/ideas/RUS/army/idea_navy_gordey_levchenko.dds"
+	}
+	##### GENERAL #####
+	spriteType = {
+		name = "GFX_decision_soviet_union"
+		textureFile = "gfx/interface/decisions/decision_soviet_union.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SSW_attack_germany"
+		textureFile = "gfx/interface/ideas/RUS/idea_country_attack_germany.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SSW_memory_of_the_empire"
@@ -34,9 +181,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SSW_strengthening_the_wehrmacht"
 		textureFile = "gfx/interface/ideas/RUS/idea_country_strengthening_the_wehrmacht.tga"
-	}
-	spriteType = {
-		name = "GFX_idea_SSW_SOV_ivan_konev"
-		textureFile = "gfx/interface/ideas/RUS/idea_ivan_konev.dds"
 	}
 }

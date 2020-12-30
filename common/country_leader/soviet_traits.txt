@@ -55,4 +55,15 @@ leader_traits = {
 		army_attack_factor = 0.05
 		ai_will_do = { factor = 1 }
 	}
+	strong_organization = {
+		random = no
+		stability_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	experienced_in_the_red_army_era = {
+		random = no
+		surrender_limit = 0.05
+		war_support_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
 }

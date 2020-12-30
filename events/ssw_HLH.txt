@@ -26,13 +26,12 @@ country_event = {
 
 	trigger = {
 		has_country_flag = GER_dec_civil_war
-		NOT = {
-			AND = {
-				GER = { exists = yes }
-				LTV = { exists = yes }
-				HGR = { exists = yes }
-			}
+		AND = {
+			GER = { exists = no }
+			LTV = { exists = no }
+			HGR = { exists = no }
 		}
+		original_tag = HLH
 	}
 
 	option = {

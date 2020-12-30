@@ -5,11 +5,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_progressive_communism_group"
-		texturefile = "gfx/interface/ideologies/.dds"
+		texturefile = "gfx/interface/ideologies/progressive_communism.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_classical_communism_group"
-		texturefile = "gfx/interface/ideologies/.dds"
+		texturefile = "gfx/interface/ideologies/classical_communism.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_social_democracy_group"
@@ -29,7 +29,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_authority_despotism_group"
-		texturefile = "gfx/interface/ideologies/.dds"
+		texturefile = "gfx/interface/ideologies/authority_despotism.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_national_fascism_group"
@@ -41,6 +41,30 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ideology_corporatocracism_group"
-		texturefile = "gfx/interface/ideologies/.dds"
+		texturefile = "gfx/interface/ideologies/corporatocracism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_syndicalism_ideology"
+		texturefile = "gfx/interface/ideologies/syndicalism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_buddhist_socialism_ideology"
+		texturefile = "gfx/interface/ideologies/buddhist_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_military_junta_ideology"
+		texturefile = "gfx/interface/ideologies/military_junta.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_islamic_fundamentalism_ideology"
+		texturefile = "gfx/interface/ideologies/islamic_fundamentalism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_absolute_monarchism_ideology"
+		texturefile = "gfx/interface/ideologies/absolute_monarchism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_falangism_national_syndicalism_ideology"
+		texturefile = "gfx/interface/ideologies/falangism_national_syndicalism.dds"
 	}
 }

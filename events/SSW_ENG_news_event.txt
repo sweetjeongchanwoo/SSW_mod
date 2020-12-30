@@ -32,7 +32,7 @@ news_event = {
 	title = england_news.2.t
 	desc = england_news.2.d
 	picture = GFX_india_map_eng
-	mean_time_to_happen = { #何日表示されるか
+	mean_time_to_happen = {
 		days = 5
 	}
 	is_triggered_only = yes

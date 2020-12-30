@@ -27,7 +27,7 @@
 	create_country_leader = {
 		name = "Farouk I"
 		desc = ""
-		picture = "gfx/leaders/EGY/Portrait_Farouk_I.dds"
+		picture = "gfx/leaders/EGY/SSW_Portrait_Egypt_Farouk.dds"
 		expire = "1965.1.1"
 		ideology = authority_despotism_ideology
 		traits = {

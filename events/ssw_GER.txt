@@ -1270,6 +1270,41 @@ country_event = {
 }
 
 country_event = {
+	id = SSW_GER.28
+	title = SSW_GER.28.t
+	desc = SSW_GER.28.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.28.a
+			GER = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
 	id = SSW_GER.29
 	title = SSW_GER.29.t
 	desc = SSW_GER.29.d
@@ -1402,4 +1437,52 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = SSW_GER.34
+	title = SSW_GER.34.t
+	desc = SSW_GER.34.d
+	picture = GFX_German_Civil_War
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = GER_dec_civil_war
+		AND = {
+			HGR = { exists = no }
+			HLH = { exists = no }
+			LTV = { exists = no }
+		}
+	}
+
+	option = {
+		name = SSW_GER.34.a
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "kooperative Miliz"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Deutscher Volkssturm"
+			}
+			load_focus_tree = ssw_Gebbels_Germany_focus
+			add_ideas = Scars_of_the_civil_war
+			add_ideas = Resistance_Gering
+			add_ideas = Resistance_himmler
+			add_ideas = Resistance_Popular_Front
+			add_ideas = limited_conscription
+			add_ideas = free_trade
+			add_ideas = civilian_economy
+			remove_ideas = {
+				GER_idea_1
+				GER_war_ideas_2
+				missing_upper_echelon
+				GER_equipment_seisan
+				GER_Focke_Wulf
+				commandeer
+			}
+		}
+		set_equipment_fraction = 0.95
+	}
+}
+
 
