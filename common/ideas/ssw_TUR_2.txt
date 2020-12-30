@@ -1,0 +1,60 @@
+ideas = {
+	###財務大臣###
+    minister_of_finance = {
+       TUR_İsmail_Rüştü_Aksal = {
+
+           available = {
+                      always = no
+           }
+
+           allowed = {
+               tag = TUR
+           }
+
+           picture =JAP_cab_Shigesaburo_Maeo
+
+           traits = { 
+               Tax_Reformer
+             }
+           cancel_if_invalid = no
+       }
+}
+###政治首班###
+political_leader = {
+   TUR_Mehmet_Ali_Aybar = {
+
+       available = {
+                  always = no
+       }
+
+       allowed = {
+           tag = TUR
+       }
+
+       picture =JAP_cab_Shigesaburo_Maeo
+
+       traits = { Rational_Communist }
+
+       cancel_if_invalid = no
+   }
+}
+###内務大臣###
+minister_of_interior = {
+    TUR_Cemil_Sait_Barlas = {
+
+       available = {
+                  always = no
+       }
+
+       allowed = {
+           tag = TUR
+       }
+
+       picture = JAP_cab_Shigesaburo_Maeo
+
+       traits = { Mastering_Market_Control }
+
+       cancel_if_invalid = no
+   }
+}
+}
