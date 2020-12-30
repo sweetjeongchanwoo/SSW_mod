@@ -21,10 +21,10 @@ country_event = {
     picture = GFX_Petan_dead
     fire_only_once = yes
         trigger = { #イベントが起きるきっかけ
-        tag = FRA
-        date > 1950.1.10 #1951.7.10　#日にち
+            tag = FRA
+            date > 1950.1.10 #1951.7.10　#日にち
         }
-    }
+    
     option = {
         name = SSW_FRA.2.a
         FRA = {
@@ -35,8 +35,8 @@ country_event = {
             id = SSW_FRA.4
             days = 1
         }
+    }
 }
-
 #指導者決定
 
 country_event = {
