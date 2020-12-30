@@ -48,7 +48,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
@@ -144,7 +144,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
@@ -240,7 +240,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
@@ -336,7 +336,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
@@ -432,7 +432,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
@@ -528,7 +528,7 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9451
+		location = 9450
 		division_template = "Infantry Division"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
