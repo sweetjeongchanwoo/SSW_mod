@@ -1,0 +1,4 @@
+UKA = {
+	original_tag = UKR
+	has_country_flag = UKR_authority_despotism_flag
+}
