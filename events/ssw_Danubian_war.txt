@@ -43,7 +43,7 @@ country_event = { #ニシュ会談
 		ROM = {
 			create_faction = The_New_Balkan_Order
 		}
-		SER = { add_to_faction = ROM }
+		ROM = { add_to_faction = SER }
 		hidden_effect = {
 			HUN = {
 				country_event = {
@@ -51,12 +51,14 @@ country_event = { #ニシュ会談
 					days = 20
 				}
 			}
+			news_event = {
+				id = Danubian_war.15
+			}
 		}
 	}
 	option = { #リスクが大き過ぎる
 		name = Danubian_war.2.b
 		ai_chance = { base = 1 }
-		
 	}
 }
 
@@ -97,17 +99,31 @@ country_event = { #バルカン新秩序がハンガリーへ侵攻
 	option = { #
 		name = Danubian_war.4.a
 		ai_chance = { base = 1 }
+
 		SER = {
+			set_major = yes
 			declare_war_on = {
 			target = HUN
 			type = annex_everything
 			}
 		}
 		ROM = {
+			set_major = yes
 			declare_war_on = {
 			target = HUN
 			type = annex_everything
 			}
+		}
+		HUN = {
+			set_major = yes
+		}
+
+		CRO = {
+			set_major = yes
+		}
+
+		BUL = {
+			set_major = yes
 		}
 		hidden_effect = {
 			set_global_flag = Danubian_war
@@ -220,7 +236,12 @@ country_event = { #セルビアが降伏
 		has_global_flag = Danubian_war
 		SER = {
 			has_capitulated = yes
+			
 		}
+		original_tag = ROM
+		original_tag = BUL
+		original_tag = HUN
+		original_tag = CRO
 	}
 
 	is_triggered_only = yes
@@ -229,7 +250,11 @@ country_event = { #セルビアが降伏
 	option = { #前進せよ
 		name = Danubian_war.8.a
 		ai_chance = { base = 1 }
-
+		trigger = {
+			NOT = { 
+				original_tag = ROM
+			}
+		}
 		
 	}
 	option = { #なんてことだ
@@ -253,6 +278,10 @@ country_event = { #ルーマニアが降伏
 		ROM = {
 			has_capitulated = yes
 		}
+		original_tag = ROM
+		original_tag = BUL
+		original_tag = HUN
+		original_tag = CRO
 	}
 	
 	is_triggered_only = yes
@@ -261,6 +290,11 @@ country_event = { #ルーマニアが降伏
 	option = { #
 		name = Danubian_war.9.a
 		ai_chance = { base = 1 }
+		trigger = {
+			NOT = { 
+				original_tag = SER
+			}
+		}
 
 		
 	}
@@ -461,7 +495,7 @@ country_event = { #
 	}
 }
 
-country_event = { #
+news_event = { #
 	id = Danubian_war.15
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.15"}
 	title = Danubian_war.15.t
@@ -474,12 +508,35 @@ country_event = { #
 	option = { #
 		name = Danubian_war.15.a
 		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				tag = ROM
+				tag = SER
+				tag = HUN
+			}
+		}
 		
 	}
 	option = { #
 		name = Danubian_war.15.b
 		ai_chance = { base = 1 }
-		
+		trigger = {
+			tag = ROM
+		}
+	}
+	option = { #
+		name = Danubian_war.15.c
+		ai_chance = { base = 1 }
+		trigger = {
+			tag = SER
+		}
+	}
+	option = { #
+		name = Danubian_war.15.e
+		ai_chance = { base = 1 }
+		trigger = {
+			tag = HUN
+		}
 	}
 }
 
