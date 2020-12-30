@@ -9,9 +9,7 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	SSW_JAP_Hirohito
-	Colonial_goverment
 }
 
 set_politics = {

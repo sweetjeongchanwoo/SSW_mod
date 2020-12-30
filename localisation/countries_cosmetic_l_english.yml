@@ -78,6 +78,37 @@
  BLR_SOV_DEF:0 "白ロシア・ソビエト共和国"
  BLR_SOV_ADJ:0 "白ロシア・ソビエト"
  
+### 崩壊 ###
+#モスクワ
+ RUS_liberalist:0 "自由主義ロシア"
+ RUS_liberalist_DEF:0 "自由主義ロシア"
+ RUS_liberalist_ADJ:0 "自由主義ロシア"
+ 
+ RUS_nobles:0 "貴族評議会"
+ RUS_nobles_DEF:0 "貴族評議会"
+ RUS_nobles_ADJ:0 "貴族評議会"
+ 
+ MOS_archbishop:0 "大司教領"
+ MOS_archbishop_DEF:0 "大司教領"
+ MOS_archbishop_ADJ:0 "大司教領"
+ 
+ RUS_rall:0 "ロシアの空解放同盟"
+ RUS_rall_DEF:0 "ロシアの空解放同盟"
+ RUS_rall_ADJ:0 "ロシアの空解放同盟"
+ 
+ RUS_arufnl:0 "全ロシア民族解放統一戦線"
+ RUS_arufnl_DEF:0 "全ロシア民族解放統一戦線"
+ RUS_arufnl_ADJ:0 "全ロシア民族解放統一戦線"
+ 
+ RUS_mikhail:0 "大天使ミハイル"
+ RUS_mikhail_DEF:0 "大天使ミハイル"
+ RUS_mikhail_ADJ:0 "大天使ミハイル"
+ 
+ RUS_blackorder:0 "ブラックオーダー"
+ RUS_blackorder_DEF:0 "ブラックオーダー"
+ RUS_blackorder_ADJ:0 "ブラックオーダー"
+ 
+### 植民地 ###
 #共同管理国家
  CLC_JAPandCHI:0 "日華共同港都市"
  CLC_JAPandCHI_DEF:0 "日華共同港都市"
@@ -292,7 +323,7 @@
  NWA_FRA_DEF:0 "仏領西アフリカ"
  NWA_FRA_ADJ:0 "仏領西アフリカ"
  
- EQA_FRA:0 "仏領赤道"
+ EQA_FRA:0 "仏領赤道アフリカ"
  EQA_FRA_DEF:0 "仏領赤道アフリカ"
  EQA_FRA_ADJ:0 "仏領赤道アフリカ"
  
@@ -303,23 +334,6 @@
  TUN_FRA:0 "仏領チュニジア"
  TUN_FRA_DEF:0 "仏領チュニジア"
  TUN_FRA_ADJ:0 "仏領チュニジア"
- 
-#ヴィシー・フランス
- NWA_VFR:0 "ヴィシー仏領西アフリカ"
- NWA_VFR_DEF:0 "ヴィシー仏領西アフリカ"
- NWA_VFR_ADJ:0 "ヴィシー仏領西アフリカ"
- 
- EQA_VFR:0 "ヴィシー仏領赤道"
- EQA_VFR_DEF:0 "ヴィシー仏領赤道アフリカ"
- EQA_VFR_ADJ:0 "ヴィシー仏領赤道アフリカ"
- 
- MOR_VFR:0 "ヴィシー仏領モロッコ"
- MOR_VFR_DEF:0 "ヴィシー領モロッコ"
- MOR_VFR_ADJ:0 "ヴィシー仏領モロッコ"
- 
- TUN_VFR:0 "ヴィシー仏領チュニジア"
- TUN_VFR_DEF:0 "ヴィシー仏領チュニジア"
- TUN_VFR_ADJ:0 "ヴィシー仏領チュニジア"
  
 #スペイン帝国
  RIF_SPR:0 "西領モロッコ"

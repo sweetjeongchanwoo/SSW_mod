@@ -43,22 +43,23 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
+		completion_reward = {	
 		add_tech_bonus = {
 			bonus = 1
 			uses = 1
 			category = armor
 		}
+		}
 	}
 	focus = {	#戦車と航空機の連携
 		id = UTC_cooperation_between_tanks_and_aircraft
 		icon = GFX_focus_generic_army_tanks2
-		cost = 10.00
+		cost = 10.00	
 		prerequisite = {
 			focus = UTC_practical_use_of_new_tank
 		}
 		x = 2
 		y = 3
-
 	}
 	focus = {	#爆撃機の更なる改良
 		id = UTC_improved_bomber
@@ -426,9 +427,10 @@ focus_tree = {
 		}
 		x = 5
 		y = 9
+		completion_reward = {	
 		add_offsite_building = { 
 			type = industrial_complex level = 1 }
-	
+		}
 	}
 	focus = {	#三社連合の農業化
 		id = UTC_the_agriculturalization
@@ -595,11 +597,14 @@ focus_tree = {
 	}
 
 	focus = {	#内戦再開の予兆
-		id = UTC_signs_of_requmption_of_civil_war
+		id = UTC_signs_o	16f_requmption_of_civil_war
 		icon = GFX_focus_raj_lions_of_the_great_war
 		cost = 2.00
 		x = 24
 		y = 0
+		completion_reward = {
+		planning_speed = 0.10
+		}
 
 	}
 	focus = {	#再軍備のための工場建築
@@ -624,7 +629,10 @@ focus_tree = {
 		}
 		x = 23
 		y = 2
-
+		completion_reward = {
+		motorized_attack_factor = 0.05
+		motorized_defence_factor = 0.05
+		}
 	}
 	focus = {	#新型戦闘機の開発
 		id = UTC_developed_new_fighter
@@ -635,6 +643,13 @@ focus_tree = {
 		}
 		x = 25
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 1
+    		uses = 1
+    		category = fighter
+			}
+		}
 
 	}
 	focus = {	#内戦の再開
@@ -649,6 +664,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		completion_reward = {
+			stability_factor = 0.05
+		}
 
 	}
 	focus = {	#アメリカ連邦との戦争
@@ -734,7 +752,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 6
-
+		completion_reward = {
+		planning_speed = 0.10
+		}
 	}
 	focus = {	#国家存亡の危機
 		id = UTC_crisis_of_national_survival
