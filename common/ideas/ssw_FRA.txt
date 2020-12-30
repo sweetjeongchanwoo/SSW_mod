@@ -12,6 +12,7 @@ ideas = {
 
             modifier = {consumer_goods_factor = -0.03}
         }
+        
         dictator = {
 
             allowed = {always = no}
@@ -24,6 +25,7 @@ ideas = {
 
             modifier = {political_power_gain = -0.25}
         }
+
         Beyond_the_Atlantic = {
 
           allowed = {always = no}
@@ -113,10 +115,11 @@ ideas = {
             picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
-                army_org_Factor = -0.2
-                training_time_factor = 0.3
-                conscription = -0.7
-                surrender_limit = -0.5
+                war_support_factor = -0.2
+                army_org_Factor = -0.1
+                training_time_factor = 0.15
+                conscription = -0.35
+                surrender_limit = -0.25  
             }
         }
         Defeated_army_3 = {
@@ -128,9 +131,11 @@ ideas = {
             picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
-                army_org_Factor = -0.2
-                conscription = -0.7
-                surrender_limit = -0.5
+                war_support_factor = -0.1
+                army_org_Factor = -0.5
+                training_time_factor = 0.1
+                conscription = -0.2
+                surrender_limit = -0.2
             }
         }
         Defeated_army_4 = {
@@ -142,8 +147,10 @@ ideas = {
             picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
-                conscription = -0.7
-                surrender_limit = -0.5
+                war_support_factor = -0.5
+                training_time_factor = 0.5
+                conscription = -0.1
+                surrender_limit = -0.1
             }
         }
         Defeated_army_5 = {
@@ -155,6 +162,7 @@ ideas = {
             picture = idea_saf_history_of_segregation_2.dds
 
             modifier = {
+                conscription = -0.5
                 surrender_limit = -0.5
             }
         }

@@ -14,6 +14,9 @@ focus_tree = {
 		cost = 5.00
 		x = 6
 		y = 0
+		completion_reward = {
+			add_ideas = Review_of_the_French_economy
+		}
 
 	}
 	focus = {
@@ -30,6 +33,9 @@ focus_tree = {
 		cost = 5.00
 		x = 40
 		y = 0
+		completion_reward = {
+			army_experience = 25
+		}
 
 	}
 	focus = {
@@ -38,6 +44,9 @@ focus_tree = {
 		cost = 5.00
 		x = 44
 		y = 8
+		completion_reward = {
+			air_experience = 30
+		}
 
 	}
 	focus = {
@@ -46,6 +55,9 @@ focus_tree = {
 		cost = 5.00
 		x = 35
 		y = 8
+		completion_reward = {
+			add_ideas = French_mediterranean_fleet
+		}
 
 	}
 	focus = {
@@ -73,6 +85,12 @@ focus_tree = {
 		}
 		x = 2
 		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Unstable_influence_with_Germany
+				add_idea = Stable_influence_with_Germany
+			}
+		}
 
 	}
 	focus = {
@@ -84,6 +102,12 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.3
+			}
+		}
 
 	}
 	focus = {
@@ -95,6 +119,9 @@ focus_tree = {
 		}
 		x = 3
 		y = 3
+		completion_reward = {
+			add_ideas = CZE_national_fascism_idea
+		}
 
 	}
 	focus = {
@@ -109,6 +136,14 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
+		completion_reward = {
+			add_popularity = {
+				ideology = classical_communism
+				popularity = -0.1
+				ideology = progressive_communism
+				popularity = -0.1
+			}
+		}
 
 	}
 	focus = {
@@ -120,6 +155,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
+		completion_reward = {
+			add_ideas = Millis_strong
+		}
 
 	}
 	focus = {
@@ -147,6 +185,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
+		completion_reward = {
+			remove_ideas = Unstable_influence_with_Germany
+		}
 
 	}
 	focus = {
@@ -158,6 +199,12 @@ focus_tree = {
 		}
 		x = 6
 		y = 3
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ITA
+				modifier = medium_increase
+			}
+		}
 
 	}
 	focus = {
@@ -169,6 +216,14 @@ focus_tree = {
 		}
 		x = 6
 		y = 4
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = FRA
+					modifier = HOL_germany_is_the_greater_threat
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -180,6 +235,14 @@ focus_tree = {
 		}
 		x = 6
 		y = 5
+		completion_reward = {
+			ITA = {
+				country_event = {
+					id = FRA_ita_Allince
+					days = 1
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -191,6 +254,9 @@ focus_tree = {
 		}
 		x = 6
 		y = 6
+		completion_reward = {
+			add_ideas = France_Black_shirts
+		}
 
 	}
 	focus = {
@@ -207,6 +273,18 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
+		completion_reward = {
+			add_stability = -0.05
+			create_country_leader = {
+				name = "jacqes Doriot"
+				desc = "POLITICS_ÉDOUAD_DALADIER_DESC"
+				picture = GFX_portrait_fra_jacques_doriot
+				expire = "1965.1.1"
+				ideology = nazism_ideology
+				traits = { eager_collaborator }
+			}
+			remove_ideas = Unstable_influence_with_Germany
+		}
 
 	}
 	focus = {
@@ -218,6 +296,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
+		completion_reward = {
+			war_support_factor = 0.15
+		}
 
 	}
 	focus = {
@@ -229,6 +310,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
+		completion_reward = {
+			add_ideas = dictator
+		}
 
 	}
 	focus = {
@@ -243,6 +327,9 @@ focus_tree = {
 		}
 		x = 10
 		y = 4
+		completion_reward = {
+			add_ideas = Rose_shirt_mobilization
+		}
 
 	}
 	focus = {
@@ -254,6 +341,12 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
+		completion_reward = {
+			add_timed_idea = {
+				idea = Opposition_Purge
+				days = 180
+			}
+		}
 
 	}
 	focus = {
@@ -268,6 +361,9 @@ focus_tree = {
 		}
 		x = 12
 		y = 4
+		completion_reward = {
+			add_ideas = Do_it_for_France
+		}
 
 	}
 	focus = {
@@ -282,6 +378,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 5
+		completion_reward = {
+			add_war_support = 0.2
+			add_ideas = National_revanchism
+		}
 
 	}
 	focus = {
@@ -298,6 +398,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
+		completion_reward = {
+			remove_ideas = Unstable_influence_with_Germany
+		}
 
 	}
 	focus = {
@@ -313,6 +416,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+		completion_reward = {
+			add_ideas = French_Peoples_Front
+		}
 
 	}
 	focus = {
@@ -324,12 +430,15 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+		completion_reward = {
+			country_event = 1st_Peoples_Council
+		}
 
 	}
 	focus = {
 		id = FRA_Anarchism
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_First_Peoples_Council
 		}
@@ -344,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Mraxism_Leninism
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_First_Peoples_Council
 		}
@@ -430,6 +539,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+		completion_reward = {
+			add_ideas = Democratic_Republic_under_themilitary_junta
+		}
 
 	}
 	focus = {
@@ -441,6 +553,9 @@ focus_tree = {
 		}
 		x = 23
 		y = 4
+		completion_reward = {
+			add_ideas = Parliamentary_resurrection
+		}
 
 	}
 	focus = {
@@ -452,6 +567,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
+		completion_reward = {
+			add_ideas = Restoration_of_the_old_republican_constitution
+		}
 
 	}
 	focus = {
@@ -481,6 +599,12 @@ focus_tree = {
 		}
 		x = 22
 		y = 6
+		completion_reward = {
+			world_event = {
+				id = Guy_Mollet_To_the_president
+			}
+			remove_ideas = Democratic_Republic_under_themilitary_junta
+		}
 
 	}
 	focus = {
@@ -496,6 +620,12 @@ focus_tree = {
 		}
 		x = 24
 		y = 6
+		completion_reward = {
+			world_event = {
+				id = Pierre_Mendes_France_To_the_president
+			}
+			remove_ideas = Democratic_Republic_under_themilitary_junta
+		}
 
 	}
 	focus = {
@@ -511,6 +641,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 6
+		completion_reward = {
+			world_event = {
+				id = Rene_Jules_Gustave_Coty_To_the_president
+			}
+			remove_ideas = Democratic_Republic_under_themilitary_junta
+		}
 
 	}
 	focus = {
@@ -524,6 +660,12 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
+		completion_reward = {
+			world_event = {
+				id = Republican_revival
+			}
+			add_ideas = NEW_repubulic
+		}
 
 	}
 	focus = {
@@ -535,6 +677,12 @@ focus_tree = {
 		}
 		x = 24
 		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_ideas = NEW_repubulic
+				add_ideas = NEW_repubulic_2
+			}
+		}
 
 	}
 	focus = {
@@ -549,6 +697,9 @@ focus_tree = {
 		}
 		x = 25
 		y = 10
+		completion_reward = {
+			add_ideas = Preparing_for_war
+		}
 
 	}
 	focus = {
@@ -563,6 +714,14 @@ focus_tree = {
 		}
 		x = 27
 		y = 10
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = FRA_NFR_Return
+					days = 1
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -644,6 +803,7 @@ focus_tree = {
 		}
 		x = 26
 		y = 14
+
 
 	}
 	focus = {
@@ -818,7 +978,7 @@ focus_tree = {
 	focus = {
 		id = FRA_Republican_Repression
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_Absolute_power_of_the_king
 		}
@@ -835,6 +995,12 @@ focus_tree = {
 		}
 		x = 37
 		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Confusion_of_the_General_Staff
+				add_idea = Confusion_of_the_General_Staff_2
+			}
+		}
 
 	}
 	focus = {
@@ -850,6 +1016,17 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+			swap_ideas = {
+				remove_ideas = Confusion_of_the_General_Staff_2
+			}
+		}
 
 	}
 	focus = {
@@ -861,6 +1038,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = RAJ_vickers_berthier_gun
+				bonus = 1
+				uses = 1
+
+			}
+		}
 
 	}
 	focus = {
@@ -872,6 +1057,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 4
+		completion_reward = {
+			add_ideas = Emphasis_on_thermal_power
+		}
 
 	}
 	focus = {
@@ -883,6 +1071,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 9
+		completion_reward = {
+			add_ideas = Expansion_of_shipyards
+		}
 
 	}
 	focus = {
@@ -894,6 +1085,16 @@ focus_tree = {
 		}
 		x = 35
 		y = 10
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1
+				uses = 2
+				category = cl_tech
+				category = cl_tech
+			}
+		}
 
 	}
 	focus = {
@@ -908,6 +1109,16 @@ focus_tree = {
 		}
 		x = 33
 		y = 11
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = bb_bonus
+				bonus = 1
+				uses = 2
+				category = bb_tech
+				category = bc_tech
+			}
+		}
 
 	}
 	focus = {
@@ -923,6 +1134,17 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			swap_ideas = {
+				remove_idea = Confusion_of_the_General_Staff_2
+			}
+		}
 
 	}
 	focus = {
@@ -934,6 +1156,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
 
 	}
 	focus = {
@@ -945,6 +1175,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 4
+		completion_reward = {
+			add_ideas = Focus_on_armor
+		}
 
 	}
 	focus = {
@@ -960,6 +1193,18 @@ focus_tree = {
 		}
 		x = 39
 		y = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = CZE_inf_and_artillery_advancement
+				bonus = 1
+				ahead_reduction = 2
+				uses = 2
+				category = infantry_weapons
+			}
+			swap_ideas = {
+				remove_idea = Confusion_of_the_General_Staff_2
+			}
+		}
 
 	}
 	focus = {
@@ -971,6 +1216,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -982,7 +1235,9 @@ focus_tree = {
 		}
 		x = 39
 		y = 4
-
+		completion_reward = {
+			add_ideas = Focus_on_infantry
+		}
 	}
 	focus = {
 		id = FRA_Doctrine_focus
@@ -1006,6 +1261,15 @@ focus_tree = {
 		}
 		x = 42
 		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_bomber_modernization
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+				category = tactical_bomber
+			}
+		}
 
 	}
 	focus = {
@@ -1017,6 +1281,14 @@ focus_tree = {
 		}
 		x = 39
 		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_carrier_warfare_experiments
+				bonus = 1
+				uses = 2
+				category = cat_base_strike
+			}
+		}
 
 	}
 	focus = {
@@ -1026,6 +1298,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Army_Reform
 		}
+		completion_reward = {
+			war_support_factor = 0.05
+		}
 		x = 43
 		y = 1
 
@@ -1033,12 +1308,18 @@ focus_tree = {
 	focus = {
 		id = FRA_Strengthening_the_Military_Academy
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_Retaliation_Armed_Plan
 		}
 		x = 42
 		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army
+				add_idea = Defeated_army_2
+			}
+		}
 
 	}
 	focus = {
@@ -1050,6 +1331,12 @@ focus_tree = {
 		}
 		x = 42
 		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army_2
+				add_idea = Defeated_army_3
+			}
+		}
 
 	}
 	focus = {
@@ -1061,6 +1348,12 @@ focus_tree = {
 		}
 		x = 44
 		y = 2
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army_2
+				add_idea = Defeated_army_4
+			}
+		}
 
 	}
 	focus = {
@@ -1072,6 +1365,12 @@ focus_tree = {
 		}
 		x = 44
 		y = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army_4
+				add_idea = Defeated_army_5
+			}
+		}
 
 	}
 	focus = {
@@ -1086,6 +1385,12 @@ focus_tree = {
 		}
 		x = 43
 		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Defeated_army_5
+				add_idea = New_French_Army
+			}
+		}
 
 	}
 	focus = {
@@ -1097,12 +1402,18 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = dictator
+				add_idea = Charismatic_dictator
+			}
+		}
 
 	}
 	focus = {
 		id = FRA_France_for_the_Monarch
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = FRA_Republican_Repression
 			focus = FRA_Reconciliation_with_Republicans
@@ -1238,6 +1549,9 @@ focus_tree = {
 		}
 		x = 38
 		y = 7
+		completion_reward = {
+			add_ideas = Seeking_freedom
+		}
 
 	}
 	focus = {
@@ -1249,6 +1563,11 @@ focus_tree = {
 		}
 		x = 40
 		y = 7
+		completion_reward = {
+			set_technology = {
+				bicycle_infantry = 1
+			}
+		}
 
 	}
 	focus = {
@@ -1260,6 +1579,9 @@ focus_tree = {
 		}
 		x = 42
 		y = 7
+		completion_reward = {
+			add_ideas = Determination
+		}
 
 	}
 	focus = {
@@ -1271,6 +1593,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 9
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_air
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+		}
 
 	}
 	focus = {
@@ -1282,6 +1612,14 @@ focus_tree = {
 		}
 		x = 46
 		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name =  fighter_modernization
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
 
 	}
 	focus = {
@@ -1293,6 +1631,14 @@ focus_tree = {
 		}
 		x = 42
 		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_strategic_bomber_effort
+				bonus = 1
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
 
 	}
 	focus = {
@@ -1310,6 +1656,14 @@ focus_tree = {
 		}
 		x = 37
 		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+		}
 
 	}
 	focus = {
@@ -1322,6 +1676,9 @@ focus_tree = {
 		}
 		x = 35
 		y = 12
+		completion_reward = {
+			add_ideas = Beyond_the_Atlantic
+		}
 
 	}
 }
