@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		#start
+		KOR_colonial_government = {
+			on_add = { 
+				log = "[GetDateText]: [Root.GetName]: add idea KOR_colonial_government"
+			}
+			picture = idea_chi_forced_conscription
+			modifier = {
+				recruitable_population = -0.85
+				mobilization_speed = -0.5
+			}
+		}
+		KOR_rule_of_ethnic_extermination = {
+			on_add = { 
+				log = "[GetDateText]: [Root.GetName]: add idea KOR_rule_of_ethnic_extermination"
+			}
+			#picture = 
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.2
+			}
+		}
+		KOR_low_literacy = {
+			on_add = { 
+				log = "[GetDateText]: [Root.GetName]: add idea KOR_low_literacy"
+			}
+			#picture = 
+			modifier = {
+				research_speed_factor = -0.5
+			}
+		}
+		#literacy
+		KOR_moderate_literacy = {
+			on_add = { 
+				log = "[GetDateText]: [Root.GetName]: add idea KOR_moderate_literacy"
+			}
+			#picture = 
+			modifier = {
+				research_speed_factor = -0.20
+			}
+		}
+		KOR_high_literacy = {
+			on_add = { 
+				log = "[GetDateText]: [Root.GetName]: add idea KOR_high_literacy"
+			}
+			#picture = 
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+	}
+}

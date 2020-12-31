@@ -9,8 +9,13 @@ set_technology = {
 }
 
 add_ideas = {
-	civilian_economy
-	SSW_JAP_Hirohito
+	service_by_requirement
+	export_focus
+	partial_economic_mobilisation
+	
+	KOR_colonial_government
+	KOR_rule_of_ethnic_extermination
+	KOR_low_literacy
 }
 
 set_politics = {
