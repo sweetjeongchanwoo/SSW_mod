@@ -1,56 +1,23 @@
 on_actions = {
 	on_state_control_changed = {
 		effect = {
-			if = { #SER占領
-				limit = {
-					OR = {
-						SER = {
-							has_war_with = CRO #防御側
-							has_war_with = HUN
-							has_war_with = BUL
-						}
-						SER = { #option
-							surrender_progress > 0.8
-						}
-					}	
-					FROM.FROM = { #首都の位置する州
-						state = 107
-					}
-					FROM = { tag = SER } #防御側
-					ROOT = { 
-						tag = CRO  #攻め側
-						tag = HUN
-						tag = BUL
-					}
-				}
-				FROM = { annex_country = SER } #相手様のイベント
-				#ROOT = {  } #私のイベント
-			}
-
-			if = { #SER占領
+			if = {
 				limit = {
 					OR = {
 						ROM = {
-							has_war_with = CRO #防御側
-							has_war_with = HUN
-							has_war_with = BUL
-						}
-						ROM = { #option
 							surrender_progress > 0.8
+							OR = {
+								has_war_with = CRO
+								has_war_with = HUN
+								has_war_with = BUL
+							} 
 						}
-					}	
-					FROM.FROM = { #首都の位置する州
-						state = 46
-					}
-					FROM = { tag = ROM } #防御側
-					ROOT = { 
-						tag = CRO  #攻め側
-						tag = HUN
-						tag = BUL
 					}
 				}
-				FROM = { annex_country = ROM } #相手様のイベント
-				#ROOT = {  } #私のイベント
+				HUN = {
+					white_peace = ROM
+					annex_country = { target = ROM transfer_troops = no }
+				}
 			}
 		}
 	}

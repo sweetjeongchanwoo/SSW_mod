@@ -59,7 +59,6 @@ country_event = { #ニシュ会談
 					id = Danubian_war.15
 				}
 			}
-			
 		}
 	}
 	option = { #リスクが大き過ぎる
@@ -195,12 +194,17 @@ country_event = { #小枢軸の形成
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event Danubian_war.6"
 		hidden_effect = {
-			news_event = {
-				id = Danubian_war.7
-				days = 2
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = Danubian_war.7
+					days = 2
+				}
 			}
-		}
-		
+			
+		}	
 	}
 	title = Danubian_war.6.t
 	desc = Danubian_war.6.desc
@@ -255,11 +259,18 @@ country_event = { #セルビアが降伏
 		SER = {
 			has_capitulated = yes
 		}
+		
 		OR = {
 			original_tag = ROM
-			original_tag = BUL
-			original_tag = HUN
-			original_tag = CRO
+			BUL = {
+				has_war_with = ROM
+			}
+			HUN = {
+				has_war_with = ROM
+			}
+			CRO = {
+				has_war_with = ROM
+			}
 		}
 		
 	}
@@ -349,8 +360,14 @@ country_event = { #
 	#picture = 
 	trigger = {
 		has_global_flag = Danubian_war
-		has_event_target = Danubian_war.9
-		has_event_target = Danubian_war.8
+		AND = {
+			SER = {
+				has_war_with = ROM
+			}
+			ROM = {
+				has_capitulated = yes
+			}
+		}
 	}
 	
 	is_triggered_only = yes
