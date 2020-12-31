@@ -459,6 +459,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {
+				id = ssw_UKR.5
+				days = 3
+			}
+		}
 	}
 	#Focus for 内戦への支援 - focus ID randomly generated due to title being in non-latin characters
 	focus = {

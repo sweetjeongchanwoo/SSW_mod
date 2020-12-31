@@ -250,5 +250,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ssw_UKR.7.a
+		set_country_flag = UKR_combat_uia
+		unlock_decision_category_tooltip = UKR_combat_uia
 	}
 }

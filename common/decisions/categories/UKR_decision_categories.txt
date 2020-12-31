@@ -1,0 +1,9 @@
+UKR_combat_uia = {
+	icon = generic_industry
+	allowed = {
+		tag = UKR
+	}
+	visible = {
+		has_country_flag = UKR_combat_uia
+	}
+}
