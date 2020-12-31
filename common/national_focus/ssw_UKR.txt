@@ -200,6 +200,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_rada_under_german
+		}
 	}
 	#Focus for ウクライナ人との協力 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -291,6 +294,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			# for_each_scope_loop = {
+			# 	array = russian_states_in_ukraine
+			# 	add_core_of = ROOT
+			# }
 			220 = {
 				add_core_of = ROOT
 			}

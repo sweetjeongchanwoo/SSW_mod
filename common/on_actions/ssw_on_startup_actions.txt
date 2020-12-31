@@ -9,50 +9,20 @@ on_actions = {
 					SSW_Opening_Screen = 1
 				}
 			}
-			# define Russian states occupied by Ukraine
-			add_to_array = {
-				russian_states_in_ukraine = 220
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 240
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 222
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 258
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 257
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 255
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 239
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 265
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 245
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 218
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 260
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 218
-			}
-			add_to_array = {
-				russian_states_in_ukraine = 217
-			}
 			# remove Ukrainian core states
-			for_each_scope_loop = {
-				array = russian_states_in_ukraine
-				remove_core_of = UKR
+			UKR = {
+				remove_state_core = 220
+				remove_state_core = 240
+				remove_state_core = 222
+				remove_state_core = 258
+				remove_state_core = 257
+				remove_state_core = 255
+				remove_state_core = 239
+				remove_state_core = 265
+				remove_state_core = 245
+				remove_state_core = 218
+				remove_state_core = 260
+				remove_state_core = 217
 			}
 			# create People's Republic of Ukraine
 			create_dynamic_country = {
@@ -111,7 +81,7 @@ on_actions = {
 			}
 			# Remove all cores from Ukraine
 			UKR = {
-				every_owned_state = { 
+				every_owned_state = {
 					remove_core_of = UKR
 					add_claim_by = UKR
 				}

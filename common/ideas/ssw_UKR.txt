@@ -51,10 +51,11 @@ ideas = {
 				non_core_manpower = 0.3
 			}
 		}
-		# UKR_russian_cooperation = {
-		# 	picture = por_ogme
-		# 	modifier = {
-		# 	}
-		# }
+		UKR_rada_under_german = {
+			picture = por_ogme
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
 	}
 }
