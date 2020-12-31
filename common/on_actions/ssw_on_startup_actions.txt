@@ -1,12 +1,52 @@
 on_actions = {
 	on_startup = {
 		effect = {
-
 			every_country = {
-				limit = { is_ai = no }
-				set_variable = { SSW_Opening_Screen = 1 }
+				limit = {
+					is_ai = no
+				}
+				set_variable = {
+					SSW_Opening_Screen = 1
+				}
+			}
+			# define Russian states occupied by Ukraine
+			add_to_array = {
+				russian_states_in_ukraine = 220
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 240
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 222
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 258
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 257
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 255
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 239
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 265
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 245
+			}
+			add_to_array = {
+				russian_states_in_ukraine = 218
+			}
+			# remove Ukrainian core states
+			for_each_scope_loop = {
+				array = russian_states_in_ukraine
+				remove_core_of = UKR
 			}
 		}
-
+		effect = {
+		}
 	}
 }
