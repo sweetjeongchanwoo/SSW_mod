@@ -1,10 +1,60 @@
 ideas = {
 	country = {
-		UKR_opposed_occupation = {
+		UKR_opposed_occupation_ukr = {
 			picture = por_ogme
 			modifier = {
-				conscription_factor = -0.93
+				conscription_factor = -0.6
+				political_power_gain = -0.1
 			}
 		}
+		UKR_opposed_occupation_rus = {
+			picture = por_ogme
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		UKR_low_education_level = {
+			picture = por_ogme
+			modifier = {
+				drift_defence_factor = -0.5
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		UKR_stabilize = {
+			picture = por_ogme
+			modifier = {
+				stability_weekly = 0.05
+			}
+		}
+		UKR_german_volunteers = {
+			picture = por_ogme
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		UKR_russian_volunteers = {
+			picture = por_ogme
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		UKR_german_elite = {
+			picture = por_ogme
+			modifier = {
+				army_org_factor = 0.3
+			}
+		}
+		UKR_natives_army = {
+			picture = por_ogme
+			modifier = {
+				army_org_factor = -0.3
+				non_core_manpower = 0.3
+			}
+		}
+		# UKR_russian_cooperation = {
+		# 	picture = por_ogme
+		# 	modifier = {
+		# 	}
+		# }
 	}
 }

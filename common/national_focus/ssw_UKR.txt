@@ -5,7 +5,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = UKR
-			# original_tag = UKR
+			original_tag = UKR
 		}
 	}
 	#Focus for 航空隊の新設 - focus ID randomly generated due to title being in non-latin characters
@@ -221,6 +221,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			remove_ideas = UKR_opposed_occupation_ukr
+		}
 	}
 	#Focus for ロシア人との協力 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -241,6 +244,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = UKR_opposed_occupation_rus
 		}
 	}
 	#Focus for ロシア義勇兵の徴募 - focus ID randomly generated due to title being in non-latin characters
@@ -263,6 +269,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_russian_volunteers
+		}
 	}
 	#Focus for 露独協力政権 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -280,6 +289,38 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			220 = {
+				add_core_of = ROOT
+			}
+			240 = {
+				add_core_of = ROOT
+			}
+			222 = {
+				add_core_of = ROOT
+			}
+			258 = {
+				add_core_of = ROOT
+			}
+			257 = {
+				add_core_of = ROOT
+			}
+			255 = {
+				add_core_of = ROOT
+			}
+			239 = {
+				add_core_of = ROOT
+			}
+			265 = {
+				add_core_of = ROOT
+			}
+			245 = {
+				add_core_of = ROOT
+			}
+			218 = {
+				add_core_of = ROOT
+			}
 		}
 	}
 	#Focus for ドイツ精鋭部隊 - focus ID randomly generated due to title being in non-latin characters
@@ -302,6 +343,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_german_elite
+		}
 	}
 	#Focus for 現地人の大規模徴兵 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -319,6 +363,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_natives_army
 		}
 	}
 	#Focus for 統治安定化 - focus ID randomly generated due to title being in non-latin characters
@@ -340,6 +387,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
+			add_timed_idea = {
+				idea = UKR_stabilize
+				days = 365
+			}
 		}
 	}
 	#Focus for 徴兵問題 - focus ID randomly generated due to title being in non-latin characters
@@ -358,6 +409,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
 		}
 	}
 	#Focus for 航空基地の増設 - focus ID randomly generated due to title being in non-latin characters
@@ -942,6 +996,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_german_volunteers
 		}
 	}
 	#Focus for 第五次ウニヴェルサール宣言 - focus ID randomly generated due to title being in non-latin characters
