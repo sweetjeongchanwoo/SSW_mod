@@ -22,9 +22,17 @@ focus_tree = {
 	focus = {
 		id = FRA_Franch_Foreigh_Policy
 		icon = GFX_goal_unknown
-		cost = 5.00
+		cost = 1
 		x = 26
 		y = 9
+		available = {
+			has_completed_focus = FRA_Democracy_in_France
+			has_completed_focus = FRA_France_First
+			has_completed_focus = FRA_Mobilization_of_Black_Shirts
+			has_completed_focus = FRA_Maintaining_the_status_quo_with_Germany
+			has_completed_focus = FRA_Revolution_Prosperity
+			has_completed_focus = FRA_France_for_the_Monarch
+		}
 
 	}
 	focus = {
@@ -140,6 +148,8 @@ focus_tree = {
 			add_popularity = {
 				ideology = classical_communism
 				popularity = -0.1
+			}	
+			add_popularity = {
 				ideology = progressive_communism
 				popularity = -0.1
 			}
@@ -297,7 +307,7 @@ focus_tree = {
 		x = 9
 		y = 3
 		completion_reward = {
-			war_support_factor = 0.15
+			modifier = { war_support_factor = 0.15 }
 		}
 
 	}
@@ -679,8 +689,8 @@ focus_tree = {
 		y = 8
 		completion_reward = {
 			swap_ideas = {
-				remove_ideas = NEW_repubulic
-				add_ideas = NEW_repubulic_2
+				remove_idea = NEW_repubulic
+				add_idea = NEW_repubulic_2
 			}
 		}
 
@@ -749,6 +759,10 @@ focus_tree = {
 		}
 		x = 24
 		y = 12
+		bypass = {
+			is_in_faction_with = ITA
+			NFR = { exists = no }
+		}
 
 	}
 	focus = {
@@ -764,6 +778,9 @@ focus_tree = {
 		}
 		x = 26
 		y = 12
+		completion_reward = {
+			create_faction = Entente
+		}
 
 	}
 	focus = {
@@ -779,6 +796,9 @@ focus_tree = {
 		}
 		x = 28
 		y = 12
+		completion_reward = {
+			create_faction = FifthInternational
+		}
 
 	}
 	focus = {
@@ -1142,7 +1162,7 @@ focus_tree = {
 				category = motorized_equipment
 			}
 			swap_ideas = {
-				remove_idea = Confusion_of_the_General_Staff_2
+				remove_ideas = Confusion_of_the_General_Staff_2
 			}
 		}
 
@@ -1202,7 +1222,7 @@ focus_tree = {
 				category = infantry_weapons
 			}
 			swap_ideas = {
-				remove_idea = Confusion_of_the_General_Staff_2
+				remove_ideas = Confusion_of_the_General_Staff_2
 			}
 		}
 
@@ -1250,6 +1270,15 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
+		completion_reward = {
+			add_ideas = FRA_Doctrine_enhancement
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 3
+				category = land_doctrine
+			}
+		}
 
 	}
 	focus = {
@@ -1386,9 +1415,8 @@ focus_tree = {
 		x = 43
 		y = 4
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Defeated_army_5
-				add_idea = New_French_Army
+			add_ideas = {
+				FRA_New_French_Army
 			}
 		}
 
@@ -1524,7 +1552,12 @@ focus_tree = {
 		}
 		x = 43
 		y = 5
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_New_French_Army
+				add_idea = FRA_New_French_Army_2
+			}
+		}
 	}
 	focus = {
 		id = FRA_Expansion_of_the_French_Army
@@ -1538,6 +1571,10 @@ focus_tree = {
 		}
 		x = 40
 		y = 6
+		swap_ideas = {
+			remove_idea = New_French_Army_2
+			add_idea = New_French_Army_3
+		}
 
 	}
 	focus = {
