@@ -1022,7 +1022,9 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			country_event = { id = SSW_GER.31 }
+			HGR = {
+				country_event = { id = SSW_GER.31 }
+			}
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
 			custom_effect_tooltip = GER_gel_war_3_tt
@@ -1051,7 +1053,9 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			country_event = { id = SSW_GER.29 }
+			HLH = {
+				country_event = { id = SSW_GER.29 }
+			}
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
 			custom_effect_tooltip = GER_gel_war_3_tt
@@ -1080,7 +1084,9 @@ GER_civill_war_propaganda = {
 				type = strat_bomber_equipment
 				amount = -5
 			}
-			country_event = { id = SSW_GER.30 }
+			LTV = {
+				country_event = { id = SSW_GER.30 }
+			}
 			custom_effect_tooltip = GER_gel_war_2_tt
 			
 			custom_effect_tooltip = GER_gel_war_3_tt

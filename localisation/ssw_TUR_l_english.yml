@@ -416,3 +416,19 @@
   SSW_TUR.13.a:0"神は言っている。我々こそが神に選ばれしものだと"
   SSW_TUR.13.b:0"再びトルコに下ることが唯一の選択肢だ"
   SSW_TUR.14.t:0"[TUR.GetNameDef]より、統一の提案"
+
+#特性・閣僚
+
+ TUR_İsmail_Rüştü_Aksal:0"イースマイル・リュシュトゥ・アクサル"
+ Tax_Reformer:0"税制の改革者"
+ TUR_Mehmet_Ali_Aybar:0"メフメット・アリ・アイバル"
+ Rational_Communist:0"理性的な共産主義者"
+ TUR_Cemil_Sait_Barlas:0"セミル・サイト・バラス"
+ Mastering_Market_Control:0"市場統制の達人"
+ TUR_Faik_Ahmet_Barutçu:0"ファイク・アフメット・バルトゥチュ"
+ Establisher_of_democratic_order:0"民主的秩序の確立者"
+ TUR_Celâl_Bayar:0"ジェラル・バヤル"
+ Reformer_of_Turkish_Economy:0"トルコ経済の改革者"
+ TUR_Hikmet_Bayur:0"ヒクメット・バユール"
+ veteran_diplomat:0"ベテラン外交官"
+ Education_Minister:0"教育大臣"

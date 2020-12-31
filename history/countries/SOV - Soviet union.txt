@@ -10,6 +10,10 @@ set_technology = {
 
 add_ideas = {
 	ivan_konev
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
+	vacancy_ma
 	scraping_the_barrel
 	ssw_one_party_dictatorship
 	civilian_economy
@@ -44,9 +48,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	name = "Alexander Novikov"
+	desc = "POLITICS_ALEXANDER_NOVIKOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Alexander_Novikov.dds"
 	expire = "1973.5.21"
 	ideology = progressive_communism_ideology
 	traits = {
@@ -54,9 +58,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	name = "Alexander Novikov"
+	desc = "POLITICS_ALEXANDER_NOVIKOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Alexander_Novikov.dds"
 	expire = "1973.5.21"
 	ideology = classical_communism_ideology
 	traits = {

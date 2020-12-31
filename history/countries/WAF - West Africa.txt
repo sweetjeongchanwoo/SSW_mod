@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	civilian_economy
 }
 
@@ -24,9 +23,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Gerhard Engel"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/WAF/Portrait_Gerhard_Engel.dds"
+	name = "Paul Blobel"
+	desc = "POLITICS_PAUL_BLOBEL_DESC"
+	picture = "gfx/leaders/WAF/Portrait_Paul_Blobell.dds"
 	expire = "1965.1.1"
 	ideology = national_socialism_ideology
 	traits = {

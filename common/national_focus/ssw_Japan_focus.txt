@@ -17,24 +17,19 @@ focus_tree = {
 		cost = 3.00
 		x = 85
 		y = 0
-			ai_will_do = {
-					factor = 5
-				}
-			available = {
-					has_country_flag = dec_00
-					
-				}
-			available = {
-				
+		ai_will_do = {
+				factor = 5
 			}
-			bypass = {
-					has_government = communism
-				}
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
-			search_filters = { FOCUS_FILTER_POLITICAL }
-
+		available = {
+			has_country_flag = dec_00
+		}
+		bypass = {
+			has_government = communism
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = JAP_the_fourth_greater_east_asia_conference

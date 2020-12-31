@@ -1,4 +1,17 @@
 on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MEX
+					has_global_flag = mexican_civil_war
+					NOT = { has_global_flag = mcw_news }
+				}
+				news_event = { id = ssw_mex.3 hours = 6 }
+				set_global_flag = mcw_news
+			}
+		}
+	}
 	on_ruling_party_change = {
 		effect = {
 			if = {
@@ -14,6 +27,10 @@ on_actions = {
 					vacancy_mi
 					vacancy_ma
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -23,6 +40,10 @@ on_actions = {
 				add_ideas = {
 					ssw_one_party_dictatorship
 					MEX_valentin_campa
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -34,6 +55,10 @@ on_actions = {
 					ssw_one_party_dictatorship
 					MEX_vicente_lombardo
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -48,6 +73,10 @@ on_actions = {
 					ssw_parliamentary_democracy_leftist_administration
 					MEX_lazaro_cardenas
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -61,6 +90,10 @@ on_actions = {
 				add_ideas = {
 					ssw_parliamentary_democracy_leftist_administration
 					MEX_adolfo_ruiz_cortines
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -72,6 +105,10 @@ on_actions = {
 					ssw_parliamentary_democracy_leftist_administration
 					MEX_raul_salinas_lozano
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -81,6 +118,10 @@ on_actions = {
 				add_ideas = {
 					ssw_parliamentary_democracy_rightist_administration
 					MEX_manuel_gomez_morin
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -92,6 +133,10 @@ on_actions = {
 					ssw_parliamentary_democracy_rightist_administration
 					MEX_manuel_gomez_morin
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -101,6 +146,13 @@ on_actions = {
 				add_ideas = {
 					MEX_juan_andreu
 					ssw_despotism
+				}
+				if = {
+					limit = {
+						NOT = { has_cosmetic_tag = MEX_empire }
+						has_completed_focus = MEX_invite_the_emperor
+					}
+					set_cosmetic_tag = MEX_empire
 				}
 			}
 			if = {
@@ -112,6 +164,10 @@ on_actions = {
 					ssw_one_party_dictatorship
 					MEX_salvador_abascal
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -121,6 +177,10 @@ on_actions = {
 				add_ideas = {
 					ssw_one_party_dictatorship
 					MEX_victor_serge
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
@@ -136,6 +196,10 @@ on_actions = {
 					ssw_corporate_council_system
 					MEX_lazaro_cardenas
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
 			if = {
 				limit = {
@@ -150,159 +214,176 @@ on_actions = {
 					ssw_corporate_council_system
 					MEX_adolfo_ruiz_cortines
 				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
 			}
-		}
-	}
-	on_government_change = {
-		effect = {
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = anarchism
 				}
 				add_ideas = {
 					ssw_collectivist_anarchism
-					vacancy_pl
+					RUS_collectivized_society_for_ssw
+					RUS_sascha_schapiro
 					vacancy_mfa
 					vacancy_mf
 					vacancy_mi
 					vacancy_ma
 				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
+				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = progressive_communism
 				}
 				add_ideas = {
 					ssw_one_party_dictatorship
-					MEX_valentin_campa
+					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner
+					RUS_pavel_sudoplatov
+					RUS_fyodor_kulakov
+					RUS_konstantin_vershinin
+				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = classical_communism
 				}
 				add_ideas = {
 					ssw_one_party_dictatorship
-					MEX_vicente_lombardo
+					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner
+					RUS_pavel_sudoplatov
+					RUS_fyodor_kulakov
+					RUS_konstantin_vershinin
+				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = social_democracy
-					NOT = {
-						has_country_flag = cardenas_resign
-						has_country_flag = cardenas_dead
-					}
 				}
 				add_ideas = {
 					ssw_parliamentary_democracy_leftist_administration
-					MEX_lazaro_cardenas
+					RUS_alexander_kerensky_political_leader
+					RUS_alexander_kerensky
+					RUS_anna_wolkoff
+					RUS_vladimir_nabokov
+					RUS_sergei_bunyachenko
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
-					has_government = social_democracy
-					OR = {
-						has_country_flag = cardenas_resign
-						has_country_flag = cardenas_dead
-					}
-				}
-				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
-					MEX_adolfo_ruiz_cortines
-				}
-			}
-			if = {
-				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = social_liberalism
 				}
 				add_ideas = {
 					ssw_parliamentary_democracy_leftist_administration
-					MEX_raul_salinas_lozano
+					RUS_ariadna_tyrkova_williams
+					RUS_ivan_ilyin
+					RUS_anna_wolkoff
+					RUS_vladimir_nabokov
+					RUS_sergei_bunyachenko
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = social_conservatism
 				}
 				add_ideas = {
 					ssw_parliamentary_democracy_rightist_administration
-					MEX_manuel_gomez_morin
+					RUS_felix_yusupov
+					RUS_nikolai_khokhlov
+					RUS_sofia_panina
+					RUS_igor_stravinsky
+					RUS_bronislav_kaminski
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = authority_democracy
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
-					MEX_manuel_gomez_morin
+					ssw_despotism
+					RUS_andrey_vlasov
+					RUS_alexander_kerensky
+					konstantin_rodzaevsky
+					RUS_vladimir_nabokov
+					RUS_andrey_vlasov_minister_of_army
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = authority_despotism
 				}
 				add_ideas = {
-					MEX_juan_andreu
-					ssw_despotism
+					ssw_military_dictatorship
+					RUS_poa
+					RUS_nikolai_khokhlov
+					konstantin_rodzaevsky
+					RUS_vladimir_nabokov
+					RUS_andrey_vlasov_minister_of_army
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = national_fascism
 				}
 				add_ideas = {
 					ssw_one_party_dictatorship
-					MEX_salvador_abascal
+					RUS_anastasy_vonsiatsky
+					RUS_arseny_nesmelov
+					RUS_lev_okhotin
+					RUS_nikolai_markov
+					RUS_andrey_vlasov_minister_of_army
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = national_socialism
 				}
 				add_ideas = {
 					ssw_one_party_dictatorship
-					MEX_victor_serge
+					RUS_konstantin_rodzaevsky_political_leader
+					RUS_boris_brasol
+					konstantin_rodzaevsky
+					RUS_sergey_taboritsky
+					RUS_andrey_vlasov_minister_of_army
 				}
 			}
 			if = {
 				limit = {
-					original_tag = MEX
+					original_tag = RUS
 					has_government = corporatocracism
-					NOT = {
-						has_country_flag = cardenas_resign
-						has_country_flag = cardenas_dead
-					}
 				}
 				add_ideas = {
 					ssw_corporate_council_system
-					MEX_lazaro_cardenas
-				}
-			}
-			if = {
-				limit = {
-					original_tag = MEX
-					has_government = corporatocracism
-					OR = {
-						has_country_flag = cardenas_resign
-						has_country_flag = cardenas_dead
-					}
-				}
-				add_ideas = {
-					ssw_corporate_council_system
-					MEX_adolfo_ruiz_cortines
+					RUS_igor_ivanovich_sikorsky
+					RUS_nikolai_khokhlov
+					RUS_sofia_panina
+					RUS_sergey_taboritsky
+					RUS_bronislav_kaminski
 				}
 			}
 		}
