@@ -614,6 +614,7 @@ focus_tree = {
 				id = Guy_Mollet_To_the_president
 			}
 			remove_ideas = Democratic_Republic_under_themilitary_junta
+			add_ideas = FRA_Guy_Mollet
 		}
 
 	}
@@ -635,6 +636,7 @@ focus_tree = {
 				id = Pierre_Mendes_France_To_the_president
 			}
 			remove_ideas = Democratic_Republic_under_themilitary_junta
+			add_ideas = FRA_Mendes_France
 		}
 
 	}
@@ -656,6 +658,7 @@ focus_tree = {
 				id = Rene_Jules_Gustave_Coty_To_the_president
 			}
 			remove_ideas = Democratic_Republic_under_themilitary_junta
+			add_ideas = FRA_Rene_Coty
 		}
 
 	}

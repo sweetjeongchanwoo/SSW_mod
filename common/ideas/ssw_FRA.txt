@@ -626,5 +626,50 @@ ideas = {
                 experience_gain_air = 0.03
             }
         }
+        FRA_Mendes_France = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pollowe_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = -0.05
+                political_power_factor = 0.1
+            }
+        }
+        FRA_Guy_Mollet = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pollowe_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.05
+            }
+        }
+        FRA_Rene_Coty = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            pollowe_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = 0.1
+                political_power_factor = -0.05
+            }
+        }
     }
 }
