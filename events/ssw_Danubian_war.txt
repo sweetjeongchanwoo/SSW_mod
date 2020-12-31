@@ -81,7 +81,7 @@ country_event = { #ルーマニアとセルビアが国境付近で軍事演習
 		name = Danubian_war.3.a
 		ai_chance = { base = 1 }
 		hidden_effect = {
-			HUN = {
+			ROM = {
 				country_event = {
 					id = Danubian_war.4
 					days = 20
@@ -107,14 +107,14 @@ country_event = { #バルカン新秩序がハンガリーへ侵攻
 
 		SER = {
 			set_major = yes
-			declare_war_on = {
+			create_wargoal  = {
 			target = HUN
 			type = annex_everything
 			}
 		}
 		ROM = {
 			set_major = yes
-			declare_war_on = {
+			create_wargoal  = {
 			target = HUN
 			type = annex_everything
 			}
@@ -131,17 +131,9 @@ country_event = { #バルカン新秩序がハンガリーへ侵攻
 			set_major = yes
 		}
 		hidden_effect = {
-			set_global_flag = Danubian_war
-			CRO = {
+			ROM = {
 				country_event = {
-					id = Danubian_war.5
-					days = 5
-				}
-			}
-			BUL = {
-				country_event = {
-					id = Danubian_war.5
-					days = 5
+					id = Danubian_war.19
 				}
 			}
 		}
@@ -353,6 +345,14 @@ country_event = { #
 					days = 60
 				}
 			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = Danubian_war.17
+				}
+			}
 		}
 	}
 	title = Danubian_war.10.t
@@ -360,12 +360,13 @@ country_event = { #
 	#picture = 
 	trigger = {
 		has_global_flag = Danubian_war
+		original_tag = HUN
 		AND = {
 			SER = {
-				has_war_with = ROM
+				exists = no
 			}
 			ROM = {
-				has_capitulated = yes
+				exists = no
 			}
 		}
 	}
@@ -598,8 +599,21 @@ country_event = { #
 	
 	option = { #
 		name = Danubian_war.16.a
-		ai_chance = { base = 1 }
-		
+		ai_chance = { base = 99 }
+		Root = {
+			declare_war_on = {
+				target = SER
+				type = annex_everything
+			}
+		}
+		Root = {
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+		}
 	}
 	option = { #
 		name = Danubian_war.16.b
@@ -608,7 +622,7 @@ country_event = { #
 	}
 }
 
-country_event = { #
+news_event = { #
 	id = Danubian_war.17
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.17"}
 	title = Danubian_war.17.t
@@ -621,6 +635,15 @@ country_event = { #
 	option = { #
 		name = Danubian_war.17.a
 		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				OR = {
+					tag = CRO
+					tag = HUN
+					tag = BLU
+				}	
+			}
+		}
 		
 	}
 	option = { #
@@ -645,11 +668,6 @@ country_event = { #
 		ai_chance = { base = 1 }
 		
 	}
-	option = { #
-		name = Danubian_war.18.b
-		ai_chance = { base = 1 }
-		
-	}
 }
 
 country_event = { #
@@ -665,12 +683,33 @@ country_event = { #
 	option = { #
 		name = Danubian_war.19.a
 		ai_chance = { base = 1 }
-		
-	}
-	option = { #
-		name = Danubian_war.19.b
-		ai_chance = { base = 1 }
-		
+		ROM = {
+			declare_war_on = {
+			target = HUN
+			type = annex_everything
+			}
+		}
+		SER = {
+			declare_war_on = {
+			target = HUN
+			type = annex_everything
+			}
+		}
+		hidden_effect = {
+			set_global_flag = Danubian_war
+			CRO = {
+				country_event = {
+					id = Danubian_war.5
+					days = 5
+				}
+			}
+			BUL = {
+				country_event = {
+					id = Danubian_war.16
+					days = 5
+				}
+			}
+		}
 	}
 }
 
