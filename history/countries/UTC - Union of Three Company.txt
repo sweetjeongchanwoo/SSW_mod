@@ -4,13 +4,6 @@ oob = "UTC_1950"
 set_technology = {
 	infantry_weapons = 1
 	motorized_equipment = 1
-	light_air = 1
-	medium_air = 1
-	heavy_air = 1
-	tactical_bomber = 1
-	cat_strategic_bomber = 1
-
-
 }
 
 add_ideas = {
