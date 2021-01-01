@@ -1619,6 +1619,16 @@ EKA = {	#エカテリノダール
 	color_ui = rgb { 193 147 154 }
 }
 
+DON = {	#ドン
+	color = rgb { 247 198 0 }
+	color_ui = rgb { 247 198 0 }
+}
+
+LAP = {	#ラップランド
+	color = rgb { 0 64 128 }
+	color_ui = rgb { 0 64 128 }
+}
+
 HGR = {
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }
