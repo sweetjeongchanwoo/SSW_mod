@@ -18,6 +18,23 @@ ideas = {
              }
            cancel_if_invalid = no
        }
+       TUR_Kasım_Gülek = {
+
+        available = {
+                   always = no
+        }
+
+        allowed = {
+            tag = TUR
+        }
+
+        picture =JAP_cab_Shigesaburo_Maeo
+
+        traits = { 
+            Trade_Control_Mastery
+          }
+        cancel_if_invalid = no
+    }
 }
 ###政治首班###
 political_leader = {
@@ -88,6 +105,38 @@ minister_of_interior = {
 
        cancel_if_invalid = no
    }
+   TUR_Şemsettin_Günaltay = {
+
+    available = {
+               always = no
+    }
+
+    allowed = {
+        tag = TUR
+    }
+
+    picture = JAP_cab_Shigesaburo_Maeo
+
+    traits = { History_Lecturers }
+
+    cancel_if_invalid = no
+}
+TUR_Refik_Koraltan = {
+
+    available = {
+               always = no
+    }
+
+    allowed = {
+        tag = TUR
+    }
+
+    picture = JAP_cab_Shigesaburo_Maeo
+
+    traits = { Enforcer_of_justice }
+
+    cancel_if_invalid = no
+}
 }
 ###外務大臣###
 minister_of_foreign_affairs = {

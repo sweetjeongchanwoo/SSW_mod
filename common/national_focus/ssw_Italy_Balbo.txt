@@ -1,14 +1,4 @@
-focus_tree = {
-	id = ITA_Balbo_Focus_Tree
-	tag
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ITA
-		}
-	}
-	#産業の現状
+#産業の現状
 	focus = {
 		id = ITA_focus_industry_0
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
@@ -342,4 +332,3 @@ focus = {
 		add_ideas = ITA_idea_15
 	}
 }
- }
