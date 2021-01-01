@@ -1,34 +1,27 @@
 ﻿capital = 41
 oob = "SPR_1950"
-
 set_convoys = 5
-
 set_technology = {
 	infantry_weapons = 1
 }
-
 add_ideas = {
 	civilian_economy
 	spr_debahu_01
 	spr_debahu_02
 	spr_debahu_03
 }
-
 set_autonomy = {
 	target = RIF
 	autonomous_state = colony
 }
-
 set_autonomy = {
 	target = WES
 	autonomous_state = colony
 }
-
 set_autonomy = {
 	target = EQG
 	autonomous_state = colony
 }
-
 set_politics = {
 	ruling_party = national_fascism
 	last_election = "1950.1.1"
@@ -36,16 +29,23 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_fascism= 100
+	national_fascism = 60
+	social_conservatism = 20
+	authority_despotism = 20
 }
-
 create_country_leader = {
-	name = "Francisco Franco Bahamonde"
-	desc = ""
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
 	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
-	expire = "1965.1.1"
+	expire = "1975.11.20"
+	ideology = authority_democracy_ideology
+	traits = { caudillo_2 }
+}
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+	expire = "1975.11.20"
 	ideology = national_fascism_ideology
-	traits = {
-		#
-	}
+	traits = { caudillo_2 }
 }

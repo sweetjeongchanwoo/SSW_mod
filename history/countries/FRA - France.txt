@@ -41,7 +41,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	national_fascism = 100
+	national_fascism = 37
+	national_socialism_ideology = 23
+	authority_despotism_ideology = 13
+	authority_democracy_ideology = 7
+	social_democracy = 3
+	social_conservatism = 3
+	social_liberalism = 3
+	classical_communism = 11 
+	progressive_communism = 0
+	corporatocracism = 0
 }
 
 create_country_leader = {
@@ -50,6 +59,63 @@ create_country_leader = {
 	picture = "gfx/leaders/FRA/Portrait_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = national_fascism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Joseph Darnand"
+	desc = "POLITICS_DESC"
+	picture = "gfx/leaders/FRA/Portrait.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Pierre Laval"
+	picture = 
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alphonse Juan"
+	picture = 
+	expire = "1965.1.1"
+	ideology = authority_democracy_ideology 
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Guy Mollet"
+	picture =
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Pierre Mendès-France"
+	picture =
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "René Jules Gustave Coty"
+	picture =
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Maurice Thorez"
+	picture = 
+	expire = "1964.7.11"
+	ideology = classical_communism
 	traits = {
 	}
 }

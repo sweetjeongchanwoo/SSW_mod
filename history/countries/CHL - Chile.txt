@@ -1,21 +1,35 @@
-﻿capital = 279
+﻿capital = 650
 oob = "CHL_1950"
+
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.5
 
 set_convoys = 5
 
 set_technology = {
 	infantry_weapons = 1
+	electronic_mechanical_engineering = 1
 }
 
 add_ideas = {
+	#法
 	civilian_economy
+	free_trade
+	ssw_parliamentary_democracy_leftist_administration
+	vacancy_ma
+	#国民精神
+	SSW_ideas_CHL_fuantei_gikai
+	SSW_ideas_CHL_CORFO_1
+	SSW_ideas_CHL_dou_rieki
 }
 
 set_politics = {
 	ruling_party = progressive_communism
-	last_election = "1950.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "1946.9.4"
+	election_frequency = 72
+	elections_allowed = yes
 }
 set_popularities = {
 	progressive_communism = 40
@@ -26,11 +40,13 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Stalin?"
+	name = "Stalin?" #だれやろなぁ、指導者選定までとりあえず放置#
 	picture = "gfx/leaders/CHL/Portrait_Jughashvili.dds"
 	expire = "1965.1.1"
 	ideology = progressive_communism_ideology
 	traits = {
-		#
+		#消すぜ#
+		red_army_organizer
+		exiled_revolutionary
 	}
 }

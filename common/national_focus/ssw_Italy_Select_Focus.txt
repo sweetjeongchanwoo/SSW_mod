@@ -115,6 +115,7 @@ focus_tree = {
           country_event = {
                id = SSW_ITA.3
           }
+          load_focus_tree = ITA_focus_industry_0
         }
 	}
 	#ムッソリーニによって
