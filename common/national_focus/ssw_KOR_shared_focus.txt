@@ -167,7 +167,8 @@ shared_focus = {
 		focus = KOR_what_should_we_do
 	}
 	completion_reward = {#decision
-		
+		unlock_decision_category_tooltip = KOR_japanese_study_categories
+		set_variable = { KOR_literacy = 10.1 }
 	}
 }
 shared_focus = {
@@ -181,7 +182,7 @@ shared_focus = {
 		focus = KOR_resistance
 	}
 	completion_reward = {#load_obb
-		
+		load_oob = "KOR_additional_mp"
 	}
 }
 shared_focus = {
@@ -245,7 +246,7 @@ shared_focus = {
 			add_manpower = -50000
 		}
 		937 = {
-			add_manpower = 40000
+			add_manpower = 30000
 		}
 	}
 }
@@ -278,9 +279,7 @@ shared_focus = {
 		focus = KOR_additional_placement_military_police
 	}
 	completion_reward = {
-		add_autonomy_score = {
-			value = -100
-		}
+		add_autonomy_score = { value = -100 }
 		add_political_power = 25
 	}
 }
@@ -295,7 +294,10 @@ shared_focus = {
 		focus = KOR_additional_placement_military_police
 	}
 	completion_reward = {#add idea
-		
+		add_timed_idea = { 
+			idea = KOR_search_under
+			days = 180
+		}
 	}
 }
 shared_focus = {
@@ -323,7 +325,10 @@ shared_focus = {
 		focus = KOR_massive_arrest
 	}
 	completion_reward = {#add idea
-		
+		add_timed_idea = {
+			idea = KOR_interrogation_idea
+			days = 150
+		}
 	}
 }
 shared_focus = {
@@ -353,8 +358,9 @@ shared_focus = {
 	prerequisite = {
 		focus = KOR_more_colaborator
 	}
-	completion_reward = { #swap idea
-		
+	completion_reward = {
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
 shared_focus = {
@@ -385,7 +391,8 @@ shared_focus = {
 		focus = KOR_japanese_teachers
 	}
 	completion_reward = { #add idea
-		
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
 shared_focus = {
@@ -757,7 +764,7 @@ shared_focus = {
 		focus = KOR_increase_agraian
 	}
 	completion_reward = { #add idea
-		
+		add_ideas = KOR_export_food
 	}
 }
 shared_focus = {
@@ -844,8 +851,9 @@ shared_focus = {
 	prerequisite = {
 		focus = KOR_more_schools
 	}
-	completion_reward = {#add idea
-		
+	completion_reward = { #add idea
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
 shared_focus = {

@@ -7,6 +7,12 @@
  KOR_rule_of_ethnic_extermination_desc:0 "政府は現在、朝鮮人のアイデンティティーを日本人のアイデンティティーに変えようとする政策に固執しています。"
  KOR_low_literacy:0 "低い識字率"
  KOR_low_literacy_desc:0 "日本語ができる人が少ないということは私たちが朝鮮人たちの協力が全然ないということを意味します。"
+ KOR_search_under:0 "抵抗組織掃討"
+ KOR_search_under_desc:0 ""
+ KOR_interrogation_idea:0 "尋問"
+ KOR_interrogation_idea_desc:0 ""
+ KOR_export_food:0 "農産物の輸出"
+ KOR_export_food_desc:0 ""
 
  #focus
  KOR_continuous_governance:0 "打ち続く統治"
@@ -87,3 +93,12 @@
  KOR_night_schools_desc:0 ""
  KOR_1962_budget:0 "1962年の予算案"
  KOR_1962_budget_desc:0 ""
+
+ #decisions
+ KOR_japanese_study_categories:0 "日本語教育政策"
+ KOR_japanese_study_categories_desc:0 "朝鮮人は愚かです。 私たちはこの「2等身民」に文明を伝播しなければなりません。\n\n現在の識字率 : [?KOR_literacy]%"
+ KOR_basic_levelup:0 "教育キャンペーン"
+ KOR_basic_levelup_desc:0 "教育キャンペーンを実施し、朝鮮人の教育に対する関心を高めます。"
+
+ #tooltip
+ KOR_literacy_slow_tt:0 "識字率が上昇するでしょう。"
