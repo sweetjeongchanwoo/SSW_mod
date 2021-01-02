@@ -1,0 +1,454 @@
+shared_focus = {
+	id = KOR_continuous_governance
+	icon = GFX_focus_generic_little_entente
+	cost = 3.00
+	x = 0
+	y = 0
+}
+shared_focus = {
+	id = KOR_serene_peace
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_continuous_governance
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_continuous_governance
+	}
+}
+shared_focus = {
+	id = KOR_what_should_we_do
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+}
+shared_focus = {
+	id = KOR_resistance
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+}
+shared_focus = {
+	id = KOR_demobilize
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+}
+shared_focus = {
+	id = KOR_pusan_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = -4
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+}
+shared_focus = {
+	id = KOR_inchon_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_pusan_port
+	}
+}
+shared_focus = {
+	id = KOR_wonsan_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_pusan_port
+	}
+}
+shared_focus = {
+	id = KOR_promotion_urbanization
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_what_should_we_do
+	}
+}
+shared_focus = {
+	id = KOR_additional_japanese_training
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_what_should_we_do
+	}
+}
+shared_focus = {
+	id = KOR_additional_placement_military_police
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_resistance
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_resistance
+	}
+}
+shared_focus = {
+	id = KOR_indifference
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_resistance
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_resistance
+	}
+}
+shared_focus = {
+	id = KOR_deal_with_zaibatsu
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_inchon_port
+		focus = KOR_wonsan_port
+	}
+}
+shared_focus = {
+	id = KOR_deportation_poor
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_demobilize
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_demobilize
+	}
+	prerequisite = {
+		focus = KOR_promotion_urbanization
+	}
+}
+shared_focus = {
+	id = KOR_more_colaborator
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_additional_japanese_training
+		focus = KOR_promotion_urbanization
+	}
+}
+shared_focus = {
+	id = KOR_loyal_subject
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_additional_japanese_training
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_additional_japanese_training
+	}
+	prerequisite = {
+		focus = KOR_additional_placement_military_police
+	}
+}
+shared_focus = {
+	id = KOR_search_underground
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_additional_placement_military_police
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_additional_placement_military_police
+	}
+}
+shared_focus = {
+	id = KOR_massive_arrest
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_search_underground
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_search_underground
+	}
+}
+shared_focus = {
+	id = KOR_interrogation
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_massive_arrest
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_massive_arrest
+	}
+}
+shared_focus = {
+	id = KOR_re_education
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_interrogation
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_interrogation
+	}
+}
+shared_focus = {
+	id = KOR_japanese_teachers
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_loyal_subject
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_loyal_subject
+	}
+	prerequisite = {
+		focus = KOR_more_colaborator
+	}
+}
+shared_focus = {
+	id = KOR_japanese_immigrants
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_japanese_teachers
+	}
+}
+shared_focus = {
+	id = KOR_reinforcement_history_education
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_japanese_teachers
+	}
+}
+shared_focus = {
+	id = KOR_more_schools
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_japanese_immigrants
+	}
+	prerequisite = {
+		focus = KOR_reinforcement_history_education
+	}
+}
+shared_focus = {
+	id = KOR_focus_north
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_deal_with_zaibatsu
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+}
+shared_focus = {
+	id = KOR_equal_devlopment
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_deal_with_zaibatsu
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+}
+shared_focus = {
+	id = KOR_focus_south
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 2
+	y = 0
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+}
+shared_focus = {
+	id = KOR_increase_agraian
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_focus_south
+	}
+}
+shared_focus = {
+	id = KOR_build_infra
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_equal_devlopment
+	}
+}
+shared_focus = {
+	id = KOR_increase_military_industry
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = KOR_focus_north
+	}
+}
+shared_focus = {
+	id = KOR_we_need_electrocity
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_build_infra
+		focus = KOR_increase_military_industry
+	}
+}
+shared_focus = {
+	id = KOR_gentle_rule
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_build_infra
+		focus = KOR_increase_agraian
+	}
+}
+shared_focus = {
+	id = KOR_agricultural_exports
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = KOR_increase_agraian
+	}
+}
+shared_focus = {
+	id = KOR_support_kwantung_army
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -3
+	y = 1
+	prerequisite = {
+		focus = KOR_increase_military_industry
+	}
+}
+shared_focus = {
+	id = KOR_steel_mill
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -3
+	y = 2
+	prerequisite = {
+		focus = KOR_support_kwantung_army
+	}
+}
+shared_focus = {
+	id = KOR_shipyard_construction
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -1
+	y = 2
+	prerequisite = {
+		focus = KOR_we_need_electrocity
+	}
+}
+shared_focus = {
+	id = KOR_cottage_industries
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = KOR_gentle_rule
+		focus = KOR_agricultural_exports
+	}
+}
+shared_focus = {
+	id = KOR_night_schools
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_more_schools
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_more_schools
+	}
+}
+shared_focus = {
+	id = KOR_1962_budget
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_cottage_industries
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_cottage_industries
+		focus = KOR_night_schools
+		focus = KOR_shipyard_construction
+		focus = KOR_steel_mill
+	}
+}
