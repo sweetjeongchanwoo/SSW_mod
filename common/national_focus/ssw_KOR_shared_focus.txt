@@ -360,7 +360,7 @@ shared_focus = {
 		focus = KOR_more_colaborator
 	}
 	completion_reward = {
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
@@ -392,7 +392,7 @@ shared_focus = {
 		focus = KOR_japanese_teachers
 	}
 	completion_reward = { #add idea
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
@@ -853,7 +853,7 @@ shared_focus = {
 		focus = KOR_more_schools
 	}
 	completion_reward = { #add idea
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
