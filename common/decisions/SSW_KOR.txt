@@ -1,0 +1,11 @@
+KOR_japanese_study_categories = {
+	KOR_basic_levelup = {
+		icon = generic_military
+		visible = {
+			check_variable = { KOR_literacy < 100 }
+		}
+		complete_effect = {
+			add_to_variable = { KOR_literacy = 0.1 }
+		}
+	}
+}

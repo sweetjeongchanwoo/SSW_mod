@@ -11,13 +11,13 @@ focus_tree = {
 	focus = {
 		id = SPR_seihu
 		icon = GFX_goal_generic_demand_territory
+		allow_branch = { has_dlc = "Waking the Tiger" }
 		cost = 2.00
 		x = 31
 		y = 0
 		completion_reward = {
             add_political_power = 60
         }
-
 	}
 	focus = {
 		id = SPR_kougyou_kougyouka
@@ -435,28 +435,17 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			remove_ideas = { spr_debahu_03 }
-			SPR = {
-					set_politics = {
-					ruling_party = authority_despotism
+			add_political_power = 40
+			create_country_leader = {
+				name = "Manuel Hedilla"
+				desc = "POLITICS_MANUEL_HEDILLA_DESC"
+				picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+				expire = "1970.2.4"
+				ideology = falangism_national_syndicalism_ideology
+				traits = {
 				}
-			add_popularity = {
-					ideology = authority_despotism
-					popularity = 0.61
-				}
-	add_political_power = 40
-	create_country_leader = {
-		name = "Military Junta"
-		desc = "POLITICS_MILITARY_JUNTA_DESC"
-		picture = "GFX_portrait_SPA_military_junta"
-		expire = "1965.1.1"
-		ideology = military_junta_ideology
-		traits = {
-			divided_interests
+			}
 		}
-	}
-				}
-		}
-
 	}
 	focus = {
 		id = SPR_faranhe_minzokudanatu
@@ -550,16 +539,8 @@ focus_tree = {
 		x = 17
 		y = 4
 		completion_reward = {
-			SPR = {
-			add_popularity = {
-					ideology = authority_despotism
-					popularity = 1
-				}
-	add_political_power = 60
-				}
+			add_political_power = 160
 		}
-		
-
 	}
 	focus = {
 		id = SPR_faranhe_sensouseisaku
@@ -1578,28 +1559,22 @@ focus_tree = {
 		x = 49
 		y = 2
 		completion_reward = {
-			SPR = {
-				set_politics = {
-					ruling_party = authority_despotism  
+			set_politics = { ruling_party = authority_despotism }
+			add_popularity = {
+				ideology = authority_despotism
+				popularity = 0.65
+			}
+			add_political_power = 40
+			create_country_leader = {
+				name = "Juan III"
+				desc = "POLITICS_JUAN_III_DESC"
+				picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+				expire = "1993.4.1"
+				ideology = authority_despotism_ideology 
+				traits = {
 				}
-				add_popularity = {
-					ideology = authority_despotism  
-					popularity = 0.87
-				}
-	add_political_power = 40
-	create_country_leader = {
-		name = "Juan III"
-		desc = "POLITICS_JUAN_III_DESC"
-		picture = ""
-		expire = "1965.1.1"
-		ideology = authority_despotism_ideology 
-		traits = {
-			
+			}
 		}
-	}
-				}
-		}
-
 	}
 	focus = {
 		id = SPR_outouha_keizaiseisaku
@@ -1892,11 +1867,8 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_political_power = -120
-		SPR = {
 			add_ideas = spr_ideas_26
 		}
-	}
-
 	}
 	focus = {
 		id = SPR_outouha_ouryou
@@ -3753,9 +3725,7 @@ focus_tree = {
 				add_idea = spr_ideas_14
 			}
 		}
-
 	}
-
 	focus = {
 		id = SPR_fanco_uha
 		icon = GFX_focus_generic_military_mission
@@ -3767,7 +3737,6 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			remove_ideas = { spr_debahu_03 }
-			}
-
+		}
 	}
 }

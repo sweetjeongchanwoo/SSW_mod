@@ -5,13 +5,13 @@ state={
 		852 906 3803 3852 3904 3981 6922 6928 9899 10083 11878 
 	}
 	state_category=city
-	manpower=1902178
+	manpower=2373930
 	history={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 5
+			arms_factory = 5
 		}
 
 	}
