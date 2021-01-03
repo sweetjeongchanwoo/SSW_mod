@@ -4,8 +4,10 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = UKR
-			original_tag = UKR
+			OR = {
+				tag = UKR
+				original_tag = UKR
+			}
 		}
 	}
 	#Focus for 航空隊の新設 - focus ID randomly generated due to title being in non-latin characters
@@ -118,6 +120,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_navy
+		}
 	}
 	#Focus for 民族主義の高揚 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -132,6 +137,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = UKR_independence_war
 		}
 	}
 	#Focus for 独立戦争 - focus ID randomly generated due to title being in non-latin characters
@@ -151,6 +159,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_independence_war
+		}
 	}
 	#Focus for 工業立国への転換 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -165,6 +176,19 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = {
+				has_idea = UKR_low_education_level
+				has_idea = UKR_middle_education_level
+				has_idea = UKR_high_education_level
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = UKR_improved_agricalture
+				remove_idea = UKR_agricalture
+			}
 		}
 	}
 	#Focus for ウクライナ人への教育 - focus ID randomly generated due to title being in non-latin characters
@@ -181,6 +205,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = UKR_improve_literacy
 		}
 	}
 	#Focus for 中央ラーダの再設置 - focus ID randomly generated due to title being in non-latin characters
@@ -483,6 +510,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
 	}
 	#Focus for 独立路線 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -501,6 +533,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 	#Focus for 新政権の非承認 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -518,6 +553,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
 		}
 	}
 	#Focus for 造船所の拡大 - focus ID randomly generated due to title being in non-latin characters
@@ -543,10 +581,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
@@ -596,6 +634,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_expansion
+		}
 	}
 	#Focus for 我々の立場 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -607,6 +648,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = ssw_UKR.10
+				days = 3
+			}
 		}
 	}
 	#Focus for ムィコーラウ港の拡大 - focus ID randomly generated due to title being in non-latin characters
@@ -680,6 +727,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_ideas = UKR_kiev_university
+		}
 	}
 	#Focus for ヒンデンブルク～キエフ鉄道 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -752,6 +802,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_state_core = 234
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 234
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
+		}
 	}
 	#Focus for 国民ラーダの統合 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -769,6 +836,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_national_rada
 		}
 	}
 	#Focus for 大ウクライナの宣言 - focus ID randomly generated due to title being in non-latin characters
@@ -803,6 +873,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			217 = {
+				add_manpower = -500000
+			}
+			add_state_core = 217
+		}
 	}
 	#Focus for 居住許可 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -821,6 +897,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			217 = {
+				add_compliance = 100
+			}
+		}
 	}
 	#Focus for ウクライナ国民ラーダの帰還 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -835,6 +916,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_returned_heroes
 		}
 	}
 	#Focus for 多様性の擁護 - focus ID randomly generated due to title being in non-latin characters
@@ -869,6 +953,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			unlock_decision_category_tooltip = UKR_ukrainaization
+		}
 	}
 	#Focus for ドイツ人問題 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -884,6 +971,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			country_event = {
+				id = ssw_UKR.9
+				days = 3
+			}
+		}
 	}
 	#Focus for ロシア人問題 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -898,6 +991,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = ssw_UKR.5
+				days = 3
+			}
 		}
 	}
 	#Focus for ウクライナ国民主義 - focus ID randomly generated due to title being in non-latin characters
@@ -932,6 +1031,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 809
+						controls_state = 137
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
+		}
 	}
 	#Focus for オデッサの回収 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -946,6 +1062,24 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 192
+						controls_state = 198
+						controls_state = 766
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
 		}
 	}
 	#Focus for カルパチアの回収 - focus ID randomly generated due to title being in non-latin characters
@@ -962,6 +1096,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 73
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
+		}
 	}
 	#Focus for レムコの回収 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -977,6 +1127,23 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_state_claim = 88
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 88
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
+		}
 	}
 	#Focus for 西ウクライナの回収 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -991,6 +1158,24 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 91
+						controls_state = 89
+						controls_state = 80
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
 		}
 	}
 	#Focus for ドイツ義勇兵の徴募 - focus ID randomly generated due to title being in non-latin characters
@@ -1031,6 +1216,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = UKR_5th_universal
+				days = 365
+			}
+			add_timed_idea = {
+				idea = UKR_germans_influence
+				days = 365
+			}
+		}
 	}
 	#Focus for 復帰 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
@@ -1040,6 +1235,42 @@ focus_tree = {
 		y = 6
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			OR = {
+				AND = {
+					country_exists = LTV
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				AND = {
+					country_exists = GER
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				AND = {
+					country_exists = HLH
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HGR
+					}
+				}
+				AND = {
+					country_exists = HGR
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = LTV
+					}
+				}
+			}
+		}
 		prerequisite = {
 			focus = UKR_kSthGWsB
 		}
@@ -1048,6 +1279,72 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = LTV
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				LTV = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GER
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				GER = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HLH
+					NOT = {
+						country_exists = LTV
+						country_exists = GER
+						country_exists = HGR
+					}
+				}
+				HLH = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HGR
+					NOT = {
+						country_exists = LTV
+						country_exists = GER
+						country_exists = HLH
+					}
+				}
+				HGR = {
+					set_autonomy = {
+						target = ROOT
+						autonomy_state = autonomy_dominion
+					}
+				}
+			}
 		}
 	}
 	#Focus for 中核地域の統一 - focus ID randomly generated due to title being in non-latin characters
@@ -1063,6 +1360,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_unity
 		}
 	}
 	#End of focuses 

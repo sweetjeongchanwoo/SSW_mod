@@ -7,3 +7,33 @@ UKR_combat_uia = {
 		has_country_flag = UKR_combat_uia
 	}
 }
+
+UKR_improve_literacy = {
+	icon = generic_industry
+	allowed = {
+		tag = UKR
+	}
+	visible = {
+		has_completed_focus = UKR_pNMyjlPJ
+	}
+}
+
+UKR_independence_war = {
+	icon = generic_industry
+	allowed = {
+		tag = UKR
+	}
+	visible = {
+		has_completed_focus = UKR_SkxtUfDo
+	}
+}
+
+UKR_ukrainaization = {
+	icon = generic_industry
+	allowed = {
+		tag = UKR
+	}
+	visible = {
+		has_completed_focus = UKR_WUbiKNjG
+	}
+}

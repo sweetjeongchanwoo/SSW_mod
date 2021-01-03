@@ -1,4 +1,5 @@
 UKR_combat_uia = {
+	# note: FROM in state targeted decisions means state
 	UKR_combat_uia_1 = {
 		name = UKR_combat_uia_1
 		icon = generic_nationalism
@@ -7,38 +8,168 @@ UKR_combat_uia = {
 		}
 		available = {
 			# always = yes
-			is_ai = no
-			ROOT = {
-			}
+			# is_ai = no
 		}
 		state_target = yes
 		on_map_mode = map_and_decisions_view
 		# targets = {
-		# 	is_ai = no
+		# 	193
 		# }
-		target_array = controlled_states
+		target_array = UKA.core_states
 		target_trigger = {
 			# always = yes
-			is_ai = no
+			# is_ai = no
+			controls_state = FROM
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			# FROM = {
+			# }
 		}
 		cost = 50
 		fire_only_once = yes
 		days_remove = 60
 		modifier = {
-			political_power_gain = -1
+			# political_power_gain = -1
 		}
 		visible = {
 			tag = UKR
-			# has_completed_focus = SPR_global_defense_council
-			always = yes
 		}
 		complete_effect = {
+			FROM = {
+				add_resistance_target = {
+					amount = 100
+					days = 180
+				}
+			}
 		}
 		remove_effect = {
 			FROM = {
 				add_core_of = ROOT
 			}
-			transfer_state = FROM
+		}
+	}
+}
+
+UKR_improve_literacy = {
+	UKR_improve_literacy_1 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_low_education_level
+		}
+		available = {
+			has_idea = UKR_low_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = UKR_low_education_level
+				add_idea = UKR_middle_education_level
+			}
+		}
+	}
+	UKR_improve_literacy_2 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_middle_education_level
+		}
+		available = {
+			has_idea = UKR_middle_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = UKR_middle_education_level
+				add_idea = UKR_high_education_level
+			}
+		}
+	}
+	UKR_improve_literacy_3 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_high_education_level
+		}
+		available = {
+			has_idea = UKR_high_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			remove_ideas = UKR_high_education_level
+		}
+	}
+}
+
+UKR_independence_war = {
+	UKR_independence_war_1 = {
+		name = UKR_independence_war_1
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_array = UKA.core_states
+		target_trigger = {
+			UKR = {
+				controls_state = FROM
+			}
+		}
+		cost = 10
+		days_remove = 3
+		visible = {
+			tag = UKR
+		}
+		remove_effect = {
+			ROOT = {
+				set_state_controller = FROM
+			}
+			FROM = {
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.1"
+					owner = ROOT
+				}
+			}
+			UKR = {
+				set_state_controller = FROM
+			}
+		}
+	}
+}
+
+UKR_ukrainaization={
+	UKR_official_language={
+		name = UKR_official_language_1
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			# always = yes
+			# is_ai = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		modifier = {
+			# political_power_gain = -1
+		}
+		visible = {
+			tag = UKR
+		}
+		complete_effect = {
+		}
+		remove_effect = {
 		}
 	}
 }

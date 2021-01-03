@@ -24,6 +24,14 @@ on_actions = {
 				remove_state_core = 260
 				remove_state_core = 217
 			}
+			# UKR={
+			# 	for_each_loop = {
+			# 		array = core_states
+			# 		add_to_array = {
+			# 			array_UKR_core_states = v
+			# 		}
+			# 	}
+			# }			
 			# create People's Republic of Ukraine
 			create_dynamic_country = {
 				original_tag = UKR

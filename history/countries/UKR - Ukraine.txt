@@ -12,6 +12,7 @@ add_ideas = {
 	UKR_opposed_occupation_ukr
 	UKR_opposed_occupation_rus
 	UKR_low_education_level
+	UKR_agricalture
 }
 
 set_rule = {
