@@ -148,7 +148,6 @@ focus_tree = {
 							has_completed_focus = JAP_BRM_tetsudo_jukan
 							has_completed_focus = JAP_BRM_kinndaik
 							has_completed_focus = JAP_BRM_komon
-							has_completed_focus = JAP_unify_the_farmers_and_the_soldiers
 							has_completed_focus = JAP_the_ndustrial_plain
 							has_completed_focus = JAP_the_hikyaku
 							has_completed_focus = JAP_the_japanese_military_advisors

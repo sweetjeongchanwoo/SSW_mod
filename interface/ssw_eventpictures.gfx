@@ -1,21 +1,5 @@
 spriteTypes = {
 #日本
-	SpriteType = {	##Icon For: 釜山の嵐
-		name = "hiqBNvAc-28931"
-		texturefile = "gfx/event_pictures/hiqBNvAc-28931.dds"
-	}
-	SpriteType = {##Icon For: 第3回大東亜会議
-		name = "3_36150"
-		texturefile = "gfx/event_pictures/3-36150.dds"
-	}
-	SpriteType = {	##Icon For: 第4回大東亜会議
-		name = "4-36168"
-		texturefile = "gfx/event_pictures/4-36168.dds"
-	}
-	SpriteType = {	##Icon For: 第4回大東亜会議
-		name = "GFX_Kagawa_Toyohiko_speech"
-		texturefile = "gfx/event_pictures/Kagawa_Toyohiko_speech.dds"
-	}
 #ドイツ
 	spriteType = {
 		name = "GFX_Gebbers_speech"
@@ -96,5 +80,63 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Coronation_Elizabeth"
 		texturefile = "gfx/event_pictures/Coronation_Elizabeth.dds"
+	}
+#ドナウ戦争
+	spriteType = {	
+		name = "GFX_Ancestral_land"
+		texturefile = "gfx/event_pictures/Ancestral_land.dds"
+	}
+	spriteType = {
+		name = "GFX_Danubian_post_war_reign"
+		texturefile = "gfx/event_pictures/Danubian_post_war_reign.dds"
+	}
+	spriteType = {	
+		name = "GFX_End_of_Danube_War"
+		texturefile = "gfx/event_pictures/End_of_Danube_War.dds"
+	}
+	spriteType = {	
+		name = "GFX_Hungary_asks_for_help"
+		texturefile = "gfx/event_pictures/Hungary_asks_for_help.dds"
+	}
+	spriteType = {	
+		name = "GFX_Little_Axis"
+		texturefile = "gfx/event_pictures/Little_Axis.dds"
+	}
+	spriteType = {	
+		name = "GFX_Nisch_talks"
+		texturefile = "gfx/event_pictures/Nisch_talks.dds"
+	}
+	spriteType = {	
+		name = "GFX_ROM_crosses_the_border"
+		texturefile = "gfx/event_pictures/ROM_crosses_the_border.dds"
+	}
+	spriteType = {	
+		name = "GFX_ROM_declares_war"
+		texturefile = "gfx/event_pictures/ROM_declares_war.dds"
+	}
+	spriteType = {	
+		name = "GFX_Romanian_troops_cross_the_border"
+		texturefile = "gfx/event_pictures/Romanian_troops_cross_the_border.dds"
+	}
+	spriteType = {	
+		name = "GFX_Sarajevo_Convention"
+		texturefile = "gfx/event_pictures/Sarajevo_Convention.dds"
+	}
+	spriteType = {	
+		name = "GFX_Troops_invade_Hungarian_territory"
+		texturefile = "gfx/event_pictures/Troops_invade_Hungarian_territory.dds"
+	}
+#ニュースイベントピクチャー
+	spriteType = {	
+		name = "GFX_news_DanubeWar"
+		texturefile = "gfx/event_pictures/news_event_pictures/news_DanubeWar.dds"
+	}
+	spriteType = {	
+		name = "GFX_news_End_of_Danube_War"
+		texturefile = "gfx/event_pictures/news_event_pictures/news_End_of_Danube_War.dds"
+	}
+	spriteType = {	
+		name = "GFX_news_Sarajevo_Treaty_signed"
+		texturefile = "gfx/event_pictures/news_event_pictures/news_Sarajevo_Treaty_signed.dds"
 	}
 }

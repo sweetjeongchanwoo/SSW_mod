@@ -2,15 +2,20 @@
 oob = "KOR_1950"
 set_cosmetic_tag = KOR_JAP
 
-set_convoys = 5
+set_convoys = 25
 
 set_technology = {
 	infantry_weapons = 1
 }
 
 add_ideas = {
-	civilian_economy
-	SSW_JAP_Hirohito
+	service_by_requirement
+	export_focus
+	partial_economic_mobilisation
+	
+	KOR_colonial_government
+	KOR_rule_of_ethnic_extermination
+	KOR_low_literacy
 }
 
 set_politics = {

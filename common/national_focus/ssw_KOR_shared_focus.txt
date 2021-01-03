@@ -1,0 +1,875 @@
+shared_focus = {
+	id = KOR_continuous_governance
+	icon = GFX_focus_generic_little_entente
+	cost = 3.00
+	x = 0
+	y = 0
+	completion_reward = {
+		add_manpower = 5000
+		add_political_power = 25
+	}
+}
+shared_focus = {
+	id = KOR_serene_peace
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_continuous_governance
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_continuous_governance
+	}
+	completion_reward = {
+		add_stability = 0.03
+	}
+}
+shared_focus = {
+	id = KOR_what_should_we_do
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+	completion_reward = {
+		add_war_support = 0.02
+	}
+}
+shared_focus = {
+	id = KOR_resistance
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+	completion_reward = {
+		create_intelligence_agency = yes
+	}
+}
+shared_focus = {
+	id = KOR_demobilize
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = partial_economic_mobilisation
+			add_idea = civilian_economy
+		}
+	}
+}
+shared_focus = {
+	id = KOR_pusan_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_serene_peace
+	cost = 3.00
+	x = -4
+	y = 1
+	prerequisite = {
+		focus = KOR_serene_peace
+	}
+	completion_reward = {
+		853 = {
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+				province = 4056
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_inchon_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_pusan_port
+	}
+	completion_reward = {
+		857 = {
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+				province = 7221
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_wonsan_port
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_pusan_port
+	}
+	completion_reward = {
+		860 = {
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+				province = 6926
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_promotion_urbanization
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_what_should_we_do
+	}
+	completion_reward = {
+		set_victory_points = {
+			province = 7221
+			value = 5
+		}
+		set_victory_points = {
+			province = 6928
+			value = 5
+		}
+		add_victory_points = {
+			province = 4052
+			value = 7    
+		}
+	}
+}
+shared_focus = {
+	id = KOR_additional_japanese_training
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_what_should_we_do
+	}
+	completion_reward = {#decision
+		unlock_decision_category_tooltip = KOR_japanese_study_categories
+		set_variable = { KOR_literacy = 10.1 }
+	}
+}
+shared_focus = {
+	id = KOR_additional_placement_military_police
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_resistance
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_resistance
+	}
+	completion_reward = {#load_obb
+		load_oob = "KOR_additional_mp"
+	}
+}
+shared_focus = {
+	id = KOR_indifference
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_resistance
+	allow_branch = {
+		is_debug = yes
+	}
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_resistance
+	}
+	completion_reward = {#load_focus
+		
+	}
+}
+shared_focus = {
+	id = KOR_deal_with_zaibatsu
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_pusan_port
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_inchon_port
+		focus = KOR_wonsan_port
+	}
+	completion_reward = {
+		857 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_deportation_poor
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_demobilize
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_demobilize
+	}
+	prerequisite = {
+		focus = KOR_promotion_urbanization
+	}
+	completion_reward = {
+		857 = {
+			add_manpower = -50000
+		}
+		937 = {
+			add_manpower = 30000
+		}
+	}
+}
+shared_focus = {
+	id = KOR_more_colaborator
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_what_should_we_do
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_additional_japanese_training
+		focus = KOR_promotion_urbanization
+	}
+	completion_reward = {#Unlock Korean Minister
+		
+	}
+}
+shared_focus = {
+	id = KOR_loyal_subject
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_additional_japanese_training
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_additional_japanese_training
+	}
+	prerequisite = {
+		focus = KOR_additional_placement_military_police
+	}
+	completion_reward = {
+		add_autonomy_score = { value = -100 }
+		add_political_power = 25
+	}
+}
+shared_focus = {
+	id = KOR_search_underground
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_additional_placement_military_police
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_additional_placement_military_police
+	}
+	completion_reward = {#add idea
+		add_timed_idea = { 
+			idea = KOR_search_under
+			days = 180
+		}
+	}
+}
+shared_focus = {
+	id = KOR_massive_arrest
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_search_underground
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_search_underground
+	}
+	completion_reward = {
+		add_manpower = -10000
+	}
+}
+shared_focus = {
+	id = KOR_interrogation
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_massive_arrest
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_massive_arrest
+	}
+	completion_reward = {#add idea
+		add_timed_idea = {
+			idea = KOR_interrogation_idea
+			days = 150
+		}
+	}
+}
+shared_focus = {
+	id = KOR_re_education
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_interrogation
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_interrogation
+	}
+	completion_reward = {
+		add_manpower = 500
+	}
+}
+shared_focus = {
+	id = KOR_japanese_teachers
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_loyal_subject
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_loyal_subject
+	}
+	prerequisite = {
+		focus = KOR_more_colaborator
+	}
+	completion_reward = {
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
+	}
+}
+shared_focus = {
+	id = KOR_japanese_immigrants
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_japanese_teachers
+	}
+	completion_reward = {
+		add_manpower = 100000
+		JAP = {
+			add_manpower = -100000
+		}
+	}
+}
+shared_focus = {
+	id = KOR_reinforcement_history_education
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_japanese_teachers
+	}
+	completion_reward = { #add idea
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
+	}
+}
+shared_focus = {
+	id = KOR_more_schools
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_japanese_teachers
+	cost = 3.00
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = KOR_japanese_immigrants
+	}
+	prerequisite = {
+		focus = KOR_reinforcement_history_education
+	}
+	completion_reward = {
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_focus_north
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_deal_with_zaibatsu
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+	completion_reward = {
+		857 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		858 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		860 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		859 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		527 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		937 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_equal_devlopment
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_deal_with_zaibatsu
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+	completion_reward = {
+		857 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		858 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		860 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		859 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		527 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		937 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		856 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		936 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		853 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		525 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		852 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		854 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		855 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_focus_south
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 2
+	y = 0
+	prerequisite = {
+		focus = KOR_deal_with_zaibatsu
+	}
+	prerequisite = {
+		focus = KOR_deportation_poor
+	}
+	completion_reward = {
+		856 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		936 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		853 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		525 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		852 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		854 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		855 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_increase_agraian
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = KOR_focus_south
+	}
+	completion_reward = {
+		852 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		525 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+shared_focus = {
+	id = KOR_build_infra
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_equal_devlopment
+	}
+	completion_reward = {
+		every_owned_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_increase_military_industry
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_equal_devlopment
+	cost = 3.00
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = KOR_focus_north
+	}
+	completion_reward = {
+		859 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_we_need_electrocity
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = KOR_build_infra
+		focus = KOR_increase_military_industry
+	}
+	completion_reward = {
+		936 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_gentle_rule
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_build_infra
+		focus = KOR_increase_agraian
+	}
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = KOR_agricultural_exports
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 3
+	y = 1
+	prerequisite = {
+		focus = KOR_increase_agraian
+	}
+	completion_reward = { #add idea
+		add_ideas = KOR_export_food
+	}
+}
+shared_focus = {
+	id = KOR_support_kwantung_army
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -3
+	y = 1
+	prerequisite = {
+		focus = KOR_increase_military_industry
+	}
+	completion_reward = { #add idea
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 10000
+			target = MAN
+		}
+	}
+}
+shared_focus = {
+	id = KOR_steel_mill
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -3
+	y = 2
+	prerequisite = {
+		focus = KOR_support_kwantung_army
+	}
+	completion_reward = {
+		858 = {
+			add_resource = {
+				type = steel
+				amount = 30
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_shipyard_construction
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = -1
+	y = 2
+	prerequisite = {
+		focus = KOR_we_need_electrocity
+	}
+	completion_reward = {
+		853 = {
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = KOR_cottage_industries
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_build_infra
+	cost = 3.00
+	x = 2
+	y = 2
+	prerequisite = {
+		focus = KOR_gentle_rule
+		focus = KOR_agricultural_exports
+	}
+	completion_reward = {
+		852 = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+}
+shared_focus = {
+	id = KOR_night_schools
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_more_schools
+	cost = 3.00
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = KOR_more_schools
+	}
+	completion_reward = { #add idea
+		add_variable = { KOR_literacy = 5 }
+		custom_effect_tooltip = KOR_literacy_slow_tt
+	}
+}
+shared_focus = {
+	id = KOR_1962_budget
+	icon = GFX_focus_unknown
+	relative_position_id = KOR_cottage_industries
+	cost = 3.00
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = KOR_cottage_industries
+		focus = KOR_night_schools
+		focus = KOR_shipyard_construction
+		focus = KOR_steel_mill
+	}
+	completion_reward = {#event
+		
+	}
+}
