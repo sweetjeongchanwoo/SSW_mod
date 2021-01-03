@@ -7,8 +7,8 @@ KOR_japanese_study_categories = {
 	allowed = {
 		original_tag = KOR
 	}
-	check_variable = { 
-		KOR_literacy < 101 
+	visible = {
+		has_variable = KOR_literacy
 	}
 	visible_when_empty = yes
 }

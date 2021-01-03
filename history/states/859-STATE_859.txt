@@ -5,16 +5,17 @@ state={
 		4052 7171 9790 11770 
 	}
 	state_category=city
-	manpower=1434540
+	manpower=257152
 	history={
 		owner = KOR
 		add_core_of = KOR
 		victory_points = {
-			4052 3
+			7171 3
 		}
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 4
+			industrial_complex = 2
+			arms_factory = 2
 		}
 
 	}
