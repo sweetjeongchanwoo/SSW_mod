@@ -14,6 +14,10 @@ defined_text = {
 		trigger = { tag = POR }
 		localization_key = SSW_OPENING_SCREEN_BUTTON_TEXT_POR
 	}
+	text = {
+		trigger = { tag = KOR }
+		localization_key = SSW_OPENING_SCREEN_BUTTON_TEXT_KOR
+	}
 }
 
 defined_text = {
@@ -61,6 +65,10 @@ defined_text = {
 	text = {
 		trigger = { tag = POR }
 		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_POR]"
+	}
+	text = {
+		trigger = { tag = KOR }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_KOR]"
 	}
 }
 
@@ -113,6 +121,22 @@ defined_text = {
 }
 
 defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_KOR
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_KOR
+	}
+}
+
+defined_text = {
 	name = GET_POSTER
 	#Japan
 	text = {
@@ -126,5 +150,9 @@ defined_text = {
 	text = {
 		trigger = { tag = POR }
 		localization_key = "GFX_SSW_OpeningScreen_Poster_Portugal"
+    }
+	text = {
+		trigger = { tag = KOR }
+		localization_key = "GFX_SSW_OpeningScreen_Poster_Korea"
     }
 }

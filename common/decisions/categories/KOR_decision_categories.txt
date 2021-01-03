@@ -1,0 +1,14 @@
+KOR_japanese_study_categories = {
+
+	icon = jap_pacific_guardian
+
+	picture = spr_the_inevitable_civil_war
+
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_variable = KOR_literacy
+	}
+	visible_when_empty = yes
+}

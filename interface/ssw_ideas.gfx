@@ -372,8 +372,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ENG/BBC_tv.dds"
 	}
 #ゲーリング
-spriteType = {
-	name = "GFX_idea_hgr_Georing_Memorandum"
-	texturefile = "gfx/interface/ideas/HGR/hgr_Georing_Memorandum.dds"
-}
+	spriteType = {
+		name = "GFX_idea_hgr_Georing_Memorandum"
+		texturefile = "gfx/interface/ideas/HGR/hgr_Georing_Memorandum.dds"
+	}
+	
+	#Korea
+	spriteType = {
+		name = "GFX_idea_baka"
+		texturefile = "gfx/interface/ideas/ideas/baka.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_korea"
+		texturefile = "gfx/interface/ideas/ideas/colonial_korea.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_remove_korea"
+		texturefile = "gfx/interface/ideas/ideas/remove_korea.tga"
+	}
 }

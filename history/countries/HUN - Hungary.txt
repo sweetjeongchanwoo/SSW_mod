@@ -3,6 +3,9 @@ oob = "HUN_1950"
 
 set_convoys = 5
 
+add_opinion_modifier = { target = ROM modifier = hostile_status }
+add_opinion_modifier = { target = SER modifier = hostile_status }
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons = 1

@@ -173,7 +173,7 @@ country_event = {
         Military_coup.a   
     }
     option = {
-        Military_coup.b  
+        Military_coup.b
     } 
 }
 country_event = {
@@ -200,6 +200,12 @@ country_event = {
 
     option = {
         name = FRA_NFR_Return.b
+        FRA = {
+			country_event = {
+				id = FRA_NFR_not_Return
+				days = 1
+			}
+        }
     }
 }
 country_event = {
@@ -215,6 +221,12 @@ country_event = {
 
     option = {
         name = FRA_ita_Allince.b
+        	FRA = {
+			country_event = {
+				id = FRA_ita_not_Allince
+				days = 1
+			}
+		}
     }
 }
 country_event = {
@@ -234,5 +246,25 @@ country_event = {
     option = {
         name = 1st_Peoples_Council.c
         complete_national_focus = FRA_46
+    }
+}
+country_event = {
+   id = FRA_ita_not_Allince
+   titile = FRA_ita_not_Allince.t
+   desc = FRA_ita_not_Allince.d
+   is_triggered_only = yes
+
+   opition = {
+       FRA_ita_not_Allince.a
+   }
+}
+country_event = {
+    id = FRA_NFR_not_Return
+    titile = FRA_NFR_not_Return.t
+    desc = FRA_NFR_not_Return.d
+    is_triggered_only = yes
+
+    opition = {
+        FRA_NFR_not_Return.a
     }
 }
