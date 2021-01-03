@@ -2,7 +2,7 @@
 state={
 	id=527
 	name="STATE_527"
-	manpower = 6774200
+	manpower = 2640000
 	state_category = town
 
 	history={
@@ -17,4 +17,5 @@ state={
 	provinces={
 		912 11835 9918 11896 3912 9795 978 11828 6963 11775
 	}
+}
 

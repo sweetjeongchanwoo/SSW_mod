@@ -112,6 +112,8 @@ set_technology = {
 	artillery1 = 1
 }
 
+add_opinion_modifier = { target = SER modifier = hostile_status }
+
 add_ideas = {
 	civilian_economy
 }

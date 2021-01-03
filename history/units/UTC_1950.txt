@@ -48,458 +48,506 @@ units = {
 	
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 882
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4442
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 9808
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 3829
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 7528
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 971
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 11890
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4601
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4527
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 1881
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 11621
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 11635
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 954
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}	
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 7831
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4540
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4838
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 12676
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 6742
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 1736
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4741
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 12651
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 7888
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 12633
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 1854
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 1857
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 10593
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 10624
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4863
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 7883
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 4759
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 12685
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 1870
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 11667
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 12588
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 7896
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 6767
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 5205
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
 		name = "motorized Division"
-		location = 9450
+		location = 9724
 		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6710
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6710
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6710
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6890
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6890
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6890
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6855
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6855
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 6855
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+		
 	division = {
-		name = "motorized Division"
+		name = "Infantry Division"
 		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
-		name = "motorized Division"
+		name = "Infantry Division"
 		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
 	division = {
-		name = "motorized Division"
+		name = "Infantry Division"
 		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 4569
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
-		name = "motorized Division"
-		location = 9450
-		division_template = "motorized Division"
-		start_experience_factor = 0.8
+		name = "Infantry Division"
+		location = 4569
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
+	division = {
+		name = "Infantry Division"
+		location = 4569
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
 	division = {
 		name = "Infantry Division"
 		location = 1747
 		division_template = "Infantry Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+	
 	division = {
 		name = "Infantry Division"
 		location = 1747
 		division_template = "Infantry Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
 	division = {
 		name = "Infantry Division"
 		location = 1747
 		division_template = "Infantry Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+
+		
 	division = {
 		name = "Infantry Division"
-		location = 1747
+		location = 1595
 		division_template = "Infantry Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 1747
-		division_template = "Infantry Division"
-		start_experience_factor = 0.8
-		start_equipment_factor = 1.0
-	}
+
+	
 	division = {
 		name = "Infantry Division"
 		location = 12357
 		division_template = "Infantry Division"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 	}
+	
+	
+	division = {
+		name = "Infantry Division"
+		location = 10370
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "Infantry Division"
+		location = 10717
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
+	
+	division = {
+		name = "Infantry Division"
+		location = 1770
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	
+	division = {
+		name = "Infantry Division"
+		location = 12586
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "Infantry Division"
+		location = 1866
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
+	
+	division = {
+		name = "Infantry Division"
+		location = 1836
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	
+	division = {
+		name = "Infantry Division"
+		location = 4860
+		division_template = "Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+
 }
 
