@@ -438,7 +438,13 @@ news_event = {
 	trigger = {
 		has_global_flag = mexican_civil_war
 		NOT = { has_global_flag = mcw_news }
-		MEX = { has_war = no }
+		MEX = {
+			has_war = no
+			NOT = {
+				has_country_flag = cardenas_resign
+				has_country_flag = cardenas_dead
+			}
+		}
 		any_other_country = {
 			original_tag = MEX
 			has_war = no
