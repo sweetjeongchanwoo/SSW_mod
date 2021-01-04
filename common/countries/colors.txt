@@ -1619,27 +1619,47 @@ EKA = {	#エカテリノダール
 	color_ui = rgb { 193 147 154 }
 }
 
-HGR = {
+DON = {	#ドン
+	color = rgb { 247 198 0 }
+	color_ui = rgb { 247 198 0 }
+}
+
+LAP = {	#ラップランド
+	color = rgb { 0 64 128 }
+	color_ui = rgb { 0 64 128 }
+}
+
+ADY = { #アディゲ
+	color = rgb { 123 173 170 }
+    color_ui = rgb { 123 173 170 }	
+}
+
+KRA = { #クラスノダール
+	color = rgb { 198  55  55 }
+    color_ui = rgb { 175  42  42 }	
+}
+
+HGR = { #ゲーリング派ドイツ
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }
 }
 
-LTV = {
+LTV = { #反ナチス派ドイツ
 	color = rgb { 150 150 150 }
 	color_ui = rgb { 150 150 150 }
 }
 
-HLH = {
+HLH = { #ヒムラー派ドイツ
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
 
-PRJ = {
+PRJ = { #日本社会主義人民共和国
 	color = rgb { 255 60 60 }
 	color_ui = rgb { 200 45 45 }
 }
 
-JSF = {
+JSF = { #日本社会主義戦線
 	color = rgb { 165 0 0 }
 	color_ui = rgb { 80 0 0 }
 }
@@ -1652,4 +1672,9 @@ IIR ={	#イスラム・イラン
 CIR ={	#共産イラン
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
+}
+
+SPA = { #スペイン共和国
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 242 205 94 }
 }
