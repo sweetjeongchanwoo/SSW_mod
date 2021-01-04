@@ -80,23 +80,14 @@ country_event = {
 	}
 	immediate = {
 		set_global_flag = UKR_independence_war_started
-		add_ideas = UKR_debug_idea
 		add_ai_strategy = {
 			type = force_build_armies
 			value = 1
 		}
 		hidden_effect = {
 			UKA = {
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
-				add_ideas = UKR_debug_idea
 				add_war_support = 0.6
 				transfer_state = 93
-				# set_state_controller = 199
-				# set_state_controller = 201
-				# set_state_controller = 202
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -125,16 +116,8 @@ country_event = {
 				}
 			}
 			UKB = {
-				add_ideas = UKR_debug_idea
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
 				add_war_support = 0.6
 				transfer_state = 227
-				# set_state_controller = 228
-				# set_state_controller = 221
-				# set_state_controller = 260
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -168,16 +151,8 @@ country_event = {
 				}
 			}
 			UKC = {
-				add_ideas = UKR_debug_idea
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
 				add_war_support = 0.6
 				transfer_state = 255
-				# set_state_controller = 239
-				# set_state_controller = 257
-				# set_state_controller = 258
 				add_state_claim = 255
 				add_state_claim = 257
 				add_state_claim = 239
@@ -216,11 +191,6 @@ country_event = {
 				}
 			}
 			UKD = {
-				add_ideas = UKR_debug_idea
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
 				add_war_support = 0.6
 				transfer_state = 200
 				# set_state_controller = 196
@@ -259,16 +229,8 @@ country_event = {
 				}
 			}
 			UKE = {
-				add_ideas = UKR_debug_idea
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
 				add_war_support = 0.6
 				transfer_state = 222
-				# set_state_controller = 220
-				# set_state_controller = 225
-				# set_state_controller = 240
 				add_state_claim = 220
 				add_state_claim = 240
 				add_state_claim = 258
@@ -305,15 +267,11 @@ country_event = {
 				}
 			}
 			DON = {
-				add_ideas = UKR_debug_idea
-				# add_ai_strategy = {
-				# 	type = force_build_armies
-				# 	value = 100
-				# }
 				add_war_support = 0.6
 				transfer_state = 218
-				# set_state_controller = 245
-				# set_state_controller = 265
+				set_rule = {
+					can_puppet = no
+				}
 				218 = {
 					create_unit = {
 						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
@@ -595,6 +553,22 @@ country_event = {
 					transfer_troops = yes
 				}
 			}
+		}
+	}
+}
+
+# Allow Don to make puppets
+country_event = {
+	id = ssw_UKR.12
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		tag = DON
+		has_global_flag = UKR_independence_war_ended
+	}
+	immediate = {
+		set_rule = {
+			can_puppet = yes
 		}
 	}
 }
