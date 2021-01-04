@@ -1,7 +1,7 @@
 UKR_combat_uia = {
 	icon = generic_industry
 	allowed = {
-		tag = UKR
+		original_tag = UKR
 	}
 	visible = {
 		has_country_flag = UKR_combat_uia
@@ -11,7 +11,7 @@ UKR_combat_uia = {
 UKR_improve_literacy = {
 	icon = generic_industry
 	allowed = {
-		tag = UKR
+		original_tag = UKR
 	}
 	visible = {
 		has_completed_focus = UKR_pNMyjlPJ
@@ -21,19 +21,49 @@ UKR_improve_literacy = {
 UKR_independence_war = {
 	icon = generic_industry
 	allowed = {
-		tag = UKR
+		original_tag = UKR
 	}
 	visible = {
 		has_completed_focus = UKR_SkxtUfDo
+		any_other_country = {
+			has_war_with = ROOT
+			has_country_leader = {
+				name = "Erich Koch"
+				ruling_only = yes
+			}
+		}
 	}
 }
 
 UKR_ukrainaization = {
 	icon = generic_industry
 	allowed = {
-		tag = UKR
+		original_tag = UKR
 	}
 	visible = {
 		has_completed_focus = UKR_WUbiKNjG
+	}
+}
+
+UKR_unification_wars = {
+	icon = generic_industry
+	allowed = {
+		original_tag = UKR
+	}
+	visible = {
+		OR = {
+			has_completed_focus = UKR_sJwdXzrW
+			has_completed_focus = UKR_hzfxCtiU
+		}
+	}
+}
+
+UKR_debug = {
+	icon = generic_industry
+	allowed = {
+		original_tag = UKR
+	}
+	visible = {
+		is_debug = yes
 	}
 }

@@ -1,0 +1,21 @@
+on_actions = {
+	# ROOT is the winner, FROM is the loser. 
+	on_peaceconference_ended = {
+		# Indentify Ukrainian Comissariat lost
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_country_leader = {
+							name = "Erich Koch"
+							ruling_only = yes
+						}
+					}
+				}
+				FROM = {
+					set_global_flag = UKR_independence_war_ended
+				}
+			}
+		}
+	}
+}

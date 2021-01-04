@@ -5,12 +5,14 @@ ideas = {
 			modifier = {
 				# conscription_factor = -0.6
 				political_power_gain = -0.1
+				stability_factor = -0.1
 			}
 		}
 		UKR_opposed_occupation_rus = {
 			picture = por_ogme
 			modifier = {
 				political_power_gain = -0.5
+				stability_factor = -0.1
 			}
 		}
 		UKR_stabilize = {
@@ -111,14 +113,14 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = UKR
-				attack_bonus_against = 0.2
-				defense_bonus_against = 0.2
+				# attack_bonus_against = 0.2
+				defense_bonus_against = 0.5
 			}
 		}
 		UKR_5th_universal = {
 			picture = por_ogme
 			modifier = {
-				stability_weekly = 0.01
+				stability_weekly = 0.005
 			}
 		}
 		UKR_germans_influence = {
@@ -137,7 +139,7 @@ ideas = {
 			picture = por_ogme
 			modifier = {
 				political_power_gain = 0.5
-				stability_weekly = 0.01
+				stability_weekly = 0.005
 				war_support_factor = 0.2
 			}
 		}
@@ -164,6 +166,12 @@ ideas = {
 			picture = por_ogme
 			modifier = {
 				stability_weekly = -0.01
+			}
+		}
+		UKR_debug_idea = {
+			picture = por_ogme
+			modifier = {
+				ai_desired_divisions_factor = 1
 			}
 		}
 	}

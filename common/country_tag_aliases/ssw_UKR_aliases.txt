@@ -22,3 +22,8 @@ UKE = {
 	original_tag = UKR
 	has_country_flag = UKR_authority_democracy_flag
 }
+
+UVG = {
+	original_tag = UKR
+	has_cosmetic_tag = UKR_GEM
+}

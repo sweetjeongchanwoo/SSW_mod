@@ -104,3 +104,6 @@
  UKR_EhZavNwQ_desc:0 ""
  UKR_cjLfVRpH:0 "中核地域の統一"
  UKR_cjLfVRpH_desc:0 ""
+
+# カスタムツールチップ
+ ssw_UKR_tooltip_won_emergency:0 "動乱に勝利した"

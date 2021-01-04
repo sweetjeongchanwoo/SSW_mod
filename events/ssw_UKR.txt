@@ -79,9 +79,24 @@ country_event = {
 		has_stability < 0.16
 	}
 	immediate = {
+		set_global_flag = UKR_independence_war_started
+		add_ideas = UKR_debug_idea
+		add_ai_strategy = {
+			type = force_build_armies
+			value = 1
+		}
 		hidden_effect = {
 			UKA = {
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_ideas = UKR_debug_idea
+				add_war_support = 0.6
 				transfer_state = 93
+				# set_state_controller = 199
+				# set_state_controller = 201
+				# set_state_controller = 202
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -110,7 +125,16 @@ country_event = {
 				}
 			}
 			UKB = {
+				add_ideas = UKR_debug_idea
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_war_support = 0.6
 				transfer_state = 227
+				# set_state_controller = 228
+				# set_state_controller = 221
+				# set_state_controller = 260
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -119,56 +143,46 @@ country_event = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 6474
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 6474
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 6474
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 6474
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
-					}
-				}
-			}
-			UKB = {
-				transfer_state = 227
-				declare_war_on = {
-					target = UKR
-					type = annex_everything
-				}
-				227 = {
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
-						owner = PREV
+						prioritize_location = 6474
 					}
 				}
 			}
 			UKC = {
+				add_ideas = UKR_debug_idea
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_war_support = 0.6
 				transfer_state = 255
+				# set_state_controller = 239
+				# set_state_controller = 257
+				# set_state_controller = 258
+				add_state_claim = 255
+				add_state_claim = 257
+				add_state_claim = 239
+				add_state_claim = 258
+				add_state_claim = 260
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -177,27 +191,41 @@ country_event = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9258
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9258
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9258
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9258
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9258
 					}
 				}
 			}
 			UKD = {
+				add_ideas = UKR_debug_idea
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_war_support = 0.6
 				transfer_state = 200
+				# set_state_controller = 196
+				# set_state_controller = 197
+				# set_state_controller = 203
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -206,27 +234,44 @@ country_event = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 11405
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 11405
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 11405
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 11405
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 11405
 					}
 				}
 			}
 			UKE = {
+				add_ideas = UKR_debug_idea
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_war_support = 0.6
 				transfer_state = 222
+				# set_state_controller = 220
+				# set_state_controller = 225
+				# set_state_controller = 240
+				add_state_claim = 220
+				add_state_claim = 240
+				add_state_claim = 258
 				declare_war_on = {
 					target = UKR
 					type = annex_everything
@@ -235,22 +280,88 @@ country_event = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9355
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9355
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9355
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9355
 					}
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
+						prioritize_location = 9355
+					}
+				}
+			}
+			DON = {
+				add_ideas = UKR_debug_idea
+				# add_ai_strategy = {
+				# 	type = force_build_armies
+				# 	value = 100
+				# }
+				add_war_support = 0.6
+				transfer_state = 218
+				# set_state_controller = 245
+				# set_state_controller = 265
+				218 = {
+					create_unit = {
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						owner = PREV
+						prioritize_location = 9417
+					}
+					create_unit = {
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						owner = PREV
+						prioritize_location = 9417
+					}
+					create_unit = {
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						owner = PREV
+						prioritize_location = 9417
+					}
+					create_unit = {
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						owner = PREV
+						prioritize_location = 9417
+					}
+					create_unit = {
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						owner = PREV
+						prioritize_location = 9417
+					}
+				}
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+			}
+			# set ai strategy
+			every_country_with_original_tag = {
+				original_tag_to_check = UKR
+				every_country_with_original_tag = {
+					original_tag_to_check = UKR
+					if = {
+						limit = {
+							NOT = {
+								tag = PREV
+							}
+						}
+						add_ai_strategy = {
+							type = invade
+							id = PREV
+							value = 100
+						}
 					}
 				}
 			}
@@ -258,21 +369,18 @@ country_event = {
 	}
 	option = {
 		name = ssw_UKR.3.a
+		remove_ideas = UKR_natives_nationalism
 	}
 }
 
-# Ukrainian Insurgency - 199
+# Ukrainian Insurgency
+# Note: this event is not trigered currently
 country_event = {
 	id = ssw_UKR.4
 	title = ssw_UKR.4.title
 	desc = ssw_UKR.4.desc
 	picture = GFX_report_event_second_vienna_award_pact
-	# is_triggered_only = yes
-	# fire_only_once = no
-	trigger = {
-		tag = UKR
-		has_war_with = UKA
-	}
+	is_triggered_only = yes
 	mean_time_to_happen = {
 		days = 7
 	}
@@ -428,6 +536,7 @@ country_event = {
 }
 
 # General Demand Event
+# Note: Doniestl Ukraine will be Moldova
 country_event = {
 	id = ssw_UKR.11
 	title = ssw_UKR.11.title
@@ -436,6 +545,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ssw_UKR.11.a
+		ai_chance = {
+			base = 1
+		}
 		FROM = {
 			create_wargoal = {
 				type = take_core_state
@@ -445,6 +557,14 @@ country_event = {
 	}
 	option = {
 		name = ssw_UKR.11.b
+		ai_chance = {
+			base = 1
+			# Ukrainians want to unite!
+			modifier = {
+				tag = DET
+				factor = 100
+			}
+		}
 		every_owned_state = {
 			limit = {
 				OR = {
@@ -454,6 +574,26 @@ country_event = {
 			}
 			FROM = {
 				transfer_state = PREV
+			}
+		}
+		# If Doniestl Ukraine lost all states except for Moldova,
+		# Moldova will annex DET
+		if = {
+			limit = {
+				DET = {
+					any_owned_state = {
+						NOT = {
+							state = 78
+						}
+						is_core_of = DET
+					}
+				}
+			}
+			MOL = {
+				annex_country = {
+					target = DET
+					transfer_troops = yes
+				}
 			}
 		}
 	}

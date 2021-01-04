@@ -56,8 +56,15 @@ on_actions = {
 				set_politics = {
 					ruling_party = social_conservatism
 				}
+				set_political_party = {
+					ideology = social_conservatism
+					popularity = 70
+				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
+				add_ideas = limited_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
 			}
 			# create Makhnovia
 			create_dynamic_country = {
@@ -67,8 +74,15 @@ on_actions = {
 				set_politics = {
 					ruling_party = anarchism
 				}
+				set_political_party = {
+					ideology = anarchism
+					popularity = 70
+				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
+				add_ideas = limited_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
 			}
 			# create Ukraine Socialist Republic
 			create_dynamic_country = {
@@ -78,8 +92,15 @@ on_actions = {
 				set_politics = {
 					ruling_party = progressive_communism
 				}
+				set_political_party = {
+					ideology = progressive_communism
+					popularity = 70
+				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
+				add_ideas = limited_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
 			}
 			# create Ukraine Orthodox State
 			create_dynamic_country = {
@@ -89,8 +110,15 @@ on_actions = {
 				set_politics = {
 					ruling_party = authority_despotism
 				}
+				set_political_party = {
+					ideology = authority_despotism
+					popularity = 70
+				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
+				add_ideas = limited_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
 			}
 			# create Hetmanate of Ukraine
 			create_dynamic_country = {
@@ -100,13 +128,26 @@ on_actions = {
 				set_politics = {
 					ruling_party = authority_democracy
 				}
+				set_political_party = {
+					ideology = authority_democracy
+					popularity = 70
+				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
+				add_ideas = limited_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
 			}
 			# Remove all cores from Ukraine
 			UKR = {
-				every_owned_state = {
+				every_state = {
+					limit = {
+						is_core_of = UKR
+					}
 					remove_core_of = UKR
+					add_claim_by = UKR
+				}
+				every_owned_state = {
 					add_claim_by = UKR
 				}
 			}
