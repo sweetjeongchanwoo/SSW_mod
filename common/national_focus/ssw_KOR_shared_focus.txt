@@ -453,7 +453,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_focus_north
-	icon = GFX_focus_unknown
+	icon = GFX_focus_on_north
 	relative_position_id = KOR_deal_with_zaibatsu
 	cost = 3.00
 	x = -1
@@ -627,7 +627,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_focus_south
-	icon = GFX_focus_unknown
+	icon = GFX_focus_on_south
 	relative_position_id = KOR_equal_devlopment
 	cost = 3.00
 	x = 2
