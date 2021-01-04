@@ -1,0 +1,21 @@
+state = { #ÉAÉfÉBÉQ
+	id = 1005
+	name = "STATE_1005"
+	manpower = 21000
+	state_category = city
+	history = {
+		owner = CCS
+		add_core_of = CCS
+		add_core_of = SOV
+		victory_points = {
+			3720 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = {
+		3720 6738 6736
+	}
+}

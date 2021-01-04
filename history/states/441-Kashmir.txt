@@ -7,11 +7,9 @@ state={
 	state_category = rural
 
 	history={
-		owner = JAK
-		add_core_of = JAK
+		owner = PAK
 		add_core_of = CHI
 		add_core_of = NIN
-		add_core_of = PIN
 		add_core_of = PAK
 		
 		buildings = {

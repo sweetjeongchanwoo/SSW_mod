@@ -1,0 +1,21 @@
+state={ #タクアレンボー
+	id=1010
+	name="STATE_1010"
+	manpower = 120000
+	state_category = town
+	history={
+		owner = URG
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = URG
+		victory_points = {
+			1613 2
+		}
+	}
+	provinces={
+		1613 1626 10502 12440 12468
+	}
+}

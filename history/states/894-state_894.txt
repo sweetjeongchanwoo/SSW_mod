@@ -5,7 +5,6 @@ state={
 
 	history={
 		owner = NIN
-		add_core_of = PIN
 		add_core_of = NIN
 		buildings = {
 			infrastructure = 4

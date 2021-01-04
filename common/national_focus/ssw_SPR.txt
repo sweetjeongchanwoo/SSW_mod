@@ -436,6 +436,7 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = { spr_debahu_03 }
 			add_political_power = 40
+			retire_ideology_leader = national_fascism
 			create_country_leader = {
 				name = "Manuel Hedilla"
 				desc = "POLITICS_MANUEL_HEDILLA_DESC"

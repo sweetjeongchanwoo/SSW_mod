@@ -169,10 +169,6 @@
  MOS_DEF:0 "モスクワ"
  MOS_ADJ:0 "モスクワ"
  
- VFR:0 "ヴィシー・フランス"
- VFR_DEF:0 "ヴィシー・フランス"
- VFR_ADJ:0 "ヴィシー・フランス"
- 
  NWA:0 "北西アフリカ"
  NWA_DEF:0 "北西アフリカ"
  NWA_ADJ:0 "北西アフリカ"
@@ -329,8 +325,6 @@
  TMS_DEF:0 "トルクメニスタン"
  TMS_ADJ:0 "トルクメニスタン"
  
- RUS:0 "ロシア"
- RUS_DEF:0 "ロシア"
  RUS_anarchism:0 "ロシア自由地区"
  RUS_anarchism_DEF:0 "ロシア自由地区"
  RUS_progressive_communism:0 "ロシア社会主義共和国"
@@ -343,6 +337,8 @@
  RUS_national_fascism_DEF:0 "ロシア国"
  RUS_national_socialism:0 "ロシア国"
  RUS_national_socialism_DEF:0 "ロシア国"
+ RUS:0 "ロシア"
+ RUS_DEF:0 "ロシア"
  RUS_ADJ:0 "ロシア"
  
  SOV:0 "ソビエト連邦"
@@ -391,9 +387,9 @@
  MYS_DEF:0 "マイソール"
  MYS_ADJ:0 "マイソール"
  
- NIN:0 "インド国民政府"
- NIN_DEF:0 "インド国民政府"
- NIN_ADJ:0 "国民インド"
+ NIN:0 "インド"
+ NIN_DEF:0 "インド"
+ NIN_ADJ:0 "インド"
  
  PAK:0 "パキスタン"
  PAK_DEF:0 "パキスタン"
@@ -751,6 +747,10 @@
  CYP_DEF:0 "キプロス"
  CYP_ADJ:0 "キプロス"
  
+ LAP:0 "ラップランド"
+ LAP_DEF:0 "ラップランド"
+ LAP_ADJ:0 "ラップランド"
+ 
  LIE:0 "リヒテンシュタイン"
  LIE_DEF:0 "リヒテンシュタイン"
  LIE_ADJ:0 "リヒテンシュタイン"
@@ -932,26 +932,42 @@
  USA:0 "アメリカ合衆国"
  USA_DEF:0 "アメリカ合衆国"
  USA_ADJ:0 "アメリカ"
+  
+ ATG:0 "アンティグア・バーブーダ"
+ ATG_DEF:0 "アンティグア・バーブーダ"
+ ATG_ADJ:0 "アンティグア・バーブーダ"
  
  BAH:0 "バハマ"
  BAH_DEF:0 "バハマ"
  BAH_ADJ:0 "バハマ"
  
- CAY:0 "カイエンヌ"
- CAY_DEF:0 "カイエンヌ"
- CAY_ADJ:0 "カイエンヌ"
+ BRB:0 "バルバドス"
+ BRB_DEF:0 "バルバドス"
+ BRB_ADJ:0 "バルバドス"
  
  BLZ:0 "ベリーズ"
  BLZ_DEF:0 "ベリーズ"
  BLZ_ADJ:0 "ベリーズ"
  
+ CAY:0 "カイエンヌ"
+ CAY_DEF:0 "カイエンヌ"
+ CAY_ADJ:0 "カイエンヌ"
+ 
  CRC:0 "キュラソー"
  CRC_DEF:0 "キュラソー"
  CRC_ADJ:0 "キュラソー"
  
+ DMA:0 "ドミニカ"
+ DMA_DEF:0 "ドミニカ"
+ DMA_ADJ:0 "ドミニカ"
+ 
  GDL:0 "グアドループ"
  GDL_DEF:0 "グアドループ"
  GDL_ADJ:0 "グアドループ"
+ 
+ GRD:0 "グレナダ"
+ GRD_DEF:0 "グレナダ"
+ GRD_ADJ:0 "グレナダ"
  
  GRL:0 "グリーンランド"
  GRL_DEF:0 "グリーンランド"
@@ -960,6 +976,14 @@
  GYA:0 "ガイアナ"
  GYA_DEF:0 "ガイアナ"
  GYA_ADJ:0 "ガイアナ"
+ 
+ KNA:0 "セントクリストファー・ネイビス"
+ KNA_DEF:0 "セントクリストファー・ネイビス"
+ KNA_ADJ:0 "セントクリストファー・ネイビス"
+ 
+ LCA:0 "セントルシア"
+ LCA_DEF:0 "セントルシア"
+ LCA_ADJ:0 "セントルシア"
  
  PUE:0 "プエルトリコ"
  PUE_DEF:0 "プエルトリコ"
@@ -973,7 +997,15 @@
  TRI_DEF:0 "トリニダード・トバゴ"
  TRI_ADJ:0 "トリニダード・トバゴ"
  
+ VCT:0 "セントビンセント・グレナディーン"
+ VCT_DEF:0 "セントビンセント・グレナディーン"
+ VCT_ADJ:0 "セントビンセント・グレナディーン"
+ 
 #太平洋
+ COK:0 "クック諸島"
+ COK_DEF:0 "クック諸島"
+ COK_ADJ:0 "クック諸島"
+ 
  FIJ:0 "フィジー"
  FIJ_DEF:0 "フィジー"
  FIJ_ADJ:0 "フィジー"
@@ -993,6 +1025,10 @@
  MHL:0 "マーシャル諸島"
  MHL_DEF:0 "マーシャル諸島"
  MHL_ADJ:0 "マーシャル諸島"
+ 
+ NIU:0 "ニウエ"
+ NIU_DEF:0 "ニウエ"
+ NIU_ADJ:0 "ニウエ"
  
  NRU:0 "ナウル"
  NRU_DEF:0 "ナウル"
@@ -1018,9 +1054,17 @@
  TAH_DEF:0 "タヒチ"
  TAH_ADJ:0 "タヒチ"
  
+ TON:0 "トンガ"
+ TON_DEF:0 "トンガ"
+ TON_ADJ:0 "トンガ"
+ 
  TVL:0 "ツバル"
  TVL_DEF:0 "ツバル"
  TVL_ADJ:0 "ツバル"
+ 
+ VUT:0 "バヌアツ"
+ VUT_DEF:0 "バヌアツ"
+ VUT_ADJ:0 "バヌアツ"
  
 #ドイツ
  BAY:0 "バイエルン"
@@ -1090,6 +1134,10 @@
  OCC_ADJ:0 "オクシタニア"
  
 #ソビエト
+ ADY:0 "アディゲ"
+ ADY_DEF:0 "アディゲ"
+ ADY_ADJ:0 "アディゲ"
+ 
  ALT:0 "アルタイ"
  ALT_DEF:0 "アルタイ"
  ALT_ADJ:0 "アルタイ"
@@ -1114,6 +1162,10 @@
  CHE_DEF:0 "チェチェン"
  CHE_ADJ:0 "チェチェン"
  
+ DON:0 "ドン"
+ DON_DEF:0 "ドン"
+ DON_ADJ:0 "ドン"
+ 
  EKA:0 "エカテリノダール"
  EKA_DEF:0 "エカテリノダール"
  EKA_ADJ:0 "エカテリノダール"
@@ -1133,6 +1185,10 @@
  KBR:0 "カバルダ・バルカル"
  KBR_DEF:0 "カバルダ・バルカル"
  KBR_ADJ:0 "カバルダ・バルカル"
+ 
+ KRA:0 "クラスノダール連合"
+ KRA_DEF:0 "クラスノダール連合"
+ KRA_ADJ:0 "クラスノダール"
  
  KRC:0 "カラチャイ・チェルケス"
  KRC_DEF:0 "カラチャイ・チェルケス"
@@ -1178,6 +1234,10 @@
  NAV:0 "ナバラ"
  NAV_DEF:0 "ナバラ"
  NAV_ADJ:0 "ナバラ"
+ 
+ SPA:0 "スペイン共和国"
+ SPA_DEF:0 "スペイン共和国"
+ SPA_ADJ:0 "スペイン"
  
 #ユーゴスラビア
  BOS:0 "ボスニア"
