@@ -188,6 +188,6 @@ create_country_leader = {
 	expire = "1970.1.1"
 	ideology = authority_despotism_ideology
 	traits = {
-		#
+		Specters_of_Showa
 	}
 }

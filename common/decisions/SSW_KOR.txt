@@ -1,9 +1,23 @@
 KOR_debug_categories = {
 	KOR_up_all_progress = {
 		complete_effect = {
-			add_to_variable  = { KOR_discontent = 1 } 
-			add_to_variable = { KOR_collaboration = 1 }
-			add_to_variable = { KOR_literacy = 1 }
+			add_to_variable  = { KOR_discontent = 1 } #b
+			add_to_variable = { KOR_collaboration = 1 } #p
+			add_to_variable = { KOR_literacy = 1 } #p
+		} 
+	}
+	KOR_set_fifty = {
+		complete_effect = {
+			set_variable  = { KOR_discontent = 50 } #b
+			set_variable = { KOR_collaboration = 50 } #p
+			set_variable = { KOR_literacy = 50 } #p
+		} 
+	}
+	KOR_set_zero = {
+		complete_effect = {
+			set_variable  = { KOR_discontent = 1 } #b
+			set_variable = { KOR_collaboration = 1 } #p
+			set_variable = { KOR_literacy = 1 } #p
 		} 
 	}
 }

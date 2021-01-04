@@ -16,3 +16,17 @@ KOR_focus_reload = {
 		}
 	}
 }
+
+KOR_culculate_japanization = {
+	hidden_effect = {
+		if = {
+			limit = { 
+				check_variable = { KOR_discontent > 30 }
+				check_variable = { KOR_uprising < 1 }
+			}
+			KOR = {
+				country_event = { id = KOR_uprising.0 days = 1 }
+			}
+		}
+	}
+}
