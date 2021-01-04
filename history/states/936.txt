@@ -7,7 +7,8 @@ state={
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
-
+			infrastructure = 3
+			industrial_complex = 3
 		}
 
 	}
@@ -15,7 +16,7 @@ state={
 	provinces={
 		4086 10115 4103 7121 12089 1081
 	}
-	manpower=100
+	manpower=3340000
 	buildings_max_level_factor=1.000
 	state_category=town
 }
