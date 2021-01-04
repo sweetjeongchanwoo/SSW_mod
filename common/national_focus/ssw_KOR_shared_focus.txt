@@ -1,11 +1,10 @@
 shared_focus = {
 	id = KOR_continuous_governance
-	icon = GFX_focus_generic_little_entente
+	icon = GFX_goal_generic_political_pressure
 	cost = 3.00
 	x = 0
 	y = 0
 	completion_reward = {
-		add_manpower = 5000
 		add_political_power = 25
 	}
 }
@@ -360,7 +359,7 @@ shared_focus = {
 		focus = KOR_more_colaborator
 	}
 	completion_reward = {
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
@@ -392,7 +391,7 @@ shared_focus = {
 		focus = KOR_japanese_teachers
 	}
 	completion_reward = { #add idea
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }
@@ -853,7 +852,7 @@ shared_focus = {
 		focus = KOR_more_schools
 	}
 	completion_reward = { #add idea
-		add_variable = { KOR_literacy = 5 }
+		add_to_variable = { KOR_literacy = 5 }
 		custom_effect_tooltip = KOR_literacy_slow_tt
 	}
 }

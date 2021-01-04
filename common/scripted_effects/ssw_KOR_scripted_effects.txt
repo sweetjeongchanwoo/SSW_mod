@@ -1,0 +1,18 @@
+KOR_focus_reload = {
+	hidden_effect = {
+		if = {
+			limit = { has_focus_tree = SSW_KOR_Basic }
+			load_focus_tree = { 
+				tree = SSW_KOR_Basic_mix 
+				keep_completed = yes 
+			}
+		}
+		else_if = {
+			limit = { has_focus_tree = SSW_KOR_Basic_mix }
+			load_focus_tree = { 
+				tree = SSW_KOR_Basic 
+				keep_completed = yes 
+			}
+		}
+	}
+}

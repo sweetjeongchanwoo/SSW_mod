@@ -164,14 +164,24 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authority_despotism = 100
+	anarchism = 0
+	progressive_communism = 0
+	classical_communism = 0
+	social_democracy = 1
+	social_liberalism = 7
+	social_conservatism = 8
+	authority_democracy = 31
+	authority_despotism = 40
+	national_fascism = 6
+	national_socialism = 5
+	corporatocracism = 2
 }
 
 create_country_leader = {
-	name = "Nobuyuki Abe"
+	name = "Nobusuke Kishi"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_Nobuyuki_Abe.dds"
-	expire = "1965.1.1"
+	picture = "gfx/leaders/KOR/Portrait_Kishi_Nobusuke.tga"
+	expire = "1970.1.1"
 	ideology = authority_despotism_ideology
 	traits = {
 		#
