@@ -316,27 +316,27 @@ country_event = {
 				# set_state_controller = 265
 				218 = {
 					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
 						owner = PREV
 						prioritize_location = 9417
 					}
 					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
 						owner = PREV
 						prioritize_location = 9417
 					}
 					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
 						owner = PREV
 						prioritize_location = 9417
 					}
 					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
 						owner = PREV
 						prioritize_location = 9417
 					}
 					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.8"
+						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
 						owner = PREV
 						prioritize_location = 9417
 					}
