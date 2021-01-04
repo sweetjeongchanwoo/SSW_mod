@@ -689,4 +689,12 @@ spriteTypes = {
 		name = "GFX_focus_teaching_japanese"
 		texturefile = "gfx/interface/goals/teaching_japanese.tga"
 	}
+	SpriteType = {
+		name = "GFX_focus_on_north"
+		texturefile = "gfx/interface/goals/focus_on_north.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_on_south"
+		texturefile = "gfx/interface/goals/focus_on_south.tga"
+	}
 }

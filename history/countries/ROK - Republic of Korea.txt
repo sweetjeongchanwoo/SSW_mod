@@ -1,6 +1,5 @@
 ﻿capital = 857
-oob = "KOR_1950"
-set_cosmetic_tag = KOR_JAP
+oob = "ROK_1950"
 
 set_convoys = 25
 
@@ -139,19 +138,11 @@ set_technology = {
 	artillery1 = 1
 }
 
-set_variable = { KOR_discontent = 37.52 }
-set_variable = { KOR_collaboration = 46.01 }
-set_variable = { KOR_literacy = 17.91 }
-
 add_ideas = {
 	service_by_requirement
 	export_focus
 	partial_economic_mobilisation
 	ssw_military_dictatorship
-	
-	KOR_colonial_government
-	KOR_rule_of_ethnic_extermination
-	KOR_low_literacy
 }
 
 add_ideas = {
@@ -162,7 +153,7 @@ add_ideas = {
 	vacancy_pl
 }
 set_politics = {
-	ruling_party = authority_despotism
+	ruling_party = authority_democracy
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -171,23 +162,22 @@ set_popularities = {
 	anarchism = 0
 	progressive_communism = 0
 	classical_communism = 0
-	social_democracy = 1
-	social_liberalism = 7
+	social_democracy = 5
+	social_liberalism = 5
 	social_conservatism = 8
-	authority_democracy = 31
-	authority_despotism = 40
-	national_fascism = 6
+	authority_democracy = 50
+	authority_despotism = 20
+	national_fascism = 5
 	national_socialism = 5
 	corporatocracism = 2
 }
 
 create_country_leader = {
-	name = "Nobusuke Kishi"
+	name = "Kim Koo"
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_Kishi_Nobusuke.tga"
 	expire = "1970.1.1"
-	ideology = authority_despotism_ideology
+	ideology = authority_democracy_ideology
 	traits = {
-		Specters_of_Showa
 	}
 }
