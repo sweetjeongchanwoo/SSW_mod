@@ -28,6 +28,7 @@ KAZ	= "countries/Asia.txt"	#カザフスタン
 KAR	= "countries/Asia.txt"	#カラカルパクスタン
 KIR	= "countries/Asia.txt"	#キリバス
 KOR	= "countries/Asia.txt"	#朝鮮
+ROK = "countries/Asia.txt"	#韓国
 KYR	= "countries/Asia.txt"	#キルギス
 LAO	= "countries/Asia.txt"	#ラオス
 MAL	= "countries/Asia.txt"	#マレーシア

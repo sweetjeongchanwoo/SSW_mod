@@ -223,7 +223,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_deal_with_zaibatsu
-	icon = GFX_focus_unknown
+	icon = GFX_focus_JAP_the_greater_east_asia_zaibatsu
 	relative_position_id = KOR_pusan_port
 	cost = 3.00
 	x = 0
@@ -251,7 +251,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_deportation_poor
-	icon = GFX_focus_unknown
+	icon = GFX_focus_cze_german_puppet
 	relative_position_id = KOR_demobilize
 	cost = 3.00
 	x = 0
@@ -275,7 +275,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_more_colaborator
-	icon = GFX_focus_unknown
+	icon = GFX_focus_chi_collaboration_with_the_japanese
 	relative_position_id = KOR_what_should_we_do
 	cost = 3.00
 	x = 0
@@ -290,7 +290,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_loyal_subject
-	icon = GFX_focus_unknown
+	icon = GFX_focus_JAP_incorporate_korea_to_the_mainland
 	relative_position_id = KOR_additional_japanese_training
 	cost = 3.00
 	x = 1
@@ -328,7 +328,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_massive_arrest
-	icon = GFX_focus_unknown
+	icon = GFX_focus_prc_infiltration
 	relative_position_id = KOR_search_underground
 	cost = 3.00
 	x = 0
@@ -344,7 +344,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_interrogation
-	icon = GFX_focus_unknown
+	icon = GFX_focus_spr_crush_the_revolution
 	relative_position_id = KOR_massive_arrest
 	cost = 3.00
 	x = 0
@@ -362,7 +362,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_re_education
-	icon = GFX_focus_unknown
+	icon = GFX_focus_eng_move_to_secure_the_dominions
 	relative_position_id = KOR_interrogation
 	cost = 3.00
 	x = 0
@@ -376,7 +376,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_japanese_teachers
-	icon = GFX_focus_unknown
+	icon = GFX_focus_JAP_the_japanese_public_education
 	relative_position_id = KOR_loyal_subject
 	cost = 3.00
 	x = 0
@@ -394,7 +394,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_japanese_immigrants
-	icon = GFX_focus_unknown
+	icon = GFX_focus_JAP_the_greater_east_asia_policy_outline
 	relative_position_id = KOR_japanese_teachers
 	cost = 3.00
 	x = -1
@@ -412,7 +412,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_reinforcement_history_education
-	icon = GFX_focus_unknown
+	icon = GFX_focus_generic_military_academy
 	relative_position_id = KOR_japanese_teachers
 	cost = 3.00
 	x = 1
@@ -428,7 +428,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_more_schools
-	icon = GFX_focus_unknown
+	icon = GFX_focus_generic_concessions
 	relative_position_id = KOR_japanese_teachers
 	cost = 3.00
 	x = 0
@@ -518,7 +518,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_equal_devlopment
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_neutrality_focus
 	relative_position_id = KOR_deal_with_zaibatsu
 	cost = 3.00
 	x = 1
@@ -699,7 +699,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_increase_agraian
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_construct_civ_factory
 	relative_position_id = KOR_equal_devlopment
 	cost = 3.00
 	x = 2
@@ -720,7 +720,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_build_infra
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_construct_infrastructure
 	relative_position_id = KOR_equal_devlopment
 	cost = 3.00
 	x = 0
@@ -742,7 +742,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_increase_military_industry
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_construct_mil_factory
 	relative_position_id = KOR_equal_devlopment
 	cost = 3.00
 	x = -2
@@ -763,7 +763,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_we_need_electrocity
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_production2
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = -1
@@ -785,7 +785,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_gentle_rule
-	icon = GFX_focus_unknown
+	icon = GFX_focus_generic_military_mission
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = 1
@@ -802,7 +802,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_agricultural_exports
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_positive_trade_relations
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = 3
@@ -817,7 +817,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_support_kwantung_army
-	icon = GFX_focus_unknown
+	icon = GFX_focus_jap_manchurian_project
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = -3
@@ -836,7 +836,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_steel_mill
-	icon = GFX_focus_unknown
+	icon = GFX_focus_generic_steel
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = -3
@@ -857,7 +857,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_shipyard_construction
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_construct_naval_dockyard
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = -1
@@ -879,7 +879,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_cottage_industries
-	icon = GFX_focus_unknown
+	icon = GFX_goal_generic_construction
 	relative_position_id = KOR_build_infra
 	cost = 3.00
 	x = 2
@@ -898,7 +898,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_night_schools
-	icon = GFX_focus_unknown
+	icon = GFX_focus_research
 	relative_position_id = KOR_more_schools
 	cost = 3.00
 	x = 0
@@ -914,7 +914,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_1962_budget
-	icon = GFX_focus_unknown
+	icon = GFX_focus_generic_self_management
 	relative_position_id = KOR_cottage_industries
 	cost = 3.00
 	x = 1

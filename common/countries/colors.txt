@@ -243,6 +243,11 @@ KOR = {	#朝鮮
 	color_ui = rgb { 240 170 110 }
 }
 
+ROK = { #韓国
+	color = rgb { 5 85 166 }
+	color_ui = rgb { 5 85 166 }
+}
+
 LIB = {	#リベリア
 	color = rgb { 70 30 85 }
 	color_ui = rgb { 70 30 85 }
