@@ -2300,13 +2300,13 @@ shared_focus = {
 		add_stability = 0.1
 		if = {
 			limit = {
-				has = SSW_JAP_Shrink_due_to_lack_of_growth
+				has_idea = SSW_JAP_Shrink_due_to_lack_of_growth
 			}
 			remove_ideas = { SSW_JAP_Shrink_due_to_lack_of_growth }
 		}
 		if = {
 			limit = {
-				has = SSW_JAP_Post_war_recession
+				has_idea = SSW_JAP_Post_war_recession
 			}
 			remove_ideas = { SSW_JAP_Post_war_recession }
 		}
@@ -2362,7 +2362,7 @@ shared_focus = {
 		custom_effect_tooltip = 3_JAP_tt
 	}
 }
-focus = {
+shared_focus = {
 	id = JAP_select_Kishi
 	icon = GFX_focus_JAP_focus_kishi
 	cost = 1.00
@@ -2758,7 +2758,7 @@ shared_focus = {
 	completion_reward = {
 	}
 }
-focus = {
+shared_focus = {
 	id = JAP_Reintroduction_of_the_gold_standard
 	icon = GFX_focus_usa_reestablish_the_gold_standard
 	cost = 10.00
@@ -3204,7 +3204,7 @@ shared_focus = {
 		}
 	}
 }
-focus = {
+shared_focus = {
 	id = JAP_Agricultural_Land_Reform
 	icon = GFX_focus_generic_commonwealth_build_infantry
 	cost = 10.00

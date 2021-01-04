@@ -1,5 +1,4 @@
 spriteTypes = {
-#日本
     spriteType = {
 		name = "GFX_focus_cze_german_puppet"
 		texturefile = "gfx/interface/goals/focus_cze_german_puppet.dds"
@@ -384,12 +383,10 @@ spriteTypes = {
 		name = "GFX_focus_JAP_Lessons_from_the_Second_Great_War"
 		texturefile = "gfx/interface/goals/JAP/focus_JAP_Lessons_from_the_Second_Great_War.dds"
 	}
-#ドイツ　
 	spriteType = {
 		name = "GFX_focus_germania_plan"
 		texturefile = "gfx/interface/goals/ger/focus_germania_plan.dds"
 	}
-#ゲーリング・ドイツ
     spriteType = {
 		name = "GFX_focus_Gering_ico"
 		texturefile = "gfx/interface/goals/GER/focus_Gering_ico.dds"
@@ -410,7 +407,6 @@ spriteTypes = {
 		name = "GFX_focus_Greim_ico"
 		texturefile = "gfx/interface/goals/GER/focus_Greim_ico.dds"
 	}
-#ビルマ
 	SpriteType = {
 		name = "GFX_focus_BRM_sinniti"
 		texturefile = "gfx/interface/goals/BRM/focus_BRM_sinniti.dds"
@@ -423,7 +419,6 @@ spriteTypes = {
 #		name = "GFX_focus_LTV_kokki"
 #		texturefile = "gfx/interface/goals/BRM/focus_LTV_kokki.dds"
 #	}
-#イギリス
 	SpriteType = {
 		name = "GFX_focus_1950_vote"
 		texturefile = "gfx/interface/goals/ENG/focus_1950_vote.dds"
@@ -604,7 +599,6 @@ spriteTypes = {
 		name = "GFX_LTV_messa"
 		texturefile = "gfx/interface/goals/LTV/LTV_messa.dds"
 	}
-#トルコ
 	SpriteType = {
 		name = "GFX_TUR_Sam"
 		texturefile = "gfx/interface/goals/TUR/SSW_TUR_goal_Sam.dds"
@@ -633,7 +627,6 @@ spriteTypes = {
 		name = "GFX_TUR_Union_middle_east"
 		texturefile = "gfx/interface/goals/TUR/ssw_TUR_middle_east.dds"
 	}
-	#イタリア
 	SpriteType = {
 		name = "GFX_ITA_Caesar_side"
 		texturefile = "gfx/interface/goals/ITA/ITA_Caesar_side.dds"
@@ -641,5 +634,59 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ITA_Caesar"
 		texturefile = "gfx/interface/goals/ITA/ITA_Caesar.dds"
+	}
+	
+	#KOR
+	SpriteType = {
+		name = "GFX_focus_KOR_continue_rule"
+		texturefile = "gfx/interface/goals/continue_rule_kor.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_demobilization"
+		texturefile = "gfx/interface/goals/demobilization.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_goal_kor"
+		texturefile = "gfx/interface/goals/goal_kor.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_pusan"
+		texturefile = "gfx/interface/goals/pusan.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_quite_peace"
+		texturefile = "gfx/interface/goals/quite_peace.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_resist_kor"
+		texturefile = "gfx/interface/goals/resist_kor.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_urbanization"
+		texturefile = "gfx/interface/goals/urbanization.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_search_under"
+		texturefile = "gfx/interface/goals/search_under.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_inchon"
+		texturefile = "gfx/interface/goals/inchon.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_wonsan"
+		texturefile = "gfx/interface/goals/wonsan.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_bonus_mp"
+		texturefile = "gfx/interface/goals/bonus_mp.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_no_interest"
+		texturefile = "gfx/interface/goals/no_interest.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_teaching_japanese"
+		texturefile = "gfx/interface/goals/teaching_japanese.tga"
 	}
 }

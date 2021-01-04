@@ -1,0 +1,10 @@
+on_actions = {
+	on_monthly_KOR = {
+		effect = {
+			if = {
+				limit = { is_ai = no }
+				KOR_update_pie_chart = yes
+			}
+		}
+	}
+}
