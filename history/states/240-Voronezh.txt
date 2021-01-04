@@ -11,6 +11,8 @@ state={
 			9449 1
 		}
 		owner = UKR
+		add_core_of = RUS
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 5
 		}

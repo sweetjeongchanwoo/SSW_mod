@@ -136,7 +136,7 @@ focus_tree = {
 			focus = UKR_fIOmdGTa
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 			unlock_decision_category_tooltip = UKR_independence_war
@@ -149,6 +149,14 @@ focus_tree = {
 		x = 23
 		y = 0
 		cost = 10
+		available = {
+			NOT = {
+				has_country_leader = {
+					name = "Erich Koch"
+					ruling_only = yes
+				}
+			}
+		}
 		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = UKR_mtYrwcNb
@@ -157,7 +165,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 			add_ideas = UKR_independence_war
@@ -410,6 +418,12 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			has_country_leader = {
+				name = "Erich Koch"
+				ruling_only = yes
+			}
+		}
 		mutually_exclusive = {
 			focus = UKR_fIOmdGTa
 		}
@@ -645,6 +659,9 @@ focus_tree = {
 		x = 3
 		y = 4
 		cost = 10
+		available = {
+			has_global_flag = GER_civil_war
+		}
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
@@ -804,6 +821,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_state_core = 234
+			add_state_claim = 238
+			add_state_claim = 235
 			every_country = {
 				limit = {
 					NOT = {
@@ -854,6 +873,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 300
 		}
 	}
 	#Focus for ドイツ人の国外追放 - focus ID randomly generated due to title being in non-latin characters
@@ -915,7 +937,7 @@ focus_tree = {
 			focus = UKR_fIOmdGTa
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 		completion_reward = {
 			add_ideas = UKR_returned_heroes
@@ -938,18 +960,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_core_of = SOV
+					}
+				}
+				add_compliance = 100
+			}
+		}
 	}
 	#Focus for ウクライナ化政策 - focus ID randomly generated due to title being in non-latin characters
 	focus = {
 		id = UKR_WUbiKNjG
 		icon = GFX_focus_BUL_the_peoples_republic_of_bulgaria
-		x = 20
-		y = 7
+		x = 0
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = UKR_jQZItTSU
 		}
+		relative_position_id = UKR_jQZItTSU
 		ai_will_do = {
 			factor = 1
 		}
@@ -1015,6 +1049,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UKR_russian_opposition
 		}
 	}
 	#Focus for クリミアの回収 - focus ID randomly generated due to title being in non-latin characters
@@ -1363,6 +1400,43 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = UKR_unity
+		}
+	}
+	#Focus for オデッサの回収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = UKR_southern_beralus
+		icon = GFX_focus_rom_preserve_romania
+		x = -4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		relative_position_id = UKR_CAdsbgyc
+		prerequisite = {
+			focus = UKR_CAdsbgyc
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_claim = 94
+			add_state_claim = 194
+			add_state_core = 224
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ROOT
+					}
+					OR = {
+						controls_state = 94
+						controls_state = 194
+						controls_state = 224
+					}
+				}
+				country_event = {
+					id = ssw_UKR.11
+					days = 3
+				}
+			}
 		}
 	}
 	#End of focuses 

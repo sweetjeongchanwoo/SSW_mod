@@ -57,28 +57,14 @@ country_event = {
 		every_owned_state = {
 			start_resistance = yes
 		}
-		# 93 = {
-		# 	add_resistance_target = {
-		# 		amount = 100
-		# 		days = 365
-		# 	}
-		# }
-		# 201 = {
-		# 	add_resistance_target = {
-		# 		amount = 100
-		# 		days = 365
-		# 	}
-		# }
-		# 199 = {
-		# 	add_resistance_target = {
-		# 		amount = 100
-		# 		days = 365
-		# 	}
-		# }
+		add_timed_idea = {
+			idea = UKR_natives_nationalism
+			days = 365
+		}
 	}
 }
 
-# Initiate Ukrainian Insurgency
+# Initiate Ukrainian Emergency
 country_event = {
 	id = ssw_UKR.3
 	title = ssw_UKR.3.title
@@ -90,11 +76,7 @@ country_event = {
 	}
 	trigger = {
 		tag = UKR
-		UKR = {
-			NOT = {
-				is_subject_of = GER
-			}
-		}
+		has_stability < 0.16
 	}
 	immediate = {
 		hidden_effect = {
@@ -105,6 +87,151 @@ country_event = {
 					type = annex_everything
 				}
 				93 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			UKB = {
+				transfer_state = 227
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				227 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			UKB = {
+				transfer_state = 227
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				227 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			UKC = {
+				transfer_state = 255
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				255 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			UKD = {
+				transfer_state = 200
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				200 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			UKE = {
+				transfer_state = 222
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				222 = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV

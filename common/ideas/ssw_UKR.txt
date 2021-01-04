@@ -16,7 +16,7 @@ ideas = {
 		UKR_stabilize = {
 			picture = por_ogme
 			modifier = {
-				stability_weekly = 0.05
+				stability_weekly = 0.01
 			}
 		}
 		UKR_german_volunteers = {
@@ -152,6 +152,18 @@ ideas = {
 			picture = por_ogme
 			modifier = {
 				justify_war_goal_time = -0.1
+			}
+		}
+		UKR_russian_opposition = {
+			picture = por_ogme
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		UKR_natives_nationalism = {
+			picture = por_ogme
+			modifier = {
+				stability_weekly = -0.01
 			}
 		}
 	}
