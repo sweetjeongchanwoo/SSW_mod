@@ -22,7 +22,7 @@ KOR_culculate_japanization = {
 		if = {
 			limit = { 
 				check_variable = { KOR_discontent > 30 }
-				check_variable = { KOR_uprising < 1 }
+				check_variable = { KOR_uprising < 1 } #for Prevention of recurrence
 			}
 			KOR = {
 				country_event = { id = KOR_uprising.0 days = 1 }

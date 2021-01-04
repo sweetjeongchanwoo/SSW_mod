@@ -1,7 +1,6 @@
 on_actions = {
 	on_monthly_KOR = {
 		effect = {
-			KOR_culculate_japanization = yes
 			if = {
 				limit = { 
 					has_variable = KOR_discontent
@@ -12,6 +11,11 @@ on_actions = {
 				add_to_variable = { KOR_collaboration = 0.1 } #p
 				add_to_variable = { KOR_literacy = 0.1 }
 			}
+		}
+	}
+	on_weekly_KOR = {
+		effect = {
+			KOR_culculate_japanization = yes
 		}
 	}
 }
