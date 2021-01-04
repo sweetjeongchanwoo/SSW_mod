@@ -1175,15 +1175,6 @@ shared_focus = {
 		has_war = no
 	}
 	bypass = {
-		NOT = {
-			MEX = {
-				OR = {
-					has_government = progressive_communism
-					has_government = classical_communism
-				}
-				
-			}
-		}
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1193,12 +1184,24 @@ shared_focus = {
 		dismantle_faction = yes
 		create_faction = Pacific_Rim_CoProsperity_Sphere
 		add_to_faction = SIA
-		MEX = {
-			country_event = {
-			id = SSW_JAPAN_event_for_america.1
-			days = 1
+		if = {
+			limit = {
+				NOT = {
+					MEX = {
+						OR = {
+							has_government = classical_communism
+							has_government = progressive_communism
+						}
+					}
+				}
 			}
-		}				
+			MEX = {
+				country_event = {
+					id = SSW_JAPAN_event_for_america.1
+					days = 1
+				}
+			}	
+		}	
 	}
 }
 
@@ -1227,6 +1230,12 @@ shared_focus = {
 	bypass = {
 		not = {
 			country_exists = MEX
+			MEX = {
+				OR = {
+					has_government = classical_communism
+					has_government = progressive_communism
+				}
+			}
 		}
 	}
 	cancel_if_invalid = yes
@@ -1484,6 +1493,12 @@ shared_focus = {
 	bypass = {
 		NOT = {
 			country_exists = MEX
+			MEX = {
+				OR = {
+					has_government = classical_communism
+					has_government = progressive_communism
+				}
+			}
 		}
 	}
 	cancel_if_invalid = yes
@@ -1557,7 +1572,10 @@ shared_focus = {
 			add_ideas = JAP_nanbei_toushi_idea
 		}
 		JAP = {
-			add_ideas = JAP_nanbei_toushi_idea
+			add_timed_idea = {
+				idea = JAP_nanbei_toushi_idea_on_JAP
+				days = 365
+			}
 		}
 	}
 }
@@ -1797,6 +1815,11 @@ shared_focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 24
 	y = 2
+	completion_reward = {
+		hidden_effect = {
+			clr_country_flag = JAP_Daito_Gold_Block_flag
+		}
+	}
 }
 shared_focus = {
 	id = JAP_Compromise_with_the_military
@@ -2107,6 +2130,7 @@ shared_focus = {
 		add_political_power = 100
 		set_party_name = {
 			ideology = social_conservatism
+			long_name = JAP_Ziminto_party_long
 			name = JAP_Ziminto_party
 		}
 	}
@@ -2805,7 +2829,10 @@ shared_focus = {
 		hidden_effect = {
 			country_event = {
 			id = SSW_JAP.46
-			days = 365
+			days = 430
+			}
+			country_event = {
+			id = SSW_JAP.62
 			}
 		}
 	}
@@ -3004,6 +3031,11 @@ shared_focus = {
 			remove_idea = SSW_JAP_gadenintetsu
 			add_idea = SSW_JAP_The_entertainmentism_of_the_national_railroad_business
 		}
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.63
+			}
+		}
 	}
 }
 shared_focus = {
@@ -3052,6 +3084,9 @@ shared_focus = {
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	completion_reward = {
+		hidden_effect = {
+			set_country_flag = JAP_Daito_Gold_Block_flag
+		}
 		custom_effect_tooltip = JAP_geacps_gold_block_tt
 	}
 }
@@ -3151,9 +3186,11 @@ shared_focus = {
 	x = 50
 	y = 3
 	completion_reward = {
-		country_event = {
-			id = SSW_JAP.42
-		}
+		JAP = {
+			country_event = {
+				id = SSW_JAP.42
+			}
+		}	
 	}
 }
 shared_focus = {
@@ -6122,15 +6159,6 @@ shared_focus = {
 		id = JAP_Womens_political_participation
 		icon = GFX_focus_mex_soldaderas
 		cost = 10.00
-		prerequisite = {
-			focus = JAP_Daito_Gold_Block
-			focus = JAP_Raising_the_minimum_wage
-			focus = JAP_Landlord_Security
-			focus = JAP_The_Russian_expansion_of_conglomerates
-			focus = JAP_3S_production
-			focus = JAP_Hatoyama_memorandum
-			focus = JAP_Don_t_shrink_it
-		}
 		x = 45
 		y = 6
 		ai_will_do = {
@@ -7482,26 +7510,7 @@ shared_focus = {
 				}
 
 	}
-shared_focus = {
-	id = JAP_Research_on_the_Atomic_Bomb_Copy
-	icon = GFX_goal_unknown
-	cost = 10.00
-	prerequisite = {
-		focus = JAP_Research_on_the_Atomic_Bomb
-	}
-	prerequisite = {
-		focus = JAP_Research_on_the_Atomic_Bomb
-	}
-	x = 36
-	y = 16
-	completion_reward = {
-		add_tech_bonus = {
-			bonus = 1.0
-			uses = 1
-			category = nuclear
-		}
-	}
-}
+
 shared_focus = {
 		id = JAP_Research_on_the_Atomic_Bomb_Copy
 		icon = GFX_goal_unknown
