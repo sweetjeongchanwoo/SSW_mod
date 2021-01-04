@@ -1,3 +1,7 @@
+focus = {
+	current = "JAP_Submission_of_the_Second_Disarmament_Bill"
+	progress = 0
+}
 division_template = {
 	name = "Infantry Division"
 	

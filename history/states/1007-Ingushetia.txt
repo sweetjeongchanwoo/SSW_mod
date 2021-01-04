@@ -1,0 +1,18 @@
+state = { #イングーシ
+	id = 1007
+	name = "STATE_1007"
+	manpower = 31000
+	state_category = rural
+	history = {
+		owner = CCS
+		add_core_of = CCS
+		add_core_of = SOV
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		1455 666 670
+	}
+}

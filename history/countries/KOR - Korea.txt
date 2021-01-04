@@ -178,9 +178,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Nobuyuki Abe"
+	name = "Nobusuke Kishi"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_Nobuyuki_Abe.dds"
+	picture = "gfx/leaders/KOR/Portrait_Kishi_Nobusuke.tga"
 	expire = "1970.1.1"
 	ideology = authority_despotism_ideology
 	traits = {

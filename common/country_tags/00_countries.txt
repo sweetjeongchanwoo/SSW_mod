@@ -1,3 +1,5 @@
+################通常################
+
 #アジア
 ALT	= "countries/Asia.txt"	#アルタイ
 ARC	= "countries/Asia.txt"	#北極
@@ -10,6 +12,7 @@ BUR	= "countries/Asia.txt"	#ブリヤート
 CAM	= "countries/Asia.txt"	#カンボジア
 CHI	= "countries/Asia.txt"	#中華民国
 CLC	= "countries/Asia.txt"	#中国租借及び租界地
+COK	= "countries/Asia.txt"	#クック諸島
 FIJ	= "countries/Asia.txt"	#フィジー
 FSM	= "countries/Asia.txt"	#ミクロネシア連邦
 GUM	= "countries/Asia.txt"	#グアム
@@ -36,7 +39,8 @@ MLD	= "countries/Asia.txt"	#モルディブ
 MON	= "countries/Asia.txt"	#モンゴル
 MYS	= "countries/Asia.txt"	#マイソール
 NEP	= "countries/Asia.txt"	#ネパール
-NIN	= "countries/Asia.txt"	#国民インド
+NIN	= "countries/Asia.txt"	#インド
+NIU	= "countries/Asia.txt"	#ニウエ
 NRU	= "countries/Asia.txt"	#ナウル
 PAK	= "countries/Asia.txt"	#パキスタン
 PAO	= "countries/Asia.txt"	#太平洋
@@ -59,11 +63,13 @@ TAJ	= "countries/Asia.txt"	#タジキスタン
 TIB	= "countries/Asia.txt"	#チベット
 TLS	= "countries/Asia.txt"	#東ティモール
 TMS	= "countries/Asia.txt"	#トルクメニスタン
+TON	= "countries/Asia.txt"	#トンガ
 TRV	= "countries/Asia.txt"	#トラヴァンコール
 TUV	= "countries/Asia.txt"	#トゥヴァ
 TVL	= "countries/Asia.txt"	#ツバル
 UZB	= "countries/Asia.txt"	#ウズベキスタン
 VIN	= "countries/Asia.txt"	#ベトナム
+VUT	= "countries/Asia.txt"	#バヌアツ
 WTR	= "countries/Asia.txt"	#西トルキスタン
 XSM	= "countries/Asia.txt"	#馬家
 YUN	= "countries/Asia.txt"	#雲南
@@ -73,6 +79,7 @@ AFG	= "countries/Middle East.txt"	#アフガニスタン
 BHR	= "countries/Middle East.txt"	#バーレーン
 CHE	= "countries/Middle East.txt"	#チェチェン
 DAG	= "countries/Middle East.txt"	#ダゲスタン
+DON	= "countries/Middle East.txt"	#ドン
 EKA	= "countries/Middle East.txt"	#エカテリノダール
 ING	= "countries/Middle East.txt"	#イングーシ
 IRQ	= "countries/Middle East.txt"	#イラク
@@ -133,6 +140,7 @@ HOL	= "countries/Western Europe.txt"	#オランダ
 ICE	= "countries/Western Europe.txt"	#アイスランド
 IRE	= "countries/Western Europe.txt"	#アイルランド
 ITA	= "countries/Western Europe.txt"	#イタリア
+LAP	= "countries/Western Europe.txt"	#ラップランド
 LFF	= "countries/Western Europe.txt"	#左翼戦線
 LIE	= "countries/Western Europe.txt"	#リヒテンシュタイン
 LUI	= "countries/Western Europe.txt"	#ルイジアナ
@@ -150,7 +158,7 @@ PRE	= "countries/Western Europe.txt"	#プロイセン
 SAX	= "countries/Western Europe.txt"	#ザクセン
 SHL	= "countries/Western Europe.txt"	#シュレースヴィヒ＝ホルシュタイン
 SMR	= "countries/Western Europe.txt"	#サンマリノ
-SPR	= "countries/Western Europe.txt"	#スペイン
+SPR	= "countries/Western Europe.txt"	#スペイン国
 SWE	= "countries/Western Europe.txt"	#スウェーデン
 SWI	= "countries/Western Europe.txt"	#スイス
 TEX	= "countries/Western Europe.txt"	#テキサス
@@ -161,6 +169,7 @@ WGR	= "countries/Western Europe.txt"	#西ドイツ
 WUR	= "countries/Western Europe.txt"	#ヴュルテンベルク
 
 #東欧
+ADY	= "countries/Eastern Europe.txt"	#アディゲ
 ALB	= "countries/Eastern Europe.txt"	#アルバニア
 ARM	= "countries/Eastern Europe.txt"	#アルメニア
 AZR	= "countries/Eastern Europe.txt"	#アゼルバイジャン
@@ -181,6 +190,7 @@ GRE	= "countries/Eastern Europe.txt"	#ギリシャ
 HRZ	= "countries/Eastern Europe.txt"	#ヘルツェゴビナ
 HUN	= "countries/Eastern Europe.txt"	#ハンガリー
 KOS	= "countries/Eastern Europe.txt"	#コソボ
+KRA	= "countries/Eastern Europe.txt"	#クラスノダール
 LAT	= "countries/Eastern Europe.txt"	#ラトビア
 LIT	= "countries/Eastern Europe.txt"	#リトアニア
 MAC	= "countries/Eastern Europe.txt"	#マケドニア
@@ -267,25 +277,31 @@ ZIM	= "countries/Africa.txt"	#ジンバブエ
 
 #南米
 ARG	= "countries/South America.txt"	#アルゼンチン
+ATG = "countries/South America.txt" #アンティグア・バーブーダ
 BAH	= "countries/South America.txt"	#バハマ
 BLZ	= "countries/South America.txt"	#ベリーズ
 BOL	= "countries/South America.txt"	#ボリビア
 BRA	= "countries/South America.txt"	#ブラジル
+BRB	= "countries/South America.txt"	#バルバドス
 CAY	= "countries/South America.txt"	#カイエンヌ
 CHL	= "countries/South America.txt"	#チリ
 COL	= "countries/South America.txt"	#コロンビア
 COS	= "countries/South America.txt"	#コスタリカ
 CRC	= "countries/South America.txt"	#キュラソー
 CUB	= "countries/South America.txt"	#キューバ
+DMA	= "countries/South America.txt"	#ドミニカ
 DOM	= "countries/South America.txt"	#ドミニカーナ
 ECU	= "countries/South America.txt"	#エクアドル
 ELS	= "countries/South America.txt"	#エルサルバドル
 GDL	= "countries/South America.txt"	#グアドループ
+GRD = "countries/South America.txt"	#グレナダ
 GUA	= "countries/South America.txt"	#グアテマラ
 GYA	= "countries/South America.txt"	#ガイアナ
 HAI	= "countries/South America.txt"	#ハイチ
 HON	= "countries/South America.txt"	#ホンジュラス
 JAM	= "countries/South America.txt"	#ジャマイカ
+KNA	= "countries/South America.txt"	#セントクリストファー・ネビス
+LCA	= "countries/South America.txt"	#セントルシア
 MEX	= "countries/South America.txt"	#メキシコ
 NIC	= "countries/South America.txt"	#ニカラグア
 PAC	= "countries/South America.txt"	#パナマ運河
@@ -296,16 +312,21 @@ PUE	= "countries/South America.txt"	#プエルトリコ
 SUR	= "countries/South America.txt"	#スリナム
 TRI	= "countries/South America.txt"	#トリニダード・トバゴ
 URG	= "countries/South America.txt"	#ウルグアイ
+VCT	= "countries/South America.txt"	#セントビンセント・グレナディーン
 VEN	= "countries/South America.txt"	#ベネズエラ
 
 ################内戦################
 
-HGR	= "countries/Western Europe.txt"
-HLH	= "countries/Western Europe.txt"
-LTV	= "countries/Western Europe.txt"
+#アジア
+PRJ = "countries/Asia.txt" 	#日本社会主義人民共和国
+JSF = "countries/Asia.txt" 	#日本社会主義戦線
 
-PRJ = "countries/Asia.txt"
-JSF = "countries/Asia.txt"
-
+#中東
 IIR	= "countries/Middle East.txt"	#イスラーム・イラン
 CIR	= "countries/Middle East.txt"	#共産イラン
+
+#西欧
+HGR	= "countries/Western Europe.txt"	#ゲーリング派ドイツ
+HLH	= "countries/Western Europe.txt"	#ヒムラー派ドイツ
+LTV	= "countries/Western Europe.txt"	#反ナチス派ドイツ
+SPA	= "countries/Western Europe.txt"	#スペイン共和国

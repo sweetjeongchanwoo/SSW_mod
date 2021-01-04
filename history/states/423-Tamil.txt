@@ -7,10 +7,8 @@ state={
 	}
 
 	history={
-		owner = MDU
-		add_core_of = PIN
+		owner = NIN
 		add_core_of = NIN
-		add_core_of = MDU
 		victory_points = {
 			1409 15 
 		}

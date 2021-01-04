@@ -1,0 +1,23 @@
+
+state={
+	id=1004
+	name="STATE_1004"
+	manpower = 173371
+	state_category = city
+	history={
+		owner = CCS
+		add_core_of = CCS
+		add_core_of = SOV
+		victory_points = {
+			9663 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		11647 9674 6721 9663 3698 
+	}
+}
