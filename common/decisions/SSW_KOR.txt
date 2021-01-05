@@ -29,7 +29,7 @@ KOR_Japanization_categories = {
 		}
 		complete_effect = {
 			add_to_variable = { KOR_discontent = 0.1 } #positive
-			add_to_variable = { KOR_collaboration = -0.5 } #bad
+			add_to_variable = { KOR_collaboration = -0.05 } #bad
 		}
 	}
 	KOR_up_collaboration_basic = {
@@ -39,7 +39,7 @@ KOR_Japanization_categories = {
 		}
 		complete_effect = {
 			add_to_variable = { KOR_collaboration = 0.1 } #positive
-			add_to_variable = { KOR_discontent = -0.5 } #bad
+			add_to_variable = { KOR_discontent = -0.05 } #bad
 		}
 	}
 	KOR_up_literacy_basic = {
@@ -48,8 +48,8 @@ KOR_Japanization_categories = {
 			check_variable = { KOR_literacy < 100 }
 		}
 		complete_effect = {
-			add_to_variable = { KOR_collaboration = -0.5 } #bad
-			add_to_variable = { KOR_discontent = 0.5 } #bad
+			add_to_variable = { KOR_collaboration = -0.05 } #bad
+			add_to_variable = { KOR_discontent = 0.05 } #bad
 			add_to_variable = { KOR_literacy = 0.1 }#positive
 		}
 	}
