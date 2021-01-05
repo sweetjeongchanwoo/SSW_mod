@@ -114,6 +114,13 @@ country_event = {
 						owner = PREV
 					}
 				}
+				create_country_leader = {
+					name = "Pavel Skoropadskij"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/Pavel-Skoropadskij.tga"
+					expire = "1965.1.1"
+					ideology = social_conservatism_ideology
+				}
 			}
 			UKB = {
 				add_war_support = 0.6
