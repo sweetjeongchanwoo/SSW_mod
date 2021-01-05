@@ -1,0 +1,29 @@
+UKA = {
+	original_tag = UKR
+	has_country_flag = UKR_social_conservatism_flag
+}
+
+UKB = {
+	original_tag = UKR
+	has_country_flag = UKR_anarchism_flag
+}
+
+UKC = {
+	original_tag = UKR
+	has_country_flag = UKR_progressive_communism_flag
+}
+
+UKD = {
+	original_tag = UKR
+	has_country_flag = UKR_authority_despotism_flag
+}
+
+UKE = {
+	original_tag = UKR
+	has_country_flag = UKR_authority_democracy_flag
+}
+
+UVG = {
+	original_tag = UKR
+	has_cosmetic_tag = UKR_GEM
+}

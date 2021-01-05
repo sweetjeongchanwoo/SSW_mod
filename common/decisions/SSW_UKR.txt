@@ -1,0 +1,273 @@
+UKR_combat_uia = {
+	# note: FROM in state targeted decisions means state
+	UKR_combat_uia_1 = {
+		name = UKR_combat_uia_1
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			# always = yes
+			# is_ai = no
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		# targets = {
+		# 	193
+		# }
+		target_array = UKA.core_states
+		target_trigger = {
+			# always = yes
+			# is_ai = no
+			controls_state = FROM
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+			# FROM = {
+			# }
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		modifier = {
+			# political_power_gain = -1
+		}
+		visible = {
+			tag = UKR
+		}
+		complete_effect = {
+			FROM = {
+				add_resistance_target = {
+					amount = 100
+					days = 180
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+}
+
+UKR_improve_literacy = {
+	UKR_improve_literacy_1 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_low_education_level
+		}
+		available = {
+			has_idea = UKR_low_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = UKR_low_education_level
+				add_idea = UKR_middle_education_level
+			}
+		}
+	}
+	UKR_improve_literacy_2 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_middle_education_level
+		}
+		available = {
+			has_idea = UKR_middle_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = UKR_middle_education_level
+				add_idea = UKR_high_education_level
+			}
+		}
+	}
+	UKR_improve_literacy_3 = {
+		cost = 50
+		visible = {
+			has_idea = UKR_high_education_level
+		}
+		available = {
+			has_idea = UKR_high_education_level
+		}
+		days_remove = 180
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			remove_ideas = UKR_high_education_level
+		}
+	}
+}
+
+UKR_independence_war = {
+	# grant controll of ukrainian states easily
+	UKR_independence_war_1 = {
+		name = UKR_independence_war_1
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_array = UKA.core_states
+		target_trigger = {
+			UKR = {
+				has_country_leader = {
+					name = "Erich Koch"
+					ruling_only = yes
+				}
+				controls_state = FROM
+			}
+		}
+		cost = 10
+		days_remove = 14
+		ai_will_do = {
+			base = 10
+		}
+		remove_effect = {
+			# set_province_controller = 2999
+			ROOT = {
+				set_state_controller = FROM
+			}
+			FROM = {
+				create_unit = {
+					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0"
+					owner = ROOT
+				}
+			}
+			# UKR = {
+			# 	set_state_controller = FROM
+			# }
+		}
+	}
+	# we need more attack!
+	UKR_independence_war_2 = {
+		name = UKR_independence_war_2
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		cost = 100
+		days_remove = 30
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_political_power > 100
+				factor = 20
+			}
+		}
+		modifier = {
+			army_attack_factor = 0.1
+		}
+	}
+}
+
+UKR_ukrainaization = {
+	UKR_official_language = {
+		name = UKR_official_language_1
+		icon = generic_nationalism
+		allowed = {
+			original_tag = UKR
+		}
+		available = {
+			# always = yes
+			# is_ai = no
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 60
+		modifier = {
+			# political_power_gain = -1
+		}
+		visible = {
+			tag = UKR
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+}
+
+UKR_unification_wars = {
+	UKR_unification_wars_1 = {
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = UKR
+					tag = DON
+				}
+				NOT = {
+					tag = ROOT
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 5
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+		visible = {
+			any_neighbor_country = {
+				tag = FROM
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				type = take_core_state
+				target = FROM
+			}
+		}
+	}
+}
+
+UKR_debug = {
+	UKR_debug_1 = {
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			is_puppet = yes
+		}
+		remove_effect = {
+			OVERLORD = {
+				set_autonomy = {
+					target = UKR
+					autonomy_state = autonomy_free
+				}
+			}
+			leave_faction = yes
+		}
+	}
+	UKR_debug_2 = {
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_global_flag = UKR_independence_war_started
+			has_global_flag = UKR_independence_war_ended
+		}
+	}
+}

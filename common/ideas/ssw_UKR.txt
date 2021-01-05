@@ -1,0 +1,178 @@
+ideas = {
+	country = {
+		UKR_opposed_occupation_ukr = {
+			picture = por_ogme
+			modifier = {
+				# conscription_factor = -0.6
+				political_power_gain = -0.1
+				stability_factor = -0.1
+			}
+		}
+		UKR_opposed_occupation_rus = {
+			picture = por_ogme
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.1
+			}
+		}
+		UKR_stabilize = {
+			picture = por_ogme
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		UKR_german_volunteers = {
+			picture = por_ogme
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		UKR_russian_volunteers = {
+			picture = por_ogme
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		UKR_german_elite = {
+			picture = por_ogme
+			modifier = {
+				army_org_factor = 0.3
+			}
+		}
+		UKR_natives_army = {
+			picture = por_ogme
+			modifier = {
+				army_org_factor = -0.3
+				non_core_manpower = 0.3
+			}
+		}
+		UKR_rada_under_german = {
+			picture = por_ogme
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		UKR_low_education_level = {
+			picture = por_ogme
+			modifier = {
+				drift_defence_factor = -0.5
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.1
+			}
+		}
+		UKR_middle_education_level = {
+			picture = por_ogme
+			modifier = {
+				drift_defence_factor = -0.3
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+			}
+		}
+		UKR_high_education_level = {
+			picture = por_ogme
+			modifier = {
+				drift_defence_factor = -0.1
+				production_factory_max_efficiency_factor = -0.01
+				production_speed_buildings_factor = -0.01
+				research_speed_factor = -0.01
+			}
+		}
+		UKR_agricalture = {
+			picture = por_ogme
+			modifier = {
+				conscription_factor = -0.3
+			}
+		}
+		UKR_improved_agricalture = {
+			picture = por_ogme
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		UKR_kiev_university = {
+			picture = por_ogme
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		UKR_navy = {
+			picture = por_ogme
+			modifier = {
+				ai_focus_naval_factor = 0.3
+				production_speed_dockyard_factor = 0.3
+				production_speed_naval_base_factor = 0.3
+				industrial_capacity_dockyard = 0.3
+			}
+		}
+		UKR_independence_war = {
+			picture = por_ogme
+			modifier = {
+				war_support_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = UKR
+				# attack_bonus_against = 0.2
+				defense_bonus_against = 0.5
+			}
+		}
+		UKR_5th_universal = {
+			picture = por_ogme
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		UKR_germans_influence = {
+			picture = por_ogme
+			modifier = {
+				national_socialism_drift = 0.01
+			}
+		}
+		UKR_unity = {
+			picture = por_ogme
+			modifier = {
+				political_power_gain = 1
+			}
+		}
+		UKR_returned_heroes = {
+			picture = por_ogme
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = 0.005
+				war_support_factor = 0.2
+			}
+		}
+		UKR_national_rada = {
+			picture = por_ogme
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.2
+			}
+		}
+		UKR_expansion = {
+			picture = por_ogme
+			modifier = {
+				justify_war_goal_time = -0.1
+			}
+		}
+		UKR_russian_opposition = {
+			picture = por_ogme
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		UKR_natives_nationalism = {
+			picture = por_ogme
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		UKR_debug_idea = {
+			picture = por_ogme
+			modifier = {
+				ai_desired_divisions_factor = 1
+			}
+		}
+	}
+}
