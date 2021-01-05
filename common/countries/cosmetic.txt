@@ -1,977 +1,357 @@
 #国家形成
-Great_Mongol = {
-	#大蒙古
-	color = {
-		92
-		92
-		92
-	}
-	color_ui = {
-		92
-		92
-		92
-	}
+Great_Mongol = {	#大蒙古
+	color = rgb { 92 92 92 }
+	color_ui = rgb { 92 92 92 }
 }
 
-OTT = {
-	#オスマン
-	color = {
-		26
-		138
-		4
-	}
-	color_ui = {
-		26
-		138
-		4
-	}
+OTT = {	#オスマン
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
 }
 
-Middle_East_Union = {
-	#中東連合
-	color = {
-		85
-		102
-		0
-	}
-	color_ui = {
-		85
-		102
-		0
-	}
+Middle_East_Union = {	#中東連合
+	color = rgb { 85 102 0 }
+	color_ui = rgb { 85 102 0 }
 }
 
-Roman_Empire = {
-	#ローマ帝国
-	color = {
-		159
-		8
-		7
-	}
-	color_ui = {
-		159
-		8
-		7
-	}
+Roman_Empire = {	#ローマ帝国
+	color = rgb { 159 8 7 }
+	color_ui = rgb { 159 8 7 }
 }
 
-DET-UKR = {
-	#ドニエストル・ウクライナ
-	color = {
-		51
-		153
-		255
-	}
-	color_ui = {
-		51
-		153
-		255
-	}
+DET-UKR = {	#ドニエストル・ウクライナ
+	color = rgb { 51 153 255 }
+	color_ui = rgb { 51 153 255 }
 }
 
 #モスクワ国家弁務官区崩壊
-RUS_empire = {
-	#ロシア帝国
-	color = {
-		55
-		88
-		83
-	}
-	color_ui = {
-		55
-		88
-		83
-	}
+RUS_empire = {	#ロシア帝国
+	color = rgb { 55 88 83 }
+	color_ui = rgb { 55 88 83 }
 }
 
-RUS_liberalist = {
-	#自由主義ロシア
-	color = {
-		73
-		29
-		103
-	}
-	color_ui = {
-		73
-		29
-		103
-	}
+RUS_liberalist = {	#自由主義ロシア
+	color = rgb { 73 29 103 }
+	color_ui = rgb { 73 29 103 }
 }
 
-RUS_nobles = {
-	#貴族評議会
-	color = {
-		127
-		79
-		22
-	}
-	color_ui = {
-		127
-		79
-		22
-	}
+RUS_nobles = {	#貴族評議会
+	color = rgb { 127 79 22 }
+	color_ui = rgb { 127 79 22 }
 }
 
-MOS_archbishop = {
-	#大主教領
-	color = {
-		105
-		142
-		106
-	}
-	color_ui = {
-		105
-		142
-		106
-	}
+MOS_archbishop = {	#大主教領
+	color = rgb { 105 142 106 }
+	color_ui = rgb { 105 142 106 }
 }
 
-RUS_rall = {
-	#ロシアの空解放同盟
-	color = {
-		85
-		47
-		31
-	}
-	color_ui = {
-		85
-		47
-		31
-	}
+RUS_rall = {	#ロシアの空解放同盟
+	color = rgb { 85 47 31 }
+	color_ui = rgb { 85 47 31 }
 }
 
-RUS_arufnl = {
-	#全ロシア民族解放統一戦線
-	color = {
-		168
-		46
-		78
-	}
-	color_ui = {
-		168
-		46
-		78
-	}
+RUS_arufnl = {	#全ロシア民族解放統一戦線
+	color = rgb { 168 46 78 }
+	color_ui = rgb { 168 46 78 }
 }
 
-RUS_arufnl = {
-	#大天使ミハイル
-	color = {
-		112
-		41
-		26
-	}
-	color_ui = {
-		112
-		41
-		26
-	}
+RUS_arufnl = {	#大天使ミハイル
+	color = rgb { 112 41 26 }
+	color_ui = rgb { 112 41 26 }
 }
 
-RUS_blackorder = {
-	#ブラック・オーダー
-	color = {
-		52
-		82
-		123
-	}
-	color_ui = {
-		52
-		82
-		123
-	}
+RUS_blackorder = {	#ブラック・オーダー
+	color = rgb { 52 82 123 }
+	color_ui = rgb { 52 82 123 }
 }
 
 #共同統治国家
-CLC_JAPandCHI = {
-	#日華共同港都市
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		90
-		160
-		255
-	}
+CLC_JAPandCHI = {	#日華共同港都市
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 90 160 255 }
 }
 
-SUD_ITAandEGY = {
-	#伊埃領スーダン
-	color = {
-		230
-		230
-		70
-	}
-	color_ui = {
-		204
-		102
-		0
-	}
+SUD_ITAandEGY = {	#伊埃領スーダン
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 204 102 0 }
 }
 
 #大日本帝国
-KOR_JAP = {
-	#日本領朝鮮
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		240
-		170
-		110
-	}
+KOR_JAP = {	#日本領朝鮮
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 240 170 110 }
 }
 
-PAO_JAP = {
-	#日本領大南洋諸島
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		70
-		220
-		220
-	}
+PAO_JAP = {	#日本領大南洋諸島
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 70 220 220 }
 }
 
-SIN_JAP = {
-	#日本領昭南特別市
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		255
-		125
-		125
-	}
+SIN_JAP = {	#日本領昭南特別市
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 255 125 125 }
 }
 
-BRN_JAP = {
-	#日本領文莱
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		245
-		225
-		20
-	}
+BRN_JAP = {	#日本領文莱
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 245 225 20 }
 }
 
-HAW_JAP = {
-	#日本領布哇
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		231
-		181
-		12
-	}
+HAW_JAP = {	#日本領布哇
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 231 181 12 }
 }
 
-INO_JAP = {
-	#日本領印度洋
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		70
-		0
-		150
-	}
+INO_JAP = {	#日本領印度洋
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 70 0 150 }
 }
 
-PAC_JAP = {
-	#日本領華舞運河
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		35
-		45
-		110
-	}
+PAC_JAP = {	#日本領華舞運河
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 35 45 110 }
 }
 
-JAM_JAP = {
-	#日本領茶舞賀
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		180
-		220
-		0
-	}
+JAM_JAP = {	#日本領茶舞賀
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 180 220 0 }
 }
 
-ARC_JAP = {
-	#日本領北極
-	color = {
-		255
-		191
-		191
-	}
-	color_ui = {
-		200
-		255
-		255
-	}
+ARC_JAP = {	#日本領北極
+	color = rgb { 255 191 191 }
+	color_ui = rgb { 200 255 255 }
 }
 
 #ドイツ国
-CZE_GER = {
-	#独領チェコ
-	color = {
-		60
-		60
-		60
-	}
-	color_ui = {
-		54
-		167
-		156
-	}
+CZE_GER = {	#独領チェコ
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 54 167 156 }
 }
 
-POL_GER = {
-	#独領ポーランド
-	color = {
-		60
-		60
-		60
-	}
-	color_ui = {
-		197
-		92
-		106
-	}
+POL_GER = {	#独領ポーランド
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 197 92 106 }
 }
 
-NOR_GER = {
-	#独領ノルウェー
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		111
-		71
-		71
-	}
+NOR_GER = {	#独領ノルウェー
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 111 71 71 }
 }
 
-HOL_GER = {
-	#独領オランダ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		138
-		155
-		116
-	}
+HOL_GER = {	#独領オランダ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 138 155 116 }
 }
 
-BEL_GER = {
-	#独領ベルギー
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		193
-		171
-		8
-	}
+BEL_GER = {	#独領ベルギー
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 193 171 8 }
 }
 
-NFR_GER = {
-	#独領北フランス
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		25
-		115
-		150
-	}
+NFR_GER = {	#独領北フランス
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 25 115 150 }
 }
 
-BAL_GER = {
-	#独領オストラント
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		128
-		128
-		128
-	}
+BAL_GER = {	#独領オストラント
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 128 128 128 }
 }
 
-UKR_GER = {
-	#独領ウクライナ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		0
-		80
-		230
-	}
+UKR_GER = {	#独領ウクライナ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 80 230 }
 }
 
-MOS_GER = {
-	#独領モスクワ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		172
-		0
-		12
-	}
+MOS_GER = {	#独領モスクワ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 172 0 12 }
 }
 
-CCS_GER = {
-	#独領カフカス
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		255
-		175
-		0
-	}
+CCS_GER = {	#独領カフカス
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 255 175 0 }
 }
 
-TOG_GER = {
-	#独領トーゴ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		0
-		102
-		0
-	}
+TOG_GER = {	#独領トーゴ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 102 0 }
 }
 
-WAF_GER = {
-	#独領西アフリカ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		0
-		120
-		95
-	}
+WAF_GER = {	#独領西アフリカ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 120 95 }
 }
 
-DJI_GER = {
-	#独領トーゴ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		0
-		102
-		0
-	}
+DJI_GER = {	#独領トーゴ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 102 0 }
 }
 
-MAF_GER = {
-	#独領中部アフリカ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		90
-		140
-		90
-	}
+MAF_GER = {	#独領中部アフリカ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 90 140 90 }
 }
 
-MAD_GER = {
-	#独領マダガスカル
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		170
-		150
-		120
-	}
+MAD_GER = {	#独領マダガスカル
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 170 150 120 }
 }
 
-DJI_GER = {
-	#独領ジブチ
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		170
-		150
-		120
-	}
+DJI_GER = {	#独領ジブチ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 170 150 120 }
 }
 
-ATL_GER = {
-	#独領大西洋
-	color = {
-		102
-		89
-		86
-	}
-	color_ui = {
-		50
-		25
-		150
-	}
+ATL_GER = {	#独領大西洋
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 50 25 150 }
 }
 
-CRI_GER = {
-	#独領クリミア
-	color = {
-		60
-		60
-		60
-	}
-	color_ui = {
-		0
-		204
-		255
-	}
+CRI_GER = {	#独領クリミア
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 0 204 255 }
 }
 
-PET_GER = {
-	#独領ペテルブルク
-	color = {
-		60
-		60
-		60
-	}
-	color_ui = {
-		237
-		28
-		36
-	}
+PET_GER = {	#独領ペテルブルク
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 237 28 36 }
 }
 
 #イタリア王国
-LBA_ITA = {
-	#伊領リビア
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		200
-		180
-		90
-	}
+LBA_ITA = {	#伊領リビア
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 200 180 90 }
 }
 
-NEA_ITA = {
-	#伊領東アフリカ
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		150
-		250
-		150
-	}
+NEA_ITA = {	#伊領東アフリカ
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 150 250 150 }
 }
 
-ALB_ITA = {
-	#伊領アルバニア
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		149
-		45
-		102
-	}
+ALB_ITA = {	#伊領アルバニア
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 149 45 102 }
 }
 
-MNT_ITA = {
-	#伊領モンテネグロ
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		77
-		90
-		105
-	}
+MNT_ITA = {	#伊領モンテネグロ
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 77 90 105 }
 }
 
-SUC_ITA = {
-	#伊領スエズ運河
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		100
-		190
-		165
-	}
+SUC_ITA = {	#伊領スエズ運河
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 100 190 165 }
 }
 
-GIB_ITA = {
-	#伊領ジブラルタル
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		220
-		0
-		10
-	}
+GIB_ITA = {	#伊領ジブラルタル
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 220 0 10 }
 }
 
-SUD_ITA = {
-	#伊埃領スーダン
-	color = {
-		67
-		127
-		63
-	}
-	color_ui = {
-		204
-		102
-		0
-	}
+SUD_ITA = {	#伊埃領スーダン
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 204 102 0 }
 }
 
 #フランス共和国
-NWA_FRA = {
-	#仏領西アフリカ
-	color = {
-		57
-		113
-		228
-	}
-	color_ui = {
-		110
-		190
-		120
-	}
+NWA_FRA = {	#仏領西アフリカ
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 110 190 120 }
 }
 
-EQA_FRA = {
-	#仏領赤道アフリカ
-	color = {
-		57
-		113
-		228
-	}
-	color_ui = {
-		155
-		210
-		205
-	}
+EQA_FRA = {	#仏領赤道アフリカ
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 155 210 205 }
 }
 
-MOR_FRA = {
-	#仏領モロッコ
-	color = {
-		57
-		113
-		228
-	}
-	color_ui = {
-		102
-		51
-		0
-	}
+MOR_FRA = {	#仏領モロッコ
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 102 51 0 }
 }
 
-TUN_FRA = {
-	#仏領チュニジア
-	color = {
-		57
-		113
-		228
-	}
-	color_ui = {
-		102
-		51
-		0
-	}
+TUN_FRA = {	#仏領チュニジア
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 102 51 0 }
 }
 
 #ヴィシー・フランス
-NWA_VFR = {
-	#ヴィシー仏領西アフリカ
-	color = {
-		80
-		168
-		181
-	}
-	color_ui = {
-		110
-		190
-		120
-	}
+NWA_VFR = {	#ヴィシー仏領西アフリカ
+	color = rgb { 80 168 181 }
+	color_ui = rgb { 110 190 120 }
 }
 
-EQA_VFR = {
-	#ヴィシー仏領赤道アフリカ
-	color = {
-		80
-		168
-		181
-	}
-	color_ui = {
-		155
-		210
-		205
-	}
+EQA_VFR = {	#ヴィシー仏領赤道アフリカ
+	color = rgb { 80 168 181 }
+	color_ui = rgb { 155 210 205 }
 }
 
-MOR_VFR = {
-	#ヴィシー仏領モロッコ
-	color = {
-		80
-		168
-		181
-	}
-	color_ui = {
-		102
-		51
-		0
-	}
+MOR_VFR = {	#ヴィシー仏領モロッコ
+	color = rgb { 80 168 181 }
+	color_ui = rgb { 102 51 0 }
 }
 
-TUN_VFR = {
-	#ヴィシー仏領チュニジア
-	color = {
-		80
-		168
-		181
-	}
-	color_ui = {
-		102
-		51
-		0
-	}
+TUN_VFR = {	#ヴィシー仏領チュニジア
+	color = rgb { 80 168 181 }
+	color_ui = rgb { 102 51 0 }
 }
 
 #スペイン国
-RIF_SPR = {
-	#西領モロッコ
-	color = {
-		200
-		100
-		31
-	}
-	color_ui = {
-		0
-		100
-		50
-	}
+RIF_SPR = {	#西領モロッコ
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 0 100 50 }
 }
 
-WES_SPR = {
-	#西領サハラ
-	color = {
-		200
-		100
-		31
-	}
-	color_ui = {
-		255
-		178
-		102
-	}
+WES_SPR = {	#西領サハラ
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 255 178 102 }
 }
 
-EQG_SPR = {
-	#西領ギニア
-	color = {
-		200
-		100
-		31
-	}
-	color_ui = {
-		20
-		130
-		140
-	}
+EQG_SPR = {	#西領ギニア
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 20 130 140 }
 }
 
 #ポルトガル共和国
-CPV_POR = {
-	#葡領カーボベルデ
-	color = {
-		20
-		100
-		85
-	}
-	color_ui = {
-		0
-		56
-		147
-	}
+CPV_POR = {	#葡領カーボベルデ
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 0 56 147 }
 }
 
-STP_POR = {
-	#葡領サントメ・プリンシペ
-	color = {
-		20
-		100
-		85
-	}
-	color_ui = {
-		115
-		95
-		50
-	}
+STP_POR = {	#葡領サントメ・プリンシペ
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 115 95 50 }
 }
 
-ANG_POR = {
-	#葡領アンゴラ
-	color = {
-		20
-		100
-		85
-	}
-	color_ui = {
-		37
-		140
-		61
-	}
+ANG_POR = {	#葡領アンゴラ
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 37 140 61 }
 }
 
-MZB_POR = {
-	#葡領モザンビーク
-	color = {
-		20
-		100
-		85
-	}
-	color_ui = {
-		112
-		62
-		90
-	}
+MZB_POR = {	#葡領モザンビーク
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 112 62 90 }
 }
 
-GNB_POR = {
-	#葡領ギニア
-	color = {
-		20
-		100
-		85
-	}
-	color_ui = {
-		153
-		102
-		0
-	}
+GNB_POR = {	#葡領ギニア
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 153 102 0 }
 }
 
 #エジプト王国
-SUD_EGY = {
-	#伊埃領スーダン
-	color = {
-		230
-		230
-		70
-	}
-	color_ui = {
-		204
-		102
-		0
-	}
+SUD_EGY = {	#伊埃領スーダン
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 204 102 0 }
 }
 
 #中華民国
-YUN_CHI = {
-	#雲南軍閥
-	color = {
-		255
-		215
-		0
-	}
-	color_ui = {
-		255
-		215
-		0
-	}
+YUN_CHI = {	#雲南軍閥
+	color = rgb { 255 215 0 }
+	color_ui = rgb { 255 215 0 }
 }
 
 #ウクライナ ヴォルガドイツ共和国
 UKR_GEM = {
-	color = {
-		60
-		60
-		60
-	}
-	color_ui = {
-		60
-		60
-		60
-	}
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
 }
