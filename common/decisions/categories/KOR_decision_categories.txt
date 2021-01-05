@@ -1,14 +1,22 @@
-KOR_japanese_study_categories = {
+KOR_Japanization_categories = {
 
-	icon = jap_pacific_guardian
+	icon = jap_pacific_guardian 
 
-	picture = spr_the_inevitable_civil_war
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible_when_empty = yes
+	
+	scripted_gui = KOR_Japanization 
+}
+KOR_debug_categories = {
 
 	allowed = {
 		original_tag = KOR
 	}
 	visible = {
-		has_variable = KOR_literacy
+		is_debug = yes
 	}
-	visible_when_empty = yes
+	priority = 100
 }

@@ -29,6 +29,7 @@ KAZ	= "countries/Asia.txt"	#カザフスタン
 KAR	= "countries/Asia.txt"	#カラカルパクスタン
 KIR	= "countries/Asia.txt"	#キリバス
 KOR	= "countries/Asia.txt"	#朝鮮
+ROK = "countries/Asia.txt"	#韓国
 KYR	= "countries/Asia.txt"	#キルギス
 LAO	= "countries/Asia.txt"	#ラオス
 MAL	= "countries/Asia.txt"	#マレーシア
@@ -208,7 +209,8 @@ SLO	= "countries/Eastern Europe.txt"	#スロバキア
 SLV	= "countries/Eastern Europe.txt"	#スロベニア
 SOV	= "countries/Eastern Europe.txt"	#ソビエト
 TRA	= "countries/Eastern Europe.txt"	#トランシルヴァニア
-UKR	= "countries/Eastern Europe.txt"	#ウクライナ
+UKR	= "countries/Eastern Europe.txt"	#ウクライナ国家弁務官区
+UPR	= "countries/Eastern Europe.txt"	#ウクライナ人民共和国
 YUG	= "countries/Eastern Europe.txt"	#ユーゴスラビア
 
 #アフリカ

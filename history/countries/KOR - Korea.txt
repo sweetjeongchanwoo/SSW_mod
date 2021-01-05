@@ -139,6 +139,10 @@ set_technology = {
 	artillery1 = 1
 }
 
+set_variable = { KOR_discontent = 37.52 }
+set_variable = { KOR_collaboration = 46.01 }
+set_variable = { KOR_literacy = 17.91 }
+
 add_ideas = {
 	service_by_requirement
 	export_focus
@@ -184,6 +188,6 @@ create_country_leader = {
 	expire = "1970.1.1"
 	ideology = authority_despotism_ideology
 	traits = {
-		#
+		Specters_of_Showa
 	}
 }

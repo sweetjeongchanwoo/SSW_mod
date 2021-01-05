@@ -12,7 +12,8 @@
  JAP_national_fascism_party:0 "東亜建設国民聯盟"
  JAP_national_socialism_party:0 "東亜建設国民聯盟"
  JAP_corporatocracism_party:0 "財閥連盟"
- JAP_Ziminto_party:0 "自由民主党"
+ JAP_Ziminto_party:0 "自民党"
+ JAP_Ziminto_party_long:0 "自由民主党"
  
 #ドイツ
  GER_anarchism_party:0 "APPD"

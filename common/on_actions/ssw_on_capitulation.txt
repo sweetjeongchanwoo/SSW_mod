@@ -1,0 +1,36 @@
+on_actions = {
+	on_capitulation = {
+		# Leave Hindemburg for Comissariat when Ukrainian civil war ends
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = UKR
+						has_country_leader = {
+							name = "Erich Koch"
+							ruling_only = yes
+						}
+					}
+				}
+				# create Volga German Republic
+				create_dynamic_country = {
+					original_tag = UKR
+					copy_tag = UKR
+					set_politics = {
+						ruling_party = national_socialism
+					}
+					set_political_party = {
+						ideology = national_socialism
+						popularity = 95
+					}
+					set_research_slots = 1
+					reserve_dynamic_country = yes
+					add_ideas = limited_conscription
+					transfer_state = 217
+					set_cosmetic_tag = UKR_GEM
+					change_tag_from = UKR
+				}
+			}
+		}
+	}
+}

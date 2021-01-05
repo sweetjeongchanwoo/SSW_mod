@@ -25,7 +25,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_flexible_foreign_policy
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -110,7 +110,7 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 		JAP_kamikaze_giyutai_idea = {
@@ -205,9 +205,23 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.1
-				global_building_slots_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+		JAP_nanbei_toushi_idea_on_JAP = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 		JAP_nikkeijin_kyoryoku_idea = {

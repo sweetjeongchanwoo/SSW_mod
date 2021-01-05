@@ -68,6 +68,7 @@ JAP_dec_cat_gea_gold_block = {#大東亜金ブロック
 	}
 	visible = {
 		has_completed_focus = JAP_Daito_Gold_Block
+		has_country_flag = JAP_Daito_Gold_Block_flag
 	}
 }
 

@@ -615,10 +615,27 @@ JAP_focus_reload = {
 				keep_completed = yes 
 			}
 		}
+
 		else_if = {
 			limit = { has_focus_tree = SSW_JAP_Basic_mix }
 			load_focus_tree = { 
 				tree = SSW_JAP_Basic 
+				keep_completed = yes 
+			}
+		}
+
+		if = {
+			limit = { has_focus_tree = SSW_JAP_Basic }
+			load_focus_tree = { 
+				tree = SSW_JAP_Basic_mix_1
+				keep_completed = yes 
+			}
+		}
+		
+		else_if = {
+			limit = { has_focus_tree = SSW_JAP_Basic_mix }
+			load_focus_tree = { 
+				tree = SSW_JAP_Basic_1
 				keep_completed = yes 
 			}
 		}

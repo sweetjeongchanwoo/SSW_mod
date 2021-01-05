@@ -243,6 +243,11 @@ KOR = {	#朝鮮
 	color_ui = rgb { 240 170 110 }
 }
 
+ROK = { #韓国
+	color = rgb { 5 85 166 }
+	color_ui = rgb { 5 85 166 }
+}
+
 LIB = {	#リベリア
 	color = rgb { 70 30 85 }
 	color_ui = rgb { 70 30 85 }
@@ -493,7 +498,12 @@ MNT = {	#モンテネグロ
 	color_ui = rgb { 160 110 110 }
 }
 
-UKR = {	#ウクライナ
+UKR = {	#ウクライナ国家弁務官区
+	color = rgb { 0 80 255 }
+	color_ui = rgb { 0 80 255 }
+}
+
+UPR = {	#ウクライナ人民共和国
 	color = rgb { 0 80 230 }
 	color_ui = rgb { 0 80 230 }
 }

@@ -11,18 +11,20 @@ focus_tree = {
 	focus = {
 		id = GER_ssw_focus1
 		icon = GFX_focus_germania_plan
-		cost = 30.00
+		# cost = 30
+		cost = 25
 		x = 8
 		y = 1
-
 		select_effect = {
-			country_event = { id = SSW_GER.20 days = 1 }
+			country_event = {
+				id = SSW_GER.20
+				days = 1
+			}
 		}
-
-        completion_reward = {
-            country_event = {
+		completion_reward = {
+			country_event = {
 				id = SSW_GER.19
-            }
-        }
+			}
+		}
 	}
 }
