@@ -13,6 +13,8 @@ state={
 
 	history={
 		owner = NOR
+		add_core_of = NOR
+		add_core_of = LAP
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -35,7 +37,6 @@ state={
 		victory_points = {
 			11050 1
 		}
-		add_core_of = NOR
 	}
 
 	provinces={

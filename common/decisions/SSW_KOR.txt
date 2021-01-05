@@ -1,0 +1,56 @@
+KOR_debug_categories = {
+	KOR_up_all_progress = {
+		complete_effect = {
+			add_to_variable  = { KOR_discontent = 1 } #b
+			add_to_variable = { KOR_collaboration = 1 } #p
+			add_to_variable = { KOR_literacy = 1 } #p
+		} 
+	}
+	KOR_set_fifty = {
+		complete_effect = {
+			set_variable  = { KOR_discontent = 50 } #b
+			set_variable = { KOR_collaboration = 50 } #p
+			set_variable = { KOR_literacy = 50 } #p
+		} 
+	}
+	KOR_set_zero = {
+		complete_effect = {
+			set_variable  = { KOR_discontent = 1 } #b
+			set_variable = { KOR_collaboration = 1 } #p
+			set_variable = { KOR_literacy = 1 } #p
+		} 
+	}
+}
+KOR_Japanization_categories = {
+	KOR_down_discontent_basic = {
+		icon = generic_military
+		visible = {
+			check_variable = { KOR_discontent > 0 }
+		}
+		complete_effect = {
+			add_to_variable = { KOR_discontent = 0.1 } #positive
+			add_to_variable = { KOR_collaboration = -0.5 } #bad
+		}
+	}
+	KOR_up_collaboration_basic = {
+		icon = generic_military
+		visible = {
+			check_variable = { KOR_collaboration < 100 }
+		}
+		complete_effect = {
+			add_to_variable = { KOR_collaboration = 0.1 } #positive
+			add_to_variable = { KOR_discontent = -0.5 } #bad
+		}
+	}
+	KOR_up_literacy_basic = {
+		icon = generic_military
+		visible = {
+			check_variable = { KOR_literacy < 100 }
+		}
+		complete_effect = {
+			add_to_variable = { KOR_collaboration = -0.5 } #bad
+			add_to_variable = { KOR_discontent = 0.5 } #bad
+			add_to_variable = { KOR_literacy = 0.1 }#positive
+		}
+	}
+}

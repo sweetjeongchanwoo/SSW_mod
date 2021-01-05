@@ -14,12 +14,13 @@ on_actions = {
 						}
 					}
 				}
-				HUN = {
+				hidden_effect = {
+					ROOT = {
 					white_peace = ROM
 					annex_country = { target = ROM transfer_troops = no }
+					}
 				}
 			}
-
 			if = {
 				limit = {
 					OR = {
@@ -33,9 +34,11 @@ on_actions = {
 						}
 					}
 				}
-				HUN = {
+				hidden_effect = {
+					ROOT = {
 					white_peace = SER
 					annex_country = { target = SER transfer_troops = no }
+					}
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 state={
 	id=856
 	name="STATE_856"
-	manpower = 1700000
+	manpower = 4335980
 	provinces={
 		848 1148 4004 7021 9981 11912 11958 12011 13243 
 	}
@@ -11,7 +11,7 @@ state={
 		add_core_of = KOR
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 5
+			industrial_complex = 1
 		}
 
 	}

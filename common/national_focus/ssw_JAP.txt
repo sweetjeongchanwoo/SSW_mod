@@ -1,0 +1,63 @@
+focus_tree = {
+	id = SSW_JAP_Basic
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = { x = 620 y = 1700 }
+	default = no
+	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
+}
+focus_tree = {
+	id = SSW_JAP_Basic_mix
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = { x = 620 y = 1700 }
+	default = no
+	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
+}
+
+focus_tree = {
+	id = SSW_JAP_Basic_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = { x = 620 y = 1700 }
+	default = no
+	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
+	shared_focus = JAP_post_war_reform
+}
+focus_tree = {
+	id = SSW_JAP_Basic_mix_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	continuous_focus_position = { x = 620 y = 1700 }
+	default = no
+	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
+	shared_focus = JAP_japanese_archipelago_remodeling_plan
+	shared_focus = JAP_the_road_to_war
+	shared_focus = JAP_post_war_reform
+}

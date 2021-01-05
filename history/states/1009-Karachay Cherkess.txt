@@ -1,0 +1,18 @@
+state = { #カラチャイチェルケス
+	id = 1009
+	name = "STATE_1009"
+	manpower = 37000
+	state_category = rural
+	history = {
+		owner = CCS
+		add_core_of = CCS
+		add_core_of = SOV
+		
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		9649 11664 6692 
+	}
+}

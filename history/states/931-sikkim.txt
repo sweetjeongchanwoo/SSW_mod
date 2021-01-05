@@ -5,10 +5,8 @@ state = {
 	state_category = rural
 	
 	history = {
-		owner = SKM
-		add_core_of = SKM
+		owner = NIN
 		add_core_of = NIN
-		add_core_of = PIN
 	}
 	
 	provinces = {

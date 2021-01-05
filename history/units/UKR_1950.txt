@@ -1,0 +1,66 @@
+division_template = {
+	name = "Pikhotna dyviziya"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Kinna dyviziya"
+	regiments = {
+		cavalry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
+	}
+}
+
+units = {
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 525
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 11504
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 418
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 9417
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 3529
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Pikhotna dyviziya"
+		location = 413
+		division_template = "Pikhotna dyviziya"
+		start_experience_factor = 0.1
+	}
+}
