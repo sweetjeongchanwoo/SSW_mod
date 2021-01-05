@@ -603,28 +603,3 @@ JAP_toakensetsu_low_popularity_decrease_effect = {
 		max = 100
 	}
 }
-<<<<<<< HEAD
-
-
-
-JAP_focus_reload = {
-	hidden_effect = {
-		if = {
-			limit = { has_focus_tree = SSW_JAP_Basic }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic_mix 
-				keep_completed = yes 
-			}
-		}
-
-		else_if = {
-			limit = { has_focus_tree = SSW_JAP_Basic_mix }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic 
-				keep_completed = yes 
-			}
-		}
-	}
-}
-=======
->>>>>>> fdc40c4148ed891878de2215d1889f7474336a50
