@@ -114,8 +114,32 @@ create_country_leader = {
 create_country_leader = {
 	name = "Maurice Thorez"
 	picture = 
-	expire = "1964.7.11"
+	expire = "1965.1.1"
 	ideology = classical_communism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Raymond Molinier"
+	picture = 
+	expire = "1965.1.1"
+	ideology = progressive_communism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Anarchista Francaise"
+	picture = 
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = ""
+	picture = 
+	expire = "1965.1.1"
+	ideology = corporatocracism
 	traits = {
 	}
 }

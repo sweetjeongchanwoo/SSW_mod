@@ -1,185 +1,369 @@
-country_event = {
-	id = SSW_FRA.1 #イベントのid add_namespaceに書いたものに準ずる
-	title = SSW_FRA.1.t #イベントのタイトル部分。localisationで定義する
-	desc = SSW_FRA.1.d  #イベントの本文。localisationで定義する
-	picture = GFX_news_event_generic_read_write　#イベントの画像をここで指定。interfaceに記述した通りに入力する。ファイル名ではない。本家ファイルの場合は"GFX_"をつけることで使用可能。
-    
-	is_triggered_only = yes #これを付けないと条件を満たした場合に毎日起こる事になる。つけよう。
 
-	option = { #選択肢a
-        name = SSW_FRA.1.a #選択肢のタイトル localisationで定義する。
-        add_political_power = 100
-	}
-}
 
 #ペタン死亡
 
 country_event = {
-    id = SSW_FRA.2
-    title = SSW_FRA.2.t
-    desc = SSW_FRA.2.d
+    id = SSW_FRA.1
+    title = SSW_FRA.1.t
+    desc = SSW_FRA.1.d
     picture = GFX_Petan_dead
     fire_only_once = yes
         trigger = { #イベントが起きるきっかけ
             tag = FRA
-            date > 1950.1.10 #1951.7.10　#日にち
+            date > 1950.2.4 #1951.7.10　#日にち
         }
     
     option = {
-        name = SSW_FRA.2.a
+        name = SSW_FRA.1.a
         FRA = {
             add_stability = -0.5
             kill_country_leader = FRA
         }
         country_event = {
-            id = SSW_FRA.4
+            id = SSW_FRA.2
             days = 1
         }
+        add_ideas = Unstable_country
     }
 }
+
 #指導者決定
 
 country_event = {
-    id = SSW_FRA.4
-    titile = SSW_FRA.4
+    id = SSW_FRA.2
+    titile = SSW_FRA.2
     desc = SSW_FRA.2.d
 
     fire_on_lnly_once = yes
     
     option = {
-        name = SSW_FRA.4.a
+        name = SSW_FRA.2.a
         has_country_flag = FRA_great_game
         has_contry_flag = FRA_Darnand_leader
+        complete_national_focus = FRA_next
+        create_country_leader = {
+	        name = "Joseph Darnand"
+	        desc =
+	        picture = "gfx/leaders/FRA/Portrait.dds"
+	        expire = "1965.1.1"
+	        ideology = national_socialism_ideology
+	        traits = {
+	        }
+        }
     }    
     option = {
-        name = SSW_FRA.4.b
+        name = SSW_FRA.2.b
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Laval_leader
+        complete_national_focus = FRA_next
+        create_country_leader = {
+	        name = "Pierre Laval"
+            desc = 
+	        picture = "gfx/leaders/FRA/Portrait.dds"
+	        expire = "1965.1.1"
+	        ideology = authority_despotism_ideology
+	        traits = {
+	        }
+        }  
     }
     option = {
-        name = SSW_FRA.4.c
+        name = SSW_FRA.2.c
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Doriot_leader
+        complete_national_focus = FRA_next
+        create_country_leader = {
+		    name = "Jacques Doriot"
+            desc = 
+		    picture =
+		    expire = "1965.1.1"
+		    ideology = national_fascism_ideology
+		    traits = {}
+		}
     }  
 
 }
 country_event = {
-    id = SSW_FRA.3 #イベントのid add_namespaceに書いたものに準ずる
-    title = SSW_FRA.3.t #イベントのタイトル部分。localisationで定義する
-    desc = SSW_FRA.3.d  #イベントの本文。localisationで定義する
-    picture = news_event_051　#イベントの画像をここで指定。interfaceに記述した通りに入力する。ファイル名ではない。本家ファイルの場合は"GFX"をつけることで使用可能。
-
-    is_triggered_only = yes #これを付けないと条件を満たした場合に毎日起こる事になる。つけよう。
-
-    option = { #選択肢a
-        name = SSW_FRA.3.a #選択肢のタイトル localisationで定義する。
-        add_stability = 0.2
-        add_political_power = 200
-        add_ideas = Keep_going
-        set_capital = 16
-    }
-}
-
-
-
-world_event = {
-    id =  Military_coup
+    id = SSW_FRA.3 #リーダーの暗殺
     days = 1
-    titile = Military_coup.t
-    desc = Military_coup.d
+    titile = SSW_FRA.3.t
+    desc = SSW_FRA.3.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
-    opition = {
-        Military_coup.a
-    }
-}
-world_event = {
-    id = Republican_revival
-    days = 1
-    titile = Republican_revival.t
-    desc = Republican_revival.d
-    is_triggered_only = yes
-    fire_on_lnly_once = yes
-    opition = {
-        Republican_revival.a
-    }
-} 
-world_event = {
-    id = Return_of_Napoleon
-    days = 1
-    titile = Return of Napoleon.t
-    desc = Return of Napoleon.d
-    is_triggered_only = yes
-    fire_on_lnly_once = yes
-    opition = {
-       Return of Napoleon.a
-    }
-} 
-
-world_event = {
-    id = Guy_Mollet_To_the_president
-    days = 1
-    titile = Guy_Mollet_To_the_president.t
-    desc = Guy_Mollet_To_the_president.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Guy_Mollet_To_the_president.a
-    }
-}
-
-world_event = {
-    id = Pierre_Mendes_France_To_the_president
-    days = 1
-    titile = Pierre_Mendes_France_To_the_president.t
-    desc = Pierre_Mendes_France_To_the_president.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Pierre_Mendes_France_To_the_president.a
-    }
-}
-
-world_event = {
-    id = Rene_Jules_Gustave_Coty_To_the_president
-    days = 1
-    titile = Rene_Jules_Gustave_Coty_To_the_president.t
-    desc = Rene_Jules_Gustave_Coty_To_the_president.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Rene_Jules_Gustave_Coty_To_the_president.a
-    }
-}
-world_event = {
-    id = Alphonse_Juan_Grasp_the_administration
-    days = 1
-    titile = Military_coup.t
-    desc = Military_coup.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Military_coup.a
-    }
-}
-country_event = {
-    id =  Military_coup
-    days = 1
-    titile = Military_coup.t
-    desc = Military_coup.d
-    fire_on_lnly_once = yes
-    is_triggered_only = yes
-    opition = {
-        Military_coup.a   
+    option = {
+        SSW_FRA.3.a
+        complete_national_focus = FRA_New_France #左派が政権を手動
+        remove_ideas = The_resurrection_of_the_resistance
+        create_country_leader = {
+	        name = "Maurice Thorez"
+	        picture = 
+	        expire = "1965.1.1"
+	        ideology =　social_democracy_ideology 
+	        traits = {
+	        }
+        }
     }
     option = {
-        Military_coup.b
+        SSW_FRA.3.b
+        complete_national_focus = FRA_New_France
+        remove_ideas = The_resurrection_of_the_resistance
+        create_country_leader = {
+	        name = "Alphonse Juan"
+	        picture = 
+	        expire = "1965.1.1"
+	        ideology = authority_democracy_ideology 
+	        traits = {
+	        }
+        }
     } 
 }
+
 country_event = {
-	id = FRA_NFR_Return
-	title = FRA_NFR_Return.t
-	desc = FRA_NFR_Return.d
+    id = SSW_FRA.4 #1st_Peoples_Council
+    titile = SSW_FRA.4.t
+    desc = SSW_FRA.4.d
+    is_triggered_only = yes
+
+    option = {
+        name = SSW_FRA.4.a
+        complete_national_focus = FRA_Trotskyism
+    }
+    option = {
+        name = SSW_FRA.4.b
+        complete_national_focus = FRA_Mraxism_Leninism
+    }
+    option = {
+        name = SSW_FRA.4.c
+        complete_national_focus = FRA_Anarchism
+    }
+}
+
+country_event = {
+    id = SSW_FRA.5 #French_presodential_election
+    titile = SSW_FRA.5.t
+    desc = SSW_FRA.5.d
+    is_triggered_only = yes
+
+    option = {
+        name = SSW_FRA.5.a
+        complete_national_focus = FRA_Guy_Mollet_as_President
+    }
+
+    option = {
+        name = SSW_FRA.5.b
+        complete_national_focus = FRA_Mandez_France_as_President
+    }
+
+    option = {
+        name = SSW_FRA.5.c
+        complete_national_focus = FRA_Rene_Coty_as_President
+    }
+}
+
+country_event = { #ストライキ
+    id = SSW_FRA.6
+    title = SSW_FRA.6.t
+    desc = SSW_FRA.6.d
+    
+        fire_only_once = yes
+            trigger = { #イベントが起きるきっかけ
+            tag = FRA
+            date > 1950.4.13 #1951.7.10　#日にち
+        }
+    
+    option = {
+        name = SSW_FRA.6.a
+        stability_factor = -0.3
+    }
+    option = {
+        name = SSW_FRA.6.b
+        stability_factor = -0.2
+        add_timed_idea = {
+			idea = Compromise_negotiations_with_general_strike
+			days = 180
+		}
+    }
+    option = {
+        name = SSW_FRA.6.c
+        stability_factor = -0.1
+        add_timed_idea = {
+			idea = Acceptable_negotiations_with_general_strikes
+			days = 365
+		}
+    }
+
+}
+
+country_event = { #自由を求める演説
+    id = SSW_FRA.7
+    title = SSW_FRA.7.t
+    desc = SSW_FRA.7.d
+
+        fire_only_once = yes
+            trigger = { #イベントが起きるきっかけ
+            tag = FRA
+            date > 1950.6.26 #1951.7.10　#日にち
+        }
+    
+    option = {
+        name = SSW_FRA.7.a #鎮圧
+        stability_factor = -0.15
+    }
+    option = {
+        name = SSW_FRA.7.b #放っておけ
+        stability_factor = -0.3
+    }
+
+}
+
+country_event = {
+    id = SSW_FRA.8
+    title = SSW_FRA.8.t
+    desc = SSW_FRA.8.d
+    
+    fire_only_once = yes
+        trigger = { #イベントが起きるきっかけ
+            tag = FRA
+            date > 1950.5.10
+            date > 1950.7.12 
+        }
+    
+    option = {
+        name = SSW_FRA.8.a
+        stability_factor = -0.05
+    }
+    option = {
+        name = SSW_FRA.8.b
+        stability_factor = -0.1
+    }
+}
+
+country_event = {
+    id = SSW_FRA.9
+    title = SSW_FRA.9.t
+    desc = SSW_FRA.9.d
+    
+    fire_only_once = yes
+        trigger = { #イベントが起きるきっかけ
+            tag = FRA
+            date > 1950.8.5
+        }
+    
+    option = {
+        name = SSW_FRA.9.a #軍隊を派遣しろ
+        country_event = {
+            id = SSW_FRA.10
+            days = 10
+        }
+    }
+    option = {
+        name = SSW_FRA.9.b #ボディガードのみで十分だ
+        country_event = {
+            id = SSW_FRA.3
+            days = 10
+        }
+    }
+}
+
+country_event = {
+    id = SSW_FRA.10
+    titile = SSW_FRA.10.t
+    desc = SSW_FRA.10.d
+
+    fire_on_lnly_once = yes
+
+    option = {
+        SSW_FRA.10.a
+        remove_ideas = The_resurrection_of_the_resistance
+    }
+}
+
+world_event = {
+    id = FRA_news.1 #Military_coup
+    days = 1
+    titile = FRA_news.1.t
+    desc = FRA_news.1.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    option = {
+        FRA_news.1.a
+    }
+}
+
+world_event = {
+    id = FRA_news.2 #Republican_revival
+    days = 1
+    titile = FRA_news.2.t
+    desc = FRA_news.2.d
+    is_triggered_only = yes
+    fire_on_lnly_once = yes
+    option = {
+        FRA_news.2.a
+    }
+} 
+
+world_event = {
+    id = FRA_news.3 #Return_of_Napoleon
+    days = 1
+    titile = FRA_news.3.t
+    desc = FRA_news.3.d
+    is_triggered_only = yes
+    fire_on_lnly_once = yes
+    option = {
+       FRA_news.3.a
+    }
+} 
+
+world_event = {
+    id = FRA_news.4 #Guy_Mollet_To_the_president
+    days = 1
+    titile = FRA_news.4.t
+    desc = FRA_news.4.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    option = {
+        FRA_news.4.a
+    }
+}
+
+world_event = {
+    id = FRA_news.5 #Pierre_Mendes_France_To_the_president
+    days = 1
+    titile = FRA_news.5.t
+    desc = FRA_news.5.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    option = {
+        FRA_news.5.a
+    }
+}
+
+world_event = {
+    id = FRA_news.6 #Rene_Jules_Gustave_Coty_To_the_president
+    days = 1
+    titile = FRA_news.6.t
+    desc = FRA_news.6.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    option = {
+        FRA_news.6.a
+    }
+}
+world_event = {
+    id = FRA_news.7 #Alphonse_Juan_Grasp_the_administration
+    days = 1
+    titile = FRA_news.7.t
+    desc = FRA_news.7.d
+    fire_on_lnly_once = yes
+    is_triggered_only = yes
+    option = {
+        FRA_news.7.a
+    }
+}
+
+country_event = {
+	id = SSW_FRA.for.1 #FRA_NFR_Return
+	title = SSW_FRA.for.1.t
+	desc = SSW_FRA.for.1.d
 	is_triggered_only = yes
 	
     trigger = {
@@ -191,15 +375,15 @@ country_event = {
 		is subject = no
     }
 	option = {
-        name = FRA_NFR_Return.a
+        name = SSW_FRA.for.1.a
         annex_country = {
-        target = NFR
-        transfer_troops = yes
+            target = NFR
+            transfer_troops = yes
         }
 	}
 
     option = {
-        name = FRA_NFR_Return.b
+        name = SSW_FRA.for.1.b
         FRA = {
 			country_event = {
 				id = FRA_NFR_not_Return
@@ -208,19 +392,20 @@ country_event = {
         }
     }
 }
+
 country_event = {
-    id = FRA_ita_Allince
-    titile = FRA_ita_Allince.t
-    desc = FRA_ita_Allince.d 
+    id = SSW_FRA.for.2 #FRA_ita_Allince
+    titile = SSW_FRA.for.2.t
+    desc = SSW_FRA.for.2.d 
     is_triggered_only = yes
 
     option = {
-        name = FRA_ita_Allince.a
-        Rome_entente = { add_to_faction = FRA }
+        name = SSW_FRA.for.2.a
+        ITA = { add_to_faction = FRA }
     }
 
     option = {
-        name = FRA_ita_Allince.b
+        name = SSW_FRA.for.2.b
         	FRA = {
 			country_event = {
 				id = FRA_ita_not_Allince
@@ -229,42 +414,26 @@ country_event = {
 		}
     }
 }
-country_event = {
-    id = 1st_Peoples_Council
-    titile = 1st_Peoples_Council.t
-    desc = 1st_Peoples_Council.d
-    is_triggered_only = yes
 
-    option = {
-        name = 1st_Peoples_Council.a
-        complete_national_focus = FRA_45
-    }
-    option = {
-        name = 1st_Peoples_Council.b
-        complete_national_focus = FRA_47
-    }
-    option = {
-        name = 1st_Peoples_Council.c
-        complete_national_focus = FRA_46
-    }
-}
 country_event = {
-   id = FRA_ita_not_Allince
-   titile = FRA_ita_not_Allince.t
-   desc = FRA_ita_not_Allince.d
+   id = SSW_FRA.for.3 #FRA_ita_not_Allince
+   titile = SSW_FRA.for.3.t
+   desc = SSW_FRA.for.3.d
    is_triggered_only = yes
 
-   opition = {
-       FRA_ita_not_Allince.a
+   option = {
+       SSW_FRA.for.3.a
    }
 }
+
 country_event = {
-    id = FRA_NFR_not_Return
-    titile = FRA_NFR_not_Return.t
-    desc = FRA_NFR_not_Return.d
+    id = SSW_FRA.for.4 #FRA_NFR_not_Return
+    titile = SSW_FRA.for.4.t
+    desc = SSW_FRA.for.4.d
     is_triggered_only = yes
 
-    opition = {
-        FRA_NFR_not_Return.a
+    option = {
+        SSW_FRA.for.4.a
+        add_ideas = Betrayed_ally
     }
 }
