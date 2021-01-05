@@ -21,3 +21,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Carlos Alberto Garcia Alves Roçadas"
+	desc = ""
+	picture = "gfx/leaders/CPV/portrait_cpv_carlos_alberto_garcia_alves_rocadas.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
+}

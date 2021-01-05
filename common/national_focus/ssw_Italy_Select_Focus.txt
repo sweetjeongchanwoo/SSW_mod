@@ -1,14 +1,5 @@
-focus_tree = {
-	id = ITA_select_focus
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ITA
-		}
-    }
-    #ローマが征く道
-    focus = {
+####SELECT_FOCUS_TREE####
+shared_focus = {
         id = ITA_focus_Rome_Conquered
         icon = GFX_goal_tfv_strengthen_commonwealth_ties
         cost = 1.40
@@ -24,7 +15,7 @@ focus_tree = {
         }
 	}
 	#ドゥーチェの下で
-    focus = {
+     shared_focus = {
         id = ITA_focus_Duce
 		icon = GFX_goal_support_fascism
 		cost = 2.14
@@ -48,7 +39,7 @@ focus_tree = {
         }
 	}
 	#王の下で
-    focus = {
+     shared_focus = {
         id = ITA_focus_Kings
         icon = GFX_focus_eng_imperial_federation
         cost = 2.14
@@ -72,7 +63,7 @@ focus_tree = {
         }
 	}
 	#自由のもとで
-    focus = {
+     shared_focus = {
         id = ITA_focus_Free
         icon = GFX_goal_support_democracy
         cost = 2.14
@@ -96,7 +87,7 @@ focus_tree = {
         }
 	}
 	#バルボによって
-    focus = {
+     shared_focus = {
         id = ITA_focus_by_Balbo
         icon = GFX_ITA_Balbo_Face
         cost = 2.14
@@ -115,10 +106,14 @@ focus_tree = {
           country_event = {
                id = SSW_ITA.3
           }
+          load_focus_tree = { 
+                tree = ITA_Balbo_Focus 
+                keep_completed = yes 
+            }
         }
 	}
 	#ムッソリーニによって
-    focus = {
+     shared_focus = {
         id = ITA_focus_by_Mussolini
         icon = GFX_focus_spr_the_anti_fascist_workers_revolution
         cost = 2.14
@@ -140,7 +135,7 @@ focus_tree = {
         }
 	}
 	#サヴォイア家によって
-    focus = {
+     shared_focus = {
         id = ITA_focus_Savoia
         icon = GFX_ITA_Savoie_family_crest
         cost = 2.14
@@ -162,7 +157,7 @@ focus_tree = {
         }
 	}
 	#ジェノヴァ家によって
-    focus = {
+     shared_focus = {
         id = ITA_focus_Genoa
         icon = GFX_ITA_Genoese_family_crest_icons
         cost = 2.14
@@ -184,7 +179,7 @@ focus_tree = {
         }
 	}
 	#カエサルにならう
-    focus = {
+     shared_focus = {
         id = ITA_focus_Caesar
         icon = GFX_ITA_Caesar_side
         cost = 2.14
@@ -206,7 +201,7 @@ focus_tree = {
         }
 	}
 	#平等に
-    focus = {
+     shared_focus = {
         id = ITA_focus_equality
         icon = GFX_goal_generic_war_with_comintern
         cost = 2.14
@@ -226,5 +221,4 @@ focus_tree = {
                id = SSW_ITA.8
           }
         }
-    }
 }

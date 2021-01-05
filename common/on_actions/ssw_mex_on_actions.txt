@@ -5,7 +5,11 @@ on_actions = {
 				limit = {
 					original_tag = MEX
 					has_global_flag = mexican_civil_war
-					NOT = { has_global_flag = mcw_news }
+					NOT = {
+						has_global_flag = mcw_news
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
 				}
 				news_event = { id = ssw_mex.3 hours = 6 }
 				set_global_flag = mcw_news

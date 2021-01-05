@@ -5,7 +5,7 @@ state={
 		7125 7221 10036 12040 
 	}
 	state_category=large_city
-	manpower=2502296
+	manpower=3770000
 	history={
 		owner = KOR
 		add_core_of = KOR
@@ -13,8 +13,8 @@ state={
 		7125 20
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 7
+			infrastructure = 5
+			industrial_complex = 5
 		}
 
 	}

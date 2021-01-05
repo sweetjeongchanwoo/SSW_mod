@@ -1,4 +1,4 @@
-﻿capital = 431
+﻿capital = 439
 oob = "NIN_1950"
 
 set_convoys = 5

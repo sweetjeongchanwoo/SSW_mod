@@ -1,15 +1,6 @@
-focus_tree = {
-	id = ITA_Balbo_Focus_Tree
-	tag
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ITA
-		}
-	}
-	#産業の現状
-	focus = {
+#####BALBO_FOCUS_TREE####
+#産業の現状
+shared_focus = {
 		id = ITA_focus_industry_0
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 2.40
@@ -24,7 +15,7 @@ focus_tree = {
 		}
 	}
 	#平等な産業
-	focus = {
+shared_focus = {
 		id = ITA_focus_industry_1
 		icon = GFX_focus_generic_concessions
 		cost = 5.00
@@ -46,7 +37,7 @@ add_idea = ITA_idea_3
 		}
 	}
 	#現状産業の改良
-	focus = {
+shared_focus = {
 		id = ITA_focus_industry_2
 		icon = GFX_goal_generic_production
 		cost = 5.00
@@ -68,7 +59,7 @@ add_idea = ITA_idea_4
 		}
 	}
 	#民間主体産業への切り替え
-    focus = {
+shared_focus = {
         id = ITA_focus_industry_3
         icon = GFX_goal_generic_consumer_goods
         cost = 5.00
@@ -89,7 +80,7 @@ add_idea = ITA_idea_4
         }
 	}
 	#現状維持
-    focus = {
+    shared_focus = {
         id = ITA_focus_industry_4
         icon = GFX_focus_generic_tank_production
         cost = 5.00
@@ -111,7 +102,7 @@ add_idea = ITA_idea_4
         }
     }
 #南部産業への支援
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_5
 	icon = GFX_focus_generic_tank_production
 	cost = 5.00
@@ -164,7 +155,7 @@ focus = {
 	}
 }
 #移民への対処
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_6
 	icon = GFX_focus_generic_support_the_left_right
 	cost = 2.14
@@ -179,7 +170,7 @@ focus = {
 	}
 }
 #南部産業の強化
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_7
 	icon = GFX_goal_generic_construct_civilian
 	cost = 5.00
@@ -195,7 +186,7 @@ focus = {
 	}
 }
 #北部産業の支援
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_8
 	icon = GFX_goal_generic_construct_mil_factory
 	cost = 5.00
@@ -248,7 +239,7 @@ focus = {
 	}
 }
 #南部産業の強化
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_9
 	icon = GFX_focus_generic_the_giant_wakes
 	cost = 5.00
@@ -264,7 +255,7 @@ focus = {
 	}
 }
 #市民権の付与
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_10
 	icon = GFX_focus_hol_the_foundations_of_defense
 	cost = 5.00
@@ -283,7 +274,7 @@ focus = {
 	}
 }
 #過酷な処置
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_11
 	icon = GFX_focus_spr_masters_of_our_own_fate
 	cost = 5.00
@@ -302,7 +293,7 @@ focus = {
 	}
 }
 #技術レベルの向上
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_12
 	icon = GFX_goal_generic_construction
 	cost = 5.00
@@ -325,7 +316,7 @@ focus = {
 	}
 }
 #兵器生産への熟練
-focus = {
+shared_focus = {
 	id = ITA_focus_industry_13
 	icon = GFX_goal_generic_construction
 	cost = 5.00
@@ -342,4 +333,3 @@ focus = {
 		add_ideas = ITA_idea_15
 	}
 }
- }

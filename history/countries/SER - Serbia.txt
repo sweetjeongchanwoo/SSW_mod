@@ -2,6 +2,10 @@
 oob = "SER_1950"
 set_cosmetic_tag = SERandMNT
 
+add_opinion_modifier = { target = HUN modifier = hostile_status }
+add_opinion_modifier = { target = BUL modifier = hostile_status }
+add_opinion_modifier = { target = CRO modifier = hostile_status }
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons = 1
