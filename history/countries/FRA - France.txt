@@ -42,9 +42,9 @@ set_politics = {
 }
 set_popularities = {
 	national_fascism = 37
-	national_socialism_ideology = 23
-	authority_despotism_ideology = 13
-	authority_democracy_ideology = 7
+	national_socialism = 13
+	authority_despotism = 10
+	authority_democracy = 7
 	social_democracy = 3
 	social_conservatism = 3
 	social_liberalism = 3

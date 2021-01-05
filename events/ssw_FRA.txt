@@ -3,9 +3,9 @@
 #ペタン死亡
 
 country_event = {
-    id = SSW_FRA.1
-    title = SSW_FRA.1.t
-    desc = SSW_FRA.1.d
+    id =SSW.FRA.1
+    title =SSW.FRA.1.t
+    desc =SSW.FRA.1.d
     picture = GFX_Petan_dead
     fire_only_once = yes
         trigger = { #イベントが起きるきっかけ
@@ -14,13 +14,13 @@ country_event = {
         }
     
     option = {
-        name = SSW_FRA.1.a
+        name =SSW.FRA.1.a
         FRA = {
             add_stability = -0.5
             kill_country_leader = FRA
         }
         country_event = {
-            id = SSW_FRA.2
+            id =SSW.FRA.2
             days = 1
         }
         add_ideas = Unstable_country
@@ -30,20 +30,19 @@ country_event = {
 #指導者決定
 
 country_event = {
-    id = SSW_FRA.2
-    titile = SSW_FRA.2
-    desc = SSW_FRA.2.d
+    id =SSW.FRA.2
+    titile =SSW.FRA.2
+    desc =SSW.FRA.2.d
 
     fire_on_lnly_once = yes
     
     option = {
-        name = SSW_FRA.2.a
+        name =SSW.FRA.2.a
         has_country_flag = FRA_great_game
         has_contry_flag = FRA_Darnand_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 	        name = "Joseph Darnand"
-	        desc =
 	        picture = "gfx/leaders/FRA/Portrait.dds"
 	        expire = "1965.1.1"
 	        ideology = national_socialism_ideology
@@ -52,13 +51,12 @@ country_event = {
         }
     }    
     option = {
-        name = SSW_FRA.2.b
+        name =SSW.FRA.2.b
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Laval_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 	        name = "Pierre Laval"
-            desc = 
 	        picture = "gfx/leaders/FRA/Portrait.dds"
 	        expire = "1965.1.1"
 	        ideology = authority_despotism_ideology
@@ -67,14 +65,12 @@ country_event = {
         }  
     }
     option = {
-        name = SSW_FRA.2.c
+        name =SSW.FRA.2.c
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Doriot_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 		    name = "Jacques Doriot"
-            desc = 
-		    picture =
 		    expire = "1965.1.1"
 		    ideology = national_fascism_ideology
 		    traits = {}
@@ -83,19 +79,18 @@ country_event = {
 
 }
 country_event = {
-    id = SSW_FRA.3 #リーダーの暗殺
+    id =SSW.FRA.3 #リーダーの暗殺
     days = 1
-    titile = SSW_FRA.3.t
-    desc = SSW_FRA.3.d
+    titile =SSW.FRA.3.t
+    desc =SSW.FRA.3.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        SSW_FRA.3.a
+    SSW.FRA.3.a
         complete_national_focus = FRA_New_France #左派が政権を手動
         remove_ideas = The_resurrection_of_the_resistance
         create_country_leader = {
 	        name = "Maurice Thorez"
-	        picture = 
 	        expire = "1965.1.1"
 	        ideology =　social_democracy_ideology 
 	        traits = {
@@ -103,12 +98,11 @@ country_event = {
         }
     }
     option = {
-        SSW_FRA.3.b
+    SSW.FRA.3.b
         complete_national_focus = FRA_New_France #軍部が主導権を把握
         remove_ideas = The_resurrection_of_the_resistance
         create_country_leader = {
 	        name = "Alphonse Juan"
-	        picture = 
 	        expire = "1965.1.1"
 	        ideology = authority_democracy_ideology 
 	        traits = {
@@ -118,51 +112,51 @@ country_event = {
 }
 
 country_event = {
-    id = SSW_FRA.4 #1st_Peoples_Council
-    titile = SSW_FRA.4.t
-    desc = SSW_FRA.4.d
+    id =SSW.FRA.4 #1st_Peoples_Council
+    titile =SSW.FRA.4.t
+    desc =SSW.FRA.4.d
     is_triggered_only = yes
 
     option = {
-        name = SSW_FRA.4.a
+        name =SSW.FRA.4.a
         complete_national_focus = FRA_Trotskyism
     }
     option = {
-        name = SSW_FRA.4.b
+        name =SSW.FRA.4.b
         complete_national_focus = FRA_Mraxism_Leninism
     }
     option = {
-        name = SSW_FRA.4.c
+        name =SSW.FRA.4.c
         complete_national_focus = FRA_Anarchism
     }
 }
 
 country_event = {
-    id = SSW_FRA.5 #French_presodential_election
-    titile = SSW_FRA.5.t
-    desc = SSW_FRA.5.d
+    id =SSW.FRA.5 #French_presodential_election
+    titile =SSW.FRA.5.t
+    desc =SSW.FRA.5.d
     is_triggered_only = yes
 
     option = {
-        name = SSW_FRA.5.a
+        name =SSW.FRA.5.a
         complete_national_focus = FRA_Guy_Mollet_as_President
     }
 
     option = {
-        name = SSW_FRA.5.b
+        name =SSW.FRA.5.b
         complete_national_focus = FRA_Mandez_France_as_President
     }
 
     option = {
-        name = SSW_FRA.5.c
+        name =SSW.FRA.5.c
         complete_national_focus = FRA_Rene_Coty_as_President
     }
 }
 
 country_event = { #ストライキ
-    id = SSW_FRA.6
-    title = SSW_FRA.6.t
-    desc = SSW_FRA.6.d
+    id =SSW.FRA.6
+    title =SSW.FRA.6.t
+    desc =SSW.FRA.6.d
     
         fire_only_once = yes
             trigger = { #イベントが起きるきっかけ
@@ -171,11 +165,11 @@ country_event = { #ストライキ
         }
     
     option = {
-        name = SSW_FRA.6.a
+        name =SSW.FRA.6.a
         stability_factor = -0.3
     }
     option = {
-        name = SSW_FRA.6.b
+        name =SSW.FRA.6.b
         stability_factor = -0.2
         add_timed_idea = {
 			idea = Compromise_negotiations_with_general_strike
@@ -183,7 +177,7 @@ country_event = { #ストライキ
 		}
     }
     option = {
-        name = SSW_FRA.6.c
+        name =SSW.FRA.6.c
         stability_factor = -0.1
         add_timed_idea = {
 			idea = Acceptable_negotiations_with_general_strikes
@@ -194,9 +188,9 @@ country_event = { #ストライキ
 }
 
 country_event = { #自由を求める演説
-    id = SSW_FRA.7
-    title = SSW_FRA.7.t
-    desc = SSW_FRA.7.d
+    id =SSW.FRA.7
+    title =SSW.FRA.7.t
+    desc =SSW.FRA.7.d
 
         fire_only_once = yes
             trigger = { #イベントが起きるきっかけ
@@ -205,20 +199,20 @@ country_event = { #自由を求める演説
         }
     
     option = {
-        name = SSW_FRA.7.a #鎮圧
+        name =SSW.FRA.7.a #鎮圧
         stability_factor = -0.15
     }
     option = {
-        name = SSW_FRA.7.b #放っておけ
+        name =SSW.FRA.7.b #放っておけ
         stability_factor = -0.3
     }
 
 }
 
 country_event = {
-    id = SSW_FRA.8
-    title = SSW_FRA.8.t
-    desc = SSW_FRA.8.d
+    id =SSW.FRA.8
+    title =SSW.FRA.8.t
+    desc =SSW.FRA.8.d
     
     fire_only_once = yes
         trigger = { #イベントが起きるきっかけ
@@ -228,19 +222,19 @@ country_event = {
         }
     
     option = {
-        name = SSW_FRA.8.a
+        name =SSW.FRA.8.a
         stability_factor = -0.05
     }
     option = {
-        name = SSW_FRA.8.b
+        name =SSW.FRA.8.b
         stability_factor = -0.1
     }
 }
 
 country_event = {
-    id = SSW_FRA.9
-    title = SSW_FRA.9.t
-    desc = SSW_FRA.9.d
+    id =SSW.FRA.9
+    title =SSW.FRA.9.t
+    desc =SSW.FRA.9.d
     
     fire_only_once = yes
         trigger = { #イベントが起きるきっかけ
@@ -249,121 +243,145 @@ country_event = {
         }
     
     option = {
-        name = SSW_FRA.9.a #軍隊を派遣しろ
+        name =SSW.FRA.9.a #軍隊を派遣しろ
         country_event = {
-            id = SSW_FRA.10
+            id =SSW.FRA.10
             days = 10
         }
     }
     option = {
-        name = SSW_FRA.9.b #ボディガードのみで十分だ
+        name =SSW.FRA.9.b #ボディガードのみで十分だ
         country_event = {
-            id = SSW_FRA.3
+            id =SSW.FRA.3
             days = 10
         }
     }
 }
 
 country_event = {
-    id = SSW_FRA.10
-    titile = SSW_FRA.10.t
-    desc = SSW_FRA.10.d
+    id =SSW.FRA.10
+    titile =SSW.FRA.10.t
+    desc =SSW.FRA.10.d
 
     fire_on_lnly_once = yes
 
     option = {
-        SSW_FRA.10.a
+    SSW.FRA.10.a
         remove_ideas = The_resurrection_of_the_resistance
     }
 }
 
-world_event = {
-    id = FRA_news.1 #Military_coup
+news_event = {
+    id = SSW.FRA.news.1 #Military_coup
     days = 1
-    titile = FRA_news.1.t
-    desc = FRA_news.1.d
+    titile = SSW.FRA.news.1.t
+    desc = SSW.FRA.news.1.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        FRA_news.1.a
+        SSW.FRA.news.1.a
     }
 }
 
-world_event = {
-    id = FRA_news.2 #Republican_revival
+news_event = {
+    id = SSW.FRA.news.2 #Republican_revival
     days = 1
-    titile = FRA_news.2.t
-    desc = FRA_news.2.d
+    titile = SSW.FRA.news.2.t
+    desc = SSW.FRA.news.2.d
     is_triggered_only = yes
     fire_on_lnly_once = yes
     option = {
-        FRA_news.2.a
+        SSW.FRA.news.2.a
     }
 } 
 
-world_event = {
-    id = FRA_news.3 #Return_of_Napoleon
+news_event = {
+    id = SSW.FRA.news.3 #Return_of_Napoleon
     days = 1
-    titile = FRA_news.3.t
-    desc = FRA_news.3.d
+    titile = SSW.FRA.news.3.t
+    desc = SSW.FRA.news.3.d
     is_triggered_only = yes
     fire_on_lnly_once = yes
     option = {
-       FRA_news.3.a
+       SSW.FRA.news.3.a
     }
 } 
 
-world_event = {
-    id = FRA_news.4 #Guy_Mollet_To_the_president
+news_event = {
+    id = SSW.FRA.news.4 #Guy_Mollet_To_the_president
     days = 1
-    titile = FRA_news.4.t
-    desc = FRA_news.4.d
+    titile = SSW.FRA.news.4.t
+    desc = SSW.FRA.news.4.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        FRA_news.4.a
+        SSW.FRA.news.4.a
     }
 }
 
-world_event = {
-    id = FRA_news.5 #Pierre_Mendes_France_To_the_president
+news_event = {
+    id = SSW.FRA.news.5 #Pierre_Mendes_France_To_the_president
     days = 1
-    titile = FRA_news.5.t
-    desc = FRA_news.5.d
+    titile = SSW.FRA.news.5.t
+    desc = SSW.FRA.news.5.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        FRA_news.5.a
+        SSW.FRA.news.5.a
     }
 }
 
-world_event = {
-    id = FRA_news.6 #Rene_Jules_Gustave_Coty_To_the_president
+news_event = {
+    id = SSW.FRA.news.6 #Return_of_Bourbons
     days = 1
-    titile = FRA_news.6.t
-    desc = FRA_news.6.d
+    titile = SSW.FRA.news.6.t
+    desc = SSW.FRA.news.6.d
+    is_triggered_only = yes
+    fire_on_lnly_once = yes
+    option = {
+       SSW.FRA.news.6.a
+    }
+} 
+
+news_event = {
+    id = SSW.FRA.news.7 #Return_of_Napoleon
+    days = 1
+    titile = SSW.FRA.news.7.t
+    desc = SSW.FRA.news.7.d
+    is_triggered_only = yes
+    fire_on_lnly_once = yes
+    option = {
+       SSW.FRA.news.7.a
+    }
+} 
+
+news_event = {
+    id = SSW.FRA.news.6 #Rene_Jules_Gustave_Coty_To_the_president
+    days = 1
+    titile = SSW.FRA.news.6.t
+    desc = SSW.FRA.news.6.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        FRA_news.6.a
+        SSW.FRA.news.6.a
     }
 }
-world_event = {
-    id = FRA_news.7 #Alphonse_Juan_Grasp_the_administration
+news_event = {
+    id = SSW.FRA.news.7 #Alphonse_Juan_Grasp_the_administration
     days = 1
-    titile = FRA_news.7.t
-    desc = FRA_news.7.d
+    titile = SSW.FRA.news.7.t
+    desc = SSW.FRA.news.7.d
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-        FRA_news.7.a
+        SSW.FRA.news.7.a
     }
 }
 
 country_event = {
-	id = SSW_FRA.for.1 #FRA_NFR_Return
-	title = SSW_FRA.for.1.t
-	desc = SSW_FRA.for.1.d
+	id =SSW.FRA.for.1 #FRA_NFR_Return
+	title =SSW.FRA.for.1.t
+	desc =SSW.FRA.for.1.d
 	is_triggered_only = yes
 	
     trigger = {
@@ -375,7 +393,7 @@ country_event = {
 		is subject = no
     }
 	option = {
-        name = SSW_FRA.for.1.a
+        name =SSW.FRA.for.1.a
         annex_country = {
             target = NFR
             transfer_troops = yes
@@ -383,7 +401,7 @@ country_event = {
 	}
 
     option = {
-        name = SSW_FRA.for.1.b
+        name =SSW.FRA.for.1.b
         FRA = {
 			country_event = {
 				id = FRA_NFR_not_Return
@@ -394,18 +412,18 @@ country_event = {
 }
 
 country_event = {
-    id = SSW_FRA.for.2 #FRA_ita_Allince
-    titile = SSW_FRA.for.2.t
-    desc = SSW_FRA.for.2.d 
+    id =SSW.FRA.for.2 #FRA_ita_Allince
+    titile =SSW.FRA.for.2.t
+    desc =SSW.FRA.for.2.d 
     is_triggered_only = yes
 
     option = {
-        name = SSW_FRA.for.2.a
+        name =SSW.FRA.for.2.a
         ITA = { add_to_faction = FRA }
     }
 
     option = {
-        name = SSW_FRA.for.2.b
+        name =SSW.FRA.for.2.b
         	FRA = {
 			country_event = {
 				id = FRA_ita_not_Allince
@@ -416,24 +434,24 @@ country_event = {
 }
 
 country_event = {
-   id = SSW_FRA.for.3 #FRA_ita_not_Allince
-   titile = SSW_FRA.for.3.t
-   desc = SSW_FRA.for.3.d
+   id =SSW.FRA.for.3 #FRA_ita_not_Allince
+   titile =SSW.FRA.for.3.t
+   desc =SSW.FRA.for.3.d
    is_triggered_only = yes
 
    option = {
-       SSW_FRA.for.3.a
+    SSW.FRA.for.3.a
    }
 }
 
 country_event = {
-    id = SSW_FRA.for.4 #FRA_NFR_not_Return
-    titile = SSW_FRA.for.4.t
-    desc = SSW_FRA.for.4.d
+    id =SSW.FRA.for.4 #FRA_NFR_not_Return
+    titile =SSW.FRA.for.4.t
+    desc =SSW.FRA.for.4.d
     is_triggered_only = yes
 
     option = {
-        SSW_FRA.for.4.a
+    SSW.FRA.for.4.a
         add_ideas = Betrayed_ally
     }
 }
