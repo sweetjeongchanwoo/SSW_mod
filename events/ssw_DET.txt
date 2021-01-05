@@ -1,0 +1,24 @@
+add_namespace = ssw_DET
+# # If Doniestl Ukraine lost all states except for Moldova,
+# # Moldova will annex DET
+country_event = {
+	id = ssw_DET.1
+	trigger = {
+		tag = DET
+		NOT = {
+			any_owned_state = {
+				is_core_of = DET
+			}
+		}
+	}
+	option = {
+		name = ssw_DET.1.a
+		MOL = {
+			annex_country = {
+				target = DET
+				transfer_troops = yes
+			}
+			change_tag_from = ROOT
+		}
+	}
+}
