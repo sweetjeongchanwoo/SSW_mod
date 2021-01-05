@@ -42,15 +42,15 @@ set_politics = {
 }
 set_popularities = {
 	national_fascism = 37
-	national_socialism_ideology = 23
-	authority_despotism_ideology = 13
-	authority_democracy_ideology = 7
+	national_socialism = 13
+	authority_despotism = 10
+	authority_democracy = 7
 	social_democracy = 3
 	social_conservatism = 3
 	social_liberalism = 3
 	classical_communism = 11 
-	progressive_communism = 0
-	corporatocracism = 0
+	progressive_communism = 11
+	corporatocracism = 2
 }
 
 create_country_leader = {
@@ -114,8 +114,32 @@ create_country_leader = {
 create_country_leader = {
 	name = "Maurice Thorez"
 	picture = 
-	expire = "1964.7.11"
+	expire = "1965.1.1"
 	ideology = classical_communism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Raymond Molinier"
+	picture = 
+	expire = "1965.1.1"
+	ideology = progressive_communism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Anarchista Francaise"
+	picture = 
+	expire = "1965.1.1"
+	ideology = anarchism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = ""
+	picture = 
+	expire = "1965.1.1"
+	ideology = corporatocracism
 	traits = {
 	}
 }

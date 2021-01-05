@@ -1,6 +1,6 @@
 ###This Made by Choco
 ######Why are you looking at internal data?
-#########If you're trying to steal an idea, the sooner you contact me, the better. lol:ちょこグル【Chocogulu】#1476
+#########If you're trying to steal an idea, the sooner you contact me, the better. discord:ちょこグル【Chocogulu】#1476
 
 JAP_political_party_values = {
 	set_variable = { JAP_seiyukai_popularity = 24 }
@@ -603,6 +603,7 @@ JAP_toakensetsu_low_popularity_decrease_effect = {
 		max = 100
 	}
 }
+<<<<<<< HEAD
 
 
 
@@ -625,3 +626,5 @@ JAP_focus_reload = {
 		}
 	}
 }
+=======
+>>>>>>> fdc40c4148ed891878de2215d1889f7474336a50
