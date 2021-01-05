@@ -104,7 +104,7 @@ country_event = {
     }
     option = {
         SSW_FRA.3.b
-        complete_national_focus = FRA_New_France
+        complete_national_focus = FRA_New_France #軍部が主導権を把握
         remove_ideas = The_resurrection_of_the_resistance
         create_country_leader = {
 	        name = "Alphonse Juan"

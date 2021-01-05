@@ -272,7 +272,7 @@ focus_tree = {
 		completion_reward = {
 			ITA = {
 				country_event = {
-					id = FRA_ita_Allince
+					id = SSW_FRA.for.2
 					days = 1
 				}
 			}
@@ -493,7 +493,7 @@ focus_tree = {
 		x = 18
 		y = 4
 		completion_reward = {
-			country_event = 1st_Peoples_Council
+			country_event = SSW_FRA.4
 		}
 
 	}
@@ -805,7 +805,7 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 				country_event = {
-					id = FRA_NFR_Return
+					id = SSW_FRA.for.1
 					days = 1
 				}
 			}
