@@ -49,8 +49,8 @@ set_popularities = {
 	social_conservatism = 3
 	social_liberalism = 3
 	classical_communism = 11 
-	progressive_communism = 0
-	corporatocracism = 0
+	progressive_communism = 11
+	corporatocracism = 2
 }
 
 create_country_leader = {
