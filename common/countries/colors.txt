@@ -1639,6 +1639,11 @@ KRA = { #クラスノダール
     color_ui = rgb { 175  42  42 }	
 }
 
+INC = { #インドシナ連合
+	color = rgb { 77 103 174 }
+	color_ui = rgb { 77 103 174 }
+}
+
 HGR = { #ゲーリング派ドイツ
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }

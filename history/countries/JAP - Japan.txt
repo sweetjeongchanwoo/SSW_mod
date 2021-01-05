@@ -141,14 +141,14 @@ set_technology = {
 }
 
 create_import = {
-		resource = 	oil
-		factories = 3
-		exporter = ALF
+	resource = 	oil
+	factories = 3
+	exporter = ALF
 }
 create_import = {
-		resource = 	Rubber
-		factories = 2
-		exporter = INS
+	resource = 	Rubber
+	factories = 2
+	exporter = INS
 }
 
 add_ideas = {
@@ -176,8 +176,6 @@ add_to_faction = KOR
 add_to_faction = PAO
 add_to_faction = MAN
 add_to_faction = MEN
-add_to_faction = CHI
-add_to_faction = CLC
 add_to_faction = SIA
 add_to_faction = SIN
 add_to_faction = BRM
@@ -210,14 +208,6 @@ set_autonomy = {
 set_autonomy = {
 	target = MEN
 	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
-	target = CHI
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
-	target = CLC
-	autonomous_state = condominium
 }
 set_autonomy = {
 	target = SIN

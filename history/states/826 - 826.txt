@@ -4,7 +4,7 @@ state={
 	name="STATE_826"
 
 	history={
-		owner = CAM
+		owner = SIA
 		victory_points = {
 			7376  10
 		}
@@ -13,6 +13,7 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = CAM
+		add_core_of = SIA
 	}
 
 	provinces={

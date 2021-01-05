@@ -19,6 +19,7 @@ GUM	= "countries/Asia.txt"	#グアム
 GXC	= "countries/Asia.txt"	#広西
 HAW	= "countries/Asia.txt"	#ハワイ
 HYD	= "countries/Asia.txt"	#ハイデラバード
+INC	= "countries/Asia.txt"	#インドシナ連合
 IND	= "countries/Asia.txt"	#インド
 INO	= "countries/Asia.txt"	#インド洋
 INS	= "countries/Asia.txt"	#インドネシア
