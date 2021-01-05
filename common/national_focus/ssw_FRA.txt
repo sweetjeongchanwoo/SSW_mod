@@ -1321,7 +1321,7 @@ focus_tree = {
 		x = 37
 		y = 4
 		completion_reward = {
-			add_ideas = Focus_on_armor
+			add_ideas = focus_on_armor
 		}
 
 	}
@@ -1379,7 +1379,7 @@ focus_tree = {
 		x = 39
 		y = 4
 		completion_reward = {
-			add_ideas = Focus_on_infantry
+			add_ideas = focus_on_infantry
 		}
 	}
 	focus = {
@@ -1726,7 +1726,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Focus_on_bombers
+		id = FRA_focus_on_bombers
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
