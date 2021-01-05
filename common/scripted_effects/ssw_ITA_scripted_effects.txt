@@ -1,0 +1,5 @@
+ITA_focus_reload = {
+	hidden_effect = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}
