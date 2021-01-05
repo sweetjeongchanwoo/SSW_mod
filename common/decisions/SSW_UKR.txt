@@ -204,14 +204,56 @@ UKR_unification_wars = {
 			}
 		}
 		remove_effect = {
+			create_wargoal = {
+				type = take_core_state
+				target = FROM
+			}
 			diplomatic_relation = {
 				country = FROM
 				relation = non_aggression_pact
 				active = no
 			}
-			create_wargoal = {
-				type = take_core_state
-				target = FROM
+		}
+	}
+	UKR_unification_wars_2 = {
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = UKR
+					tag = DON
+				}
+				NOT = {
+					tag = ROOT
+				}
+				any_owned_state = {
+					OR = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+			}
+		}
+		cost = 50
+		days_remove = 7
+		fire_only_once = yes
+		ai_will_do = {
+			base = 8
+			modifier = {
+				has_war = yes
+				factor = 0.5
+			}
+		}
+		visible = {
+			any_neighbor_country = {
+				tag = FROM
+				has_non_aggression_pact_with = ROOT
+			}
+		}
+		remove_effect = {
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = no
 			}
 		}
 	}

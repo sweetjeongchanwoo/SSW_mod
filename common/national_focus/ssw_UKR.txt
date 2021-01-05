@@ -1459,7 +1459,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = UKR_unity
+			remove_ideas = UKR_civil_war
 			set_capital = 202
+			DON = {
+				remove_ideas = UKR_civil_war
+			}
 		}
 	}
 	#Focus for オデッサの回収 - focus ID randomly generated due to title being in non-latin characters

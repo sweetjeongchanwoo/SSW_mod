@@ -24,7 +24,7 @@ on_actions = {
 				}
 				set_research_slots = 3
 				reserve_dynamic_country = yes
-				add_ideas = limited_conscription
+				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
 			}
