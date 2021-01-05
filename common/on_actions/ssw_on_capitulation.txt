@@ -16,7 +16,6 @@ on_actions = {
 				create_dynamic_country = {
 					original_tag = UKR
 					copy_tag = UKR
-					set_country_flag = UKR_anarchism_flag
 					set_politics = {
 						ruling_party = national_socialism
 					}
@@ -29,6 +28,7 @@ on_actions = {
 					add_ideas = limited_conscription
 					transfer_state = 217
 					set_cosmetic_tag = UKR_GEM
+					change_tag_from = UKR
 				}
 			}
 		}
