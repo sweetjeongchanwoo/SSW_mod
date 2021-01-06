@@ -1,11 +1,11 @@
 	##Icon For: 
-	SpriteType = { 
+	spriteType = { 
 		name = "GFX_UKR_stalibize_administration-445"
 		texturefile = "gfx/interface/goals/GFX_UKR_stalibize_administration-445.dds"
 	}
 
 	##Icon Shine For: 
-	SpriteType = { 
+	spriteType = { 
 		name = "GFX_UKR_stalibize_administration-445_shine"
 		texturefile = "gfx/interface/goals/GFX_UKR_stalibize_administration-445.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -37,13 +37,13 @@
 	}
 
 	##Icon For: 
-	SpriteType = { 
+	spriteType = { 
 		name = "GFX_UKR_supress_insurgent_army-445"
 		texturefile = "gfx/interface/goals/GFX_UKR_supress_insurgent_army-445.dds"
 	}
 
 	##Icon Shine For: 
-	SpriteType = { 
+	spriteType = { 
 		name = "GFX_UKR_supress_insurgent_army-445_shine"
 		texturefile = "gfx/interface/goals/GFX_UKR_supress_insurgent_army-445.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
