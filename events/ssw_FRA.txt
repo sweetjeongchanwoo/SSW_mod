@@ -140,16 +140,41 @@ country_event = {
     option = {
         name =SSW.FRA.5.a
         complete_national_focus = FRA_Guy_Mollet_as_President
+        create_country_leader = {
+	        name = "Guy Mollet"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_democracy
+	        traits = {
+	        }
+        }
     }
 
     option = {
         name =SSW.FRA.5.b
         complete_national_focus = FRA_Mandez_France_as_President
+        create_country_leader = {
+	        name = "Pierre Mendès-France"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_liberalism
+	        traits = {
+	        }
+        }
     }
 
     option = {
         name =SSW.FRA.5.c
         complete_national_focus = FRA_Rene_Coty_as_President
+        create_country_leader = {
+	        name = "René Jules Gustave Coty"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_conservatism
+	        traits = {
+	        }
+        }
+
     }
 }
 
@@ -267,7 +292,67 @@ country_event = {
 
     option = {
     SSW.FRA.10.a
-        remove_ideas = The_resurrection_of_the_resistance
+        remove_ideas = Unstable_country
+    }
+}
+
+country_event = {
+    id =SSW.FRA.11 #フランス首相選挙
+    titile =SSW.FRA.11.t
+    desc =SSW.FRA.11.d
+    is_triggered_only = yes
+
+    option = {
+        name =SSW.FRA.11.a
+        create_country_leader = {
+	        name = "Guy Mollet"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_democracy
+	        traits = {
+	        }
+        }
+    }
+
+    option = {
+        name =SSW.FRA.11.b
+        create_country_leader = {
+	        name = "Pierre Mendès-France"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_liberalism
+	        traits = {
+	        }
+        }
+    }
+
+    option = {
+        name =SSW.FRA.11.c
+        create_country_leader = {
+	        name = "René Jules Gustave Coty"
+	        picture =
+	        expire = "1965.1.1"
+	        ideology = social_conservatism
+	        traits = {
+	        }
+        }
+
+    }
+}
+
+country_event = {
+    id =SSW.FRA.12 #パリに帰還
+    titile =SSW.FRA.12.t
+    desc =SSW.FRA.12.d
+    is_triggered_only = yes
+
+    trigger = {
+		16 = { is_controlled_by = FRA }#パリ
+	}
+
+    option = {
+       name = SSW.FRA.12
+       set_capital = 16
     }
 }
 
@@ -398,13 +483,14 @@ country_event = {
             target = NFR
             transfer_troops = yes
         }
+        set_state_owner = 29
 	}
 
     option = {
         name =SSW.FRA.for.1.b
         FRA = {
 			country_event = {
-				id = FRA_NFR_not_Return
+				id = SSW.FRA.for.4
 				days = 1
 			}
         }
@@ -420,16 +506,22 @@ country_event = {
     option = {
         name =SSW.FRA.for.2.a
         ITA = { add_to_faction = FRA }
+        ai_chance = {
+            factor = 100
+        }
     }
 
     option = {
         name =SSW.FRA.for.2.b
         	FRA = {
 			country_event = {
-				id = FRA_ita_not_Allince
+				id = SSW.FRA.for.3.a
 				days = 1
 			}
 		}
+        ai_chance = {
+            factor = 0
+        }
     }
 }
 
