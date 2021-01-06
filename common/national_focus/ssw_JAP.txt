@@ -1,5 +1,5 @@
 focus_tree = {
-	id = SSW_JAP_fake
+	id = SSW_JAP_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -7,8 +7,9 @@ focus_tree = {
 			tag = JAP
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 2000 }
 	default = no
 	shared_focus = JAP_second_disarmament
 	shared_focus = JAP_assassination_of_prime_minister
+	shared_focus = JAP_general_election
 }
