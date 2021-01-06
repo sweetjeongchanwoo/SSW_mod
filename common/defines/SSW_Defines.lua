@@ -3062,6 +3062,3 @@ NIntel = {
 	-- ~intel ledger defines
 }
 }
-
-
-
