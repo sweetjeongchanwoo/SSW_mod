@@ -19,3 +19,12 @@ set_politics = {
 set_popularities = {
 	national_socialism = 100
 }
+create_country_leader = {
+	name = "Arno Schickedanz"
+	desc = ""
+	picture = "gfx/leaders/DJI/portrait_dji_arno_schickedanz.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {
+	}
+}

@@ -18,3 +18,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Sobhuza II"
+	desc = ""
+	picture = "gfx/leaders/SWL/portrait_swl_sobhuza_ii.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchism_ideology
+	traits = {
+	}
+}

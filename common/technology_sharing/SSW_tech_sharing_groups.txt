@@ -1,0 +1,15 @@
+
+ technology_sharing_group = {
+
+	id = SSW_CHL_research
+	name = SSW_CHL_research_name
+	desc = SSW_CHL_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.10
+
+    available = {
+        is_in_faction_with = CHL
+    }
+
+}

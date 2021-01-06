@@ -13,6 +13,21 @@
  KOR_interrogation_idea_desc:0 ""
  KOR_export_food:0 "農産物の輸出"
  KOR_export_food_desc:0 ""
+ 
+ #etc
+ Cuttent_KOR_discontent_desc:0 "現在の抵抗度 : [?KOR_discontent] %"
+ Cuttent_KOR_collaboration_desc:0 "現在の協力度 : [?KOR_collaboration] %"
+ Cuttent_KOR_literacy_desc:0 "現在の識字率[?KOR_literacy] %"
+
+ #Do not Translation
+ KOR_Japanization_need_manpower_text_50000:0 "£pol_power  150  £manpower_texticon  50000"
+ KOR_Japanization_need_manpower_and_pp_text:0 "£pol_power  25  £manpower_texticon  10000"
+ KOR_Japanization_need_manpower_text:0 "£manpower_texticon  5000"
+ KOR_Japanization_need_manpower_text_500:0 "£pol_power  150  £manpower_texticon  500"
+ KOR_Japanization_need_three_civilian_factory_and_manpower_text:0 "£civ_factory  3  £manpower_texticon  5000"
+ KOR_Japanization_need_three_civilian_factory_text:0 "£civ_factory  3"
+ KOR_Japanization_need_two_civilian_factory_text:0 "£civ_factory  2"
+ KOR_Japanization_need_one_civilian_factory_text:0 "£civ_factory  1"
 
  #focus
  KOR_continuous_governance:0 "打ち続く統治"
@@ -95,10 +110,19 @@
  KOR_1962_budget_desc:0 ""
 
  #decisions
- KOR_japanese_study_categories:0 "日本語教育政策"
- KOR_japanese_study_categories_desc:0 "朝鮮人は愚かです。 私たちはこの「2等身民」に文明を伝播しなければなりません。\n\n現在の識字率 : [?KOR_literacy]%"
- KOR_basic_levelup:0 "教育キャンペーン"
- KOR_basic_levelup_desc:0 "教育キャンペーンを実施し、朝鮮人の教育に対する関心を高めます。"
+ KOR_Japanization_categories:0 "皇民化の現況"
+ KOR_Japanization_categories_desc:0 ""
+ KOR_additional_military_police:0 "憲兵隊の追加配置"
+ KOR_additional_generic_police:0 "警察兵力の追加配置"
+ KOR_build_japanese_schools:0 "学校建設"
+ KOR_posting_posters:0 "宣伝活動"
+ KOR_korean_spy:0 "内通者物色"
+ KOR_assassination:0 "要人暗殺"
+ KOR_shoutdown_newspaper:0 "新聞社停刊"
+ KOR_armed_protest:0 "武力示威"
 
  #tooltip
  KOR_literacy_slow_tt:0 "識字率が上昇するでしょう。"
+ KOR_current_discontent_bar_tt:0 "現在の抵抗度"
+ KOR_current_collaboration_bar_tt:0 "現在の協力度"
+ KOR_current_literacy_bar_tt:0 "現在の識字率"

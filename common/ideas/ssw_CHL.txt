@@ -19,7 +19,6 @@ ideas = {
                 party_popularity_stability_factor = -0.5 #政党人気安定度補正
             }
         }
-
         SSW_ideas_CHL_CORFO_1 = { #ID
 			
 			allowed = { #必須
@@ -39,7 +38,6 @@ ideas = {
                 production_speed_infrastructure_factor = 0.2 #インフラ建築速度
             }
         }
-
 		SSW_ideas_CHL_CORFO_2 = { #ID
 			
 			allowed = { #必須
@@ -58,10 +56,10 @@ ideas = {
                 production_speed_industrial_complex_factor = 0.1 #民需工場建築速度
                 production_speed_infrastructure_factor = 0.2 #インフラ建築速度
 				industry_repair_factor = 0.5	
+				global_building_slots_factor = 0.10	
             }
         }
-
-         SSW_ideas_CHL_dou_rieki = { #ID
+        SSW_ideas_CHL_dou_rieki = { #ID
 			
 			allowed = { #必須
 				always = yes
@@ -79,9 +77,10 @@ ideas = {
                 consumer_goods_factor = -0.05 #消費財工場
 				
             }
-     }
+    	}
 	 	SSW_ideas_CHL_heikiseizou_1 = {
-			 llowed = { #必須
+
+			allowed = { #必須
 				always = yes
 			}
 
@@ -98,7 +97,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_heikiseizou_2 = {
-			 llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -116,7 +115,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_sensen_kessoku = {
-			 llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -133,7 +132,7 @@ ideas = {
 		 }
 
 		  SSW_ideas_CHL_minkan_bouei = {
-			 llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -152,7 +151,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_daikibo_nougyou = {
-			 llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -171,7 +170,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_sutarin_eikyou = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -189,7 +188,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_syougun_syukusei = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -212,7 +211,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_kakumei_yusyutu = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -230,7 +229,7 @@ ideas = {
 		 }
 
 		 SSW_ideas_CHL_sekigun = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -267,7 +266,6 @@ ideas = {
                 naval_torpedo_screen_penetration_factor = 0.2
             }
         }
-
 		SSW_ideas_CHL_dou = {
             allowed = {
                 always = yes
@@ -288,9 +286,8 @@ ideas = {
 
             }
         }
-
-		 SSW_ideas_CHL_kinsi_kyousan = {
-			  llowed = { #必須
+		SSW_ideas_CHL_kinsi_kyousan = {
+			allowed = { #必須
 				always = yes
 			}
 
@@ -305,10 +302,9 @@ ideas = {
 						classical_communism_drift = -0.10
 						social_conservatism_drift = 0.10
 			}
-		 }
-
-		 SSW_ideas_CHL_uyoku_sien = {
-			  llowed = { #必須
+		}
+		SSW_ideas_CHL_uyoku_sien = {
+			allowed = { #必須
 				always = yes
 			}
 
@@ -324,10 +320,9 @@ ideas = {
 						national_fascism_drift = 0.10
 						national_socialism_drift = 0.10
 			}
-		 }
-
-		 SSW_ideas_CHL_damu_kaihatu = {
-			  llowed = { #必須
+		}
+		SSW_ideas_CHL_damu_kaihatu = {
+			allowed = { #必須
 				always = yes
 			}
 
@@ -341,10 +336,9 @@ ideas = {
             modifier = { #国民精神の中身
 						production_speed_buildings_factor = 0.1	
 			}
-		 }
-
+		}
 		 SSW_ideas_CHL_denryoku_kakudai = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -359,10 +353,9 @@ ideas = {
 						production_factory_max_efficiency_factor = 0.05 
 						consumer_goods_factor = -0.02
 			}
-		 }
-
+		}
 		 SSW_ideas_CHL_bitiku_hou = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -377,10 +370,9 @@ ideas = {
 						production_speed_arms_factory_factor = 0.1	
 						max_fuel_factor = 0.5
 			}
-		 }
-		 
+		}
 		 SSW_ideas_CHL_sikan_gakkou = {
-			  llowed = { #必須
+			allowed = { #必須
 				always = yes
 			}
 
@@ -398,5 +390,167 @@ ideas = {
 						army_leader_start_logistics_level = 1	
 						military_leader_cost_factor = 0.50	
 			}
-		 }
+		}
+		 SSW_ideas_CHL_andesu_koete = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+
+		  equipment_bonus = {
+			fighter_equipment = {
+				air_range = 0.2 instant = yes
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.2 instant = yes
+			}
+			jet_fighter_equipment = {
+				air_range = 0.2 instant = yes
+			}
+		  }
+		  
+		  modifier = { #国民精神の中身
+		  		air_accidents_factor = 0.05	
+		  }
+		}
+
+		SSW_ideas_CHL_syusan_kogyo = { 
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+		 	production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.1
+			}
+		}
+		  
+		SSW_ideas_CHL_kugun_sidou = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+
+		  research_bonus = {
+			air_doctrine = 0.10
+		}
+		  
+		  modifier = { #国民精神の中身
+		  	army_bonus_air_superiority_factor = 0.05
+			}
+		  }
+		  
+		SSW_ideas_CHL_sekkyoku_kainyu = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+			  send_volunteers_tension = -0.75
+			  send_volunteer_divisions_required = -0.75
+			  send_volunteer_size = 3
+			}
+		  }
+		  
+		  SSW_ideas_CHL_puroisen = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+		  	special_forces_min = 100
+			special_forces_attack_factor = 0.1
+			army_infantry_attack_factor = 0.1
+			out_of_supply_factor = -0.5
+			planning_speed = 0.10
+			}
+		  }
+
+		SSW_ideas_CHL_yakan_ace = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+				air_ace_generation_chance_factor = 0.10
+				air_night_penalty = -0.1
+			}
+		  }
+		  
+		SSW_ideas_CHL_sizumanu_hokori = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+				repair_speed_factor = 1
+				naval_retreat_speed = 0.25
+				navy_capital_ship_defence_factor = 0.1
+			}
+		  }
+		  
+		  SSW_ideas_CHL_zousen_kassei = {
+			allowed = { #必須
+			  always = yes
+		  }
+
+		  allowed_civil_war = { #内戦時に消えるか
+			  always = no
+		  }
+		  
+		  removal_cost = -1 #無視
+		  picture = generic_political_support #アイコンの画像
+		  
+		  modifier = { #国民精神の中身
+				  industrial_capacity_dockyard = 0.2
+				  industrial_capacity_factory = -0.05
+			}
+	}
 }

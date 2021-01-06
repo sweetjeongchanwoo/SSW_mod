@@ -20,3 +20,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Shakhbut bin Sultan Al Nahyan"
+	desc = ""
+	picture = "gfx/leaders/UAE/portrait_uae_shakhbut_bin_sultan_al_nahyan.dds"
+	expire = "1965.1.1"
+	ideology = absolute_monarchism_ideology
+	traits = {
+	}
+}

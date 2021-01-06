@@ -1,5 +1,5 @@
 focus_tree = {
-	id = SSW_JAP_Basic
+	id = SSW_JAP_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -7,22 +7,9 @@ focus_tree = {
 			tag = JAP
 		}
 	}
-	continuous_focus_position = { x = 620 y = 1700 }
+	continuous_focus_position = { x = 50 y = 2000 }
 	default = no
-	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
-	shared_focus = JAP_japanese_archipelago_remodeling_plan
-	shared_focus = JAP_the_road_to_war
-}
-focus_tree = {
-	id = SSW_JAP_Basic_mix
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = JAP
-		}
-	}
-	continuous_focus_position = { x = 620 y = 1700 }
-	default = no
-	shared_focus = JAP_Submission_of_the_Second_Disarmament_Bill
+	shared_focus = JAP_second_disarmament
+	shared_focus = JAP_assassination_of_prime_minister
+	shared_focus = JAP_general_election
 }

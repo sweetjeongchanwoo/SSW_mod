@@ -8,6 +8,7 @@ state={
 		owner = MOS
 		add_core_of = MOS
 		add_core_of = SOV
+		add_core_of = BLR
 			victory_points = {
 			9289 5
 			}

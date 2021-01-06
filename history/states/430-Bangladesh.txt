@@ -5,7 +5,6 @@ state={
 	history={
 		add_core_of = BAN
 		add_core_of = NIN
-		add_core_of = PIN
 		owner = NIN
 		victory_points = {
 			11929 15

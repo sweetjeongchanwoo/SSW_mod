@@ -2,7 +2,7 @@
 state={
 	id=611
 	name="STATE_611" # South Chahar
-	manpower = 1470000
+	manpower = 1450000
 	
 	state_category = pastoral
 
@@ -19,6 +19,6 @@ state={
 	}
 
 	provinces={
-		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
+		1489 4495 4612 7545 7674 11752 
 	}
 }

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = PIN
+		owner = NIN
 		victory_points = {
 			12137 15
 		}
@@ -15,7 +15,6 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
-		add_core_of = PIN
 		add_core_of = NIN
 
 	}
