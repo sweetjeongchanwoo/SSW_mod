@@ -36,7 +36,7 @@
  FRA_Return_of_Orleans:0 "オルレアンの帰還"
  FRA_Return_of_Bonapardo:0 "ボナパルトの帰還"
  FRA_Freedom_Monarchy:0 "自由君主制"
- FRA_Authoritative_Monarchy:0 "権威君主制"
+ 
  FRA_Absolute_power_of_the_king:0 "王の絶対権力"
  FRA_Democracy_in_the_Monarchy:0 "君主制における民主主義"
  FRA_Reconciliation_with_Republicans:0 "共和派との和解"
@@ -106,6 +106,9 @@
  FRA_French_cruiser:0 "フランス巡洋艦"
  FRA_French_presodential_election:0 "フランス大統領選挙"
  FRA_For_my_homeland:0 "祖国のために！"
+ FRA_Bourbon_authoritative:0 "ブルボンの権威王政"
+ FRA_Orleans_Monarchy:0 "オルレアンの権威王政"
+ FRA_Napoleon_Authoritative:0 "ナポレオンの権威帝政"
  #イベント
  SSW_VFR.2.t:0 "ペタンの死"
  SSW_VFR.2.d:0 "我らの大統領フィリップペタンが7月10日未明に死亡が確認された。彼はドイツに降伏してからフランス国を導いてくれた偉大な指導者だった。彼が死亡した日は偶然にもフランス国新憲法を施行した日と同じ日であった。次の指導者は誰になるだろうか。"
