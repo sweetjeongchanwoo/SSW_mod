@@ -12,15 +12,15 @@ focus_tree = {
 	shared_focus = KOR_continuous_governance
 }
 focus_tree = {
-	id = SSW_KOR_Basic_mix
+	id = SSW_KOR_Joke
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 11
 			tag = KOR
 		}
 	}
 	continuous_focus_position = { x = 50 y = 1350 }
 	default = no
-	shared_focus = KOR_continuous_governance
+	shared_focus = KOR_start_of_joke
 }
