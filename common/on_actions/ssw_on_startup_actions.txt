@@ -27,6 +27,13 @@ on_actions = {
 				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
+				create_country_leader = {
+					name = "Pavel Skoropadskij"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/Pavel-Skoropadskij.tga"
+					expire = "1965.1.1"
+					ideology = social_conservatism_ideology
+				}
 			}
 			# Remove all cores from Ukraine
 			UKR = {

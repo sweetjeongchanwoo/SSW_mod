@@ -238,6 +238,13 @@ country_event = {
 					}
 					add_core_of = PREV
 				}
+				create_country_leader = {
+					name = "Amerikis Elpidoforos"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/amerikis_elpidoforos.tga"
+					expire = "1965.1.1"
+					ideology = authority_despotism_ideology
+				}
 			}
 			# create Hetmanate of Ukraine
 			create_dynamic_country = {
@@ -337,13 +344,6 @@ country_event = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
 					}
-				}
-				create_country_leader = {
-					name = "Pavel Skoropadskij"
-					desc = "POLITICS_LEON_DEGRELLE_DESC"
-					picture = "gfx/leaders/UKR/Pavel-Skoropadskij.tga"
-					expire = "1965.1.1"
-					ideology = social_conservatism_ideology
 				}
 			}
 			DON = {
