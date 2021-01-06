@@ -613,8 +613,7 @@ focus_tree = {
 	}
 	focus = {
 		#内戦再開の予兆
-		id = UTC_signs_o
-		16f_requmption_of_civil_war
+		id = UTC_signs_of_requmption_of_civil_war
 		icon = GFX_focus_raj_lions_of_the_great_war
 		cost = 2
 		x = 24
