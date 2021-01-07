@@ -108,12 +108,12 @@ UKR_independence_war = {
 		on_map_mode = map_and_decisions_view
 		target_array = UKA.core_states
 		target_trigger = {
-			UKR = {
-				has_country_leader = {
-					name = "Erich Koch"
-					ruling_only = yes
+			FROM = {
+				controller = {
+					has_country_leader = {
+						name = "Erich Koch"
+					}
 				}
-				controls_state = FROM
 			}
 		}
 		cost = 10
@@ -122,7 +122,18 @@ UKR_independence_war = {
 			base = 10
 		}
 		remove_effect = {
-			set_state_controller = FROM
+			if = {
+				limit = {
+					FROM = {
+						controller = {
+							has_country_leader = {
+								name = "Erich Koch"
+							}
+						}
+					}
+				}
+				set_state_controller = FROM
+			}
 			FROM = {
 				create_unit = {
 					division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0"
@@ -131,15 +142,12 @@ UKR_independence_war = {
 			}
 		}
 	}
-	# we need more attack!
+	# # we need more attack!
 	UKR_independence_war_2 = {
 		name = UKR_independence_war_2
 		icon = generic_nationalism
-		allowed = {
-			original_tag = UKR
-		}
-		cost = 100
-		days_remove = 30
+		cost = 60
+		days_remove = 60
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -149,6 +157,64 @@ UKR_independence_war = {
 		}
 		modifier = {
 			army_attack_factor = 0.1
+			ai_focus_aggressive_factor = 0.5
+		}
+	}
+	# # Urge Ukrainian AI to request military access
+	UKR_independence_war_3 = {
+		name = UKR_independence_war_3
+		icon = generic_nationalism
+		target_trigger = {
+			FROM = {
+				NOT = {
+					tag = ROOT
+				}
+				OR = {
+					original_tag = UKR
+					tag = DON
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		remove_effect = {
+			# add_ai_strategy = {
+			# 	type = diplo_action_desire
+			# 	id = FROM
+			# 	target = military_access
+			# 	value = 1000
+			# }
+			diplomatic_relation = {
+				country = FROM
+				relation = military_access
+				active = yes
+			}
+		}
+	}
+	# # we need more more attack!
+	UKR_independence_war_4 = {
+		name = UKR_independence_war_4
+		icon = generic_nationalism
+		visible = {
+			has_decision = UKR_independence_war_2
+		}
+		cost = 30
+		days_remove = 30
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_political_power > 100
+				factor = 25
+			}
+		}
+		modifier = {
+			army_attack_factor = 0.2
+			ai_focus_aggressive_factor = 0.5
 		}
 	}
 }
