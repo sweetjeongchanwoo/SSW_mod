@@ -27,8 +27,8 @@ on_actions = {
 					reserve_dynamic_country = yes
 					add_ideas = limited_conscription
 					transfer_state = 217
-					change_tag_from = UKR
 					set_cosmetic_tag = UKR_GEM
+					change_tag_from = UKR
 				}
 			}
 		}
