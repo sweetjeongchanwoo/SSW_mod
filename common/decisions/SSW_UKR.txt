@@ -108,14 +108,7 @@ UKR_independence_war = {
 		on_map_mode = map_and_decisions_view
 		target_array = UKA.core_states
 		target_trigger = {
-			# FROM = {
-			# 	is_owned_and_controlled_by = UKR
-			# }
 			UKR = {
-				has_country_leader = {
-					name = "Erich Koch"
-					ruling_only = yes
-				}
 				has_full_control_of_state = FROM
 			}
 		}
