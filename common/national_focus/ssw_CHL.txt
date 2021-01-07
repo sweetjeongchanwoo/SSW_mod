@@ -471,7 +471,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 
-		available = { }
+		available = {
+			has_global_flag = US_civil_war
+		}
 		bypass = { }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -852,7 +854,9 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 
-		available = { }
+		available = {
+			has_global_flag = GER_civil_war
+		}
 		bypass = { }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
