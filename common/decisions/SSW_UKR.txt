@@ -109,7 +109,11 @@ UKR_independence_war = {
 		target_array = UKA.core_states
 		target_trigger = {
 			UKR = {
-				has_full_control_of_state = FROM
+				has_country_leader = {
+					name = "Erich Koch"
+					ruling_only = yes
+				}
+				controls_state = FROM
 			}
 		}
 		cost = 10
@@ -131,8 +135,11 @@ UKR_independence_war = {
 	UKR_independence_war_2 = {
 		name = UKR_independence_war_2
 		icon = generic_nationalism
-		cost = 60
-		days_remove = 60
+		allowed = {
+			original_tag = UKR
+		}
+		cost = 100
+		days_remove = 30
 		ai_will_do = {
 			base = 1
 			modifier = {
@@ -142,57 +149,6 @@ UKR_independence_war = {
 		}
 		modifier = {
 			army_attack_factor = 0.1
-			ai_focus_aggressive_factor = 0.5
-		}
-	}
-	# Urge Ukrainian AI to request military access
-	UKR_independence_war_3 = {
-		target_trigger = {
-			FROM = {
-				NOT = {
-					tag = ROOT
-				}
-				OR = {
-					original_tag = UKR
-					tag = DON
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-		visible = {
-			is_ai = yes
-		}
-		fire_only_once = yes
-		remove_effect = {
-			add_ai_strategy = {
-				type = diplo_action_desire
-				id = FROM
-				target = military_access
-				value = 1000
-			}
-		}
-	}
-	# we need more more attack!
-	UKR_independence_war_4 = {
-		name = UKR_independence_war_4
-		icon = generic_nationalism
-		visible = {
-			has_decision = UKR_independence_war_2
-		}
-		cost = 30
-		days_remove = 30
-		ai_will_do = {
-			base = 1
-			modifier = {
-				has_political_power > 100
-				factor = 25
-			}
-		}
-		modifier = {
-			army_attack_factor = 0.2
-			ai_focus_aggressive_factor = 0.5
 		}
 	}
 }
