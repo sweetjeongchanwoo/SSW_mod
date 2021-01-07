@@ -13,10 +13,20 @@ on_actions = {
 								ruling_only = yes
 							}
 						}
-						ROOT = {
-							has_country_leader = {
-								name = "Erich Koch"
-								ruling_only = yes
+						# Check commissariat won
+						AND = {
+							ROOT = {
+								has_country_leader = {
+									name = "Erich Koch"
+									ruling_only = yes
+								}
+							}
+							any_country = {
+								NOT = {
+									tag = ROOT
+								}
+								original_tag = UKR
+								exists = no
 							}
 						}
 					}
