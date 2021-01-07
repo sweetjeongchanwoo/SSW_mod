@@ -389,25 +389,6 @@ country_event = {
 					type = annex_everything
 				}
 			}
-			# set ai strategy
-			every_country_with_original_tag = {
-				original_tag_to_check = UKR
-				every_country_with_original_tag = {
-					original_tag_to_check = UKR
-					if = {
-						limit = {
-							NOT = {
-								tag = PREV
-							}
-						}
-						add_ai_strategy = {
-							type = invade
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
 		}
 	}
 	option = {

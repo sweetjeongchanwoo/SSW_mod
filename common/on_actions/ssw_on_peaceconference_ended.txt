@@ -1,14 +1,23 @@
 on_actions = {
 	# ROOT is the winner, FROM is the loser. 
 	on_peaceconference_ended = {
-		# Indentify Ukrainian Comissariat lost
+		# Indentify Ukrainian Independence War ended
 		effect = {
 			if = {
 				limit = {
-					FROM = {
-						has_country_leader = {
-							name = "Erich Koch"
-							ruling_only = yes
+					has_global_flag = UKR_independence_war_started
+					OR = {
+						FROM = {
+							has_country_leader = {
+								name = "Erich Koch"
+								ruling_only = yes
+							}
+						}
+						ROOT = {
+							has_country_leader = {
+								name = "Erich Koch"
+								ruling_only = yes
+							}
 						}
 					}
 				}

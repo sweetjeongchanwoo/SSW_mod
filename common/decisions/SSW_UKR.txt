@@ -108,12 +108,15 @@ UKR_independence_war = {
 		on_map_mode = map_and_decisions_view
 		target_array = UKA.core_states
 		target_trigger = {
+			# FROM = {
+			# 	is_owned_and_controlled_by = UKR
+			# }
 			UKR = {
 				has_country_leader = {
 					name = "Erich Koch"
 					ruling_only = yes
 				}
-				controls_state = FROM
+				has_full_control_of_state = FROM
 			}
 		}
 		cost = 10
@@ -149,6 +152,35 @@ UKR_independence_war = {
 		}
 		modifier = {
 			army_attack_factor = 0.1
+		}
+	}
+	# Urge Ukrainian AI to request military access
+	UKR_independence_war_3 = {
+		target_trigger = {
+			FROM = {
+				NOT = {
+					tag = ROOT
+				}
+				OR = {
+					original_tag = UKR
+					tag = DON
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			is_ai = yes
+		}
+		fire_only_once = yes
+		remove_effect = {
+			add_ai_strategy = {
+				type = diplo_action_desire
+				id = FROM
+				target = military_access
+				value = 1000
+			}
 		}
 	}
 }
