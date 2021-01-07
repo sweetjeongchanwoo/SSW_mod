@@ -121,6 +121,12 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_TzhDlfxv
 		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -617,6 +623,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -721,6 +733,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
