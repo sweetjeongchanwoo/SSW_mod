@@ -116,6 +116,7 @@ UKR_independence_war = {
 				}
 			}
 		}
+		fire_only_once = yes
 		cost = 10
 		days_remove = 14
 		ai_will_do = {
@@ -168,6 +169,9 @@ UKR_independence_war = {
 			FROM = {
 				NOT = {
 					tag = ROOT
+					has_country_leader = {
+						name = "Erich Koch"
+					}
 				}
 				OR = {
 					original_tag = UKR
