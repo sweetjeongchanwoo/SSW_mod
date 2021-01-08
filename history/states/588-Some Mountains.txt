@@ -9,9 +9,8 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RUS
 		add_core_of = RUS
-		add_core_of = SOV
 		add_core_of = KAZ
 		add_core_of = WTR
 		buildings = {

@@ -17,19 +17,3 @@ set_popularities = {
 	social_democracy = 60
 	social_liberalism = 40
 }
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
-	expire = "1975.11.20"
-	ideology = authority_democracy_ideology
-	traits = { caudillo_2 }
-}
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
-	expire = "1975.11.20"
-	ideology = national_fascism_ideology
-	traits = { caudillo_2 }
-}

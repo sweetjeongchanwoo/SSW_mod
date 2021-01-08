@@ -1654,6 +1654,56 @@ INC = { #インドシナ連合
 	color_ui = rgb { 77 103 174 }
 }
 
+ACO = { #貴族評議会
+	color = rgb { 204 154 0 }
+    color_ui = rgb { 204 154 0 }
+}
+
+AMC = { #大天使ミハイル国
+	color = rgb { 217 101 0 }
+    color_ui = rgb { 217 101 0 }
+}
+
+ACR = { #アナキスト・コミューン
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
+}
+
+BLO = { #ブラック・オーダー
+	color = rgb { 0 88 171 }
+    color_ui = rgb { 0 88 171 }
+}
+
+FAR = { #全ロシア民族解放統一戦線
+	color = rgb { 245 47 48 }
+    color_ui = rgb { 245 47 48 }
+}
+
+NBL = { #ベラルーシ国民共和国
+	color = rgb { 121 116 128 }
+	color_ui = rgb { 121 116 128 }
+}
+
+RBL = { #ロシアの空解放同盟
+	color = rgb { 132 54 0 }
+	color_ui = rgb { 132 54 0 }
+}
+
+RSE = { #帝政ロシア
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
+}
+
+RLB = { #自由主義ロシア
+	color = rgb { 143 0 208 }
+	color_ui = rgb { 143 0 208 }
+}
+
+TOA = { #大主教領
+	color = rgb { 223 255 135 }
+	color_ui = rgb { 223 255 135 }
+}
+
 HGR = { #ゲーリング派ドイツ
 	color = rgb { 50 0 75 }
 	color_ui = rgb { 50 0 75 }

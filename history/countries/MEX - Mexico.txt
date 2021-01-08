@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_VALENTIN_CAMPA_DESC"
 	picture = "gfx/leaders/MEX/Portrait_Mexico_Valentin_Campa_ssw.dds"
 	expire = "1999.11.25"
-	ideology = progressive_communism_ideology
+	ideology = syndicalism_ideology
 	traits = { railroad_enthusiast }
 }
 create_country_leader = {

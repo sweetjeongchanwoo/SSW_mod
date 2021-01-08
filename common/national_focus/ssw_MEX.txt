@@ -7,6 +7,7 @@ focus_tree = {
 			tag = MEX
 		}
 	}
+	default = no
 	##### ARMY #####
 	focus = {
 		id = MEX_army_effort
@@ -1883,6 +1884,12 @@ focus_tree = {
 		text = ENG_concessions_to_the_trade_unions
 		prerequisite = { focus = MEX_leftist }
 		mutually_exclusive = { focus = MEX_steady_as_she_goes }
+		available = {
+			has_country_leader = {
+				name = "Lázaro Cárdenas"
+				ruling_only = yes
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_leftist
@@ -2067,7 +2074,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_determine_the_enemy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2334,7 +2341,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_liberation_of_latin_america
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2365,7 +2372,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_liberation_of_latin_america
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2806,7 +2813,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_investing_in_public_welfare
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3368,7 +3375,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_memories_of_naval_battles
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3436,7 +3443,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_recovery_of_central_american_territory
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3526,7 +3533,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_faction_of_italy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3666,7 +3673,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_mexico_agreement
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3839,7 +3846,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_hostility_to_democracy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3865,7 +3872,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attack_uk
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3888,7 +3895,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_the_kaiser
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3919,7 +3926,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_puppetization_of_caribbean
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3950,7 +3957,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_oil_concession
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {

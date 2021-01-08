@@ -11,8 +11,8 @@ focus_tree = {
 	focus = {
 		id = SPR_seihu
 		icon = GFX_goal_generic_demand_territory
-		allow_branch = { has_dlc = "Waking the Tiger" }
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		x = 31
 		y = 0
 		completion_reward = {
@@ -23,6 +23,7 @@ focus_tree = {
 		id = SPR_kougyou_kougyouka
 		icon = GFX_focus_generic_industry_1
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		x = 5
 		y = 0
 		completion_reward = {
@@ -42,6 +43,7 @@ focus_tree = {
 		id = SPR_guntai
 		icon = GFX_goal_rhineland
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		x = 39
 		y = 10
 		completion_reward = {
@@ -57,6 +59,7 @@ focus_tree = {
 		id = SPR_kougyou_kikai
 		icon = GFX_goal_generic_construction
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kougyouka
 		}
@@ -75,6 +78,7 @@ focus_tree = {
 		id = SPR_faranhe_sekitan
 		icon = GFX_goal_generic_oil_refinery
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kikai
 		}
@@ -93,6 +97,7 @@ focus_tree = {
 		id = SPR_kougyou_kouzan
 		icon = GFX_focus_generic_steel
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_sekitan
 		}
@@ -111,6 +116,7 @@ focus_tree = {
 		id = SPR_kougyou_hokubuzousen
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kougyouka
 		}
@@ -133,6 +139,7 @@ focus_tree = {
 		id = SPR_faraneh_hondokougyouka
 		icon = GFX_focus_generic_industry_2
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kikai
 		}
@@ -155,6 +162,7 @@ focus_tree = {
 		id = SPR_kougyou_hondomottokougyou
 		icon = GFX_focus_generic_industry_3
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faraneh_hondokougyouka
 		}
@@ -177,6 +185,7 @@ focus_tree = {
 		id = SPR_kougyou_nouti
 		icon = GFX_focus_NZL_bob_semple_tank
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_hondomottokougyou
 		}
@@ -203,6 +212,7 @@ focus_tree = {
 		id = SPR_kougyou_saikutu
 		icon = GFX_goal_generic_construction2
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kougyouka
 		}
@@ -221,6 +231,7 @@ focus_tree = {
 		id = SPR_faranhe_syokumintikougyouka
 		icon = GFX_focus_generic_industry_2
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_saikutu
 		}
@@ -243,6 +254,7 @@ focus_tree = {
 		id = SPR_faranhe_syokumintimottokougyou
 		icon = GFX_focus_generic_industry_3
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_syokumintikougyouka
 		}
@@ -265,6 +277,7 @@ focus_tree = {
 		id = SPR_kougyou_kenkyuu
 		icon = GFX_focus_research
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_syokumintimottokougyou
 			focus = SPR_kougyou_hondomottokougyou
@@ -282,6 +295,7 @@ focus_tree = {
 		id = SPR_kougyou_nannbuzousen
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kougyouka
 		}
@@ -304,6 +318,7 @@ focus_tree = {
 		id = SPR_kougyou_yuden
 		icon = GFX_goal_generic_oil_refinery
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_syokumintimottokougyou
 		}
@@ -322,6 +337,7 @@ focus_tree = {
 		id = SPR_kougyou_gomu
 		icon = GFX_focus_generic_rubber
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_yuden
 		}
@@ -340,6 +356,7 @@ focus_tree = {
 		id = SPR_kougyou_boukisaito
 		icon = GFX_focus_generic_aluminum
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_saikutu
 		}
@@ -358,6 +375,7 @@ focus_tree = {
 		id = SPR_kougyou_reametaru
 		icon = GFX_focus_generic_tungsten
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_boukisaito
 		}
@@ -377,6 +395,7 @@ focus_tree = {
 		id = SPR_kougyou_morokko
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_reametaru
 		}
@@ -411,6 +430,7 @@ focus_tree = {
 		id = SPR_hurankohaijyo
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 1.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_seihu
 		}
@@ -428,13 +448,14 @@ focus_tree = {
 		id = SPR_faranhe
 		icon = GFX_focus_spa_the_phalanx_ascendant
 		cost = 1.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_hurankohaijyo
 		}
 		x = 17
 		y = 2
 		completion_reward = {
-			remove_ideas = { spr_debahu_03 }
+			remove_ideas = spr_debahu_03
 			add_political_power = 40
 			retire_ideology_leader = national_fascism
 			create_country_leader = {
@@ -446,12 +467,18 @@ focus_tree = {
 				traits = {
 				}
 			}
+			set_party_name = {
+				ideology = national_fascism
+				long_name = SPR_national_fascism_party_fe_jons_long
+				name = SPR_national_fascism_party_fe_jons
+			}
 		}
 	}
 	focus = {
 		id = SPR_faranhe_minzokudanatu
 		icon = GFX_goal_continuous_suppression
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe
 		}
@@ -466,6 +493,7 @@ focus_tree = {
 		id = SPR_faranhe_danatukanryou
 		icon = GFX_focus_CZE_german_puppet
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_minzokudanatu
 		}
@@ -480,6 +508,7 @@ focus_tree = {
 		id = SPR_faranhe_basukusyokumin
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_danatukanryou
 		}
@@ -502,6 +531,7 @@ focus_tree = {
 		id = SPR_faranhe_hurankokorosu
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe
 		}
@@ -516,6 +546,7 @@ focus_tree = {
 		id = SPR_faranhe_outouhakorosu
 		icon = GFX_focus_spa_eliminate_the_carlists
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe
 		}
@@ -531,6 +562,7 @@ focus_tree = {
 		id = SPR_faranhe_ittoudokusai
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_hurankokorosu
 		}
@@ -547,6 +579,7 @@ focus_tree = {
 		id = SPR_faranhe_sensouseisaku
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_ittoudokusai
 		}
@@ -563,9 +596,11 @@ focus_tree = {
 		id = SPR_faranhe_huransukorosu
 		icon = GFX_focus_attack_france
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_sensouseisaku
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 15
 		y = 6
 		bypass = {		
@@ -583,9 +618,11 @@ focus_tree = {
 		id = SPR_faranhe_porutokorosu
 		icon = GFX_focus_generic_attack_portugal
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_sensouseisaku
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 19
 		y = 6
 		bypass = {		
@@ -603,6 +640,7 @@ focus_tree = {
 		id = SPR_faranhe_ahurikabunkatu
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_huransukorosu
 		}
@@ -622,6 +660,7 @@ focus_tree = {
 		id = SPR_faranhe_barearesusintyuu
 		icon = GFX_goal_generic_major_war
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_ahurikabunkatu
 		}
@@ -638,9 +677,11 @@ focus_tree = {
 		id = SPR_faranhe_itariakorosu
 		icon = GFX_focus_attack_italy
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_barearesusintyuu
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 17
 		y = 9
 		bypass = {		
@@ -658,6 +699,7 @@ focus_tree = {
 		id = SPR_faranhe_doitugijyutu
 		icon = GFX_goal_continuous_research
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_ahurikabunkatu
 		}
@@ -674,9 +716,11 @@ focus_tree = {
 		id = SPR_faranhe_igirisu
 		icon = GFX_focus_attack_britain
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_itariakorosu
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 19
 		y = 10
 		bypass = {		
@@ -694,6 +738,7 @@ focus_tree = {
 		id = SPR_faranhe_kokkanoguntaika
 		icon = GFX_focus_generic_little_entente
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe
 		}
@@ -710,6 +755,7 @@ focus_tree = {
 		id = SPR_faranhe_sangakuhei
 		icon = GFX_goal_generic_special_forces
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_kokkanoguntaika
 		}
@@ -727,6 +773,7 @@ focus_tree = {
 		id = SPR_faranhe_gunkakudai
 		icon = GFX_focus_generic_military_academy
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_kokkanoguntaika
 		}
@@ -749,6 +796,7 @@ focus_tree = {
 		id = SPR_faranhe_kensetukyouka
 		icon = GFX_goal_generic_construct_civilian
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_sangakuhei
 		}
@@ -769,6 +817,7 @@ focus_tree = {
 		id = SPR_faranhe_kaigungunkaku
 		icon = GFX_goal_generic_build_navy
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_porutokorosu
 		}
@@ -785,6 +834,7 @@ focus_tree = {
 		id = SPR_faranhe_umidoku
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_kaigungunkaku
 		}
@@ -803,6 +853,7 @@ focus_tree = {
 		id = SPR_faranhe_zousenjyotukure
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_kaigungunkaku
 		}
@@ -825,6 +876,7 @@ focus_tree = {
 		id = SPR_huranksiji
 		icon = GFX_goal_generic_major_alliance
 		cost = 1.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_seihu
 		}
@@ -842,6 +894,7 @@ focus_tree = {
 		id = SPR_franco
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 1.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_huranksiji
 		}
@@ -859,6 +912,7 @@ focus_tree = {
 		id = SPR_franco_gunhenotyuusei
 		icon = GFX_focus_generic_manpower
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco
 		}
@@ -875,6 +929,7 @@ focus_tree = {
 		id = SPR_franco_hoheijyuu
 		icon = GFX_focus_secret_rearmament
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_gunhenotyuusei
 		}
@@ -891,6 +946,7 @@ focus_tree = {
 		id = SPR_franco_gunkoujyou
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_gunhenotyuusei
 		}
@@ -913,6 +969,7 @@ focus_tree = {
 		id = SPR_franco_itariadoumei
 		icon = GFX_focus_befriend_italy
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco
 		}
@@ -929,6 +986,7 @@ focus_tree = {
 		id = SPR_franco_kaigunensyuu
 		icon = GFX_goal_generic_navy_battleship
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_itariadoumei
 		}
@@ -948,6 +1006,7 @@ focus_tree = {
 		id = SPR_franco_kokusakujidousya
 		icon = GFX_goal_generic_army_motorized
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_itariadoumei
 		}
@@ -964,6 +1023,7 @@ focus_tree = {
 		id = SPR_franco_ahurikabunkatu
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kokusakujidousya
 		}
@@ -980,6 +1040,7 @@ focus_tree = {
 		id = SPR_franco_itariasyussi
 		icon = GFX_focus_mex_privatisation
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kokusakujidousya
 		}
@@ -997,6 +1058,7 @@ focus_tree = {
 		id = SPR_franco_barearesu
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_itariadoumei
 		}
@@ -1013,6 +1075,7 @@ focus_tree = {
 		id = SPR_franco_jidousyahanbai
 		icon = GFX_goal_generic_positive_trade_relations
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_itariasyussi
 		}
@@ -1030,6 +1093,7 @@ focus_tree = {
 		id = SPR_guntai_rikugun
 		icon = GFX_goal_generic_army_doctrines
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai
 		}
@@ -1048,6 +1112,7 @@ focus_tree = {
 		id = SPR_guntai_daikibosakusen
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_rikugun
 		}
@@ -1073,6 +1138,7 @@ focus_tree = {
 		id = SPR_guntai_kihei
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_rikugun
 		}
@@ -1096,6 +1162,7 @@ focus_tree = {
 		id = SPR_guntai_arupine
 		icon = GFX_goal_generic_special_forces
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kihei
 		}
@@ -1122,6 +1189,7 @@ focus_tree = {
 		id = SPR_franco_huransubunaktu
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kokusakujidousya
 		}
@@ -1138,6 +1206,7 @@ focus_tree = {
 		id = SPR_guntai_yuuseikaryoku
 		icon = GFX_goal_generic_army_artillery2
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_rikugun
 		}
@@ -1162,6 +1231,7 @@ focus_tree = {
 		id = SPR_guntai_houhei
 		icon = GFX_goal_generic_army_artillery
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_daikibosakusen
 			focus = SPR_guntai_yuuseikaryoku
@@ -1181,6 +1251,7 @@ focus_tree = {
 		id = SPR_franco_tetunosyuukyou
 		icon = GFX_focus_spa_fuse_the_parties
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco
 		}
@@ -1197,6 +1268,7 @@ focus_tree = {
 		id = SPR_franco_katorikkukyouryoku
 		icon = GFX_focus_por_concordat
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_tetunosyuukyou
 		}
@@ -1214,6 +1286,7 @@ focus_tree = {
 		id = SPR_franco_minzoku
 		icon = GFX_goal_generic_political_pressure
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_katorikkukyouryoku
 		}
@@ -1232,6 +1305,7 @@ focus_tree = {
 		id = SPR_franco_outouha
 		icon = GFX_focus_rom_royal_dictatorship
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_tetunosyuukyou
 		}
@@ -1249,6 +1323,7 @@ focus_tree = {
 		id = SPR_franco_kyoukaidoumei
 		icon = GFX_focus_por_iberian_summit
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_katorikkukyouryoku
 		}
@@ -1268,6 +1343,7 @@ focus_tree = {
 		id = SPR_franco_youroppa
 		icon = GFX_goal_continuous_increase_nu
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kyoukaidoumei
 		}
@@ -1284,6 +1360,7 @@ focus_tree = {
 		id = SPR_franco_amerika
 		icon = GFX_goal_generic_national_unity
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_youroppa
 		}
@@ -1321,6 +1398,7 @@ focus_tree = {
 		id = SPR_franco_tyuubei
 		icon = GFX_goal_generic_national_unity
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_youroppa
 		}
@@ -1364,6 +1442,7 @@ focus_tree = {
 		id = SPR_faranhe_nihon
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_amerika
 		}
@@ -1383,6 +1462,7 @@ focus_tree = {
 		id = SPR_franco_banpaku
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_jidousyahanbai
 		}
@@ -1402,6 +1482,7 @@ focus_tree = {
 		id = SPR_guntai_kidousen
 		icon = GFX_goal_generic_army_tanks
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_rikugun
 		}
@@ -1426,6 +1507,7 @@ focus_tree = {
 		id = SPR_guntai_sensya
 		icon = GFX_goal_continuous_armor_production
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kidousen
 		}
@@ -1444,6 +1526,7 @@ focus_tree = {
 		id = SPR_franco_kyoukainoeenjyo
 		icon = GFX_focus_generic_self_management
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_tetunosyuukyou
 		}
@@ -1460,6 +1543,7 @@ focus_tree = {
 		id = SPR_franco_katorikkukyouiku
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kyoukainoeenjyo
 		}
@@ -1477,6 +1561,7 @@ focus_tree = {
 		id = SPR_faranhe_kyoukainokosyo
 		icon = GFX_focus_research2
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_katorikkukyouiku
 		}
@@ -1493,6 +1578,7 @@ focus_tree = {
 		id = SPR_guntai_kaigun
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai
 		}
@@ -1511,6 +1597,7 @@ focus_tree = {
 		id = SPR_guntai_kaiheitai
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 10.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_rikugun
 		}
@@ -1533,6 +1620,7 @@ focus_tree = {
 		id = SPR_guntai_jyouriksuen
 		icon = GFX_goal_continuous_naval_production
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaiheitai
 		}
@@ -1551,6 +1639,7 @@ focus_tree = {
 		id = SPR_outouha
 		icon = GFX_focus_spr_maintain_the_republic
 		cost = 1.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_huranksiji
 		}
@@ -1560,12 +1649,16 @@ focus_tree = {
 		x = 49
 		y = 2
 		completion_reward = {
-			set_politics = { ruling_party = authority_despotism }
+			set_politics = {
+				ruling_party = authority_despotism
+				elections_allowed = no
+			}
 			add_popularity = {
 				ideology = authority_despotism
-				popularity = 0.65
+				popularity = 0.5
 			}
-			add_political_power = 40
+			add_political_power = 50
+			retire_ideology_leader = authority_despotism
 			create_country_leader = {
 				name = "Juan III"
 				desc = "POLITICS_JUAN_III_DESC"
@@ -1575,12 +1668,18 @@ focus_tree = {
 				traits = {
 				}
 			}
+			set_party_name = {
+				ideology = authority_despotism
+				long_name = SPR_monarchism_party_long
+				name = SPR_monarchism_party
+			}
 		}
 	}
 	focus = {
 		id = SPR_outouha_keizaiseisaku
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha
 		}
@@ -1603,6 +1702,7 @@ focus_tree = {
 		id = SPR_outouha_noumin
 		icon = GFX_focus_generic_military_academy
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_keizaiseisaku
 		}
@@ -1620,6 +1720,7 @@ focus_tree = {
 		id = SPR_outouha_hinnou
 		icon = GFX_focus_generic_concessions
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_keizaiseisaku
 		}
@@ -1636,6 +1737,7 @@ focus_tree = {
 		id = SPR_outouha_totinoumin
 		icon = GFX_goal_continuous_boost_freedom
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_hinnou
 		}
@@ -1657,6 +1759,7 @@ focus_tree = {
 		id = SPR_outouha_koujyoukyoukai
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_totinoumin
 		}
@@ -1677,6 +1780,7 @@ focus_tree = {
 		id = SPR_outouha_ouritutosyo
 		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_totinoumin
 		}
@@ -1693,6 +1797,7 @@ focus_tree = {
 		id = SPR_guntai_bouekisosi
 		icon = GFX_goal_generic_wolf_pack
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaigun
 		}
@@ -1717,6 +1822,7 @@ focus_tree = {
 		id = SPR_guntai_kantaihozen
 		icon = GFX_goal_generic_navy_battleship
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaigun
 		}
@@ -1741,6 +1847,7 @@ focus_tree = {
 		id = SPR_guntai_kutikukan
 		icon = GFX_focus_generic_destroyer
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_bouekisosi
 		}
@@ -1762,6 +1869,7 @@ focus_tree = {
 		id = SPR_outouha_koujyououke
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_totinoumin
 		}
@@ -1784,6 +1892,7 @@ focus_tree = {
 		id = SPR_guntai_kitikougeki
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaigun
 		}
@@ -1808,6 +1917,7 @@ focus_tree = {
 		id = SPR_outouha_kokuoukikan
 		icon = GFX_focus_rom_royal_dictatorship
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha
 		}
@@ -1828,6 +1938,7 @@ focus_tree = {
 		id = SPR_outouha_kizokunokikan
 		icon = GFX_focus_generic_royal_wedding
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kokuoukikan
 		}
@@ -1844,6 +1955,7 @@ focus_tree = {
 		id = SPR_outouha_noud
 		icon = GFX_goal_continuous_restrict_freedom
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kizokunokikan
 		}
@@ -1861,6 +1973,7 @@ focus_tree = {
 		id = SPR_outouha_tougyuujyou
 		icon = GFX_goal_demand_sudetenland
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kokuoukikan
 		}
@@ -1875,6 +1988,7 @@ focus_tree = {
 		id = SPR_outouha_ouryou
 		icon = GFX_focus_generic_monarchy_2
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kokuoukikan
 		}
@@ -1896,6 +2010,7 @@ focus_tree = {
 		id = SPR_outouha_mutekikantai
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kizokunokikan
 		}
@@ -1928,6 +2043,7 @@ focus_tree = {
 		id = SPR_outouha_igirisu
 		icon = GFX_focus_chi_british_cooperation
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_mutekikantai
 		}
@@ -1944,9 +2060,11 @@ focus_tree = {
 		id = SPR_outouha_porutoseihuku
 		icon = GFX_focus_generic_attack_portugal
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_mutekikantai
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 50
 		y = 6
 		completion_reward = {
@@ -1961,6 +2079,7 @@ focus_tree = {
 		id = SPR_outouha_taiseiyouseiha
 		icon = GFX_focus_generic_coastal_fort
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_porutoseihuku
 		}
@@ -1986,6 +2105,7 @@ focus_tree = {
 		id = SPR_outouha_doitusyokuminti
 		icon = GFX_goal_tripartite_pact
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_igirisu
 		}
@@ -2005,6 +2125,7 @@ focus_tree = {
 		id = SPR_outouha_amerikasyokumintika
 		icon = GFX_focus_mex_jefe_maximo
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_doitusyokuminti
 		}
@@ -2130,6 +2251,7 @@ focus_tree = {
 		id = nuebakasutera
 		icon = GFX_goal_generic_territory_or_war
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_amerikasyokumintika
 		}
@@ -2202,6 +2324,7 @@ focus_tree = {
 		id = SPR_outouha_rioderapurata
 		icon = GFX_goal_generic_territory_or_war
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_amerikasyokumintika
 		}
@@ -2274,6 +2397,7 @@ focus_tree = {
 		id = SPR_guntai_kuugun
 		icon = GFX_goal_generic_air_doctrine
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai
 		}
@@ -2292,6 +2416,7 @@ focus_tree = {
 		id = SPR_guntai_kaigunkoukuutai
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaigun
 		}
@@ -2313,6 +2438,7 @@ focus_tree = {
 		id = SPR_guntai_reedaa
 		icon = GFX_focus_generic_cryptologic_bomb
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kaigunkoukuutai
 		}
@@ -2332,6 +2458,7 @@ focus_tree = {
 		id = SPR_outouha_peruu
 		icon = GFX_goal_generic_territory_or_war
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_amerikasyokumintika
 		}
@@ -2404,6 +2531,7 @@ focus_tree = {
 		id = SPR_guntai_senryakuhakai
 		icon = GFX_focus_CZE_military_aeronautical_institute
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kuugun
 		}
@@ -2428,6 +2556,7 @@ focus_tree = {
 		id = SPR_guntai_ryakubaku
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_senryakuhakai
 		}
@@ -2446,6 +2575,7 @@ focus_tree = {
 		id = SPR_guntai_senjyousien
 		icon = GFX_focus_YUG_ikarus
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kuugun
 		}
@@ -2470,6 +2600,7 @@ focus_tree = {
 		id = SPR_guntai_jyusen
 		icon = GFX_focus_usa_escort_fighters
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_senjyousien
 			focus = SPR_guntai_senryakuhakai
@@ -2489,6 +2620,7 @@ focus_tree = {
 		id = SPR_outouha_kyoukairengou
 		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
 		cost = 2.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha
 		}
@@ -2505,6 +2637,7 @@ focus_tree = {
 		id = SPR_outouha_kokuounosinnsei
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kyoukairengou
 		}
@@ -2522,6 +2655,7 @@ focus_tree = {
 		id = SPR_outouha_kamigasorewo
 		icon = GFX_focus_AST_squander_bug
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kokuounosinnsei
 		}
@@ -2539,6 +2673,7 @@ focus_tree = {
 		id = SPR_outouha_jinei
 		icon = GFX_focus_spa_supremacy_of_the_communion
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_porutoseihuku
 		}
@@ -2559,6 +2694,7 @@ focus_tree = {
 		id = SPR_outouha_ikyouseibatu
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_jinei
 		}
@@ -2575,6 +2711,7 @@ focus_tree = {
 		id = SPR_outouha_toruko
 		icon = GFX_focus_attack_japan
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_ikyouseibatu
 		}
@@ -2592,6 +2729,7 @@ focus_tree = {
 		id = SPR_guntai_sakusenseigou
 		icon = GFX_focus_chi_flying_tigers
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kuugun
 		}
@@ -2617,6 +2755,7 @@ focus_tree = {
 		id = SPR_guntai_jyutubaku
 		icon = GFX_goal_generic_occupy_start_war
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_senjyousien
 			focus = SPR_guntai_sakusenseigou
@@ -2636,6 +2775,7 @@ focus_tree = {
 		id = SPR_outouha_kyoukaiseisin
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kyoukairengou
 		}
@@ -2652,6 +2792,7 @@ focus_tree = {
 		id = SPR_outouha_jyuujigun
 		icon = GFX_focus_generic_manpower
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kyoukaiseisin
 		}
@@ -2669,6 +2810,7 @@ focus_tree = {
 		id = SPR_outouha_kyoukouryou
 		icon = GFX_focus_attack_italy
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kamigasorewo
 		}
@@ -2686,6 +2828,7 @@ focus_tree = {
 		id = SPR_outouha_itanseibatu
 		icon = GFX_focus_spr_crush_the_revolution
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_jinei
 		}
@@ -2702,6 +2845,7 @@ focus_tree = {
 		id = SPR_outouha_doituoui
 		icon = GFX_focus_attack_germany
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_itanseibatu
 		}
@@ -2719,6 +2863,7 @@ focus_tree = {
 		id = SPR_guntai_keisen
 		icon = GFX_goal_generic_air_fighter
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_sakusenseigou
 		}
@@ -2737,6 +2882,7 @@ focus_tree = {
 		id = SPR_outouha_sebiriadaiseidou
 		icon = GFX_focus_spa_save_the_alcazar
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kyoukairengou
 		}
@@ -2758,6 +2904,7 @@ focus_tree = {
 		id = SPR_outouha_reondaiseidou
 		icon = GFX_focus_spa_save_the_alcazar
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_sebiriadaiseidou
 		}
@@ -2779,6 +2926,7 @@ focus_tree = {
 		id = SPR_outouha_arumudena
 		icon = GFX_focus_spa_save_the_alcazar
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_reondaiseidou
 		}
@@ -2800,6 +2948,7 @@ focus_tree = {
 		id = SPR_kougyou_toti
 		icon = GFX_goal_generic_construct_civilian
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_nouti
 		}
@@ -2826,6 +2975,7 @@ focus_tree = {
 		id = SPR_kougyou_porutogaru
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_kougyou_kouzan
 		}
@@ -2860,6 +3010,7 @@ focus_tree = {
 		id = SPR_faranhe_katarunyasyokumin
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_danatukanryou
 		}
@@ -2882,6 +3033,7 @@ focus_tree = {
 		id = SPR_faranhe_doitudoumei
 		icon = GFX_focus_chi_mission_to_germany
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_ahurikabunkatu
 		}
@@ -2898,6 +3050,7 @@ focus_tree = {
 		id = SPR_faranhe_rikugungunkaku
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_huransukorosu
 		}
@@ -2914,6 +3067,7 @@ focus_tree = {
 		id = SPR_franco_taihou
 		icon = GFX_goal_generic_army_artillery2
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_hoheijyuu
 		}
@@ -2931,6 +3085,7 @@ focus_tree = {
 		id = SPR_franco_seisanzouka
 		icon = GFX_focus_generic_combined_arms
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_gunkoujyou
 		}
@@ -2950,6 +3105,7 @@ focus_tree = {
 		id = SPR_franco_sensya
 		icon = GFX_focus_generic_tank_production
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_taihou
 		}
@@ -2967,6 +3123,7 @@ focus_tree = {
 		id = SPR_franco_jidousyadou
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_itariasyussi
 		}
@@ -3009,6 +3166,7 @@ focus_tree = {
 		id = SPR_franco_suiryoku
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_seisanzouka
 		}
@@ -3025,6 +3183,7 @@ focus_tree = {
 		id = SPR_franco_rosutyairudo
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_suiryoku
 		}
@@ -3043,6 +3202,7 @@ focus_tree = {
 		id = SPR_franco_kokusaitousikaigi
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_rosutyairudo
 		}
@@ -3065,6 +3225,7 @@ focus_tree = {
 		id = SPR_franco_orinpia
 		icon = GFX_focus_spa_unify_the_nationalist_front
 		cost = 10.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_kokusaitousikaigi
 		}
@@ -3118,6 +3279,7 @@ focus_tree = {
 		id = SPR_outouha_santaeria
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_kyoukairengou
 		}
@@ -3139,6 +3301,7 @@ focus_tree = {
 		id = SPR_outouha_toredo
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_santaeria
 		}
@@ -3160,6 +3323,7 @@ focus_tree = {
 		id = SPR_outouha_burugosu
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_toredo
 		}
@@ -3181,6 +3345,7 @@ focus_tree = {
 		id = SPR_outouha_kokkanokyoukaika
 		icon = GFX_focus_spa_unify_the_nationalist_front
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_arumudena
 		}
@@ -3201,6 +3366,7 @@ focus_tree = {
 		id = SPR_outouha_nuebaguranada
 		icon = GFX_focus_mex_redeem_aztlan
 		cost = 4.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_amerikasyokumintika
 		}
@@ -3273,6 +3439,7 @@ focus_tree = {
 		id = SPR_outouha_indeliasu
 		icon = GFX_focus_generic_self_management
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_outouha_peruu
 		}
@@ -3298,6 +3465,7 @@ focus_tree = {
 		id = SPR_guntai_hohei
 		icon = GFX_focus_prc_infiltration
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_daikibosakusen
 		}
@@ -3316,6 +3484,7 @@ focus_tree = {
 		id = SPR_guntai_jidousya
 		icon = GFX_goal_generic_army_motorized
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_yuuseikaryoku
 			focus = SPR_guntai_kidousen
@@ -3335,6 +3504,7 @@ focus_tree = {
 		id = SPR_guntai_dengekisen
 		icon = GFX_focus_generic_army_tanks2
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_sensya
 			focus = SPR_guntai_jidousya
@@ -3355,6 +3525,7 @@ focus_tree = {
 		id = SPR_guntai_hougekisen
 		icon = GFX_goal_generic_army_doctrines
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_jidousya
 			focus = SPR_guntai_houhei
@@ -3375,6 +3546,7 @@ focus_tree = {
 		id = SPR_guntai_zangousen
 		icon = GFX_focus_spr_no_pasaran
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_houhei
 			focus = SPR_guntai_hohei
@@ -3395,6 +3567,7 @@ focus_tree = {
 		id = SPR_guntai_senkan
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kantaihozen
 		}
@@ -3413,6 +3586,7 @@ focus_tree = {
 		id = SPR_guntai_sensuikan
 		icon = GFX_goal_generic_navy_submarine
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_bouekisosi
 		}
@@ -3432,6 +3606,7 @@ focus_tree = {
 		id = SPR_guntai_kuubo
 		icon = GFX_goal_generic_navy_carrier
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kitikougeki
 		}
@@ -3450,6 +3625,7 @@ focus_tree = {
 		id = SPR_guntai_jyunyoukan
 		icon = GFX_focus_generic_cruiser2
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_bouekisosi
 		}
@@ -3471,6 +3647,7 @@ focus_tree = {
 		id = SPR_guntai_santelisima
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kantaihozen
 		}
@@ -3535,6 +3712,7 @@ focus_tree = {
 		id = SPR_guntai_kansaiki
 		icon = GFX_focus_generic_air_defense
 		cost = 10.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_kitikougeki
 		}
@@ -3554,6 +3732,7 @@ focus_tree = {
 		id = SPR_guntai_kinsetuki
 		icon = GFX_goal_generic_CAS
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_jyusen
 			focus = SPR_guntai_jyutubaku
@@ -3574,6 +3753,7 @@ focus_tree = {
 		id = SPR_guntai_seikuusen
 		icon = GFX_focus_rocketry
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_jyutubaku
 			focus = SPR_guntai_keisen
@@ -3593,6 +3773,7 @@ focus_tree = {
 		id = SPR_guntai_ryakubakukyori
 		icon = GFX_focus_wonderweapons
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_guntai_ryakubaku
 			focus = SPR_guntai_jyusen
@@ -3612,6 +3793,7 @@ focus_tree = {
 		id = SPR_faranhe_kougekisen
 		icon = GFX_goal_generic_army_doctrines
 		cost = 5.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_rikugungunkaku
 		}
@@ -3630,9 +3812,11 @@ focus_tree = {
 		id = SPR_faranhe_doitu
 		icon = GFX_focus_attack_germany
 		cost = 8.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_itariakorosu
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 15
 		y = 10
 		bypass = {		
@@ -3650,6 +3834,7 @@ focus_tree = {
 		id = SPR_faranhe_koujyoutukure
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 7.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe_rikugungunkaku
 		}
@@ -3672,6 +3857,7 @@ focus_tree = {
 		id = SPR_faranhe_nannbeiyusyutu
 		icon = GFX_goal_generic_trade
 		cost = 3.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_taihou
 		}
@@ -3715,6 +3901,7 @@ focus_tree = {
 		id = SPR_fanco_tyouhei
 		icon = GFX_focus_prc_infiltration
 		cost = 6.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_franco_gunhenotyuusei
 		}
@@ -3731,6 +3918,7 @@ focus_tree = {
 		id = SPR_fanco_uha
 		icon = GFX_focus_generic_military_mission
 		cost = 9.00
+		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_fanco_tyouhei
 		}

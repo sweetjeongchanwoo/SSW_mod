@@ -181,8 +181,6 @@ add_to_faction = SIN
 add_to_faction = BRM
 add_to_faction = PHI
 add_to_faction = VIN
-add_to_faction = CAM
-add_to_faction = LAO
 add_to_faction = INS
 add_to_faction = MAL
 add_to_faction = BRN
@@ -226,14 +224,6 @@ set_autonomy = {
 	autonomous_state = imperial_protectirate
 }
 set_autonomy = {
-	target = CAM
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
-	target = LAO
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
 	target = INS
 	autonomous_state = imperial_protectirate
 }
@@ -244,10 +234,6 @@ set_autonomy = {
 set_autonomy = {
 	target = BRN
 	autonomous_state = imperial_member
-}
-set_autonomy = {
-	target = INO
-	autonomous_state = imperial_overseas_territory
 }
 set_autonomy = {
 	target = HAW
@@ -657,6 +643,12 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
+
+########################################
+#################focus##################
+########################################
+set_variable = { JAP_focus_num_var = 1}
+
 ########################################
 ##################政党##################
 ########################################
