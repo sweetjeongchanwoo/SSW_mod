@@ -447,11 +447,10 @@ focus_tree = {
 	focus = {
 		id = SPR_faranhe
 		icon = GFX_focus_spa_the_phalanx_ascendant
-		cost = 1.00
+		cost = 7.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_hurankohaijyo
-		}
+		prerequisite = { focus = SPR_hurankohaijyo }
+		bypass = { has_completed_focus = SPR_the_return_of_the_civil_war }
 		x = 17
 		y = 2
 		completion_reward = {
@@ -475,19 +474,80 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SPR_the_return_of_the_civil_war
+		icon = GFX_focus_spr_regional_defense_council_of_aragon
+		prerequisite = { focus = SPR_hurankohaijyo }
+		available = { NOT = { has_completed_focus = SPR_faranhe } }
+		cost = 7.00
+		ai_will_do = { factor = 10 }
+		x = 15
+		y = 2
+		completion_reward = {
+			custom_effect_tooltip = start_second_scw_tt
+			hidden_effect = {
+				set_global_flag = spanish_civil_war
+				SPA = {
+					transfer_state = 166
+					transfer_state = 169
+					transfer_state = 170
+					transfer_state = 171
+					transfer_state = 174
+					transfer_state = 176
+					transfer_state = 788
+					transfer_state = 789
+					transfer_state = 791
+					change_tag_from = SPR
+				}
+				every_state = {
+					limit = {
+						is_core_of = SPR
+						NOT = { is_core_of = SPA }
+					}
+					add_core_of = SPA
+				}
+				SPR = {
+					declare_war_on = {
+						target = SPA
+						type = annex_everything
+					}
+					transfer_units_fraction = {
+						target = SPA
+						size = 0.5
+					}
+					remove_ideas = spr_debahu_03
+					retire_ideology_leader = national_fascism
+					create_country_leader = {
+						name = "Manuel Hedilla"
+						desc = "POLITICS_MANUEL_HEDILLA_DESC"
+						picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+						expire = "1970.2.4"
+						ideology = falangism_national_syndicalism_ideology
+						traits = {
+						}
+					}
+					set_party_name = {
+						ideology = national_fascism
+						long_name = SPR_national_fascism_party_fe_jons_long
+						name = SPR_national_fascism_party_fe_jons
+					}
+				}
+			}
+		}
+	}
+	focus = {
 		id = SPR_faranhe_minzokudanatu
 		icon = GFX_goal_continuous_suppression
 		cost = 4.00
 		ai_will_do = { factor = 10 }
 		prerequisite = {
 			focus = SPR_faranhe
+			focus = SPR_the_return_of_the_civil_war
 		}
 		x = 14
 		y = 3
 		completion_reward = {
 			add_timed_idea = { idea = spr_ideas_01 days = 365 }
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_danatukanryou

@@ -48,6 +48,8 @@
  SPR_huranksiji_desc:0 "フランコ将軍はスペイン内戦を勝利に導いた英雄である。 あの内戦の時と同じように再び我々を導いてくれるだろう。 "
  SPR_faranhe:0 "強硬ファランヘ党員のクーデター"
  SPR_faranhe_desc:0 "もはやフランコは信用に値しない人物であり、 早急に政権の座から下ろさなければならない。 "
+ SPR_the_return_of_the_civil_war:0 "内戦の再来"
+ SPR_the_return_of_the_civil_war_desc:0 "もはや現政権では共和主義の自由を叶えることはできない。 二回目の内戦を起こしてでもフランコを倒さなければならないのだ！ "
  SPR_faranhe_minzokudanatu:0 "少数派民族の弾圧"
  SPR_faranhe_minzokudanatu_desc:0 "少数派民族はスペイン国民の団結に邪魔な存在である。 "
  SPR_faranhe_danatukanryou:0 "少数派民族の国外追放"
@@ -391,6 +393,8 @@
  spr_ideas_199:0 "王党派の引き込み"
  spr_ideas_555:0 "少数民族の強制抑圧"
  spr_ideas_1999:0 "王党派の優越"
+#tooltip
+ start_second_scw_tt:0 "第二次スペイン内戦が勃発する。 "
 #イベント
  ssw_spr.1.title:0 "スペイン・イタリアによる北アフリカ分割"
  ssw_spr.1.desc:0 "スペインは、未だフランス勢力が支配する北アフリカのモロッコ・アルジェリアを、二国間で分割占領することを提案した。 我が国にとっても、アルジェリアを直接統治する絶好の機会であるが、この提案を受け入れるべきだろうか。"
