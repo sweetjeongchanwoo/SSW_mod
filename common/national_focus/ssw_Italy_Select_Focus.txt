@@ -5,6 +5,11 @@ shared_focus = {
         cost = 1.40
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 6
         y = 0
         completion_reward = {
@@ -28,6 +33,11 @@ shared_focus = {
 				 }
         available = {
         }
+        ai_will_do = {
+          factor = 10
+       }
+       bypass = {
+       }
         x = 2
         y = 2
         completion_reward = {
@@ -52,6 +62,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 6
         y = 2
         completion_reward = {
@@ -76,6 +91,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 10
         y = 2
         completion_reward = {
@@ -99,6 +119,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 10
+       }
+       bypass = {
+       }
         x = 1
         y = 4
         completion_reward = {
@@ -110,6 +135,7 @@ shared_focus = {
                 tree = ITA_Balbo_Focus 
                 keep_completed = yes 
             }
+            custom_effect_tooltip = ssw_ITA_making
         }
 	}
 	#ムッソリーニによって
@@ -125,6 +151,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 8
+       }
+       bypass = {
+       }
         x = 3
         y = 4
         completion_reward = {
@@ -132,6 +163,7 @@ shared_focus = {
           country_event = {
                id = SSW_ITA.4
           }
+          custom_effect_tooltip = ssw_ITA_making
         }
 	}
 	#サヴォイア家によって
@@ -147,6 +179,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 5
         y = 4
         completion_reward = {
@@ -154,6 +191,7 @@ shared_focus = {
           country_event = {
                id = SSW_ITA.5
           }
+          custom_effect_tooltip = ssw_ITA_making
         }
 	}
 	#ジェノヴァ家によって
@@ -169,6 +207,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 7
         y = 4
         completion_reward = {
@@ -176,6 +219,7 @@ shared_focus = {
           country_event = {
                id = SSW_ITA.6
           }
+          custom_effect_tooltip = ssw_ITA_making
         }
 	}
 	#カエサルにならう
@@ -191,6 +235,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 9
         y = 4
         completion_reward = {
@@ -198,6 +247,7 @@ shared_focus = {
           country_event = {
                id = SSW_ITA.7
           }
+          custom_effect_tooltip = ssw_ITA_making
         }
 	}
 	#平等に
@@ -213,6 +263,11 @@ shared_focus = {
              }
         available = {
         }
+        ai_will_do = {
+          factor = 5
+       }
+       bypass = {
+       }
         x = 11
         y = 4
         completion_reward = {
@@ -220,5 +275,6 @@ shared_focus = {
           country_event = {
                id = SSW_ITA.8
           }
+          custom_effect_tooltip = ssw_ITA_making
         }
 }

@@ -2,11 +2,18 @@ on_actions = {
 	on_annex = {	#国家を併合した時
 		effect = {
 			every_country = {
+				if = {
+					limit = {
+						has_global_flag = GER_civil_war
+					}
+				else_if = {
 				limit = {
 					original_colony_tag = yes
 					is_puppet = no
 				}
 				abandon_colony_tag = yes
+				}
+				}
 			}
 		}
 	}
