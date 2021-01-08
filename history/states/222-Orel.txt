@@ -13,6 +13,9 @@ state={
 
 	history={
 		owner = UKR
+		remove_core_of = UKR
+		add_core_of = RUS
+		add_core_of = SOV
 		victory_points = {
 			9355 10
 		}
@@ -21,7 +24,6 @@ state={
 			industrial_complex = 1
 			air_base = 4
 		}
-		add_core_of = UKR
 	}
 
 	provinces={

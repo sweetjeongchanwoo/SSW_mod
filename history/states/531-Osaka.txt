@@ -2,11 +2,8 @@
 state={
 	id=531
 	name="STATE_531" # Kansai
-	manpower = 12015000
+	manpower = 1832934
 	state_category = metropolis
-	resources={
-		aluminium=10 # was: 6
-	}
 
 	history={
 		owner = JAP
@@ -18,16 +15,7 @@ state={
 			dockyard = 2
 			1136 = {
 				naval_base = 6
-
 			}
-			7072 = {
-				naval_base = 6
-
-			}
-
-		}
-		victory_points = {
-			7072 40
 		}
 		victory_points = {
 			1136 15
@@ -35,6 +23,6 @@ state={
 	}
 
 	provinces={
-		1136 7072 9985 11960 12031
+		1136 11960 
 	}
 }

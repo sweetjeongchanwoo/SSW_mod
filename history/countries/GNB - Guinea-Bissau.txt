@@ -21,3 +21,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Manuel Sarmento Rodrigues"
+	desc = ""
+	picture = "gfx/leaders/GNB/portrait_gnb_manuel_sarmento_rodrigues.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
+}

@@ -1,16 +1,18 @@
 ﻿capital = 382
 oob = "LFF_1950"
-
-set_convoys = 5
-
+set_convoys = 0
 set_technology = {
 	infantry_weapons = 1
 }
-
 add_ideas = {
 	civilian_economy
+	ssw_one_party_dictatorship
+	vacancy_pl
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
+	vacancy_ma
 }
-
 set_politics = {
 	ruling_party = classical_communism
 	last_election = "1950.1.1"
@@ -18,16 +20,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	classical_communism = 100
+	classical_communism = 70
+	progressive_communism = 20
+	social_democracy = 10
 }
-
 create_country_leader = {
 	name = "William Z. Foster"
-	desc = ""
+	desc = "POLITICS_WILLIAM_FOSTER_DESC"
 	picture = "gfx/leaders/LFF/Portrait_William_Z_Foster.dds"
-	expire = "1965.1.1"
+	expire = "1961.9.1"
 	ideology = classical_communism_ideology
-	traits = {
-		#
-	}
+	traits = { prince_of_terror }
 }

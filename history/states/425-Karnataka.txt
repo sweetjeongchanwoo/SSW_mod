@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = MYS
+		owner = NIN
 		victory_points = {
 			8011 15 
 		}
@@ -16,10 +16,7 @@ state={
 			industrial_complex = 1
 
 		}
-		add_core_of = PIN
 		add_core_of = NIN
-		add_core_of = MYS
-		add_core_of = TRV
 
 	}
 

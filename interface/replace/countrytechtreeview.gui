@@ -1090,7 +1090,7 @@ guiTypes = {
 					orientation = upper_right
 
 					instantTextBoxType = {
-						name = "artillery_year2"
+						name = "artillery_year2_1"
 						position = { x = 0 y = 120 }
 						textureFile = ""
 						font = "hoi_36header"

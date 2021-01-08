@@ -72,8 +72,10 @@ ideas = {
 
             picture = generic_victors_of_ww1
 
-              modifier = {planning_speed = 0.1
-              out_of_supply_factor = -0.25}
+            modifier = {
+                planning_speed = 0.1
+                out_of_supply_factor = -0.25
+            }
         }
 
         Expansion_of_shipyards = {
@@ -96,7 +98,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2.dds
+            picture = Defeated_army_idea
 
             modifier = {
                 war_support_factor = -0.4
@@ -112,7 +114,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2.dds
+            picture = Defeated_army_idea
 
             modifier = {
                 war_support_factor = -0.2
@@ -128,7 +130,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2.dds
+            picture = Defeated_army_idea
 
             modifier = {
                 war_support_factor = -0.1
@@ -144,7 +146,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2.dds
+            picture = Defeated_army_idea
 
             modifier = {
                 war_support_factor = -0.5
@@ -159,7 +161,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_saf_history_of_segregation_2.dds
+            picture = Defeated_army_idea
 
             modifier = {
                 conscription = -0.5
@@ -172,7 +174,7 @@ ideas = {
             
             removal_cost = -1
 
-            picture = idea_chi_incompetent_officers.dds
+            picture = Confusion_of_the_General_Staff_idea
 
             modifier = {
                 max_planning = -0.75
@@ -187,7 +189,7 @@ ideas = {
             
             removal_cost = -1
 
-            picture = idea_chi_incompetent_officers.dds
+            picture = Confusion_of_the_General_Staff_idea
 
             research_bonus = {
                 land_doctrine = -0.5
@@ -205,7 +207,7 @@ ideas = {
                 stability_factor = -0.2
             }
         } 
-        Democratic_Republic_under_themilitary_junta = {
+        unstable_Republic = {
 
             allowed = {always = no}
             
@@ -466,7 +468,7 @@ ideas = {
 
             pllowed_civil_war = {always = yes}
 
-            picture = idea_unknown
+            picture = Unstable_influence_with_Germany_idea
 
             modifier = {
                 stability_factor = -0.2
@@ -502,9 +504,15 @@ ideas = {
 
             targeted_modifier = {   
                 tag = HGR attack_bonus_against = 0.2
-                tag = LTV attack_bonus_against = 0.2
+            }   
+            targeted_modifier = {
+                tag = LTV attack_bonus_against = 0.2  
+            }
+            targeted_modifier = {    
                 tag = HLH attack_bonus_against = 0.2
-                tag = GER attack_bonus_against = 0.2
+            }     
+            targeted_modifier = {
+                tag = GER attack_bonus_against = 0.2   
             }
         }
         Preparing_for_war = {
@@ -523,16 +531,24 @@ ideas = {
 
             targeted_modifier = {
                 tag = HGR attack_bonus_against = 0.1
-                tag = LTV attack_bonus_against = 0.1
-                tag = HLH attack_bonus_against = 0.1
-                tag = GER attack_bonus_against = 0.1
-                tag = NFR attack_bonus_against = 0.1
                 tag = HGR defense_bonus_against = 0.1
+            }
+            targeted_modifier = {    
+                tag = LTV attack_bonus_against = 0.1
                 tag = LTV defense_bonus_against = 0.1
+            }   
+            targeted_modifier = { 
+                tag = HLH attack_bonus_against = 0.1
                 tag = HLH defense_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = GER attack_bonus_against = 0.1
                 tag = GER defense_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = NFR attack_bonus_against = 0.1
                 tag = NFR defense_bonus_against = 0.1
-            } 
+            }         
         }
         French_Peoples_Front = {
 
@@ -591,6 +607,9 @@ ideas = {
             picture = idea_unknown
 
             modifier = {
+                army_org_Factor = 0.2
+                training_time_factor = -0.3
+                conscription = 0.02
                 army_defence_factor = 0.05
                 army_attack_factor = 0.05
             }
@@ -606,6 +625,9 @@ ideas = {
             picture = idea_unknown
 
             modifier = {
+                army_org_Factor = 0.2
+                training_time_factor = -0.3
+                conscription = 0.02
                 army_defence_factor = 0.1
                 army_attack_factor = 0.1
             }
@@ -669,6 +691,313 @@ ideas = {
             modifier = {
                 stability_factor = 0.1
                 political_power_factor = -0.05
+            }
+        }
+        Unstable_country = {
+
+            allowed = {always = yes}
+
+            pllowed_civil_war = {always = yes}
+
+            picture idea_unknown
+
+            modifier = {
+                stability_factor = -0.2
+            }
+        }
+        French_mediterranean_fleet = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_generic_coastal_defense_ships.dds
+
+            modifier = {navy_capital_ship_attack_factor = 0.1}
+        }
+        Collaboration_between_Millis_and_Germany = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                resistance_target = -0.2
+                operative_slot = 1
+                political_power_gain = 0.1
+                special_forces_cap = 0.04
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+            }
+        }
+        Economic_partnership_with_Germany = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                consumer_goods_factor = -0.1
+            }
+        }
+        Betrayed_ally = { #裏切られた同盟国
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+        }
+
+        Compromise_negotiations_with_general_strike = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                production_factory_max_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.2
+                industrial_capacity_factory = -0.2
+                consumer_goods_factor = 0.1
+            }
+        }
+
+        Acceptable_negotiations_with_general_strikes = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                production_factory_max_efficiency_factor = -0.3
+                production_speed_buildings_factor = -0.4
+                industrial_capacity_factory = -0.4
+                consumer_goods_factor = 0.2
+            } 
+        }
+
+        Twin_stresa = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+            
+            targeted_modifier = {
+                tag = GER attack_bonus_against = 0.1
+                tag = GER defense_bonus_against = 0.1
+            }
+        }
+
+        Anarchy_community = {
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                consumer_goods_factor = -0.2
+                production_factory_efficiency_gain_factor = 0.3
+                line_change_production_efficiency_factor = 0.2
+                production_factory_max_efficiency_factor = 0.3
+                industrial_capacity_factory = 0.2
+                production_speed_buildings_factor = 0.4
+            }
+        }
+
+        Three_year_plan = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                production_speed_buildings_factor = 0.05
+                consumer_goods_factor = -0.05
+                local_resources_factor = 0.1
+                industrial_capacity_factory = 0.1
+            }
+        }
+
+        Proletariat_capitalism = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                political_power_factor = 0.3
+                MONTHLY_POPULATION = 0.5
+                research_speed_factor = 0.1
+                global_building_slots_factor = 0.1
+            }
+        }
+
+        People_take_your_weapons = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            equipment_bonus = {
+                armor = {
+				    build_cost_ic = -0.2
+					instant = yes
+				}  
+                artillery_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				} 
+                anti_air_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+                anti_tank_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+                infantry_equipment = {
+                    build_cost_ic = -0.2
+					instant = yes
+                }
+            }
+        }
+
+        For_the_monarch = {
+
+           allowed = {always = no}
+
+           removal_cost = -1
+
+           allowed_civil_war = {always = yes}
+
+           picture = idea_unknown
+
+            modifier = {
+                research_speed_factor = 0.05
+                political_power_gain = 0.2
+               	production_factory_max_efficiency_factor = 0.2
+            }
+        }
+        
+        For_the_monarch_2 = {
+
+           allowed = {always = no}
+
+           removal_cost = -1
+
+           allowed_civil_war = {always = yes}
+
+           picture = idea_unknown
+
+            modifier = {
+                research_speed_factor = 0.05
+                political_power_gain = 0.2
+                production_factory_max_efficiency_factor = 0.2
+                army_morale_factor = 0.05
+                conscription = 0.01
+                surrender_limit = 0.1
+            }
+        }
+        Henri_VI = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = 0.05
+            }
+        }
+        Napoleon_VI = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = 0.05
+            }
+        }
+        Republican_rebellion = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                army_org_Factor = -0.2
+                conscription_factor = -0.15
+            }
+        }
+        Absolute_power = {
+            
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+              	conscription = 0.02
+                resistance_target = -0.3
+                political_power_factor = 0.3
             }
         }
     }

@@ -12,7 +12,6 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = NIN
-		add_core_of = PIN
 		add_core_of = TIB
 
 	}

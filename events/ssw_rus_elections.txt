@@ -108,7 +108,7 @@ country_event = {
 				desc = "POLITICS_ANDREY_VLASOV_DESC"
 				picture = "gfx/leaders/RUS/Portrait_Russia_Andrey_Vlasov.dds"
 				expire = "1965.1.1"
-				ideology = authority_despotism_ideology
+				ideology = military_junta_ideology
 				traits = {
 				}
 			}

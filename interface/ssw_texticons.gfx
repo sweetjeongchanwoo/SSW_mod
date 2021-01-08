@@ -1,5 +1,11 @@
 spriteTypes = {	
 
+	spriteType = {
+		name = "GFX_infequip_small_texticon"
+		texturefile = "gfx/texticons/infequip_small.dds"
+		legacy_lazy_load = no
+	}
+
 ##########JAP_FACTION##########
 	spriteType = {
 		name = "GFX_faction_SIB"

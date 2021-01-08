@@ -1,0 +1,20 @@
+state = { #パークセー
+	id = 1016
+	name = "STATE_1016"
+	manpower = 20000
+	state_category = rural
+	history = {
+		owner = VIN
+		add_core_of = LAO
+		add_core_of = VIN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1563 1
+		}
+	}
+	provinces = {
+		7426 1563 4554 1577 10453 
+	}
+}

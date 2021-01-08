@@ -1,10 +1,20 @@
 ideologies = {
-	anarchism = {	#無政府主義
+	anarchism = {
+		#無政府主義
 		types = {
-			anarchism_ideology = { #無政府主義
+			anarchism_ideology = {
+				#無政府主義
+			}
+			anarcho_syndicalism_ideology = {
+				#無政府サンディカリスム
+				can_be_randomly_selected = no
 			}
 		}
-		color = { 25 0 0 }
+		color = {
+			25
+			0
+			0
+		}
 		rules = {
 			can_send_volunteers = no
 			can_puppet = no
@@ -12,26 +22,37 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	progressive_communism = {	#革新的共産主義
+	progressive_communism = {
+		#革新的共産主義
 		types = {
-			progressive_communism_ideology = { #革新的共産主義
+			progressive_communism_ideology = {
+				#革新的共産主義
 			}
-			syndicalism_ideology = { #サンディカリスム
+			syndicalism_ideology = {
+				#サンディカリスム
 				can_be_randomly_selected = no
 			}
-			buddhist_socialism_ideology = { #仏教社会主義
+			buddhist_socialism_ideology = {
+				#仏教社会主義
+				can_be_randomly_selected = no
+			}
+			islamic_socialism_ideology = {
+				#イスラム社会主義
 				can_be_randomly_selected = no
 			}
 		}
-		color = { 255 0 0 }
+		color = {
+			255
+			0
+			0
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -39,20 +60,25 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	classical_communism = {	#古典的共産主義
+	classical_communism = {
+		#古典的共産主義
 		types = {
-			classical_communism_ideology = { #古典的共産主義
+			classical_communism_ideology = {
+				#古典的共産主義
 			}
 		}
-		color = { 128 0 0 }
+		color = {
+			128
+			0
+			0
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -60,20 +86,25 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	social_democracy = {	#社会民主主義
+	social_democracy = {
+		#社会民主主義
 		types = {
-			social_democracy_ideology = { #社会民主主義
+			social_democracy_ideology = {
+				#社会民主主義
 			}
 		}
-		color = { 192 0 64 }
+		color = {
+			192
+			0
+			64
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -81,23 +112,28 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			generate_wargoal_tension = 0.5
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.25
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 	}
-
-	social_liberalism = {	#社会自由主義
+	social_liberalism = {
+		#社会自由主義
 		types = {
-			social_liberalism_ideology = { #社会自由主義
+			social_liberalism_ideology = {
+				#社会自由主義
 			}
 		}
-		color = { 255 192 0 }
+		color = {
+			255
+			192
+			0
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -105,23 +141,28 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			generate_wargoal_tension = 0.5
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.25
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 	}
-
-	social_conservatism = {	#社会保守主義
+	social_conservatism = {
+		#社会保守主義
 		types = {
-			social_conservatism_ideology = { #社会保守主義
+			social_conservatism_ideology = {
+				#社会保守主義
 			}
 		}
-		color = { 0 0 255 }
+		color = {
+			0
+			0
+			255
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -129,23 +170,28 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			generate_wargoal_tension = 0.5
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.25
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 	}
-
-	authority_democracy = {	#権威民主主義
+	authority_democracy = {
+		#権威民主主義
 		types = {
-			authority_democracy_ideology = { #権威民主主義
+			authority_democracy_ideology = {
+				#権威民主主義
 			}
 		}
-		color = { 192 192 192 }
+		color = {
+			192
+			192
+			192
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -153,32 +199,40 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			generate_wargoal_tension = 0.5
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.25
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 	}
-
-	authority_despotism = {	#権威専制主義
+	authority_despotism = {
+		#権威専制主義
 		types = {
-			authority_despotism_ideology = { #権威専制主義
+			authority_despotism_ideology = {
+				#権威専制主義
 			}
-			military_junta_ideology = { #軍事政権
+			military_junta_ideology = {
+				#軍事政権
 				can_be_randomly_selected = no
 			}
-			islamic_fundamentalism_ideology = { #イスラム原理主義
+			islamic_fundamentalism_ideology = {
+				#イスラム原理主義
 				can_be_randomly_selected = no
 			}
-			absolute_monarchism_ideology = { #絶対王政・君主主義
+			absolute_monarchism_ideology = {
+				#絶対王政・君主主義
 				can_be_randomly_selected = no
 			}
 		}
-		color = { 64 64 64 }
+		color = {
+			64
+			64
+			64
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -186,26 +240,32 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
+			generate_wargoal_tension = 0.5
 			lend_lease_tension = 0.25
 			send_volunteers_tension = 0.25
 			guarantee_tension = 0.25
-			civilian_intel_to_others = 10.0
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	national_fascism = {	#国家結束主義
+	national_fascism = {
+		#国家結束主義
 		types = {
-			national_fascism_ideology = { #国家結束主義
+			national_fascism_ideology = {
+				#国家結束主義
 			}
-			falangism_national_syndicalism_ideology = { #ファランジズム・国家サンディカリスム
+			falangism_national_syndicalism_ideology = {
+				#ファランジズム・国家サンディカリスム
 				can_be_randomly_selected = no
 			}
 		}
-		color = { 128 64 0 }
+		color = {
+			128
+			64
+			0
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -213,20 +273,25 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	national_socialism = {#国家社会主義
+	national_socialism = {
+		#国家社会主義
 		types = {
-			national_socialism_ideology = { #国家社会主義
+			national_socialism_ideology = {
+				#国家社会主義
 			}
 		}
-		color = { 16 16 16 }
+		color = {
+			16
+			16
+			16
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -234,20 +299,25 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
 		}
 	}
-
-	corporatocracism = {	#企業支配主義
+	corporatocracism = {
+		#企業支配主義
 		types = {
-			corporatocracism_ideology = { #企業支配主義
+			corporatocracism_ideology = {
+				#企業支配主義
 			}
 		}
-		color = { 255 255 255 }
+		color = {
+			255
+			255
+			255
+		}
 		rules = {
 			can_send_volunteers = yes
 			can_puppet = yes
@@ -255,8 +325,8 @@ ideologies = {
 			can_guarantee_other_ideologies = no
 		}
 		modifiers = {
-			generate_wargoal_tension = 0.50
-			civilian_intel_to_others = 10.0
+			generate_wargoal_tension = 0.5
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5

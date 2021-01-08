@@ -1,12 +1,57 @@
 on_actions = {
 	on_startup = {
 		effect = {
-
 			every_country = {
-				limit = { is_ai = no }
-				set_variable = { SSW_Opening_Screen = 1 }
+				limit = {
+					is_ai = no
+				}
+				set_variable = {
+					SSW_Opening_Screen = 1
+				}
+			}
+			# create People's Republic of Ukraine
+			# Note: Other Ukrainian countries will be created at the event
+			create_dynamic_country = {
+				original_tag = UKR
+				copy_tag = UKR
+				set_country_flag = UKR_social_conservatism_flag
+				set_politics = {
+					ruling_party = social_conservatism
+				}
+				set_political_party = {
+					ideology = social_conservatism
+					popularity = 70
+				}
+				set_research_slots = 3
+				reserve_dynamic_country = yes
+				add_ideas = extensive_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
+				create_country_leader = {
+					name = "Pavel Skoropadskij"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/Pavel-Skoropadskij.tga"
+					expire = "1965.1.1"
+					ideology = social_conservatism_ideology
+				}
+			}
+			# Remove all cores from Ukraine
+			UKR = {
+				every_state = {
+					limit = {
+						is_core_of = UKR
+					}
+					remove_core_of = UKR
+					add_claim_by = UKR
+				}
+				every_owned_state = {
+					add_claim_by = UKR
+				}
+			}
+			# Restore Hindemburg core for Ukraine Comissariat
+			217 = {
+				add_core_of = UKR
 			}
 		}
-
 	}
 }

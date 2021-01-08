@@ -1,0 +1,335 @@
+#####BALBO_FOCUS_TREE####
+#産業の現状
+shared_focus = {
+		id = ITA_focus_industry_0
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		cost = 2.40
+		available = {
+		}
+		x = 8
+		y = 0
+		completion_reward = {
+			country_event = {
+				id = SSW_ITA.1
+				}	
+		}
+	}
+	#平等な産業
+shared_focus = {
+		id = ITA_focus_industry_1
+		icon = GFX_focus_generic_concessions
+		cost = 5.00
+		prerequisite = {
+			 focus = ITA_focus_industry_0
+			  }
+		mutually_exclusive = {
+			 focus = ITA_focus_industry_2 
+			 }
+		available = {
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+				swap_ideas = {
+remove_idea = ITA_idea_1
+add_idea = ITA_idea_3
+}	
+		}
+	}
+	#現状産業の改良
+shared_focus = {
+		id = ITA_focus_industry_2
+		icon = GFX_goal_generic_production
+		cost = 5.00
+		prerequisite = {
+			 focus = ITA_focus_industry_0
+			 }
+		mutually_exclusive = { 
+			focus = ITA_focus_industry_1
+			 }
+		available = {
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			swap_ideas = {
+remove_idea = ITA_idea_1
+add_idea = ITA_idea_4
+}		
+		}
+	}
+	#民間主体産業への切り替え
+shared_focus = {
+        id = ITA_focus_industry_3
+        icon = GFX_goal_generic_consumer_goods
+        cost = 5.00
+        prerequisite = {
+             focus = ITA_focus_industry_0
+             }
+        mutually_exclusive = { 
+             }
+        available = {
+        }
+        x = 12
+        y = 1
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_idea_2
+				add_idea = ITA_idea_5
+				}
+        }
+	}
+	#現状維持
+    shared_focus = {
+        id = ITA_focus_industry_4
+        icon = GFX_focus_generic_tank_production
+        cost = 5.00
+        prerequisite = {
+             focus = ITA_focus_industry_0
+             }
+        mutually_exclusive = { 
+            focus = ITA_focus_industry_3
+             }
+        available = {
+        }
+        x = 14
+        y = 1
+        completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_idea_2
+				add_idea = ITA_idea_6
+				}
+        }
+    }
+#南部産業への支援
+shared_focus = {
+	id = ITA_focus_industry_5
+	icon = GFX_focus_generic_tank_production
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_1
+		 }
+	available = {
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		random_owned_controlled_state={
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+		   
+			}
+		   
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+			}
+		   
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state={
+				limit = {
+				free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+				}
+			   
+				}
+			   
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+			   
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+	}
+}
+#移民への対処
+shared_focus = {
+	id = ITA_focus_industry_6
+	icon = GFX_focus_generic_support_the_left_right
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_industry_0
+		 }
+	available = {
+	}
+	x = 8
+	y = 1
+	completion_reward = {
+	}
+}
+#南部産業の強化
+shared_focus = {
+	id = ITA_focus_industry_7
+	icon = GFX_goal_generic_construct_civilian
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_5
+		 }
+	available = {
+	}
+	x = 0
+	y = 3
+	completion_reward = {
+			add_idea = ITA_idea_8
+	}
+}
+#北部産業の支援
+shared_focus = {
+	id = ITA_focus_industry_8
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_1
+		 }
+	available = {
+	}
+	x = 2
+	y = 2
+	completion_reward = {
+		random_owned_controlled_state={
+			limit = {
+			free_building_slots = {
+			building = arms_factory
+			size > 0
+			include_locked = yes
+			}
+		   
+			}
+		   
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+		   
+			set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+			}
+			random_owned_controlled_state={
+				limit = {
+				free_building_slots = {
+				building = arms_factory
+				size > 0
+				include_locked = yes
+				}
+			   
+				}
+			   
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+				}
+			   
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+	}
+}
+#南部産業の強化
+shared_focus = {
+	id = ITA_focus_industry_9
+	icon = GFX_focus_generic_the_giant_wakes
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_8
+		 }
+	available = {
+	}
+	x = 2
+	y = 3
+	completion_reward = {
+			add_idea = ITA_idea_9
+	}
+}
+#市民権の付与
+shared_focus = {
+	id = ITA_focus_industry_10
+	icon = GFX_focus_hol_the_foundations_of_defense
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_6
+		 }
+	mutually_exclusive = { 
+		focus = ITA_focus_industry_11
+		 }
+	available = {
+	}
+	x = 7
+	y = 2
+	completion_reward = {
+		add_ideas = ITA_idea_13
+	}
+}
+#過酷な処置
+shared_focus = {
+	id = ITA_focus_industry_11
+	icon = GFX_focus_spr_masters_of_our_own_fate
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_6
+		 }
+	mutually_exclusive = { 
+		focus = ITA_focus_industry_10
+		 }
+	available = {
+	}
+	x = 9
+	y = 2
+	completion_reward = {
+		add_ideas = ITA_idea_14
+	}
+}
+#技術レベルの向上
+shared_focus = {
+	id = ITA_focus_industry_12
+	icon = GFX_goal_generic_construction
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_2
+		 }
+	mutually_exclusive = { 
+		 }
+	available = {
+	}
+	x = 4
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = industry
+			category =electronics
+			}
+	}
+}
+#兵器生産への熟練
+shared_focus = {
+	id = ITA_focus_industry_13
+	icon = GFX_goal_generic_construction
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_12
+		 }
+	mutually_exclusive = { 
+		 }
+	available = {
+	}
+	x = 4
+	y = 3
+	completion_reward = {
+		add_ideas = ITA_idea_15
+	}
+}

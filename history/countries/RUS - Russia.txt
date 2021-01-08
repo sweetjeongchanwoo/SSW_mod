@@ -85,15 +85,6 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Felix Yusupov"
-	desc = "POLITICS_FELIX_YUSUPOV_DESC"
-	picture = "gfx/leaders/RUS/Portrait_Russia_Felix_Yusupov.dds"
-	expire = "1967.9.27"
-	ideology = social_conservatism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
 	name = "Andrey Vlasov"
 	desc = "POLITICS_ANDREY_VLASOV_DESC"
 	picture = "gfx/leaders/RUS/Portrait_Russia_Andrey_Vlasov.dds"

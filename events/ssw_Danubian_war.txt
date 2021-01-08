@@ -496,7 +496,7 @@ country_event = { #
 		ai_chance = { base = 1 }
 		DET = {
 			add_state_core = 766
-			add_state_core = 78
+			add_state_claim = 78
 			add_state_core = 192
 			add_state_core = 198
 
@@ -744,4 +744,3 @@ country_event = { #
 		
 	}
 }
-
