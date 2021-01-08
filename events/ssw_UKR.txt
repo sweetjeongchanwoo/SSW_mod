@@ -1,44 +1,4 @@
 add_namespace = ssw_UKR
-country_event = {
-	id = ssw_UKR.demand_western_poland
-	title = ssw_UKR.demand_western_poland.title
-	desc = ssw_UKR.demand_western_poland.desc
-	picture = GFX_report_event_second_vienna_award_pact
-	fire_only_once = yes
-	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
-	option = {
-		name = ssw_UKR.demand_western_poland.a
-	}
-}
-
-# Debug Event
-country_event = {
-	id = ssw_UKR.1
-	title = ssw_UKR.1.title
-	desc = ssw_UKR.1.desc
-	fire_only_once = yes
-	is_triggered_only = yes
-	# trigger = {
-	# 	tag = UKR
-	# 	is_subject_of = GER
-	# }
-	immediate = {
-		GER = {
-			set_autonomy = {
-				target = UKR
-				autonomy_state = autonomy_free
-			}
-		}
-		leave_faction = yes
-	}
-	option = {
-		name = ssw_UKR.1.a
-	}
-}
-
 # Ukrainian Insurgent Army starts resistance
 country_event = {
 	id = ssw_UKR.2
@@ -98,15 +58,13 @@ country_event = {
 					popularity = 70
 				}
 				set_research_slots = 3
-				add_ideas = limited_conscription
+				# transfer_state should be first line
+				transfer_state = 227
+				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
 				add_war_support = 0.6
-				transfer_state = 227
-				declare_war_on = {
-					target = UKR
-					type = annex_everything
-				}
 				set_rule = {
 					can_puppet = no
 				}
@@ -144,6 +102,10 @@ country_event = {
 					}
 					add_core_of = PREV
 				}
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
 			}
 			# create Ukraine Socialist Republic
 			create_dynamic_country = {
@@ -159,9 +121,10 @@ country_event = {
 				}
 				set_research_slots = 3
 				# reserve_dynamic_country = yes
-				add_ideas = limited_conscription
+				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
 				add_war_support = 0.6
 				transfer_state = 255
 				add_state_claim = 255
@@ -225,9 +188,10 @@ country_event = {
 				}
 				set_research_slots = 3
 				# reserve_dynamic_country = yes
-				add_ideas = limited_conscription
+				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
 				add_war_support = 0.6
 				transfer_state = 200
 				# set_state_controller = 196
@@ -274,6 +238,13 @@ country_event = {
 					}
 					add_core_of = PREV
 				}
+				create_country_leader = {
+					name = "Amerikis Elpidoforos"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/amerikis_elpidoforos.tga"
+					expire = "1965.1.1"
+					ideology = authority_despotism_ideology
+				}
 			}
 			# create Hetmanate of Ukraine
 			create_dynamic_country = {
@@ -289,9 +260,10 @@ country_event = {
 				}
 				set_research_slots = 3
 				# reserve_dynamic_country = yes
-				add_ideas = limited_conscription
+				add_ideas = extensive_conscription
 				add_ideas = UKR_low_education_level
 				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
 				add_war_support = 0.6
 				transfer_state = 222
 				add_state_claim = 220
@@ -343,6 +315,7 @@ country_event = {
 				set_rule = {
 					can_puppet = no
 				}
+				add_ideas = UKR_civil_war
 				remove_state_core = 217
 				add_war_support = 0.6
 				transfer_state = 93
@@ -372,15 +345,12 @@ country_event = {
 						owner = PREV
 					}
 				}
-				create_country_leader = {
-					name = "Pavel Skoropadskij"
-					desc = "POLITICS_LEON_DEGRELLE_DESC"
-					picture = "gfx/leaders/UKR/Pavel-Skoropadskij.tga"
-					expire = "1965.1.1"
-					ideology = social_conservatism_ideology
-				}
 			}
 			DON = {
+				add_timed_idea = {
+					idea = UKR_civil_war
+					days = 365
+				}
 				add_war_support = 0.6
 				transfer_state = 218
 				set_rule = {
@@ -419,64 +389,11 @@ country_event = {
 					type = annex_everything
 				}
 			}
-			# set ai strategy
-			every_country_with_original_tag = {
-				original_tag_to_check = UKR
-				every_country_with_original_tag = {
-					original_tag_to_check = UKR
-					if = {
-						limit = {
-							NOT = {
-								tag = PREV
-							}
-						}
-						add_ai_strategy = {
-							type = invade
-							id = PREV
-							value = 100
-						}
-					}
-				}
-			}
 		}
 	}
 	option = {
 		name = ssw_UKR.3.a
 		remove_ideas = UKR_natives_nationalism
-	}
-}
-
-# Ukrainian Insurgency
-# Note: this event is not trigered currently
-country_event = {
-	id = ssw_UKR.4
-	title = ssw_UKR.4.title
-	desc = ssw_UKR.4.desc
-	picture = GFX_report_event_second_vienna_award_pact
-	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
-	immediate = {
-		hidden_effect = {
-			UKR = {
-				random_controlled_state = {
-					UKA = {
-						set_state_controller = PREV
-					}
-					create_unit = {
-						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.1"
-						owner = UKA
-					}
-					UKR = {
-						set_state_controller = PREV
-					}
-				}
-			}
-		}
-	}
-	option = {
-		name = ssw_UKR.4.a
 	}
 }
 
@@ -609,7 +526,6 @@ country_event = {
 }
 
 # General Demand Event
-# Note: Doniestl Ukraine will be Moldova
 country_event = {
 	id = ssw_UKR.11
 	title = ssw_UKR.11.title
@@ -620,6 +536,20 @@ country_event = {
 		name = ssw_UKR.11.a
 		ai_chance = {
 			base = 1
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio > 1.2
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
 		}
 		FROM = {
 			create_wargoal = {
@@ -637,6 +567,20 @@ country_event = {
 				tag = DET
 				factor = 100
 			}
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
 		}
 		every_owned_state = {
 			limit = {
@@ -647,26 +591,6 @@ country_event = {
 			}
 			FROM = {
 				transfer_state = PREV
-			}
-		}
-		# If Doniestl Ukraine lost all states except for Moldova,
-		# Moldova will annex DET
-		if = {
-			limit = {
-				DET = {
-					any_owned_state = {
-						NOT = {
-							state = 78
-						}
-						is_core_of = DET
-					}
-				}
-			}
-			MOL = {
-				annex_country = {
-					target = DET
-					transfer_troops = yes
-				}
 			}
 		}
 	}
@@ -685,5 +609,20 @@ country_event = {
 		set_rule = {
 			can_puppet = yes
 		}
+	}
+}
+
+country_event = {
+	id = ssw_UKR.13
+	hidden = yes
+	# fire_only_once = yes
+	trigger = {
+		tag = UKV
+		NOT = {
+			has_cosmetic_tag = UKR_GEM
+		}
+	}
+	immediate = {
+		set_cosmetic_tag = UKR_GEM
 	}
 }

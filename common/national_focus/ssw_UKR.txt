@@ -1,9 +1,9 @@
 focus_tree = {
 	id = ssw_UKR
 	country = {
-		factor = 0
+		base = 0
 		modifier = {
-			add = 10
+			add = 4
 			OR = {
 				tag = UKR
 				original_tag = UKR
@@ -121,6 +121,12 @@ focus_tree = {
 		prerequisite = {
 			focus = UKR_TzhDlfxv
 		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -175,7 +181,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 32
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -617,6 +623,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
+		}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -721,6 +733,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+			}
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1459,7 +1477,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = UKR_unity
+			remove_ideas = UKR_civil_war
 			set_capital = 202
+			DON = {
+				remove_ideas = UKR_civil_war
+			}
 		}
 	}
 	#Focus for オデッサの回収 - focus ID randomly generated due to title being in non-latin characters

@@ -1,6 +1,6 @@
 ###This Made by Choco
 ######Why are you looking at internal data?
-#########If you're trying to steal an idea, the sooner you contact me, the better. lol:ちょこグル【Chocogulu】#1476
+#########If you're trying to steal an idea, the sooner you contact me, the better. discord:ちょこグル【Chocogulu】#1476
 
 JAP_political_party_values = {
 	set_variable = { JAP_seiyukai_popularity = 24 }
@@ -601,43 +601,5 @@ JAP_toakensetsu_low_popularity_decrease_effect = {
 		var = JAP_toakensetsu_popularity
 		min = 0
 		max = 100
-	}
-}
-
-
-
-JAP_focus_reload = {
-	hidden_effect = {
-		if = {
-			limit = { has_focus_tree = SSW_JAP_Basic }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic_mix 
-				keep_completed = yes 
-			}
-		}
-
-		else_if = {
-			limit = { has_focus_tree = SSW_JAP_Basic_mix }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic 
-				keep_completed = yes 
-			}
-		}
-
-		if = {
-			limit = { has_focus_tree = SSW_JAP_Basic }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic_mix_1
-				keep_completed = yes 
-			}
-		}
-		
-		else_if = {
-			limit = { has_focus_tree = SSW_JAP_Basic_mix }
-			load_focus_tree = { 
-				tree = SSW_JAP_Basic_1
-				keep_completed = yes 
-			}
-		}
 	}
 }

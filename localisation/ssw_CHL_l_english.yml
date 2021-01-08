@@ -27,8 +27,8 @@
  CHL_sayoku_sien:0 "北米の左翼への支援"
  CHL_doitu_naisen_kainyu:0 "ドイツ内戦への介入"
  CHL_gunzi_dokusai:0 "軍事独裁への移行"
- CHL_gerumania:0 "ゲルマニアに参加"
- CHL_roma:0 "ローマに参加"
+ CHL_gerumania:0 "ゲルマニア合意との友好条約"
+ CHL_roma:0 "ローマ協商との友好条約"
  CHL_kugun_unyou:0 "空軍運用の指導を受ける "
  CHL_kainyu_syugi:0 "介入主義"
  CHL_doitu_dou_yusyutu:0 "ドイツへの銅輸出"
@@ -70,6 +70,28 @@
  CHL_gunju_tousi:0 "軍需産業への投資"
  CHL_zouheisyou_kakudai:0 "国営造兵廠の拡大"
  CHL_houhei_kairyou:0 "砲兵の装備改良"
+ CHL_kuukou_kindaika:0 "空港施設の近代化"
+ CHL_radar_kaihatu:0 "レーダーの開発"
+ CHL_sentouki_kaihatu:0 "戦闘機の自主開発"
+ CHL_cas_juusi:0 "近接航空支援重視"
+ CHL_koukuu_kantai_sien:0 "航空機による艦隊支援"
+ CHL_senryaku_bakugeki:0 "戦略爆撃重視"
+ CHL_tyokyori_sentouki:0 "長距離護衛戦闘機の開発"
+ CHL_andesu_koete:0 "アンデス山脈を越えて"
+ CHL_kogata_seibi:0 "小型艦の整備"
+ CHL_suirai_sentai:0 "水雷戦隊の整備"
+ CHL_minato_kakudai_kyoka:0 "港の拡大と設備強化"
+ CHL_yakan_kunren:0 "夜間戦闘訓練"
+ CHL_taikan_kyohou:0 "大艦巨砲主義"
+ CHL_kirai_sen:0 "機雷戦の用意"
+ CHL_kantai_izi:0 "艦隊維持の徹底"
+ CHL_dokutorin_kousin:0 "海軍ドクトリンの更新"
+ CHL_kokuei_zousen:0 "国営造船所の新設"
+ CHL_kantei_tyuryoku:0 "艦艇製造の注力"
+ CHL_boueki_sosi:0 "貿易阻止重視"
+ CHL_syugeki_kikan_kenzo:0 "襲撃艦隊旗艦の建造"
+ CHL_kaihei_zokyo:0 "チリ海兵隊の増強"
+ CHL_joriku_soukouka:0 "上陸部隊の装甲化"
 
 ###国民精神###
  SSW_ideas_CHL_fuantei_gikai:0 "不安定な議会" 
@@ -93,13 +115,35 @@
  SSW_ideas_CHL_denryoku_kakudai:0 "国内電力網の拡大"
  SSW_ideas_CHL_bitiku_hou:0 "Ley Reservada del Cobre"
  SSW_ideas_CHL_sikan_gakkou:0 "チリ陸軍士官学校"
- 
+ SSW_ideas_CHL_andesu_koete:0 "アンデス山脈を越えて"
+ SSW_ideas_CHL_syusan_kogyo:0 "集散工業"
+ SSW_ideas_CHL_kugun_sidou:0 "イタリアによる空軍指導"
+ SSW_ideas_CHL_sekkyoku_kainyu:0 "積極介入主義"
+ SSW_ideas_CHL_puroisen:0 "南米のプロイセン"
+ SSW_ideas_CHL_yakan_ace:0 "夜間戦闘のエース達"
+ SSW_ideas_CHL_sizumanu_hokori:0 "沈まぬ誇り"
+ SSW_ideas_CHL_zousen_kassei:0 "造船の活性化"
 
 ###カスタムエフェクトツールチップ###
  kari_kouka_tt:0 "§CこのNF効果は仮のものです。今後変更されます！§!"
+ mizissou_tt:0 "§CこのNF効果は未実装です。今後実装されます！§!"
  dokusai_ikou_tt:0 "§Cイタリアかドイツに接近し、与党を変更するディシジョンを追加する予定です§!"
 
-###そのた###
- Chile_Faction_zinmin_rengou:0 "南米人民連合"
- Chile_Faction_daigo:0 "第五インターナショナル"
- EFFECT_CHANGE_LAW_social_system:0 "社会体制が軍事独裁に移行する"
+###そのた(あとで削除するものや移動するもの)###
+ Chile_Faction_zinmin_rengou:0 "南米人民連合" #移動予定#
+ Chile_Faction_daigo:0 "第五インターナショナル" #移動予定#
+ EFFECT_CHANGE_LAW_social_system:0 "社会体制が軍事独裁に移行する" #削除予定#
+ SSW_CHL_research_name:0 "チリの共同研究" #移動予定#
+#政党名#
+ CHL_anarchism_party:0 "労働者総連合(CGT)"
+ CHL_progressive_communism_party:0 "チリ急進党"
+ CHL_classical_communism_party:0 "チリ共産党"
+ CHL_social_democracy_party:0 "チリ社会党"
+ CHL_social_liberalism_party:0 "急進民主主義"
+ CHL_social_conservatism_party:0 "自由党"
+ CHL_authority_democracy_party:0 "大統領府"
+ CHL_authority_despotism_party:0 "軍政評議会"
+ CHL_national_fascism_party:0 "チリ空軍政治部"
+ CHL_national_socialism_party:0 "農業労働党"
+ CHL_corporatocracism_party:0 "資源採掘会社連合"
+ CHL_Chile_Soviet_party:0 "チリ・ソヴィエト共産党"

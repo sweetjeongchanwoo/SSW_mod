@@ -147,7 +147,6 @@ add_ideas = {
 	service_by_requirement
 	export_focus
 	partial_economic_mobilisation
-	ssw_military_dictatorship
 	
 	KOR_colonial_government
 	KOR_rule_of_ethnic_extermination

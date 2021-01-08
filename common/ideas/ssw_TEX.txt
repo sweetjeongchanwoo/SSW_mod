@@ -1,6 +1,6 @@
 ideas = {
 
-    coutry = {
+    country = {
 
          TEX_dig_id = {
 

@@ -219,6 +219,9 @@ shared_focus = {
 		clear_variable = KOR_discontent
 		clear_variable = KOR_collaboration
 		clear_variable = KOR_literacy
+		country_event = {
+			id = KOR_JOKE.0
+		}
 	}
 }
 shared_focus = {
@@ -458,6 +461,14 @@ shared_focus = {
 	cost = 3.00
 	x = -1
 	y = 1
+	available = {
+		NOT = {
+			OR = { 
+				has_country_flag = south_development_progress 
+				has_country_flag = equal_development_progress
+			}
+		}
+	}
 	prerequisite = {
 		focus = KOR_deal_with_zaibatsu
 	}
@@ -465,6 +476,7 @@ shared_focus = {
 		focus = KOR_deportation_poor
 	}
 	completion_reward = {
+		set_country_flag = north_development_progress
 		857 = {
 			add_building_construction = {
 				type = infrastructure
@@ -523,6 +535,14 @@ shared_focus = {
 	cost = 3.00
 	x = 1
 	y = 1
+	available = {
+		NOT = {
+			OR = {  
+				has_country_flag = south_development_progress 
+				has_country_flag = north_development_progress
+			}
+		}
+	}
 	prerequisite = {
 		focus = KOR_deal_with_zaibatsu
 	}
@@ -632,6 +652,14 @@ shared_focus = {
 	cost = 3.00
 	x = 2
 	y = 0
+	available = {
+		NOT = {
+			OR = {  
+				has_country_flag = equal_development_progress
+				has_country_flag = north_development_progress
+			}
+		}
+	}
 	prerequisite = {
 		focus = KOR_deal_with_zaibatsu
 	}
@@ -716,6 +744,7 @@ shared_focus = {
 		}
 		add_to_variable  = { KOR_discontent = -3.09 }
 		add_to_variable = { KOR_collaboration = 1.35 }
+		clr_country_flag = south_development_progress 
 	}
 }
 shared_focus = {
@@ -737,7 +766,8 @@ shared_focus = {
 			}
 		}
 		add_to_variable  = { KOR_discontent = 1 }
-		add_to_variable = { KOR_collaboration = -2 }
+		add_to_variable = { KOR_collaboration = -2 } 
+		clr_country_flag = equal_development_progress
 	}
 }
 shared_focus = {
@@ -759,6 +789,7 @@ shared_focus = {
 			}
 		}
 		add_to_variable  = { KOR_discontent = 2 }
+		clr_country_flag = north_development_progress
 	}
 }
 shared_focus = {

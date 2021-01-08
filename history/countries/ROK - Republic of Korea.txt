@@ -142,7 +142,6 @@ add_ideas = {
 	service_by_requirement
 	export_focus
 	partial_economic_mobilisation
-	ssw_military_dictatorship
 }
 
 add_ideas = {
@@ -159,17 +158,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	anarchism = 0
-	progressive_communism = 0
-	classical_communism = 0
-	social_democracy = 5
-	social_liberalism = 5
-	social_conservatism = 8
-	authority_democracy = 50
-	authority_despotism = 20
-	national_fascism = 5
-	national_socialism = 5
-	corporatocracism = 2
+	anarchism = 10
+	progressive_communism = 10
+	classical_communism = 10
+	social_democracy = 10
+	social_liberalism = 10
+	social_conservatism = 10
+	authority_democracy = 10
+	authority_despotism = 10
+	national_fascism = 10
+	national_socialism = 10
+	corporatocracism = 0
 }
 
 create_country_leader = {
