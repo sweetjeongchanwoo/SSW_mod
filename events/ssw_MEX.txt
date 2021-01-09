@@ -18,6 +18,7 @@ country_event = {
 		hidden_effect = {
 			retire_ideology_leader = social_conservatism
 			retire_ideology_leader = authority_democracy
+			add_ideas = ssw_perfect_democratic_regime
 			set_global_flag = mexican_civil_war
 			set_stability = 0.6
 			set_war_support = 0.6
@@ -35,10 +36,7 @@ country_event = {
 					has_government = authority_democracy
 				}
 				set_cosmetic_tag = MEX_rebellion
-				add_ideas = {
-					MEX_manuel_gomez_morin
-					ssw_parliamentary_democracy_rightist_administration
-				}
+				add_ideas = MEX_manuel_gomez_morin
 				set_stability = 0.5
 				set_war_support = 0.7
 				set_popularities = {
@@ -86,10 +84,7 @@ country_event = {
 			retire_ideology_leader = corporatocracism
 			set_cosmetic_tag = MEX_rebellion
 			#set_cosmetic_tag = MEX_empire
-			add_ideas = {
-				MEX_manuel_gomez_morin
-				ssw_parliamentary_democracy_rightist_administration
-			}
+			add_ideas = MEX_manuel_gomez_morin
 			set_capital = 474
 			set_stability = 0.5
 			set_war_support = 0.7
@@ -132,7 +127,7 @@ country_event = {
 				}
 				add_ideas = {
 					MEX_lazaro_cardenas
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_perfect_democratic_regime
 				}
 				set_stability = 0.6
 				set_war_support = 0.6
@@ -198,10 +193,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			add_ideas = {
-				ssw_parliamentary_democracy_leftist_administration
-				MEX_adolfo_ruiz_cortines
-			}
+			add_ideas = MEX_adolfo_ruiz_cortines
 			set_country_flag = cardenas_resign
 			retire_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war
@@ -251,10 +243,7 @@ country_event = {
 				traits = {
 				}
 			}
-			add_ideas = {
-				ssw_parliamentary_democracy_leftist_administration
-				MEX_raul_salinas_lozano
-			}
+			add_ideas = MEX_raul_salinas_lozano
 			set_country_flag = cardenas_dead
 			kill_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war

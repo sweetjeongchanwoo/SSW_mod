@@ -1,10 +1,9 @@
-####ちょこグルが作ったよ　ディスコ→ちょこグル#1476 バグがあったら教えてください
+####ちょこグルが作ったよ ディスコ→ちょこグル#1476 バグがあったら教えてください
 ideas = {
 	social_system = {
 		law = yes
 		use_list_view = yes
-		
-		ssw_anarchist_community = {
+		ssw_anarchist_community = { #アナキズム共同体
 			allowed = {
 				always = no
 			}
@@ -32,7 +31,7 @@ ideas = {
 				industry_free_repair_factor = 0.5
 			}
 		}
-		ssw_military_regime = {
+		ssw_military_regime = { #軍事政権
 			allowed = {
 				always = no
 			}
@@ -56,7 +55,7 @@ ideas = {
 				resistance_growth = 0.01
 			}
 		}
-		ssw_perfect_democratic_regime = {
+		ssw_perfect_democratic_regime = { #完璧な民主主義政権
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -80,7 +79,7 @@ ideas = {
 				mobilization_speed = -0.10
 			}
 		}
-		ssw_flawed_democratic_regime = {
+		ssw_flawed_democratic_regime = { #欠陥のある民主主義政権
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -102,7 +101,7 @@ ideas = {
 				mobilization_speed = -0.05
 			}
 		}
-		ssw_mixed_regime = {
+		ssw_mixed_regime = { #混合体制
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -120,7 +119,7 @@ ideas = {
 				justify_war_goal_time = 0.05
 			}
 		}
-		ssw_authoritarian_regime = {
+		ssw_authoritarian_regime = { #権威主義政権
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available
@@ -141,7 +140,7 @@ ideas = {
 				mobilization_speed = 0.5
 			}
 		}
-		ssw_fanatical_authoritarian_regime = {
+		ssw_fanatical_authoritarian_regime = { #狂信的権威主義政権
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_gov_available

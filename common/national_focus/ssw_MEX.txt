@@ -1932,10 +1932,7 @@ focus_tree = {
 				ideology = social_democracy
 				popularity = 0.05
 			}
-			add_ideas = {
-				ssw_one_party_dictatorship
-				MEX_valentin_campa
-			}
+			add_ideas = MEX_valentin_campa
 			hidden_effect = { news_event = { id = ssw_mex.7 hours = 6 } }
 		}
 	}
@@ -2685,10 +2682,7 @@ focus_tree = {
 					popularity = 0.15
 				}
 				set_politics = { ruling_party = social_conservatism elections_allowed = yes }
-				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
-					MEX_manuel_gomez_morin
-				}
+				add_ideas = MEX_manuel_gomez_morin
 			}
 		}
 	}
@@ -3264,10 +3258,7 @@ focus_tree = {
 				ideology = national_fascism
 				popularity = 0.15
 			}
-			add_ideas = {
-				ssw_one_party_dictatorship
-				MEX_salvador_abascal
-			}
+			add_ideas = MEX_salvador_abascal
 			hidden_effect = { news_event = { id = ssw_mex.9 hours = 6 } }
 		}
 	}
@@ -3311,7 +3302,6 @@ focus_tree = {
 			add_ideas = {
 				mex_ideas_23
 				MEX_juan_andreu
-				ssw_despotism
 			}
 			effect_tooltip = {
 				create_country_leader = {

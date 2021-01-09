@@ -101,7 +101,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { conservative_grandee }
 			ai_will_do = { factor = 1 }
 		}
@@ -245,7 +250,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { tenacious_negotiator }
 			cost = 0
 			ai_will_do = { factor = 1 }
@@ -327,7 +337,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { financial_expert }
 			cost = 0
 			ai_will_do = { factor = 1 }
@@ -409,7 +424,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = {
 				compassionate_gentleman
 				anti_communist
@@ -495,7 +515,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = {
 				armaments_aficionado
 				fascist_militia_leader

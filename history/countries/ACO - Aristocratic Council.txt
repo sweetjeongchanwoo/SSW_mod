@@ -7,6 +7,12 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	ssw_mixed_regime
+	RUS_felix_yusupov
+	RUS_nikolai_khokhlov
+	RUS_sofia_panina
+	RUS_igor_stravinsky
+	RUS_bronislav_kaminski
 }
 
 set_politics = {
