@@ -1064,20 +1064,20 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_franco_kokusakujidousya
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_goal_generic_major_war
 		cost = 6.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_itariadoumei
-		}
+		prerequisite = { focus = SPR_franco_itariadoumei }
 		x = 31
 		y = 5
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_16
+			add_ideas = spr_ideas_16
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+				expire = 0
 			}
 		}
-
 	}
 	focus = {
 		id = SPR_franco_ahurikabunkatu
@@ -1090,11 +1090,8 @@ focus_tree = {
 		x = 29
 		y = 6
 		completion_reward = {
-			ITA = {
-					country_event = { id = ssw_spr.6 days = 1 }
-				}
+			ITA = { country_event = { id = ssw_spr.6 days = 1 } }
 		}
-
 	}
 	focus = {
 		id = SPR_franco_itariasyussi
@@ -1250,17 +1247,199 @@ focus_tree = {
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 8.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_kokusakujidousya
+		prerequisite = { focus = SPR_franco_kokusakujidousya }
+		available = {
+			is_in_faction_with = ITA
+			NOT = { country_exists = FRA }
+			custom_trigger_tooltip = {
+				tooltip = spr_franco_huransubunaktu_tt
+				OR = {
+					controls_state = 1
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 1
+					}
+				}
+				OR = {
+					controls_state = 19
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 19
+					}
+				}
+				OR = {
+					controls_state = 20
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 20
+					}
+				}
+				OR = {
+					controls_state = 21
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 21
+					}
+				}
+				OR = {
+					controls_state = 22
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 22
+					}
+				}
+				OR = {
+					controls_state = 23
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 23
+					}
+				}
+				OR = {
+					controls_state = 24
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 24
+					}
+				}
+				OR = {
+					controls_state = 25
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 25
+					}
+				}
+				OR = {
+					controls_state = 26
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 26
+					}
+				}
+				OR = {
+					controls_state = 31
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 31
+					}
+				}
+				OR = {
+					controls_state = 32
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 32
+					}
+				}
+				OR = {
+					controls_state = 33
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 33
+					}
+				}
+				OR = {
+					controls_state = 735
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 735
+					}
+				}
+				OR = {
+					controls_state = 806
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 806
+					}
+				}
+				OR = {
+					controls_state = 939
+					any_other_country = {
+						is_in_faction_with = SPR
+						controls_state = 939
+					}
+				}
+			}
 		}
 		x = 33
 		y = 6
 		completion_reward = {
-			ITA = {
-					country_event = { id = ssw_spr.7 days = 1 }
+			custom_effect_tooltip = disunite_france_tt
+			hidden_effect = {
+				ACR = {
+					add_state_core = 19
+					transfer_state = 19
 				}
+				COR = {
+					add_state_core = 1
+					transfer_state = 1
+				}
+				OCC = {
+					add_state_core = 22
+					add_state_core = 25
+					add_state_core = 31
+					transfer_state = 22
+					transfer_state = 25
+					transfer_state = 31
+				}
+				POI = {
+					add_state_core = 23
+					add_state_core = 24
+					add_state_core = 33
+					transfer_state = 23
+					transfer_state = 24
+					transfer_state = 33
+				}
+				PRV = {
+					add_state_core = 21
+					add_state_core = 32
+					transfer_state = 21
+					transfer_state = 32
+				}
+				VIC = {
+					add_state_core = 20
+					add_state_core = 26
+					transfer_state = 20
+					transfer_state = 26
+				}
+				ITA = {
+					add_state_core = 735
+					add_state_core = 939
+					transfer_state = 735
+					transfer_state = 939
+					set_autonomy = {
+						target = COR
+						autonomous_state = colony
+					}
+					set_autonomy = {
+						target = PRV
+						autonomous_state = colony
+					}
+				}
+				set_autonomy = {
+					target = ACR
+					autonomous_state = colony
+				}
+				set_autonomy = {
+					target = OCC
+					autonomous_state = colony
+				}
+				set_autonomy = {
+					target = POI
+					autonomous_state = colony
+				}
+				set_autonomy = {
+					target = VIC
+					autonomous_state = colony
+				}
+				add_state_core = 806
+				transfer_state = 806
+				every_state = {
+					limit = { is_core_of = FRA }
+					remove_core_of = FRA
+					set_state_flag = french_old_core
+				}
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_guntai_yuuseikaryoku

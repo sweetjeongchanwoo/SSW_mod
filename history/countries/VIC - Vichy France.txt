@@ -1,5 +1,4 @@
-﻿###アナキスト・コミューンからアキテーヌに変更
-capital = 19
+﻿capital = 26
 #oob = "EMPTY"
 set_technology = {
 	infantry_weapons = 1

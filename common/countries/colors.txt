@@ -1664,11 +1664,6 @@ AMC = { #大天使ミハイル国
     color_ui = rgb { 217 101 0 }
 }
 
-ACR = { #アナキスト・コミューン
-	color = rgb { 1 1 1 }
-	color_ui = rgb { 1 1 1 }
-}
-
 BLO = { #ブラック・オーダー
 	color = rgb { 0 88 171 }
     color_ui = rgb { 0 88 171 }
@@ -1707,6 +1702,26 @@ TOA = { #大主教領
 DPK = { #北朝鮮
 	color = rgb { 240 0 0 }
 	color_ui = rgb { 240 0 0 }
+}
+
+ACR = { #アキテーヌ
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
+}
+
+POI = { #ポワトゥー
+	color = rgb { 180 0 50 }
+	color_ui = rgb { 180 0 50 }
+}
+
+PRV = { #プロヴァンス
+	color = rgb { 77 77 77 }
+	color_ui = rgb { 77 77 77 }
+}
+
+VIC = { #ヴィシー
+	color = rgb { 98 174 66 }
+	color_ui = rgb { 98 174 66 }
 }
 
 HGR = { #ゲーリング派ドイツ

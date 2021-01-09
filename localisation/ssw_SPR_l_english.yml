@@ -134,8 +134,8 @@
  SPR_franco_kaigunensyuu_desc:0 "海軍力を強化すべく、 積極的に演習を敢行しよう。 "
  SPR_franco_barearesu:0 "バレアレス諸島の返還交渉"
  SPR_franco_barearesu_desc:0 "バレアレスは重要な拠点である。 "
- SPR_franco_kokusakujidousya:0 "国策自動車会社”セアト”の設立"
- SPR_franco_kokusakujidousya_desc:0 "自動車産業を強化し、 陸軍の機甲化へと注力しよう。 "
+ SPR_franco_kokusakujidousya:0 "フランス侵攻"
+ SPR_franco_kokusakujidousya_desc:0 "フランスはスペインやイタリアにとっても重要な土地である。 "
  SPR_franco_ahurikabunkatu:0 "モロッコ・アルジェリアを分割"
  SPR_franco_ahurikabunkatu_desc:0 "北アフリカに新秩序をもたらそう。 "
  SPR_franco_huransubunaktu:0 "フランス国を分割"
@@ -395,6 +395,8 @@
  spr_ideas_1999:0 "王党派の優越"
 #tooltip
  start_second_scw_tt:0 "第二次スペイン内戦が勃発する。 "
+ spr_franco_huransubunaktu_tt:0 "ゲーム開始時のフランス本土とコルシカは我々に占領された。 "
+ disunite_france_tt:0 "フランスを分割する。 "
 #イベント
  ssw_spr.1.title:0 "スペイン・イタリアによる北アフリカ分割"
  ssw_spr.1.desc:0 "スペインは、未だフランス勢力が支配する北アフリカのモロッコ・アルジェリアを、二国間で分割占領することを提案した。 我が国にとっても、アルジェリアを直接統治する絶好の機会であるが、この提案を受け入れるべきだろうか。"

@@ -118,6 +118,7 @@ SCO	= "countries/Commonwealth.txt"	#スコットランド
 WLS	= "countries/Commonwealth.txt"	#ウェールズ
 
 #西欧
+ACR	= "countries/Western Europe.txt"	#アキテーヌ・キリスト共和国
 ADR	= "countries/Western Europe.txt"	#アンドラ
 ADU	= "countries/Western Europe.txt"	#アンダルシア
 ALF	= "countries/Western Europe.txt"	#アメリカ自由連盟
@@ -156,8 +157,10 @@ NFR	= "countries/Western Europe.txt"	#北フランス
 NOR	= "countries/Western Europe.txt"	#ノルウェー
 OCC	= "countries/Western Europe.txt"	#オクシタニア
 OKL	= "countries/Western Europe.txt"	#オクラホマ
+POI	= "countries/Western Europe.txt"	#ポワトゥー
 POR	= "countries/Western Europe.txt"	#ポルトガル
 PRE	= "countries/Western Europe.txt"	#プロイセン
+PRV	= "countries/Western Europe.txt"	#プロヴァンス
 SAX	= "countries/Western Europe.txt"	#ザクセン
 SHL	= "countries/Western Europe.txt"	#シュレースヴィヒ＝ホルシュタイン
 SMR	= "countries/Western Europe.txt"	#サンマリノ
@@ -168,12 +171,12 @@ TEX	= "countries/Western Europe.txt"	#テキサス
 USA	= "countries/Western Europe.txt"	#アメリカ合衆国
 UTC	= "countries/Western Europe.txt"	#三社連合
 VAC	= "countries/Western Europe.txt"	#バチカン
+VIC	= "countries/Western Europe.txt"	#ヴィシー共和国
 WGR	= "countries/Western Europe.txt"	#西ドイツ
 WUR	= "countries/Western Europe.txt"	#ヴュルテンベルク
 
 #東欧
 ACO	= "countries/Eastern Europe.txt"	#貴族評議会
-ACR	= "countries/Eastern Europe.txt"	#アナキスト・コミューン
 ADY	= "countries/Eastern Europe.txt"	#アディゲ
 ALB	= "countries/Eastern Europe.txt"	#アルバニア
 AMC	= "countries/Eastern Europe.txt"	#大天使ミハイル国

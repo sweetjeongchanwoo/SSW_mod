@@ -286,17 +286,12 @@ country_event = {
 	title = ssw_spr.34.title
 	desc = ssw_spr.34.desc
 	picture = GFX_report_event_second_vienna_award_pact
-
-	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
-
 	option = {
 		name = ssw_spr.34.a
-		ai_chance = { base = 1 }				
-			}
+		ai_chance = { base = 1 }
+		transfer_state = 177
+	}
 }
 
 news_event = {
@@ -351,7 +346,7 @@ country_event = {
 					add_to_faction = SPR
 				}
 		ai_chance = { base = 10}
-		news_event = { id = ssw_spr.35 }	
+		news_event = { id = ssw_spr.35 }
 			}
 
     option = {
@@ -421,11 +416,7 @@ country_event = {
 	desc = ssw_spr.5.desc
 	picture = GFX_report_event_second_vienna_award_pact
 
-	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
 
     option = {
 		name = ssw_spr.5.a
@@ -433,12 +424,12 @@ country_event = {
 					set_state_owner = 177
 					country_event = { id = ssw_spr.37 }
 				}
-		ai_chance = { base = 10}
+		ai_chance = { base = 10 }
 			}
 
     option = {
 		name = ssw_spr.5.b
-		ai_chance = { base = 1}
+		ai_chance = { base = 0}
 		SPR = {
 			country_event = { id = ssw_spr.38 }
 		}
@@ -450,34 +441,23 @@ country_event = {
 	title = ssw_spr.37.title
 	desc = ssw_spr.37.desc
 	picture = GFX_report_event_second_vienna_award_pact
-
-	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
-
 	option = {
 		name = ssw_spr.37.a
-		ai_chance = { base = 1 }				
-			}
+		ai_chance = { base = 1 }
+		transfer_state = 177
+	}
 }
 country_event = {
 	id = ssw_spr.38
 	title = ssw_spr.38.title
 	desc = ssw_spr.38.desc
 	picture = GFX_report_event_second_vienna_award_pact
-
-	fire_only_once = yes
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 7
-	}
-
 	option = {
 		name = ssw_spr.38.a
-		ai_chance = { base = 1 }				
-			}
+		ai_chance = { base = 1 }
+	}
 }
 
 country_event = {
