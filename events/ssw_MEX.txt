@@ -140,6 +140,7 @@ country_event = {
 				unlock_national_focus = MEX_leftist
 				country_lock_all_division_template = no
 				remove_ideas = mex_ideas_18
+				reserve_dynamic_country = yes
 				MEX = {
 					transfer_units_fraction = {
 						target = PREV
