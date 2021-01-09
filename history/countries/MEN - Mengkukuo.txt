@@ -1,6 +1,5 @@
 ﻿capital = 330
 oob = "MEN_1950"
-set_cosmetic_tag = Great_Mongol
 
 set_convoys = 5
 

@@ -3,7 +3,7 @@ ideas = {
         india_idea = {
             picture = generic_morale_bonus
             allowed = {
-                original_tag = NIN
+                original_tag = IND
 
             }
             allowed_civil_war = {
@@ -19,7 +19,7 @@ ideas = {
             picture = generic_morale_bonus
 
             allowed = {
-				original_tag = NIN
+				original_tag = IND
 			}
             allowed_civil_war = {
                 always = no
@@ -34,7 +34,7 @@ ideas = {
         india_idea_2 = {
             picture = NIN_marginalized_muslim_community_angry
             allowed = {
-                original_tag = NIN
+                original_tag = IND
             }
             allowed_civil_war = {
                 always = no
@@ -48,7 +48,7 @@ ideas = {
         india_idea_3 = {
             picture = NIN_marginalized_muslim_community_angry
             allowed = {
-                original_tag = NIN
+                original_tag = IND
             }
             allowed_civil_war = {
                 always = no
@@ -64,7 +64,7 @@ ideas = {
         india_idea_4 = {
             picture = generic_disjointed_gov
             allowed = {
-                original_tag = NIN
+                original_tag = IND
             }
             allowed_civil_war = {
                 always = no
@@ -79,7 +79,7 @@ ideas = {
         india_idea_5 = {
             picture = generic_disjointed_gov
             allowed = {
-                original_tag = NIN
+                original_tag = IND
             }
             allowed_civil_war = {
                 always = no
@@ -95,7 +95,7 @@ ideas = {
         india_idea_6 = {
             picture = generic_wall_line
             allowed = {
-                original_tag = NIN
+                original_tag = IND
             }
             allowed_civil_war = {
                 always = no
