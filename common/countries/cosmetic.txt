@@ -75,6 +75,17 @@ RUS_blackorder = {	#ブラック・オーダー
 	color_ui = rgb { 52 82 123 }
 }
 
+#イラン内戦
+PER_communist ={	#共産イラン
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}
+
+PER_islamic ={	#イスラム・イラン
+	color = rgb { 35 159 64 }
+	color_ui = rgb { 35 159 64 }
+}
+
 #共同統治国家
 CLC_JAPandCHI = {	#日華共同港都市
 	color = rgb { 255 191 191 }

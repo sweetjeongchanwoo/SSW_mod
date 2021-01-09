@@ -1410,7 +1410,7 @@ JAP_dec_cat_gea_gold_block = {
 		}
 		visible = {
 			or = {
-				NIN = {
+				IND = {
 					is_in_faction_with = JAP
 				}
 				AST = {
@@ -1570,7 +1570,7 @@ JAP_dec_cat_gea_gold_block = {
 		}
 		visible = {
 			or = {
-				NIN = {
+				IND = {
 					is_in_faction_with = JAP
 				}
 				AST = {
@@ -1830,7 +1830,7 @@ JAP_dec_cat_gea_gold_block = {
 		}
 		visible = {
 			or = {
-				NIN = {
+				IND = {
 					is_in_faction_with = JAP
 				}
 				AST = {
@@ -2379,7 +2379,7 @@ Other_dec_cat_gea_gold_block = {
 		}
 		visible = {
 			or = {
-				NIN = {
+				IND = {
 					is_in_faction_with = JAP
 				}
 				AST = {
@@ -2401,7 +2401,7 @@ Other_dec_cat_gea_gold_block = {
 			JAP = {
 				if = {
 					limit = {
-						NIN = {
+						IND = {
 							is_in_faction_with = JAP
 						}
 					} 
