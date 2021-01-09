@@ -1,0 +1,9 @@
+IR0 = {
+	original_tag = PER
+	has_country_flag = PER_communist_countryflag
+}
+
+IR1 = {
+	original_tag = PER
+	has_country_flag = PER_islamic_countryflag
+}

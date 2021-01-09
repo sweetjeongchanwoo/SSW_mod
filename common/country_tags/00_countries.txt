@@ -337,10 +337,6 @@ VEN	= "countries/South America.txt"	#ベネズエラ
 PRJ = "countries/Asia.txt" 	#日本社会主義人民共和国
 JSF = "countries/Asia.txt" 	#日本社会主義戦線
 
-#中東
-IIR	= "countries/Middle East.txt"	#イスラーム・イラン
-CIR	= "countries/Middle East.txt"	#共産イラン
-
 #西欧
 HGR	= "countries/Western Europe.txt"	#ゲーリング派ドイツ
 HLH	= "countries/Western Europe.txt"	#ヒムラー派ドイツ

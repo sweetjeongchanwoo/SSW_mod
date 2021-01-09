@@ -237,23 +237,28 @@ country_event = {
 				id = sswper.17
 				days = 3
 			}
-				CIR = { transfer_state = 411 }
-				CIR = { transfer_state = 412 }
-				CIR = { transfer_state = 413 }
-				CIR = { add_state_core = 411 }
-				CIR = { add_state_core = 412 }
-				CIR = { add_state_core = 413 }
-				IIR = { transfer_state = 417 }
-				IIR = { transfer_state = 420 }
-				IIR = { transfer_state = 266 }
-				IIR = { transfer_state = 416 }
-				IIR = { transfer_state = 418 }
-				IIR = { add_state_core = 417 }
-				IIR = { add_state_core = 420 }
-				IIR = { add_state_core = 266 }
-				IIR = { add_state_core = 416 }
-				IIR = { add_state_core = 418 }
-			
+			create_dynamic_country = {
+				original_tag = PER
+				set_country_flag = PER_communist_countryflag
+				set_cosmetic_tag = PER_communist
+				set_politics = {	ruling_party = progressive_communism	}
+				reserve_dynamic_country = yes
+			}
+			create_dynamic_country = {
+				original_tag = PER
+				set_country_flag = PER_islamic_countryflag
+				set_cosmetic_tag = PER_islamic
+				set_politics = {	ruling_party = authority_despotism	}
+				reserve_dynamic_country = yes
+			}
+			IR0 = { transfer_state = 411 }
+			IR0 = { transfer_state = 412 }
+			IR0 = { transfer_state = 413 }
+			IR1 = { transfer_state = 417 }
+			IR1 = { transfer_state = 420 }
+			IR1 = { transfer_state = 266 }
+			IR1 = { transfer_state = 416 }
+			IR1 = { transfer_state = 418 }
 		}
 		ai_chance = { factor = 1}
 	}
