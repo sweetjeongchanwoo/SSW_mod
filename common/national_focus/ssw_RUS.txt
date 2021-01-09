@@ -1857,6 +1857,7 @@ focus_tree = {
 					has_completed_focus = RUS_only_one_russia
 					has_completed_focus = RUS_revive_soviet
 					has_completed_focus = RUS_memory_of_the_empire
+					has_completed_focus = RUS_global_defense_council
 				}
 				controls_state = 12
 				controls_state = 137
@@ -2848,7 +2849,7 @@ focus_tree = {
 		x = 26
 		y = 3
 		completion_reward = {
-			
+			country_event = { id = ssw_rus_elections.5 days = 1 }
 		}
 	}
 	focus = {
@@ -4075,7 +4076,12 @@ focus_tree = {
 		cost = 10.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = RUS_i_no_longer_need_help }
-		bypass = { has_completed_focus = RUS_military_dictatorship }
+		bypass = {
+			OR = {
+				has_completed_focus = RUS_military_dictatorship
+				has_completed_focus = RUS_global_defense_council
+			}
+		}
 		x = 52
 		y = 11
 		completion_reward = {
