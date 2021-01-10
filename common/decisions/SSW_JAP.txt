@@ -1944,6 +1944,41 @@ JAP_dec_cat_gea_gold_block = {
 }
 ###################################debug###################################
 JAP_ssw_dec_cat_debug = {
+	JAP_load_fake_focus = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			set_variable = { JAP_focus_num_var = 1 }
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	JAP_load_kuhara_focus = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			set_variable = { JAP_focus_num_var = 2 }
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	JAP_load_yoshida_matsumura_focus = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			set_variable = { JAP_focus_num_var = 3 }
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	JAP_load_katsu_focus = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			set_variable = { JAP_focus_num_var = 4 }
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	JAP_load_seiyukai_focus = {
+		icon = ger_mefo_bills
+		complete_effect = {
+			set_variable = { JAP_focus_num_var = 5 }
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
 	JAP_dec_debug_gold_system = {
 		icon = ger_mefo_bills
 		days_remove = 1

@@ -11,6 +11,7 @@ ideas = {
 		}
 		#南北格差
 		ITA_idea_1 = {
+		picture = north_south_problem
 			allowed = {
 				always = no
 			}
@@ -27,6 +28,7 @@ ideas = {
 		}
 		#軍事傾倒の経済
 		ITA_idea_2 = {
+		picture = military_economic
 			allowed = {
 				always = no
 			}
@@ -121,6 +123,7 @@ ideas = {
 		}
 		#移民との軋轢
 		ITA_idea_7 = {
+		picture = imin_problem
 			allowed = {
 				always = no
 			}
