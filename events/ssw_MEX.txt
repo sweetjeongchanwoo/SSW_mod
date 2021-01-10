@@ -194,7 +194,10 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			add_ideas = MEX_adolfo_ruiz_cortines
+			add_ideas = {
+				MEX_adolfo_ruiz_cortines
+				ssw_perfect_democratic_regime
+			}
 			set_country_flag = cardenas_resign
 			retire_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war
@@ -244,7 +247,10 @@ country_event = {
 				traits = {
 				}
 			}
-			add_ideas = MEX_raul_salinas_lozano
+			add_ideas = {
+				MEX_raul_salinas_lozano
+				ssw_perfect_democratic_regime
+			}
 			set_country_flag = cardenas_dead
 			kill_ideology_leader = corporatocracism
 			set_global_flag = mexican_civil_war

@@ -12,7 +12,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	option = {
 		name = ssw_rus_communism.1000.a
-		ai_chance = { factor = 70 }
+		ai_chance = { factor = 50 }
 		custom_effect_tooltip = communism_down_tt
 		add_stability = 0.05
 		add_popularity = {
@@ -23,7 +23,7 @@ country_event = {
 	}
 	option = {
 		name = ssw_rus_communism.1000.b
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 50 }
 		custom_effect_tooltip = communism_up_tt
 		add_stability = -0.05
 		add_popularity = {
@@ -82,7 +82,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_communism.1002.a
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 0 }
 		custom_effect_tooltip = communism_down_tt
 		add_stability = -0.1
 		add_popularity = {
@@ -94,7 +94,7 @@ country_event = {
 	}
 	option = {
 		name = ssw_rus_communism.1002.b
-		ai_chance = { factor = 70 }
+		ai_chance = { factor = 100 }
 		custom_effect_tooltip = communism_up_tt
 		add_timed_idea = { idea = RUS_trade_union_demand days = 365 }
 		add_stability = -0.15

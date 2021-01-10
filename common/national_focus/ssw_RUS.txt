@@ -1566,6 +1566,23 @@ focus_tree = {
 				type = annex_everything
 				target = KYR
 			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
+			}
 		}
 	}
 	focus = {
@@ -1756,7 +1773,15 @@ focus_tree = {
 						is_core_of = MOS
 						is_core_of = UKR
 						is_core_of = CCS
+						is_core_of = PET
 						is_core_of = BAL
+						is_core_of = CRI
+						is_claimed_by = MOS
+						is_claimed_by = UKR
+						is_claimed_by = CCS
+						is_claimed_by = PET
+						is_claimed_by = BAL
+						is_claimed_by = CRI
 					}
 					NOT = { is_core_of = RUS }
 				}
@@ -2185,7 +2210,15 @@ focus_tree = {
 						is_core_of = MOS
 						is_core_of = UKR
 						is_core_of = CCS
+						is_core_of = PET
 						is_core_of = BAL
+						is_core_of = CRI
+						is_claimed_by = MOS
+						is_claimed_by = UKR
+						is_claimed_by = CCS
+						is_claimed_by = PET
+						is_claimed_by = BAL
+						is_claimed_by = CRI
 					}
 					NOT = { is_core_of = RUS }
 				}
@@ -2226,6 +2259,23 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = KYR
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
 			}
 		}
 	}
@@ -2493,6 +2543,23 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = KYR
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
 			}
 		}
 	}
@@ -4214,6 +4281,21 @@ focus_tree = {
 					type = annex_everything
 					target = KYR
 				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
 			}
 		}
 	}
@@ -4344,8 +4426,17 @@ focus_tree = {
 						is_core_of = MOS
 						is_core_of = UKR
 						is_core_of = CCS
+						is_core_of = PET
 						is_core_of = BAL
+						is_core_of = CRI
 						is_core_of = SOV
+						is_claimed_by = MOS
+						is_claimed_by = UKR
+						is_claimed_by = CCS
+						is_claimed_by = PET
+						is_claimed_by = BAL
+						is_claimed_by = CRI
+						is_claimed_by = SOV
 					}
 					NOT = { is_core_of = RUS }
 				}
@@ -4757,6 +4848,23 @@ focus_tree = {
 				type = annex_everything
 				target = SAU
 			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
+			}
 		}
 	}
 	focus = {
@@ -4971,6 +5079,23 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = KYR
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KAR
+							is_core_of = KAZ
+							is_core_of = TAJ
+							is_core_of = TMS
+							is_core_of = UZB
+							is_core_of = KYR
+							is_core_of = WTR
+						}
+						NOT = { is_core_of = RUS }
+					}
+					add_core_of = RUS
+				}
 			}
 		}
 	}

@@ -45,13 +45,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ssw_rus_elections.2.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 50 }
 		complete_national_focus = RUS_rise_of_the_republic
 		hidden_effect = { news_event = { id = ssw_rus_communism.1006 hours = 6 } }
 	}
 	option = {
 		name = ssw_rus_elections.2.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }
 		custom_effect_tooltip = army_coup_tt
 		add_stability = -0.15
 		add_war_support = -0.15
