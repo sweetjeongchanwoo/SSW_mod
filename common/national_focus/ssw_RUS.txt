@@ -238,6 +238,14 @@ focus_tree = {
 			hidden_effect = {
 				create_wargoal = {
 					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
+				}
+				create_wargoal = {
+					type = annex_everything
 					target = UKR
 				}
 				create_wargoal = {
@@ -1449,6 +1457,14 @@ focus_tree = {
 			hidden_effect = {
 				create_wargoal = {
 					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
+				}
+				create_wargoal = {
+					type = annex_everything
 					target = UKR
 				}
 				create_wargoal = {
@@ -1899,6 +1915,64 @@ focus_tree = {
 			if = {
 				limit = { has_idea = rus_debahu4 }
 				remove_ideas = rus_debahu4
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MOS
+						is_core_of = UKR
+						is_core_of = CCS
+						is_core_of = PET
+						is_core_of = BAL
+						is_core_of = CRI
+						is_core_of = SOV
+						is_core_of = UPR
+						is_claimed_by = MOS
+						is_claimed_by = UKR
+						is_claimed_by = CCS
+						is_claimed_by = PET
+						is_claimed_by = BAL
+						is_claimed_by = CRI
+						is_claimed_by = SOV
+						is_claimed_by = UPR
+					}
+					NOT = { is_core_of = RUS }
+				}
+				add_core_of = RUS
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CCS
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = BAL
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = LTV
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HLH
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = HGR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
+				}
 			}
 		}
 	}
@@ -2382,6 +2456,26 @@ focus_tree = {
 					type = annex_everything
 					target = MOS
 				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = GER
+				}
 			}
 		}
 	}
@@ -2740,6 +2834,14 @@ focus_tree = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = GER
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
 				}
 			}
 			set_global_flag = russia_return_moscow
@@ -4430,6 +4532,7 @@ focus_tree = {
 						is_core_of = BAL
 						is_core_of = CRI
 						is_core_of = SOV
+						is_core_of = UPR
 						is_claimed_by = MOS
 						is_claimed_by = UKR
 						is_claimed_by = CCS
@@ -4437,6 +4540,7 @@ focus_tree = {
 						is_claimed_by = BAL
 						is_claimed_by = CRI
 						is_claimed_by = SOV
+						is_claimed_by = UPR
 					}
 					NOT = { is_core_of = RUS }
 				}
@@ -4621,6 +4725,14 @@ focus_tree = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
 					target = HGR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
 				}
 			}
 		}
@@ -4949,6 +5061,14 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = UKR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PET
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CRI
 				}
 				create_wargoal = {
 					type = annex_everything
