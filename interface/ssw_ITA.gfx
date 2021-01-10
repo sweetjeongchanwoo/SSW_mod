@@ -46,14 +46,14 @@ spriteTypes = {
 	}
 	SpriteType = { 
 		name = "GFX_idea_imin_problem"
-		texturefile = "gfx/interface/ideas/ITA/idea_imin_problem.dds"
+		texturefile = "gfx/interface/ideas/ITA/idea_imin_problem.tga"
 	}
 	SpriteType = { 
 		name = "GFX_idea_military_economic"
-		texturefile = "gfx/interface/ideas/ITA/idea_military_economic.dds"
+		texturefile = "gfx/interface/ideas/ITA/idea_military_economic.tga"
 	}
 	SpriteType = { 
 		name = "GFX_idea_north_south_problem"
-		texturefile = "gfx/interface/ideas/ITA/idea_north_south_problem.dds"
+		texturefile = "gfx/interface/ideas/ITA/idea_north_south_problem.tga"
 	}
 }
