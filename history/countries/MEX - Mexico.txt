@@ -6,7 +6,7 @@ set_technology = {
 }
 add_ideas = {
 	civilian_economy
-	ssw_parliamentary_democracy_leftist_administration
+	ssw_flawed_democratic_regime
 	MEX_lazaro_cardenas
 	mex_ideas_18
 }

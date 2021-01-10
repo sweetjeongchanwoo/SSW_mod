@@ -11,7 +11,7 @@ declare_war_on = {
 	type = annex_everything
 }
 add_ideas = {
-	ssw_despotism
+	ssw_authoritarian_regime
 	civilian_economy
 	rus_debahu1
 	rus_debahu2

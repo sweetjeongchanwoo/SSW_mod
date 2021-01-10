@@ -131,3 +131,34 @@ news_event = {
 		trigger = { NOT = { original_tag = RUS } }
 	}
 }
+country_event = {
+	id = ssw_rus_elections.5
+	title = ssw_rus_elections.5.title
+	desc = ssw_rus_elections.5.desc
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus_elections.5.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = social_liberalism
+			popularity = 0.10
+		}
+		set_politics = {
+			ruling_party = social_liberalism
+			elections_allowed = yes
+		}
+	}
+	option = {
+		name = ssw_rus_elections.5.b
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = social_democracy
+			popularity = 0.10
+		}
+		set_politics = {
+			ruling_party = social_democracy
+			elections_allowed = yes
+		}
+	}
+}
