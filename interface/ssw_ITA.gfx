@@ -44,4 +44,16 @@ spriteTypes = {
 		name = "GFX_ITA_Italian-Gernan"
 		texturefile = "gfx/interface/goals/ITA/SSW_ITAItalian-Gernan.dds"
 	}
+	SpriteType = { 
+		name = "GFX_idea_imin_problem"
+		texturefile = "gfx/interface/ideas/ITA/idea_imin_problem.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_military_economic"
+		texturefile = "gfx/interface/ideas/ITA/idea_military_economic.dds"
+	}
+	SpriteType = { 
+		name = "GFX_idea_north_south_problem"
+		texturefile = "gfx/interface/ideas/ITA/idea_north_south_problem.dds"
+	}
 }
