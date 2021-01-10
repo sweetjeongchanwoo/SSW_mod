@@ -1,4 +1,4 @@
-state = { #ƒJƒ‰ƒ`ƒƒƒCƒ`ƒFƒ‹ƒPƒX
+state = { #ï¿½Jï¿½ï¿½ï¿½`ï¿½ï¿½ï¿½Cï¿½`ï¿½Fï¿½ï¿½ï¿½Pï¿½X
 	id = 1009
 	name = "STATE_1009"
 	manpower = 37000
@@ -6,6 +6,7 @@ state = { #ƒJƒ‰ƒ`ƒƒƒCƒ`ƒFƒ‹ƒPƒX
 	history = {
 		owner = CCS
 		add_core_of = CCS
+		add_core_of = KRC
 		add_core_of = SOV
 		
 		buildings = {

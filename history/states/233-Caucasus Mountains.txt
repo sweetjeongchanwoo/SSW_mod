@@ -8,6 +8,7 @@ state={
 	history={
 		owner = CCS
 		add_core_of = CCS
+		add_core_of = KBR
 		add_core_of = SOV
 		buildings = {
 			infrastructure = 3

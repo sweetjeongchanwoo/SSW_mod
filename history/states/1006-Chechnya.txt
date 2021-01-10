@@ -1,4 +1,4 @@
-state = { #ƒ`ƒFƒ`ƒFƒ“
+state = { #ï¿½`ï¿½Fï¿½`ï¿½Fï¿½ï¿½
 	id = 1006
 	name = "STATE_1006"
 	manpower = 21000
@@ -6,6 +6,7 @@ state = { #ƒ`ƒFƒ`ƒFƒ“
 	history = {
 		owner = CCS
 		add_core_of = CCS
+		add_core_of = CHE
 		add_core_of = SOV
 		victory_points = {
 			3672 5
