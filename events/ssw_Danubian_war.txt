@@ -48,7 +48,7 @@ country_event = { #ニシュ会談
 			HUN = {
 				country_event = {
 					id = Danubian_war.3
-					days = 20
+					days = 40
 				}
 			}
 			every_country = {
@@ -84,7 +84,7 @@ country_event = { #ルーマニアとセルビアが国境付近で軍事演習
 			ROM = {
 				country_event = {
 					id = Danubian_war.4
-					days = 20
+					days = 40
 				}
 			}
 		}
