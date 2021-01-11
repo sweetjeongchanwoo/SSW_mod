@@ -48,6 +48,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/anarcho_syndicalism.dds"
 	}
 	spriteType = {
+		name = "GFX_ideology_anarcho_capitalism_ideology"
+		texturefile = "gfx/interface/ideologies/anarcho_capitalism.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_syndicalism_ideology"
 		texturefile = "gfx/interface/ideologies/syndicalism.dds"
 	}
@@ -58,6 +62,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_islamic_socialism_ideology"
 		texturefile = "gfx/interface/ideologies/islamic_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_christian_socialism_ideology"
+		texturefile = "gfx/interface/ideologies/christian_socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_peasantism_ideology"
+		texturefile = "gfx/interface/ideologies/peasantism.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_military_junta_ideology"

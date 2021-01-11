@@ -38,8 +38,17 @@ create_country_leader = {
 	desc = "POLITICS_JULIAN_GORKIN_DESC"
 	picture = "gfx/leaders/SPR/Portrait_Spain_Julian_Gorkin.dds"
 	expire = "1987.8.8"
-	ideology = anarcho_syndicalism_ideology
+	ideology = anarcho_capitalism_ideology
 	traits = { militant_socialist }
+}
+create_country_leader = {
+	name = "Dolores Ibáurri Gómez"
+	desc = "POLITICS_DOLORES_IBAURRI_GOMEZ_DESC"
+	picture = "gfx/leaders/SPR/Portrait_Spain_Dolores_Ibarruri.dds"
+	expire = "1989.11.12"
+	ideology = syndicalism_ideology
+	traits = { red_suffragette }
+	female = yes
 }
 create_country_leader = {
 	name = "Jesús Hernández Tomás"
@@ -47,6 +56,15 @@ create_country_leader = {
 	picture = "gfx/leaders/SPR/Portrait_Spain_Jesus_Hernandez_Tomas.dds"
 	expire = "1971.1.11"
 	ideology = classical_communism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Vicente Rojo Lluch"
+	desc = "POLITICS_VICENTE_ROJO_LLUCH_DESC"
+	picture = "gfx/leaders/SPR/Portrait_Spain_Vicente_Rojo_Lluch.dds"
+	expire = "1966.11.15"
+	ideology = social_democracy_ideology
 	traits = {
 	}
 }

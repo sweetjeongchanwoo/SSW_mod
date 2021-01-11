@@ -460,7 +460,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Manuel Hedilla"
 				desc = "POLITICS_MANUEL_HEDILLA_DESC"
-				picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+				picture = "gfx/leaders/SPR/Portrait_Spain_Manuel_Hedilla.dds"
 				expire = "1970.2.4"
 				ideology = falangism_national_syndicalism_ideology
 				traits = {
@@ -519,7 +519,7 @@ focus_tree = {
 					create_country_leader = {
 						name = "Manuel Hedilla"
 						desc = "POLITICS_MANUEL_HEDILLA_DESC"
-						picture = "gfx/leaders/SPR/Portrait_Francisco_Franco_Bahamonde.dds"
+						picture = "gfx/leaders/SPR/Portrait_Spain_Manuel_Hedilla.dds"
 						expire = "1970.2.4"
 						ideology = falangism_national_syndicalism_ideology
 						traits = {
@@ -2371,6 +2371,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SPR_outouha_taiseiyouseiha
 		}
+		available = { has_army_manpower = { size > 499999 } }
 		x = 48
 		y = 8
 		completion_reward = {
