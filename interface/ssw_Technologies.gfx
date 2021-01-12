@@ -927,7 +927,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air_tech/jet_heavy_fighter2.dds"
 	}
 	SpriteType = {
-		name = "GFX_jet_heavy_fighter_1948_medium"
+		name = "GFX_jet_heavy_fighter_1952_medium"
 		texturefile = "gfx/interface/technologies/air_tech/jet_heavy_fighter2.dds"
 	}
 	SpriteType = {
@@ -1080,6 +1080,23 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ALF_naval_CAS_1940_medium"
 		texturefile = "gfx/interface/technologies/USA_CAS3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_strategic_bomber_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1948.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_strategic_bomber_1952_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1952.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ALF_jet_strategic_bomber_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1956.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_transport_plane_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1948.dds"
 	}
 
 
