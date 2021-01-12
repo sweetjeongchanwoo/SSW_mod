@@ -1,0 +1,1665 @@
+focus_tree = {
+	id = romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = Antonescu's_speech
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = Reorganaized_the_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = Reorganaized_Nest
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = Restart_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 35
+		y = 1
+
+	}
+	focus = {
+		id = Reorganaized_the_air_force
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 41
+		y = 1
+
+	}
+	focus = {
+		id = Traditionalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_army
+		}
+		mutually_exclusive = {
+			focus = Total_war
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = Plan_of_great_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = Training_aristocratic_officer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = Increace_the_numbar_of_artillery
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Plan_of_great_army
+		}
+		prerequisite = {
+			focus = Training_aristocratic_officer
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = Detailed_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Increace_the_numbar_of_artillery
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = The_reenact_battles_from_the_Kharkiv
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Detailed_plan
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = Use_river
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = The_reenact_battles_from_the_Kharkiv
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = legacy_of_mountain_warfare
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Training_aristocratic_officer
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = Take_advantage_of_mountaingun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = legacy_of_mountain_warfare
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = Reforming_Marele_Cartier_General
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Take_advantage_of_mountaingun
+			focus = Detailed_plan
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = Total_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_army
+		}
+		mutually_exclusive = {
+			focus = Traditionalism
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = Secure_war_expenditures
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+			focus = Total_war
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = MIlitary_unity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Antonescu's_speech
+		}
+		mutually_exclusive = {
+			focus = Codreanu's_children
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = Remember_Marasesti
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Total_war
+		}
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = Supremacy_of_firepower
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Remember_Marasesti
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = Forcible_motorizing
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		prerequisite = {
+			focus = Total_war
+		}
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = Armor_supremacy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Forcible_motorizing
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = Start_the_General_Staff_Office
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Armor_supremacy
+			focus = Supremacy_of_firepower
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = Strengthen_conscripiton
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Start_the_General_Staff_Office
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = Maneuver_in_the_Timisoara
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reforming_Marele_Cartier_General
+			focus = Strengthen_conscripiton
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = Forceing_home_front
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Start_the_General_Staff_Office
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = Improve_Ploeisti_field
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Armor_supremacy
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = Negotiate_with_the_opposition
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = National_governmet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Negotiate_with_the_opposition
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = More_oil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Improve_Ploeisti_field
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = New_leader
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = Confirm_relationship_with_Germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = New_leader
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = Authoritative_nation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Confirm_relationship_with_Germany
+		}
+		prerequisite = {
+			focus = National_governmet
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = Codreanu's_children
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Antonescu's_speech
+		}
+		mutually_exclusive = {
+			focus = MIlitary_unity
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = Legacy_of_capitan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Codreanu's_children
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = Return_Sima
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Legacy_of_capitan
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = Going_to_the_people
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Codreanu's_children
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = Agricultural_Guarantee_Fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Going_to_the_people
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = With_Archangel
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Agricultural_Guarantee_Fund
+		}
+		prerequisite = {
+			focus = Return_Sima
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = Romania_revanchism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = With_Archangel
+			focus = Authoritative_nation
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = Legion_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_Nest
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = reeducate_movement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Codreanu's_children
+		}
+		prerequisite = {
+			focus = Legion_school
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = Transform_sickle_into_guns
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = reeducate_movement
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = Spirit_of_work
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = reeducate_movement
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = NEW_HUMAN
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Transform_sickle_into_guns
+		}
+		prerequisite = {
+			focus = Spirit_of_work
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = committee_of_ROMANIANZATION
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_Nest
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = Patriotism_propaganda
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = committee_of_ROMANIANZATION
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = Army_learning_to_the_right
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_Nest
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = Raise_capability_of_mobilization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Army_learning_to_the_right
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = Waves_of_people
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Patriotism_propaganda
+		}
+		prerequisite = {
+			focus = Raise_capability_of_mobilization
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = Black_sea_submarin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Restart_navy
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = Buy_Uboat
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Black_sea_submarin
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = Efficient_production
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Buy_Uboat
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = Ambition_of_Great_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Restart_navy
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = Averescu_class_battleship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Ambition_of_Great_navy
+		}
+		mutually_exclusive = {
+			focus = Hire_Italian_engineer
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = Rule_of_Black_sea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Averescu_class_battleship
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = Hire_Italian_engineer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Ambition_of_Great_navy
+		}
+		mutually_exclusive = {
+			focus = Averescu_class_battleship
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = Thousands_of_navalship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Hire_Italian_engineer
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = Expention_base
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_air_force
+		}
+		x = 40
+		y = 2
+
+	}
+	focus = {
+		id = Focus_doctrine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_air_force
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = Lisence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Expention_base
+		}
+		prerequisite = {
+			focus = Focus_doctrine
+		}
+		mutually_exclusive = {
+			focus = Large_investment_in_the_aviation_industry
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = Focus_product
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lisence
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = Large_investment_in_the_aviation_industry
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Focus_doctrine
+		}
+		prerequisite = {
+			focus = Expention_base
+		}
+		mutually_exclusive = {
+			focus = Lisence
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = Factory_of_yassy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Large_investment_in_the_aviation_industry
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = Galati_test_airfield
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Large_investment_in_the_aviation_industry
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = State_run_enterprise
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Factory_of_yassy
+		}
+		prerequisite = {
+			focus = Galati_test_airfield
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = Private_enterprise
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Galati_test_airfield
+		}
+		prerequisite = {
+			focus = Factory_of_yassy
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = High_altitude_fighter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Private_enterprise
+			focus = State_run_enterprise
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = Fraternity_of_Cross
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Waves_of_people
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = Destroy_Holy_Crown!
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Romania_revanchism
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = Win
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Destroy_Holy_Crown!
+		}
+		mutually_exclusive = {
+			focus = Lose
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = Lose
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Destroy_Holy_Crown!
+		}
+		mutually_exclusive = {
+			focus = Win
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = Reconstruction_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lose
+			focus = Win
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = Do_all_that_nation_have_got
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reconstruction_plan
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = Strengthen_relations_with_finance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Do_all_that_nation_have_got
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = Redeveropment_Bucarest
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Strengthen_relations_with_finance
+		}
+		x = 20
+		y = 12
+
+	}
+	focus = {
+		id = Support_Bank
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Strengthen_relations_with_finance
+		}
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = Protect_romanian_refugee
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Support_Bank
+		}
+		prerequisite = {
+			focus = Redeveropment_Bucarest
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = Extention_planning
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Protect_romanian_refugee
+		}
+		x = 18
+		y = 14
+
+	}
+	focus = {
+		id = For_lackland
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Protect_romanian_refugee
+		}
+		x = 20
+		y = 14
+
+	}
+	focus = {
+		id = Romanian_expansionism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = For_lackland
+		}
+		x = 20
+		y = 15
+
+	}
+	focus = {
+		id = Return_Carol2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Form_a_cabnet_by_carlist
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = Royal_fortune
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Return_Carol2
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = Form_a_cabnet_by_carlist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lose
+		}
+		mutually_exclusive = {
+			focus = Yang_liberal
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = The_Royal_Dictatorship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Royal_fortune
+		}
+		prerequisite = {
+			focus = 1938_Constitution_adoptin
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = 1938_Constitution_adoptin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Form_a_cabnet_by_carlist
+			focus = Yang_liberal
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = National_Renaissance_Front
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Planning_rearmament
+		}
+		prerequisite = {
+			focus = The_collusion_with_capitalist
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = Planning_rearmament
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Yang_liberal
+		}
+		x = 28
+		y = 11
+
+	}
+	focus = {
+		id = The_collusion_with_capitalist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Yang_liberal
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = Yang_liberal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lose
+		}
+		mutually_exclusive = {
+			focus = Form_a_cabnet_by_carlist
+			focus = Old_liberal
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = Jassy_trials
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Yang_liberal
+			focus = Old_liberal
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = Eradicate_Iron_Guard_remaining
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Jassy_trials
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = 1923_Constitution_adoptin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Old_liberal
+		}
+		x = 31
+		y = 10
+
+	}
+	focus = {
+		id = Old_liberal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lose
+		}
+		mutually_exclusive = {
+			focus = Yang_liberal
+			focus = National_Peasants'_Party
+		}
+		x = 32
+		y = 9
+
+	}
+	focus = {
+		id = Election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = 1923_Constitution_adoptin
+		}
+		prerequisite = {
+			focus = Spirit_of_TitulescuDiplomacy
+		}
+		x = 32
+		y = 12
+
+	}
+	focus = {
+		id = Spirit_of_TitulescuDiplomacy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Old_liberal
+		}
+		x = 33
+		y = 10
+
+	}
+	focus = {
+		id = Election_law_amendment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Peasants'_Party
+		}
+		x = 37
+		y = 10
+
+	}
+	focus = {
+		id = Thorough_land_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Peasants'_Party
+		}
+		x = 35
+		y = 10
+
+	}
+	focus = {
+		id = Steer_cource_liberalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Thorough_land_reform
+		}
+		prerequisite = {
+			focus = Election_law_amendment
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = National_Peasants'_Party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Lose
+		}
+		mutually_exclusive = {
+			focus = Old_liberal
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = Support_new_germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Renaissance_Front
+			focus = Election
+			focus = Steer_cource_liberalism
+			focus = The_Royal_Dictatorship
+		}
+		mutually_exclusive = {
+			focus = Ngotiatie_with_UK
+		}
+		x = 28
+		y = 13
+
+	}
+	focus = {
+		id = Ngotiatie_with_UK
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Renaissance_Front
+			focus = Election
+			focus = Steer_cource_liberalism
+			focus = The_Royal_Dictatorship
+		}
+		mutually_exclusive = {
+			focus = Support_new_germany
+			focus = A_deal_with_the_devil
+		}
+		x = 30
+		y = 13
+
+	}
+	focus = {
+		id = A_deal_with_the_devil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Renaissance_Front
+			focus = Steer_cource_liberalism
+			focus = Election
+			focus = The_Royal_Dictatorship
+		}
+		mutually_exclusive = {
+			focus = Ngotiatie_with_UK
+			focus = Approach_to_Latin
+		}
+		x = 32
+		y = 13
+
+	}
+	focus = {
+		id = Approach_to_Latin
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = National_Renaissance_Front
+			focus = Election
+			focus = Steer_cource_liberalism
+			focus = The_Royal_Dictatorship
+		}
+		mutually_exclusive = {
+			focus = A_deal_with_the_devil
+		}
+		x = 34
+		y = 13
+
+	}
+	focus = {
+		id = Treatly_of_commerce_between_romania_and_germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Support_new_germany
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = Treaty_of_London
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Ngotiatie_with_UK
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = Romania_Russia_Treaty_of_Mutual_Assistance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = A_deal_with_the_devil
+		}
+		x = 32
+		y = 14
+
+	}
+	focus = {
+		id = Compromise_to_Facist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Approach_to_Latin
+		}
+		x = 34
+		y = 14
+
+	}
+	focus = {
+		id = Allies_in_Balkan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Treatly_of_commerce_between_romania_and_germany
+		}
+		x = 28
+		y = 15
+
+	}
+	focus = {
+		id = Surprise_attack_Germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Treaty_of_London
+		}
+		x = 30
+		y = 15
+
+	}
+	focus = {
+		id = The_Romania_Russia_Axis
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Romania_Russia_Treaty_of_Mutual_Assistance
+		}
+		x = 32
+		y = 15
+
+	}
+	focus = {
+		id = Like_the_prosperous_Roma
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Compromise_to_Facist
+		}
+		x = 34
+		y = 15
+
+	}
+	focus = {
+		id = Congress_of_Bucarest
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Win
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = Enabling_act_of_Sima
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Win
+		}
+		mutually_exclusive = {
+			focus = Keep_military_dictatorship
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = Keep_military_dictatorship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Win
+		}
+		mutually_exclusive = {
+			focus = Enabling_act_of_Sima
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = Swear_an_oath_to_Cross
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Enabling_act_of_Sima
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = Messenger_from_Archangel_Michael
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Swear_an_oath_to_Cross
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = Greater_Romania
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Keep_military_dictatorship
+			focus = Enabling_act_of_Sima
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = Maneuver_in_the_Transylvania
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Greater_Romania
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = Cerebrated_nation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Messenger_from_Archangel_Michael
+		}
+		prerequisite = {
+			focus = Maneuver_in_the_Transylvania
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = Legion_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Cerebrated_nation
+		}
+		x = 14
+		y = 13
+
+	}
+	focus = {
+		id = Confirm_relationship_with_Serbia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Legion_revolution
+		}
+		x = 15
+		y = 14
+
+	}
+	focus = {
+		id = Negotiation_with_Loser
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Legion_revolution
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = Plan_of_Balkan_Pact
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Confirm_relationship_with_Serbia
+		}
+		prerequisite = {
+			focus = Negotiation_with_Loser
+		}
+		mutually_exclusive = {
+			focus = Balkans_dominance
+		}
+		x = 15
+		y = 15
+
+	}
+	focus = {
+		id = Balkans_dominance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Negotiation_with_Loser
+		}
+		prerequisite = {
+			focus = Confirm_relationship_with_Serbia
+		}
+		mutually_exclusive = {
+			focus = Plan_of_Balkan_Pact
+		}
+		x = 13
+		y = 15
+
+	}
+	focus = {
+		id = Defend_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_council
+		}
+		mutually_exclusive = {
+			focus = Puppet_king
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = Establish_council
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Keep_military_dictatorship
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = Puppet_king
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Establish_council
+		}
+		mutually_exclusive = {
+			focus = Defend_constitutional_monarchy
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = Compromise_with_Roylaist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Defend_constitutional_monarchy
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = Deportation_Roylaist
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Puppet_king
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = Change_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Compromise_with_Roylaist
+			focus = Deportation_Roylaist
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = Isolationism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Compromise_with_Roylaist
+			focus = Deportation_Roylaist
+		}
+		x = 8
+		y = 13
+
+	}
+	focus = {
+		id = Compromise_with_Hungary
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Change_policy
+		}
+		x = 11
+		y = 14
+
+	}
+	focus = {
+		id = Frendship_with_Blugaria
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Change_policy
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = Attack_Germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Compromise_with_Hungary
+		}
+		prerequisite = {
+			focus = Frendship_with_Blugaria
+		}
+		x = 11
+		y = 15
+
+	}
+	focus = {
+		id = Attack_Russia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Frendship_with_Blugaria
+		}
+		prerequisite = {
+			focus = Compromise_with_Hungary
+		}
+		x = 9
+		y = 15
+
+	}
+}
