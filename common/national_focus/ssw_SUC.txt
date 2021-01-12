@@ -1,0 +1,19 @@
+###SELECT_TREE###
+##服従
+shared_focus = {
+	id = SUC_focus
+	icon = GFX_goal_generic_construction
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_12
+		 }
+	mutually_exclusive = { 
+		 }
+	available = {
+	}
+	x = 4
+	y = 3
+	completion_reward = {
+		add_ideas = ITA_idea_15
+	}
+}
