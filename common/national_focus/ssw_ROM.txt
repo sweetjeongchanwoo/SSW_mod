@@ -17,23 +17,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 19
-		y = 1
-
-	}
-	focus = {
-		id = Reorganaized_the_army
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 10
-		y = 1
-
-	}
-	focus = {
-		id = Reorganaized_Nest
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 28
-		y = 1
+		y = 0
 
 	}
 	focus = {
@@ -41,7 +25,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 35
-		y = 1
+		y = 2
 
 	}
 	focus = {
@@ -49,150 +33,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		x = 41
-		y = 1
-
-	}
-	focus = {
-		id = Traditionalism
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganaized_the_army
-		}
-		mutually_exclusive = {
-			focus = Total_war
-		}
-		x = 9
 		y = 2
-
-	}
-	focus = {
-		id = Plan_of_great_army
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Traditionalism
-		}
-		x = 5
-		y = 3
-
-	}
-	focus = {
-		id = Training_aristocratic_officer
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Traditionalism
-		}
-		x = 7
-		y = 3
-
-	}
-	focus = {
-		id = Increace_the_numbar_of_artillery
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Plan_of_great_army
-		}
-		prerequisite = {
-			focus = Training_aristocratic_officer
-		}
-		x = 6
-		y = 4
-
-	}
-	focus = {
-		id = Detailed_plan
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Increace_the_numbar_of_artillery
-		}
-		x = 6
-		y = 5
-
-	}
-	focus = {
-		id = The_reenact_battles_from_the_Kharkiv
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Detailed_plan
-		}
-		x = 6
-		y = 6
-
-	}
-	focus = {
-		id = Use_river
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = The_reenact_battles_from_the_Kharkiv
-		}
-		x = 5
-		y = 7
-
-	}
-	focus = {
-		id = legacy_of_mountain_warfare
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Training_aristocratic_officer
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = Take_advantage_of_mountaingun
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = legacy_of_mountain_warfare
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = Reforming_Marele_Cartier_General
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Take_advantage_of_mountaingun
-			focus = Detailed_plan
-		}
-		x = 8
-		y = 6
-
-	}
-	focus = {
-		id = Total_war
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganaized_the_army
-		}
-		mutually_exclusive = {
-			focus = Traditionalism
-		}
-		x = 11
-		y = 2
-
-	}
-	focus = {
-		id = Secure_war_expenditures
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Traditionalism
-			focus = Total_war
-		}
-		x = 10
-		y = 3
 
 	}
 	focus = {
@@ -206,7 +47,80 @@ focus_tree = {
 			focus = Codreanu's_children
 		}
 		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = Reorganaized_the_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = MIlitary_unity
+		}
+		x = 10
 		y = 2
+
+	}
+	focus = {
+		id = Traditionalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_army
+		}
+		mutually_exclusive = {
+			focus = Total_war
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = Plan_of_great_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = Training_aristocratic_officer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = Total_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reorganaized_the_army
+		}
+		mutually_exclusive = {
+			focus = Traditionalism
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = Secure_war_expenditures
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Traditionalism
+			focus = Total_war
+		}
+		x = 10
+		y = 4
 
 	}
 	focus = {
@@ -220,7 +134,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 12
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -231,7 +145,7 @@ focus_tree = {
 			focus = Remember_Marasesti
 		}
 		x = 12
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -248,7 +162,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 14
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -259,7 +173,7 @@ focus_tree = {
 			focus = Forcible_motorizing
 		}
 		x = 14
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -271,7 +185,7 @@ focus_tree = {
 			focus = Supremacy_of_firepower
 		}
 		x = 13
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -282,18 +196,6 @@ focus_tree = {
 			focus = Start_the_General_Staff_Office
 		}
 		x = 12
-		y = 6
-
-	}
-	focus = {
-		id = Maneuver_in_the_Timisoara
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Reforming_Marele_Cartier_General
-			focus = Strengthen_conscripiton
-		}
-		x = 10
 		y = 7
 
 	}
@@ -305,7 +207,7 @@ focus_tree = {
 			focus = Start_the_General_Staff_Office
 		}
 		x = 14
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -316,7 +218,7 @@ focus_tree = {
 			focus = Armor_supremacy
 		}
 		x = 15
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -327,7 +229,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 16
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -338,7 +240,7 @@ focus_tree = {
 			focus = Negotiate_with_the_opposition
 		}
 		x = 16
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -349,7 +251,7 @@ focus_tree = {
 			focus = Improve_Ploeisti_field
 		}
 		x = 16
-		y = 6
+		y = 7
 
 	}
 	focus = {
@@ -360,7 +262,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 18
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -371,7 +273,7 @@ focus_tree = {
 			focus = New_leader
 		}
 		x = 18
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -385,7 +287,7 @@ focus_tree = {
 			focus = National_governmet
 		}
 		x = 17
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -399,7 +301,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 20
-		y = 2
+		y = 1
 
 	}
 	focus = {
@@ -410,7 +312,7 @@ focus_tree = {
 			focus = Codreanu's_children
 		}
 		x = 20
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -421,7 +323,7 @@ focus_tree = {
 			focus = Legacy_of_capitan
 		}
 		x = 20
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -432,7 +334,7 @@ focus_tree = {
 			focus = Codreanu's_children
 		}
 		x = 22
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -443,7 +345,7 @@ focus_tree = {
 			focus = Going_to_the_people
 		}
 		x = 22
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -457,7 +359,7 @@ focus_tree = {
 			focus = Return_Sima
 		}
 		x = 21
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -469,7 +371,18 @@ focus_tree = {
 			focus = Authoritative_nation
 		}
 		x = 19
-		y = 6
+		y = 7
+
+	}
+	focus = {
+		id = Reorganaized_Nest
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Codreanu's_children
+		}
+		x = 27
+		y = 2
 
 	}
 	focus = {
@@ -480,7 +393,7 @@ focus_tree = {
 			focus = Reorganaized_Nest
 		}
 		x = 25
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -494,7 +407,7 @@ focus_tree = {
 			focus = Legion_school
 		}
 		x = 25
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -505,7 +418,7 @@ focus_tree = {
 			focus = reeducate_movement
 		}
 		x = 24
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -516,7 +429,7 @@ focus_tree = {
 			focus = reeducate_movement
 		}
 		x = 26
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -530,7 +443,7 @@ focus_tree = {
 			focus = Spirit_of_work
 		}
 		x = 25
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -541,7 +454,7 @@ focus_tree = {
 			focus = Reorganaized_Nest
 		}
 		x = 27
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -552,7 +465,7 @@ focus_tree = {
 			focus = committee_of_ROMANIANZATION
 		}
 		x = 27
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -563,7 +476,7 @@ focus_tree = {
 			focus = Reorganaized_Nest
 		}
 		x = 29
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -574,7 +487,7 @@ focus_tree = {
 			focus = Army_learning_to_the_right
 		}
 		x = 29
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -588,7 +501,7 @@ focus_tree = {
 			focus = Raise_capability_of_mobilization
 		}
 		x = 28
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -599,7 +512,7 @@ focus_tree = {
 			focus = Restart_navy
 		}
 		x = 32
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -610,7 +523,7 @@ focus_tree = {
 			focus = Black_sea_submarin
 		}
 		x = 32
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -621,7 +534,7 @@ focus_tree = {
 			focus = Buy_Uboat
 		}
 		x = 32
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -632,7 +545,7 @@ focus_tree = {
 			focus = Restart_navy
 		}
 		x = 35
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -646,7 +559,7 @@ focus_tree = {
 			focus = Hire_Italian_engineer
 		}
 		x = 34
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -657,7 +570,7 @@ focus_tree = {
 			focus = Averescu_class_battleship
 		}
 		x = 34
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -671,7 +584,7 @@ focus_tree = {
 			focus = Averescu_class_battleship
 		}
 		x = 36
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -682,7 +595,7 @@ focus_tree = {
 			focus = Hire_Italian_engineer
 		}
 		x = 36
-		y = 4
+		y = 5
 
 	}
 	focus = {
@@ -693,7 +606,7 @@ focus_tree = {
 			focus = Reorganaized_the_air_force
 		}
 		x = 40
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -704,7 +617,7 @@ focus_tree = {
 			focus = Reorganaized_the_air_force
 		}
 		x = 42
-		y = 2
+		y = 3
 
 	}
 	focus = {
@@ -719,17 +632,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Large_investment_in_the_aviation_industry
-		}
-		x = 38
-		y = 3
-
-	}
-	focus = {
-		id = Focus_product
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Lisence
 		}
 		x = 38
 		y = 4
@@ -749,7 +651,7 @@ focus_tree = {
 			focus = Lisence
 		}
 		x = 41
-		y = 3
+		y = 4
 
 	}
 	focus = {
@@ -758,20 +660,24 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = Large_investment_in_the_aviation_industry
+			focus = Lisence
 		}
-		x = 40
-		y = 4
+		x = 39
+		y = 5
 
 	}
 	focus = {
-		id = Galati_test_airfield
+		id = Focus_product
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Large_investment_in_the_aviation_industry
+			focus = Lisence
 		}
-		x = 42
-		y = 4
+		prerequisite = {
+			focus = Factory_of_yassy
+		}
+		x = 38
+		y = 6
 
 	}
 	focus = {
@@ -781,10 +687,21 @@ focus_tree = {
 		prerequisite = {
 			focus = Factory_of_yassy
 		}
-		prerequisite = {
-			focus = Galati_test_airfield
+		mutually_exclusive = {
+			focus = Private_enterprise
 		}
 		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = Galati_test_airfield
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Large_investment_in_the_aviation_industry
+		}
+		x = 41
 		y = 5
 
 	}
@@ -798,8 +715,11 @@ focus_tree = {
 		prerequisite = {
 			focus = Factory_of_yassy
 		}
+		mutually_exclusive = {
+			focus = State_run_enterprise
+		}
 		x = 42
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -811,7 +731,100 @@ focus_tree = {
 			focus = State_run_enterprise
 		}
 		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = legacy_of_mountain_warfare
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Training_aristocratic_officer
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = Increace_the_numbar_of_artillery
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Plan_of_great_army
+		}
+		prerequisite = {
+			focus = Training_aristocratic_officer
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = Take_advantage_of_mountaingun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = legacy_of_mountain_warfare
+		}
+		x = 8
 		y = 6
+
+	}
+	focus = {
+		id = Detailed_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Increace_the_numbar_of_artillery
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = Reforming_Marele_Cartier_General
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Take_advantage_of_mountaingun
+			focus = Detailed_plan
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = The_reenact_battles_from_the_Kharkiv
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Detailed_plan
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = Use_river
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = The_reenact_battles_from_the_Kharkiv
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = Maneuver_in_the_Timisoara
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Reforming_Marele_Cartier_General
+			focus = Strengthen_conscripiton
+		}
+		x = 10
+		y = 8
 
 	}
 	focus = {
@@ -822,7 +835,7 @@ focus_tree = {
 			focus = Waves_of_people
 		}
 		x = 28
-		y = 5
+		y = 6
 
 	}
 	focus = {
@@ -833,7 +846,7 @@ focus_tree = {
 			focus = Romania_revanchism
 		}
 		x = 19
-		y = 7
+		y = 8
 
 	}
 	focus = {
@@ -847,7 +860,7 @@ focus_tree = {
 			focus = Lose
 		}
 		x = 18
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -861,7 +874,7 @@ focus_tree = {
 			focus = Win
 		}
 		x = 20
-		y = 8
+		y = 9
 
 	}
 	focus = {
@@ -873,7 +886,7 @@ focus_tree = {
 			focus = Win
 		}
 		x = 19
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -884,7 +897,7 @@ focus_tree = {
 			focus = Reconstruction_plan
 		}
 		x = 19
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -894,8 +907,11 @@ focus_tree = {
 		prerequisite = {
 			focus = Do_all_that_nation_have_got
 		}
+		mutually_exclusive = {
+			focus = Investment_in_rural_communities
+		}
 		x = 20
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -906,7 +922,7 @@ focus_tree = {
 			focus = Strengthen_relations_with_finance
 		}
 		x = 20
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -917,11 +933,11 @@ focus_tree = {
 			focus = Strengthen_relations_with_finance
 		}
 		x = 22
-		y = 12
+		y = 13
 
 	}
 	focus = {
-		id = Protect_romanian_refugee
+		id = Revived_land
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -930,19 +946,25 @@ focus_tree = {
 		prerequisite = {
 			focus = Redeveropment_Bucarest
 		}
+		prerequisite = {
+			focus = Mordern_agriculture
+		}
+		prerequisite = {
+			focus = Relief_fund
+		}
 		x = 19
-		y = 13
+		y = 14
 
 	}
 	focus = {
-		id = Extention_planning
+		id = Protect_romanian_refugee
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Protect_romanian_refugee
+			focus = Revived_land
 		}
 		x = 18
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -950,10 +972,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Protect_romanian_refugee
+			focus = Revived_land
 		}
 		x = 20
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -962,9 +984,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = For_lackland
+			focus = Protect_romanian_refugee
 		}
-		x = 20
-		y = 15
+		x = 19
+		y = 16
 
 	}
 	focus = {
@@ -975,7 +998,7 @@ focus_tree = {
 			focus = Form_a_cabnet_by_carlist
 		}
 		x = 23
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -986,7 +1009,7 @@ focus_tree = {
 			focus = Return_Carol2
 		}
 		x = 23
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1000,7 +1023,7 @@ focus_tree = {
 			focus = Yang_liberal
 		}
 		x = 24
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1014,7 +1037,7 @@ focus_tree = {
 			focus = 1938_Constitution_adoptin
 		}
 		x = 24
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1026,7 +1049,7 @@ focus_tree = {
 			focus = Yang_liberal
 		}
 		x = 25
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1040,7 +1063,7 @@ focus_tree = {
 			focus = The_collusion_with_capitalist
 		}
 		x = 28
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1050,7 +1073,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Yang_liberal
 		}
-		x = 28
+		x = 27
 		y = 11
 
 	}
@@ -1061,8 +1084,8 @@ focus_tree = {
 		prerequisite = {
 			focus = Yang_liberal
 		}
-		x = 27
-		y = 10
+		x = 28
+		y = 12
 
 	}
 	focus = {
@@ -1077,7 +1100,7 @@ focus_tree = {
 			focus = Old_liberal
 		}
 		x = 28
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1087,9 +1110,11 @@ focus_tree = {
 		prerequisite = {
 			focus = Yang_liberal
 			focus = Old_liberal
+			focus = National_Peasants'_Party
+			focus = Form_a_cabnet_by_carlist
 		}
-		x = 29
-		y = 10
+		x = 30
+		y = 11
 
 	}
 	focus = {
@@ -1100,7 +1125,7 @@ focus_tree = {
 			focus = Jassy_trials
 		}
 		x = 30
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1108,10 +1133,11 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
+			focus = National_Peasants'_Party
 			focus = Old_liberal
 		}
-		x = 31
-		y = 10
+		x = 35
+		y = 11
 
 	}
 	focus = {
@@ -1126,7 +1152,7 @@ focus_tree = {
 			focus = National_Peasants'_Party
 		}
 		x = 32
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1134,13 +1160,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
+			focus = Spirit_of_TitulescuDiplomacy
+		}
+		prerequisite = {
 			focus = 1923_Constitution_adoptin
 		}
 		prerequisite = {
-			focus = Spirit_of_TitulescuDiplomacy
+			focus = Grasp_of_foreign_capital
 		}
 		x = 32
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1151,7 +1180,7 @@ focus_tree = {
 			focus = Old_liberal
 		}
 		x = 33
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1162,7 +1191,7 @@ focus_tree = {
 			focus = National_Peasants'_Party
 		}
 		x = 37
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1172,8 +1201,8 @@ focus_tree = {
 		prerequisite = {
 			focus = National_Peasants'_Party
 		}
-		x = 35
-		y = 10
+		x = 36
+		y = 12
 
 	}
 	focus = {
@@ -1186,8 +1215,11 @@ focus_tree = {
 		prerequisite = {
 			focus = Election_law_amendment
 		}
+		prerequisite = {
+			focus = 1923_Constitution_adoptin
+		}
 		x = 36
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1201,7 +1233,7 @@ focus_tree = {
 			focus = Old_liberal
 		}
 		x = 36
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1218,7 +1250,7 @@ focus_tree = {
 			focus = Ngotiatie_with_UK
 		}
 		x = 28
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1236,7 +1268,7 @@ focus_tree = {
 			focus = A_deal_with_the_devil
 		}
 		x = 30
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1254,7 +1286,7 @@ focus_tree = {
 			focus = Approach_to_Latin
 		}
 		x = 32
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1271,7 +1303,7 @@ focus_tree = {
 			focus = A_deal_with_the_devil
 		}
 		x = 34
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1282,7 +1314,7 @@ focus_tree = {
 			focus = Support_new_germany
 		}
 		x = 28
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1293,7 +1325,7 @@ focus_tree = {
 			focus = Ngotiatie_with_UK
 		}
 		x = 30
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1304,7 +1336,7 @@ focus_tree = {
 			focus = A_deal_with_the_devil
 		}
 		x = 32
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1315,7 +1347,7 @@ focus_tree = {
 			focus = Approach_to_Latin
 		}
 		x = 34
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1326,7 +1358,7 @@ focus_tree = {
 			focus = Treatly_of_commerce_between_romania_and_germany
 		}
 		x = 28
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1337,7 +1369,7 @@ focus_tree = {
 			focus = Treaty_of_London
 		}
 		x = 30
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1348,7 +1380,7 @@ focus_tree = {
 			focus = Romania_Russia_Treaty_of_Mutual_Assistance
 		}
 		x = 32
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1359,18 +1391,7 @@ focus_tree = {
 			focus = Compromise_to_Facist
 		}
 		x = 34
-		y = 15
-
-	}
-	focus = {
-		id = Congress_of_Bucarest
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Win
-		}
-		x = 16
-		y = 9
+		y = 16
 
 	}
 	focus = {
@@ -1384,7 +1405,7 @@ focus_tree = {
 			focus = Keep_military_dictatorship
 		}
 		x = 14
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1398,7 +1419,7 @@ focus_tree = {
 			focus = Enabling_act_of_Sima
 		}
 		x = 12
-		y = 9
+		y = 10
 
 	}
 	focus = {
@@ -1409,7 +1430,7 @@ focus_tree = {
 			focus = Enabling_act_of_Sima
 		}
 		x = 15
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1420,7 +1441,7 @@ focus_tree = {
 			focus = Swear_an_oath_to_Cross
 		}
 		x = 15
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1432,7 +1453,7 @@ focus_tree = {
 			focus = Enabling_act_of_Sima
 		}
 		x = 13
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1443,7 +1464,7 @@ focus_tree = {
 			focus = Greater_Romania
 		}
 		x = 13
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1457,7 +1478,7 @@ focus_tree = {
 			focus = Maneuver_in_the_Transylvania
 		}
 		x = 14
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1468,7 +1489,7 @@ focus_tree = {
 			focus = Cerebrated_nation
 		}
 		x = 14
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1479,7 +1500,7 @@ focus_tree = {
 			focus = Legion_revolution
 		}
 		x = 15
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1490,7 +1511,7 @@ focus_tree = {
 			focus = Legion_revolution
 		}
 		x = 13
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1507,7 +1528,7 @@ focus_tree = {
 			focus = Balkans_dominance
 		}
 		x = 15
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1524,7 +1545,7 @@ focus_tree = {
 			focus = Plan_of_Balkan_Pact
 		}
 		x = 13
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1538,7 +1559,7 @@ focus_tree = {
 			focus = Puppet_king
 		}
 		x = 11
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1549,7 +1570,7 @@ focus_tree = {
 			focus = Keep_military_dictatorship
 		}
 		x = 10
-		y = 10
+		y = 11
 
 	}
 	focus = {
@@ -1563,7 +1584,7 @@ focus_tree = {
 			focus = Defend_constitutional_monarchy
 		}
 		x = 9
-		y = 11
+		y = 12
 
 	}
 	focus = {
@@ -1574,7 +1595,7 @@ focus_tree = {
 			focus = Defend_constitutional_monarchy
 		}
 		x = 11
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1585,7 +1606,7 @@ focus_tree = {
 			focus = Puppet_king
 		}
 		x = 9
-		y = 12
+		y = 13
 
 	}
 	focus = {
@@ -1596,8 +1617,8 @@ focus_tree = {
 			focus = Compromise_with_Roylaist
 			focus = Deportation_Roylaist
 		}
-		x = 11
-		y = 13
+		x = 10
+		y = 14
 
 	}
 	focus = {
@@ -1609,7 +1630,7 @@ focus_tree = {
 			focus = Deportation_Roylaist
 		}
 		x = 8
-		y = 13
+		y = 14
 
 	}
 	focus = {
@@ -1620,7 +1641,7 @@ focus_tree = {
 			focus = Change_policy
 		}
 		x = 11
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1631,7 +1652,7 @@ focus_tree = {
 			focus = Change_policy
 		}
 		x = 9
-		y = 14
+		y = 15
 
 	}
 	focus = {
@@ -1645,7 +1666,7 @@ focus_tree = {
 			focus = Frendship_with_Blugaria
 		}
 		x = 11
-		y = 15
+		y = 16
 
 	}
 	focus = {
@@ -1659,7 +1680,54 @@ focus_tree = {
 			focus = Compromise_with_Hungary
 		}
 		x = 9
-		y = 15
+		y = 16
+
+	}
+	focus = {
+		id = Mordern_agriculture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Investment_in_rural_communities
+		}
+		x = 18
+		y = 13
+
+	}
+	focus = {
+		id = Investment_in_rural_communities
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Do_all_that_nation_have_got
+		}
+		mutually_exclusive = {
+			focus = Strengthen_relations_with_finance
+		}
+		x = 18
+		y = 12
+
+	}
+	focus = {
+		id = Relief_fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Investment_in_rural_communities
+		}
+		x = 16
+		y = 13
+
+	}
+	focus = {
+		id = Grasp_of_foreign_capital
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Old_liberal
+		}
+		x = 32
+		y = 12
 
 	}
 }
