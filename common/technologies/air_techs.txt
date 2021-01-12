@@ -377,7 +377,7 @@ technologies = {
 	naval_fighter_1940 = {
 
 		enable_equipments = {
-			cv_fighter_equipment_2
+			cv_fighter_equipment_3
 		}
 		path = {
 			leads_to_tech = jet_naval_fighter_1948

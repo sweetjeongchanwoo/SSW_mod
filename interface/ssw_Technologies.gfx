@@ -963,6 +963,124 @@ spriteTypes = {
 		name = "GFX_jet_transport_plane_1964_medium"
 		texturefile = "gfx/interface/technologies/air_tech/transport_plane3.dds"
 	}
+#Japan
+	SpriteType = {
+		name = "GFX_JAP_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/air_tech/JAP_fighter4_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS3_cv.dds"
+	}
+
+#Germany
+	SpriteType = {
+		name = "GFX_GER_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/GER_fighter3.dds"
+	}
+#Itary
+	SpriteType = {
+		name = "GFX_ITA_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/ITA_fighter3.dds"
+	}
+#Rossia
+	SpriteType = {
+		name = "GFX_ROS_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+#FSAアメリカ自由連盟
+	SpriteType = {
+		name = "GFX_ALF_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1944_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_fighter_1944.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_fighter_1948.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1952_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_fighter_1952.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_fighter_1956.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_jet_fighter_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter5.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALF_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3_cv.dds"
+	}
 
 
 #電子機械工学
