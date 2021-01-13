@@ -2959,7 +2959,7 @@ magnetic_recording_medium_1 = {#磁気記録システム１
 
 		folder = {
 			name = air_techs_folder
-			position = { x = 2 y = 11 }
+			position = { x = -3 y = 3 }
 		}
 		
 		desc = "JET_ENGINES_SPECIAL"

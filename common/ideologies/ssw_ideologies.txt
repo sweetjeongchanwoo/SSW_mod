@@ -9,6 +9,10 @@ ideologies = {
 				#無政府サンディカリスム
 				can_be_randomly_selected = no
 			}
+			anarcho_capitalism_ideology = {
+				#無政府資本主義
+				can_be_randomly_selected = no
+			}
 		}
 		color = {
 			25
@@ -45,6 +49,10 @@ ideologies = {
 			}
 			islamic_socialism_ideology = {
 				#イスラム社会主義
+				can_be_randomly_selected = no
+			}
+			christian_socialism_ideology = {
+				#キリスト教社会主義
 				can_be_randomly_selected = no
 			}
 		}
@@ -156,6 +164,10 @@ ideologies = {
 		types = {
 			social_conservatism_ideology = {
 				#社会保守主義
+			}
+			peasantism_ideology = {
+				#農本主義
+				can_be_randomly_selected = no
 			}
 		}
 		color = {
