@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = Antonescu's_speech
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 1.00
 		x = 19
 		y = 0
 
@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = MIlitary_unity
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = Antonescu's_speech
 		}
@@ -48,7 +48,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 1
-
+		completion_reward = {
+			add_ideas = Military_unity
+		}
 	}
 	focus = {
 		id = Reorganaized_the_army
@@ -56,6 +58,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = MIlitary_unity
+		}
+		available = {
+			has_idea = Military_unity
 		}
 		x = 10
 		y = 2
@@ -130,9 +135,6 @@ focus_tree = {
 		prerequisite = {
 			focus = Total_war
 		}
-		prerequisite = {
-			focus = MIlitary_unity
-		}
 		x = 12
 		y = 4
 
@@ -153,13 +155,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = MIlitary_unity
-		}
-		prerequisite = {
 			focus = Total_war
-		}
-		prerequisite = {
-			focus = MIlitary_unity
 		}
 		x = 14
 		y = 4
@@ -184,7 +180,7 @@ focus_tree = {
 			focus = Armor_supremacy
 			focus = Supremacy_of_firepower
 		}
-		x = 13
+		x = 12
 		y = 6
 
 	}
@@ -195,7 +191,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Start_the_General_Staff_Office
 		}
-		x = 12
+		x = 11
 		y = 7
 
 	}
@@ -206,7 +202,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Start_the_General_Staff_Office
 		}
-		x = 14
+		x = 13
 		y = 7
 
 	}
@@ -217,8 +213,19 @@ focus_tree = {
 		prerequisite = {
 			focus = Armor_supremacy
 		}
-		x = 15
+		x = 14
 		y = 6
+
+	}
+	focus = {
+		id = More_oil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Improve_Ploeisti_field
+		}
+		x = 15
+		y = 7
 
 	}
 	focus = {
@@ -229,7 +236,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 16
-		y = 4
+		y = 2
 
 	}
 	focus = {
@@ -240,18 +247,7 @@ focus_tree = {
 			focus = Negotiate_with_the_opposition
 		}
 		x = 16
-		y = 5
-
-	}
-	focus = {
-		id = More_oil
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Improve_Ploeisti_field
-		}
-		x = 16
-		y = 7
+		y = 3
 
 	}
 	focus = {
@@ -262,7 +258,7 @@ focus_tree = {
 			focus = MIlitary_unity
 		}
 		x = 18
-		y = 4
+		y = 2
 
 	}
 	focus = {
@@ -273,7 +269,7 @@ focus_tree = {
 			focus = New_leader
 		}
 		x = 18
-		y = 5
+		y = 3
 
 	}
 	focus = {
@@ -281,19 +277,19 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Confirm_relationship_with_Germany
-		}
-		prerequisite = {
 			focus = National_governmet
 		}
+		prerequisite = {
+			focus = Confirm_relationship_with_Germany
+		}
 		x = 17
-		y = 6
+		y = 4
 
 	}
 	focus = {
 		id = Codreanu's_children
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = Antonescu's_speech
 		}
@@ -302,7 +298,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 1
-
+		completion_reward = {
+			add_ideas = Codreanu's_children
+		}
 	}
 	focus = {
 		id = Legacy_of_capitan
@@ -312,7 +310,7 @@ focus_tree = {
 			focus = Codreanu's_children
 		}
 		x = 20
-		y = 4
+		y = 2
 
 	}
 	focus = {
@@ -323,7 +321,7 @@ focus_tree = {
 			focus = Legacy_of_capitan
 		}
 		x = 20
-		y = 5
+		y = 3
 
 	}
 	focus = {
@@ -334,7 +332,7 @@ focus_tree = {
 			focus = Codreanu's_children
 		}
 		x = 22
-		y = 4
+		y = 2
 
 	}
 	focus = {
@@ -345,7 +343,7 @@ focus_tree = {
 			focus = Going_to_the_people
 		}
 		x = 22
-		y = 5
+		y = 3
 
 	}
 	focus = {
@@ -359,7 +357,7 @@ focus_tree = {
 			focus = Return_Sima
 		}
 		x = 21
-		y = 6
+		y = 4
 
 	}
 	focus = {
@@ -371,7 +369,7 @@ focus_tree = {
 			focus = Authoritative_nation
 		}
 		x = 19
-		y = 7
+		y = 6
 
 	}
 	focus = {
@@ -381,7 +379,10 @@ focus_tree = {
 		prerequisite = {
 			focus = Codreanu's_children
 		}
-		x = 27
+		available = {
+			has_idea = Codreanu's_children
+		}
+		x = 26
 		y = 2
 
 	}
@@ -392,7 +393,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganaized_Nest
 		}
-		x = 25
+		x = 24
 		y = 3
 
 	}
@@ -401,12 +402,9 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Codreanu's_children
-		}
-		prerequisite = {
 			focus = Legion_school
 		}
-		x = 25
+		x = 24
 		y = 4
 
 	}
@@ -417,7 +415,7 @@ focus_tree = {
 		prerequisite = {
 			focus = reeducate_movement
 		}
-		x = 24
+		x = 23
 		y = 5
 
 	}
@@ -428,7 +426,7 @@ focus_tree = {
 		prerequisite = {
 			focus = reeducate_movement
 		}
-		x = 26
+		x = 25
 		y = 5
 
 	}
@@ -442,7 +440,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Spirit_of_work
 		}
-		x = 25
+		x = 24
 		y = 6
 
 	}
@@ -453,7 +451,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganaized_Nest
 		}
-		x = 27
+		x = 26
 		y = 3
 
 	}
@@ -464,7 +462,7 @@ focus_tree = {
 		prerequisite = {
 			focus = committee_of_ROMANIANZATION
 		}
-		x = 27
+		x = 26
 		y = 4
 
 	}
@@ -475,7 +473,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Reorganaized_Nest
 		}
-		x = 29
+		x = 28
 		y = 3
 
 	}
@@ -486,7 +484,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Army_learning_to_the_right
 		}
-		x = 29
+		x = 28
 		y = 4
 
 	}
@@ -500,7 +498,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Raise_capability_of_mobilization
 		}
-		x = 28
+		x = 27
 		y = 5
 
 	}
@@ -789,7 +787,7 @@ focus_tree = {
 			focus = Take_advantage_of_mountaingun
 			focus = Detailed_plan
 		}
-		x = 8
+		x = 9
 		y = 7
 
 	}
@@ -800,7 +798,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Detailed_plan
 		}
-		x = 6
+		x = 7
 		y = 7
 
 	}
@@ -811,7 +809,7 @@ focus_tree = {
 		prerequisite = {
 			focus = The_reenact_battles_from_the_Kharkiv
 		}
-		x = 6
+		x = 7
 		y = 8
 
 	}
@@ -834,7 +832,7 @@ focus_tree = {
 		prerequisite = {
 			focus = Waves_of_people
 		}
-		x = 28
+		x = 27
 		y = 6
 
 	}
@@ -846,7 +844,7 @@ focus_tree = {
 			focus = Romania_revanchism
 		}
 		x = 19
-		y = 8
+		y = 7
 
 	}
 	focus = {
@@ -875,7 +873,23 @@ focus_tree = {
 		}
 		x = 20
 		y = 9
-
+		completion_reward = {
+			add_ideas = Restoration
+			if = {
+				limit = {
+					has_idea = Military_unity
+				}
+				remove_ideas = Military_unity
+				else = {
+					if = {
+						limit = {
+							has_idea = Codreanu's_children
+						}
+						remove_ideas = Codreanu's_children
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = Reconstruction_plan
@@ -1406,7 +1420,12 @@ focus_tree = {
 		}
 		x = 14
 		y = 10
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Codreanu's_children
+				add_idea = Legion
+			}
+		}
 	}
 	focus = {
 		id = Keep_military_dictatorship
@@ -1420,7 +1439,12 @@ focus_tree = {
 		}
 		x = 12
 		y = 10
-
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Military_unity
+				add_idea = Establish_military_dictatorship
+			}
+		}
 	}
 	focus = {
 		id = Swear_an_oath_to_Cross
