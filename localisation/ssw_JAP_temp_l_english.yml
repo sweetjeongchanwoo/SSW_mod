@@ -1,6 +1,6 @@
 ﻿l_english:
  
- #tooltip
+ #tooltip&flags
  massive_disarmament_seyuukai_tt:0 "§R政友会は大規模な軍縮を再び実行する。議会は紛糾するだろう。§!"
  military_backflash_tt:0  "§R軍人は反発するだろう§!"
  resistance_of_democratic_party_tt:0 "§R野党からの反感を買うだろう§!"
@@ -11,3 +11,5 @@
  meeting_with_leaders_tt:0 "§G野党の党首と会談することで、政治の正当性をアピールする§!"
  audit_accounts_tt:0 "§R不正は暴かれる...§!"
  coallition_with_minseito_tt:0 "§G民政党と結託し、軍縮を成功させる§!"
+ every_thing_is_fine_tt:0 "Every thing is Fine"
+ fail_of_a_disarmament_bill_tt:0 "軍縮法案を破棄する"

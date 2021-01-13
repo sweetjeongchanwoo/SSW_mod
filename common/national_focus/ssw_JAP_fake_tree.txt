@@ -246,6 +246,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		custom_effect_tooltip = coallition_with_minseito_tt
+		country_event = { #armys resistance
+			id = SSW_JAP.18
+			days = 1
+		}
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: focus JAP_peace_with_good_governance_party"
 			country_event = { #peace with minseito
@@ -262,10 +266,17 @@ shared_focus = {
 	cost = 3.00
 	x = 0
 	y = 1
+	available ={
+		has_country_flag = every_thing_is_fine_tt
+	}
+	bypass ={
+		has_country_flag = every_thing_is_fine_tt
+	}
 	prerequisite = {
 		focus = JAP_peace_with_good_governance_party
 	}
 	completion_reward = {
+		custom_effect_tooltip = every_thing_is_fine_tt
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: focus JAP_opinion_poll"
 		}
@@ -278,10 +289,17 @@ shared_focus = {
 	cost = 3.00
 	x = 0
 	y = 1
+	available ={
+		has_country_flag = every_thing_is_fine_tt
+	}
+	bypass ={
+		has_country_flag = every_thing_is_fine_tt
+	}
 	prerequisite = {
 		focus = JAP_opinion_poll
 	}
 	completion_reward = {
+		custom_effect_tooltip = every_thing_is_fine_tt
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: focus JAP_final_selection"
 		}
@@ -294,6 +312,12 @@ shared_focus = {
 	cost = 3.00
 	x = -1
 	y = 1
+	available ={
+		has_country_flag = fail_of_a_disarmament_bill_tt
+	}
+	bypass ={
+		has_country_flag = fail_of_a_disarmament_bill_tt
+	}
 	prerequisite = {
 		focus = JAP_final_selection
 	}
@@ -301,11 +325,10 @@ shared_focus = {
 		focus = JAP_successful_metting 
 	}
 	completion_reward = {
+		custom_effect_tooltip = fail_of_a_disarmament_bill_tt
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: focus JAP_disatrous_result"
 		}
-		set_variable = { JAP_focus_num_var = 2 } #temp
-		mark_focus_tree_layout_dirty = yes #temp
 	}
 }
 shared_focus = {
@@ -315,6 +338,12 @@ shared_focus = {
 	cost = 3.00
 	x = 1
 	y = 1
+	available ={
+		has_country_flag = passage_of_a_disarmament_bill_tt
+	}
+	bypass ={
+		has_country_flag = passage_of_a_disarmament_bill_tt
+	}
 	prerequisite = {
 		focus = JAP_final_selection
 	}
@@ -322,6 +351,7 @@ shared_focus = {
 		focus = JAP_disatrous_result 
 	}
 	completion_reward = {
+		custom_effect_tooltip = passage_of_a_disarmament_bill_tt
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: focus JAP_successful_metting"
 		}

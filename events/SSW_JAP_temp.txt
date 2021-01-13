@@ -118,6 +118,12 @@ country_event = { #Negotiation with East Asia National Union
 	id = SSW_JAP.6
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.6"
+		hidden_effect = {
+			country_event = { #nakano seigou's accept
+				id = SSW_JAP.7
+				days = 1
+			}
+		}
 	}
 	title = SSW_JAP.6.t
 	desc = SSW_JAP.6.desc
@@ -129,12 +135,6 @@ country_event = { #Negotiation with East Asia National Union
 	option = { #
 		name = SSW_JAP.6.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = { #nakano seigou's accept
-				id = SSW_JAP.7
-				days = 1
-			}
-		}
 	}
 }
 
@@ -142,6 +142,12 @@ country_event = { #nakano seigou's accept
 	id = SSW_JAP.7
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.7"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.8
+				days = 10
+			}
+		}
 	}
 	title = SSW_JAP.7.t
 	desc = SSW_JAP.7.desc
@@ -153,12 +159,6 @@ country_event = { #nakano seigou's accept
 	option = { #
 		name = SSW_JAP.7.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = {
-				id = SSW_JAP.8
-				days = 10
-			}
-		}
 	}
 }
 
@@ -185,6 +185,12 @@ country_event = { #Negotiation with Navy
 	id = SSW_JAP.9
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.9"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.10
+				days = 5
+			}
+		}
 	}
 	title = SSW_JAP.9.t
 	desc = SSW_JAP.9.desc
@@ -196,12 +202,6 @@ country_event = { #Negotiation with Navy
 	option = { #
 		name = SSW_JAP.9.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = {
-				id = SSW_JAP.10
-				days = 5
-			}
-		}
 	}
 }
 
@@ -209,6 +209,12 @@ country_event = { #Yamamoto Isoroku's Accept
 	id = SSW_JAP.10
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.10"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.11
+				days = 10
+			}
+		}
 	}
 	title = SSW_JAP.10.t
 	desc = SSW_JAP.10.desc
@@ -220,12 +226,6 @@ country_event = { #Yamamoto Isoroku's Accept
 	option = { #
 		name = SSW_JAP.10.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = {
-				id = SSW_JAP.11
-				days = 10
-			}
-		}
 	}
 }
 
@@ -252,6 +252,12 @@ country_event = { #Negotiation with Army
 	id = SSW_JAP.12
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.12"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.13
+				days = 5
+			}
+		}
 	}
 	title = SSW_JAP.12.t
 	desc = SSW_JAP.12.desc
@@ -263,12 +269,6 @@ country_event = { #Negotiation with Army
 	option = { #
 		name = SSW_JAP.12.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = {
-				id = SSW_JAP.13
-				days = 5
-			}
-		}
 	}
 }
 
@@ -276,6 +276,12 @@ country_event = { #Yamashita tomoyuki's Accept
 	id = SSW_JAP.13
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.13"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.14
+				days = 10
+			}
+		}
 	}
 	title = SSW_JAP.13.t
 	desc = SSW_JAP.13.desc
@@ -287,12 +293,6 @@ country_event = { #Yamashita tomoyuki's Accept
 	option = { #
 		name = SSW_JAP.13.a
 		ai_chance = { base = 1 }
-		hidden_effect = {
-			country_event = {
-				id = SSW_JAP.14
-				days = 10
-			}
-		}
 	}
 }
 
@@ -372,10 +372,16 @@ country_event = { #peace with minseito
 	}
 }
 
-country_event = { #
+country_event = { #Armys Resistance
 	id = SSW_JAP.18
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.18"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.19
+				days = 15
+			}
+		}
 	}
 	title = SSW_JAP.18.t
 	desc = SSW_JAP.18.desc
@@ -387,11 +393,11 @@ country_event = { #
 	option = { #
 		name = SSW_JAP.18.a
 		ai_chance = { base = 1 }
-		
+		add_political_power = -10
 	}
 }
 
-country_event = { #
+country_event = { #Tokyo Incident
 	id = SSW_JAP.19
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.19"
@@ -406,14 +412,26 @@ country_event = { #
 	option = { #
 		name = SSW_JAP.19.a
 		ai_chance = { base = 1 }
-		
+		add_stability = -0.05
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.20
+			}
+		}
 	}
 }
 
-country_event = { #
+country_event = { #Death of Yoshizawa
 	id = SSW_JAP.20
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.20"
+		hidden_effect = {
+			country_event = {
+				id = SSW_JAP.21
+				days = 2
+			}
+		}
 	}
 	title = SSW_JAP.20.t
 	desc = SSW_JAP.20.desc
@@ -425,7 +443,120 @@ country_event = { #
 	option = { #
 		name = SSW_JAP.20.a
 		ai_chance = { base = 1 }
+		add_stability = -0.1
+		add_political_power = -20
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Fusanosuke Kuhara"
+			desc = "POLITICS_FUSANOSUKE_KUHARA_DESC"
+			picture = "gfx/leaders/JAP/Portrait_Fusanosuke_Kuhara.dds"
+			expire = "1970.1.1"
+			ideology = social_conservatism_ideology
+			traits = {
+				
+			}
+		}
+	}
+}
+
+country_event = { #Rage of Hirohito
+	id = SSW_JAP.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.21"
+	}
+	title = SSW_JAP.21.t
+	desc = SSW_JAP.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Pass Law
+		name = SSW_JAP.21.a
+		ai_chance = { base = 1 }
+		set_country_flag = passage_of_a_disarmament_bill_tt
+	}
+	option = { #Fail
+		name = SSW_JAP.21.b
+		ai_chance = { base = 1 }
+		set_country_flag = fail_of_a_disarmament_bill_tt
+	}
+}
+
+country_event = { #
+	id = SSW_JAP.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.22"
+	}
+	title = SSW_JAP.22.t
+	desc = SSW_JAP.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SSW_JAP.22.a
+		ai_chance = { base = 1 }
 		
 	}
 }
+
+country_event = { #
+	id = SSW_JAP.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.23"
+	}
+	title = SSW_JAP.23.t
+	desc = SSW_JAP.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SSW_JAP.23.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = SSW_JAP.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.24"
+	}
+	title = SSW_JAP.24.t
+	desc = SSW_JAP.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SSW_JAP.24.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = SSW_JAP.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_JAP.25"
+	}
+	title = SSW_JAP.25.t
+	desc = SSW_JAP.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = SSW_JAP.25.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
 
