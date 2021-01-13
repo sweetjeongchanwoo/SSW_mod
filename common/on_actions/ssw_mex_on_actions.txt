@@ -24,7 +24,7 @@ on_actions = {
 					has_government = anarchism
 				}
 				add_ideas = {
-					ssw_collectivist_anarchism
+					ssw_anarchist_community
 					vacancy_pl
 					vacancy_mfa
 					vacancy_mf
@@ -42,7 +42,7 @@ on_actions = {
 					has_government = progressive_communism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_mixed_regime
 					MEX_valentin_campa
 				}
 				if = {
@@ -56,7 +56,7 @@ on_actions = {
 					has_government = classical_communism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					MEX_vicente_lombardo
 				}
 				if = {
@@ -74,7 +74,7 @@ on_actions = {
 					}
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_mixed_regime
 					MEX_lazaro_cardenas
 				}
 				if = {
@@ -92,7 +92,7 @@ on_actions = {
 					}
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_mixed_regime
 					MEX_adolfo_ruiz_cortines
 				}
 				if = {
@@ -106,7 +106,7 @@ on_actions = {
 					has_government = social_liberalism
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_mixed_regime
 					MEX_raul_salinas_lozano
 				}
 				if = {
@@ -120,7 +120,7 @@ on_actions = {
 					has_government = social_conservatism
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
+					ssw_perfect_democratic_regime
 					MEX_manuel_gomez_morin
 				}
 				if = {
@@ -134,7 +134,7 @@ on_actions = {
 					has_government = authority_democracy
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
+					ssw_perfect_democratic_regime
 					MEX_manuel_gomez_morin
 				}
 				if = {
@@ -149,7 +149,7 @@ on_actions = {
 				}
 				add_ideas = {
 					MEX_juan_andreu
-					ssw_despotism
+					ssw_authoritarian_regime
 				}
 				if = {
 					limit = {
@@ -165,7 +165,7 @@ on_actions = {
 					has_government = national_fascism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					MEX_salvador_abascal
 				}
 				if = {
@@ -179,7 +179,7 @@ on_actions = {
 					has_government = national_socialism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					MEX_victor_serge
 				}
 				if = {
@@ -197,7 +197,7 @@ on_actions = {
 					}
 				}
 				add_ideas = {
-					ssw_corporate_council_system
+					ssw_mixed_regime
 					MEX_lazaro_cardenas
 				}
 				if = {
@@ -215,7 +215,7 @@ on_actions = {
 					}
 				}
 				add_ideas = {
-					ssw_corporate_council_system
+					ssw_mixed_regime
 					MEX_adolfo_ruiz_cortines
 				}
 				if = {
@@ -229,7 +229,7 @@ on_actions = {
 					has_government = anarchism
 				}
 				add_ideas = {
-					ssw_collectivist_anarchism
+					ssw_anarchist_community
 					RUS_collectivized_society_for_ssw
 					RUS_sascha_schapiro
 					vacancy_mfa
@@ -248,7 +248,7 @@ on_actions = {
 					has_government = progressive_communism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					RUS_vladimir_kryuchkov
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
@@ -266,7 +266,7 @@ on_actions = {
 					has_government = classical_communism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					RUS_vladimir_kryuchkov
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
@@ -284,7 +284,7 @@ on_actions = {
 					has_government = social_democracy
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_perfect_democratic_regime
 					RUS_alexander_kerensky_political_leader
 					RUS_alexander_kerensky
 					RUS_anna_wolkoff
@@ -298,7 +298,7 @@ on_actions = {
 					has_government = social_liberalism
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_leftist_administration
+					ssw_perfect_democratic_regime
 					RUS_ariadna_tyrkova_williams
 					RUS_ivan_ilyin
 					RUS_anna_wolkoff
@@ -312,7 +312,7 @@ on_actions = {
 					has_government = social_conservatism
 				}
 				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
+					ssw_perfect_democratic_regime
 					RUS_felix_yusupov
 					RUS_nikolai_khokhlov
 					RUS_sofia_panina
@@ -326,7 +326,7 @@ on_actions = {
 					has_government = authority_democracy
 				}
 				add_ideas = {
-					ssw_despotism
+					ssw_perfect_democratic_regime
 					RUS_andrey_vlasov
 					RUS_alexander_kerensky
 					konstantin_rodzaevsky
@@ -340,7 +340,7 @@ on_actions = {
 					has_government = authority_despotism
 				}
 				add_ideas = {
-					ssw_military_dictatorship
+					ssw_military_regime
 					RUS_poa
 					RUS_nikolai_khokhlov
 					konstantin_rodzaevsky
@@ -354,7 +354,7 @@ on_actions = {
 					has_government = national_fascism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					RUS_anastasy_vonsiatsky
 					RUS_arseny_nesmelov
 					RUS_lev_okhotin
@@ -368,7 +368,7 @@ on_actions = {
 					has_government = national_socialism
 				}
 				add_ideas = {
-					ssw_one_party_dictatorship
+					ssw_authoritarian_regime
 					RUS_konstantin_rodzaevsky_political_leader
 					RUS_boris_brasol
 					konstantin_rodzaevsky
@@ -382,7 +382,7 @@ on_actions = {
 					has_government = corporatocracism
 				}
 				add_ideas = {
-					ssw_corporate_council_system
+					ssw_mixed_regime
 					RUS_igor_ivanovich_sikorsky
 					RUS_nikolai_khokhlov
 					RUS_sofia_panina

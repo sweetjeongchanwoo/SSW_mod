@@ -751,7 +751,7 @@ ideas = {
 
 			allowed_civil_war = {always = yes}
 
-			picture = _generic_artillery_regiments
+			picture = generic_artillery_regiments
 			
 			modifier = {
 				army_artillery_attack_factor = 0.1	

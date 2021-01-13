@@ -23,12 +23,12 @@ on_actions = {
 						ideology = national_socialism
 						popularity = 95
 					}
+					set_country_flag = UKR_volga_flag
 					set_research_slots = 1
 					reserve_dynamic_country = yes
 					add_ideas = limited_conscription
 					transfer_state = 217
 					change_tag_from = UKR
-					set_cosmetic_tag = UKR_GEM
 				}
 			}
 		}

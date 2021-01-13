@@ -24,6 +24,16 @@ DET-UKR = {	#ドニエストル・ウクライナ
 	color_ui = rgb { 51 153 255 }
 }
 
+North_America = { #北米連邦
+	color = rgb { 135 198 108 }
+	color_ui = rgb { 135 198 108 }
+}
+
+MEX_empire = { #メキシコ帝国
+	color = rgb { 135 198 108 }
+	color_ui = rgb { 135 198 108 }
+}
+
 #モスクワ国家弁務官区崩壊
 RUS_empire = {	#ロシア帝国
 	color = rgb { 55 88 83 }
@@ -63,6 +73,17 @@ RUS_arufnl = {	#大天使ミハイル
 RUS_blackorder = {	#ブラック・オーダー
 	color = rgb { 52 82 123 }
 	color_ui = rgb { 52 82 123 }
+}
+
+#イラン内戦
+PER_communist ={	#共産イラン
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 204 0 0 }
+}
+
+PER_islamic ={	#イスラム・イラン
+	color = rgb { 35 159 64 }
+	color_ui = rgb { 35 159 64 }
 }
 
 #共同統治国家

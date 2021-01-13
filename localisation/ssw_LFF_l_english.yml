@@ -1,0 +1,14 @@
+﻿l_english:
+#国家方針
+ ssw_leftist_front_focus:0 "左翼戦線の国家方針"
+ LFF_policy_review:0 "政策の見直し"
+ LFF_policy_review_desc:0 "今まで我々が施してきた政策を今一度見直し、 改良しよう。 アメリカ統一を急ぐためにも、 これらの基礎的なことを忘れてはならないのだ。 "
+ LFF_defense_battle:0 "防衛重視"
+ LFF_defense_battle_desc:0 "我々の狭い国土を守るためにも、 防衛戦に注力しなければならない。 "
+ LFF_tactical_improvement:0 "空軍戦術の改良"
+ LFF_tactical_improvement_desc:0 "これからの戦場が空を舞台とするのならば、 早いうちに空軍の戦術を改良すべきだろう。 "
+ LFF_resumption_of_domestic_affairs:0 "内政の再開"
+ LFF_resumption_of_domestic_affairs_desc:0 "邪魔者は消え去った。 止まっていた内政を再開しよう。 "
+#国家精神
+ lff_ideas_1:0 "防衛重視"
+ lff_ideas_2:0 "空軍戦術の改良"

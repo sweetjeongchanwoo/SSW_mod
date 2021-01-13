@@ -17,12 +17,12 @@
  #etc
  Cuttent_KOR_discontent_desc:0 "現在の抵抗度 : [?KOR_discontent] %"
  Cuttent_KOR_collaboration_desc:0 "現在の協力度 : [?KOR_collaboration] %"
- Cuttent_KOR_literacy_desc:0 "現在の識字率[?KOR_literacy] %"
+ Cuttent_KOR_literacy_desc:0 "現在の識字率 : [?KOR_literacy] %"
 
  #Do not Translation
  KOR_Japanization_need_manpower_text_50000:0 "£pol_power  150  £manpower_texticon  50000"
  KOR_Japanization_need_manpower_and_pp_text:0 "£pol_power  25  £manpower_texticon  10000"
- KOR_Japanization_need_manpower_text:0 "£manpower_texticon  5000"
+ KOR_Japanization_need_manpower_text_blocked:0 "£manpower_texticon  5000  £infequip_small_texticon  5000"
  KOR_Japanization_need_manpower_text_500:0 "£pol_power  150  £manpower_texticon  500"
  KOR_Japanization_need_three_civilian_factory_and_manpower_text:0 "£civ_factory  3  £manpower_texticon  5000"
  KOR_Japanization_need_three_civilian_factory_text:0 "£civ_factory  3"

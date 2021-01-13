@@ -337,9 +337,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Exiled_German_Scientists
-						}
+					add_ideas = PER_Exiled_German_Scientists
 				}
 
 	}
@@ -563,9 +561,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Italian_engineer
-						}
+					add_ideas = PER_Italian_engineer
 				}
 
 	}
@@ -755,9 +751,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_SAVAK
-						}
+					add_ideas = PER_SAVAK
 				}
 
 	}
@@ -1043,9 +1037,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_assault_party
-						}
+					add_ideas = PER_assault_party
 				}
 
 	}
@@ -1064,9 +1056,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Cooperation_with_SS
-						}
+					add_ideas = PER_Cooperation_with_SS
 				}
 
 	}
@@ -1132,9 +1122,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_German_Technical_Advisory_Group
-						}
+					add_ideas = PER_German_Technical_Advisory_Group
 				}
 
 	}
@@ -1429,9 +1417,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Attracting_Overseas_Design_Companies
-						}
+					add_ideas = PER_Attracting_Overseas_Design_Companies
 				}
 
 	}
@@ -1529,9 +1515,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Make_Use_of_Know_How
-						}
+					add_ideas = PER_Make_Use_of_Know_How
 				}
 
 	}
@@ -1560,9 +1544,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_As_many_as_one_shot
-						}
+					add_ideas = PER_As_many_as_one_shot
 				}
 
 	}
@@ -1602,9 +1584,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Modern_oil_extraction_equipment
-						}
+					add_ideas = PER_Modern_oil_extraction_equipment
 				}
 
 	}
@@ -1784,9 +1764,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Mobile_Warfare
-						}
+					add_ideas = PER_Mobile_Warfare
 				}
 
 	}
@@ -1848,9 +1826,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Breakthrough_Tactics
-						}
+					add_ideas = PER_Breakthrough_Tactics
 				}
 
 	}
@@ -1935,9 +1911,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Defense_Tactics
-						}
+					add_ideas =  PER_Defense_Tactics
 				}
 
 	}
@@ -2003,9 +1977,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Grooming_Tactics
-						}
+					add_ideas = PER_Grooming_Tactics
 				}
 
 	}
@@ -2060,9 +2032,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Protection_of_the_transportation_network
-						}
+					add_ideas = PER_Protection_of_the_transportation_network
 				}
 
 	}
@@ -2325,9 +2295,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Sepah_i_Danish
-						}
+					add_ideas = PER_Sepah_i_Danish
 				}
 
 	}
@@ -2513,9 +2481,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_The_Modern_Army
-						}
+					add_ideas = PER_The_Modern_Army
 				}
 
 	}
@@ -2794,9 +2760,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_nazi
-						}
+					add_ideas = PER_nazi
 				}
 
 	}
@@ -2818,9 +2782,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Compromised_reforms
-						}
+					add_ideas = PER_Compromised_reforms
 				}
 
 	}
@@ -2993,9 +2955,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = {
-							idea = PER_constitutional_state
-						}
+			add_ideas = PER_constitutional_state
 		}
 
 	}
@@ -3014,9 +2974,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_green_shirt
-						}
+					add_ideas = PER_green_shirt
 				}
 
 	}
@@ -3110,9 +3068,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Iranian_giant_eagle
-						}
+					add_ideas = PER_Iranian_giant_eagle
 				}
 
 	}
@@ -3202,9 +3158,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_faci
-						}
+					add_ideas = PER_faci
 				}
 
 	}
@@ -3223,9 +3177,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_SAVAK
-						}
+					add_ideas = PER_SAVAK
 				}
 		
 
@@ -3311,9 +3263,7 @@ focus_tree = {
 				}
 			available_if_capitulated = no
 			completion_reward = {
-					add_ideas = {
-							idea = PER_Aryanism
-						}
+					add_ideas = PER_Aryanism
 				}
 
 	}

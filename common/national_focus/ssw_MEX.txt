@@ -7,6 +7,7 @@ focus_tree = {
 			tag = MEX
 		}
 	}
+	default = no
 	##### ARMY #####
 	focus = {
 		id = MEX_army_effort
@@ -1356,98 +1357,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
+			random_owned_controlled_state = {
 				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
 					}
 				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -1470,98 +1393,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
+			random_owned_controlled_state = {
 				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
 					}
 				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -1588,98 +1433,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
+			random_owned_controlled_state = {
 				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
 					}
 				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
@@ -1883,6 +1650,12 @@ focus_tree = {
 		text = ENG_concessions_to_the_trade_unions
 		prerequisite = { focus = MEX_leftist }
 		mutually_exclusive = { focus = MEX_steady_as_she_goes }
+		available = {
+			has_country_leader = {
+				name = "Lázaro Cárdenas"
+				ruling_only = yes
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = MEX_leftist
@@ -1925,10 +1698,7 @@ focus_tree = {
 				ideology = social_democracy
 				popularity = 0.05
 			}
-			add_ideas = {
-				ssw_one_party_dictatorship
-				MEX_valentin_campa
-			}
+			add_ideas = MEX_valentin_campa
 			hidden_effect = { news_event = { id = ssw_mex.7 hours = 6 } }
 		}
 	}
@@ -2067,7 +1837,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_determine_the_enemy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2334,7 +2104,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_liberation_of_latin_america
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2365,7 +2135,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_liberation_of_latin_america
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -2678,10 +2448,7 @@ focus_tree = {
 					popularity = 0.15
 				}
 				set_politics = { ruling_party = social_conservatism elections_allowed = yes }
-				add_ideas = {
-					ssw_parliamentary_democracy_rightist_administration
-					MEX_manuel_gomez_morin
-				}
+				add_ideas = MEX_manuel_gomez_morin
 			}
 		}
 	}
@@ -2806,7 +2573,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_investing_in_public_welfare
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3257,10 +3024,7 @@ focus_tree = {
 				ideology = national_fascism
 				popularity = 0.15
 			}
-			add_ideas = {
-				ssw_one_party_dictatorship
-				MEX_salvador_abascal
-			}
+			add_ideas = MEX_salvador_abascal
 			hidden_effect = { news_event = { id = ssw_mex.9 hours = 6 } }
 		}
 	}
@@ -3304,7 +3068,6 @@ focus_tree = {
 			add_ideas = {
 				mex_ideas_23
 				MEX_juan_andreu
-				ssw_despotism
 			}
 			effect_tooltip = {
 				create_country_leader = {
@@ -3368,7 +3131,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_memories_of_naval_battles
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3436,7 +3199,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_recovery_of_central_american_territory
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3526,7 +3289,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_faction_of_italy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3666,7 +3429,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_mexico_agreement
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3839,7 +3602,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_hostility_to_democracy
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3865,7 +3628,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_attack_uk
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3888,7 +3651,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_join_the_kaiser
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3919,7 +3682,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_puppetization_of_caribbean
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -3950,7 +3713,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = MEX_oil_concession
 		cost = 10
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		available_if_capitulated = yes
 		ai_will_do = { factor = 10 }
 		completion_reward = {

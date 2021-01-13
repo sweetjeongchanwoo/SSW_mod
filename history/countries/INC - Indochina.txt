@@ -6,7 +6,12 @@ set_technology = {
 add_ideas = {
 	civilian_economy
 }
-CHI = { puppet = INC }
+CHI = {
+	set_autonomy = {
+		target = INC
+		autonomous_state = colony
+	}
+}
 set_politics = {
 	ruling_party = authority_despotism
 	last_election = "1950.1.1"
@@ -15,4 +20,13 @@ set_politics = {
 }
 set_popularities = {
 	authority_despotism = 100
+}
+create_country_leader = {
+	name = "Pham Văn Đong"
+	desc = "POLITICS_PHAM_VAN_DONG_DESC"
+	picture = "gfx/leaders/INC/Portrait_Indochina_Pham_Van_Dong.dds"
+	expire = "2000.4.29"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
 }

@@ -101,7 +101,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { conservative_grandee }
 			ai_will_do = { factor = 1 }
 		}
@@ -245,7 +250,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { tenacious_negotiator }
 			cost = 0
 			ai_will_do = { factor = 1 }
@@ -327,7 +337,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = { financial_expert }
 			cost = 0
 			ai_will_do = { factor = 1 }
@@ -409,7 +424,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = {
 				compassionate_gentleman
 				anti_communist
@@ -495,7 +515,12 @@ ideas = {
 			}
 			removal_cost = -1
 			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = ACO
+				}
+			}
 			traits = {
 				armaments_aficionado
 				fascist_militia_leader
@@ -957,12 +982,10 @@ ideas = {
 				stability_weekly = -0.02
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				consumer_goods_factor = -0.03
-				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.04
+				industrial_capacity_factory = 0.11
 				industry_repair_factor = 0.1
 				conscription = 0.08
-				consumer_goods_factor = -0.01
-				industrial_capacity_factory = 0.01
 			}
 		}
 		RUS_anarchist_society_18 = {
@@ -985,12 +1008,10 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_bunker_factor = 0.05
 				production_speed_coastal_bunker_factor = 0.05
-				consumer_goods_factor = -0.06
-				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.09
+				industrial_capacity_factory = 0.13
 				industry_repair_factor = 0.15
 				conscription = 0.08
-				consumer_goods_factor = -0.03
-				industrial_capacity_factory = 0.03
 				army_core_defence_factor = 0.05
 				army_morale_factor = 0.05
 				research_speed_factor = 0.05

@@ -31,12 +31,18 @@ KOR_Japanization_categories = {
 		days_remove = 30
 		custom_cost_trigger = {
 			has_manpower > 5000
+			has_equipment = { infantry_equipment_1  > 5000 }
 		}
 		custom_cost_text = KOR_Japanization_need_manpower_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision KOR_additional_military_police"
 			hidden_effect = {
 				add_manpower = -5000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -5000
+					producer = KOR
+				}
 			}
 		}
 		remove_effect = {
@@ -53,12 +59,18 @@ KOR_Japanization_categories = {
 		days_remove = 30
 		custom_cost_trigger = {
 			has_manpower > 5000
+			has_equipment = { infantry_equipment_1  > 5000 }
 		}
 		custom_cost_text = KOR_Japanization_need_manpower_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision KOR_additional_generic_police"
 			hidden_effect = {
 				add_manpower = -5000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -5000
+					producer = KOR
+				}
 			}
 		}
 		remove_effect = {
@@ -173,9 +185,6 @@ KOR_Japanization_categories = {
 			check_variable = { KOR_discontent > 0 }
 			check_variable = { KOR_collaboration < 100 }
 		}
-		available = {
-			has_political_power > 149
-		}
 		days_re_enable = 100
 		days_remove = 25
 		cost = 150
@@ -183,7 +192,6 @@ KOR_Japanization_categories = {
 			log = "[GetDateText]: [Root.GetName]: Decision KOR_shoutdown_newspaper"
 			hidden_effect = {
 				add_manpower = -500
-				add_political_power = -25
 			}
 		}
 		remove_effect = {
@@ -202,18 +210,36 @@ KOR_Japanization_categories = {
 		cost = 150
 		custom_cost_trigger = {
 			has_manpower > 50000
+			has_political_power > 24
 		}
 		custom_cost_text = KOR_Japanization_need_manpower_text_50000
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision KOR_armed_protest"
 			hidden_effect = {
-				add_manpower = -500
+				add_manpower = -50000
 				add_political_power = -25
 			}
 		}
 		remove_effect = {
 			add_to_variable = { KOR_discontent = -5 }
 			add_to_variable = { KOR_collaboration = 1 }
+		}
+	}
+	KOR_cancel_curfew = {
+		icon = generic_military
+		visible = {
+			check_variable = { KOR_discontent > 0 }
+			check_variable = { KOR_collaboration < 100 }
+		}
+		fire_only_once = yes
+		cost = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KOR_cancel_curfew"
+		}
+		remove_effect = {
+			add_to_variable = { KOR_discontent = -5 }
+			add_to_variable = { KOR_collaboration = 5 }
+			add_stability = 0.03
 		}
 	}
 }

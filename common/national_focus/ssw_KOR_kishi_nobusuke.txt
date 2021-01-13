@@ -219,6 +219,9 @@ shared_focus = {
 		clear_variable = KOR_discontent
 		clear_variable = KOR_collaboration
 		clear_variable = KOR_literacy
+		country_event = {
+			id = KOR_JOKE.0
+		}
 	}
 }
 shared_focus = {

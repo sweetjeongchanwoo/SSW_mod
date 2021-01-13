@@ -1,5 +1,7 @@
 ﻿l_english:
 #国家方針
+ ssw_spain:0 "スペイン国の国家方針"
+ ssw_republic_of_spain:0 "スペイン共和国の国家方針"
  SPR_kougyou_kenkyuu:0 "スペイン進歩主義"
  SPR_kougyou_kenkyuu_desc:0 "いつまでも保守的だと産業における進化は望めないだろう… "
  SPR_kougyou_kougyouka:0 "工業化政策"
@@ -48,6 +50,8 @@
  SPR_huranksiji_desc:0 "フランコ将軍はスペイン内戦を勝利に導いた英雄である。 あの内戦の時と同じように再び我々を導いてくれるだろう。 "
  SPR_faranhe:0 "強硬ファランヘ党員のクーデター"
  SPR_faranhe_desc:0 "もはやフランコは信用に値しない人物であり、 早急に政権の座から下ろさなければならない。 "
+ SPR_the_return_of_the_civil_war:0 "内戦の再来"
+ SPR_the_return_of_the_civil_war_desc:0 "もはや現政権では共和主義の自由を叶えることはできない。 二回目の内戦を起こしてでもフランコを倒さなければならないのだ！ "
  SPR_faranhe_minzokudanatu:0 "少数派民族の弾圧"
  SPR_faranhe_minzokudanatu_desc:0 "少数派民族はスペイン国民の団結に邪魔な存在である。 "
  SPR_faranhe_danatukanryou:0 "少数派民族の国外追放"
@@ -132,8 +136,8 @@
  SPR_franco_kaigunensyuu_desc:0 "海軍力を強化すべく、 積極的に演習を敢行しよう。 "
  SPR_franco_barearesu:0 "バレアレス諸島の返還交渉"
  SPR_franco_barearesu_desc:0 "バレアレスは重要な拠点である。 "
- SPR_franco_kokusakujidousya:0 "国策自動車会社”セアト”の設立"
- SPR_franco_kokusakujidousya_desc:0 "自動車産業を強化し、 陸軍の機甲化へと注力しよう。 "
+ SPR_franco_kokusakujidousya:0 "フランス侵攻"
+ SPR_franco_kokusakujidousya_desc:0 "フランスはスペインやイタリアにとっても重要な土地である。 "
  SPR_franco_ahurikabunkatu:0 "モロッコ・アルジェリアを分割"
  SPR_franco_ahurikabunkatu_desc:0 "北アフリカに新秩序をもたらそう。 "
  SPR_franco_huransubunaktu:0 "フランス国を分割"
@@ -391,6 +395,10 @@
  spr_ideas_199:0 "王党派の引き込み"
  spr_ideas_555:0 "少数民族の強制抑圧"
  spr_ideas_1999:0 "王党派の優越"
+#tooltip
+ start_second_scw_tt:0 "第二次スペイン内戦が勃発する。 "
+ spr_franco_huransubunaktu_tt:0 "ゲーム開始時のフランス本土とコルシカは我々に占領された。 "
+ disunite_france_tt:0 "フランスを分割する。 "
 #イベント
  ssw_spr.1.title:0 "スペイン・イタリアによる北アフリカ分割"
  ssw_spr.1.desc:0 "スペインは、未だフランス勢力が支配する北アフリカのモロッコ・アルジェリアを、二国間で分割占領することを提案した。 我が国にとっても、アルジェリアを直接統治する絶好の機会であるが、この提案を受け入れるべきだろうか。"

@@ -12,8 +12,13 @@ bookmarks = {
 			ideology = national_fascism
 			ideas = {
 			ITA_Umberto_II_king
+			ITA_idea_1
+			ITA_idea_2
 			}
 			focuses = {
+			ITA_focus_by_Balbo
+			ITA_focus_Savoia
+			ITA_focus_Caesar
 			}
 		}
 		"ENG"={

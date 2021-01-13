@@ -18,3 +18,13 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Khorloogiin Choibalsan"
+	desc = "POLITICS_KHORLOOGIIN_CHOIBALSAN_DESC"
+	picture = "gfx/leaders/MON/Portrait_Mongolia_Khorloogiin_Choibalsan.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

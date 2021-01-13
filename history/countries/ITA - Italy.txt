@@ -1,7 +1,8 @@
 ﻿capital = 2
 oob = "ITA_1950"
 
-set_convoys = 5
+set_convoys = 300
+set_research_slots = 4
 
 set_technology = {
 	infantry_weapons = 1

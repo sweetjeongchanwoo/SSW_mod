@@ -11,7 +11,7 @@ declare_war_on = {
 	type = annex_everything
 }
 add_ideas = {
-	ssw_despotism
+	ssw_authoritarian_regime
 	civilian_economy
 	rus_debahu1
 	rus_debahu2
@@ -81,15 +81,6 @@ create_country_leader = {
 	expire = "1962.1.12"
 	ideology = social_liberalism_ideology
 	female = yes
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Felix Yusupov"
-	desc = "POLITICS_FELIX_YUSUPOV_DESC"
-	picture = "gfx/leaders/RUS/Portrait_Russia_Felix_Yusupov.dds"
-	expire = "1967.9.27"
-	ideology = social_conservatism_ideology
 	traits = {
 	}
 }

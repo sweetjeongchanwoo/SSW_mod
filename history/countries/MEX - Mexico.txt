@@ -6,7 +6,7 @@ set_technology = {
 }
 add_ideas = {
 	civilian_economy
-	ssw_parliamentary_democracy_leftist_administration
+	ssw_flawed_democratic_regime
 	MEX_lazaro_cardenas
 	mex_ideas_18
 }
@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_VALENTIN_CAMPA_DESC"
 	picture = "gfx/leaders/MEX/Portrait_Mexico_Valentin_Campa_ssw.dds"
 	expire = "1999.11.25"
-	ideology = progressive_communism_ideology
+	ideology = syndicalism_ideology
 	traits = { railroad_enthusiast }
 }
 create_country_leader = {

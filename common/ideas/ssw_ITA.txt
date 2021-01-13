@@ -11,6 +11,7 @@ ideas = {
 		}
 		#南北格差
 		ITA_idea_1 = {
+			picture = north_south_problem
 			allowed = {
 				always = no
 			}
@@ -27,6 +28,7 @@ ideas = {
 		}
 		#軍事傾倒の経済
 		ITA_idea_2 = {
+			picture = military_economic
 			allowed = {
 				always = no
 			}
@@ -121,6 +123,7 @@ ideas = {
 		}
 		#移民との軋轢
 		ITA_idea_7 = {
+			picture = imin_problem
 			allowed = {
 				always = no
 			}
@@ -256,6 +259,191 @@ ideas = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
+			}
+		}
+		#鉱山業の拡大
+		ITA_idea_16 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		#住区画の隔離
+		ITA_idea_17 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.0025
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		#自由労働法
+		ITA_idea_18 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.0025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#平等化の加速
+		ITA_idea_19 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#傾倒の拡大
+		ITA_idea_20 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				equipment_conversion_speed = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		#移民問題への対処
+		ITA_idea_21 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				conscription_factor = 0.08
+				industrial_capacity_factory = 0.05
+			}
+		}
+		#移民との調和
+		ITA_idea_22 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 100
+				non_core_manpower = 0.25
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		#移民の有効活用
+		ITA_idea_23 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = 100
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		#南北企業の連携
+		ITA_idea_24 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_bonus = { industry = 0.05 }
+			}
+		}
+		#労働環境の整備
+		ITA_idea_25 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.075
+				conscription = -0.005
+				stability_weekly = -0.00025
+				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.15
+				economy_cost_factor = 1.5
+				consumer_goods_factor = -0.05
+			}
+		}
+		#労働環境の整備
+		ITA_idea_26 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.125
+				local_resources_factor = 0.125
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = -0.10
+				economy_cost_factor = 1.0
+			}
+		}
+		#労働環境の整備
+		ITA_idea_27 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				conscription_factor = 0.20
+				consumer_goods_factor = 0.05
 			}
 		}
 	}

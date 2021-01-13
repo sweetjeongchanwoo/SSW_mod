@@ -21,10 +21,19 @@ UKR_improve_literacy = {
 UKR_independence_war = {
 	icon = generic_industry
 	allowed = {
-		original_tag = UKR
+		OR = {
+			original_tag = UKR
+			tag = DON
+		}
 	}
 	visible = {
-		has_completed_focus = UKR_SkxtUfDo
+		OR = {
+			has_completed_focus = UKR_SkxtUfDo
+			tag = DON
+		}
+		# NOT = {
+		# 	has_global_flag = UKR_independence_war_ended
+		# }
 		any_other_country = {
 			has_war_with = ROOT
 			has_country_leader = {

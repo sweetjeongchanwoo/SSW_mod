@@ -190,6 +190,12 @@ country_event = {
 				remove_ideas = GER_idea_1
 				remove_ideas = Air_force_conspiracy
 				clr_global_flag = GER_civil_war
+				ROM ={
+					country_event = {
+						id = Danubian_war.1
+						days = 60
+					}
+				}
 				ENG = { set_global_flag = GER_civil_war }
 				FRA = { set_global_flag = GER_civil_war }
 				GER = { country_event =  { id = SSW_GER.32 days = 1 } }
