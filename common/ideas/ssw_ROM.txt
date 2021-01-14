@@ -1,0 +1,61 @@
+﻿ideas = { 
+	country = {
+		Military_unity = {  
+			allowed = { 
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1 
+			picture =  
+			modifier = {
+			}
+		}
+		Codreanu's_children = {  
+			allowed = { 
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1 
+			picture =  
+			modifier = {
+			}
+		}
+		Restoration = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war ={
+				always = no
+			}
+			removal_cost = -1
+			picture = 
+			modifier = {
+		}
+		Legion = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war ={
+				always = no
+			}
+			removal_cost = -1
+			picture = 
+			modifier = {
+		}
+		Establish_military_dictatorship = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			picture = 
+			modifier = {
+		}
+    }
+}

@@ -1,27 +1,999 @@
-###This Made by Choco
-######Why are you looking at internal data?
-#########If you're trying to steal an idea, the sooner you contact me, the better. discord:ちょこグル【Chocogulu】#1476
+###Made by Choco
+######What are you doing?
 
-JAP_political_party_values = {
-	set_variable = { JAP_seiyukai_popularity = 24 }
-	set_variable = { JAP_Kenkyukai_popularity = 24 }
-	set_variable = { JAP_minseito_popularity = 24 }
-	set_variable = { JAP_ziyuuto_popularity = 24 }
-	set_variable = { JAP_dainipponsumeragi_popularity = 24 }
-	set_variable = { JAP_Nihonkyosanto_Nosaka_popularity = 24 }
-	set_variable = { JAP_Nihonkyosanto_Tokuda_popularity = 24 }
-	set_variable = { JAP_nihonsyakai_popularity = 24 }
-	set_variable = { JAP_syakaikurabu_popularity = 24 }
-	set_variable = { JAP_DainipponSekiseikai_popularity = 24 }
-	set_variable = { JAP_NihonFuxasizumu_popularity = 24 }
-	set_variable = { JAP_Nihonkokkasyakaito_popularity = 24 }
-	set_variable = { JAP_Ronosyakaito_popularity = 24 }
-	set_variable = { JAP_toakensetsu_popularity = 24 }
-	set_variable = { JAP_ZaibatsuRenmei_popularity = 24 }
-	set_variable = { JAP_KotenKokyukai_popularity = 24 }
-	set_variable = { JAP_faction_days_reenable_low = 14 }
-	set_variable = { JAP_faction_days_reenable_low_fifty_five = 45 }
+JAP_create_political_party_values = {
+	clear_array = HOR_X
+	clear_array = HOR_Y
+	clear_array = HOR_Frame
+	
+	set_temp_variable = { JAP1 = 282 } #282
+	set_temp_variable = { JAP2 = 311 } #29
+	set_temp_variable = { JAP3 = 424 } #113
+	set_temp_variable = { JAP4 = 436 } #12
+	set_temp_variable = { JAP5 = 447 } #11
+	set_temp_variable = { JAP6 = 457 } #10
+	set_temp_variable = { JAP7 = 464 } #7
+	set_temp_variable = { JAP8 = 465 } #1
+
+	#add_to_temp_variable = { JAP2 = JAP1 }
+	#add_to_temp_variable = { JAP3 = JAP2 }
+	#add_to_temp_variable = { JAP4 = JAP3 }
+	#add_to_temp_variable = { JAP6 = JAP5 }
+	#add_to_temp_variable = { JAP8 = JAP7 }
+	
+	resize_array = {
+		array = HOR_Frame
+		value = 1
+		size = JAP1
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 2
+		size = JAP2
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 3
+		size = JAP3
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 4
+		size = JAP4
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 5
+		size = JAP5
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 6
+		size = JAP6
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 7
+		size = JAP7
+	}
+	resize_array = {
+		array = HOR_Frame
+		value = 8
+		size = JAP8
+	}
+	
+	add_to_array = { HOR_X = 0 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 12 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 23 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 35 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 46 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 58 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 69 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 81 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 93 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 104 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 116 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 1 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 12 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 24 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 36 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 47 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 59 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 71 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 2 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 82 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 14 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 26 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 94 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 37 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 106 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 49 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 118 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 61 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 5 }
+	add_to_array = { HOR_Y = 180 }
+	add_to_array = { HOR_X = 16 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 73 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 28 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 85 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 40 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 7 }
+	add_to_array = { HOR_Y = 168 }
+	add_to_array = { HOR_X = 52 }
+	add_to_array = { HOR_Y = 180 }
+	add_to_array = { HOR_X = 97 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 19 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 64 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 31 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 109 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 76 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 43 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 11 }
+	add_to_array = { HOR_Y = 157 }
+	add_to_array = { HOR_X = 121 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 88 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 23 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 56 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 35 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 68 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 100 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 47 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 15 }
+	add_to_array = { HOR_Y = 146 }
+	add_to_array = { HOR_X = 80 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 27 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 113 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 60 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 39 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 93 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 20 }
+	add_to_array = { HOR_Y = 134 }
+	add_to_array = { HOR_X = 72 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 52 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 125 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 32 }
+	add_to_array = { HOR_Y = 136 }
+	add_to_array = { HOR_X = 105 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 85 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 44 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 65 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 25 }
+	add_to_array = { HOR_Y = 124 }
+	add_to_array = { HOR_X = 118 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 57 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 37 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 98 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 78 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 50 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 31 }
+	add_to_array = { HOR_Y = 113 }
+	add_to_array = { HOR_X = 71 }
+	add_to_array = { HOR_Y = 136 }
+	add_to_array = { HOR_X = 91 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 111 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 131 }
+	add_to_array = { HOR_Y = 171 }
+	add_to_array = { HOR_X = 43 }
+	add_to_array = { HOR_Y = 115 }
+	add_to_array = { HOR_X = 63 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 84 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 104 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 56 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 37 }
+	add_to_array = { HOR_Y = 103 }
+	add_to_array = { HOR_X = 124 }
+	add_to_array = { HOR_Y = 160 }
+	add_to_array = { HOR_X = 77 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 49 }
+	add_to_array = { HOR_Y = 105 }
+	add_to_array = { HOR_X = 97 }
+	add_to_array = { HOR_Y = 138 }
+	add_to_array = { HOR_X = 70 }
+	add_to_array = { HOR_Y = 117 }
+	add_to_array = { HOR_X = 118 }
+	add_to_array = { HOR_Y = 149 }
+	add_to_array = { HOR_X = 44 }
+	add_to_array = { HOR_Y = 93 }
+	add_to_array = { HOR_X = 63 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 91 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 138 }
+	add_to_array = { HOR_Y = 161 }
+	add_to_array = { HOR_X = 56 }
+	add_to_array = { HOR_Y = 96 }
+	add_to_array = { HOR_X = 111 }
+	add_to_array = { HOR_Y = 139 }
+	add_to_array = { HOR_X = 85 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 77 }
+	add_to_array = { HOR_Y = 108 }
+	add_to_array = { HOR_X = 52 }
+	add_to_array = { HOR_Y = 84 }
+	add_to_array = { HOR_X = 105 }
+	add_to_array = { HOR_Y = 128 }
+	add_to_array = { HOR_X = 131 }
+	add_to_array = { HOR_Y = 150 }
+	add_to_array = { HOR_X = 70 }
+	add_to_array = { HOR_Y = 97 }
+	add_to_array = { HOR_X = 99 }
+	add_to_array = { HOR_Y = 118 }
+	add_to_array = { HOR_X = 64 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 125 }
+	add_to_array = { HOR_Y = 140 }
+	add_to_array = { HOR_X = 92 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 84 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 60 }
+	add_to_array = { HOR_Y = 75 }
+	add_to_array = { HOR_X = 119 }
+	add_to_array = { HOR_Y = 130 }
+	add_to_array = { HOR_X = 78 }
+	add_to_array = { HOR_Y = 89 }
+	add_to_array = { HOR_X = 146 }
+	add_to_array = { HOR_Y = 152 }
+	add_to_array = { HOR_X = 113 }
+	add_to_array = { HOR_Y = 119 }
+	add_to_array = { HOR_X = 72 }
+	add_to_array = { HOR_Y = 78 }
+	add_to_array = { HOR_X = 107 }
+	add_to_array = { HOR_Y = 109 }
+	add_to_array = { HOR_X = 140 }
+	add_to_array = { HOR_Y = 142 }
+	add_to_array = { HOR_X = 68 }
+	add_to_array = { HOR_Y = 66 }
+	add_to_array = { HOR_X = 93 }
+	add_to_array = { HOR_Y = 90 }
+	add_to_array = { HOR_X = 101 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 134 }
+	add_to_array = { HOR_Y = 131 }
+	add_to_array = { HOR_X = 87 }
+	add_to_array = { HOR_Y = 80 }
+	add_to_array = { HOR_X = 81 }
+	add_to_array = { HOR_Y = 70 }
+	add_to_array = { HOR_X = 128 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 122 }
+	add_to_array = { HOR_Y = 111 }
+	add_to_array = { HOR_X = 77 }
+	add_to_array = { HOR_Y = 58 }
+	add_to_array = { HOR_X = 116 }
+	add_to_array = { HOR_Y = 101 }
+	add_to_array = { HOR_X = 102 }
+	add_to_array = { HOR_Y = 83 }
+	add_to_array = { HOR_X = 110 }
+	add_to_array = { HOR_Y = 91 }
+	add_to_array = { HOR_X = 96 }
+	add_to_array = { HOR_Y = 73 }
+	add_to_array = { HOR_X = 155 }
+	add_to_array = { HOR_Y = 144 }
+	add_to_array = { HOR_X = 90 }
+	add_to_array = { HOR_Y = 62 }
+	add_to_array = { HOR_X = 149 }
+	add_to_array = { HOR_Y = 134 }
+	add_to_array = { HOR_X = 87 }
+	add_to_array = { HOR_Y = 50 }
+	add_to_array = { HOR_X = 143 }
+	add_to_array = { HOR_Y = 124 }
+	add_to_array = { HOR_X = 137 }
+	add_to_array = { HOR_Y = 114 }
+	add_to_array = { HOR_X = 131 }
+	add_to_array = { HOR_Y = 103 }
+	add_to_array = { HOR_X = 111 }
+	add_to_array = { HOR_Y = 75 }
+	add_to_array = { HOR_X = 105 }
+	add_to_array = { HOR_Y = 65 }
+	add_to_array = { HOR_X = 125 }
+	add_to_array = { HOR_Y = 93 }
+	add_to_array = { HOR_X = 99 }
+	add_to_array = { HOR_Y = 55 }
+	add_to_array = { HOR_X = 120 }
+	add_to_array = { HOR_Y = 83 }
+	add_to_array = { HOR_X = 96 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 121 }
+	add_to_array = { HOR_Y = 69 }
+	add_to_array = { HOR_X = 164 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 115 }
+	add_to_array = { HOR_Y = 59 }
+	add_to_array = { HOR_X = 109 }
+	add_to_array = { HOR_Y = 49 }
+	add_to_array = { HOR_X = 159 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 153 }
+	add_to_array = { HOR_Y = 117 }
+	add_to_array = { HOR_X = 147 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 141 }
+	add_to_array = { HOR_Y = 97 }
+	add_to_array = { HOR_X = 135 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 130 }
+	add_to_array = { HOR_Y = 77 }
+	add_to_array = { HOR_X = 106 }
+	add_to_array = { HOR_Y = 37 }
+	add_to_array = { HOR_X = 119 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 125 }
+	add_to_array = { HOR_Y = 53 }
+	add_to_array = { HOR_X = 131 }
+	add_to_array = { HOR_Y = 63 }
+	add_to_array = { HOR_X = 117 }
+	add_to_array = { HOR_Y = 31 }
+	add_to_array = { HOR_X = 140 }
+	add_to_array = { HOR_Y = 71 }
+	add_to_array = { HOR_X = 146 }
+	add_to_array = { HOR_Y = 81 }
+	add_to_array = { HOR_X = 152 }
+	add_to_array = { HOR_Y = 91 }
+	add_to_array = { HOR_X = 157 }
+	add_to_array = { HOR_Y = 101 }
+	add_to_array = { HOR_X = 163 }
+	add_to_array = { HOR_Y = 111 }
+	add_to_array = { HOR_X = 169 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 175 }
+	add_to_array = { HOR_Y = 131 }
+	add_to_array = { HOR_X = 130 }
+	add_to_array = { HOR_Y = 37 }
+	add_to_array = { HOR_X = 136 }
+	add_to_array = { HOR_Y = 47 }
+	add_to_array = { HOR_X = 141 }
+	add_to_array = { HOR_Y = 57 }
+	add_to_array = { HOR_X = 128 }
+	add_to_array = { HOR_Y = 25 }
+	add_to_array = { HOR_X = 151 }
+	add_to_array = { HOR_Y = 66 }
+	add_to_array = { HOR_X = 157 }
+	add_to_array = { HOR_Y = 76 }
+	add_to_array = { HOR_X = 163 }
+	add_to_array = { HOR_Y = 86 }
+	add_to_array = { HOR_X = 141 }
+	add_to_array = { HOR_Y = 32 }
+	add_to_array = { HOR_X = 146 }
+	add_to_array = { HOR_Y = 42 }
+	add_to_array = { HOR_X = 168 }
+	add_to_array = { HOR_Y = 96 }
+	add_to_array = { HOR_X = 139 }
+	add_to_array = { HOR_Y = 20 }
+	add_to_array = { HOR_X = 152 }
+	add_to_array = { HOR_Y = 53 }
+	add_to_array = { HOR_X = 174 }
+	add_to_array = { HOR_Y = 106 }
+	add_to_array = { HOR_X = 180 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 162 }
+	add_to_array = { HOR_Y = 61 }
+	add_to_array = { HOR_X = 186 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 152 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 168 }
+	add_to_array = { HOR_Y = 71 }
+	add_to_array = { HOR_X = 157 }
+	add_to_array = { HOR_Y = 38 }
+	add_to_array = { HOR_X = 150 }
+	add_to_array = { HOR_Y = 16 }
+	add_to_array = { HOR_X = 174 }
+	add_to_array = { HOR_Y = 81 }
+	add_to_array = { HOR_X = 163 }
+	add_to_array = { HOR_Y = 48 }
+	add_to_array = { HOR_X = 180 }
+	add_to_array = { HOR_Y = 92 }
+	add_to_array = { HOR_X = 163 }
+	add_to_array = { HOR_Y = 24 }
+	add_to_array = { HOR_X = 186 }
+	add_to_array = { HOR_Y = 102 }
+	add_to_array = { HOR_X = 174 }
+	add_to_array = { HOR_Y = 57 }
+	add_to_array = { HOR_X = 162 }
+	add_to_array = { HOR_Y = 13 }
+	add_to_array = { HOR_X = 169 }
+	add_to_array = { HOR_Y = 35 }
+	add_to_array = { HOR_X = 180 }
+	add_to_array = { HOR_Y = 68 }
+	add_to_array = { HOR_X = 192 }
+	add_to_array = { HOR_Y = 112 }
+	add_to_array = { HOR_X = 175 }
+	add_to_array = { HOR_Y = 45 }
+	add_to_array = { HOR_X = 186 }
+	add_to_array = { HOR_Y = 78 }
+	add_to_array = { HOR_X = 197 }
+	add_to_array = { HOR_Y = 123 }
+	add_to_array = { HOR_X = 174 }
+	add_to_array = { HOR_Y = 21 }
+	add_to_array = { HOR_X = 173 }
+	add_to_array = { HOR_Y = 10 }
+	add_to_array = { HOR_X = 191 }
+	add_to_array = { HOR_Y = 89 }
+	add_to_array = { HOR_X = 180 }
+	add_to_array = { HOR_Y = 32 }
+	add_to_array = { HOR_X = 185 }
+	add_to_array = { HOR_Y = 55 }
+	add_to_array = { HOR_X = 186 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 197 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 191 }
+	add_to_array = { HOR_Y = 65 }
+	add_to_array = { HOR_X = 186 }
+	add_to_array = { HOR_Y = 19 }
+	add_to_array = { HOR_X = 185 }
+	add_to_array = { HOR_Y = 7 }
+	add_to_array = { HOR_X = 197 }
+	add_to_array = { HOR_Y = 76 }
+	add_to_array = { HOR_X = 203 }
+	add_to_array = { HOR_Y = 110 }
+	add_to_array = { HOR_X = 192 }
+	add_to_array = { HOR_Y = 30 }
+	add_to_array = { HOR_X = 197 }
+	add_to_array = { HOR_Y = 52 }
+	add_to_array = { HOR_X = 203 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 198 }
+	add_to_array = { HOR_Y = 41 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 198 }
+	add_to_array = { HOR_Y = 17 }
+	add_to_array = { HOR_X = 203 }
+	add_to_array = { HOR_Y = 63 }
+	add_to_array = { HOR_X = 197 }
+	add_to_array = { HOR_Y = 6 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 98 }
+	add_to_array = { HOR_X = 204 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 74 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 51 }
+	add_to_array = { HOR_X = 210 }
+	add_to_array = { HOR_Y = 40 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 16 }
+	add_to_array = { HOR_X = 209 }
+	add_to_array = { HOR_Y = 5 }
+	add_to_array = { HOR_X = 215 }
+	add_to_array = { HOR_Y = 109 }
+	add_to_array = { HOR_X = 215 }
+	add_to_array = { HOR_Y = 86 }
+	add_to_array = { HOR_X = 215 }
+	add_to_array = { HOR_Y = 62 }
+	add_to_array = { HOR_X = 215 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 120 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 97 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 74 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 51 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 39 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 16 }
+	add_to_array = { HOR_X = 221 }
+	add_to_array = { HOR_Y = 5 }
+	add_to_array = { HOR_X = 227 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 227 }
+	add_to_array = { HOR_Y = 62 }
+	add_to_array = { HOR_X = 227 }
+	add_to_array = { HOR_Y = 86 }
+	add_to_array = { HOR_X = 227 }
+	add_to_array = { HOR_Y = 109 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 5 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 16 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 40 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 51 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 74 }
+	add_to_array = { HOR_X = 239 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 98 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 6 }
+	add_to_array = { HOR_X = 239 }
+	add_to_array = { HOR_Y = 63 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 17 }
+	add_to_array = { HOR_X = 233 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 41 }
+	add_to_array = { HOR_X = 239 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 52 }
+	add_to_array = { HOR_X = 251 }
+	add_to_array = { HOR_Y = 30 }
+	add_to_array = { HOR_X = 239 }
+	add_to_array = { HOR_Y = 110 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 76 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 7 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 19 }
+	add_to_array = { HOR_X = 251 }
+	add_to_array = { HOR_Y = 65 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 55 }
+	add_to_array = { HOR_X = 262 }
+	add_to_array = { HOR_Y = 32 }
+	add_to_array = { HOR_X = 251 }
+	add_to_array = { HOR_Y = 89 }
+	add_to_array = { HOR_X = 269 }
+	add_to_array = { HOR_Y = 10 }
+	add_to_array = { HOR_X = 268 }
+	add_to_array = { HOR_Y = 21 }
+	add_to_array = { HOR_X = 245 }
+	add_to_array = { HOR_Y = 123 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 78 }
+	add_to_array = { HOR_X = 268 }
+	add_to_array = { HOR_Y = 45 }
+	add_to_array = { HOR_X = 251 }
+	add_to_array = { HOR_Y = 112 }
+	add_to_array = { HOR_X = 263 }
+	add_to_array = { HOR_Y = 68 }
+	add_to_array = { HOR_X = 274 }
+	add_to_array = { HOR_Y = 35 }
+	add_to_array = { HOR_X = 281 }
+	add_to_array = { HOR_Y = 13 }
+	add_to_array = { HOR_X = 269 }
+	add_to_array = { HOR_Y = 57 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 102 }
+	add_to_array = { HOR_X = 280 }
+	add_to_array = { HOR_Y = 24 }
+	add_to_array = { HOR_X = 263 }
+	add_to_array = { HOR_Y = 92 }
+	add_to_array = { HOR_X = 279 }
+	add_to_array = { HOR_Y = 48 }
+	add_to_array = { HOR_X = 269 }
+	add_to_array = { HOR_Y = 81 }
+	add_to_array = { HOR_X = 292 }
+	add_to_array = { HOR_Y = 16 }
+	add_to_array = { HOR_X = 285 }
+	add_to_array = { HOR_Y = 38 }
+	add_to_array = { HOR_X = 275 }
+	add_to_array = { HOR_Y = 71 }
+	add_to_array = { HOR_X = 291 }
+	add_to_array = { HOR_Y = 28 }
+	add_to_array = { HOR_X = 257 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 280 }
+	add_to_array = { HOR_Y = 61 }
+	add_to_array = { HOR_X = 263 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 268 }
+	add_to_array = { HOR_Y = 106 }
+	add_to_array = { HOR_X = 291 }
+	add_to_array = { HOR_Y = 53 }
+	add_to_array = { HOR_X = 304 }
+	add_to_array = { HOR_Y = 20 }
+	add_to_array = { HOR_X = 274 }
+	add_to_array = { HOR_Y = 96 }
+	add_to_array = { HOR_X = 296 }
+	add_to_array = { HOR_Y = 42 }
+	add_to_array = { HOR_X = 302 }
+	add_to_array = { HOR_Y = 32 }
+	add_to_array = { HOR_X = 280 }
+	add_to_array = { HOR_Y = 86 }
+	add_to_array = { HOR_X = 286 }
+	add_to_array = { HOR_Y = 76 }
+	add_to_array = { HOR_X = 292 }
+	add_to_array = { HOR_Y = 66 }
+	add_to_array = { HOR_X = 315 }
+	add_to_array = { HOR_Y = 25 }
+	add_to_array = { HOR_X = 301 }
+	add_to_array = { HOR_Y = 57 }
+	add_to_array = { HOR_X = 307 }
+	add_to_array = { HOR_Y = 47 }
+	add_to_array = { HOR_X = 313 }
+	add_to_array = { HOR_Y = 37 }
+	add_to_array = { HOR_X = 268 }
+	add_to_array = { HOR_Y = 131 }
+	add_to_array = { HOR_X = 274 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 279 }
+	add_to_array = { HOR_Y = 111 }
+	add_to_array = { HOR_X = 285 }
+	add_to_array = { HOR_Y = 101 }
+	add_to_array = { HOR_X = 291 }
+	add_to_array = { HOR_Y = 91 }
+	add_to_array = { HOR_X = 297 }
+	add_to_array = { HOR_Y = 81 }
+	add_to_array = { HOR_X = 303 }
+	add_to_array = { HOR_Y = 71 }
+	add_to_array = { HOR_X = 326 }
+	add_to_array = { HOR_Y = 31 }
+	add_to_array = { HOR_X = 312 }
+	add_to_array = { HOR_Y = 63 }
+	add_to_array = { HOR_X = 318 }
+	add_to_array = { HOR_Y = 53 }
+	add_to_array = { HOR_X = 323 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 336 }
+	add_to_array = { HOR_Y = 37 }
+	add_to_array = { HOR_X = 313 }
+	add_to_array = { HOR_Y = 77 }
+	add_to_array = { HOR_X = 307 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 301 }
+	add_to_array = { HOR_Y = 97 }
+	add_to_array = { HOR_X = 296 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 290 }
+	add_to_array = { HOR_Y = 117 }
+	add_to_array = { HOR_X = 284 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 334 }
+	add_to_array = { HOR_Y = 49 }
+	add_to_array = { HOR_X = 328 }
+	add_to_array = { HOR_Y = 59 }
+	add_to_array = { HOR_X = 278 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 322 }
+	add_to_array = { HOR_Y = 69 }
+	add_to_array = { HOR_X = 346 }
+	add_to_array = { HOR_Y = 43 }
+	add_to_array = { HOR_X = 323 }
+	add_to_array = { HOR_Y = 83 }
+	add_to_array = { HOR_X = 343 }
+	add_to_array = { HOR_Y = 55 }
+	add_to_array = { HOR_X = 317 }
+	add_to_array = { HOR_Y = 93 }
+	add_to_array = { HOR_X = 338 }
+	add_to_array = { HOR_Y = 65 }
+	add_to_array = { HOR_X = 332 }
+	add_to_array = { HOR_Y = 75 }
+	add_to_array = { HOR_X = 311 }
+	add_to_array = { HOR_Y = 103 }
+	add_to_array = { HOR_X = 306 }
+	add_to_array = { HOR_Y = 114 }
+	add_to_array = { HOR_X = 300 }
+	add_to_array = { HOR_Y = 124 }
+	add_to_array = { HOR_X = 356 }
+	add_to_array = { HOR_Y = 50 }
+	add_to_array = { HOR_X = 294 }
+	add_to_array = { HOR_Y = 134 }
+	add_to_array = { HOR_X = 353 }
+	add_to_array = { HOR_Y = 62 }
+	add_to_array = { HOR_X = 288 }
+	add_to_array = { HOR_Y = 144 }
+	add_to_array = { HOR_X = 347 }
+	add_to_array = { HOR_Y = 73 }
+	add_to_array = { HOR_X = 333 }
+	add_to_array = { HOR_Y = 91 }
+	add_to_array = { HOR_X = 341 }
+	add_to_array = { HOR_Y = 83 }
+	add_to_array = { HOR_X = 327 }
+	add_to_array = { HOR_Y = 101 }
+	add_to_array = { HOR_X = 365 }
+	add_to_array = { HOR_Y = 58 }
+	add_to_array = { HOR_X = 321 }
+	add_to_array = { HOR_Y = 111 }
+	add_to_array = { HOR_X = 315 }
+	add_to_array = { HOR_Y = 121 }
+	add_to_array = { HOR_X = 362 }
+	add_to_array = { HOR_Y = 70 }
+	add_to_array = { HOR_X = 356 }
+	add_to_array = { HOR_Y = 80 }
+	add_to_array = { HOR_X = 309 }
+	add_to_array = { HOR_Y = 131 }
+	add_to_array = { HOR_X = 342 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 350 }
+	add_to_array = { HOR_Y = 90 }
+	add_to_array = { HOR_X = 374 }
+	add_to_array = { HOR_Y = 66 }
+	add_to_array = { HOR_X = 303 }
+	add_to_array = { HOR_Y = 142 }
+	add_to_array = { HOR_X = 336 }
+	add_to_array = { HOR_Y = 109 }
+	add_to_array = { HOR_X = 370 }
+	add_to_array = { HOR_Y = 78 }
+	add_to_array = { HOR_X = 330 }
+	add_to_array = { HOR_Y = 119 }
+	add_to_array = { HOR_X = 297 }
+	add_to_array = { HOR_Y = 152 }
+	add_to_array = { HOR_X = 364 }
+	add_to_array = { HOR_Y = 89 }
+	add_to_array = { HOR_X = 324 }
+	add_to_array = { HOR_Y = 130 }
+	add_to_array = { HOR_X = 383 }
+	add_to_array = { HOR_Y = 75 }
+	add_to_array = { HOR_X = 358 }
+	add_to_array = { HOR_Y = 99 }
+	add_to_array = { HOR_X = 350 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 317 }
+	add_to_array = { HOR_Y = 140 }
+	add_to_array = { HOR_X = 379 }
+	add_to_array = { HOR_Y = 87 }
+	add_to_array = { HOR_X = 344 }
+	add_to_array = { HOR_Y = 118 }
+	add_to_array = { HOR_X = 372 }
+	add_to_array = { HOR_Y = 97 }
+	add_to_array = { HOR_X = 311 }
+	add_to_array = { HOR_Y = 150 }
+	add_to_array = { HOR_X = 338 }
+	add_to_array = { HOR_Y = 128 }
+	add_to_array = { HOR_X = 391 }
+	add_to_array = { HOR_Y = 84 }
+	add_to_array = { HOR_X = 366 }
+	add_to_array = { HOR_Y = 108 }
+	add_to_array = { HOR_X = 358 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 331 }
+	add_to_array = { HOR_Y = 139 }
+	add_to_array = { HOR_X = 386 }
+	add_to_array = { HOR_Y = 96 }
+	add_to_array = { HOR_X = 305 }
+	add_to_array = { HOR_Y = 161 }
+	add_to_array = { HOR_X = 352 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 380 }
+	add_to_array = { HOR_Y = 107 }
+	add_to_array = { HOR_X = 398 }
+	add_to_array = { HOR_Y = 93 }
+	add_to_array = { HOR_X = 325 }
+	add_to_array = { HOR_Y = 149 }
+	add_to_array = { HOR_X = 373 }
+	add_to_array = { HOR_Y = 117 }
+	add_to_array = { HOR_X = 345 }
+	add_to_array = { HOR_Y = 138 }
+	add_to_array = { HOR_X = 393 }
+	add_to_array = { HOR_Y = 105 }
+	add_to_array = { HOR_X = 365 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 318 }
+	add_to_array = { HOR_Y = 160 }
+	add_to_array = { HOR_X = 405 }
+	add_to_array = { HOR_Y = 103 }
+	add_to_array = { HOR_X = 387 }
+	add_to_array = { HOR_Y = 116 }
+	add_to_array = { HOR_X = 339 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 359 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 380 }
+	add_to_array = { HOR_Y = 127 }
+	add_to_array = { HOR_X = 400 }
+	add_to_array = { HOR_Y = 115 }
+	add_to_array = { HOR_X = 312 }
+	add_to_array = { HOR_Y = 171 }
+	add_to_array = { HOR_X = 332 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 352 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 372 }
+	add_to_array = { HOR_Y = 136 }
+	add_to_array = { HOR_X = 412 }
+	add_to_array = { HOR_Y = 113 }
+	add_to_array = { HOR_X = 393 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 365 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 345 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 406 }
+	add_to_array = { HOR_Y = 126 }
+	add_to_array = { HOR_X = 386 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 325 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 418 }
+	add_to_array = { HOR_Y = 124 }
+	add_to_array = { HOR_X = 378 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 398 }
+	add_to_array = { HOR_Y = 137 }
+	add_to_array = { HOR_X = 358 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 338 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 411 }
+	add_to_array = { HOR_Y = 136 }
+	add_to_array = { HOR_X = 317 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 391 }
+	add_to_array = { HOR_Y = 148 }
+	add_to_array = { HOR_X = 370 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 423 }
+	add_to_array = { HOR_Y = 134 }
+	add_to_array = { HOR_X = 350 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 403 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 383 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 330 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 416 }
+	add_to_array = { HOR_Y = 147 }
+	add_to_array = { HOR_X = 363 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 428 }
+	add_to_array = { HOR_Y = 146 }
+	add_to_array = { HOR_X = 396 }
+	add_to_array = { HOR_Y = 159 }
+	add_to_array = { HOR_X = 342 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 375 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 408 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 387 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 420 }
+	add_to_array = { HOR_Y = 158 }
+	add_to_array = { HOR_X = 354 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 322 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 432 }
+	add_to_array = { HOR_Y = 157 }
+	add_to_array = { HOR_X = 400 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 367 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 334 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 412 }
+	add_to_array = { HOR_Y = 170 }
+	add_to_array = { HOR_X = 379 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 424 }
+	add_to_array = { HOR_Y = 169 }
+	add_to_array = { HOR_X = 346 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 391 }
+	add_to_array = { HOR_Y = 180 }
+	add_to_array = { HOR_X = 435 }
+	add_to_array = { HOR_Y = 168 }
+	add_to_array = { HOR_X = 403 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 358 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 415 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 370 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 426 }
+	add_to_array = { HOR_Y = 181 }
+	add_to_array = { HOR_X = 438 }
+	add_to_array = { HOR_Y = 180 }
+	add_to_array = { HOR_X = 382 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 325 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 393 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 337 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 405 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 349 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 417 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 429 }
+	add_to_array = { HOR_Y = 193 }
+	add_to_array = { HOR_X = 360 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 440 }
+	add_to_array = { HOR_Y = 192 }
+	add_to_array = { HOR_X = 372 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 384 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 395 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 407 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 419 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 430 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 442 }
+	add_to_array = { HOR_Y = 204 }
+	add_to_array = { HOR_X = 327 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 338 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 350 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 362 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 373 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 385 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 396 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 408 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 420 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 431 }
+	add_to_array = { HOR_Y = 216 }
+	add_to_array = { HOR_X = 443 }
+	add_to_array = { HOR_Y = 216 }
 }
+
 gea_gold_system = {
 	set_variable = { Sib_gold_system = 25 }
 	set_variable = { Man_gold_system = 25 }
@@ -339,266 +1311,6 @@ JAP_NIN_low_gold_system_decrease_effect = {#インド
 	add_to_variable = { Nin_gold_system = JAP_faction_low_five_decrease }
 	clamp_variable = {
 		var = Nin_gold_system
-		min = 0
-		max = 100
-	}
-}
-#政友会
-JAP_seiyukai_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_seiyukai_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_seiyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_seiyukai_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_seiyukai_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_seiyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_seiyukai_medium_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_seiyukai_tt
-	custom_effect_tooltip = JAP_midium_popularity_increase_tt
-	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_medium_increase }
-	clamp_variable = {
-		var = JAP_seiyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_seiyukai_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_seiyukai_tt
-	custom_effect_tooltip = JAP_midium_popularity_decrease_tt
-	add_to_variable = { JAP_seiyukai_popularity = JAP_faction_medium_decrease }
-	clamp_variable = {
-		var = JAP_seiyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-
-
-#研究会
-JAP_kenkyukai_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_kenkyukai_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_Kenkyukai_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_Kenkyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_kenkyukai_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_kenkyukai_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_Kenkyukai_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_Kenkyukai_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#民政党
-JAP_minseito_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_minseito_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_minseito_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_minseito_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_minseito_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_minseito_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_minseito_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_minseito_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#自由党
-JAP_ziyuuto_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_ziyuuto_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_ziyuuto_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_ziyuuto_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_ziyuuto_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_ziyuuto_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_ziyuuto_medium_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_ziyuuto_tt
-	custom_effect_tooltip = JAP_midium_popularity_increase_tt
-	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_medium_increase }
-	clamp_variable = {
-		var = JAP_ziyuuto_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_ziyuuto_medium_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_ziyuuto_tt
-	custom_effect_tooltip = JAP_midium_popularity_decrease_tt
-	add_to_variable = { JAP_ziyuuto_popularity = JAP_faction_medium_decrease }
-	clamp_variable = {
-		var = JAP_ziyuuto_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#大日本皇党
-JAP_dainipponsumeragi_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_dainipponsumeragi_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_dainipponsumeragi_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_dainipponsumeragi_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_dainipponsumeragi_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_dainipponsumeragi_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_dainipponsumeragi_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_dainipponsumeragi_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#日本共産党野坂派
-JAP_Nihonkyosanto_Nosaka_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_Nihonkyosanto_Nosaka_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_Nihonkyosanto_Nosaka_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_Nihonkyosanto_Nosaka_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_Nihonkyosanto_Nosaka_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_Nihonkyosanto_Nosaka_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_Nihonkyosanto_Nosaka_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_Nihonkyosanto_Nosaka_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#日本共産党徳田派
-JAP_Nihonkyosanto_Tokuda_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_Nihonkyosanto_Tokuda_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_Nihonkyosanto_Tokuda_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_Nihonkyosanto_Tokuda_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_Nihonkyosanto_Tokuda_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_Nihonkyosanto_Tokuda_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_Nihonkyosanto_Tokuda_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_Nihonkyosanto_Tokuda_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#日本社会党
-JAP_nihonsyakai_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_nihonsyakai_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_nihonsyakai_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_nihonsyakai_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_nihonsyakai_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_nihonsyakai_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_nihonsyakai_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_nihonsyakai_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#社会クラブ
-JAP_syakaikurabu_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_syakaikurabu_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_syakaikurabu_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_syakaikurabu_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_syakaikurabu_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_syakaikurabu_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_syakaikurabu_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_syakaikurabu_popularity
-		min = 0
-		max = 100
-	}
-}
-
-#東亜建設国民聯盟
-JAP_toakensetsu_low_popularity_increase_effect = {
-	custom_effect_tooltip = JAP_toakensetsu_tt
-	custom_effect_tooltip = JAP_low_popularity_increase_tt
-	add_to_variable = { JAP_toakensetsu_popularity = JAP_faction_low_increase }
-	clamp_variable = {
-		var = JAP_toakensetsu_popularity
-		min = 0
-		max = 100
-	}
-}
-JAP_toakensetsu_low_popularity_decrease_effect = {
-	custom_effect_tooltip = JAP_toakensetsu_tt
-	custom_effect_tooltip = JAP_low_popularity_decrease_tt
-	add_to_variable = { JAP_toakensetsu_popularity = JAP_faction_low_decrease }
-	clamp_variable = {
-		var = JAP_toakensetsu_popularity
 		min = 0
 		max = 100
 	}

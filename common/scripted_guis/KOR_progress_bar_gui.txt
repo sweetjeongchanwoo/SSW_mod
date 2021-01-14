@@ -1,10 +1,6 @@
-# Scripted GUI Pie Chart example by Yard1
-# Feel free to use in your mods, but give credits to Yard1 (both in code, with comments; and on your download page)
-
 scripted_gui = {
 	KOR_Japanization = {
 		window_name = "KOR_progress_bar"
-		context_type = decision_category
 		parent_window_token = decision_tab
 
 		visible = {

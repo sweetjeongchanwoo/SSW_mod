@@ -21,6 +21,6 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = ITA_focus_industry_0
+	shared_focus = ITA_focus_industry_Industry_Status
 	
 }
