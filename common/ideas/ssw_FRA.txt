@@ -939,6 +939,7 @@ ideas = {
                 surrender_limit = 0.1
             }
         }
+
         Henri_VI = {
 
             allowed = {always = no}
@@ -953,6 +954,7 @@ ideas = {
                 stability_factor = 0.05
             }
         }
+
         Napoleon_VI = {
 
             allowed = {always = no}
@@ -967,6 +969,7 @@ ideas = {
                 stability_factor = 0.05
             }
         }
+
         Republican_rebellion = {
 
             allowed = {always = no}
@@ -984,6 +987,7 @@ ideas = {
                 conscription_factor = -0.15
             }
         }
+
         Absolute_power = {
             
             allowed = {always = no}
@@ -999,6 +1003,23 @@ ideas = {
                 resistance_target = -0.3
                 political_power_factor = 0.3
             }
+        }
+        
+        Military_plan = {
+
+            allowed = {always = no}
+
+            removal_cost = -1
+
+            allowed_civil_war = {always = yes}
+
+            picture = idea_unknown
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+                global_building_slots_factor = 0.15
+            } 
         }
     }
 }
