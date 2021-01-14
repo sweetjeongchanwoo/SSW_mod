@@ -101,7 +101,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_idea = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -142,7 +142,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -198,7 +198,7 @@ focus_tree = {
 		completion_reward = {
 			ITA = {
 				country_event = {
-					id = SSW.FRA.for.2
+					id = SSW_FRA_for.2
 					days = 1
 				}
 			}
@@ -229,9 +229,9 @@ focus_tree = {
 		x = 7
 		y = 6
 		completion_reward = {
-			add_ideas = FRA_Twin_stresa
+			add_ideas = Twin_stresa
 			ITA = {
-				add_ideas = FRA_Twin_stresa
+				add_ideas = Twin_stresa
 			}
 		}
 
@@ -252,7 +252,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -378,7 +378,7 @@ focus_tree = {
 		available = {
 			always = no
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -400,7 +400,7 @@ focus_tree = {
 		x = 18
 		y = 3
 		available = {
-			has_govement = social_democracy
+			has_government = social_democracy
 		}
 		completion_reward = {
 			add_ideas = French_Peoples_Front
@@ -417,7 +417,7 @@ focus_tree = {
 		x = 18
 		y = 4
 		completion_reward = {
-			country_event = SSW.FRA.4
+			country_event = SSW_FRA.4
 		}
 
 	}
@@ -556,8 +556,8 @@ focus_tree = {
 		y = 3
 		available = {
 			OR = {
-				has_govement = social_democracy
-				has_govement = authority_democracy
+				has_government = social_democracy
+				has_government = authority_democracy
 			}
 		}
 		completion_reward = {
@@ -566,7 +566,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Resurrection_of_Parliament
+		id = FRA_Resurrection_Parliament
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
@@ -601,13 +601,13 @@ focus_tree = {
 			focus = FRA_Enactment_of_the_Old_Republic
 		}
 		prerequisite = {
-			focus = FRA_Resurrection_of_Parliament
+			focus = FRA_Resurrection_Parliament
 		}
 		x = 24
 		y = 5
 		completion_reward = {
 			country_event = {
-				id = SSW.FRA.5
+				id = SSW_FRA.5
 				days = 1
 			} 
 		}
@@ -628,7 +628,7 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 				news_event = {
-					id = FRA.news.4
+					id = FRA_news.4
 				}
 				remove_ideas = Unstable_Republic
 				add_ideas = FRA_Guy_Mollet
@@ -654,7 +654,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			news_event = {
-				id = FRA.news.5
+				id = FRA_news.5
 			}
 			remove_ideas = Unstable_Republic
 			add_ideas = FRA_Mendes_France
@@ -680,7 +680,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			news_event = {
-				id = FRA.news.6
+				id = FRA_news.6
 			}
 			remove_ideas = Unstable_Republic
 			add_ideas = FRA_Rene_Coty
@@ -704,7 +704,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			news_event = {
-				id = FRA.news.2
+				id = FRA_news.2
 			}
 			add_ideas = NEW_repubulic
 		}
@@ -759,7 +759,7 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 				country_event = {
-					id = SSW.FRA.for.1
+					id = SSW_FRA_for.1
 					days = 1
 				}
 			}
@@ -776,6 +776,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 11
+		completion_reward = {
+			add_timed_idea = {
+				idea = Military_plan
+				days = 180
+			}
+		}
 
 	}
 	focus = {
@@ -843,7 +849,7 @@ focus_tree = {
 			has_completed_focus = FRA_Revolutionary_Prosperity
 		}
 		completion_reward = {	
-			crate_faction =	FifthInternational
+			create_faction = FifthInternational
 		}
 
 	}
@@ -903,9 +909,7 @@ focus_tree = {
 		x = 30
 		y = 3
 		available = {
-			has_govement = {
-				authority_democracy
-			}
+			has_government = authority_democracy
 		}
 		completion_reward = {
 			add_ideas = Republican_rebellion
@@ -944,7 +948,7 @@ focus_tree = {
 		x = 31
 		y = 4
 		completion_reward = {
-			add_ideas = Napoleon_V
+			add_ideas = Napoleon_VI
 		}
 
 	}
@@ -966,7 +970,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			country_event = {
-				id = SSW.FRA.11
+				id = SSW_FRA.11
 				days = 1
 			}
 		}
@@ -983,7 +987,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			country_event = {
-				id = SSW.FRA.11
+				id = SSW_FRA.11
 				days = 1	
 			} 
 		}
@@ -1028,6 +1032,9 @@ focus_tree = {
 				traits = {
 				}
 			}
+			remove_ideas = {
+				add_idea = Henri_VI
+			}
 		}
 
 	}
@@ -1053,6 +1060,9 @@ focus_tree = {
 				ideology = authority_despotism_ideology
 				traits = {
 				}
+			}
+			remove_ideas = {
+				add_idea = Napoleon_VI
 			}
 		}
 
@@ -1147,17 +1157,15 @@ focus_tree = {
 		}
 		x = 35
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = arty_bonus
-							bonus = 1
-							uses = 2
-							category = artillery
-						}
-					swap_ideas = {
-							remove_idea = Confusion_of_the_General_Staff_2
-						}
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+			remove_idea = Confusion_of_the_General_Staff_2
+		}
 
 	}
 	focus = {
@@ -1206,17 +1214,15 @@ focus_tree = {
 		}
 		x = 37
 		y = 2
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1
-							uses = 1
-							category = motorized_equipment
-						}
-					swap_ideas = {
-							remove_idea = Confusion_of_the_General_Staff_2
-						}
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			remove_idea = Confusion_of_the_General_Staff_2
+		}
 
 	}
 	focus = {
@@ -1332,9 +1338,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			swap_ideas = {
-				remove_idea = Confusion_of_the_General_Staff_2
-			}
+			remove_idea = Confusion_of_the_General_Staff_2
 		}
 
 	}
@@ -1382,6 +1386,9 @@ focus_tree = {
 		}
 		x = 37
 		y = 5
+		completion_reward = {
+			add_ideas = FRA_Doctrine_enhancement
+		}
 
 	}
 	focus = {
@@ -1480,8 +1487,8 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			swap_ideas = {
-				remove_ideas = Defeated_army_5
-				add_ideas = FRA_New_French_Army
+				remove_idea = Defeated_army_5
+				add_idea = FRA_New_French_Army
 			}
 		}
 
@@ -1497,8 +1504,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_ideas = FRA_New_French_Army
-				add_ideas = FRA_New_French_Army_2
+				remove_idea = FRA_New_French_Army
+				add_idea = FRA_New_French_Army_2
 			}
 		}
 	}
@@ -1517,8 +1524,8 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 35
 			swap_ideas = {
-				remove_ideas = FRA_New_French_Army_2
-				add_ideas = FRA_New_French_Army_3
+				remove_idea = FRA_New_French_Army_2
+				add_idea = FRA_New_French_Army_3
 			}
 			add_ideas = Military_reform
 		}
@@ -1771,7 +1778,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = FRA_Focus_on_bombers
+		id = FRA_Focus_bombers
 		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		prerequisite = {
@@ -1779,14 +1786,14 @@ focus_tree = {
 		}
 		x = 42
 		y = 11
-			completion_reward = {
-					add_tech_bonus = {
-							name = JAP_strategic_bomber_effort
-							bonus = 1
-							uses = 2
-							category = cat_strategic_bomber
-						}
-				}
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_strategic_bomber_effort
+				bonus = 1
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
 
 	}
 	focus = {
@@ -1801,7 +1808,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = dictator
-				add_ideas = Charismatic_dictator
+				add_idea = Charismatic_dictator
 			}
 		}
 
