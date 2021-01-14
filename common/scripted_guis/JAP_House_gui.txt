@@ -1,0 +1,62 @@
+  scripted_gui = {
+	SSW_JAP_House_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "SSW_JAP_House_container"
+
+		visible = {
+			is_ai = no
+			tag = JAP
+		}
+
+		effects = {
+			view_HOR_button_click = {
+				if = {
+					limit = { has_country_flag = open_HOR_view }
+					clr_country_flag = open_HOR_view
+				}
+				else = {
+					set_country_flag = open_HOR_view
+					JAP_create_political_party_values = yes
+				}
+			}
+		}
+	}
+	
+	JAP_house_view = {
+		window_name = "HOR_house_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			tag = JAP
+			has_country_flag = open_HOR_view
+		}
+
+		ai_enabled = {
+			always = no
+		}
+		
+		dynamic_lists = {
+			HOR_container = {
+				array = HOR_X
+				change_scope = no
+				entry_container = HOR_seat_entry
+				index = seat_idx
+			}
+		}
+		effects = {
+			HOR_close_button_click = {
+				clr_country_flag = open_HOR_view
+			}
+		}
+		properties = {
+			icon_seats = {
+				x = HOR_X^seat_idx
+				y = HOR_Y^seat_idx
+				frame = HOR_Frame^seat_idx
+			}
+		}
+	}
+}
+

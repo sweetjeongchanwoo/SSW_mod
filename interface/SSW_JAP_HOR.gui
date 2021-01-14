@@ -1,0 +1,50 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SSW_JAP_House_container"
+		position = { x = 0 y = 0 }
+		size = { width = 10 height = 10 }
+		orientation = upper_left
+
+		buttonType = {
+			name = "view_HOR_button"
+			position = { x = 180 y = 200 }
+			quadTextureSprite = "GFX_JAP_OPEN_HOR"
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOR_house_container"
+		orientation = center
+		position = { x = -425 y = -325 }
+		size = { width = 800 height = 600 }
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		gridboxtype = {
+			name = "HOR_container"
+			position = { x = 115 y = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 100%% height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+		buttonType = {
+			name = "HOR_close_button"
+			position = { x = 750 y = 15 }
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = ESCAPE
+		}
+	}
+	
+	containerWindowType = {
+		name = "HOR_seat_entry"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "icon_seats"
+			quadTextureSprite = "GFX_seat_icon_sprite"
+		}
+	}
+}
