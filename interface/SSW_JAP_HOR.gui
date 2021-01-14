@@ -15,21 +15,90 @@ guiTypes = {
 	containerWindowType = {
 		name = "HOR_house_container"
 		orientation = center
-		position = { x = -425 y = -325 }
-		size = { width = 800 height = 600 }
+		position = { x = -425 y = -460 }
+		size = { width = 800 height = 900 }
 		
 		background = {
 			name = "Background"
 			quadTextureSprite = "GFX_tiled_bg"
 		}
-		gridboxtype = {
-			name = "HOR_container"
-			position = { x = 115 y = 50 }
-			size = { width = 100%% height = 100%% }
-			slotsize = { width = 100%% height = 0 }
-			max_slots_horizontal = 1
-			add_horizontal = no
+		containerWindowType = {
+			name = "HOR_house_title_container"
+			orientation = center
+			position = { x = -400 y = -450 }
+			size = { width = 800 height = 100 }
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+			
+			instantTextBoxType = {
+				name = "Imperial_council_title"
+				position = { x =-100 y = -25 }
+				orientation = center
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "IC_TITLE"
+				maxWidth = 185
+				maxHeight = 20
+				fixedsize = yes	
+				format = centre 
+			}
 		}
+		containerWindowType = {
+			name = "HOR_house_hor_container"
+			orientation = center
+			position = { x =  -400  y = -358 }
+			size = { width = 800 height = 400 }
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+			gridboxtype = {
+				name = "HOR_container"
+				position = { x = 55 y = 75 }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+			instantTextBoxType = {
+				name = "HOR_title"
+				position = { x =-180 y = -170 }
+				orientation = center
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "HOR_TITLE"
+				maxWidth = 185
+				maxHeight = 20
+				fixedsize = yes	
+				format = centre 
+			}
+			instantTextBoxType = {
+				name = "HOR_party_list_title"
+				position = { x =175 y = -150 }
+				orientation = center
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "HOR_PARTY_TITLE"
+				maxWidth = 185
+				maxHeight = 20
+				fixedsize = yes	
+				format = centre 
+			}
+			instantTextBoxType = {
+				name = "HOR_party_list"
+				position = { x =175 y = -100 }
+				orientation = center
+				font = "hoi_18"
+				borderSize = {x = 0 y = 0}
+				text = "HOR_PARTY_LIST" 
+				maxWidth = 185
+				maxHeight = 300
+				fixedsize = yes	 
+			}
+		}
+		
 		buttonType = {
 			name = "HOR_close_button"
 			position = { x = 750 y = 15 }
