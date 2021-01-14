@@ -101,7 +101,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_idea = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -142,7 +142,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -252,7 +252,7 @@ focus_tree = {
 		y = 2
 		available = {
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -378,7 +378,7 @@ focus_tree = {
 		available = {
 			always = no
 			NOT = {
-				add_ideas = Unstable_country
+				has_ideas = Unstable_country
 			}
 		}
 		completion_reward = {
@@ -400,7 +400,7 @@ focus_tree = {
 		x = 18
 		y = 3
 		available = {
-			has_govement = social_democracy
+			has_government = social_democracy
 		}
 		completion_reward = {
 			add_ideas = French_Peoples_Front
@@ -556,8 +556,8 @@ focus_tree = {
 		y = 3
 		available = {
 			OR = {
-				has_govement = social_democracy
-				has_govement = authority_democracy
+				has_government = social_democracy
+				has_government = authority_democracy
 			}
 		}
 		completion_reward = {
@@ -849,7 +849,7 @@ focus_tree = {
 			has_completed_focus = FRA_Revolutionary_Prosperity
 		}
 		completion_reward = {	
-			crate_faction =	Fifth International
+			create_faction = FifthInternational
 		}
 
 	}
@@ -909,9 +909,7 @@ focus_tree = {
 		x = 30
 		y = 3
 		available = {
-			has_govement = {
-				authority_democracy
-			}
+			has_government = authority_democracy
 		}
 		completion_reward = {
 			add_ideas = Republican_rebellion
