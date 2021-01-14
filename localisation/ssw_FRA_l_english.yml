@@ -13,6 +13,7 @@
  FRA_German_influence_exclusion:0 "ドイツの影響力排除"
  FRA_Agreement_with_Italy:0 "イタリアとの協定"
  FRA_Mobilization_of_Black_Shirts:0 "黒シャツ隊の動員"
+ FRA_Twin_stresa:0 "ツインストレーザー"
  FRA_Nationalism:0 "民族主義"
  FRA_Eternal_Dictatorship:0 "永遠なる独裁"
  FRA_Purge_of_Opposition:0 "反対派の粛清"
@@ -60,6 +61,7 @@
  FRA_Intervention_in_the_German_CivilWar:0 "ドイツ内戦への介入"
  FRA_Operation_to_recapture_the_northern_part:0 "北部奪還作戦"
  FRA_Supporting_Germany:0 "ドイツを支援"
+ FRA_Supporting_Himmler:0 "ヒムラーを支援"
  FRA_Export_Nazism:0 "ナチズムを輸出"
  FRA_Supporting_Gering:0 "ゲーリングを支援"
  FRA_Export_Fascism:0 "ファシズムを輸出"
@@ -107,6 +109,7 @@
  FRA_For_my_homeland:0 "祖国のために！"
  FRA_Orleanist_authoritative:0 "オルレアンの権威王政"
  FRA_Napoleon_Authoritative:0 "ナポレオンの権威帝政"
+ FRA_People_weapons:0 "人民よ武器を取れ！"
  #イベント
  SSW_VFR.2.t:0 "ペタンの死"
  SSW_VFR.2.d:0 "我らの大統領フィリップペタンが7月10日未明に死亡が確認された。彼はドイツに降伏してからフランス国を導いてくれた偉大な指導者だった。彼が死亡した日は偶然にもフランス国新憲法を施行した日と同じ日であった。次の指導者は誰になるだろうか。"
