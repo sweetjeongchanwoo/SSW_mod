@@ -1,5 +1,5 @@
 ﻿l_english:
-#国民精神
+
  Antonescu's_speech:0 "アントネスクの演説"
  MIlitary_unity:0 "軍部の団結"
  New_leader:0 "新たな指導者"
@@ -48,7 +48,7 @@
  Raise_capability_of_mobilization:0 "動員能力の底上げ"
  Waves_of_people:0 "人民の波"
  Fraternity_of_Cross:0 "十字架同胞団"
- Romania_revanchism:0 "ルーマニア復習主義"
+ Romania_revanchism:0 "ルーマニア復讐主義"
  Destroy_Holy_Crown!:0 "イシュトバーンを引き摺り降ろせ！"
  Win:0 "勝ってきたぞと勇ましく"
  Lose:0 "王冠の名の下に"
@@ -142,4 +142,15 @@
  Mordern_agriculture:0 "近代的農業"
  Revived_land:0 "蘇った国土"
  Isolationism:0 "戸を閉じる"
+ Antonescu's_speech_desc:0 "Antonescu's_speech_desc"
  Grasp_of_foreign_capital:0 "外国資本の掌握"
+ Military_unity:0 "軍部の団結"
+ Military_unity_desc:0 "軍部の団結"
+ Codreanu's_children:0 "コドレアヌの遺産"
+ Codreanu's_children_desc:0 "コドレアヌの遺産"
+ Restoration:0 "王政復古"
+ Restoration_desc:0 "王政復古"
+ Legion:0 "軍団国家"
+ Legion_desc:0 "軍団国家"
+ Establish_military_dictatorship:0 "軍部の支配"
+ Establish_military_dictatorship:0 "軍部の支配"
