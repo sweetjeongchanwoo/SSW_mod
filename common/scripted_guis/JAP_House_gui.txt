@@ -56,6 +56,10 @@
 				y = HOR_Y^seat_idx
 				frame = HOR_Frame^seat_idx
 			}
+			seats_cover = {
+				x = HOR_X^seat_idx
+				y = HOR_Y^seat_idx
+			}
 		}
 	}
 }
