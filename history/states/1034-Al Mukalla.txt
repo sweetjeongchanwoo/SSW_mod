@@ -1,0 +1,17 @@
+state = { #ƒ€ƒJƒbƒ‰[
+	id = 1034
+	name = "STATE_1034"
+	manpower = 50000
+	state_category = pastoral
+	history = {
+		owner = YEM
+		add_core_of = YEM
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 2029 1 }
+	}
+	provinces = {
+		2029 4976 12894 13079
+	}
+}

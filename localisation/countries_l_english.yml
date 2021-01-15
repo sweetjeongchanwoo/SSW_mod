@@ -146,6 +146,10 @@
  BEL_DEF:0 "ベルギー"
  BEL_ADJ:0 "ベルギー"
  
+ NFR_progressive_communism:0 "パリ・コミューン"
+ NFR_progressive_communism_DEF:0 "パリ・コミューン"
+ NFR_classical_communism:0 "パリ・コミューン"
+ NFR_classical_communism_DEF:0 "パリ・コミューン"
  NFR:0 "パリ・フランス"
  NFR_DEF:0 "パリ・フランス"
  NFR_ADJ:0 "パリ・フランス"
@@ -771,10 +775,6 @@
  BLR_DEF:0 "ベラルーシ"
  BLR_ADJ:0 "ベラルーシ"
  
- DET:0 "ドニエストル"
- DET_DEF:0 "ドニエストル"
- DET_ADJ:0 "ドニエストル"
- 
  CRI:0 "クリミア"
  CRI_DEF:0 "クリミア"
  CRI_ADJ:0 "クリミア"
@@ -782,6 +782,22 @@
  CYP:0 "キプロス"
  CYP_DEF:0 "キプロス"
  CYP_ADJ:0 "キプロス"
+ 
+ DET:0 "ドニエストル"
+ DET_DEF:0 "ドニエストル"
+ DET_ADJ:0 "ドニエストル"
+ 
+ FLA_progressive_communism:0 "フランドル社会主義共和国"
+ FLA_progressive_communism_DEF:0 "フランドル社会主義共和国"
+ FLA_classical_communism:0 "フランドル社会主義共和国"
+ FLA_classical_communism_DEF:0 "フランドル社会主義共和国"
+ FLA:0 "フランドル"
+ FLA_DEF:0 "フランドル"
+ FLA_ADJ:0 "フランドル"
+ 
+ GAL:0 "ガリツィア＝ロドメリア"
+ GAL_DEF:0 "ガリツィア＝ロドメリア"
+ GAL_ADJ:0 "ガリツィア＝ロドメリア"
  
  LAP:0 "ラップランド"
  LAP_DEF:0 "ラップランド"
@@ -803,6 +819,22 @@
  PAT_DEF:0 "総主教領"
  PAT_ADJ:0 "総主教領"
  
+ SIC_progressive_communism:0 "シチリア人民共和国"
+ SIC_progressive_communism_DEF:0 "シチリア人民共和国"
+ SIC_classical_communism:0 "シチリア人民共和国"
+ SIC_classical_communism_DEF:0 "シチリア人民共和国"
+ SIC:0 "シチリア"
+ SIC_DEF:0 "シチリア"
+ SIC_ADJ:0 "シチリア"
+ 
+ SRD:0 "サルデーニャ"
+ SRD_DEF:0 "サルデーニャ"
+ SRD_ADJ:0 "サルデーニャ"
+ 
+ SWI_progressive_communism:0 "ヘルヴェティア・コミューン"
+ SWI_progressive_communism_DEF:0 "ヘルヴェティア・コミューン"
+ SWI_classical_communism:0 "ヘルヴェティア・コミューン"
+ SWI_classical_communism_DEF:0 "ヘルヴェティア・コミューン"
  SWI:0 "スイス"
  SWI_DEF:0 "スイス"
  SWI_ADJ:0 "スイス"
@@ -810,6 +842,26 @@
  TRA:0 "トランシルヴァニア"
  TRA_DEF:0 "トランシルヴァニア"
  TRA_ADJ:0 "トランシルヴァニア"
+ 
+ TUS_progressive_communism:0 "トスカーナ社会主義共和国"
+ TUS_progressive_communism_DEF:0 "トスカーナ社会主義共和国"
+ TUS_classical_communism:0 "トスカーナ社会主義共和国"
+ TUS_classical_communism_DEF:0 "トスカーナ社会主義共和国"
+ TUS:0 "トスカーナ"
+ TUS_DEF:0 "トスカーナ"
+ TUS_ADJ:0 "トスカーナ"
+ 
+ VEC_progressive_communism:0 "ロンバルド＝ヴェネト社会主義共和国"
+ VEC_progressive_communism_DEF:0 "ロンバルド＝ヴェネト社会主義共和国"
+ VEC_classical_communism:0 "ロンバルド＝ヴェネト社会主義共和国"
+ VEC_classical_communism_DEF:0 "ロンバルド＝ヴェネト社会主義共和国"
+ VEC:0 "ヴェネツィア"
+ VEC_DEF:0 "ヴェネツィア"
+ VEC_ADJ:0 "ヴェネツィア"
+ 
+ WLL:0 "ワロン"
+ WLL_DEF:0 "ワロン"
+ WLL_ADJ:0 "ワロン"
  
 #アフリカ
  ALG:0 "アルジェリア"
@@ -1111,6 +1163,10 @@
  EGR_DEF:0 "東ドイツ"
  EGR_ADJ:0 "東ドイツ"
  
+ GRU:0 "ドイツ連合共和国"
+ GRU_DEF:0 "ドイツ連合共和国"
+ GRU_ADJ:0 "ドイツ連合"
+ 
  HAN:0 "ハノーファー"
  HAN_DEF:0 "ハノーファー"
  HAN_ADJ:0 "ハノーファー"
@@ -1327,14 +1383,28 @@
  NAV_DEF:0 "ナバラ"
  NAV_ADJ:0 "ナバラ"
  
+ SPA_anarchism:0 "スペイン経済特区"
+ SPA_anarchism_DEF:0 "スペイン経済特区"
  SPA:0 "スペイン共和国"
  SPA_DEF:0 "スペイン共和国"
  SPA_ADJ:0 "スペイン"
+ 
+ SPX:0 "スペイン亡命政権"
+ SPX_DEF:0 "スペイン亡命政権"
+ SPX_ADJ:0 "スペイン"
  
 #ユーゴスラビア
  BOS:0 "ボスニア"
  BOS_DEF:0 "ボスニア"
  BOS_ADJ:0 "ボスニア"
+ 
+ DAL_progressive_communism:0 "ダルマチア・コミューン"
+ DAL_progressive_communism_DEF:0 "ダルマチア・コミューン"
+ DAL_classical_communism:0 "ダルマチア・コミューン"
+ DAL_classical_communism_DEF:0 "ダルマチア・コミューン"
+ DAL:0 "ダルマチア"
+ DAL_DEF:0 "ダルマチア"
+ DAL_ADJ:0 "ダルマチア"
  
  HRZ:0 "ヘルツェゴビナ"
  HRZ_DEF:0 "ヘルツェゴビナ"

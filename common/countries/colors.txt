@@ -1525,6 +1525,56 @@ VIC = { #ヴィシー
 	color_ui = rgb { 98 174 66 }
 }
 
+DAL = { #ダルマチア
+	color = rgb { 46 128 188 }
+	color_ui = rgb { 46 128 188 }
+}
+
+FLA = { #フランドル
+	color = rgb { 226 209 124 }
+    color_ui = rgb { 226 209 124 }	
+}
+
+GAL = { #ガリツィア＝ロドメリア
+	color = rgb { 224 71 140 }
+	color_ui = rgb { 224 71 140 }
+}
+
+GRU = { #ドイツ連合共和国
+	color = rgb { 159 157 108 }
+	color_ui = rgb { 159 157 108 }
+}
+
+SIC = { #シチリア
+	color = rgb { 204 204 0 }
+	color_ui = rgb { 204 204 0 }
+}
+
+SPX = { #スペイン亡命政権
+	color = rgb { 255 222 0 }
+	color_ui = rgb { 255 222 0 }
+}
+
+SRD = { #サルデーニャ
+	color = rgb { 117 146 167 }
+	color_ui = rgb { 117 146 167 }
+}
+
+TUS = { #トスカーナ
+	color = rgb { 255 50 0 }
+	color_ui = rgb { 255 50 0 }
+}
+
+VEC = { #ヴェネツィア
+	color = rgb { 154 255 145 }
+	color_ui = rgb { 154 255 145 }
+}
+
+WLL = { #ワロン
+	color = rgb { 193 226 120 }
+    color_ui = rgb { 193 226 120 }
+}
+
 ########## 内戦用国家タグ ##########
 
 HGR = { #ゲーリング派ドイツ

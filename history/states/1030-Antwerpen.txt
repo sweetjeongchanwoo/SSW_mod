@@ -1,0 +1,22 @@
+state = { #アントワープ
+	id = 1030
+	name = "STATE_1030"
+	manpower = 1500000
+	state_category = city
+	history = {
+		owner = BEL
+		add_core_of = FLA
+		add_core_of = BEL
+		buildings = {
+			infrastructure = 9
+			arms_factory = 1
+			industrial_complex = 1
+			6598 = { naval_base = 8 }
+		}
+		victory_points = { 6598 30 }
+		victory_points = { 13068 1 }
+	}
+	provinces = {
+		6598 9574 11419 13068 
+	}
+}
