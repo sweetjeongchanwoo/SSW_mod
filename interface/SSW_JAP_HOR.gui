@@ -130,10 +130,14 @@ guiTypes = {
 	containerWindowType = {
 		name = "HOR_seat_entry"
 		position = { x = 0 y = 0 }
-
 		iconType = { 
 			name = "icon_seats"
 			quadTextureSprite = "GFX_seat_icon_sprite"
+		}
+		iconType = { 
+			position = { x = 0 y = 0 }
+			name = "seats_cover"
+			quadTextureSprite = "GFX_seat_cover"
 		}
 	}
 }
