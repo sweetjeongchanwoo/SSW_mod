@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_subtech_cag"
+		textureFile = "gfx//interface/techtree/subtech_multirole_plane.dds"
+	}	
+}

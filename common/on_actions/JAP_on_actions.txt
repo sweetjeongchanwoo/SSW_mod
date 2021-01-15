@@ -1,7 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			JAP_create_political_party_values = yes
+			JAP = {
+				JAP_create_political_party_values = yes
+			}
 		}
 	}
 }

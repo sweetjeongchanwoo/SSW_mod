@@ -7,19 +7,21 @@ JAP_create_political_party_values = {
 	clear_array = HOR_Frame
 	
 	set_temp_variable = { JAP1 = 282 } #282
-	set_temp_variable = { JAP2 = 311 } #29
-	set_temp_variable = { JAP3 = 424 } #113
-	set_temp_variable = { JAP4 = 436 } #12
-	set_temp_variable = { JAP5 = 447 } #11
-	set_temp_variable = { JAP6 = 457 } #10
-	set_temp_variable = { JAP7 = 464 } #7
-	set_temp_variable = { JAP8 = 465 } #1
+	set_temp_variable = { JAP2 = 29 } #29
+	set_temp_variable = { JAP3 = 113 } #113
+	set_temp_variable = { JAP4 = 12 } #12
+	set_temp_variable = { JAP5 = 11 } #11
+	set_temp_variable = { JAP6 = 10 } #10
+	set_temp_variable = { JAP7 = 7 } #7
+	set_temp_variable = { JAP8 = 1 } #1
 
-	#add_to_temp_variable = { JAP2 = JAP1 }
-	#add_to_temp_variable = { JAP3 = JAP2 }
-	#add_to_temp_variable = { JAP4 = JAP3 }
-	#add_to_temp_variable = { JAP6 = JAP5 }
-	#add_to_temp_variable = { JAP8 = JAP7 }
+	add_to_temp_variable = { JAP2 = JAP1 }
+	add_to_temp_variable = { JAP3 = JAP2 }
+	add_to_temp_variable = { JAP4 = JAP3 }
+	add_to_temp_variable = { JAP5 = JAP4 }
+	add_to_temp_variable = { JAP6 = JAP5 }
+	add_to_temp_variable = { JAP7 = JAP6 }
+	add_to_temp_variable = { JAP8 = JAP7 }
 	
 	resize_array = {
 		array = HOR_Frame
