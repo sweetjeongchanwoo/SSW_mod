@@ -799,6 +799,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/air_tech/jet_fighter5.dds"
 	}
 	SpriteType = {
+		name = "GFX_jet_muitirole_fighter_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/multirole_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_jet_muitirole_fighter_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/multirole_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_jet_muitirole_fighter_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/multirole_fighter3.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_naval_fighter_1936_medium"
 		texturefile = "gfx/interface/technologies/air_tech/fighter1.dds"
 	}
@@ -830,6 +843,19 @@ spriteTypes = {
 		name = "GFX_jet_naval_fighter_1964_medium"
 		texturefile = "gfx/interface/technologies/air_tech/naval_jet_fighter5.dds"
 	}
+	SpriteType = {
+		name = "GFX_jet_naval_muitirole_fighter_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_multirole_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_jet_naval_muitirole_fighter_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_multirole_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_jet_naval_muitirole_fighter_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_multirole_fighter3.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_CAS_1936_medium"
 		texturefile = "gfx/interface/technologies/air_tech/CAS1.dds"
@@ -973,6 +999,31 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/JAP_fighter3.dds"
 	}
 	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1944_medium"
+		texturefile = "gfx/interface/technologies/air_tech/JAP_jet_fighter1944.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1952_medium"
+		texturefile = "gfx/interface/technologies/air_tech/JAP_jet_fighter1952.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter4.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_fighter_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_fighter5.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_JAP_naval_fighter_1936_medium"
 		texturefile = "gfx/interface/technologies/JAP_fighter2_cv.dds"
 	}
@@ -989,12 +1040,53 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/JAP_CAS3.dds"
 	}
 	SpriteType = {
+		name = "GFX_JAP_jet_CAS_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/JAP_jet_CAS_1948.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_CAS_1952_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_CAS_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_CAS_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_CAS4.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAPjet_CAS_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/jet_CAS5.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_JAP_naval_CAS_1936_medium"
 		texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds"
 	}
 	SpriteType = {
 		name = "GFX_JAP_naval_CAS_1940_medium"
 		texturefile = "gfx/interface/technologies/JAP_CAS3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_naval_CAS_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/JAP_naval_cas_1948.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_naval_CAS_1952_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_jet_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_naval_CAS_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_jet_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_naval_CAS_1960_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_jet_CAS4.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_jet_naval_CAS_1964_medium"
+		texturefile = "gfx/interface/technologies/air_tech/naval_jet_CAS5.dds"
 	}
 
 #Germany
@@ -1015,7 +1107,102 @@ spriteTypes = {
 		name = "GFX_ITA_fighter_1940_medium"
 		texturefile = "gfx/interface/technologies/ITA_fighter3.dds"
 	}
+#France
+	SpriteType = {
+		name = "GFX_FRA_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/FRA_CAS3_cv.dds"
+	}
+
 #Rossia
+	SpriteType = {
+		name = "GFX_RUS_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3_cv.dds"
+	}
+#Soviet
+	SpriteType = {
+		name = "GFX_SOV_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2_cv.dds"
+	}
 	SpriteType = {
 		name = "GFX_ROS_fighter_1936_medium"
 		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
@@ -1024,7 +1211,32 @@ spriteTypes = {
 		name = "GFX_ROS_fighter_1940_medium"
 		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
 	}
-#FSAアメリカ自由連盟
+	SpriteType = {
+		name = "GFX_ROS_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROS_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3_cv.dds"
+	}
+
+#ALFアメリカ自由連盟
 	SpriteType = {
 		name = "GFX_ALF_fighter_1936_medium"
 		texturefile = "gfx/interface/technologies/USA_fighter2.dds"
@@ -1098,7 +1310,76 @@ spriteTypes = {
 		name = "GFX_ALF_jet_transport_plane_1948_medium"
 		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1948.dds"
 	}
-
+#federal state of America(アメリカ連邦)
+	SpriteType = {
+		name = "GFX_FSA_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_FSA_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3_cv.dds"
+	}
+#United Tree Companiy 三社連合
+	SpriteType = {
+		name = "GFX_UTC_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_naval_fighter_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_naval_CAS_1936_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS2_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_naval_CAS_1940_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS3_cv.dds"
+	}
+	SpriteType = {
+		name = "GFX_UTC_jet_muitirole_fighter_1956_medium"
+		texturefile = "gfx/interface/technologies/air_tech/UTC_multirole_fighter_1956.dds"
+	}
 
 #電子機械工学
 	SpriteType = {
