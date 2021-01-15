@@ -1,0 +1,19 @@
+defined_text = { # Country
+    name = GetSolvingtheimmigrationproblemName
+    text = {
+        #kind
+        trigger = {
+            original_tag = ITA
+            has_completed_focus = ITA_focus_industry_10
+        }
+        localization_key = GER_KAISER_WAGEN_NAME
+    }
+    text = {
+        #cold
+        trigger = {
+            original_tag = ITA
+            has_completed_focus = ITA_focus_industry_11
+        }
+        localization_key = GER_VOLKS_WAGEN_NAME
+    }
+}
