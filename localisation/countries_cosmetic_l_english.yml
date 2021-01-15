@@ -53,8 +53,8 @@
  
 #国家形成
  ENG_GBR:0 "イギリス"
- ENG_GBR:0 "イギリス"
- ENG_GBR:0 "イギリス"
+ ENG_GBR_DEF:0 "イギリス"
+ ENG_GBR_ADJ:0 "イギリス"
  
  ENG_GBRandNIR:0 "イギリス"
  ENG_GBRandNIR_DEF:0 "イギリス"
@@ -91,6 +91,22 @@
  North_America:0 "北米連邦"
  North_America_DEF:0 "北米連邦"
  North_America_ADJ:0 "北アメリカ"
+ 
+ WLL_wallonia_luxembourg_progressive_communism:0 "ワロニア＝リュクサンブール・コミューン"
+ WLL_wallonia_luxembourg_progressive_communism_DEF:0 "ワロニア＝リュクサンブール・コミューン"
+ WLL_wallonia_luxembourg_classical_communism:0 "ワロニア＝リュクサンブール・コミューン"
+ WLL_wallonia_luxembourg_classical_communism_DEF:0 "ワロニア＝リュクサンブール・コミューン"
+ WLL_wallonia_luxembourg:0 "ワロン＝ルクセンブルク連合"
+ WLL_wallonia_luxembourg_DEF:0 "ワロン＝ルクセンブルク連合"
+ WLL_wallonia_luxembourg_ADJ:0 "ワロン＝ルクセンブルク"
+ 
+ SRD_piedmont_union_progressive_communism:0 "サルデーニャ＝ピエモンテ社会主義共和国"
+ SRD_piedmont_union_progressive_communism_DEF:0 "サルデーニャ＝ピエモンテ社会主義共和国"
+ SRD_piedmont_union_classical_communism:0 "サルデーニャ＝ピエモンテ社会主義共和国"
+ SRD_piedmont_union_classical_communism_DEF:0 "サルデーニャ＝ピエモンテ社会主義共和国"
+ SRD_piedmont_union:0 "サルデーニャ＝ピエモンテ連合"
+ SRD_piedmont_union_DEF:0 "サルデーニャ＝ピエモンテ連合"
+ SRD_piedmont_union_ADJ:0 "サルデーニャ＝ピエモンテ"
  
 #帝政復古
  BRA_empire:0 "ブラジル帝国"

@@ -1,0 +1,23 @@
+
+state={
+	id=1035
+	name="STATE_1035"
+	manpower = 40000
+	
+	state_category = small_island
+
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 1
+			8000 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = YEM
+	}
+
+	provinces={
+		8000
+	}
+}

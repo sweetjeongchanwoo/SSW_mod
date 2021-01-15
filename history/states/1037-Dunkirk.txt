@@ -1,0 +1,20 @@
+state = { #ƒ_ƒ“ƒPƒ‹ƒN
+	id = 1037
+	name = "STATE_1037"
+	manpower = 80000
+	state_category = city
+	history = {
+		owner = BEL
+		add_core_of = BEL
+		add_core_of = FRA
+		buildings = {
+			infrastructure = 8
+		}
+		victory_points = {
+			575 5
+		}
+	}
+	provinces = {
+		575
+	}
+}
