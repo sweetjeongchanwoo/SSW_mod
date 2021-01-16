@@ -822,3 +822,26 @@ completion_reward = {
 	add_ideas = ITA_idea_27
 }
 }
+#ノルマの適正化
+shared_focus = {
+	id = ITA_focus_balbo_Quota_optimization
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Increased_productivity
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	x = 16
+	y = 3
+	completion_reward = {
+		add_ideas = ITA_idea_28
+	}
+}
