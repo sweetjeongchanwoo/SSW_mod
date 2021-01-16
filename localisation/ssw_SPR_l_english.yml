@@ -396,6 +396,7 @@
  spr_ideas_555:0 "少数民族の強制抑圧"
  spr_ideas_1999:0 "王党派の優越"
 #tooltip
+ RULE_CANNOT_USE_THIS_TT:0 "§RThe Sun Shining on the Worldでこの動作は許可されてない。 §!"
  start_second_scw_tt:0 "第二次スペイン内戦が勃発する。 "
  spr_franco_huransubunaktu_tt:0 "ゲーム開始時のフランス本土とコルシカは我々に占領された。 "
  disunite_france_tt:0 "フランスを分割する。 "
