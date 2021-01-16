@@ -845,3 +845,25 @@ shared_focus = {
 		add_ideas = ITA_idea_28
 	}
 }
+#植民地開発
+shared_focus = {
+	id = ITA_focus_balbo_
+	icon = GFX_focus_generic_treaty
+	cost = 1.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Solving_the_immigration_problem
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	x = 9
+	y = 5
+	completion_reward = {
+	}
+}
