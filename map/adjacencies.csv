@@ -176,12 +176,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+13282;13281;sea;5205;-1;-1;-1;-1;;Stlawrence_CANAL
+13278;13157;sea;4345;-1;-1;-1;-1;adjacency_rule;Stlawrence_CANAL
+13279;13280;sea;749;-1;-1;-1;-1;Niagara_STRAIT;Stlawrence_CANAL
+13285;13156;sea;13284;-1;-1;-1;-1;Detroit_STRAIT;Stlawrence_CANAL
+13156;13199;sea;9724;-1;-1;-1;-1;Clair_STRAIT;Stlawrence_CANAL
 -1;-1;;-1;-1;-1;-1;-1;-1
-#13282;13281;sea;5205;-1;-1;-1;-1;;Stlawrence_CANAL
-#13278;13157;sea;4345;-1;-1;-1;-1;;Stlawrence_CANAL
-#13279;13280;sea;749;-1;-1;-1;-1;;Stlawrence_CANAL
-#13285;13156;sea;13284;-1;-1;-1;-1;;Stlawrence_CANAL
-#13156;13199;sea;9724;-1;-1;-1;-1;;Stlawrence_CANAL
 
 
 
