@@ -1,0 +1,6 @@
+temp = {
+	hidden_effect = {
+		set_variable = { ssw_policy_current_value_policy_0 = ssw_policy_current_value_policy }
+		divide_variable = { ssw_policy_current_value_policy_0 = 1000 }
+	}
+}

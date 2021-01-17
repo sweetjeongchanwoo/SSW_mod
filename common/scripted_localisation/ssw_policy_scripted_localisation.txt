@@ -1,0 +1,45 @@
+defined_text = {
+	name = ssw_current_social_policy_title
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 0 }
+		}
+		localization_key = current_policy_is_industrialization_rate_text
+	}
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 1 }
+		}
+		localization_key = current_policy_is_poverty_rate_text
+	}
+}
+defined_text = {
+	name = ssw_current_social_policy_desc
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 0 }
+		}
+		localization_key = current_policy_is_industrialization_rate_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 1 }
+		}
+		localization_key = current_policy_is_poverty_rate_desc
+	}
+}
+defined_text = {
+	name = current_bonus_text
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 0 }
+		}
+		localization_key = current_industrialization_rate_bonus_text
+	}
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 1 }
+		}
+		localization_key = current_policy_is_poverty_rate_bonus_desc
+	}
+}

@@ -1,4 +1,4 @@
-  scripted_gui = {
+scripted_gui = {
 	SSW_JAP_House_open = {
 		context_type = player_context
 		parent_window_token = politics_tab
