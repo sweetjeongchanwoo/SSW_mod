@@ -169,8 +169,8 @@
  SOV_corporatocracism_party:0 "ロシア産業同盟"
 
 #スペイン
- SPR_anarchism_party:0 "POUM"
- SPR_anarchism_party_long:0 "マルクス主義統一労働者党"
+ SPR_anarchism_party:0 "完全自由式資本主義"
+ SPR_anarchism_party_long:0 "完全自由式資本主義"
  SPR_progressive_communism_party:0 "PCE"
  SPR_progressive_communism_party_long:0 "スペイン共産党"
  SPR_classical_communism_party:0 "PCE"
@@ -197,8 +197,8 @@
  SPR_national_fascism_party_fe_jons_long:0 "攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
 
 #スペイン共和国
- SPA_anarchism_party:0 "POUM"
- SPA_anarchism_party_long:0 "マルクス主義統一労働者党"
+ SPA_anarchism_party:0 "完全自由式資本主義"
+ SPA_anarchism_party_long:0 "完全自由式資本主義"
  SPA_progressive_communism_party:0 "PCE"
  SPA_progressive_communism_party_long:0 "スペイン共産党"
  SPA_classical_communism_party:0 "PCE"
@@ -219,6 +219,30 @@
  SPA_national_socialism_party_long:0 "伝統攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
  SPA_corporatocracism_party:0 "SAU"
  SPA_corporatocracism_party_long:0 "チュッパチャップス"
+
+#スペイン亡命政権
+ SPX_anarchism_party:0 "完全自由式資本主義"
+ SPX_anarchism_party_long:0 "完全自由式資本主義"
+ SPX_progressive_communism_party:0 "PCE"
+ SPX_progressive_communism_party_long:0 "スペイン共産党"
+ SPX_classical_communism_party:0 "PCE"
+ SPX_classical_communism_party_long:0 "スペイン共産党"
+ SPX_social_democracy_party:0 "PSOE"
+ SPX_social_democracy_party_long:0 "スペイン社会労働党"
+ SPX_social_liberalism_party:0 "PSOE"
+ SPX_social_liberalism_party_long:0 "スペイン社会労働党"
+ SPX_social_conservatism_party:0 "FET/JONS"
+ SPX_social_conservatism_party_long:0 "伝統攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
+ SPX_authority_democracy_party:0 "FET/JONS"
+ SPX_authority_democracy_party_long:0 "伝統攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
+ SPX_authority_despotism_party:0 "臨時政府"
+ SPX_authority_despotism_party_long:0 "臨時政府"
+ SPX_national_fascism_party:0 "FET/JONS"
+ SPX_national_fascism_party_long:0 "伝統攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
+ SPX_national_socialism_party:0 "FET/JONS"
+ SPX_national_socialism_party_long:0 "伝統攻撃的国家サンディカリスト同盟スペイン・ファランヘ党"
+ SPX_corporatocracism_party:0 "SAU"
+ SPX_corporatocracism_party_long:0 "チュッパチャップス"
 
 #左翼戦線
  LFF_progressive_communism_party:0 "CPUSA"

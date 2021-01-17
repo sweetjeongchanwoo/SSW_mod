@@ -22,6 +22,7 @@ ideologies = {
 		rules = {
 			can_send_volunteers = no
 			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -63,7 +64,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -89,7 +91,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -115,7 +118,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -144,7 +148,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -177,7 +182,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -206,7 +212,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = yes
 			can_guarantee_other_ideologies = yes
 		}
@@ -247,7 +254,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -280,7 +288,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -306,7 +315,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}
@@ -332,7 +342,8 @@ ideologies = {
 		}
 		rules = {
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
+			can_force_government = no
 			can_lower_tension = no
 			can_guarantee_other_ideologies = no
 		}

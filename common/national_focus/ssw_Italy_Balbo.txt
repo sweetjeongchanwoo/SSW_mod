@@ -355,6 +355,7 @@ x = 10
 y = 2
 completion_reward = {
 	add_ideas = ITA_idea_14
+	custom_effect_tooltip = ITA_Harsh_treatment
 }
 }
 #技術水準の向上
@@ -482,7 +483,7 @@ ai_will_do = {
 x = 10
 y = 3
 completion_reward = {
-	custom_effect_tooltip =ssw_ITA_Balbo_Riot_Crisis
+	custom_effect_tooltip = ITA_Harsh_treatment
 	add_stability = -0.10
 	add_ideas = ITA_idea_17
 }
@@ -590,7 +591,7 @@ ai_will_do = {
 x = 3
 y = 4
 completion_reward = {
-	activate_decision = ITA_Expanding_the_Outstrada
+	custom_effect_tooltip = ITA_Expanding_the_Outstrada_tooltip
 }
 }
 #移民問題の解消
@@ -616,6 +617,7 @@ ai_will_do = {
 x = 9
 y = 4
 completion_reward = {
+	custom_effect_tooltip = ITA_Solving_the_immigration_problem
 	if = {
 		limit = {
 			has_idea = ITA_idea_13
@@ -821,4 +823,49 @@ y = 3
 completion_reward = {
 	add_ideas = ITA_idea_27
 }
+}
+#ノルマの適正化
+shared_focus = {
+	id = ITA_focus_balbo_Quota_optimization
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Increased_productivity
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	x = 16
+	y = 3
+	completion_reward = {
+		add_ideas = ITA_idea_28
+	}
+}
+#植民地開発
+shared_focus = {
+	id = ITA_focus_balbo_
+	icon = GFX_focus_generic_treaty
+	cost = 1.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Solving_the_immigration_problem
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	x = 9
+	y = 5
+	completion_reward = {
+	}
 }

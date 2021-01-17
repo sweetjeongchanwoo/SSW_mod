@@ -1,2 +1,12 @@
 ﻿l_english:
  Foeward:0 "選択"
+ 
+ #social policy
+ industrialization_rate_text:0 "企業支援率"
+ poverty_rate_text:0 "貧困層支援率"
+ current_policy_is_industrialization_rate_text:0 "§Y企業支援率§!"
+ current_policy_is_poverty_rate_text:0 "§Y貧困層支援率§!"
+ current_policy_is_industrialization_rate_desc:0 "[current_bonus_text]"
+ current_policy_is_poverty_rate_desc:0 "[current_bonus_text]"
+ current_industrialization_rate_bonus_0_text:0 "None"
+ current_industrialization_rate_bonus_text:0 "Stability [?ssw_policy_current_value_policy_0|=%G+0]\nMonthly Population [?ssw_policy_current_value_policy_0|=%G+0]\nConsumer Goods Factories [?ssw_policy_current_value_policy_0|=%G-0]\nProduction Efficiency Cap [?ssw_policy_current_value_policy_0|=%G+0]"

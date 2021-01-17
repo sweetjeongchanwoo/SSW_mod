@@ -99,14 +99,12 @@ DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
 		}
 	}
 }
-
 DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
-	if = {
-		limit = { has_government = anarchism }
-		NOT = { has_government = anarchism }
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }
-
 DIPLOMACY_MILACC_ENABLE_TRIGGER = {
 	if = {
 		limit = {
@@ -475,126 +473,51 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 	}
 }
 DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = FREE
-			}
-		}
-		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = AI_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_BOOST_PARTY_AI_ONLY_TT
-			FROM = { is_ai = yes }
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = PLAYER_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_BOOST_PARTY_PLAYER_ONLY_TT
-			FROM = { is_ai = no }
-		}
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_party_boosting
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_BOOST_PARTY_BLOCKED_TT
-			always = no
-		}
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }
 DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = FREE
-			}
-		}
-		always = yes
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = AI_ONLY
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_COUP_AI_ONLY_TT
-			FROM = { is_ai = yes }
-		}
+}
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_COUP_BLOCKED_TT
-			always = no
-		}
+}
+
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }
 DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_leave_faction
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_LEAVE_FACTION_BLOCKED_TOOLTIP
-			always = no
-		}
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_take_over_faction
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_ASSUME_LEADERSHIP_BLOCKED_TOOLTIP
-			always = no
-		}
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }
 DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_kick_faction
-				option = BLOCKED
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = RULE_KICK_FROM_FACTION_BLOCKED_TOOLTIP
-			always = no
-		}
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
 	}
 }

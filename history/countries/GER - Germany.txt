@@ -881,4 +881,18 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
-
+########## 分裂国家 ##########
+create_dynamic_country = { #ドイツ連合共和国
+	original_tag = LTV
+	set_country_flag = LTV_union_countryflag
+	set_cosmetic_tag = GER_union_republic
+	set_politics = {
+		ruling_party = social_conservatism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { social_conservatism = 100 }
+	set_capital = 965
+	reserve_dynamic_country = yes
+}
