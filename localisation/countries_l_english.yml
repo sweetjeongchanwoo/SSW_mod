@@ -177,6 +177,8 @@
  CRI_DEF:0 "クリミア人民共和国"
  CRI_ADJ:0 "クリミア"
  
+ PET_anarchism:0 "アナキスト・コミューン"
+ PET_anarchism_DEF:0 "アナキスト・コミューン"
  PET:0 "サンクトペテルブルク市国"
  PET_DEF:0 "サンクトペテルブルク市国"
  PET_ADJ:0 "サンクトペテルブルク"
@@ -1118,6 +1120,8 @@
  AZR_DEF:0 "アゼルバイジャン共和国"
  AZR_ADJ:0 "アゼルバイジャン"
  
+ BLR_authority_democracy:0 "ベラルーシ国民共和国"
+ BLR_authority_democracy_DEF:0 "ベラルーシ国民共和国"
  BLR:0 "ベラルーシ共和国"
  BLR_DEF:0 "ベラルーシ共和国"
  BLR_ADJ:0 "ベラルーシ"
@@ -1293,6 +1297,16 @@
  NAV:0 "ナバラ王国"
  NAV_DEF:0 "ナバラ王国"
  NAV_ADJ:0 "ナバラ"
+ 
+ SPA:0 "スペイン共和国"
+ SPA_DEF:0 "スペイン共和国"
+ SPA_anarchism:0 "スペイン経済特区"
+ SPA_anarchism_DEF:0 "スペイン経済特区"
+ SPA_ADJ:0 "スペイン"
+ 
+ SPX:0 "スペイン亡命政権"
+ SPX_DEF:0 "スペイン亡命政権"
+ SPX_ADJ:0 "スペイン"
 
 #ユーゴスラビア
  BOS:0 "ボスニア共和国"
@@ -1332,7 +1346,7 @@
  YUG_ADJ:0 "ユーゴスラビア"
  
 ### 保留 ###
-ROK:0 "大韓民国"
+ ROK:0 "大韓民国"
  ROK_DEF:0 "大韓民国"
  ROK_anarchism:0 "ドゥレ"
  ROK_anarchism_DEF:0 "ドゥレ"
@@ -1355,16 +1369,14 @@ ROK:0 "大韓民国"
  HGR:0 "ゲーリング・ドイツ臨時政府"
  HGR_DEF:0 "ゲーリング・ドイツ臨時政府"
  HGR_ADJ:0 "ゲーリング・ドイツ"
+ 
  LTV:0 "ドイツ反ナチス戦線"
  LTV_DEF:0 "ドイツ反ナチス戦線"
  LTV_ADJ:0 "反ナチス戦線"
+ 
  HLH:0 "ヒムラー・ドイツ臨時政府"
  HLH_DEF:0 "ヒムラードイツ臨時政府"
  HLH_ADJ:0 "ヒムラー・ドイツ"
- 
- GRU:0 "ドイツ連合共和国"
- GRU_DEF:0 "ドイツ連合共和国"
- GRU_ADJ:0 "ドイツ連合"
  
  PRJ:0 "日本社会主義人民共和国"
  PRJ_DEF:0 "日本社会主義人民共和国"
@@ -1373,57 +1385,3 @@ ROK:0 "大韓民国"
  JSF:0 "日本社会主義戦線"
  JSF_DEF:0 "日本社会主義戦線"
  JSF_ADJ:0 "日本"
- 
- ACR_progressive_communism:0 "アキテーヌ・キリスト社会主義共和国"
- ACR_progressive_communism_DEF:0 "アキテーヌ・キリスト社会主義共和国"
- ACR_classical_communism:0 "アキテーヌ・キリスト社会主義共和国"
- ACR_classical_communism_DEF:0 "アキテーヌ・キリスト社会主義共和国"
- ACR:0 "アキテーヌ"
- ACR_DEF:0 "アキテーヌ"
- ACR_ADJ:0 "アキテーヌ"
- 
- ACO:0 "貴族評議会"
- ACO_DEF:0 "貴族評議会"
- ACO_ADJ:0 "貴族評議会"
- 
- AMC:0 "大天使ミハイル国"
- AMC_DEF:0 "大天使ミハイル国"
- AMC_ADJ:0 "大天使ミハイル国"
- 
- BLO:0 "ブラック・オーダー"
- BLO_DEF:0 "ブラック・オーダー"
- BLO_ADJ:0 "ブラック・オーダー"
- 
- FAR:0 "全ロシア民族解放統一戦線"
- FAR_DEF:0 "全ロシア民族解放統一戦線"
- FAR_ADJ:0 "ロシア"
- 
- NBL:0 "ベラルーシ国民共和国"
- NBL_DEF:0 "ベラルーシ国民共和国"
- NBL_ADJ:0 "東ベラルーシ"
- 
- RBL:0 "ロシアの空解放同盟"
- RBL_DEF:0 "ロシアの空解放同盟"
- RBL_ADJ:0 "ロシア"
- 
- RSE:0 "帝政ロシア"
- RSE_DEF:0 "帝政ロシア"
- RSE_ADJ:0 "ロシア"
- 
- RLB:0 "自由主義ロシア"
- RLB_DEF:0 "自由主義ロシア"
- RLB_ADJ:0 "ロシア"
- 
- TOA:0 "大主教領"
- TOA_DEF:0 "大主教領"
- TOA_ADJ:0 "モスクワ"
- 
- SPA:0 "スペイン共和国"
- SPA_DEF:0 "スペイン共和国"
- SPA_anarchism:0 "スペイン経済特区"
- SPA_anarchism_DEF:0 "スペイン経済特区"
- SPA_ADJ:0 "スペイン"
- 
- SPX:0 "スペイン亡命政権"
- SPX_DEF:0 "スペイン亡命政権"
- SPX_ADJ:0 "スペイン"

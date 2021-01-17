@@ -31,7 +31,7 @@
 	}
 
 	create_country_leader = {
-		name = "Louis_St.Laurent"
+		name = "Louis St. Laurent"
 		desc = "POLITICS_MACKENZIE_KING_DESC"
 		picture = "gfx/leaders/CAN/Portrait_Louis_St_Laurent.dds"
 		expire = "1977.1.1"

@@ -147,3 +147,14 @@
  BLR_SOV_ADJ:0 "白ロシア・ソビエト"
  
 ### 崩壊 ###
+ FRA_aquitaine_progressive_communism:0 "アキテーヌ・キリスト社会主義共和国"
+ FRA_aquitaine_progressive_communism_DEF:0 "アキテーヌ・キリスト社会主義共和国"
+ FRA_aquitaine_classical_communism:0 "アキテーヌ・キリスト社会主義共和国"
+ FRA_aquitaine_classical_communism_DEF:0 "アキテーヌ・キリスト社会主義共和国"
+ FRA_aquitaine:0 "アキテーヌ"
+ FRA_aquitaine_DEF:0 "アキテーヌ"
+ FRA_aquitaine_ADJ:0 "アキテーヌ"
+ 
+ GER_union_republic:0 "ドイツ連合共和国"
+ GER_union_republic_DEF:0 "ドイツ連合共和国"
+ GER_union_republic_ADJ:0 "ドイツ連合"

@@ -75,7 +75,7 @@ RUS_arufnl = {	#全ロシア民族解放統一戦線
 	color_ui = rgb { 168 46 78 }
 }
 
-RUS_arufnl = {	#大天使ミハイル
+RUS_mikhail = {	#大天使ミハイル
 	color = rgb { 112 41 26 }
 	color_ui = rgb { 112 41 26 }
 }
@@ -385,4 +385,15 @@ YUN_CHI = {	#雲南軍閥
 UKR_GEM = {
 	color = rgb { 60 60 60 }
 	color_ui = rgb { 60 60 60 }
+}
+
+#崩壊
+GER_union_republic = { #ドイツ連合共和国
+	color = rgb { 159 157 108 }
+	color_ui = rgb { 159 157 108 }
+}
+
+FRA_aquitaine = { #アキテーヌ
+	color = rgb { 1 1 1 }
+	color_ui = rgb { 1 1 1 }
 }

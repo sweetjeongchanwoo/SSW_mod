@@ -491,6 +491,7 @@ focus_tree = {
 					transfer_state = 169
 					transfer_state = 170
 					transfer_state = 171
+					transfer_state = 172
 					transfer_state = 174
 					transfer_state = 176
 					transfer_state = 788
@@ -1365,10 +1366,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = disunite_france_tt
 			hidden_effect = {
-				ACR = {
-					add_state_core = 19
-					transfer_state = 19
-				}
+				FR0 = { transfer_state = 19 }
 				COR = {
 					add_state_core = 1
 					transfer_state = 1
@@ -1416,7 +1414,7 @@ focus_tree = {
 					}
 				}
 				set_autonomy = {
-					target = ACR
+					target = FR0
 					autonomous_state = colony
 				}
 				set_autonomy = {
@@ -1438,6 +1436,7 @@ focus_tree = {
 					remove_core_of = FRA
 					set_state_flag = french_old_core
 				}
+				19 = { add_core_of = FR0 }
 			}
 		}
 	}
