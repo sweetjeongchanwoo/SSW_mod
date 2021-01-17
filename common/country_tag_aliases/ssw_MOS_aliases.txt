@@ -37,8 +37,3 @@ RU7 = {	#ブラック・オーダー
 	original_tag = RUS
 	has_country_flag = MOS_blackorder_countryflag
 }
-
-RU8 = {	#ベラルーシ国民共和国
-	original_tag = BAL
-	has_country_flag = BAL_national_republic_countryflag
-}
