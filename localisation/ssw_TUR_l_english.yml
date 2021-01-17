@@ -1,4 +1,7 @@
 ﻿l_english:
+
+#ideas
+
   TUR_idea_1:0"後進的な軽工業社会"
   TUR_idea_1_desc:0"トルコ産業は繊維産業などの軽工業が主体であり、それらは技術的発展が著しく遅れた工場や、経済危機による資金の途絶が関わっている。この問題に早急に対応しなければ、我々は祖国を失ってしまうかもしれない。"
   TUR_idea_2:0"外交的孤立"
@@ -99,6 +102,9 @@
   TUR_idea_68:0"石油開発機構"
   TUR_idea_69:0"民主主義の最後の砦"
   TUR_idea_70:0"拡大主義"
+
+#focus
+
   TUR_update_to_modern_industry:0"現代産業への更新"
   TUR_update_to_modern_industry_desc:0"トルコ産業は、繊維産業などの軽工業が主体であるが、それらの技術はとても前時代的なものである。まずこの衰退した産業を立て直すことが目下の課題だ。"
   TUR_temporary_economic_measures:0"一時的な経済対策"
@@ -365,12 +371,20 @@
   TUR_reconquest_south_desc:0""
   TUR_restoration_old_territories:0"旧領の回復"
   TUR_restoration_old_territories_desc:0""
+  TUR_antiaircraft_bombardment:0"対空戦術理論"
+  TUR_antiaircraft_bombardment_desc:0""
+
+#tooltip
+
   form_country_iran_iraq_syria:0"§Yイラン・イラク・シリア地域§!を中核州とする。"
   1_TUR_elitism:0"§G我が国はエリート主義教育を推進する§!"
   1_TUR_Equal_Education:0"§G我が国は平等な教育を推奨する§!"
   1_TUR_fire_control:0"§G火力による制圧が、トルコ陸軍の未来を切り開くだろう§!"
   1_TUR_Planned_Parenthood:0"§G綿密な計画立案により、トルコ陸軍は精強なものとなるだろう§!"
   1_TUR_mechanized_unit:0"§G機械化部隊の運用により、トルコ陸軍は機動的な侵攻作戦が実行できるだろう§!"
+
+#event
+
   SSW_TUR.1.t:0"トルコの現状"
   SSW_TUR.1.d:0"結局、第二次世界大戦に参加しなかったトルコは、大戦に勝利したドイツの同盟参加の要求を拒否したことにより、外交的な孤立状態に陥っている。唯一、地中海の覇権を狙うイタリアにすがることがこの問題の解決の糸口になるかもしれない。"
   SSW_TUR.1.a:0"それでも我々は前進する"
@@ -417,7 +431,7 @@
   SSW_TUR.13.b:0"再びトルコに下ることが唯一の選択肢だ"
   SSW_TUR.14.t:0"[TUR.GetNameDef]より、統一の提案"
 
-#特性・閣僚
+#traits
 
  TUR_İsmail_Rüştü_Aksal:0 "イースマイル・リュシュトゥ・アクサル"
  Tax_Reformer:0"税制の改革者"
