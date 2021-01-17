@@ -1,0 +1,110 @@
+add_namespace = sswmos
+
+country_event = {
+	id = sswmos.1
+	title = sswmos.1.title
+	desc = sswmos.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswmos.1.a
+		hidden_effect = {
+		create_dynamic_country = {
+			original_tag = RUS    #大元の国家タグ
+			set_country_flag = MOS_blackorder_countryflag    #他のやつとの区別用 ブラックオ－ダー
+			set_cosmetic_tag = RUS_blackorder    #国名, 国旗の指定用
+			set_politics = {    ruling_party = anarchism    }    #与党のイデオロギー
+			reserve_dynamic_country = yes    #内戦ならYes
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_mikhail_countryflag   #ミハイルうんたら 
+			set_cosmetic_tag = RUS_mikhail    
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_nobles_countryflag	#貴族評議会
+			set_cosmetic_tag = RUS_nobles   
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_rall_countryflag	#ロシアの空
+			set_cosmetic_tag = RUS_rall    
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_archbishop_countryflag #大主教領
+			set_cosmetic_tag = MOS_archbishop   
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_arufnl_countryflag	#統一前線
+			set_cosmetic_tag = RUS_arufnl    
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_empire_countryflag	#ロシア帝国
+			set_cosmetic_tag = RUS_empire    
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		create_dynamic_country = {
+			original_tag = RUS
+			set_country_flag = MOS_liberalist_countryflag	#自由主義   
+			set_cosmetic_tag = RUS_liberalist    
+			set_politics = {    ruling_party = national_socialism    }    
+			reserve_dynamic_country = yes    
+		}
+		RU0 = { transfer_state = 242 }
+		RU0 = { transfer_state = 207 }
+		RU0 = { transfer_state = 210 }
+		RU0 = { transfer_state = 209 }
+		RU0 = { transfer_state = 208 }
+		RU0 = { transfer_state = 992 }
+		RU0 = { transfer_state = 263 }
+		RU0 = { transfer_state = 246 }
+		RU1 = { transfer_state = 224 }
+		RU1 = { transfer_state = 241 }
+		RU1 = { transfer_state = 243 }
+		RU2 = { transfer_state = 248 }
+		RU2 = { transfer_state = 986 }
+		RU2 = { transfer_state = 993 }
+		RU2 = { transfer_state = 994 }
+		RU2 = { transfer_state = 253 }
+		RU2 = { transfer_state = 996 }
+		RU3 = { transfer_state = 223 }
+		RU3 = { transfer_state = 254 }
+		RU4 = { transfer_state = 252 }
+		RU4 = { transfer_state = 811 }
+		RU4 = { transfer_state = 995 }
+		RU5 = { transfer_state = 999 }
+		RU5 = { transfer_state = 244 }
+		RU5 = { transfer_state = 264 }
+		RU5 = { transfer_state = 247 }
+		RU5 = { transfer_state = 998 }
+		RU5 = { transfer_state = 997 }
+		RU5 = { transfer_state = 205 }
+		RU5 = { transfer_state = 1002 }
+		RU5 = { transfer_state = 1001 }
+		RU5 = { transfer_state = 1000 }
+		RU5 = { transfer_state = 1003 }
+		RU5 = { transfer_state = 219 }
+		RU6 = { transfer_state = 214 }
+		RU6 = { transfer_state = 989 }
+		RU7 = { transfer_state = 984 }
+		RU7 = { transfer_state = 985 }
+	}
+		ai_chance = { factor = 1}
+	}
+}
