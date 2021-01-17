@@ -110,6 +110,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -151,6 +152,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -180,7 +182,6 @@ technologies = {
 			leads_to_tech = jet_naval_fighter_1952
 			research_cost_coeff = 0.9
 		}
-		
 		research_cost = 2
 		start_year = 1952
 		folder = {
@@ -192,6 +193,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -221,7 +223,9 @@ technologies = {
 			leads_to_tech = jet_naval_fighter_1956
 			research_cost_coeff = 0.9
 		}
-		
+		sub_technologies = {
+			jet_muitirole_fighter_1956
+		}
 		research_cost = 2
 		start_year = 1956
 		folder = {
@@ -233,6 +237,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -265,7 +270,9 @@ technologies = {
 			leads_to_tech = jet_naval_fighter_1960
 			research_cost_coeff = 0.9
 		}
-		
+		sub_technologies = {
+			jet_muitirole_fighter_1960
+		}
 		research_cost = 2
 		start_year = 1960
 		folder = {
@@ -277,6 +284,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -302,7 +310,9 @@ technologies = {
 			leads_to_tech = jet_naval_fighter_1964
 			research_cost_coeff = 0.9
 		}
-		
+		sub_technologies = {
+			jet_muitirole_fighter_1964
+		}
 		research_cost = 2
 		start_year = 1964
 		folder = {
@@ -314,6 +324,7 @@ technologies = {
 			light_air
 			light_fighter
 			air_equipment
+			jet_technology
 		}
 		
 		ai_will_do = {
@@ -325,6 +336,89 @@ technologies = {
 			}
 		}
 	}
+	jet_muitirole_fighter_1956 = {
+
+		enable_equipments = {
+			jet_muitirole_equipment_1
+		}
+
+		research_cost = 1.2 #Carrier Variant
+		start_year = 1956
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			jet_technology
+			cas_bomber
+
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = fighter_1940
+					is_researching_technology = fighter_1940
+				}
+			}
+		}
+	}
+	jet_muitirole_fighter_1960 = {
+
+		enable_equipments = {
+			jet_muitirole_equipment_2
+		}
+
+		research_cost = 1.0 #Carrier Variant
+		start_year = 1960
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			jet_technology
+			cas_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = fighter_1940
+					is_researching_technology = fighter_1940
+				}
+			}
+		}
+	}
+	jet_muitirole_fighter_1964 = {
+
+		enable_equipments = {
+			jet_muitirole_equipment_3
+		}
+
+		research_cost = 1.0 #Carrier Variant
+		start_year = 1964
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+			jet_technology
+			cas_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = fighter_1940
+					is_researching_technology = fighter_1940
+				}
+			}
+		}
+	}
+
 
 	naval_fighter_1936 = {
 
@@ -337,10 +431,6 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = naval_CAS_1936
-			research_cost_coeff = 0.9
-		}
-		path = {
-			leads_to_tech = fighter_1936
 			research_cost_coeff = 0.9
 		}
 
@@ -776,10 +866,6 @@ technologies = {
 		path = {
 			leads_to_tech = CAS_1940
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = fighter_1936
-			research_cost_coeff = 0.9
 		}
 
 		research_cost = 1.0 #Carrier Variant
@@ -1656,10 +1742,6 @@ technologies = {
 		path = {
 			leads_to_tech = heavy_fighter_1940
 			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = tactical_bomber_1936
-			research_cost_coeff = 0.9
 		}
 		research_cost = 2
 		start_year = 1936

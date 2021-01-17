@@ -16,6 +16,17 @@ on_actions = {
 			}
 		}
 	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { tag = MEX }
+					FROM = { always = yes }
+				}
+				ROOT = { add_political_power = 150 }
+			}
+		}
+	}
 	on_ruling_party_change = {
 		effect = {
 			if = {

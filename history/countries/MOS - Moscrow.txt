@@ -18,9 +18,8 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {
-	national_socialism = 100
-}
+
+set_popularities = { national_socialism = 100 }
 
 create_country_leader = {
 	name = "Alfred Meyer"
@@ -30,4 +29,152 @@ create_country_leader = {
 	ideology = national_socialism_ideology
 	traits = {
 	}
+}
+########## 分裂国 ##########
+
+※アナキスト・コミューンの国家タグはPETのため、 moddingの際は気を付けてください。 
+
+create_dynamic_country = { #貴族評議会
+	original_tag = RUS
+	set_country_flag = MOS_nobles_countryflag
+	set_cosmetic_tag = RUS_nobles
+	set_research_slots = 3
+	add_ideas = {
+		civilian_economy
+		ssw_mixed_regime
+		RUS_felix_yusupov
+		RUS_nikolai_khokhlov
+		RUS_sofia_panina
+		RUS_igor_stravinsky
+		RUS_bronislav_kaminski
+	}
+	set_politics = {
+		ruling_party = authority_democracy
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { authority_democracy = 100 }
+	create_country_leader = {
+		name = "Felix Yusupov"
+		desc = "POLITICS_FELIX_YUSUPOV_DESC"
+		picture = "gfx/leaders/RUS/Portrait_Russia_Felix_Yusupov.dds"
+		expire = "1967.9.27"
+		ideology = authority_democracy_ideology
+		traits = {
+		}
+	}
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #大天使ミハイル国
+	original_tag = RUS
+	set_country_flag = MOS_mikhail_countryflag
+	set_cosmetic_tag = RUS_mikhail
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = national_socialism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { national_socialism = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #ブラック・オーダー
+	original_tag = RUS
+	set_country_flag = MOS_blackorder_countryflag
+	set_cosmetic_tag = RUS_blackorder
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = national_fascism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { national_fascism = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #全ロシア民族解放統一戦線
+	original_tag = RUS
+	set_country_flag = MOS_arufnl_countryflag
+	set_cosmetic_tag = RUS_arufnl
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = progressive_communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { progressive_communism = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #ベラルーシ国民共和国
+	original_tag = BAL
+	set_cosmetic_tag = BLR
+	set_country_flag = BAL_national_republic_countryflag
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = authority_democracy
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { authority_democracy = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #ロシアの空解放同盟
+	original_tag = RUS
+	set_country_flag = MOS_rall_countryflag
+	set_cosmetic_tag = RUS_rall
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = authority_democracy
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { authority_democracy = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #帝政ロシア
+	original_tag = RUS
+	set_country_flag = MOS_empire_countryflag
+	set_cosmetic_tag = RUS_empire
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = national_fascism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { national_fascism = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #自由主義ロシア
+	original_tag = RUS
+	set_country_flag = MOS_liberalist_countryflag
+	set_cosmetic_tag = RUS_liberalist
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = social_liberalism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = { social_liberalism = 100 }
+	reserve_dynamic_country = yes
+}
+create_dynamic_country = { #大主教領
+	original_tag = MOS
+	set_country_flag = MOS_archbishop_countryflag
+	set_cosmetic_tag = MOS_archbishop
+	set_research_slots = 3
+	set_politics = {
+		ruling_party = authority_despotism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { authority_despotism = 100 }
+	reserve_dynamic_country = yes
 }

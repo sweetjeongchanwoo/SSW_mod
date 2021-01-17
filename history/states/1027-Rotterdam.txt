@@ -1,0 +1,22 @@
+state = { #ƒƒbƒeƒ‹ƒ_ƒ€
+	id = 1027
+	name = "STATE_1027"
+	manpower = 600000
+	state_category = city
+	history = {
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
+			9498 = { naval_base = 10 }
+		}
+		victory_points = {
+			9498 20
+		}
+	}
+	provinces = {
+		9498
+	}
+}

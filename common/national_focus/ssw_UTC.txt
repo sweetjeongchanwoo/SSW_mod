@@ -26,8 +26,8 @@ focus_tree = {
 	focus = {
 		#フォード社重視
 		id = UTC_focus_on_the_ford_company
-		icon = focus_UTC_ford_motor_company .dds
-		cost = 10
+		icon = GFX_focus_UTC_ford_motor_company
+		cost = 2
 		prerequisite = {
 			focus = UTC_the_problem
 		}
@@ -82,8 +82,8 @@ focus_tree = {
 	focus = {
 		#GM社重視
 		id = UTC_focus_on_the_gm_company
-		icon = focus_UTC_general_motors_company .dds
-		cost = 10
+		icon = GFX_focus_UTC_general_motors_company
+		cost = 2
 		prerequisite = {
 			focus = UTC_the_problem
 		}
@@ -131,8 +131,8 @@ focus_tree = {
 	focus = {
 		#クライスラー社重視
 		id = UTC_focus_on_the_chrysler_company
-		icon = focus_UTC_chrysler .dds
-		cost = 10
+		icon = GFX_focus_UTC_chrysler
+		cost = 2
 		prerequisite = {
 			focus = UTC_the_problem
 		}
@@ -201,8 +201,8 @@ focus_tree = {
 	focus = {
 		#三社の団結
 		id = UTC_unity_of_the_three_companies
-		icon = focus_UTC_flag .dds
-		cost = 10
+		icon = GFX_focus_UTC_flag
+		cost = 2
 		prerequisite = {
 			focus = UTC_the_problem
 		}

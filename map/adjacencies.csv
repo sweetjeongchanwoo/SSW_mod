@@ -6,15 +6,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
-299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
-6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
+299;211;sea;2282;-1;-1;-1;-1;;Smaland-Oland
+6345;6287;sea;2382;-1;-1;-1;-1;;Skane-Sjaelland
 3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
 3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
 3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
 11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
-83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
-185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
-83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
+83;185;sea;1885;-1;-1;-1;-1;;Estonia-Osel
+185;6201;sea;1885;-1;-1;-1;-1;;Osel-Dago
+83;6201;sea;1660;-1;-1;-1;-1;;Dago-Estonia
 6891;3838;sea;5579;-1;-1;-1;-1;;Sardinia-Corsica
 9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
 9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
@@ -128,7 +128,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 185;6322;sea;1885;-1;-1;-1;-1;;Osel-Libau
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Oresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -176,4 +176,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+13282;13281;sea;5205;-1;-1;-1;-1;;Stlawrence_CANAL
+13278;13157;sea;4345;-1;-1;-1;-1;adjacency_rule;Stlawrence_CANAL
+13279;13280;sea;749;-1;-1;-1;-1;Niagara_STRAIT;Stlawrence_CANAL
+13285;13156;sea;13284;-1;-1;-1;-1;Detroit_STRAIT;Stlawrence_CANAL
+13156;13199;sea;9724;-1;-1;-1;-1;Clair_STRAIT;Stlawrence_CANAL
 -1;-1;;-1;-1;-1;-1;-1;-1
+
+
+
+
+
+
+

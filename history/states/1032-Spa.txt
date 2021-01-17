@@ -1,0 +1,18 @@
+state = { #ÉXÉp
+	id = 1032
+	name = "STATE_1032"
+	manpower = 10000
+	state_category = rural
+	history = {
+		owner = BEL
+		add_core_of = BEL
+		add_core_of = WLL
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = { 6537 1 }
+	}
+	provinces = {
+		6537 9444
+	}
+}

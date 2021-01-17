@@ -1,0 +1,19 @@
+state = { #ƒ†ƒgƒŒƒqƒg
+	id = 1029
+	name = "STATE_1029"
+	manpower = 400000
+	state_category = city
+	history = {
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 7
+		}
+		victory_points = {
+			6241 5
+		}
+	}
+	provinces = {
+		6241
+	}
+}
