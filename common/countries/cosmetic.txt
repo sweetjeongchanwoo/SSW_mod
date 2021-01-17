@@ -65,7 +65,7 @@ RUS_arufnl = {	#全ロシア民族解放統一戦線
 	color_ui = rgb { 168 46 78 }
 }
 
-RUS_arufnl = {	#大天使ミハイル
+RUS_mikhail = {	#大天使ミハイル
 	color = rgb { 112 41 26 }
 	color_ui = rgb { 112 41 26 }
 }
