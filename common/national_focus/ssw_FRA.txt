@@ -628,7 +628,7 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 				news_event = {
-					id = FRA_news.4
+					id = SSW_FRA_news.4
 				}
 				remove_ideas = Unstable_Republic
 				add_ideas = FRA_Guy_Mollet
@@ -654,7 +654,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			news_event = {
-				id = FRA_news.5
+				id = SSW_FRA_news.5
 			}
 			remove_ideas = Unstable_Republic
 			add_ideas = FRA_Mendes_France
@@ -680,7 +680,7 @@ focus_tree = {
 		y = 6
 		completion_reward = {
 			news_event = {
-				id = FRA_news.6
+				id = SSW_FRA_news.6
 			}
 			remove_ideas = Unstable_Republic
 			add_ideas = FRA_Rene_Coty
@@ -704,7 +704,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			news_event = {
-				id = FRA_news.2
+				id = SSW_FRA_news.2
 			}
 			add_ideas = NEW_repubulic
 		}
@@ -931,7 +931,7 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
-			addideas = Henri_VI
+			add_ideas = Henri_VI
 		}
 	}
 	focus = {
@@ -958,13 +958,11 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = FRA_Return_of_Orleans
-			focus = FRA_Bourbons_Return
 			focus = FRA_Return_of_Bonapardo
 		}
 		mutually_exclusive = {
-			focus = Bourbon_authoritative
-			focus = Orleanist_authoritative
-			focus = Napoleon_Authoritative
+			focus = FRA_Orleanist_authoritative
+			focus = FRA_Napoleon_Authoritative
 		}
 		x = 30
 		y = 5
@@ -1018,8 +1016,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = FRA_Freedom_Monarchy
-			focus = Napoleon_Authoritative
-			focus = Bourbon_authoritative
+			focus = FRA_Napoleon_Authoritative
 		}
 		x = 28
 		y = 5
@@ -1046,9 +1043,8 @@ focus_tree = {
 			focus = FRA_Return_of_Bonapardo
 		}
 		mutually_exclusive = {
-			focus = Orleanist_authoritative
+			focus = FRA_Orleanist_authoritative
 			focus = FRA_Freedom_Monarchy
-			focus = Bourbon_authoritative
 		}
 		x = 32
 		y = 5
@@ -1164,7 +1160,7 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
-			remove_idea = Confusion_of_the_General_Staff_2
+			remove_ideas = Confusion_of_the_General_Staff_2
 		}
 
 	}
@@ -1221,7 +1217,7 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
-			remove_idea = Confusion_of_the_General_Staff_2
+			remove_ideas = Confusion_of_the_General_Staff_2
 		}
 
 	}
@@ -1338,7 +1334,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			remove_idea = Confusion_of_the_General_Staff_2
+			remove_ideas = Confusion_of_the_General_Staff_2
 		}
 
 	}
@@ -1488,7 +1484,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = Defeated_army_5
-				add_idea = FRA_New_French_Army
+				add_idea = New_French_Army
 			}
 		}
 
@@ -1504,8 +1500,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = FRA_New_French_Army
-				add_idea = FRA_New_French_Army_2
+				remove_idea = New_French_Army
+				add_idea = New_French_Army_2
 			}
 		}
 	}
@@ -1524,8 +1520,8 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 35
 			swap_ideas = {
-				remove_idea = FRA_New_French_Army_2
-				add_idea = FRA_New_French_Army_3
+				remove_idea = New_French_Army_2
+				add_idea = New_French_Army_3
 			}
 			add_ideas = Military_reform
 		}
