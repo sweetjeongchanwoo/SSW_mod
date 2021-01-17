@@ -22,6 +22,20 @@ set_autonomy = {
 	target = EQG
 	autonomous_state = colony
 }
+create_dynamic_country = { #アキテーヌ
+	original_tag = FRA
+	set_country_flag = FRA_aquitaine_countryflag
+	set_cosmetic_tag = FRA_aquitaine
+	set_politics = {
+		ruling_party = progressive_communism
+		last_election = "1950.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = { progressive_communism = 100 }
+	set_capital = 19
+	reserve_dynamic_country = yes
+}
 set_politics = {
 	ruling_party = national_fascism
 	last_election = "1950.1.1"

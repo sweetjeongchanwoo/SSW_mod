@@ -1,0 +1,17 @@
+state = {
+	id = 1040
+	name = "STATE_1040"
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+			11009 = { naval_base = 1 }
+		}
+		victory_points = { 11009 1 }
+		add_core_of = ARG
+	}
+	provinces = { 11009 }
+	manpower = 50000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

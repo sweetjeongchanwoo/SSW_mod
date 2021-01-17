@@ -391,7 +391,7 @@ adjacency_rule
 	required_provinces = { 4345 12149 7291 9601 4345 4270 6625 3605 6778 598 3602 7345 4417 10320 7433 1284 }
 		
 	icon = 4345
-	offset = { 3 4 3 }
+	offset = { 3 4 -1 }
 }
 adjacency_rule
 {
@@ -505,6 +505,6 @@ adjacency_rule
 	required_provinces = { 9724 }
 		
 	icon = 9724
-	offset = { 3 1 -1 }
+	offset = { 4 4 -1 }
 }
 

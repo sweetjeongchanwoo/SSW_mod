@@ -1,0 +1,4 @@
+BY0 = {	#ƒxƒ‰ƒ‹[ƒV‘–¯‹¤˜a‘
+	original_tag = BLR
+	has_country_flag = BLR_national_republic_countryflag
+}
