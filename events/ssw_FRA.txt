@@ -36,7 +36,7 @@ country_event = {
     titile =SSW_FRA.2
     desc =SSW_FRA.2.d
 
-    fire_on_lnly_once = yesfire_only_once = yes
+    fire_on_lnly_once = yes
         trigger = {
             tag = FRA
         }
