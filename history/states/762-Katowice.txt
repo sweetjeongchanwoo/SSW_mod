@@ -20,5 +20,6 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = GER
+		set_state_flag = maybe_core_POL
 	}
 }

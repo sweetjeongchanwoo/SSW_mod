@@ -64,6 +64,10 @@ create_dynamic_country = { #貴族評議会
 		traits = {
 		}
 	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #大天使ミハイル国
@@ -78,6 +82,10 @@ create_dynamic_country = { #大天使ミハイル国
 		elections_allowed = no
 	}
 	set_popularities = { national_socialism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #ブラック・オーダー
@@ -92,6 +100,10 @@ create_dynamic_country = { #ブラック・オーダー
 		elections_allowed = no
 	}
 	set_popularities = { national_fascism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #全ロシア民族解放統一戦線
@@ -106,6 +118,10 @@ create_dynamic_country = { #全ロシア民族解放統一戦線
 		elections_allowed = no
 	}
 	set_popularities = { progressive_communism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #ベラルーシ国民共和国
@@ -120,6 +136,10 @@ create_dynamic_country = { #ベラルーシ国民共和国
 		elections_allowed = yes
 	}
 	set_popularities = { authority_democracy = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #ロシアの空解放同盟
@@ -134,6 +154,10 @@ create_dynamic_country = { #ロシアの空解放同盟
 		elections_allowed = yes
 	}
 	set_popularities = { authority_democracy = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #帝政ロシア
@@ -148,6 +172,10 @@ create_dynamic_country = { #帝政ロシア
 		elections_allowed = no
 	}
 	set_popularities = { national_fascism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #自由主義ロシア
@@ -162,6 +190,10 @@ create_dynamic_country = { #自由主義ロシア
 		elections_allowed = yes
 	}
 	set_popularities = { social_liberalism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 create_dynamic_country = { #大主教領
@@ -176,5 +208,9 @@ create_dynamic_country = { #大主教領
 		elections_allowed = no
 	}
 	set_popularities = { authority_despotism = 100 }
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
