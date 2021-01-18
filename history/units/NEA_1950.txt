@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Royal Guard"
+	name = "Guardia de Viceré"
 
 	division_names_group = GES_ARM_01
 
@@ -15,7 +15,7 @@
 	priority = 2
 }
 division_template = {
-	name = "Militia"					# Militia units (lowest experience, oldest equipment)
+	name = "Milizia"					# Militia units (lowest experience, oldest equipment)
 
 	division_names_group = GES_GAR_01
 
