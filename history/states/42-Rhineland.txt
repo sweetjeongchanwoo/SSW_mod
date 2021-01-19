@@ -23,6 +23,7 @@ state={
 			synthetic_refinery = 3
 		}
 		add_core_of = GER
+		set_state_flag = maybe_core_RHINE
 	}
 
 	provinces={

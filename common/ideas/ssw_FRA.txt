@@ -596,7 +596,7 @@ ideas = {
                 army_morale_factor = 0.4
             }
         }
-        FRA_New_French_Army_2 = {
+        New_French_Army_2 = {
 
             allowed = {always = no}
 
@@ -614,7 +614,7 @@ ideas = {
                 army_attack_factor = 0.05
             }
         }
-        FRA_New_French_Army_3 = {
+        New_French_Army_3 = {
 
             allowed = {always = no}
 

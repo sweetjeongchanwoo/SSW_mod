@@ -10,7 +10,7 @@ state={
 
 		}
 		add_core_of = GER
-
+		set_state_flag = maybe_core_BEL
 	}
 
 	provinces={

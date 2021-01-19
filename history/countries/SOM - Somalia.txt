@@ -10,11 +10,26 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_despotism
+	ruling_party = social_conservatism
 	last_election = "1950.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	authority_despotism = 100
+	social_conservatism = 42
+	national_fascism = 22
+	authority_democracy = 13
+	authority_despotism = 12
+	classical_communism = 6
+	progressive_communism = 5
+}
+create_country_leader = {
+	name = "Haji Bashir Ismail Yusuf"
+	picture = "ssw_Portrait_Somalia_Haji_Bashir.dds"
+	desc = "POLITICS_HAJI_BASHIR_DESC"
+	expire = "1984.1.1"
+	ideology = social_conservatism_ideology
+	traits = {
+		#
+	}
 }

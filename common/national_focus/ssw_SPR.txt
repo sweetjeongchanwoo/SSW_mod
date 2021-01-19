@@ -1433,7 +1433,6 @@ focus_tree = {
 				transfer_state = 806
 				every_state = {
 					limit = { is_core_of = FRA }
-					remove_core_of = FRA
 					set_state_flag = french_old_core
 				}
 				19 = { add_core_of = FR0 }
