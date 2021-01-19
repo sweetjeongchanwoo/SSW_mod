@@ -1,9 +1,9 @@
 add_namespace = sswmos
 
 country_event = {
-	id = sswmos.1
+	id = sswmos.1 #弁務官区崩壊
 	title = sswmos.1.title
-	desc = sswmos.2.desc
+	desc = sswmos.1.desc
 	picture = GFX_event_test
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -28,35 +28,35 @@ country_event = {
 			original_tag = RUS
 			set_country_flag = MOS_nobles_countryflag	#貴族評議会
 			set_cosmetic_tag = RUS_nobles   
-			set_politics = {    ruling_party = national_socialism    }    
+			set_politics = {    ruling_party = social_conservatism   }    
 			reserve_dynamic_country = yes    
 		}
 		create_dynamic_country = {
 			original_tag = RUS
 			set_country_flag = MOS_rall_countryflag	#ロシアの空
 			set_cosmetic_tag = RUS_rall    
-			set_politics = {    ruling_party = national_socialism    }    
+			set_politics = {    ruling_party = authority_democracy    }    
 			reserve_dynamic_country = yes    
 		}
 		create_dynamic_country = {
 			original_tag = RUS
 			set_country_flag = MOS_archbishop_countryflag #大主教領
 			set_cosmetic_tag = MOS_archbishop   
-			set_politics = {    ruling_party = national_socialism    }    
+			set_politics = {    ruling_party = authority_despotism    }    
 			reserve_dynamic_country = yes    
 		}
 		create_dynamic_country = {
 			original_tag = RUS
 			set_country_flag = MOS_arufnl_countryflag	#統一前線
 			set_cosmetic_tag = RUS_arufnl    
-			set_politics = {    ruling_party = national_socialism    }    
+			set_politics = {    ruling_party = progressive_communism    }    
 			reserve_dynamic_country = yes    
 		}
 		create_dynamic_country = {
 			original_tag = RUS
 			set_country_flag = MOS_empire_countryflag	#ロシア帝国
 			set_cosmetic_tag = RUS_empire    
-			set_politics = {    ruling_party = national_socialism    }    
+			set_politics = {    ruling_party = authority_despotism    }    
 			reserve_dynamic_country = yes    
 		}
 		create_dynamic_country = {
@@ -66,6 +66,15 @@ country_event = {
 			set_politics = {    ruling_party = national_socialism    }    
 			reserve_dynamic_country = yes    
 		}
+		create_dynamic_country = {
+			original_tag = BLR
+			set_country_flag = BLR_national_republic_countryflag	#白ロシア      
+			set_politics = {    ruling_party = authority_democracy    }    
+			reserve_dynamic_country = yes    
+		}
+		BY0 = { transfer_state = 927 }
+		BY0 = { transfer_state = 928 }
+		BY0 = { transfer_state = 194 }
 		RU0 = { transfer_state = 242 }
 		RU0 = { transfer_state = 207 }
 		RU0 = { transfer_state = 210 }
@@ -106,5 +115,54 @@ country_event = {
 		RU7 = { transfer_state = 985 }
 	}
 		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = sswmos.2 #宗主の崩壊
+	title = sswmos.2.title
+	desc = sswmos.2.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = GER_civil_war
+	}
+
+	option = {
+		name = sswmos.2.a
+		ai_chance = { factor = 1}
+		add_political_power= -300
+		add_stability = -0.3
+		hidden_effect = {
+			MOS ={
+			country_event = { 
+				id = sswmos.3
+				days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sswmos.3 #レジスタンスの蜂起
+	title = sswmos.3.title
+	desc = sswmos.3.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+
+	option = {
+		name = sswmos.3.a
+		ai_chance = { factor = 1}
+		add_stability = -0.2
+		add_war_support = -0.3
+		hidden_effect = {
+			MOS = {
+				country_event = { 
+					id = sswmos.1
+					days = 10
+				}
+			}
+		}
 	}
 }

@@ -1,5 +1,5 @@
 RU0 = {	#ƒƒVƒA’é‘
-	orginal_tag = RUS
+	original_tag = RUS
 	has_country_flag = MOS_empire_countryflag
 }
 
