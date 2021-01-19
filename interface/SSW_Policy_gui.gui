@@ -264,4 +264,100 @@ guiTypes = {
 			}
 		}
 	}
+	containerWindowType = {
+		name = "SSW_Policy_tab_industry"
+		position = { x=535 y=393 }
+		size = { width = 555 height = 190 }
+		
+		background = {
+			name = "Background"		
+			spriteType ="GFX_tiled_bg"
+		}
+		iconType = {
+			name = "chart"
+			spriteType = "GFX_Line_Graph_Chart"
+			position = { x = 175 y = 45 }
+		}
+		gridboxtype = {
+			name = "line_segments"
+			position = { x = 99 y = 66 }
+			size = { width = 0 height = 200 }
+			slotsize = { width = 10 height = 200 }
+			max_slots_horizontal = 20
+			add_horizontal = yes
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_industry_graph_num"
+			position = { x=85 y=-28 }
+			instantTextboxType = {
+				name = "100pct"
+				position = { x= 34 y = 65}
+				font = "garamond_14"
+				text = "10%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "80pct"
+				position = { x= 34 y = 85}
+				font = "garamond_14"
+				text = "8%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "3pct"
+				position = { x= 34 y = 105}
+				font = "garamond_14"
+				text = "6%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "2pct"
+				position = { x= 34 y = 125}
+				font = "garamond_14"
+				text = "4%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "1pct"
+				position = { x= 34 y = 145}
+				font = "garamond_14"
+				text = "2%"
+				maxWidth = 50
+				format = right
+			}
+			instantTextboxType = {
+				name = "0pct"
+				position = { x= 34 y = 165}
+				font = "garamond_14"
+				text = "0%"
+				maxWidth = 50
+				format = right
+			}
+		}
+	}
+	containerWindowType = {
+		name = "industry_line_graph_line_segment"
+		size = { width = 10 height = 200 }
+		position = { x = 85 y = -20 }
+
+		iconType = {
+			name = "segment"
+			spriteType = "GFX_Line_Segment"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+
+		instantTextboxType = {
+			name = "label"
+			position = { x = -15 y = 107}
+			font = "garamond_14"
+			text = "[?industry_numbers^segment_idx]"
+			maxWidth = 30
+			format = center
+		}
+	}
 }

@@ -1,0 +1,25 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_ai = no
+						has_country_flag = refresh_is_yet
+					}
+					clr_country_flag = refresh_is_yet
+				}
+				else_if = {
+					limit = {
+						is_ai = no
+						NOT = {
+							has_country_flag = refresh_is_yet
+						}
+					}
+					add_and_refresh_line_graph = yes
+					set_country_flag = refresh_is_yet
+				}
+			}
+		}
+	}
+}

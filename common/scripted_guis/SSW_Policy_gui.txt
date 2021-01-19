@@ -158,5 +158,39 @@ scripted_gui = {
 			always = no
 		}
 	}
+	SSW_Policy_tab_industry = {
+		window_name = "SSW_Policy_tab_industry"
+		context_type = player_context
+
+		visible = {
+			check_variable = { selected_industry_focus = 0 }
+			check_variable = { selected_policy_bar_button = 1 }
+		}
+		
+		triggers = {
+			# Optional. This hides every other x label, to give them some breathing room
+			label_visible = {
+				set_temp_variable = { si = segment_idx }
+				modulo_temp_variable = { si = 2 }
+				check_variable = { si = 0 }
+			}
+		}
+		
+		dynamic_lists = {
+			line_segments = {
+				array = industry_graph_offsets
+				change_scope = no
+				entry_container = industry_line_graph_line_segment
+				index = segment_idx
+			}
+		}
+
+		properties = {
+			segment = {
+				y = industry_graph_offsets^segment_idx
+				frame =industry_graph_slopes^segment_idx
+			}
+		}
+	}
 }
 
