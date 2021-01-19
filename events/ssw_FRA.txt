@@ -10,39 +10,32 @@ country_event = {
     desc =SSW_FRA.1.d
     picture = GFX_Petan_dead
     fire_only_once = yes
-        trigger = { #イベントが起きるきっかけ
-            tag = FRA
-            date > 1950.2.4 #1951.7.10　#日にち
-        }
-    
+    mean_time_to_happen = { days = 7 }
+    trigger = { #イベントが起きるきっかけ
+        tag = FRA
+        date > 1950.2.4 #1951.7.10 #日にち
+    }
     option = {
-        name =SSW_FRA_1.a
+        name = SSW_FRA_1.a
         FRA = {
             add_stability = -0.5
-            kill_country_leader = FRA
-        }
-        country_event = {
-            id =SSW_FRA.2
-            days = 1
+            kill_country_leader = yes
         }
         add_ideas = Unstable_country
+        country_event = { id = SSW_FRA.2 days = 1 }
     }
 }
 
 #指導者決定
 
 country_event = {
-    id =SSW_FRA.2
-    titile =SSW_FRA.2
-    desc =SSW_FRA.2.d
-
-    fire_on_lnly_once = yes
-        trigger = {
-            tag = FRA
-        }
-    
+    id = SSW_FRA.2
+    titile = SSW_FRA.2
+    desc = SSW_FRA.2.d
+    is_triggered_only = yes
     option = {
-        name =SSW_FRA.2.a
+        name = SSW_FRA.2.a
+        ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
         has_contry_flag = FRA_Darnand_leader
         complete_national_focus = FRA_next
@@ -56,7 +49,8 @@ country_event = {
         }
     }    
     option = {
-        name =SSW_FRA.2.b
+        name = SSW_FRA.2.b
+        ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Laval_leader
         complete_national_focus = FRA_next
@@ -70,7 +64,8 @@ country_event = {
         }  
     }
     option = {
-        name =SSW_FRA.2.c
+        name = SSW_FRA.2.c
+        ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
         has_country_flag = FRA_Doriot_leader
         complete_national_focus = FRA_next
@@ -80,8 +75,7 @@ country_event = {
 		    ideology = national_fascism_ideology
 		    traits = {}
 		}
-    }  
-
+    }
 }
 country_event = {
     id =SSW_FRA.3 #リーダーの暗殺
@@ -91,19 +85,19 @@ country_event = {
     fire_on_lnly_once = yes
     is_triggered_only = yes
     option = {
-    SSW_FRA.3.a
+    	name = SSW_FRA.3.a
         complete_national_focus = FRA_New_France #左派が政権を手動
         remove_ideas = The_resurrection_of_the_resistance
         create_country_leader = {
 	        name = "Maurice Thorez"
 	        expire = "1965.1.1"
-	        ideology =　social_democracy_ideology 
+	        ideology = social_democracy_ideology 
 	        traits = {
 	        }
         }
     }
     option = {
-    SSW_FRA.3.b
+    	name = SSW_FRA.3.b
         complete_national_focus = FRA_New_France #軍部が主導権を把握
         remove_ideas = The_resurrection_of_the_resistance
         create_country_leader = {
