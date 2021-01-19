@@ -27,7 +27,7 @@ scripted_gui = {
 		}
 	}
 	
-	SSW_Policy_top_bar_tab_view = {
+	SSW_Policy_tab_view = {
 		window_name = "SSW_Policy_tab"
 		context_type = player_context
 
@@ -38,87 +38,124 @@ scripted_gui = {
 		ai_enabled = {
 			always = no
 		}
-		
 		effects = {
-			SSW_Policy_top_bar_tab_close_button_click = {
+			close_button_click = {
 				set_variable = { selected_policy_bar_button = 0 }
-			}
-			Decrease_click = {
-				if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy > -199 }
-					}
-					add_to_variable = { ssw_policy_current_value_policy = -10 }
-					temp = yes
-				}
-				else_if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy < -199 }
-					}
-					set_variable = { ssw_policy_current_value_policy = -200 } 
-					temp = yes
-				}
-			}
-			Decrease_shift_click = {
-				if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy > -199 }
-					}
-					add_to_variable = { ssw_policy_current_value_policy = -20 }
-					temp = yes
-				}
-				else_if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy < -199 }
-					}
-					set_variable = { ssw_policy_current_value_policy = -200 } 
-				}
-			}
-			Increase_click = {
-				if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy < 200 }
-					}
-					add_to_variable = { ssw_policy_current_value_policy = 10 }
-					temp = yes
-				}
-				else_if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy > 200 }
-					}
-					set_variable = { ssw_policy_current_value_policy = 0 } 
-					temp = yes
-				}
-			}
-			Increase_shift_click = {
-				if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy < 200 }
-					}
-					add_to_variable = { ssw_policy_current_value_policy = 20 }
-					temp = yes
-				}
-				else_if = {
-					limit = {
-						check_variable = { ssw_policy_current_value_policy > 200 }
-					}
-					set_variable = { ssw_policy_current_value_policy = 200 } 
-					temp = yes
-				}
-			}
-			SSW_social_policy_1_button_click = {
-				set_variable = { policy_1 = 0 }
-				temp = yes
-			}
-			SSW_social_policy_2_button_click = {
-				set_variable = { policy_1 = 1 }
-				temp = yes
 			}
 		}
 		properties = {
-			Drager = {
-				x = ssw_policy_current_value_policy
+		}
+	}
+	
+	SSW_Policy_tab_focuses = {
+		window_name = "SSW_Policy_tab_focuses"
+		context_type = player_context
+
+		visible = {
+			check_variable = { selected_policy_bar_button = 1 }
+		}
+		triggers = {
+			#selectied effect (glow)
+			industry_focus_selectied_glow_visible = {
+				check_variable = { selected_industry_focus = 0 }
 			}
+			politic_focus_selectied_glow_visible = {
+				check_variable = { selected_industry_focus = 1 }
+			}
+			diplo_focus_selectied_glow_visible = {
+				check_variable = { selected_industry_focus = 2 }
+			}
+			social_focus_selectied_glow_visible = {
+				check_variable = { selected_industry_focus = 3 }
+			}
+			military_focus_selectied_glow_visible = {
+				check_variable = { selected_industry_focus = 4 }
+			}
+			
+			#selected effect (selectable)
+			industry_focus_buttom_completed_visible = {
+				check_variable = { selected_industry_focus = 0 }
+			}
+			industry_focus_buttom_button_visible = {
+				NOT = {
+					check_variable = { selected_industry_focus = 0 }
+				}
+			}
+			
+			politic_focus_completed_visible = {
+				check_variable = { selected_industry_focus = 1 }
+			}
+			politic_buttom_button_visible = {
+				NOT = {
+					check_variable = { selected_industry_focus = 1 }
+				}
+			}
+			
+			diplo_focus_buttom_completed_visible = {
+				check_variable = { selected_industry_focus = 2 }
+			}
+			diplo_focus_buttom_button_visible = {
+				NOT = {
+					check_variable = { selected_industry_focus = 2 }
+				}
+			}
+			
+			social_focus_buttom_completed_visible = {
+				check_variable = { selected_industry_focus = 3 }
+			}
+			social_focus_buttom_button_visible = {
+				NOT = {
+					check_variable = { selected_industry_focus = 3 }
+				}
+			}
+			
+			military_focus_buttom_completed_visible = {
+				check_variable = { selected_industry_focus = 4 }
+			}
+			military_focus_buttom_button_visible = {
+				NOT = {
+					check_variable = { selected_industry_focus = 4 }
+				}
+			}
+		}
+		effects = {
+			industry_focus_buttom_button_click = {
+				set_variable = { selected_industry_focus = 0 }
+			}
+			industry_focus_icon_button_click = {
+				set_variable = { selected_industry_focus = 0 }
+			}
+			
+			politic_buttom_button_click = {
+				set_variable = { selected_industry_focus = 1 }
+			}
+			politic_icon_button_click = {
+				set_variable = { selected_industry_focus = 1 }
+			}
+			
+			diplo_focus_buttom_button_click = {
+				set_variable = { selected_industry_focus = 2 }
+			}
+			diplo_focus_icon_button_click = {
+				set_variable = { selected_industry_focus = 2 }
+			}
+			
+			social_focus_buttom_button_click = {
+				set_variable = { selected_industry_focus = 3 }
+			}
+			social_focus_icon_button_click = {
+				set_variable = { selected_industry_focus = 3 }
+			}
+			
+			military_focus_buttom_button_click = {
+				set_variable = { selected_industry_focus = 4 }
+			}
+			military_focus_icon_button_click = {
+				set_variable = { selected_industry_focus = 4 }
+			}
+		}
+		ai_enabled = {
+			always = no
 		}
 	}
 }
