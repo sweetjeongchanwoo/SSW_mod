@@ -49,8 +49,27 @@ on_actions = {
 				}
 			}
 			# Restore Hindemburg core for Ukraine Comissariat
-			217 = {
-				add_core_of = UKR
+			217 = { add_core_of = UKR }
+			every_state = {
+				limit = {
+					OR = {
+						is_fully_controlled_by = LFF
+						is_fully_controlled_by = ALF
+						is_fully_controlled_by = UTC
+						is_fully_controlled_by = ANS
+						is_fully_controlled_by = OKL
+						is_fully_controlled_by = TEX
+						is_fully_controlled_by = LUI
+						is_fully_controlled_by = BLS
+						is_fully_controlled_by = FSA
+						is_fully_controlled_by = NEL
+						is_fully_controlled_by = HAW
+						state = 463
+						state = 650
+						state = 686
+					}
+				}
+				maybe_core_AMERICA
 			}
 		}
 	}

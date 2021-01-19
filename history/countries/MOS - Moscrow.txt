@@ -1,4 +1,4 @@
-capital = 219
+ï»¿capital = 219
 oob = "MOS_1950"
 set_cosmetic_tag = MOS_GER
 
@@ -30,11 +30,11 @@ create_country_leader = {
 	traits = {
 	}
 }
-########## •ª—ô‘ ##########
+########## åˆ†è£‚å›½ ##########
 
-¦ƒAƒiƒLƒXƒgEƒRƒ~ƒ…[ƒ“‚Ì‘‰Æƒ^ƒO‚ÍPET‚Ì‚½‚ßA modding‚ÌÛ‚Í‹C‚ğ•t‚¯‚Ä‚­‚¾‚³‚¢B 
+â€»ã‚¢ãƒŠã‚­ã‚¹ãƒˆãƒ»ã‚³ãƒŸãƒ¥ãƒ¼ãƒ³ã®å›½å®¶ã‚¿ã‚°ã¯PETã®ãŸã‚ã€ moddingã®éš›ã¯æ°—ã‚’ä»˜ã‘ã¦ãã ã•ã„ã€‚ 
 
-create_dynamic_country = { #‹M‘°•]‹c‰ï
+create_dynamic_country = { #è²´æ—è©•è­°ä¼š
 	original_tag = RUS
 	set_country_flag = MOS_nobles_countryflag
 	set_cosmetic_tag = RUS_nobles
@@ -64,9 +64,13 @@ create_dynamic_country = { #‹M‘°•]‹c‰ï
 		traits = {
 		}
 	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #‘å“Vgƒ~ƒnƒCƒ‹‘
+create_dynamic_country = { #å¤§å¤©ä½¿ãƒŸãƒã‚¤ãƒ«å›½
 	original_tag = RUS
 	set_country_flag = MOS_mikhail_countryflag
 	set_cosmetic_tag = RUS_mikhail
@@ -78,9 +82,22 @@ create_dynamic_country = { #‘å“Vgƒ~ƒnƒCƒ‹‘
 		elections_allowed = no
 	}
 	set_popularities = { national_socialism = 100 }
+	create_country_leader = {
+		name = "Bruno MÃ¼ller"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Bruno_Muller.dds"
+		expire = "1965.1.1"
+		ideology = national_socialism_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #ƒuƒ‰ƒbƒNEƒI[ƒ_[
+create_dynamic_country = { #ãƒ–ãƒ©ãƒƒã‚¯ãƒ»ã‚ªãƒ¼ãƒ€ãƒ¼
 	original_tag = RUS
 	set_country_flag = MOS_blackorder_countryflag
 	set_cosmetic_tag = RUS_blackorder
@@ -92,9 +109,22 @@ create_dynamic_country = { #ƒuƒ‰ƒbƒNEƒI[ƒ_[
 		elections_allowed = no
 	}
 	set_popularities = { national_fascism = 100 }
+	create_country_leader = {
+		name = "Andrey Vladimirovich Snezhnevsky"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Andrey_Vladimirovich_Snezhnevsky.dds"
+		expire = "1965.1.1"
+		ideology = national_fascism_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #‘SƒƒVƒA–¯‘°‰ğ•ú“ˆêíü
+create_dynamic_country = { #å…¨ãƒ­ã‚·ã‚¢æ°‘æ—è§£æ”¾çµ±ä¸€æˆ¦ç·š
 	original_tag = RUS
 	set_country_flag = MOS_arufnl_countryflag
 	set_cosmetic_tag = RUS_arufnl
@@ -106,12 +136,25 @@ create_dynamic_country = { #‘SƒƒVƒA–¯‘°‰ğ•ú“ˆêíü
 		elections_allowed = no
 	}
 	set_popularities = { progressive_communism = 100 }
+	create_country_leader = {
+		name = "Larisa Ratushnaya"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Larisa_Ratushnaya.dds"
+		expire = "1965.1.1"
+		ideology = progressive_communism_ideology
+		traits = {
+		}
+		female = yes
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #ƒxƒ‰ƒ‹[ƒV‘–¯‹¤˜a‘
-	original_tag = BAL
-	set_cosmetic_tag = BLR
-	set_country_flag = BAL_national_republic_countryflag
+create_dynamic_country = { #ãƒ™ãƒ©ãƒ«ãƒ¼ã‚·å›½æ°‘å…±å’Œå›½
+	original_tag = BLR
+	set_country_flag = BLR_national_republic_countryflag
 	set_research_slots = 3
 	set_politics = {
 		ruling_party = authority_democracy
@@ -120,9 +163,22 @@ create_dynamic_country = { #ƒxƒ‰ƒ‹[ƒV‘–¯‹¤˜a‘
 		elections_allowed = yes
 	}
 	set_popularities = { authority_democracy = 100 }
+	create_country_leader = {
+		name = "Claudius Stepanovich Duzh-Dushevsky"
+		desc = ""
+		picture = "gfx/leaders/BLR/Portrait_Belarus_Claudius_Stepanovich_Duzh-Dushevsky.dds"
+		expire = "1965.1.1"
+		ideology = authority_democracy_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #ƒƒVƒA‚Ì‹ó‰ğ•ú“¯–¿
+create_dynamic_country = { #ãƒ­ã‚·ã‚¢ã®ç©ºè§£æ”¾åŒç›Ÿ
 	original_tag = RUS
 	set_country_flag = MOS_rall_countryflag
 	set_cosmetic_tag = RUS_rall
@@ -134,9 +190,22 @@ create_dynamic_country = { #ƒƒVƒA‚Ì‹ó‰ğ•ú“¯–¿
 		elections_allowed = yes
 	}
 	set_popularities = { authority_democracy = 100 }
+	create_country_leader = {
+		name = "Sergei Korolev"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Sergei_Korolev.dds"
+		expire = "1965.1.1"
+		ideology = authority_democracy_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #’é­ƒƒVƒA
+create_dynamic_country = { #å¸æ”¿ãƒ­ã‚·ã‚¢
 	original_tag = RUS
 	set_country_flag = MOS_empire_countryflag
 	set_cosmetic_tag = RUS_empire
@@ -148,9 +217,22 @@ create_dynamic_country = { #’é­ƒƒVƒA
 		elections_allowed = no
 	}
 	set_popularities = { national_fascism = 100 }
+	create_country_leader = {
+		name = "Pyotr Shabelsky-Bork"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Pyotr_Shabelsky-Bork.dds"
+		expire = "1965.1.1"
+		ideology = national_fascism_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #©—Rå‹`ƒƒVƒA
+create_dynamic_country = { #è‡ªç”±ä¸»ç¾©ãƒ­ã‚·ã‚¢
 	original_tag = RUS
 	set_country_flag = MOS_liberalist_countryflag
 	set_cosmetic_tag = RUS_liberalist
@@ -162,10 +244,23 @@ create_dynamic_country = { #©—Rå‹`ƒƒVƒA
 		elections_allowed = yes
 	}
 	set_popularities = { social_liberalism = 100 }
+	create_country_leader = {
+		name = "Maksymilian Maria Kolbe"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Maksymilian_Maria_Kolbe.dds"
+		expire = "1965.1.1"
+		ideology = social_liberalism_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
-create_dynamic_country = { #‘åå‹³—Ì
-	original_tag = MOS
+create_dynamic_country = { #å¤§ä¸»æ•™é ˜
+	original_tag = RUS
 	set_country_flag = MOS_archbishop_countryflag
 	set_cosmetic_tag = MOS_archbishop
 	set_research_slots = 3
@@ -176,5 +271,18 @@ create_dynamic_country = { #‘åå‹³—Ì
 		elections_allowed = no
 	}
 	set_popularities = { authority_despotism = 100 }
+	create_country_leader = {
+		name = "Alexy I"
+		desc = ""
+		picture = "gfx/leaders/MOS/Portrait_Moscow_Alexy_I.dds"
+		expire = "1965.1.1"
+		ideology = authority_despotism_ideology
+		traits = {
+		}
+	}
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }

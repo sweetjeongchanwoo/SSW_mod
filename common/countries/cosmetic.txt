@@ -393,6 +393,11 @@ GER_union_republic = { #ドイツ連合共和国
 	color_ui = rgb { 159 157 108 }
 }
 
+GER_rhine_republic = { #ライン共和国
+	color = rgb { 19 220 0 }
+	color_ui = rgb { 19 220 0 }
+}
+
 FRA_aquitaine = { #アキテーヌ
 	color = rgb { 1 1 1 }
 	color_ui = rgb { 1 1 1 }

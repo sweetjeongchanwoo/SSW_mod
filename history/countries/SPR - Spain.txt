@@ -34,6 +34,10 @@ create_dynamic_country = { #アキテーヌ
 	}
 	set_popularities = { progressive_communism = 100 }
 	set_capital = 19
+	every_state = {
+		limit = { is_core_of = PREV }
+		remove_core_of = PREV
+	}
 	reserve_dynamic_country = yes
 }
 set_politics = {

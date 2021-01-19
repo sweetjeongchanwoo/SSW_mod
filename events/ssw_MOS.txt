@@ -1,0 +1,178 @@
+add_namespace = sswmos
+
+country_event = {
+	id = sswmos.1 #弁務官区崩壊
+	title = sswmos.1.title
+	desc = sswmos.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = sswmos.1.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			set_capital = 351
+			BY0 = {
+				transfer_state = 194
+				transfer_state = 927
+				transfer_state = 928
+				add_state_core = 194
+				add_state_core = 927
+				add_state_core = 928
+				set_capital = 927
+			}
+			RU0 = {
+				transfer_state = 207
+				transfer_state = 208
+				transfer_state = 209
+				transfer_state = 210
+				transfer_state = 242
+				transfer_state = 246
+				transfer_state = 263
+				transfer_state = 992
+				add_state_core = 207
+				add_state_core = 208
+				add_state_core = 209
+				add_state_core = 210
+				add_state_core = 242
+				add_state_core = 246
+				add_state_core = 263
+				add_state_core = 992
+				set_capital = 242
+			}
+			RU1 = {
+				transfer_state = 224
+				transfer_state = 241
+				transfer_state = 243
+				add_state_core = 224
+				add_state_core = 241
+				add_state_core = 243
+				set_capital = 224
+			}
+			RU2 = {
+				transfer_state = 248
+				transfer_state = 253
+				transfer_state = 986
+				transfer_state = 993
+				transfer_state = 994
+				transfer_state = 996
+				add_state_core = 248
+				add_state_core = 253
+				add_state_core = 986
+				add_state_core = 993
+				add_state_core = 994
+				add_state_core = 996
+				set_capital = 248
+			}
+			RU3 = {
+				transfer_state = 223
+				transfer_state = 254
+				add_state_core = 223
+				add_state_core = 254
+				set_capital = 223
+			}
+			RU4 = {
+				transfer_state = 252
+				transfer_state = 811
+				transfer_state = 995
+				add_state_core = 252
+				add_state_core = 811
+				add_state_core = 995
+				set_capital = 252
+			}
+			RU5 = {
+				transfer_state = 205
+				transfer_state = 219
+				transfer_state = 244
+				transfer_state = 247
+				transfer_state = 264
+				transfer_state = 997
+				transfer_state = 998
+				transfer_state = 999
+				transfer_state = 1000
+				transfer_state = 1001
+				transfer_state = 1002
+				transfer_state = 1003
+				add_state_core = 205
+				add_state_core = 219
+				add_state_core = 244
+				add_state_core = 247
+				add_state_core = 264
+				add_state_core = 997
+				add_state_core = 998
+				add_state_core = 999
+				add_state_core = 1000
+				add_state_core = 1001
+				add_state_core = 1002
+				add_state_core = 1003
+				set_capital = 219
+			}
+			RU6 = {
+				transfer_state = 214
+				transfer_state = 989
+				add_state_core = 214
+				add_state_core = 989
+				set_capital = 214
+			}
+			RU7 = {
+				transfer_state = 984
+				transfer_state = 985
+				add_state_core = 984
+				add_state_core = 985
+				set_capital = 985
+			}
+			PET = {
+				transfer_state = 991
+				add_state_core = 991
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sswmos.2 #宗主の崩壊
+	title = sswmos.2.title
+	desc = sswmos.2.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = GER_civil_war
+		tag = MOS
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = sswmos.2.a
+		ai_chance = { factor = 1 }
+		add_political_power = -300
+		add_stability = -0.3
+		hidden_effect = {
+			MOS = {
+				country_event = {
+					id = sswmos.3
+					days = 5
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sswmos.3 #レジスタンスの蜂起
+	title = sswmos.3.title
+	desc = sswmos.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	option = {
+		name = sswmos.3.a
+		ai_chance = { factor = 1}
+		add_stability = -0.2
+		add_war_support = -0.3
+		hidden_effect = {
+			MOS = {
+				country_event = { 
+					id = sswmos.1
+					days = 10
+				}
+			}
+		}
+	}
+}
