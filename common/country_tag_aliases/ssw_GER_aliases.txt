@@ -1,6 +1,6 @@
 GR0 = { #ドイツ連合共和国
-	orginal_tag = LTV
-	has_country_flag = LTV_union_countryflag
+	orginal_tag = GER
+	has_country_flag = GER_union_countryflag
 }
 GR1 = { #ライン共和国
 	orginal_tag = GER

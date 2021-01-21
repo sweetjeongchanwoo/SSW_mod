@@ -131,4 +131,86 @@ fate_of_countries_category = {
 		}
 		ai_will_do = { factor = 200 }
 	}
+	fate_of_northern_poland = { #北ポーランドの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+				has_cosmetic_tag = RUS_empire
+			}
+			has_country_flag = arbitrage_northern_poland
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+				has_cosmetic_tag = RUS_empire
+			}
+			has_country_flag = arbitrage_northern_poland
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.3 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_katowice = { #カトヴィツェの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				state = 762
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_katowice
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				state = 762
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_katowice
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.4 }
+		}
+		ai_will_do = { factor = 200 }
+	}
 }

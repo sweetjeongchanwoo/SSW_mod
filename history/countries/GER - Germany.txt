@@ -883,8 +883,8 @@ create_corps_commander = {
 
 ########## 分裂国家 ##########
 create_dynamic_country = { #ドイツ連合共和国
-	original_tag = LTV
-	set_country_flag = LTV_union_countryflag
+	original_tag = GER
+	set_country_flag = GER_union_countryflag
 	set_cosmetic_tag = GER_union_republic
 	set_politics = {
 		ruling_party = social_conservatism
