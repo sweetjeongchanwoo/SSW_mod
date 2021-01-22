@@ -1,1 +1,558 @@
 add_namespace = ssw_lff
+country_event = { #外交的立場
+	id = ssw_lff.0
+	title = ssw_lff.0.title
+	desc = ssw_lff.0.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.0.a
+		ai_chance = { base = 10 }
+		add_war_support = 0.05
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_foster
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_solomon
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.1
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ssw_lff.0.b
+		ai_chance = { base = 10 }
+		add_stability = 0.05
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_browder
+					value = 1
+				}
+				add_popularity = {
+					ideology = progressive_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_waldman
+					value = 1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.1
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #軍事政策
+	id = ssw_lff.1
+	title = ssw_lff.1.title
+	desc = ssw_lff.1.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.1.a
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_3
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_foster
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_solomon
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.2
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ssw_lff.1.b
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_4
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_browder
+					value = 1
+				}
+				add_popularity = {
+					ideology = progressive_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_waldman
+					value = 1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.2
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #産業政策
+	id = ssw_lff.2
+	title = ssw_lff.2.title
+	desc = ssw_lff.2.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.2.a
+		ai_chance = { base = 10 }
+		random_owned_controlled_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = { is_coastal = yes }
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_foster
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_solomon
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.3
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ssw_lff.2.b
+		ai_chance = { base = 10 }
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_browder
+					value = 1
+				}
+				add_popularity = {
+					ideology = progressive_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_waldman
+					value = 1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.3
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #教育政策
+	id = ssw_lff.3
+	title = ssw_lff.3.title
+	desc = ssw_lff.3.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.3.a
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_5
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_foster
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_solomon
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.4
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = ssw_lff.3.b
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_6
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_browder
+					value = 1
+				}
+				add_popularity = {
+					ideology = progressive_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_waldman
+					value = 1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.4
+				days = 3
+			}
+		}
+	}
+}
+country_event = { #新憲法
+	id = ssw_lff.4
+	title = ssw_lff.4.title
+	desc = ssw_lff.4.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.4.a
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_7
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_foster
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_solomon
+					value = 1
+				}
+				add_popularity = {
+					ideology = classical_communism
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.5
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = ssw_lff.4.b
+		ai_chance = { base = 10 }
+		add_ideas = lff_ideas_8
+		hidden_effect = {
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_cpusa }
+				modify_country_flag = {
+					flag = leader_browder
+					value = 1
+				}
+				add_popularity = {
+					ideology = progressive_communism
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = { has_completed_focus = LFF_hegemony_of_spa }
+				modify_country_flag = {
+					flag = leader_waldman
+					value = 1
+				}
+				add_popularity = {
+					ideology = social_democracy
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = ssw_lff.5
+				days = 1
+			}
+		}
+	}
+}
+country_event = { #結果集計
+	id = ssw_lff.5
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = leader_foster
+					value > 2
+				}
+			}
+			country_event = { id = ssw_lff.6 days = 2 }
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = leader_browder
+					value > 2
+				}
+			}
+			country_event = { id = ssw_lff.7 days = 2 }
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = leader_solomon
+					value > 2
+				}
+			}
+			country_event = { id = ssw_lff.8 days = 2 }
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = leader_waldman
+					value > 2
+				}
+			}
+			country_event = { id = ssw_lff.9 days = 2 }
+		}
+	}
+	option = {
+		name = ssw_lff.4.a
+		ai_chance = { base = 0 }
+	}
+}
+country_event = { #フォスターが指導者に就任
+	id = ssw_lff.6
+	title = ssw_lff.6.title
+	desc = ssw_lff.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.6.a
+		ai_chance = { base = 10 }
+		complete_national_focus = LFF_with_foster
+	}
+}
+country_event = { #ブラウダーが指導者に就任
+	id = ssw_lff.7
+	title = ssw_lff.7.title
+	desc = ssw_lff.7.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.7.a
+		ai_chance = { base = 10 }
+		complete_national_focus = LFF_with_browder
+	}
+}
+country_event = { #ソロモンが指導者に就任
+	id = ssw_lff.8
+	title = ssw_lff.8.title
+	desc = ssw_lff.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.8.a
+		ai_chance = { base = 10 }
+		complete_national_focus = LFF_with_solomon
+	}
+}
+country_event = { #ヴァルトマンが指導者に就任
+	id = ssw_lff.9
+	title = ssw_lff.9.title
+	desc = ssw_lff.9.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_lff.9.a
+		ai_chance = { base = 10 }
+		complete_national_focus = LFF_with_waldman
+	}
+}

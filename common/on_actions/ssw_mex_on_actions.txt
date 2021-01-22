@@ -20,8 +20,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { tag = MEX }
-					FROM = { always = yes }
+					ROOT = { tag = MEX } #êÌèüçë
+					FROM = { always = yes } #îsêÌçë
 				}
 				ROOT = { add_political_power = 150 }
 			}
