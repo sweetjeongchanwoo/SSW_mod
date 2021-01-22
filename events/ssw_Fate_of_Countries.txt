@@ -257,9 +257,20 @@ country_event = { #ライン裁定
 	desc = ssw_foc_events.2.desc
 	picture = GFX_report_event_second_vienna_award_pact
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = arbitrage_rhine
+			set_country_flag = arbitrage_northern_poland
+		}
+	}
 	option = {
 		name = ssw_foc_events.2.a
-		trigger = { GR0 = { is_subject_of = ROOT } }
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
 		ai_chance = { base = 10 }
 		every_state = {
 			limit = {
@@ -324,7 +335,12 @@ country_event = { #ライン裁定
 	}
 	option = {
 		name = ssw_foc_events.2.d
-		trigger = { WUR = { is_subject_of = ROOT } }
+		trigger = {
+			OR = {
+				WUR = { is_subject_of = ROOT }
+				is_in_faction_with = WUR
+			}
+		}
 		ai_chance = { base = 10 }
 		every_state = {
 			limit = {
@@ -341,7 +357,12 @@ country_event = { #ライン裁定
 	}
 	option = {
 		name = ssw_foc_events.2.e
-		trigger = { HAN = { is_subject_of = ROOT } }
+		trigger = {
+			OR = {
+				HAN = { is_subject_of = ROOT }
+				is_in_faction_with = HAN
+			}
+		}
 		ai_chance = { base = 10 }
 		every_state = {
 			limit = {
@@ -373,4 +394,762 @@ country_event = { #ライン裁定
 		}
 		puppet = GR1
 	}
+	option = {
+		name = ssw_foc_events.2.g
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_RHINE
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+}
+country_event = { #北ポーランドの運命
+	id = ssw_foc_events.3
+	title = ssw_foc_events.3.title
+	desc = ssw_foc_events.3.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = arbitrage_northern_poland
+			set_country_flag = arbitrage_katowice
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.c
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			POL = { transfer_state = PREV }
+			add_core_of = POL
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.d
+		trigger = { has_cosmetic_tag = RUS_empire }
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			add_core_of = ROOT
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.e
+		trigger = {
+			OR = {
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = PRE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 87
+					state = 97
+					state = 98
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PRE = { transfer_state = PREV }
+			add_core_of = PRE
+		}
+	}
+	option = {
+		name = ssw_foc_events.3.f
+		trigger = {
+			NOT = { has_cosmetic_tag = RUS_empire }
+			any_other_country = {
+				is_in_faction_with = ROOT
+				has_cosmetic_tag = RUS_empire
+			}
+		}
+		ai_chance = { base = 10 }
+		random_other_country = {
+			limit = {
+				is_in_faction_with = ROOT
+				has_cosmetic_tag = RUS_empire
+			}
+			every_state = {
+				limit = {
+					has_state_flag = maybe_core_POL
+					OR = {
+						state = 87
+						state = 97
+						state = 98
+					}
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				PREV.PREV = { transfer_state = PREV }
+				add_core_of = PREV.PREV
+			}
+		}
+	}
+}
+country_event = { #カトヴィツェの運命
+	id = ssw_foc_events.4
+	title = ssw_foc_events.4.title
+	desc = ssw_foc_events.4.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = arbitrage_katowice
+			set_country_flag = arbitrage_danzig
+		}
+	}
+	option = {
+		name = ssw_foc_events.4.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				state = 762
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.4.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				state = 762
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.4.c
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				state = 762
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			POL = { transfer_state = PREV }
+			add_core_of = POL
+		}
+	}
+	option = {
+		name = ssw_foc_events.4.d
+		trigger = {
+			OR = {
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = PRE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				state = 762
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PRE = { transfer_state = PREV }
+			add_core_of = PRE
+		}
+	}
+}
+country_event = { #ダンツィヒ裁定
+	id = ssw_foc_events.5
+	title = ssw_foc_events.5.title
+	desc = ssw_foc_events.5.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = arbitrage_danzig
+			set_country_flag = arbitrage_hinterpommern
+		}
+	}
+	option = {
+		name = ssw_foc_events.5.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.5.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.5.c
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			POL = { transfer_state = PREV }
+			add_core_of = POL
+		}
+	}
+	option = {
+		name = ssw_foc_events.5.d
+		trigger = {
+			OR = {
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = PRE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PRE = { transfer_state = PREV }
+			add_core_of = PRE
+		}
+	}
+}
+country_event = { #ヒンターポンメルンの運命
+	id = ssw_foc_events.6
+	title = ssw_foc_events.6.title
+	desc = ssw_foc_events.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = arbitrage_hinterpommern
+			set_country_flag = arbitrage_prussia
+		}
+	}
+	option = {
+		name = ssw_foc_events.6.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.6.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.6.c
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			POL = { transfer_state = PREV }
+			add_core_of = POL
+		}
+	}
+	option = {
+		name = ssw_foc_events.6.d
+		trigger = {
+			OR = {
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = PRE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PRE = { transfer_state = PREV }
+			add_core_of = PRE
+		}
+	}
+}
+country_event = { #ヒンターポンメルンの運命
+	id = ssw_foc_events.7
+	title = ssw_foc_events.7.title
+	desc = ssw_foc_events.7.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	immediate = { hidden_effect = { clr_country_flag = arbitrage_prussia } }
+	option = {
+		name = ssw_foc_events.7.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.7.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.7.c
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			POL = { transfer_state = PREV }
+			add_core_of = POL
+		}
+	}
+	option = {
+		name = ssw_foc_events.7.d
+		trigger = {
+			OR = {
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = PRE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PRE = { transfer_state = PREV }
+			add_core_of = PRE
+		}
+	}
+	option = {
+		name = ssw_foc_events.7.e
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+			OR = {
+				RUS = { is_subject_of = ROOT }
+				SOV = { is_subject_of = ROOT }
+				is_in_faction_with = RUS
+				is_in_faction_with = SOV
+			}
+		}
+		ai_chance = { base = 10 }
+		POL = {
+			transfer_state = 5
+			add_state_core = 5
+		}
+		if = {
+			limit = {
+				OR = {
+					RUS = { is_subject_of = ROOT }
+					is_in_faction_with = RUS
+				}
+			}
+			RUS = {
+				transfer_state = 763
+				add_state_core = 763
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					SOV = { is_subject_of = ROOT }
+					is_in_faction_with = SOV
+				}
+			}
+			SOV = {
+				transfer_state = 763
+				add_state_core = 763
+			}
+		}
+	}
+	option = {
+		name = ssw_foc_events.7.f
+		trigger = {
+			OR = {
+				POL = { is_subject_of = ROOT }
+				is_in_faction_with = POL
+			}
+			OR = {
+				LIT = { is_subject_of = ROOT }
+				is_in_faction_with = LIT
+			}
+		}
+		ai_chance = { base = 10 }
+		POL = {
+			transfer_state = 5
+			add_state_core = 5
+		}
+		LIT = {
+			transfer_state = 763
+			add_state_core = 763
+		}
+	}
+}
+country_event = { #領土接収
+	id = ssw_foc_events.8
+	hidden = yes
+	fire_only_once = no
+	trigger = {
+		is_subject = no
+		any_other_country = {
+			is_subject_of = ROOT
+			any_state = {
+				OR = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+				is_fully_controlled_by = PREV
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		every_other_country = {
+			limit = { is_subject_of = ROOT }
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+					is_fully_controlled_by = PREV.PREV
+				}
+				ROOT = { transfer_state = PREV }
+			}
+		}
+	}
+	option = { name = ssw_foc_events.8.a }
 }

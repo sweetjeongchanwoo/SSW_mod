@@ -56,7 +56,10 @@ add_ideas = {
 	#法
 	civilian_economy
 	free_trade
-	ssw_parliamentary_democracy_leftist_administration
+	vacancy_pl
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
 	vacancy_ma
 	#国民精神
 	SSW_ideas_CHL_fuantei_gikai

@@ -10,18 +10,16 @@ state={
 		oil=14 # was: 20
 		aluminium=30 # was: 52
 	}
-
-
 	history={
 		owner = LFF
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
+			4975 = { bunker = 5 }
+			10642 = { bunker = 5 }
 		}
 		add_core_of = LFF
-		victory_points = {
-			4975 1
-		}
+		victory_points = { 4975 1 }
 	}
 
 	provinces={
