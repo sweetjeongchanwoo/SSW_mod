@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 15		
+	}
+	
+  SpriteType = {
+    name = "GFX_idea_enrico_cerulli"
+		texturefile = "gfx/interface/ideas/NEA/idea_enrico_cerulli.dds"
+	}
+}

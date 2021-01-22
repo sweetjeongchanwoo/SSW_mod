@@ -213,4 +213,134 @@ fate_of_countries_category = {
 		}
 		ai_will_do = { factor = 200 }
 	}
+	fate_of_danzig = { #ダンツィヒ裁定
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_danzig
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 85
+					state = 86
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_danzig
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.5 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_hinterpommern = { #ヒンターポンメルンの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_hinterpommern
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 63
+					state = 66
+					state = 67
+					state = 68
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_hinterpommern
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.6 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_prussia = { #プロイセン地方の運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_prussia
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_POL
+				OR = {
+					state = 5
+					state = 763
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				POL = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+			}
+			has_country_flag = arbitrage_prussia
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.7 }
+		}
+		ai_will_do = { factor = 200 }
+	}
 }

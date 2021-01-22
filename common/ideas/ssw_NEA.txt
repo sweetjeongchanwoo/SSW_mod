@@ -1,0 +1,13 @@
+ideas = {
+	minister_of_foreign_affairs = {
+		NEA_enrico_cerulli = {
+			picture = enrico_cerulli
+			allowed = {
+				original_tag = NEA
+			}
+			traits = { 
+				tenacious_negotiator
+			}
+		}
+	}
+}
