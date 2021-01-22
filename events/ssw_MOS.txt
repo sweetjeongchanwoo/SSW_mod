@@ -9,9 +9,7 @@ country_event = {
 	option = {
 		name = sswmos.1.a
 		ai_chance = { factor = 1 }
-			country_event = { 
-				id = sswmos.4
-			}
+		country_event = { id = sswmos.4 days = 0 }
 		hidden_effect = {
 			set_capital = 351
 			BY0 = {
@@ -186,96 +184,77 @@ country_event = {
 	desc = sswmos.4.desc
 	picture = GFX_event_test
 	is_triggered_only = yes
-
 	option = { #ミハイル
 		name = sswmos.4.a
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU6 = { change_tag_from = ROOT }
 	}
-
 	option = { #ブラック
 		name = sswmos.4.b
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU7 = { change_tag_from = ROOT }
 	}
-
 	option = { #次のページ
 		name = sswmos.4.c
-		ai_chance = { factor = 1}
-			MOS = {
-				country_event = { 
-					id = sswmos.5
-				}
-			}
-		
+		ai_chance = { factor = 1 }
+		MOS = {
+			country_event = { id = sswmos.5 }
+		}
 	}
 }
-
 country_event = {
 	id = sswmos.5 #国家を選ぼう！（貴族・大司教・ロシアの空）
 	title = sswmos.5.title
 	desc = sswmos.5.desc
 	picture = GFX_event_test
 	is_triggered_only = yes
-
 	option = { #貴族
 		name = sswmos.5.a
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU2 = { change_tag_from = ROOT }
 	}
-
 	option = { #大司教
 		name = sswmos.5.b
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU3 = { change_tag_from = ROOT }
 	}
-
 	option = { #ロシアの空
 		name = sswmos.5.c
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU4 = { change_tag_from = ROOT }
 	}
-
 	option = { #次のページ
 		name = sswmos.5.d
 		ai_chance = { factor = 1}
-			MOS = {
-				country_event = { 
-					id = sswmos.6
-				}
-			}
-		
+		MOS = {
+			country_event = { id = sswmos.6 }
+		}
 	}
 }
-
 country_event = {
 	id = sswmos.6 #国家を選ぼう！（自由ロシア・ロシア帝国・全ロシア）
 	title = sswmos.6.title
 	desc = sswmos.6.desc
 	picture = GFX_event_test
 	is_triggered_only = yes
-
 	option = { #自由
 		name = sswmos.6.a
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU2 = { change_tag_from = ROOT }
 	}
-
 	option = { #帝国
 		name = sswmos.6.b
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU0 = { change_tag_from = ROOT }
 	}
-
 	option = { #全ロシア
 		name = sswmos.6.c
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		RU5 = { change_tag_from = ROOT }
 	}
-
 	option = { #次のページ
 		name = sswmos.6.d
-		ai_chance = { factor = 1}
+		ai_chance = { factor = 1 }
 			MOS = {
 				country_event = { 
 					id = sswmos.7
@@ -291,16 +270,13 @@ country_event = {
 	desc = sswmos.7.desc
 	picture = GFX_event_test
 	is_triggered_only = yes
-
 	option = { #白ロシア
 		name = sswmos.7.a
-		ai_chance = { factor = 0}
+		ai_chance = { factor = 0 }
 		BY0 = { change_tag_from = ROOT }
 	}
-
-
 	option = { #弁務官区
 		name = sswmos.7.b
-		
+		ai_chance = { factor = 2 }
 	}
 }
