@@ -2,6 +2,7 @@
 ##### フラグ #####
  had_yalta_conference:0 "ヤルタ会談が開催された。 "
  no_effect_tt:0 "一切の効果が期待されないだろう… "
+ next_decisions_70_tt:0 "§G70日以内は次のディシジョンが使用可能になる。 §!"
  arbitrage_rhine:0 "ライン裁定"
  arbitrage_northern_poland:0 "北ポーランドの運命"
  arbitrage_katowice:0 "カトヴィツェの運命"
@@ -18,6 +19,7 @@
  fate_of_danzig:0 "ダンツィヒ裁定"
  fate_of_hinterpommern:0 "ヒンターポンメルンの運命"
  fate_of_prussia:0 "プロイセン地方の運命"
+ fate_of_schleswig:0 "シュレースヴィヒの運命"
 ##### イベント #####
  ssw_foc_events.0.title:0 "ポルトガルの運命"
  ssw_foc_events.0.desc:0 "ポルトガルの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
@@ -69,3 +71,9 @@
  ssw_foc_events.7.d:0 "プロイセンに統合だ。 "
  ssw_foc_events.7.e:0 "ポーランドとロシアで分割だ。 "
  ssw_foc_events.7.f:0 "ポーランドとリトアニアで分割だ。 "
+ ssw_foc_events.9.title:0 "シュレースヴィヒの運命"
+ ssw_foc_events.9.desc:0 "シュレースヴィヒの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
+ ssw_foc_events.9.a:0 "ドイツ連合に統合だ。 "
+ ssw_foc_events.9.b:0 "反ナチス政府に統合だ。 "
+ ssw_foc_events.9.c:0 "シュレースヴィヒ＝ホルシュタインに統合だ。 "
+ ssw_foc_events.9.d:0 "デンマークに統合だ。 "
