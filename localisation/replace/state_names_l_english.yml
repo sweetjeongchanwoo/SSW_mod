@@ -306,6 +306,10 @@
  STATE_1036:0 "サララ"
  STATE_1037:0 "ダンケルク"
  STATE_1038:0 "アラス"
+<<<<<<< Updated upstream
  
  STATE_1040:0 "リオ・グランデ"
+=======
+ STATE_1038:0 "北ミシガン"
+>>>>>>> Stashed changes
 
