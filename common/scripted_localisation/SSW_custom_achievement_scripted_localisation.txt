@@ -1,0 +1,97 @@
+defined_text = {
+	name = ssw_achievement_united_states
+	text = {
+		trigger = {
+			OR = {
+				tag = UTC
+				tag = NEL
+				tag = FSA
+				tag = LUI
+				tag = BLS
+				tag = OKL
+				tag = TEX
+				tag = ANS
+				tag = LFF
+				tag = ALF
+			}
+			has_full_control_of_state = 358
+			has_full_control_of_state = 361
+			has_full_control_of_state = 371
+			has_full_control_of_state = 372
+			has_full_control_of_state = 395
+			has_full_control_of_state = 375
+			has_full_control_of_state = 896
+		}
+		localization_key = GFX_arsenal_of_democracy
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GFX_arsenal_of_democracy_grey
+	}
+	text = {
+		trigger = {
+			limit = {
+				OR = {
+					tag = UTC
+					tag = NEL
+					tag = FSA
+					tag = LUI
+					tag = BLS
+					tag = OKL
+					tag = TEX
+					tag = ANS
+					tag = LFF
+					tag = ALF
+				}
+			}
+			is_puppet = yes
+		}
+		localization_key = GFX_arsenal_of_democracy_not_eligible
+	}
+}
+defined_text = {
+	name = ssw_achievement_nuke
+	text = {
+		trigger = {
+			has_tech = nukes
+		}
+		localization_key = GFX_destroyer_of_worlds
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GFX_destroyer_of_worlds_grey
+	}
+	text = {
+		trigger = {
+			THIS = {
+				has_country_flag = baned_nuke
+			}
+		}
+		localization_key = GFX_destroyer_of_worlds_not_eligible
+	}
+}
+defined_text = {
+	name = ssw_achievement_anarchism_conquer
+	text = {
+		trigger = {
+			has_government = anarchism
+		}
+		localization_key = GFX_i_didnt_vote_for_you
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GFX_i_didnt_vote_for_you_grey
+	}
+	text = {
+		trigger = {
+			has_country_flag = this_gov_is_not_anarchy
+		}
+		localization_key = GFX_i_didnt_vote_for_you_not_eligible
+	}
+}

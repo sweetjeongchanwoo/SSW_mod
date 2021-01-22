@@ -267,7 +267,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "SSW_Policy_tab_industry"
 		position = { x=535 y=393 }
-		size = { width = 555 height = 190 }
+		size = { width = 555 height = 500 }
 		
 		background = {
 			name = "Background"		
@@ -289,6 +289,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "SSW_Policy_tab_industry_graph_num"
 			position = { x=85 y=-28 }
+			size = { width = 555 height = 190 }
+			
 			instantTextboxType = {
 				name = "100pct"
 				position = { x= 34 y = 65}
@@ -336,6 +338,16 @@ guiTypes = {
 				text = "0%"
 				maxWidth = 50
 				format = right
+			}
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_industry_investment"
+			position = { x=0 y=180 }
+			size = { width = 555 height = 320 }
+				
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_bg"
 			}
 		}
 	}

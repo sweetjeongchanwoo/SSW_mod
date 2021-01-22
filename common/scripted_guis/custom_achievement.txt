@@ -1,0 +1,59 @@
+scripted_gui = {
+	SSW_custom_achievement_open = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_custom_achievement_opener_container"
+
+		visible = {
+			is_ai = no
+		}
+		
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			view_CA_button_click = {
+				if = {
+					limit = { has_country_flag = open_CA_view }
+					clr_country_flag = open_CA_view
+				}
+				else = {
+					set_country_flag = open_CA_view
+				}
+			}
+		}
+	}
+	
+	SSW_custom_achievement_tab = {
+		window_name = "SSW_custom_achievement_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			has_country_flag = open_CA_view
+		}
+
+		ai_enabled = {
+			always = no
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = open_CA_view
+			}
+		}
+		properties = {
+			usa_achievement_icon = {
+				image = "[ssw_achievement_united_states]"
+			}
+			nuke_achievement_icon = {
+				image = "[ssw_achievement_nuke]"
+			}
+			anarchism_conquer_achievement_icon = {
+				image = "[ssw_achievement_anarchism_conquer]"
+			}
+		}
+	}
+}
+
