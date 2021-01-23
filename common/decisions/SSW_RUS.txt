@@ -712,3 +712,85 @@ RUS_ussr_revives = {
 		}
 	}
 }
+RUS_change_capital = {
+	capital_moscow = {
+		icon = generic_form_nation
+		available = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
+			}
+			NOT = { has_country_flag = configuration_capital_of_russia }
+			controls_state = 219
+			195 = { is_capital = no }
+			219 = { is_capital = no }
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
+			}
+			NOT = { has_country_flag = configuration_capital_of_russia }
+			controls_state = 219
+			195 = { is_capital = no }
+			219 = { is_capital = no }
+		}
+		complete_effect = {
+			set_capital = 219
+			hidden_effect = {
+				set_country_flag = configuration_capital_of_russia
+				set_country_flag = return_capital_of_moscow
+			}
+		}
+	}
+	capital_petersburg = {
+		icon = generic_form_nation
+		available = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
+			}
+			NOT = { has_country_flag = configuration_capital_of_russia }
+			controls_state = 195
+			195 = { is_capital = no }
+			219 = { is_capital = no }
+		}
+		cost = 150
+		fire_only_once = yes
+		ai_will_do = { factor = 10 }
+		visible = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
+			}
+			NOT = { has_country_flag = configuration_capital_of_russia }
+			controls_state = 195
+			195 = { is_capital = no }
+			219 = { is_capital = no }
+		}
+		complete_effect = {
+			set_capital = 195
+			195 = { set_state_name = Petersburg }
+			set_province_name = { id = 3151 name = Petersburg }
+			hidden_effect = {
+				set_country_flag = configuration_capital_of_russia
+				set_country_flag = return_capital_of_petersburg
+			}
+		}
+	}
+}

@@ -1,3 +1,30 @@
 fate_of_countries_category_eastern_europe = {
-	
+	fate_of_russia = { #ÉçÉVÉAÇÃâ^ñΩ
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			NOT = {
+				country_exists = RU8
+				country_exists = SOV
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = RU8
+					is_core_of = SOV
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			249 = { is_fully_controlled_by = ROOT }
+			has_global_flag = russian_war_end
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_eastern_europe.0 }
+		}
+		ai_will_do = { factor = 200 }
+	}
 }

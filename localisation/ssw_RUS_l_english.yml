@@ -490,6 +490,10 @@
  support_vorbeck:0 "フォルベックを支援"
  support_himmler:0 "ヒムラーを支援"
  support_goring:0 "ゲーリングを支援"
+ RUS_change_capital:0 "首都の変更"
+ capital_moscow:0 "モスクワに遷都"
+ capital_petersburg:0 "サンクトペテルブルクに遷都"
+ configuration_capital_of_russia:0 "遷都先が決まっていない。 "
 ##### TOOLTIP #####
  communism_down_tt:0 "共産主義者を§G弾圧§!する。 "
  communism_up_tt:0 "共産主義者の影響力が§R上昇§!する。 "
@@ -503,6 +507,7 @@
  lock_minister_available_tt:0 "この閣僚は手動で変更できません。 "
  army_coup_tt:0 "§R軍隊によるクーデターが発生し、 我が国は軍事独裁体制へと移行するだろう… §!"
  anarchist_secretary_tt:0 "§Rもはやロシアの政府は崩壊し、 無政府状態へと陥るだろう… §!"
+ Petersburg:0 "サンクトペテルブルク"
  RUS_anachism_flag:0 "無政府主義社会が改良された。 "
 ##### イベント #####
  ssw_rus_communism.1000.title:0 "メーデーのデモ"

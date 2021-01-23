@@ -1,1 +1,166 @@
 add_namespace = ssw_foc_eastern_europe
+country_event = { #ÉçÉVÉAÇÃâ^ñΩ
+	id = ssw_foc_eastern_europe.0
+	title = ssw_foc_eastern_europe.0.title
+	desc = ssw_foc_eastern_europe.0.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_eastern_europe.0.a
+		ai_chance = { base = 10 }
+		trigger = {
+			NOT = {
+				SIB = { is_subject_of = ROOT }
+				MOS = { is_subject_of = ROOT }
+				is_in_faction_with = SIB
+				is_in_faction_with = MOS
+				original_tag = SIB
+				original_tag = MOS
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = progressive_communism
+					has_government = classical_communism
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RU8
+						is_core_of = SOV
+					}
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+						is_core_of = WTR
+						is_core_of = TUV
+						is_core_of = BLR
+						is_core_of = UKR
+						is_core_of = BAL
+						is_core_of = FIN
+						is_core_of = CCS
+					}
+				}
+				SOV = { transfer_state = PREV }
+				add_core_of = SOV
+				if = {
+					limit = { SOV = { has_cosmetic_tag = SOV_provisional } }
+					SOV = { drop_cosmetic_tag = yes }
+				}
+			}
+			puppet = SOV
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = social_conservatism
+					has_government = authority_despotism
+					has_government = authority_democracy
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RU8
+						is_core_of = SOV
+					}
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+						is_core_of = WTR
+						is_core_of = TUV
+						is_core_of = BLR
+						is_core_of = UKR
+						is_core_of = BAL
+						is_core_of = FIN
+						is_core_of = CCS
+					}
+				}
+				RU8 = { transfer_state = PREV }
+				add_core_of = RU8
+			}
+			puppet = RU8
+		}
+	}
+	option = {
+		name = ssw_foc_eastern_europe.0.b
+		ai_chance = { base = 10 }
+		trigger = {
+			OR = {
+				SIB = { is_subject_of = ROOT }
+				is_in_faction_with = SIB
+				original_tag = SIB
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = RU8
+					is_core_of = SOV
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					is_core_of = WTR
+					is_core_of = TUV
+					is_core_of = BLR
+					is_core_of = UKR
+					is_core_of = BAL
+					is_core_of = FIN
+					is_core_of = CCS
+				}
+			}
+			SIB = {
+				transfer_state = PREV
+				set_cosmetic_tag = SIB_russia
+			}
+			add_core_of = SIB
+		}
+	}
+	option = {
+		name = ssw_foc_eastern_europe.0.c
+		ai_chance = { base = 10 }
+		trigger = {
+			OR = {
+				MOS = { is_subject_of = ROOT }
+				is_in_faction_with = MOS
+				original_tag = MOS
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = RU8
+					is_core_of = SOV
+				}
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					is_core_of = WTR
+					is_core_of = TUV
+					is_core_of = BLR
+					is_core_of = UKR
+					is_core_of = BAL
+					is_core_of = FIN
+					is_core_of = CCS
+				}
+			}
+			MOS = {
+				transfer_state = PREV
+				set_cosmetic_tag = MOS_russia
+			}
+			add_core_of = MOS
+		}
+	}
+}
