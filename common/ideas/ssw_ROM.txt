@@ -8,11 +8,11 @@
 				always = no
 			}
 			removal_cost = -1 
-			picture =  
+			#picture =  
 			modifier = {
 			}
 		}
-		Codreanu's_children = {  
+		Codreanus_children = {  
 			allowed = { 
 				always = yes
 			}
@@ -20,7 +20,7 @@
 				always = no
 			}
 			removal_cost = -1 
-			picture =  
+			#picture =  
 			modifier = {
 			}
 		}
@@ -32,7 +32,7 @@
 				always = no
 			}
 			removal_cost = -1
-			picture = 
+			#picture = 
 			modifier = {
 		}
 		Legion = {
@@ -43,7 +43,7 @@
 				always = no
 			}
 			removal_cost = -1
-			picture = 
+			#picture = 
 			modifier = {
 		}
 		Establish_military_dictatorship = {
@@ -54,7 +54,7 @@
 				always = no
 			}
 			removal_cost = -1
-			picture = 
+			#picture = 
 			modifier = {
 		}
     }
