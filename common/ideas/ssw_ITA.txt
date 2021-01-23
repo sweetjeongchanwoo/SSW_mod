@@ -391,7 +391,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				research_bonus = { industry = 0.05 }
+				#research_bonus = { industry = 0.05 }
 			}
 		}
 		#労働環境の整備

@@ -1,7 +1,7 @@
 ideas = {
 	###財務大臣###
     minister_of_finance = {
-       TUR_İsmail_Rüştü_Aksal = {
+       TUR_Ismail_Rustu_Aksal = {
 
            available = {
                       always = no
@@ -18,7 +18,7 @@ ideas = {
              }
            cancel_if_invalid = no
        }
-       TUR_Kasım_Gülek = {
+       TUR_Kasım_Gulek = {
 
         available = {
                    always = no
@@ -54,7 +54,7 @@ political_leader = {
 
        cancel_if_invalid = no
    }
-   TUR_Faik_Ahmet_Barutçu = {
+   TUR_Faik_Ahmet_Barutcu = {
 
     available = {
                always = no
@@ -70,7 +70,7 @@ political_leader = {
 
     cancel_if_invalid = no
 }
-TUR_Celâl_Bayar = {
+TUR_Celal_Bayar = {
 
     available = {
                always = no
@@ -105,7 +105,7 @@ minister_of_interior = {
 
        cancel_if_invalid = no
    }
-   TUR_Şemsettin_Günaltay = {
+   TUR_Semsettin_Gunaltay = {
 
     available = {
                always = no

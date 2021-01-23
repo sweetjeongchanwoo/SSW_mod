@@ -75,7 +75,7 @@ leader_traits = {
 	Specters_of_Showa = {
 		random = no
 		political_power_gain = 0.2
-		political_advisor_cost_factor = -0.2
+		#political_advisor_cost_factor = -0.2
 		consumer_goods_factor = -0.05
 	}
 	demon_spawned_by_vanity = {
@@ -116,12 +116,12 @@ leader_traits = {
 		economy_cost_factor = -0.35
 	}
 	Big_names_in_architecture = {
-		random = yed
+		random = yes
 		production_speed_buildings_factor = 0.1
 		production_speed_infrastructure_factor = 0.15
 	}
 	computer_bulldozer = {
-		random = yed
+		random = yes
 		production_speed_buildings_factor = 0.1
 		production_speed_infrastructure_factor = 0.15
 	}
@@ -133,7 +133,7 @@ leader_traits = {
 	liberal_aristocrat = {
 		random = yes
 		stability_factor = 0.05
-		political_advisor_cost_factor = -0.25
+		#political_advisor_cost_factor = -0.25
 	}
 	Heroes_of_the_last_war = {
 		random = no

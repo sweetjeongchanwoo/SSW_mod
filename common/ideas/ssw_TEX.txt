@@ -174,7 +174,6 @@ ideas = {
 				out_of_supply_factor = -0.10
 				no_supply_grace = 24
 				Resistance_damage_to_garrison_on_our_occupied_states = 0.1
-				resistance_damage_to_garrison_on_our_occupied_states = 0.1
 
 		    }
 		}
