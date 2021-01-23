@@ -459,7 +459,8 @@ completion_reward = {
 	}
 	add_resource = {
 		type = iron
-		amount = 2
+		amount = 25
+		state = 2
 		}
 }
 }
@@ -849,7 +850,7 @@ shared_focus = {
 }
 #植民地開発
 shared_focus = {
-	id = ITA_focus_balbo_
+	id = ITA_focus_balbo_colonial_development
 	icon = GFX_focus_generic_treaty
 	cost = 1.00
 	prerequisite = {
@@ -867,5 +868,9 @@ shared_focus = {
 	x = 9
 	y = 5
 	completion_reward = {
+		country_event = {
+			id = SSW_ITA.12
+		}
+		add_political_power = 50
 	}
 }
