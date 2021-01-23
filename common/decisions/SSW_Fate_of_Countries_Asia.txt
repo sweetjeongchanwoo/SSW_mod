@@ -1,0 +1,3 @@
+fate_of_countries_category_asia = {
+	
+}

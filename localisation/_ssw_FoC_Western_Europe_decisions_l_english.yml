@@ -10,7 +10,7 @@
  arbitrage_hinterpommern:0 "ヒンターポンメルンの運命"
  arbitrage_prussia:0 "プロイセン地方の運命"
 ##### ディシジョン #####
- fate_of_countries_category:0 "占領地の運命"
+ fate_of_countries_category_western_europe:0 "占領地の運命"
  fate_of_portugal:0 "@POR ポルトガルの運命"
  fate_of_germany:0 "@GER ドイツの運命"
  fate_of_rhine:0 "ライン裁定"

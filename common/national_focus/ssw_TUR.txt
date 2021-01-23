@@ -2776,6 +2776,7 @@ state =413
 			factor = 1
 		}
 		completion_reward = {
+			create_faction = THE_MIDDLE_EAST_UNION
 		}
 	}
 	#Focus for black_gold

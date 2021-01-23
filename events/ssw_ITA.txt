@@ -121,3 +121,14 @@ country_event = {
 		name = SSW_ITA.11.a
 	}
 }
+#植民地開発
+country_event = {
+    id = SSW_ITA.12
+	title = SSW_ITA.12.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = SSW_ITA.12.d
+	option = {
+		name = SSW_ITA.12.a
+	}
+}

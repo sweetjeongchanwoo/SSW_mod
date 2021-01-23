@@ -1,0 +1,12 @@
+﻿l_english:
+##### フラグ #####
+ 
+##### ディシジョン #####
+ fate_of_turkey:0"@TUR トルコの運命"
+ fate_of_iraq:0"@IRQ イラクの運命"
+##### イベント #####
+ ssw_foc_middle_east.0.t:0"トルコの運命"
+ ssw_foc_middle_east.0.d:0"我々はトルコを降伏にいたらしめた。彼らの運命は、我々によって決まる。"
+ ssw_foc_middle_east.1.t:0"イラクの運命"
+ ssw_foc_middle_east.1.d:0"古代メソパタミアの地は、我々の手に落ちた。選択は我々によってのみ決まる。"
+ ssw_foc_middle_east.2.t:0"シリアの運命"

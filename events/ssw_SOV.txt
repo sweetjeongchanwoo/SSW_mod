@@ -23,6 +23,7 @@ country_event = {
 					is_core_of = UKR
 					is_core_of = CCS
 					is_core_of = BAL
+					is_core_of = PET
 					is_core_of = SIB
 				}
 				NOT = { is_core_of = SOV }
@@ -33,6 +34,7 @@ country_event = {
 			limit = { SOV = { has_cosmetic_tag = SOV_provisional } }
 			SOV = { drop_cosmetic_tag = yes }
 		}
+		set_global_flag = russian_war_end
 	}
 	option = { name = ssw_ussr.0.a }
 }
@@ -61,7 +63,10 @@ country_event = {
 			add_core_of = RUS
 			remove_core_of = SOV
 		}
-		hidden_effect = { set_global_flag = arrest_konev }
+		hidden_effect = {
+			set_global_flag = arrest_konev
+			set_global_flag = russian_war_end
+		}
 	}
 }
 country_event = {

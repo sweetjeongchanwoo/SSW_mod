@@ -1,0 +1,73 @@
+add_namespace = ssw_foc_middle_east
+#トルコの運命
+country_event = {
+    id = ssw_foc_middle_east.0
+	title = ssw_foc_middle_east.0.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.0.d
+	option = {
+        name = ssw_foc_middle_east.0.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = TUR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			TUR = { transfer_state = PREV }
+		}
+		puppet = TUR
+	}
+}
+#イラクの運命
+country_event = {
+    id = ssw_foc_middle_east.1
+	title = ssw_foc_middle_east.1.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.1.d
+	option = {
+        name = ssw_foc_middle_east.1.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = IRQ
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			IRQ = { transfer_state = PREV }
+		}
+		puppet = IRQ
+	}
+}
+#シリアの運命
+country_event = {
+    id = ssw_foc_middle_east.2
+	title = ssw_foc_middle_east.2.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.2.d
+	option = {
+        name = ssw_foc_middle_east.2.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = SYR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SYR = { transfer_state = PREV }
+		}
+		puppet = SYR
+	}
+}
