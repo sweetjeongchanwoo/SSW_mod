@@ -11,10 +11,9 @@ ITA_Expanding_the_Outstrada = { #カテゴリーID
 		visible = { #見えるようになる条件
 		}
 		cost = 30 #消費する政治力
-		fire_only_once = no #何回も使えるか
+		fire_only_once = yes #何回も使えるか
 		days_remove = 30 #決定したときにディシジョンを取得しきれる日数
 		remove_effect = {
-			set_country_flag = Complete_ITA_Expansion_in_the_northern_region
 		}
 	}
 	#中央地域での拡張
@@ -29,10 +28,9 @@ ITA_Expanding_the_Outstrada = { #カテゴリーID
 		visible = { #見えるようになる条件
 		}
 		cost = 30 #消費する政治力
-		fire_only_once = no #何回も使えるか
+		fire_only_once = yes #何回も使えるか
 		days_remove = 30 #決定したときにディシジョンを取得しきれる日数
 		remove_effect = {
-			set_country_flag = Complete_ITA_Expansion_in_the_central_region
 		}
 	}
 	#南部地域での拡張
@@ -47,10 +45,9 @@ ITA_Expanding_the_Outstrada = { #カテゴリーID
 		visible = { #見えるようになる条件
 		}
 		cost = 30 #消費する政治力
-		fire_only_once = no #何回も使えるか
+		fire_only_once = yes #何回も使えるか
 		days_remove = 30 #決定したときにディシジョンを取得しきれる日数
 		remove_effect = {
-			set_country_flag = Complete_ITA_Expansion_in_the_southern_region
 		}
 	}
 	#アドリア海地域への拡張
@@ -65,10 +62,9 @@ ITA_Expanding_the_Outstrada = { #カテゴリーID
 		visible = { #見えるようになる条件
 		}
 		cost = 30 #消費する政治力
-		fire_only_once = no #何回も使えるか
+		fire_only_once = yes #何回も使えるか
 		days_remove = 30 #決定したときにディシジョンを取得しきれる日数
 		remove_effect = {
-			set_country_flag = Complete_ITA_Expansion_to_the_Adriatic_region
 		}
 	}
 	#計画の完了
@@ -79,15 +75,15 @@ ITA_Expanding_the_Outstrada = { #カテゴリーID
 		}
 		allowed = {
 			original_tag = ITA #踏めるようになる条件
-			has_country_flag = Complete_ITA_Expansion_in_the_northern_region
-			has_country_flag = Complete_ITA_Expansion_in_the_central_region
-			has_country_flag = Complete_ITA_Expansion_in_the_southern_region
-			has_country_flag = Complete_ITA_Expansion_to_the_Adriatic_region
+			has_decision = ITA_Expansion_in_the_northern_region
+			has_decision = ITA_Expansion_in_the_central_region
+			has_decision = ITA_Expansion_in_the_southern_region
+			has_decision = ITA_Expansion_to_the_Adriatic_region
 		}
 		visible = { #見えるようになる条件
 		}
 		cost = 30 #消費する政治力
-		fire_only_once = no #何回も使えるか
+		fire_only_once = yes #何回も使えるか
 		days_remove = 30 #決定したときにディシジョンを取得しきれる日数
 		remove_effect = {
 		}

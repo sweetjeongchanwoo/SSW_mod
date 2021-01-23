@@ -131,7 +131,14 @@ country_event = { #ドイツの運命
 			}
 			puppet = LTV
 		}
-		set_country_flag = arbitrage_rhine
+		custom_effect_tooltip = next_decisions_70_tt
+		hidden_effect = {
+			set_country_flag = {
+				flag = arbitrage_rhine
+				value = 1
+				days = 70
+			}
+		}
 	}
 	option = {
 		name = ssw_foc_events.1.b
@@ -248,7 +255,14 @@ country_event = { #ドイツの運命
 		puppet = MEK
 		puppet = SAX
 		puppet = PRE
-		set_country_flag = arbitrage_rhine
+		custom_effect_tooltip = next_decisions_70_tt
+		hidden_effect = {
+			set_country_flag = {
+				flag = arbitrage_rhine
+				value = 1
+				days = 70
+			}
+		}
 	}
 }
 country_event = { #ライン裁定
@@ -260,7 +274,11 @@ country_event = { #ライン裁定
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = arbitrage_rhine
-			set_country_flag = arbitrage_northern_poland
+			set_country_flag = {
+				flag = arbitrage_northern_poland
+				value = 1
+				days = 70
+			}
 		}
 	}
 	option = {
@@ -284,6 +302,7 @@ country_event = { #ライン裁定
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.b
@@ -308,6 +327,7 @@ country_event = { #ライン裁定
 			FRA = { transfer_state = PREV }
 			add_core_of = FRA
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.c
@@ -332,6 +352,7 @@ country_event = { #ライン裁定
 			NFR = { transfer_state = PREV }
 			add_core_of = NFR
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.d
@@ -354,6 +375,7 @@ country_event = { #ライン裁定
 			WUR = { transfer_state = PREV }
 			add_core_of = WUR
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.e
@@ -376,6 +398,7 @@ country_event = { #ライン裁定
 			HAN = { transfer_state = PREV }
 			add_core_of = HAN
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.f
@@ -393,6 +416,7 @@ country_event = { #ライン裁定
 			add_core_of = GR1
 		}
 		puppet = GR1
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.2.g
@@ -415,6 +439,7 @@ country_event = { #ライン裁定
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #北ポーランドの運命
@@ -426,7 +451,11 @@ country_event = { #北ポーランドの運命
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = arbitrage_northern_poland
-			set_country_flag = arbitrage_katowice
+			set_country_flag = {
+				flag = arbitrage_katowice
+				value = 1
+				days = 70
+			}
 		}
 	}
 	option = {
@@ -455,6 +484,7 @@ country_event = { #北ポーランドの運命
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.3.b
@@ -482,6 +512,7 @@ country_event = { #北ポーランドの運命
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.3.c
@@ -509,6 +540,7 @@ country_event = { #北ポーランドの運命
 			POL = { transfer_state = PREV }
 			add_core_of = POL
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.3.d
@@ -530,6 +562,7 @@ country_event = { #北ポーランドの運命
 			}
 			add_core_of = ROOT
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.3.e
@@ -557,6 +590,7 @@ country_event = { #北ポーランドの運命
 			PRE = { transfer_state = PREV }
 			add_core_of = PRE
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.3.f
@@ -591,6 +625,7 @@ country_event = { #北ポーランドの運命
 				add_core_of = PREV.PREV
 			}
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #カトヴィツェの運命
@@ -602,7 +637,11 @@ country_event = { #カトヴィツェの運命
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = arbitrage_katowice
-			set_country_flag = arbitrage_danzig
+			set_country_flag = {
+				flag = arbitrage_danzig
+				value = 1
+				days = 70
+			}
 		}
 	}
 	option = {
@@ -627,6 +666,7 @@ country_event = { #カトヴィツェの運命
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.4.b
@@ -650,6 +690,7 @@ country_event = { #カトヴィツェの運命
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.4.c
@@ -673,6 +714,7 @@ country_event = { #カトヴィツェの運命
 			POL = { transfer_state = PREV }
 			add_core_of = POL
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.4.d
@@ -696,6 +738,7 @@ country_event = { #カトヴィツェの運命
 			PRE = { transfer_state = PREV }
 			add_core_of = PRE
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #ダンツィヒ裁定
@@ -707,7 +750,11 @@ country_event = { #ダンツィヒ裁定
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = arbitrage_danzig
-			set_country_flag = arbitrage_hinterpommern
+			set_country_flag = {
+				flag = arbitrage_hinterpommern
+				value = 1
+				days = 70
+			}
 		}
 	}
 	option = {
@@ -735,6 +782,7 @@ country_event = { #ダンツィヒ裁定
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.5.b
@@ -761,6 +809,7 @@ country_event = { #ダンツィヒ裁定
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.5.c
@@ -787,6 +836,7 @@ country_event = { #ダンツィヒ裁定
 			POL = { transfer_state = PREV }
 			add_core_of = POL
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.5.d
@@ -813,6 +863,7 @@ country_event = { #ダンツィヒ裁定
 			PRE = { transfer_state = PREV }
 			add_core_of = PRE
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #ヒンターポンメルンの運命
@@ -824,7 +875,11 @@ country_event = { #ヒンターポンメルンの運命
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = arbitrage_hinterpommern
-			set_country_flag = arbitrage_prussia
+			set_country_flag = {
+				flag = arbitrage_prussia
+				value = 1
+				days = 70
+			}
 		}
 	}
 	option = {
@@ -854,6 +909,7 @@ country_event = { #ヒンターポンメルンの運命
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.6.b
@@ -882,6 +938,7 @@ country_event = { #ヒンターポンメルンの運命
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.6.c
@@ -910,6 +967,7 @@ country_event = { #ヒンターポンメルンの運命
 			POL = { transfer_state = PREV }
 			add_core_of = POL
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.6.d
@@ -938,6 +996,7 @@ country_event = { #ヒンターポンメルンの運命
 			PRE = { transfer_state = PREV }
 			add_core_of = PRE
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #ヒンターポンメルンの運命
@@ -972,6 +1031,7 @@ country_event = { #ヒンターポンメルンの運命
 			GR0 = { transfer_state = PREV }
 			add_core_of = GR0
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.7.b
@@ -998,6 +1058,7 @@ country_event = { #ヒンターポンメルンの運命
 			LTV = { transfer_state = PREV }
 			add_core_of = LTV
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.7.c
@@ -1024,6 +1085,7 @@ country_event = { #ヒンターポンメルンの運命
 			POL = { transfer_state = PREV }
 			add_core_of = POL
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.7.d
@@ -1050,6 +1112,7 @@ country_event = { #ヒンターポンメルンの運命
 			PRE = { transfer_state = PREV }
 			add_core_of = PRE
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.7.e
@@ -1094,6 +1157,7 @@ country_event = { #ヒンターポンメルンの運命
 				add_state_core = 763
 			}
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 	option = {
 		name = ssw_foc_events.7.f
@@ -1116,6 +1180,7 @@ country_event = { #ヒンターポンメルンの運命
 			transfer_state = 763
 			add_state_core = 763
 		}
+		custom_effect_tooltip = next_decisions_70_tt
 	}
 }
 country_event = { #領土接収
@@ -1152,4 +1217,99 @@ country_event = { #領土接収
 		}
 	}
 	option = { name = ssw_foc_events.8.a }
+}
+country_event = { #シュレースヴィヒの運命
+	id = ssw_foc_events.9
+	title = ssw_foc_events.9.title
+	desc = ssw_foc_events.9.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_events.9.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				state = 812
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.9.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				state = 812
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.9.c
+		trigger = {
+			OR = {
+				SHL = { is_subject_of = ROOT }
+				is_in_faction_with = SHL
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				state = 812
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SHL = { transfer_state = PREV }
+			add_core_of = SHL
+		}
+	}
+	option = {
+		name = ssw_foc_events.9.d
+		trigger = {
+			OR = {
+				DEN = { is_subject_of = ROOT }
+				is_in_faction_with = DEN
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				state = 812
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			DEN = { transfer_state = PREV }
+			add_core_of = DEN
+		}
+	}
 }

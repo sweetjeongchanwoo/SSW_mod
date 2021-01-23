@@ -43,8 +43,6 @@ scripted_gui = {
 				set_variable = { selected_policy_bar_button = 0 }
 			}
 		}
-		properties = {
-		}
 	}
 	
 	SSW_Policy_tab_focuses = {
@@ -168,7 +166,6 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			# Optional. This hides every other x label, to give them some breathing room
 			label_visible = {
 				set_temp_variable = { si = segment_idx }
 				modulo_temp_variable = { si = 2 }

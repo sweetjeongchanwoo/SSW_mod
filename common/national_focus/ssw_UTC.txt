@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		#連合の課題
 		id = UTC_the_problem
-		icon = GFX_goal_unknown
+		icon = GFX_focus_UTC_flag
 		cost = 5
 		x = 7
 		y = 0

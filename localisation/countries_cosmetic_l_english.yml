@@ -108,6 +108,18 @@
  SRD_piedmont_union_DEF:0 "サルデーニャ＝ピエモンテ連合"
  SRD_piedmont_union_ADJ:0 "サルデーニャ＝ピエモンテ"
  
+ SIB_russia:0 "ロシア合衆国"
+ SIB_russia_DEF:0 "ロシア合衆国"
+ SIB_russia_ADJ:0 "ロシア"
+ 
+ MOS_russia:0 "ロシア連邦"
+ MOS_russia_DEF:0 "ロシア連邦"
+ MOS_russia_ADJ:0 "ロシア"
+ 
+ LFF_unification:0 "アメリカ人民共和国"
+ LFF_unification_DEF:0 "アメリカ人民共和国"
+ LFF_unification_ADJ:0 "アメリカ"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
