@@ -625,7 +625,7 @@ completion_reward = {
 		}
 		add_ideas = ITA_idea_22
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = ITA_idea_14
 		}
