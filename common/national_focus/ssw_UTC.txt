@@ -1022,6 +1022,35 @@ focus_tree = {
 		}
 		x = 37
 		y = 1
+		completion_reward = {
+			add_state_core = 360
+			add_state_core = 359
+			add_state_core = 361
+			add_state_core = 362
+			add_state_core = 369
+			add_state_core = 368
+			add_state_core = 363
+			add_state_core = 364
+			add_state_core = 365
+			add_state_core = 367
+			add_state_core = 370
+			add_state_core = 910
+			add_state_core = 366
+			add_state_core = 387
+			add_state_core = 380
+			add_state_core = 377
+			add_state_core = 378
+			add_state_core = 899
+			add_state_core = 379
+			add_state_core = 900
+			add_state_core = 901
+			add_state_core = 386
+			add_state_core = 385
+			add_state_core = 897
+			add_state_core = 898
+			add_state_core = 896
+			add_state_core = 895
+		}
 	}
 	focus = {
 		#南部旧領の回収
@@ -1030,6 +1059,32 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = UTC_for_perfect_unification
+		}
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = LFF
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ANS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OKL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BLS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LUI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = TEX
+			}
 		}
 		x = 37
 		y = 2
@@ -1110,6 +1165,9 @@ focus_tree = {
 		}
 		x = 45
 		y = 6
+		available = {
+			has_completed_focus = UTC_united_company_of_america
+		}
 	}
 	focus = {
 		#孤独の道
