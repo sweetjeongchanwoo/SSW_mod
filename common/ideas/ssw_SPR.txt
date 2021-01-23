@@ -32,7 +32,6 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = -0.1	
 				army_core_defence_factor = -0.1
-				#neutrality_drift = 0.10
 				stability_factor = -0.1
 							}
 						}
@@ -84,7 +83,6 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.15
-				#political_advisor_cost_factor = 0.15
 				trade_laws_cost_factor = 0.15
 				mobilization_laws_cost_factor = 0.15
 				economy_cost_factor = 0.15
@@ -375,7 +373,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.2
-				#neutrality_acceptance = 85
 				drift_defence_factor = 0.2		
 					}
 		}
@@ -392,7 +389,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.2
-				#neutrality_drift = 0.2
 				drift_defence_factor = 0.2
 				army_core_attack_factor = 0.1	
 				army_core_defence_factor = 0.1		
