@@ -1,4 +1,4 @@
-fate_of_countries_category = {
+fate_of_countries_category_western_europe = {
 	allowed = { always = yes }
 	visible = {
 		NOT = { has_government = anarchism }

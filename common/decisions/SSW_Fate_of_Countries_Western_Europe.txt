@@ -1,4 +1,4 @@
-fate_of_countries_category = {
+fate_of_countries_category_western_europe = {
 	fate_of_portugal = { #ƒ|ƒ‹ƒgƒKƒ‹‚Ì‰^–½
 		icon = generic_operation
 		allowed = { always = yes }
