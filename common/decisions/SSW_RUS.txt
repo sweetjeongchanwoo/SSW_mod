@@ -1,128 +1,86 @@
-reintegrate_states = {
-	reintegrate_146 = {
-		icon = generic_operation
+RUS_reintegrate_states = {
+	add_core_states_of_russia = {
+		icon = generic_nationalism
 		available = {
-			owns_state = 146
+			NOT = { has_country_flag = adding_state_core }
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 146
+						state = 147
+						state = 213
+						state = 215
+						state = 216
+						state = 537
+						state = 555
+						state = 655
+						state = 722
+					}
+				}
+			}
 		}
-		fire_only_once = no
+		state_target = yes
+		on_map_mode = map_only
+		target_array = controlled_states
+		target_trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
+			}
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 146
+						state = 147
+						state = 213
+						state = 215
+						state = 216
+						state = 537
+						state = 555
+						state = 655
+						state = 722
+					}
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		modifier = { political_power_gain = -1 }
 		visible = {
 			OR = {
-				tag = RUS
-				tag = SOV
+				original_tag = RUS
+				original_tag = SOV
+				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
 			}
-			owns_state = 146
-			NOT = { 146 = { is_core_of = ROOT } }
-		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
-		remove_effect = {
-			add_state_core = 146
-		}
-	}
-	reintegrate_147 = {
-		icon = generic_operation
-		available = {
-			owns_state = 147
-		}
-		fire_only_once = no
-		visible = {
-			OR = {
-				tag = RUS
-				tag = SOV
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 146
+						state = 147
+						state = 213
+						state = 215
+						state = 216
+						state = 537
+						state = 555
+						state = 655
+						state = 722
+					}
+				}
 			}
-			owns_state = 147
-			NOT = { 147 = { is_core_of = ROOT } }
 		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
+		complete_effect = { set_country_flag = adding_state_core }
 		remove_effect = {
-			add_state_core = 147
-		}
-	}
-	reintegrate_213 = {
-		icon = generic_operation
-		available = {
-			owns_state = 213
-		}
-		fire_only_once = no
-		visible = {
-			OR = {
-				tag = RUS
-				tag = SOV
-			}
-			owns_state = 213
-			NOT = { 213 = { is_core_of = ROOT } }
-		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
-		remove_effect = {
-			add_state_core = 213
-		}
-	}
-	reintegrate_215 = {
-		icon = generic_operation
-		available = {
-			owns_state = 215
-		}
-		fire_only_once = no
-		visible = {
-			OR = {
-				tag = RUS
-				tag = SOV
-			}
-			owns_state = 215
-			NOT = { 215 = { is_core_of = ROOT } }
-		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
-		remove_effect = {
-			add_state_core = 215
-		}
-	}
-	reintegrate_216 = {
-		icon = generic_operation
-		available = {
-			owns_state = 216
-		}
-		fire_only_once = no
-		visible = {
-			OR = {
-				tag = RUS
-				tag = SOV
-			}
-			owns_state = 216
-			NOT = { 216 = { is_core_of = ROOT } }
-		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
-		remove_effect = {
-			add_state_core = 216
-		}
-	}
-	reintegrate_722 = {
-		icon = generic_operation
-		available = {
-			owns_state = 722
-		}
-		fire_only_once = no
-		visible = {
-			OR = {
-				tag = RUS
-				tag = SOV
-			}
-			owns_state = 722
-			NOT = { 722 = { is_core_of = ROOT } }
-		}
-		ai_will_do = { factor = 10 }
-		days_remove = 70
-		cost = 50
-		remove_effect = {
-			add_state_core = 722
+			clr_country_flag = adding_state_core
+			FROM = { add_core_of = ROOT }
 		}
 	}
 }
@@ -130,8 +88,6 @@ interventio_in_german_civil_war = {
 	support_nazism = {
 		icon = ger_reichskommissariats
 		available = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
 			has_equipment = { infantry_equipment > 1499 }
 			GER = {
 				OR = {
@@ -142,17 +98,14 @@ interventio_in_german_civil_war = {
 			}
 			NOT = { has_country_flag = support_germany }
 		}
-		cost = 100
+		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
-		}
+		visible = { always = yes }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = GER type = infantry_equipment amount = 1500 }
-			GER = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			reverse_add_opinion_modifier = { target = GER modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
 				GER = {
@@ -166,8 +119,6 @@ interventio_in_german_civil_war = {
 	support_vorbeck = {
 		icon = ger_reichskommissariats
 		available = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
 			has_equipment = { infantry_equipment > 1499 }
 			LTV = {
 				OR = {
@@ -178,17 +129,14 @@ interventio_in_german_civil_war = {
 			}
 			NOT = { has_country_flag = support_germany }
 		}
-		cost = 100
+		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
-		}
+		visible = { always = yes }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = LTV type = infantry_equipment amount = 1500 }
-			LTV = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			reverse_add_opinion_modifier = { target = LTV modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
 				LTV = {
@@ -202,8 +150,6 @@ interventio_in_german_civil_war = {
 	support_himmler = {
 		icon = ger_reichskommissariats
 		available = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
 			has_equipment = { infantry_equipment > 1499 }
 			HLH = {
 				OR = {
@@ -214,17 +160,14 @@ interventio_in_german_civil_war = {
 			}
 			NOT = { has_country_flag = support_germany }
 		}
-		cost = 100
+		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
-		}
+		visible = { always = yes }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = HLH type = infantry_equipment amount = 1500 }
-			HLH = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			reverse_add_opinion_modifier = { target = HLH modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
 				HLH = {
@@ -238,8 +181,6 @@ interventio_in_german_civil_war = {
 	support_goring = {
 		icon = ger_reichskommissariats
 		available = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
 			has_equipment = { infantry_equipment > 1499 }
 			HGR = {
 				OR = {
@@ -250,17 +191,14 @@ interventio_in_german_civil_war = {
 			}
 			NOT = { has_country_flag = support_germany }
 		}
-		cost = 100
+		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = {
-			has_completed_focus = RUS_interventio_in_german_civil_war
-			tag = RUS
-		}
+		visible = { always = yes }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = HGR type = infantry_equipment amount = 1500 }
-			HGR = { add_opinion_modifier = { target = RUS modifier = SSW_support_civil_war } }
+			reverse_add_opinion_modifier = { target = HGR modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
 				HGR = {
@@ -273,11 +211,12 @@ interventio_in_german_civil_war = {
 	}
 }
 
-RUS_the_seeds_of_revolution = {
+the_seeds_of_revolution = {
 	RUS_integrate_commune_1 = {
 		name = SPR_integrate_commune
 		icon = generic_nationalism
 		available = {
+			NOT = { has_country_flag = adding_state_core }
 			FROM = {
 				compliance > 60
 				OR = {
@@ -292,7 +231,7 @@ RUS_the_seeds_of_revolution = {
 		on_map_mode = map_only
 		target_array = controlled_states
 		target_trigger = {
-			has_completed_focus = RUS_global_defense_council
+			has_government = anarchism
 			FROM = {
 				NOT = { is_core_of = ROOT }
 				OR = {
@@ -306,10 +245,10 @@ RUS_the_seeds_of_revolution = {
 		}
 		cost = 100
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 14
 		modifier = { political_power_gain = -1 }
 		visible = {
-			has_completed_focus = RUS_global_defense_council
+			has_government = anarchism
 			FROM = {
 				OR = {
 					is_island_state = yes
@@ -319,7 +258,9 @@ RUS_the_seeds_of_revolution = {
 				}
 			}
 		}
+		complete_effect = { set_country_flag = adding_state_core }
 		remove_effect = {
+			clr_country_flag = adding_state_core
 			FROM = { add_core_of = ROOT }
 			transfer_state = FROM
 			if = {
@@ -479,6 +420,7 @@ RUS_the_seeds_of_revolution = {
 		name = SPR_integrate_commune
 		icon = generic_nationalism
 		available = {
+			NOT = { has_country_flag = adding_state_core }
 			FROM = {
 				compliance > 60
 				NOT = {
@@ -493,7 +435,7 @@ RUS_the_seeds_of_revolution = {
 		on_map_mode = map_only
 		target_array = controlled_states
 		target_trigger = {
-			has_completed_focus = RUS_global_defense_council
+			has_government = anarchism
 			FROM = {
 				NOT = {
 					is_core_of = ROOT
@@ -507,10 +449,10 @@ RUS_the_seeds_of_revolution = {
 		}
 		cost = 100
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 14
 		modifier = { political_power_gain = -1 }
 		visible = {
-			has_completed_focus = RUS_global_defense_council
+			has_government = anarchism
 			FROM = {
 				NOT = {
 					is_island_state = yes
@@ -520,7 +462,9 @@ RUS_the_seeds_of_revolution = {
 				}
 			}
 		}
+		complete_effect = { set_country_flag = adding_state_core }
 		remove_effect = {
+			clr_country_flag = adding_state_core
 			FROM = { add_core_of = ROOT }
 			transfer_state = FROM
 			if = {

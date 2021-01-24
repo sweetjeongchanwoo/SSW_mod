@@ -7,6 +7,7 @@ state = { #パークセー
 		owner = VIN
 		add_core_of = LAO
 		add_core_of = VIN
+		add_claim_by = INC
 		buildings = {
 			infrastructure = 1
 		}

@@ -312,9 +312,9 @@ country_event = { #ƒ‰ƒCƒ“Ù’è
 		name = ssw_foc_events.2.b
 		trigger = {
 			OR = {
-				FRA = { is_subject_of = ROOT }
-				FRA = { is_in_faction_with = ROOT }
-				original_tag = FRA
+				FR1 = { is_subject_of = ROOT }
+				FR1 = { is_in_faction_with = ROOT }
+				original_tag = FR1
 			}
 			NOT = { country_exists = NFR }
 		}
@@ -328,8 +328,8 @@ country_event = { #ƒ‰ƒCƒ“Ù’è
 					is_claimed_by = ROOT
 				}
 			}
-			FRA = { transfer_state = PREV }
-			add_core_of = FRA
+			FR1 = { transfer_state = PREV }
+			add_core_of = FR1
 		}
 		custom_effect_tooltip = next_decisions_70_tt
 	}
@@ -341,7 +341,7 @@ country_event = { #ƒ‰ƒCƒ“Ù’è
 				NFR = { is_in_faction_with = ROOT }
 				original_tag = NFR
 			}
-			NOT = { country_exists = FRA }
+			NOT = { country_exists = FR1 }
 		}
 		ai_chance = { base = 10 }
 		every_state = {

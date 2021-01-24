@@ -6,6 +6,7 @@ state = { #ƒ_ƒiƒ“
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		add_claim_by = INC
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

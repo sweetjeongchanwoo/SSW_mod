@@ -42,7 +42,12 @@ country_event = {
 	title = ssw_rus_elections.2.title
 	desc = ssw_rus_elections.2.desc
 	picture = GFX_report_event_albanian_king_zog
-	is_triggered_only = yes
+	trigger = {
+		tag = RUS
+		date > 1950.10.1
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
 	option = {
 		name = ssw_rus_elections.2.a
 		ai_chance = { factor = 50 }
