@@ -1,0 +1,14 @@
+spriteTypes = {	#focus
+	spriteType = {
+		name = "GFX_focus_aklilu"
+		texturefile = "gfx/interface/goals/aklilu.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_endelkachew"
+		texturefile = "gfx/interface/goals/endelkachew.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_aregai"
+		texturefile = "gfx/interface/goals/aregai.dds"
+	}
+}
