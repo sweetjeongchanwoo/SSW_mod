@@ -11,4 +11,8 @@ spriteTypes = {	#focus
 		name = "GFX_focus_aregai"
 		texturefile = "gfx/interface/goals/aregai.dds"
 	}
+	spriteType = {
+		name = "GFX_NEA_officers"
+		texturefile = "gfx/interface/goals/NEA_officers.dds"
+	}
 }
