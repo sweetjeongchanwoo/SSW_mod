@@ -70,7 +70,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_fascists
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_fascism
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
@@ -85,7 +85,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_monarchists
-		icon = GFX_goal_unknown
+		icon = GFX_ITA_Savoie_family_crest
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_officers
-		icon = GFX_goal_unknown
+		icon = GFX_NEA_officers
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
