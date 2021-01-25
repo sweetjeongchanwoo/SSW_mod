@@ -215,6 +215,7 @@ MOS	= "countries/Eastern Europe.txt"	#モスクワ
 PAT	= "countries/Eastern Europe.txt"	#総主教領
 PET	= "countries/Eastern Europe.txt"	#ペトログラード
 POL	= "countries/Eastern Europe.txt"	#ポーランド
+RDW	= "countries/Eastern Europe.txt"	#ドン・ヴォルガ国家弁務官区
 ROM	= "countries/Eastern Europe.txt"	#ルーマニア
 RUS	= "countries/Eastern Europe.txt"	#ロシア
 SER	= "countries/Eastern Europe.txt"	#セルビア
