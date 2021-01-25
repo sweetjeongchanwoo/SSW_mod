@@ -108,6 +108,7 @@ interventio_in_german_civil_war = {
 			reverse_add_opinion_modifier = { target = GER modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
+				set_country_flag = intervention_nazism
 				GER = {
 					add_ai_strategy = { type = alliance id = ROOT value = 50 }
 					add_ai_strategy = { type = protect id = ROOT value = 50 }
@@ -139,6 +140,7 @@ interventio_in_german_civil_war = {
 			reverse_add_opinion_modifier = { target = LTV modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
+				set_country_flag = intervention_vorbeck
 				LTV = {
 					add_ai_strategy = { type = alliance id = ROOT value = 50 }
 					add_ai_strategy = { type = protect id = ROOT value = 50 }
@@ -170,6 +172,7 @@ interventio_in_german_civil_war = {
 			reverse_add_opinion_modifier = { target = HLH modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
+				set_country_flag = intervention_himmler
 				HLH = {
 					add_ai_strategy = { type = alliance id = ROOT value = 50 }
 					add_ai_strategy = { type = protect id = ROOT value = 50 }
@@ -201,6 +204,7 @@ interventio_in_german_civil_war = {
 			reverse_add_opinion_modifier = { target = HGR modifier = SSW_support_civil_war }
 			hidden_effect = {
 				set_country_flag = support_germany
+				set_country_flag = intervention_goring
 				HGR = {
 					add_ai_strategy = { type = alliance id = ROOT value = 50 }
 					add_ai_strategy = { type = protect id = ROOT value = 50 }
@@ -209,8 +213,373 @@ interventio_in_german_civil_war = {
 			}
 		}
 	}
+	declaration_of_war_with_nazism = {
+		icon = ger_reichskommissariats
+		available = {
+			has_equipment = { infantry_equipment > 14999 }
+			has_army_manpower = { size > 499999 }
+			has_war_support > 0.8
+			has_war = no
+			GER = {
+				OR = {
+					has_war_with = LTV
+					has_war_with = HLH
+					has_war_with = HGR
+				}
+			}
+			has_country_flag = intervention_nazism
+			NOT = { has_country_flag = declaration_of_war }
+		}
+		cost = 150
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			OR = {
+				AND = {
+					tag = CRO
+					has_full_control_of_state = 971
+					has_full_control_of_state = 972
+					has_full_control_of_state = 976
+					has_full_control_of_state = 977
+				}
+				AND = {
+					tag = FSA
+					NOT = {
+						country_exists = ALF
+						country_exists = LFF
+						country_exists = UTC
+					}
+				}
+				AND = {
+					tag = RUS
+					has_completed_focus = RUS_the_great_coup
+				}
+				AND = {
+					tag = SPR
+					has_completed_focus = SPR_faranhe
+				}
+				tag = ARG
+				tag = CHI
+				tag = NFR
+				tag = POR
+			}
+			is_subject = no
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { country_exists = LTV }
+				declare_war_on = { target = LTV type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HLH }
+				declare_war_on = { target = HLH type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HGR }
+				declare_war_on = { target = HGR type = annex_everything }
+			}
+			hidden_effect = {
+				set_country_flag = declaration_of_war
+				GER = {
+					give_military_access = ROOT
+					diplomatic_relation = { country = ROOT relation = non_aggression_pact }
+					if = {
+						limit = { NOT = { has_country_flag = supported_by_other_countries } }
+					}
+				}
+				if = {
+					limit = { NOT = { GER = { has_country_flag = supported_by_other_countries } } }
+					GER = { set_country_flag = supported_by_other_countries }
+				}
+			}
+		}
+	}
+	declaration_of_war_with_vorbeck = {
+		icon = ger_reichskommissariats
+		available = {
+			has_equipment = { infantry_equipment > 14999 }
+			has_army_manpower = { size > 499999 }
+			has_war_support > 0.8
+			has_war = no
+			LTV = {
+				OR = {
+					has_war_with = GER
+					has_war_with = HLH
+					has_war_with = HGR
+				}
+			}
+			has_country_flag = intervention_vorbeck
+			NOT = { has_country_flag = declaration_of_war }
+		}
+		cost = 150
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			OR = {
+				AND = {
+					tag = MEX
+					has_completed_focus = MEX_invite_the_emperor
+				}
+				AND = {
+					tag = RUS
+					has_completed_focus = RUS_rise_of_the_republic
+				}
+				AND = {
+					tag = SPR
+					has_completed_focus = SPR_outouha
+				}
+				tag = ENG
+				tag = SWE
+				tag = FIN
+			}
+			is_subject = no
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { country_exists = GER }
+				declare_war_on = { target = GER type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HLH }
+				declare_war_on = { target = HLH type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HGR }
+				declare_war_on = { target = HGR type = annex_everything }
+			}
+			hidden_effect = {
+				set_country_flag = declaration_of_war
+				LTV = {
+					give_military_access = ROOT
+					diplomatic_relation = { country = ROOT relation = non_aggression_pact }
+				}
+				if = {
+					limit = { NOT = { LTV = { has_country_flag = supported_by_other_countries } } }
+					LTV = { set_country_flag = supported_by_other_countries }
+				}
+			}
+		}
+	}
+	declaration_of_war_with_himmler = {
+		icon = ger_reichskommissariats
+		available = {
+			has_equipment = { infantry_equipment > 14999 }
+			has_army_manpower = { size > 499999 }
+			has_war_support > 0.8
+			has_war = no
+			HLH = {
+				OR = {
+					has_war_with = GER
+					has_war_with = LTV
+					has_war_with = HGR
+				}
+			}
+			has_country_flag = intervention_himmler
+			NOT = { has_country_flag = declaration_of_war }
+		}
+		cost = 150
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			OR = {
+				AND = {
+					tag = MEX
+					has_completed_focus = MEX_regime_change
+				}
+				AND = {
+					tag = RUS
+					has_completed_focus = RUS_the_great_coup
+				}
+				AND = {
+					tag = SPR
+					has_completed_focus = SPR_franco
+				}
+				tag = FIN
+				tag = ITA
+				tag = NFR
+			}
+			is_subject = no
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { country_exists = GER }
+				declare_war_on = { target = GER type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = LTV }
+				declare_war_on = { target = LTV type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HGR }
+				declare_war_on = { target = HGR type = annex_everything }
+			}
+			hidden_effect = {
+				set_country_flag = declaration_of_war
+				HLH = {
+					give_military_access = ROOT
+					diplomatic_relation = { country = ROOT relation = non_aggression_pact }
+				}
+				if = {
+					limit = { NOT = { HLH = { has_country_flag = supported_by_other_countries } } }
+					HLH = { set_country_flag = supported_by_other_countries }
+				}
+			}
+		}
+	}
+	declaration_of_war_with_goring = {
+		icon = ger_reichskommissariats
+		available = {
+			has_equipment = { infantry_equipment > 14999 }
+			has_army_manpower = { size > 499999 }
+			has_war_support > 0.8
+			has_war = no
+			HGR = {
+				OR = {
+					has_war_with = GER
+					has_war_with = LTV
+					has_war_with = HLH
+				}
+			}
+			has_country_flag = intervention_goring
+			NOT = { has_country_flag = declaration_of_war }
+		}
+		cost = 150
+		fire_only_once = no
+		ai_will_do = { factor = 1 }
+		visible = {
+			OR = {
+				AND = {
+					tag = BUL
+					has_full_control_of_state = 973
+					has_full_control_of_state = 975
+				}
+				AND = {
+					tag = CRO
+					has_full_control_of_state = 971
+					has_full_control_of_state = 972
+					has_full_control_of_state = 976
+					has_full_control_of_state = 977
+				}
+				AND = {
+					tag = HUN
+					has_full_control_of_state = 82
+					has_full_control_of_state = 83
+					has_full_control_of_state = 84
+				}
+				AND = {
+					tag = RUS
+					has_completed_focus = RUS_the_great_coup
+				}
+				AND = {
+					tag = SPR
+					has_completed_focus = SPR_franco
+				}
+				tag = ITA
+			}
+			is_subject = no
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { country_exists = GER }
+				declare_war_on = { target = GER type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = LTV }
+				declare_war_on = { target = LTV type = annex_everything }
+			}
+			if = {
+				limit = { country_exists = HLH }
+				declare_war_on = { target = HLH type = annex_everything }
+			}
+			hidden_effect = {
+				set_country_flag = declaration_of_war
+				HGR = {
+					give_military_access = ROOT
+					diplomatic_relation = { country = ROOT relation = non_aggression_pact }
+				}
+				if = {
+					limit = { NOT = { HGR = { has_country_flag = supported_by_other_countries } } }
+					HGR = { set_country_flag = supported_by_other_countries }
+				}
+			}
+		}
+	}
+	end_of_gcw = {
+		icon = generic_operation
+		days_mission_timeout = 200
+		is_good = no
+		fire_only_once = yes
+		available = {
+			OR = {
+				AND = {
+					has_country_flag = intervention_nazism
+					NOT = {
+						country_exists = LTV
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				AND = {
+					has_country_flag = intervention_vorbeck
+					NOT = {
+						country_exists = GER
+						country_exists = HLH
+						country_exists = HGR
+					}
+				}
+				AND = {
+					has_country_flag = intervention_himmler
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HGR
+					}
+				}
+				AND = {
+					has_country_flag = intervention_goring
+					NOT = {
+						country_exists = GER
+						country_exists = LTV
+						country_exists = HLH
+					}
+				}
+			}
+		}
+		activation = { has_country_flag = declaration_of_war }
+		ai_will_do = { factor = 10 }
+		visible = { has_country_flag = declaration_of_war }
+		complete_effect = { add_political_power = 150 }
+		timeout_effect = {
+			custom_effect_tooltip = lose_public_support_tt
+			add_stability = -0.15
+			add_war_support = -0.15
+			add_popularity = {
+				ideology = ROOT
+				popularity = -0.1
+			}
+		}
+	}
 }
-
 the_seeds_of_revolution = {
 	RUS_integrate_commune_1 = {
 		name = SPR_integrate_commune
