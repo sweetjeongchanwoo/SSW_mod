@@ -1,15 +1,17 @@
-﻿# 1950 World Cup
+﻿add_namespace = flavor
+
+# 1950 World Cup
 news_event = {
-	id = news.1
-	title = news.1.t
-	desc = news.1.d
+	id = flavor.1
+	title = flavor.1.t
+	desc = flavor.1.d
 	picture =
 	
 	major = yes
+	fire_only_once = yes
 	
 	trigger = {
 		date > 1950.7.16
-		NOT = { has_global_flag = 1950_WorldCup }
 		country_exists = BRA
 		country_exists = URG
 		BRA = { has_war = no }
@@ -20,34 +22,31 @@ news_event = {
 		days = 2
 	}
 	
-	immediate = {
-		set_global_flag = 1950_WorldCup
-	}
 	
 	option = {
-		name = news.66.a
+		name = flavor.1.a
 		trigger = { 
 			NOT = { TAG = URG }
 		}
 	}
 	option = {
-		name = news.66.b
+		name = flavor.1.b
 		trigger = { TAG = URG }
 	}
 }
 
 #Claudius_novel
 news_event = {
-	id = news.2
-	title = news.2.t
-	desc = news.2.d
+	id = flavor.2
+	title = flavor.2.t
+	desc = flavor.2.d
 	picture = 
 	
 	major = yes
+	fire_only_once = yes
 	
 	trigger = {
 		date > 1957.6.6
-		NOT = { has_global_flag = Claudius_novel }
 		OR{
 			tag = ITA
 			tag = ENG
@@ -60,39 +59,54 @@ news_event = {
 		days = 2
 	}
 	
-	immediate = {
-		set_global_flag = Claudius_novel
-	}
 	
 	option = {
-		name = news.66.a
+		name = flavor.2.a
 	}	
 }
 
 #Tokyo_tower
 news_event = {
-	id = news.3
-	title = news.3.t
-	desc = news.3.d
+	id = flavor.3
+	title = flavor.3.t
+	desc = flavor.3.d
 	picture = 
 	
 	major = yes
+	fire_only_once = yes
 	
 	trigger = {
 		date > 1957.12.3
-		NOT = { has_global_flag = Tokyo_tower }
 	}
 	
 	mean_time_to_happen = {
 		days = 2
 	}
 	
-	immediate = {
-		set_global_flag = Tokyo_tower
+	option = {
+		name = flavor.3.a
+	}	
+}
+#Sachertorte_Demel
+news_event = {
+	id = flavor.4
+	title = flavor.4.t
+	desc = flavor.4.d
+	picture = 
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1957.12.3
+	}
+	
+	mean_time_to_happen = {
+		days = 2
 	}
 	
 	option = {
-		name = news.66.a
+		name = flavor/4.a
 	}	
 }
 
