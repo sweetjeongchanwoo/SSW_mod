@@ -4,10 +4,8 @@ state = { #パークセー
 	manpower = 20000
 	state_category = rural
 	history = {
-		owner = VIN
+		owner = LAO
 		add_core_of = LAO
-		add_core_of = VIN
-		add_claim_by = INC
 		buildings = {
 			infrastructure = 1
 		}

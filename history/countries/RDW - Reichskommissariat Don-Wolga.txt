@@ -17,7 +17,16 @@ GER = {
 add_ideas = {
 	civilian_economy
 }
-
+create_country_leader = {
+    name = "Hinrich Lohse"
+    desc = ""
+    picture = "gfx/leaders/RDW/portrait_rdw_hinrich_lohse.dds"
+    expire = "1964.2.25"
+    ideology = national_socialism_ideology
+    traits = {
+        #
+    }
+}
 set_politics = {
 	ruling_party = national_socialism
 	last_election = "1950.1.1"

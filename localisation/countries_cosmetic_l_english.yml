@@ -120,6 +120,10 @@
  LFF_unification_DEF:0 "アメリカ人民共和国"
  LFF_unification_ADJ:0 "アメリカ"
  
+ PRU_peru_bolivia:0 "ペルー＝ボリビア"
+ PRU_peru_bolivia_DEF:0 "ペルー＝ボリビア"
+ PRU_peru_bolivia_ADJ:0 "ペルー＝ボリビア"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"

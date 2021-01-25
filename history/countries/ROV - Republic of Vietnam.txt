@@ -1,10 +1,20 @@
 ﻿capital = 671
-#oob = "INC_1950"
+oob = "ROV_1950"
+
+set_convoys = 5
+
 set_technology = {
 	infantry_weapons = 1
 }
+
 add_ideas = {
 	civilian_economy
+}
+CHI = {
+	set_autonomy = {
+		target = ROV
+		autonomous_state = colony
+	}
 }
 set_politics = {
 	ruling_party = authority_despotism
@@ -14,13 +24,4 @@ set_politics = {
 }
 set_popularities = {
 	authority_despotism = 100
-}
-create_country_leader = {
-	name = "Pham Văn Đong"
-	desc = "POLITICS_PHAM_VAN_DONG_DESC"
-	picture = "gfx/leaders/INC/Portrait_Indochina_Pham_Van_Dong.dds"
-	expire = "2000.4.29"
-	ideology = authority_despotism_ideology
-	traits = {
-	}
 }

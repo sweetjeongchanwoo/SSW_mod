@@ -5,9 +5,7 @@ state={
 
 	history={
 		add_core_of = CAM
-		add_core_of = VIN
-		add_claim_by = INC
-		owner = VIN
+		owner = CAM
 		buildings = {
 			infrastructure = 2
 

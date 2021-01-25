@@ -1,6 +1,6 @@
-﻿capital = 303
-oob = "PRU_1950"
-set_cosmetic_tag = PRU_peru_bolivia
+﻿capital = 495
+oob = "SRA_1950"
+
 set_convoys = 5
 
 set_technology = {
@@ -12,11 +12,11 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_despotism
+	ruling_party = progressive_communism = 
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authority_despotism = 100
+	progressive_communism =  = 100
 }

@@ -53,26 +53,15 @@ country_event = {
 	trigger = {
 		tag = GER
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = LTV
-		LTV = { surrender_progress > 0.7 }
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		LTV = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = GER }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = LTV transfer_troops = yes }
+		annex_country = { target = LTV transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = LTV }
 			remove_core_of = LTV
@@ -88,26 +77,15 @@ country_event = {
 	trigger = {
 		tag = GER
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HLH
-		HLH = { surrender_progress > 0.7 }
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HLH = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = GER }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HLH transfer_troops = yes }
+		annex_country = { target = HLH transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HLH }
 			remove_core_of = HLH
@@ -123,26 +101,15 @@ country_event = {
 	trigger = {
 		tag = GER
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HGR
-		HGR = { surrender_progress > 0.7 }
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HGR = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = GER }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HGR transfer_troops = yes }
+		annex_country = { target = HGR transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HGR }
 			remove_core_of = HGR
@@ -158,26 +125,15 @@ country_event = {
 	trigger = {
 		tag = LTV
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = GER
-		GER = { surrender_progress > 0.7 }
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		GER = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = LTV }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = GER transfer_troops = yes }
+		annex_country = { target = GER transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = GER }
 			remove_core_of = GER
@@ -193,26 +149,15 @@ country_event = {
 	trigger = {
 		tag = LTV
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HLH
-		HLH = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HLH = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = LTV }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HLH transfer_troops = yes }
+		annex_country = { target = HLH transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HLH }
 			remove_core_of = HLH
@@ -228,26 +173,15 @@ country_event = {
 	trigger = {
 		tag = LTV
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HGR
-		HGR = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HGR = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = LTV }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HGR transfer_troops = yes }
+		annex_country = { target = HGR transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HGR }
 			remove_core_of = HGR
@@ -263,26 +197,15 @@ country_event = {
 	trigger = {
 		tag = HLH
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = GER
-		GER = { surrender_progress > 0.7 }
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		GER = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HLH }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = GER transfer_troops = yes }
+		annex_country = { target = GER transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = GER }
 			remove_core_of = GER
@@ -298,26 +221,15 @@ country_event = {
 	trigger = {
 		tag = HLH
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = LTV
-		LTV = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HGR = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		LTV = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HLH }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = LTV transfer_troops = yes }
+		annex_country = { target = LTV transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = LTV }
 			remove_core_of = LTV
@@ -333,26 +245,15 @@ country_event = {
 	trigger = {
 		tag = HLH
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HGR
-		HGR = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HGR = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HLH }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HGR transfer_troops = yes }
+		annex_country = { target = HGR transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HGR }
 			remove_core_of = HGR
@@ -368,26 +269,15 @@ country_event = {
 	trigger = {
 		tag = HGR
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = GER
-		GER = { surrender_progress > 0.7 }
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		GER = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HGR }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = GER transfer_troops = yes }
+		annex_country = { target = GER transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = GER }
 			remove_core_of = GER
@@ -403,26 +293,15 @@ country_event = {
 	trigger = {
 		tag = HGR
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = LTV
-		LTV = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		HLH = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		LTV = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HGR }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = LTV transfer_troops = yes }
+		annex_country = { target = LTV transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = LTV }
 			remove_core_of = LTV
@@ -438,26 +317,15 @@ country_event = {
 	trigger = {
 		tag = HGR
 		surrender_progress < 0.2
-		any_war_score > 29
-		has_war_with = HLH
-		HLH = { surrender_progress > 0.7 }
-		GER = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
-		}
-		LTV = {
-			OR = {
-				surrender_progress > 0.1
-				exists = no
-			}
+		HLH = {
+			surrender_progress > 0.8
+			capital_scope = { is_controlled_by = HGR }
 		}
 	}
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	immediate = {
-		annex_country = { target = HLH transfer_troops = yes }
+		annex_country = { target = HLH transfer_troops = no }
 		every_state = {
 			limit = { is_core_of = HLH }
 			remove_core_of = HLH

@@ -7,11 +7,16 @@
 	set_technology = {
 		infantry_weapons = 1
 	}
-
 	add_ideas = {
 		civilian_economy
 	}
-
+	JAP = {
+		add_to_faction = CAM
+		set_autonomy = {
+			target = CAM
+			autonomous_state = imperial_overseas_territory
+		}
+	}
 	set_politics = {
 		ruling_party = authority_democracy
 		last_election = "1950.1.1"

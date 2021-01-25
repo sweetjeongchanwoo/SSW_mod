@@ -13,9 +13,9 @@ state={
 
 
 	history={
-		add_core_of = INC
+		add_core_of = ROV
 		add_core_of = VIN
-		owner = INC
+		owner = ROV
 		victory_points = {
 			4075 15 
 		}
