@@ -106,7 +106,7 @@ news_event = {
 	}
 	
 	option = {
-		name = flavor/4.a
+		name = flavor.4.a
 	}	
 }
 
