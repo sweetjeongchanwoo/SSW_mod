@@ -191,4 +191,28 @@ focus_tree = {
 		y = 3
 
 	}
+	focus = {
+		id = NEA_PNF_invite
+		icon = GFX_focus_generic_italy_first
+		cost = 5.00
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = NEA_base_of_loyalists
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = ETH_army_style
+		icon = GFX_focus_generic_little_entente
+		cost = 5.00
+		x = 11
+		y = 5
+
+	}
 }
