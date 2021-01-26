@@ -266,7 +266,7 @@ set_politics = {
 set_popularities = {
 	national_socialism = 100
 }
-
+set_country_flag = GER_true_countryflag
 create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"

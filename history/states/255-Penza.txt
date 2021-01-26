@@ -4,10 +4,10 @@ state = {
 	manpower = 197468
 	state_category = town
 	history = {
-		owner = UKR
-		remove_core_of = UKR
+		owner = RDW
 		add_core_of = RUS
 		add_core_of = SOV
+		add_core_of = RDW
 		buildings = {
 			infrastructure = 4
 		}

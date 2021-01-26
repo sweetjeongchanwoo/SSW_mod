@@ -83,7 +83,6 @@ technologies = {
 		}
 	}
 	jet_fighter_1944 = {
-
 		enable_equipments = {
 			jet_fighter_equipment_0
 		}
@@ -94,6 +93,7 @@ technologies = {
 		path = {
 			leads_to_tech = jet_naval_CAS_1948
 			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = jet_CAS_1948
 			research_cost_coeff = 1

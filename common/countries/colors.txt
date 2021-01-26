@@ -1520,6 +1520,31 @@ WLL = { #ワロン
     color_ui = rgb { 193 226 120 }
 }
 
+RDW = {	#ドン・ヴォルガ
+	color = rgb { 76 149 199 }
+	color_ui = rgb { 76 149 199 }
+}
+
+SRA = {	#アマゾナス社会主義共和国
+	color = rgb { 195 255 105 }
+	color_ui = rgb { 195 255 105 }
+}
+
+CSB = {	#ブラジル連合国
+	color = rgb { 255 140 140 }
+	color_ui = rgb { 255 140 140 }
+}
+
+ROC = {	#カンバ共和国
+	color = rgb { 130 180 255 }
+	color_ui = rgb { 130 180 255 }
+}
+
+ROV = {	#ベトナム共和国
+	color = rgb { 230 230 0 }
+	color_ui = rgb { 230 230 0 }
+}
+
 ########## 内戦用国家タグ ##########
 
 HGR = { #ゲーリング派ドイツ

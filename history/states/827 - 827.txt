@@ -4,7 +4,7 @@ state={
 	name="STATE_827"
 
 	history={
-		owner = SIA
+		owner = CAM
 		victory_points = {
 		4320 1
 		}
@@ -14,7 +14,6 @@ state={
 			arms_factory = 3
 		}
 		add_core_of = CAM
-		add_core_of = SIA
 	}
 
 	provinces={

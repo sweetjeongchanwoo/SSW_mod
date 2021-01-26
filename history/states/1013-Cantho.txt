@@ -6,6 +6,7 @@ state = { #ƒJƒ“ƒg[
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		add_core_of = ROV
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

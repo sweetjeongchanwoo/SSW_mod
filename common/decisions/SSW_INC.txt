@@ -1,0 +1,79 @@
+INC_reintegrate_states = {
+	add_core_states_of_indochina = {
+		icon = generic_nationalism
+		name = add_core_states_of_russia
+		available = {
+			NOT = { has_country_flag = adding_state_core }
+			original_tag = INC
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 286
+						state = 741
+						state = 826
+						state = 827
+						state = 932
+						state = 933
+						state = 934
+						state = 1013
+						state = 1015
+						state = 1016
+					}
+				}
+			}
+		}
+		state_target = yes
+		on_map_mode = map_only
+		target_array = controlled_states
+		target_trigger = {
+			original_tag = INC
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 286
+						state = 741
+						state = 826
+						state = 827
+						state = 932
+						state = 933
+						state = 934
+						state = 1013
+						state = 1015
+						state = 1016
+					}
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		modifier = { political_power_gain = -1 }
+		visible = {
+			original_tag = INC
+			hidden_trigger = {
+				FROM = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 286
+						state = 741
+						state = 826
+						state = 827
+						state = 932
+						state = 933
+						state = 934
+						state = 1013
+						state = 1015
+						state = 1016
+					}
+				}
+			}
+		}
+		complete_effect = { set_country_flag = adding_state_core }
+		remove_effect = {
+			clr_country_flag = adding_state_core
+			FROM = { add_core_of = ROOT }
+		}
+	}
+}

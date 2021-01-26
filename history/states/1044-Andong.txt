@@ -1,0 +1,26 @@
+state={ #ˆÀ“Œ
+	id=1044
+	name="STATE_1044"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			6860 2 
+		}
+
+	}
+
+	provinces={
+		3970 6860 6918 6981 9854
+	}
+	manpower=2971000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

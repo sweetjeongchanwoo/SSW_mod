@@ -18,3 +18,4 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+set_country_flag = BLR_true_countryflag

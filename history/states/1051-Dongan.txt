@@ -1,0 +1,23 @@
+state={
+	id=1051
+	name="STATE_1051"
+	
+	state_category = pastoral
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = { 12443 2 }
+
+	}
+
+	provinces={
+		6863 7569 9798 12443 12500 
+	}
+	manpower=512000
+	buildings_max_level_factor=1.000
+}

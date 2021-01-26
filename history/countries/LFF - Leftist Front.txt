@@ -135,7 +135,7 @@ set_technology = {
 }
 add_ideas = {
 	civilian_economy
-	ssw_one_party_dictatorship
+	ssw_authoritarian_regime
 	vacancy_pl
 	vacancy_mfa
 	vacancy_mf
