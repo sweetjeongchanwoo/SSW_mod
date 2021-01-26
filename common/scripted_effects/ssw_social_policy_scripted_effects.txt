@@ -506,3 +506,29 @@ industry_add_ten_point_to_line_and_refresh = {
 	
 	add_to_array = { industry_numbers = industry_count }
 }
+
+update_gov_support_pie_chart = {
+	clear_array = support_pie_chart
+	resize_array = {
+		array = support_pie_chart
+		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		size = 100 # 100 pieces, each percent is one piece
+	}
+	set_temp_variable = { neutrality_pop = ROOT.opposition_rate }
+	multiply_temp_variable = { neutrality_pop = 100 }
+	round_temp_variable = neutrality_pop
+
+	set_temp_variable = { communism_pop = ROOT.support_rate }
+	multiply_temp_variable = { communism_pop = 100 }
+	round_temp_variable = communism_pop 
+	set_variable = { ROOT.last_idx = neutrality_pop }
+	add_to_temp_variable = { communism_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = communism_pop
+		set_variable = { support_pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+	clear_variable = ROOT.last_idx
+	add_to_variable = { support_pie_chart_dirty = 1 }
+}

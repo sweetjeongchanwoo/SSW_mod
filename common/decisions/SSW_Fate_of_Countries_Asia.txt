@@ -1,3 +1,25 @@
 fate_of_countries_category_asia = {
-	
+	annexation_KOR = {
+		icon = generic_form_nation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		cancel_trigger = {
+			857 = { is_valid_annexation_state = no }
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision annexation_KOR"
+			country_event = ssw_foc_asia.1
+		}
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_KOR"
+			set_country_flag = KOR_CONQ
+			occupy_medium_country = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

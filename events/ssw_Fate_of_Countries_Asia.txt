@@ -1,1 +1,73 @@
 add_namespace = ssw_foc_asia
+
+country_event = { #
+	id = ssw_foc_asia.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event ssw_foc_asia.1"
+	}
+	title = ssw_foc_asia.1.t
+	desc = ssw_foc_asia.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	
+	option = { #liberate
+		name = ssw_foc_asia.1.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = CHI
+				}
+			}
+		}
+		release_puppet = KOR
+	}
+	option = { #annex(for japan)
+		name = ssw_foc_asia.1.b1
+		ai_chance = { base = 10 }
+		trigger = {
+			tag = JAP
+		}
+		occupy_medium_country = yes
+	}
+	option = { #liberate(for japan)
+		name = ssw_foc_asia.1.b2
+		ai_chance = { base = 10 }
+		trigger = {
+			tag = JAP
+		}
+		release_puppet = KOR
+	}
+	option = { #annex(for china)
+		name = ssw_foc_asia.1.c1
+		ai_chance = { base = 0 }
+		trigger = {
+			tag = CHI
+		}
+		release_puppet = KOR
+	}
+	option = { #annex(for china)
+		name = ssw_foc_asia.1.c2
+		ai_chance = { base = 0 }
+		trigger = {
+			tag = CHI
+		}
+		release_puppet = KOR
+	}
+	option = { #annex
+		name = ssw_foc_asia.1.d
+		ai_chance = { base = 0 }
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = CHI
+				}
+			}
+		}
+		set_country_flag = KOR_CONQ
+		occupy_medium_country = yes
+	}
+}

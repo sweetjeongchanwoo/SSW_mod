@@ -79,7 +79,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				maxWidth = 140
 				maxHeight = 20
-				text = "INDUSTRY_TEST"
+				text = "INDUSTRY_TEXT"
 				format = center
 				vertical_alignment = center
 				alwaystransparent = yes
@@ -119,7 +119,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				maxWidth = 140
 				maxHeight = 20
-				text = "POLITIC_TEST"
+				text = "POLITIC_TEXT"
 				format = center
 				vertical_alignment = center
 				alwaystransparent = yes
@@ -165,7 +165,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				maxWidth = 140
 				maxHeight = 20
-				text = "DIPLO_TEST"
+				text = "DIPLO_TEXT"
 				format = center
 				vertical_alignment = center
 				alwaystransparent = yes
@@ -211,7 +211,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				maxWidth = 140
 				maxHeight = 20
-				text = "SOCIAL_TEST"
+				text = "SOCIAL_TEXT"
 				format = center
 				vertical_alignment = center
 				alwaystransparent = yes
@@ -257,7 +257,7 @@ guiTypes = {
 				font = "hoi_16mbs"
 				maxWidth = 140
 				maxHeight = 20
-				text = "MILITARY_TEST"
+				text = "MILITARY_TEXT"
 				format = center
 				vertical_alignment = center
 				alwaystransparent = yes
@@ -277,6 +277,14 @@ guiTypes = {
 			name = "chart"
 			spriteType = "GFX_Line_Graph_Chart"
 			position = { x = 175 y = 45 }
+		}
+		instantTextboxType = {
+			name = "budget"
+			position = { x= 390 y = 80}
+			font = "hoi_30header"
+			text = "[?current_budget|+] $"
+			maxWidth = 150
+			format = center
 		}
 		gridboxtype = {
 			name = "line_segments"
@@ -341,13 +349,1349 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
-			name = "SSW_Policy_tab_industry_investment"
+			name = "SSW_Policy_tab_industry_global_market"
 			position = { x=0 y=180 }
 			size = { width = 555 height = 320 }
 				
 			background = {
 				name = "Background"		
-				spriteType ="GFX_tiled_bg"
+				spriteType ="GFX_tiled_bg_1_scrollbar"
+			}
+			containerWindowType = {
+				name = "SSW_Policy_tab_industry_global_market"
+				position = { x=13 y=10 }
+				size = { width = 540 height = 300 }
+				verticalScrollbar = "right_vertical_slider" 
+				
+				background = {
+					name = "background"
+					spriteType = "GFX_tiled_decisions_bg_small"
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_small_arms"
+					position = { x=10 y=10 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "small_arms"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame = 3
+					}
+					instantTextboxType = {
+						name = "small_arms_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "small_arms_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "small_arms_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "arms_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "small_arms_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "arms_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_small_arms"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_small_arms"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_artillery"
+					position = { x=10 y=50 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "artillery"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame = 4
+					}
+					instantTextboxType = {
+						name = "artillery_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "artillery_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "artillery_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "artillery_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "artillery_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "artillery_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_artillery"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_artillery"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_supply"
+					position = { x=10 y=90 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "supply"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame =5
+					}
+					instantTextboxType = {
+						name = "supply_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "supply_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "supply_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "supply_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "supply_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "supply_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_supply"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_supply"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_tank"
+					position = { x=10 y=130 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "tank"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame =6
+					}
+					instantTextboxType = {
+						name = "tank_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "tank_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "tank_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "tank_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "tank_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "tank_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_tank"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_tank"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_plane"
+					position = { x=10 y=170 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "plane"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame =7
+					}
+					instantTextboxType = {
+						name = "plane_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "plane_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "plane_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "plane_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "plane_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "plane_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_plane"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_plane"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_coal"
+					position = { x=10 y=210 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "coal"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame =12 
+					}
+					instantTextboxType = {
+						name = "coal_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "coal_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "coal_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "coal_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "coal_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "coal_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_coal"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_coal"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_global_market_iron"
+					position = { x=10 y=250 }
+					size = { width = 555 height = 320 }
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_diplo_countrylist_entry"
+					}
+					iconType = {
+						name = "iron"
+						position = { x=10 y=10 }
+						quadTextureSprite = "GFX_tradegoods"
+						frame =14
+					}
+					instantTextboxType = {
+						name = "iron_text_box"
+						position = { x= 60 y = 13}
+						font = "hoi_16mbs"
+						text = "coal_text"
+						maxWidth = 100
+					}
+					instantTextboxType = {
+						name = "iron_cost_box"
+						position = { x= 200 y = 13}
+						font = "hoi_16mbs"
+						text = "iron_cost_text"
+						maxWidth = 100
+						format = center
+					}
+					instantTextboxType = {
+						name = "iron_amount_box"
+						position = { x= 300 y = 13}
+						font = "hoi_16mbs"
+						text = "iron_amount_text"
+						maxWidth = 100
+						format = center
+					}
+					buttonType = {
+						name = "sale_iron"
+						position = { x=430 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 2
+					}
+					buttonType = {
+						name = "purchase_iron"
+						position = { x=470 y=5 }
+						quadTextureSprite = "GFX_checkbox_small_red_green"
+						frame = 1
+					}
+				}
+			}
+		}
+	}
+	containerWindowType = {
+		name = "SSW_Policy_tab_politic"
+		position = { x=535 y=393 }
+		size = { width = 555 height = 500 }
+		
+		background = {
+			name = "Background"		
+			spriteType ="GFX_tiled_bg"
+		}
+		instantTextboxType = {
+			name = "current_suport"
+			position = { x= 30 y = 150}
+			font = "hoi_24header"
+			text = "CURRENT_SUPPORT_TEXT"
+			maxWidth = 200
+			format = center
+		}
+		containerWindowType = {
+			name = "support_pie_container"
+			position = { x=-150 y =-150 }
+			clipping = no
+			Orientation = center
+			origo = center
+			scale = 0.0993359
+			
+			iconType = {
+				name = "support_pie0"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0
+			}
+			iconType = {
+				name = "support_pie1"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.0628318531
+			}
+			iconType = {
+				name = "support_pie2"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.1256637061
+			}
+
+
+			iconType = {
+				name = "support_pie3"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.1884955592
+			}
+
+
+			iconType = {
+				name = "support_pie4"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.2513274123
+			}
+
+
+			iconType = {
+				name = "support_pie5"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.3141592654
+			}
+
+
+			iconType = {
+				name = "support_pie6"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.3769911184
+			}
+
+
+			iconType = {
+				name = "support_pie7"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.4398229715
+			}
+
+
+			iconType = {
+				name = "support_pie8"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.5026548246
+			}
+
+
+			iconType = {
+				name = "support_pie9"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.5654866776
+			}
+
+
+			iconType = {
+				name = "support_pie10"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.6283185307
+			}
+
+
+			iconType = {
+				name = "support_pie11"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.6911503838
+			}
+
+
+			iconType = {
+				name = "support_pie12"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.7539822369
+			}
+
+
+			iconType = {
+				name = "support_pie13"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.8168140899
+			}
+
+
+			iconType = {
+				name = "support_pie14"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.8796459430
+			}
+
+
+			iconType = {
+				name = "support_pie15"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.9424777961
+			}
+
+
+			iconType = {
+				name = "support_pie16"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.0053096491
+			}
+
+
+			iconType = {
+				name = "support_pie17"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.0681415022
+			}
+
+
+			iconType = {
+				name = "support_pie18"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.1309733553
+			}
+
+
+			iconType = {
+				name = "support_pie19"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.1938052084
+			}
+
+
+			iconType = {
+				name = "support_pie20"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.2566370614
+			}
+
+
+			iconType = {
+				name = "support_pie21"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.3194689145
+			}
+
+
+			iconType = {
+				name = "support_pie22"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.3823007676
+			}
+
+
+			iconType = {
+				name = "support_pie23"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.4451326207
+			}
+
+
+			iconType = {
+				name = "support_pie24"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.5079644737
+			}
+
+
+			iconType = {
+				name = "support_pie25"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.5707963268
+			}
+
+
+			iconType = {
+				name = "support_pie26"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.6336281799
+			}
+
+
+			iconType = {
+				name = "support_pie27"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.6964600329
+			}
+
+
+			iconType = {
+				name = "support_pie28"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.7592918860
+			}
+
+
+			iconType = {
+				name = "support_pie29"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.8221237391
+			}
+
+
+			iconType = {
+				name = "support_pie30"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.8849555922
+			}
+
+
+			iconType = {
+				name = "support_pie31"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.9477874452
+			}
+
+
+			iconType = {
+				name = "support_pie32"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.0106192983
+			}
+
+
+			iconType = {
+				name = "support_pie33"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.0734511514
+			}
+
+
+			iconType = {
+				name = "support_pie34"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.1362830044
+			}
+
+
+			iconType = {
+				name = "support_pie35"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.1991148575
+			}
+
+
+			iconType = {
+				name = "support_pie36"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.2619467106
+			}
+
+
+			iconType = {
+				name = "support_pie37"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.3247785637
+			}
+
+
+			iconType = {
+				name = "support_pie38"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.3876104167
+			}
+
+
+			iconType = {
+				name = "support_pie39"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.4504422698
+			}
+
+
+			iconType = {
+				name = "support_pie40"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.5132741229
+			}
+
+
+			iconType = {
+				name = "support_pie41"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.5761059759
+			}
+
+
+			iconType = {
+				name = "support_pie42"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.6389378290
+			}
+
+
+			iconType = {
+				name = "support_pie43"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.7017696821
+			}
+
+
+			iconType = {
+				name = "support_pie44"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.7646015352
+			}
+
+
+			iconType = {
+				name = "support_pie45"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.8274333882
+			}
+
+
+			iconType = {
+				name = "support_pie46"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.8902652413
+			}
+
+
+			iconType = {
+				name = "support_pie47"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.9530970944
+			}
+
+
+			iconType = {
+				name = "support_pie48"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.0159289474
+			}
+
+
+			iconType = {
+				name = "support_pie49"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.0787608005
+			}
+
+
+			iconType = {
+				name = "support_pie50"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.1415926536
+			}
+
+
+			iconType = {
+				name = "support_pie51"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.2044245067
+			}
+
+
+			iconType = {
+				name = "support_pie52"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.2672563597
+			}
+
+
+			iconType = {
+				name = "support_pie53"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.3300882128
+			}
+
+
+			iconType = {
+				name = "support_pie54"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.3929200659
+			}
+
+
+			iconType = {
+				name = "support_pie55"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.4557519189
+			}
+
+
+			iconType = {
+				name = "support_pie56"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.5185837720
+			}
+
+
+			iconType = {
+				name = "support_pie57"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.5814156251
+			}
+
+
+			iconType = {
+				name = "support_pie58"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.6442474782
+			}
+
+
+			iconType = {
+				name = "support_pie59"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.7070793312
+			}
+
+
+			iconType = {
+				name = "support_pie60"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.7699111843
+			}
+
+
+			iconType = {
+				name = "support_pie61"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.8327430374
+			}
+
+
+			iconType = {
+				name = "support_pie62"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.8955748905
+			}
+
+
+			iconType = {
+				name = "support_pie63"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.9584067435
+			}
+
+
+			iconType = {
+				name = "support_pie64"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.0212385966
+			}
+
+
+			iconType = {
+				name = "support_pie65"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.0840704497
+			}
+
+
+			iconType = {
+				name = "support_pie66"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.1469023027
+			}
+
+
+			iconType = {
+				name = "support_pie67"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.2097341558
+			}
+
+
+			iconType = {
+				name = "support_pie68"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.2725660089
+			}
+
+
+			iconType = {
+				name = "support_pie69"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.3353978620
+			}
+
+
+			iconType = {
+				name = "support_pie70"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.3982297150
+			}
+
+
+			iconType = {
+				name = "support_pie71"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.4610615681
+			}
+
+
+			iconType = {
+				name = "support_pie72"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.5238934212
+			}
+
+
+			iconType = {
+				name = "support_pie73"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.5867252742
+			}
+
+
+			iconType = {
+				name = "support_pie74"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.6495571273
+			}
+
+
+			iconType = {
+				name = "support_pie75"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.7123889804
+			}
+
+
+			iconType = {
+				name = "support_pie76"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.7752208335
+			}
+
+
+			iconType = {
+				name = "support_pie77"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.8380526865
+			}
+
+
+			iconType = {
+				name = "support_pie78"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.9008845396
+			}
+
+
+			iconType = {
+				name = "support_pie79"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.9637163927
+			}
+
+
+			iconType = {
+				name = "support_pie80"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.0265482457
+			}
+
+
+			iconType = {
+				name = "support_pie81"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.0893800988
+			}
+
+
+			iconType = {
+				name = "support_pie82"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.1522119519
+			}
+
+
+			iconType = {
+				name = "support_pie83"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.2150438050
+			}
+
+
+			iconType = {
+				name = "support_pie84"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.2778756580
+			}
+
+
+			iconType = {
+				name = "support_pie85"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.3407075111
+			}
+
+
+			iconType = {
+				name = "support_pie86"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.4035393642
+			}
+
+
+			iconType = {
+				name = "support_pie87"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.4663712172
+			}
+
+
+			iconType = {
+				name = "support_pie88"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.5292030703
+			}
+
+
+			iconType = {
+				name = "support_pie89"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.5920349234
+			}
+
+
+			iconType = {
+				name = "support_pie90"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.6548667765
+			}
+
+
+			iconType = {
+				name = "support_pie91"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.7176986295
+			}
+
+
+			iconType = {
+				name = "support_pie92"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.7805304826
+			}
+
+
+			iconType = {
+				name = "support_pie93"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.8433623357
+			}
+
+
+			iconType = {
+				name = "support_pie94"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.9061941887
+			}
+
+
+			iconType = {
+				name = "support_pie95"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.9690260418
+			}
+
+
+			iconType = {
+				name = "support_pie96"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.0318578949
+			}
+
+
+			iconType = {
+				name = "support_pie97"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.0946897480
+			}
+
+
+			iconType = {
+				name = "support_pie98"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.1575216010
+			}
+
+
+			iconType = {
+				name = "support_pie99"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.2203534541
+			}
+			iconType = {
+				name = "cover"
+				quadTextureSprite = "GFX_pol_piechart_overlay"
+				centerPosition = yes
+				alwaystransparent = yes
+				scale = 16
+				pdx_tooltip = "TEST"
+			}
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_politic_desc"
+			position = { x=245 y=0 }
+			size = { width = 305 height = 225 }
+			
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_decisions_bg_small"
+			}
+			instantTextboxType = {
+				name = "policy_desc"
+				position = { x= 5 y = 10 }
+				font = "hoi_36header"
+				text = "POLICY_TITLE"
+				maxWidth = 300
+				format = center
+			}
+			instantTextboxType = {
+				name = "policy desc"
+				position = { x= 5 y = 60 }
+				font = "hoi_16mbs"
+				text = "POLICY_DESC"
+				maxWidth = 300
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_policys"
+			position = { x=3 y=223 }
+			size = { width = 550 height = 270 }
+			
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_decisions_bg_small"
+			}
+			containerWindowType = {
+				name = "SSW_Policy_tab_policys_1"
+				position = { x=18 y=10 }
+				size = { width = 512 height = 40 }
+				buttonType = {
+					name = "first_policy"		
+					quadTextureSprite ="GFX_decision_item_bg"
+					frame = 2
+				}
 			}
 		}
 	}
