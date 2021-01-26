@@ -101,7 +101,7 @@ interventio_in_german_civil_war = {
 		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = { always = yes }
+		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = GER type = infantry_equipment amount = 1500 }
@@ -133,7 +133,7 @@ interventio_in_german_civil_war = {
 		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = { always = yes }
+		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = LTV type = infantry_equipment amount = 1500 }
@@ -165,7 +165,7 @@ interventio_in_german_civil_war = {
 		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = { always = yes }
+		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = HLH type = infantry_equipment amount = 1500 }
@@ -197,7 +197,7 @@ interventio_in_german_civil_war = {
 		cost = 50
 		fire_only_once = no
 		ai_will_do = { factor = 1 }
-		visible = { always = yes }
+		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
 			send_equipment = { target = HGR type = infantry_equipment amount = 1500 }
@@ -268,6 +268,7 @@ interventio_in_german_civil_war = {
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
 			}
 		}
 		complete_effect = {
@@ -342,6 +343,7 @@ interventio_in_german_civil_war = {
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
 			}
 		}
 		complete_effect = {
@@ -413,6 +415,7 @@ interventio_in_german_civil_war = {
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
 			}
 		}
 		complete_effect = {
@@ -496,6 +499,7 @@ interventio_in_german_civil_war = {
 				has_government = anarchism
 				has_government = progressive_communism
 				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
 			}
 		}
 		complete_effect = {
