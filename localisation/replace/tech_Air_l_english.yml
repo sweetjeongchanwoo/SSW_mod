@@ -188,6 +188,10 @@
  jet_tac_bomber_equipment_4:0 "ジェット戦術爆撃機 IV"
  jet_tac_bomber_equipment_4_short:0 "ジェット戦術爆撃機 IV"
  jet_tac_bomber_equipment_4_desc:0 ""
+ jet_tac_bomber_equipment_5:0 "ジェット戦術爆撃機 V"
+ jet_tac_bomber_equipment_5_short:0 "ジェット戦術爆撃機 V"
+ jet_tac_bomber_equipment_5_desc:0 ""
+
  cv_jet_fighter_equipment_1:0 "ジェット艦上戦闘機 I"
  cv_jet_fighter_equipment_1_short:0 "ジェット艦戦 I"
  cv_jet_fighter_equipment_1_desc:0 ""
@@ -239,7 +243,7 @@
 
  JAP_jet_fighter_equipment_0:0 "中島 キ201 火竜"
  JAP_jet_fighter_equipment_0_short:0 "キ201 火竜"
- JAP_jet_fighter_equipment_0_desc:0 "火龍は日本陸軍初のジェット機として計画された。この機体は海軍の橘花と同様に、同盟国ドイツのメッサーシュミット Me262戦闘機を参考にしている。このため本機の基礎形は、三角形の胴体断面、双発エンジンの翼下懸架方式などMe 262に酷似している。しかしスケール的に火龍はMe 262に比べ一回り大型で、逆に橘花は小型である。"
+ JAP_jet_fighter_equipment_0_desc:0 "火龍は日本陸軍初のジェット機として計画された。この機体は海軍の橘花と同様に、同盟国ドイツのメッサーシュミットMe262戦闘機を参考にしている。このため本機の基礎形は、三角形の胴体断面、双発エンジンの翼下懸架方式などMe262に酷似している。しかしスケール的に火龍はMe 262に比べ一回り大型で、逆に橘花は小型である。"
  JAP_jet_fighter_equipment_1:0 "中島 キ204 火竜改"
  JAP_jet_fighter_equipment_1_short:0 "火竜改"
  JAP_jet_fighter_equipment_1_desc:0 ""
@@ -248,7 +252,7 @@
  JAP_jet_fighter_equipment_2_desc:0 "雷光は現実世界でのT-1である。現実世界において本機は航空自衛隊の中等練習機である。愛称は初鷹（はつたか）。レシプロ機による初等訓練を終えたパイロットが引き続きジェット機による中等訓練を行うために製作された。第二次世界大戦後初の実用国産飛行機であると同時に、初の国産ジェット練習機でもある。平成18年3月に全機が退役した。後継機はT-4である。本機の設計は富士重工業であるが、富士重工業はこの世界において現実の終戦時と同じように中島飛行機として存在している。そのため設計は中島飛行機である。"
  JAP_jet_fighter_equipment_3:0 "F-104"
  JAP_jet_fighter_equipment_3_short:0 "F-104"
- JAP_jet_fighter_equipment_3_desc:0 ""
+ JAP_jet_fighter_equipment_3_desc:0 "FFFFFF!...104!"
 
 
  JAP_jet_CAS_equipment_1:0 "中島 橘花"
