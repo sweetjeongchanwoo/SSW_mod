@@ -7,13 +7,14 @@ fate_of_countries_category_asia = {
 		cost = 0
 		fire_only_once = no
 		visible = {
-			857 = { is_valid_annexation_state = no }
+			owns_state = 857
 		}
 		available={
-			857 = { is_valid_annexation_state = no }
+			owns_state = 857
 		}
 		cancel_trigger = {
-			857 = { is_valid_annexation_state = no }
+			OR={NOT={owns_state = 857}
+			857 = { is_valid_annexation_state = no }}
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision annexation_KOR"
