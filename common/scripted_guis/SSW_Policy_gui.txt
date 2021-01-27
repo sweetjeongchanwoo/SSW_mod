@@ -126,13 +126,10 @@ scripted_gui = {
 			
 			politic_buttom_button_click = {
 				set_variable = { selected_industry_focus = 1 }
-				update_gov_support_pie_chart = yes
 			}
 			politic_icon_button_click = {
 				set_variable = { selected_industry_focus = 1 }
-				set_variable = { support_rate = 0.7 }
-				set_variable = { opposition_rate = 0.3 }
-				update_gov_support_pie_chart = yes
+				update_industrialization_rate = yes
 			}
 			
 			diplo_focus_buttom_button_click = {
