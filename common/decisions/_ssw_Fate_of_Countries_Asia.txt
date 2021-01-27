@@ -6,14 +6,10 @@ fate_of_countries_category_asia = {
 		is_good = no
 		cost = 0
 		fire_only_once = no
-		visible = {
-			owns_state = 857
-		}
-		available={
+		activation = {
 			owns_state = 857
 		}
 		cancel_trigger = {
-			OR={NOT={owns_state = 857}
 			857 = { is_valid_annexation_state = no }}
 		}
 		complete_effect = {
