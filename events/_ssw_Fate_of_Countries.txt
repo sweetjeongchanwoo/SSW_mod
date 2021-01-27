@@ -629,8 +629,8 @@ country_event = { #–kƒ|[ƒ‰ƒ“ƒh‚Ì‰^–½
 				is_in_faction_with = ROOT
 				OR = {
 					has_cosmetic_tag = RUS_empire
-					has_cosmetic_tag = 
-					has_cosmetic_tag = 
+					has_cosmetic_tag = SIB_russia
+					has_cosmetic_tag = MOS_russia
 				}
 			}
 			every_state = {
