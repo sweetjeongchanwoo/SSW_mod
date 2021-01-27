@@ -7,8 +7,8 @@ state={
 	state_category = town
 
 	history={
-		owner = UKR
-		remove_core_of = UKR
+		owner = MOS
+		add_core_of = MOS
 		add_core_of = RUS
 		add_core_of = SOV
 		buildings = {
