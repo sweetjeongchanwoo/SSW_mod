@@ -126,8 +126,8 @@ country_event = {
 				add_ideas = UKR_agricalture
 				add_ideas = UKR_civil_war
 				add_war_support = 0.6
-				transfer_state = 255
-				add_state_claim = 255
+				transfer_state = 220
+				add_state_claim = 220
 				add_state_claim = 257
 				add_state_claim = 239
 				add_state_claim = 258
@@ -140,7 +140,7 @@ country_event = {
 					can_puppet = no
 				}
 				remove_state_core = 217
-				255 = {
+				220 = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
@@ -265,7 +265,7 @@ country_event = {
 				add_ideas = UKR_agricalture
 				add_ideas = UKR_civil_war
 				add_war_support = 0.6
-				transfer_state = 222
+				transfer_state = 225
 				add_state_claim = 220
 				add_state_claim = 240
 				add_state_claim = 258
@@ -277,7 +277,7 @@ country_event = {
 					can_puppet = no
 				}
 				remove_state_core = 217
-				222 = {
+				225 = {
 					create_unit = {
 						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
 						owner = PREV
