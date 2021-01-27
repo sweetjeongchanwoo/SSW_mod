@@ -8,7 +8,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/urbanization.tga"
 	}
 	spriteType = {
-		name = "GFX_The_Greater_East_Asia_Initiative.png"
+		name = "GFX_The_Greater_East_Asia_Initiative"
 		texturefile = "gfx/interface/goals/The_Greater_East_Asia_Initiative.png"
 	}
 	spriteType = {
@@ -116,7 +116,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/search_under.tga"
 	}
 	spriteType = {
-		name = "GFX_Review_of_the_General_Mobilization_Act.png"
+		name = "GFX_Review_of_the_General_Mobilization_Act"
 		texturefile = "gfx/interface/goals/Review_of_the_General_Mobilization_Act.png"
 	}
 	spriteType = {
@@ -146,6 +146,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_no_interest"
 		texturefile = "gfx/interface/goals/no_interest.tga"
+	}
+	spriteType = {
+		name = "GFX_NEA_officers"
+		texturefile = "gfx/interface/goals/NEA_officers.dds"
 	}
 	spriteType = {
 		name = "GFX_LTV_ship"
@@ -196,7 +200,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/LTV_Bulgaria.dds"
 	}
 	spriteType = {
-		name = "GFX_Lessons_from_the_Second_Great_War.png"
+		name = "GFX_Lessons_from_the_Second_Great_War"
 		texturefile = "gfx/interface/goals/Lessons_from_the_Second_Great_War.png"
 	}
 	spriteType = {
@@ -220,7 +224,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/inchon.tga"
 	}
 	spriteType = {
-		name = "GFX_Hungry.png"
+		name = "GFX_Hungry"
 		texturefile = "gfx/interface/goals/Hungry.png"
 	}
 	spriteType = {
@@ -436,7 +440,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_world_factory.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_united_cabinet.png"
+		name = "GFX_focus_JAP_united_cabinet"
 		texturefile = "gfx/interface/goals/focus_JAP_united_cabinet.png"
 	}
 	spriteType = {
@@ -580,7 +584,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_Review_of_the_General_Mobilization_Act.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_Retsugai_ni_kiwotorareruna.png"
+		name = "GFX_focus_JAP_Retsugai_ni_kiwotorareruna"
 		texturefile = "gfx/interface/goals/focus_JAP_Retsugai_ni_kiwotorareruna.png"
 	}
 	spriteType = {
@@ -640,7 +644,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_Kinsyuku.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_Kayokai_Cabinet.png"
+		name = "GFX_focus_JAP_Kayokai_Cabinet"
 		texturefile = "gfx/interface/goals/focus_JAP_Kayokai_Cabinet.png"
 	}
 	spriteType = {
@@ -788,7 +792,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_branch_to_kuren.dds"
 	}
 	spriteType = {
-		name = "GFX_focus_JAP_bad_army_law.png"
+		name = "GFX_focus_JAP_bad_army_law"
 		texturefile = "gfx/interface/goals/focus_JAP_bad_army_law.png"
 	}
 	spriteType = {
@@ -944,6 +948,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focuse_RUS_got_siberia.dds"
 	}
 	spriteType = {
+		name = "GFX_endelkachew"
+		texturefile = "gfx/interface/goals/endelkachew.dds"
+	}
+	spriteType = {
 		name = "GFX_demobilization"
 		texturefile = "gfx/interface/goals/demobilization.tga"
 	}
@@ -952,11 +960,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/continue_rule_kor.tga"
 	}
 	spriteType = {
-		name = "GFX_Bulgaria.png"
+		name = "GFX_Bulgaria"
 		texturefile = "gfx/interface/goals/Bulgaria.png"
 	}
 	spriteType = {
-		name = "GFX_Autonomy_in_the_Greater_East_Asian_Co-Prosperity_Sphere.png"
+		name = "GFX_bonus_mp"
+		texturefile = "gfx/interface/goals/bonus_mp.tga"
+	}
+	spriteType = {
+		name = "GFX_Autonomy_in_the_Greater_East_Asian_Co-Prosperity_Sphere"
 		texturefile = "gfx/interface/goals/Autonomy_in_the_Greater_East_Asian_Co-Prosperity_Sphere.png"
+	}
+	spriteType = {
+		name = "GFX_aklilu"
+		texturefile = "gfx/interface/goals/aklilu.dds"
 	}
 }
