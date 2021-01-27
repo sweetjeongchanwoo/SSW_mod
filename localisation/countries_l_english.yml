@@ -577,6 +577,8 @@
  CHL_DEF:0 "チリ共和国"
  CHL_ADJ:0 "チリ"
  
+ COL_authority_despotism:0 "グラン・コロンビア"
+ COL_authority_despotism_DEF:0 "グラン・コロンビア"
  COL:0 "コロンビア共和国"
  COL_DEF:0 "コロンビア共和国"
  COL_ADJ:0 "コロンビア"

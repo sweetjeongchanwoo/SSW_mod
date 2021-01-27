@@ -96,11 +96,55 @@ interventio_in_german_civil_war = {
 					has_war_with = HGR
 				}
 			}
-			NOT = { has_country_flag = support_germany }
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
+				has_country_flag = support_germany
+				tag = GER
+				tag = LTV
+				tag = HLH
+				tag = HGR
+			}
 		}
 		cost = 50
 		fire_only_once = no
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 99
+				OR = {
+					AND = {
+						tag = CRO
+						has_full_control_of_state = 971
+						has_full_control_of_state = 972
+						has_full_control_of_state = 976
+						has_full_control_of_state = 977
+					}
+					AND = {
+						tag = FSA
+						NOT = {
+							country_exists = ALF
+							country_exists = LFF
+							country_exists = UTC
+						}
+					}
+					AND = {
+						tag = RUS
+						has_completed_focus = RUS_the_great_coup
+					}
+					AND = {
+						tag = SPR
+						has_completed_focus = SPR_faranhe
+					}
+					tag = ARG
+					tag = CHI
+					tag = NFR
+					tag = POR
+				}
+			}
+		}
 		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
@@ -128,11 +172,43 @@ interventio_in_german_civil_war = {
 					has_war_with = HGR
 				}
 			}
-			NOT = { has_country_flag = support_germany }
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
+				has_country_flag = support_germany
+				tag = GER
+				tag = LTV
+				tag = HLH
+				tag = HGR
+			}
 		}
 		cost = 50
 		fire_only_once = no
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 99
+				OR = {
+					AND = {
+						tag = MEX
+						has_completed_focus = MEX_invite_the_emperor
+					}
+					AND = {
+						tag = RUS
+						has_completed_focus = RUS_rise_of_the_republic
+					}
+					AND = {
+						tag = SPR
+						has_completed_focus = SPR_outouha
+					}
+					tag = ENG
+					tag = SWE
+					tag = FIN
+				}
+			}
+		}
 		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
@@ -160,11 +236,43 @@ interventio_in_german_civil_war = {
 					has_war_with = HGR
 				}
 			}
-			NOT = { has_country_flag = support_germany }
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
+				has_country_flag = support_germany
+				tag = GER
+				tag = LTV
+				tag = HLH
+				tag = HGR
+			}
 		}
 		cost = 50
 		fire_only_once = no
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 99
+				OR = {
+					AND = {
+						tag = MEX
+						has_completed_focus = MEX_regime_change
+					}
+					AND = {
+						tag = RUS
+						has_completed_focus = RUS_the_great_coup
+					}
+					AND = {
+						tag = SPR
+						has_completed_focus = SPR_franco
+					}
+					tag = FIN
+					tag = ITA
+					tag = NFR
+				}
+			}
+		}
 		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20
@@ -192,11 +300,55 @@ interventio_in_german_civil_war = {
 					has_war_with = HLH
 				}
 			}
-			NOT = { has_country_flag = support_germany }
+			NOT = {
+				has_government = anarchism
+				has_government = progressive_communism
+				has_government = classical_communism
+				has_global_flag = GER_civil_war_end
+				has_country_flag = support_germany
+				tag = GER
+				tag = LTV
+				tag = HLH
+				tag = HGR
+			}
 		}
 		cost = 50
 		fire_only_once = no
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 99
+				OR = {
+					AND = {
+						tag = BUL
+						has_full_control_of_state = 973
+						has_full_control_of_state = 975
+					}
+					AND = {
+						tag = CRO
+						has_full_control_of_state = 971
+						has_full_control_of_state = 972
+						has_full_control_of_state = 976
+						has_full_control_of_state = 977
+					}
+					AND = {
+						tag = HUN
+						has_full_control_of_state = 82
+						has_full_control_of_state = 83
+						has_full_control_of_state = 84
+					}
+					AND = {
+						tag = RUS
+						has_completed_focus = RUS_the_great_coup
+					}
+					AND = {
+						tag = SPR
+						has_completed_focus = SPR_franco
+					}
+					tag = ITA
+				}
+			}
+		}
 		visible = { NOT = { has_global_flag = GER_civil_war_end } }
 		complete_effect = {
 			army_experience = 20

@@ -295,4 +295,31 @@ fate_of_countries_category_western_europe = {
 		}
 		ai_will_do = { factor = 200 }
 	}
+	fate_of_sudatenland = { #ズデーテンラントの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_CZE
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				CZE = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = LTV
+				is_in_faction_with = CZE
+			}
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.10 }
+		}
+		ai_will_do = { factor = 200 }
+	}
 }

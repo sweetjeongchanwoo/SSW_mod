@@ -291,6 +291,7 @@ country_event = { #ライン裁定
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -364,6 +365,7 @@ country_event = { #ライン裁定
 			OR = {
 				WUR = { is_subject_of = ROOT }
 				is_in_faction_with = WUR
+				original_tag = WUR
 			}
 		}
 		ai_chance = { base = 10 }
@@ -387,6 +389,7 @@ country_event = { #ライン裁定
 			OR = {
 				HAN = { is_subject_of = ROOT }
 				is_in_faction_with = HAN
+				original_tag = HAN
 			}
 		}
 		ai_chance = { base = 10 }
@@ -428,6 +431,7 @@ country_event = { #ライン裁定
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -468,6 +472,7 @@ country_event = { #北ポーランドの運命
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -496,6 +501,7 @@ country_event = { #北ポーランドの運命
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -524,6 +530,7 @@ country_event = { #北ポーランドの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -580,6 +587,7 @@ country_event = { #北ポーランドの運命
 			OR = {
 				PRE = { is_subject_of = ROOT }
 				is_in_faction_with = PRE
+				original_tag = PRE
 			}
 		}
 		ai_chance = { base = 10 }
@@ -668,6 +676,7 @@ country_event = { #カトヴィツェの運命
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -692,6 +701,7 @@ country_event = { #カトヴィツェの運命
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -716,6 +726,7 @@ country_event = { #カトヴィツェの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -740,6 +751,7 @@ country_event = { #カトヴィツェの運命
 			OR = {
 				PRE = { is_subject_of = ROOT }
 				is_in_faction_with = PRE
+				original_tag = PRE
 			}
 		}
 		ai_chance = { base = 10 }
@@ -781,6 +793,7 @@ country_event = { #ダンツィヒ裁定
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -808,6 +821,7 @@ country_event = { #ダンツィヒ裁定
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -835,6 +849,7 @@ country_event = { #ダンツィヒ裁定
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -862,6 +877,7 @@ country_event = { #ダンツィヒ裁定
 			OR = {
 				PRE = { is_subject_of = ROOT }
 				is_in_faction_with = PRE
+				original_tag = PRE
 			}
 		}
 		ai_chance = { base = 10 }
@@ -906,6 +922,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -935,6 +952,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -964,6 +982,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -993,6 +1012,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				PRE = { is_subject_of = ROOT }
 				is_in_faction_with = PRE
+				original_tag = PRE
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1030,6 +1050,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1057,6 +1078,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1084,6 +1106,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1111,6 +1134,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				PRE = { is_subject_of = ROOT }
 				is_in_faction_with = PRE
+				original_tag = PRE
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1138,6 +1162,7 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 			OR = {
 				RUS = { is_subject_of = ROOT }
@@ -1183,10 +1208,12 @@ country_event = { #ヒンターポンメルンの運命
 			OR = {
 				POL = { is_subject_of = ROOT }
 				is_in_faction_with = POL
+				original_tag = POL
 			}
 			OR = {
 				LIT = { is_subject_of = ROOT }
 				is_in_faction_with = LIT
+				original_tag = LIT
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1248,6 +1275,7 @@ country_event = { #シュレースヴィヒの運命
 			OR = {
 				GR0 = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
+				original_tag = GR0
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1270,6 +1298,7 @@ country_event = { #シュレースヴィヒの運命
 			OR = {
 				LTV = { is_subject_of = ROOT }
 				is_in_faction_with = LTV
+				original_tag = LTV
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1292,6 +1321,7 @@ country_event = { #シュレースヴィヒの運命
 			OR = {
 				SHL = { is_subject_of = ROOT }
 				is_in_faction_with = SHL
+				original_tag = SHL
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1314,6 +1344,7 @@ country_event = { #シュレースヴィヒの運命
 			OR = {
 				DEN = { is_subject_of = ROOT }
 				is_in_faction_with = DEN
+				original_tag = DEN
 			}
 		}
 		ai_chance = { base = 10 }
@@ -1328,6 +1359,82 @@ country_event = { #シュレースヴィヒの運命
 			}
 			DEN = { transfer_state = PREV }
 			add_core_of = DEN
+		}
+	}
+}
+country_event = { #ズデーテンラントの運命
+	id = ssw_foc_events.10
+	title = ssw_foc_events.10.title
+	desc = ssw_foc_events.10.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_events.10.a
+		trigger = {
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				original_tag = GR0
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_CZE
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			GR0 = { transfer_state = PREV }
+			add_core_of = GR0
+		}
+	}
+	option = {
+		name = ssw_foc_events.10.b
+		trigger = {
+			OR = {
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = LTV
+				original_tag = LTV
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_CZE
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LTV = { transfer_state = PREV }
+			add_core_of = LTV
+		}
+	}
+	option = {
+		name = ssw_foc_events.10.c
+		trigger = {
+			OR = {
+				CZE = { is_subject_of = ROOT }
+				is_in_faction_with = CZE
+				original_tag = CZE
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_CZE
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			CZE = { transfer_state = PREV }
+			add_core_of = CZE
 		}
 	}
 }
