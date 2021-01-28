@@ -22,6 +22,8 @@ scripted_gui = {
 				}
 				else = {
 					set_variable = { selected_policy_bar_button = 1 }
+					set_variable = { inflation_rate = 220 }
+					set_variable = { industrialization_rate = 220 }
 				}
 			}
 		}
