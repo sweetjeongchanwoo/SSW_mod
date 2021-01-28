@@ -48,8 +48,6 @@ on_actions = {
 					add_claim_by = UKR
 				}
 			}
-			# Restore Hindemburg core for Ukraine Comissariat
-			217 = { add_core_of = UKR }
 			every_state = {
 				limit = {
 					OR = {

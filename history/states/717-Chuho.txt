@@ -1,8 +1,7 @@
+
 state={
 	id=717
 	name="STATE_717"
-	
-	state_category = pastoral
 
 	history={
 		owner = MAN
@@ -11,12 +10,16 @@ state={
 			infrastructure = 3
 
 		}
-		victory_points = { 9623 1 }
+		victory_points = {
+			9623 1 
+		}
+
 	}
 
 	provinces={
-		4551 6863 7569 9623 9798 10215 10463 10519 10521 12342 12443 12500 
+		 9623  10215 10463 10519 10521 12342 4551 
 	}
 	manpower=3924174
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

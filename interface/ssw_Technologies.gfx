@@ -355,15 +355,15 @@ spriteTypes = {
 	}
 #éxâáï∫â»#
 	SpriteType = {
-		name = "GFX_support_equipment_1_medium"
+		name = "GFX_tech_support_medium"
 		texturefile = "gfx/interface/technologies/support_tech/support_equipment_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_support_equipment_2_medium"
+		name = "GFX_tech_support_2_medium"
 		texturefile = "gfx/interface/technologies/support_tech/support_equipment_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_support_equipment_3_medium"
+		name = "GFX_tech_support_3_medium"
 		texturefile = "gfx/interface/technologies/support_tech/support_equipment_3.dds"
 	}
 	SpriteType = {
@@ -1107,6 +1107,11 @@ spriteTypes = {
 		name = "GFX_ITA_fighter_1940_medium"
 		texturefile = "gfx/interface/technologies/ITA_fighter3.dds"
 	}
+	SpriteType = {
+		name = "GFX_ITA_jet_naval_fighter_1948_medium"
+		texturefile = "gfx/interface/technologies/ITA_jet_fighter_1956.dds"
+	}
+
 #France
 	SpriteType = {
 		name = "GFX_FRA_fighter_1936_medium"
@@ -1286,6 +1291,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/USA_CAS3.dds"
 	}
 	SpriteType = {
+		name = "GFX_ALF_jet_CAS_1948_medium"
+		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_CAS_1948.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_ALF_naval_CAS_1936_medium"
 		texturefile = "gfx/interface/technologies/USA_CAS2_cv.dds"
 	}
@@ -1310,6 +1320,11 @@ spriteTypes = {
 		name = "GFX_ALF_jet_transport_plane_1948_medium"
 		texturefile = "gfx/interface/technologies/air_tech/ALF_jet_strategic_bomber_1948.dds"
 	}
+	SpriteType = {
+		name = "GFX_ITA_naval_fighter_1936_medium"
+		texturefile = "gfx/interface/technologies/ITA_jet_fighter_1956.dds"
+	}
+
 #federal state of America(ÉAÉÅÉäÉJòAñM)
 	SpriteType = {
 		name = "GFX_FSA_fighter_1936_medium"

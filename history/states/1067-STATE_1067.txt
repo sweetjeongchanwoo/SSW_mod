@@ -1,0 +1,21 @@
+state={
+	id=1067
+	name="STATE_1067"
+	history={
+		owner = NEA
+		add_core_of = NEA
+		add_core_of = ERI
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		8043 13286 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
