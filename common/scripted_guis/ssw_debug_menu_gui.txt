@@ -1,0 +1,58 @@
+scripted_gui = {
+    ssw_debug_menu_open_button = {
+        window_name = "ssw_debug_menu_open_button_container"
+        context_type = player_context
+        visible = {
+        is_debug = yes
+        }
+        effects = {
+            ssw_debug_menu_open_button_button_click = {
+                ROOT = {
+                set_country_flag = ssw_debug_menu_opened
+                }
+            }
+        }
+    }
+    ssw_debug_menu = {
+        window_name = "ssw_debug_menu_container"
+        context_type = player_context
+        visible = {
+        has_country_flag = ssw_debug_menu_opened
+        }
+        
+        effects = {
+            ssw_debug_play_super_event_American_civil_war_button_click = {
+                ROOT = {
+                set_global_flag = big_event_custom_American_civil_war
+                }
+            }
+            ssw_debug_play_super_event_Anpo_protets_button_click = {
+                ROOT = {
+                set_country_flag = big_event_custom_anpo_protets
+                }
+            }
+            ssw_debug_play_super_event_German_civil_war_button_click = {
+                ROOT = {
+                set_global_flag = big_event_custom_german_civil_war
+                }
+            }
+        }
+
+        triggers = {
+		}
+    }
+    ssw_debug_menu_select_tab = {
+        window_name = "ssw_debug_menu_select_tab_container"
+        context_type = player_context
+        visible = {
+        has_country_flag = ssw_debug_menu_opened
+        }
+        effects = {
+            ssw_debug_menu_close_button_click = {
+                ROOT = {
+                clr_country_flag = ssw_debug_menu_opened
+                }
+            }
+        }
+    }
+}
