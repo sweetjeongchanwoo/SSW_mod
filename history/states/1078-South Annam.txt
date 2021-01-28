@@ -6,7 +6,7 @@ state = { #“ìƒgƒ“ƒLƒ“
 	history = {
 		owner = VIN
 		add_core_of = VIN
-		add_core_of = ROV
+		add_core_of = TOK
 		buildings = { infrastructure = 4 }
 		victory_points = { 4379 9 }
 		victory_points = { 4397 9 }

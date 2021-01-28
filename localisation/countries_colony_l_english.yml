@@ -81,16 +81,16 @@
  BEL_GER_ADJ:0 "独領ベルギー"
  
  NFR_GER:0 "独領北フランス"
- NFR_GER_ADJ:0 "独領北フランス"
+ NFR_GER_DEF:0 "独領北フランス"
  NFR_GER_national_socialism:0 "独国防軍フランス占領地"
  NFR_GER_national_socialism_DEF:0 "独国防軍フランス占領地"
  NFR_GER_ADJ:0 "独領北仏"
  
- RDW_GER:0 "独領ドン・ヴォルガ"
- RDW_GER_ADJ:0 "独領ドン・ヴォルガ"
- RDW_GER_national_socialism:0 "ドン・ヴォルガ国家弁務官区"
- RDW_GER_national_socialism_DEF:0 "ドン・ヴォルガ国家弁務官区"
- RDW_GER_ADJ:0 "独領ドン・ヴォルガ"
+ DON_GER:0 "独領ドン・ヴォルガ"
+ DON_GER_DEF:0 "独領ドン・ヴォルガ"
+ DON_GER_national_socialism:0 "ドン・ヴォルガ国家弁務官区"
+ DON_GER_national_socialism_DEF:0 "ドン・ヴォルガ国家弁務官区"
+ DON_GER_ADJ:0 "独領ドン・ヴォルガ"
  
  ATL_GER:0 "独領大西洋"
  ATL_GER_DEF:0 "独領大西洋"
