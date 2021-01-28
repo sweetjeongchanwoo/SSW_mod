@@ -669,6 +669,10 @@
  CAM_DEF:0 "カンボジア王国"
  CAM_ADJ:0 "カンボジア"
  
+ DPK:0 "北朝鮮"
+ DPK_DEF:0 "北朝鮮"
+ DPK_ADJ:0 "北朝鮮"
+ 
  ISR:0 "イスラエル国"
  ISR_DEF:0 "イスラエル国
  ISR_ADJ:0 "イスラエル"
@@ -704,6 +708,22 @@
  QAT:0 "カタール国"
  QAT_DEF:0 "カタール国"
  QAT_ADJ:0 "カタール"
+ 
+ ROK:0 "大韓民国"
+ ROK_DEF:0 "大韓民国"
+ ROK_anarchism:0 "ドゥレ"
+ ROK_anarchism_DEF:0 "ドゥレ"
+ ROK_progressive_communism:0 "朝鮮人民共和国"
+ ROK_progressive_communism_DEF:0 "朝鮮人民共和国"
+ ROK_classical_communism:0 "朝鮮人民共和国"
+ ROK_classical_communism_DEF:0 "朝鮮人民共和国"
+ ROK_authority_despotism:0 "大韓民国"
+ ROK_authority_despotism_DEF:0 "大韓民国"
+ ROK_national_fascism:0 "大韓民国"
+ ROK_national_fascism_DEF:0 "大韓民国"
+ ROK_national_socialism:0 "大韓民国"
+ ROK_national_socialism_DEF:0 "大韓民国"
+ ROK_ADJ:0 "大韓"
  
  SRL:0 "スリランカ民主社会主義共和国"
  SRL_DEF:0 "スリランカ民主社会主義共和国"
@@ -1389,25 +1409,6 @@
  YUG_ADJ:0 "ユーゴスラビア"
  
 ### 保留 ###
- ROK:0 "大韓民国"
- ROK_DEF:0 "大韓民国"
- ROK_anarchism:0 "ドゥレ"
- ROK_anarchism_DEF:0 "ドゥレ"
- ROK_progressive_communism:0 "朝鮮人民共和国"
- ROK_progressive_communism_DEF:0 "朝鮮人民共和国"
- ROK_classical_communism:0 "朝鮮人民共和国"
- ROK_classical_communism_DEF:0 "朝鮮人民共和国"
- ROK_authority_despotism:0 "大韓民国"
- ROK_authority_despotism_DEF:0 "大韓民国"
- ROK_national_fascism:0 "大韓民国"
- ROK_national_fascism_DEF:0 "大韓民国"
- ROK_national_socialism:0 "大韓民国"
- ROK_national_socialism_DEF:0 "大韓民国"
- ROK_ADJ:0 "大韓"
- 
- DPK:0 "朝鮮民主主義人民共和国"
- DPK_DEF:0 "朝鮮民主主義人民共和国"
- DPK_ADJ:0 "北朝鮮"
  
  HGR:0 "ゲーリング・ドイツ臨時政府"
  HGR_DEF:0 "ゲーリング・ドイツ臨時政府"

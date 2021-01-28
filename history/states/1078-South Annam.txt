@@ -1,0 +1,15 @@
+state = { #“ìƒgƒ“ƒLƒ“
+	id = 1078
+	name = "STATE_1078"
+	manpower = 1000000
+	state_category = town
+	history = {
+		owner = VIN
+		add_core_of = VIN
+		add_core_of = ROV
+		buildings = { infrastructure = 4 }
+		victory_points = { 4379 9 }
+		victory_points = { 4397 9 }
+	}
+	provinces = { 1302 4379 4397 7280 12297 }
+}

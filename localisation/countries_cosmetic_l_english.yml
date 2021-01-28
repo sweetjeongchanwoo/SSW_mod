@@ -124,6 +124,10 @@
  PRU_peru_bolivia_DEF:0 "ペルー＝ボリビア"
  PRU_peru_bolivia_ADJ:0 "ペルー＝ボリビア"
  
+ DPK_perfect:0 "朝鮮民主主義人民共和国"
+ DPK_perfect_DEF:0 "朝鮮民主主義人民共和国"
+ DPK_perfect_ADJ:0 "朝鮮"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"

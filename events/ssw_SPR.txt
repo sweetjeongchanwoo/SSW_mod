@@ -1229,3 +1229,29 @@ country_event = {
 		ai_chance = { base = 1 }				
 			}
 }
+news_event = {
+	id = ssw_spr.1000
+	title = ssw_spr.1000.title
+	desc = ssw_spr.1000.desc
+	picture = GFX_news_event_032
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = ssw_spr.1000.a
+		trigger = {
+			NOT = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.1000.b
+		trigger = {
+			OR = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+}
