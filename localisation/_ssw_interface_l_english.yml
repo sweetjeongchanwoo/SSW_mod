@@ -2,6 +2,7 @@
  Foeward:0 "選択"
  
  #social policy
+ GDP_up_rate:0 "経済成長値"
  INDUSTRY_TEXT:0 "産業"
  POLITIC_TEXT:0 "政策"
  DIPLO_TEXT:0 "外交"
