@@ -209,7 +209,7 @@ NFR_GER = {	#独領北フランス
 	color_ui = rgb { 25 115 150 }
 }
 
-RDW_GER = {	#独領ドン・ヴォルガ
+DON_GER = {	#独領ドン・ヴォルガ
 	color = rgb { 102 89 86 }
 	color_ui = rgb { 0 80 230 }
 }
