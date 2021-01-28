@@ -186,8 +186,8 @@ CAN = {	#カナダ
 }
 
 CHI = {	#中国
-	color = rgb { 255 215 0 }
-	color_ui = rgb { 255 215 0 }
+	color = rgb { 40 0 60 }
+	color_ui = rgb { 40 0 60 }
 }
 
 CHL = {	#チリ

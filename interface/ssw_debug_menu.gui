@@ -1,0 +1,92 @@
+guiTypes = {
+	containerWindowType =  {
+		name = "ssw_debug_menu_open_button_container"
+		position = { x = 0  y = 0 }
+
+		buttonType = {
+			name = "ssw_debug_menu_open_button_button"
+			position = { x = 0 y = 76 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "Open debug menu"
+		}
+	}
+	containerWindowType = {
+		name = "ssw_debug_menu_container"
+		position = { x = 0 y = 0 }
+		size = { width=1000 height=700}
+		Orientation = center
+		Origo = center
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		instantTextBoxType = {
+			name = "play_superevents"
+			position = { x = 25 y = 110 }
+			font = "hoi_16mbs"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "ssw_debug_menu_play_super_events"
+			maxWidth = 200
+			maxHeight = 24
+			format = centre
+		}
+		buttontype = {
+		name = "ssw_debug_play_super_event_American_civil_war_button"
+		position = { x = 50 y = 130 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "SE American civil war"
+		}
+		buttontype = {
+		name = "ssw_debug_play_super_event_Anpo_protets_button"
+		position = { x = 50 y = 170 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "SE Anpo Protests"
+		}
+		buttontype = {
+		name = "ssw_debug_play_super_event_German_civil_war_button"
+		position = { x = 50 y = 210 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "SE German civil war"
+		}
+		buttontype = {
+		name = "ssw_debug_play_super_event_Nuclear_button"
+		position = { x = 50 y = 250 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "SE Nuclear"
+		}
+	}
+	containerWindowType =  {
+		name = "ssw_debug_menu_select_tab_container"
+		position = { x = 0  y = -300 }
+		size = { width=1000 height=100}
+		Orientation = center
+		Origo = center
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 275 y = 20 }
+			font = "hoi_30header"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "ssw_debug_menu_title_text"
+			maxWidth = 500
+			maxHeight = 24
+			format = centre
+		}
+		buttontype = {
+		name = "ssw_debug_menu_close_button"
+		position = { x = 955 y = 11 }
+		quadTextureSprite = "GFX_closebutton"
+		shortcut = "ESCAPE"
+		}
+	}
+}

@@ -486,6 +486,7 @@ focus_tree = {
 			custom_effect_tooltip = start_second_scw_tt
 			hidden_effect = {
 				set_global_flag = spanish_civil_war
+				news_event = { id = ssw_spr.1000 hours = 6 }
 				SPA = {
 					transfer_state = 166
 					transfer_state = 169
@@ -711,37 +712,59 @@ focus_tree = {
 		x = 17
 		y = 7
 		completion_reward = {
-			ITA = {
-					country_event = { id = ssw_spr.1 days = 1 }
-				}
+			ITA = { country_event = { id = ssw_spr.1 days = 1 } }
 		}
-
 	}
-	focus = {
+	focus = { #’n’†ŠCŠCŒR‚ÌÝ—§
 		id = SPR_faranhe_barearesusintyuu
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 7.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_faranhe_ahurikabunkatu
+		prerequisite = { focus = SPR_faranhe_ahurikabunkatu }
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
 		}
 		x = 17
 		y = 8
 		completion_reward = {
-			ITA = {
-					country_event = { id = ssw_spr.111 days = 1 }
+			navy_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
 				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1
+				uses = 6
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_itariakorosu
 		icon = GFX_focus_attack_italy
 		cost = 6.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_faranhe_barearesusintyuu
-		}
+		prerequisite = { focus = SPR_faranhe_barearesusintyuu }
 		available = { has_army_manpower = { size > 499999 } }
 		x = 17
 		y = 9
@@ -937,7 +960,7 @@ focus_tree = {
 		id = SPR_huranksiji
 		icon = GFX_goal_generic_major_alliance
 		cost = 1.00
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 90 }
 		prerequisite = {
 			focus = SPR_seihu
 		}
@@ -955,7 +978,7 @@ focus_tree = {
 		id = SPR_franco
 		icon = GFX_focus_spa_caudillo_of_spain
 		cost = 1.00
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 90 }
 		prerequisite = {
 			focus = SPR_huranksiji
 		}
@@ -1114,20 +1137,17 @@ focus_tree = {
 	}
 	focus = {
 		id = SPR_franco_barearesu
-		icon = GFX_goal_generic_intelligence_exchange
+		text = ideological_fanaticism
+		icon = GFX_goal_generic_demand_territory
 		cost = 4.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_itariadoumei
-		}
+		prerequisite = { focus = SPR_franco_itariadoumei }
 		x = 32
 		y = 4
 		completion_reward = {
-			ITA = {
-					country_event = { id = ssw_spr.5 days = 1 }
-				}
+			add_ideas = SSW_ideological_fanaticism_focus
+			hidden_effect = { set_rule = { can_use_kamikaze_pilots = yes } }
 		}
-
 	}
 	focus = {
 		id = SPR_franco_jidousyahanbai

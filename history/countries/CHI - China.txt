@@ -1,49 +1,42 @@
-﻿1950.1.1 = {
-	capital = 613
-	oob = "CHI_1950"
+﻿capital = 613
+oob = "CHI_1950"
+set_convoys = 5
 
-	set_convoys = 5
-
-	set_technology = {
-		infantry_weapons = 1
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+	civilian_economy
+	CHI_idea_2
+	CHI_idea_3
+	CHI_idea_4
+}
+set_politics = {
+	ruling_party = authority_despotism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_despotism = 100
+}
+create_country_leader = {
+	name = "Chen Gongbo"
+	desc = ""
+	picture = "gfx/leaders/CHI/Portrait_Chen_Gongbo.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism_ideology
+	traits = {
+		#
 	}
-
-	add_ideas = {
-		civilian_economy
-		CHI_idea_2
-		CHI_idea_3
-		CHI_idea_4
-	}
-
-	set_politics = {
-		ruling_party = authority_despotism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		authority_despotism = 100
-	}
-
-	create_country_leader = {
-		name = "Chen Gongbo"
-		desc = ""
-		picture = "gfx/leaders/CHI/Portrait_Chen_Gongbo.dds"
-		expire = "1965.1.1"
-		ideology = social_liberalism_ideology
-		traits = {
-			#
-		}
-	}
-
-	create_country_leader = {
-		name = "Chiang Kai-shek"
-		desc = ""
-		picture = "gfx/leaders/CHI/Portrait_Chiang_Kai_shek.dds"
-		expire = "1965.1.1"
-		ideology = authority_despotism_ideology
-		traits = {
-			#
-		}
+}
+create_country_leader = {
+	name = "Gu Zhutong"
+	desc = ""
+	picture = "gfx/leaders/CHI/Portrait_Gu_Zhutong.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
 	}
 }
