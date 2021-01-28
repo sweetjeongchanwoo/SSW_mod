@@ -276,19 +276,27 @@ guiTypes = {
 		iconType = {
 			name = "chart"
 			spriteType = "GFX_Line_Graph_Chart"
-			position = { x = 175 y = 45 }
+			position = { x = 100 y = 25 }
 		}
 		instantTextboxType = {
 			name = "budget"
-			position = { x= 390 y = 80}
+			position = { x= 310 y = 35}
 			font = "hoi_30header"
-			text = "[?current_budget|+] $"
-			maxWidth = 150
+			text = "CUTTENT_BUDGET_TEXT"
+			maxWidth = 230
+			format = center
+		}
+		instantTextboxType = {
+			name = "inflation_rate"
+			position = { x= 310 y = 85}
+			font = "hoi_30header"
+			text = "CURRENT_INFLATION_TEXT"
+			maxWidth = 230
 			format = center
 		}
 		gridboxtype = {
 			name = "line_segments"
-			position = { x = 99 y = 66 }
+			position = { x = 24 y = 46 }
 			size = { width = 0 height = 200 }
 			slotsize = { width = 10 height = 200 }
 			max_slots_horizontal = 20
@@ -296,7 +304,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "SSW_Policy_tab_industry_graph_num"
-			position = { x=85 y=-28 }
+			position = { x=10 y=-48 }
 			size = { width = 555 height = 190 }
 			
 			instantTextboxType = {
@@ -349,374 +357,153 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
-			name = "SSW_Policy_tab_industry_global_market"
-			position = { x=0 y=180 }
-			size = { width = 555 height = 320 }
-				
+			name = "SSW_Policy_tab_industry_tax"
+			position = { x=3 y=150 }
+			size = { width = 550 height = 85 }
+			
 			background = {
 				name = "Background"		
-				spriteType ="GFX_tiled_bg_1_scrollbar"
+				spriteType ="GFX_tiled_decisions_bg_small"
 			}
 			containerWindowType = {
-				name = "SSW_Policy_tab_industry_global_market"
-				position = { x=13 y=10 }
-				size = { width = 540 height = 300 }
-				verticalScrollbar = "right_vertical_slider" 
+				name = "SSW_Policy_tab_industry_tax_slider"
+				position = { x=-15 y=40 }
+				size = { width = 550 height = 170 }
 				
-				background = {
-					name = "background"
-					spriteType = "GFX_tiled_decisions_bg_small"
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_tax_slider_bg"
+					position = { x=50 y=5 }
+					size = { width = 360 height = 10 }
+					background = {
+						name = "Background"		
+						spriteType ="GFX_scroll_track"
+					}
+				}
+				iconType = {
+					name = "SliderButton"	
+					quadTextureSprite = "GFX_scroll_drager"
+					position = { x=225 y =2}
+				}
+				buttonType = {
+					name = "SliderDown"	
+					quadTextureSprite = "GFX_scroll_left"
+					position = { x=35 y =2}
+				}
+				buttonType = {
+					name = "SliderUp"	
+					quadTextureSprite = "GFX_scroll_right"
+					position = { x= 410 y =2}
 				}
 				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_small_arms"
-					position = { x=10 y=10 }
-					size = { width = 555 height = 320 }
+					name = "SSW_Policy_tab_industry_tax_info"
+					position = { x=430 y=-40 }
+					size = { width = 135 height = 87 }
+					
 					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
+						name = "Background"		
+						spriteType ="GFX_tiled_decisions_bg_small"
 					}
 					iconType = {
-						name = "small_arms"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame = 3
+						name = "goods_icon"	
+						quadTextureSprite = "GFX_consumer_goods_icon"
+						position = { x=10 y =18}
+						scale = 0.5
 					}
 					instantTextboxType = {
-						name = "small_arms_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "small_arms_text"
-						maxWidth = 100
+						name = "goods_text"
+						position = { x= 55 y = 10}
+						font = "hoi_30header"
+						text = "[GOODS_TEXT]"
+						maxWidth = 80
+						format = left
+					}
+					iconType = {
+						name = "stability_icon"	
+						quadTextureSprite = "GFX_stability_texticon"
+						position = { x=13 y =53}
 					}
 					instantTextboxType = {
-						name = "small_arms_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "arms_cost_text"
-						maxWidth = 100
-						format = center
+						name = "plus_stability_text"
+						position = { x= 55 y = 48 }
+						font = "hoi_30header"
+						text = "[PLUS_STABILITY_TEXT]"
+						maxWidth = 80
+						format = left
 					}
-					instantTextboxType = {
-						name = "small_arms_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "arms_amount_text"
-						maxWidth = 100
-						format = center
+				}
+			}
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_industry_ind"
+			position = { x=3 y=230 }
+			size = { width = 550 height = 85 }
+			
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_decisions_bg_small"
+			}
+			containerWindowType = {
+				name = "SSW_Policy_tab_industry_ind_slider"
+				position = { x=-15 y=35 }
+				size = { width = 550 height = 170 }
+				
+				containerWindowType = {
+					name = "SSW_Policy_tab_industry_ind_slider_bg"
+					position = { x=50 y=5 }
+					size = { width = 360 height = 10 }
+					background = {
+						name = "Background"		
+						spriteType ="GFX_scroll_track"
 					}
-					buttonType = {
-						name = "sale_small_arms"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_small_arms"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
+				}
+				iconType = {
+					name = "indSliderButton"
+					quadTextureSprite = "GFX_scroll_drager"
+					position = { x=225 y =2}
+				}
+				buttonType = {
+					name = "indSliderDown"	
+					quadTextureSprite = "GFX_scroll_left"
+					position = { x=35 y =2}
+				}
+				buttonType = {
+					name = "indSliderUp"	
+					quadTextureSprite = "GFX_scroll_right"
+					position = { x= 410 y =2}
 				}
 				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_artillery"
-					position = { x=10 y=50 }
-					size = { width = 555 height = 320 }
+					name = "SSW_Policy_tab_industry_ind_info"
+					position = { x=430 y=-35 }
+					size = { width = 135 height = 87 }
+					
 					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
+						name = "Background"		
+						spriteType ="GFX_tiled_decisions_bg_small"
 					}
 					iconType = {
-						name = "artillery"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame = 4
+						name = "goods_icon"	
+						quadTextureSprite = "GFX_industry_texticon"
+						position = { x=13 y =30}
 					}
 					instantTextboxType = {
-						name = "artillery_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "artillery_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "artillery_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "artillery_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "artillery_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "artillery_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_artillery"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_artillery"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
+						name = "industrialization_text"
+						position = { x= 55 y = 25}
+						font = "hoi_30header"
+						text = "[industrialization_TEXT]"
+						maxWidth = 80
+						format = left
 					}
 				}
-				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_supply"
-					position = { x=10 y=90 }
-					size = { width = 555 height = 320 }
-					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
-					}
-					iconType = {
-						name = "supply"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame =5
-					}
-					instantTextboxType = {
-						name = "supply_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "supply_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "supply_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "supply_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "supply_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "supply_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_supply"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_supply"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
-				}
-				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_tank"
-					position = { x=10 y=130 }
-					size = { width = 555 height = 320 }
-					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
-					}
-					iconType = {
-						name = "tank"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame =6
-					}
-					instantTextboxType = {
-						name = "tank_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "tank_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "tank_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "tank_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "tank_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "tank_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_tank"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_tank"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
-				}
-				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_plane"
-					position = { x=10 y=170 }
-					size = { width = 555 height = 320 }
-					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
-					}
-					iconType = {
-						name = "plane"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame =7
-					}
-					instantTextboxType = {
-						name = "plane_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "plane_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "plane_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "plane_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "plane_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "plane_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_plane"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_plane"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
-				}
-				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_coal"
-					position = { x=10 y=210 }
-					size = { width = 555 height = 320 }
-					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
-					}
-					iconType = {
-						name = "coal"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame =12 
-					}
-					instantTextboxType = {
-						name = "coal_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "coal_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "coal_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "coal_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "coal_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "coal_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_coal"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_coal"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
-				}
-				containerWindowType = {
-					name = "SSW_Policy_tab_industry_global_market_iron"
-					position = { x=10 y=250 }
-					size = { width = 555 height = 320 }
-					background = {
-						name = "background"
-						quadTextureSprite = "GFX_diplo_countrylist_entry"
-					}
-					iconType = {
-						name = "iron"
-						position = { x=10 y=10 }
-						quadTextureSprite = "GFX_tradegoods"
-						frame =14
-					}
-					instantTextboxType = {
-						name = "iron_text_box"
-						position = { x= 60 y = 13}
-						font = "hoi_16mbs"
-						text = "coal_text"
-						maxWidth = 100
-					}
-					instantTextboxType = {
-						name = "iron_cost_box"
-						position = { x= 200 y = 13}
-						font = "hoi_16mbs"
-						text = "iron_cost_text"
-						maxWidth = 100
-						format = center
-					}
-					instantTextboxType = {
-						name = "iron_amount_box"
-						position = { x= 300 y = 13}
-						font = "hoi_16mbs"
-						text = "iron_amount_text"
-						maxWidth = 100
-						format = center
-					}
-					buttonType = {
-						name = "sale_iron"
-						position = { x=430 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 2
-					}
-					buttonType = {
-						name = "purchase_iron"
-						position = { x=470 y=5 }
-						quadTextureSprite = "GFX_checkbox_small_red_green"
-						frame = 1
-					}
-				}
+			}
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_industry_debt"
+			position = { x=3 y=310 }
+			size = { width = 550 height = 185 }
+			
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_decisions_bg_small"
 			}
 		}
 	}
@@ -1654,7 +1441,7 @@ guiTypes = {
 			size = { width = 305 height = 225 }
 			
 			background = {
-				name = "Background"		
+				name = "Background"	
 				spriteType ="GFX_tiled_decisions_bg_small"
 			}
 			instantTextboxType = {
@@ -1683,15 +1470,73 @@ guiTypes = {
 				name = "Background"		
 				spriteType ="GFX_tiled_decisions_bg_small"
 			}
-			containerWindowType = {
-				name = "SSW_Policy_tab_policys_1"
-				position = { x=18 y=10 }
-				size = { width = 512 height = 40 }
-				buttonType = {
-					name = "first_policy"		
-					quadTextureSprite ="GFX_decision_item_bg"
-					frame = 2
-				}
+			buttonType = {
+				name = "first_policy"		
+				position = { x = 15 y = 5 }
+				quadTextureSprite ="GFX_decision_item_bg"
+				frame = 2
+			}
+			buttonType = {
+				name = "second_policy"		
+				position = { x = 15 y = 60 }
+				quadTextureSprite ="GFX_decision_item_bg"
+				frame = 2
+			}
+			buttonType = {
+				name = "third_policy"		
+				position = { x = 15 y = 115 }
+				quadTextureSprite ="GFX_decision_item_bg"
+				frame = 2
+			}
+			buttonType = {
+				name = "four_policy"		
+				position = { x = 15 y = 170 }
+				quadTextureSprite ="GFX_decision_item_bg"
+				frame = 2
+			}
+			buttonType = {
+				name = "fifth_policy"		
+				position = { x = 15 y = 225 }
+				quadTextureSprite ="GFX_decision_item_bg"
+				frame = 2
+			}
+		}
+	}
+	containerWindowType = {
+		name = "SSW_Policy_tab_diplo"
+		position = { x=540 y=393 }
+		size = { width = 545 height = 485 }
+		
+		background = {
+			name = "Background"		
+			spriteType ="GFX_tiled_decisions_bg_small"
+		}
+		containerWindowType = {
+			name = "SSW_Policy_tab_diplo_influence"
+			position = { x=0 y=0 }
+			size = { width = 545 height = 190 }
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_bg"
+			}
+			iconType = {
+				name = "master_flag_icon"
+				position = { x = 50 y = 60 }
+				spriteType = "GFX_shield_medium"
+			}
+			iconType = {
+				name = "master_flag_mask"
+				position = { x = 50 y = 60 }
+				spriteType = "GFX_major_country_flag_overlay"
+				scale = 2
+			}
+			instantTextboxType = {
+				name = "master_name"
+				position = { x= 140 y = 70 }
+				font = "hoi_36header"
+				text = "influence_of_nation_TITLE"
+				maxWidth = 400
+				format = center
 			}
 		}
 	}

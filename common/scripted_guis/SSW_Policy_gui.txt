@@ -182,11 +182,58 @@ scripted_gui = {
 				index = segment_idx
 			}
 		}
-
+		effects = {
+			SliderDown_click = {
+				if = {
+					limit = {
+						check_variable = { inflation_rate > 51 }
+					}
+					add_to_variable = { inflation_rate = -85 }
+				}
+				else = {
+				}
+			}
+			SliderUp_click = {
+				if = {
+					limit = {
+						check_variable = { inflation_rate < 331 }
+					}
+					add_to_variable = { inflation_rate = 85 }
+				}
+				else = {
+				}
+			}
+			indSliderDown_click = {
+				if = {
+					limit = {
+						check_variable = { industrialization_rate > 51 }
+					}
+					add_to_variable = { industrialization_rate = -85 }
+				}
+				else = {
+				}
+			}
+			indSliderUp_click = {
+				if = {
+					limit = {
+						check_variable = { industrialization_rate < 331 }
+					}
+					add_to_variable = { industrialization_rate = 85 }
+				}
+				else = {
+				}
+			}
+		}
 		properties = {
 			segment = {
 				y = industry_graph_offsets^segment_idx
 				frame =industry_graph_slopes^segment_idx
+			}
+			SliderButton = {
+				x = inflation_rate
+			}
+			indSliderButton = {
+				x = industrialization_rate
 			}
 		}
 	}
@@ -302,6 +349,20 @@ scripted_gui = {
 			support_pie97 = { frame = support_pie_chart^97 }
 			support_pie98 = { frame = support_pie_chart^98 }
 			support_pie99 = { frame = support_pie_chart^99 }
+		}
+	}
+	SSW_Policy_tab_diplo_tab = {
+		window_name = "SSW_Policy_tab_diplo"
+		context_type = player_context
+
+		visible = {
+			check_variable = { selected_industry_focus = 2 }
+			check_variable = { selected_policy_bar_button = 1 }
+		}
+		properties = {
+			master_flag_icon ={
+				image = "[THIS.overlord.Getflag]"
+			}
 		}
 	}
 }
