@@ -1,0 +1,15 @@
+state = { #アクサイチン
+	id = 1080
+	name = "STATE_1080"
+	manpower = 100
+	state_category = wasteland
+	history = {
+		owner = IND
+		add_core_of = IND
+		add_core_of = PAK
+		add_core_of = CHI
+		buildings = { infrastructure = 4 }
+		victory_points = { 5042 15 }
+	}
+	provinces = { 5042 }
+}

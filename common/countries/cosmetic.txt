@@ -64,6 +64,11 @@ PRU_peru_bolivia = {	#ペルー＝ボリビア
 	color_ui = rgb { 230 232 255 }
 }
 
+DPK_perfect = { #朝鮮民主主義人民共和国
+	color = rgb { 186 38 54 }
+	color_ui = rgb { 186 38 54 }
+}
+
 #モスクワ国家弁務官区崩壊
 RUS_empire = {	#ロシア帝国
 	color = rgb { 55 88 83 }

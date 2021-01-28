@@ -1,25 +1,38 @@
 fate_of_countries_category_asia = {
-	annexation_KOR = {
+	annexation_korea = { #äÿçëÇÃâ^ñΩ
 		icon = generic_form_nation
 		selectable_mission = yes
 		days_mission_timeout = 60
 		is_good = no
 		cost = 0
 		fire_only_once = no
-		cancel_trigger = {
-			857 = { is_valid_annexation_state = no }
+		activation = {
+			NOT = {
+				country_exists = DPK
+				country_exists = KOR
+				country_exists = ROK
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = DPK
+					is_core_of = KOR
+					is_core_of = ROK
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				DPK = { capital_scope = { is_fully_controlled_by = ROOT } }
+				KOR = { capital_scope = { is_fully_controlled_by = ROOT } }
+				ROK = { capital_scope = { is_fully_controlled_by = ROOT } }
+			}
 		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision annexation_KOR"
-			country_event = ssw_foc_asia.1
-		}
-		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout annexation_KOR"
-			set_country_flag = KOR_CONQ
-			occupy_medium_country = yes
-		}
-		ai_will_do = {
-			factor = 100
-		}
+		cancel_trigger = { KOR = { capital_scope = { is_valid_annexation_state = no } } }
+		complete_effect = { country_event = { id = ssw_foc_asia.1 } }
+		timeout_effect = { occupy_medium_country = yes }
+		ai_will_do = { factor = 100 }
 	}
 }
