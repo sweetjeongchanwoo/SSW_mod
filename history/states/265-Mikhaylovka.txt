@@ -7,11 +7,10 @@ state={
 	state_category = rural
 
 	history={
-		owner = RDW
+		owner = DON
 		add_core_of = RUS
 		add_core_of = SOV
 		add_core_of = DON
-		add_core_of = RDW
 		buildings = {
 			infrastructure = 5
 		}

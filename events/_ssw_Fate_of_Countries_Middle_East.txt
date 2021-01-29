@@ -22,6 +22,10 @@ country_event = {
 		}
 		puppet = TUR
 	}
+	option = {
+		name = ssw_foc_middle_east.0.b
+		occupy_medium_country = yes
+	}
 }
 #イラクの運命
 country_event = {
@@ -46,6 +50,10 @@ country_event = {
 		}
 		puppet = IRQ
 	}
+	option = {
+		name = ssw_foc_middle_east.1.b
+		occupy_medium_country = yes
+	}
 }
 #シリアの運命
 country_event = {
@@ -69,5 +77,9 @@ country_event = {
 			SYR = { transfer_state = PREV }
 		}
 		puppet = SYR
+	}
+	option = {
+		name = ssw_foc_middle_east.2.b
+		occupy_medium_country = yes
 	}
 }
