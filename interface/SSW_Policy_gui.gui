@@ -505,6 +505,41 @@ guiTypes = {
 				name = "Background"		
 				spriteType ="GFX_tiled_decisions_bg_small"
 			}
+			containerWindowType = {
+				name = "SSW_Policy_tab_debt_back_ground"
+				position = { x=130 y=10 }
+				size = { width = 295 height = 100 }
+				background = {
+					name = "Background"		
+					quadTextureSprite = "GFX_tiled_paper_bg"
+				}
+			}
+			buttonType = {
+				name = "debtdown"	
+				quadTextureSprite = "button_left"
+				position = { x= 100 y =45 }
+				scale = 1.2
+			}
+			buttonType = {
+				name = "debtup"	
+				quadTextureSprite = "button_right"
+				position = { x= 428 y =45 }
+				scale = 1.2
+			}
+			instantTextboxType = {
+				name = "industrialization_text"
+				position = { x= 130 y = 43}
+				font = "hoi_30header"
+				text = "[?SELECTED_LOANS_AMOUNT|R]"
+				maxWidth = 295
+				maxHeight = 50
+				format = center
+			}
+			buttonType = {
+				name = "take_loan_button"
+				quadTextureSprite = "GFX_button_148x34"
+				position = { x= 100 y = 120 }
+			}
 		}
 	}
 	containerWindowType = {
