@@ -33,6 +33,54 @@ focus_tree = {
 
 	}
 	focus = {
+		id = ETH_local_militia
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = ETH_factories
+		icon = GFX_focus_generic_africa_factory
+		cost = 10.00
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = ETH_railways
+		icon = GFX_focus_generic_africa_infrastructure
+		cost = 10.00
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ETH_mil_factory
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = ETH_modern_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = ETH_doctorine_research
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		x = 28
+		y = 2
+
+	}
+	focus = {
 		id = ETH_annihalate_ital_somalis
 		icon = GFX_goal_unknown
 		cost = 10.00
@@ -78,40 +126,40 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ETH_revolution_of_derg
 		}
-		x = 10
+		x = 9
 		y = 3
 
 	}
 	focus = {
 		id = ETH_aklilu_foreign_affairs
-		icon = GFX_focus_aklilu
+		icon = GFX_goal_unknown
 		cost = 4.00
 		prerequisite = {
 			focus = ETH_appoint_formal_government
 		}
-		x = 5
+		x = 4
 		y = 4
 
 	}
 	focus = {
 		id = ETH_abebe_army_expand
-		icon = GFX_focus_aregai
+		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
 			focus = ETH_appoint_formal_government
 		}
-		x = 8
+		x = 7
 		y = 4
 
 	}
 	focus = {
 		id = ETH_endelkachew_reform_politic
-		icon = GFX_focus_endelkachew
+		icon = GFX_goal_unknown
 		cost = 3.00
 		prerequisite = {
 			focus = ETH_appoint_formal_government
 		}
-		x = 11
+		x = 10
 		y = 4
 
 	}
@@ -122,7 +170,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ETH_endelkachew_reform_politic
 		}
-		x = 11
+		x = 10
 		y = 5
 
 	}
@@ -136,7 +184,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ETH_appoint_formal_government
 		}
-		x = 12
+		x = 13
 		y = 3
 
 	}
@@ -185,83 +233,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = ETH_cut_connect_route
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = ETH_contact_british
-		}
-		x = 17
-		y = 1
-
-	}
-	focus = {
-		id = ETH_adopt_constitutional_monarchy
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ETH_the_kebur_zabagna
-			focus = ETH_economic_cooperation
-			focus = ETH_new_constitution
-		}
-		mutually_exclusive = {
-			focus = ETH_maintain_absol_monarc
-		}
-		x = 7
-		y = 6
-
-	}
-	focus = {
-		id = ETH_maintain_absol_monarc
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ETH_new_constitution
-			focus = ETH_the_kebur_zabagna
-			focus = ETH_economic_cooperation
-		}
-		mutually_exclusive = {
-			focus = ETH_adopt_constitutional_monarchy
-		}
-		x = 9
-		y = 6
-
-	}
-	focus = {
-		id = ETH_the_kebur_zabagna
-		icon = GFX_focus_generic_military_mission
-		cost = 4.00
-		prerequisite = {
-			focus = ETH_abebe_army_expand
-		}
-		x = 8
-		y = 5
-
-	}
-	focus = {
-		id = ETH_economic_cooperation
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		cost = 4.00
-		prerequisite = {
-			focus = ETH_aklilu_foreign_affairs
-		}
-		x = 5
-		y = 5
-
-	}
-	focus = {
-		id = ETH_the_election
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = ETH_maintain_absol_monarc
-			focus = ETH_adopt_constitutional_monarchy
-		}
-		x = 8
-		y = 7
-
-	}
-	focus = {
 		id = ETH_reeducation_project
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -281,6 +252,139 @@ focus_tree = {
 		}
 		x = 16
 		y = 7
+
+	}
+	focus = {
+		id = ETH_derg_continue
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ETH_reeducation_project
+		}
+		prerequisite = {
+			focus = ETH_radical_reform
+		}
+		mutually_exclusive = {
+			focus = ETH_break_derg
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = ETH_cut_connect_route
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ETH_contact_british
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = ETH_break_derg
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ETH_radical_reform
+		}
+		prerequisite = {
+			focus = ETH_reeducation_project
+		}
+		mutually_exclusive = {
+			focus = ETH_derg_continue
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = ETH_adopt_constitutional_monarchy
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ETH_the_kebur_zabagna
+			focus = ETH_economic_cooperation
+			focus = ETH_new_constitution
+		}
+		mutually_exclusive = {
+			focus = ETH_maintain_absol_monarc
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = ETH_maintain_absol_monarc
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ETH_new_constitution
+			focus = ETH_the_kebur_zabagna
+			focus = ETH_economic_cooperation
+		}
+		mutually_exclusive = {
+			focus = ETH_adopt_constitutional_monarchy
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = ETH_the_kebur_zabagna
+		icon = GFX_focus_generic_military_mission
+		cost = 4.00
+		prerequisite = {
+			focus = ETH_abebe_army_expand
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = ETH_economic_cooperation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 4.00
+		prerequisite = {
+			focus = ETH_aklilu_foreign_affairs
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = ETH_the_election
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = ETH_maintain_absol_monarc
+			focus = ETH_adopt_constitutional_monarchy
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = ETH_new_army
+		icon = GFX_focus_focus_fra_revolution_upmost
+		cost = 10.00
+		prerequisite = {
+			focus = ETH_derg_continue
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = ETH_somalian_socialism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ETH_break_derg
+		}
+		x = 17
+		y = 9
 
 	}
 }
