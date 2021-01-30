@@ -99,7 +99,7 @@
  ITA_focus_industry_military_economic_state_desc:0""
  ITA_focus_industry_Expanding_the_Outstrada:0"アウトストラーダの拡張"
  ITA_focus_industry_Expanding_the_Outstrada_desc:0""
- ITA_focus_industry_Solving_the_immigration_problem:0"移民問題の解消"
+ ITA_focus_industry_Solving_the_immigration_problem:0"[Root.GetSolvingtheimmigrationproblemName]"
  ITA_focus_industry_Solving_the_immigration_problem_desc:0""
  ITA_focus_balbo_army_Status_of_the_Italian_Army:0"イタリア軍の現状"
  ITA_focus_balbo_army_Status_of_the_Italian_Army_desc:0""
@@ -158,3 +158,8 @@
  ITA_Expanding_the_Outstrada_tooltip:0"§Gアウトストラーダを拡張するディシジョンが解放される。§!"
  ITA_Solving_the_immigration_problem:0"§G移民問題が解決する§!"
  ITA_Harsh_treatment:0"§R移民による暴動が発生するかもしれない§!"
+
+#localisation_key
+
+ ITA_Solvingtheimmigrationproblem_kind:0"円満な解決"
+ ITA_Solvingtheimmigrationproblem_cold:0"制約による解決"

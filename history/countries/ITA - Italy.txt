@@ -201,6 +201,7 @@ set_technology = {
 }
 
 add_ideas = {
+	extensive_conscription
 	ITA_Umberto_II_king
 	ITA_idea_1
 	ITA_idea_2

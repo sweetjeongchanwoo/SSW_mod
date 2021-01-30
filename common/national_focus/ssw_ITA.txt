@@ -12,7 +12,7 @@ focus_tree = {
 }
 
 focus_tree = {
-    id = ITA_Balbo_Focus
+    id = ITA_Balbo_industry_Focus
 	country = {
 		factor = 0
 		modifier = {
@@ -22,5 +22,4 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = ITA_focus_industry_Industry_Status
-	
 }

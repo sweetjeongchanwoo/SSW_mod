@@ -18,6 +18,26 @@ defined_text = {
 		trigger = { tag = KOR }
 		localization_key = SSW_OPENING_SCREEN_BUTTON_TEXT_KOR
 	}
+	text = {
+		trigger = { tag = UTC }
+		localization_key = SSW_OPENING_SCREEN_BUTTON_TEXT_UTC
+	}
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = SER
+					tag = POR
+					tag = KOR
+					tag = UTC
+				} 
+			}
+		}
+		localization_key = SSW_OPENING_SCREEN_BUTTON_TEXT
+	}
+
 }
 
 defined_text = {
@@ -70,6 +90,39 @@ defined_text = {
 		trigger = { tag = KOR }
 		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_KOR]"
 	}
+	text = {
+		trigger = { tag = SWE }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_SWE]"
+	}
+	text = {
+		trigger = { tag = UTC }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_UTC]"
+	}
+	text = {
+		trigger = { tag = FSA }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_FSA]"
+	}
+
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = SER
+					tag = POR
+					tag = KOR
+					tag = SWE
+					tag = UTC
+					tag = FSA
+					tag = LIB
+					tag = ENG
+				} 
+			}
+		}
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT]"
+	}
+
 }
 
 defined_text = {
@@ -135,6 +188,97 @@ defined_text = {
 		localization_key = COUNTRY_INFO_3_KOR
 	}
 }
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_SWE
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_SWE
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_SWE
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_SWE
+	}
+}
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_UTC
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_UTC
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_UTC
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_UTC
+	}
+}
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_FSA
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_FSA
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_FSA
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_FSA
+	}
+}
+
+defined_textdefined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_LIB
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_LIB
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_LIB
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_LIB
+	}
+}
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_ENG
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_ENG
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_ENG
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_ENG
+	}
+}
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3
+	}
+}
 
 defined_text = {
 	name = GET_POSTER
@@ -150,9 +294,34 @@ defined_text = {
 	text = {
 		trigger = { tag = POR }
 		localization_key = "GFX_SSW_OpeningScreen_Poster_Portugal"
-    }
+	}
 	text = {
 		trigger = { tag = KOR }
 		localization_key = "GFX_SSW_OpeningScreen_Poster_Korea"
-    }
+    	}
+	text = {
+		trigger = { tag = SWE }
+		localization_key = "GFX_SSW_OpeningScreen_Poster_Sweden"
+    	}
+	text = {
+		trigger = { tag = CHL }
+		localization_key = "GFX_SSW_OpeningScreen_Poster_Chile"
+    	}
+
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = SER
+					tag = POR
+					tag = KOR
+					tag = SWE
+					tag = CHL
+				} 
+			}
+		}
+		localization_key = "GFX_SSW_OpeningScreen_Poster"
+    	}
+
 }

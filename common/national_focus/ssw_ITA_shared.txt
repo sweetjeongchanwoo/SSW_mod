@@ -1,3 +1,323 @@
+####SELECT_FOCUS_TREE####
+shared_focus = {
+	id = ITA_focus_Rome_Conquered
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	cost = 1.40
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+   }
+   bypass = {
+   }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 6
+	y = 0
+	completion_reward = {
+		   country_event = {
+				id = SSW_ITA.2
+				}
+				custom_effect_tooltip = ssw_ITA_Rome_Conquered
+	}
+ }
+ #ドゥーチェの下で
+ shared_focus = {
+	id = ITA_focus_Duce
+	  icon = GFX_goal_support_fascism
+	  cost = 2.14
+	  prerequisite = {
+		   focus = ITA_focus_Rome_Conquered
+		   }
+		   mutually_exclusive = { 
+				focus = ITA_focus_Kings
+				focus = ITA_focus_Free
+				 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 10
+   }
+   bypass = {
+   }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 2
+	y = 2
+	completion_reward = {
+		   country_event = {
+				id = SSW_ITA.9
+				}
+				custom_effect_tooltip =ssw_ITA_Duce
+				add_ideas = ITA_idea_10
+	}
+ }
+ #王の下で
+ shared_focus = {
+	id = ITA_focus_Kings
+	icon = GFX_focus_eng_imperial_federation
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Rome_Conquered
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_Duce
+		   focus = ITA_focus_Free
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+   }
+   bypass = {
+   }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 6
+	y = 2
+	completion_reward = {
+	  country_event = {
+		   id = SSW_ITA.10
+		   }
+	  custom_effect_tooltip =ssw_ITA_Kings
+	  add_ideas = ITA_idea_11
+	}
+ }
+ #自由のもとで
+ shared_focus = {
+	id = ITA_focus_Free
+	icon = GFX_goal_support_democracy
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Rome_Conquered
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_Duce
+		   focus = ITA_focus_Kings
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+   }
+   bypass = {
+   }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 10
+	y = 2
+	completion_reward = {
+	  country_event = {
+		   id = SSW_ITA.11
+		   }
+	  custom_effect_tooltip =ssw_ITA_Free
+	  add_ideas = ITA_idea_12
+	}
+ }
+ #バルボによって
+ shared_focus = {
+	id = ITA_focus_by_Balbo
+	icon = GFX_ITA_Balbo_Face
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Duce
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_by_Mussolini
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 10
+   }
+   bypass = {
+   }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 1
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_by_Balbo
+	  country_event = {
+		   id = SSW_ITA.3
+	  }
+	  load_focus_tree = { 
+			tree = ITA_Balbo_Focus 
+			keep_completed = yes 
+		}
+		custom_effect_tooltip = ssw_ITA_making
+	}
+ }
+ #ムッソリーニによって
+ shared_focus = {
+	id = ITA_focus_by_Mussolini
+	icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Duce
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_by_Balbo
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 8
+	}
+   bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 3
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_by_Mussolini
+	  country_event = {
+		   id = SSW_ITA.4
+	  }
+	  custom_effect_tooltip = ssw_ITA_making
+	}
+ }
+ #サヴォイア家によって
+ shared_focus = {
+	id = ITA_focus_Savoia
+	icon = GFX_ITA_Savoie_family_crest
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Kings
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_Genoa
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+	}
+   bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 5
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_Savoia
+	  country_event = {
+		   id = SSW_ITA.5
+	  }
+	  custom_effect_tooltip = ssw_ITA_making
+	}
+ }
+ #ジェノヴァ家によって
+ shared_focus = {
+	id = ITA_focus_Genoa
+	icon = GFX_ITA_Genoese_family_crest_icons
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Kings
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_Savoia
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+	}
+   bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 7
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_Genoa
+	  country_event = {
+		   id = SSW_ITA.6
+	  }
+	  custom_effect_tooltip = ssw_ITA_making
+	}
+ }
+ #カエサルにならう
+ shared_focus = {
+	id = ITA_focus_Caesar
+	icon = GFX_ITA_Caesar_side
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Free
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_equality
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+	}
+   bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 9
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_Caesar
+	  country_event = {
+		   id = SSW_ITA.7
+	  }
+	  custom_effect_tooltip = ssw_ITA_making
+	}
+ }
+ #平等に
+ shared_focus = {
+	id = ITA_focus_equality
+	icon = GFX_goal_generic_war_with_comintern
+	cost = 2.14
+	prerequisite = {
+		 focus = ITA_focus_Free
+		 }
+	mutually_exclusive = { 
+		   focus = ITA_focus_Caesar
+		 }
+	available = {
+	}
+	ai_will_do = {
+	  factor = 5
+	}
+   bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 11
+	y = 4
+	completion_reward = {
+	  custom_effect_tooltip =ssw_ITA_equality
+	  country_event = {
+		   id = SSW_ITA.8
+	  }
+	  custom_effect_tooltip = ssw_ITA_making
+	}
+}
 #####BALBO_FOCUS_TREE####
 #産業の現状
 shared_focus = {
@@ -11,6 +331,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 9
 	y = 0
 	completion_reward = {
@@ -37,6 +361,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 2
 	y = 1
 	completion_reward = {
@@ -64,6 +392,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 4
 	y = 1
 	completion_reward = {
@@ -91,6 +423,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 14
 	y = 1
 	completion_reward = {
@@ -118,6 +454,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 16
 	y = 1
 	completion_reward = {
@@ -142,6 +482,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 0
 y = 2
 completion_reward = {
@@ -200,6 +544,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 9
 y = 1
 completion_reward = {
@@ -224,6 +572,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 0
 y = 3
 completion_reward = {
@@ -245,6 +597,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 2
 y = 2
 completion_reward = {
@@ -303,6 +659,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 2
 y = 3
 completion_reward = {
@@ -327,6 +687,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 8
 y = 2
 completion_reward = {
@@ -351,6 +715,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 10
 y = 2
 completion_reward = {
@@ -375,6 +743,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 4
 y = 2
 completion_reward = {
@@ -403,6 +775,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 4
 y = 3
 completion_reward = {
@@ -426,6 +802,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 6
 y = 2
 completion_reward = {
@@ -449,6 +829,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 6
 y = 3
 completion_reward = {
@@ -481,6 +865,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 10
 y = 3
 completion_reward = {
@@ -506,6 +894,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 8
 y = 3
 completion_reward = {
@@ -533,6 +925,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 1
 y = 4
 completion_reward = {
@@ -557,6 +953,10 @@ mutually_exclusive = {
 	 }
 available = {
 }
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
 ai_will_do = {
 	factor = 5
   }
@@ -589,6 +989,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 3
 y = 4
 completion_reward = {
@@ -615,6 +1019,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 9
 y = 4
 completion_reward = {
@@ -650,6 +1058,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 14
 y = 2
 completion_reward = {
@@ -676,6 +1088,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 16
 y = 2
 completion_reward = {
@@ -697,6 +1113,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 25
 y = 0
 completion_reward = {
@@ -719,6 +1139,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = -1
 y = 5
 completion_reward = {
@@ -752,6 +1176,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 14
 y = 3
 completion_reward = {
@@ -778,6 +1206,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 12
 y = 2
 completion_reward = {
@@ -819,6 +1251,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 12
 y = 3
 completion_reward = {
@@ -842,6 +1278,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 16
 	y = 3
 	completion_reward = {
@@ -865,6 +1305,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 9
 	y = 5
 	completion_reward = {
@@ -872,5 +1316,33 @@ shared_focus = {
 			id = SSW_ITA.12
 		}
 		add_political_power = 50
+	}
+}
+#王立イタリア自由大学の設立
+shared_focus = {
+	id = ITA_focus_industry_Founding_of_the_Royal_Italian_Free_University
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Accelerating_Equalization
+		}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 1
+	y = 5
+	completion_reward = {
+		add_ideas = ITA_idea_29
+		add_research_slot = 1
 	}
 }

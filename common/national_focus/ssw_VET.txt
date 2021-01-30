@@ -1,0 +1,12 @@
+focus_tree = {
+	id = VET_army_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VET
+		}
+	}
+	default = no
+	shared_focus = ITA_focus_Rome_Conquered
+}
