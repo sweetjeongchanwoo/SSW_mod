@@ -1,0 +1,25 @@
+state={ #Gifu
+	id=847
+	name="STATE_847"
+	manpower = 1544538
+	state_category = large_city
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		victory_points = {
+		4172 3
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 2
+			fuel_silo = 1
+		}
+
+	}
+	provinces={
+		4172 7187 7217
+	}
+}

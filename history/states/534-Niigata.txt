@@ -1,8 +1,8 @@
 
 state={
 	id=534
-	name="STATE_534" # Hokuriku
-	manpower = 2633000
+	name="STATE_534" # Niigata
+	manpower = 2460997
 	
 	state_category = city
 

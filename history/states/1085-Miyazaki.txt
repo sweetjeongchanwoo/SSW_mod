@@ -1,0 +1,13 @@
+state = { #Miyazaki
+	id = 1085
+	name = "STATE_1085"
+	manpower = 1091427
+	state_category = town
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 1020 1 }
+	}
+	provinces = { 1020 7178 }
+}

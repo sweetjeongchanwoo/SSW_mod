@@ -1,0 +1,13 @@
+state = { #Sana
+	id = 1104
+	name = "STATE_1104"
+	manpower = 17291
+	state_category = city
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 13037 1 }
+	}
+	provinces = { 13037 }
+}
