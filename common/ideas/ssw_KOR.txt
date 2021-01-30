@@ -9,6 +9,7 @@ ideas = {
 			modifier = {
 				recruitable_population = -0.85
 				mobilization_speed = -0.5
+				GDP_up_rate = -0.8
 			}
 		}
 		KOR_rule_of_ethnic_extermination = {

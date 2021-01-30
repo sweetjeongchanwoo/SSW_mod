@@ -1,5 +1,6 @@
-﻿1950.1.1 = {
-	capital = 608
+﻿
+1950.1.1 = {
+	capital = 1043
 	oob = "MAM_1950"
 
 	set_convoys = 5

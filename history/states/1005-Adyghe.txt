@@ -6,6 +6,7 @@ state = { #ÉAÉfÉBÉQ
 	history = {
 		owner = CCS
 		add_core_of = CCS
+		add_core_of = ADY
 		add_core_of = SOV
 		victory_points = {
 			3720 1 

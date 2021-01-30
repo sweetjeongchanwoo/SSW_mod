@@ -506,3 +506,53 @@ industry_add_ten_point_to_line_and_refresh = {
 	
 	add_to_array = { industry_numbers = industry_count }
 }
+
+update_gov_support_pie_chart = {
+	clear_array = support_pie_chart
+	resize_array = {
+		array = support_pie_chart
+		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		size = 100 # 100 pieces, each percent is one piece
+	}
+	set_temp_variable = { neutrality_pop = ROOT.opposition_rate }
+	multiply_temp_variable = { neutrality_pop = 100 }
+	round_temp_variable = neutrality_pop
+
+	set_temp_variable = { communism_pop = ROOT.support_rate }
+	multiply_temp_variable = { communism_pop = 100 }
+	round_temp_variable = communism_pop 
+	set_variable = { ROOT.last_idx = neutrality_pop }
+	add_to_temp_variable = { communism_pop = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = communism_pop
+		set_variable = { support_pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+	clear_variable = ROOT.last_idx
+	add_to_variable = { support_pie_chart_dirty = 1 }
+}
+update_industrialization_rate = {
+	set_temp_variable = { industrialization_rate = 0 } #reset
+	add_to_temp_variable = { industrialization_rate = num_of_factories }
+	add_to_temp_variable = { industrialization_rate = resource@oil } #0+oil
+	add_to_temp_variable = { industrialization_rate = resource@aluminium } #0+oil+aluminium
+	add_to_temp_variable = { industrialization_rate = resource@rubber } #0+oil+aluminium+rubber
+	add_to_temp_variable = { industrialization_rate = resource@tungsten } #0+oil+aluminium+rubber+tungsten
+	add_to_temp_variable = { industrialization_rate = resource@steel } #0+oil+aluminium+rubber+tungsten+steel
+	add_to_temp_variable = { industrialization_rate = resource@chromium }
+	log = "[GetDateText]: [Root.GetName]: [?industrialization_rate|0]"
+	set_temp_variable = { total_infra = 0 }
+	every_owned_state = {
+		limit = {
+			is_core_of = THIS
+		}
+		add_to_temp_variable = { total_infra = building_level@infrastructure }
+	}
+	log = "[GetDateText]: [Root.GetName]: [?total_infra|0]"
+	divide_temp_variable = { total_infra = num_owned_controlled_states }
+	log = "[GetDateText]: [Root.GetName]: [?total_infra|0]"
+	multiply_temp_variable = { industrialization_rate = total_infra }
+	set_variable = { culculated_industrialization = industrialization_rate }
+	log = "[GetDateText]: [Root.GetName]: [?culculated_industrialization|0]"
+}

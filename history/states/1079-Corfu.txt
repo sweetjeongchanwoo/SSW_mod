@@ -1,0 +1,14 @@
+state = { #ƒRƒ‹ƒt“‡
+	id = 1079
+	name = "STATE_1079"
+	manpower = 100000
+	state_category = rural
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = GRE
+		buildings = { infrastructure = 4 }
+		victory_points = { 10203 1 }
+	}
+	provinces = { 10203 }
+}

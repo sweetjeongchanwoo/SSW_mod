@@ -21,5 +21,14 @@ spriteTypes = {
 		effectFile = "gfx/interface/additional_FX/line_graph.lua"
 		horizontal = yes
 	}
-
+	spriteType = {
+		name = "GFX_tradegoods"
+		texturefile = "/gfx/interface/GUI/resources.dds"
+		noOfFrames = 50
+	}
+	spriteType = {
+		name = "GFX_pie_chart_segment"
+		texturefile = "gfx/interface/GUI/pie_chart_segment.dds"
+		noOfFrames = 4
+	}
 }

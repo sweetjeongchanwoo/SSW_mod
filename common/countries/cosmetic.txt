@@ -59,6 +59,16 @@ LFF_unification = { #アメリカ人民共和国
 	color_ui = rgb { 232 56 61 }
 }
 
+PRU_peru_bolivia = {	#ペルー＝ボリビア
+	color = rgb { 230 232 255 }
+	color_ui = rgb { 230 232 255 }
+}
+
+DPK_perfect = { #朝鮮民主主義人民共和国
+	color = rgb { 186 38 54 }
+	color_ui = rgb { 186 38 54 }
+}
+
 #モスクワ国家弁務官区崩壊
 RUS_empire = {	#ロシア帝国
 	color = rgb { 55 88 83 }
@@ -197,6 +207,11 @@ BEL_GER = {	#独領ベルギー
 NFR_GER = {	#独領北フランス
 	color = rgb { 102 89 86 }
 	color_ui = rgb { 25 115 150 }
+}
+
+DON_GER = {	#独領ドン・ヴォルガ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 0 80 230 }
 }
 
 BAL_GER = {	#独領オストラント

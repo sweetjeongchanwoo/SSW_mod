@@ -83,7 +83,6 @@ technologies = {
 		}
 	}
 	jet_fighter_1944 = {
-
 		enable_equipments = {
 			jet_fighter_equipment_0
 		}
@@ -94,6 +93,7 @@ technologies = {
 		path = {
 			leads_to_tech = jet_naval_CAS_1948
 			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = jet_CAS_1948
 			research_cost_coeff = 1
@@ -2175,7 +2175,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = 4 }
+			position = { x = 14 y = 4 }
 		}
 		
 		categories = {
@@ -2222,7 +2222,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = 6 }
+			position = { x = 14 y = 6 }
 		}
 		
 		categories = {
@@ -2264,7 +2264,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = air_techs_folder
-			position = { x = 10 y = 12 }
+			position = { x = 14 y = 12 }
 		}
 		
 		categories = {

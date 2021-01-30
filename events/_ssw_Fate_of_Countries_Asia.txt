@@ -1,0 +1,139 @@
+add_namespace = ssw_foc_asia
+country_event = { #äÿçëÇÃâ^ñΩ
+	id = ssw_foc_asia.1
+	title = ssw_foc_asia.1.title
+	desc = ssw_foc_asia.1.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = { #liberate
+		name = ssw_foc_asia.1.a
+		ai_chance = { base = 10 }
+		trigger = {
+			NOT = {
+				OR = {
+					tag = JAP
+					tag = CHI
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = social_democracy
+					has_government = social_liberalism
+					has_government = social_conservatism
+					has_government = authority_despotism
+					has_government = authority_democracy
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				KOR = { transfer_state = PREV }
+			}
+			puppet = KOR
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = progressive_communism
+					has_government = classical_communism
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+					is_fully_controlled_by = ROOT
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+				}
+				DPK = {
+					transfer_state = PREV
+					set_cosmetic_tag = DPK_perfect
+				}
+				add_core_of = DPK
+			}
+			puppet = DPK
+		}
+	}
+	option = { #annex(for japan)
+		name = ssw_foc_asia.1.b1
+		ai_chance = { base = 10 }
+		trigger = { tag = JAP }
+		occupy_medium_country = yes
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			add_claim_by = JAP
+		}
+	}
+	option = { #liberate(for japan)
+		name = ssw_foc_asia.1.b2
+		ai_chance = { base = 10 }
+		trigger = { tag = JAP }
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			KOR = { transfer_state = PREV }
+		}
+		puppet = KOR
+	}
+	option = { #annex(for china)
+		name = ssw_foc_asia.1.c1
+		ai_chance = { base = 10 }
+		trigger = { tag = CHI }
+		occupy_medium_country = yes
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			add_claim_by = CHI
+		}
+	}
+	option = { #liberate(for china)
+		name = ssw_foc_asia.1.c2
+		ai_chance = { base = 10 }
+		trigger = { tag = CHI }
+		every_state = {
+			limit = {
+				is_core_of = KOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			ROK = { transfer_state = PREV }
+			add_core_of = ROK
+		}
+		puppet = ROK
+	}
+}

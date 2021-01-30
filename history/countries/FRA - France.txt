@@ -52,7 +52,7 @@ set_popularities = {
 	progressive_communism = 11
 	corporatocracism = 2
 }
-
+set_country_flag = FRA_true_countryflag
 create_country_leader = {
 	name = "Philippe Petain"
 	desc = "POLITICS_PHILIPPE_PETAIN_DESC"

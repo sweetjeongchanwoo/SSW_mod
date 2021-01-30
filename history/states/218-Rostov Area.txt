@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = UKR
+		owner = DON
 		add_core_of = RUS
 		add_core_of = SOV
 		add_core_of = DON

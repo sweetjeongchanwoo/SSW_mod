@@ -20,6 +20,7 @@
  fate_of_hinterpommern:0 "ヒンターポンメルンの運命"
  fate_of_prussia:0 "プロイセン地方の運命"
  fate_of_schleswig:0 "シュレースヴィヒの運命"
+ fate_of_sudatenland:0 "ズデーテンラントの運命"
 ##### イベント #####
  ssw_foc_events.0.title:0 "ポルトガルの運命"
  ssw_foc_events.0.desc:0 "ポルトガルの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
@@ -77,3 +78,8 @@
  ssw_foc_events.9.b:0 "反ナチス政府に統合だ。 "
  ssw_foc_events.9.c:0 "シュレースヴィヒ＝ホルシュタインに統合だ。 "
  ssw_foc_events.9.d:0 "デンマークに統合だ。 "
+ ssw_foc_events.10.title:0 "ズデーテンラントの運命"
+ ssw_foc_events.10.desc:0 "ズデーテンラントの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
+ ssw_foc_events.10.a:0 "ドイツ連合に統合だ。 "
+ ssw_foc_events.10.b:0 "反ナチス政府に統合だ。 "
+ ssw_foc_events.10.c:0 "チェコに統合だ。 "

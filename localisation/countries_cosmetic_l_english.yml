@@ -43,9 +43,9 @@
  RUS_arufnl_DEF:0 "全ロシア民族解放統一戦線"
  RUS_arufnl_ADJ:0 "全ロシア民族解放統一戦線"
  
- RUS_mikhail:0 "大天使ミハイル"
- RUS_mikhail_DEF:0 "大天使ミハイル"
- RUS_mikhail_ADJ:0 "大天使ミハイル"
+ RUS_mikhail:0 "大天使ミハイル国"
+ RUS_mikhail_DEF:0 "大天使ミハイル国"
+ RUS_mikhail_ADJ:0 "大天使ミハイル国"
  
  RUS_blackorder:0 "ブラックオーダー"
  RUS_blackorder_DEF:0 "ブラックオーダー"
@@ -112,13 +112,21 @@
  SIB_russia_DEF:0 "ロシア合衆国"
  SIB_russia_ADJ:0 "ロシア"
  
- MOS_russia:0 "ロシア連邦"
- MOS_russia_DEF:0 "ロシア連邦"
+ MOS_russia:0 "ロシア連合国"
+ MOS_russia_DEF:0 "ロシア連合国"
  MOS_russia_ADJ:0 "ロシア"
  
  LFF_unification:0 "アメリカ人民共和国"
  LFF_unification_DEF:0 "アメリカ人民共和国"
  LFF_unification_ADJ:0 "アメリカ"
+ 
+ PRU_peru_bolivia:0 "ペルー＝ボリビア"
+ PRU_peru_bolivia_DEF:0 "ペルー＝ボリビア"
+ PRU_peru_bolivia_ADJ:0 "ペルー＝ボリビア"
+ 
+ DPK_perfect:0 "朝鮮民主主義人民共和国"
+ DPK_perfect_DEF:0 "朝鮮民主主義人民共和国"
+ DPK_perfect_ADJ:0 "朝鮮"
  
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
@@ -167,6 +175,10 @@
  FRA_aquitaine_DEF:0 "アキテーヌ"
  FRA_aquitaine_ADJ:0 "アキテーヌ"
  
+ GER_union_republic_progressive_communism:0 "ドイツ民主共和国"
+ GER_union_republic_progressive_communism_DEF:0 "ドイツ民主共和国"
+ GER_union_republic_classical_communism:0 "ドイツ民主共和国"
+ GER_union_republic_classical_communism_DEF:0 "ドイツ民主共和国"
  GER_union_republic:0 "ドイツ連合共和国"
  GER_union_republic_DEF:0 "ドイツ連合共和国"
  GER_union_republic_ADJ:0 "ドイツ連合"

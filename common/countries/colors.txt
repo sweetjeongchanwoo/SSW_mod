@@ -186,8 +186,8 @@ CAN = {	#カナダ
 }
 
 CHI = {	#中国
-	color = rgb { 255 215 0 }
-	color_ui = rgb { 255 215 0 }
+	color = rgb { 40 0 60 }
+	color_ui = rgb { 40 0 60 }
 }
 
 CHL = {	#チリ
@@ -1518,6 +1518,26 @@ VEC = { #ヴェネツィア
 WLL = { #ワロン
 	color = rgb { 193 226 120 }
     color_ui = rgb { 193 226 120 }
+}
+
+SRA = {	#アマゾナス社会主義共和国
+	color = rgb { 195 255 105 }
+	color_ui = rgb { 195 255 105 }
+}
+
+CSB = {	#ブラジル連合国
+	color = rgb { 255 140 140 }
+	color_ui = rgb { 255 140 140 }
+}
+
+CMB = {	#カンバ共和国
+	color = rgb { 130 180 255 }
+	color_ui = rgb { 130 180 255 }
+}
+
+TOK = {	#ベトナム共和国
+	color = rgb { 230 230 0 }
+	color_ui = rgb { 230 230 0 }
 }
 
 ########## 内戦用国家タグ ##########

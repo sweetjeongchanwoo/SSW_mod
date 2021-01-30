@@ -1,7 +1,8 @@
 scripted_gui = {
 	KOR_Japanization = {
 		window_name = "KOR_progress_bar"
-		parent_window_token = decision_tab
+		parent_window_token = decisions_tab
+		context_type = player_context
 
 		visible = {
 			is_ai = no

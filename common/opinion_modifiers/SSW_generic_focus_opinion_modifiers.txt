@@ -16,7 +16,7 @@ opinion_modifiers = {
 		value = -20
 	}
 	SSW_support_civil_war = {
-		value = -20
+		value = 20
 	}
 	SSW_compromise_with_democracies = {
 		value = 20

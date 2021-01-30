@@ -1,0 +1,5 @@
+GDP_up_rate = {
+	color_type = good
+	value_type = percentage
+	precision = 0
+}
