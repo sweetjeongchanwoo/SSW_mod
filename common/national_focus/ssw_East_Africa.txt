@@ -17,6 +17,30 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NEA_PNF_invite
+		icon = GFX_focus_generic_italy_first
+		cost = 5.00
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = NEA_base_of_loyalists
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5.00
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = ETH_army_style
+		icon = GFX_focus_generic_little_entente
+		cost = 5.00
+		x = 13
+		y = 5
+
+	}
+	focus = {
 		id = NEA_return_the_exiles
 		icon = GFX_goal_unknown
 		cost = 5.00
@@ -54,6 +78,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = NEA_revive_lion_of_judah
+		icon = GFX_focus_hol_united_netherlands
+		cost = 10.00
+		prerequisite = {
+			focus = NEA_contact_with_nobles
+		}
+		prerequisite = {
+			focus = NEA_prepare_uprising
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
 		id = NEA_reform_politics
 		icon = GFX_focus_generic_treaty
 		cost = 5.00
@@ -70,7 +108,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_fascists
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
@@ -85,7 +123,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_monarchists
-		icon = GFX_ITA_Savoie_family_crest
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
@@ -100,7 +138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = NEA_contact_with_officers
-		icon = GFX_NEA_officers
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = NEA_reform_politics
@@ -111,6 +149,19 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
+
+	}
+	focus = {
+		id = NEA_choose_the_heir
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = NEA_contact_with_officers
+			focus = NEA_contact_with_fascists
+			focus = NEA_contact_with_monarchists
+		}
+		x = 9
+		y = 3
 
 	}
 	focus = {
@@ -140,20 +191,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = NEA_revive_lion_of_judah
-		icon = GFX_focus_hol_united_netherlands
-		cost = 10.00
-		prerequisite = {
-			focus = NEA_contact_with_nobles
-		}
-		prerequisite = {
-			focus = NEA_prepare_uprising
-		}
-		x = 3
-		y = 3
-
-	}
-	focus = {
 		id = NEA_transfer_power_to_somalis
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 10.00
@@ -162,19 +199,6 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
-
-	}
-	focus = {
-		id = NEA_choose_the_heir
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = NEA_contact_with_officers
-			focus = NEA_contact_with_fascists
-			focus = NEA_contact_with_monarchists
-		}
-		x = 9
-		y = 3
 
 	}
 	focus = {
@@ -189,30 +213,6 @@ focus_tree = {
 		}
 		x = 15
 		y = 3
-
-	}
-	focus = {
-		id = NEA_PNF_invite
-		icon = GFX_focus_generic_italy_first
-		cost = 5.00
-		x = 7
-		y = 5
-
-	}
-	focus = {
-		id = NEA_base_of_loyalists
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 5.00
-		x = 9
-		y = 5
-
-	}
-	focus = {
-		id = ETH_army_style
-		icon = GFX_focus_generic_little_entente
-		cost = 5.00
-		x = 11
-		y = 5
 
 	}
 }
