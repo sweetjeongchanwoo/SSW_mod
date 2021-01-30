@@ -119,6 +119,8 @@ add_ideas = {
 	UTC_idea_1
 }
 
+give_guarantee = LUI
+
 set_politics = {
 	ruling_party = corporatocracism
 	last_election = "1950.1.1"
