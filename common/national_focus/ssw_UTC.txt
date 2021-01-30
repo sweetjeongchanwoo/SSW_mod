@@ -1017,7 +1017,7 @@ focus_tree = {
 		id = UTC_end_of_the_war_with_the_alf
 		icon = GFX_focus_generic_manpower
 		available = {
-		FSA = {
+		ALF = {
 				exists = no
 			}
 		}
@@ -1196,6 +1196,7 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 			set_major = yes
+			set_cosmetic_tag = UTC_america
 		}
 	}
 	focus = {
@@ -1211,6 +1212,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = UTC_united_company_of_america
 		}
+		
 	}
 	focus = {
 		#孤独の道

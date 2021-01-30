@@ -138,7 +138,7 @@ bookmarks = {
 		}
 		"UTC"={
 			minor = yes
-			history = ""
+			history = "SSW_UTC_GATHERING_STORM_DESC"
 			ideology = corporatocracism
 			ideas = {
 
