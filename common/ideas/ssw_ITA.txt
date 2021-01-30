@@ -462,5 +462,19 @@ ideas = {
 				line_change_production_efficiency_factor = 0.10
 			}
 		}
+		#王立イタリア自由大学
+		ITA_idea_29 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+				research_speed_factor = 0.05
+			}
+		}
 	}
 }

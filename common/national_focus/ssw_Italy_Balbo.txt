@@ -11,6 +11,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 9
 	y = 0
 	completion_reward = {
@@ -37,6 +41,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 2
 	y = 1
 	completion_reward = {
@@ -64,6 +72,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 4
 	y = 1
 	completion_reward = {
@@ -91,6 +103,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 14
 	y = 1
 	completion_reward = {
@@ -118,6 +134,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 16
 	y = 1
 	completion_reward = {
@@ -142,6 +162,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 0
 y = 2
 completion_reward = {
@@ -200,6 +224,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 9
 y = 1
 completion_reward = {
@@ -224,6 +252,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 0
 y = 3
 completion_reward = {
@@ -245,6 +277,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 2
 y = 2
 completion_reward = {
@@ -303,6 +339,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 2
 y = 3
 completion_reward = {
@@ -327,6 +367,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 8
 y = 2
 completion_reward = {
@@ -351,6 +395,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 10
 y = 2
 completion_reward = {
@@ -375,6 +423,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 4
 y = 2
 completion_reward = {
@@ -403,6 +455,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 4
 y = 3
 completion_reward = {
@@ -426,6 +482,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 6
 y = 2
 completion_reward = {
@@ -449,6 +509,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 6
 y = 3
 completion_reward = {
@@ -481,6 +545,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 10
 y = 3
 completion_reward = {
@@ -506,6 +574,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 8
 y = 3
 completion_reward = {
@@ -533,6 +605,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 1
 y = 4
 completion_reward = {
@@ -557,6 +633,10 @@ mutually_exclusive = {
 	 }
 available = {
 }
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
 ai_will_do = {
 	factor = 5
   }
@@ -589,6 +669,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 3
 y = 4
 completion_reward = {
@@ -615,6 +699,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 9
 y = 4
 completion_reward = {
@@ -650,6 +738,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 14
 y = 2
 completion_reward = {
@@ -676,6 +768,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 16
 y = 2
 completion_reward = {
@@ -697,6 +793,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 25
 y = 0
 completion_reward = {
@@ -719,6 +819,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = -1
 y = 5
 completion_reward = {
@@ -752,6 +856,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 14
 y = 3
 completion_reward = {
@@ -778,6 +886,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 12
 y = 2
 completion_reward = {
@@ -819,6 +931,10 @@ ai_will_do = {
   }
   bypass = {
   }
+  cancel_if_invalid = yes
+  continue_if_invalid = no
+  available_if_capitulated = no
+  search_filters = { FOCUS_FILTER_POLITICAL }
 x = 12
 y = 3
 completion_reward = {
@@ -842,6 +958,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 16
 	y = 3
 	completion_reward = {
@@ -865,6 +985,10 @@ shared_focus = {
 	  }
 	  bypass = {
 	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
 	x = 9
 	y = 5
 	completion_reward = {
@@ -872,5 +996,33 @@ shared_focus = {
 			id = SSW_ITA.12
 		}
 		add_political_power = 50
+	}
+}
+#王立イタリア自由大学の設立
+shared_focus = {
+	id = ITA_focus_industry_Founding_of_the_Royal_Italian_Free_University
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Accelerating_Equalization
+		}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 1
+	y = 5
+	completion_reward = {
+		add_ideas = ITA_idea_29
+		add_research_slot = 1
 	}
 }

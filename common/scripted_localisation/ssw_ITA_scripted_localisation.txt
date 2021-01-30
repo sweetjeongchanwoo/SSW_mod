@@ -4,16 +4,16 @@ defined_text = { # Country
         #kind
         trigger = {
             original_tag = ITA
-            has_completed_focus = ITA_focus_industry_10
+            has_completed_focus = ITA_focus_industry_Granting_citizenship
         }
-        localization_key = GER_KAISER_WAGEN_NAME
+        localization_key = ITA_Solvingtheimmigrationproblem_kind
     }
     text = {
         #cold
         trigger = {
             original_tag = ITA
-            has_completed_focus = ITA_focus_industry_11
+            has_completed_focus = ITA_focus_industry_Harsh_treatment
         }
-        localization_key = GER_VOLKS_WAGEN_NAME
+        localization_key = ITA_Solvingtheimmigrationproblem_cold
     }
 }
