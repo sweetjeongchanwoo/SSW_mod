@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		#連合の課題
 		id = UTC_the_problem
-		icon = GFX_focus_UTC_flag
+		icon = GFX_goal_generic_propaganda
 		cost = 5
 		x = 7
 		y = 0
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		#GM社重視
 		id = UTC_focus_on_the_gm_company
-		icon = GFX_focus_UTC_general_motors_company
+		icon = GFX_focus_UTC_general_motor_company
 		cost = 2
 		prerequisite = {
 			focus = UTC_the_problem
@@ -98,7 +98,7 @@ focus_tree = {
 	focus = {
 		#世界各地の支社での販売
 		id = UTC_sales_at_branch_offices
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		cost = 10
 		prerequisite = {
 			focus = UTC_focus_on_the_gm_company
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		#民間車両重視
 		id = UTC_focus_on_private_vehicles
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10
 		prerequisite = {
 			focus = UTC_survey_tank_demand
@@ -175,7 +175,7 @@ focus_tree = {
 	focus = {
 		#軍用車両を重視
 		id = UTC_focus_on_military_vehicles
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		cost = 10
 		prerequisite = {
 			focus = UTC_survey_tank_demand
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		#連合の未来
 		id = UTC_the_future
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 5
 		prerequisite = {
 			focus = UTC_three_companies_three_bonds
@@ -614,7 +614,7 @@ focus_tree = {
 	focus = {
 		#内戦再開の予兆
 		id = UTC_signs_of_requmption_of_civil_war
-		icon = GFX_focus_raj_lions_of_the_great_war
+		icon = GFX_goal_demand_sudetenland
 		cost = 2
 		x = 24
 		y = 0
@@ -685,11 +685,17 @@ focus_tree = {
 		completion_reward = {
 			stability_factor = 0.05
 		}
+		available = {
+			OR = {
+				has_war_with = FSA
+				has_war_with = ALF
+			}
+		}
 	}
 	focus = {
 		#アメリカ連邦との戦争
 		id = UTC_the_war_with_the_fsa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 10
 		prerequisite = {
 			focus = UTC_resumption_of_civil_war
@@ -706,7 +712,7 @@ focus_tree = {
 	focus = {
 		#アメリカ自由連盟との戦争
 		id = UTC_the_war_with_the_ALF
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		cost = 10
 		prerequisite = {
 			focus = UTC_resumption_of_civil_war
@@ -800,7 +806,7 @@ focus_tree = {
 	focus = {
 		#ルイジアナとともに
 		id = UTC_with_Louisiana
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10
 		prerequisite = {
 			focus = UTC_the_war_with_the_fsa
@@ -996,15 +1002,25 @@ focus_tree = {
 	focus = {
 		#連邦戦の終了
 		id = UTC_end_of_the_war_with_the_fsa
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
+		available = {
+		FSA = {
+				exists = no
+			}
+		}
 		cost = 2
 		x = 35
 		y = 0
-	}
+		}
 	focus = {
 		#自由連盟戦の終了
 		id = UTC_end_of_the_war_with_the_alf
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_manpower
+		available = {
+		FSA = {
+				exists = no
+			}
+		}
 		cost = 2
 		x = 39
 		y = 0
@@ -1116,11 +1132,17 @@ focus_tree = {
 		}
 		x = 39
 		y = 4
+		completion_reward = {
+		create_wargoal = {
+				type = annex_everything
+				target = NEL
+			}
+		}
 	}
 	focus = {
 		#ニューイングランドを完全編入
 		id = UTC_fully_incorporate_new_england
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10
 		prerequisite = {
 			focus = UTC_the_consultation_with_new_england
@@ -1129,6 +1151,12 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = UTC_the_consultation_with_new_england
+		completion_reward = {
+			add_state_core = 914
+			add_state_core = 358
+			add_state_core = 357
+			add_state_core = 913
+		}
 	}
 	focus = {
 		#企業買収
@@ -1140,11 +1168,26 @@ focus_tree = {
 		}
 		x = 37
 		y = 6
+		completion_reward = {
+			add_state_core = 372
+			add_state_core = 911
+			add_state_core = 371
+			add_state_core = 374
+			add_state_core = 813
+			add_state_core = 904
+			add_state_core = 905
+			add_state_core = 375
+			add_state_core = 902
+			add_state_core = 903
+			add_state_core = 383
+			add_state_core = 382
+			add_state_core = 376
+		}
 	}
 	focus = {
 		#アメリカ企業連合
 		id = UTC_united_company_of_america
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 10
 		prerequisite = {
 			focus = UTC_acquisiton_of_companies
@@ -1227,7 +1270,7 @@ focus_tree = {
 	focus = {
 		#幸福の義務
 		id = UTC_duty_of_happiness
-		icon = GFX_focus_raj_indian_gurkhas
+		icon = GFX_goal_continuous_boost_freedom
 		cost = 10
 		prerequisite = {
 			focus = UTC_economic_control
@@ -1263,7 +1306,7 @@ focus_tree = {
 	focus = {
 		#ディストピアを破壊
 		id = UTC_destroy_dystopia
-		icon = GFX_focus_usa_tank_destroyer_doctrine
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 10
 		prerequisite = {
 			focus = UTC_purge_non_happy_people
@@ -1277,7 +1320,7 @@ focus_tree = {
 	focus = {
 		#ユートピア構想
 		id = UTC_the_utopia_concept
-		icon = GFX_focus_ast_squander_bug
+		icon = GFX_focus_usa_tank_destroyer_doctrine
 		cost = 10
 		prerequisite = {
 			focus = UTC_purge_non_happy_people
