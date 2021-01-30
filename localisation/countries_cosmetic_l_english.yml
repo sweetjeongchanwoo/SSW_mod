@@ -128,9 +128,9 @@
  DPK_perfect_DEF:0 "朝鮮民主主義人民共和国"
  DPK_perfect_ADJ:0 "朝鮮"
  
- UTC_america:0 "アメリカ企業連盟"
- UTC_america_DEF:0 "アメリカ企業連盟"
- UTC_america_ADJ:0 "アメリカ企業連盟"
+ UTC_america:0 "アメリカ企業連合"
+ UTC_america_DEF:0 "アメリカ企業連合"
+ UTC_america_ADJ:0 "アメリカ企業連合"
  
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
