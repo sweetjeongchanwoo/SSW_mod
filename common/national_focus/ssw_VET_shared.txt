@@ -207,6 +207,84 @@ shared_focus = {
     completion_reward = {
     }
 }
+#青年民族運動の開催
+shared_focus = {
+    id = VET_focus_Organizing_the_Youth_National_Movement
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Vietnamstyle_military_education
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 8
+    y = 3
+    completion_reward = {
+    }
+}
+#軍隊への理解
+shared_focus = {
+    id = VET_focus_Understanding_military
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Organizing_the_Youth_National_Movement
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 8
+    y = 4
+    completion_reward = {
+    }
+}
+#国民との支え合い
+shared_focus = {
+    id = VET_focus_Supporting_each_other_and_the_people
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Understanding_military
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 8
+    y = 5
+    completion_reward = {
+    }
+}
 #ゲリラ部隊の拡大
 shared_focus = {
     id = VET_focus_Expansion_of_guerrilla_forces
@@ -308,6 +386,70 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL }
     x = 2
     y = 5
+    completion_reward = {
+    }
+}
+#統合参謀本部の設立
+shared_focus = {
+    id = VET_focus_Establishment_of_the_Joint_Chiefs_of_Staff
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Protector_of_Indochina
+    }
+    prerequisite = {
+        focus = VET_focus_Weapon_Field
+    }
+    prerequisite = {
+        focus = VET_focus_land_and_naval_collaboration
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 2
+    y = 6
+    completion_reward = {
+    }
+}
+#精強なるベトナム軍
+shared_focus = {
+    id = VET_focus_mighty_Vietnamese_army
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Mass_mobilization_of_guerillas
+    }
+    prerequisite = {
+        focus = VET_focus_Supporting_each_other_and_the_people
+    }
+    prerequisite = {
+        focus = VET_focus_Thoroughness_of_roles
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 8
+    y = 6
     completion_reward = {
     }
 }
@@ -516,6 +658,139 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL }
     x = 6
     y = 5
+    completion_reward = {
+    }
+}
+#海空軍の創設
+shared_focus = {
+    id = VET_focus_Creation_of_the_Navy_and_AirForce
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_focus_on_army
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 2
+    completion_reward = {
+    }
+}
+#補助的な役割
+shared_focus = {
+    id = VET_focus_Auxiliary_role
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Creation_of_the_Navy_and_AirForce
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 3
+    completion_reward = {
+    }
+}
+#最低限のコストで
+shared_focus = {
+    id = VET_focus_Minimal_cost
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Auxiliary_role
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 4
+    completion_reward = {
+    }
+}
+#役割の徹底
+shared_focus = {
+    id = VET_focus_Thoroughness_of_roles
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Auxiliary_role
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 5
+    completion_reward = {
+    }
+}
+#アジアそして世界へ
+shared_focus = {
+    id = VET_focus_Asia_and_the_World
+    icon = GFX_goal_generic_major_war
+    cost = 5.00
+    prerequisite = {
+        focus = VET_focus_Establishment_of_the_Joint_Chiefs_of_Staff
+    }
+    prerequisite = {
+        focus = VET_focus_mighty_Vietnamese_army
+    }
+    mutually_exclusive = {
+    }
+    available = {
+    }
+    ai_will_do = {
+    factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 5
+    y = 7
     completion_reward = {
     }
 }
