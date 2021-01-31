@@ -1,30 +1,30 @@
 spriteTypes = {
     spriteType = {
 		name = "GFX_focus_MEX_air_force"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_air_force.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_air_force.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_army"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_army.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_army.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_develop"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_develop.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_develop.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_empire"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_empire.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_empire.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_flag_mexico"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_flag_mexico.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_flag_mexico.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_navy"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_navy.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_navy.tga"
 	}
 	spriteType = {
 		name = "GFX_focus_MEX_sinarquist_coup"
-		texturefile = "gfx/interface/goals/mex/focus_MEX_sinarquist_coup.tga"
+		texturefile = "gfx/interface/goals/focus_MEX_sinarquist_coup.tga"
 	}
 }
