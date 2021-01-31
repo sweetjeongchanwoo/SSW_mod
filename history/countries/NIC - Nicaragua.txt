@@ -12,11 +12,21 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_democracy
+	ruling_party = progressive_communism
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authority_democracy = 100
+	progressive_communism = 100
+}
+create_country_leader = {
+	name = "Petrona Hernández López"
+	desc = "POLITICS_PETRONA_LOPEZ_DESC"
+	picture = "gfx/leaders/NIC/Portrait_Nicaragua_Petrona_Hernandez_Lopez.dds"
+	expire = "2007.2.14"
+	ideology = progressive_communism_ideology
+	female = yes
+	traits = {
+	}
 }
