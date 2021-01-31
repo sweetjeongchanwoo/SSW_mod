@@ -1,5 +1,5 @@
 focus_tree = {
-	id = RUS_NF
+	id = ssw_russia_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -2756,7 +2756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_the_dictatorship
-		icon = GFX_focus_RUS_army
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = RUS_the_great_coup }
 		x = 0
 		y = 1
@@ -2862,7 +2862,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_infrastructure_development
-		icon = GFX_focus_RUS_wine
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RUS_national_style }
 		x = -2
 		y = 1
@@ -2922,7 +2922,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_armor_effort
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = RUS_national_style }
 		text = armor_effort
 		x = 0
@@ -2979,7 +2979,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_military_dictatorship
-		icon = GFX_focus_RUS_white_legacy
+		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = RUS_expansion_of_support }
 		mutually_exclusive = {
 			focus = RUS_reinforcement_nazism
@@ -3133,7 +3133,7 @@ focus_tree = {
 	focus = {
 		id = RUS_delete_finland
 		prerequisite = { focus = RUS_military_dictatorship }
-		icon = GFX_focus_RUS_heavy_armour
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 1
 		y = 1
 		relative_position_id = RUS_military_dictatorship
@@ -3516,7 +3516,7 @@ focus_tree = {
 	}
 	focus = {
 		id = RUS_memory_of_the_empire
-		icon = GFX_focus_RUS_flag
+		icon = GFX_focus_ger_revive_kaiserreich
 		prerequisite = {
 			focus = RUS_the_russian_miracle
 			focus = RUS_delete_germany

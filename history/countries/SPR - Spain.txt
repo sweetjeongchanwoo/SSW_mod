@@ -144,14 +144,6 @@ set_autonomy = {
 	target = RIF
 	autonomous_state = colony
 }
-set_autonomy = {
-	target = WES
-	autonomous_state = colony
-}
-set_autonomy = {
-	target = EQG
-	autonomous_state = colony
-}
 create_dynamic_country = { #アキテーヌ
 	original_tag = FRA
 	set_country_flag = FRA_aquitaine_countryflag

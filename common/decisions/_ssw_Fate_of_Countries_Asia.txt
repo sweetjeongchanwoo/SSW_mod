@@ -24,15 +24,30 @@ fate_of_countries_category_asia = {
 					is_claimed_by = ROOT
 				}
 			}
-			OR = {
-				DPK = { capital_scope = { is_fully_controlled_by = ROOT } }
-				KOR = { capital_scope = { is_fully_controlled_by = ROOT } }
-				ROK = { capital_scope = { is_fully_controlled_by = ROOT } }
+			DPK = { capital_scope = { is_fully_controlled_by = ROOT } }
+			KOR = { capital_scope = { is_fully_controlled_by = ROOT } }
+			ROK = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_korea }
 			}
 		}
-		cancel_trigger = { KOR = { capital_scope = { is_valid_annexation_state = no } } }
+		cancel_trigger = {
+			OR = {
+				country_exists = DPK
+				country_exists = KOR
+				country_exists = ROK
+				DPK = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				KOR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				ROK = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_korea
+			}
+		}
 		complete_effect = { country_event = { id = ssw_foc_asia.1 } }
-		timeout_effect = { occupy_medium_country = yes }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_korea
+		}
 		ai_will_do = { factor = 100 }
 	}
 }

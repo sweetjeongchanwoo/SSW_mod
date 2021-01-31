@@ -1,0 +1,13 @@
+state = { #Hukushima
+	id = 1101
+	name = "STATE_1101"
+	manpower = 2062394
+	state_category = city
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 4118 5 }
+	}
+	provinces = { 1024 1113 4118 4122 }
+}

@@ -1,0 +1,13 @@
+state = { #Tokushima
+	id = 1087
+	name = "STATE_1087"
+	manpower = 878511
+	state_category = city
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 9965 1 }
+	}
+	provinces = { 9965 }
+}
