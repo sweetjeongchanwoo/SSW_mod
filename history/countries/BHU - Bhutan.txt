@@ -18,3 +18,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = { #Selassie will appear via NF
+	name = "Jigme Wangchuk"
+	picture = "ssw_Portrait_Bhutan_Jigme_Wangchuck.dds"
+	expire = "1952.3.30"
+	ideology = authority_despotism_ideology 
+	traits = {
+		
+	}
+}
