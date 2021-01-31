@@ -55,7 +55,7 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 create_corps_commander = {
-	name = "Carlo de Simone"
+	name = "Giuzeppe Daodice"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
 	traits = { trait_engineer hill_fighter }
 	skill = 2
@@ -66,7 +66,7 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Carlo de Simone"
+	name = "Gustavo Pesenti"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
 	traits = { armor_officer trait_mountaineer commando }
 	skill = 1
