@@ -6,9 +6,29 @@ country_event = {
 	picture = GFX_report_event_generic_ruins
 	is_triggered_only = yes
 	desc = ssw_foc_middle_east.0.d
-	option = {
-        name = ssw_foc_middle_east.0.a
-		ai_chance = { base = 10 }
+	option = {#オスマン帝国を作ってた場合
+		TUR = {
+			has_completed_focus = TUR_call_the_ottomans_back
+		}
+		name = ssw_foc_middle_east.0.c
+		every_state = {
+			limit = {
+				is_core_of = OTT
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OTT = { transfer_state = PREV }
+		}
+		puppet = OTT
+	}
+	option = {#中東連合を作っていた場合
+		TUR = {
+			has_completed_focus = TUR_declaration_united_country
+		}
+		name = ssw_foc_middle_east.0.e
 		every_state = {
 			limit = {
 				is_core_of = TUR
@@ -22,7 +42,29 @@ country_event = {
 		}
 		puppet = TUR
 	}
-	option = {
+	option = {#解放
+        name = ssw_foc_middle_east.0.a
+		ai_chance = { base = 10 }
+		NOT = {
+			TUR = {
+				has_completed_focus = TUR_call_the_ottomans_back
+				has_completed_focus = TUR_declaration_united_country
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = TUR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			TUR = { transfer_state = PREV }
+		}
+		puppet = TUR
+	}
+	option = {#併合
 		name = ssw_foc_middle_east.0.b
 		occupy_medium_country = yes
 	}
@@ -52,7 +94,7 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.1.b
-		occupy_medium_country = yes
+		occupy_small_country = yes
 	}
 }
 #シリアの運命
@@ -80,6 +122,62 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.2.b
-		occupy_medium_country = yes
+		occupy_small_country = yes
+	}
+}
+#ヨルダンの運命
+country_event = {
+    id = ssw_foc_middle_east.3
+	title = ssw_foc_middle_east.3.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.3.d
+	option = {
+        name = ssw_foc_middle_east.3.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = JOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			JOR = { transfer_state = PREV }
+		}
+		puppet = JOR
+	}
+	option = {
+		name = ssw_foc_middle_east.3.b
+		occupy_small_country = yes
+	}
+}
+#パレスチナの運命
+country_event = {
+    id = ssw_foc_middle_east.4
+	title = ssw_foc_middle_east.4.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.4.d
+	option = {
+        name = ssw_foc_middle_east.4.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = PAL
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PAL = { transfer_state = PREV }
+		}
+		puppet = PAL
+	}
+	option = {
+		name = ssw_foc_middle_east.4.b
+		occupy_small_country = yes
 	}
 }
