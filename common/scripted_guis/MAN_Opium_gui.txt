@@ -72,13 +72,13 @@ scripted_gui = {
 		window_name = "SSW_MAN_tab_opium_regulation"
 		context_type = player_context
 
-		visible = {
+		visible = {#iranai
 #			check_variable = { selected_industry_focus = 0 }
 #			check_variable = { selected_policy_bar_button = 1 }
 		}
 		
 		triggers = {
-			label_visible = {
+			label_visible = { #iranai
 				set_temp_variable = { si = segment_idx }
 				modulo_temp_variable = { si = 2 }
 				check_variable = { si = 0 }
@@ -86,7 +86,7 @@ scripted_gui = {
 		}
 		
 		dynamic_lists = {
-			line_segments = {
+			line_segments = {#iranai
 				array = industry_graph_offsets
 				change_scope = no
 				entry_container = industry_line_graph_line_segment
@@ -136,7 +136,7 @@ scripted_gui = {
 			}
 		}
 		properties = {
-			segment = {
+			segment = {#iranai
 				y = industry_graph_offsets^segment_idx
 				frame =industry_graph_slopes^segment_idx
 			}
