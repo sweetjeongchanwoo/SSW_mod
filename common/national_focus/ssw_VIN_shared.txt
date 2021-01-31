@@ -1,6 +1,6 @@
 #自国軍
 shared_focus = {
-    id = VET_focus_fatherland_army
+    id = VIN_focus_fatherland_army
     icon = GFX_goal_generic_major_war
     cost = 5.00
     prerequisite = {
@@ -17,22 +17,24 @@ shared_focus = {
     cancel_if_invalid = yes
     continue_if_invalid = no
     available_if_capitulated = no
-    search_filters = { FOCUS_FILTER_POLITICAL }
+    search_filters = { FOCUS_FILTER_WAR_SUPPORT }
     x = 5
     y = 0
     completion_reward = {
+        add_war_support = 0.05
+        add_ideas = VIN_idea_2
     }
 }
 #軍隊全般の強化
 shared_focus = {
-    id = VET_focus_Strengthen_the_military_in_general
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Strengthen_the_military_in_general
+    icon = GFX_focus_generic_strike_at_democracy1
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_fatherland_army
+        focus = VIN_focus_fatherland_army
     }
     mutually_exclusive = {
-        focus = VET_focus_focus_on_army
+        focus = VIN_focus_focus_on_army
     }
     available = {
     }
@@ -48,15 +50,22 @@ shared_focus = {
     x = 2
     y = 1
     completion_reward = {
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 3
+            category = land_doctrine
+            category = naval_doctrine
+            category = air_doctrine
+        }
     }
 }
 #陸軍の強化
 shared_focus = {
-    id = VET_focus_Strengthening_Army
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Strengthening_Army
+    icon = GFX_goal_generic_army_doctrines
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthen_the_military_in_general
+        focus = VIN_focus_Strengthen_the_military_in_general
     }
     mutually_exclusive = {
     }
@@ -78,11 +87,11 @@ shared_focus = {
 }
 #海軍の強化
 shared_focus = {
-    id = VET_focus_Strengthening_navy
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Strengthening_navy
+    icon = GFX_goal_generic_navy_doctrines_tactics
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthen_the_military_in_general
+        focus = VIN_focus_Strengthen_the_military_in_general
     }
     mutually_exclusive = {
     }
@@ -104,11 +113,11 @@ shared_focus = {
 }
 #空軍の強化
 shared_focus = {
-    id = VET_focus_Strengthening_airforce
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Strengthening_airforce
+    icon = GFX_goal_generic_air_doctrine
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthen_the_military_in_general
+        focus = VIN_focus_Strengthen_the_military_in_general
     }
     mutually_exclusive = {
     }
@@ -130,14 +139,14 @@ shared_focus = {
 }
 #陸軍に集中
 shared_focus = {
-    id = VET_focus_focus_on_army
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_focus_on_army
+    icon = GFX_goal_generic_axis_build_infantry
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_fatherland_army
+        focus = VIN_focus_fatherland_army
     }
     mutually_exclusive = {
-        focus = VET_focus_Strengthen_the_military_in_general
+        focus = VIN_focus_Strengthen_the_military_in_general
     }
     available = {
     }
@@ -157,11 +166,11 @@ shared_focus = {
 }
 #ゲリラ戦への特化
 shared_focus = {
-    id = VET_focus_Specialization_in_guerrilla_warfare
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Specialization_in_guerrilla_warfare
+    icon = GFX_focus_por_luso_tropicalism
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_focus_on_army
+        focus = VIN_focus_focus_on_army
     }
     mutually_exclusive = {
     }
@@ -183,11 +192,11 @@ shared_focus = {
 }
 #ベトナム式軍事教育
 shared_focus = {
-    id = VET_focus_Vietnamstyle_military_education
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Vietnamstyle_military_education
+    icon = GFX_goal_demand_sudetenland
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_focus_on_army
+        focus = VIN_focus_focus_on_army
     }
     mutually_exclusive = {
     }
@@ -209,11 +218,11 @@ shared_focus = {
 }
 #青年民族運動の開催
 shared_focus = {
-    id = VET_focus_Organizing_the_Youth_National_Movement
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Organizing_the_Youth_National_Movement
+    icon = GFX_focus_prc_infiltration
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Vietnamstyle_military_education
+        focus = VIN_focus_Vietnamstyle_military_education
     }
     mutually_exclusive = {
     }
@@ -235,11 +244,11 @@ shared_focus = {
 }
 #軍隊への理解
 shared_focus = {
-    id = VET_focus_Understanding_military
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Understanding_military
+    icon = GFX_goal_generic_national_unity
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Organizing_the_Youth_National_Movement
+        focus = VIN_focus_Organizing_the_Youth_National_Movement
     }
     mutually_exclusive = {
     }
@@ -261,11 +270,11 @@ shared_focus = {
 }
 #国民との支え合い
 shared_focus = {
-    id = VET_focus_Supporting_each_other_and_the_people
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Supporting_each_other_and_the_people
+    icon = GFX_goal_generic_major_alliance
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Understanding_military
+        focus = VIN_focus_Understanding_military
     }
     mutually_exclusive = {
     }
@@ -287,11 +296,11 @@ shared_focus = {
 }
 #ゲリラ部隊の拡大
 shared_focus = {
-    id = VET_focus_Expansion_of_guerrilla_forces
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Expansion_of_guerrilla_forces
+    icon = GFX_goal_generic_special_forces
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthening_Army
+        focus = VIN_focus_Strengthening_Army
     }
     mutually_exclusive = {
     }
@@ -313,11 +322,11 @@ shared_focus = {
 }
 #直衛艦の建造
 shared_focus = {
-    id = VET_focus_Construction_of_direct_defense_ships
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Construction_of_direct_defense_ships
+    icon = GFX_focus_generic_cruiser2
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthening_navy
+        focus = VIN_focus_Strengthening_navy
     }
     mutually_exclusive = {
     }
@@ -339,11 +348,11 @@ shared_focus = {
 }
 #沿岸防衛
 shared_focus = {
-    id = VET_focus_coastal_defense
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_coastal_defense
+    icon = GFX_focus_hol_prepare_the_inundation_lines
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Construction_of_direct_defense_ships
+        focus = VIN_focus_Construction_of_direct_defense_ships
     }
     mutually_exclusive = {
     }
@@ -365,11 +374,11 @@ shared_focus = {
 }
 #インドシナの守護者
 shared_focus = {
-    id = VET_focus_Protector_of_Indochina
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Protector_of_Indochina
+    icon = GFX_focus_eng_imperial_federation
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_coastal_defense
+        focus = VIN_focus_coastal_defense
     }
     mutually_exclusive = {
     }
@@ -391,17 +400,17 @@ shared_focus = {
 }
 #統合参謀本部の設立
 shared_focus = {
-    id = VET_focus_Establishment_of_the_Joint_Chiefs_of_Staff
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Establishment_of_the_Joint_Chiefs_of_Staff
+    icon = GFX_focus_eng_chiefs_of_staff_committee
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Protector_of_Indochina
+        focus = VIN_focus_Protector_of_Indochina
     }
     prerequisite = {
-        focus = VET_focus_Weapon_Field
+        focus = VIN_focus_Weapon_Field
     }
     prerequisite = {
-        focus = VET_focus_land_and_naval_collaboration
+        focus = VIN_focus_land_and_naval_collaboration
     }
     mutually_exclusive = {
     }
@@ -423,17 +432,17 @@ shared_focus = {
 }
 #精強なるベトナム軍
 shared_focus = {
-    id = VET_focus_mighty_Vietnamese_army
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_mighty_Vietnamese_army
+    icon = GFX_goal_generic_axis_build_infantry
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Mass_mobilization_of_guerillas
+        focus = VIN_focus_Mass_mobilization_of_guerillas
     }
     prerequisite = {
-        focus = VET_focus_Supporting_each_other_and_the_people
+        focus = VIN_focus_Supporting_each_other_and_the_people
     }
     prerequisite = {
-        focus = VET_focus_Thoroughness_of_roles
+        focus = VIN_focus_Thoroughness_of_roles
     }
     mutually_exclusive = {
     }
@@ -455,11 +464,11 @@ shared_focus = {
 }
 #最低限の制空能力
 shared_focus = {
-    id = VET_focus_Minimum_air_control_capability
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Minimum_air_control_capability
+    icon = GFX_goal_generic_build_airforce
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthen_the_military_in_general
+        focus = VIN_focus_Strengthen_the_military_in_general
     }
     mutually_exclusive = {
     }
@@ -481,11 +490,11 @@ shared_focus = {
 }
 #海上機の運用
 shared_focus = {
-    id = VET_focus_Marine_aircraft_operations
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Marine_aircraft_operations
+    icon = GFX_focus_usa_escort_fighters
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Minimum_air_control_capability
+        focus = VIN_focus_Minimum_air_control_capability
     }
     mutually_exclusive = {
     }
@@ -507,11 +516,11 @@ shared_focus = {
 }
 #陸海共同
 shared_focus = {
-    id = VET_focus_land_and_naval_collaboration
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_land_and_naval_collaboration
+    icon = GFX_goal_generic_amphibious_assault
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Marine_aircraft_operations
+        focus = VIN_focus_Marine_aircraft_operations
     }
     mutually_exclusive = {
     }
@@ -533,11 +542,11 @@ shared_focus = {
 }
 #正規軍の編成
 shared_focus = {
-    id = VET_focus_Formation_of_the_regular_army
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Formation_of_the_regular_army
+    icon = GFX_focus_generic_manpower
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Strengthening_Army
+        focus = VIN_focus_Strengthening_Army
     }
     mutually_exclusive = {
     }
@@ -559,11 +568,11 @@ shared_focus = {
 }
 #武器の畑
 shared_focus = {
-    id = VET_focus_Weapon_Field
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Weapon_Field
+    icon = GFX_focus_secret_rearmament
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Formation_of_the_regular_army
+        focus = VIN_focus_Formation_of_the_regular_army
     }
     mutually_exclusive = {
     }
@@ -585,11 +594,11 @@ shared_focus = {
 }
 #装備の適切化
 shared_focus = {
-    id = VET_focus_Appropriate_equipment
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Appropriate_equipment
+    icon = GFX_focus_generic_combined_arms
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Specialization_in_guerrilla_warfare
+        focus = VIN_focus_Specialization_in_guerrilla_warfare
     }
     mutually_exclusive = {
     }
@@ -611,11 +620,11 @@ shared_focus = {
 }
 #始祖からの指導
 shared_focus = {
-    id = VET_focus_Guidance_from_the_Founders
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Guidance_from_the_Founders
+    icon = GFX_focus_spr_no_pasaran
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Appropriate_equipment
+        focus = VIN_focus_Appropriate_equipment
     }
     mutually_exclusive = {
     }
@@ -637,11 +646,11 @@ shared_focus = {
 }
 #ゲリラの大量動員
 shared_focus = {
-    id = VET_focus_Mass_mobilization_of_guerillas
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Mass_mobilization_of_guerillas
+    icon = GFX_focus_generic_military_mission
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Guidance_from_the_Founders
+        focus = VIN_focus_Guidance_from_the_Founders
     }
     mutually_exclusive = {
     }
@@ -663,11 +672,11 @@ shared_focus = {
 }
 #海空軍の創設
 shared_focus = {
-    id = VET_focus_Creation_of_the_Navy_and_AirForce
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Creation_of_the_Navy_and_AirForce
+    icon = GFX_focus_CZE_military_aeronautical_institute
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_focus_on_army
+        focus = VIN_focus_focus_on_army
     }
     mutually_exclusive = {
     }
@@ -689,11 +698,11 @@ shared_focus = {
 }
 #補助的な役割
 shared_focus = {
-    id = VET_focus_Auxiliary_role
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Auxiliary_role
+    icon = GFX_goal_generic_air_naval_bomber
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Creation_of_the_Navy_and_AirForce
+        focus = VIN_focus_Creation_of_the_Navy_and_AirForce
     }
     mutually_exclusive = {
     }
@@ -715,11 +724,11 @@ shared_focus = {
 }
 #最低限のコストで
 shared_focus = {
-    id = VET_focus_Minimal_cost
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Minimal_cost
+    icon = GFX_goal_continuous_naval_production
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Auxiliary_role
+        focus = VIN_focus_Auxiliary_role
     }
     mutually_exclusive = {
     }
@@ -741,11 +750,11 @@ shared_focus = {
 }
 #役割の徹底
 shared_focus = {
-    id = VET_focus_Thoroughness_of_roles
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Thoroughness_of_roles
+    icon = GFX_focus_generic_air_defense
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Auxiliary_role
+        focus = VIN_focus_Auxiliary_role
     }
     mutually_exclusive = {
     }
@@ -767,14 +776,14 @@ shared_focus = {
 }
 #アジアそして世界へ
 shared_focus = {
-    id = VET_focus_Asia_and_the_World
-    icon = GFX_goal_generic_major_war
+    id = VIN_focus_Asia_and_the_World
+    icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
     cost = 5.00
     prerequisite = {
-        focus = VET_focus_Establishment_of_the_Joint_Chiefs_of_Staff
+        focus = VIN_focus_Establishment_of_the_Joint_Chiefs_of_Staff
     }
     prerequisite = {
-        focus = VET_focus_mighty_Vietnamese_army
+        focus = VIN_focus_mighty_Vietnamese_army
     }
     mutually_exclusive = {
     }

@@ -1,5 +1,6 @@
 ﻿l_english:
 #国家方針
+ ssw_russia_focus:0 "ロシアの国家方針"
  RUS_russian_economic_problems:0 "ロシア経済問題"
  RUS_industrial_grant:0 "工業助成金"
  RUS_industrial_development_in_urals:0 "ウラルでの工業発展"
@@ -135,7 +136,6 @@
  RUS_EMPEROR_ARMY:0 "帝国陸軍の強化"
  RUS_EMPEROR_NAVY:0 "帝国海軍の設立"
  RUS_EMPEROR_AIR:0 "帝国空軍の拡充"
- RUS_NF:0 "ロシアの国家方針"
  RUS_russian_economic_problems_desc:0 "我々はまだ独立したての国家であり、多くの経済問題を抱えている。 "
  RUS_industrial_grant_desc:0 "工場への助成金を出し、 生産業を支援しよう。 "
  RUS_industrial_development_in_urals_desc:0 "ウラル地方は我々に残された重要な土地である。 "

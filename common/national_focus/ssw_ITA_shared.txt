@@ -161,7 +161,7 @@ shared_focus = {
  #ムッソリーニによって
  shared_focus = {
 	id = ITA_focus_by_Mussolini
-	icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+	icon = GFX_ITA_Mussolini
 	cost = 2.14
 	prerequisite = {
 		 focus = ITA_focus_Duce
@@ -815,7 +815,7 @@ completion_reward = {
 #新型採掘機の導入
 shared_focus = {
 id = ITA_focus_industry_Introduction_of_new_mining_equipment
-icon = GFX_goal_generic_construction #original
+icon = GFX_ITA_Old_Crane
 cost = 3.00
 prerequisite = {
 	 focus = ITA_focus_industry_Expansion_of_mining_industry
@@ -974,7 +974,7 @@ completion_reward = {
 #アウトストラーダの拡大
 shared_focus = {
 id = ITA_focus_industry_Expanding_the_Outstrada
-icon = GFX_goal_generic_construct_infrastructure #original
+icon = GFX_ITA_Autostrada
 cost = 5.00
 prerequisite = {
 	 focus = ITA_focus_industry_Strengthen_northern_industry

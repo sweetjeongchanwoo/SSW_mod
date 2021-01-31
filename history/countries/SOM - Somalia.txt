@@ -24,10 +24,10 @@ set_popularities = {
 	progressive_communism = 5
 }
 create_country_leader = {
-	name = "Haji Bashir Ismail Yusuf"
-	picture = "ssw_Portrait_Somalia_Haji_Bashir.dds"
-	desc = "POLITICS_HAJI_BASHIR_DESC"
-	expire = "1984.1.1"
+	name = "Abdullahi Issa Mohamud"
+	picture = "ssw_Portrait_Somalia_Abdullahi_Issa.dds"
+	desc = "POLITICS_ABDULLAHI_ISSA_DESC"
+	expire = "1988.3.24"
 	ideology = social_conservatism_ideology
 	traits = {
 		#

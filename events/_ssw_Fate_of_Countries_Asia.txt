@@ -136,4 +136,10 @@ country_event = { #ŠØ‘‚Ì‰^–½
 		}
 		puppet = ROK
 	}
+	option = {
+		name = OCCUPY_TT
+		ai_chance = { base = 0 }
+		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_korea
+	}
 }
