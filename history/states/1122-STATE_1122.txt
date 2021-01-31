@@ -1,0 +1,25 @@
+state={
+	id=1122
+	name="STATE_1122"
+	history={
+		owner = UTC
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 9
+			air_base = 3
+			synthetic_refinery = 1
+
+		}
+		add_core_of = UTC
+		victory_points = {	9450	30	}
+	}
+
+	provinces={
+		9450 13307
+	}
+	manpower=421112
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+}

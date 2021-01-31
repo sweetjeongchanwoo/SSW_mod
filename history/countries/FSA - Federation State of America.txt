@@ -1,4 +1,4 @@
-﻿capital = 361
+﻿capital = 1114
 oob = "FSA_1950"
 
 set_convoys = 100

@@ -1,0 +1,27 @@
+state={
+	id=1116
+	name="STATE_1116"
+	history={
+		owner = LFF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			10642 = {
+				bunker = 5
+
+			}
+
+		}
+		add_core_of = LFF
+
+	}
+
+	provinces={
+		2102 10642 12684 13301 13304 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+
+}

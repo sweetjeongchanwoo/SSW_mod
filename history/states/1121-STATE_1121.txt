@@ -1,0 +1,34 @@
+state={
+	id=1121
+	name="STATE_1121"
+	history={
+		owner = LFF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+			1827 = {
+				bunker = 5
+
+			}
+			10588 = {
+				bunker = 5
+
+			}
+
+		}
+		add_core_of = LFF
+		victory_points = {
+			1827 5 
+		}
+
+	}
+
+	provinces={
+		1738 1809 1827 7780 10588 11772 12570 12642 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=city
+
+}

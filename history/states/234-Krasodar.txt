@@ -16,9 +16,6 @@ state={
 		add_core_of = EKA
 		add_core_of = SOV
 		victory_points = {
-			3720 1 
-		}
-		victory_points = {
 			719 3
 		}
 		victory_points = {

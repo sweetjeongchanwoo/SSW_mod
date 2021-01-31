@@ -1,0 +1,23 @@
+state={
+	id=1128
+	name="STATE_1128"
+	history={
+		owner = ALF
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {	9616	1	}
+
+		add_core_of = ALF
+
+	}
+
+	provinces={
+		1832 3781 4778 7845 9616 12124 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+}

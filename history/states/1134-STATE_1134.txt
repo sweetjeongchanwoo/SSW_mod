@@ -1,0 +1,21 @@
+state={
+	id=1134
+	name="STATE_1134"
+
+	history={
+		owner = NEL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = NEL
+
+	}
+
+	provinces={
+		733 3712 3715 3732 4445 7629 9675 10481 13158
+	}
+	manpower=11110
+	buildings_max_level_factor=1.000
+	state_category=city
+
+}

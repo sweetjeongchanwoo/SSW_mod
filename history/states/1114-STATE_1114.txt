@@ -1,0 +1,21 @@
+state={
+	id=1114
+	name="STATE_1114"
+	history={
+		owner = FSA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {	13308	50	}
+		add_core_of = FSA
+	}
+
+	provinces={
+		13308 
+	}
+	manpower=58000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+}

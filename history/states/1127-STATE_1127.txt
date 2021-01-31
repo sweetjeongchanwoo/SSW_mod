@@ -1,0 +1,34 @@
+state={
+	id=1127
+	name="STATE_1127"
+	history={
+		owner = FSA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 10
+			788 = {
+				naval_base = 10
+
+			}
+
+		}
+		add_core_of = FSA
+		victory_points = {
+			788 10 
+		}
+		victory_points = {
+			10412 15 
+		}
+
+	}
+
+	provinces={
+		788 865 873 3823 3925 6846 9931 10412 11738 11841 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=city
+
+}

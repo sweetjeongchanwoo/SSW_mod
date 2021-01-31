@@ -1,0 +1,26 @@
+state={
+	id=1112
+	name="STATE_1112"
+	history={
+		owner = UTC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			4569 15 
+		}
+
+		add_core_of = UTC
+
+	}
+
+	provinces={
+		4449 4540 4569 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=town
+
+}

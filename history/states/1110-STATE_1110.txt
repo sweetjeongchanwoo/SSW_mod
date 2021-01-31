@@ -1,0 +1,23 @@
+
+state={
+	id=1110
+	name="STATE_1110"
+	history={
+		owner = UTC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = UTC
+
+	}
+
+	provinces={
+		3708 4757 10676 12513 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+}
