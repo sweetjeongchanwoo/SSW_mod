@@ -8,6 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
+	VET_idea_1
 	civilian_economy
 }
 
