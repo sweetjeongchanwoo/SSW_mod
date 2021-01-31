@@ -449,6 +449,31 @@ country_event = { #ライン裁定
 		}
 		custom_effect_tooltip = next_decisions_70_tt
 	}
+	option = {
+		name = ssw_foc_events.2.h
+		trigger = {
+			OR = {
+				WLL = { is_subject_of = ROOT }
+				is_in_faction_with = WLL
+				original_tag = WLL
+			}
+			WLL = { owns_state = 8 }
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				has_state_flag = maybe_core_RHINE
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			WLL = { transfer_state = PREV }
+			add_core_of = WLL
+		}
+		custom_effect_tooltip = next_decisions_70_tt
+	}
 }
 country_event = { #北ポーランドの運命
 	id = ssw_foc_events.3

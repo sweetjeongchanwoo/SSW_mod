@@ -16,6 +16,7 @@ RUS_reintegrate_states = {
 						state = 555
 						state = 655
 						state = 722
+						state = 1104
 					}
 				}
 			}
@@ -44,6 +45,7 @@ RUS_reintegrate_states = {
 						state = 555
 						state = 655
 						state = 722
+						state = 1104
 					}
 				}
 			}
@@ -73,6 +75,7 @@ RUS_reintegrate_states = {
 						state = 555
 						state = 655
 						state = 722
+						state = 1104
 					}
 				}
 			}

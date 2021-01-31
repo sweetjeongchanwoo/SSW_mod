@@ -103,7 +103,7 @@ guiTypes = {
 			font = "aldrich_24_outline"
 			text = "[GET_CURRENT_INTRO_TEXT]"
 			maxWidth = 650
-			maxHeight = 370
+			maxHeight = 610
 			alwaystransparent = yes
 			scrollbarType = standardtext_slider
 		}

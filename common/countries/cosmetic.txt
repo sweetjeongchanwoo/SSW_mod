@@ -373,6 +373,11 @@ EQG_SPR = {	#西領ギニア
 	color_ui = rgb { 20 130 140 }
 }
 
+RIF_west_africa_union = { #西領アフリカ西部連合
+	color = rgb { 200 100 31 }
+	color_ui = rgb { 20 130 140 }
+}
+
 #ポルトガル共和国
 CPV_POR = {	#葡領カーボベルデ
 	color = rgb { 20 100 85 }

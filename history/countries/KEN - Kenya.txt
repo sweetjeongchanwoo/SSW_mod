@@ -10,11 +10,21 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_despotism
+	ruling_party = authority_democracy
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authority_despotism = 100
+	authority_democracy = 100
+}
+create_country_leader = {
+	name = "Jomo Kenyatta"
+	picture = "ssw_Portrait_Kenya_Jomo_Kenyatta.dds"
+	desc = "POLITICS_JOMO_KENYATTA_DESC"
+	expire = "1977.8.22"
+	ideology = authority_democracy_ideology
+	traits = {
+		#
+	}
 }

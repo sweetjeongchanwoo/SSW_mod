@@ -322,4 +322,70 @@ fate_of_countries_category_western_europe = {
 		}
 		ai_will_do = { factor = 200 }
 	}
+	fate_of_austria = { #オーストリアの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = AUS }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = AUS
+				NOT = {
+					is_core_of = HUN
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			AUS = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_austria }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = AUS
+				AUS = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_austria
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.0 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_austria
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_alsace_lorraine = { #アルザス＝ロレーヌの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			28 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				GR1 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				FRA = { is_subject_of = ROOT }
+				NFR = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = GR1
+				is_in_faction_with = LTV
+				is_in_faction_with = FRA
+				is_in_faction_with = NFR
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.1 } }
+		ai_will_do = { factor = 200 }
+	}
 }

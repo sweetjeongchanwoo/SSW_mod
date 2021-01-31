@@ -1,0 +1,24 @@
+state={ #Yamanashi
+	id=846
+	name="STATE_846"
+	manpower = 811369
+	state_category = large_city
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		victory_points = {
+		12072 5
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		12072
+	}
+}

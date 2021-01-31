@@ -1,0 +1,26 @@
+
+state={ #Chiba
+	id=845
+	name="STATE_845"
+
+	history={
+		add_core_of = JAP
+		owner = JAP
+		buildings = {
+			infrastructure = 10
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 3
+			fuel_silo = 3
+
+		}
+		victory_points = { 4188 20 }
+
+	}
+	provinces={
+		4184 4188 
+	}
+	manpower=2139037
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}
