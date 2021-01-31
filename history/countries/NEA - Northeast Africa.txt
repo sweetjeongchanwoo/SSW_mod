@@ -78,7 +78,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Orlando Lorenzini"
-	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	picture = "ssw_Portrait_AOI_Orlando_Lorenzini.dds"
 	traits = { cavalry_officer }
 	skill = 2
 	rank = 1
@@ -100,7 +100,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Domenico Mondelli"
-	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	picture = "ssw_Portrait_AOI_Domenico_Mondelli.dds"
 	traits = { infantry_leader infantry_officer ranger }
 	skill = 2
 	rank = 1
