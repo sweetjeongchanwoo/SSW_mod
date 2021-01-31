@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = "SSW_OpeningScreen_OpenButton"
 
 		visible = {
-#			NOT = { has_global_flag = SSW_my_world_is_on_fire_how_about_yours }
+			is_ai = no
 		}
 
 		effects = {
@@ -13,8 +13,6 @@ scripted_gui = {
 				if = {
 					limit = { has_variable = SSW_Opening_Screen }
 					clear_variable = SSW_Opening_Screen
-					set_variable = { FEATURES_INFO_PAGE = 0 }
-					set_variable = { COUNTRY_INFO_PAGE = 0 }
 				}
 				else = {
 					set_variable = { SSW_Opening_Screen = 1 }
@@ -36,180 +34,56 @@ scripted_gui = {
 			SSW_OpeningScreen_CloseButton_click = {
 				clear_variable = SSW_Opening_Screen
 			}
-
-			#Country = 1
-			#Regions = 2
-			#Features = 3
-			#Mod Info = 4
 			
 			SSW_OpeningScreen_Buttons_CountryView_click = {
 				set_variable = { SSW_Opening_Screen = 1 }
 			}
 
-			SSW_OpeningScreen_Buttons_RegionView_click = {
-				set_variable = { SSW_Opening_Screen = 2 }
-			}
-			
 			SSW_OpeningScreen_Buttons_FeatureView_click = {
-				set_variable = { SSW_Opening_Screen = 3 }
+				set_variable = { SSW_Opening_Screen = 2 }
 			}
 
 			SSW_OpeningScreen_Buttons_ModView_click = {
-				set_variable = { SSW_Opening_Screen = 4 }
-			}
-			
-			opening_button_next_page_click = {
-				if = {
-					limit = {
-						check_variable = { SSW_Opening_Screen = 1 }
-					}
-					add_to_variable = { COUNTRY_INFO_PAGE = 1 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SSW_Opening_Screen = 3 }
-					}
-					add_to_variable = { FEATURES_INFO_PAGE = 1 }
-				}
-			}
-			
-			opening_button_prev_page_click = {
-				if = {
-					limit = {
-						check_variable = { SSW_Opening_Screen = 1 }
-					}
-					add_to_variable = { COUNTRY_INFO_PAGE = -1 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { SSW_Opening_Screen = 3 }
-					}
-					add_to_variable = { FEATURES_INFO_PAGE = -1 }
-				}
+				set_variable = { SSW_Opening_Screen = 3 }
 			}
 		}
-		
-		triggers = {
-			SSW_OpeningScreen_Text_visible = {
-				NOT = { check_variable = { SSW_Opening_Screen = 4 } }
-			}
-			
-			SSW_OpeningScreen_Text_ModInfo_Buttons_visible = {
-				check_variable = { SSW_Opening_Screen = 4 }
-			}
-			
-			SSW_discord_button_visible = {
-				check_variable = { SSW_Opening_Screen = 4 }
-			}
-			SSW_reddit_button_visible = {
-				check_variable = { SSW_Opening_Screen = 4 }
-			}
-			SSW_tvtropes_button_visible = {
-				check_variable = { SSW_Opening_Screen = 4 }
-			}
-			SSW_twitter_button_visible = {
-				check_variable = { SSW_Opening_Screen = 4 }
-			}
-			
-			opening_button_next_page_visible = {
-				NOT = {
-					OR = {
-						check_variable = { SSW_Opening_Screen = 2 }
-						check_variable = { SSW_Opening_Screen = 4 }
-					}
-				}
-				OR = {
-					AND = {
-						check_variable = { SSW_Opening_Screen = 1 }
-						SSW_has_big_opening_screen = yes
-						check_variable = { COUNTRY_INFO_PAGE < 1.99 }
-					}
-					AND = {
-						check_variable = { SSW_Opening_Screen = 3 }
-						check_variable = { FEATURES_INFO_PAGE < 0.99 }
-					}
-				}
-			}
-			opening_button_prev_page_visible = {
-				NOT = {
-					OR = {
-						check_variable = { SSW_Opening_Screen = 2 }
-						check_variable = { SSW_Opening_Screen = 4 }
-					}
-				}
-				OR = {
-					AND = {
-						check_variable = { SSW_Opening_Screen = 1 }
-						SSW_has_big_opening_screen = yes
-						check_variable = { COUNTRY_INFO_PAGE > 0.01 }
-					}
-					AND = {
-						check_variable = { SSW_Opening_Screen = 3 }
-						check_variable = { FEATURES_INFO_PAGE > 0.01 }
-					}
-				}
-			}
-			
-			SSW_OpeningScreen_Text_Small_visible = {
-				OR = {
-					AND = {
-						check_variable = { SSW_Opening_Screen = 1 }
-						SSW_has_big_opening_screen = yes
-					}
-					check_variable = { SSW_Opening_Screen = 3 }
-				}
-			}
-			
-			SSW_OpeningScreen_Text_visible = {
-				OR = {
-					check_variable = { SSW_Opening_Screen = 4 }
-					check_variable = { SSW_Opening_Screen = 2 }
-					AND = {
-						SSW_has_big_opening_screen = no
-						check_variable = { SSW_Opening_Screen = 1 }
-					}
-				}
-				NOT = { check_variable = { SSW_Opening_Screen = 4 } }
-			}
-		}
-		
 		properties = {
-			SSW_OpeningScreen_PlayerFlag = { image = "[This.GetFlag]" }
-			SSW_OpeningScreen_Poster = { image = "[GET_POSTER]" }
+			SSW_OpeningScreen_PlayerFlag = { 
+				image = "[This.GetFlag]" 
+			}
+			SSW_OpeningScreen_Poster = { 
+				image = "[GET_POSTER]" 
+			}
 		}
 	}
-	
-	SSW_closing_screen_main = {
+	SSW_opening_screen_main_text = {
 		context_type = player_context
 		parent_window_token = top_bar
-		window_name = "SSW_ClosingScreen_Main"
+		window_name = "SSW_OpeningScreen_TEXT_window"
 
 		visible = {
-			AND = {
-				is_ai = no
-				has_country_flag = SSW_closing_screen_show
-			}
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 1 }
 		}
-		
-		effects = {
-			SSW_ClosingScreen_CloseButton_click = {
-				clr_country_flag = SSW_closing_screen_show
-			}
-			closing_button_next_page_click = {
-				add_to_variable = { ENDING_INFO_PAGE = 1 }
-			}
-			closing_button_prev_page_click = {
-				add_to_variable = { ENDING_INFO_PAGE = -1 }
-			}
+	}
+	SSW_opening_screen_main_feature = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_feature_window"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 2 }
 		}
-		
-		triggers = {
-			closing_button_next_page_visible = {
-				check_variable = { ENDING_INFO_PAGE < 0.99 }
-			}
-			closing_button_prev_page_visible = {
-				check_variable = { ENDING_INFO_PAGE > 0.01 }
-			}
+	}
+	SSW_opening_screen_main_text = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_mod_window"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 3 }
 		}
 	}
 }
