@@ -1,0 +1,14 @@
+state = { #Ibaraki
+	id = 1100
+	name = "STATE_1100"
+	manpower = 2039418
+	state_category = city
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 4100 7 }
+		victory_points = { 7016 4 }
+	}
+	provinces = { 993 4100 7016 }
+}

@@ -1,0 +1,4 @@
+TU1 = { #ƒIƒXƒ}ƒ“’é‘
+	original_tag = TUR
+	has_cosmetic_tag = OTT
+}

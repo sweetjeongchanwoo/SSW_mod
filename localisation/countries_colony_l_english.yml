@@ -244,6 +244,10 @@
  EQG_SPR_DEF:0 "西領ギニア"
  EQG_SPR_ADJ:0 "西領ギニア"
  
+ RIF_west_africa_union:0 "西領アフリカ西部連合"
+ RIF_west_africa_union_DEF:0 "西領アフリカ西部連合"
+ RIF_west_africa_union_ADJ:0 "西領アフリカ西部連合"
+ 
 #ポルトガル共和国
  CPV_POR:0 "葡領カーボベルデ"
  CPV_POR_DEF:0 "葡領カーボベルデ"

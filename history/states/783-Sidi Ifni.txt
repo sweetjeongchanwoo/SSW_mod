@@ -11,8 +11,9 @@ state={
 			12857 1
 		}
 
-		owner = WES
+		owner = RIF
 		add_core_of = WES
+		add_core_of = RIF
 		add_core_of = MOR
 		buildings = {
 			infrastructure = 1

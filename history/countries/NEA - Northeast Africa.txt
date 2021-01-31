@@ -33,3 +33,89 @@ create_country_leader = {
 		#
 	}
 }
+create_field_marshal = {
+	name = "Gugliermo Nasi"
+	picture = "portrait_italy_emilio_de_bono.dds"
+	traits = { career_officer war_hero brilliant_strategist inspirational_leader  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Carlo de Simone"
+	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	traits = { trickster trait_cautious }
+	skill = 3
+	rank = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Giuzeppe Daodice"
+	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	traits = { trait_engineer hill_fighter }
+	skill = 2
+	rank = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gustavo Pesenti"
+	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	traits = { armor_officer trait_mountaineer commando }
+	skill = 1
+	rank = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Orlando Lorenzini"
+	picture = "ssw_Portrait_AOI_Orlando_Lorenzini.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	rank = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Amedeo Guillet"
+	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	traits = { cavalry_officer skilled_staffer old_guard war_hero }
+	skill = 3
+	rank = 1
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Domenico Mondelli"
+	picture = "ssw_Portrait_AOI_Domenico_Mondelli.dds"
+	traits = { infantry_leader infantry_officer ranger }
+	skill = 2
+	rank = 1
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Carlo Balsamo di Specchia Normandia"
+		picture = "Portrait_Italy_Inigo_Campioni.dds"
+	traits = { seawolf bold fly_swatter }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
