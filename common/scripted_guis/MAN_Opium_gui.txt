@@ -68,38 +68,17 @@ scripted_gui = {
 		}
 	}
 
-	SSW_MAN_tab_opium_regulation = {
-		window_name = "SSW_MAN_tab_opium_regulation"
+	OPI_Opium_Opi_container = {
+		window_name = "OPI_Opium_Opi_container"
 		context_type = player_context
-
-		visible = {#iranai
-#			check_variable = { selected_industry_focus = 0 }
-#			check_variable = { selected_policy_bar_button = 1 }
-		}
 		
-		triggers = {
-			label_visible = { #iranai
-				set_temp_variable = { si = segment_idx }
-				modulo_temp_variable = { si = 2 }
-				check_variable = { si = 0 }
-			}
-		}
-		
-		dynamic_lists = {
-			line_segments = {#iranai
-				array = industry_graph_offsets
-				change_scope = no
-				entry_container = industry_line_graph_line_segment
-				index = segment_idx
-			}
-		}
 		effects = {
 			SliderDown_click = {
 				if = {
 					limit = {
-						check_variable = { inflation_rate > 51 }
+						check_variable = { opium_influence > 51 }
 					}
-					add_to_variable = { inflation_rate = -85 }
+					add_to_variable = { opium_influence = -85 }
 				}
 				else = {
 				}
@@ -107,44 +86,18 @@ scripted_gui = {
 			SliderUp_click = {
 				if = {
 					limit = {
-						check_variable = { inflation_rate < 331 }
+						check_variable = { opium_influence < 331 }
 					}
-					add_to_variable = { inflation_rate = 85 }
-				}
-				else = {
-				}
-			}
-			indSliderDown_click = {
-				if = {
-					limit = {
-						check_variable = { industrialization_rate > 51 }
-					}
-					add_to_variable = { industrialization_rate = -85 }
-				}
-				else = {
-				}
-			}
-			indSliderUp_click = {
-				if = {
-					limit = {
-						check_variable = { industrialization_rate < 331 }
-					}
-					add_to_variable = { industrialization_rate = 85 }
+					add_to_variable = { opium_influence = 85 }
 				}
 				else = {
 				}
 			}
 		}
+
 		properties = {
-			segment = {#iranai
-				y = industry_graph_offsets^segment_idx
-				frame =industry_graph_slopes^segment_idx
-			}
 			SliderButton = {
-				x = inflation_rate
-			}
-			indSliderButton = {
-				x = industrialization_rate
+				x = opium_influence
 			}
 		}
 	}
