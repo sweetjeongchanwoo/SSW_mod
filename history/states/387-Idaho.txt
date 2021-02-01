@@ -3,9 +3,8 @@ state={
 	id=387
 	name="STATE_387"
 	resources={
-		steel=18.000
-		chromium=1.000
-		tungsten=18.000
+		steel=9.000
+		tungsten=9.000
 	}
 
 	history={
@@ -21,7 +20,7 @@ state={
 	provinces={
 		1789 9695 10556 10602 10672 12535 12607 
 	}
-	manpower=515031
+	manpower=415031
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

@@ -54,7 +54,7 @@ country_event = {
 		tag = GER
 		surrender_progress < 0.2
 		LTV = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = GER }
 		}
 		has_global_flag = GER_civil_war
@@ -79,7 +79,7 @@ country_event = {
 		tag = GER
 		surrender_progress < 0.2
 		HLH = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = GER }
 		}
 		has_global_flag = GER_civil_war
@@ -104,7 +104,7 @@ country_event = {
 		tag = GER
 		surrender_progress < 0.2
 		HGR = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = GER }
 		}
 		has_global_flag = GER_civil_war
@@ -129,7 +129,7 @@ country_event = {
 		tag = LTV
 		surrender_progress < 0.2
 		GER = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = LTV }
 		}
 		has_global_flag = GER_civil_war
@@ -154,7 +154,7 @@ country_event = {
 		tag = LTV
 		surrender_progress < 0.2
 		HLH = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = LTV }
 		}
 		has_global_flag = GER_civil_war
@@ -179,7 +179,7 @@ country_event = {
 		tag = LTV
 		surrender_progress < 0.2
 		HGR = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = LTV }
 		}
 		has_global_flag = GER_civil_war
@@ -204,7 +204,7 @@ country_event = {
 		tag = HLH
 		surrender_progress < 0.2
 		GER = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HLH }
 		}
 		has_global_flag = GER_civil_war
@@ -229,7 +229,7 @@ country_event = {
 		tag = HLH
 		surrender_progress < 0.2
 		LTV = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HLH }
 		}
 		has_global_flag = GER_civil_war
@@ -254,7 +254,7 @@ country_event = {
 		tag = HLH
 		surrender_progress < 0.2
 		HGR = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HLH }
 		}
 		has_global_flag = GER_civil_war
@@ -279,7 +279,7 @@ country_event = {
 		tag = HGR
 		surrender_progress < 0.2
 		GER = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HGR }
 		}
 		has_global_flag = GER_civil_war
@@ -304,7 +304,7 @@ country_event = {
 		tag = HGR
 		surrender_progress < 0.2
 		LTV = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HGR }
 		}
 		has_global_flag = GER_civil_war
@@ -329,7 +329,7 @@ country_event = {
 		tag = HGR
 		surrender_progress < 0.2
 		HLH = {
-			surrender_progress > 0.8
+			surrender_progress > 0.65
 			capital_scope = { is_controlled_by = HGR }
 		}
 		has_global_flag = GER_civil_war
@@ -697,4 +697,18 @@ news_event = {
 			}
 		}
 	}
+}
+#ワシントンに遷都
+country_event = {
+	id = ssw.26
+	hidden = yes
+	trigger = {
+		has_country_flag = return_capital_of_washington_d_c
+		has_full_control_of_state = 1114
+		1114 = { is_capital = no }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_capital = 1114 }
+	option = { name = ssw.26.a }
 }

@@ -7,8 +7,6 @@ state={
 		owner = ALF
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-
 		}
 		add_core_of = ALF
 
@@ -17,7 +15,7 @@ state={
 	provinces={
 		7888 13316 
 	}
-	manpower=1000
+	manpower=19742
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

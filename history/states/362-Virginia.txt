@@ -6,9 +6,8 @@ state={
 	history={
 		owner = FSA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 4
 			industrial_complex = 1
-			dockyard = 2
 			air_base = 10
 			fuel_silo = 3
 
@@ -20,7 +19,7 @@ state={
 	provinces={
 		801 951 1506 3941 3975 4627 6850 6958 6971 7466 7558 7588 7646 9779 9923 10343 10439 10441 11873 11888 
 	}
-	manpower=5551054
+	manpower=2551054
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

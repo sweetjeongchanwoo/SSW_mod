@@ -3,16 +3,14 @@ state={
 	id=372
 	name="STATE_372"
 	resources={
-		aluminium=32.000
+		aluminium=12.000
 	}
 
 	history={
 		owner = BLS
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 2
-
+			industrial_complex = 1
 		}
 		add_core_of = BLS
 
@@ -21,7 +19,7 @@ state={
 	provinces={
 		1646 4444 4567 4597 4625 7586 10477 
 	}
-	manpower=2054481
+	manpower=2654481
 	buildings_max_level_factor=1.000
 	state_category=town
 }
