@@ -115,3 +115,104 @@ division_template = {
 		maintenance_company = { x = 0 y = 3 }
 	}
 }
+
+units = {
+
+	division = {
+		name = "1st infantry Division"
+		location = 749
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "2st infantry Division"
+		location = 13284
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "3st infantry Division"
+		location = 9667
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "4st infantry Division"
+		location = 9711
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "5st infantry Division"
+		location = 12582
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "6st infantry Division"
+		location = 1408
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "7st infantry Division"
+		location = 1262
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "8st infantry Division"
+		location = 10552
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "9st infantry Division"
+		location = 12603
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "11st infantry Division"
+		location = 1769
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "12st infantry Division"
+		location = 7361
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "10st infantry Division"
+		location = 12149
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+
+}

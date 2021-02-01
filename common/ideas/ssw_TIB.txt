@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		TIB_14th_dalai_lama = {
+			picture = 14th_dalai_lama
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+  }
+}

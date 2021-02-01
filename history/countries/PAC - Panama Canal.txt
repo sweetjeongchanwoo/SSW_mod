@@ -1,6 +1,6 @@
 capital = 685
 oob = "PAC_1950"
-set_cosmetic_tag = PAC_JAP
+set_cosmetic_tag = PAC_JAPandGER
 
 set_convoys = 5
 
@@ -10,7 +10,6 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
-	SSW_JAP_Hirohito
 }
 
 set_politics = {

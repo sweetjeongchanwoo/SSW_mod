@@ -62,25 +62,6 @@ defined_text = {
 }
 
 defined_text = {
-	name = GET_CURRENT_INTRO_TEXT
-
-	text = {
-		trigger = { check_variable = { SSW_Opening_Screen = 1 } }
-		localization_key = "[GET_COUNTRY_INFO]"
-	}
-
-	text = {
-		trigger = { check_variable = { SSW_Opening_Screen = 2 } }
-		localization_key = "[GET_MOD_FEATURES_PAGE_TEXT]"
-	}
-
-	text = {
-		trigger = { check_variable = { SSW_Opening_Screen = 3 } }
-		localization_key = MOD_INFO_TEXT
-	}
-}
-
-defined_text = {
 	name = GET_MOD_FEATURES_PAGE_TEXT
 	text = {
 		trigger = { check_variable = { FEATURES_INFO_PAGE = 0 } }
@@ -380,10 +361,9 @@ defined_text = {
 
 defined_text = {
 	name = GET_POSTER
-	#Japan
 	text = {
 		trigger = { tag = JAP }
-		localization_key = "GFX_SSW_OpeningScreen_Poster_JAP"
+		localization_key = "GFX_SSW_OpeningScreen_Poster_Japan"
 	}
 	text = {
 		trigger = { tag = ITA }
@@ -420,27 +400,11 @@ defined_text = {
 	text = {
 		trigger = { tag = FSA }
 		localization_key = "GFX_SSW_OpeningScreen_Poster_FSA"
-    	}
-
+    }
 	text = {
 		trigger = {
-			NOT = {
-				OR = {
-					tag = JAP
-					tag = SER
-					tag = POR
-					tag = KOR
-					tag = SWE
-					tag = CHL
-					tag = ENG
-					tag = ITA
-					tag = LFF
-					tag = FSA
-
-				} 
-			}
+			always = yes
 		}
 		localization_key = "GFX_SSW_OpeningScreen_Poster"
-    	}
-
+    }
 }

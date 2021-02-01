@@ -2,18 +2,9 @@
 state={
 	id=361
 	name="STATE_361"
-	manpower = 2998394
-	
-	state_category = city
 
 	history={
 		owner = FSA
-		victory_points = {
-			3957 40 
-		}
-		victory_points = {
-			6984 5 
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1
@@ -27,12 +18,22 @@ state={
 				naval_base = 1
 
 			}
+
+		}
+		victory_points = {
+			6984 5 
+		}
+		victory_points = {
+			13312 1 
 		}
 		add_core_of = FSA
 
 	}
 
 	provinces={
-		3957 6823 6892 6929 6984 9758 9786 11892 
+		3917 3957 6823 6892 6929 6984 9758 9786 11892 13312 
 	}
+	manpower=2998394
+	buildings_max_level_factor=1.000
+	state_category=city
 }

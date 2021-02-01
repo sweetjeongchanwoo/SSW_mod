@@ -1,1 +1,51 @@
 add_namespace = ssw_foc_northern_america
+country_event = { #ÉAÉÅÉäÉJÇÃâ^ñΩ
+	id = ssw_foc_northern_america.0
+	title = ssw_foc_northern_america.0.title
+	desc = ssw_foc_northern_america.0.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_northern_america.0.a
+		ai_chance = { base = 10 }
+		trigger = {
+			NOT = {
+				original_tag = HAW
+				original_tag = NEL
+			}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_AMERICA
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					is_core_of = NEL
+					is_core_of = HAW
+					state = 463
+					state = 650
+					state = 686
+				}
+			}
+			USA = { transfer_state = PREV }
+			add_core_of = USA
+		}
+		puppet = USA
+	}
+	option = {
+		name = OCCUPY_TT
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				OR = {
+					original_tag = HAW
+					original_tag = NEL
+				}
+			}
+		}
+		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_america
+	}
+}

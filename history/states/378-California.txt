@@ -23,13 +23,7 @@ state={
 		}
 		add_core_of = ALF
 		victory_points = {
-			9814 30 
-		}
-		victory_points = {
 			1562 15 
-		}
-		victory_points = {
-			9713 15 
 		}
 
 	}
@@ -39,5 +33,5 @@ state={
 	}
 	manpower=5777248
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=city
 }

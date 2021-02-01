@@ -12,6 +12,10 @@ add_ideas = {
 }
 
 set_autonomy = {
+	target = MCA
+	autonomous_state = colony
+}
+set_autonomy = {
 	target = CPV
 	autonomous_state = colony
 }

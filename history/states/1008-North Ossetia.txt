@@ -12,6 +12,10 @@ state = { #�k�I�Z�`�A
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			9628 3
+		}
+
 	}
 	provinces = {
 		9647 9628 11609 3667 

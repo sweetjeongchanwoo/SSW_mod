@@ -1,0 +1,21 @@
+state={
+	id=1118
+	name="STATE_1118"
+	history={
+		owner = OKL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = OKL
+	}
+	provinces={
+		4919 6803 7945 8025 9822 10702 11743 
+	}
+	manpower=412690
+	buildings_max_level_factor=1.000
+	state_category=city
+
+}

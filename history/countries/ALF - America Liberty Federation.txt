@@ -1,4 +1,4 @@
-capital = 378
+capital = 896
 oob = "ALF_1950"
 
 set_convoys = 5
