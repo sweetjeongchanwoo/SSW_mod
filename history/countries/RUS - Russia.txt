@@ -176,24 +176,25 @@ create_country_leader = {
 	ideology = anarchism_ideology
 	traits = { surviving_anarchist }
 }
-create_country_leader = {
-	name = "Yekaterina Furtseva"
-	desc = "POLITICS_YEKATERINA_FURTSEVA_DESC"
-	picture = "gfx/leaders/RUS/Portrait_Russia_Yekaterina_Furtseva.dds"
-	expire = "1974.10.24"
-	ideology = progressive_communism_ideology
-	female = yes
-	traits = { general_secretary_of_the_russia }
-}
-create_country_leader = {
-	name = "Vladimir Kryuchkov"
-	desc = "POLITICS_VLADIMIR_KRYUCHKOV_DESC"
-	picture = "gfx/leaders/RUS/Portrait_Russia_Vladimir_Kryuchkov.dds"
-	expire = "2007.11.23"
-	ideology = classical_communism_ideology
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Yekaterina Furtseva"
+#	desc = "POLITICS_YEKATERINA_FURTSEVA_DESC"
+#	picture = "gfx/leaders/RUS/Portrait_Russia_Yekaterina_Furtseva.dds"
+#	expire = "1974.10.24"
+#	ideology = social_democracy_ideology
+#	female = yes
+#	traits = {
+#	}
+#}
+#create_country_leader = {
+#	name = "Vladimir Kryuchkov"
+#	desc = "POLITICS_VLADIMIR_KRYUCHKOV_DESC"
+#	picture = "gfx/leaders/RUS/Portrait_Russia_Vladimir_Kryuchkov.dds"
+#	expire = "2007.11.23"
+#	ideology = social_democracy_ideology
+#	traits = {
+#	}
+#}
 create_country_leader = {
 	name = "Alexander Fyodorovich Kerensky"
 	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"

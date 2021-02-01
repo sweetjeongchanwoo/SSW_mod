@@ -33,3 +33,6 @@
 		}
 	}
 }
+
+###内務事情
+set_variable = { MAN_opium = 80 }

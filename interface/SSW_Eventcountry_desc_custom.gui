@@ -16,14 +16,14 @@ guiTypes = {
 	containerWindowType = {
 		name = "SSW_OpeningScreen_Main"
 		size = { width = 1134 height = 699 }
-		position = { x = 155 y = 155 }
-		moveable = yes
+		position = { x = 0 y = 0 }
+		origo = center
+		orientation = center
 		
 		background = {
 			name = "SSW_OpeningScreen_BG_real" #謎
 			spriteType = "GFX_tiled_window_transparent"
 		}
-
 		containerWindowType = {
 			name = "SSW_OpeningScreen_Buttons" #上の欄
 			size = { width = 100% height = 100% }
@@ -34,7 +34,7 @@ guiTypes = {
 				position = { x = 10 y = -2 }
 				quadTextureSprite = "GFX_SSW_demo_tab_button"
 				buttonFont = "Bomb_18"
-				text = "国家説明"
+				text = "COUNTRY_INFO"
 			}
 			iconType = {
 				name = "SSW_OpeningScreen_PlayerFlag" #旗
@@ -47,7 +47,7 @@ guiTypes = {
 				position = { x = 250 y = -2 }
 				quadTextureSprite = "GFX_SSW_demo_tab_button"
 				buttonFont = "Bomb_18"
-				text = "ゲーム説明"
+				text = "MOD_FEATURE"
 			}
 			
 			buttonType = { #MOD INFO
@@ -55,7 +55,7 @@ guiTypes = {
 				position = { x = 490 y = -2 }
 				quadTextureSprite = "GFX_SSW_demo_tab_button"
 				buttonFont = "Bomb_18"
-				text = "MOD説明"
+				text = "MOD_INFO"
 			}
 			iconType = { #ゲームのロゴ
 				name = "SSW_mod_logo"
@@ -66,6 +66,7 @@ guiTypes = {
 		
 		iconType = { #ドイツなら金髪の人  #####飛ばした
 			name = "SSW_OpeningScreen_Poster"
+			quadTextureSprite = "GFX_SSW_OpeningScreen_Poster"
 			position = { x = 671 y = 40 }
 		}
 		
@@ -85,111 +86,94 @@ guiTypes = {
 			position = { x = 952 y = 640 }
 			shortcut = "ESCAPE"
 		}
-		
-#		instantTextBoxType = { #NEXT PAGEの下△　謎
-#			name = "SSW_OpeningScreen_Text"
-#			position = { x = 14 y = 38 }
-#			font = "aldrich_24_outline"
-#			text = "[GET_CURRENT_INTRO_TEXT]"
-#			maxWidth = 712
-#			maxHeight = 410
-#			alwaystransparent = yes
-#			scrollbarType = standardtext_slider
-#		}
-		
-		instantTextBoxType = { #文章
-			name = "SSW_OpeningScreen_Text_Small"
-			position = { x = 14 y = 45 }
-			font = "aldrich_24_outline"
-			text = "[GET_CURRENT_INTRO_TEXT]"
-			maxWidth = 650
-			maxHeight = 610
-			alwaystransparent = yes
-			scrollbarType = standardtext_slider
-		}
-		
-		buttonType = { #NEXT PAGE
-			name = "opening_button_next_page"
-			quadTextureSprite = "GFX_opening_button_next_page"
-			position = { x = 500 y = 630 }
-		}
-		buttonType = { #次のページに行った時の「PREVIOUS PAGE」
-			name = "opening_button_prev_page"
-			quadTextureSprite = "GFX_opening_button_prev_page"
-			position = { x =20 y = 630 }
-		}
-		
-		instantTextBoxType = { #MOD INFOのテキスト
-			name = "SSW_OpeningScreen_Text_ModInfo_Buttons"
-			position = { x = 14 y = 90 }
-			font = "aldrich_24_outline_closing"
-			text = "MOD_INFO_TEXT"
-			maxWidth = 712
-			maxHeight = 370
-			alwaystransparent = yes
-			scrollbarType = standardtext_slider
-		}
-		
-		buttonType = { #リンク
-			name = "SSW_discord_button"
-			quadTextureSprite = "GFX_discord_button"
-			position = { x = 14 y = 50 }
-			web_link = "https://discord.gg/kkfqtc4gYW"
-		}
-		buttonType = { #リンク
-			name = "SSW_twitter_button"
-			quadTextureSprite = "GFX_twitter_button"
-			position = { x = 202 y = 50 }
-			web_link = "https://twitter.com/sun_ssw"
-		}
 	}
-	containerWindowType = { #謎
-		name = "SSW_ClosingScreen_Main"
-		size = { width = 803 height = 552 }
-		position = { x = 155 y = 155 }
-		moveable = yes
+	containerWindowType = {
+		name = "SSW_OpeningScreen_TEXT_window"
+		size = { width = 660 height = 640 }
+		position = { x = -230 y = 15 }
+		verticalScrollbar = "right_vertical_slider" 
+		origo = center
+		orientation = center
 		
-		background = { #謎
-			name = "SSW_ClosingScreen_BG_real"
+		background = {
+			name = "SSW_OpeningScreen_BG_real" #謎
 			spriteType = "GFX_tiled_window_transparent"
 		}
+		containerWindowType = {
+			name = "SSW_OpeningScreen_TEXT_window_country_info"
+			size = { width = 660 height = 1040 }
+				
+			instantTextBoxType = { #文章
+				name = "SSW_OpeningScreen_Text_Small"
+				position = { x = 10 y = 10 }
+				font = "aldrich_24_outline"
+				text = "[GET_COUNTRY_INFO]"
+				maxWidth = 630
+				maxHeight = 610
+			}
+		}
+	}
+	containerWindowType = {
+		name = "SSW_OpeningScreen_feature_window"
+		size = { width = 660 height = 640 }
+		position = { x = -230 y = 15 }
+		verticalScrollbar = "right_vertical_slider" 
+		origo = center
+		orientation = center
 		
-		iconType = { #閉じた時の画面 ###
-			name = "SSW_ClosingScreen_BG"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_SSW_Closing_BG"
-			alwaystransparent = yes
+		background = {
+			name = "SSW_OpeningScreen_BG_real" #謎
+			spriteType = "GFX_tiled_window_transparent"
 		}
-
-		buttonType = {
-			name = "SSW_ClosingScreen_CloseButton"
-			quadTextureSprite = "GFX_button_359x34" 
-			buttonFont = "Bomb_20"
-			buttonText = "Thank you for playing!"
-			position = { x = 227 y = 497 }
-			shortcut = "ESCAPE"
+		containerWindowType = {
+			name = "SSW_OpeningScreen_TEXT_window_country_feature"
+			size = { width = 660 height = 1040 }
+				
+			instantTextBoxType = { #文章
+				name = "SSW_OpeningScreen_Text_Small"
+				position = { x = 10 y = 10 }
+				font = "aldrich_24_outline"
+				text = "[GET_MOD_FEATURES_PAGE_TEXT]"
+				maxWidth = 630
+				maxHeight = 610
+			}
 		}
+	}
+	containerWindowType = {
+		name = "SSW_OpeningScreen_mod_window"
+		size = { width = 660 height = 640 }
+		position = { x = -230 y = 15 }
+		verticalScrollbar = "right_vertical_slider" 
+		origo = center
+		orientation = center
 		
-		instantTextBoxType = {
-			name = "SSW_ClosingScreen_Text"
-			position = { x = 20 y = 21 }
-			font = "aldrich_24_outline_closing"
-			text = "[GET_CLOSING_SCREEN_TEXT]"
-			maxWidth = 748
-			maxHeight = 406
-			alwaystransparent = yes
-			scrollbarType = standardtext_slider
+		background = {
+			name = "SSW_OpeningScreen_BG_real" #謎
+			spriteType = "GFX_tiled_window_transparent"
 		}
-
-		buttonType = {
-			name = "closing_button_next_page"
-			quadTextureSprite = "GFX_opening_button_next_page"
-			position = { x = 588 y = 444 }
-		}
-		buttonType = {
-			name = "closing_button_prev_page"
-			quadTextureSprite = "GFX_opening_button_prev_page"
-			position = { x = 24 y = 444 }
+		containerWindowType = {
+			name = "SSW_OpeningScreen_TEXT_window_country_mod"
+			size = { width = 660 height = 820 }
+			buttonType = { #リンク
+				name = "SSW_discord_button"
+				quadTextureSprite = "GFX_discord_button"
+				position = { x = 14 y = 10 }
+				web_link = "https://discord.gg/kkfqtc4gYW"
+			}
+			buttonType = { #リンク
+				name = "SSW_twitter_button"
+				quadTextureSprite = "GFX_twitter_button"
+				position = { x = 202 y = 10 }
+				web_link = "https://twitter.com/sun_ssw"
+			}
+			instantTextBoxType = { #文章
+				name = "SSW_OpeningScreen_Text_Small"
+				position = { x = 10 y = 50 }
+				font = "aldrich_24_outline"
+				text = "MOD_INFO_TEXT"
+				maxWidth = 630
+				maxHeight = 610
+			}
 		}
 	}
 }

@@ -36,7 +36,10 @@ country_event = {
 					has_government = authority_democracy
 				}
 				set_cosmetic_tag = MEX_rebellion
-				add_ideas = MEX_manuel_gomez_morin
+				add_ideas = {
+					MEX_manuel_gomez_morin
+					losing_event_1
+				}
 				set_stability = 0.5
 				set_war_support = 0.7
 				set_popularities = {
@@ -128,6 +131,7 @@ country_event = {
 				add_ideas = {
 					MEX_lazaro_cardenas
 					ssw_perfect_democratic_regime
+					losing_event_1
 				}
 				set_stability = 0.6
 				set_war_support = 0.6

@@ -1,0 +1,152 @@
+scripted_gui = {
+	SSW_MAN_Opium_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "SSW_MAN_Opium_container"
+
+		visible = {
+			is_ai = no
+			tag = MAN
+		}
+
+		effects = {
+			view_OPI_button_click = {
+				if = {
+					limit = { has_country_flag = open_OPI_view }
+					clr_country_flag = open_OPI_view
+				}
+				else = {
+					set_country_flag = open_OPI_view
+				}
+			}
+		}
+	}
+	
+	MAN_opium_view = {
+		window_name = "OPI_Opium_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			tag = MAN
+			has_country_flag = open_OPI_view
+		}
+
+		ai_enabled = {
+			always = no
+		}
+		
+		dynamic_lists = {
+			OPI_container = {
+				array = OPI_X
+				change_scope = no
+				entry_container = OPI_seat_entry
+				index = seat_idx
+			}
+		}
+		effects = {
+			OPI_close_button_click = {
+				clr_country_flag = open_OPI_view
+			}
+		}
+		properties = {
+			icon_seats = {
+				x = OPI_X^seat_idx
+				y = OPI_Y^seat_idx
+				frame = OPI_Frame^seat_idx
+			}
+			seats_cover = {
+				x = OPI_X^seat_idx
+				y = OPI_Y^seat_idx
+			}
+		}
+
+		properties = {
+			MAN_opium_bar = {
+				frame = MAN_opium
+			}
+		}
+	}
+
+	SSW_MAN_tab_opium_regulation = {
+		window_name = "SSW_MAN_tab_opium_regulation"
+		context_type = player_context
+
+		visible = {#iranai
+#			check_variable = { selected_industry_focus = 0 }
+#			check_variable = { selected_policy_bar_button = 1 }
+		}
+		
+		triggers = {
+			label_visible = { #iranai
+				set_temp_variable = { si = segment_idx }
+				modulo_temp_variable = { si = 2 }
+				check_variable = { si = 0 }
+			}
+		}
+		
+		dynamic_lists = {
+			line_segments = {#iranai
+				array = industry_graph_offsets
+				change_scope = no
+				entry_container = industry_line_graph_line_segment
+				index = segment_idx
+			}
+		}
+		effects = {
+			SliderDown_click = {
+				if = {
+					limit = {
+						check_variable = { inflation_rate > 51 }
+					}
+					add_to_variable = { inflation_rate = -85 }
+				}
+				else = {
+				}
+			}
+			SliderUp_click = {
+				if = {
+					limit = {
+						check_variable = { inflation_rate < 331 }
+					}
+					add_to_variable = { inflation_rate = 85 }
+				}
+				else = {
+				}
+			}
+			indSliderDown_click = {
+				if = {
+					limit = {
+						check_variable = { industrialization_rate > 51 }
+					}
+					add_to_variable = { industrialization_rate = -85 }
+				}
+				else = {
+				}
+			}
+			indSliderUp_click = {
+				if = {
+					limit = {
+						check_variable = { industrialization_rate < 331 }
+					}
+					add_to_variable = { industrialization_rate = 85 }
+				}
+				else = {
+				}
+			}
+		}
+		properties = {
+			segment = {#iranai
+				y = industry_graph_offsets^segment_idx
+				frame =industry_graph_slopes^segment_idx
+			}
+			SliderButton = {
+				x = inflation_rate
+			}
+			indSliderButton = {
+				x = industrialization_rate
+			}
+		}
+	}
+}
+

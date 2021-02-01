@@ -132,6 +132,14 @@
  UTC_america_DEF:0 "アメリカ企業連合"
  UTC_america_ADJ:0 "アメリカ企業連合"
  
+ NEL_america:0 "アメリカ共和国"
+ NEL_america_DEF:0 "アメリカ共和国"
+ NEL_america_ADJ:0 "アメリカ"
+ 
+ USA_perfect:0 "アメリカ合衆国"
+ USA_perfect_DEF:0 "アメリカ合衆国"
+ USA_perfect_ADJ:0 "アメリカ"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
