@@ -725,7 +725,7 @@ completion_reward = {
 shared_focus = {
 	id = ITA_focus_industry_colonial_dev
 	icon = GFX_goal_generic_dangerous_deal
-	cost = 5.00
+	cost = 1.00
 	prerequisite = {
 		 focus = ITA_focus_industry_Solving_the_immigration_problem
 		 }
@@ -753,6 +753,7 @@ shared_focus = {
 	x = 9
 	y = 5
 	completion_reward = {
+		ITA_focus_reload_colony = yes
 	}
 }
 #労働基準の整備

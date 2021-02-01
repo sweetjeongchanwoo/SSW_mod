@@ -3,3 +3,12 @@ ITA_focus_reload = {
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+ITA_focus_reload_colony = {
+	hidden_effect = {
+		load_focus_tree = {
+			 tree = ITA_focus_colony_dev
+			  keep_completed = yes
+			}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
