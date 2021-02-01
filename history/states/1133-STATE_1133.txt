@@ -1,0 +1,29 @@
+state={
+	id=1133
+	name="STATE_1133"
+	history={
+		owner = NEL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			9832 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = NEL
+		victory_points = {
+			9832 1 
+		}
+
+	}
+
+	provinces={
+		6909 9832 9847 9850 11830 
+	}
+	manpower=2007280
+	buildings_max_level_factor=1.000
+	state_category=town
+
+}

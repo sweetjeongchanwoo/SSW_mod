@@ -19,3 +19,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Muhammad VIII al-Amin"
+	desc = ""
+	picture = "ssw_Portrait_Tunisia_Muhammad_VIII.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

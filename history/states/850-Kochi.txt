@@ -8,9 +8,6 @@ state={ #Kochi
 	history={
 		add_core_of = JAP
 		owner = JAP
-		victory_points = {
-		7179 10
-		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
