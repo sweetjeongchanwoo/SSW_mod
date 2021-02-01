@@ -59,7 +59,8 @@
 #スーダン
  SUD_national_fascism_party:0 "総督政府"
  SUD_national_fascism_party_long:0 "イタリア・エジプト領スーダン総督政府"
- SUD_social_conservatism_party:0 "ウンマ党［Hizb al-Umma］"
+ SUD_social_conservatism_party:0 "HU"
+ SUD_social_conservatism_party_long:0 "ウンマ党［Hizb al-Umma］"
  SUD_anarchism_party:0 "スーダン・コミューン"
  SUD_progressive_communism_party:0 "HSS"
  SUD_progressive_communism_party_long:0 "スーダン共産党［Al-Hizb al-Shuyui al-Sudani］"
