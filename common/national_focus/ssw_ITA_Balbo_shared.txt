@@ -721,6 +721,40 @@ completion_reward = {
 	}
 }
 }
+#植民地との関係
+shared_focus = {
+	id = ITA_focus_industry_colonial_dev
+	icon = GFX_goal_generic_dangerous_deal
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Solving_the_immigration_problem
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+		IT2 = { is_subject_of = ITA }
+		IT3 = { is_subject_of = ITA }
+		IT4 = { is_subject_of = ITA }
+		IT5 = { is_subject_of = ITA }
+		IT6 = { is_subject_of = ITA }
+		IT7 = { is_subject_of = ITA }
+		IT8 = { is_subject_of = ITA }
+		EGY = { is_in_faction_with = ITA}
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 9
+	y = 5
+	completion_reward = {
+	}
+}
 #労働基準の整備
 shared_focus = {
 id = ITA_focus_industry_Improvement_of_labor_standards
