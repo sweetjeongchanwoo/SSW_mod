@@ -17,5 +17,6 @@ set_popularities = {
 create_country_leader = {
 	name = ""
 	desc = ""
+	ideology = anarchism_ideology 
 	picture = "gfx/leaders/SAH/Portrait_Sahara_Desert.dds"
 }
