@@ -8,6 +8,10 @@
  SUD_ITAandEGY_DEF:0 "伊埃領スーダン"
  SUD_ITAandEGY_ADJ:0 "伊埃領スーダン"
  
+ PAC_JAPandGER:0 "日独領パナマ運河"
+ PAC_JAPandGER_DEF:0 "日独領パナマ運河"
+ PAC_JAPandGER_ADJ:0 "日独領パナマ運河"
+ 
 #大日本帝国
  KOR_JAP:0 "日本領朝鮮"
  KOR_JAP_DEF:0 "日本領朝鮮"
@@ -249,6 +253,10 @@
  RIF_west_africa_union_ADJ:0 "西領アフリカ西部連合"
  
 #ポルトガル共和国
+ MCA_POR:0 "葡領マカオ"
+ MCA_POR_DEF:0 "葡領マカオ"
+ MCA_POR_ADJ:0 "葡領マカオ"
+ 
  CPV_POR:0 "葡領カーボベルデ"
  CPV_POR_DEF:0 "葡領カーボベルデ"
  CPV_POR_ADJ:0 "葡領カーボベルデ"
@@ -282,7 +290,7 @@
  SUD_EGY:0 "埃領スーダン"
  SUD_EGY_DEF:0 "埃領スーダン"
  SUD_EGY_ADJ:0 "埃領スーダン"
-
+ 
 # ウクライナ ヴォルガドイツ
  UKR_GEM:0 "ヴォルガ・ドイツ人共和国"
  UKR_GEM_DEF:0 "ヴォルガ・ドイツ人共和国"

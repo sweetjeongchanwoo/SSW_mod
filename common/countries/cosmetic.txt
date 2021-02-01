@@ -379,6 +379,16 @@ RIF_west_africa_union = { #西領アフリカ西部連合
 }
 
 #ポルトガル共和国
+GOA_POR = {	#葡領ゴア
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 0 56 147 }
+}
+
+MCA_POR = {	#葡領マカオ
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 0 56 147 }
+}
+
 CPV_POR = {	#葡領カーボベルデ
 	color = rgb { 20 100 85 }
 	color_ui = rgb { 0 56 147 }
