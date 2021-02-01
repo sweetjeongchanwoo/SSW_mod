@@ -1540,6 +1540,61 @@ TOK = {	#ベトナム共和国
 	color_ui = rgb { 230 230 0 }
 }
 
+MCA = {	#マカオ
+	color = rgb { 7 135 175 }
+	color_ui = rgb { 7 135 175 }
+}
+
+KLM = {	#カルムイク
+	color = rgb { 0 156 221 }
+	color_ui = rgb { 0 156 221 }
+}
+
+BSK = {	#バシコルトスタン
+	color = rgb { 255 215 0 }
+	color_ui = rgb { 255 215 0 }
+}
+
+KRL = {	#カレリア
+	color = rgb { 0 128 0 }
+	color_ui = rgb { 255 215 0 }
+}
+
+KOM = {	#コミ
+	color = rgb { 0 122 94 }
+	color_ui = rgb { 0 122 94 }
+}
+
+MRD = {	#モルドヴィア
+	color = rgb { 56 56 255 }
+	color_ui = rgb { 56 56 255 }
+}
+
+TAT = {	#タタールスタン
+	color = rgb { 194 157 126 }
+	color_ui = rgb { 194 157 126 }
+}
+
+UDM = {	#ウドムルト
+	color = rgb { 223 48 32 }
+	color_ui = rgb { 223 48 32 }
+}
+
+KHK = {	#ハカス
+	color = rgb { 0 151 73 }
+	color_ui = rgb { 0 151 73 }
+}
+
+KHK = {	#ハカス
+	color = rgb { 0 151 73 }
+	color_ui = rgb { 0 151 73 }
+}
+
+CHV = {	#チュヴァシ
+	color = rgb { 197 97 8 }
+	color_ui = rgb { 197 97 8 }
+}
+
 ########## 内戦用国家タグ ##########
 
 HGR = { #ゲーリング派ドイツ
