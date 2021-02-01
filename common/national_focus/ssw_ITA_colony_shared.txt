@@ -1,0 +1,30 @@
+###COLONIAL_FOCUS_TREE###
+#植民地開発
+shared_focus = {
+	id = ITA_focus_colony
+	icon = GFX_focus_generic_treaty
+	cost = 1.00
+	prerequisite = {
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 9
+	y = 10
+	completion_reward = {
+		country_event = {
+			id = SSW_ITA.12
+		}
+		add_political_power = 50
+	}
+}
