@@ -11,14 +11,14 @@ state={
 		owner = OKL
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 3
 			arms_factory = 2
 			air_base = 2
 
 		}
 		add_core_of = OKL
 		victory_points = {
-			1806 1 
+			1806 5 
 		}
 
 	}
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1618 1806 2043 5103 7762 7904 10798 11802 13299 
 	}
-	manpower=2396039
+	manpower=2096039
 	buildings_max_level_factor=1.000
 	state_category=city
 }

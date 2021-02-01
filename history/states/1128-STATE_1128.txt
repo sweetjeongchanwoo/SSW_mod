@@ -1,6 +1,11 @@
 state={
 	id=1128
 	name="STATE_1128"
+	resources={
+		steel=9.000
+		chromium=1.000
+		tungsten=9.000
+	}
 	history={
 		owner = ALF
 		buildings = {
@@ -16,7 +21,7 @@ state={
 	provinces={
 		1832 3781 4778 7845 9616 12124 
 	}
-	manpower=0
+	manpower=173452
 	buildings_max_level_factor=1.000
 	state_category=rural
 

@@ -4,8 +4,9 @@ state={
 	history={
 		owner = FSA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 9
+			industrial_complex = 3
+			arms_factory = 4
 		}
 		victory_points = {	13308	50	}
 		add_core_of = FSA
@@ -14,7 +15,7 @@ state={
 	provinces={
 		13308 
 	}
-	manpower=58000
+	manpower=802178
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 

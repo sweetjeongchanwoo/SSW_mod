@@ -6,6 +6,7 @@ state={
 		owner = NEL
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 1
 		}
 		add_core_of = NEL
 
@@ -14,7 +15,7 @@ state={
 	provinces={
 		733 3712 3715 3732 4445 7629 9675 10481 13158
 	}
-	manpower=11110
+	manpower=910989
 	buildings_max_level_factor=1.000
 	state_category=city
 

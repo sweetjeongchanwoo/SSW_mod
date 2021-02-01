@@ -4,9 +4,7 @@ state={
 	history={
 		owner = LFF
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 2
+			infrastructure = 2
 			3869 = {
 				bunker = 5
 
@@ -19,7 +17,7 @@ state={
 	provinces={
 		3869 6887 10535 
 	}
-	manpower=0
+	manpower=2680
 	buildings_max_level_factor=1.000
 	state_category=rural
 

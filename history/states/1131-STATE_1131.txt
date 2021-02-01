@@ -1,14 +1,17 @@
 state={
 	id=1131
 	name="STATE_1131"
+	resources={
+		steel=10.000
+	}
 	history={
 		owner = UTC
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 2
+			dockyard = 1
+			industrial_complex = 4
 			air_base = 4
-			synthetic_refinery = 3
+			synthetic_refinery = 1
 
 		}
 		add_core_of = UTC

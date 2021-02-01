@@ -7,8 +7,8 @@ state={
 		owner = UTC
 		buildings = {
 			infrastructure = 5
-			arms_factory = 3
-			industrial_complex = 9
+			arms_factory = 2
+			industrial_complex = 10
 			air_base = 3
 			synthetic_refinery = 2
 
@@ -20,7 +20,7 @@ state={
 	provinces={
 		720 1527 1655 4590 6737 7611 9682 10339 10393 10461 11589 12312 12365 12368 12497 
 	}
-	manpower=9030651
+	manpower=5610651
 	buildings_max_level_factor=1.000
 	state_category=city
 }

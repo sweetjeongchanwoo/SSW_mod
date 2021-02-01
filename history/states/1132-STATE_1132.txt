@@ -1,11 +1,15 @@
 state={
 	id=1132
 	name="STATE_1132"
+	resources={
+		steel=35.000
+		chromium=1.000
+	}
 	history={
 		owner = FSA
 		buildings = {
 			infrastructure = 9
-			industrial_complex = 1
+			industrial_complex = 3
 			arms_factory = 3
 			dockyard = 4
 			air_base = 2
@@ -23,7 +27,7 @@ state={
 	provinces={
 		3824 6845 6869 11799 13313 
 	}
-	manpower=7631346
+	manpower=7231346
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 
