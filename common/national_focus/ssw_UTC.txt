@@ -1090,7 +1090,7 @@ focus_tree = {
 		#完全な統一に向けて
 		id = UTC_for_perfect_unification
 		icon = GFX_goal_generic_alliance
-		cost = 10
+		cost = 20
 		prerequisite = {
 			focus = UTC_end_of_the_war_with_the_fsa
 		}
@@ -1128,6 +1128,8 @@ focus_tree = {
 			add_state_core = 898
 			add_state_core = 896
 			add_state_core = 895
+
+		add_ideas = UTC_debuff_1
 		}
 	}
 	focus = {
@@ -1502,7 +1504,7 @@ focus_tree = {
 		}
 		x = 51
 		y = 11
-		ai_will_do = { factor = 10 }+
+		ai_will_do = { factor = 10 }
 	}
 	focus = {
 		#コーポレート・ネイビーの創設
