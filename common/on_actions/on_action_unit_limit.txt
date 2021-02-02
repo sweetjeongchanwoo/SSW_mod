@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = no_unit_limits }
+					}
+					calculate_actual_division_number = yes
+					calculate_maximum_divisions = yes
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = no_unit_limits }
+					}
+					calculate_actual_division_number = yes
+					calculate_maximum_divisions = yes
+				}
+			}
+		}
+	}
+}
