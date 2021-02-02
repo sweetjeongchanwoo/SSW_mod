@@ -798,12 +798,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 		completion_reward = {
-			146 = { add_claim_by = RUS }
-			147 = { add_claim_by = RUS }
-			213 = { add_claim_by = RUS }
-			215 = { add_claim_by = RUS }
-			216 = { add_claim_by = RUS }
-			722 = { add_claim_by = RUS }
 			create_wargoal = {
 				type = annex_everything
 				target = FIN

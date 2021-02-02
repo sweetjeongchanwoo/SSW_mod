@@ -1,0 +1,273 @@
+add_namespace = ssw_faction
+country_event = {
+	id = ssw_faction.1
+	title = ssw_rus.50.title
+	desc = ssw_rus.50.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_applicant
+			FROM = { save_event_target_as = alliance_inviter }
+		}
+	}
+	option = {
+		name = ssw_rus.50.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = no
+				FROM = { has_war = yes }
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { is_major = no }
+			}
+		}
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { id = ssw_faction.2 hours = 6 }
+		}
+		hidden_effect = {
+			set_country_flag = alliance_applicant@ROOT
+			add_ai_strategy = {
+				type = alliance
+				id = FROM
+				value = 200
+			}
+			FROM = { set_country_flag = alliance_inviter@ROOT }
+		}
+	}
+	option = {
+		name = ssw_rus.50.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 65
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 35
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 5
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 35
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 65
+				}
+			}
+			modifier = {
+				factor = 0.1
+				has_war = yes
+				FROM = { has_war = no }
+			}
+			modifier = {
+				factor = 0.1
+				FROM = { is_major = yes }
+			}
+		}
+		FROM = { country_event = { id = ssw_faction.3 hours = 6 } }
+	}
+}
+country_event = {
+	id = ssw_faction.2
+	title = ssw_rus.51.title
+	desc = ssw_rus.51.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus.51.a
+	}
+}
+country_event = {
+	id = ssw_faction.3
+	title = ssw_rus.52.title
+	desc = ssw_rus.52.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = ssw_rus.52.a
+	}
+}
+country_event = {
+	id = ssw_faction.4
+	title = ssw_faction.4.title
+	desc = ssw_faction.4.desc
+	picture = GFX_report_event_generic_read_write
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_inviter
+			FROM = { save_event_target_as = alliance_applicant }
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = ssw_faction.4.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = no
+				FROM = { has_war = yes }
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { is_major = no }
+			}
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = ssw_faction.5 hours = 6 } }
+		hidden_effect = {
+			set_country_flag = alliance_inviter@ROOT
+			FROM = {
+				set_country_flag = alliance_applicant@ROOT
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 200
+				}
+			}
+		}
+	}
+	option = {
+		name = ssw_faction.4.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 65
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 35
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FROM
+					value > 5
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 35
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+					target = FROM
+					value < 65
+				}
+			}
+			modifier = {
+				factor = 0.1
+				has_war = yes
+				FROM = {
+					has_war = no
+				}
+			}
+			modifier = {
+				factor = 0.1
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = ssw_faction.6 hours = 6 } }
+	}
+}
+country_event = {
+	id = ssw_faction.5
+	title = ssw_faction.5.title
+	desc = ssw_faction.5.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = ssw_faction.5.a
+	}
+}
+country_event = {
+	id = ssw_faction.6
+	title = ssw_faction.6.title
+	desc = ssw_faction.6.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = ssw_faction.6.a
+	}
+}
+country_event = {
+	id = ssw_faction.7
+	title = ssw_rus.50.title
+	desc = ssw_rus.50.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = alliance_applicant
+			FROM = { save_event_target_as = alliance_inviter }
+		}
+	}
+	option = {
+		name = ssw_rus.50.a
+		ai_chance = { factor = 50 }
+		FROM = {
+			add_to_faction = ROOT
+			country_event = { id = ssw_faction.2 hours = 6 }
+		}
+		hidden_effect = {
+			set_country_flag = alliance_applicant@ROOT
+			add_ai_strategy = {
+				type = alliance
+				id = FROM
+				value = 200
+			}
+			FROM = { set_country_flag = alliance_inviter@ROOT }
+		}
+	}
+	option = {
+		name = ssw_rus.50.b
+		ai_chance = { factor = 50 }
+		FROM = { country_event = { id = ssw_faction.3 hours = 6 } }
+	}
+}

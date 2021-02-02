@@ -43,8 +43,9 @@ ideas = {
 			traits = { anarchist_zeal }
 			ai_will_do = { factor = 1 }
 		}
-		RUS_vladimir_kryuchkov = {
-			picture = SSW_RUS_vladimir_kryuchkov
+		RUS_serafima_hopner_political_leader = {
+			picture = SSW_RUS_serafima_hopner
+			name = RUS_serafima_hopner
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = lock_minister_available_tt
@@ -56,6 +57,7 @@ ideas = {
 			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { president_of_the_council_of_ministers }
+			cost = 0
 			ai_will_do = { factor = 1 }
 		}
 		RUS_alexander_kerensky_political_leader = {
