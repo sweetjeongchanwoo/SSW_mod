@@ -1,3 +1,39 @@
 fate_of_countries_category_southern_america = {
-	
+	fate_of_columbia = { #ÉRÉçÉìÉrÉAÇÃâ^ñΩ
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = COL }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = COL
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			COL = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_columbia }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = COL
+				COL = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_columbia
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_southern_america.0 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_columbia
+		}
+		ai_will_do = { factor = 100 }
+	}
 }

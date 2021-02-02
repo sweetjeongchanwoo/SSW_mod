@@ -260,7 +260,7 @@ on_actions = {
 				}
 				add_ideas = {
 					ssw_authoritarian_regime
-					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner_political_leader
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
 					RUS_fyodor_kulakov
@@ -278,7 +278,7 @@ on_actions = {
 				}
 				add_ideas = {
 					ssw_authoritarian_regime
-					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner_political_leader
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
 					RUS_fyodor_kulakov
