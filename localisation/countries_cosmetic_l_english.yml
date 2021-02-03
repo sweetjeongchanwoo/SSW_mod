@@ -140,6 +140,10 @@
  USA_perfect_DEF:0 "アメリカ合衆国"
  USA_perfect_ADJ:0 "アメリカ"
  
+ CHI_federation:0 "中華連邦共和国"
+ CHI_federation_DEF:0 "中華連邦共和国"
+ CHI_federation_ADJ:0 "中華"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
