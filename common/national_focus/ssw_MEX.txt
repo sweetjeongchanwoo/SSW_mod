@@ -11,7 +11,7 @@ focus_tree = {
 	##### ARMY #####
 	focus = {
 		id = MEX_army_effort
-		icon = GFX_focus_MEX_army
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 3
 		y = 0
 		cost = 10
@@ -343,7 +343,7 @@ focus_tree = {
 	##### NAVY #####
 	focus = {
 		id = MEX_navy
-		icon = GFX_focus_MEX_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10
 		x = 10
 		y = 0
@@ -623,7 +623,7 @@ focus_tree = {
 	##### Air #####
 	focus = {
 		id = MEX_air
-		icon = GFX_focus_MEX_air_force
+		icon = GFX_goal_generic_build_airforce
 		cost = 10
 		x = 17
 		y = 0

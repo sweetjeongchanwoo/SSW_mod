@@ -16,70 +16,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/teaching_japanese.tga"
 	}
 	spriteType = {
-		name = "GFX_ssw_TUR_middle_east"
-		texturefile = "gfx/interface/goals/ssw_TUR_middle_east.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_TUR_goal_Sam"
-		texturefile = "gfx/interface/goals/SSW_TUR_goal_Sam.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_TUR_form_the_roman_empire"
-		texturefile = "gfx/interface/goals/SSW_TUR_form_the_roman_empire.dds"
-	}
-	spriteType = {
-		name = "GFX_ssw_TUR_father"
-		texturefile = "gfx/interface/goals/ssw_TUR_father.dds"
-	}
-	spriteType = {
-		name = "GFX_ssw_TUR_empire_create"
-		texturefile = "gfx/interface/goals/ssw_TUR_empire_create.dds"
-	}
-	spriteType = {
-		name = "GFX_ssw_TUR_empire"
-		texturefile = "gfx/interface/goals/ssw_TUR_empire.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Savoie_family_crest"
-		texturefile = "gfx/interface/goals/SSW_ITA_Savoie_family_crest.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Roma_nukes"
-		texturefile = "gfx/interface/goals/SSW_ITA_Roma_nukes.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Rocket"
-		texturefile = "gfx/interface/goals/SSW_ITA_Rocket.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_oil_and_slush_fund"
-		texturefile = "gfx/interface/goals/SSW_ITA_oil_and_slush_fund.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation"
-		texturefile = "gfx/interface/goals/SSW_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Genoese_family_crest_icons"
-		texturefile = "gfx/interface/goals/SSW_ITA_Genoese_family_crest_icons.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Flag_Burning-ger-ita"
-		texturefile = "gfx/interface/goals/SSW_ITA_Flag_Burning-ger-ita.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Balbo_nukes"
-		texturefile = "gfx/interface/goals/SSW_ITA_Balbo_nukes.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITA_Balbo_Face"
-		texturefile = "gfx/interface/goals/SSW_ITA_Balbo_Face.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_ITAItalian-Gernan"
-		texturefile = "gfx/interface/goals/SSW_ITAItalian-Gernan.dds"
-	}
-	spriteType = {
 		name = "GFX_SSW_goal_CRE_TIBET"
 		texturefile = "gfx/interface/goals/SSW_goal_CRE_TIBET.dds"
 	}
@@ -106,10 +42,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SSW_goal_CRE_china"
 		texturefile = "gfx/interface/goals/SSW_goal_CRE_china.dds"
-	}
-	spriteType = {
-		name = "GFX_SSW_Child_Labour"
-		texturefile = "gfx/interface/goals/SSW_Child_Labour.dds"
 	}
 	spriteType = {
 		name = "GFX_search_under"
@@ -212,14 +144,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP_HEINOTOITSU.dds"
 	}
 	spriteType = {
-		name = "GFX_ITA_Caesar_side"
-		texturefile = "gfx/interface/goals/ITA_Caesar_side.dds"
-	}
-	spriteType = {
-		name = "GFX_ITA_Caesar"
-		texturefile = "gfx/interface/goals/ITA_Caesar.dds"
-	}
-	spriteType = {
 		name = "GFX_inchon"
 		texturefile = "gfx/interface/goals/inchon.tga"
 	}
@@ -258,6 +182,34 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_focus_Udet_ico"
 		texturefile = "gfx/interface/goals/focus_Udet_ico.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_middle_east"
+		texturefile = "gfx/interface/goals/focus_TUR_middle_east.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_goal_Sam"
+		texturefile = "gfx/interface/goals/focus_TUR_goal_Sam.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_form_the_roman_empire"
+		texturefile = "gfx/interface/goals/focus_TUR_form_the_roman_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_father"
+		texturefile = "gfx/interface/goals/focus_TUR_father.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_empire_create"
+		texturefile = "gfx/interface/goals/focus_TUR_empire_create.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_empire"
+		texturefile = "gfx/interface/goals/focus_TUR_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_TUR_Child_Labour"
+		texturefile = "gfx/interface/goals/focus_TUR_Child_Labour.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_totemkopf"
@@ -804,8 +756,68 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_JAP_allience_with_russia.dds"
 	}
 	spriteType = {
+		name = "GFX_focus_ITA_Savoie_family_crest"
+		texturefile = "gfx/interface/goals/focus_ITA_Savoie_family_crest.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Roma_nukes"
+		texturefile = "gfx/interface/goals/focus_ITA_Roma_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Rocket"
+		texturefile = "gfx/interface/goals/focus_ITA_Rocket.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Old_Crane"
+		texturefile = "gfx/interface/goals/focus_ITA_Old_Crane.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_oil_and_slush_fund"
+		texturefile = "gfx/interface/goals/focus_ITA_oil_and_slush_fund.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Mussolini"
+		texturefile = "gfx/interface/goals/focus_ITA_Mussolini.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation"
+		texturefile = "gfx/interface/goals/focus_ITA_Icons_on_friendship_with_the_Arabian_Peninsula_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Genoese_family_crest_icons"
+		texturefile = "gfx/interface/goals/focus_ITA_Genoese_family_crest_icons.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Flag_Burning-ger-ita"
+		texturefile = "gfx/interface/goals/focus_ITA_Flag_Burning-ger-ita.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Caesar_side"
+		texturefile = "gfx/interface/goals/focus_ITA_Caesar_side.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Caesar"
+		texturefile = "gfx/interface/goals/focus_ITA_Caesar.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Balbo_nukes"
+		texturefile = "gfx/interface/goals/focus_ITA_Balbo_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Balbo_Face"
+		texturefile = "gfx/interface/goals/focus_ITA_Balbo_Face.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITA_Autostrada"
+		texturefile = "gfx/interface/goals/focus_ITA_Autostrada.dds"
+	}
+	spriteType = {
 		name = "GFX_focus_Italy_territory"
 		texturefile = "gfx/interface/goals/focus_Italy_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_ITAItalian-Gernan"
+		texturefile = "gfx/interface/goals/focus_ITAItalian-Gernan.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_integrate_orgs"

@@ -7,40 +7,40 @@ country_event = {
 	is_triggered_only = yes
 	desc = ssw_foc_middle_east.0.d
 	option = {#オスマン帝国を作ってた場合
-		TUR = {
+	TU1 = {
 			has_completed_focus = TUR_call_the_ottomans_back
 		}
 		name = ssw_foc_middle_east.0.c
 		every_state = {
 			limit = {
-				is_core_of = OTT
+				is_core_of = TU1
 				is_fully_controlled_by = ROOT
 				NOT = {
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
 			}
-			OTT = { transfer_state = PREV }
+			TU1 = { transfer_state = PREV }
 		}
-		puppet = OTT
+		puppet = TU1
 	}
 	option = {#中東連合を作っていた場合
-		TUR = {
+	TU2 = {
 			has_completed_focus = TUR_declaration_united_country
 		}
 		name = ssw_foc_middle_east.0.e
 		every_state = {
 			limit = {
-				is_core_of = TUR
+				is_core_of = TU2
 				is_fully_controlled_by = ROOT
 				NOT = {
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
 			}
-			TUR = { transfer_state = PREV }
+			TU2 = { transfer_state = PREV }
 		}
-		puppet = TUR
+		puppet = TU2
 	}
 	option = {#解放
         name = ssw_foc_middle_east.0.a

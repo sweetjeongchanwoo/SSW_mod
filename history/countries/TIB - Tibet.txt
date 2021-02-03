@@ -9,6 +9,7 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	TIB_14th_dalai_lama 
 }
 
 set_politics = {

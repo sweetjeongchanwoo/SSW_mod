@@ -14,7 +14,7 @@ state={
 			arms_factory = 2
 			industrial_complex = 2
 			synthetic_refinery = 6
-
+			
 		}
 		add_core_of = UTC
 		victory_points = {

@@ -1,6 +1,7 @@
+#!gfx:interface\KR_goals.gfx
 shared_focus = {
 	id = KOR_continuous_governance
-	icon = GFX_focus_KOR_continue_rule
+	icon = GFX_continue_rule_kor
 	cost = 3.00
 	x = 0
 	y = 0
@@ -11,7 +12,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_serene_peace
-	icon = GFX_focus_quite_peace
+	icon = GFX_quite_peace
 	relative_position_id = KOR_continuous_governance
 	cost = 3.00
 	x = 0
@@ -26,7 +27,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_what_should_we_do
-	icon = GFX_focus_goal_kor
+	icon = GFX_goal_kor
 	relative_position_id = KOR_serene_peace
 	cost = 3.00
 	x = 0
@@ -41,7 +42,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_resistance
-	icon = GFX_focus_resist_kor
+	icon = GFX_resist_kor
 	relative_position_id = KOR_serene_peace
 	cost = 3.00
 	x = 3
@@ -56,7 +57,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_demobilize
-	icon = GFX_focus_demobilization
+	icon = GFX_demobilization
 	relative_position_id = KOR_serene_peace
 	cost = 3.00
 	x = -2
@@ -79,7 +80,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_pusan_port
-	icon = GFX_focus_pusan
+	icon = GFX_pusan
 	relative_position_id = KOR_serene_peace
 	cost = 3.00
 	x = -4
@@ -102,7 +103,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_inchon_port
-	icon = GFX_focus_inchon
+	icon = GFX_inchon
 	relative_position_id = KOR_pusan_port
 	cost = 3.00
 	x = -1
@@ -125,7 +126,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_wonsan_port
-	icon = GFX_focus_wonsan
+	icon = GFX_wonsan
 	relative_position_id = KOR_pusan_port
 	cost = 3.00
 	x = 1
@@ -148,7 +149,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_promotion_urbanization
-	icon = GFX_focus_urbanization
+	icon = GFX_urbanization
 	relative_position_id = KOR_what_should_we_do
 	cost = 3.00
 	x = -1
@@ -175,7 +176,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_additional_japanese_training
-	icon = GFX_focus_teaching_japanese
+	icon = GFX_teaching_japanese
 	relative_position_id = KOR_what_should_we_do
 	cost = 3.00
 	x = 1
@@ -189,7 +190,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_additional_placement_military_police
-	icon = GFX_focus_bonus_mp
+	icon = GFX_bonus_mp
 	relative_position_id = KOR_resistance
 	cost = 3.00
 	x = 0
@@ -204,10 +205,11 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_indifference
-	icon = GFX_focus_no_interest
+	icon = GFX_no_interest
 	relative_position_id = KOR_resistance
 	allow_branch = {
 		is_debug = yes
+		is_ai = no
 	}
 	cost = 3.00
 	x = 2
@@ -254,7 +256,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_deportation_poor
-	icon = GFX_focus_cze_german_puppet
+	icon = GFX_focus_JAP_the_greater_east_asia_commonwealth_plan
 	relative_position_id = KOR_demobilize
 	cost = 3.00
 	x = 0
@@ -313,7 +315,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = KOR_search_underground
-	icon = GFX_focus_search_under
+	icon = GFX_search_under
 	relative_position_id = KOR_additional_placement_military_police
 	cost = 3.00
 	x = 2
