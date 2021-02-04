@@ -22,21 +22,6 @@ fate_of_countries_category_middle_east = {
 			OR = {
 				TUR = { capital_scope = { is_fully_controlled_by = ROOT } }
 			}
-			hidden_trigger = {
-				always = yes
-				NOT = { has_country_flag = continue_to_occupy_turkey }
-			}
-		}
-		cancel_trigger = {
-			OR = {
-				country_exists = TUR
-				TUR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
-				has_country_flag = continue_to_occupy_turkey
-			}
-		}
-		timeout_effect = {
-			occupy_medium_country = yes
-			set_country_flag = continue_to_occupy_turkey
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_middle_east.0 }
@@ -66,21 +51,6 @@ fate_of_countries_category_middle_east = {
 			OR = {
 				IRQ = { capital_scope = { is_fully_controlled_by = ROOT } }
 			}
-			hidden_trigger = {
-				always = yes
-				NOT = { has_country_flag = continue_to_occupy_iraq }
-			}
-		}
-		cancel_trigger = {
-			OR = {
-				country_exists = IRQ
-				IRQ = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
-				has_country_flag = continue_to_occupy_iraq
-			}
-		}
-		timeout_effect = {
-			occupy_medium_country = yes
-			set_country_flag = continue_to_occupy_iraq
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_middle_east.1 }
@@ -107,22 +77,9 @@ fate_of_countries_category_middle_east = {
 					is_claimed_by = ROOT
 				}
 			}
-			SYR = { capital_scope = { is_fully_controlled_by = ROOT } }
-			hidden_trigger = {
-				always = yes
-				NOT = { has_country_flag = continue_to_occupy_syria }
-			}
-		}
-		cancel_trigger = {
 			OR = {
-				country_exists = SYR
-				SYR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
-				has_country_flag = continue_to_occupy_syria
+				SYR = { capital_scope = { is_fully_controlled_by = ROOT } }
 			}
-		}
-		timeout_effect = {
-			occupy_medium_country = yes
-			set_country_flag = continue_to_occupy_syria
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_middle_east.2 }
@@ -149,22 +106,9 @@ fate_of_countries_category_middle_east = {
 					is_claimed_by = ROOT
 				}
 			}
-			JOR = { capital_scope = { is_fully_controlled_by = ROOT } }
-			hidden_trigger = {
-				always = yes
-				NOT = { has_country_flag = continue_to_occupy_jordan }
-			}
-		}
-		cancel_trigger = {
 			OR = {
-				country_exists = JOR
-				JOR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
-				has_country_flag = continue_to_occupy_jordan
+				JOR = { capital_scope = { is_fully_controlled_by = ROOT } }
 			}
-		}
-		timeout_effect = {
-			occupy_medium_country = yes
-			set_country_flag = continue_to_occupy_jordan
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_middle_east.3 }
@@ -191,24 +135,13 @@ fate_of_countries_category_middle_east = {
 					is_claimed_by = ROOT
 				}
 			}
-			PAL = { capital_scope = { is_fully_controlled_by = ROOT } }
-			hidden_trigger = {
-				always = yes
-				NOT = { has_country_flag = continue_to_occupy_palestine }
-			}
-		}
-		cancel_trigger = {
 			OR = {
-				country_exists = PAL
-				PAL = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
-				has_country_flag = continue_to_occupy_palestine
+				PAL = { capital_scope = { is_fully_controlled_by = ROOT } }
 			}
 		}
-		timeout_effect = {
-			occupy_medium_country = yes
-			set_country_flag = continue_to_occupy_palestine
+		complete_effect = {
+			country_event = { id = ssw_foc_middle_east.4 }
 		}
-		complete_effect = { country_event = { id = ssw_foc_middle_east.4 } }
 		ai_will_do = { factor = 200 }
 	}
 }

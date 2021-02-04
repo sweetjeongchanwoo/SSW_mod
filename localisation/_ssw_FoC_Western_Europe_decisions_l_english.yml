@@ -2,7 +2,14 @@
 ##### フラグ #####
  had_yalta_conference:0 "ヤルタ会談が開催された。 "
  no_effect_tt:0 "一切の効果が期待されないだろう… "
+ next_decisions_70_tt:0 "§G70日以内は次のディシジョンが使用可能になる。 §!"
  OCCUPY_TT:0 "占領を続けよう。 "
+ arbitrage_rhine:0 "ライン裁定"
+ arbitrage_northern_poland:0 "北ポーランドの運命"
+ arbitrage_katowice:0 "カトヴィツェの運命"
+ arbitrage_danzig:0 "ダンツィヒ裁定"
+ arbitrage_hinterpommern:0 "ヒンターポンメルンの運命"
+ arbitrage_prussia:0 "プロイセン地方の運命"
 ##### ディシジョン #####
  fate_of_countries_category_western_europe:0 "占領地の運命"
  fate_of_portugal:0 "@POR ポルトガルの運命"
@@ -21,7 +28,6 @@
  ssw_foc_events.0.title:0 "ポルトガルの運命"
  ssw_foc_events.0.desc:0 "ポルトガルの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
  ssw_foc_events.0.a:0 "ポルトガルは忠実な傀儡だ！ "
- ssw_foc_events.0.b:0 "イベリア連合を復活させよ！ "
  ssw_foc_events.1.title:0 "ドイツの運命"
  ssw_foc_events.1.desc:0 "ドイツの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
  ssw_foc_events.1.a:0 "一時的な領土を与えよう。 "

@@ -13,7 +13,7 @@ country_event = { #オーストリアの運命
 				is_core_of = AUS
 				is_fully_controlled_by = ROOT
 				NOT = {
-					has_state_flag = maybe_core_HUN
+					is_core_of = HUN
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
@@ -43,7 +43,7 @@ country_event = { #オーストリアの運命
 				is_core_of = AUS
 				is_fully_controlled_by = ROOT
 				NOT = {
-					has_state_flag = maybe_core_HUN
+					is_core_of = HUN
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
@@ -67,7 +67,7 @@ country_event = { #オーストリアの運命
 				is_core_of = AUS
 				is_fully_controlled_by = ROOT
 				NOT = {
-					has_state_flag = maybe_core_HUN
+					is_core_of = HUN
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
@@ -133,9 +133,9 @@ country_event = { #アルザス＝ロレーヌの運命
 		name = ssw_foc_western_europe.1.c
 		trigger = {
 			OR = {
-				FR1 = { is_subject_of = ROOT }
-				is_in_faction_with = FR1
-				original_tag = FR1
+				FRA = { is_subject_of = ROOT }
+				is_in_faction_with = FRA
+				original_tag = FRA
 			}
 		}
 		ai_chance = { base = 10 }
@@ -148,8 +148,8 @@ country_event = { #アルザス＝ロレーヌの運命
 					is_claimed_by = ROOT
 				}
 			}
-			FR1 = { transfer_state = PREV }
-			add_core_of = FR1
+			FRA = { transfer_state = PREV }
+			add_core_of = FRA
 		}
 	}
 	option = {
