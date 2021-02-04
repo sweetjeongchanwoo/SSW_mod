@@ -7,10 +7,9 @@ country_event = {
 	is_triggered_only = yes
 	desc = ssw_foc_middle_east.0.d
 	option = {#オスマン帝国を作ってた場合
-	TU1 = {
-			has_completed_focus = TUR_call_the_ottomans_back
-		}
 		name = ssw_foc_middle_east.0.c
+		ai_chance = { base = 10 }
+		trigger = { TUR = { has_completed_focus = TUR_call_the_ottomans_back } }
 		every_state = {
 			limit = {
 				is_core_of = TU1
@@ -25,10 +24,9 @@ country_event = {
 		puppet = TU1
 	}
 	option = {#中東連合を作っていた場合
-	TU2 = {
-			has_completed_focus = TUR_declaration_united_country
-		}
 		name = ssw_foc_middle_east.0.e
+		ai_chance = { base = 10 }
+		trigger = { TUR = { has_completed_focus = TUR_declaration_united_country } }
 		every_state = {
 			limit = {
 				is_core_of = TU2
@@ -45,10 +43,12 @@ country_event = {
 	option = {#解放
         name = ssw_foc_middle_east.0.a
 		ai_chance = { base = 10 }
-		NOT = {
-			TUR = {
-				has_completed_focus = TUR_call_the_ottomans_back
-				has_completed_focus = TUR_declaration_united_country
+		trigger = {
+			NOT = {
+				TUR = {
+					has_completed_focus = TUR_call_the_ottomans_back
+					has_completed_focus = TUR_declaration_united_country
+				}
 			}
 		}
 		every_state = {
@@ -66,7 +66,9 @@ country_event = {
 	}
 	option = {#併合
 		name = ssw_foc_middle_east.0.b
+		ai_chance = { base = 0 }
 		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_turkey
 	}
 }
 #イラクの運命
@@ -94,7 +96,9 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.1.b
+		ai_chance = { base = 0 }
 		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_iraq
 	}
 }
 #シリアの運命
@@ -122,7 +126,9 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.2.b
+		ai_chance = { base = 0 }
 		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_syria
 	}
 }
 #ヨルダンの運命
@@ -150,7 +156,9 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.3.b
+		ai_chance = { base = 0 }
 		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_jordan
 	}
 }
 #パレスチナの運命
@@ -178,6 +186,8 @@ country_event = {
 	}
 	option = {
 		name = ssw_foc_middle_east.4.b
+		ai_chance = { base = 0 }
 		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_palestine
 	}
 }

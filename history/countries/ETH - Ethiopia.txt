@@ -22,6 +22,7 @@ create_country_leader = { #Selassie will appear via NF
 	name = "Abebe Aregai"
 	picture = "ssw_Portrait_Ethiopia_Abebe_Aregai.dds"
 	expire = "1999.1.1"
+	desc = "POLITICS_ABEBE_AREGAI_DESC"
 	ideology = military_junta_ideology 
 	traits = {
 		
