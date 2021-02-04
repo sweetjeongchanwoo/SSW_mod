@@ -85,7 +85,29 @@ fate_of_countries_category_western_europe = {
 					is_claimed_by = ROOT
 				}
 			}
-			has_country_flag = arbitrage_rhine
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				FR1 = { is_subject_of = ROOT }
+				NFR = { is_subject_of = ROOT }
+				WUR = { is_subject_of = ROOT }
+				HAN = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = LTV
+				is_in_faction_with = FR1
+				is_in_faction_with = NFR
+				is_in_faction_with = WUR
+				is_in_faction_with = HAN
+				is_in_faction_with = WLL
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = FR1
+				original_tag = NFR
+				original_tag = WUR
+				original_tag = HAN
+				original_tag = WLL
+			}
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.2 }
@@ -119,13 +141,16 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 				has_cosmetic_tag = RUS_empire
 				any_other_country = {
 					is_in_faction_with = ROOT
 					has_cosmetic_tag = RUS_empire
 				}
 			}
-			has_country_flag = arbitrage_northern_poland
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.3 }
@@ -155,8 +180,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_katowice
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.4 }
@@ -189,8 +217,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_danzig
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.5 }
@@ -225,8 +256,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_hinterpommern
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.6 }
@@ -259,8 +293,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_prussia
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.7 }
@@ -288,6 +325,10 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = SHL
 				is_in_faction_with = DEN
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = SHL
+				original_tag = DEN
 			}
 		}
 		complete_effect = {
@@ -315,6 +356,9 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = GR0
 				is_in_faction_with = LTV
 				is_in_faction_with = CZE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = CZE
 			}
 		}
 		complete_effect = {
@@ -335,7 +379,6 @@ fate_of_countries_category_western_europe = {
 				is_fully_controlled_by = ROOT
 				is_core_of = AUS
 				NOT = {
-					is_core_of = HUN
 					is_core_of = ROOT
 					is_claimed_by = ROOT
 				}
@@ -376,13 +419,18 @@ fate_of_countries_category_western_europe = {
 				GR0 = { is_subject_of = ROOT }
 				GR1 = { is_subject_of = ROOT }
 				LTV = { is_subject_of = ROOT }
-				FRA = { is_subject_of = ROOT }
+				FR1 = { is_subject_of = ROOT }
 				NFR = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
 				is_in_faction_with = GR1
 				is_in_faction_with = LTV
-				is_in_faction_with = FRA
+				is_in_faction_with = FR1
 				is_in_faction_with = NFR
+				original_tag = GR0
+				original_tag = GR1
+				original_tag = LTV
+				original_tag = FR1
+				original_tag = NFR
 			}
 		}
 		complete_effect = { country_event = { id = ssw_foc_western_europe.1 } }
