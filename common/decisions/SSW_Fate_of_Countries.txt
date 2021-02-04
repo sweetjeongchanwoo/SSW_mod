@@ -1,1 +1,134 @@
+fate_of_countries_category = {
+	fate_of_portugal = { #ポルトガルの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			NOT = { country_exists = POR }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = POR
 			}
+			POR = {
+				capital_scope = { is_fully_controlled_by = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+		visible = {
+			NOT = { country_exists = POR }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = POR
+			}
+			POR = {
+				capital_scope = { is_fully_controlled_by = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.0 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_germany = { #ドイツの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			NOT = {
+				country_exists = GER
+				country_exists = HLH
+				country_exists = HGR
+				country_exists = LTV
+				has_global_flag = had_yalta_conference
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = GER
+					is_core_of = HLH
+					is_core_of = HGR
+					is_core_of = LTV
+				}
+			}
+			OR = {
+				GER = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				HLH = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				HGR = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				LTV = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
+		visible = {
+			NOT = {
+				country_exists = GER
+				country_exists = HLH
+				country_exists = HGR
+				country_exists = LTV
+				has_global_flag = had_yalta_conference
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = GER
+					is_core_of = HLH
+					is_core_of = HGR
+					is_core_of = LTV
+				}
+			}
+			OR = {
+				GER = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				HLH = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				HGR = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+				LTV = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.1 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_rhine = { #ライン裁定
+		icon = generic_operation
+		allowed = { always = yes }
+		available = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_RHINE
+			}
+			has_country_flag = arbitrage_rhine
+		}
+		visible = {
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_RHINE
+			}
+			has_country_flag = arbitrage_rhine
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_events.2 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+}

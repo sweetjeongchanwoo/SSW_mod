@@ -1,0 +1,98 @@
+﻿# 1950 World Cup
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture =
+	
+	major = yes
+	
+	trigger = {
+		date > 1950.7.16
+		NOT = { has_global_flag = 1950_WorldCup }
+		country_exists = BRA
+		country_exists = URG
+		BRA = { has_war = no }
+		URG = { has_civil_war = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = 1950_WorldCup
+	}
+	
+	option = {
+		name = news.66.a
+		trigger = { 
+			NOT = { TAG = URG }
+		}
+	}
+	option = {
+		name = news.66.b
+		trigger = { TAG = URG }
+	}
+}
+
+#Claudius_novel
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = 
+	
+	major = yes
+	
+	trigger = {
+		date > 1957.6.6
+		NOT = { has_global_flag = Claudius_novel }
+		OR{
+			tag = ITA
+			tag = ENG
+			tag = GER
+			tag = (バルカン諸国)
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = Claudius_novel
+	}
+	
+	option = {
+		name = news.66.a
+	}	
+}
+
+#Tokyo_tower
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = 
+	
+	major = yes
+	
+	trigger = {
+		date > 1957.12.3
+		NOT = { has_global_flag = Tokyo_tower }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = Tokyo_tower
+	}
+	
+	option = {
+		name = news.66.a
+	}	
+}
+
