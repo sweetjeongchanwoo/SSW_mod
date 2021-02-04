@@ -1,5 +1,6 @@
 ﻿capital = 613
 oob = "CHI_1950"
+set_cosmetic_tag = CHI_federation
 set_convoys = 5
 
 set_technology = {
