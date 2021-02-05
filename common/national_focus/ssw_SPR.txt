@@ -1113,6 +1113,7 @@ focus_tree = {
 		cost = 6.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = SPR_franco_itariadoumei }
+		available = { has_army_manpower = { size > 499999 } }
 		x = 31
 		y = 5
 		completion_reward = {

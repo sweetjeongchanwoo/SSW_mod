@@ -20,10 +20,23 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { tag = MEX } #íŸ‘
-					FROM = { always = yes } #”sí‘
+					ROOT = { original_tag = SPA } #íŸ‘
+					FROM = { original_tag = SPR } #”sí‘
 				}
-				ROOT = { add_political_power = 150 }
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = SPR } #íŸ‘
+					FROM = { original_tag = SPA } #”sí‘
+				}
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
 			}
 		}
 	}

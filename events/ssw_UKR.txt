@@ -346,49 +346,7 @@ country_event = {
 					}
 				}
 			}
-			DON = {
-				add_timed_idea = {
-					idea = UKR_civil_war
-					days = 365
-				}
-				add_war_support = 0.6
-				transfer_state = 218
-				set_rule = {
-					can_puppet = no
-				}
-				
-				218 = {
-					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
-						owner = PREV
-						prioritize_location = 9417
-					}
-					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
-						owner = PREV
-						prioritize_location = 9417
-					}
-					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
-						owner = PREV
-						prioritize_location = 9417
-					}
-					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
-						owner = PREV
-						prioritize_location = 9417
-					}
-					create_unit = {
-						division = "name = \"Kinna dyviziya\" division_template = \"Kinna dyviziya\" start_experience_factor = 0.3"
-						owner = PREV
-						prioritize_location = 9417
-					}
-				}
-				declare_war_on = {
-					target = UKR
-					type = annex_everything
-				}
-			}
+			
 		}
 	}
 	option = {
@@ -592,22 +550,6 @@ country_event = {
 			FROM = {
 				transfer_state = PREV
 			}
-		}
-	}
-}
-
-# Allow Don to make puppets
-country_event = {
-	id = ssw_UKR.12
-	hidden = yes
-	fire_only_once = yes
-	trigger = {
-		tag = DON
-		has_global_flag = UKR_independence_war_ended
-	}
-	immediate = {
-		set_rule = {
-			can_puppet = yes
 		}
 	}
 }
