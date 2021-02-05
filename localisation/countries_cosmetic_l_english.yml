@@ -144,6 +144,18 @@
  CHI_federation_DEF:0 "中華連邦共和国"
  CHI_federation_ADJ:0 "中華"
  
+ SPR_iberia:0 "イベリア連合"
+ SPR_iberia_DEF:0 "イベリア連合"
+ SPR_iberia_ADJ:0 "イベリア連合"
+ 
+ SAU_republic_progressive_communism:0 "アラビア社会主義共和国"
+ SAU_republic_progressive_communism_DEF:0 "アラビア社会主義共和国"
+ SAU_republic_classical_communism:0 "アラビア社会主義共和国"
+ SAU_republic_classical_communism_DEF:0 "アラビア社会主義共和国"
+ SAU_republic:0 "アラビア共和国"
+ SAU_republic_DEF:0 "アラビア共和国"
+ SAU_republic_ADJ:0 "アラビア"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"

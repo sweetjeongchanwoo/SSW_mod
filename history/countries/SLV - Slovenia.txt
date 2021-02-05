@@ -1,4 +1,4 @@
-﻿capital = 102
+﻿capital = 941
 #oob = "SLV_1950"
 
 set_technology = {
