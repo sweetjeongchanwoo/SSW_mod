@@ -8,8 +8,9 @@ state=
 	
 	history=
 	{
-		owner = EQG
+		owner = RIF
 		add_core_of = EQG
+		add_core_of = RIF
 		victory_points = {
 			1903 1 
 		}

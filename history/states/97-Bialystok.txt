@@ -8,9 +8,6 @@ state={
 			11301 3
 		}
 		victory_points = {
-			3393 3
-		}
-		victory_points = {
 			3254 1
 		}
 		buildings = {
@@ -20,6 +17,7 @@ state={
 
 		}
 		add_core_of = GER
+		set_state_flag = maybe_core_POL
 
 	}
 

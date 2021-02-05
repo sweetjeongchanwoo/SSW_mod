@@ -2,7 +2,7 @@
 state={
 	id=389
 	name="STATE_389"
-	manpower = 700844
+	manpower = 619844
 	state_category = rural
 	resources={
 		steel=17 # was: 24
@@ -13,7 +13,8 @@ state={
 		owner = UTC
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 3
 		}
 		add_core_of = UTC
 		victory_points = {

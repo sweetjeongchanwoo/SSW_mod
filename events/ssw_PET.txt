@@ -1,0 +1,41 @@
+add_namespace = sswpet
+
+country_event = {
+	id = sswpet.1
+	title = sswpet.1.title
+	desc = sswpet.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswpet.1.a
+		kill_country_leader = yes
+		set_politics = {
+			ruling_party = anarchism
+		}
+		set_political_party = {
+			ideology = anarchism
+			popularity = 50
+			}
+			hidden_effect = {
+				country_event = { 
+					id = sswpet.2
+					days = 5
+				}
+			}
+
+	}
+}
+country_event = {
+	id = sswpet.2
+	title = sswpet.2.title
+	desc = sswpet.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswpet.2.a
+		PET = { transfer_state = 991 }
+
+	}
+}

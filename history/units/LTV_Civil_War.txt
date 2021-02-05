@@ -24,7 +24,7 @@ division_template = {
 		militia = { x = 0 y = 1 }
 		militia = { x = 0 y = 2 }
    		militia = { x = 1 y = 0 }
-		miliria = { x = 1 y = 1 }
+		militia = { x = 1 y = 1 }
 	}
 }
 
@@ -66,77 +66,77 @@ division_template = {
 		mechanized = { x = 3 y = 0 }
 	}
 	support = {
-		artillery_brigade = { x = 0 y = 0 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 units = {
 	division= {
-		name = "1.Bürgerarmee"
+		name = "1.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "2.Bürgerarmee"
+		name = "2.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 	division= {
-		name = "3.Bürgerarmee"
+		name = "3.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		name = "4.Bürgerarmee"
-		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "5.Bürgerarmee"
+		name = "4.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "6.Bürgerarmee"
+		name = "5.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "7.Bürgerarmee"
+		name = "6.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "8.Bürgerarmee"
+		name = "7.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "9.Bürgerarmee"
+		name = "8.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
 	division= {
-		name = "10.Bürgerarmee"
+		name = "9.Volbecks Armee"
 		location = 9347
-		division_template = "Bürgerarmee"
+		division_template = "Volbecks Armee"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		name = "10.Volbecks Armee"
+		location = 9347
+		division_template = "Volbecks Armee"
 		start_experience_factor = 0.3
 	}
 
@@ -146,47 +146,7 @@ units = {
 			name_order = 1
 		}
 		location = 321
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 321
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 321
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -196,17 +156,16 @@ units = {
 			name_order = 3
 		}
 		location = 293
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
-
 	division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 3
 		}
 		location = 293
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -216,17 +175,7 @@ units = {
 			name_order = 5
 		}
 		location = 268
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 268
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 	division= {	
@@ -235,27 +184,7 @@ units = {
 			name_order = 5
 		}
 		location = 268
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 268
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location = 268
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -265,17 +194,16 @@ units = {
 			name_order = 7
 		}
 		location = 11276
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
-
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
 		location = 11276
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -285,57 +213,16 @@ units = {
 			name_order = 8
 		}
 		location = 9294
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
-
 	division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
 		location = 9294
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 9294
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 9294
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location = 9294
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location = 9238
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -345,7 +232,7 @@ units = {
 			name_order = 11
 		}
 		location = 9238
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -355,7 +242,7 @@ units = {
 			name_order = 12
 		}
 		location = 9375
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -365,17 +252,7 @@ units = {
 			name_order = 13
 		}
 		location = 11468
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
-		location = 11468
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -385,17 +262,7 @@ units = {
 			name_order = 15
 		}
 		location = 11402
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location = 11402
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -405,17 +272,7 @@ units = {
 			name_order = 17
 		}
 		location = 6513
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 18
-		}
-		location = 6513
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -425,17 +282,7 @@ units = {
 			name_order = 19
 		}
 		location = 3355
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 3355
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -445,17 +292,7 @@ units = {
 			name_order = 21
 		}
 		location = 11431
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location = 11431
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -465,17 +302,7 @@ units = {
 			name_order = 23
 		}
 		location = 9443
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
-		location = 9443
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -485,7 +312,7 @@ units = {
 			name_order = 25
 		}
 		location = 3398
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -495,7 +322,7 @@ units = {
 			name_order = 26
 		}
 		location = 3398
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -505,17 +332,7 @@ units = {
 			name_order = 27
 		}
 		location = 6513
-		division_template = "Volbecks Armee"
-		start_experience_factor = 0.1
-	}
-
-	division= {	
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
-		location = 6513
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -525,7 +342,7 @@ units = {
 			name_order = 29
 		}
 		location = 6622
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 
@@ -535,7 +352,7 @@ units = {
 			name_order = 30
 		}
 		location = 6622
-		division_template = "Volbecks Armee"
+		division_template = "Bürgerarmee"
 		start_experience_factor = 0.1
 	}
 

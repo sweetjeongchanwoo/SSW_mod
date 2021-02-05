@@ -1,0 +1,22 @@
+KOR_Japanization_categories = {
+
+	icon = jap_pacific_guardian 
+
+	allowed = {
+		original_tag = KOR
+	}
+	
+	visible_when_empty = yes
+	
+	scripted_gui = KOR_Japanization 
+}
+KOR_debug_categories = {
+
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		is_debug = yes
+	}
+	priority = 100
+}

@@ -30,7 +30,6 @@ ideas = {
 			
 			modifier = {
 				generate_wargoal_tension = 0.40
-				political_advisor_cost_factor = 0.25
 				trade_laws_cost_factor = 0.25
 				mobilization_laws_cost_factor = 0.25
 				economy_cost_factor = 0.25
@@ -337,11 +336,13 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
+				equipment_bonus = {
 				artillery_equipment = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
 			}
+		}
 		}
 		#機械化機動戦術
 		TUR_idea_21 = {
@@ -633,9 +634,10 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.0050
 				political_power_factor = 0.45
-				despotism_drift = 0.01
-				fascism_drift = 0.01
+				national_fascism_drift = 0.01
+				national_socialism_drift = 0.01
 				authoritative_democracy_drift = 0.01
+				authority_despotism_drift = 0.01
 			}
 		}
 		#自由な共和国を
@@ -653,8 +655,8 @@ ideas = {
 				stability_weekly = 0.0050
 				political_power_factor = 0.45
 				social_democracy_drift = 0.01
-				democratic_drift = 0.01
-				conservatism_drift = 0.01
+				social_liberalism_drift = 0.01
+				social_conservatism_drift = 0.01
 			}
 		}
 		#諸民族への対応
@@ -717,10 +719,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				research_bonus = {
-                                      nuclear = 0.10
-                                      }
-				      nuclear_production_factor = 0.1
+				nuclear_production_factor = 0.1
 			}
 		}
 		#寛容さを示す
@@ -799,19 +798,21 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				ship_hull_heavy_equipment = {
+				equipment_bonus = {
+					ca_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
-		ship_hull_cruiser_equipment = {
+				cv_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
-		ship_hull_carrier_equipment = {
+				bb_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
 			}
+		}
 		}
 		#補助艦建造計画
 		TUR_idea_48 = {
@@ -824,19 +825,21 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				ship_hull_submarine_equipment = {
+				equipment_bonus = {
+					tp_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
-		ship_hull_light_equipment = {
+				dd_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
-		ship_hull_light_equipment = {
+				cl_tech = {
                     build_cost_ic = -0.10
                     instant = yes
                 }
 			}
+		}
 		}
 		#潜水艦艦隊
 		TUR_idea_49 = {
@@ -882,7 +885,6 @@ ideas = {
 				navy_carrier_air_attack_factor = 0.05
 				navy_carrier_air_targetting_factor = 0.05
 				navy_anti_air_attack_factor = 0.10
-				navy_carrier_air_targetting_factor = 0.10
 			}
 		}
 		#レーダー建設
@@ -990,9 +992,359 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				fascism_drift = 0.50
+				national_fascism_drift = 0.05
+				national_socialism_drift = 0.05
+				authority_democracy_drift = 0.05
+				authority_despotism_drift = 0.05
 				drift_defence_factor = 0.5
 			}
 		}
+		#飛行場の拡大計画
+		TUR_idea_59 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_air_base_factor = 0.20
+			}
+		}
+		#要塞化の取り組み
+		TUR_idea_60 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				army_core_defence_factor = 0.10
+			}
+		}
+		#要塞建設費用
+		TUR_idea_61 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		#日本との連携
+		TUR_idea_62 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		#ドイツとの連携
+		TUR_idea_63 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		#イタリアとの連携
+		TUR_idea_64 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		#イスラム教の守護者
+		TUR_idea_65 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				war_support_factor = 0.20
+				mobilization_speed = 1.00
+				justify_war_goal_time = -0.80
+			}
+		}
+		#思想統制
+		TUR_idea_66 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				stability_factor = 0.10
+				anarchism_drift = -0.10
+                                progressive_communism_drift = -0.10
+                                classical_communism_drift = -0.10
+                                social_democracy_drift = -0.10
+                                social_liberalism_drift = -0.10
+                                social_conservatism_drift = -0.10
+                                authority_democracy_drift = -0.10
+                                authority_despotism_drift = -0.10
+                                national_fascism_drift = 0.10
+                                national_socialism_drift = 0.10
+                                corporatocracism_drift = 0.10
+			}
+		}
+		#軍国主義教育
+		TUR_idea_67 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org = -5
+			}
+		}
+		#石油開発機構
+		TUR_idea_68 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.05
+				trade_opinion_factor = 1.00
+				opinion_gain_monthly_factor = 0.50
+				local_resources_factor = 0.30
+			}
+		}
+		#民主主義の最後の砦
+		TUR_idea_69 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				political_power_factor = 0.50
+				surrender_limit = 0.50
+				mobilization_speed = 1.50
+				army_core_defence_factor = 0.20
+			}
+		}
+		#拡張主義
+		TUR_idea_70 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				conscription = 0.04
+				justify_war_goal_time = -1.00
+				stability_weekly = -0.0075
+			}
+		}
+		#イェニチェリの再編成
+		TUR_idea_71 = {
+			allowed = {always = yes}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {always = yes}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				weekly_manpower = 100
+				war_support_weekly = 0.005
+				training_time_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
 	}
+	
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		TVSAS = {
+			
+			allowed = {
+				original_tag = TUR
+			}
+				
+			research_bonus = {
+				armor = 0.05
+				industry = 0.05}
+
+			traits = { tank_manufacturer }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05}
+				}
+				#トルコ国立戦車製造局
+				TNTBA = {
+			
+			allowed = {
+				original_tag = TUR
+				has_completed_focus = TUR_establishment_of_the_turkish_national_tank_production_department
+			}
+				
+			#research_bonus = {
+				#armor = 0.05
+				#industry = 0.05}
+
+			traits = { tank_manufacturer }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05}
+				}
+				#トルコ国立機動戦闘車製造局
+				TNMCVMA = {
+			
+			allowed = {
+				original_tag = TUR
+				has_completed_focus = TUR_turkish_national_mobile_combat_vehicle_manufacturing_authority
+			}
+				
+			research_bonus = {
+				armor = 0.05
+				industry = 0.05}
+
+			traits = { tank_manufacturer }
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05}
+				}
+	}
+
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		turkey_airline = {
+						
+			allowed = {
+				original_tag = TUR		
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+
+			}
+			traits = {CAS_manufacturer}
+			modifier = {air_paradrop_attack_factor = 0.05}
+		}
+	}
+
+		materiel_manufacturer = {
+			
+		designer = yes
+
+		koti = {				
+			allowed = {
+				original_tag = TUR}
+						
+			research_bonus = {
+				motorized_equipment = 0.05
+				synth_resources = 0.05
+				industry = 0.05
+			}
+			modifier = {
+				consumer_goods_factor = -0.03}
+			traits = { motorized_equipment_manufacturer }
+		}	
+	}
+		industrial_concern = {
+
+		ezisa = {
+						
+			picture = generic_industrial_concern_2
+			
+			allowed = {
+				original_tag = TUR}
+						
+			research_bonus = {
+				industry = 0.10
+				synth_resources = 0.05
+			}
+			modifier = {production_speed_buildings_factor = 0.05}
+
+			traits = { refinery_concern }
+			}
+		}
 }

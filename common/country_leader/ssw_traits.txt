@@ -7,6 +7,8 @@ leader_traits = {
 	}
 	Air_Force_founder = {
 		random = no
+		war_support_factor = 0.10
+		experience_gain_air_factor = 0.20
 	}
 	Charisma = {
 		random = no
@@ -73,7 +75,7 @@ leader_traits = {
 	Specters_of_Showa = {
 		random = no
 		political_power_gain = 0.2
-		political_advisor_cost_factor = -0.2
+		#political_advisor_cost_factor = -0.2
 		consumer_goods_factor = -0.05
 	}
 	demon_spawned_by_vanity = {
@@ -114,12 +116,12 @@ leader_traits = {
 		economy_cost_factor = -0.35
 	}
 	Big_names_in_architecture = {
-		random = yed
+		random = yes
 		production_speed_buildings_factor = 0.1
 		production_speed_infrastructure_factor = 0.15
 	}
 	computer_bulldozer = {
-		random = yed
+		random = yes
 		production_speed_buildings_factor = 0.1
 		production_speed_infrastructure_factor = 0.15
 	}
@@ -131,7 +133,7 @@ leader_traits = {
 	liberal_aristocrat = {
 		random = yes
 		stability_factor = 0.05
-		political_advisor_cost_factor = -0.25
+		#political_advisor_cost_factor = -0.25
 	}
 	Heroes_of_the_last_war = {
 		random = no
@@ -148,5 +150,53 @@ leader_traits = {
 	}
 	combination_of_physicists = {
 		random = no
+	}
+	Tax_Reformer = {
+		random = no
+		economy_cost_factor = -0.50
+		consumer_goods_factor = -0.05
+	}
+	Rational_Communist = {
+		random = no
+		political_power_gain = 0.30
+		stability_factor = 0.05
+	}
+	Mastering_Market_Control = {
+		random = no
+		trade_laws_cost_factor = -0.50
+		min_export = -0.05
+	}
+	Establisher_of_democratic_order = {
+		random = no
+		drift_defence_factor = 0.20
+		trade_opinion_factor = 0.25
+	}
+	Reformer_of_Turkish_Economy = {
+		random = no
+		stability_factor = 0.05
+		consumer_goods_factor = -0.05
+	}
+	veteran_diplomat = {
+		random = no
+		opinion_gain_monthly_factor = 0.15
+	}
+	Education_Minister = {
+		random = no
+		research_speed_factor = 0.05
+	}
+	History_Lecturers = {
+		random = no
+		war_support_factor = 0.05
+		justify_war_goal_time = -0.20
+	}
+	Trade_Control_Mastery = {
+		random = no
+		trade_laws_cost_factor = -0.50
+		min_export = -0.05
+	}
+	Enforcer_of_justice = {
+		random = no
+		political_power_gain = 0.30
+		compliance_gain = 0.50
 	}
 }

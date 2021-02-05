@@ -1,0 +1,570 @@
+add_namespace = ssw_UKR
+# Ukrainian Insurgent Army starts resistance
+country_event = {
+	id = ssw_UKR.2
+	title = ssw_UKR.2.title
+	desc = ssw_UKR.2.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 3
+	}
+	trigger = {
+		tag = UKR
+	}
+	option = {
+		name = ssw_UKR.2.a
+		every_owned_state = {
+			start_resistance = yes
+		}
+		add_timed_idea = {
+			idea = UKR_natives_nationalism
+			days = 365
+		}
+	}
+}
+
+# Initiate Ukrainian Emergency
+country_event = {
+	id = ssw_UKR.3
+	title = ssw_UKR.3.title
+	desc = ssw_UKR.3.desc
+	fire_only_once = yes
+	picture = GFX_report_event_second_vienna_award_pact
+	mean_time_to_happen = {
+		days = 7
+	}
+	trigger = {
+		tag = UKR
+		has_stability < 0.16
+	}
+	immediate = {
+		set_global_flag = UKR_independence_war_started
+		add_ai_strategy = {
+			type = force_build_armies
+			value = 1
+		}
+		hidden_effect = {
+			# create Makhnovia
+			create_dynamic_country = {
+				original_tag = UKR
+				copy_tag = UKR
+				set_country_flag = UKR_anarchism_flag
+				set_politics = {
+					ruling_party = anarchism
+				}
+				set_political_party = {
+					ideology = anarchism
+					popularity = 70
+				}
+				set_research_slots = 3
+				# transfer_state should be first line
+				transfer_state = 227
+				add_ideas = extensive_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
+				add_war_support = 0.6
+				set_rule = {
+					can_puppet = no
+				}
+				
+				227 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 6474
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 6474
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 6474
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 6474
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 6474
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UKA
+					}
+					add_core_of = PREV
+				}
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+			}
+			# create Ukraine Socialist Republic
+			create_dynamic_country = {
+				original_tag = UKR
+				copy_tag = UKR
+				set_country_flag = UKR_progressive_communism_flag
+				set_politics = {
+					ruling_party = progressive_communism
+				}
+				set_political_party = {
+					ideology = progressive_communism
+					popularity = 70
+				}
+				set_research_slots = 3
+				# reserve_dynamic_country = yes
+				add_ideas = extensive_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
+				add_war_support = 0.6
+				transfer_state = 220
+				add_state_claim = 220
+				
+				
+				add_state_claim = 258
+				
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				set_rule = {
+					can_puppet = no
+				}
+				
+				220 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9258
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9258
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9258
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9258
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9258
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UKA
+					}
+					add_core_of = PREV
+				}
+			}
+			# create Ukraine Orthodox State
+			create_dynamic_country = {
+				original_tag = UKR
+				copy_tag = UKR
+				set_country_flag = UKR_authority_despotism_flag
+				set_politics = {
+					ruling_party = authority_despotism
+				}
+				set_political_party = {
+					ideology = authority_despotism
+					popularity = 70
+				}
+				set_research_slots = 3
+				# reserve_dynamic_country = yes
+				add_ideas = extensive_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
+				add_war_support = 0.6
+				transfer_state = 200
+				# set_state_controller = 196
+				# set_state_controller = 197
+				# set_state_controller = 203
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				set_rule = {
+					can_puppet = no
+				}
+				
+				200 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 11405
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 11405
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 11405
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 11405
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 11405
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UKA
+					}
+					add_core_of = PREV
+				}
+				create_country_leader = {
+					name = "Amerikis Elpidoforos"
+					desc = "POLITICS_LEON_DEGRELLE_DESC"
+					picture = "gfx/leaders/UKR/amerikis_elpidoforos.tga"
+					expire = "1965.1.1"
+					ideology = authority_despotism_ideology
+				}
+			}
+			# create Hetmanate of Ukraine
+			create_dynamic_country = {
+				original_tag = UKR
+				copy_tag = UKR
+				set_country_flag = UKR_authority_democracy_flag
+				set_politics = {
+					ruling_party = authority_democracy
+				}
+				set_political_party = {
+					ideology = authority_democracy
+					popularity = 70
+				}
+				set_research_slots = 3
+				# reserve_dynamic_country = yes
+				add_ideas = extensive_conscription
+				add_ideas = UKR_low_education_level
+				add_ideas = UKR_agricalture
+				add_ideas = UKR_civil_war
+				add_war_support = 0.6
+				transfer_state = 225
+				add_state_claim = 220
+				add_state_claim = 240
+				add_state_claim = 258
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				set_rule = {
+					can_puppet = no
+				}
+				
+				225 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9355
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9355
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9355
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9355
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+						prioritize_location = 9355
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = UKA
+					}
+					add_core_of = PREV
+				}
+			}
+			UKA = {
+				set_rule = {
+					can_puppet = no
+				}
+				add_ideas = UKR_civil_war
+				
+				add_war_support = 0.6
+				transfer_state = 93
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				93 = {
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Pikhotna dyviziya\" division_template = \"Pikhotna dyviziya\" start_experience_factor = 0.7"
+						owner = PREV
+					}
+				}
+			}
+			
+		}
+	}
+	option = {
+		name = ssw_UKR.3.a
+		remove_ideas = UKR_natives_nationalism
+	}
+}
+
+# Negociate with Ukrainian Insurgent Army
+country_event = {
+	id = ssw_UKR.5
+	title = ssw_UKR.5.title
+	desc = ssw_UKR.5.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.5.a
+		random_list = {
+			50 = {
+				country_event = {
+					id = ssw_UKR.6
+					days = 3
+					random_days = 3
+				}
+			}
+			50 = {
+				country_event = {
+					id = ssw_UKR.7
+					days = 3
+					random_days = 3
+				}
+			}
+		}
+	}
+}
+
+# Negociate succeed
+country_event = {
+	id = ssw_UKR.6
+	title = ssw_UKR.6.title
+	desc = ssw_UKR.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.6.a
+		# all Ukrainian 'core' states will be cored by UKR
+		add_state_core = 93
+		add_state_core = 201
+		add_state_core = 199
+		add_state_core = 202
+		add_state_core = 203
+		add_state_core = 197
+		add_state_core = 226
+		add_state_core = 220
+		add_state_core = 259
+		add_state_core = 193
+		add_state_core = 225
+		add_state_core = 221
+		add_state_core = 228
+		add_state_core = 227
+		add_state_core = 200
+		add_state_core = 196
+	}
+}
+
+# Negociate failed
+country_event = {
+	id = ssw_UKR.7
+	title = ssw_UKR.7.title
+	desc = ssw_UKR.7.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.7.a
+		set_country_flag = UKR_combat_uia
+		unlock_decision_category_tooltip = UKR_combat_uia
+	}
+}
+
+# Select attitude against Russians
+country_event = {
+	id = ssw_UKR.8
+	title = ssw_UKR.8.title
+	desc = ssw_UKR.8.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.8.a
+		complete_national_focus = UKR_jQZItTSU
+	}
+	option = {
+		name = ssw_UKR.8.b
+		complete_national_focus = UKR_nCyIqpHx
+	}
+}
+
+# Select attitude against Germans
+country_event = {
+	id = ssw_UKR.9
+	title = ssw_UKR.9.title
+	desc = ssw_UKR.9.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.9.a
+		complete_national_focus = UKR_qrKaLmuM
+	}
+	option = {
+		name = ssw_UKR.9.b
+		complete_national_focus = UKR_szUPGZCi
+	}
+}
+
+# Select standpoint against German civil war
+country_event = {
+	id = ssw_UKR.10
+	title = ssw_UKR.10.title
+	desc = ssw_UKR.10.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.10.a
+		complete_national_focus = UKR_kSthGWsB
+	}
+	option = {
+		name = ssw_UKR.10.b
+		complete_national_focus = UKR_hzfxCtiU
+	}
+}
+
+# General Demand Event
+country_event = {
+	id = ssw_UKR.11
+	title = ssw_UKR.11.title
+	desc = ssw_UKR.11.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_UKR.11.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio > 1.2
+				}
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+			}
+		}
+		FROM = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROOT
+			}
+		}
+	}
+	option = {
+		name = ssw_UKR.11.b
+		ai_chance = {
+			base = 1
+			# Ukrainians want to unite!
+			modifier = {
+				tag = DET
+				factor = 100
+			}
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+		}
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = FROM
+					is_claimed_by = FROM
+				}
+			}
+			FROM = {
+				transfer_state = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssw_UKR.13
+	hidden = yes
+	# fire_only_once = yes
+	trigger = {
+		tag = UKV
+		NOT = {
+			has_cosmetic_tag = UKR_GEM
+		}
+	}
+	immediate = {
+		set_cosmetic_tag = UKR_GEM
+	}
+}

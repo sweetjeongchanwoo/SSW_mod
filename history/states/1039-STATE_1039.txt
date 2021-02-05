@@ -1,0 +1,26 @@
+
+state={
+	id=1039
+	name="STATE_1039"
+	resources={
+		steel=25.000
+	}
+	history={
+		owner = UTC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			synthetic_refinery = 2
+		}
+		add_core_of = UTC
+
+	}
+
+	provinces={
+		709 751 4854 5205 10599 
+	}
+	manpower=162340
+	buildings_max_level_factor=1.000
+	state_category=town
+
+}

@@ -1,0 +1,333 @@
+add_namespace = sswper
+
+##Event: 改革の開始
+country_event = {
+	id = sswper.1
+	title = sswper.1.title
+	desc = sswper.1.desc
+	picture = GFX_report_event_king_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sswper.1.a
+		ai_chance = { factor = 1}
+		add_political_power= 50
+	}
+}
+##Event: 改革への抵抗
+country_event = {
+	id = sswper.2
+	title = sswper.2.title
+	desc = sswper.2.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.2.a
+		ai_chance = { factor = 1}
+		add_stability= -0.05
+	}
+}
+##Event: ダヴド・モンシザデの帰国
+country_event = {
+	id = sswper.3
+	title = sswper.3.title
+	desc = sswper.3.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.3.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 保守派への譲歩
+country_event = {
+	id = sswper.4
+	title = sswper.4.title
+	desc = sswper.4.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.4.a
+		ai_chance = { factor = 1}
+		add_political_power = -25
+		set_country_flag = PER_conservatives
+		complete_national_focus = PER_Authoritarian_Democracy_1
+	}
+}
+##Event: テクノクラートへの譲歩
+country_event = {
+	id = sswper.5
+	title = sswper.5.title
+	desc = sswper.5.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.5.a
+		ai_chance = { factor = 1}
+		add_political_power= -25
+		set_country_flag = PER_liberal
+		complete_national_focus = PER_Authoritarian_Democracy_1
+	}
+}
+##Event: 王たちの王
+country_event = {
+	id = sswper.6
+	title = sswper.6.title
+	desc = sswper.6.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.6.a
+		ai_chance = { factor = 1}
+		add_stability= -0.10
+	}
+}
+##Event: イタリア政府との連携
+country_event = {
+	id = sswper.7
+	title = sswper.7.title
+	desc = sswper.7.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.7.a
+		ai_chance = { factor = 1}
+		add_political_power= 50
+		
+
+
+	}
+}
+
+##Event: 反対派の対処
+country_event = {
+	id = sswper.8
+	title = sswper.8.title
+	desc = sswper.8.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.8.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 改革の継続
+country_event = {
+	id = sswper.9
+	title = sswper.9.title
+	desc = sswper.9.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.9.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 対価
+country_event = {
+	id = sswper.10
+	title = sswper.10.title
+	desc = sswper.10.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.10.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 鷲が孵る朝
+country_event = {
+	id = sswper.11
+	title = sswper.11.title
+	desc = sswper.11.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.11.a
+		set_politics = {
+				ruling_party = national_socialism
+				popularity = 50
+			}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 議会問題
+country_event = {
+	id = sswper.12
+	title = sswper.12.title
+	desc = sswper.12.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.12.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 白色革命
+country_event = {
+	id = sswper.13
+	title = sswper.13.title
+	desc = sswper.13.desc
+	is_triggered_only = yes
+	picture = GFX_event_test
+	fire_only_once = yes
+	option = {
+		name = sswper.13.a
+		hidden_effect = {
+			country_event = { 
+				id = sswper.14
+				days = 5
+			}
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: デモ隊
+country_event = {
+	id = sswper.14
+	title = sswper.14.title
+	desc = sswper.14.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.14.a
+		hidden_effect = {
+			country_event = { 
+				id = sswper.15
+				days = 3
+			}
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 発砲
+country_event = {
+	id = sswper.15
+	title = sswper.15.title
+	desc = sswper.15.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.15.a
+		hidden_effect = {
+			country_event = { 
+				id = sswper.16
+				days = 5
+			}
+		}
+
+		ai_chance = { factor = 1}
+	}
+}
+##Event: 崩壊
+country_event = {
+	id = sswper.16
+	title = sswper.16.title
+	desc = sswper.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.16.a
+		hidden_effect = {
+			set_global_flag = Iranian_Civil_War
+			country_event = { 
+				id = sswper.17
+				days = 3
+			}
+			create_dynamic_country = {
+				original_tag = PER
+				set_country_flag = PER_communist_countryflag
+				set_cosmetic_tag = PER_communist
+				set_politics = {	ruling_party = progressive_communism	}
+				reserve_dynamic_country = yes
+			}
+			create_dynamic_country = {
+				original_tag = PER
+				set_country_flag = PER_islamic_countryflag
+				set_cosmetic_tag = PER_islamic
+				set_politics = {	ruling_party = authority_despotism	}
+				reserve_dynamic_country = yes
+			}
+			IR0 = { transfer_state = 411 }
+			IR0 = { transfer_state = 412 }
+			IR0 = { transfer_state = 413 }
+			IR1 = { transfer_state = 417 }
+			IR1 = { transfer_state = 420 }
+			IR1 = { transfer_state = 266 }
+			IR1 = { transfer_state = 416 }
+			IR1 = { transfer_state = 418 }
+		}
+		ai_chance = { factor = 1}
+	}
+}
+##Event: クルド反乱
+country_event = {
+	id = sswper.17
+	title = sswper.17.title
+	desc = sswper.17.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.17.a
+		ai_chance = { factor = 1}
+		KUR = { transfer_state = 419 }
+		KUR = { transfer_state = 421 }
+		
+	}
+}
+##Event: イラン内戦
+news_event = {
+	id = sswper.18
+	title = sswper.18.title
+	desc = sswper.18.desc
+	picture = GFX_news_event_german_volunteers
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sswper.18.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: バーレーン問題
+country_event = {
+	id = sswper.19
+	title = sswper.19.title
+	desc = sswper.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.19.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: バーレーンの離脱
+country_event = {
+	id = sswper.20
+	title = sswper.20.title
+	desc = sswper.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sswper.20.a
+		ai_chance = { factor = 1}
+		PER = { transfer_state = 959 }
+	}
+}

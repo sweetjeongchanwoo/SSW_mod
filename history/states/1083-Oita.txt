@@ -1,0 +1,13 @@
+state = { #Oita
+	id = 1083
+	name = "STATE_1083"
+	manpower = 1252999
+	state_category = town
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 10092 1 }
+	}
+	provinces = { 4027 10020 10092 }
+}

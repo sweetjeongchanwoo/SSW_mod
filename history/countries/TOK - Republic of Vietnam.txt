@@ -1,0 +1,27 @@
+﻿capital = 671
+oob = "TOK_1950"
+
+set_convoys = 5
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+}
+CHI = {
+	set_autonomy = {
+		target = TOK
+		autonomous_state = colony
+	}
+}
+set_politics = {
+	ruling_party = authority_despotism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_despotism = 100
+}

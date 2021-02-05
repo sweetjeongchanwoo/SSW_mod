@@ -1,0 +1,70 @@
+fate_of_countries_category_africa = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_eastern_europe = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_southern_america = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_oceania = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_northern_europe = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_northern_america = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_middle_east = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_central_america = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_asia = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}
+fate_of_countries_category_western_europe = {
+	allowed = { always = yes }
+	visible = {
+		NOT = { has_government = anarchism }
+		is_subject = no
+	}
+}

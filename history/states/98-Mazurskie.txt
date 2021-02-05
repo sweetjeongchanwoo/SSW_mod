@@ -13,7 +13,8 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = GER
-                add_core_of = POL
+        add_core_of = POL
+        set_state_flag = maybe_core_POL
 	}
 
 	provinces={

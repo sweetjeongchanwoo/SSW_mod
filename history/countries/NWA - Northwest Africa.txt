@@ -1,6 +1,6 @@
 capital = 272
 oob = "NWA_1950"
-set_cosmetic_tag = NWA_VFR
+set_cosmetic_tag = NWA_FRA
 
 set_convoys = 5
 
@@ -10,7 +10,6 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
-	Colonial_goverment
 }
 
 set_politics = {

@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = PIN
+		owner = IND
 		victory_points = {
 			9975 1 
 		}
@@ -22,8 +22,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = NIN
-		add_core_of = PIN
+		add_core_of = IND
 
 	}
 

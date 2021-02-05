@@ -10,6 +10,10 @@ set_technology = {
 
 add_ideas = {
 	ivan_konev
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
+	vacancy_ma
 	scraping_the_barrel
 	ssw_one_party_dictatorship
 	civilian_economy
@@ -18,68 +22,6 @@ declare_war_on = {
 	target = RUS
 	type = annex_everything
 }
-
-set_party_name = {
-	ideology = neutrality
-	long_name = USSR_neutrality_party
-	name = USSR_neutrality_party
-}
-set_party_name = {
-	ideology = anarchism
-	long_name = USSR_anarchism_party
-	name = USSR_anarchism_party
-}
-set_party_name = {
-	ideology = progressive_communism
-	long_name = USSR_progressive_communism_party
-	name = USSR_progressive_communism_party
-}
-set_party_name = {
-	ideology = classical_communism
-	long_name = USSR_classical_communism_party
-	name = USSR_classical_communism_party
-}
-set_party_name = {
-	ideology = social_democracy
-	long_name = USSR_social_democracy_party
-	name = USSR_social_democracy_party
-}
-set_party_name = {
-	ideology = social_liberalism
-	long_name = USSR_social_liberalism_party
-	name = USSR_social_liberalism_party
-}
-set_party_name = {
-	ideology = social_conservatism
-	long_name = USSR_social_conservatism_party
-	name = USSR_social_conservatism_party
-}
-set_party_name = {
-	ideology = authority_democracy
-	long_name = USSR_authority_democracy_party
-	name = USSR_authority_democracy_party
-}
-set_party_name = {
-	ideology = authority_despotism
-	long_name = USSR_authority_despotism_party
-	name = USSR_authority_despotism_party
-}
-set_party_name = {
-	ideology = national_fascism
-	long_name = USSR_national_fascism_party
-	name = USSR_national_fascism_party
-}
-set_party_name = {
-	ideology = national_socialism
-	long_name = USSR_national_socialism_party
-	name = USSR_national_socialism_party
-}
-set_party_name = {
-	ideology = corporatocracism
-	long_name = USSR_corporatocracism_party
-	name = USSR_corporatocracism_party
-}
-
 set_politics = {
 	ruling_party = classical_communism
 	last_election = "1950.1.1"
@@ -106,19 +48,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
-	expire = "1973.5.21"
-	ideology = stalinism
-	traits = {
-		hero_of_soviet
-	}
-}
-create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	name = "Alexander Novikov"
+	desc = "POLITICS_ALEXANDER_NOVIKOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Alexander_Novikov.dds"
 	expire = "1973.5.21"
 	ideology = progressive_communism_ideology
 	traits = {
@@ -126,9 +58,9 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Ivan Konev"
-	desc = "POLITICS_IVAN_KONEV_DESC"
-	picture = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
+	name = "Alexander Novikov"
+	desc = "POLITICS_ALEXANDER_NOVIKOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Alexander_Novikov.dds"
 	expire = "1973.5.21"
 	ideology = classical_communism_ideology
 	traits = {
@@ -138,6 +70,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Ivan Konev"
+	id = 408
 	portrait_path = "gfx/leaders/SOV/Portrait_Ivan_Konev.dds"
 	traits = { armor_officer harsh_leader politically_connected }
 	skill = 5

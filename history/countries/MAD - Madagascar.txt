@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	civilian_economy
 }
 
@@ -24,9 +23,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Adelbert Schulz"
-	desc = "POLITICS_EDWIN_BARCLAY_DESC"
-	picture = "gfx/leaders/MAD/Portrait_Adelbert_Schulz.dds"
+	name = "Otto Ohlendorf"
+	desc = "POLITICS_OTTO_OHLENDORF_DESC"
+	picture = "gfx/leaders/MAD/Portrait_Otto_Ohlendorf.dds"
 	expire = "1965.1.1"
 	ideology = national_socialism_ideology
 	traits = {

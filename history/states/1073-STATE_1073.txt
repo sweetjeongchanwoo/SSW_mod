@@ -1,0 +1,21 @@
+state={
+	id=1073
+	name="STATE_1073"
+	history={
+		owner = NEA
+		add_core_of = SOM
+		add_core_of = NEA
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+
+	}
+
+	provinces={
+		11014 12941 
+	}
+	manpower=5000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

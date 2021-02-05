@@ -1,0 +1,21 @@
+state={
+	id=999
+	name="STATE_999"
+	history={
+		owner = MOS
+		add_core_of = MOS
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		8 110 187 2999 3101 3321 6086 6154 9111 9333 11191 
+	}
+	manpower=57755
+	buildings_max_level_factor=1.000
+	state_category = town
+
+}

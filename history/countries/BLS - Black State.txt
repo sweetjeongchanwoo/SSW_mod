@@ -1,4 +1,4 @@
-﻿capital = 372
+﻿capital = 1117
 oob = "BLS_1950"
 
 set_technology = {

@@ -5,8 +5,10 @@ autonomy_state = {
 	min_freedom_level = 0.50
 	manpower_influence = 0.7
 	
-	rule = {}
-	modifier = {}
+	rule = {
+	}
+	modifier = {
+	}
 	ai_subject_wants_higher = {
 		factor = 1.0
 	}

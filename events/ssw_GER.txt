@@ -1,0 +1,1085 @@
+add_namespace = SSW_GER
+
+country_event = {
+	id = SSW_GER.1
+	title = SSW_GER.1.t
+	desc = SSW_GER.1.d
+	picture = GFX_report_event_spr_franco_victory
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = SSW_GER.1.a
+		ai_chance = { factor = 1 }
+		country_event= { days = 15 id = SSW_GER.21 }
+	}
+}
+##Event: 万博開催
+country_event = {
+	id = SSW_GER.2
+	title = SSW_GER.2.t
+	desc = SSW_GER.2.d
+	picture = GFX_news_event_herman_goring
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = SSW_GER.2.a
+		ai_chance = { factor = 1 }
+		news_event= {
+			days = 10
+			id = SSW_GER.3 
+		}
+	}
+}
+##Event: ゲルマニア万博が開催
+news_event = {
+	id = SSW_GER.3
+	title = SSW_GER.3.t
+	desc = SSW_GER.3.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = SSW_GER.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.4
+	title = SSW_GER.4.t
+	desc = SSW_GER.4.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.5
+		}
+	}
+	major = yes
+	option = {
+		name = SSW_GER.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.5
+	title = SSW_GER.5.t
+	desc = SSW_GER.5.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+		focus = GER_ssw_focus1
+			progress > 0.7
+		}
+	}
+	major = yes
+	option = {
+		name = SSW_GER.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.6
+	title = SSW_GER.6.t
+	desc = SSW_GER.6.d
+	picture = GFX_report_event_german_reichstag_gathering
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		focus_progress = {
+			focus = GER_ssw_focus1
+			progress > 0.9
+		}
+	}
+	major = yes
+	option = {
+		name = SSW_GER.6.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.7
+	title = SSW_GER.7.t
+	desc = SSW_GER.7.d
+	picture = GFX_Gebbers_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.7.a
+		GER = {
+			country_event = {
+				id = SSW_GER.8
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.8
+	title = SSW_GER.8.t
+	desc = SSW_GER.8.d
+	picture = GFX_Himmler_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.8.a
+		GER = {
+			country_event = {
+				id = SSW_GER.9
+				days = 10
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = SSW_GER.9
+	title = SSW_GER.9.t
+	desc = SSW_GER.9.d
+	picture = GFX_Gering_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.9.a
+		GER = {
+			country_event = {
+				id = SSW_GER.10
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.10
+	title = SSW_GER.10.t
+	desc = SSW_GER.10.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.10.a
+		load_focus_tree = ssw_Gebbels_Germany_civilwar_focus
+		hidden_effect = {
+			every_country = {
+    			limit = { is_in_faction_with = GER }
+    			add_ideas = GER_war_ideas_2
+			}
+			set_country_flag = GER_dec_civil_war
+			remove_ideas = {
+				GER_idea_1
+				Air_force_conspiracy
+			}
+			if = {
+				limit = { has_global_flag = GER_civil_war }
+				clr_global_flag = GER_civil_war
+			}
+			ROM ={
+				country_event = {
+					id = Danubian_war.1
+					days = 60
+				}
+			}
+			set_global_flag = GER_civil_war
+			set_global_flag = big_event_custom_german_civil_war
+			every_state = {
+				limit = { is_core_of = GER }
+				add_core_of = HLH
+				add_core_of = HGR
+				add_core_of = LTV
+			}
+			#反ナチス戦線
+			LTV = {
+				set_country_flag = GER_dec_civil_war
+				transfer_state = 56
+				transfer_state = 57
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 61
+				transfer_state = 812
+				set_capital = 58
+			}
+			#ヒムラー派
+			HLH = {
+				set_country_flag = GER_dec_civil_war
+				transfer_state = 3
+				transfer_state = 8
+				transfer_state = 28
+				transfer_state = 42
+				transfer_state = 50
+				transfer_state = 51
+				transfer_state = 54
+				transfer_state = 55
+				transfer_state = 151
+				transfer_state = 938
+				transfer_state = 1021
+				transfer_state = 1022
+				transfer_state = 1023
+				set_capital = 1023
+			}
+			#ゲーリング派
+			HGR = {
+				set_country_flag = GER_dec_civil_war
+				transfer_state = 4
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 102
+				transfer_state = 152
+				transfer_state = 153
+				transfer_state = 963
+				transfer_state = 981
+				transfer_state = 1042
+				set_capital = 4
+			}
+			if = {
+				limit = { NFR = { has_full_control_of_state = 1041 } }
+				HLH = { transfer_state = 1041 }
+				1041 = {
+					add_core_of = GER
+					add_core_of = HLH
+					add_core_of = HGR
+					add_core_of = LTV
+				}
+			}
+			GER = {
+				country_event = { id = SSW_GER.22 }
+				country_event = { id = SSW_GER.24 days = 1 }
+				country_event = { id = SSW_GER.27 days = 1 }
+				country_event =  { id = SSW_GER.32 days = 1 }
+			}
+		}
+	}
+}
+country_event = {
+	id = SSW_GER.12
+	title = SSW_GER.12.t
+	desc = SSW_GER.12.d
+	picture = GFX_Gering_speech
+	is_triggered_only = yes
+	option = {
+		name = SSW_GER.12.a
+		hidden_effect = {
+			LTV = { country_event = { id = SSW_LTV.1  } }
+			HLH = { country_event = { id = SSW_HLH.1  } }
+			HGR = { country_event = { id = SSW_HGR.1  } }
+			GER = { country_event = { id = SSW_GER.13 days = 2 } }
+			CZE = { country_event = { id = SSW_GER.23 days = 5 } }
+			load_oob = "GER_Civil_War"
+		}
+		GER = {
+			add_ideas = tot_economic_mobilisation
+			add_ideas = service_by_requirement
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.13
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		HLH = { declare_war_on = { type = annex_everything    target = GER } }
+		HLH = { declare_war_on = { type = annex_everything    target = LTV } }
+		HLH = { declare_war_on = { type = annex_everything    target = HGR } }
+		LTV = { declare_war_on = { type = annex_everything    target = GER } }
+		LTV = { declare_war_on = { type = annex_everything    target = HLH } }
+		LTV = { declare_war_on = { type = annex_everything    target = HGR } }
+		HGR = { declare_war_on = { type = annex_everything    target = GER } }
+		HGR = { declare_war_on = { type = annex_everything    target = HLH } }
+		HGR = { declare_war_on = { type = annex_everything    target = LTV } }
+	}
+}
+
+
+
+country_event = {
+	id = SSW_GER.14
+	title = SSW_GER.14.t
+	desc = SSW_GER.14.d
+	picture = GFX_news_event_germany_victory
+	
+	major = yes
+
+	fire_only_once = yes	
+	
+	trigger = {
+
+		51 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+			}
+		}
+
+
+		51 = { is_owned_by = HLH }
+		55 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+			}
+		}
+		55 = { is_owned_by = HLH }
+		GER = { has_war_with = HLH }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = HLH transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.14.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = SSW_GER.15
+	title = SSW_GER.15.t
+	desc = SSW_GER.15.d
+	picture = GFX_news_event_germany_victory
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+
+		58 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		58 = { is_owned_by = LTV }
+		59 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		59 = { is_owned_by = LTV }
+		57 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		57 = { is_owned_by = LTV }
+		GER = { has_war_with = LTV }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = LTV transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.15.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = {
+	id = SSW_GER.16
+	title = SSW_GER.16.t
+	desc = SSW_GER.16.d
+	picture = GFX_news_event_germany_victory
+
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+
+		4 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		4 = { is_owned_by = HGR }
+		152 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		152 = { is_owned_by = HGR }
+		153 = { 
+			OR = { 
+				is_controlled_by = BEL
+				is_controlled_by = HOL
+				is_controlled_by = GER
+				is_controlled_by = DEN
+				is_controlled_by = NFR
+			}
+		}
+		153 = { is_owned_by = HGR }
+		GER = { has_war_with = HGR }
+	}
+	
+	immediate = {
+		GER ={ annex_country = { target = HGR transfer_troops = no } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = SSW_GER.16.a
+		add_war_support = 0.1
+	}
+
+}
+
+
+country_event = {
+	id = SSW_GER.19
+	title = SSW_GER.19.t
+	desc = SSW_GER.19.d
+	picture = GFX_report_event_gre_megali_conference_signing
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.19.a
+		GER = {
+			news_event = {
+				id = SSW_Hitler.1
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.20
+	title = SSW_GER.20.t
+	desc = SSW_GER.20.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.20.a
+		country_event = { id = SSW_GER.1 days = 5 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.21
+	title = SSW_GER.21.t
+	desc = SSW_GER.21.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	option = {
+		name = SSW_GER.21.a
+		country_event= { days = 15 id = SSW_GER.2 }
+	}
+}
+
+country_event = {
+	id = SSW_GER.22
+	title = SSW_GER.22.t
+	desc = SSW_GER.22.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.22.a
+	}
+	option = {
+		name = SSW_GER.22.b
+		LTV = {
+			change_tag_from = GER
+		}
+	}
+	option = {
+		name = SSW_GER.22.c
+		HLH = {
+			change_tag_from = GER
+		}
+	}
+	option = {
+		name = SSW_GER.22.e
+		HGR = {
+			change_tag_from = GER
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.23
+	title = SSW_GER.23.t
+	desc = SSW_GER.23.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.23.a
+		CZE = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HLH
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = HGR
+				hostility_reason = asked_to_join
+			}
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = LTV
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.24
+	title = SSW_GER.24.t
+	desc = SSW_GER.24.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.24.a
+		hidden_effect = {
+			remove_unit_leader = 1
+			remove_unit_leader = 2
+			remove_unit_leader = 3
+			remove_unit_leader = 4
+			remove_unit_leader = 5
+			remove_unit_leader = 6
+			remove_unit_leader = 7
+			remove_unit_leader = 8
+			remove_unit_leader = 9
+			remove_unit_leader = 10
+			remove_unit_leader = 11
+			remove_unit_leader = 12
+			remove_unit_leader = 13
+			remove_unit_leader = 14
+			remove_unit_leader = 15
+			remove_unit_leader = 16
+			remove_unit_leader = 17
+			remove_unit_leader = 18
+			remove_unit_leader = 19
+			remove_unit_leader = 20
+			remove_unit_leader = 21
+			remove_unit_leader = 22
+			remove_unit_leader = 23
+			remove_unit_leader = 24
+			remove_unit_leader = 25
+			remove_unit_leader = 26
+			remove_unit_leader = 27
+			remove_unit_leader = 28
+			remove_unit_leader = 29
+			remove_unit_leader = 30
+			remove_unit_leader = 31
+		}
+		custom_effect_tooltip = GER_gel_war_3_tt
+		GER = { country_event = { id = SSW_GER.25 } }
+	}
+}
+
+country_event = {
+	id = SSW_GER.25
+	title = SSW_GER.25.t
+	desc = SSW_GER.25.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.25.a
+		create_corps_commander = {
+			name = "Hans Jeschonnek"
+			picture = "Portrait_Hans_Jeschonnek.dds"
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Erich Walther"
+		picture = "Portrait_Erich_Walther.dds"
+		traits = {
+			war_hero
+			commando
+			Paratroopers
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 4
+		}
+		create_corps_commander = {
+		name = "Ernst Udet"
+		picture = "Portrait_Ernst_Udet.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hans Kroh"
+		picture = "Portrait_Hans_Kroh.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+			planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Günther Korten"
+		picture = "Portrait_Gunther_Korten.dds"
+		traits = {
+		}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Kurt Arthur Benno Student"
+		picture = "Portrait_Kurt_Arthur_Benno_Student.dds"
+		traits = {
+		trickster
+		commando
+		Paratroopers
+		}
+			skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+		}
+		create_corps_commander = {
+		name = "Alfred Schlemm"
+		picture = "Portrait_Alfred_Schlemm.dds"
+		traits = {
+		harsh_leader
+		paratroopers
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+		}
+		create_corps_commander = {
+		name = "Hermann-Bernhard Ramcke"
+		picture = "Portrait_Hermann_Bernhard_Ramcke.dds"
+		traits = {
+		commando
+		paratroopers
+		war_hero
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 2
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.26
+	title = SSW_GER.26.t
+	desc = SSW_GER.26.d
+	picture = GFX_report_event_germania_plam
+	is_triggered_only = yes
+	
+	option = {
+		name = SSW_GER.26.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 100
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 50
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 30
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment
+			amount = 20
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment
+			amount = 10
+			producer = GER
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.27
+	title = SSW_GER.11.t
+	desc = SSW_GER.11.d
+	picture = GFX_Gering_speech
+	is_triggered_only = yes
+	option = {
+		name = SSW_GER.11.a
+		hidden_effect = {
+			every_unit_leader
+				limit = {
+					OR = {
+						has_id = 1
+						has_id = 2
+						has_id = 3
+						has_id = 4
+						has_id = 5
+						has_id = 6
+						has_id = 7
+						has_id = 8
+						has_id = 9
+						has_id = 10
+						has_id = 11
+						has_id = 12
+						has_id = 13
+						has_id = 14
+						has_id = 15
+						has_id = 16
+						has_id = 17
+						has_id = 18
+						has_id = 19
+						has_id = 20
+						has_id = 21
+						has_id = 22
+						has_id = 23
+						has_id = 24
+						has_id = 25
+						has_id = 26
+						has_id = 27
+						has_id = 28
+						has_id = 29
+						has_id = 30
+						has_id = 31
+						has_id = 32
+						has_id = 33
+						has_id = 34
+						has_id = 35
+					}
+				}
+				retire = yes
+			}
+			delete_unit_template_and_units = { Division_template = "Infanterie-Division" }
+			delete_unit_template_and_units = { Division_template = "Fallschirmjäger-Division" }
+			delete_unit_template_and_units = { Division_template = "Infanterie-Division (mot.)" }
+			delete_unit_template_and_units = { Division_template = "Leichte Division" }
+			delete_unit_template_and_units = { Division_template = "Panzer-Division" }
+			delete_unit_template_and_units = { Division_template = "Kavallerie-Brigade" }
+			delete_unit_template_and_units = { Division_template = "Sicherungs-Division" }
+			delete_unit_template_and_units = { Division_template = "SS-Regiment" }
+			delete_unit_template_and_units = { Division_template = "Gebirgs-Division" }
+		}
+		GER = { country_event = { id = SSW_GER.12 days = 1 } }
+	}
+}
+
+country_event = {
+	id = SSW_GER.28
+	title = SSW_GER.28.t
+	desc = SSW_GER.28.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.28.a
+			GER = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.28
+	title = SSW_GER.28.t
+	desc = SSW_GER.28.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.28.a
+			GER = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.29
+	title = SSW_GER.29.t
+	desc = SSW_GER.29.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.29.a
+			HLH = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.30
+	title = SSW_GER.30.t
+	desc = SSW_GER.30.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.30.a
+			LTV = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.31
+	title = SSW_GER.31.t
+	desc = SSW_GER.31.d
+	picture = GFX_German_Civil_War
+
+	is_triggered_only = yes
+
+	option = {
+		name = SSW_GER.31.a
+			HGR = {
+			random_owned_controlled_state = {
+			prioritize = {
+				64
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+			create_unit = {
+				division = "name = \"1. kooperative Miliz\" division_template = \"kooperative Miliz\" start_experience_factor = 0"
+				owner = Root
+				allow_spawning_on_enemy_provs = yes
+			}
+		}
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.32
+	title = SSW_GER.32.t
+	desc = SSW_GER.32.d
+	picture = GFX_German_Civil_War
+	is_triggered_only = yes
+	option = {
+		name = SSW_GER.32.a
+		every_country = {
+			limit = {
+				is_in_faction_with = GER
+				NOT = { tag = CZE }
+			}   
+			end_puppet = GER
+		}
+		every_country = {
+			limit = { is_in_faction_with = GER } 
+			leave_faction = yes
+		}
+	}
+}
+
+country_event = {
+	id = SSW_GER.34
+	title = SSW_GER.34.t
+	desc = SSW_GER.34.d
+	picture = GFX_German_Civil_War
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = GER_dec_civil_war
+		AND = {
+			HGR = { exists = no }
+			HLH = { exists = no }
+			LTV = { exists = no }
+		}
+	}
+
+	option = {
+		name = SSW_GER.34.a
+		hidden_effect = {
+			delete_unit_template_and_units = {
+				division_template = "kooperative Miliz"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Deutscher Volkssturm"
+			}
+			load_focus_tree = ssw_Gebbels_Germany_focus
+			add_ideas = Scars_of_the_civil_war
+			add_ideas = Resistance_Gering
+			add_ideas = Resistance_himmler
+			add_ideas = Resistance_Popular_Front
+			add_ideas = limited_conscription
+			add_ideas = free_trade
+			add_ideas = civilian_economy
+			remove_ideas = {
+				GER_idea_1
+				GER_war_ideas_2
+				missing_upper_echelon
+				GER_equipment_seisan
+				GER_Focke_Wulf
+				commandeer
+			}
+		}
+		set_equipment_fraction = 0.95
+	}
+}
+
+

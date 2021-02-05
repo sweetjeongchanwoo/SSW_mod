@@ -7,11 +7,8 @@ state={
 	
 	history={
 		owner = NFR
-                
 		add_core_of = NFR
-		add_core_of = VFR
 		add_core_of = SWI
-
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

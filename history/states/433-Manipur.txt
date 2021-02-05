@@ -11,13 +11,12 @@ state={
 		victory_points = {
 			2054 1
 		}
-		owner = PIN
+		owner = IND
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = NIN
-		add_core_of = PIN
+		add_core_of = IND
 
 	}
 

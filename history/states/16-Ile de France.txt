@@ -22,7 +22,7 @@ state={
 			anti_air_building = 3
 			air_base = 5
 		}
-		add_core_of = VFR
+		add_core_of = FRA
 		add_core_of = NFR
 		1939.1.1 = {
 			buildings = {

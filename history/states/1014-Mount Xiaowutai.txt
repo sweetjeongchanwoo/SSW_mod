@@ -1,0 +1,17 @@
+state = { #è¨å‹ë‰éR
+	id = 1014
+	name = "STATE_1014"
+	manpower = 20000
+	state_category = rural
+	history = {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = MEN
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		828 10397 952 9776 6904 1590 1137 
+	}
+}

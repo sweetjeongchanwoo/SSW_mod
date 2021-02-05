@@ -18,3 +18,12 @@ set_politics = {
 set_popularities = {
 	authority_despotism = 100
 }
+create_country_leader = {
+	name = "Mahmud Barzanji"
+	desc = ""
+	picture = "ssw_Portrait_Kurdistan_Mahmud_Barzanji.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,105 @@
+scripted_gui = {
+	SSW_MAN_Opium_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "SSW_MAN_Opium_container"
+
+		visible = {
+			is_ai = no
+			tag = MAN
+		}
+
+		effects = {
+			view_OPI_button_click = {
+				if = {
+					limit = { has_country_flag = open_OPI_view }
+					clr_country_flag = open_OPI_view
+				}
+				else = {
+					set_country_flag = open_OPI_view
+				}
+			}
+		}
+	}
+	
+	MAN_opium_view = {
+		window_name = "OPI_Opium_container"
+		context_type = player_context
+
+		visible = {
+			is_ai = no
+			tag = MAN
+			has_country_flag = open_OPI_view
+		}
+
+		ai_enabled = {
+			always = no
+		}
+		
+		dynamic_lists = {
+			OPI_container = {
+				array = OPI_X
+				change_scope = no
+				entry_container = OPI_seat_entry
+				index = seat_idx
+			}
+		}
+		effects = {
+			OPI_close_button_click = {
+				clr_country_flag = open_OPI_view
+			}
+		}
+		properties = {
+			icon_seats = {
+				x = OPI_X^seat_idx
+				y = OPI_Y^seat_idx
+				frame = OPI_Frame^seat_idx
+			}
+			seats_cover = {
+				x = OPI_X^seat_idx
+				y = OPI_Y^seat_idx
+			}
+		}
+
+		properties = {
+			MAN_opium_bar = {
+				frame = MAN_opium
+			}
+		}
+	}
+
+	OPI_Opium_Opi_container = {
+		window_name = "OPI_Opium_Opi_container"
+		context_type = player_context
+		
+		effects = {
+			SliderDown_click = {
+				if = {
+					limit = {
+						check_variable = { opium_influence > 51 }
+					}
+					add_to_variable = { opium_influence = -85 }
+				}
+				else = {
+				}
+			}
+			SliderUp_click = {
+				if = {
+					limit = {
+						check_variable = { opium_influence < 331 }
+					}
+					add_to_variable = { opium_influence = 85 }
+				}
+				else = {
+				}
+			}
+		}
+
+		properties = {
+			SliderButton = {
+				x = opium_influence
+			}
+		}
+	}
+}
+

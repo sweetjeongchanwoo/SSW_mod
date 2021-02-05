@@ -1,21 +1,77 @@
-﻿capital = 279
+﻿capital = 650
 oob = "CHL_1950"
 
-set_convoys = 5
+set_research_slots = 2
+
+set_stability = 0.6
+set_war_support = 0.5
+
+set_convoys = 20
 
 set_technology = {
 	infantry_weapons = 1
+	artillery1 = 1
+	early_fighter = 1
+	early_bomber = 1
+	electronic_mechanical_engineering = 1
+	marines = 1
+
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "CHL_1950_naval_mtg"
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	set_naval_oob = ""
 }
 
 add_ideas = {
+	#法
 	civilian_economy
+	free_trade
+	vacancy_pl
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
+	vacancy_ma
+	#国民精神
+	SSW_ideas_CHL_fuantei_gikai
+	SSW_ideas_CHL_CORFO_1
+	SSW_ideas_CHL_dou_rieki
 }
 
 set_politics = {
 	ruling_party = progressive_communism
-	last_election = "1950.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "1946.9.4"
+	election_frequency = 72
+	elections_allowed = yes
 }
 set_popularities = {
 	progressive_communism = 40
@@ -23,4 +79,178 @@ set_popularities = {
 	social_conservatism = 20
 	national_fascism = 10
 	national_socialism = 10
+}
+
+create_country_leader = {
+	name = "Stalin?" #だれやろなぁ、指導者選定までとりあえず放置#
+	picture = "gfx/leaders/CHL/Portrait_Jughashvili.dds"
+	expire = "1965.1.1"
+	ideology = progressive_communism_ideology
+	traits = {
+		#消すぜ#
+		red_army_organizer
+		exiled_revolutionary
+	}
+}
+
+#船の中身#
+# 1950 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } } #MtG無い人用#
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Capitán O'Brien Class"
+		type = submarine_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Serrano Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" } #MtGある人用#
+	# Submarines #
+	create_equipment_variant = {
+		name = "H1 Class"				
+		type = ship_hull_submarine_1
+		name_group = CHL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Capitán O'Brien Class"				
+		type = ship_hull_submarine_1
+		name_group = CHL_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Almirante Lynch Class"				
+		type = ship_hull_light_1
+		name_group = CHL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Serrano Class"	
+		type = ship_hull_light_1
+		name_group = CHL_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "O'Higgins Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHL_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Chacabuco Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHL_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Almirante Latorre Class"	
+		type = ship_hull_heavy_1
+		name_group = CHL_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Deutschland Class"
+		type = ship_hull_cruiser_panzerschiff
+		name_group = CHL_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+        	fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+    	}
+	}
 }

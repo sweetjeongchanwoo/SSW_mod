@@ -7,13 +7,12 @@ state={
 	}
 
 	history={
-		owner = PIN
+		owner = IND
 		buildings = {
 			infrastructure = 6
 
 		}
-		add_core_of = NIN
-		add_core_of = PIN
+		add_core_of = IND
 
 	}
 

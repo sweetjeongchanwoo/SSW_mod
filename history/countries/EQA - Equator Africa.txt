@@ -1,6 +1,6 @@
 capital = 772
 oob = "EQA_1950"
-set_cosmetic_tag = EQA_VFR
+set_cosmetic_tag = EQA_FRA
 
 set_convoys = 5
 
@@ -10,7 +10,6 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
-	Colonial_goverment
 }
 
 set_politics = {
@@ -21,4 +20,13 @@ set_politics = {
 }
 set_popularities = {
 	national_fascism = 100
+}
+create_country_leader = {
+	name = "Pierre Boisson"
+	desc = ""
+	picture = "gfx/leaders/EQA/portrait_eqa_pierre_boisson.dds"
+	expire = "1965.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+	}
 }

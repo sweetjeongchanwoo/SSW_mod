@@ -1,8 +1,9 @@
-﻿capital = 64
+﻿capital = 965
 
 set_convoys = 5
 
 set_technology = {
+	infantry_weapons = 1
 	infantry_weapons = 1
 	improved_infantry_weapons = 1
 	advanced_infantry_weapons = 1
@@ -90,6 +91,50 @@ set_technology = {
 	strategic_bomber3 = 1
 	scout_plane1 = 1
 	scout_plane2 = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	improved_equipment_conversion = 1
+	advanced_equipment_conversion = 1
+	advanced_machine_tools = 1
+	assembly_line_production = 1
+	flexible_line = 1
+	streamlined_line = 1
+	flexible_line_2 = 1
+	streamlined_line_2 = 1
+	streamlined_line_2 = 1
+	flexible_line_3 = 1
+	streamlined_line_3 = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	concentrated_industry4 = 1
+	concentrated_industry5 = 1
+	construction1 = 1
+	construction2 = 1 
+	construction3 = 1
+	construction4 = 1
+	construction5 = 1
+	excavation1 = 1
+	excavation2 = 1
+	excavation3 = 1
+	excavation4 = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	advanced_oil_processing = 1
+	modern_oil_processing = 1
+	modern_oil_processing1 = 1
+	rubber_processing = 1
+	improved_rubber_processing = 1
+	advanced_rubber_processing = 1
+	fuel_refining = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	fuel_refining4 = 1
+	fuel_refining5 = 1
+	fuel_refining6 = 1
+	artillery1 = 1
 }
 
 add_ideas = {
@@ -119,4 +164,125 @@ create_country_leader = {
 	ideology = national_socialism_ideology
 	traits = {
 	}
+}
+
+create_field_marshal = {
+	name = "Heinrich Himmler"
+	portrait_path = "gfx/leaders/HLH/Portrait_Himmler.dds"
+	traits = {  politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Paul Hausser"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Paul_Hausser.dds"
+	traits = {  armor_officer politically_connected trickster panzer_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Ferix Steiner"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Felix_Steiner.dds"
+	traits = {   politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Hermann Fegelein"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Hermann_Fegelein.dds"
+	traits = {  trickster trait_cautious panzer_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Josef 'Sepp' Dietrich"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Josef_Dietrich.dds"
+	traits = {  commando war_hero urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Friedrich Christiansen"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Friedrich_Christiansen.dds"
+	traits = {  brilliant_strategist }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Wilhelm Mohnke"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Wilhelm_Mohnke.dds"
+	traits = { winter_specialist }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Herbert Otto Gille"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Herbert_Otto_Gille.dds"
+	traits = { career_officer armor_officer }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Wilhelm Bittrich"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Wilhelm_Bittrich.dds"
+	traits = { harsh_leader infantry_officer }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hans-Jürgen Stumpff"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Hans_Jurgen_Stumpff.dds"
+	traits = { media_personality }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Alfred Wünnenberg"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Alfred_Wunnenberg.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Werner Ostendorff"
+	portrait_path = "gfx/leaders/HLH/SSW_Portrait_Himmler_Werner_Ostendorff.dds"
+	traits = { infantry_officer commando }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
 }

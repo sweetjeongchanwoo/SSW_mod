@@ -1,5 +1,6 @@
-﻿capital = 458
-#oob = "TUN_1950"
+capital = 458
+oob = "TUN_1950"
+set_cosmetic_tag = TUN_FRA
 
 set_technology = {
 	infantry_weapons = 1
@@ -17,4 +18,13 @@ set_politics = {
 }
 set_popularities = {
 	authority_despotism = 100
+}
+create_country_leader = {
+	name = "Muhammad VIII al-Amin"
+	desc = ""
+	picture = "ssw_Portrait_Tunisia_Muhammad_VIII.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
 }

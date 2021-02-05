@@ -1,6 +1,5 @@
 ﻿capital = 330
 oob = "MEN_1950"
-set_cosmetic_tag = Great_Mongol
 
 set_convoys = 5
 
@@ -25,7 +24,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "卓特巴扎普"
+	name = "Jodbajab"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 	picture = "GFX/leaders/MEN/Portrait_Jodbajab.dds"
 	expire = "1965.1.1"

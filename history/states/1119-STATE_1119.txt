@@ -1,0 +1,27 @@
+state={
+	id=1119
+	name="STATE_1119"
+	history={
+		owner = LFF
+		add_core_of = LFF
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			7834 1 
+		}
+
+	}
+
+	provinces={
+		1352 4811 7834 7892 9802 
+	}
+	manpower=187831
+	buildings_max_level_factor=1.000
+	state_category=city
+
+}

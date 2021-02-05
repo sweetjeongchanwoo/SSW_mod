@@ -1,0 +1,46 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						ROM = {
+							surrender_progress > 0.8
+							OR = {
+								has_war_with = CRO
+								has_war_with = HUN
+								has_war_with = BUL
+							} 
+						}
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+					white_peace = ROM
+					annex_country = { target = ROM transfer_troops = no }
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SER = {
+							surrender_progress > 0.8
+							OR = {
+								has_war_with = CRO
+								has_war_with = HUN
+								has_war_with = BUL
+							} 
+						}
+					}
+				}
+				hidden_effect = {
+					ROOT = {
+					white_peace = SER
+					annex_country = { target = SER transfer_troops = no }
+					}
+				}
+			}
+		}
+	}
+}

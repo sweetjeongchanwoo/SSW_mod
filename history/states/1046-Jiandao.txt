@@ -1,0 +1,13 @@
+state = { #ŠÔ“‡
+	id = 1046
+	name = "STATE_1046"
+	manpower = 100000
+	state_category = rural
+	history = {
+		owner = MAN
+		buildings = { infrastructure = 3 }
+		add_core_of = MAN
+		victory_points = { 6964 3 }
+	}
+	provinces = { 6964 944 9897 3944 }
+}

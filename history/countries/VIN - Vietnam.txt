@@ -8,6 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
+	VIN_idea_1
 	civilian_economy
 }
 
@@ -22,10 +23,10 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Go Din Diem"
+	name = "Ngô Đình Diêm"
 	desc = ""
 	picture = "gfx/leaders/VIN/Portrait_Go_Din_Diem.dds"
-	expire = "1953.3.1"
+	expire = "1963.11.2"
 	ideology = authority_democracy_ideology
 	traits = {
 		#

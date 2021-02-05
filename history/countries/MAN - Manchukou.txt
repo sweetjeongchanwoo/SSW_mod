@@ -1,5 +1,6 @@
-﻿1950.1.1 = {
-	capital = 608
+﻿
+1950.1.1 = {
+	capital = 1043
 	oob = "MAM_1950"
 
 	set_convoys = 5
@@ -24,7 +25,7 @@
 	}
 
 	create_country_leader = {
-		name = "謝介石"
+		name = "Hsieh Kai-Shek"
 		picture = "GFX/leaders/MAN/Portrait_Xie_Jieshi.dds"
 		expire = "1960.1.1"
 		ideology = authority_democracy_ideology
@@ -32,3 +33,6 @@
 		}
 	}
 }
+
+###内務事情
+set_variable = { MAN_opium = 80 }

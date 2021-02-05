@@ -1,0 +1,144 @@
+defined_text = {
+	name = ssw_current_social_policy_title
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 0 }
+		}
+		localization_key = current_policy_is_industrialization_rate_text
+	}
+	text = {
+		trigger = {
+			check_variable = { policy_1 = 1 }
+		}
+		localization_key = current_policy_is_poverty_rate_text
+	}
+}
+defined_text = {
+	name = ssw_current_master
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "[THIS.Getflag]"
+	}
+}
+defined_text = {
+	name = MASTER_NAME
+	text = {
+		trigger = {
+			is_major = yes
+		}
+		localization_key = "master_none_title"
+	}
+	text = {
+		trigger = {
+			is_puppet = yes
+		}
+		localization_key = "[THIS.overlord.GetName]"
+	}
+	text = {
+		trigger = {
+			is_major = no
+		}
+		localization_key = "master_none_title"
+	}
+}
+defined_text = {
+	name = GOODS_TEXT
+	text = {
+		trigger = {
+			check_variable = { inflation_rate > 305 }
+		}
+		localization_key = "GOODS_5_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 305 }
+		}
+		localization_key = "GOODS_4_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 220 }
+		}
+		localization_key = "GOODS_3_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 135 }
+		}
+		localization_key = "GOODS_2_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate < 135 }
+		}
+		localization_key = "GOODS_1_TEXT"
+	}
+}
+defined_text = {
+	name = PLUS_STABILITY_TEXT
+	text = {
+		trigger = {
+			check_variable = { inflation_rate > 305 }
+		}
+		localization_key = "PLUS_STABILITY_5_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 305 }
+		}
+		localization_key = "PLUS_STABILITY_4_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 220 }
+		}
+		localization_key = "PLUS_STABILITY_3_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate = 135 }
+		}
+		localization_key = "PLUS_STABILITY_2_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { inflation_rate < 135 }
+		}
+		localization_key = "PLUS_STABILITY_1_TEXT"
+	}
+}
+defined_text = {
+	name = industrialization_TEXT
+	text = {
+		trigger = {
+			check_variable = { industrialization_rate > 305 }
+		}
+		localization_key = "industrialization_5_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { industrialization_rate = 305 }
+		}
+		localization_key = "industrialization_4_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { industrialization_rate = 220 }
+		}
+		localization_key = "industrialization_3_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { industrialization_rate = 135 }
+		}
+		localization_key = "industrialization_2_TEXT"
+	}
+	text = {
+		trigger = {
+			check_variable = { industrialization_rate < 135 }
+		}
+		localization_key = "industrialization_1_TEXT"
+	}
+}

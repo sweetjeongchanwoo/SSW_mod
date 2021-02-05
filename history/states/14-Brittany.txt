@@ -33,7 +33,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = VFR
+		add_core_of = FRA
 		add_core_of = NFR
 
 		1939.1.1 = {

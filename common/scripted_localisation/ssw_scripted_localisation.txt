@@ -278,7 +278,7 @@ defined_text = {#インド
 	text = {
 		trigger = {
 			original_tag = JAP
-			is_in_faction_with = NIN
+			is_in_faction_with = IND
 		}
 		localization_key = JAP_Nin_values
 	}

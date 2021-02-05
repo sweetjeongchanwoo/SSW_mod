@@ -7,19 +7,15 @@ state={
 	state_category = rural
 
 	history={
-		owner = JAK
-		add_core_of = JAK
-		add_core_of = CHI
-		add_core_of = NIN
-		add_core_of = PIN
-		add_claim_by = PAK
-		
+		owner = IND
+		add_core_of = IND
+		add_core_of = PAK
 		buildings = {
 			infrastructure = 2
 		}
 	}
 
 	provinces={
-		5042 7273 7316 8005 10905 12754 12884 
+		7273 7316 8005 10905 12754 12884 
 	}
 }

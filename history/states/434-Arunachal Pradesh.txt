@@ -7,12 +7,11 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = NIN
+		owner = IND
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = NIN
-		add_core_of = PIN
+		add_core_of = IND
 		add_core_of = TIB
 
 	}

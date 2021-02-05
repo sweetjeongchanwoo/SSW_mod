@@ -1,5 +1,5 @@
 
-state={
+state = {
 	id=195
 	name="STATE_195"
 	manpower = 3950158
@@ -7,10 +7,9 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = GER
-		victory_points = {
-			3151 30.0
-		}
+		owner = PET
+		add_core_of = PET
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
@@ -22,7 +21,7 @@ state={
 				coastal_bunker = 5
 			}
 		}
-		add_core_of = SOV
+		victory_points = {	3151 30	}
 	}
 
 	provinces={

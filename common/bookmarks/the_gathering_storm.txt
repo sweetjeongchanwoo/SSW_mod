@@ -8,11 +8,17 @@ bookmarks = {
 		default = yes
 
 		"ITA"={
-			history = ""
+			history = "SSW_ITA_GATHERING_STORM_DESC"
 			ideology = national_fascism
 			ideas = {
+			ITA_Umberto_II_king
+			ITA_idea_1
+			ITA_idea_2
 			}
 			focuses = {
+			ITA_focus_by_Balbo
+			ITA_focus_Savoia
+			ITA_focus_Caesar
 			}
 		}
 		"ENG"={
@@ -25,7 +31,7 @@ bookmarks = {
 		}
 		"RUS"={
 			history = ""
-			ideology = social_liberalism
+			ideology = authoritative_democracy
 			ideas = {
 			}
 			focuses = {
@@ -47,7 +53,7 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"VFR"={
+		"FRA"={
 			history = ""
 			ideology = national_fascism
 			ideas = {
@@ -69,7 +75,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = ""
-			ideology = authoritative_democracy
+			ideology = social_democracy
 			ideas = {
 
 			}
@@ -79,7 +85,7 @@ bookmarks = {
 		"ALF"={
 			minor = yes
 			history = ""
-			ideology = authoritative_democracy
+			ideology = authority_democracy
 			ideas = {
 
 			}
@@ -89,41 +95,34 @@ bookmarks = {
 		"MAN"={
 			minor = yes
 			history = ""
-			ideology = authoritative_democracy
+			ideology = authority_democracy
 			ideas = {
-
+				
 			}
 			focuses = {
+				
 			}
 		}
 		"MEN"={
 			minor = yes
 			history = ""
-			ideology = authoritative_democracy
+			ideology = authority_democracy
 			ideas = {
-
+				
 			}
 			focuses = {
-			}
-		}
-		"CHI"={
-			minor = yes
-			history = ""
-			ideology = social_liberalism
-			ideas = {
-
-			}
-			focuses = {
+				
 			}
 		}
 		"NIN"={
 			minor = yes
 			history = ""
-			ideology = neutrality
+			ideology = authority_democracy
 			ideas = {
-
+				
 			}
 			focuses = {
+				
 			}
 		}
 		"PIN"={
@@ -131,15 +130,16 @@ bookmarks = {
 			history = ""
 			ideology = social_liberalism
 			ideas = {
-
+				
 			}
 			focuses = {
+				
 			}
 		}
 		"UTC"={
 			minor = yes
-			history = ""
-			ideology = authoritative_democracy
+			history = "SSW_UTC_GATHERING_STORM_DESC"
+			ideology = corporatocracism
 			ideas = {
 
 			}
@@ -149,11 +149,12 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = ""
-			ideology = social_liberalism
+			ideology = social_conservatism
 			ideas = {
-
+				
 			}
 			focuses = {
+				
 			}
 		}
 		"SOV"={
@@ -161,19 +162,35 @@ bookmarks = {
 			history = ""
 			ideology = classical_communism
 			ideas = {
-
+				
 			}
 			focuses = {
+				
 			}
 		}
 		"SPR"={
 			minor = yes
 			history = ""
-			ideology = neutrality
+			ideology = national_fascism
 			ideas = {
 
 			}
 			focuses = {
+			}
+		}
+		"MEX"={
+			minor = yes
+			history = "SSW_MEX_GATHERING_STORM_DESC"
+			ideology = social_democracy
+			ideas = {
+				mex_ideas_18
+				mex_ideas_10
+				mex_ideas_23
+			}
+			focuses = {
+				MEX_fuse_the_parties
+				MEX_north_america
+				MEX_invite_the_emperor
 			}
 		}
 

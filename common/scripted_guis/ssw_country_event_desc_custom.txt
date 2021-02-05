@@ -1,0 +1,89 @@
+scripted_gui = {	
+	SSW_opening_button = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_OpenButton"
+
+		visible = {
+			is_ai = no
+		}
+
+		effects = {
+			topbar_opening_button_click = {
+				if = {
+					limit = { has_variable = SSW_Opening_Screen }
+					clear_variable = SSW_Opening_Screen
+				}
+				else = {
+					set_variable = { SSW_Opening_Screen = 1 }
+				}
+			}
+		}
+	}
+
+	SSW_opening_screen_main = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_Main"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+		}
+
+		effects = {
+			SSW_OpeningScreen_CloseButton_click = {
+				clear_variable = SSW_Opening_Screen
+			}
+			
+			SSW_OpeningScreen_Buttons_CountryView_click = {
+				set_variable = { SSW_Opening_Screen = 1 }
+			}
+
+			SSW_OpeningScreen_Buttons_FeatureView_click = {
+				set_variable = { SSW_Opening_Screen = 2 }
+			}
+
+			SSW_OpeningScreen_Buttons_ModView_click = {
+				set_variable = { SSW_Opening_Screen = 3 }
+			}
+		}
+		properties = {
+			SSW_OpeningScreen_PlayerFlag = { 
+				image = "[This.GetFlag]" 
+			}
+			SSW_OpeningScreen_Poster = { 
+				image = "[GET_POSTER]" 
+			}
+		}
+	}
+	SSW_opening_screen_main_text = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_TEXT_window"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 1 }
+		}
+	}
+	SSW_opening_screen_main_feature = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_feature_window"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 2 }
+		}
+	}
+	SSW_opening_screen_main_text = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "SSW_OpeningScreen_mod_window"
+
+		visible = {
+			has_variable = SSW_Opening_Screen
+			check_variable = { SSW_Opening_Screen = 3 }
+		}
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=985
+	name="STATE_985"
+	history={
+		owner = MOS
+		add_core_of = MOS
+		add_core_of = SOV
+		victory_points = {
+			3092 5 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		3 18 26 89 127 138 140 3031 3086 3092 6017 6034 6051 6109 11036 11038 11071 11137 11178 13266 13267 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

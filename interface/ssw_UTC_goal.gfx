@@ -1,0 +1,18 @@
+spriteTypes = {
+    SpriteType = { 
+		name = "GFX_focus_UTC_chrysler"
+		texturefile = "gfx/interface/goals/UTC/focus_UTC_chrysler.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_UTC_flag"
+		texturefile = "gfx/interface/goals/UTC/focus_UTC_flag.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_UTC_ford_motor_company"
+		texturefile = "gfx/interface/goals/UTC/focus_UTC_ford_motor_company.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_UTC_general_motor_company"
+		texturefile = "gfx/interface/goals/UTC/focus_UTC_general_motors_company.dds"
+	}
+	}

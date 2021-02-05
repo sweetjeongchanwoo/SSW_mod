@@ -4,9 +4,8 @@ state={
 
 	history={
 		add_core_of = BAN
-		add_core_of = NIN
-		add_core_of = PIN
-		owner = NIN
+		add_core_of = IND
+		owner = IND
 		victory_points = {
 			11929 15
 		}

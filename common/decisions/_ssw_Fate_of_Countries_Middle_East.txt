@@ -1,0 +1,251 @@
+fate_of_countries_category_middle_east = {
+	fate_of_turkey = {
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		allowed = { always = yes }
+		available = { always = yes }
+		activation = {
+			NOT = {
+				country_exists = TUR
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = TUR
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				TUR = { capital_scope = { is_fully_controlled_by = ROOT } }
+			}
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_turkey }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = TUR
+				TUR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_turkey
+			}
+		}
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_turkey
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_middle_east.0 }
+		}
+		ai_will_do = { factor = 200 }
+    }
+    fate_of_iraq = {
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		allowed = { always = yes }
+		available = { always = yes }
+		activation = {
+			NOT = {
+				country_exists = IRQ
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = IRQ
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				IRQ = { capital_scope = { is_fully_controlled_by = ROOT } }
+			}
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_iraq }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = IRQ
+				IRQ = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_iraq
+			}
+		}
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_iraq
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_middle_east.1 }
+		}
+		ai_will_do = { factor = 200 }
+    }
+    fate_of_syria = {
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		allowed = { always = yes }
+		available = { always = yes }
+		activation = {
+			NOT = {
+				country_exists = SYR
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = SYR
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SYR = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_syria }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = SYR
+				SYR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_syria
+			}
+		}
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_syria
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_middle_east.2 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_Jordan = {
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		allowed = { always = yes }
+		available = { always = yes }
+		activation = {
+			NOT = {
+				country_exists = JOR
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = JOR
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			JOR = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_jordan }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = JOR
+				JOR = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_jordan
+			}
+		}
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_jordan
+		}
+		complete_effect = {
+			country_event = { id = ssw_foc_middle_east.3 }
+		}
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_Palestine = {
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		allowed = { always = yes }
+		available = { always = yes }
+		activation = {
+			NOT = {
+				country_exists = PAL
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				OR = {
+					is_core_of = PAL
+				}
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PAL = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_palestine }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = PAL
+				PAL = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_palestine
+			}
+		}
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_palestine
+		}
+		complete_effect = { country_event = { id = ssw_foc_middle_east.4 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_saudi_arabia = { #ƒAƒ‰ƒrƒA‚Ì‰^–½
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = SAU }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = SAU
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SAU = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_saudi_arabia }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = SAU
+				SAU = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_saudi_arabia }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_middle_east.5 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_saudi_arabia
+		}
+		ai_will_do = { factor = 100 }
+	}
+}

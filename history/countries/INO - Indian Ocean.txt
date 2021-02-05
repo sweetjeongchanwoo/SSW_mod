@@ -1,26 +1,25 @@
-﻿1950.1.1 = {
-	capital = 422
-	oob = "INO_1950"
-	set_cosmetic_tag = INO_JAP
-
-	set_convoys = 5
-
-	set_technology = {
-		infantry_weapons = 1
+﻿capital = 281
+oob = "INO_1950"
+set_cosmetic_tag = INO_JAP
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+}
+add_ideas = {
+	civilian_economy
+}
+JAP = {
+	set_autonomy = {
+		target = INO
+		autonomous_state = imperial_overseas_territory
 	}
-
-	add_ideas = {
-		Colonial_goverment
-		civilian_economy
-	}
-
-	set_politics = {
-		ruling_party = authority_despotism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		authority_despotism = 100
-	}
+}
+set_politics = {
+	ruling_party = authority_despotism
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authority_despotism = 100
 }

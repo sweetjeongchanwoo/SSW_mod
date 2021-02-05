@@ -3,3 +3,14 @@ sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
 	file = "customsound/ssw_se_custom_anpo_protets.wav" ## location of the sound file
 	always_load = no
 }
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "german_civil_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/ssw_se_custom_german_civil_war.wav" ## location of the sound file
+	always_load = no
+}
+
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "america_civil_war_bigevent_sound" #name you're using for the sound
+	file = "customsound/ssw_se_custom_america_civil_war.wav" ## location of the sound file
+	always_load = no
+}

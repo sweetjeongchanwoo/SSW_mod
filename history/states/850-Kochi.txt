@@ -1,0 +1,21 @@
+state={ #Kochi
+	id=850
+	name="STATE_850"
+	manpower = 873874
+	state_category = city
+	
+	
+	history={
+		add_core_of = JAP
+		owner = JAP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = { 7197 3 }
+
+	}
+	provinces={
+		12028 7197 11997
+	}
+}

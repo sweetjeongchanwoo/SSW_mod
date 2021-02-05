@@ -1,0 +1,8 @@
+BY0 = {	#ベラルーシ国民共和国
+	original_tag = BLR
+	has_country_flag = BLR_national_republic_countryflag
+}
+BY1 = {	#ベラルーシ本国
+	original_tag = BLR
+	has_country_flag = BLR_true_countryflag
+}

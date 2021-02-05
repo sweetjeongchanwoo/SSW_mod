@@ -1,0 +1,34 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Line_Graph_Background"
+		textureFile = "/gfx/interface/GUI/line_graph_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Line_Graph_Chart"
+		textureFile = "/gfx/interface/GUI/line_graph_chart.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment"
+		textureFile1 = "/gfx/interface/GUI/graph_line_full.dds"
+		textureFile2 = "/gfx/interface/GUI/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/interface/additional_FX/line_graph.lua"
+		horizontal = yes
+	}
+	spriteType = {
+		name = "GFX_tradegoods"
+		texturefile = "/gfx/interface/GUI/resources.dds"
+		noOfFrames = 50
+	}
+	spriteType = {
+		name = "GFX_pie_chart_segment"
+		texturefile = "gfx/interface/GUI/pie_chart_segment.dds"
+		noOfFrames = 4
+	}
+}

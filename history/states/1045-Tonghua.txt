@@ -1,0 +1,13 @@
+state = { #’Ê‰»
+	id = 1045
+	name = "STATE_1045"
+	manpower = 2000000
+	state_category = city
+	history = {
+		owner = MAN
+		buildings = { infrastructure = 3 }
+		add_core_of = MAN
+		victory_points = { 9759 2 }
+	}
+	provinces = { 9848 945 9759 3949 9803 6905 11781 800 }
+}

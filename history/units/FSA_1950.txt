@@ -7,7 +7,7 @@ division_template = {
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-                infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		artillery_brigade = { x = 1 y = 2 }
 		artillery_brigade = { x = 1 y = 3 }
@@ -15,17 +15,618 @@ division_template = {
 	}
     support = {
         engineer = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
     }
 }
+
+division_template = {
+	name = "SLD security unit"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }	
+	}
+    support = {
+        military_police = { x = 0 y = 0 }
+    }
+}
+
+
+
+division_template = {
+	name = "Silver Legion Division"	
+	
+	regiments = {
+		infantry= { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+		
+	}
+    support = {
+        engineer = { x = 0 y = 0 }
+        anti_tank = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+    }
+}
+
+
+
+division_template = {
+	name = "Tank division" 				
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }								
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		mechanized = { x = 2 y = 2 }			
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+    }
+}
+
+division_template = {
+	name = "SLD Armored Grenadier" 				
+	
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }		
+		medium_armor = { x = 1 y = 0 }		
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }		
+		mechanized = { x = 2 y = 1 }	
+		mechanized = { x = 2 y = 2 }		
+		mechanized = { x = 2 y = 3 }		
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+		armored_car_recon = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+    }
+}
+
 units = {
 	
 	division = {
-		name = "artillery Division"
-		location = 1843
-		division_template = "Infantry Division"
+		name = "1st Armed Silver Legion Division"
+		location = 11800
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "2st Armed Silver Legion Division"
+		location = 6845
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "3st Armed Silver Legion Division"
+		location = 3957
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "4st Armed Silver Legion Division"
+		location = 10412
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "5st Armed Silver Legion Division"
+		location = 6696
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "6st Armed Silver Legion Division"
+		location = 4464
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "7st Armed Silver Legion Division"
+		location = 10753
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "8st Armed Silver Legion Division"
+		location = 12328
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "9st Armed Silver Legion Division"
+		location = 7480
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "10st Armed Silver Legion Division"
+		location = 12501
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+		
+	}
+
+	division = {
+		name = "11st Armed Silver Legion Division"
+		location = 6984
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+	}
+
+	division = {
+		name = "12st Armed Silver Legion Division"
+		location = 788
+		division_template = "Silver Legion Division"
+		start_experience_factor = 0.6
+	}
+
+	division = {
+		name = "1st Infantry Division"
+		location = 9727
+		division_template = "artillery Division"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.8
+
+	}
+
+	division = {
+		name = "2st Infantry Division"
+		location = 40402
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "4st Infantry Division"
+		location = 1843
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "5st Infantry Division"
+		location = 801
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "6st Infantry Division"
+		location = 3687
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "7st Infantry Division"
+		location = 6882
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "8st Infantry Division"
+		location = 3697
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "12st Infantry Division"
+		location = 7202
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "13st Infantry Division"
+		location = 3693
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "15st Infantry Division"
+		location = 4650
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "16st Infantry Division"
+		location = 10410
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "17st Infantry Division"
+		location = 4510
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "18st Infantry Division"
+		location = 7464
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "19st Infantry Division"
+		location = 7615
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "19st Infantry Division"
+		location = 10586
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "20st Infantry Division"
+		location = 4402
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "23st Infantry Division"
+		location = 7138
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "24st Infantry Division"
+		location = 4452
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "25st Infantry Division"
+		location = 7547
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "26st Infantry Division"
+		location = 6971
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "27st Infantry Division"
+		location = 10441
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "28st Infantry Division"
+		location = 3975
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "29st Infantry Division"
+		location = 6850
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "30st Infantry Division"
+		location = 3802
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "31st Infantry Division"
+		location = 6705
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "32st Infantry Division"
+		location = 9662
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "34st Infantry Division"
+		location = 9836
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "37st Infantry Division"
+		location = 891
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "3st Infantry Division"
+		location = 6696
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "6st Infantry Division"
+		location = 3687
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "9st Infantry Division"
+		location = 6705
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "11st Infantry Division"
+		location = 10727
+		division_template = "artillery Division"
+		start_experience_factor = 0.5
+		
+	}
+
+	division = {
+		name = "1st Tank Division"
+		location = 10380
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "2st Tank Division"
+		location = 3917
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "3st Tank Division"
+		location = 1445
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "4st Tank Division"
+		location = 10727
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "5st Tank Division"
+		location = 10449
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "6st Tank Division"
+		location = 4464
+		division_template = "Tank division"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "13st SLD Armored Grenadier"
+		location = 10412
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "14st SLD Armored Grenadier"
+		location = 6845
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "15st SLD Armored Grenadier"
+		location = 11800
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "16st SLD Armored Grenadier"
+		location = 12735
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "17st SLD Armored Grenadier"
+		location = 12384
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "18st SLD Armored Grenadier"
+		location = 11800
+		division_template = "SLD Armored Grenadier"
+		start_experience_factor = 0.5
+	}
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "FSA"
+		}
+		requested_factories = 5
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_3 
+			creator = "FSA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type =  mechanized_equipment_3
+			creator = "FSA" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_2
+			creator = "FSA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_4
+			creator = "FSA" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_3
+			creator = "FSA" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FSA" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_3
+			creator = "FSA" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_4
+			creator = "FSA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
 	}
 
 }
+
+	

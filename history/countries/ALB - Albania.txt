@@ -10,6 +10,7 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	ITA_Umberto_II_king
 }
 
 set_politics = {
@@ -20,4 +21,13 @@ set_politics = {
 }
 set_popularities = {
 	national_fascism = 100
+}
+create_country_leader = {
+	name = "Kol Bib Mirakaj"
+	desc = ""
+	picture = "gfx/leaders/ALB/Portrait_Albania_Kol_Bib_Mirakaj.dds"
+	expire = "1965.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+	}
 }

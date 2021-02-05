@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_arsenal_of_democracy"
+		textureFile = "gfx/interface/custom_achievement/arsenal_of_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_arsenal_of_democracy_grey"
+		textureFile = "gfx/interface/custom_achievement/arsenal_of_democracy_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_arsenal_of_democracy_not_eligible"
+		textureFile = "gfx/interface/custom_achievement/arsenal_of_democracy_not_eligible.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_destroyer_of_worlds"
+		textureFile = "gfx/interface/custom_achievement/destroyer_of_worlds.dds"
+	}
+	spriteType = {
+		name = "GFX_destroyer_of_worlds_grey"
+		textureFile = "gfx/interface/custom_achievement/destroyer_of_worlds_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_destroyer_of_worlds_not_eligible"
+		textureFile = "gfx/interface/custom_achievement/destroyer_of_worlds_not_eligible.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_i_didnt_vote_for_you"
+		textureFile = "gfx/interface/custom_achievement/i_didnt_vote_for_you.dds"
+	}
+	spriteType = {
+		name = "GFX_i_didnt_vote_for_you_grey"
+		textureFile = "gfx/interface/custom_achievement/i_didnt_vote_for_you_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_i_didnt_vote_for_you_not_eligible"
+		textureFile = "gfx/interface/custom_achievement/i_didnt_vote_for_you_not_eligible.dds"
+	}
+}

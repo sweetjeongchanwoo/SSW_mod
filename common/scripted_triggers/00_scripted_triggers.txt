@@ -171,3 +171,15 @@ has_large_ally_not_pick_closed_economy = {
 		num_of_military_factories > 30
 	}
 }
+is_claim_or_core_or_ambition_of_ROOT = {
+	OR = {
+		is_claimed_by = ROOT
+		is_core_of = ROOT
+	}
+}
+is_claim_or_core_or_ambition_of_PREV = {
+	OR = {
+		is_claimed_by = PREV
+		is_core_of = PREV
+	}
+}

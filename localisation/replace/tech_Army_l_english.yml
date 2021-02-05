@@ -14,6 +14,15 @@
  sniper_unit_desc:0 "狙撃兵は敵の指揮系統を破壊し、相対的にこちらの統制を引き上げることを目的にした部隊です。"
  morter_unit:0 "迫撃砲中隊"
  morter_unit_desc:0 "迫撃砲は精度において野砲や戦車砲に劣りますが、その火力と小型兵器故の機動性の高さは状況によりそれらをも上回る能力を発揮します。"
+ anti_air_missile_brigade:0 "対空ミサイル"
+ anti_air_missile_brigade_desc:0 "飛来する敵の航空機を撃ち落とせ！"
+ mot_anti_air_missile_brigade:0 "自動車化対空ミサイル"
+ mot_anti_air_missile_brigade_desc:0 "自動車によってけん引することで機動性を維持しつつ対空砲よりも高い対空攻撃能力を発揮します。"
+ anti_air_missile:0 "支援対空ミサイル"
+ anti_air_missile_desc:0 "飛来する敵の航空機を撃ち落とせ！"
+#アーキタイプ
+ anti_air_missile_equipment:0 "地対空ミサイル"
+ anti_air_missile_equipment_desc:0 "HIMAD用の地対空ミサイルは、最も初期から運用されてきたものである。遠距離で敵機を探知・捕捉する必要があるので、かなり大規模な設備が必要となる。艦船発射型のものは艦対空ミサイルと呼ばれており、基本的な原理は同一であるが、動揺する艦上での運用や風浪への対策が必要であり、また、運用形態も異なることから特別な配慮が必要となるので、設計段階から考慮されていない限りは、別々に開発されることが多い。ただし、SHORADシステムは、過酷な野戦環境に対応するように開発されていることから、艦載対応も比較的容易であり、アメリカのチャパラルやフランスのクロタルのように転用された例もある。"
 #技術・装備
  mechanized_equipment_4:0 "装甲兵員輸送車 IV"
  mechanized_equipment_4_short:0 "機械化 IV"
@@ -269,23 +278,94 @@
  tech_morter_unit5_desc:0 "説明"
  tech_morter_unit6:0 "迫撃砲兵 VI"
  tech_morter_unit6_desc:0 "説明"
+#砲兵#
 
+ antiairmissile1:0 "地対空ミサイル I"
+ antiairmissile1_desc:0 "地対空ミサイルは、地上から空中目標に対して発射されるミサイルである。空中で動き回る目標を正確にとらえ続ける技術は、未だ完全なものとは言えないが、将来的には従来の対空砲を完全に代替し、敵航空機に対する強力な切り札になるであろう。"
+ antiairmissile2:0 "地対空ミサイル II"
+ antiairmissile2_desc:0 "地対空ミサイルは、地上から空中目標に対して発射されるミサイルである。空中で動き回る目標を正確にとらえ続ける技術は、未だ完全なものとは言えないが、将来的には従来の対空砲を完全に代替し、敵航空機に対する強力な切り札になるであろう。"
+ antiairmissile3:0 "地対空ミサイル III"
+ antiairmissile3_desc:0 "研究の進歩により、従来の迎撃戦闘機では到達不可能な高度を飛行する敵航空機であったとしても、最新の地対空ミサイルを用いることで対処することができる。"
+
+ antiair_improvement7:0 "最終型対空砲"
+ antiair_improvement7_desc:0 "とっても強いよ。"
+
+ artillery7:0 "最終型野砲"
+ artillery7_desc:0 "とても強い"
+
+
+ artillery5:0 "高度改良型砲兵改良 I"
+ artillery5_desc:0 "野戦砲を改良します。"
+ artillery6:0 "高度改良型砲兵改良 II"
+ artillery6_desc:0 "野戦砲を改良します。"
+ artillery7:0 "発展型砲兵改良 I"
+ artillery7_desc:0 "野戦砲を改良します。"
+
+ antiair6:0 "高度改良型対空火器改良 I"
+ antiair6_desc:0 "対空火器を改良します。"
+ antiair7:0 "高度改良型対空火器改良 II"
+ antiair7_desc:0 "対空火器を改良します。"
+ antiair8:0 "発展型対空火器改良 I"
+ antiair8_desc:0 "対空火器を改良します。"
+
+ antitank6:0 "高度改良型対戦車火器改良 I"
+ antitank6_desc:0 "対戦車火器を改良します。"
+ antitank7:0 "高度改良型対戦車火器改良 II"
+ antitank7_desc:0 "対戦車火器を改良します。"
+ antitank8:0 "発展型対戦車火器改良 I"
+ antitank8_desc:0 "対戦車火器を改良します。"
+ antitank9:0 "発展型対戦車火器改良 II"
+ antitank9_desc:0 "対戦車火器を改良します。"
+
+ rocket_artillery5:0 "改良型ロケット砲兵改良 I"
+ rocket_artillery5_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery6:0 "改良型ロケット砲兵改良 II"
+ rocket_artillery6_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery8:0 "発展型ロケット砲兵改良 I"
+ rocket_artillery8_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery9:0 "発展型ロケット砲兵改良 II"
+ rocket_artillery9_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery11:0 "準現代ロケット砲兵型改良 I"
+ rocket_artillery11_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery12:0 "準現代ロケット砲兵改良 II"
+ rocket_artillery12_desc:0 "ロケット砲兵を改良します。"
+ rocket_artillery14:0 "現代ロケット砲兵改良 I"
+ rocket_artillery14_desc:0 "ロケット砲兵を改良します。"
+ antiairbuilding1:0 "対空砲 I"
+ antiairbuilding1_desc:0 "対空砲を拡充可能にします。"
+ antiairbuilding2:0 "対空砲 II"
+ antiairbuilding2_desc:0 "対空砲を拡充可能にします。"
+ antiairbuilding3:0 "対空砲 III"
+ antiairbuilding3_desc:0 "対空砲を拡充可能にします。"
+ antiairbuilding4:0 "対空砲 IV"
+ antiairbuilding4_desc:0 "対空砲を拡充可能にします。"
+ antiairbuilding5:0 "対空砲 V"
+ antiairbuilding5_desc:0 "対空砲を拡充可能にします。"
+
+
+#日本#
+	#装備名#
 #日本#
 	#装備名#
  JAP_infantry_equipment_4:0 "四式自動小銃"
  JAP_infantry_equipment_4_short:0 "四式自動小銃"
+  JAP_infantry_equipment_4_desc:0 "四式自動小銃は、アメリカ合衆国製のM1ガーランドを日本海軍がコピーしたものであるが、使用弾薬の変更、装弾数の増加、などの改良がおこなわれた、本銃は３８年式小銃、９９式短小銃等のボルトアクション式小銃と比べ、生産コストがかさんだため、落下傘部隊、海軍陸戦隊等への一部部隊への配備にとどまった"
 
  JAP_infantry_equipment_5:0 "一一式自動小銃"
  JAP_infantry_equipment_5_short:0 "一一式自動小銃"
+ JAP_infantry_equipment_5_desc:0 "我が国の小銃開発は遅れ気味にある、一部の部隊では３８年式銃が現役にある状態だ。我が国は軍縮機運の高まりもあり、兵士一人一人の火力向上は急務である。盟友ナチス・ドイツはSTG-44を始めとする、新概念小銃「突撃銃」を採用し、小銃技術で一歩先を行っている。ドイツの技術顧問団、満州へ亡命したソ連の銃器技術者、カラシニコフ博士を開発陣に迎え新小銃の開発を開始する"
 
  JAP_infantry_equipment_6:0 "一四式自動小銃"
  JAP_infantry_equipment_6_short:0 "一四式自動小銃"
+JAP_infantry_equipment_6_desc:0 "一一式小銃は耐久性に優れ、劣悪な植民地の環境に耐えうる信頼性、安価なコストから大東亜諸国への輸出も盛んに行われた傑作小銃であった。しかし、ドイツとの弾薬共通化は補給の円滑化に繋がったが、7.92㎜クルツ弾による高い反動は日本人にとって決して使いやすいものではなく、さらに一一式小銃の開発に際し、参考にされたソ連小銃由来の命中精度の低さも島嶼防衛部隊や、劣悪な補給の中での活動が想定される、特殊部隊での運用に際し問題視された。早急に銃身の延長による命中精度の向上、二脚銃架や新型暗視装置等の付属品開発等の改良を行う必要がある。"
 
  JAP_infantry_equipment_7:0 "二七式自動小銃"
  JAP_infantry_equipment_7_short:0 "二七式自動小銃"
+ JAP_infantry_equipment_7_desc:0 "一一式、一四式はドイツおよび、ソ連の技術の影響が強く、完全な国産小銃とは言えず、7.92㎜の比較的大口径な弾薬からくる反動は運用上、大きな問題となった。ドイツとの関係悪化により7.92㎜弾を使う理由は我が国にはもうない、より小口径な弾薬を使う、我が国の防衛に特化した銃を開発すべきである。陸軍技術本部が指示した要求性能は以下のとおりである、世界の主流である7.62ｍｍ弾への対応、高い命中精度、ライフルグレネードが使用可能であること、3点バースト射撃が可能であることである。世界情勢は一瞬の油断も許さない状況である、速やかに開発を進めるべきである"
 
  JAP_infantry_equipment_8:0 "三三式自動小銃"
  JAP_infantry_equipment_8_short:0 "三三式自動小銃"
+ JAP_infantry_equipment_8_desc:0 "二十七年式小銃は一一式から始まった先進小銃開発においてようやく世界水準の性能を得るに至った、傑作小銃であった。しかし、部品数の増加による整備性の悪化、調達コストの向上、二七式小銃擲弾の対戦車戦闘能力への低さが指摘され新小銃開発計画が始まった.そんな中、帝国情報省が米国で5.56mm弾を採用した新型小銃開発が行われているとの情報をつかんだ、5.56mm弾は初速、携行弾数で勝る、二七式小銃で行われた弾薬変更による兵站への混乱が癒えたばかりだが、我々も5.56mmを採用し、前小銃の各種問題点を解決しつつ、今までに開発された各種付属品の互換性も確保した、新小銃を開発すべきである。それに合わせ、対戦車戦闘、分隊火力支援をより効果的に行える新小銃擲弾開発も推進する"
 
 	#技術名#
  JAP_ssw_infantry_weapons:0 "四式自動小銃"

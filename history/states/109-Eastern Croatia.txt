@@ -2,7 +2,7 @@
 state={
 	id=109
 	name="STATE_109" # Croatia
-	manpower = 2714400
+	manpower = 3668400
 	
 	state_category = large_town
 
@@ -11,7 +11,8 @@ state={
 		add_core_of = CRO
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			11581 15 

@@ -1,3 +1,7 @@
+focus = {
+	current = "JAP_Submission_of_the_Second_Disarmament_Bill"
+	progress = 0
+}
 division_template = {
 	name = "Infantry Division"
 	
@@ -86,27 +90,6 @@ units = {
 	division = {
 		name = "Infantry Division"
 		location = 1092
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 7125
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 4056
-		division_template = "Infantry Division"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Infantry Division"
-		location = 4052
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
@@ -614,5 +597,108 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
+	}
+}
+
+air_wings = {
+	### IJA Air Forces ###
+	# 1 Hikodan -- Tokyo
+	282 = { 
+		# 1 Hiko Rentai -- Kawasaki Ki-10
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 200
+			start_experience_factor = 0.7
+		}
+		# 16 Hiko Rentai -- Kawasaki Ki-10
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 100
+		}
+		start_experience_factor = 0.7
+		# 6 Hiko Rentai -- Mitsubishi Ki-2
+		CAS_equipment_3 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+		start_experience_factor = 0.7
+		# 9 Hiko Rentai -- Mitsubishi Ki-1
+		tac_bomber_equipment_3 =  {
+			owner = "JAP" 
+			amount = 100
+		}
+		start_experience_factor = 0.7
+	}
+	523 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 30
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 24
+		}
+		start_experience_factor = 0.4
+	}
+	605 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 150
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 50
+		}
+		start_experience_factor = 0.4
+	}
+	629 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 85
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 46
+		}
+		start_experience_factor = 0.4
+	}
+	716 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 34
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 21
+		}
+		start_experience_factor = 0.4
+	}
+	597 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 41
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 12
+		}
+		start_experience_factor = 0.4
+	}
+	289 = { 
+		fighter_equipment_3 = {
+			owner = "JAP" 
+			amount = 95
+		}
+		start_experience_factor = 0.4
+		CAS_equipment_3 = {
+			owner = "JAP" 
+			amount = 42
+		}
+		start_experience_factor = 0.4
 	}
 }

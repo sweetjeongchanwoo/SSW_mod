@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	civilian_economy
 }
 
@@ -21,4 +20,13 @@ set_politics = {
 }
 set_popularities = {
 	authority_despotism = 100
+}
+create_country_leader = {
+	name = "Gabriel Maurício Teixeira"
+	desc = ""
+	picture = "gfx/leaders/MZB/portrait_mzb_gabriel_mauricio_teixeira.dds"
+	expire = "1965.1.1"
+	ideology = authority_despotism_ideology
+	traits = {
+	}
 }

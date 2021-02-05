@@ -1,0 +1,419 @@
+on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MEX
+					has_global_flag = mexican_civil_war
+					NOT = {
+						has_global_flag = mcw_news
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				news_event = { id = ssw_mex.3 hours = 6 }
+				set_global_flag = mcw_news
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = SPA } #êÌèüçë
+					FROM = { original_tag = SPR } #îsêÌçë
+				}
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = SPR } #êÌèüçë
+					FROM = { original_tag = SPA } #îsêÌçë
+				}
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = anarchism
+				}
+				add_ideas = {
+					ssw_anarchist_community
+					vacancy_pl
+					vacancy_mfa
+					vacancy_mf
+					vacancy_mi
+					vacancy_ma
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = progressive_communism
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_valentin_campa
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = classical_communism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					MEX_vicente_lombardo
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_lazaro_cardenas
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_democracy
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_adolfo_ruiz_cortines
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_liberalism
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_raul_salinas_lozano
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = social_conservatism
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					MEX_manuel_gomez_morin
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_democracy
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					MEX_manuel_gomez_morin
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = authority_despotism
+				}
+				add_ideas = {
+					MEX_juan_andreu
+					ssw_authoritarian_regime
+				}
+				if = {
+					limit = {
+						NOT = { has_cosmetic_tag = MEX_empire }
+						has_completed_focus = MEX_invite_the_emperor
+					}
+					set_cosmetic_tag = MEX_empire
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_fascism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					MEX_salvador_abascal
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = national_socialism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					MEX_victor_serge
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					NOT = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_lazaro_cardenas
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = MEX
+					has_government = corporatocracism
+					OR = {
+						has_country_flag = cardenas_resign
+						has_country_flag = cardenas_dead
+					}
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					MEX_adolfo_ruiz_cortines
+				}
+				if = {
+					limit = { has_cosmetic_tag = MEX_empire }
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = anarchism
+				}
+				add_ideas = {
+					ssw_anarchist_community
+					RUS_collectivized_society_for_ssw
+					RUS_sascha_schapiro
+					vacancy_mfa
+					vacancy_mf
+					vacancy_mi
+					vacancy_ma
+				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = progressive_communism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					RUS_serafima_hopner_political_leader
+					RUS_serafima_hopner
+					RUS_pavel_sudoplatov
+					RUS_fyodor_kulakov
+					RUS_konstantin_vershinin
+				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = classical_communism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					RUS_serafima_hopner_political_leader
+					RUS_serafima_hopner
+					RUS_pavel_sudoplatov
+					RUS_fyodor_kulakov
+					RUS_konstantin_vershinin
+				}
+				random_unit_leader = {
+					limit = { has_id = 32 }
+					retire = yes
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = social_democracy
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					RUS_alexander_kerensky_political_leader
+					RUS_alexander_kerensky
+					RUS_anna_wolkoff
+					RUS_vladimir_nabokov
+					RUS_sergei_bunyachenko
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = social_liberalism
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					RUS_ariadna_tyrkova_williams
+					RUS_ivan_ilyin
+					RUS_anna_wolkoff
+					RUS_vladimir_nabokov
+					RUS_sergei_bunyachenko
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = social_conservatism
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					RUS_felix_yusupov
+					RUS_nikolai_khokhlov
+					RUS_sofia_panina
+					RUS_igor_stravinsky
+					RUS_bronislav_kaminski
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = authority_democracy
+				}
+				add_ideas = {
+					ssw_perfect_democratic_regime
+					RUS_andrey_vlasov
+					RUS_alexander_kerensky
+					konstantin_rodzaevsky
+					RUS_vladimir_nabokov
+					RUS_andrey_vlasov_minister_of_army
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = authority_despotism
+				}
+				add_ideas = {
+					ssw_military_regime
+					RUS_poa
+					RUS_nikolai_khokhlov
+					konstantin_rodzaevsky
+					RUS_vladimir_nabokov
+					RUS_andrey_vlasov_minister_of_army
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = national_fascism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					RUS_anastasy_vonsiatsky
+					RUS_arseny_nesmelov
+					RUS_lev_okhotin
+					RUS_nikolai_markov
+					RUS_andrey_vlasov_minister_of_army
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = national_socialism
+				}
+				add_ideas = {
+					ssw_authoritarian_regime
+					RUS_konstantin_rodzaevsky_political_leader
+					RUS_boris_brasol
+					konstantin_rodzaevsky
+					RUS_sergey_taboritsky
+					RUS_andrey_vlasov_minister_of_army
+				}
+			}
+			if = {
+				limit = {
+					original_tag = RUS
+					has_government = corporatocracism
+				}
+				add_ideas = {
+					ssw_mixed_regime
+					RUS_igor_ivanovich_sikorsky
+					RUS_nikolai_khokhlov
+					RUS_sofia_panina
+					RUS_sergey_taboritsky
+					RUS_bronislav_kaminski
+				}
+			}
+		}
+	}
+}

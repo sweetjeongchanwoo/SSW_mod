@@ -1,7 +1,7 @@
 guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE ##########
 ############### THIS FILE DEFINES THE SHAPE, FORM, AND TEXT OF THE GUI FOR THE SUPEREVENT
 	
-	containerWindowType = {
+	containerWindowType = {#日本内戦-共産主義
 		name = "SSW_SG_big_event_anpo_protets_custom_window"
 		size = { width = 220 height = 220 }
 		position = { x=0 y=-210 }
@@ -70,11 +70,177 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		instantTextBoxType = {
 			name = "text"
-			position = {  x= 50 y = -190 }
+			position = {  x= 170 y = -190 }
 			font = "Bomb_24"
 			text = "BE_ANPO_PROTETS_D" ######## HERE GOES THE DESCRIPTION ###########
-			maxWidth = 455
-			maxHeight = 173
+			maxWidth = 520
+			maxHeight = 190
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+
+guiTypes = {#ドイツ内戦
+	
+	containerWindowType = {
+		name = "SSW_SG_big_event_german_civil_war_custom_window"
+		size = { width = 220 height = 220 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = event_popup
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "BE_german_civil_war_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_animated_German_civil_war"
+			position = { x= -350 y = -60 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "SSW_SG_big_event_frame_german_civil_war_custom"
+		size = { width = 720 height = 550 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = german_civil_war_bigevent
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "BE_german_civil_war_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 220 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 160 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 170 y = -190 }
+			font = "Bomb_24"
+			text = "BE_german_civil_war_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 520
+			maxHeight = 190
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+
+guiTypes = {#アメリカ内戦
+	
+	containerWindowType = {
+		name = "SSW_SG_big_event_American_civil_war_custom_window"
+		size = { width = 220 height = 220 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = event_popup
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "aldrich_18_outline"
+			borderSize = {x = 0 y = 0}
+			text = "BE_American_civil_war_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_animated_American_civil_war"
+			position = { x= -350 y = -60 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "SSW_SG_big_event_frame_American_civil_war_custom"
+		size = { width = 720 height = 550 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = america_civil_war_bigevent
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "BE_American_civil_war_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -110 y = 220 }
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay"
+			position = { x= 160 y = -200 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 170 y = -190 }
+			font = "Bomb_24"
+			text = "BE_American_civil_war_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 520
+			maxHeight = 190
 			fixedsize = yes
 			format = right
 			Orientation = lower_left

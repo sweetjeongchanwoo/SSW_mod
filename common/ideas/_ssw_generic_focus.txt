@@ -1,0 +1,311 @@
+ideas = {
+	political_leader = {
+		vacancy_pl = {
+			picture = SSW_vacancy
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_foreign_affairs = {
+		vacancy_mfa = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_finance = {
+		vacancy_mf = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_interior = {
+		vacancy_mi = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	minister_of_army = {
+		vacancy_ma = {
+			picture = SSW_vacancy
+			name = vacancy_pl
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = 0
+			allowed = { always = yes }
+			ai_will_do = { factor = 0 }
+			cancel_if_invalid = no
+			modifier = { custom_modifier_tooltip = vacancy_tt }
+		}
+	}
+	country = {
+		SSW_militarism_focus = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.05
+				resistance_damage_to_garrison = -0.1 
+			}
+		}
+		SSW_military_youth_focus = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				OR = {
+					has_government = progressive_communism
+					has_government = classical_communism
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		SSW_superior_will = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = jap_supremacy_of_will
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		SSW_deterrence = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		SSW_industrial_revolution_of_britain = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+			picture = eng_spirit_of_the_industrial_revolution
+			removal_cost = -1
+		}
+		SSW_ideological_fanaticism_focus = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SSW_generic_welfare = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		SSW_why_we_fight_focus = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+			}
+		}
+		towards_the_construction_of_a_nuclear_power_plant = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_nuclear_reactor_factor 0.1
+			}
+		}
+		strengthen_army = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		high_level_industry = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MTG_naval_treaty_adherent
+			modifier = {
+				navy_capital_ship_attack_factor = 0.15
+				navy_capital_ship_defence_factor = 0.15
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.2
+			}
+		}
+		strengthen_air = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_air_bonus
+			modifier = {
+				air_strategic_bomber_attack_factor = 0.15
+				air_strategic_bomber_defence_factor = 0.15
+				air_strategic_bomber_agility_factor = 0.15
+				air_strategic_bomber_bombing_factor = 0.15
+			}
+		}
+		idea_extra_tech_speed = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+	}
+	army_chief = {
+		military_advisory_italy_land = {
+			picture = generic_army_europe_5
+			available = {
+				NOT = { has_war_with = ITA }
+				has_completed_focus = SSW_italy_military_advisory_group
+			}
+			allowed = { always = yes }
+			cost = 50
+			visible = {
+				NOT = { has_war_with = ITA }
+				has_completed_focus = SSW_italy_military_advisory_group
+			}
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+}

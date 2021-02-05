@@ -10,7 +10,6 @@
 	}
 
 	add_ideas = {
-		Colonial_goverment
 		civilian_economy
 	}
 
@@ -25,7 +24,7 @@
 	}
 
 	create_country_leader = {
-		name = "土肥原賢二"
+		name = "Kenji Doihara"
 		desc = ""
 		picture = "gfx/leaders/CLC/Doihara_Kenji.dds"
 		expire = "1965.1.1"

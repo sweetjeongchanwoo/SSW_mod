@@ -1,0 +1,272 @@
+add_namespace = ssw_foc_middle_east
+#トルコの運命
+country_event = {
+    id = ssw_foc_middle_east.0
+	title = ssw_foc_middle_east.0.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.0.d
+	option = {#オスマン帝国を作ってた場合
+		name = ssw_foc_middle_east.0.c
+		ai_chance = { base = 10 }
+		trigger = { TUR = { has_completed_focus = TUR_call_the_ottomans_back } }
+		every_state = {
+			limit = {
+				is_core_of = TU1
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			TU1 = { transfer_state = PREV }
+		}
+		puppet = TU1
+	}
+	option = {#中東連合を作っていた場合
+		name = ssw_foc_middle_east.0.e
+		ai_chance = { base = 10 }
+		trigger = { TUR = { has_completed_focus = TUR_declaration_united_country } }
+		every_state = {
+			limit = {
+				is_core_of = TU2
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			TU2 = { transfer_state = PREV }
+		}
+		puppet = TU2
+	}
+	option = {#解放
+        name = ssw_foc_middle_east.0.a
+		ai_chance = { base = 10 }
+		trigger = {
+			NOT = {
+				TUR = {
+					has_completed_focus = TUR_call_the_ottomans_back
+					has_completed_focus = TUR_declaration_united_country
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = TUR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			TUR = { transfer_state = PREV }
+		}
+		puppet = TUR
+	}
+	option = {#併合
+		name = ssw_foc_middle_east.0.b
+		ai_chance = { base = 0 }
+		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_turkey
+	}
+}
+#イラクの運命
+country_event = {
+    id = ssw_foc_middle_east.1
+	title = ssw_foc_middle_east.1.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.1.d
+	option = {
+        name = ssw_foc_middle_east.1.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = IRQ
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			IRQ = { transfer_state = PREV }
+		}
+		puppet = IRQ
+	}
+	option = {
+		name = ssw_foc_middle_east.1.b
+		ai_chance = { base = 0 }
+		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_iraq
+	}
+}
+#シリアの運命
+country_event = {
+    id = ssw_foc_middle_east.2
+	title = ssw_foc_middle_east.2.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.2.d
+	option = {
+        name = ssw_foc_middle_east.2.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = SYR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SYR = { transfer_state = PREV }
+		}
+		puppet = SYR
+	}
+	option = {
+		name = ssw_foc_middle_east.2.b
+		ai_chance = { base = 0 }
+		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_syria
+	}
+}
+#ヨルダンの運命
+country_event = {
+    id = ssw_foc_middle_east.3
+	title = ssw_foc_middle_east.3.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.3.d
+	option = {
+        name = ssw_foc_middle_east.3.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = JOR
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			JOR = { transfer_state = PREV }
+		}
+		puppet = JOR
+	}
+	option = {
+		name = ssw_foc_middle_east.3.b
+		ai_chance = { base = 0 }
+		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_jordan
+	}
+}
+#パレスチナの運命
+country_event = {
+    id = ssw_foc_middle_east.4
+	title = ssw_foc_middle_east.4.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = ssw_foc_middle_east.4.d
+	option = {
+        name = ssw_foc_middle_east.4.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = PAL
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			PAL = { transfer_state = PREV }
+		}
+		puppet = PAL
+	}
+	option = {
+		name = ssw_foc_middle_east.4.b
+		ai_chance = { base = 0 }
+		occupy_small_country = yes
+		set_country_flag = continue_to_occupy_palestine
+	}
+}
+country_event = { #アラビアの運命
+	id = ssw_foc_middle_east.5
+	title = ssw_foc_middle_east.5.title
+	desc = ssw_foc_middle_east.5.desc
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_middle_east.5.a
+		trigger = {
+			NOT = {
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = SAU
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SAU = { transfer_state = PREV }
+		}
+		puppet = SAU
+		if = {
+			limit = {
+				SAU = {
+					has_cosmetic_tag = SAU_republic
+					NOT = {
+						has_government = progressive_communism
+						has_government = classical_communism
+					}
+				}
+			}
+			SAU = {
+				drop_cosmetic_tag = yes
+				create_country_leader = {
+					name = "Abdulaziz Ibn Saud"
+					desc = "POLITICS_ABDULAZIZ_DESC"
+					picture = "gfx/leaders/SAU/ssw_Portrait_ibn_saud.dds"
+					expire = "1965.1.1"
+					ideology = authority_despotism_ideology
+					traits = {
+						#
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ssw_foc_middle_east.5.b
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = SAU
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			SAU = {
+				transfer_state = PREV
+				set_cosmetic_tag = SAU_republic
+				retire_ideology_leader = authority_despotism
+			}
+		}
+		puppet = SAU
+	}
+	option = {
+		name = OCCUPY_TT
+		ai_chance = { base = 0 }
+		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_saudi_arabia
+	}
+}

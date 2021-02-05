@@ -1,0 +1,16 @@
+state = { #êVãûì¡ï és
+	id = 1043
+	name = "STATE_1043"
+	manpower = 863000
+	state_category = city
+	history = {
+		owner = MAN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		victory_points = { 4572 18 }
+		add_core_of = MAN
+	}
+	provinces = { 4572 }
+}

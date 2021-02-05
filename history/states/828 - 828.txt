@@ -5,7 +5,6 @@ state={
 
 	history={
 		owner = LAO
-			
 		buildings = {
 			infrastructure = 2
 		}
@@ -13,8 +12,8 @@ state={
 	}
 
 	provinces={
-		  1390 1362 10326 1520 4260 10195 4539 10238 1374 12210 7426 1563 4554 1577 10453
+		  1390 1362 10326 1520 4260 10195 4539 10238 1374 12210 
 	}
-	manpower= 400000
+	manpower= 380000
 	state_category=rural
 }

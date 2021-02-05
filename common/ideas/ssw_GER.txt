@@ -2,13 +2,13 @@ ideas = {
 	country = {
 		GER_idea_1 = {
 			
-			allowed = {always = yes} #最初から常にあるか
+			allowed = {always = yes} 
 			
-			removal_cost = -1#わかんね
+			removal_cost = -1
 
 			allowed_civil_war = {always = yes}
 
-			picture = eng_imperial_conscription #アイコンの写真
+			picture = eng_imperial_conscription 
 			
 			modifier = {
 				custom_modifier_tooltip = GER_idea_1.d
@@ -18,7 +18,7 @@ ideas = {
 			
 			allowed = {always = yes} 
 			
-			removal_cost = -1 #わかんね
+			removal_cost = -1 
 
 			allowed_civil_war = {always = yes}
 
@@ -28,20 +28,21 @@ ideas = {
 				training_time_army_factor = -0.25
 				non_core_manpower = 0.25
 				weekly_manpower = 2000
+				ai_call_ally_desire_factor = -100
 			}
 		}
 		Protester = {
 			
 			allowed = {always = yes}
 			
-			removal_cost = -1 #わかんね
+			removal_cost = -1 
 
 			allowed_civil_war = {always = yes}
 
 			picture = generic_intel_bonus
 			
 			modifier = {
-				surrender_limit = 10.0
+				surrender_limit = 0.1
 			}
 		}
 		Air_force_conspiracy = {
@@ -80,9 +81,10 @@ ideas = {
 			}
 		}
 
-		Colonial_goverment = {
+		Colonial_government = {
 			allowed = {
 				always = yes
+				is_puppet = yes
 			}
 			removal_cost = -1
 
@@ -119,6 +121,102 @@ ideas = {
 				experience_gain_air_factor = -0.1
 			}
 			
+		}
+		GER_war_ideas_2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			modifier = {
+				ai_join_ally_desire_factor = -10000
+				ai_call_ally_desire_factor = -10000
+			}
+			
+		}
+		GER_war_idea_3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_4 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = HGR
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_5 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = LTV
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_6 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				tag = HLH
+				attack_bonus_against = 0.15
+			}
+		}
+		GER_war_idea_7 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = air_war_plans_division_focus
+			hidden_modifier = {
+				ai_focus_aggressive_factor = 100
+			}
 		}
 	}
 }

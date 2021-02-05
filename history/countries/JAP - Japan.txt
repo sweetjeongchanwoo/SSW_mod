@@ -7,16 +7,158 @@ set_war_support = 0.2
 set_research_slots = 4
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons = 1
+	improved_infantry_weapons = 1
+	advanced_infantry_weapons = 1
+	infantry_weapons2 = 1
+	ssw_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	ssw_infantry_weapons2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	night_vision2 = 1
+	support_weapons3 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	infantry_at3 = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	amphibious_mechanized_infantry = 1
+	amphibious_mechanized_infantry_2 = 1
+	armored_car1 = 1
+	armored_car2 = 1
+	armored_car3 = 1
+	marines = 1
+	marines2 = 1
+	marines3 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	paratroopers3 = 1
+	tech_mountaineers = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers3 = 1
+	tech_special_forces = 1
+	improved_special_forces = 1
+	survival_training = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1
+	tech_engineers4 = 1
+	tech_recon = 1
+	tech_recon1 = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_recon4 =  1
+	tech_military_police = 1
+	tech_military_police2 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	early_fighter = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CAS3 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	jet_fighter1 = 1
+	jet_fighter2 = 1
+	jet_cas1 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	heavy_fighter2 = 1
+	heavy_fighter3 = 1
+	heavy_fighter4 = 1
+	tactical_bomber1 = 1
+	tactical_bomber2 = 1
+	tactical_bomber3 = 1
+	jet_tactical_bomber1 = 1
+	jet_tactical_bomber2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	strategic_bomber3 = 1
+	scout_plane1 = 1
+	scout_plane2 = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	improved_equipment_conversion = 1
+	advanced_equipment_conversion = 1
+	advanced_machine_tools = 1
+	assembly_line_production = 1
+	flexible_line = 1
+	streamlined_line = 1
+	flexible_line_2 = 1
+	streamlined_line_2 = 1
+	streamlined_line_2 = 1
+	flexible_line_3 = 1
+	streamlined_line_3 = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	concentrated_industry4 = 1
+	concentrated_industry5 = 1
+	construction1 = 1
+	construction2 = 1 
+	construction3 = 1
+	construction4 = 1
+	construction5 = 1
+	excavation1 = 1
+	excavation2 = 1
+	excavation3 = 1
+	excavation4 = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	advanced_oil_processing = 1
+	modern_oil_processing = 1
+	modern_oil_processing1 = 1
+	rubber_processing = 1
+	improved_rubber_processing = 1
+	advanced_rubber_processing = 1
+	fuel_refining = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	fuel_refining4 = 1
+	fuel_refining5 = 1
+	fuel_refining6 = 1
+	artillery1 = 1
+}
+
+create_import = {
+	resource = 	oil
+	factories = 3
+	exporter = ALF
+}
+create_import = {
+	resource = 	Rubber
+	factories = 2
+	exporter = INS
 }
 
 add_ideas = {
+	SSW_JAP_Hirohito
 	ssw_parliamentary_democracy_rightist_administration
 	SSW_JAP_Parasitic_landlord_system
 	SSW_jAP_disarmament_idea
 	SSW_jAP_zaibatsu
 	SSW_jAP_Peace_Preservation_Law
 	SSW_jAP_Japanese_spirit
-	SSW_JAP_Hirohito
 	SSW_JAP_Greater_East_Asian_Co_prosperity_Sphere
 	SSW_JAP_army_2
 	SSW_JAP_Post_war_recession
@@ -34,15 +176,11 @@ add_to_faction = KOR
 add_to_faction = PAO
 add_to_faction = MAN
 add_to_faction = MEN
-add_to_faction = CHI
-add_to_faction = CLC
 add_to_faction = SIA
 add_to_faction = SIN
 add_to_faction = BRM
 add_to_faction = PHI
 add_to_faction = VIN
-add_to_faction = CAM
-add_to_faction = LAO
 add_to_faction = INS
 add_to_faction = MAL
 add_to_faction = BRN
@@ -70,14 +208,6 @@ set_autonomy = {
 	autonomous_state = imperial_protectirate
 }
 set_autonomy = {
-	target = CHI
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
-	target = CLC
-	autonomous_state = condominium
-}
-set_autonomy = {
 	target = SIN
 	autonomous_state = imperial_overseas_territory
 }
@@ -94,14 +224,6 @@ set_autonomy = {
 	autonomous_state = imperial_protectirate
 }
 set_autonomy = {
-	target = CAM
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
-	target = LAO
-	autonomous_state = imperial_protectirate
-}
-set_autonomy = {
 	target = INS
 	autonomous_state = imperial_protectirate
 }
@@ -112,10 +234,6 @@ set_autonomy = {
 set_autonomy = {
 	target = BRN
 	autonomous_state = imperial_member
-}
-set_autonomy = {
-	target = INO
-	autonomous_state = imperial_overseas_territory
 }
 set_autonomy = {
 	target = HAW
@@ -525,116 +643,13 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 }
-########################################
-##################政党##################
-########################################
-set_variable = { 
-	var = JAP_seiyukai_popularity
-	value = 50
-}
-set_variable = { 
-	var = JAP_Kenkyukai_popularity
-	value = 13
-}
-set_variable = { 
-	var = JAP_minseito_popularity
-	value = 34
-}
-set_variable = { 
-	var = JAP_ziyuuto_popularity
-	value = 21
-}
-set_variable = { 
-	var = JAP_dainipponsumeragi_popularity
-	value = 5
-}
-set_variable = {
-	var = JAP_Nihonkyosanto_Nosaka_popularity
-	value = 4
-}
-set_variable = { 
-	var = JAP_Nihonkyosanto_Tokuda_popularity
-	value = 2
-}
-set_variable = { 
-	var = JAP_nihonsyakai_popularity
-	value = 15
-}
-set_variable = { 
-	var = JAP_syakaikurabu_popularity
-	value = 18
-}
-set_variable = { 
-	var = JAP_toakensetsu_popularity
-	value = 11
-}
-########################################
-##################政党##################
-########################################
 
-##################################################
-##################大東亜金ブロック##################
-##################################################
-set_variable = { 
-	var = Sib_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Man_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Men_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Chi_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Brm_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Sia_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Vin_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Cam_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Lao_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Mal_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Ins_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Phi_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Nin_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Ast_gold_system
-	value = 50
-}
-set_variable = { 
-	var = Nzl_gold_system
-	value = 50
-}
+########################################
+#################focus##################
+########################################
+set_variable = { JAP_focus_num_var = 1}
+
+
 ##################################################
 ##################大東亜金ブロック##################
 ##################################################

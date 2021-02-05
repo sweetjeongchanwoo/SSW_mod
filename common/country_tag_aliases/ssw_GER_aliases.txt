@@ -1,0 +1,24 @@
+GR0 = { #ドイツ連合共和国
+	orginal_tag = GER
+	has_country_flag = GER_union_countryflag
+}
+GR1 = { #ライン共和国
+	orginal_tag = GER
+	has_country_flag = GER_rhine_countryflag
+}
+GR2 = { #ドイツ本国
+	orginal_tag = GER
+	has_country_flag = GER_true_countryflag
+}
+#HGR = {
+#	original_tag = GER
+#	has_focus_tree = GER_Georing
+#}
+#LTV = {
+#	original_tag = GER
+#	has_country_flag = ssw_LTV
+#}
+#HLH = {
+#	original_tag = GER
+#	has_country_flag = SPR_anarchist_spain_flag
+#}

@@ -1,5 +1,117 @@
 ideas = {
+	economy = {
+		law = yes
+		RUS_collectivized_society_for_ssw = {
+			picture = SPR_collectivized_society
+			name = SPR_collectivized_society
+			allowed = { original_tag = RUS }
+			available = { has_government = anarchism }
+			removal_cost = -1
+			modifier = {
+				resistance_target = -0.2
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				global_building_slots_factor = 0.1
+				industry_free_repair_factor = 0.5
+				industrial_capacity_factory = 0.7
+				industrial_capacity_dockyard = 0.7
+				research_speed_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				line_change_production_efficiency_factor = 0.1
+			}
+			allowed_to_remove = { always = no }
+			cancel_if_invalid = no
+		}
+	}
 	political_leader = {
+		RUS_sascha_schapiro = {
+			picture = SSW_RUS_sascha_schapiro
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { anarchist_zeal }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_serafima_hopner_political_leader = {
+			picture = SSW_RUS_serafima_hopner
+			name = RUS_serafima_hopner
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { president_of_the_council_of_ministers }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_alexander_kerensky_political_leader = {
+			picture = alexander_kerensky
+			#picture = konstantin_rokossovsky
+			name = alexander_kerensky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { resolute_social_democrat }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_ariadna_tyrkova_williams = {
+			picture = SSW_RUS_ariadna_tyrkova_williams
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { silent_workhorse }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_felix_yusupov = {
+			picture = SSW_RUS_felix_yusupov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = RU2
+				}
+			}
+			traits = { conservative_grandee }
+			ai_will_do = { factor = 1 }
+		}
 		RUS_andrey_vlasov = {
 			picture = SSW_RUS_andrey_vlasov
 			available = {
@@ -10,13 +122,13 @@ ideas = {
 				}
 			}
 			removal_cost = -1
+			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { father_of_russia_rebuild }
 			ai_will_do = { factor = 1 }
-			cancel_if_invalid = no
 		}
-		RUS_vladimir_kryuchkov = {
-			picture = SSW_RUS_vladimir_kryuchkov
+		RUS_poa = {
+			picture = SSW_RUS_poa
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = lock_minister_available_tt
@@ -25,15 +137,61 @@ ideas = {
 				}
 			}
 			removal_cost = -1
-			allowed = { original_tag = RUS }
-			traits = { president_of_the_council_of_ministers }
-			ai_will_do = { factor = 1 }
 			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { strong_organization }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_konstantin_rodzaevsky_political_leader = {
+			picture = konstantin_rodzaevsky
+			name = konstantin_rodzaevsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { the_gentleman_president }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_anastasy_vonsiatsky = {
+			picture = SSW_RUS_anastasy_vonsiatsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { tenacious_negotiator }
+			ai_will_do = { factor = 1 }
+		}
+		RUS_igor_ivanovich_sikorsky = {
+			picture = SSW_RUS_igor_ivanovich_sikorsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { inventive_genius }
+			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_foreign_affairs = {
-		RUS_alexander_kerensky = {
-			picture = SSW_RUS_alexander_kerensky
+		RUS_serafima_hopner = {
+			picture = SSW_RUS_serafima_hopner
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = lock_minister_available_tt
@@ -42,28 +200,102 @@ ideas = {
 				}
 			}
 			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = {
+				militant_socialist
+				red_suffragette
+			}
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_alexander_kerensky = {
+			picture = alexander_kerensky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { good_at_trading }
+			cost = 0
 			ai_will_do = { factor = 1 }
+		}
+		RUS_ivan_ilyin = {
+			picture = SSW_RUS_ivan_ilyin
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
 			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { rearmer }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_nikolai_khokhlov = {
+			picture = SSW_RUS_nikolai_khokhlov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = RU2
+				}
+			}
+			traits = { tenacious_negotiator }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_arseny_nesmelov = {
+			picture = SSW_RUS_arseny_nesmelov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { hawk }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_boris_brasol = {
+			picture = SSW_RUS_boris_brasol
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { prince_of_terror }
+			cost = 0
+			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_finance = {
-		konstantin_rodzaevsky = {
-			picture = konstantin_rodzaevsky
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = lock_minister_available_tt
-					always = no
-					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
-				}
-			}
-			removal_cost = -1
-			cancel_if_invalid = no
-			allowed = { original_tag = RUS }
-			traits = { active_nationalist }
-			ai_will_do = { factor = 1 }
-		}
 		RUS_pavel_sudoplatov = {
 			picture = SSW_RUS_pavel_sudoplatov
 			available = {
@@ -77,10 +309,96 @@ ideas = {
 			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { veteran_communist }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_anna_wolkoff = {
+			picture = SSW_RUS_anna_wolkoff
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { economist }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_sofia_panina = {
+			picture = SSW_RUS_sofia_panina
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = RU2
+				}
+			}
+			traits = { financial_expert }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		konstantin_rodzaevsky = {
+			picture = konstantin_rodzaevsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { active_nationalist }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_lev_okhotin = {
+			picture = SSW_RUS_lev_okhotin
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { war_profiteer }
+			cost = 0
 			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_interior = {
+		RUS_fyodor_kulakov = {
+			picture = SSW_RUS_fyodor_kulakov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { education_reformer }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
 		RUS_vladimir_nabokov = {
 			picture = SSW_RUS_vladimir_nabokov
 			available = {
@@ -91,13 +409,127 @@ ideas = {
 				}
 			}
 			removal_cost = -1
+			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { kind_liberal }
+			cost = 0
 			ai_will_do = { factor = 1 }
+		}
+		RUS_igor_stravinsky = {
+			picture = SSW_RUS_igor_stravinsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
 			cancel_if_invalid = no
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = RU2
+				}
+			}
+			traits = {
+				compassionate_gentleman
+				anti_communist
+			}
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_nikolai_markov = {
+			picture = SSW_RUS_nikolai_markov
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { economic_organizer }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_sergey_taboritsky = {
+			picture = SSW_RUS_sergey_taboritsky
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { genial_anti_revolutionary }
+			cost = 0
+			ai_will_do = { factor = 1 }
 		}
 	}
 	minister_of_army = {
+		RUS_konstantin_vershinin = {
+			picture = SSW_RUS_konstantin_vershinin
+			name = konstantin_vershinin
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { experienced_in_the_red_army_era }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_sergei_bunyachenko = {
+			picture = SSW_RUS_sergei_bunyachenko
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = { original_tag = RUS }
+			traits = { armaments_organizer }
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
+		RUS_bronislav_kaminski = {
+			picture = SSW_RUS_bronislav_kaminski
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = lock_minister_available_tt
+					always = no
+					NOT = { has_global_flag = NATIONAL_CHARACTERS_BLOCKED }
+				}
+			}
+			removal_cost = -1
+			cancel_if_invalid = no
+			allowed = {
+				OR = {
+					original_tag = RUS
+					original_tag = RU2
+				}
+			}
+			traits = {
+				armaments_aficionado
+				fascist_militia_leader
+			}
+			cost = 0
+			ai_will_do = { factor = 1 }
+		}
 		RUS_andrey_vlasov_minister_of_army = {
 			name = RUS_andrey_vlasov
 			picture = SSW_RUS_andrey_vlasov
@@ -109,13 +541,518 @@ ideas = {
 				}
 			}
 			removal_cost = -1
+			cancel_if_invalid = no
 			allowed = { original_tag = RUS }
 			traits = { former_white_army }
+			cost = 0
 			ai_will_do = { factor = 1 }
-			cancel_if_invalid = no
 		}
 	}
 	country = {
+		RUS_defense_council_idea = {
+			picture = generic_production_bonus
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_core_defence_factor = 0.5
+			}
+		}
+		RUS_the_maximum_concession = {
+			picture = SPR_the_maximum_concession
+			name = SPR_the_maximum_concession
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				war_support_weekly = -0.005
+				army_defence_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		RUS_disbanded_army_1 = {
+			name = SPR_disbanded_army
+			picture = SPR_disbanded_army
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				max_command_power = -50
+				command_power_gain_mult = -0.2
+				planning_speed = -0.2
+				max_planning = -0.2
+				army_defence_factor = -0.05
+				army_attack_factor = -0.1
+			}
+		}
+		RUS_disbanded_army_2 = {
+			name = SPR_disbanded_army
+			picture = SPR_disbanded_army
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				max_command_power = -25
+				command_power_gain_mult = -0.1
+				planning_speed = -0.1
+				max_planning = -0.1
+				army_attack_factor = -0.05
+			}
+		}
+		RUS_anarchist_public_transport = {
+			name = SPR_anarchist_public_transport
+			picture = SPR_anarchist_public_transport
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_speed_factor = 0.15
+			}
+		}
+		RUS_anarchist_society_1 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		RUS_anarchist_society_2 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		RUS_anarchist_society_3 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		RUS_anarchist_society_4 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RUS_anarchist_society_5 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		RUS_anarchist_society_6 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		RUS_anarchist_society_7 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		RUS_anarchist_society_8 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.06
+			}
+		}
+		RUS_anarchist_society_9 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.06
+			}
+		}
+		RUS_anarchist_society_10 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.06
+			}
+		}
+		RUS_anarchist_society_11 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.03
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_12 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_13 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.06
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_14 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.06
+				industrial_capacity_factory = 0.05
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_15 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.1
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_16 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly = -0.01
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.06
+				industrial_capacity_factory = 0.1
+				conscription = 0.03
+			}
+		}
+		RUS_anarchist_society_17 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.02
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.04
+				industrial_capacity_factory = 0.11
+				industry_repair_factor = 0.1
+				conscription = 0.08
+			}
+		}
+		RUS_anarchist_society_18 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.02
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_bunker_factor = 0.05
+				production_speed_coastal_bunker_factor = 0.05
+				consumer_goods_factor = -0.09
+				industrial_capacity_factory = 0.13
+				industry_repair_factor = 0.15
+				conscription = 0.08
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		RUS_anarchist_society_19 = {
+			name = SPR_anarchist_society
+			picture = SPR_anarchist_society
+			allowed = {
+				original_tag = RUS
+				NOT = {
+					has_government = authority_despotism
+					has_government = national_fascism
+					has_government = national_socialism
+					has_government = corporatocracism
+				}
+			}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.02
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industry_repair_factor = 0.2
+				conscription = 0.15
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				army_defence_factor = 0.15
+				army_attack_factor = 0.15
+				training_time_factor = -0.15
+				army_morale_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
 		RUS_bunker_idea = {
 			allowed = { always = yes }
 			allowed_civil_war = { always = yes }
@@ -370,6 +1307,25 @@ ideas = {
 				research_speed_factor = 0.15
 			}
 		}
+		RUS_strengthening_the_wehrmacht_idea = {
+			picture = SSW_strengthening_the_wehrmacht
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				air_strategic_bomber_attack_factor = 0.1
+				air_strategic_bomber_defence_factor = 0.1
+				air_strategic_bomber_agility_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
 		RUS_idea_1 = {
 			
 			allowed = {always = yes}
@@ -387,30 +1343,25 @@ ideas = {
 			}
 		}
 		RUS_idea_3 = {
-			
-			allowed = {always = yes}
-			
+			allowed = {
+				always = yes
+			}
 			removal_cost = -1
-
 			allowed_civil_war = {always = yes}
-
 			picture = generic_local_self_management
-			
-			modifier = {consumer_goods_factor = 0.05
-			war_support_factor = 0.1
-			industrial_capacity_factory = 0.1
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 		RUS_idea_4 = {
-			
-			allowed = {always = yes}
-			
+			allowed = {
+				always = yes
+			}
 			removal_cost = -1
-
 			allowed_civil_war = {always = yes}
-
 			picture = jap_zaibatsu
-			
 			modifier = {
 			}
 		}
@@ -482,27 +1433,22 @@ ideas = {
 
             modifier = {
 				production_speed_buildings_factor = 0.1	
-				}
 			}
-			
-				rus_ideas_05 = {
-					allowed = {
-						original_tag = RUS
-					}
-		
-					allowed_civil_war = {
-						always = yes
-					}
-		
-					removal_cost = -1
-		
-					picture = man_five_year_plan_industry
-		
-					modifier = {
-						production_factory_max_efficiency_factor = 0.15
-						industrial_capacity_factory = 0.15
-						}
-					}
+		}
+		rus_ideas_05 = {
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
 					rus_ideas_05A = {
 						allowed = {
 							original_tag = RUS
@@ -598,7 +1544,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = political_violence
+						picture = SPR_political_violence
 						
 							modifier = {
 								intelligence_agency_defense = 0.25
@@ -631,7 +1577,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = victors_of_the_great_War
+						picture = generic_victors_of_ww1
 						
 							modifier = {
 								stability_factor = 0.1
@@ -778,13 +1724,12 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = deluge
+						picture = FRA_la_deluge
 						
 							
 								targeted_modifier = { tag = MOS attack_bonus_against = 0.2 }
 								targeted_modifier = { tag = UKR attack_bonus_against = 0.2 }
 								targeted_modifier = { tag = BAL attack_bonus_against = 0.2 }
-								targeted_modifier = { tag = WTR attack_bonus_against = 0.2 }
 								targeted_modifier = { tag = SIB attack_bonus_against = 0.2 }
 								targeted_modifier = { tag = SOV attack_bonus_against = 0.2 }
 								targeted_modifier = { tag = MAN attack_bonus_against = 0.2 }
@@ -1072,7 +2017,7 @@ ideas = {
 						}
 						
 					removal_cost = -1
-						picture = forced_conscription
+						picture = generic_manpower_bonus
 
 						modifier = {
 							conscription = 0.05			
@@ -1181,21 +2126,53 @@ ideas = {
 							economy_cost_factor = 3
 							}
 				}
-				rus_debahu4 = {
-					allowed = {
-						original_tag = RUS
-						}
-			
-					allowed_civil_war = {
-						always = yes
-						}
-						
-					removal_cost = -1
-						picture = anti_soviet_pact
-						modifier = {
-							conscription_factor = -0.3
-							stability_factor = -0.2
-						}
-				}
+		rus_debahu4 = {
+			allowed = {
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = anti_soviet_pact
+			modifier = {
+				conscription_factor = -0.3
+				stability_factor = -0.2
+			}
+		}
+		rus_ideas_38 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				mobilization_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
+			}
+		}
+		rus_ideas_39 = {
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = SSW_memory_of_the_empire
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.20
+				training_time_factor = -0.1
+			}
+		}
+		rus_ideas_40 = {
+			allowed = { original_tag = RUS }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.25
+				training_time_factor = -0.2
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
 	}
 }

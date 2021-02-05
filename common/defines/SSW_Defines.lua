@@ -214,7 +214,7 @@ NCountry = {
 	WAR_SUPPORT_OFFNSIVE_WAR = -0.2,				-- Impact of being in offensive war
 	WAR_SUPPORT_DEFENSIVE_WAR = 0.3,				-- Impact of being in defensive war
 	WAR_SUPPORT_TENSION_IMPACT = 0.3,				-- Total impact of world tension
-	MIN_STABILITY = 0.0,
+	MIN_STABILITY = -1.0,
 	MAX_STABILITY = 1.0,
 	MIN_WAR_SUPPORT = 0.0,
 	MAX_WAR_SUPPORT = 1.0,
@@ -611,9 +611,9 @@ NMilitary = {
 	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
 	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
 	
-	MAX_ARMY_EXPERIENCE = 500,			--Max army experience a country can store
-	MAX_NAVY_EXPERIENCE = 500,			--Max navy experience a country can store
-	MAX_AIR_EXPERIENCE = 500,				--Max air experience a country can store
+	MAX_ARMY_EXPERIENCE = 1000,			--Max army experience a country can store
+	MAX_NAVY_EXPERIENCE = 1000,			--Max navy experience a country can store
+	MAX_AIR_EXPERIENCE = 1000,				--Max air experience a country can store
 	
 	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
@@ -1929,7 +1929,7 @@ NAI = {
 	TOO_INSIGNIFICANT_MAX_PENALTY = 350,						-- max penalty that will be applied for thinking a country is too insignificant
 
 	MANPOWER_FREE_USAGE_THRESHOLD = 500000,			-- If AI has this much manpower he doesn't care about the percentage
-	START_TRAINING_EQUIPMENT_LEVEL = 0.9,               -- ai will not start to train if equipment drops below this level
+	RT_TRAINING_EQUIPMENT_LEVEL = 0.9,               -- ai will not start to train if equipment drops below this level
 	STOP_TRAINING_EQUIPMENT_LEVEL = 0.8,                -- ai will not train if equipment drops below this level
 	BUILD_REFINERY_LACK_OF_RESOURCE_MODIFIER = 0.003,	-- How much lack of resources are worth when evaluating what to build.
 	DIVISION_DESIGN_WEIGHTS = {							-- Base values used by AI to evaluate value of a stat
@@ -2920,7 +2920,9 @@ NIntel = {
 	ARMY_INTEL_COMBAT_BONUS_MAX_INTEL_FOR_BONUS = 50, -- intel needed to fully apply ARMY_INTEL_COMBAT_BONUS_MAX_BONUS
 
 	NAVAL_SUPREMACY_INTEL_LOW = 0.3,								-- we need more intel than this to get any supremacy
-
+	NAVAL_SUPREMACY_INTEL_LOW_SUPREMACY_PENALTY_START = 0.1,		-- supremacy is reduced to NAVAL_SUPREMACY_INTEL_LOW_SUPREMACY_MIN_PENALTY at or below this intel
+	NAVAL_SUPREMACY_INTEL_LOW_SUPREMACY_MIN_PENALTY = 0.5, -- you get this much supremacy at NAVAL_SUPREMACY_INTEL_LOW_SUPREMACY_PENALTY_START and scales up to 1 at NAVAL_SUPREMACY_INTEL_LOW
+	
 	NAVY_FLEET_COUNT_INTEL_MIN = 0.1,
 	NAVY_FLEET_COUNT_INTEL_MAX = 0.3,
 	NAVY_FLEET_COUNT_INTEL_RANGE_AT_LOWEST_INTEL = 0.5,
@@ -3060,6 +3062,3 @@ NIntel = {
 	-- ~intel ledger defines
 }
 }
-
-
-

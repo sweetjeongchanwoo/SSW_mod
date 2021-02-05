@@ -1,0 +1,62 @@
+fate_of_countries_category_northern_america = {
+	fate_of_america = { #ÉAÉÅÉäÉJÇÃâ^ñΩ
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = {
+				country_exists = LFF
+				country_exists = ALF
+				country_exists = UTC
+				country_exists = ANS
+				country_exists = OKL
+				country_exists = TEX
+				country_exists = LUI
+				country_exists = BLS
+				country_exists = FSA
+			}
+			any_state = {
+				is_fully_controlled_by = ROOT
+				has_state_flag = maybe_core_AMERICA
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					is_core_of = NEL
+					is_core_of = HAW
+					state = 463
+					state = 650
+					state = 686
+				}
+			}
+			1114 = { is_fully_controlled_by = ROOT }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_america }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = LFF
+				country_exists = ALF
+				country_exists = UTC
+				country_exists = ANS
+				country_exists = OKL
+				country_exists = TEX
+				country_exists = LUI
+				country_exists = BLS
+				country_exists = FSA
+				1114 = { NOT = { is_fully_controlled_by = ROOT } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_america }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_northern_america.0 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_america
+		}
+		ai_will_do = { factor = 100 }
+	}
+}

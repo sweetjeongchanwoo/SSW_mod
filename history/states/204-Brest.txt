@@ -7,17 +7,15 @@ state={
 	state_category = rural
 
 	history={
-		victory_points = {
-			3350 3
-		}
+		owner = BAL
+		add_core_of = BAL
+		add_core_of = BLR
 		victory_points = {
 			11313 1
 		}
-		owner = BAL
 		buildings = {
 			infrastructure = 5
 		}
-		add_core_of = BAL
 	}
 
 	provinces={

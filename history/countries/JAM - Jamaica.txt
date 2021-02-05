@@ -1,6 +1,6 @@
 ﻿capital = 689
 oob = "JAM_1950"
-set_cosmetic_tag = JAM_JAP
+#set_cosmetic_tag = JAM_JAP
 
 set_convoys = 5
 
@@ -9,7 +9,6 @@ set_technology = {
 }
 
 add_ideas = {
-	Colonial_goverment
 	civilian_economy
 }
 

@@ -10,7 +10,6 @@
 	}
 
 	add_ideas = {
-		Colonial_goverment
 		civilian_economy
 	}
 
@@ -22,5 +21,14 @@
 	}
 	set_popularities = {
 		authority_despotism = 100
+	}
+}
+create_country_leader = {
+	name = "Omar Ali Saifuddien III"
+	desc = ""
+	picture = "ssw_Portrait_Brunei_Saifuddien_III.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
 	}
 }

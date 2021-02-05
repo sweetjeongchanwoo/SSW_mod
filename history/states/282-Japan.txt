@@ -1,8 +1,8 @@
 
 state={
 	id=282
-	name="STATE_282" # Kanto
-	manpower = 1083000
+	name="STATE_282" # Gunma
+	manpower = 1601380
 	
 	state_category = megalopolis
 	
@@ -20,9 +20,10 @@ state={
 			arms_factory = 2
 			dockyard = 4
 		}
+		victory_points = { 4000 15 }
 	}
 	
 	provinces={
-		993 1097  4000 4100 7016 11908 
+		4000
 	}
 }

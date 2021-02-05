@@ -1,0 +1,21 @@
+state = { #�`�F�`�F��
+	id = 1006
+	name = "STATE_1006"
+	manpower = 21000
+	state_category = rural
+	history = {
+		owner = CCS
+		add_core_of = CCS
+		add_core_of = CHE
+		add_core_of = SOV
+		victory_points = {
+			3672 5
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		11632 3672 683 3682 6689 9645 7554
+	}
+}

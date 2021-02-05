@@ -10,7 +10,6 @@
 	}
 
 	add_ideas = {
-		Colonial_goverment
 		civilian_economy
 	}
 
@@ -22,5 +21,14 @@
 	}
 	set_popularities = {
 		authority_despotism = 100
+	}
+}
+create_country_leader = {
+	name = "Lydia Liliuokalani Kawānanakoa"
+	desc = ""
+	picture = "ssw_Portrait_Hawaii_Lydia_Liliuokalani.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
 	}
 }

@@ -1,0 +1,15 @@
+state = { #Imabari
+	id = 1088
+	name = "STATE_1088"
+	manpower = 760939
+	state_category = city
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = { infrastructure = 8 }
+		victory_points = { 4179 1 }
+		
+	}
+
+	provinces = { 4179 }
+}

@@ -10,7 +10,6 @@ set_technology = {
 add_ideas = {
 	civilian_economy
 }
-
 set_autonomy = {
 	target = CPV
 	autonomous_state = colony
