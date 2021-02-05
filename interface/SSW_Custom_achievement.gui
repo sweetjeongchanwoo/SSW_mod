@@ -59,7 +59,7 @@ guiTypes = {
 			
 			background = {
 				name = "Background"
-				quadTextureSprite = "GFX_tiled_bg2"
+				quadTextureSprite = "GFX_tiled_bg"
 			}
 			containerWindowType = {
 				name = "achievement_form_usa_entry"
