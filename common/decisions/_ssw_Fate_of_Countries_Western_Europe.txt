@@ -396,6 +396,7 @@ fate_of_countries_category_western_europe = {
 				NOT = {
 					is_core_of = ROOT
 					is_claimed_by = ROOT
+					has_state_flag = maybe_core_HUN
 				}
 			}
 			AUS = { capital_scope = { is_fully_controlled_by = ROOT } }
@@ -442,6 +443,7 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = FR1
 				is_in_faction_with = NFR
 				original_tag = GR0
+				original_tag = GR1
 				original_tag = LTV
 				original_tag = FR1
 				original_tag = NFR
@@ -641,5 +643,145 @@ fate_of_countries_category_western_europe = {
 			set_country_flag = continue_to_occupy_liechtenstein
 		}
 		ai_will_do = { factor = 100 }
+	}
+	fate_of_britain = { #イギリスの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = ENG }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = ENG
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					has_state_flag = maybe_core_NIR
+				}
+			}
+			ENG = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_britain }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = ENG
+				ENG = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_britain }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.7 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_britain
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_eupen = { #オイペンの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			938 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				BEL = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = WLL
+				is_in_faction_with = LTV
+				is_in_faction_with = BEL
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = WLL
+				original_tag = BEL
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.9 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_wallonia_luxembourg = { #ワロニア＝リュクサンブールの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			1033 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				BEL = { is_subject_of = ROOT }
+				LUX = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = WLL
+				is_in_faction_with = LTV
+				is_in_faction_with = BEL
+				is_in_faction_with = LUX
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = WLL
+				original_tag = BEL
+				original_tag = LUX
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.10 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_burgenland = { #ブルゲンラントの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			981 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				HUN = { is_subject_of = ROOT }
+				AUS = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = HUN
+				is_in_faction_with = AUS
+				is_in_faction_with = LTV
+				original_tag = HUN
+				original_tag = AUS
+				original_tag = LTV
+				GR0 = {
+					is_subject_of = ROOT
+					owns_state = 4
+				}
+				AND = {
+					is_in_faction_with = GR0
+					GR0 = { owns_state = 4 }
+				}
+				AND = {
+					original_tag = GR0
+					GR0 = { owns_state = 4 }
+				}
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.11 } }
+		ai_will_do = { factor = 200 }
 	}
 }
