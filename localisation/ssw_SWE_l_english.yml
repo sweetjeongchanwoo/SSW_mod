@@ -1,0 +1,9 @@
+l_english:
+ #国民精神
+ SWE_IND_IND:0 "工業への注力"
+ SWE_IND_FAR:0 "農業の工業化"
+ SWE_ECO_SOC:0 "社会民主経済"
+ SWE_IND_MET:0 "スウェーデンの鉄鋼"
+ SWE_IND_ALM:0 "サンドビーケン合金工場"
+ SWE_LaW_FIR:0 "土地と水利Ⅰ"
+ SWE_LaW_SEC:0 "土地と水利Ⅱ"
