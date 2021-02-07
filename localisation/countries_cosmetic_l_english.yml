@@ -156,6 +156,14 @@
  SAU_republic_DEF:0 "アラビア共和国"
  SAU_republic_ADJ:0 "アラビア"
  
+ ENG_republic:0 "イギリス共和国"
+ ENG_republic_DEF:0 "イギリス共和国"
+ ENG_republic_ADJ:0 "イギリス"
+ 
+ ENG_britain_scotland:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_DEF:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_ADJ:0 "イギリス"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
