@@ -10,4 +10,15 @@ ideas = {
 			}
 		}
 	}
+	minister_of_army = {
+		NEA_guglielmo_nasi = {
+			picture = guglielmo_nasi
+			allowed = {
+				original_tag = NEA
+			}
+			traits = { 
+				armaments_organizer
+			}
+		}
+	}
 }
