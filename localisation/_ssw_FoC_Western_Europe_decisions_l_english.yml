@@ -1,11 +1,15 @@
 ﻿l_english:
 ##### フラグ #####
  had_yalta_conference:0 "ヤルタ会談が開催された。 "
+ danubian_war_end:0 "ドナウ戦争が終結！ "
  no_effect_tt:0 "一切の効果が期待されないだろう… "
  OCCUPY_TT:0 "占領を続けよう。 "
  NEXT_PAGE_TT:0 "次のページへ "
  BACK_TT:0 "前のページへ "
 ##### ディシジョン #####
+ SSW_foreign_support:0 "領土の裁定"
+ return_cores_to_ally:0 "[From.GetAdjective]領の返還"
+ return_cores_to_subject:0 "[From.GetAdjective]領の返還"
  fate_of_countries_category_western_europe:0 "占領地の運命"
  fate_of_portugal:0 "@POR ポルトガルの運命"
  fate_of_germany:0 "@GER ドイツの運命"
@@ -29,6 +33,15 @@
  fate_of_wallonia_luxembourg:0 "ワロニア＝リュクサンブールの運命"
  fate_of_burgenland:0 "ブルゲンラントの運命"
 ##### イベント #####
+ ssw_generic_political.0.title:0 "[From.From.GetAdjective]の領土"
+ ssw_generic_political.0.desc:0 "[Root.GetAdjective]政府は現在、 我々が占領している[return_to.GetAdjective]領（正当な権利を主張していない領土）をどうするか議論している。 領土を返還した方がいいのだろうか？ "
+ ssw_generic_political.0.a:0 "ああ、 全て返そう "
+ ssw_generic_political.0.b:0 "ああ、 領土を返そう… 重要な州以外はな "
+ ssw_generic_political.0.c:0 "彼らの中核州のみ返還する "
+ ssw_generic_political.0.d:0 "全部そのまま！ "
+ ssw_generic_political.1.title:0 "[From.GetNameDefCap]が[Root.GetAdjective]領を返還"
+ ssw_generic_political.1.desc:0 "我らが同盟国[From.GetNameDefCap]は我々固有の領土を返還した！ "
+ ssw_generic_political.1.a:0 "素晴らしい！ "
  ssw_foc_events.0.title:0 "ポルトガルの運命"
  ssw_foc_events.0.desc:0 "ポルトガルの領土は今や完全に我々の手中にある。 これらの処遇は一体どうするべきだろうか？ "
  ssw_foc_events.0.a:0 "ポルトガルは忠実な傀儡だ！ "

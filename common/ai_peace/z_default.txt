@@ -17,9 +17,9 @@ default_peace = {
 	puppet_all = { factor = 0 }
 	puppet_state = { factor = 0 }
 	take_states = {
-		base = 0
+		base = 50
 		modifier = {
-			add = 500000
+			add = 999950
 			FROM = {
 				OR = {
 					is_core_of = ROOT

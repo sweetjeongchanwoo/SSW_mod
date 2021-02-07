@@ -1,15 +1,11 @@
 add_namespace = Danubian_war
-
 country_event = { #先祖伝来の地
 	id = Danubian_war.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.1"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.1" }
 	title = Danubian_war.1.t
-	desc = Danubian_war.1.desc
+	desc = Danubian_war.1.d
 	picture = GFX_Ancestral_land
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #利害は一致する、セルビアと協力しよう
 		name = Danubian_war.1.a
 		ai_chance = { base = 99 }
@@ -23,27 +19,22 @@ country_event = { #先祖伝来の地
 	option = { #彼らとは相容れない
 		name = Danubian_war.1.b
 		ai_chance = { base = 1 }
-		
 	}
 }
-
 country_event = { #ニシュ会談
 	id = Danubian_war.2
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.2"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.2" }
 	title = Danubian_war.2.t
-	desc = Danubian_war.2.desc
+	desc = Danubian_war.2.d
 	picture = GFX_Nisch_talks
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #ルーマニアと協力しよう
 		name = Danubian_war.2.a
 		ai_chance = { base = 99 }
 		ROM = {
 			create_faction = The_New_Balkan_Order
+			add_to_faction = SER
 		}
-		ROM = { add_to_faction = SER }
 		hidden_effect = {
 			HUN = {
 				country_event = {
@@ -51,13 +42,9 @@ country_event = { #ニシュ会談
 					days = 40
 				}
 			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = {
-					id = Danubian_war.15
-				}
+			news_event = {
+				id = Danubian_war.15
+				days = 1
 			}
 		}
 	}
@@ -66,17 +53,13 @@ country_event = { #ニシュ会談
 		ai_chance = { base = 1 }
 	}
 }
-
 country_event = { #ルーマニアとセルビアが国境付近で軍事演習
 	id = Danubian_war.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.3"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.3" }
 	title = Danubian_war.3.t
-	desc = Danubian_war.3.desc
+	desc = Danubian_war.3.d
 	picture = GFX_Romanian_troops_cross_the_border
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #小さなねずみの集まりだ
 		name = Danubian_war.3.a
 		ai_chance = { base = 1 }
@@ -90,45 +73,27 @@ country_event = { #ルーマニアとセルビアが国境付近で軍事演習
 		}
 	}
 }
-
 country_event = { #バルカン新秩序がハンガリーへ侵攻
 	id = Danubian_war.4
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.4"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.4" }
 	title = Danubian_war.4.t
-	desc = Danubian_war.4.desc
+	desc = Danubian_war.4.d
 	picture = GFX_Troops_invade_Hungarian_territory
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.4.a
 		ai_chance = { base = 1 }
-
 		SER = {
-			set_major = yes
-			create_wargoal  = {
-			target = HUN
-			type = annex_everything
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
 			}
 		}
 		ROM = {
-			set_major = yes
-			create_wargoal  = {
-			target = HUN
-			type = annex_everything
+			declare_war_on = {
+				target = HUN
+				type = annex_everything
 			}
-		}
-		HUN = {
-			set_major = yes
-		}
-
-		CRO = {
-			set_major = yes
-		}
-
-		BUL = {
-			set_major = yes
 		}
 		hidden_effect = {
 			ROM = {
@@ -136,40 +101,35 @@ country_event = { #バルカン新秩序がハンガリーへ侵攻
 					id = Danubian_war.19
 					days = 5
 				}
+				set_major = yes
 			}
 			HUN = {
-				country_event = {
-					id = Danubian_war.18
-				}
+				country_event = { id = Danubian_war.18 }
+				set_major = yes
 			}
+			CRO = { set_major = yes }
+			BUL = { set_major = yes }
+			SER = { set_major = yes }
 		}
 	}
 }
-
 country_event = { #ハンガリーが支援を要求
 	id = Danubian_war.5
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.5"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.5" }
 	title = Danubian_war.5.t
-	desc = Danubian_war.5.desc
+	desc = Danubian_war.5.d
 	picture = GFX_Hungary_asks_for_help
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #野望を実現するための好機だ
 		name = Danubian_war.5.a
 		ai_chance = { base = 99 }
-		Root = {
-			declare_war_on = {
-				target = SER
-				type = annex_everything
-			}
+		declare_war_on = {
+			target = SER
+			type = annex_everything
 		}
-		Root = {
-			declare_war_on = {
-				target = ROM
-				type = annex_everything
-			}
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
 		}
 		hidden_effect = {
 			HUN = {
@@ -183,34 +143,23 @@ country_event = { #ハンガリーが支援を要求
 	option = { #我々には何もできない
 		name = Danubian_war.5.b
 		ai_chance = { base = 1 }
-		
 	}
 }
-
 country_event = { #小枢軸の形成
 	id = Danubian_war.6
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event Danubian_war.6"
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = {
-					id = Danubian_war.7
-					days = 2
-				}
-			}
-			
-		}	
-	}
 	title = Danubian_war.6.t
-	desc = Danubian_war.6.desc
+	desc = Danubian_war.6.d
 	picture = GFX_Little_Axis
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = Danubian_war.7
+				days = 2
+			}
+			log = "[GetDateText]: [Root.GetName]: event Danubian_war.6"
+		}
+	}
 	option = { #バルカンの覇権は我々にあり
 		name = Danubian_war.6.a
 		ai_chance = { base = 1 }
@@ -221,125 +170,86 @@ country_event = { #小枢軸の形成
 		}
 	}
 }
-
 news_event = { #ドナウ戦争
 	id = Danubian_war.7
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.7"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.7" }
 	title = Danubian_war.7.t
 	desc = Danubian_war.7.desc
 	picture = GFX_news_DanubeWar
-	
 	major = yes
-
 	is_triggered_only = yes
-	fire_only_once = yes
-
-	trigger = {
-		has_global_flag = Danubian_war
-	}
-	
 	option = { #バルカンの火薬庫か？
 		name = Danubian_war.7.a
 		ai_chance = { base = 1 }
-		
 	}
 }
-
 country_event = { #セルビアが降伏
 	id = Danubian_war.8
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.8"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.8" }
 	title = Danubian_war.8.t
-	desc = Danubian_war.8.desc
+	desc = Danubian_war.8.d
 	#picture = 
-	
 	trigger = {
 		has_global_flag = Danubian_war
-		SER = {
-			has_capitulated = yes
-		}
-		
+		SER = { has_capitulated = yes }
 		OR = {
 			original_tag = ROM
-			BUL = {
+			AND = {
 				has_war_with = ROM
+				original_tag = BUL
 			}
-			HUN = {
+			AND = {
 				has_war_with = ROM
+				original_tag = CRO
 			}
-			CRO = {
+			AND = {
 				has_war_with = ROM
+				original_tag = HUN
 			}
 		}
-		
 	}
-
-	is_triggered_only = yes
+	mean_time_to_happen = { days = 2 }
 	fire_only_once = yes
-	
 	option = { #前進せよ
 		name = Danubian_war.8.a
 		ai_chance = { base = 1 }
-		trigger = {
-			NOT = { 
-				original_tag = ROM
-			}
-		}
-		
+		trigger = { NOT = { original_tag = ROM } }
 	}
 	option = { #なんてことだ
 		name = Danubian_war.8.b
 		ai_chance = { base = 1 }
-		trigger = {
-			original_tag = ROM
-		}
+		trigger = { original_tag = ROM }
 	}
 }
-
 country_event = { #ルーマニアが降伏
 	id = Danubian_war.9
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.9"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.9" }
 	title = Danubian_war.9.t
-	desc = Danubian_war.9.desc
+	desc = Danubian_war.9.d
 	#picture = 
-
 	trigger = {
 		has_global_flag = Danubian_war
-		ROM = {
-			has_capitulated = yes
-		}
+		ROM = { has_capitulated = yes }
 		OR = {
 			original_tag = SER
 			original_tag = BUL
 			original_tag = HUN
 			original_tag = CRO
 		}
-		
 	}
-	
-	is_triggered_only = yes
+	mean_time_to_happen = { days = 2 }
 	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.9.a
 		ai_chance = { base = 1 }
-		trigger = {
-			NOT = { 
-				original_tag = SER
-			}
-		}
-
-		
+		trigger = { NOT = { original_tag = SER } }
 	}
 	option = { #
 		name = Danubian_war.9.b
 		ai_chance = { base = 1 }
-		trigger = {
-			original_tag = SER
-		}
-		
+		trigger = { original_tag = SER }
 	}
 }
-
 country_event = { #
 	id = Danubian_war.10
 	immediate = {
@@ -351,363 +261,308 @@ country_event = { #
 					days = 60
 				}
 			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = {
-					id = Danubian_war.17
-				}
-			}
+			news_event = { id = Danubian_war.17 }
 		}
 	}
 	title = Danubian_war.10.t
-	desc = Danubian_war.10.desc
+	desc = Danubian_war.10.d
 	picture = GFX_End_of_Danube_War
 	trigger = {
 		has_global_flag = Danubian_war
 		original_tag = HUN
-		AND = {
-			SER = {
-				exists = no
+		OR = {
+			NOT = { country_exists = ROM }
+			ROM = { is_subject = yes }
+			ROM = { is_subject_of = HUN }
+			any_other_country = {
+				original_tag = ROM
+				has_government = authority_despotism
+				has_war = no
 			}
-			ROM = {
-				exists = no
+		}
+		OR = {
+			NOT = { country_exists = SER }
+			SER = { is_subject = yes }
+			SER = { is_subject_of = HUN }
+			any_other_country = {
+				original_tag = SER
+				has_government = authority_despotism
+				has_war = no
 			}
 		}
 	}
-	
-	is_triggered_only = no
+	mean_time_to_happen = { days = 2 }
 	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.10.a
 		ai_chance = { base = 1 }
 		hidden_effect = {
-			HUN = {
-				country_event = {
-					id = Danubian_war.11
-				}
-			}
-			CRO = {
-				country_event = {
-					id = Danubian_war.12
-				}
-			}
-			BUL = {
-				country_event = {
-					id = Danubian_war.13
-				}
-			}
+			HUN = { country_event = { id = Danubian_war.11 } }
+			CRO = { country_event = { id = Danubian_war.12 } }
+			BUL = { country_event = { id = Danubian_war.13 } }
 		}
 	}
 }
-
 country_event = { #
 	id = Danubian_war.11
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.11"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.11" }
 	title = Danubian_war.11.t
-	desc = Danubian_war.11.desc
+	desc = Danubian_war.11.d
 	picture = GFX_Danubian_post_war_reign
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.11.a
 		ai_chance = { base = 1 }
 		hidden_effect = {
 			HUN = {
-				set_state_owner = 82
-				set_state_owner = 198
-				set_state_owner = 764
-				set_state_owner = 192
-				set_state_owner = 83
-				set_state_owner = 84
-				set_state_owner = 79
-				set_state_owner = 766
-				set_state_owner = 78
-				set_state_owner = 80
+				transfer_state = 82
+				transfer_state = 198
+				transfer_state = 764
+				transfer_state = 192
+				transfer_state = 83
+				transfer_state = 84
+				transfer_state = 79
+				transfer_state = 766
+				transfer_state = 78
+				transfer_state = 80
 			}
 		}
 	}
 }
-
 country_event = { #
 	id = Danubian_war.12
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.12"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.12" }
 	title = Danubian_war.12.t
-	desc = Danubian_war.12.desc
+	desc = Danubian_war.12.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.12.a
 		ai_chance = { base = 1 }
 		CRO = {
-				set_state_owner = 105
-				set_state_owner = 802
-				set_state_owner = 108
-				set_state_owner = 107
-				set_state_owner = 976
-				set_state_owner = 972
-				set_state_owner = 971
-				set_state_owner = 108
+			transfer_state = 105
+			transfer_state = 802
+			transfer_state = 108
+			transfer_state = 107
+			transfer_state = 976
+			transfer_state = 977
+			transfer_state = 972
+			transfer_state = 971
+			transfer_state = 108
 		}
 	}
 }
-
 country_event = { #
 	id = Danubian_war.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.13"}
 	title = Danubian_war.13.t
-	desc = Danubian_war.13.desc
+	desc = Danubian_war.13.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.13.a
 		ai_chance = { base = 1 }
 		BUL = {
-				set_state_owner = 81
-				set_state_owner = 46
-				set_state_owner = 973
-				set_state_owner = 975
+			transfer_state = 81
+			transfer_state = 46
+			transfer_state = 973
+			transfer_state = 975
 		}
 	}
 }
 
 country_event = { #
 	id = Danubian_war.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.14"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.14" }
 	title = Danubian_war.14.t
-	desc = Danubian_war.14.desc
+	desc = Danubian_war.14.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.14.a
 		ai_chance = { base = 1 }
 		DET = {
 			add_state_core = 766
-			add_state_claim = 78
 			add_state_core = 192
 			add_state_core = 198
-
+			add_state_claim = 78
 			transfer_state = 766
 			transfer_state = 78
 			transfer_state = 192
 			transfer_state = 198
 		}
-
 		ROM = {
 			transfer_state = 81
 			transfer_state = 46
 			transfer_state = 79
 			transfer_state = 80
 		}
-
 		BUL = {
 			transfer_state = 973
 			transfer_state = 975
 		}
-
 		SER = {
 			transfer_state = 802
 			transfer_state = 108
 			transfer_state = 107
 		}
-
-		MNT = {
-			transfer_state = 105
-		}
-
+		MNT = { transfer_state = 105 }
 		CRO = {
 			transfer_state = 971
 			transfer_state = 976
 			transfer_state = 972
 			transfer_state = 977
 		}
-
 		HUN = {
 			transfer_state = 83
 			transfer_state = 82
 			transfer_state = 84
 		}
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				news_event = {
-				id = Danubian_war.20
-				}
-			}
-			
+			news_event = { id = Danubian_war.20 }
+			set_global_flag = danubian_war_end
 		}
 	}
 }
-
 news_event = { #
 	id = Danubian_war.15
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.15"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.15" }
 	title = Danubian_war.15.t
-	desc = Danubian_war.15.desc
+	desc = Danubian_war.15.d
 	#picture = 
-
 	major = yes
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.15.a
 		ai_chance = { base = 1 }
 		trigger = {
 			NOT ={
-				OR = {
-					TAG = ROM
-					TAG = SER
-					TAG = HUN
-				}
+				TAG = ROM
+				TAG = SER
+				TAG = HUN
 			}
 		}
 	}
 	option = { #
 		name = Danubian_war.15.b
 		ai_chance = { base = 1 }
-		trigger = {
-			TAG = ROM
-		}
+		trigger = { TAG = ROM }
 	}
 	option = { #
 		name = Danubian_war.15.c
 		ai_chance = { base = 1 }
-		trigger = {
-			TAG = SER
-		}
+		trigger = { TAG = SER }
 	}
 	option = { #
 		name = Danubian_war.15.e
 		ai_chance = { base = 1 }
-		trigger = {
-			TAG = HUN
-		}
+		trigger = { TAG = HUN }
 	}
 }
-
 country_event = { #
 	id = Danubian_war.16
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.16"}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event Danubian_war.16"
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+		}
+	}
 	title = Danubian_war.16.t
-	desc = Danubian_war.16.desc
+	desc = Danubian_war.16.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.16.a
 		ai_chance = { base = 99 }
-		Root = {
-			declare_war_on = {
-				target = SER
-				type = annex_everything
-			}
+		declare_war_on = {
+			target = SER
+			type = annex_everything
 		}
-		Root = {
-			declare_war_on = {
-				target = ROM
-				type = annex_everything
-			}
-		}
-		hidden_effect = {
+		declare_war_on = {
+			target = ROM
+			type = annex_everything
 		}
 	}
 	option = { #
 		name = Danubian_war.16.b
 		ai_chance = { base = 1 }
-		
 	}
 }
-
 news_event = { #
 	id = Danubian_war.17
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.17"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.17" }
 	title = Danubian_war.17.t
-	desc = Danubian_war.17.desc
+	desc = Danubian_war.17.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.17.a
 		ai_chance = { base = 1 }
 		trigger = {
 			NOT = {
-				OR = {
-					tag = CRO
-					tag = HUN
-					tag = BLU
-				}	
+				tag = CRO
+				tag = HUN
+				tag = BLU
+				tag = SER
+				tag = ROM
 			}
 		}
-		
 	}
 	option = { #
 		name = Danubian_war.17.b
 		ai_chance = { base = 1 }
-		
+		trigger = {
+			OR = {
+				tag = CRO
+				tag = HUN
+				tag = BLU
+			}
+		}
+	}
+	option = { #
+		name = Danubian_war.17.c
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				tag = ROM
+				tag = SER
+			}
+		}
 	}
 }
-
 country_event = { #
 	id = Danubian_war.18
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.18"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.18" }
 	title = Danubian_war.18.t
-	desc = Danubian_war.18.desc
+	desc = Danubian_war.18.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.18.a
 		ai_chance = { base = 1 }
-		
 	}
 }
-
 country_event = { #
 	id = Danubian_war.19
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.19"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.19" }
 	title = Danubian_war.19.t
-	desc = Danubian_war.19.desc
+	desc = Danubian_war.19.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.19.a
 		ai_chance = { base = 1 }
-		ROM = {
-			declare_war_on = {
+		declare_war_on = {
 			target = HUN
 			type = annex_everything
-			}
 		}
 		SER = {
 			declare_war_on = {
-			target = HUN
-			type = annex_everything
+				target = HUN
+				type = annex_everything
 			}
 		}
 		hidden_effect = {
@@ -727,20 +582,793 @@ country_event = { #
 		}
 	}
 }
-
-country_event = { #
+news_event = { #
 	id = Danubian_war.20
-	immediate = {log = "[GetDateText]: [Root.GetName]: event Danubian_war.20"}
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.20" }
 	title = Danubian_war.20.t
-	desc = Danubian_war.20.desc
+	desc = Danubian_war.20.d
 	#picture = 
-	
 	is_triggered_only = yes
-	fire_only_once = yes
-	
 	option = { #
 		name = Danubian_war.20.a
 		ai_chance = { base = 1 }
-		
+	}
+}
+country_event = { #ブルガリアが降伏
+	id = Danubian_war.21
+	title = Danubian_war.21.title
+	desc = Danubian_war.21.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		BUL = { has_capitulated = yes }
+		OR = {
+			original_tag = CRO
+			original_tag = HUN
+			AND = {
+				has_war_with = BUL
+				original_tag = ROM
+			}
+			AND = {
+				has_war_with = BUL
+				original_tag = SER
+			}
+		}
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #前進せよ
+		name = Danubian_war.21.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = CRO
+				original_tag = HUN
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.21.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = CRO
+				original_tag = HUN
+			}
+		}
+	}
+}
+country_event = { #クロアチアが降伏
+	id = Danubian_war.22
+	title = Danubian_war.22.title
+	desc = Danubian_war.22.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		CRO = { has_capitulated = yes }
+		OR = {
+			original_tag = BUL
+			original_tag = HUN
+			AND = {
+				has_war_with = CRO
+				original_tag = ROM
+			}
+			AND = {
+				has_war_with = CRO
+				original_tag = SER
+			}
+		}
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #前進せよ
+		name = Danubian_war.22.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = BUL
+				original_tag = HUN
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.22.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = BUL
+				original_tag = HUN
+			}
+		}
+	}
+}
+country_event = { #ハンガリーが降伏
+	id = Danubian_war.23
+	title = Danubian_war.23.title
+	desc = Danubian_war.23.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		HUN = { has_capitulated = yes }
+		OR = {
+			original_tag = BUL
+			original_tag = CRO
+			AND = {
+				has_war_with = HUN
+				original_tag = ROM
+			}
+			AND = {
+				has_war_with = HUN
+				original_tag = SER
+			}
+		}
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #前進せよ
+		name = Danubian_war.23.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = BUL
+				original_tag = CRO
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.23.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = BUL
+				original_tag = CRO
+			}
+		}
+	}
+}
+country_event = { #
+	id = Danubian_war.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Danubian_war.10"
+		hidden_effect = {
+			country_event = { id = Danubian_war.28 days = 60 }
+			news_event = { id = Danubian_war.27 }
+		}
+	}
+	title = Danubian_war.24.title
+	desc = Danubian_war.24.desc
+	picture = GFX_End_of_Danube_War
+	trigger = {
+		has_global_flag = Danubian_war
+		original_tag = ROM
+		OR = {
+			NOT = { country_exists = BUL }
+			BUL = { is_subject = yes }
+			BUL = { is_subject_of = ROM }
+			any_other_country = {
+				original_tag = BUL
+				has_government = authority_despotism
+				has_war = no
+			}
+		}
+		OR = {
+			NOT = { country_exists = CRO }
+			CRO = { is_subject = yes }
+			CRO = { is_subject_of = ROM }
+			any_other_country = {
+				original_tag = CRO
+				has_government = authority_despotism
+				has_war = no
+			}
+		}
+		OR = {
+			NOT = { country_exists = HUN }
+			HUN = { is_subject = yes }
+			HUN = { is_subject_of = ROM }
+			any_other_country = {
+				original_tag = HUN
+				has_government = authority_despotism
+				has_war = no
+			}
+		}
+	}
+	is_triggered_only = no
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #
+		name = Danubian_war.24.a
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			ROM = { country_event = { id = Danubian_war.25 } }
+			SER = { country_event = { id = Danubian_war.26 } }
+		}
+	}
+}
+country_event = { #
+	id = Danubian_war.25
+	title = Danubian_war.25.title
+	desc = Danubian_war.25.desc
+	picture = GFX_Danubian_post_war_reign
+	is_triggered_only = yes
+	option = { #
+		name = Danubian_war.25.a
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			ROM = {
+				transfer_state = 48
+				transfer_state = 76
+				transfer_state = 77
+				transfer_state = 154
+				transfer_state = 211
+				transfer_state = 212
+				transfer_state = 801
+			}
+			SLO = {
+				transfer_state = 73
+				transfer_state = 664
+			}
+		}
+	}
+}
+country_event = { #
+	id = Danubian_war.26
+	title = Danubian_war.26.title
+	desc = Danubian_war.26.desc
+	picture = GFX_Danubian_post_war_reign
+	is_triggered_only = yes
+	option = { #
+		name = Danubian_war.26.a
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			SER = {
+				transfer_state = 43
+				transfer_state = 45
+				transfer_state = 104
+				transfer_state = 106
+				transfer_state = 109
+				transfer_state = 155
+				transfer_state = 803
+				transfer_state = 804
+				transfer_state = 940
+				transfer_state = 1138
+			}
+		}
+	}
+}
+news_event = { #
+	id = Danubian_war.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.27" }
+	title = Danubian_war.27.title
+	desc = Danubian_war.27.desc
+	#picture = 
+	is_triggered_only = yes
+	option = { #
+		name = Danubian_war.27.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				tag = CRO
+				tag = HUN
+				tag = BLU
+				tag = SER
+				tag = ROM
+			}
+		}
+	}
+	option = { #
+		name = Danubian_war.27.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				tag = CRO
+				tag = HUN
+				tag = BLU
+			}
+		}
+	}
+	option = { #
+		name = Danubian_war.27.c
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				tag = ROM
+				tag = SER
+			}
+		}
+	}
+}
+country_event = { #
+	id = Danubian_war.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.28" }
+	title = Danubian_war.28.title
+	desc = Danubian_war.28.desc
+	#picture = 
+	is_triggered_only = yes
+	option = { #
+		name = Danubian_war.28.a
+		ai_chance = { base = 1 }
+		BUL = {
+			transfer_state = 48
+			transfer_state = 212
+			transfer_state = 801
+		}
+		HUN = {
+			transfer_state = 43
+			transfer_state = 155
+			transfer_state = 1138
+		}
+		hidden_effect = {
+			news_event = { id = Danubian_war.20 }
+			set_global_flag = danubian_war_end
+			SLO = {
+				add_state_core = 73
+				add_state_core = 664
+				transfer_state = 73
+				transfer_state = 664
+			}
+			ROM = {
+				add_state_core = 76
+				add_state_core = 77
+				add_state_core = 154
+				add_state_core = 211
+				transfer_state = 76
+				transfer_state = 77
+				transfer_state = 154
+				transfer_state = 211
+			}
+			SER = {
+				add_state_claim = 45
+				add_state_claim = 104
+				add_state_claim = 106
+				add_state_claim = 109
+				add_state_claim = 803
+				add_state_claim = 804
+				add_state_claim = 940
+				transfer_state = 45
+				transfer_state = 104
+				transfer_state = 106
+				transfer_state = 109
+				transfer_state = 803
+				transfer_state = 804
+				transfer_state = 940
+			}
+		}
+	}
+}
+country_event = { #ハンガリーが降伏直前に…
+	id = Danubian_war.29
+	title = Danubian_war.29.title
+	desc = Danubian_war.29.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		NOT = { has_global_flag = danubian_war_end }
+		original_tag = HUN
+		surrender_progress > 0.6
+		OR = {
+			has_war_with = ROM
+			has_war_with = SER
+		}
+		43 = { NOT = { is_fully_controlled_by = ROOT } }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #降伏する
+		name = Danubian_war.29.a
+		ai_chance = { base = 80 }
+		set_country_flag = occupied_territories_formed_by
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = BUL
+				is_in_faction_with = CRO
+			}
+			BUL = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = BUL
+				NOT = { is_in_faction_with = CRO }
+			}
+			BUL = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = CRO
+				NOT = { is_in_faction_with = BUL }
+			}
+			CRO = { set_faction_leader = yes }
+		}
+		random_other_country = {
+			limit = {
+				OR = {
+					original_tag = ROM
+					original_tag = SER
+				}
+				controls_state = 43
+			}
+			set_autonomy = {
+				target = HUN
+				autonomous_state = occupied_territories
+			}
+		}
+		hidden_effect = { news_event = { id = Danubian_war.34 } }
+	}
+	option = { #認めん！
+		name = Danubian_war.29.b
+		ai_chance = { base = 20 }
+		start_civil_war = {
+			ideology = authority_despotism
+			size = 0.2
+		}
+	}
+}
+news_event = { #セルビアが降伏(トリガー)
+	id = Danubian_war.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.8" }
+	title = Danubian_war.8.t
+	desc = Danubian_war.8.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #前進せよ
+		name = Danubian_war.8.a
+		ai_chance = { base = 1 }
+		trigger = { NOT = { original_tag = ROM } }
+	}
+	option = { #なんてことだ
+		name = Danubian_war.8.b
+		ai_chance = { base = 1 }
+		trigger = { original_tag = ROM }
+	}
+}
+news_event = { #ルーマニアが降伏(トリガー)
+	id = Danubian_war.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Danubian_war.9" }
+	title = Danubian_war.9.t
+	desc = Danubian_war.9.d
+	#picture = 
+	is_triggered_only = yes
+	option = { #
+		name = Danubian_war.9.a
+		ai_chance = { base = 1 }
+		trigger = { NOT = { original_tag = SER } }
+	}
+	option = { #
+		name = Danubian_war.9.b
+		ai_chance = { base = 1 }
+		trigger = { original_tag = SER }
+	}
+}
+news_event = { #ブルガリアが降伏(トリガー)
+	id = Danubian_war.32
+	title = Danubian_war.21.title
+	desc = Danubian_war.21.desc
+	#picture = 
+	is_triggered_only = yes
+	option = { #前進せよ
+		name = Danubian_war.21.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = CRO
+				original_tag = HUN
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.21.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = CRO
+				original_tag = HUN
+			}
+		}
+	}
+}
+news_event = { #クロアチアが降伏(トリガー)
+	id = Danubian_war.33
+	title = Danubian_war.22.title
+	desc = Danubian_war.22.desc
+	#picture = 
+	is_triggered_only = yes
+	option = { #前進せよ
+		name = Danubian_war.22.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = BUL
+				original_tag = HUN
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.22.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = BUL
+				original_tag = HUN
+			}
+		}
+	}
+}
+news_event = { #ハンガリーが降伏(トリガー)
+	id = Danubian_war.34
+	title = Danubian_war.23.title
+	desc = Danubian_war.23.desc
+	#picture = 
+	is_triggered_only = yes
+	option = { #前進せよ
+		name = Danubian_war.23.a
+		ai_chance = { base = 1 }
+		trigger = {
+			NOT = {
+				original_tag = BUL
+				original_tag = CRO
+			}
+		}
+	}
+	option = { #なんてことだ
+		name = Danubian_war.23.b
+		ai_chance = { base = 1 }
+		trigger = {
+			OR = {
+				original_tag = BUL
+				original_tag = CRO
+			}
+		}
+	}
+}
+country_event = { #クロアチアが降伏直前に…
+	id = Danubian_war.35
+	title = Danubian_war.29.title
+	desc = Danubian_war.29.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		NOT = { has_global_flag = danubian_war_end }
+		original_tag = CRO
+		surrender_progress > 0.6
+		OR = {
+			has_war_with = ROM
+			has_war_with = SER
+		}
+		109 = { NOT = { is_fully_controlled_by = ROOT } }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #降伏する
+		name = Danubian_war.29.a
+		ai_chance = { base = 80 }
+		set_country_flag = occupied_territories_formed_by
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = BUL
+				is_in_faction_with = HUN
+			}
+			HUN = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = BUL
+				NOT = { is_in_faction_with = HUN }
+			}
+			BUL = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = HUN
+				NOT = { is_in_faction_with = BUL }
+			}
+			HUN = { set_faction_leader = yes }
+		}
+		random_other_country = {
+			limit = {
+				OR = {
+					original_tag = ROM
+					original_tag = SER
+				}
+				controls_state = 109
+			}
+			set_autonomy = {
+				target = CRO
+				autonomous_state = occupied_territories
+			}
+		}
+		hidden_effect = { news_event = { id = Danubian_war.33 } }
+	}
+	option = { #認めん！
+		name = Danubian_war.29.b
+		ai_chance = { base = 20 }
+		start_civil_war = {
+			ideology = authority_despotism
+			size = 0.2
+		}
+	}
+}
+country_event = { #ブルガリアが降伏直前に…
+	id = Danubian_war.35
+	title = Danubian_war.29.title
+	desc = Danubian_war.29.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		NOT = { has_global_flag = danubian_war_end }
+		original_tag = BUL
+		surrender_progress > 0.6
+		OR = {
+			has_war_with = ROM
+			has_war_with = SER
+		}
+		48 = { NOT = { is_fully_controlled_by = ROOT } }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #降伏する
+		name = Danubian_war.29.a
+		ai_chance = { base = 80 }
+		set_country_flag = occupied_territories_formed_by
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = CRO
+				is_in_faction_with = HUN
+			}
+			HUN = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = CRO
+				NOT = { is_in_faction_with = HUN }
+			}
+			CRO = { set_faction_leader = yes }
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = HUN
+				NOT = { is_in_faction_with = CRO }
+			}
+			HUN = { set_faction_leader = yes }
+		}
+		random_other_country = {
+			limit = {
+				OR = {
+					original_tag = ROM
+					original_tag = SER
+				}
+				controls_state = 48
+			}
+			set_autonomy = {
+				target = BUL
+				autonomous_state = occupied_territories
+			}
+		}
+		hidden_effect = { news_event = { id = Danubian_war.32 } }
+	}
+	option = { #認めん！
+		name = Danubian_war.29.b
+		ai_chance = { base = 20 }
+		start_civil_war = {
+			ideology = authority_despotism
+			size = 0.2
+		}
+	}
+}
+country_event = { #ルーマニアが降伏直前に…
+	id = Danubian_war.36
+	title = Danubian_war.29.title
+	desc = Danubian_war.29.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		NOT = { has_global_flag = danubian_war_end }
+		original_tag = ROM
+		surrender_progress > 0.6
+		OR = {
+			has_war_with = BUL
+			has_war_with = CRO
+			has_war_with = HUN
+		}
+		46 = { NOT = { is_fully_controlled_by = ROOT } }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #降伏する
+		name = Danubian_war.29.a
+		ai_chance = { base = 80 }
+		set_country_flag = occupied_territories_formed_by
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = SER
+			}
+			SER = { set_faction_leader = yes }
+		}
+		random_other_country = {
+			limit = {
+				OR = {
+					original_tag = BUL
+					original_tag = CRO
+					original_tag = HUN
+				}
+				controls_state = 46
+			}
+			set_autonomy = {
+				target = ROM
+				autonomous_state = occupied_territories
+			}
+		}
+		hidden_effect = { news_event = { id = Danubian_war.31 } }
+	}
+	option = { #認めん！
+		name = Danubian_war.29.b
+		ai_chance = { base = 20 }
+		start_civil_war = {
+			ideology = authority_despotism
+			size = 0.2
+		}
+	}
+}
+country_event = { #セルビアが降伏直前に…
+	id = Danubian_war.37
+	title = Danubian_war.29.title
+	desc = Danubian_war.29.desc
+	#picture = 
+	trigger = {
+		has_global_flag = Danubian_war
+		NOT = { has_global_flag = danubian_war_end }
+		original_tag = SER
+		surrender_progress > 0.6
+		OR = {
+			has_war_with = BUL
+			has_war_with = CRO
+			has_war_with = HUN
+		}
+		107 = { NOT = { is_fully_controlled_by = ROOT } }
+	}
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	option = { #降伏する
+		name = Danubian_war.29.a
+		ai_chance = { base = 80 }
+		set_country_flag = occupied_territories_formed_by
+		if = {
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = ROM
+			}
+			ROM = { set_faction_leader = yes }
+		}
+		random_other_country = {
+			limit = {
+				OR = {
+					original_tag = BUL
+					original_tag = CRO
+					original_tag = HUN
+				}
+				controls_state = 107
+			}
+			set_autonomy = {
+				target = SER
+				autonomous_state = occupied_territories
+			}
+		}
+		hidden_effect = { news_event = { id = Danubian_war.30 } }
+	}
+	option = { #認めん！
+		name = Danubian_war.29.b
+		ai_chance = { base = 20 }
+		start_civil_war = {
+			ideology = authority_despotism
+			size = 0.2
+		}
 	}
 }

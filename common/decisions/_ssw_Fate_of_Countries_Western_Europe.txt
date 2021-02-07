@@ -18,9 +18,7 @@ fate_of_countries_category_western_europe = {
 				NOT = { is_subject_of = ROOT }
 			}
 		}
-		complete_effect = {
-			country_event = { id = ssw_foc_events.0 }
-		}
+		complete_effect = { country_event = { id = ssw_foc_events.0 } }
 		ai_will_do = { factor = 200 }
 	}
 	fate_of_germany = { #ƒhƒCƒc‚Ì‰^–½

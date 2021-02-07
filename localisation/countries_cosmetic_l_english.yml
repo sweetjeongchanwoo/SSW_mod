@@ -222,3 +222,7 @@
  GER_rhine_republic:0 "ライン共和国"
  GER_rhine_republic_DEF:0 "ライン共和国"
  GER_rhine_republic_ADJ:0 "ラインラント"
+### 占領地 ###
+ COUNTRY_occupied_territories:0 "$OVERLORDADJ$領$NONIDEOLOGY$占領地域"
+ COUNTRY_occupied_territories_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$占領地域"
+ COUNTRY_occupied_territories_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$"

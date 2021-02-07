@@ -1,0 +1,4 @@
+SPR_policy = {
+	allowed = { always = yes }
+	visible = { always = yes }
+}
