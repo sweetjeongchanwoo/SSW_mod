@@ -144,9 +144,9 @@ set_variable = { KOR_collaboration = 46.01 }
 set_variable = { KOR_literacy = 17.91 }
 
 add_ideas = {
-	service_by_requirement
+	volunteer_only
 	export_focus
-	partial_economic_mobilisation
+	civilian_economy
 	
 	KOR_colonial_government
 	KOR_rule_of_ethnic_extermination
@@ -185,7 +185,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/KOR/Portrait_Kishi_Nobusuke.tga"
 	expire = "1970.1.1"
-	ideology = authority_despotism_ideology
+	ideology = military_junta_ideology
 	traits = {
 		Specters_of_Showa
 	}

@@ -105,6 +105,35 @@ country_event = { #ドイツの運命
 				GR0 = { transfer_state = PREV }
 				add_core_of = GR0
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = GER
+						is_core_of = HLH
+						is_core_of = HGR
+						is_core_of = LTV
+						is_core_of = GR0
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+						has_state_flag = maybe_core_SWI
+						has_state_flag = maybe_core_AUS
+						has_state_flag = maybe_core_HUN
+						has_state_flag = maybe_core_LUX
+						has_state_flag = maybe_core_FRA
+						has_state_flag = maybe_core_SLV
+						has_state_flag = maybe_core_LIT
+						has_state_flag = maybe_core_DEN
+						has_state_flag = maybe_core_POL
+						has_state_flag = maybe_core_CZE
+						has_state_flag = maybe_core_BEL
+						has_state_flag = maybe_core_LIE
+						has_state_flag = maybe_core_RHINE
+					}
+				}
+				add_claim_by = GR0
+			}
 			puppet = GR0
 		}
 		if = {
@@ -144,6 +173,35 @@ country_event = { #ドイツの運命
 				}
 				LTV = { transfer_state = PREV }
 				add_core_of = LTV
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = GER
+						is_core_of = HLH
+						is_core_of = HGR
+						is_core_of = LTV
+						is_core_of = GR0
+					}
+					NOT = {
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+						has_state_flag = maybe_core_SWI
+						has_state_flag = maybe_core_AUS
+						has_state_flag = maybe_core_HUN
+						has_state_flag = maybe_core_LUX
+						has_state_flag = maybe_core_FRA
+						has_state_flag = maybe_core_SLV
+						has_state_flag = maybe_core_LIT
+						has_state_flag = maybe_core_DEN
+						has_state_flag = maybe_core_POL
+						has_state_flag = maybe_core_CZE
+						has_state_flag = maybe_core_BEL
+						has_state_flag = maybe_core_LIE
+						has_state_flag = maybe_core_RHINE
+					}
+				}
+				add_claim_by = LTV
 			}
 			every_state = {
 				limit = { is_core_of = GER }

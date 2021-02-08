@@ -13,6 +13,7 @@
  british_commonwealth:0 "連邦王国"
  military_occupation_territory:0 "軍占領地域"
  condominium:0 "共同統治領"
+ occupied_territories:0 "占領地域"
  
  #"保護国"
  #"保護領"
@@ -20,4 +21,3 @@
  #"自治傀儡国"
  #"傀儡国"
  #"統合傀儡国"
- 

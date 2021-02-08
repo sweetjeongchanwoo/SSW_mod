@@ -13,6 +13,7 @@ state={
 		add_core_of = SLV
 		buildings = {
 			infrastructure = 2
+			dockyard = 2
 			6626 = {
 				naval_base = 5
 
@@ -25,6 +26,6 @@ state={
 	provinces={
 		599 6626 11595
 	}
-	manpower=1001159
+	manpower=1261159
 	buildings_max_level_factor=1.000
 }

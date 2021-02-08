@@ -14,7 +14,17 @@ on_actions = {
 			981 = { set_state_flag = maybe_core_AUS }
 			#ハンガリー
 			981 = { set_state_flag = maybe_core_HUN }
-			#\リヒテンシュタイン
+			#北アイルランド
+			119 = { set_state_flag = maybe_core_NIR }
+			#ウェールズ
+			122 = { set_state_flag = maybe_core_WLS }
+			#クロアチア
+			103 = { set_state_flag = maybe_core_CRO }
+			109 = { set_state_flag = maybe_core_CRO }
+			163 = { set_state_flag = maybe_core_CRO }
+			971 = { set_state_flag = maybe_core_CRO }
+			1137 = { set_state_flag = maybe_core_CRO }
+			#リヒテンシュタイン
 			963 = { set_state_flag = maybe_core_LIE }
 			#ルクセンブルク
 			8 = { set_state_flag = maybe_core_LUX }
@@ -73,6 +83,11 @@ on_actions = {
 			every_state = {
 				limit = { is_core_of = ITA }
 				set_state_flag = maybe_core_ITA_GAMESTART
+			}
+			#スコットランド(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = SCO }
+				set_state_flag = maybe_core_SCO_GAMESTART
 			}
 		}
 	}

@@ -100,6 +100,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		available = {
+			has_country_flag = FRA_Darnand_leader
 			NOT = {
 				has_idea = Unstable_country
 			}
@@ -141,6 +142,7 @@ focus_tree = {
 		x = 6
 		y = 2
 		available = {
+			has_country_flag = FRA_Laval_leader
 			NOT = {
 				has_ideas = Unstable_country
 			}
@@ -251,6 +253,7 @@ focus_tree = {
 		x = 11
 		y = 2
 		available = {
+			has_country_flag = FRA_Doriot_leader
 			NOT = {
 				has_ideas = Unstable_country
 			}
@@ -1997,7 +2000,7 @@ focus_tree = {
 		x = 22
 		y = 15
 		available = {
-			has_idea = Betrayed_ally
+			has_global_flag = Betrayed_ally
 			has_completed_focus = FRA_Collaboration_with_German_Special_Forces
 		}
 		completion_reward = {
