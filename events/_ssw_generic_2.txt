@@ -48,6 +48,7 @@ country_event = {
 						OR = {
 							any_neighbor_state = { is_owned_by = event_target:return_to }
 							is_coastal = yes
+							always = yes
 						}
 						OR = {
 							is_core_of = event_target:return_to
@@ -129,6 +130,7 @@ country_event = {
 					OR = {
 						any_neighbor_state = { is_owned_by = ROOT }
 						is_coastal = yes
+						always = yes
 					}
 					NOT = { has_state_flag = SSW_keeping_state }
 				}
@@ -141,10 +143,12 @@ country_event = {
 					OR = {
 						any_neighbor_state = { is_owned_by = ROOT }
 						is_coastal = yes
+						always = yes
 					}
 					NOT = { has_state_flag = SSW_keeping_state }
 				}
 				transfer_to_ROOT = yes
+				ROOT = { add_opinion_modifier = { target = FROM modifier = SSW_thanks } }
 			}
 		}
 	}

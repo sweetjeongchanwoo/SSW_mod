@@ -439,6 +439,7 @@ SSW_foreign_support = {
 				OR = {
 					any_neighbor_state = { is_owned_by = FROM }
 					is_coastal = yes
+					always = yes
 				}
 				NOT = { has_state_flag = SSW_keeping_state }
 			}
@@ -485,6 +486,7 @@ SSW_foreign_support = {
 				OR = {
 					any_neighbor_state = { is_owned_by = FROM }
 					is_coastal = yes
+					always = yes
 				}
 				NOT = { has_state_flag = SSW_keeping_state }
 			}
