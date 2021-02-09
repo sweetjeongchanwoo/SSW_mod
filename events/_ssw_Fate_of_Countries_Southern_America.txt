@@ -1,1 +1,30 @@
 add_namespace = ssw_foc_southern_america
+country_event = { #ÉRÉçÉìÉrÉAÇÃâ^ñΩ
+	id = ssw_foc_southern_america.0
+	title = ssw_foc_southern_america.0.title
+	desc = ssw_foc_southern_america.0.desc
+	picture = GFX_report_event_second_vienna_award_pact
+	is_triggered_only = yes
+	option = {
+		name = ssw_foc_southern_america.0.a
+		ai_chance = { base = 10 }
+		every_state = {
+			limit = {
+				is_core_of = COL
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			COL = { transfer_state = PREV }
+		}
+		puppet = COL
+	}
+	option = {
+		name = OCCUPY_TT
+		ai_chance = { base = 0 }
+		occupy_medium_country = yes
+		set_country_flag = continue_to_occupy_columbia
+	}
+}

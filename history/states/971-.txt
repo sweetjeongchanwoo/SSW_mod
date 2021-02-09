@@ -1,7 +1,7 @@
 state = {
 	id = 971
 	name = "STATE_971"
-	manpower = 39300
+	manpower = 119300
 	
 	state_category = rural
 	
@@ -10,7 +10,8 @@ state = {
 		add_core_of = SER
 		add_core_of = CRO
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
+			industrial_complex = 1
 		}
 	}
 	

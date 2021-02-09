@@ -132,6 +132,38 @@
  UTC_america_DEF:0 "アメリカ企業連合"
  UTC_america_ADJ:0 "アメリカ企業連合"
  
+ NEL_america:0 "アメリカ共和国"
+ NEL_america_DEF:0 "アメリカ共和国"
+ NEL_america_ADJ:0 "アメリカ"
+ 
+ USA_perfect:0 "アメリカ合衆国"
+ USA_perfect_DEF:0 "アメリカ合衆国"
+ USA_perfect_ADJ:0 "アメリカ"
+ 
+ CHI_federation:0 "中華連邦共和国"
+ CHI_federation_DEF:0 "中華連邦共和国"
+ CHI_federation_ADJ:0 "中華"
+ 
+ SPR_iberia:0 "イベリア連合"
+ SPR_iberia_DEF:0 "イベリア連合"
+ SPR_iberia_ADJ:0 "イベリア連合"
+ 
+ SAU_republic_progressive_communism:0 "アラビア社会主義共和国"
+ SAU_republic_progressive_communism_DEF:0 "アラビア社会主義共和国"
+ SAU_republic_classical_communism:0 "アラビア社会主義共和国"
+ SAU_republic_classical_communism_DEF:0 "アラビア社会主義共和国"
+ SAU_republic:0 "アラビア共和国"
+ SAU_republic_DEF:0 "アラビア共和国"
+ SAU_republic_ADJ:0 "アラビア"
+ 
+ ENG_republic:0 "イギリス共和国"
+ ENG_republic_DEF:0 "イギリス共和国"
+ ENG_republic_ADJ:0 "イギリス"
+ 
+ ENG_britain_scotland:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_DEF:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_ADJ:0 "イギリス"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
@@ -190,3 +222,7 @@
  GER_rhine_republic:0 "ライン共和国"
  GER_rhine_republic_DEF:0 "ライン共和国"
  GER_rhine_republic_ADJ:0 "ラインラント"
+### 占領地 ###
+ COUNTRY_occupied_territories:0 "$OVERLORDADJ$領$NONIDEOLOGY$占領地域"
+ COUNTRY_occupied_territories_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$占領地域"
+ COUNTRY_occupied_territories_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$"

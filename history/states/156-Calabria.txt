@@ -2,7 +2,7 @@
 state={
 	id=156
 	name="STATE_156"
-	manpower = 1490715
+	manpower = 3220715
 	
 	state_category = city
 	history={
@@ -12,7 +12,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			dockyard = 3
+			dockyard = 5
 			industrial_complex = 2
 			air_base = 5
 			11837 = {

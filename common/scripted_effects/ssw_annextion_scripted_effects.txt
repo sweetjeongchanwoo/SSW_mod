@@ -27,3 +27,14 @@ occupy_massive_country = {
 	add_stability = -0.2
 	add_war_support = -0.2
 }
+
+transfer_to_ROOT = {
+	if = {
+		limit = {
+			is_fully_controlled_by = controller
+			controller = { is_ally_with = ROOT }
+		}
+		ROOT = { transfer_state = PREV }
+	}
+	else = { ROOT = { set_state_owner = PREV } }
+}

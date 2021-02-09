@@ -26,10 +26,96 @@ set_popularities = {
 create_country_leader = {
 	name = "Amedeo Savoia-Aosta"
 	desc = ""
-	picture = "gfx/leaders/NEA/PortraitAmedeo_Savoia_Aosta.dds"
+	picture = "gfx/leaders/NEA/ssw_Portrait_AOI_Amedeo_DAosta_normal.dds"
 	expire = "1965.1.1"
 	ideology = national_fascism_ideology
 	traits = {
 		#
 	}
+}
+create_field_marshal = {
+	name = "Gugliermo Nasi"
+	picture = "ssw_Portrait_AOI_Guglielmo_Nasi.dds"
+	traits = { career_officer war_hero brilliant_strategist inspirational_leader  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Carlo de Simone"
+	picture = "ssw_Portrait_AOI_Carlo_de_Simone.dds"
+	traits = { trickster trait_cautious }
+	skill = 3
+	rank = 1
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Giuzeppe Daodice"
+	picture = "ssw_Portrait_AOI_Giuzeppe_Daodice.dds"
+	traits = { trait_engineer hill_fighter }
+	skill = 2
+	rank = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gustavo Pesenti"
+	picture = "ssw_Portrait_AOI_Gustavo_Pesenti.dds"
+	traits = { armor_officer trait_mountaineer commando }
+	skill = 1
+	rank = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Orlando Lorenzini"
+	picture = "ssw_Portrait_AOI_Orlando_Lorenzini.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	rank = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Amedeo Guillet"
+	picture = "ssw_Portrait_AOI_Amedeo_Guillet.dds"
+	traits = { cavalry_officer skilled_staffer old_guard war_hero }
+	skill = 3
+	rank = 1
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Domenico Mondelli"
+	picture = "ssw_Portrait_AOI_Domenico_Mondelli.dds"
+	traits = { infantry_leader infantry_officer ranger }
+	skill = 2
+	rank = 1
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Carlo Balsamo di Specchia Normandia"
+		picture = "ssw_Portrait_AOI_Carlo_Balsamo.dds"
+	traits = { seawolf bold fly_swatter }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
 }

@@ -9,6 +9,7 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	TIB_14th_dalai_lama 
 }
 
 set_politics = {
@@ -19,4 +20,14 @@ set_politics = {
 }
 set_popularities = {
 	authority_despotism = 100
+}
+create_country_leader = {
+	name = "Tsarong Dzasa"
+	desc = "POLITICS_TSARONG_DZASA_DESC"
+	picture = "ssw_Portrait_Tibet_Tsarong_Dzasa.dds"
+	ideology = authority_despotism_ideology
+	traits = {
+		#
+	}
+	expire = "1988.1.1"
 }

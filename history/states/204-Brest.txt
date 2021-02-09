@@ -11,9 +11,6 @@ state={
 		add_core_of = BAL
 		add_core_of = BLR
 		victory_points = {
-			3350 3
-		}
-		victory_points = {
 			11313 1
 		}
 		buildings = {

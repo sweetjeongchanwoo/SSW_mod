@@ -111,17 +111,5 @@ ideas = {
 						 production_speed_industrial_complex_factor = 0.15
 						  }#効果
 		}
-		CAN_idea_9 = {
-			allowed = {always = no}
-
-			removal_cost = -1#わかんね
-
-			allowed_civil_war = {always = yes}
-
-			picture = eng_imperial_conscription#アイコンの写真
-
-			modifier = { conscription_factor = -0.30
-						  }#効果
-		}
 	}
 }

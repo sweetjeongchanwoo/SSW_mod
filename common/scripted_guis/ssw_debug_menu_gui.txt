@@ -25,16 +25,19 @@ scripted_gui = {
                 ROOT = {
                 set_global_flag = big_event_custom_American_civil_war
                 }
+                log = "Debug Menu:Play Superevent Second American Civil War"
             }
             ssw_debug_play_super_event_Anpo_protets_button_click = {
                 ROOT = {
                 set_country_flag = big_event_custom_anpo_protets
                 }
+                log = "Debug Menu:Play Superevent Anpo Protests"
             }
             ssw_debug_play_super_event_German_civil_war_button_click = {
                 ROOT = {
                 set_global_flag = big_event_custom_german_civil_war
                 }
+                log = "Debug Menu:Play Superevent German Civil War"
             }
         }
 

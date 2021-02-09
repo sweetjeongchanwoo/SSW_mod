@@ -7,7 +7,7 @@ state = { #Matsuyama
 		owner = JAP
 		add_core_of = JAP
 		buildings = { infrastructure = 8 }
-		victory_points = { 7046 15 }
+		victory_points = { 7046 3 }
 	}
 	provinces = { 7046 }
 }

@@ -5,13 +5,13 @@ state={
 		9814 
 	}
 		state_category = megalopolis
-	manpower=290000
+	manpower=1970358
 	history={
 		owner = ALF
 		buildings = {
-			infrastructure = 10
-			arms_factory = 4
-			industrial_complex = 4
+			infrastructure = 8
+			arms_factory = 5
+			industrial_complex = 6
 			air_base = 3
 			9814 = {
 				naval_base = 5

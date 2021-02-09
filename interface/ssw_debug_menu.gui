@@ -5,10 +5,11 @@ guiTypes = {
 
 		buttonType = {
 			name = "ssw_debug_menu_open_button_button"
-			position = { x = 0 y = 76 }
+			position = { x = 1010 y = 0 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "Open debug menu"
+			shortcut = "c"
 		}
 	}
 	containerWindowType = {
@@ -60,6 +61,31 @@ guiTypes = {
 		buttonFont = "hoi_16mbs"
 		buttonText = "SE Nuclear"
 		}
+		instantTextBoxType = {
+			name = "ssw_world_event"
+			position = { x = 173 y = 110 }
+			font = "hoi_16mbs"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "ssw_debug_menu_world_event"
+			maxWidth = 200
+			maxHeight = 24
+			format = centre
+		}
+		buttontype = {
+		name = "ssw_debug_world_event_Hitler_kill_button"
+		position = { x = 200 y = 130 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "Hitler Dead"
+		}
+		buttontype = {
+		name = "ssw_debug_world_event_Donau_war_button"
+		position = { x = 200 y = 170 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "Danubian War"
+		}
 	}
 	containerWindowType =  {
 		name = "ssw_debug_menu_select_tab_container"
@@ -87,6 +113,24 @@ guiTypes = {
 		position = { x = 955 y = 11 }
 		quadTextureSprite = "GFX_closebutton"
 		shortcut = "ESCAPE"
+		}
+		buttontype = {
+		name = "ssw_debug_tab_country_event_button"
+		position = { x = 20 y = 20 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = ""
+		}
+		instantTextBoxType = {
+			name = "debug_menu_tab_country_event"
+			position = { x = -158 y = 29 }
+			font = "hoi_16mbs"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "ssw_debug_menu_tab_country_event_text"
+			maxWidth = 500
+			maxHeight = 24
+			format = centre
 		}
 	}
 }

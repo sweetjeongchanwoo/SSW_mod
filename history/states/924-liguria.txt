@@ -9,14 +9,14 @@ state={
 		add_core_of = ITA
 			buildings = {
 			infrastructure = 6
-			dockyard = 1
+			dockyard = 2
 			industrial_complex = 3
 			}
 			victory_points = {
 			6788 15 
 			}
 		}
-	manpower=1123901
+	manpower=1567901
 	buildings_max_level_factor=1.000
 	state_category= city
 }

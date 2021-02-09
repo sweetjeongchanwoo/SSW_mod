@@ -1,7 +1,94 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			
+			#スイス
+			3 = { set_state_flag = maybe_core_SWI }
+			151 = { set_state_flag = maybe_core_SWI }
+			838 = { set_state_flag = maybe_core_SWI }
+			839 = { set_state_flag = maybe_core_SWI }
+			#オーストリア
+			4 = { set_state_flag = maybe_core_AUS }
+			39 = { set_state_flag = maybe_core_AUS }
+			152 = { set_state_flag = maybe_core_AUS }
+			153 = { set_state_flag = maybe_core_AUS }
+			981 = { set_state_flag = maybe_core_AUS }
+			#ハンガリー
+			981 = { set_state_flag = maybe_core_HUN }
+			#北アイルランド
+			119 = { set_state_flag = maybe_core_NIR }
+			#ウェールズ
+			122 = { set_state_flag = maybe_core_WLS }
+			#クロアチア
+			103 = { set_state_flag = maybe_core_CRO }
+			109 = { set_state_flag = maybe_core_CRO }
+			163 = { set_state_flag = maybe_core_CRO }
+			971 = { set_state_flag = maybe_core_CRO }
+			1137 = { set_state_flag = maybe_core_CRO }
+			#リヒテンシュタイン
+			963 = { set_state_flag = maybe_core_LIE }
+			#ルクセンブルク
+			8 = { set_state_flag = maybe_core_LUX }
+			1033 = { set_state_flag = maybe_core_LUX }
+			#フランス
+			28 = { set_state_flag = maybe_core_FRA }
+			29 = { set_state_flag = maybe_core_FRA }
+			1037 = { set_state_flag = maybe_core_FRA }
+			1038 = { set_state_flag = maybe_core_FRA }
+			1041 = { set_state_flag = maybe_core_FRA }
+			#スロベニア
+			102 = { set_state_flag = maybe_core_SLV }
+			736 = { set_state_flag = maybe_core_SLV }
+			941 = { set_state_flag = maybe_core_SLV }
+			#リトアニア
+			188 = { set_state_flag = maybe_core_LIT }
+			#中華民国
+			524 = { set_state_flag = maybe_core_CHI }
+			745 = { set_state_flag = maybe_core_CHI }
+			842 = { set_state_flag = maybe_core_CHI }
+			#ロシア共和国
+			537 = { set_state_flag = maybe_core_RUS }
+			555 = { set_state_flag = maybe_core_RUS }
+			655 = { set_state_flag = maybe_core_RUS }
+			1104 = { set_state_flag = maybe_core_RUS }
+			#デンマーク
+			812 = { set_state_flag = maybe_core_DEN }
+			#キプロス
+			183 = { set_state_flag = maybe_core_CYP }
+			#ギリシャ
+			164 = { set_state_flag = maybe_core_GRE }
+			182 = { set_state_flag = maybe_core_GRE }
+			187 = { set_state_flag = maybe_core_GRE }
+			1079 = { set_state_flag = maybe_core_GRE }
+			#ロシア構成国
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = WTR
+						is_core_of = TUV
+						is_core_of = BLR
+						is_fully_controlled_by = UKR
+						is_fully_controlled_by = BAL
+						is_fully_controlled_by = FIN
+						is_fully_controlled_by = CCS
+					}
+				}
+				set_state_flag = maybe_core_RUSSIA
+			}
+			#北フランス(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = NFR }
+				set_state_flag = maybe_core_NFR_GAMESTART
+			}
+			#イタリア(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = ITA }
+				set_state_flag = maybe_core_ITA_GAMESTART
+			}
+			#スコットランド(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = SCO }
+				set_state_flag = maybe_core_SCO_GAMESTART
+			}
 		}
 	}
 }

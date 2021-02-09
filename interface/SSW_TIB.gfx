@@ -1,0 +1,7 @@
+spriteTypes = {
+	#Dalai Lama
+    SpriteType = { 
+		name = "GFX_idea_14th_dalai_lama"
+		texturefile = "gfx/interface/ideas/TIB/idea_14th_dalai_lama.dds"
+	}
+}

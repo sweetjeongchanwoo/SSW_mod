@@ -2,6 +2,10 @@
 #大東亜共栄圏
  JAP:0 "大日本帝国"
  JAP_DEF:0 "大日本帝国"
+ JAP_progressive_communism:0 "日本社会主義人民共和国"
+ JAP_progressive_communism_DEF:0 "日本社会主義人民共和国"
+ JAP_classical_communism:0 "日本社会主義人民共和国"
+ JAP_classical_communism_DEF:0 "日本社会主義人民共和国"
  JAP_ADJ:0 "日本"
  
  KOR:0 "大韓帝国"
@@ -26,6 +30,10 @@
  
  BRM:0 "ビルマ国"
  BRM_DEF:0 "ビルマ国"
+ BRM_progressive_communism:0 "ビルマ連邦社会主義共和国"
+ BRM_progressive_communism_DEF:0 "ビルマ連邦社会主義共和国"
+ BRM_classical_communism:0 "ビルマ連邦社会主義共和国"
+ BRM_classical_communism_DEF:0 "ビルマ連邦社会主義共和国"
  BRM_ADJ:0 "ビルマ"
  
  PHI:0 "フィリピン共和国"
@@ -34,6 +42,10 @@
  
  VIN:0 "ベトナム帝国"
  VIN_DEF:0 "ベトナム帝国"
+ VIN_progressive_communism:0 "ベトナム社会主義共和国"
+ VIN_progressive_communism_DEF:0 "ベトナム社会主義共和国"
+ VIN_classical_communism:0 "ベトナム社会主義共和国"
+ VIN_classical_communism_DEF:0 "ベトナム社会主義共和国"
  VIN_ADJ:0 "ベトナム"
  
  INS:0 "インドネシア連邦"
@@ -42,14 +54,26 @@
  
  MAL:0 "マラヤ連合"
  MAL_DEF:0 "マラヤ連合"
+ MAL_progressive_communism:0 "マレーシア・コミューン"
+ MAL_progressive_communism_DEF:0 "マレーシア・コミューン"
+ MAL_classical_communism:0 "マレーシア・コミューン"
+ MAL_classical_communism_DEF:0 "マレーシア・コミューン"
  MAL_ADJ:0 "マラヤ"
  
  BRN:0 "ブルネイ・ダルサラーム国"
  BRN_DEF:0 "ブルネイ・ダルサラーム国"
+ BRN_progressive_communism:0 "ブルネイ人民共和国"
+ BRN_progressive_communism_DEF:0 "ブルネイ人民共和国"
+ BRN_classical_communism:0 "ブルネイ人民共和国"
+ BRN_classical_communism_DEF:0 "ブルネイ人民共和国"
  BRN_ADJ:0 "ブルネイ"
  
  HAW:0 "ハワイ王国"
  HAW_DEF:0 "ハワイ王国"
+ HAW_progressive_communism:0 "ホノルル自由地区"
+ HAW_progressive_communism_DEF:0 "ホノルル自由地区"
+ HAW_classical_communism:0 "ホノルル自由地区"
+ HAW_classical_communism_DEF:0 "ホノルル自由地区"
  HAW_ADJ:0 "ハワイ"
  
  INO:0 "インド洋諸島連合"
@@ -74,11 +98,19 @@
  
  SIA:0 "シャム王国"
  SIA_DEF:0 "シャム王国"
+ SIA_progressive_communism:0 "タイ人民共和国"
+ SIA_progressive_communism_DEF:0 "タイ人民共和国"
+ SIA_classical_communism:0 "タイ人民共和国"
+ SIA_classical_communism_DEF:0 "タイ人民共和国"
  SIA_ADJ:0 "シャム"
  
 #ゲルマニア合意
  GER:0 "ドイツ国"
  GER_DEF:0 "ドイツ国"
+ GER_progressive_communism:0 "ドイツ民主共和国"
+ GER_progressive_communism_DEF:0 "ドイツ民主共和国"
+ GER_classical_communism:0 "ドイツ民主共和国"
+ GER_classical_communism_DEF:0 "ドイツ民主共和国"
  GER_ADJ:0 "ドイツ"
  
  CZE:0 "チェコ共和国"
@@ -95,18 +127,34 @@
  
  DEN:0 "デンマーク王国"
  DEN_DEF:0 "デンマーク王国"
+ DEN_progressive_communism:0 "デンマーク社会主義共和国"
+ DEN_progressive_communism_DEF:0 "デンマーク社会主義共和国"
+ DEN_classical_communism:0 "デンマーク社会主義共和国"
+ DEN_classical_communism_DEF:0 "デンマーク社会主義共和国"
  DEN_ADJ:0 "デンマーク"
  
  NOR:0 "ノルウェー王国"
  NOR_DEF:0 "ノルウェー王国"
+ NOR_progressive_communism:0 "ノルディック・コミューン"
+ NOR_progressive_communism_DEF:0 "ノルディック・コミューン"
+ NOR_classical_communism:0 "ノルディック・コミューン"
+ NOR_classical_communism_DEF:0 "ノルディック・コミューン"
  NOR_ADJ:0 "ノルウェー"
  
  HOL:0 "オランダ王国"
  HOL_DEF:0 "オランダ王国"
+ HOL_progressive_communism:0 "オランダ社会主義共和国"
+ HOL_progressive_communism_DEF:0 "オランダ社会主義共和国"
+ HOL_classical_communism:0 "オランダ社会主義共和国"
+ HOL_classical_communism_DEF:0 "オランダ社会主義共和国"
  HOL_ADJ:0 "オランダ"
  
  BEL:0 "ベルギー王国"
  BEL_DEF:0 "ベルギー王国"
+ BEL_progressive_communism:0 "ベルギー人民共和国"
+ BEL_progressive_communism_DEF:0 "ベルギー人民共和国"
+ BEL_classical_communism:0 "ベルギー人民共和国"
+ BEL_classical_communism_DEF:0 "ベルギー人民共和国"
  BEL_ADJ:0 "ベルギー"
  
  NFR:0 "パリ・フランス"
@@ -171,6 +219,10 @@
  
  MOS:0 "モスクワ大公国"
  MOS_DEF:0 "モスクワ大公国"
+ MOS_progressive_communism:0 "モスクワ・ソビエト社会主義共和国"
+ MOS_progressive_communism_DEF:0 "モスクワ・ソビエト社会主義共和国"
+ MOS_classical_communism:0 "モスクワ・ソビエト社会主義共和国"
+ MOS_classical_communism_DEF:0 "モスクワ・ソビエト社会主義共和国"
  MOS_ADJ:0 "モスクワ"
  
  CRI:0 "クリミア人民共和国"
@@ -206,10 +258,18 @@
 #ローマ協定
  ITA:0 "イタリア王国"
  ITA_DEF:0 "イタリア王国"
+ ITA_progressive_communism:0 "イタリア連邦共和国"
+ ITA_progressive_communism_DEF:0 "イタリア連邦共和国"
+ ITA_classical_communism:0 "イタリア連邦共和国"
+ ITA_classical_communism_DEF:0 "イタリア連邦共和国"
  ITA_ADJ:0 "イタリア"
  
  LBA:0 "リビア王国"
  LBA_DEF:0 "リビア王国"
+ LBA_progressive_communism:0 "リビア人民共和国"
+ LBA_progressive_communism_DEF:0 "リビア人民共和国"
+ LBA_classical_communism:0 "リビア人民共和国"
+ LBA_classical_communism_DEF:0 "リビア人民共和国"
  LBA_ADJ:0 "リビア"
  
  NEA:0 "北東アフリカ帝国"
@@ -222,6 +282,10 @@
  
  EGY:0 "エジプト王国"
  EGY_DEF:0 "エジプト王国"
+ EGY_progressive_communism:0 "エジプト民主共和国"
+ EGY_progressive_communism_DEF:0 "エジプト民主共和国"
+ EGY_classical_communism:0 "エジプト民主共和国"
+ EGY_classical_communism_DEF:0 "エジプト民主共和国"
  EGY_ADJ:0 "エジプト"
  
  SUD:0 "スーダン共和国"
@@ -238,6 +302,10 @@
  
  JOR:0 "ヨルダン・ハシミテ王国"
  JOR_DEF:0 "ヨルダン・ハシミテ王国"
+ JOR_progressive_communism:0 "ヨルダン・コミューン"
+ JOR_progressive_communism_DEF:0 "ヨルダン・コミューン"
+ JOR_classical_communism:0 "ヨルダン・コミューン"
+ JOR_classical_communism_DEF:0 "ヨルダン・コミューン"
  JOR_ADJ:0 "ヨルダン"
  
  PAL:0 "パレスチナ国"
@@ -246,11 +314,19 @@
  
  BUL:0 "ブルガリア王国"
  BUL_DEF:0 "ブルガリア王国"
+ BUL_progressive_communism:0 "ブルガリア人民共和国"
+ BUL_progressive_communism_DEF:0 "ブルガリア人民共和国"
+ BUL_classical_communism:0 "ブルガリア人民共和国"
+ BUL_classical_communism_DEF:0 "ブルガリア人民共和国"
  BUL_ADJ:0 "ブルガリア"
  
 #連合国
  ENG:0 "イングランド王国"
  ENG_DEF:0 "イングランド王国"
+ ENG_progressive_communism:0 "イングランド連合"
+ ENG_progressive_communism_DEF:0 "イングランド連合"
+ ENG_classical_communism:0 "イングランド連合"
+ ENG_classical_communism_DEF:0 "イングランド連合"
  ENG_ADJ:0 "イングランド"
  
  CAN:0 "カナダ連邦"
@@ -276,7 +352,11 @@
 #中国陣営
  CHI:0 "中華民国"
  CHI_DEF:0 "中華民国"
- CHI_ADJ:0 "中華"
+ CHI_progressive_communism:0 "中華人民共和国"
+ CHI_progressive_communism_DEF:0 "中華人民共和国"
+ CHI_classical_communism:0 "中華人民共和国"
+ CHI_classical_communism_DEF:0 "中華人民共和国"
+ CHI_ADJ:0 "中国"
  
  INC:0 "インドシナ連合"
  INC_DEF:0 "インドシナ連合"
@@ -284,7 +364,7 @@
  
  TOK:0 "ベトナム共和国"
  TOK_DEF:0 "ベトナム共和国"
- TOK_ADJ:0 "北ベトナム"
+ TOK_ADJ:0 "トンキン"
  
 #旧アメリカ合衆国領諸国
  ALF:0 "アメリカ自由連盟"
@@ -393,30 +473,62 @@
 #アジア
  AFG:0 "アフガニスタン王国"
  AFG_DEF:0 "アフガニスタン王国"
+ AFG_progressive_communism:0 "アフガニスタン民主共和国"
+ AFG_progressive_communism_DEF:0 "アフガニスタン民主共和国"
+ AFG_classical_communism:0 "アフガニスタン民主共和国"
+ AFG_classical_communism_DEF:0 "アフガニスタン民主共和国"
  AFG_ADJ:0 "アフガニスタン"
  
  BHU:0 "ブータン王国"
  BHU_DEF:0 "ブータン王国"
+ BHU_progressive_communism:0 "ブータン人民共和国"
+ BHU_progressive_communism_DEF:0 "ブータン人民共和国"
+ BHU_classical_communism:0 "ブータン人民共和国"
+ BHU_classical_communism_DEF:0 "ブータン人民共和国"
  BHU_ADJ:0 "ブータン"
  
  IND:0 "インド共和国"
  IND_DEF:0 "インド共和国"
+ IND_progressive_communism:0 "インド人民共和国"
+ IND_progressive_communism_DEF:0 "インド人民共和国"
+ IND_classical_communism:0 "インド人民共和国"
+ IND_classical_communism_DEF:0 "インド人民共和国"
  IND_ADJ:0 "インド"
  
  IRQ:0 "イラク王国"
  IRQ_DEF:0 "イラク王国"
+ IRQ_progressive_communism:0 "イラク社会主義共和国"
+ IRQ_progressive_communism_DEF:0 "イラク社会主義共和国"
+ IRQ_classical_communism:0 "イラク社会主義共和国"
+ IRQ_classical_communism_DEF:0 "イラク社会主義共和国"
  IRQ_ADJ:0 "イラク"
+ 
+ MCA:0 "マカオ市国"
+ MCA_DEF:0 "マカオ市国"
+ MCA_ADJ:0 "マカオ"
  
  NEP:0 "ネパール王国"
  NEP_DEF:0 "ネパール王国"
+ NEP_progressive_communism:0 "ネパール連邦民主共和国"
+ NEP_progressive_communism_DEF:0 "ネパール連邦民主共和国"
+ NEP_classical_communism:0 "ネパール連邦民主共和国"
+ NEP_classical_communism_DEF:0 "ネパール連邦民主共和国"
  NEP_ADJ:0 "ネパール"
  
  OMA:0 "マスカット・オマーン土侯国"
  OMA_DEF:0 "マスカット・オマーン土侯国"
+ OMA_progressive_communism:0 "オマーン人民共和国"
+ OMA_progressive_communism_DEF:0 "オマーン人民共和国"
+ OMA_classical_communism:0 "オマーン人民共和国"
+ OMA_classical_communism_DEF:0 "オマーン人民共和国"
  OMA_ADJ:0 "オマーン"
  
  PER:0 "イラン帝国"
  PER_DEF:0 "イラン帝国"
+ PER_progressive_communism:0 "ペルシア・コミューン"
+ PER_progressive_communism_DEF:0 "ペルシア・コミューン"
+ PER_classical_communism:0 "ペルシア・コミューン"
+ PER_classical_communism_DEF:0 "ペルシア・コミューン"
  PER_ADJ:0 "イラン"
  
  SAU:0 "サウジアラビア王国"
@@ -441,11 +553,19 @@
  
  YEM:0 "イエメン・ムタワッキリテ王国"
  YEM_DEF:0 "イエメン・ムタワッキリテ王国"
+ YEM_progressive_communism:0 "イエメン人民共和国"
+ YEM_progressive_communism_DEF:0 "イエメン人民共和国"
+ YEM_classical_communism:0 "イエメン人民共和国"
+ YEM_classical_communism_DEF:0 "イエメン人民共和国"
  YEM_ADJ:0 "イエメン"
  
 #ヨーロッパ
  ADR:0 "アンドラ公国"
  ADR_DEF:0 "アンドラ公国"
+ ADR_progressive_communism:0 "アンドラ社会主義共和国"
+ ADR_progressive_communism_DEF:0 "アンドラ社会主義共和国"
+ ADR_classical_communism:0 "アンドラ社会主義共和国"
+ ADR_classical_communism_DEF:0 "アンドラ社会主義共和国"
  ADR_ADJ:0 "アンドラ"
  
  FIN:0 "フィンランド共和国"
@@ -454,11 +574,19 @@
  
  GRE:0 "ギリシャ王国"
  GRE_DEF:0 "ギリシャ王国"
+ GRE_progressive_communism:0 "アルカディア・コミューン"
+ GRE_progressive_communism_DEF:0 "アルカディア・コミューン"
+ GRE_classical_communism:0 "アルカディア・コミューン"
+ GRE_classical_communism_DEF:0 "アルカディア・コミューン"
  GRE_ADJ:0 "ギリシャ"
  
  HUN:0 "ハンガリー王国"
  HUN_DEF:0 "ハンガリー王国"
- HUN_ADJ:0 "ハンガリー王国"
+ HUN_progressive_communism:0 "ハンガリー人民共和国"
+ HUN_progressive_communism_DEF:0 "ハンガリー人民共和国"
+ HUN_classical_communism:0 "ハンガリー人民共和国"
+ HUN_classical_communism_DEF:0 "ハンガリー人民共和国"
+ HUN_ADJ:0 "ハンガリー"
  
  ICE:0 "アイスランド共和国"
  ICE_DEF:0 "アイスランド共和国"
@@ -474,10 +602,18 @@
  
  ROM:0 "ルーマニア王国"
  ROM_DEF:0 "ルーマニア王国"
+ ROM_progressive_communism:0 "ルーマニア社会主義共和国"
+ ROM_progressive_communism_DEF:0 "ルーマニア社会主義共和国"
+ ROM_classical_communism:0 "ルーマニア社会主義共和国"
+ ROM_classical_communism_DEF:0 "ルーマニア社会主義共和国"
  ROM_ADJ:0 "ルーマニア"
  
  SER:0 "セルビア王国"
  SER_DEF:0 "セルビア王国"
+ SER_progressive_communism:0 "セルビア社会主義共和国"
+ SER_progressive_communism_DEF:0 "セルビア社会主義共和国"
+ SER_classical_communism:0 "セルビア社会主義共和国"
+ SER_classical_communism_DEF:0 "セルビア社会主義共和国"
  SER_ADJ:0 "セルビア"
  
  SMR:0 "サンマリノ共和国"
@@ -492,10 +628,18 @@
  
  SWE:0 "スウェーデン王国"
  SWE_DEF:0 "スウェーデン王国"
+ SWE_progressive_communism:0 "スヴェーリエ・コミューン"
+ SWE_progressive_communism_DEF:0 "スヴェーリエ・コミューン"
+ SWE_classical_communism:0 "スヴェーリエ・コミューン"
+ SWE_classical_communism_DEF:0 "スヴェーリエ・コミューン"
  SWE_ADJ:0 "スウェーデン"
  
  MCO:0 "モナコ公国"
  MCO_DEF:0 "モナコ公国"
+ MCO_progressive_communism:0 "モナコ社会主義共和国"
+ MCO_progressive_communism_DEF:0 "モナコ社会主義共和国"
+ MCO_classical_communism:0 "モナコ社会主義共和国"
+ MCO_classical_communism_DEF:0 "モナコ社会主義共和国"
  MCO_ADJ:0 "モナコ"
  
  VAC:0 "バチカン市国"
@@ -521,6 +665,10 @@
  
  LES:0 "レソト王国"
  LES_DEF:0 "レソト王国"
+ LES_progressive_communism:0 "レソト人民共和国"
+ LES_progressive_communism_DEF:0 "レソト人民共和国"
+ LES_classical_communism:0 "レソト人民共和国"
+ LES_classical_communism_DEF:0 "レソト人民共和国"
  LES_ADJ:0 "レソト"
  
  LIB:0 "リベリア共和国"
@@ -549,6 +697,10 @@
  
  SWL:0 "スワジランド王国"
  SWL_DEF:0 "スワジランド王国"
+ SWL_progressive_communism:0 "スワジランド社会主義共和国"
+ SWL_progressive_communism_DEF:0 "スワジランド社会主義共和国"
+ SWL_classical_communism:0 "スワジランド社会主義共和国"
+ SWL_classical_communism_DEF:0 "スワジランド社会主義共和国"
  SWL_ADJ:0 "スワジランド"
  
  WES:0 "サハラ・アラブ民主共和国"
@@ -575,6 +727,10 @@
  
  COL_authority_despotism:0 "グラン・コロンビア"
  COL_authority_despotism_DEF:0 "グラン・コロンビア"
+ COL_progressive_communism:0 "エルドラド・コミューン"
+ COL_progressive_communism_DEF:0 "エルドラド・コミューン"
+ COL_classical_communism:0 "エルドラド・コミューン"
+ COL_classical_communism_DEF:0 "エルドラド・コミューン"
  COL:0 "コロンビア共和国"
  COL_DEF:0 "コロンビア共和国"
  COL_ADJ:0 "コロンビア"
@@ -617,6 +773,10 @@
  
  MEX:0 "メキシコ合衆国"
  MEX_DEF:0 "メキシコ合衆国"
+ MEX_progressive_communism:0 "メキシコ社会主義共和国"
+ MEX_progressive_communism_DEF:0 "メキシコ社会主義共和国"
+ MEX_classical_communism:0 "メキシコ社会主義共和国"
+ MEX_classical_communism_DEF:0 "メキシコ社会主義共和国"
  MEX_ADJ:0 "メキシコ"
  
  NIC:0 "ニカラグア共和国"
@@ -652,6 +812,11 @@
  VEN_ADJ:0 "ベネズエラ"
  
 ### その他 ###
+#インド諸国
+ GOA:0 "ゴア市国"
+ GOA_DEF:0 "ゴア市国"
+ GOA_ADJ:0 "ゴア"
+ 
 #アジア
  BAN:0 "バングラデシュ人民共和国"
  BAN_DEF:0 "バングラデシュ人民共和国"
@@ -699,7 +864,7 @@
  
  PCH:0 "中華人民共和国"
  PCH_DEF:0 "中華人民共和国"
- PCH_ADJ:0 "人民中華"
+ PCH_ADJ:0 "中国"
  
  QAT:0 "カタール国"
  QAT_DEF:0 "カタール国"
@@ -1179,11 +1344,15 @@
  AZR_DEF:0 "アゼルバイジャン共和国"
  AZR_ADJ:0 "アゼルバイジャン"
  
- BLR_authority_democracy:0 "ベラルーシ国民共和国"
- BLR_authority_democracy_DEF:0 "ベラルーシ国民共和国"
  BLR:0 "ベラルーシ共和国"
  BLR_DEF:0 "ベラルーシ共和国"
+ BLR_authority_democracy:0 "ベラルーシ国民共和国"
+ BLR_authority_democracy_DEF:0 "ベラルーシ国民共和国"
  BLR_ADJ:0 "ベラルーシ"
+ 
+ BSK:0 "バシコルトスタン共和国"
+ BSK_DEF:0 "バシコルトスタン共和国"
+ BSK_ADJ:0 "バシコルトスタン"
  
  BUR:0 "ブリヤート共和国"
  BUR_DEF:0 "ブリヤート共和国"
@@ -1192,6 +1361,10 @@
  CHE:0 "チェチェン共和国"
  CHE_DEF:0 "チェチェン共和国"
  CHE_ADJ:0 "チェチェン"
+ 
+ CHV:0 "チュヴァシ共和国"
+ CHV_DEF:0 "チュヴァシ共和国"
+ CHV_ADJ:0 "チュヴァシ"
  
  DAG:0 "ダゲスタン"
  DAG_DEF:0 "ダゲスタン"
@@ -1229,9 +1402,25 @@
  KBR_DEF:0 "カバルダ・バルカル共和国"
  KBR_ADJ:0 "カバルダ・バルカル"
  
+ KHK:0 "ハカス共和国"
+ KHK_DEF:0 "ハカス共和国"
+ KHK_ADJ:0 "ハカス"
+ 
+ KLM:0 "カルムイク共和国"
+ KLM_DEF:0 "カルムイク共和国"
+ KLM_ADJ:0 "カルムイク"
+ 
+ KOM:0 "コミ共和国"
+ KOM_DEF:0 "コミ共和国"
+ KOM_ADJ:0 "コミ"
+ 
  KRA:0 "クラスノダール連合"
  KRA_DEF:0 "クラスノダール連合"
  KRA_ADJ:0 "クラスノダール"
+ 
+ KRL:0 "カレリア共和国"
+ KRL_DEF:0 "カレリア共和国"
+ KRL_ADJ:0 "カレリア"
  
  KRC:0 "カラチャイ・チェルケス共和国"
  KRC_DEF:0 "カラチャイ・チェルケス共和国"
@@ -1249,13 +1438,29 @@
  MOL_DEF:0 "モルドバ共和国"
  MOL_ADJ:0 "モルドバ"
  
+ MRD:0 "モルドヴィア共和国"
+ MRD_DEF:0 "モルドヴィア共和国"
+ MRD_ADJ:0 "モルドヴィア"
+ 
+ MRE:0 "マリ・エル共和国"
+ MRE_DEF:0 "マリ・エル共和国"
+ MRE_ADJ:0 "マリ・エル"
+ 
  NOS:0 "北オセチア共和国"
  NOS_DEF:0 "北オセチア共和国"
  NOS_ADJ:0 "北オセチア"
  
+ SKH:0 "サハ共和国"
+ SKH_DEF:0 "サハ共和国"
+ SKH_ADJ:0 "サハ"
+ 
  SOS:0 "南オセチア共和国"
  SOS_DEF:0 "南オセチア共和国"
  SOS_ADJ:0 "南オセチア"
+ 
+ TAT:0 "タタールスタン共和国"
+ TAT_DEF:0 "タタールスタン共和国"
+ TAT_ADJ:0 "タタールスタン"
  
  TUV:0 "トゥヴァ共和国"
  TUV_DEF:0 "トゥヴァ共和国"

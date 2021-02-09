@@ -47,7 +47,7 @@ focus_tree = {
 		x = 39
 		y = 10
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				army_experience = 50
 				navy_experience = 50
 				air_experience = 50
@@ -285,11 +285,8 @@ focus_tree = {
 		x = 5
 		y = 6
 		completion_reward = {
-			SPR = {
-					add_research_slot = 1
-				}
+			add_ideas = idea_extra_tech_speed
 		}
-
 	}
 	focus = {
 		id = SPR_kougyou_nannbuzousen
@@ -403,28 +400,27 @@ focus_tree = {
 		y = 5
 		available = {
 			OR = {
-					SPR = {
-							owns_state = 461
-						
-		
-						461 = {
-							is_puppet_of = SPR
-						}
-					}
+				controls_state = 461
+				any_other_country = {
+					is_in_faction_with = ROOT
+					controls_state = 461
 				}
+				any_other_country = {
+					is_subject_of = ROOT
+					controls_state = 461
+				}
+			}
 		}
 		completion_reward = {
-			
 			461 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-						type = arms_factory
-						level = 3
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
-
 	}
 	focus = {
 		id = SPR_hurankohaijyo
@@ -442,7 +438,6 @@ focus_tree = {
 		completion_reward = {
             add_political_power = 40
         }
-
 	}
 	focus = {
 		id = SPR_faranhe
@@ -477,7 +472,10 @@ focus_tree = {
 		id = SPR_the_return_of_the_civil_war
 		icon = GFX_focus_spr_regional_defense_council_of_aragon
 		prerequisite = { focus = SPR_hurankohaijyo }
-		available = { NOT = { has_completed_focus = SPR_faranhe } }
+		available = {
+			NOT = { has_completed_focus = SPR_faranhe }
+			original_tag = SPR
+		}
 		cost = 7.00
 		ai_will_do = { factor = 10 }
 		x = 15
@@ -561,11 +559,8 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-				completion_reward = {
-				remove_ideas = { spr_debahu_01 }
-				}
-		}
-
+		completion_reward = { remove_ideas = { spr_debahu_01 } }
+	}
 	focus = {
 		id = SPR_faranhe_basukusyokumin
 		icon = GFX_focus_generic_the_giant_wakes
@@ -577,17 +572,15 @@ focus_tree = {
 		x = 12
 		y = 5
 		completion_reward = {
-			
 			172 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_hurankokorosu
@@ -602,7 +595,6 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = spr_ideas_02 days = 240 }
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_outouhakorosu
@@ -618,7 +610,6 @@ focus_tree = {
 			add_timed_idea = { idea = spr_ideas_03 days = 240 }
 			remove_ideas = { spr_debahu_02 }
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_ittoudokusai
@@ -648,7 +639,7 @@ focus_tree = {
 		x = 17
 		y = 5
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_04
 			}
 		}
@@ -829,7 +820,7 @@ focus_tree = {
 		x = 20
 		y = 3
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_05
 			}
 		}
@@ -908,7 +899,7 @@ focus_tree = {
 		x = 21
 		y = 7
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_09
 			}
 		}
@@ -1003,7 +994,7 @@ focus_tree = {
 		x = 26
 		y = 3
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_10
 			}
 		}
@@ -1020,7 +1011,7 @@ focus_tree = {
 		x = 25
 		y = 4
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_11
 			}
 		}
@@ -1054,17 +1045,47 @@ focus_tree = {
 		icon = GFX_focus_befriend_italy
 		cost = 4.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco
-		}
+		prerequisite = { focus = SPR_franco }
 		x = 31
 		y = 3
 		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 6
+				category = air_doctrine
+			}
+			add_opinion_modifier = {
+				target = ITA
+				modifier = SSW_generic_technology_licensing
+			}
 			ITA = {
-					country_event = { id = ssw_spr.4 days = 1 }
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = SSW_generic_technology_licensing
 				}
+				add_ai_strategy = {
+					type = alliance
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = protect
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = ROOT
+					value = 100
+				}
+				add_ai_strategy = {
+					type = support
+					id = ROOT
+					value = 100
+				}
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_franco_kaigunensyuu
@@ -1092,6 +1113,7 @@ focus_tree = {
 		cost = 6.00
 		ai_will_do = { factor = 10 }
 		prerequisite = { focus = SPR_franco_itariadoumei }
+		available = { has_army_manpower = { size > 499999 } }
 		x = 31
 		y = 5
 		completion_reward = {
@@ -1104,17 +1126,211 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SPR_franco_ahurikabunkatu
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		cost = 8.00
+		id = SPR_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		text = production_effort
+		prerequisite = { focus = SPR_franco_kokusakujidousya }
+		x = 1
+		y = 1
+		relative_position_id = SPR_franco_kokusakujidousya
+		cost = 5
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_kokusakujidousya
-		}
-		x = 29
-		y = 6
+		available_if_capitulated = yes
 		completion_reward = {
-			ITA = { country_event = { id = ssw_spr.6 days = 1 } }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SPR_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		text = construction_effort
+		prerequisite = { focus = SPR_franco_kokusakujidousya }
+		x = -1
+		y = 1
+		relative_position_id = SPR_franco_kokusakujidousya
+		cost = 5
+		ai_will_do = { factor = 10 }
+		available_if_capitulated = yes
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1248,214 +1464,11 @@ focus_tree = {
 		x = 29
 		y = 13
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_38
-			}
-		
-				add_tech_bonus = {
-						bonus = 1
-						uses = 1
-						category = mountaineers_tech
-					
-			}
-		}
-
-	}
-
-
-	focus = {
-		id = SPR_franco_huransubunaktu
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		cost = 8.00
-		ai_will_do = { factor = 10 }
-		prerequisite = { focus = SPR_franco_kokusakujidousya }
-		available = {
-			is_in_faction_with = ITA
-			NOT = { country_exists = FRA }
-			custom_trigger_tooltip = {
-				tooltip = spr_franco_huransubunaktu_tt
-				OR = {
-					controls_state = 1
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 1
-					}
-				}
-				OR = {
-					controls_state = 19
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 19
-					}
-				}
-				OR = {
-					controls_state = 20
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 20
-					}
-				}
-				OR = {
-					controls_state = 21
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 21
-					}
-				}
-				OR = {
-					controls_state = 22
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 22
-					}
-				}
-				OR = {
-					controls_state = 23
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 23
-					}
-				}
-				OR = {
-					controls_state = 24
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 24
-					}
-				}
-				OR = {
-					controls_state = 25
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 25
-					}
-				}
-				OR = {
-					controls_state = 26
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 26
-					}
-				}
-				OR = {
-					controls_state = 31
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 31
-					}
-				}
-				OR = {
-					controls_state = 32
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 32
-					}
-				}
-				OR = {
-					controls_state = 33
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 33
-					}
-				}
-				OR = {
-					controls_state = 735
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 735
-					}
-				}
-				OR = {
-					controls_state = 806
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 806
-					}
-				}
-				OR = {
-					controls_state = 939
-					any_other_country = {
-						is_in_faction_with = SPR
-						controls_state = 939
-					}
-				}
-			}
-		}
-		x = 33
-		y = 6
-		completion_reward = {
-			custom_effect_tooltip = disunite_france_tt
-			hidden_effect = {
-				FR0 = { transfer_state = 19 }
-				COR = {
-					add_state_core = 1
-					transfer_state = 1
-				}
-				OCC = {
-					add_state_core = 22
-					add_state_core = 25
-					add_state_core = 31
-					transfer_state = 22
-					transfer_state = 25
-					transfer_state = 31
-				}
-				POI = {
-					add_state_core = 23
-					add_state_core = 24
-					add_state_core = 33
-					transfer_state = 23
-					transfer_state = 24
-					transfer_state = 33
-				}
-				PRV = {
-					add_state_core = 21
-					add_state_core = 32
-					transfer_state = 21
-					transfer_state = 32
-				}
-				VIC = {
-					add_state_core = 20
-					add_state_core = 26
-					transfer_state = 20
-					transfer_state = 26
-				}
-				ITA = {
-					add_state_core = 735
-					add_state_core = 939
-					transfer_state = 735
-					transfer_state = 939
-					set_autonomy = {
-						target = COR
-						autonomous_state = colony
-					}
-					set_autonomy = {
-						target = PRV
-						autonomous_state = colony
-					}
-				}
-				set_autonomy = {
-					target = FR0
-					autonomous_state = colony
-				}
-				set_autonomy = {
-					target = OCC
-					autonomous_state = colony
-				}
-				set_autonomy = {
-					target = POI
-					autonomous_state = colony
-				}
-				set_autonomy = {
-					target = VIC
-					autonomous_state = colony
-				}
-				add_state_core = 806
-				transfer_state = 806
-				every_state = {
-					limit = { is_core_of = FRA }
-					set_state_flag = french_old_core
-				}
-				19 = { add_core_of = FR0 }
+			add_ideas = spr_ideas_38
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
 			}
 		}
 	}
@@ -1515,7 +1528,7 @@ focus_tree = {
 		x = 36
 		y = 3
 		completion_reward = {
-			SPR = {
+			ROOT = {
 				add_ideas = spr_ideas_19
 			}
 		}
@@ -1581,75 +1594,171 @@ focus_tree = {
 		icon = GFX_focus_por_iberian_summit
 		cost = 2.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_katorikkukyouryoku
-		}
-		prerequisite = {
-			focus = SPR_franco_outouha
-		}
+		prerequisite = { focus = SPR_franco_katorikkukyouryoku }
+		prerequisite = { focus = SPR_franco_outouha }
+		bypass = { is_in_faction = yes }
 		x = 36
 		y = 5
 		completion_reward = {
-			POR = {
-					country_event = { id = ssw_spr.77 days = 1 }
+			create_faction = catholic_union
+			if = {
+				limit = {
+					POR = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
+				POR = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_franco_youroppa
 		icon = GFX_goal_continuous_increase_nu
 		cost = 8.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_kyoukaidoumei
-		}
+		prerequisite = { focus = SPR_franco_kyoukaidoumei }
 		x = 36
 		y = 6
 		completion_reward = {
-			IRE = {
-					country_event = { id = ssw_spr.8 days = 1 }
+			if = {
+				limit = {
+					is_faction_leader = yes
+					ADR = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
+				ADR = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					IRE = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
+				}
+				IRE = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					SMR = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
+				}
+				SMR = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_franco_amerika
 		icon = GFX_goal_generic_national_unity
 		cost = 8.00
 		ai_will_do = { factor = 10 }
-		prerequisite = {
-			focus = SPR_franco_youroppa
-		}
+		prerequisite = { focus = SPR_franco_youroppa }
 		x = 35
 		y = 7
 		completion_reward = {
-			BRA = {
-					country_event = { id = ssw_spr.9 days = 1 }
+			if = {
+				limit = {
+					is_faction_leader = yes
+					BRA = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				VEN = {
-					country_event = { id = ssw_spr.10 days = 1 }
+				BRA = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					ARG = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				COL = {
-					country_event = { id = ssw_spr.11 days = 1 }
+				ARG = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					COL = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				PRU = {
-					country_event = { id = ssw_spr.12 days = 1 }
+				COL = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					VEN = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				BOL = {
-					country_event = { id = ssw_spr.13 days = 1 }
-				}
-				PAR = {
-					country_event = { id = ssw_spr.14 days = 1 }
-				}
-				ARG = {
-					country_event = { id = ssw_spr.15 days = 1 }
-				}
-				URG = {
-					country_event = { id = ssw_spr.16 days = 1 }
-				}
+				VEN = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_franco_tyuubei
@@ -1662,38 +1771,127 @@ focus_tree = {
 		x = 37
 		y = 7
 		completion_reward = {
-			PAN = {
-					country_event = { id = ssw_spr.17 days = 1 }
+			if = {
+				limit = {
+					is_faction_leader = yes
+					MEX = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+						has_completed_focus = MEX_rightist
+					}
 				}
-				COS = {
-					country_event = { id = ssw_spr.18 days = 1 }
+				MEX = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					HON = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				NIC = {
-					country_event = { id = ssw_spr.19 days = 1 }
+				HON = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					ELS = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				HON = {
-					country_event = { id = ssw_spr.20 days = 1 }
+				ELS = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					GUA = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				ELS = {
-					country_event = { id = ssw_spr.21 days = 1 }
+				GUA = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					NIC = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				GUA = {
-					country_event = { id = ssw_spr.22 days = 1 }
+				NIC = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					COS = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				MEX = {
-					country_event = { id = ssw_spr.23 days = 1 }
+				COS = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+					PAN = { 
+						exists = yes
+						is_puppet = no
+						is_in_faction = no
+						NOT = {
+							has_war_with = ROOT
+							has_government = anarchism
+							has_government = progressive_communism
+							has_government = classical_communism
+						}
+					}
 				}
-				CUB = {
-					country_event = { id = ssw_spr.24 days = 1 }
-				}
-				HAI = {
-					country_event = { id = ssw_spr.25 days = 1 }
-				}
-				DOM = {
-					country_event = { id = ssw_spr.26 days = 1 }
-				}
+				PAN = { country_event = { id = ssw_faction.1 days = 1 } }
+			}
 		}
-
 	}
 	focus = {
 		id = SPR_faranhe_nihon
@@ -1709,11 +1907,8 @@ focus_tree = {
 		x = 36
 		y = 8
 		completion_reward = {
-			JAP = {
-				country_event = { id = ssw_spr.49 days = 1 }
-			}
+			JAP = { country_event = { id = ssw_spr.49 days = 1 } }
 		}
-
 	}
 	focus = {
 		id = SPR_franco_banpaku
@@ -1729,11 +1924,8 @@ focus_tree = {
 		x = 34
 		y = 9
 		completion_reward = {
-			SPR = {
-					country_event = { id = ssw_spr.48 days = 1 }
-				}
+			country_event = { id = ssw_spr.48 days = 1 }
 		}
-
 	}
 	focus = {
 		id = SPR_guntai_kidousen
@@ -1790,9 +1982,7 @@ focus_tree = {
 		x = 39
 		y = 4
 		completion_reward = {
-			SPR = {
 				add_ideas = spr_ideas_21
-			}
 		}
 
 	}
@@ -1825,11 +2015,8 @@ focus_tree = {
 		x = 39
 		y = 6
 		completion_reward = {
-			SPR = {
-					add_research_slot = 1
-				}
+			add_stability = 0.15
 		}
-
 	}
 	focus = {
 		id = SPR_guntai_kaigun
@@ -1967,9 +2154,8 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_political_power = -60
-			SPR = {
-				add_ideas = spr_ideas_23
-			}
+			add_ideas = spr_ideas_23
+			
 		}
 
 	}
@@ -1984,9 +2170,8 @@ focus_tree = {
 		x = 44
 		y = 4
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_24
-			}
+			add_ideas = spr_ideas_24
+			
 		}
 
 	}
@@ -2004,11 +2189,10 @@ focus_tree = {
 		x = 43
 		y = 5
 		completion_reward = {
-			SPR = {
-				remove_ideas = { spr_ideas_23 }
-				remove_ideas = { spr_ideas_24 }
-				add_ideas = spr_ideas_25
-			}
+			remove_ideas = spr_ideas_23 
+			remove_ideas = spr_ideas_24 
+			add_ideas = spr_ideas_25
+			
 		}
 
 	}
@@ -2044,9 +2228,7 @@ focus_tree = {
 		x = 43
 		y = 6
 		completion_reward = {
-			SPR = {
-					add_research_slot = 1
-				}
+			add_stability = 0.15
 		}
 
 	}
@@ -2181,9 +2363,8 @@ focus_tree = {
 		x = 49
 		y = 3
 		completion_reward = {
-			SPR = {
-				country_event = { id = ssw_spr.51 days = 1 }
-			}
+			country_event = { id = ssw_spr.51 days = 1 }
+			
 			swap_ideas = {
 				remove_idea = spr_debahu_02
 				add_idea = spr_ideas_1999
@@ -2202,9 +2383,8 @@ focus_tree = {
 		x = 47
 		y = 4
 		completion_reward = {
-			SPR = {
-				add_manpower = 37000
-			}
+			add_manpower = 50000
+			
 		}
 	}
 
@@ -2237,7 +2417,7 @@ focus_tree = {
 		x = 49
 		y = 4
 		completion_reward = {
-			add_political_power = -120
+			add_political_power = -100
 			add_ideas = spr_ideas_26
 		}
 	}
@@ -2516,30 +2696,10 @@ focus_tree = {
 		x = 49
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 278
-							owns_state = 493
-							owns_state = 307
-							owns_state = 305
-					}
-						
-					SPR = {
-						278 = {
-							is_puppet_of = SPR
-						}
-						493 = {
-							is_puppet_of = SPR
-						}
-						307 = {
-							is_puppet_of = SPR
-						}
-						305 = {
-							is_puppet_of = SPR
-						}
-						
-					}
-				}
+			owns_state = 278
+			owns_state = 493
+			owns_state = 307
+			owns_state = 305
 		}
 		completion_reward = {
 			
@@ -2589,30 +2749,10 @@ focus_tree = {
 		x = 45
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 278
-							owns_state = 300
-							owns_state = 301
-							owns_state = 302
-					}
-						
-					SPR = {
-						278 = {
-							is_puppet_of = SPR
-						}
-						300 = {
-							is_puppet_of = SPR
-						}
-						301 = {
-							is_puppet_of = SPR
-						}
-						302 = {
-							is_puppet_of = SPR
-						}
-						
-					}
-				}
+			owns_state = 278
+			owns_state = 300
+			owns_state = 301
+			owns_state = 302
 		}
 		completion_reward = {
 			
@@ -2723,30 +2863,10 @@ focus_tree = {
 		x = 51
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 303
-							owns_state = 492
-							owns_state = 506
-							owns_state = 649
-					}
-						
-					SPR = {
-						303 = {
-							is_puppet_of = SPR
-						}
-						492 = {
-							is_puppet_of = SPR
-						}
-						506 = {
-							is_puppet_of = SPR
-						}
-						649 = {
-							is_puppet_of = SPR
-						}
-						
-					}
-				}
+			owns_state = 303
+			owns_state = 492
+			owns_state = 506
+			owns_state = 649
 		}
 		completion_reward = {
 			
@@ -2885,9 +3005,7 @@ focus_tree = {
 		x = 55
 		y = 3
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_28
-			}
+			add_ideas = spr_ideas_28
 		}
 
 	}
@@ -2959,9 +3077,8 @@ focus_tree = {
 		x = 54
 		y = 8
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_35
-			}
+			add_ideas = spr_ideas_35
+			
 		}
 
 	}
@@ -3040,9 +3157,8 @@ focus_tree = {
 		x = 56
 		y = 4
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_32
-			}
+			add_ideas = spr_ideas_32
+			
 		}
 
 	}
@@ -3093,9 +3209,8 @@ focus_tree = {
 		x = 57
 		y = 8
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_36
-			}
+			add_ideas = spr_ideas_36
+			
 		}
 
 	}
@@ -3240,16 +3355,7 @@ focus_tree = {
 		x = 1
 		y = 5
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 112
-						
-		
-						112 = {
-							is_puppet_of = SPR
-						}
-					}
-				}
+			owns_state = 112
 		}
 		completion_reward = {
 			
@@ -3315,11 +3421,8 @@ focus_tree = {
 		x = 13
 		y = 7
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_08
-			}
+			add_ideas = spr_ideas_08
 		}
-
 	}
 	focus = {
 		id = SPR_franco_taihou
@@ -3431,9 +3534,7 @@ focus_tree = {
 		x = 28
 		y = 7
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_15
-			}
+			add_ideas = spr_ideas_15
 		}
 
 	}
@@ -3473,11 +3574,8 @@ focus_tree = {
 		x = 28
 		y = 9
 		completion_reward = {
-		SPR = {
 			country_event = { id = ssw_spr.47 days = 1 }
 		}
-	}
-
 	}
 	focus = {
 		id = SPR_franco_orinpia
@@ -3493,14 +3591,13 @@ focus_tree = {
 		x = 31
 		y = 10
 		completion_reward = {
-			add_extra_state_shared_building_slots = 2
 			41 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
 			}
 			41 = {
 				add_extra_state_shared_building_slots = 4
@@ -3613,10 +3710,9 @@ focus_tree = {
 		x = 59
 		y = 7
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_34
-				remove_ideas = { spr_debahu_03 }
-			}
+			add_ideas = spr_ideas_34
+			remove_ideas = { spr_debahu_03 }
+			
 		}
 
 	}
@@ -3631,30 +3727,10 @@ focus_tree = {
 		x = 47
 		y = 9
 		available = {
-			OR = {
-					SPR = {
-							owns_state = 375
-							owns_state = 277
-							owns_state = 378
-							owns_state = 316
-					}
-						
-					SPR = {
-						375 = {
-							is_puppet_of = SPR
-						}
-						277 = {
-							is_puppet_of = SPR
-						}
-						378 = {
-							is_puppet_of = SPR
-						}
-						316 = {
-							is_puppet_of = SPR
-						}
-						
-					}
-				}
+			owns_state = 375
+			owns_state = 277
+			owns_state = 378
+			owns_state = 316
 		}
 		completion_reward = {
 			
@@ -3713,9 +3789,8 @@ focus_tree = {
 		x = 48
 		y = 10
 		completion_reward = {
-			SPR = {
-				add_ideas = spr_ideas_27
-			}
+			add_ideas = spr_ideas_27
+			
 		}
 
 	}

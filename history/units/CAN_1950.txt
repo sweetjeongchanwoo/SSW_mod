@@ -11,7 +11,6 @@ division_template = {
   		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 1 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -85,8 +84,6 @@ division_template = {
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
 		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
 	}
 	support = {
 	 	mot_recon = { x = 0 y = 0 }
@@ -101,17 +98,187 @@ division_template = {
 		medium_armor = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 }
 		medium_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
-		medium_armor = { x = 1 y = 2 }
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
 	}
 	support = {
 		signal_company = { x = 0 y = 0 }
-		logistics_company = { x = 0 y = 1 }
 		mot_recon = { x = 0 y = 2 }
-		maintenance_company = { x = 0 y = 3 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1st infantry Division"
+		location = 749
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "2st infantry Division"
+		location = 13284
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "3st infantry Division"
+		location = 9667
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "4st infantry Division"
+		location = 9711
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "5st infantry Division"
+		location = 12582
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "6st infantry Division"
+		location = 1408
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "7st infantry Division"
+		location = 1262
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "8st infantry Division"
+		location = 10552
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "9st infantry Division"
+		location = 12603
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "11st infantry Division"
+		location = 1769
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "12st infantry Division"
+		location = 7361
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "10st infantry Division"
+		location = 12149
+		division_template = "Grenadier Guards"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "1st tank Division"
+		location = 3778
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.2
+		
+	}
+
+	division = {
+		name = "2st tank Division"
+		location = 4345
+		division_template = "Tank Briagde"
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		name = "13st infantry Division"
+		location = 3775
+		division_template = Grenadier Guards
+		start_experience_factor = 0.2	
+	}
+
+
+}
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "CAN"
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_3 
+			creator = "CAN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 60
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CAN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 80
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAN" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 70
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "CAN" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 80
 	}
 }

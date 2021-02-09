@@ -22,3 +22,13 @@ set_politics = {
 set_popularities = {
 	national_fascism = 100
 }
+create_country_leader = {
+	name = "Ettore Bastico"
+	desc = "POLITICS_ETTORE_BASTICO_DESC"
+	picture = "gfx/leaders/ITA/ssw_Portrait_Italy_Ettore_Bastico.dds"
+	expire = "1965.1.1"
+	ideology = national_fascism_ideology
+	traits = {
+			
+	}
+}

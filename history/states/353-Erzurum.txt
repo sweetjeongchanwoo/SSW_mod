@@ -8,9 +8,6 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			11853 3
-		}
-		victory_points = {
 			9860 1
 		}
 		buildings = {
@@ -21,6 +18,6 @@ state={
 	}
 
 	provinces={
-		876 9858 9860 9868 9954 10399 11797 11853 
+		876 9858 9860 10399 
 	}
 }

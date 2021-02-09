@@ -20,10 +20,39 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { tag = MEX } #êÌèüçë
-					FROM = { always = yes } #îsêÌçë
+					ROOT = { original_tag = SPA } #êÌèüçë
+					FROM = { original_tag = SPR } #îsêÌçë
 				}
-				ROOT = { add_political_power = 150 }
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1001 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = SPR } #êÌèüçë
+					FROM = { original_tag = SPA } #îsêÌçë
+				}
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1002 hours = 6 }
+				}
 			}
 		}
 	}
@@ -260,7 +289,7 @@ on_actions = {
 				}
 				add_ideas = {
 					ssw_authoritarian_regime
-					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner_political_leader
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
 					RUS_fyodor_kulakov
@@ -278,7 +307,7 @@ on_actions = {
 				}
 				add_ideas = {
 					ssw_authoritarian_regime
-					RUS_vladimir_kryuchkov
+					RUS_serafima_hopner_political_leader
 					RUS_serafima_hopner
 					RUS_pavel_sudoplatov
 					RUS_fyodor_kulakov

@@ -24,6 +24,6 @@ state={ #Nara
 
 	}
 	provinces={
-		1051
+		1051 11960 
 	}
 }

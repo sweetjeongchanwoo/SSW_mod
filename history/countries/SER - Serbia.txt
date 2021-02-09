@@ -1,6 +1,9 @@
 ﻿capital = 107
 oob = "SER_1950"
 set_cosmetic_tag = SERandMNT
+set_stability = 0.55
+set_war_support = 0.65
+
 
 add_opinion_modifier = { target = HUN modifier = hostile_status }
 add_opinion_modifier = { target = BUL modifier = hostile_status }

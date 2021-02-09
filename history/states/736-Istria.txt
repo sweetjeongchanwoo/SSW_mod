@@ -11,9 +11,9 @@ state={
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = SLV
-		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
+			dockyard = 2
 			6626 = {
 				naval_base = 5
 
@@ -24,8 +24,8 @@ state={
 	}
 
 	provinces={
-		599 6626 11595 11735 
+		599 6626 11595
 	}
-	manpower=1063159
+	manpower=1261159
 	buildings_max_level_factor=1.000
 }

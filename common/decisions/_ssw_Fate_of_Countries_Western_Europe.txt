@@ -18,9 +18,7 @@ fate_of_countries_category_western_europe = {
 				NOT = { is_subject_of = ROOT }
 			}
 		}
-		complete_effect = {
-			country_event = { id = ssw_foc_events.0 }
-		}
+		complete_effect = { country_event = { id = ssw_foc_events.0 } }
 		ai_will_do = { factor = 200 }
 	}
 	fate_of_germany = { #ドイツの運命
@@ -33,6 +31,7 @@ fate_of_countries_category_western_europe = {
 				country_exists = HLH
 				country_exists = HGR
 				country_exists = LTV
+				country_exists = GR0
 				has_global_flag = had_yalta_conference
 			}
 			any_state = {
@@ -42,6 +41,7 @@ fate_of_countries_category_western_europe = {
 					is_core_of = HLH
 					is_core_of = HGR
 					is_core_of = LTV
+					is_core_of = GR0
 				}
 				NOT = {
 					is_core_of = ROOT
@@ -65,6 +65,10 @@ fate_of_countries_category_western_europe = {
 					capital_scope = { is_fully_controlled_by = ROOT }
 					NOT = { is_subject_of = ROOT }
 				}
+				GR0 = {
+					capital_scope = { is_fully_controlled_by = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 		}
 		complete_effect = {
@@ -85,7 +89,29 @@ fate_of_countries_category_western_europe = {
 					is_claimed_by = ROOT
 				}
 			}
-			has_country_flag = arbitrage_rhine
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				FR1 = { is_subject_of = ROOT }
+				NFR = { is_subject_of = ROOT }
+				WUR = { is_subject_of = ROOT }
+				HAN = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = LTV
+				is_in_faction_with = FR1
+				is_in_faction_with = NFR
+				is_in_faction_with = WUR
+				is_in_faction_with = HAN
+				is_in_faction_with = WLL
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = FR1
+				original_tag = NFR
+				original_tag = WUR
+				original_tag = HAN
+				original_tag = WLL
+			}
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.2 }
@@ -119,13 +145,25 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 				has_cosmetic_tag = RUS_empire
+				has_cosmetic_tag = SIB_russia
+				has_cosmetic_tag = MOS_russia
 				any_other_country = {
-					is_in_faction_with = ROOT
-					has_cosmetic_tag = RUS_empire
+					OR = {
+						is_in_faction_with = ROOT
+						is_subject_of = ROOT
+					}
+					OR = {
+						has_cosmetic_tag = RUS_empire
+						has_cosmetic_tag = SIB_russia
+						has_cosmetic_tag = MOS_russia
+					}
 				}
 			}
-			has_country_flag = arbitrage_northern_poland
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.3 }
@@ -155,8 +193,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_katowice
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.4 }
@@ -189,8 +230,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_danzig
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.5 }
@@ -225,8 +269,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_hinterpommern
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.6 }
@@ -259,8 +306,11 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = POL
 				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = POL
+				original_tag = PRE
 			}
-			has_country_flag = arbitrage_prussia
 		}
 		complete_effect = {
 			country_event = { id = ssw_foc_events.7 }
@@ -288,6 +338,10 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = LTV
 				is_in_faction_with = SHL
 				is_in_faction_with = DEN
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = SHL
+				original_tag = DEN
 			}
 		}
 		complete_effect = {
@@ -315,6 +369,9 @@ fate_of_countries_category_western_europe = {
 				is_in_faction_with = GR0
 				is_in_faction_with = LTV
 				is_in_faction_with = CZE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = CZE
 			}
 		}
 		complete_effect = {
@@ -335,9 +392,9 @@ fate_of_countries_category_western_europe = {
 				is_fully_controlled_by = ROOT
 				is_core_of = AUS
 				NOT = {
-					is_core_of = HUN
 					is_core_of = ROOT
 					is_claimed_by = ROOT
+					has_state_flag = maybe_core_HUN
 				}
 			}
 			AUS = { capital_scope = { is_fully_controlled_by = ROOT } }
@@ -376,16 +433,353 @@ fate_of_countries_category_western_europe = {
 				GR0 = { is_subject_of = ROOT }
 				GR1 = { is_subject_of = ROOT }
 				LTV = { is_subject_of = ROOT }
-				FRA = { is_subject_of = ROOT }
+				FR1 = { is_subject_of = ROOT }
 				NFR = { is_subject_of = ROOT }
 				is_in_faction_with = GR0
 				is_in_faction_with = GR1
 				is_in_faction_with = LTV
-				is_in_faction_with = FRA
+				is_in_faction_with = FR1
 				is_in_faction_with = NFR
+				original_tag = GR0
+				original_tag = GR1
+				original_tag = LTV
+				original_tag = FR1
+				original_tag = NFR
 			}
 		}
 		complete_effect = { country_event = { id = ssw_foc_western_europe.1 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_belgium = { #ベルギーの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = BEL }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = BEL
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					has_state_flag = maybe_core_LUX
+					has_state_flag = maybe_core_FRA
+					state = 938
+				}
+			}
+			BEL = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_belgium }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = BEL
+				BEL = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_belgium }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.2 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_belgium
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_memel = { #メーメルの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			188 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				LIT = { is_subject_of = ROOT }
+				PRE = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = LTV
+				is_in_faction_with = LIT
+				is_in_faction_with = PRE
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = LIT
+				original_tag = PRE
+				has_cosmetic_tag = RUS_empire
+				any_other_country = {
+					is_in_faction_with = ROOT
+					has_cosmetic_tag = RUS_empire
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					has_cosmetic_tag = RUS_empire
+				}
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.3 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_switzerland = { #スイスの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = SWI }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = SWI
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					has_state_flag = maybe_core_NFR_GAMESTART
+					has_state_flag = maybe_core_ITA_GAMESTART
+				}
+			}
+			SWI = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_switzerland }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = SWI
+				SWI = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				has_country_flag = continue_to_occupy_switzerland
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.4 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_switzerland
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_luxembourg = { #ルクセンブルクの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = LUX }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = LUX
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LUX = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_luxembourg }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = LUX
+				LUX = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_luxembourg }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.5 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_luxembourg
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_liechtenstein = { #リヒテンシュタインの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = LIE }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = LIE
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			LIE = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_liechtenstein }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = LIE
+				LIE = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_liechtenstein }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.6 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_liechtenstein
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_britain = { #イギリスの運命
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = ENG }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = ENG
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+					has_state_flag = maybe_core_NIR
+				}
+			}
+			ENG = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_britain }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = ENG
+				ENG = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_britain }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.7 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_britain
+		}
+		ai_will_do = { factor = 100 }
+	}
+	fate_of_eupen = { #オイペンの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			938 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				BEL = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = WLL
+				is_in_faction_with = LTV
+				is_in_faction_with = BEL
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = WLL
+				original_tag = BEL
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.9 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_wallonia_luxembourg = { #ワロニア＝リュクサンブールの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			1033 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				GR0 = { is_subject_of = ROOT }
+				WLL = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				BEL = { is_subject_of = ROOT }
+				LUX = { is_subject_of = ROOT }
+				is_in_faction_with = GR0
+				is_in_faction_with = WLL
+				is_in_faction_with = LTV
+				is_in_faction_with = BEL
+				is_in_faction_with = LUX
+				original_tag = GR0
+				original_tag = LTV
+				original_tag = WLL
+				original_tag = BEL
+				original_tag = LUX
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.10 } }
+		ai_will_do = { factor = 200 }
+	}
+	fate_of_burgenland = { #ブルゲンラントの運命
+		icon = generic_operation
+		allowed = { always = yes }
+		available = { always = yes }
+		visible = {
+			981 = {
+				is_fully_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OR = {
+				HUN = { is_subject_of = ROOT }
+				AUS = { is_subject_of = ROOT }
+				LTV = { is_subject_of = ROOT }
+				is_in_faction_with = HUN
+				is_in_faction_with = AUS
+				is_in_faction_with = LTV
+				original_tag = HUN
+				original_tag = AUS
+				original_tag = LTV
+				GR0 = {
+					is_subject_of = ROOT
+					owns_state = 4
+				}
+				AND = {
+					is_in_faction_with = GR0
+					GR0 = { owns_state = 4 }
+				}
+				AND = {
+					original_tag = GR0
+					GR0 = { owns_state = 4 }
+				}
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_western_europe.11 } }
 		ai_will_do = { factor = 200 }
 	}
 }

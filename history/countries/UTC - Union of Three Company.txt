@@ -1,4 +1,4 @@
-﻿capital = 393
+﻿capital = 1131
 oob = "UTC_1950"
 
 set_research_slots = 3

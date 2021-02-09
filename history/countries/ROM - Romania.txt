@@ -1,7 +1,18 @@
 ﻿capital = 46
 oob = "ROM_1950"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ROM_1950_naval_mtg"
+	else = {
+		set_naval_oob = "ROM_1950_naval_legacy"
+	}
+}
 
-set_convoys = 5
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.6
+
+set_convoys = 20
 
 #country_event = { id = Danubian_war.1 days = 20 } #先祖伝来の地
 
@@ -114,6 +125,27 @@ set_technology = {
 	fuel_refining3 = 1
 	fuel_refining4 = 1
 	artillery1 = 1
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
 }
 
 add_opinion_modifier = { target = BUL modifier = hostile_status }

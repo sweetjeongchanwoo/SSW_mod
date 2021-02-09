@@ -290,3 +290,223 @@ JAP_ssw_dec_cat_debug = {
 
 	}
 }
+USA_policy = {
+	add_core_states_of_america = {
+		icon = generic_nationalism
+		available = {
+			NOT = { has_country_flag = adding_state_core }
+			hidden_trigger = {
+				FROM = {
+					NOT = {
+						is_core_of = ROOT
+						state = 686
+					}
+					has_state_flag = maybe_core_AMERICA
+				}
+			}
+		}
+		state_target = yes
+		on_map_mode = map_only
+		target_array = controlled_states
+		target_trigger = {
+			OR = {
+				original_tag = BLS
+				original_tag = TEX
+				original_tag = OKL
+				original_tag = LUI
+				original_tag = NEL
+				original_tag = HAW
+				original_tag = USA
+			}
+			hidden_trigger = {
+				FROM = {
+					NOT = {
+						is_core_of = ROOT
+						state = 686
+					}
+					has_state_flag = maybe_core_AMERICA
+				}
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		modifier = { political_power_gain = -1 }
+		visible = {
+			OR = {
+				original_tag = BLS
+				original_tag = TEX
+				original_tag = OKL
+				original_tag = LUI
+				original_tag = NEL
+				original_tag = HAW
+				original_tag = USA
+			}
+			hidden_trigger = {
+				FROM = {
+					NOT = {
+						is_core_of = ROOT
+						state = 686
+					}
+					has_state_flag = maybe_core_AMERICA
+				}
+			}
+		}
+		complete_effect = { set_country_flag = adding_state_core }
+		remove_effect = {
+			clr_country_flag = adding_state_core
+			FROM = { add_core_of = ROOT }
+		}
+	}
+	capital_washington_d_c = {
+		icon = generic_form_nation
+		available = {
+			OR = {
+				original_tag = BLS
+				original_tag = TEX
+				original_tag = OKL
+				original_tag = LUI
+				original_tag = NEL
+				original_tag = HAW
+				original_tag = USA
+			}
+			1114 = {
+				is_capital = no
+				is_fully_controlled_by = ROOT
+			}
+		}
+		cost = 150
+		ai_will_do = { factor = 10 }
+		visible = {
+			OR = {
+				original_tag = BLS
+				original_tag = TEX
+				original_tag = OKL
+				original_tag = LUI
+				original_tag = NEL
+				original_tag = HAW
+				original_tag = USA
+			}
+			1114 = {
+				is_capital = no
+				is_fully_controlled_by = ROOT
+			}
+		}
+		complete_effect = {
+			set_capital = 1114
+			if = {
+				limit = { original_tag = NEL }
+				set_cosmetic_tag = NEL_america
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = BLS
+						original_tag = TEX
+						original_tag = OKL
+						original_tag = LUI
+						original_tag = HAW
+					}
+				}
+				set_cosmetic_tag = USA_perfect
+			}
+			hidden_effect = { set_country_flag = return_capital_of_washington_d_c }
+		}
+	}
+}
+SSW_foreign_support = {
+	return_cores_to_ally = {
+		icon = generic_operation
+		available = {
+			OR = {
+				has_war = no
+				AND = {
+					has_war = yes
+					surrender_progress < 0.2
+				}
+			}
+		}
+		visible = {
+			is_in_faction = yes
+			NOT = { has_country_flag = SSW_returning }
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+					always = yes
+				}
+				NOT = { has_state_flag = SSW_keeping_state }
+			}
+		}
+		target_root_trigger = { is_in_faction = yes }
+		target_array = allies
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			set_country_flag = SSW_returning
+			FROM = { save_event_target_as = return_to }
+			country_event = ssw_generic_political.0
+		}
+	}
+	return_cores_to_subject = {
+		icon = generic_operation
+		available = {
+			OR = {
+				has_war = no
+				AND = {
+					has_war = yes
+					surrender_progress < 0.2
+				}
+			}
+		}
+		visible = {
+			num_subjects > 0
+			NOT = { has_country_flag = SSW_returning }
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_in_faction_with = ROOT }
+				exists = yes
+			}
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+					always = yes
+				}
+				NOT = { has_state_flag = SSW_keeping_state }
+			}
+		}
+		target_root_trigger = { num_subjects > 0 }
+		target_array = subjects
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_in_faction_with = ROOT }
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			set_country_flag = SSW_returning
+			FROM = { save_event_target_as = return_to }
+			country_event = ssw_generic_political.0
+		}
+	}
+}

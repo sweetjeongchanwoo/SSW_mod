@@ -1,5 +1,5 @@
 focus_tree = {
-	id = ssw_Siam_focus
+	id = ssw_SIA
 	country = {
 		factor = 0
 		modifier = {
@@ -8,197 +8,873 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 10 y = 10 }	
 	focus = {
-		id = Thai_cultural_revolution
-		icon = GFX_goal_generic_national_unity
+		id = sia_change_country_name
+		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 6
+		x = 10
 		y = 0
 
 	}
 	focus = {
-		id = Karen_conflict
-		icon = GFX_focus_generic_provoke_border_clashes
+		id = sia_defense_ministry
+		icon = GFX_goal_unknown
 		cost = 10.00
-		x = 13
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = sia_karen_problem
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 19
 		y = 0
 
 	}
 	focus = {
-		id = Thai_made_Thai_use_Thai_charoen_policy
-		icon = GFX_focus_hol_the_foundations_of_defense
+		id = sia_ministry_of_education
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 28
+		y = 0
+
+	}
+	focus = {
+		id = sia_connection_with_the_national_guard
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Thai_cultural_revolution
+			focus = sia_change_country_name
 		}
-		x = 3
+		x = 7
 		y = 1
 
 	}
 	focus = {
-		id = Thailand_declares_independence
-		icon = GFX_focus_generic_support_the_left_right
+		id = sia_anti_china_rhetoric
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Thai_made_Thai_use_Thai_charoen_policy
+			focus = sia_change_country_name
 		}
-		x = 3
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = sia_investment_from_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_change_country_name
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = sia_competing_with_chinese_companies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_connection_with_the_national_guard
+		}
+		prerequisite = {
+			focus = sia_anti_china_rhetoric
+		}
+		prerequisite = {
+			focus = sia_investment_from_japan
+		}
+		x = 8
 		y = 2
 
 	}
 	focus = {
-		id = Peace_talks_with_Japan
-		icon = GFX_focus_chi_collaboration_with_the_japanese
+		id = sia_restrictions_on_chinese_immigrants
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Thailand_declares_independence
+			focus = sia_investment_from_japan
 		}
-		mutually_exclusive = {
-			focus = Declare_war_with_Japan
+		prerequisite = {
+			focus = sia_anti_china_rhetoric
 		}
-		x = 1
+		prerequisite = {
+			focus = sia_connection_with_the_national_guard
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = sia_strengthening_thai_nationalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_competing_with_chinese_companies
+			focus = sia_restrictions_on_chinese_immigrants
+		}
+		x = 10
 		y = 3
 
 	}
 	focus = {
-		id = Declare_war_with_Japan
-		icon = GFX_focus_attack_japan
+		id = sia_new_government_organization
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Thailand_declares_independence
-		}
-		mutually_exclusive = {
-			focus = Peace_talks_with_Japan
-		}
-		x = 4
-		y = 0
-		relative_position_id = Peace_talks_with_Japan
-
-	}
-	focus = {
-		id = Deal_with_the_Chinese
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = Thai_cultural_revolution
-		}
-		x = 6
-		y = 1
-
-	}
-	focus = {
-		id = Chinese_foreign_workers
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
-		prerequisite = {
-			focus = Deal_with_the_Chinese
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = Thai_propaganda
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		prerequisite = {
-			focus = Thai_cultural_revolution
-		}
-		x = 9
-		y = 1
-
-	}
-	focus = {
-		id = Situation_of_Karen
-		icon = GFX_focus_cze_german_puppet
-		cost = 10.00
-		prerequisite = {
-			focus = Karen_conflict
-		}
-		x = 13
-		y = 1
-
-	}
-	focus = {
-		id = Not_care_about_them
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10.00
-		prerequisite = {
-			focus = Situation_of_Karen
-		}
-		mutually_exclusive = {
-			focus = Expel_back_to_Burma
+			focus = sia_strengthening_thai_nationalism
 		}
 		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = Expel_back_to_Burma
-		icon = GFX_focus_spr_crush_the_revolution
-		cost = 10.00
-		prerequisite = {
-			focus = Situation_of_Karen
-		}
-		mutually_exclusive = {
-			focus = Not_care_about_them
-			focus = Purge_Karen_people
-		}
-		x = 13
-		y = 2
-
-	}
-	focus = {
-		id = Learn_technology_from_Japan
-		icon = GFX_focus_research2
-		cost = 10.00
-		prerequisite = {
-			focus = Peace_talks_with_Japan
-		}
-		x = 1
 		y = 4
 
 	}
 	focus = {
-		id = Reich_seek_support
-		icon = GFX_focus_chi_mission_to_germany
+		id = sia_coap_failure
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Declare_war_with_Japan
+			focus = sia_new_government_organization
 		}
 		mutually_exclusive = {
-			focus = British_seek_support
-		}
-		x = 4
-		y = 4
-
-	}
-	focus = {
-		id = British_seek_support
-		icon = GFX_focus_chi_british_cooperation
-		cost = 10.00
-		prerequisite = {
-			focus = Declare_war_with_Japan
-		}
-		mutually_exclusive = {
-			focus = Reich_seek_support
+			focus = sia_succesful_coup
 		}
 		x = 6
-		y = 4
+		y = 5
 
 	}
 	focus = {
-		id = Purge_Karen_people
+		id = sia_purge_of_the_military
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_coap_failure
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = sia_expanding_royal_influence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_purge_of_the_military
+		}
+		mutually_exclusive = {
+			focus = sia_limit_royal_influence
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = sia_limit_royal_influence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_purge_of_the_military
+		}
+		mutually_exclusive = {
+			focus = sia_expanding_royal_influence
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = sia_royalist_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_expanding_royal_influence
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = sia_reform_royal_house
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royalist_support
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = sia_succesful_coup
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_new_government_organization
+		}
+		mutually_exclusive = {
+			focus = sia_coap_failure
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = sia_martial_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_succesful_coup
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = sia_thailands_longest_day
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_martial_law
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = sia_dissolution_of_parliament
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_thailands_longest_day
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = sia_reducing_japans_impact
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_dissolution_of_parliament
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = sia_resistance_to_japanese_culture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_reducing_japans_impact
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = sia_resistance_to_japanese_products
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_reducing_japans_impact
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = sia_cultural_change
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_resistance_to_japanese_culture
+			focus = sia_resistance_to_japanese_products
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = sia_thais_future
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_cultural_change
+		}
+		x = 11
+		y = 12
+
+	}
+	focus = {
+		id = sia_trade_with_chinese
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_cultural_change
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = sia_chinese_worker
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_trade_with_chinese
+		}
+		x = 14
+		y = 13
+
+	}
+	focus = {
+		id = sia_current_status_of_the_karen_people
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_karen_problem
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = sia_do_not_pay_attention
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_current_status_of_the_karen_people
+		}
+		mutually_exclusive = {
+			focus = sia_imposing_problems_on_burma
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = sia_thai_propaganda
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_cultural_change
+		}
+		x = 17
+		y = 12
+
+	}
+	focus = {
+		id = sia_thailand_will_not_yield
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_thai_propaganda
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = sia_imposing_problems_on_burma
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_current_status_of_the_karen_people
+		}
+		mutually_exclusive = {
+			focus = sia_do_not_pay_attention
+			focus = sia_expulsion_of_karen
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = sia_japanese_support
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10.00
+		prerequisite = {
+			focus = sia_defense_ministry
+		}
+		mutually_exclusive = {
+			focus = sia_single_defense
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = sia_single_defense
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_defense_ministry
+		}
+		mutually_exclusive = {
+			focus = sia_japanese_support
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = sia_royal_thailand_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_japanese_support
+		}
+		prerequisite = {
+			focus = sia_single_defense
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = sia_strong_infantry
 		icon = GFX_focus_generic_manpower
 		cost = 10.00
 		prerequisite = {
-			focus = Situation_of_Karen
+			focus = sia_royal_thailand_army
 		}
 		mutually_exclusive = {
-			focus = Expel_back_to_Burma
+			focus = sia_armored_division
 		}
-		x = 16
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = sia_expulsion_of_karen
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_current_status_of_the_karen_people
+		}
+		mutually_exclusive = {
+			focus = sia_imposing_problems_on_burma
+		}
+		x = 21
 		y = 2
+
+	}
+	focus = {
+		id = sia_armored_division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royal_thailand_army
+		}
+		mutually_exclusive = {
+			focus = sia_strong_infantry
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = sia_blitzkrieg
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		prerequisite = {
+			focus = sia_armored_division
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = sia_royal_thailand_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_japanese_support
+		}
+		prerequisite = {
+			focus = sia_single_defense
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = sia_focus_on_large_ships
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royal_thailand_navy
+		}
+		mutually_exclusive = {
+			focus = sia_focus_on_small_ships
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = sia_chakri_naruebet
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		prerequisite = {
+			focus = sia_focus_on_large_ships
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = sia_7year_compulsory_education
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_ministry_of_education
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = sia_improvment_of_physical_education
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_7year_compulsory_education
+		}
+		mutually_exclusive = {
+			focus = sia_well_educated_thai
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = sia_introduction_of_swimming_class
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_improvment_of_physical_education
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = sia_partial_introduction_of_military_training
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_improvment_of_physical_education
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = sia_boy_scout_recommendations
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_partial_introduction_of_military_training
+			focus = sia_introduction_of_swimming_class
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = sia_royal_thailand_airforece
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_japanese_support
+		}
+		prerequisite = {
+			focus = sia_single_defense
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = sia_mastering_jet_technology
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royal_thailand_airforece
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = sia_focus_on_fighter
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_mastering_jet_technology
+		}
+		mutually_exclusive = {
+			focus = sia_focus_on_bomber
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = sia_focus_on_bomber
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_mastering_jet_technology
+		}
+		mutually_exclusive = {
+			focus = sia_focus_on_fighter
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = sia_well_educated_thai
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_7year_compulsory_education
+		}
+		mutually_exclusive = {
+			focus = sia_improvment_of_physical_education
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = sia_expansin_of_national_universities
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_well_educated_thai
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = sia_expansion_of_private_universities
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_expansin_of_national_universities
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = sia_royalist_purge
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_limit_royal_influence
+		}
+		x = 2
+		y = 8
+
+	}
+	focus = {
+		id = sia_expulsion_of_rama_viii
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royalist_purge
+		}
+		x = 2
+		y = 9
+
+	}
+	focus = {
+		id = sia_phibuns_guidelines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_purge_of_the_military
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = sia_improve_siam
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_phibuns_guidelines
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = sia_administrative_reform
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_phibuns_guidelines
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = sia_made_in_thailand_and_used_in_thailand
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_improve_siam
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = sia_thai_declaration_of_indipendence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_thais_future
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = sia_dialogue_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = sia_thai_declaration_of_indipendence
+		}
+		mutually_exclusive = {
+			focus = sia_war_with_japan
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = sia_war_with_japan
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = sia_thai_declaration_of_indipendence
+		}
+		mutually_exclusive = {
+			focus = sia_dialogue_with_japan
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = sia_learn_technologies_from_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_dialogue_with_japan
+		}
+		x = 9
+		y = 15
+
+	}
+	focus = {
+		id = sia_ask_support_to_germany
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_war_with_japan
+		}
+		mutually_exclusive = {
+			focus = sia_ask_support_to_uk
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = {
+		id = sia_ask_support_to_uk
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = sia_war_with_japan
+		}
+		mutually_exclusive = {
+			focus = sia_ask_support_to_germany
+		}
+		x = 14
+		y = 15
+
+	}
+	focus = {
+		id = sia_educational_support_for_rural_areas
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = sia_well_educated_thai
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = sia_aozora_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = sia_educational_support_for_rural_areas
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = sia_focus_on_small_ships
+		icon = GFX_focus_generic_destroyer
+		cost = 10.00
+		prerequisite = {
+			focus = sia_royal_thailand_navy
+		}
+		mutually_exclusive = {
+			focus = sia_focus_on_large_ships
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = sia_strengthening_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = sia_strong_infantry
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = sia_gredual_interception_strategy
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = sia_focus_on_small_ships
+		}
+		x = 25
+		y = 10
 
 	}
 }
