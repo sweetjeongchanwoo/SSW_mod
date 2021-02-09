@@ -85,8 +85,8 @@ spriteTypes = {
 		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_SWE.dds"
 	}
 	spriteType = {
-		name = "GFX_SSW_OpeningScreen_Poster_CHI"
-		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_CHI.dds"
+		name = "GFX_SSW_OpeningScreen_Poster_CHL"
+		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_CHL.dds"
 	}
 	spriteType = {
 		name = "GFX_SSW_OpeningScreen_Poster_ENG"
@@ -103,6 +103,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SSW_OpeningScreen_Poster_FSA"
 		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_FSA.dds"
+	}
+	spriteType = {
+		name = "GFX_SSW_OpeningScreen_Poster_NEA"
+		textureFile = "gfx/interface/occupation/SSW_OpeningScreen_Poster_NEA.dds"
 	}
 
 	spriteType = {

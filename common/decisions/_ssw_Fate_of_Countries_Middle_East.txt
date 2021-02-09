@@ -248,4 +248,41 @@ fate_of_countries_category_middle_east = {
 		}
 		ai_will_do = { factor = 100 }
 	}
+	fate_of_oman = { #ÉIÉ}Å[ÉìÇÃâ^ñΩ
+		icon = generic_operation
+		selectable_mission = yes
+		days_mission_timeout = 60
+		is_good = no
+		cost = 0
+		fire_only_once = no
+		activation = {
+			NOT = { country_exists = OMA }
+			any_state = {
+				is_fully_controlled_by = ROOT
+				is_core_of = OMA
+				NOT = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
+			OMA = { capital_scope = { is_fully_controlled_by = ROOT } }
+			hidden_trigger = {
+				always = yes
+				NOT = { has_country_flag = continue_to_occupy_oman }
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				country_exists = OMA
+				OMA = { capital_scope = { NOT = { is_fully_controlled_by = ROOT } } }
+				hidden_trigger = { has_country_flag = continue_to_occupy_oman }
+			}
+		}
+		complete_effect = { country_event = { id = ssw_foc_middle_east.6 } }
+		timeout_effect = {
+			occupy_medium_country = yes
+			set_country_flag = continue_to_occupy_oman
+		}
+		ai_will_do = { factor = 100 }
+	}
 }

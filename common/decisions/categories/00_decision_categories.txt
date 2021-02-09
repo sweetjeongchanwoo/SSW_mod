@@ -27,3 +27,7 @@ INC_reintegrate_states = {
 	allowed = { always = yes }
 	visible = { original_tag = INC }
 }
+SSW_foreign_support = {
+	allowed = { always = yes }
+	visible = { always = yes }
+}

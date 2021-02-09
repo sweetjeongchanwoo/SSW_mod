@@ -6,7 +6,7 @@ default_peace = {
 	take_states_randomness = 0
 	force_government_randomness = 0
 	annex = {
-		factor = 1000
+		factor = 500000
 		modifier = {
 			factor = 0
 			is_subject = yes
@@ -17,10 +17,15 @@ default_peace = {
 	puppet_all = { factor = 0 }
 	puppet_state = { factor = 0 }
 	take_states = {
-		factor = 50
+		base = 50
 		modifier = {
-			factor = 0
-			is_subject = yes
+			add = 999950
+			FROM = {
+				OR = {
+					is_core_of = ROOT
+					is_claimed_by = ROOT
+				}
+			}
 		}
 	}
 	force_government = { factor = 0 }

@@ -52,10 +52,18 @@
  RUS_blackorder_ADJ:0 "ブラックオーダー"
  
 #国家形成
+ ENG_GBR_progressive_communism:0 "イギリス連合"
+ ENG_GBR_progressive_communism_DEF:0 "イギリス連合"
+ ENG_GBR_classical_communism:0 "イギリス連合"
+ ENG_GBR_classical_communism_DEF:0 "イギリス連合"
  ENG_GBR:0 "イギリス"
  ENG_GBR_DEF:0 "イギリス"
  ENG_GBR_ADJ:0 "イギリス"
  
+ ENG_GBRandNIR_progressive_communism:0 "ブリタニア・コミューン"
+ ENG_GBRandNIR_progressive_communism_DEF:0 "ブリタニア・コミューン"
+ ENG_GBRandNIR_classical_communism:0 "ブリタニア・コミューン"
+ ENG_GBRandNIR_classical_communism_DEF:0 "ブリタニア・コミューン"
  ENG_GBRandNIR:0 "イギリス"
  ENG_GBRandNIR_DEF:0 "イギリス"
  ENG_GBRandNIR_ADJ:0 "イギリス"
@@ -156,6 +164,18 @@
  SAU_republic_DEF:0 "アラビア共和国"
  SAU_republic_ADJ:0 "アラビア"
  
+ ENG_republic_progressive_communism:0 "イギリス連合"
+ ENG_republic_progressive_communism_DEF:0 "イギリス連合"
+ ENG_republic_classical_communism:0 "イギリス連合"
+ ENG_republic_classical_communism_DEF:0 "イギリス連合"
+ ENG_republic:0 "イギリス共和国"
+ ENG_republic_DEF:0 "イギリス共和国"
+ ENG_republic_ADJ:0 "イギリス"
+ 
+ ENG_britain_scotland:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_DEF:0 "イングランド＝スコットランド"
+ ENG_britain_scotland_ADJ:0 "イングランド＝スコットランド"
+ 
 #帝政復古
  BRA_empire:0 "ブラジル帝国"
  BRA_empire_DEF:0 "ブラジル帝国"
@@ -214,3 +234,7 @@
  GER_rhine_republic:0 "ライン共和国"
  GER_rhine_republic_DEF:0 "ライン共和国"
  GER_rhine_republic_ADJ:0 "ラインラント"
+### 占領地 ###
+ COUNTRY_occupied_territories:0 "$OVERLORDADJ$領$NONIDEOLOGY$占領地域"
+ COUNTRY_occupied_territories_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$占領地域"
+ COUNTRY_occupied_territories_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYDEF$"

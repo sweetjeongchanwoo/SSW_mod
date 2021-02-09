@@ -1255,3 +1255,57 @@ news_event = {
 		}
 	}
 }
+news_event = {
+	id = ssw_spr.1001
+	title = ssw_spr.1001.title
+	desc = ssw_spr.1001.desc
+	picture = GFX_news_event_034
+	is_triggered_only = yes
+	immediate = { set_global_flag = republican_victory }
+	major = yes
+	option = {
+		name = ssw_spr.1001.a
+		trigger = {
+			NOT = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.1001.b
+		trigger = {
+			OR = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+}
+news_event = {
+	id = ssw_spr.1002
+	title = ssw_spr.1002.title
+	desc = ssw_spr.1002.desc
+	picture = GFX_news_event_033
+	is_triggered_only = yes
+	immediate = { set_global_flag = nationalist_victory }
+	major = yes
+	option = {
+		name = ssw_spr.1002.a
+		trigger = {
+			NOT = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+	option = {
+		name = ssw_spr.1002.b
+		trigger = {
+			OR = {
+				original_tag = SPA
+				original_tag = SPR
+			}
+		}
+	}
+}

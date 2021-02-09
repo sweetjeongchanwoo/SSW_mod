@@ -14,7 +14,17 @@ on_actions = {
 			981 = { set_state_flag = maybe_core_AUS }
 			#ハンガリー
 			981 = { set_state_flag = maybe_core_HUN }
-			#\リヒテンシュタイン
+			#北アイルランド
+			119 = { set_state_flag = maybe_core_NIR }
+			#ウェールズ
+			122 = { set_state_flag = maybe_core_WLS }
+			#クロアチア
+			103 = { set_state_flag = maybe_core_CRO }
+			109 = { set_state_flag = maybe_core_CRO }
+			163 = { set_state_flag = maybe_core_CRO }
+			971 = { set_state_flag = maybe_core_CRO }
+			1137 = { set_state_flag = maybe_core_CRO }
+			#リヒテンシュタイン
 			963 = { set_state_flag = maybe_core_LIE }
 			#ルクセンブルク
 			8 = { set_state_flag = maybe_core_LUX }
@@ -73,6 +83,56 @@ on_actions = {
 			every_state = {
 				limit = { is_core_of = ITA }
 				set_state_flag = maybe_core_ITA_GAMESTART
+			}
+			#スコットランド(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = SCO }
+				set_state_flag = maybe_core_SCO_GAMESTART
+			}
+			#西トルキスタン(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = WTR }
+				set_state_flag = maybe_core_WTR_GAMESTART
+			}
+			#トゥヴァ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = TUV }
+				set_state_flag = maybe_core_TUV_GAMESTART
+			}
+			#ベラルーシ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = BLR }
+				set_state_flag = maybe_core_BLR_GAMESTART
+			}
+			#ウクライナ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = UKR }
+				set_state_flag = maybe_core_UKR_GAMESTART
+			}
+			#バルト(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = BAL }
+				set_state_flag = maybe_core_BAL_GAMESTART
+			}
+			#フィンランド(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = FIN }
+				set_state_flag = maybe_core_FIN_GAMESTART
+			}
+			#コーカサス(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = CCS }
+				set_state_flag = maybe_core_ITA_GAMESTART
+			}
+			#シベリア(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = SIB }
+				set_state_flag = maybe_core_SIB_GAMESTART
+			}
+			#満洲国(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = MAN }
+				set_state_flag = maybe_core_MAN_GAMESTART
 			}
 		}
 	}

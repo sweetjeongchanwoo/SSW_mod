@@ -27,6 +27,14 @@ on_actions = {
 					limit = { is_core_of = FROM }
 					remove_core_of = FROM
 				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1001 hours = 6 }
+				}
 			}
 			if = {
 				limit = {
@@ -36,6 +44,14 @@ on_actions = {
 				every_state = {
 					limit = { is_core_of = FROM }
 					remove_core_of = FROM
+				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1002 hours = 6 }
 				}
 			}
 		}
@@ -332,8 +348,16 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = RUS
-					has_government = social_conservatism
+					OR = {
+						AND = {
+							original_tag = RUS
+							has_government = social_conservatism
+						}
+						AND = {
+							original_tag = ACO
+							has_government = authority_democracy
+						}
+					}
 				}
 				add_ideas = {
 					ssw_perfect_democratic_regime

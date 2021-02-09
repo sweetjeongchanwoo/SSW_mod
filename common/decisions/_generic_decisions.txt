@@ -414,3 +414,99 @@ USA_policy = {
 		}
 	}
 }
+SSW_foreign_support = {
+	return_cores_to_ally = {
+		icon = generic_operation
+		available = {
+			OR = {
+				has_war = no
+				AND = {
+					has_war = yes
+					surrender_progress < 0.2
+				}
+			}
+		}
+		visible = {
+			is_in_faction = yes
+			NOT = { has_country_flag = SSW_returning }
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+					always = yes
+				}
+				NOT = { has_state_flag = SSW_keeping_state }
+			}
+		}
+		target_root_trigger = { is_in_faction = yes }
+		target_array = allies
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			set_country_flag = SSW_returning
+			FROM = { save_event_target_as = return_to }
+			country_event = ssw_generic_political.0
+		}
+	}
+	return_cores_to_subject = {
+		icon = generic_operation
+		available = {
+			OR = {
+				has_war = no
+				AND = {
+					has_war = yes
+					surrender_progress < 0.2
+				}
+			}
+		}
+		visible = {
+			num_subjects > 0
+			NOT = { has_country_flag = SSW_returning }
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_in_faction_with = ROOT }
+				exists = yes
+			}
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+					always = yes
+				}
+				NOT = { has_state_flag = SSW_keeping_state }
+			}
+		}
+		target_root_trigger = { num_subjects > 0 }
+		target_array = subjects
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_in_faction_with = ROOT }
+				exists = yes
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			set_country_flag = SSW_returning
+			FROM = { save_event_target_as = return_to }
+			country_event = ssw_generic_political.0
+		}
+	}
+}
