@@ -5,13 +5,13 @@ fate_of_countries_category_eastern_europe = {
 		available = { always = yes }
 		visible = {
 			NOT = {
-				country_exists = RU8
+				country_exists = RUS
 				country_exists = SOV
 			}
 			any_state = {
 				is_fully_controlled_by = ROOT
 				OR = {
-					is_core_of = RU8
+					is_core_of = RUS
 					is_core_of = SOV
 				}
 				NOT = {

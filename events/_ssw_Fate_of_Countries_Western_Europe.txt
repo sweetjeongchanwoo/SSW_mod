@@ -720,6 +720,12 @@ country_event = { #イギリスの運命(1ページ目)
 	is_triggered_only = yes
 	option = {
 		name = ssw_foc_western_europe.7.a
+		trigger = {
+			NOT = {
+				has_government = progressive_communism
+				has_government = classical_communism
+			}
+		}
 		ai_chance = { base = 10 }
 		every_state = {
 			limit = {

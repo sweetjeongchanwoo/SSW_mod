@@ -348,8 +348,16 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = RUS
-					has_government = social_conservatism
+					OR = {
+						AND = {
+							original_tag = RUS
+							has_government = social_conservatism
+						}
+						AND = {
+							original_tag = ACO
+							has_government = authority_democracy
+						}
+					}
 				}
 				add_ideas = {
 					ssw_perfect_democratic_regime

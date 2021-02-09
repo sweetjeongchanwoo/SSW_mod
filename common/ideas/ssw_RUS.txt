@@ -106,7 +106,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = RUS
-					original_tag = RU2
+					original_tag = ACO
 				}
 			}
 			traits = { conservative_grandee }
@@ -255,7 +255,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = RUS
-					original_tag = RU2
+					original_tag = ACO
 				}
 			}
 			traits = { tenacious_negotiator }
@@ -342,7 +342,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = RUS
-					original_tag = RU2
+					original_tag = ACO
 				}
 			}
 			traits = { financial_expert }
@@ -429,7 +429,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = RUS
-					original_tag = RU2
+					original_tag = ACO
 				}
 			}
 			traits = {
@@ -520,7 +520,7 @@ ideas = {
 			allowed = {
 				OR = {
 					original_tag = RUS
-					original_tag = RU2
+					original_tag = ACO
 				}
 			}
 			traits = {
