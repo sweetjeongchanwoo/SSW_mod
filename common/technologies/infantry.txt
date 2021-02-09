@@ -2328,7 +2328,7 @@ technologies = {
 		folder = {
 			name = support_folder
 			position = {
-				x = 7
+				x = 0
 				y = 9
 			}
 		}

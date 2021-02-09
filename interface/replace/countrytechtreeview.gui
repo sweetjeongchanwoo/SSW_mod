@@ -555,7 +555,7 @@ guiTypes = {
 			}
 			gridboxtype = {
 				name = "motorised_infantry_tree"
-				position = { x = -470 y = 300 }
+				position = { x = 0 y = 0 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -2274,7 +2274,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "experimental_rockets_tree"
-				position = { x = 250 y = 100 }
+				position = { x = 250 y = 120 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
