@@ -89,6 +89,51 @@ on_actions = {
 				limit = { is_core_of = SCO }
 				set_state_flag = maybe_core_SCO_GAMESTART
 			}
+			#西トルキスタン(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = WTR }
+				set_state_flag = maybe_core_WTR_GAMESTART
+			}
+			#トゥヴァ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = TUV }
+				set_state_flag = maybe_core_TUV_GAMESTART
+			}
+			#ベラルーシ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = BLR }
+				set_state_flag = maybe_core_BLR_GAMESTART
+			}
+			#ウクライナ(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = UKR }
+				set_state_flag = maybe_core_UKR_GAMESTART
+			}
+			#バルト(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = BAL }
+				set_state_flag = maybe_core_BAL_GAMESTART
+			}
+			#フィンランド(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = FIN }
+				set_state_flag = maybe_core_FIN_GAMESTART
+			}
+			#コーカサス(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = CCS }
+				set_state_flag = maybe_core_ITA_GAMESTART
+			}
+			#シベリア(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = SIB }
+				set_state_flag = maybe_core_SIB_GAMESTART
+			}
+			#満洲国(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = MAN }
+				set_state_flag = maybe_core_MAN_GAMESTART
+			}
 		}
 	}
 }
