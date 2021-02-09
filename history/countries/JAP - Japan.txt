@@ -1,5 +1,6 @@
 ﻿capital = 942
 oob = "JAP_1950"
+naval_oob = "JAP_1950_naval"
 
 set_convoys = 549
 set_stability = 0.2#baseline, THE EMPEROR PROTECTS
