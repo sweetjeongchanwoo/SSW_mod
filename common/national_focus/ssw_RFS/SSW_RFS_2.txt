@@ -1,0 +1,352 @@
+focus_tree = {
+	id = SSW_RFS_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+
+		}
+	}
+	default = no
+	focus = {
+		id = RFS_SecondPhase_1
+		icon = GFX_goal_generic_political_pressure
+		cost = 2.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = RFS_warplan_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = RFS_SecondPhase_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_1
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = RFS_SecondPhase_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_2
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_8
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = RFS_SecondPhase_4
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_3
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = RFS_SecondPhase_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_4
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = RFS_SecondPhase_8
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_2
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_3
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = RFS_SecondPhase_9
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_8
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = RFS_SecondPhase_10
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_9
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = RFS_SecondPhase_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_5
+		}
+		prerequisite = {
+			focus = RFS_SecondPhase_10
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = RFS_SecondPhase_7
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_6
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_11
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = RFS_SecondPhase_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_6
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_7
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = RFS_warplan_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = RFS_warplan_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_2
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = RFS_warplan_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_5
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = RFS_warplan_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_2
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = RFS_warplan_8
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_6
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = RFS_warplan_9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_8
+		}
+		prerequisite = {
+			focus = RFS_warplan_7
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = RFS_warplan_4
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = RFS_warplan_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = RFS_warplan_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = RFS_warplan_13
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_11
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = RFS_warplan_10
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = RFS_warplan_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_10
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = RFS_SecondPhase_12
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_7
+			focus = RFS_SecondPhase_11
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = RFS_warplan_12
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = RFS_warplan_15
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_12
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = RFS_warplan_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_warplan_13
+		}
+		prerequisite = {
+			focus = RFS_warplan_14
+		}
+		prerequisite = {
+			focus = RFS_warplan_15
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = RFS_warplan_17
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_16
+		}
+		prerequisite = {
+			focus = RFS_warplan_9
+		}
+		x = 22
+		y = 7
+
+	}
+}

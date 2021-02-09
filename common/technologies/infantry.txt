@@ -1,3 +1,6 @@
+#!gfx:interface\ssw_Technologies.gfx
+#!gui:interface\replace\countrytechtreeview.gui
+#!localisation:localisation\replace\tech_Army_l_english.yml
 technologies = {
 	@1918 = -1
 	@1938 = 2
