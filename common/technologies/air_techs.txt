@@ -1,3 +1,6 @@
+#!gfx:interface\ssw_Technologies.gfx
+#!gfx:interface\technologies\air_tech
+#!gfx:technologies\industry.txt
 technologies = {
 	
 	fighter_1936 = {
@@ -2319,4 +2322,4 @@ technologies = {
 		################
 	}
 }
-}
+
