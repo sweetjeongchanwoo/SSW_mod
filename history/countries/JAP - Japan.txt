@@ -1217,7 +1217,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "乙型改二"
+	name = "I-52 Class"
 	type = ship_hull_cruiser_submarine
 	name_group = JAP_SS_HISTORICAL
 	parent_version = 0
