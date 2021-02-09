@@ -1432,6 +1432,10 @@
                     }
                 }
             }
+        }
+        task_force = {
+            name = "潜水戦隊"
+            location = 9998
             ship = {
                 name = "伊156"
                 definition = submarine
