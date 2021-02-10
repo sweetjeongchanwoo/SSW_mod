@@ -37,7 +37,7 @@ country_event = {
         name = SSW_FRA.2.a
         ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
-        has_country_flag = FRA_Darnand_leader
+        set_country_flag = FRA_Darnand_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 	        name = "Joseph Darnand"
@@ -52,7 +52,7 @@ country_event = {
         name = SSW_FRA.2.b
         ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
-        has_country_flag = FRA_Laval_leader
+        set_country_flag = FRA_Laval_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 	        name = "Pierre Laval"
@@ -67,7 +67,7 @@ country_event = {
         name = SSW_FRA.2.c
         ai_chance = { factor = 30 }
         has_country_flag = FRA_great_game
-        has_country_flag = FRA_Doriot_leader
+        set_country_flag = FRA_Doriot_leader
         complete_national_focus = FRA_next
         create_country_leader = {
 		    name = "Jacques Doriot"
@@ -118,15 +118,15 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name =SSW_FRA.4.a
+        name = SSW_FRA.4.a
         complete_national_focus = FRA_Trotskyism
     }
     option = {
-        name =SSW_FRA.4.b
+        name = SSW_FRA.4.b
         complete_national_focus = FRA_Mraxism_Leninism
     }
     option = {
-        name =SSW_FRA.4.c
+        name = SSW_FRA.4.c
         complete_national_focus = FRA_Anarchism
     }
 }
@@ -224,11 +224,11 @@ country_event = { #自由を求める演説
         }
     
     option = {
-        name =SSW_FRA.7.a #鎮圧
+        name = SSW_FRA.7.a #鎮圧
         stability_factor = -0.15
     }
     option = {
-        name =SSW_FRA.7.b #放っておけ
+        name = SSW_FRA.7.b #放っておけ
         stability_factor = -0.3
     }
 
@@ -289,9 +289,6 @@ country_event = {
     desc = SSW_FRA.10.d
 
     fire_on_lnly_once = yes
-    trigger = {
-        tag = FRA
-    }
 
     option = {
         name = SSW_FRA.10.a

@@ -1,20 +1,20 @@
 ﻿units = {
 
     fleet = {
-        name = "聯合艦隊"
+        name = "Rengo Kantai"
         naval_base = 9998
         task_force = {
-            name = "第一戦隊"
+            name = "Dai 1 Sentai"
             location = 9998
             ship = {
-                name = "翔鶴"
+                name = "Shokaku"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "翔鶴型"
+                        version_name = "Shokaku Class"
                     }
                 }
                 air_wings = { 
@@ -24,14 +24,14 @@
 				}
             }
             ship = {
-                name = "瑞鶴"
+                name = "Zuikaku"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "翔鶴型"
+                        version_name = "Shokaku Class"
                     }
                 }
                 air_wings = { 
@@ -41,14 +41,14 @@
 				}
             }
             ship = {
-                name = "大鳳"
+                name = "Taiho"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大鳳型"
+                        version_name = "Taiho Class"
                     }
                 }
                 air_wings = { 
@@ -57,14 +57,14 @@
 				}
             }
             ship = {
-                name = "雲龍"
+                name = "Unryu"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "雲龍型"
+                        version_name = "Unryu Class"
                     }
                 }
                 air_wings = { 
@@ -74,14 +74,14 @@
 				}
             }
             ship = {
-                name = "天城"
+                name = "Amagi"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "雲龍型"
+                        version_name = "Unryu Class"
                     }
                 }
                 air_wings = { 
@@ -91,14 +91,14 @@
 				}
             }
             ship = {
-                name = "葛城"
+                name = "Katsuragi"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "雲龍型"
+                        version_name = "Unryu Class"
                     }
                 }
                 air_wings = { 
@@ -108,14 +108,14 @@
 				}
             }
             ship = {
-                name = "笠置"
+                name = "Kasagi"
                 definition = carrier
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "雲龍型"
+                        version_name = "Unryu Class"
                     }
                 }
                 air_wings = { 
@@ -125,1862 +125,1878 @@
 				}
             }
             ship = {
-                name = "長門"
+                name = "Nagato"
                 definition = battleship
                 start_experience_factor = 0.6
                 equipment = {
                     ship_hull_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長門型"
+                        version_name = "Nagato Class"
                     }
                 }
             }
             ship = {
-                name = "陸奥"
+                name = "Mutsu"
                 definition = battleship
                 start_experience_factor = 0.6
                 equipment = {
                     ship_hull_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長門型"
+                        version_name = "Nagato Class"
                     }
                 }
             }
             ship = {
-                name = "大和"
+                name = "Yamato"
                 definition = battleship
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_super_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大和型"
+                        version_name = "Yamato Class"
                     }
                 }
             }
             ship = {
-                name = "武蔵"
+                name = "Musashi"
                 definition = battleship
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_super_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大和型"
+                        version_name = "Yamato Class"
                     }
                 }
             }
             ship = {
-                name = "信濃"
+                name = "Shinano"
                 definition = battleship
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_super_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大和型"
+                        version_name = "Yamato Class"
                     }
                 }
             }
             ship = {
-                name = "紀伊"
+                name = "Kii"
                 definition = battleship
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_super_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大和型"
+                        version_name = "Yamato Class"
                     }
                 }
             }
             ship = {
-                name = "古鷹"
+                name = "Furutaka"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "古鷹型"
+                        version_name = "Furutaka Class"
                     }
                 }
             }
             ship = {
-                name = "青葉"
+                name = "Aoba"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "青葉型"
+                        version_name = "Aoba Class"
                     }
                 }
             }
             ship = {
-                name = "衣笠"
+                name = "Kinugasa"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "青葉型"
+                        version_name = "Aoba Class"
                     }
                 }
             }
             ship = {
-                name = "妙高"
+                name = "Myoko"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "妙高型"
+                        version_name = "Myoko Class"
                     }
                 }
             }
             ship = {
-                name = "那智"
+                name = "Nachi"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "妙高型"
+                        version_name = "Myoko Class"
                     }
                 }
             }
             ship = {
-                name = "足柄"
+                name = "Ashigara"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "妙高型"
+                        version_name = "Myoko Class"
                     }
                 }
             }
             ship = {
-                name = "羽黒"
+                name = "Haguro"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "妙高型"
+                        version_name = "Myoko Class"
                     }
                 }
             }
             ship = {
-                name = "高雄"
+                name = "Takao"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "高雄型"
+                        version_name = "Takao Class"
                     }
                 }
             }
             ship = {
-                name = "愛宕"
+                name = "Atago"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "高雄型"
+                        version_name = "Takao Class"
                     }
                 }
             }
             ship = {
-                name = "鳥海"
+                name = "Chokai"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "高雄型"
+                        version_name = "Takao Class"
                     }
                 }
             }
             ship = {
-                name = "摩耶"
+                name = "Maya"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "高雄型"
+                        version_name = "Takao Class"
                     }
                 }
             }
             ship = {
-                name = "最上"
+                name = "Mogami"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "最上型"
+                        version_name = "Mogami Class"
                     }
                 }
             }
             ship = {
-                name = "三隈"
+                name = "Mikuma"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "最上型"
+                        version_name = "Mogami Class"
                     }
                 }
             }
             ship = {
-                name = "鈴谷"
+                name = "Suzuya"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "最上型"
+                        version_name = "Mogami Class"
                     }
                 }
             }
             ship = {
-                name = "熊野"
+                name = "Kumano"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "最上型"
+                        version_name = "Mogami Class"
                     }
                 }
             }
             ship = {
-                name = "利根"
-                definition = heavy_cruiser
-                start_experience_factor = 0.4
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "利根型"
-                    }
-                }
-            }
-            ship = {
-                name = "筑摩"
+                name = "Tone"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "利根型"
+                        version_name = "Tone Class"
                     }
                 }
             }
             ship = {
-                name = "伊吹"
+                name = "Chikuma"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊吹型"
+                        version_name = "Tone Class"
                     }
                 }
             }
             ship = {
-                name = "鞍馬"
+                name = "Ibuki"
                 definition = heavy_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊吹型"
+                        version_name = "Ibuki Class"
                     }
                 }
             }
             ship = {
-                name = "球磨"
+                name = "Kurama"
+                definition = heavy_cruiser
+                start_experience_factor = 0.4
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ibuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Kuma"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "球磨型"
+                        version_name = "Kuma Class"
                     }
                 }
             }
             ship = {
-                name = "多摩"
+                name = "Tama"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "球磨型"
+                        version_name = "Kuma Class"
                     }
                 }
             }
             ship = {
-                name = "北上"
+                name = "Kitakami"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "球磨型"
+                        version_name = "Kuma Class"
                     }
                 }
             }
             ship = {
-                name = "木曾"
+                name = "Oi"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "球磨型"
+                        version_name = "Kuma Class"
                     }
                 }
             }
             ship = {
-                name = "長良"
+                name = "Kiso"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長良型"
+                        version_name = "Kuma Class"
                     }
                 }
             }
             ship = {
-                name = "五十鈴"
+                name = "Nagara"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長良型"
+                        version_name = "Nagara Class"
                     }
                 }
             }
             ship = {
-                name = "鬼怒"
+                name = "Isuzu"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長良型"
+                        version_name = "Nagara Class"
                     }
                 }
             }
             ship = {
-                name = "阿武隈"
+                name = "Kinu"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "長良型"
+                        version_name = "Nagara Class"
                     }
                 }
             }
             ship = {
-                name = "那珂"
+                name = "Abukuma"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "那珂型"
+                        version_name = "Nagara Class"
                     }
                 }
             }
             ship = {
-                name = "夕張"
+                name = "Naka"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "夕張型"
+                        version_name = "Naka Class"
                     }
                 }
             }
             ship = {
-                name = "阿賀野"
+                name = "Yubari"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "阿賀野型"
+                        version_name = "Yubari Class"
                     }
                 }
             }
             ship = {
-                name = "能代"
+                name = "Agano"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "阿賀野型"
+                        version_name = "Agano Class"
                     }
                 }
             }
             ship = {
-                name = "矢矧"
+                name = "Noshiro"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "阿賀野型"
+                        version_name = "Agano Class"
                     }
                 }
             }
             ship = {
-                name = "酒匂"
+                name = "Yahagi"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "阿賀野型"
+                        version_name = "Agano Class"
                     }
                 }
             }
             ship = {
-                name = "大淀"
+                name = "Sakawa"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大淀型"
+                        version_name = "Agano Class"
                     }
                 }
             }
             ship = {
-                name = "仁淀"
+                name = "Oyodo"
                 definition = light_cruiser
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "大淀型"
+                        version_name = "Oyodo Class"
                     }
                 }
             }
             ship = {
-                name = "神風"
+                name = "Niyodo"
+                definition = light_cruiser
+                start_experience_factor = 0.4
+                equipment = {
+                    ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Oyodo Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Kamikaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "神風型"
+                        version_name = "Kamikaze Class"
                     }
                 }
             }
             ship = {
-                name = "春風"
+                name = "Harukaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "神風型"
+                        version_name = "Kamikaze Class"
                     }
                 }
             }
             ship = {
-                name = "旗風"
+                name = "Hatakaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "神風型"
+                        version_name = "Kamikaze Class"
                     }
                 }
             }
             ship = {
-                name = "夕凪"
+                name = "Yunagi"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "神風型"
+                        version_name = "Kamikaze Class"
                     }
                 }
             }
             ship = {
-                name = "卯月"
+                name = "Uzuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "卯月型"
+                        version_name = "Uzuki Class"
                     }
                 }
             }
             ship = {
-                name = "皐月"
+                name = "Satsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "卯月型"
+                        version_name = "Uzuki Class"
                     }
                 }
             }
             ship = {
-                name = "水無月"
+                name = "Minaduki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "卯月型"
+                        version_name = "Uzuki Class"
                     }
                 }
             }
             ship = {
-                name = "文月"
+                name = "Fumitsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "卯月型"
+                        version_name = "Uzuki Class"
                     }
                 }
             }
             ship = {
-                name = "夕月"
+                name = "Yuzuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "卯月型"
+                        version_name = "Uzuki Class"
                     }
                 }
             }
             ship = {
-                name = "薄雲"
+                name = "Usugumo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "白雲"
+                name = "Shirakumo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "浦波"
+                name = "Uranami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "敷波"
+                name = "Shikinami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "天霧"
+                name = "Amagiri"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "曙"
+                name = "Akebono"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "漣"
+                name = "Sazanami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "潮"
+                name = "Ushio"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "暁"
+                name = "Akatsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "響"
+                name = "Hibiki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "雷"
+                name = "Ikazuchi"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "電"
+                name = "Inazuma"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "薄雲型"
+                        version_name = "Usugumo Class"
                     }
                 }
             }
             ship = {
-                name = "初春"
+                name = "Hatsuharu"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "初春型"
+                        version_name = "Hatsuharu Class"
                     }
                 }
             }
             ship = {
-                name = "若葉"
+                name = "Wakaba"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "初春型"
+                        version_name = "Hatsuharu Class"
                     }
                 }
             }
             ship = {
-                name = "初霜"
+                name = "Hatsushimo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "初春型"
+                        version_name = "Hatsuharu Class"
                     }
                 }
             }
             ship = {
-                name = "白露"
+                name = "Shiratsuyu"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "時雨"
+                name = "Shigure"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "夕立"
+                name = "Yudachi"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "春雨"
+                name = "Harusame"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "五月雨"
+                name = "Samidare"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "海風"
+                name = "Umikaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "涼風"
+                name = "Suzukaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "白露型"
+                        version_name = "Shiratsuyu Class"
                     }
                 }
             }
             ship = {
-                name = "満潮"
+                name = "Michishio"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "満潮型"
+                        version_name = "Michishio Class"
                     }
                 }
             }
             ship = {
-                name = "荒潮"
+                name = "Arashio"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "満潮型"
+                        version_name = "Michishio Class"
                     }
                 }
             }
             ship = {
-                name = "朝雲"
+                name = "Asagumo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "満潮型"
+                        version_name = "Michishio Class"
                     }
                 }
             }
             ship = {
-                name = "山雲"
+                name = "Yamagumo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "満潮型"
+                        version_name = "Michishio Class"
                     }
                 }
             }
             ship = {
-                name = "不知火"
+                name = "Shiranui"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "初風"
+                name = "Hatsuhaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "雪風"
+                name = "Yukikaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "天津風"
+                name = "Amatsukaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "時津風"
+                name = "Toitsukaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "磯風"
+                name = "Isokaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "浜風"
+                name = "Hamakaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "谷風"
+                name = "Tanikaze"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "野分"
+                name = "Nowake"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "不知火型"
+                        version_name = "Shiranui Class"
                     }
                 }
             }
             ship = {
-                name = "風雲"
+                name = "Kazagumo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "長波"
+                name = "Naganami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "藤波"
+                name = "Fujinami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "早波"
+                name = "Hayanami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "浜波"
+                name = "Hamanami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "沖波"
+                name = "Okinami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "岸波"
+                name = "Kishinami"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "朝霜"
+                name = "Asashimo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "早霜"
+                name = "Hayashimo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "秋霜"
+                name = "Akishimo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "清霜"
+                name = "Kiyoshimo"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "風雲型"
+                        version_name = "Kazagumo Class"
                     }
                 }
             }
             ship = {
-                name = "秋月"
+                name = "Akizuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "照月"
+                name = "Teruzuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "涼月"
+                name = "Suzutsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "初月"
+                name = "Hatsuzuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "新月"
+                name = "Nizuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "若月"
+                name = "Wakatsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "霜月"
+                name = "Shimotsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "冬月"
+                name = "Fuyutsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "春月"
+                name = "Harutsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "宵月"
+                name = "Yoizuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "夏月"
+                name = "Natsuzuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "満月"
+                name = "Michitsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
             ship = {
-                name = "花月"
+                name = "Hanatsuki"
                 definition = destroyer
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_light_2 = {
                         amount = 1
                         owner = JAP
-                        version_name = "秋月型"
+                        version_name = "Akizuki Class"
                     }
                 }
             }
+        }
+        task_force = {
+            name = "Sensui Kantai"
+            location = 9998
             ship = {
-                name = "伊156"
+                name = "I-156"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊157"
+                name = "I-157"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊162"
+                name = "I-162"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊165"
+                name = "I-165"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊166"
+                name = "I-166"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊169"
+                name = "I-169"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊171"
+                name = "I-171"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊174"
+                name = "I-174"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊175"
+                name = "I-175"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊180"
+                name = "I-180"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊181"
+                name = "I-181"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊182"
+                name = "I-182"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊183"
+                name = "I-183"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊184"
+                name = "I-184"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊185"
+                name = "I-185"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
                     ship_hull_submarine_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "海大型"
+                        version_name = "Kaidai Class"
                     }
                 }
             }
             ship = {
-                name = "伊1"
+                name = "I-1"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊2"
+                name = "I-2"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊3"
+                name = "I-3"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊4"
+                name = "I-4"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊5"
+                name = "I-5"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊6"
+                name = "I-6"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊7"
+                name = "I-7"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊8"
+                name = "I-8"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊9"
+                name = "I-9"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊10"
+                name = "I-10"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊11"
+                name = "I-11"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊12"
+                name = "I-12"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊13"
+                name = "I-13"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊14"
+                name = "I-14"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊15"
+                name = "I-15"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "伊1型"
+                        version_name = "I-1 Class"
                     }
                 }
             }
             ship = {
-                name = "伊25"
+                name = "I-25"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊26"
+                name = "I-26"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊27"
+                name = "I-27"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊28"
+                name = "I-28"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊29"
+                name = "I-29"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊30"
+                name = "I-30"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊31"
+                name = "I-31"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊32"
+                name = "I-32"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊33"
+                name = "I-33"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊34"
+                name = "I-34"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊35"
+                name = "I-35"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型"
+                        version_name = "I-25 Class"
                     }
                 }
             }
             ship = {
-                name = "伊52"
+                name = "I-52"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型改二"
+                        version_name = "I-52 Class"
                     }
                 }
             }
             ship = {
-                name = "伊53"
+                name = "I-53"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型改二"
+                        version_name = "I-52 Class"
                     }
                 }
             }
             ship = {
-                name = "伊54"
+                name = "I-54"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型改二"
+                        version_name = "I-52 Class"
                     }
                 }
             }
             ship = {
-                name = "伊55"
+                name = "I-55"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型改二"
+                        version_name = "I-52 Class"
                     }
                 }
             }
             ship = {
-                name = "伊56"
+                name = "I-56"
                 definition = submarine
                 start_experience_factor = 0.4
                 equipment = {
-                    ship_hull_submarine_1 = {
+                    ship_hull_cruiser_submarine = {
                         amount = 1
                         owner = JAP
-                        version_name = "乙型改二"
+                        version_name = "I-52 Class"
                     }
                 }
             }
