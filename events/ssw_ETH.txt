@@ -1,0 +1,100 @@
+#########################
+#    ETHIOPIA EVENTS    #
+#########################
+#namespaces
+add_namespace = Ethiopia_Independence
+
+######  ##    ##  #####    #######  ######   #######  ##    ##  #####    #######  ##    ##   #####   #######
+  ##    ###   ##  ##  ##   ##       ##   ##  ##       ###   ##  ##  ##   ##       ###   ##  ##   ##  ##
+  ##    ####  ##  ##   ##  ##       ##   ##  ##       ####  ##  ##   ##  ##       ####  ##  ##       ##
+  ##    ##### ##  ##   ##  ######   ######   ######   ##### ##  ##   ##  ######   ##### ##  ##       ######
+  ##    ## #####  ##   ##  ##       ##       ##       ## #####  ##   ##  ##       ## #####  ##       ##
+  ##    ##  ####  ##  ##   ##       ##       ##       ##  ####  ##  ##   ##       ##  ####  ##   ##  ##
+######  ##   ###  #####    #######  ##       #######  ##   ###  #####    #######  ##   ###   #####   #######
+
+country_event = {#start independ war
+	id = Ethiopia_Independence.1
+	title = Ethiopia_Independence.1.t
+	desc = Ethiopia_Independence.1.desc
+	picture = GFX_report_event_spr_spanish_civil_war2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Ethiopia_Independence.1.a
+		1069 = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+		ETH = {
+			set_state_owner = 1069
+			division_template = {
+				name = "Milishiya"
+				is_locked = yes
+				division_names_group = ETH_INF_01
+				priority = 0
+				template_counter = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+    			    infantry = { x = 0 y = 3 }
+				} 
+			}
+			units = {
+				
+				division = {
+					name = "Sidamo Sefari"
+					location = 12856
+					division_template = "Milishiya"
+					start_experience_factor = 0.4
+            	    start_equipment_factor = 0.9
+				}
+				
+				division = {
+					name = "Gamu-Gofa Sefari"
+					location = 12856
+					division_template = "Milishiya"
+					start_experience_factor = 0.2
+             	   start_equipment_factor = 0.6
+
+				}
+				
+				division = {
+					name = "Irgelam Sefari"
+					location = 2009
+					division_template = "Milishiya"
+					start_experience_factor = 0.2
+            	    start_equipment_factor = 0.6
+
+				}
+				
+				division = {
+					name = "Borana Sefari"
+					location = 2009
+					division_template = "Milishiya"
+					start_experience_factor = 0.2
+        		    start_equipment_factor = 0.6
+
+				}
+				
+				division = {
+					name = "Arbegnoch yeSidamo"
+					location = 2009
+					division_template = "Milishiya"
+					start_experience_factor = 0.5
+        	    	start_equipment_factor = 0.7
+
+				}
+				
+				division = {
+					name = "Moyale Bego Fek’adenyineti"
+					location = 10734
+					division_template = "Militia"
+					start_experience_factor = 0.2
+                	start_equipment_factor = 0.5
+
+				}
+			}
+		}
+	}
+}
