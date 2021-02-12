@@ -297,13 +297,10 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 1.0
 				uses = 6
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				technology = fighter_1936
+				technology = fighter_1940
+				technology = heavy_fighter_1936
+				technology = heavy_fighter_1940
 			}
 		}
 	}
@@ -345,7 +342,7 @@ focus_tree = {
 			add_stability = 0.15
 		}
 	}
-	focus = { #‹¤Y“}‚Ì”eŒ 
+	focus = { #ï¿½ï¿½ï¿½Yï¿½}ï¿½Ì”eï¿½ï¿½
 		id = LFF_hegemony_of_cpusa
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = LFF_resumption_of_domestic_affairs }
@@ -361,7 +358,7 @@ focus_tree = {
 			country_event = { id = ssw_lff.0 days = 3 }
 		}
 	}
-	focus = { #Ğ‰ï“}‚Ì”eŒ 
+	focus = { #ï¿½Ğ‰ï¿½}ï¿½Ì”eï¿½ï¿½
 		id = LFF_hegemony_of_spa
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = LFF_resumption_of_domestic_affairs }
@@ -377,8 +374,8 @@ focus_tree = {
 			country_event = { id = ssw_lff.0 days = 3 }
 		}
 	}
-########## “Áêƒ‹[ƒg ##########
-	focus = { #^‚ÌĞ‰ïå‹`
+########## ï¿½ï¿½ï¿½êƒ‹ï¿½[ï¿½g ##########
+	focus = { #ï¿½^ï¿½ÌĞ‰ï¿½ï¿½`
 		id = LFF_true_socialism
 		icon = GFX_goal_support_fourth_int
 		prerequisite = {
@@ -397,8 +394,8 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-########## ƒtƒHƒXƒ^[ƒ‹[ƒg ##########
-	focus = { #ƒtƒHƒXƒ^[‚Æ‹¤‚É
+########## ï¿½tï¿½Hï¿½Xï¿½^ï¿½[ï¿½ï¿½ï¿½[ï¿½g ##########
+	focus = { #ï¿½tï¿½Hï¿½Xï¿½^ï¿½[ï¿½Æ‹ï¿½ï¿½ï¿½
 		id = LFF_with_foster
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = LFF_hegemony_of_cpusa }
@@ -429,8 +426,8 @@ focus_tree = {
 			}
 		}
 	}
-########## ƒuƒ‰ƒEƒ_[ƒ‹[ƒg ##########
-	focus = { #ƒuƒ‰ƒEƒ_[‚Æ‹¤‚É
+########## ï¿½uï¿½ï¿½ï¿½Eï¿½_ï¿½[ï¿½ï¿½ï¿½[ï¿½g ##########
+	focus = { #ï¿½uï¿½ï¿½ï¿½Eï¿½_ï¿½[ï¿½Æ‹ï¿½ï¿½ï¿½
 		id = LFF_with_browder
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = LFF_hegemony_of_cpusa }
@@ -461,8 +458,8 @@ focus_tree = {
 			}
 		}
 	}
-########## ƒ\ƒƒ‚ƒ“ƒ‹[ƒg ##########
-	focus = { #ƒ\ƒƒ‚ƒ“‚Æ‹¤‚É
+########## ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½g ##########
+	focus = { #ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‹ï¿½ï¿½ï¿½
 		id = LFF_with_solomon
 		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = LFF_hegemony_of_spa }
@@ -508,8 +505,8 @@ focus_tree = {
 			}
 		}
 	}
-########## ƒ”ƒ@ƒ‹ƒgƒ}ƒ“ƒ‹[ƒg ##########
-	focus = { #ƒ”ƒ@ƒ‹ƒgƒ}ƒ“‚Æ‹¤‚É
+########## ï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½gï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½g ##########
+	focus = { #ï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½gï¿½}ï¿½ï¿½ï¿½Æ‹ï¿½ï¿½ï¿½
 		id = LFF_with_waldman
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = LFF_hegemony_of_spa }
@@ -540,8 +537,8 @@ focus_tree = {
 			}
 		}
 	}
-########## ˜A–M‹c‰ïƒ‹[ƒg ##########
-	focus = { #s–¯ƒN[ƒfƒ^[
+########## ï¿½Aï¿½Mï¿½cï¿½ïƒ‹ï¿½[ï¿½g ##########
+	focus = { #ï¿½sï¿½ï¿½ï¿½Nï¿½[ï¿½fï¿½^ï¿½[
 		id = LFF_citizen_coup
 		icon = GFX_goal_support_democracy
 		prerequisite = {
