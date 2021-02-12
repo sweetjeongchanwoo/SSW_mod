@@ -30,6 +30,11 @@ set_technology = {
 
 add_ideas = {
 	civilian_economy
+	vacancy_pl
+	vacancy_mfa
+	vacancy_mf
+	vacancy_mi
+	vacancy_ma
 }
 
 set_politics = {
