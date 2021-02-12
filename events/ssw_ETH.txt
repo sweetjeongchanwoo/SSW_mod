@@ -12,7 +12,7 @@ add_namespace = Ethiopia_Independence
   ##    ##  ####  ##  ##   ##       ##       ##       ##  ####  ##  ##   ##       ##  ####  ##   ##  ##
 ######  ##   ###  #####    #######  ##       #######  ##   ###  #####    #######  ##   ###   #####   #######
 
-country_event = {#start independ war
+country_event = {#start independ war sidamo
 	id = Ethiopia_Independence.1
 	title = Ethiopia_Independence.1.t
 	desc = Ethiopia_Independence.1.desc
@@ -22,11 +22,12 @@ country_event = {#start independ war
 	is_triggered_only = yes
 	option = {
 		name = Ethiopia_Independence.1.a
-		1069 = {
-			add_offsite_building = { type = arms_factory level = 1 }
+		1070 = {
+			add_building = { type = arms_factory level = 1 instant_build = yes }
 		}
+		set_global_flag = ETH_start_indep_war
 		ETH = {
-			set_state_owner = 1069
+			transfer_state = 1070
 			division_template = {
 				name = "Milishiya"
 				is_locked = yes
@@ -40,61 +41,35 @@ country_event = {#start independ war
     			    infantry = { x = 0 y = 3 }
 				} 
 			}
-			units = {
-				
-				division = {
-					name = "Sidamo Sefari"
-					location = 12856
-					division_template = "Milishiya"
-					start_experience_factor = 0.4
-            	    start_equipment_factor = 0.9
-				}
-				
-				division = {
-					name = "Gamu-Gofa Sefari"
-					location = 12856
-					division_template = "Milishiya"
-					start_experience_factor = 0.2
-             	   start_equipment_factor = 0.6
-
-				}
-				
-				division = {
-					name = "Irgelam Sefari"
-					location = 2009
-					division_template = "Milishiya"
-					start_experience_factor = 0.2
-            	    start_equipment_factor = 0.6
-
-				}
-				
-				division = {
-					name = "Borana Sefari"
-					location = 2009
-					division_template = "Milishiya"
-					start_experience_factor = 0.2
-        		    start_equipment_factor = 0.6
-
-				}
-				
-				division = {
-					name = "Arbegnoch yeSidamo"
-					location = 2009
-					division_template = "Milishiya"
-					start_experience_factor = 0.5
-        	    	start_equipment_factor = 0.7
-
-				}
-				
-				division = {
-					name = "Moyale Bego Fek’adenyineti"
-					location = 10734
-					division_template = "Militia"
-					start_experience_factor = 0.2
-                	start_equipment_factor = 0.5
-
-				}
+			change_tag_from = NEA
+			unlock_decision_category_tooltip = ETH_volunteer_recruit
+		}
+		declare_war_on = {
+			target = ETH
+			type = annex_everything
+		}
+		hidden_effect = {
+			country_event = {
+				id = Ethiopia_Independence.2
+				days = 20
 			}
 		}
+	}
+}
+
+country_event = { #afar uprising
+	id = Ethiopia_Independence.2
+	title = Ethiopia_Independence.2.t
+	desc = Ethiopia_Independence.2.desc
+	picture = GFX_report_event_spr_spanish_civil_war2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Ethiopia_Independence.2.a
+		1070 = {
+			add_building = { type = arms_factory level = 1 instant_build = yes }
+		}
+		transfer_state = 1070
 	}
 }
