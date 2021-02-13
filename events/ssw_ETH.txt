@@ -67,9 +67,9 @@ country_event = { #afar uprising
 	is_triggered_only = yes
 	option = {
 		name = Ethiopia_Independence.2.a
-		1070 = {
-			add_building = { type = arms_factory level = 1 instant_build = yes }
+		1068 = {
+			add_building = { type = industrial_complex level = 1 instant_build = yes }
 		}
-		transfer_state = 1070
+		transfer_state = 1068
 	}
 }
