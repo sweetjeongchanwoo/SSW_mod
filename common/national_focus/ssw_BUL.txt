@@ -454,7 +454,7 @@ focus_tree={
                     JAP = {
                         has_opinion = {
                             target = BUL
-                            value > 100
+                            value > 99
                         }
                     }
                 }
