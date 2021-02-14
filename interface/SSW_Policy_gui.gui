@@ -69,7 +69,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "industry_focus_icon_button"
-					spriteType = "GFX_goal_unknown"
+					spriteType = "GFX_Policy_Economy"
 					position = { x = 76 y = 41 }
 				}
 				instantTextBoxType = {
@@ -115,7 +115,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "diplo_focus_icon_button"
-					spriteType = "GFX_goal_unknown"
+					spriteType = "GFX_Policy_diplomacy"
 					position = { x = 76 y = 41 }
 				}
 				instantTextBoxType = {
@@ -161,7 +161,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "social_focus_icon_button"
-					spriteType = "GFX_goal_unknown"
+					spriteType = "GFX_Policy_Social"
 					position = { x = 76 y = 41 }
 				}
 				instantTextBoxType = {
@@ -207,7 +207,7 @@ guiTypes = {
 				}
 				buttonType = {
 					name = "military_focus_icon_button"
-					spriteType = "GFX_goal_unknown"
+					spriteType = "GFX_Policy_Military"
 					position = { x = 76 y = 41 }
 				}
 				instantTextBoxType = {
