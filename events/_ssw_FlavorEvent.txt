@@ -183,3 +183,79 @@ news_event = {
 		name = flavor.7.a
 	}	
 }
+#Ransom_E.Olds
+news_event = {
+	id = flavor.8
+	title = flavor.8.t
+	desc = flavor.8.d
+	picture = 
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1950.8.26
+		tag = UTC
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = flavor.8.a
+	}	
+}
+#cigarettes_lung_cancer
+news_event = {
+	id = flavor.9
+	title = flavor.9.t
+	desc = flavor.9.d
+	picture = 
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1954.4.21
+		tag = GER
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = flavor.8.a
+	}	
+}
+#Rye_field
+news_event = {
+	id = flavor.10
+	title = flavor.10.t
+	desc = flavor.10.d
+	picture = 
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1951.7.16
+		OR{
+			tag = ALF #アメリカ自由連盟
+			tag = FSA #アメリカ連邦
+			tag = LUI #ルイジアナ
+			tag = OKL #オクラホマ
+			tag = USA #アメリカ合衆国
+			tag = UTC #三社連合
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = flavor.8.a
+	}	
+}
