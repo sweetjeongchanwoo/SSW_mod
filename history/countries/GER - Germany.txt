@@ -63,24 +63,33 @@ set_technology = {
 	tech_signal_company = 1
 	tech_signal_company2 = 1
 	tech_signal_company3 = 1
-	CAS_1936 = 1
-	CAS_1940 = 1
-	CAS_1940 = 1
-	fighter_1936 = 1
-	fighter_1940 = 1
-	naval_CAS_1936 = 1
-	naval_CAS_1940 = 1
-	jet_fighter_1944 = 1
-	jet_fighter_1948 = 1
-	jet_CAS_1948 = 1
-	heavy_fighter_1936 = 1
-	heavy_fighter_1940 = 1
-	tactical_bomber_1936 = 1
-	tactical_bomber_1940 = 1
-	jet_tactical_bomber_1944 = 1
-	jet_tactical_bomber_1948 = 1
-	strategic_bomber_1936 = 1
-	strategic_bomber_1940 = 1
+	early_fighter = 1
+	CAS1 = 1
+	CAS2 = 1
+	CAS3 = 1
+	CAS3 = 1
+	fighter1 = 1
+	fighter2 = 1
+	fighter3 = 1
+	naval_bomber1 = 1
+	naval_bomber2 = 1
+	naval_bomber3 = 1
+	jet_fighter1 = 1
+	jet_fighter2 = 1
+	jet_cas1 = 1
+	early_bomber = 1
+	heavy_fighter1 = 1
+	heavy_fighter2 = 1
+	heavy_fighter3 = 1
+	heavy_fighter4 = 1
+	tactical_bomber1 = 1
+	tactical_bomber2 = 1
+	tactical_bomber3 = 1
+	jet_tactical_bomber1 = 1
+	jet_tactical_bomber2 = 1
+	strategic_bomber1 = 1
+	strategic_bomber2 = 1
+	strategic_bomber3 = 1
 	scout_plane1 = 1
 	scout_plane2 = 1
 	basic_machine_tools = 1
@@ -873,25 +882,6 @@ create_corps_commander = {
 }
 
 ########## 分裂国家 ##########
-create_dynamic_country = { #ドイツ連合共和国
-	original_tag = GER
-	set_country_flag = GER_union_countryflag
-	set_cosmetic_tag = GER_union_republic
-	set_politics = {
-		ruling_party = social_conservatism
-		last_election = "1950.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = { social_conservatism = 100 }
-	set_capital = 965
-	every_state = {
-		limit = { is_core_of = PREV }
-		remove_core_of = PREV
-	}
-	load_focus_tree = generic_focus
-	reserve_dynamic_country = yes
-}
 create_dynamic_country = { #ライン共和国
 	original_tag = GER
 	set_country_flag = GER_rhine_countryflag
