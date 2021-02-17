@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 965
 #oob = "EGR_1950"
 
 set_convoys = 5
