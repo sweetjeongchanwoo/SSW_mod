@@ -154,7 +154,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authority_democracy= 100
+	authority_despotism= 100
 }
 
 create_country_leader = {
