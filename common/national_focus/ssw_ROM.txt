@@ -1,10 +1,13 @@
 focus_tree = {
 	id = ssw_ROM
 	country = {
-		factor = 1
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
 	}
-	default = yes
-	
+	default = no
 ########################
 ####POLITICAL BRANCH####	
 ########################
