@@ -159,10 +159,10 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Ion Victor Antonescu"
-	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
+	desc = "POLITICS_ION_VICTOR_ANTONESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Ion_Victor_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = authority_democracy_ideology
+	ideology = military_junta_ideology
 	traits = {
 		#
 	}
