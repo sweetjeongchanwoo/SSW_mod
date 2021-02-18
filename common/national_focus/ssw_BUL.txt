@@ -1523,7 +1523,7 @@ focus_tree={
     focus = { #クロアチアを終わらせる
         id = BUL_end_CRO
         icon = GFX_goal_generic_more_territorial_claims
-        x = 27
+        x = 28
         y = 6
         prerequisite = {
             focus = BUL_request_to_CRO
@@ -1543,13 +1543,10 @@ focus_tree={
     focus = { #ズメイ作戦
         id = BUL_operation_zmei
         icon = GFX_goal_generic_major_war
-        x = 29
-        y = 6
+        x = 28
+        y = 7
         prerequisite = {
-            focus = BUL_request_to_CRO
-        }
-        prerequisite = {
-            focus = BUL_cooperate_with_HUN
+            focus = BUL_end_CRO
         }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
@@ -1564,10 +1561,7 @@ focus_tree={
         id = BUL_get_HUN
         icon = GFX_LTV_Hungry
         x = 28
-        y = 7
-        prerequisite = {
-            focus = BUL_end_CRO
-        }
+        y = 8
         prerequisite = {
             focus = BUL_operation_zmei
         }
@@ -1584,7 +1578,7 @@ focus_tree={
         id = BUL_abandon_nonaggression
         icon = GFX_goal_generic_territory_or_war
         x = 28
-        y = 8
+        y = 9
         prerequisite = {
             focus = BUL_get_HUN
         }
@@ -1601,7 +1595,7 @@ focus_tree={
         id = BUL_operation_caraconjel
         icon = GFX_goal_generic_position_armies
         x = 28
-        y = 9
+        y = 10
         prerequisite = {
             focus = BUL_abandon_nonaggression
         }
