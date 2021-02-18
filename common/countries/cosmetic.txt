@@ -79,6 +79,26 @@ NEL_america = {	#アメリカ共和国
 	color_ui = rgb { 50 0 0 }
 }
 
+SPR_iberia = {	#イベリア連合
+	color = rgb { 255 155 100 }
+	color_ui = rgb { 255 155 100 }
+}
+
+SAU_republic = { #アラビア共和国
+	color = rgb { 150 0 150 }
+	color_ui = rgb { 150 0 150 }
+}
+
+ENG_republic = { #イギリス共和国
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+
+ENG_britain_scotland = { #イングランド＝スコットランド
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
+
 #モスクワ国家弁務官区崩壊
 RUS_empire = {	#ロシア帝国
 	color = rgb { 55 88 83 }
@@ -420,6 +440,11 @@ MZB_POR = {	#葡領モザンビーク
 }
 
 GNB_POR = {	#葡領ギニア
+	color = rgb { 20 100 85 }
+	color_ui = rgb { 153 102 0 }
+}
+
+GOA_POR = {	#葡領インド
 	color = rgb { 20 100 85 }
 	color_ui = rgb { 153 102 0 }
 }

@@ -39,4 +39,8 @@ spriteTypes = {
 		name = "GFX_imperial_overseas_territory_icon"
 		textureFile = "gfx/interface/autonomy/imperial_overseas_territory.dds"
 	}
+#	spriteType = {
+#		name = "GFX_occupied_territories_icon"
+#		textureFile = "gfx/interface/autonomy/occupied_territories.dds"
+#	}
 }

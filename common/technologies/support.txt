@@ -1,3 +1,5 @@
+#!gfx:interface\ssw_Technologies.gfx
+
 technologies = {
 	
 	@1936 = 0

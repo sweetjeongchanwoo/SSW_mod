@@ -1,7 +1,18 @@
 ﻿capital = 46
 oob = "ROM_1950"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ROM_1950_naval_mtg"
+	else = {
+		set_naval_oob = "ROM_1950_naval_legacy"
+	}
+}
 
-set_convoys = 5
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.6
+
+set_convoys = 20
 
 #country_event = { id = Danubian_war.1 days = 20 } #先祖伝来の地
 
@@ -56,23 +67,15 @@ set_technology = {
 	tech_logistics_company2 = 1
 	tech_signal_company = 1
 	tech_signal_company2 = 1
-	early_fighter = 1
-	CAS1 = 1
-	CAS2 = 1
-	CAS3 = 1
-	CAS3 = 1
-	fighter1 = 1
-	fighter2 = 1
-	naval_bomber1 = 1
-	naval_bomber2 = 1
-	early_bomber = 1
-	heavy_fighter1 = 1
-	heavy_fighter2 = 1
-	heavy_fighter3 = 1
-	tactical_bomber1 = 1
-	tactical_bomber2 = 1
-	strategic_bomber1 = 1
-	strategic_bomber2 = 1
+	CAS_1936 = 1
+	CAS_1940 = 1
+	CAS_1940 = 1
+	fighter_1936 = 1
+	naval_CAS_1936 = 1
+	heavy_fighter_1936 = 1
+	heavy_fighter_1940 = 1
+	tactical_bomber_1936 = 1
+	strategic_bomber_1936 = 1
 	scout_plane1 = 1
 	scout_plane2 = 1
 	basic_machine_tools = 1
@@ -116,6 +119,27 @@ set_technology = {
 	artillery1 = 1
 }
 
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+	}
+}
+
 add_opinion_modifier = { target = BUL modifier = hostile_status }
 add_opinion_modifier = { target = HUN modifier = hostile_status }
 
@@ -124,21 +148,21 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authority_democracy
+	ruling_party = authority_despotism
 	last_election = "1950.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authority_democracy= 100
+	authority_despotism= 100
 }
 
 create_country_leader = {
 	name = "Ion Victor Antonescu"
-	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
+	desc = "POLITICS_ION_VICTOR_ANTONESCU_DESC"
 	picture = "gfx/leaders/ROM/Portrait_Ion_Victor_Antonescu.dds"
 	expire = "1965.1.1"
-	ideology = authority_democracy_ideology
+	ideology = military_junta_ideology
 	traits = {
 		#
 	}

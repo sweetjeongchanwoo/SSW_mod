@@ -8,7 +8,7 @@ country_event = {
 	desc = SSW_ITA.1.d
 	option = {
 		name = SSW_ITA.1.a
-		add_political_powaer = 25
+		add_political_power = 25
 	}
 }
 #ローマが征く道

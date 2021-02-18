@@ -1,1 +1,155 @@
-﻿add_namespace = ssw_generic
+﻿add_namespace = ssw_generic_political
+country_event = {
+	id = ssw_generic_political.0
+	title = ssw_generic_political.0.title
+	desc = ssw_generic_political.0.desc
+	picture = GFX_report_event_generic_diplomacy2
+	is_triggered_only = yes
+	option = {
+		name = ssw_generic_political.0.a
+		ai_chance = { base = 100 }
+		clr_country_flag = SSW_returning
+		hidden_effect = { event_target:return_to = { country_event = ssw_generic_political.1 } }
+	}
+	option = {
+		name = ssw_generic_political.0.b
+		trigger = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_claim_or_core_of_ROOT = no
+				NOT = { has_state_flag = SSW_keeping_state }
+				OR = {
+					is_core_of = event_target:return_to
+					is_claimed_by = event_target:return_to
+				}
+			}
+			always = no
+		}
+		ai_chance = { base = 100 }
+		hidden_effect = {
+			clr_country_flag = SSW_returning
+			every_owned_state = {
+				limit = {
+					is_claim_or_core_of_ROOT = no
+					is_important_state = yes
+					NOT = { has_state_flag = SSW_keeping_state }
+					OR = {
+						is_core_of = event_target:return_to
+						is_claimed_by = event_target:return_to
+					}
+				}
+				set_state_flag = SSW_keeping_state
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_claim_or_core_of_ROOT = no
+						NOT = { has_state_flag = SSW_keeping_state }
+						OR = {
+							any_neighbor_state = { is_owned_by = event_target:return_to }
+							is_coastal = yes
+							always = yes
+						}
+						OR = {
+							is_core_of = event_target:return_to
+							is_claimed_by = event_target:return_to
+						}
+					}
+				}
+				event_target:return_to = { country_event = ssw_generic_political.1 }
+			}
+		}
+	}
+	option = {
+		name = ssw_generic_political.0.c
+		trigger = {
+			is_ai = no
+			any_owned_state = {
+				is_claim_or_core_of_ROOT = no
+				NOT = { has_state_flag = SSW_keeping_state }
+				is_core_of = event_target:return_to
+			}
+			any_owned_state = {
+				is_claim_or_core_of_ROOT = no
+				NOT = { has_state_flag = SSW_keeping_state }
+				NOT = { is_core_of = event_target:return_to }
+				is_claimed_by = event_target:return_to
+			}
+			always = no
+		}
+		ai_chance = { base = 0 }
+		hidden_effect = {
+			clr_country_flag = SSW_returning
+			every_owned_state = {
+				limit = {
+					is_claim_or_core_of_ROOT = no
+					NOT = { has_state_flag = SSW_keeping_state }
+					NOT = { is_core_of = event_target:return_to }
+					is_claimed_by = event_target:return_to
+				}
+				set_state_flag = SSW_keeping_state
+			}
+			event_target:return_to = { country_event = ssw_generic_political.1 }
+		}
+	}
+	option = {
+		name = ssw_generic_political.0.d
+		trigger = { is_ai = no }
+		ai_chance = { base = 0 }
+		clr_country_flag = SSW_returning
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = event_target:return_to
+						is_claimed_by = event_target:return_to
+					}
+					is_claim_or_core_of_ROOT = no
+					NOT = { has_state_flag = SSW_keeping_state }
+				}
+				set_state_flag = SSW_keeping_state
+			}
+		}
+	}
+}
+country_event = {
+	id = ssw_generic_political.1
+	title = ssw_generic_political.1.title
+	desc = ssw_generic_political.1.desc
+	picture = GFX_report_event_generic_diplomacy2
+	is_triggered_only = yes
+	option = {
+		name = ssw_generic_political.1.a
+		ai_chance = { base = 10 }
+		while_loop_effect = {
+			limit = {
+				any_state = {
+					is_owned_by = FROM
+					is_claim_or_core_of_ROOT = yes
+					is_claim_or_core_of_FROM = no
+					OR = {
+						any_neighbor_state = { is_owned_by = ROOT }
+						is_coastal = yes
+						always = yes
+					}
+					NOT = { has_state_flag = SSW_keeping_state }
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					is_claim_or_core_of_ROOT = yes
+					is_claim_or_core_of_FROM = no
+					OR = {
+						any_neighbor_state = { is_owned_by = ROOT }
+						is_coastal = yes
+						always = yes
+					}
+					NOT = { has_state_flag = SSW_keeping_state }
+				}
+				transfer_to_ROOT = yes
+				ROOT = { add_opinion_modifier = { target = FROM modifier = SSW_thanks } }
+			}
+		}
+	}
+}

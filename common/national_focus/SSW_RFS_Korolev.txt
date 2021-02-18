@@ -1,0 +1,403 @@
+focus_tree = {
+	id = SSW_RFS_Korolev
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RBL
+		}
+	}
+	default = no
+	focus = {
+		id = RFS_Koro_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = RFS_Koro_2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_Koro_1
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = RFS_Koro_3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_Koro_1
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = RFS_Koro_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_Koro_1
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = RFS_Koro_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_4
+		}
+		prerequisite = {
+			focus = RFS_Koro_3
+		}
+		prerequisite = {
+			focus = RFS_Koro_2
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = RFS_koro_war_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_5
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = RFS_Koro_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_5
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = RFS_Koro_land_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_6
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = RFS_Koro_land_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_1
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = RFS_Koro_land_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_1
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = RFS_Koro_land_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_3
+		}
+		prerequisite = {
+			focus = RFS_Koro_land_2
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = RFS_Koro_land_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_4
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = RFS_Koro_land_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_6
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_land_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_4
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = RFS_Koro_mis_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_5
+		}
+		x = 23
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_mis_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_5
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_mis_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_5
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_mis_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_mis_2
+		}
+		prerequisite = {
+			focus = RFS_Koro_mis_1
+		}
+		prerequisite = {
+			focus = RFS_Koro_mis_3
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = RFS_koro_war_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_1
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = RFS_koro_war_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_2
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = RFS_koro_war_4
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_2
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = RFS_koro_war_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_3
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = RFS_koro_war_6
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_4
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = RFS_koro_war_7
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_koro_war_6
+		}
+		prerequisite = {
+			focus = RFS_koro_war_5
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = RFS_koro_war_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_koro_war_7
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = RFS_koro_war_9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_8
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = RFS_koro_war_10
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_koro_war_8
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = RFS_koro_war_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_koro_war_10
+		}
+		prerequisite = {
+			focus = RFS_koro_war_9
+		}
+		x = 8
+		y = 11
+
+	}
+	focus = {
+		id = RFS_Koro_land_8
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_6
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_land_9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_6
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = RFS_Koro_land_10
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_7
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = RFS_Koro_land_11
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_8
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = RFS_Koro_land_12
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_land_9
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = RFS_Koro_mis_5
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_Koro_mis_4
+		}
+		x = 26
+		y = 12
+
+	}
+}

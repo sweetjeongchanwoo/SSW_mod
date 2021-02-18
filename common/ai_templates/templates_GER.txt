@@ -644,19 +644,12 @@ garrison_GER = {
 
 		modifier = {
 			factor = 100
-			OR = {
-				AND = {
-					has_completed_focus = GER_anschluss
-					NOT = { ai_has_role_template = garrison }
+			AND = {
+				any_country = {
+					is_justifying_wargoal_against = ROOT
 				}
-				
-				AND = {
-					any_country = {
-						is_justifying_wargoal_against = ROOT
-					}
-					NOT = { ai_has_role_template = garrison }
-				}
-			}			
+				NOT = { ai_has_role_template = garrison }
+			}
 		}
 	}
 	
@@ -1201,7 +1194,7 @@ anti_armor_GER = {
 
 			modifier = {
 				factor = 30
-				has_tech = interwar_antitank
+				#has_tech = interwar_antitank
 				#has_war_with = SOV
 				any_enemy_country = {
 					ROOT = {

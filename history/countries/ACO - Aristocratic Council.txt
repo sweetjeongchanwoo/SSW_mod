@@ -1,0 +1,35 @@
+﻿capital = 248
+#oob = ""
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	civilian_economy
+	ssw_mixed_regime
+	RUS_felix_yusupov
+	RUS_nikolai_khokhlov
+	RUS_sofia_panina
+	RUS_igor_stravinsky
+	RUS_bronislav_kaminski
+}
+
+set_politics = {
+	ruling_party = authority_democracy
+	last_election = "1950.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	authority_democracy = 100
+}
+create_country_leader = {
+	name = "Felix Yusupov"
+	desc = "POLITICS_FELIX_YUSUPOV_DESC"
+	picture = "gfx/leaders/RUS/Portrait_Russia_Felix_Yusupov.dds"
+	expire = "1967.9.27"
+	ideology = authority_democracy_ideology
+	traits = {
+	}
+}

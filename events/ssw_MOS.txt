@@ -12,44 +12,16 @@ country_event = {
 		country_event = { id = sswmos.4 days = 0 }
 		hidden_effect = {
 			set_capital = 351
-			BY0 = {
-				transfer_state = 194
-				transfer_state = 927
-				transfer_state = 928
-				add_state_core = 194
-				add_state_core = 927
-				add_state_core = 928
-				set_capital = 927
-			}
-			RU0 = {
-				transfer_state = 207
-				transfer_state = 208
-				transfer_state = 209
-				transfer_state = 210
-				transfer_state = 242
-				transfer_state = 246
-				transfer_state = 263
-				transfer_state = 992
-				add_state_core = 207
-				add_state_core = 208
-				add_state_core = 209
-				add_state_core = 210
-				add_state_core = 242
-				add_state_core = 246
-				add_state_core = 263
-				add_state_core = 992
-				set_capital = 242
-			}
-			RU1 = {
-				transfer_state = 224
-				transfer_state = 241
-				transfer_state = 243
-				add_state_core = 224
-				add_state_core = 241
-				add_state_core = 243
-				set_capital = 224
-			}
-			RU2 = {
+			inherit_technology = ACO
+			inherit_technology = AMC
+			inherit_technology = BLO
+			inherit_technology = FAR
+			inherit_technology = NBL
+			inherit_technology = RBL
+			inherit_technology = RSE
+			inherit_technology = RLB
+			inherit_technology = TOA
+			ACO = {
 				transfer_state = 248
 				transfer_state = 253
 				transfer_state = 986
@@ -62,25 +34,23 @@ country_event = {
 				add_state_core = 993
 				add_state_core = 994
 				add_state_core = 996
-				set_capital = 248
+				set_research_slots = 3
 			}
-			RU3 = {
-				transfer_state = 223
-				transfer_state = 254
-				add_state_core = 223
-				add_state_core = 254
-				set_capital = 223
+			AMC = {
+				transfer_state = 214
+				transfer_state = 989
+				add_state_core = 214
+				add_state_core = 989
+				set_research_slots = 3
 			}
-			RU4 = {
-				transfer_state = 252
-				transfer_state = 811
-				transfer_state = 995
-				add_state_core = 252
-				add_state_core = 811
-				add_state_core = 995
-				set_capital = 252
+			BLO = {
+				transfer_state = 984
+				transfer_state = 985
+				add_state_core = 984
+				add_state_core = 985
+				set_research_slots = 3
 			}
-			RU5 = {
+			FAR = {
 				transfer_state = 205
 				transfer_state = 219
 				transfer_state = 244
@@ -105,25 +75,68 @@ country_event = {
 				add_state_core = 1001
 				add_state_core = 1002
 				add_state_core = 1003
-				set_capital = 219
+				set_research_slots = 3
 			}
-			RU6 = {
-				transfer_state = 214
-				transfer_state = 989
-				add_state_core = 214
-				add_state_core = 989
-				set_capital = 214
-			}
-			RU7 = {
-				transfer_state = 984
-				transfer_state = 985
-				add_state_core = 984
-				add_state_core = 985
-				set_capital = 985
+			NBL = {
+				transfer_state = 194
+				transfer_state = 927
+				transfer_state = 928
+				add_state_core = 194
+				add_state_core = 927
+				add_state_core = 928
+				set_research_slots = 3
 			}
 			PET = {
 				transfer_state = 991
 				add_state_core = 991
+			}
+			RBL = {
+				transfer_state = 252
+				transfer_state = 811
+				transfer_state = 995
+				add_state_core = 252
+				add_state_core = 811
+				add_state_core = 995
+				set_research_slots = 3
+			}
+			RLB = {
+				transfer_state = 224
+				transfer_state = 241
+				transfer_state = 243
+				add_state_core = 224
+				add_state_core = 241
+				add_state_core = 243
+				set_research_slots = 3
+			}
+			RSE = {
+				transfer_state = 207
+				transfer_state = 208
+				transfer_state = 209
+				transfer_state = 210
+				transfer_state = 242
+				transfer_state = 246
+				transfer_state = 263
+				transfer_state = 992
+				add_state_core = 207
+				add_state_core = 208
+				add_state_core = 209
+				add_state_core = 210
+				add_state_core = 242
+				add_state_core = 246
+				add_state_core = 263
+				add_state_core = 992
+				set_research_slots = 3
+			}
+			TOA = {
+				transfer_state = 222
+				transfer_state = 223
+				transfer_state = 254
+				transfer_state = 258
+				add_state_core = 222
+				add_state_core = 223
+				add_state_core = 254
+				add_state_core = 258
+				set_research_slots = 3
 			}
 		}
 	}
@@ -187,12 +200,12 @@ country_event = {
 	option = { #ミハイル
 		name = sswmos.4.a
 		ai_chance = { factor = 0 }
-		RU6 = { change_tag_from = ROOT }
+		AMC = { change_tag_from = ROOT }
 	}
 	option = { #ブラック
 		name = sswmos.4.b
 		ai_chance = { factor = 0 }
-		RU7 = { change_tag_from = ROOT }
+		BLO = { change_tag_from = ROOT }
 	}
 	option = { #次のページ
 		name = sswmos.4.c
@@ -211,17 +224,17 @@ country_event = {
 	option = { #貴族
 		name = sswmos.5.a
 		ai_chance = { factor = 0 }
-		RU2 = { change_tag_from = ROOT }
+		ACO = { change_tag_from = ROOT }
 	}
 	option = { #大司教
 		name = sswmos.5.b
 		ai_chance = { factor = 0 }
-		RU3 = { change_tag_from = ROOT }
+		TOA = { change_tag_from = ROOT }
 	}
 	option = { #ロシアの空
 		name = sswmos.5.c
 		ai_chance = { factor = 0 }
-		RU4 = { change_tag_from = ROOT }
+		RBL = { change_tag_from = ROOT }
 	}
 	option = { #次のページ
 		name = sswmos.5.d
@@ -240,17 +253,17 @@ country_event = {
 	option = { #自由
 		name = sswmos.6.a
 		ai_chance = { factor = 0 }
-		RU2 = { change_tag_from = ROOT }
+		RLB = { change_tag_from = ROOT }
 	}
 	option = { #帝国
 		name = sswmos.6.b
 		ai_chance = { factor = 0 }
-		RU0 = { change_tag_from = ROOT }
+		RSE = { change_tag_from = ROOT }
 	}
 	option = { #全ロシア
 		name = sswmos.6.c
 		ai_chance = { factor = 0 }
-		RU5 = { change_tag_from = ROOT }
+		FAR = { change_tag_from = ROOT }
 	}
 	option = { #次のページ
 		name = sswmos.6.d
@@ -273,7 +286,7 @@ country_event = {
 	option = { #白ロシア
 		name = sswmos.7.a
 		ai_chance = { factor = 0 }
-		BY0 = { change_tag_from = ROOT }
+		NBL = { change_tag_from = ROOT }
 	}
 	option = { #弁務官区
 		name = sswmos.7.b

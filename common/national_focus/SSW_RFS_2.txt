@@ -1,0 +1,655 @@
+focus_tree = {
+	id = SSW_RFS_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RBL
+		}
+	}
+	continuous_focus_position = { x = 820 y = 1800 }
+	default = no
+	focus = {
+		id = RFS_SecondPhase_1
+		icon = GFX_goal_generic_political_pressure
+		cost = 2.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = RFS_warplan_1
+		icon = GFX_goal_unknown
+		cost = 2.00
+		x = 22
+		y = 0
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = infantry_tech
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_1
+		}
+		x = 7
+		y = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = sswrfs.3
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_2
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_8
+		}
+		x = 5
+		y = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = RFS_choice_kor
+			hidden_effect = {
+				set_country_flag = choice_kor
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_4
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_3
+		}
+		x = 5
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = RFS_Expansion_of_aviation_sector
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_4
+		}
+		x = 5
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_8
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_2
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_3
+		}
+		x = 9
+		y = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = RFS_choice_lys
+			hidden_effect ={
+				set_country_flag = choice_lys
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_9
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_8
+		}
+		x = 9
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = RFS_Expansion_of_the_agricultural_sector
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_10
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_9
+		}
+		x = 9
+		y = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = RFS_NKVD_pawer
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_5
+		}
+		prerequisite = {
+			focus = RFS_SecondPhase_10
+		}
+		x = 7
+		y = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+
+	}
+	focus = {
+		id = RFS_SecondPhase_7
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_6
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_11
+		}
+		x = 5
+		y = 6
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = pawer_up
+			hidden_effect = {
+				add_to_variable = {
+					var = political_strife_kor
+					value = 25
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_6
+		}
+		mutually_exclusive = {
+			focus = RFS_SecondPhase_7
+		}
+		x = 9
+		y = 6
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = pawer_up
+			hidden_effect = {
+				add_to_variable = {
+					var = political_strife_lys
+					value = 25
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_2
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 18
+		y = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_5
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_2
+		}
+		x = 16
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+
+
+	}
+	focus = {
+		id = RFS_warplan_7
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_5
+		}
+		x = 16
+		y = 4
+
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			AMC = {exists = no }
+		}
+			available_if_capitulated = no
+			completion_reward = {
+				declare_war_on = {
+					target = AMC
+					type = annex_everything
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_6
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_2
+		}
+		x = 20
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_8
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_6
+		}
+		x = 20
+		y = 4
+
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			BLO = {exists = no }
+		}
+			available_if_capitulated = no
+			completion_reward = {
+				declare_war_on = {
+					target = BLO
+					type = annex_everything
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_9
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_8
+		}
+		prerequisite = {
+			focus = RFS_warplan_7
+		}
+		x = 18
+		y = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = 0.25
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_4
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = RFS_warplan_3
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_1
+		}
+		x = 26
+		y = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_11
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 23
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+				limit = {
+				free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+				}
+		
+				}
+		
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+				}
+		
+				set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_13
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_11
+		}
+		x = 23
+		y = 4
+
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			FAR = {exists = no }
+		}
+			available_if_capitulated = no
+			completion_reward = {
+				declare_war_on = {
+					target = FAR
+					type = annex_everything
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_10
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 26
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_14
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_10
+		}
+		x = 26
+		y = 4
+
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			RSE = {exists = no }
+		}
+			available_if_capitulated = no
+			completion_reward = {
+				declare_war_on = {
+					target = RSE
+					type = annex_everything
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_SecondPhase_12
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_SecondPhase_7
+			focus = RFS_SecondPhase_11
+		}
+		available = {
+			OR = {
+				has_country_flag = win_kor
+				has_country_flag = win_lys
+			}
+		}
+		x = 7
+		y = 7
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_12
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_3
+		}
+		x = 29
+		y = 3
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_15
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = RFS_warplan_12
+		}
+		x = 29
+		y = 4
+
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			RLB = {exists = no }
+		}
+			available_if_capitulated = no
+			completion_reward = {
+				declare_war_on = {
+					target = RLB
+					type = annex_everything
+				}
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = RFS_warplan_13
+		}
+		prerequisite = {
+			focus = RFS_warplan_14
+		}
+		prerequisite = {
+			focus = RFS_warplan_15
+		}
+		x = 26
+		y = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_stability = 0.25
+			add_war_support = 0.25
+		}
+
+	}
+	focus = {
+		id = RFS_warplan_17
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = RFS_warplan_16
+		}
+		prerequisite = {
+			focus = RFS_warplan_9
+		}
+		x = 22
+		y = 7
+
+	}
+}

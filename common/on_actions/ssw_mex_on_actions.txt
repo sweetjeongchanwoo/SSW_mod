@@ -20,10 +20,107 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = { tag = MEX } #êÌèüçë
-					FROM = { always = yes } #îsêÌçë
+					ROOT = { original_tag = SPA } #êÌèüçë
+					FROM = { original_tag = SPR } #îsêÌçë
 				}
-				ROOT = { add_political_power = 150 }
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1001 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = SPR } #êÌèüçë
+					FROM = { original_tag = SPA } #îsêÌçë
+				}
+				every_state = {
+					limit = { is_core_of = FROM }
+					remove_core_of = FROM
+				}
+				if = {
+					limit = {
+						has_global_flag = spanish_civil_war
+						NOT = { has_global_flag = scw_over }
+					}
+					set_global_flag = scw_over
+					news_event = { id = ssw_spr.1002 hours = 6 }
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = LTV
+							original_tag = HLH
+							original_tag = HGR
+						}
+					}
+					FROM = { original_tag = GER }
+				}
+				news_event = { id = ssw.19 hours = 6 }
+				every_state = {
+					limit = { is_core_of = GER }
+					remove_core_of = GER
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = GER
+							original_tag = HLH
+							original_tag = HGR
+						}
+					}
+					FROM = { original_tag = LTV }
+				}
+				news_event = { id = ssw.17 hours = 6 }
+				every_state = {
+					limit = { is_core_of = LTV }
+					remove_core_of = LTV
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = LTV
+							original_tag = GER
+							original_tag = HGR
+						}
+					}
+					FROM = { original_tag = HLH }
+				}
+				news_event = { id = ssw.18 hours = 6 }
+				every_state = {
+					limit = { is_core_of = HLH }
+					remove_core_of = HLH
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = LTV
+							original_tag = GER
+							original_tag = HLH
+						}
+					}
+					FROM = { original_tag = HGR }
+				}
+				news_event = { id = ssw.19 hours = 6 }
+				every_state = {
+					limit = { is_core_of = HGR }
+					remove_core_of = HGR
+				}
 			}
 		}
 	}
@@ -319,8 +416,16 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					original_tag = RUS
-					has_government = social_conservatism
+					OR = {
+						AND = {
+							original_tag = RUS
+							has_government = social_conservatism
+						}
+						AND = {
+							original_tag = ACO
+							has_government = authority_democracy
+						}
+					}
 				}
 				add_ideas = {
 					ssw_perfect_democratic_regime

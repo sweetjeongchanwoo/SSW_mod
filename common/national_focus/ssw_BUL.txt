@@ -1,0 +1,1287 @@
+focus_tree={
+    id = ssw_BUL
+
+    country = {
+      factor = 0
+
+      modifier = {
+          add = 10
+          tag = BUL
+      }
+    }
+
+    #産業ツリー
+    focus = { #東欧の優等生
+        id = BUL_industry_1
+        icon = GFX_goal_unknown
+        cost = 10
+        search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+        x = 7
+        y = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            add_political_power = 150
+        }
+    }
+
+    focus = { #工業化の推進
+        id = BUL_industry_2
+        icon = GFX_goal_generic_construct_civ_factory
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 5
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_industry_1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = industry
+            }
+        }
+    }
+
+    focus = { #国立銀行を再国営化
+        id = BUL_bank
+        icon = GFX_focus_generic_self_management
+        cost = 10
+        search_filters ={
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 4
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_industry_2
+        }
+        completion_reward = {
+            add_ideas = BUL_bank_Renatio
+        }
+    }
+
+    focus = { #必需品の普及
+        id = BUL_neces
+        icon = GFX_goal_generic_consumer_goods
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 4
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_bank
+        }
+        bypass = {
+            custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+        }
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                    OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                    OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    focus = { #イタリア式軍拡
+        id = BUL_add_army_Itali
+        icon = GFX_focus_befriend_italy
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 6
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_industry_2
+        }
+        bypass = {
+            custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+
+    focus = { #南部の重工業化
+        id = BUL_south_heavy_industry
+        icon = GFX_focus_generic_industry_1
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 6
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_add_army_Itali
+        }
+        completion_reward = {
+            106 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            212 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 731
+                }
+                731 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 184
+                }
+                184 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = arms_factory
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+        }
+    }
+
+    focus = { #イタリアの機材を導入
+        id = BUL_Itali_equip
+        icon = GFX_goal_generic_production
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 5
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_neces
+        }
+        prerequisite = {
+            focus = BUL_south_heavy_industry
+        }
+        completion_reward = {
+            add_ideas = BUL_Italian_equip
+        }
+    }
+
+    focus = { #イタリア人技術者の招待
+        id = BUL_invite_ita_engineer
+        icon = GFX_goal_generic_intelligence_exchange
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 9
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_industry_1
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = construction_tech
+            }
+        }
+    }
+
+    focus = { #日本の投資
+        id = BUL_invest_from_Japan
+        icon = GFX_focus_chi_collaboration_with_the_japanese
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 8
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_invite_ita_engineer
+        }
+        bypass = {
+            custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+        }
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                    OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                 add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_owned_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                    OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            if = {
+                limit = {
+                    JAP = {
+                        has_opinion = {
+                            target = BUL
+                            value > 99
+                        }
+                    }
+                }
+                random_owned_state = {
+                limit = {
+                    free_building_slots = {
+                        building = industrial_complex
+                        size > 1
+                        include_locked = yes
+                    }
+                    OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            }
+        }
+    }
+
+    focus = { #消費財生産の効率化
+        id = BUL_consumer_effi
+        icon = GFX_focus_generic_the_giant_wakes
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 8
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_invest_from_Japan
+        }
+        completion_reward = {
+            add_ideas = BUL_consum_effic
+        }
+    }
+
+    focus = { #給料問題の解決
+        id = BUL_solve_salary_problem
+        icon = GFX_focus_generic_concessions
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 10
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_invite_ita_engineer
+        }
+        completion_reward = {
+            add_stability = 0.1
+            add_ideas = BUL_solve_labor_problem
+        }
+    }
+
+    focus = { #ハンガリー人労働者の募集
+        id = BUL_Hun_worker_recruit
+        icon = GFX_focus_eng_concessions_to_the_trade_unions
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 10
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_solve_salary_problem
+        }
+        completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+            swap_ideas = {
+                remove_idea = BUL_solve_labor_problem
+                add_idea = BUL_expand_workers
+            }
+        }
+    }
+
+    focus = { #ブルガリア労働組合
+        id = BUL_worker_union
+        icon = GFX_focus_generic_self_management
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 9
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_consumer_effi
+        }
+        prerequisite = {
+            focus = BUL_Hun_worker_recruit
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = BUL_expand_workers
+                add_idea = BUL_worker_right
+            }
+        }
+    }
+
+    focus = { #東欧の大国
+        id = BUL_east_europe_major_power
+        icon = GFX_focus_BUL_promote_bulgarian_nationalism
+        cost = 10
+        search_filters = {
+            FOCUS_FILTER_INDUSTRY
+        }
+        x = 7
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        prerequisite = {
+            focus = BUL_Itali_equip
+        }
+        prerequisite = {
+            focus = BUL_worker_union
+        }
+        completion_reward = {
+            every_owned_state = {
+                limit = {
+                    free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+                }
+                add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+            }
+        }
+    }
+
+    #内政ツリー
+    focus = { #暗黒の日曜日
+        id = BUL_Black_Sunday
+        icon = GFX_focus_generic_attack_bulgaria
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        available = {
+            always = no
+        }
+        x = 16
+        y = 0
+        cost = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #戒厳令
+        id = BUL_martial_law
+        icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        x = 15
+        y = 1
+        prerequisite = {
+            focus = BUL_Black_Sunday
+        }
+        mutually_exclusive = {
+            focus = BUL_protect_the_royal_family
+        }
+        cost = 0
+        available = {
+            always = no
+        }
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #自由を制限
+        id = BUL_limit_free
+        icon = GFX_focus_generic_strike_at_democracy2
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        x = 14
+        y = 2
+        prerequisite = {
+            focus = BUL_martial_law
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = BUL_martial_law_0
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_0
+                    add_idea = BUL_martial_law_1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_1
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_1
+                    add_idea = BUL_martial_law_2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_2
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_2
+                    add_idea = BUL_martial_law_3
+                }
+            }
+        }
+    }
+
+    focus = { #取り返せ
+        id = BUL_get_it_back
+        icon = GFX_focus_generic_support_the_left_right
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        x = 14
+        y = 3
+        prerequisite = {
+            focus = BUL_limit_free
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = BUL_martial_law_1
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_1
+                    add_idea = BUL_martial_law_2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_2
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_2
+                    add_idea = BUL_martial_law_3
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_3
+                }
+                remove_ideas = BUL_martial_law_3
+            }
+        }
+    }
+
+    focus = { #撃て!
+        id = BUL_shoot
+        icon = GFX_goal_demand_sudetenland
+        x = 16
+        y = 2
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_martial_law
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = BUL_martial_law_0
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_0
+                    add_idea = BUL_martial_law_1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_1
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_1
+                    add_idea = BUL_martial_law_2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_2
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_2
+                    add_idea = BUL_martial_law_3
+                }
+            }
+        }
+    }
+
+    focus = { #ブルガリアの土
+        id = BUL_soil_of_bulgaria
+        icon = GFX_focus_BUL_consolidate_the_third_bulgarian_state
+        x = 16
+        y = 3
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_shoot
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_idea = BUL_martial_law_1
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_1
+                    add_idea = BUL_martial_law_2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_2
+                }
+                swap_ideas = {
+                    remove_idea = BUL_martial_law_2
+                    add_idea = BUL_martial_law_3
+                }
+            }
+            else_if = {
+                limit = {
+                    has_idea = BUL_martial_law_3
+                }
+                remove_ideas = BUL_martial_law_3
+            }
+        }
+    }
+
+    focus = { #会議
+        id = BUL_meeting
+        icon = GFX_goal_generic_national_unity
+        x = 15
+        y = 4
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_get_it_back
+        }
+        prerequisite = {
+            focus = BUL_soil_of_bulgaria
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+            remove_ideas = BUL_political_instability
+            country_event = {
+                id = ssw_bul.2
+            }
+        }
+    }
+
+    focus = { #親ドイツ派
+        id = BUL_pro_german
+        icon = GFX_focus_chi_mission_to_germany
+        x = 13
+        y = 5
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_meeting
+        }
+        mutually_exclusive = {
+            focus = BUL_the_man_from_Macedonia
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = support_pro_german_fact
+                has_country_flag = BUL_support_pro_german
+                has_completed_focus = BUL_meeting
+            }
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #ドイツからの支援
+        id = BUL_support_from_german
+        icon = GFX_focus_secret_rearmament
+        x = 13
+        y = 6
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_pro_german
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #戦友
+        id = BUL_comrades
+        icon = GFX_focus_generic_military_mission
+        x = 12
+        y = 7
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_support_from_german
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #ドイツを習う
+        id = BUL_learn_from_germany
+        icon = GFX_focus_generic_military_academy
+        x = 14
+        y = 7
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_support_from_german
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #テッサロニキの土
+        id = BUL_soil_of_Thessaloniki
+        icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+        x = 13
+        y = 8
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_comrades
+        }
+        prerequisite = {
+            focus = BUL_learn_from_germany
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #相互防衛協定
+        id = BUL_mutual_defense_agreement
+        icon = GFX_focus_generic_little_entente
+        x = 13
+        y = 9
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_soil_of_Thessaloniki
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #原点回帰
+        id = BUL_origin_regression
+        icon = GFX_Bulgaria
+        x = 13
+        y = 10
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_mutual_defense_agreement
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #マケドニアから来た男
+        id = BUL_the_man_from_Macedonia
+        icon = GFX_focus_GRE_a_land_of_mountains
+        x = 17
+        y = 5
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_meeting
+        }
+        mutually_exclusive = {
+            focus = BUL_pro_german
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = not_support_pro_german_fact
+                NOT = {
+                    has_country_flag = BUL_support_pro_german
+                }
+                has_completed_focus = BUL_meeting
+            }
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #要塞の建築
+        id = BUL_build_fortress
+        icon = GFX_goal_generic_fortify_city
+        x = 15
+        y = 6
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_the_man_from_Macedonia
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #敵を叩きのめせ
+        id = BUL_beat_the_enemy
+        icon = GFX_goal_generic_major_war
+        x = 17
+        y = 6
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_the_man_from_Macedonia
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #イタリアからの支援
+        id = BUL_support_from_italia
+        icon = GFX_goal_generic_small_arms
+        x = 19
+        y = 6
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_the_man_from_Macedonia
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #ミハイロフ式戦術
+        id = BUL_Mikhailov_tactics
+        icon = GFX_goal_generic_position_armies
+        x = 16
+        y = 7
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_build_fortress
+        }
+        prerequisite = {
+            focus = BUL_beat_the_enemy
+        }
+        prerequisite = {
+            focus = BUL_support_from_italia
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #イタリア軍事顧問団
+        id = BUL_italian_military_advisory_group
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 18
+        y = 7
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_build_fortress
+        }
+        prerequisite = {
+            focus = BUL_beat_the_enemy
+        }
+        prerequisite = {
+            focus = BUL_support_from_italia
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #王室への影響力
+        id = BUL_influence_on_the_royal_family
+        icon = GFX_focus_rom_royal_dictatorship
+        x = 17
+        y = 8
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_Mikhailov_tactics
+        }
+        prerequisite = {
+            focus = BUL_italian_military_advisory_group
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #国民の洗脳
+        id = BUL_brainwashing_the_people
+        icon = GFX_goal_generic_propaganda
+        x = 17
+        y = 9
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_influence_on_the_royal_family
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #戦へ
+        id = BUL_to_the_battle
+        icon = GFX_goal_generic_political_pressure
+        x = 17
+        y = 10
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_brainwashing_the_people
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = { #王室の保護
+        id = BUL_protect_the_royal_family
+        icon = GFX_focus_generic_home_defense
+        x = 20
+        y = 1
+        search_filters = {
+            FOCUS_FILTER_POLITICAL
+        }
+        prerequisite = {
+            focus = BUL_Black_Sunday
+        }
+        available = {
+            always = no
+        }
+        mutually_exclusive = {
+            focus = BUL_martial_law
+        }
+        cost = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward = {
+
+        }
+    }
+}

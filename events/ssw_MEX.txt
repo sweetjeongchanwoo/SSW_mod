@@ -30,6 +30,9 @@ country_event = {
 			unlock_national_focus = MEX_leftist
 			country_lock_all_division_template = no
 			remove_ideas = mex_ideas_18
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = dockyard level = 5 }
 			random_other_country = {
 				limit = {
 					original_tag = MEX
@@ -100,6 +103,9 @@ country_event = {
 			unlock_national_focus = MEX_rightist
 			country_lock_all_division_template = no
 			remove_ideas = mex_ideas_18
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = dockyard level = 5 }
 			create_dynamic_country = {
 				original_tag = MEX
 				set_politics = { ruling_party = social_democracy elections_allowed = yes }
