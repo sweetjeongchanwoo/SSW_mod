@@ -159,5 +159,123 @@ ideas = {
                 industrial_capacity_dockyard = -0.05
             }
         }
+
+        BUL_budget_redistribution = { #要塞建築予算の再分配
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            picture = generic_central_management
+            modifier = {
+                consumer_goods_factor = -0.07
+                production_factory_efficiency_gain_factor = 0.08
+            }
+        }
+
+        BUL_beat_enemies = { #敵を叩きのめせ!
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                country_exists = GRE
+                country_exists = ROM
+                country_exists = SER
+            }
+            picture = FRA_scw_intervention_nationalists_focus
+            modifier = {
+                offence = 0.1
+                army_speed_factor = 0.1
+                land_reinforce_rate = 0.05
+                supply_consumption_factor = 0.1
+            }
+        }
+
+        BUL_italian_military_advisory = { #イタリア軍事顧問団
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                NOT = {has_war_with = ITA}
+            }
+            picture = generic_army_war_college
+            modifier = {
+                max_planning = 0.15
+            }
+            research_bonus = { land_doctrine = 0.08 air_doctrine = 0.08}
+        }
+
+        BUL_royal_backing = { #王室の後ろ盾
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_monarchist_uprising
+            modifier = {
+                stability_factor = 0.1
+                army_org_factor = 0.1
+                army_morale = 0.1
+                army_core_defence_factor = 0.1
+            }
+        }
+
+        BUL_indoctrination_people = { #教化された国民
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_volunteer_expedition_bonus
+            modifier = {
+                war_support_factor = 0.15
+                conscription_factor = 0.1
+                surrender_limit = 0.2
+            }
+        }
+
+        BUL_GER_tech_cooperation = { #ドイツの技術協力
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            available = {
+                NOT = {has_war_with = GER}
+            }
+            picture = german_advisors
+            modifier = {
+                planning_speed = 0.1
+                army_speed_factor = 0.1
+            }
+            research_bonus = { land_doctrine = 0.1 armor = 0.1}
+        }
+
+        BUL_my_country = { #愛しき祖国
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = bul_third_bulgarian_state
+            modifier = {
+                stability_factor = 0.15
+                war_support_factor = 0.15
+                conscription = 0.01
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.15
+            }
+        }
     }
 }
