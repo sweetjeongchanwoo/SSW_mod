@@ -120,5 +120,59 @@
 					production_speed_arms_factory_factor = 0.15
 			}
 		}
+		Lack_Great_Romania = {  
+			allowed = { 
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1 
+			picture =  
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				targeted_modifier = {
+					tag = HUN
+					attack_bonus_against = 0.05
+					defense_bonus_against = 0.05
+				}
+				
+			}
+		}
+		Lack_Great_Romania_2 = {  
+			allowed = { 
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1 
+			picture =  
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.3
+				targeted_modifier = {
+					tag = HUN
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+			}
+		}
+		Agricultural_Fund = {
+			allowed = { 
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1 
+			picture =  
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.1}
+			}
+		}
     }
 }

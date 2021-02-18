@@ -55,8 +55,8 @@ country_event = {
 				}
 			}
 			set_popularities = {
-				authority_despotism = 85
-				national_socialism = 15
+				authority_despotism = 90
+				national_socialism = 10
 			}
 		}
 	}
