@@ -1,10 +1,13 @@
 focus_tree = {
 	id = ssw_ROM
 	country = {
-		factor = 1
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
 	}
-	default = yes
-	
+	default = no
 ########################
 ####POLITICAL BRANCH####	
 ########################
@@ -12,14 +15,14 @@ focus_tree = {
 	focus = {
 		id = Antonescu's_speech
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 3.00
 		x = 19
 		y = 0
 	}
 	focus = {
 		id = Romania_revanchism
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = With_Archangel
 			focus = Authoritative_nation
@@ -36,14 +39,17 @@ focus_tree = {
 	focus = {
 		id = Destroy_Holy_Crown!
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 2.00
 		prerequisite = {
 			focus = Romania_revanchism
 		}
 		x = 19
 		y = 7
 		completion_reward = {
-			
+			country_event = {
+				id = Danubian_war.1
+				days = 20
+			}
 		}
 
 	}
@@ -511,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Build_fortress
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
 			focus = Secure_war_expenditures
@@ -519,7 +525,63 @@ focus_tree = {
 		x = 10
 		y = 5
 		completion_reward = {
-			
+			82 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 646
+						instant_build = yes
+					}
+				}
+			}
+			83 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6682
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6697
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 696
+						instant_build = yes
+					}
+				}
+			}
+			84 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3694
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 676
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11639
+						instant_build = yes
+					}
+				}
+			}
 		}
 
 	}
@@ -720,7 +782,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Extend_faur_industry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
 			focus = Plan_of_great_army
