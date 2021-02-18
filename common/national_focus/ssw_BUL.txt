@@ -1402,4 +1402,469 @@ focus_tree={
 
         }
     }
+
+    #外交ツリー
+    focus = { #ソフィアの欲望
+        id = BUL_desire_of_Sofia
+        icon = GFX_focus_BUL_guardians_of_the_balkans
+        x = 32
+        y = 0
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #北へ
+        id = BUL_to_north
+        icon = GFX_focus_generic_strike_at_democracy1
+        x = 28
+        y = 1
+        prerequisite = {
+            focus = BUL_desire_of_Sofia
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #西から
+        id = BUL_from_west
+        icon = GFX_goal_demand_sudetenland
+        x = 28
+        y = 2
+        prerequisite = {
+            focus = BUL_to_north
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    focus = { #ベオグラードへの進軍
+        id = BUL_advance_to_Belgrade
+        icon = GFX_focus_generic_air_defense
+        x = 28
+        y = 3
+        prerequisite = {
+            focus = BUL_from_west
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #徹底破壊
+        id = BUL_thorough_destruction
+        icon = GFX_goal_generic_secret_weapon
+        x = 27
+        y = 4
+        prerequisite = {
+            focus = BUL_advance_to_Belgrade
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #クロアチアへの要求
+        id = BUL_request_to_CRO
+        icon = GFX_goal_generic_forceful_treaty
+        x = 27
+        y = 5
+        prerequisite = {
+            focus = BUL_thorough_destruction
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #ハンガリーと協力
+        id = BUL_cooperate_with_HUN
+        icon = GFX_goal_generic_improve_relations
+        x = 29
+        y = 5
+        prerequisite = {
+            focus = BUL_advance_to_Belgrade
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #クロアチアを終わらせる
+        id = BUL_end_CRO
+        icon = GFX_goal_generic_more_territorial_claims
+        x = 27
+        y = 6
+        prerequisite = {
+            focus = BUL_request_to_CRO
+        }
+        prerequisite = {
+            focus = BUL_cooperate_with_HUN
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #ズメイ作戦
+        id = BUL_operation_zmei
+        icon = GFX_goal_generic_major_war
+        x = 29
+        y = 6
+        prerequisite = {
+            focus = BUL_request_to_CRO
+        }
+        prerequisite = {
+            focus = BUL_cooperate_with_HUN
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #ハンガリーを手に入れる
+        id = BUL_get_HUN
+        icon = GFX_LTV_Hungry
+        x = 28
+        y = 7
+        prerequisite = {
+            focus = BUL_end_CRO
+        }
+        prerequisite = {
+            focus = BUL_operation_zmei
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #不可侵条約を破棄
+        id = BUL_abandon_nonaggression
+        icon = GFX_goal_generic_territory_or_war
+        x = 28
+        y = 8
+        prerequisite = {
+            focus = BUL_get_HUN
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #カラコンジェル作戦
+        id = BUL_operation_caraconjel
+        icon = GFX_goal_generic_position_armies
+        x = 28
+        y = 9
+        prerequisite = {
+            focus = BUL_abandon_nonaggression
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #トルコの脅威
+        id = BUL_TUR_threat
+        icon = GFX_focus_TUR_misak_i_milli
+        x = 32
+        y = 2
+        prerequisite = {
+            focus = BUL_desire_of_Sofia
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #破壊工作
+        id = BUL_sabotage
+        icon = GFX_focus_prc_infiltration
+        x = 32
+        y = 3
+        prerequisite = {
+            focus = BUL_TUR_threat
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #陸から
+        id = BUL_from_land
+        icon = GFX_focus_TUR_the_montreux_convention
+        x = 31
+        y = 4
+        prerequisite = {
+            focus = BUL_sabotage
+        }
+        mutually_exclusive = {
+            focus = BUL_from_sea
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #海から
+        id = BUL_from_sea
+        icon = GFX_focus_generic_black_sea_focus
+        x = 33
+        y = 4
+        prerequisite = {
+            focus = BUL_sabotage
+        }
+        mutually_exclusive = {
+            focus = BUL_from_land
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #火炎放射器の配備
+        id = BUL_deployment_of_flam
+        icon = GFX_goal_generic_small_arms
+        x = 31
+        y = 5
+        prerequisite = {
+            focus = BUL_from_land
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #輸送船の確保
+        id = BUL_secure_transportships
+        icon = GFX_focus_generic_cruiser2
+        x = 33
+        y = 5
+        prerequisite = {
+            focus = BUL_from_sea
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #航空支援
+        id = BUL_air_support
+        icon = GFX_goal_generic_air_fighter2
+        x = 31
+        y = 6
+        prerequisite = {
+            focus = BUL_deployment_of_flam
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #演習
+        id = BUL_exercise
+        icon = GFX_goal_generic_amphibious_assault
+        x = 33
+        y = 6
+        prerequisite = {
+            focus = BUL_secure_transportships
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #ラミャ作戦
+        id = BUL_operation_lamia
+        icon = GFX_focus_BUL_supremacy_on_the_bosporus
+        x = 32
+        y = 7
+        prerequisite = {
+            focus = BUL_air_support
+            focus = BUL_exercise
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #南へ
+        id = BUL_to_south
+        icon = GFX_focus_generic_aegean_sea_focus
+        x = 36
+        y = 1
+        prerequisite = {
+            focus = BUL_desire_of_Sofia
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 5
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #アルバニアを要求
+        id = BUL_request_ALB
+        icon = GFX_focus_generic_adriatic_sea_focus
+        x = 35
+        y = 2
+        prerequisite = {
+            focus = BUL_to_south
+        }
+        mutually_exclusive = {
+            focus = BUL_cross_the_border
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #国境を越える
+        id = BUL_cross_the_border
+        icon = GFX_focus_generic_provoke_border_clashes
+        x = 37
+        y = 2
+        prerequisite = {
+            focus = BUL_to_south
+        }
+        mutually_exclusive = {
+            focus = BUL_request_ALB
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #迂回
+        id = BUL_detour
+        icon = GFX_goal_generic_dangerous_deal
+        x = 35
+        y = 3
+        prerequisite = {
+            focus = BUL_request_ALB
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #テッサロニキを要求
+        id = BUL_request_Thessaloniki
+        icon = GFX_focus_GRE_bedrock_of_balkan_stability
+        x = 37
+        y = 3
+        prerequisite = {
+            focus = BUL_cross_the_border
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = { #スモク作戦
+        id = BUL_operation_smok
+        icon = GFX_goal_generic_position_armies
+        x = 36
+        y = 4
+        prerequisite = {
+            focus = BUL_detour
+            focus = BUL_request_Thessaloniki
+        }
+        search_filters = {
+            FOCUS_FILTER_ANNEXATION
+        }
+        cost = 10
+        ai_will_do = {
+            factor = 10
+        }
+    }
 }
