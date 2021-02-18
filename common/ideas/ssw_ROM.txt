@@ -1,7 +1,7 @@
-﻿ideas = { 
+﻿ideas = {
 	country = {
-		Military_unity = {  
-			allowed = { 
+		Military_unity = {
+			allowed = {
 				always = yes
 			}
 			allowed_civil_war = {
@@ -12,8 +12,8 @@
 			modifier = {
 			}
 		}
-		Codreanu's_children = {  
-			allowed = { 
+		Codreanu's_children = {
+			allowed = {
 				always = yes
 			}
 			allowed_civil_war = {
@@ -120,8 +120,8 @@
 					production_speed_arms_factory_factor = 0.15
 			}
 		}
-		Lack_Great_Romania = {  
-			allowed = { 
+		Lack_Great_Romania = {
+			allowed = {
 				always = yes
 			}
 			allowed_civil_war = {
@@ -140,8 +140,8 @@
 				
 			}
 		}
-		Lack_Great_Romania_2 = {  
-			allowed = { 
+		Lack_Great_Romania_2 = {
+			allowed = {
 				always = yes
 			}
 			allowed_civil_war = {
@@ -160,7 +160,7 @@
 			}
 		}
 		Agricultural_Fund = {
-			allowed = { 
+			allowed = {
 				always = yes
 			}
 			allowed_civil_war = {
@@ -174,5 +174,5 @@
 				industrial_capacity_factory = 0.1}
 			}
 		}
-    }
+	}
 }
