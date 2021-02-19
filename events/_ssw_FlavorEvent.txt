@@ -226,7 +226,7 @@ news_event = {
 	}
 	
 	option = {
-		name = flavor.8.a
+		name = flavor.9.a
 	}	
 }
 #Rye_field
@@ -256,6 +256,6 @@ news_event = {
 	}
 	
 	option = {
-		name = flavor.8.a
+		name = flavor.10.a
 	}	
 }
