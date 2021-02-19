@@ -165,7 +165,7 @@ on_actions = {
 				}
 				add_ideas = {
 					ssw_authoritarian_regime
-					MEX_vicente_lombardo
+					MEX_vicente_lombardo_ssw
 				}
 				if = {
 					limit = { has_cosmetic_tag = MEX_empire }
