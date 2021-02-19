@@ -169,7 +169,7 @@ KEN_volunteer_recruit = {
 			}
 			create_corps_commander = {
 				name = "Dedan Kimathi"
-				picture = "gfx/leaders/KEN/ssw_Portrait_Maumau_Dedan_Kimathi.dds"
+				portrait_path = "gfx/leaders/KEN/ssw_Portrait_Maumau_Dedan_Kimathi.dds"
 				traits = { commando brilliant_strategist }
 				skill = 2
 				attack_skill = 3
