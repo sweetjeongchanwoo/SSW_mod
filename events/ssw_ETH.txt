@@ -132,3 +132,28 @@ country_event = { #amhara uprising
 		transfer_state = 1069
 	}
 }
+
+country_event = { #somali independence
+	id = Ethiopia_Independence.5
+	title = Ethiopia_Independence.5.t
+	desc = Ethiopia_Independence.5.desc
+	picture = GFX_report_event_spr_spanish_civil_war2
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = Ethiopia_Independence.5.a
+		SOM = {
+			transfer_state = 1077
+			transfer_state = 1071
+			transfer_state = 269
+			set_politics = {
+				ruling_party = authority_despotism
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 45
+			}
+		}
+	}
+}
