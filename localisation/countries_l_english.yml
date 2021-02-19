@@ -485,6 +485,10 @@
  AFG_classical_communism_DEF:0 "アフガニスタン民主共和国"
  AFG_ADJ:0 "アフガニスタン"
  
+ AMR:0 "アムール共和国"
+ AMR_DEF:0 "アムール共和国"
+ AMR_ADJ:0 "アムール"
+ 
  BHU:0 "ブータン王国"
  BHU_DEF:0 "ブータン王国"
  BHU_progressive_communism:0 "ブータン人民共和国"
@@ -508,6 +512,10 @@
  IRQ_classical_communism:0 "イラク社会主義共和国"
  IRQ_classical_communism_DEF:0 "イラク社会主義共和国"
  IRQ_ADJ:0 "イラク"
+ 
+ KAN:0 "神奈川"
+ KAN_DEF:0 "神奈川"
+ KAN_ADJ:0 "神奈川"
  
  MCA:0 "マカオ市国"
  MCA_DEF:0 "マカオ市国"
@@ -536,6 +544,10 @@
  PER_classical_communism:0 "ペルシア・コミューン"
  PER_classical_communism_DEF:0 "ペルシア・コミューン"
  PER_ADJ:0 "イラン"
+ 
+ SAR:0 "サラワク王国"
+ SAR_DEF:0 "サラワク王国"
+ SAR_ADJ:0 "サラワク"
  
  SAU:0 "サウジアラビア王国"
  SAU_DEF:0 "サウジアラビア王国"
@@ -577,6 +589,10 @@
  FIN:0 "フィンランド共和国"
  FIN_DEF:0 "フィンランド共和国"
  FIN_ADJ:0 "フィンランド"
+ 
+ FRI:0 "フェロー諸島"
+ FRI_DEF:0 "フェロー諸島"
+ FRI_ADJ:0 "フェロー諸島"
  
  GRE:0 "ギリシャ王国"
  GRE_DEF:0 "ギリシャ王国"

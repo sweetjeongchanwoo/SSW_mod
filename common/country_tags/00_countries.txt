@@ -2,6 +2,7 @@
 
 #アジア
 ALT	= "countries/Asia.txt"	#アルタイ
+AMR	= "countries/Asia.txt"	#アムール共和国
 ARC	= "countries/Asia.txt"	#北極
 BAN	= "countries/Asia.txt"	#バングラデシュ
 BHU	= "countries/Asia.txt"	#ブータン
@@ -27,6 +28,7 @@ INO	= "countries/Asia.txt"	#インド洋
 INS	= "countries/Asia.txt"	#インドネシア
 JAK	= "countries/Asia.txt"	#ジャンムー・カシミール
 JAP	= "countries/Asia.txt"	#日本
+KAN	= "countries/Asia.txt"	#神奈川(横浜国際管理地域)
 KAZ	= "countries/Asia.txt"	#カザフスタン
 KAR	= "countries/Asia.txt"	#カラカルパクスタン
 KHK	= "countries/Asia.txt"	#ハカス
@@ -56,6 +58,7 @@ PIN	= "countries/Asia.txt"	#人民インド
 PLW	= "countries/Asia.txt"	#パラオ
 PNG	= "countries/Asia.txt"	#パプアニューギニア
 SAM	= "countries/Asia.txt"	#サモア
+SAR	= "countries/Asia.txt"	#サラワク王国
 SHX	= "countries/Asia.txt"	#山西
 SIA	= "countries/Asia.txt"	#シャム
 SIB	= "countries/Asia.txt"	#シベリア
@@ -140,6 +143,7 @@ DAL	= "countries/Western Europe.txt"	#ダルマチア
 DEN	= "countries/Western Europe.txt"	#デンマーク
 FLA	= "countries/Western Europe.txt"	#フランドル
 FRA	= "countries/Western Europe.txt"	#フランス
+FRI	= "countries/Western Europe.txt"	#フェロー諸島
 FSA	= "countries/Western Europe.txt"	#アメリカ連邦
 GAL	= "countries/Western Europe.txt"	#ガリツィア＝ロドメリア
 GER	= "countries/Western Europe.txt"	#ドイツ

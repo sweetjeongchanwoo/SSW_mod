@@ -354,7 +354,7 @@ news_event = {
 	picture = GFX_news_event_german_reichstag_ruins
 	major = yes
 	is_triggered_only = yes
-	immediate = { set_country_flag = end_nazism }
+	immediate = { set_global_flag = end_nazism }
 	option = {
 		name = ssw.16.a
 		trigger = { 
@@ -384,7 +384,7 @@ news_event = {
 	picture = GFX_news_event_german_reichstag_ruins
 	major = yes
 	is_triggered_only = yes
-	immediate = { set_country_flag = end_vorbeck }
+	immediate = { set_global_flag = end_vorbeck }
 	option = {
 		name = ssw.17.a
 		trigger = { 
@@ -414,7 +414,7 @@ news_event = {
 	picture = GFX_news_event_german_reichstag_ruins
 	major = yes
 	is_triggered_only = yes
-	immediate = { set_country_flag = end_himmler }
+	immediate = { set_global_flag = end_himmler }
 	option = {
 		name = ssw.18.a
 		trigger = { 
@@ -444,7 +444,7 @@ news_event = {
 	picture = GFX_news_event_german_reichstag_ruins
 	major = yes
 	is_triggered_only = yes
-	immediate = { set_country_flag = end_goring }
+	immediate = { set_global_flag = end_goring }
 	option = {
 		name = ssw.19.a
 		trigger = { 
@@ -628,10 +628,28 @@ country_event = {
 	hidden = yes
 	trigger = {
 		has_global_flag = GER_civil_war
-		has_country_flag = end_nazism
-		has_country_flag = end_vorbeck
-		has_country_flag = end_himmler
-		has_country_flag = end_goring
+		OR = {
+			AND = {
+				has_global_flag = end_vorbeck
+				has_global_flag = end_himmler
+				has_global_flag = end_goring
+			}
+			AND = {
+				has_global_flag = end_nazism
+				has_global_flag = end_himmler
+				has_global_flag = end_goring
+			}
+			AND = {
+				has_global_flag = end_nazism
+				has_global_flag = end_vorbeck
+				has_global_flag = end_goring
+			}
+			AND = {
+				has_global_flag = end_nazism
+				has_global_flag = end_vorbeck
+				has_global_flag = end_himmler
+			}
+		}
 		OR = {
 			AND = {
 				country_exists = GER

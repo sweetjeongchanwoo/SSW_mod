@@ -148,6 +148,16 @@ on_actions = {
 				limit = { is_core_of = MAN }
 				set_state_flag = maybe_core_MAN_GAMESTART
 			}
+			#韓国(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = KOR }
+				set_state_flag = maybe_core_KOR_GAMESTART
+			}
+			#中華民国(中核州)(ゲーム開始時)
+			every_state = {
+				limit = { is_core_of = CHI }
+				set_state_flag = maybe_core_CHI_GAMESTART
+			}
 			#アメリカ自由連盟(中核州)(ゲーム開始時)
 			every_state = {
 				limit = { is_core_of = ALF }

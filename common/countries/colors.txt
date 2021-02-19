@@ -1680,6 +1680,26 @@ ZZB = {	#ザンジバル
 	color_ui = rgb { 195 216 37 }
 }
 
+AMR = {	#アムール
+	color = rgb { 230 230 219 }
+	color_ui = rgb { 230 230 219 }
+}
+
+FRI = {	#フェロー諸島
+	color = rgb { 200 200 180 }
+	color_ui = rgb { 200 200 180 }
+}
+
+KAN = {	#神奈川
+	color = rgb { 122 122 255 }
+	color_ui = rgb { 122 122 255 }
+}
+
+SAR = {	#サラワク
+	color = rgb { 236 104 0 }
+	color_ui = rgb { 236 104 0 }
+}
+
 ########## 内戦用国家タグ ##########
 
 HGR = { #ゲーリング派ドイツ
