@@ -391,7 +391,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				#research_bonus = { industry = 0.05 }
+				industrial_capacity_factory = 0.10
 			}
 		}
 		#労働環境の整備
@@ -539,6 +539,36 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.025
+			}
+		}
+		#軍事経済学校
+		ITA_idea_35 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				research_speed_factor = 0.025
+			}
+		}
+		#国民間での団結
+		ITA_idea_36 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = 0.08
+				industrial_capacity_factory = 0.10
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 	}

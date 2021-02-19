@@ -151,10 +151,6 @@ shared_focus = {
 	  country_event = {
 		   id = SSW_ITA.3
 	  }
-	  load_focus_tree = { 
-			tree = ITA_Balbo_Focus 
-			keep_completed = yes 
-		}
 		custom_effect_tooltip = ssw_ITA_making
 	}
  }
