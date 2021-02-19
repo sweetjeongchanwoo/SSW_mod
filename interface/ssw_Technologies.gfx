@@ -551,9 +551,126 @@ spriteTypes = {
 	}
 #armor
 	SpriteType = {
-		name = "GFX_light_tank_4_medium"
+		name = "GFX_light_tank_1948_medium"
 		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
 	}
+	SpriteType = {
+		name = "GFX_light_tank_1951_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_tank_1954_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_amphibious_tank_2_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/amphibious_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_amphibious_tank_1954_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/amphibious_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_paratrooper_tank_1954_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_paratrooper_tank_1957_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_paratrooper_tank_1963_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/light_tank_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_medium_tank_1948_medium"
+		texturefile = "gfx/interface/technologies/advanced_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_medium_tank_1951_medium"
+		texturefile = "gfx/interface/technologies/advanced_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_tank_1948_medium"
+		texturefile = "gfx/interface/technologies/advanced_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_tank_1951_medium"
+		texturefile = "gfx/interface/technologies/advanced_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_super_heavy_tank_1948_medium"
+		texturefile = "gfx/interface/technologies/super_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_land_battleship_tank_1948_medium"
+		texturefile = "gfx/interface/technologies/super_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_main_battle_tank_1954_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_main_battle_tank_1957_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_main_battle_tank_1960_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_main_battle_tank_1963_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_spaa_1954_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_spaa_1954.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_spaa_1957_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_spaa_1954.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_spaa_1960_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_spaa_1954.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_art_1951_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_art_1957.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_art_1954_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_art_1957.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_art_1957_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_art_1957.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_art_1963_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/modern_art_1957.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_missile_spaa_1957_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/missile_spaa_1963.dds"
+	}
+	SpriteType = {
+		name = "GFX_missile_spaa_1960_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/missile_spaa_1963.dds"
+	}
+	SpriteType = {
+		name = "GFX_missile_spaa_1963_medium"
+		texturefile = "gfx/interface/technologies/armor_tech/missile_spaa_1963.dds"
+	}
+
 
 #artillery#
 	SpriteType = {
