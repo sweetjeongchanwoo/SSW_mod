@@ -31,6 +31,7 @@ country_event = {
 	desc = SSW_ITA.3.d
 	option = {
 		name = SSW_ITA.3.a
+		ITA_focus_reload_Balbo_focus_tree = yes
 	}
 }
 #ムッソリーニによる栄光
@@ -130,5 +131,27 @@ country_event = {
 	desc = SSW_ITA.12.d
 	option = {
 		name = SSW_ITA.12.a
+	}
+}
+#イタリア軍の現状
+country_event = {
+    id = SSW_ITA.13
+	title = SSW_ITA.13.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = SSW_ITA.13.d
+	option = {
+		name = SSW_ITA.13.a
+	}
+}
+#イタリア統一国民大会
+country_event = {
+    id = SSW_ITA.14
+	title = SSW_ITA.14.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = SSW_ITA.14.d
+	option = {
+		name = SSW_ITA.14.a
 	}
 }

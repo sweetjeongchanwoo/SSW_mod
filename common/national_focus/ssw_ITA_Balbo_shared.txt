@@ -651,6 +651,33 @@ completion_reward = {
 	}
 }
 }
+#軍事経済学校の創設
+shared_focus = {
+	id = ITA_focus_industry_Establishment_of_the_Military_Economics_School
+	icon = GFX_focus_generic_tank_production
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_military_economic_state
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	x = 5
+	y = 5
+	completion_reward = {
+			add_ideas = ITA_idea_35
+	}
+	}
 #アウトストラーダの拡大
 shared_focus = {
 id = ITA_focus_industry_Expanding_the_Outstrada
@@ -725,7 +752,7 @@ completion_reward = {
 shared_focus = {
 	id = ITA_focus_industry_colonial_dev
 	icon = GFX_goal_generic_dangerous_deal
-	cost = 5.00
+	cost = 1.00
 	prerequisite = {
 		 focus = ITA_focus_industry_Solving_the_immigration_problem
 		 }
@@ -744,7 +771,7 @@ shared_focus = {
 		IT6 = { is_subject_of = ITA }
 		IT7 = { is_subject_of = ITA }
 		IT8 = { is_subject_of = ITA }
-		EGY = { is_in_faction_with = ITA}
+		EGY = { is_in_faction_with = ITA }
 	  }
 	  cancel_if_invalid = yes
 	  continue_if_invalid = no
@@ -753,6 +780,7 @@ shared_focus = {
 	x = 9
 	y = 5
 	completion_reward = {
+		ITA_focus_reload_colony = yes
 	}
 }
 #労働基準の整備
@@ -808,31 +836,6 @@ ai_will_do = {
   search_filters = { FOCUS_FILTER_POLITICAL }
 x = 16
 y = 2
-completion_reward = {
-}
-}
-#イタリア軍の現状
-shared_focus = {
-id = ITA_focus_balbo_army_Status_of_the_Italian_Army
-icon = GFX_focus_generic_italy_first
-cost = 5.00
-prerequisite = {
-	 }
-mutually_exclusive = {
-	 }
-available = {
-}
-ai_will_do = {
-	factor = 5
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_POLITICAL }
-x = 25
-y = 0
 completion_reward = {
 }
 }
@@ -1028,5 +1031,165 @@ shared_focus = {
 	completion_reward = {
 		add_ideas = ITA_idea_29
 		add_research_slot = 1
+	}
+}
+#統一国民大会の実施
+shared_focus = {
+	id = ITA_focus_industry_Implementation_of_a_unified_national_convention
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_balbo_Cooperation_between_North_and_South_Region_companies
+		}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = -1
+	y = 6
+	completion_reward = {
+		country_event = {
+			id = SSW_ITA.14
+		}
+		swap_ideas ={
+			remove_idea = ITA_idea_19
+			add_idea = ITA_idea_36
+		}
+	}
+}
+##############
+###軍事ツリー###
+#############
+#イタリア軍の現状
+shared_focus = {
+	id = ITA_focus_balbo_army_Status_of_the_Italian_Army
+	icon = GFX_focus_generic_italy_first
+	cost = 1.00
+	prerequisite = {
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 26
+	y = 0
+	completion_reward = {
+		country_event = {
+			id = SSW_ITA.13
+		}
+	}
+}
+#空軍への注力
+shared_focus = {
+	id = ITA_focus_balbo_Focus_on_AirForce
+	icon = GFX_ITA_Italian_Airforce
+	cost = 4.00
+	prerequisite = {
+		focus = ITA_focus_balbo_army_Status_of_the_Italian_Army
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 22
+	y = 1
+	completion_reward = {
+		air_experience = 35
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = air_doctrine 
+		}
+	}
+}
+#陸軍への注力
+shared_focus = {
+	id = ITA_focus_balbo_Focus_on_Army
+	icon = GFX_ITA_Italian_Army
+	cost = 4.00
+	prerequisite = {
+		focus = ITA_focus_balbo_army_Status_of_the_Italian_Army
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 26
+	y = 1
+	completion_reward = {
+		army_experience = 35
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine 
+		}
+	}
+}
+#海軍への注力
+shared_focus = {
+	id = ITA_focus_balbo_Focus_on_Navy
+	icon = GFX_ITA_Italian_Naval
+	cost = 4.00
+	prerequisite = {
+		focus = ITA_focus_balbo_army_Status_of_the_Italian_Army
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 30
+	y = 1
+	completion_reward = {
+		navy_experience = 35
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = naval_doctrine 
+		}
 	}
 }

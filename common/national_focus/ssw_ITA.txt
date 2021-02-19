@@ -23,3 +23,27 @@ focus_tree = {
 	default = no
 	shared_focus = ITA_focus_industry_Industry_Status
 }
+focus_tree = {
+    id = ITA_Balbo_military_Focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	shared_focus = ITA_focus_balbo_army_Status_of_the_Italian_Army
+}
+focus_tree = {
+    id = ITA_focus_colony_dev_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	shared_focus = ITA_focus_colony_dev
+}
