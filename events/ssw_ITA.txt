@@ -132,3 +132,14 @@ country_event = {
 		name = SSW_ITA.12.a
 	}
 }
+#イタリア軍の現状
+country_event = {
+    id = SSW_ITA.13
+	title = SSW_ITA.13.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	desc = SSW_ITA.13.d
+	option = {
+		name = SSW_ITA.13.a
+	}
+}

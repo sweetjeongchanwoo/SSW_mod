@@ -744,7 +744,7 @@ shared_focus = {
 		IT6 = { is_subject_of = ITA }
 		IT7 = { is_subject_of = ITA }
 		IT8 = { is_subject_of = ITA }
-		EGY = { is_in_faction_with = ITA}
+		EGY = { is_in_faction_with = ITA }
 	  }
 	  cancel_if_invalid = yes
 	  continue_if_invalid = no
@@ -816,7 +816,7 @@ completion_reward = {
 shared_focus = {
 id = ITA_focus_balbo_army_Status_of_the_Italian_Army
 icon = GFX_focus_generic_italy_first
-cost = 5.00
+cost = 1.00
 prerequisite = {
 	 }
 mutually_exclusive = {
@@ -835,6 +835,9 @@ ai_will_do = {
 x = 25
 y = 0
 completion_reward = {
+	country_event = {
+		id = SSW_ITA.13
+	}
 }
 }
 #南北企業の連携

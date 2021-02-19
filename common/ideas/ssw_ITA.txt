@@ -476,5 +476,70 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		#北アフリカ開発の開始
+		ITA_idea_30 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		#エジプト開発の開始
+		ITA_idea_31 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		#東アフリカ開発の開始
+		ITA_idea_32 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		#アルバニア開発の開始
+		ITA_idea_33 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
+		#スエズ運河地帯開発の開始
+		ITA_idea_34 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+		}
 	}
 }
