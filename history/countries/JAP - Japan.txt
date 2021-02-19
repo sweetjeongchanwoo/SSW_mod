@@ -145,7 +145,7 @@ create_import = {
 
 add_ideas = {
 	SSW_JAP_Hirohito
-	ssw_parliamentary_democracy_rightist_administration
+	#ssw_parliamentary_democracy_rightist_administration
 	SSW_JAP_Parasitic_landlord_system
 	SSW_jAP_disarmament_idea
 	SSW_jAP_zaibatsu
