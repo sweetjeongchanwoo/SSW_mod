@@ -47,3 +47,15 @@ focus_tree = {
 	default = no
 	shared_focus = ITA_focus_colony_dev
 }
+focus_tree = {
+    id = ITA_event_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	shared_focus = ITA_event_focus_tree_top
+}

@@ -780,7 +780,20 @@ shared_focus = {
 	x = 9
 	y = 5
 	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = Danubian_war
+				}
+			}
+		}
 		ITA_focus_reload_colony = yes
+		if = {
+			limit = {
+				has_global_flag = Danubian_war
+			}
+		}
+		ITA_focus_reload_colony_and_event = yes
 	}
 }
 #労働基準の整備
@@ -1089,7 +1102,7 @@ shared_focus = {
 	  continue_if_invalid = no
 	  available_if_capitulated = no
 	  search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 26
+	x = 27
 	y = 0
 	completion_reward = {
 		country_event = {
@@ -1150,7 +1163,7 @@ shared_focus = {
 	  continue_if_invalid = no
 	  available_if_capitulated = no
 	  search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 26
+	x = 27
 	y = 1
 	completion_reward = {
 		army_experience = 35
@@ -1159,6 +1172,93 @@ shared_focus = {
 			uses = 1
 			category = land_doctrine 
 		}
+	}
+}
+#装備品の改良
+shared_focus = {
+	id = ITA_focus_balbo_Improved_equipment
+	icon = GFX_ITA_Italian_Army
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Focus_on_Army
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 26
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = infantry_tech
+			category = support_tech 
+		}
+	}
+}
+#部隊指揮の高度化
+shared_focus = {
+	id = ITA_focus_balbo_Advanced_command_of_troops
+	icon = GFX_ITA_Italian_Army
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Focus_on_Army
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 28
+	y = 2
+	completion_reward = {
+		add_ideas = ITA_idea_37
+	}
+}
+#徴兵の効率化
+shared_focus = {
+	id = ITA_focus_balbo_Improving_the_efficiency_of_conscription
+	icon = GFX_TUR_Sam
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Improved_equipment
+		focus = ITA_focus_balbo_Advanced_command_of_troops
+		}
+	mutually_exclusive = {
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 27
+	y = 3
+	completion_reward = {
+		add_ideas = ITA_idea_38
 	}
 }
 #海軍への注力
@@ -1182,7 +1282,7 @@ shared_focus = {
 	  continue_if_invalid = no
 	  available_if_capitulated = no
 	  search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 30
+	x = 32
 	y = 1
 	completion_reward = {
 		navy_experience = 35
@@ -1191,5 +1291,119 @@ shared_focus = {
 			uses = 1
 			category = naval_doctrine 
 		}
+	}
+}
+#艦船の更新
+shared_focus = {
+	id = ITA_focus_balbo_Improving_ships
+	icon = GFX_ITA_Italian_Naval
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Focus_on_Navy
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 31
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 2
+			category = naval_equipment 
+		}
+	}
+}
+#生産能力の向上
+shared_focus = {
+	id = ITA_focus_balbo_Increase_production_capacity
+	icon = GFX_ITA_Italian_Naval
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Focus_on_Navy
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 33
+	y = 2
+	completion_reward = {
+		add_ideas = ITA_idea_39
+	}
+}
+#艦隊の大規模化
+shared_focus = {
+	id = ITA_focus_balbo_Large_fleet_size
+	icon = GFX_ITA_Italian_Naval
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Improving_ships
+		focus = ITA_focus_balbo_Increase_production_capacity
+		}
+	mutually_exclusive = {
+		focus = ITA_focus_balbo_Transition_to_modern_navy
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 31
+	y = 3
+	completion_reward = {
+	}
+}
+#現代海軍への移行
+shared_focus = {
+	id = ITA_focus_balbo_Transition_to_modern_navy
+	icon = GFX_ITA_Italian_Naval
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Improving_ships
+		focus = ITA_focus_balbo_Increase_production_capacity
+		}
+	mutually_exclusive = {
+		focus = ITA_focus_balbo_Large_fleet_size
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 33
+	y = 3
+	completion_reward = {
 	}
 }

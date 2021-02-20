@@ -571,5 +571,49 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
+		#指揮統制の高度化
+		ITA_idea_37 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_Factor = 0.10
+			}
+		}
+		#大規模な徴兵
+		ITA_idea_38 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		#艦船建造能力の向上
+		ITA_idea_39 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				equipment_bonus = {
+					naval_equipment = {
+										build_cost_ic = -0.05
+										instant = yes
+									}
+					}
+			}
+		}
 	}
 }
