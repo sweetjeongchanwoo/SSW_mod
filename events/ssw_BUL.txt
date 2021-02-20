@@ -224,12 +224,18 @@ country_event = { #ギリシャが妥協を提案
     is_triggered_only = yes
     option = { #認めてやろう
         name = ssw_bul.5.a
+        ai_chance = {
+            base = 40
+        }
         GRE = {
             country_event = {id = ssw_bul.6}
         }
     }
     option = { #奴らは自分の立場を理解していないらしい
         name = ssw_bul.5.b
+        ai_chance = {
+            base = 60
+        }
         GRE = {
             country_event = {id = ssw_bul.7}
         }
@@ -279,12 +285,24 @@ country_event = { #ギリシャが要求を拒否
     is_triggered_only = yes
     option = { #ならば戦争しかあるまい
         name = ssw_bul.8.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                GRE = {
+                    is_in_faction = no
+                }
+                factor = 2
+            }
+        }
         GRE = {
             country_event = {id = ssw_bul.9}
         }
     }
     option = { #今は引こう
         name = ssw_bul.8.b
+        ai_chance = {
+            base = 50
+        }
         add_stability = -0.1
         add_war_support = -0.1
     }
@@ -341,6 +359,499 @@ country_event = { #要塞の建築計画
         add_timed_idea = {
             idea = BUL_budget_redistribution
             days = 140
+        }
+    }
+}
+
+country_event = { #ブルガリアがクロアチアの分割を提案
+    id = ssw_bul.11
+    title = ssw_bul.11.t
+    desc = ssw_bul.11.d
+    picture = GFX_report_event_generic_sign_treaty1
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #承諾しよう
+        name = ssw_bul.11.a
+        BUL = {
+            country_event = {id = ssw_bul.12}
+        }
+    }
+    option = { #拒否する
+        name = ssw_bul.11.b
+        BUL = {
+            country_event = {id = ssw_bul.13}
+        }
+    }
+}
+
+country_event = { #ハンガリーが提案を承諾
+    id = ssw_bul.12
+    title = ssw_bul.12.t
+    desc = ssw_bul.12.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #大変結構
+        name = ssw_bul.12.a
+        custom_effect_tooltip = BUL_HUN_agreement
+        hidden_effect = {
+            diplomatic_relation = {
+                country = HUN
+                relation = non_aggression_pact
+                active = yes
+            }
+            give_military_access = HUN
+            HUN = {
+                give_military_access = BUL
+            }
+        }
+    }
+}
+
+country_event = { #ハンガリーが提案を拒否
+    id = ssw_bul.13
+    title = ssw_bul.13.t
+    desc = ssw_bul.13.d
+    picture = GFX_report_event_finnish_letter
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #ならば我々の独力で
+        name = ssw_bul.13.a
+    }
+}
+
+country_event = { #ブルガリアがクロアチアの従属解除を求める
+    id = ssw_bul.14
+    title = ssw_bul.14.t
+    desc = ssw_bul.14.d
+    picture = GFX_report_event_generic_sign_treaty1
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #クロアチアなど最早不要だ
+        name = ssw_bul.14.a
+        ai_chance = {
+            base = 50
+            modifier = {
+                OR = {
+                    has_opinion = {
+                        target = BUL
+                        value = 50
+                    }
+                    BUL = {
+                        has_completed_focus = BUL_support_pro_german
+                    }
+                }
+                factor = 2
+            }
+        }
+        BUL = {
+            country_event = {id = ssw_bul.15}
+        }
+    }
+    option = { #我々は勢力圏の縮小を行わない
+        name = ssw_bul.14.b
+        ai_chance = {
+            base = 50
+            modifier = {
+                has_opinion = {
+                    target = BUL
+                    value = -50
+                }
+            }
+        }
+        BUL = {
+            country_event = {id = ssw_bul.16}
+        }
+    }
+}
+
+country_event = { #ドイツが我々の申し出を認める
+    id = ssw_bul.15
+    title = ssw_bul.15.t
+    desc = ssw_bul.15.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #大変結構
+        name = ssw_bul.15.a
+        CRO = {
+            end_puppet = GER
+            leave_faction = yes
+        }
+    }
+}
+
+country_event = { #ドイツが我々の申し出を拒否
+    id = ssw_bul.16
+    title = ssw_bul.16.t
+    desc = ssw_bul.16.d
+    picture = GFX_report_event_finnish_letter
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #畜生！
+        name = ssw_bul.16.a
+    }
+}
+
+country_event = { #ブルガリアがアルバニアを要求
+    id = ssw_bul.17
+    title = ssw_bul.17.t
+    desc = ssw_bul.17.d
+    picture = GFX_report_event_generic_sign_treaty1
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #要求を全面的に認める
+        name = ssw_bul.17.a
+        ai_chance = {
+            base = 10
+            modifier = {
+                has_opinion = {
+                    target = BUL
+                    value = 50
+                }
+                factor = 1.5
+            }
+        }
+        BUL = {
+            country_event = {id = ssw_bul.18}
+        }
+    }
+    option = { #マケドニア西部に関してのみ認める
+        name = ssw_bul.17.b
+        ai_chance = {
+            base = 30
+            modifier = {
+                has_opinion = {
+                    target = BUL
+                    value = 50
+                }
+                factor = 2
+            }
+        }
+        BUL = {
+            country_event = {id = ssw_bul.19}
+        }
+    }
+    option = { #マケドニア西部とコソボの交換を提案
+        name = ssw_bul.17.c
+        trigger = {
+            BUL = {
+                owns_state = 802
+            }
+        }
+        ai_chance = {
+            base = 100
+        }
+        BUL = {
+            country_event = {id = ssw_bul.20}
+        }
+    }
+    option = { #提案は認めるが対価を要求する
+        name = ssw_bul.17.e
+        ai_chance = {
+            base = 60
+        }
+        BUL = {
+            country_event = {id = ssw_bul.21}
+        }
+    }
+    option = { #そのような提案を認める訳にはいかない
+        name = ssw_bul.17.f
+        ai_chance = {
+            base = 15
+        }
+        BUL = {
+            country_event = {id = ssw_bul.22}
+        }
+    }
+}
+
+country_event = { #イタリアが提案を認める
+    id = ssw_bul.18
+    title = ssw_bul.18.t
+    desc = ssw_bul.18.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #大変結構！
+        name = ssw_bul.18.a
+        annex_country = {
+            target = ALB
+            transfer_troops = no
+        }
+    }
+}
+
+country_event = { #イタリアが妥協案を提案
+    id = ssw_bul.19
+    title = ssw_bul.19.t
+    desc = ssw_bul.19.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #これで十分だろう
+        name = ssw_bul.19.a
+        ai_chance = {
+            base = 80
+        }
+        ITA = {
+            country_event = {id = ssw_bul.23}
+        }
+        BUL = {
+            set_country_flag = BUL_agree_compromise
+        }
+    }
+    option = { #これは我々の求めるものではない
+        name = ssw_bul.19.b
+        ai_chance = {
+            base = 20
+        }
+        ITA = {
+            country_event = {id = ssw_bul.24}
+        }
+    }
+}
+
+country_event = { #イタリアがマケドニア西部とコソボの交換を提案
+    id = ssw_bul.20
+    title = ssw_bul.20.t
+    desc = ssw_bul.20.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #対価を支払って当然だろう
+        name = ssw_bul.20.a
+        ai_chance = {
+            base = 70
+        }
+        ITA = {
+            country_event = {id = ssw_bul.23}
+        }
+        BUL = {
+            set_country_flag = BUL_agree_compromise_exchange
+        }
+    }
+    option = { #せっかく得た土地を手放すなんてとんでもない！
+        name = ssw_bul.20.b
+        ai_chance = {
+            base = 30
+        }
+        ITA = {
+            country_event = {id = ssw_bul.24}
+        }
+    }
+}
+
+country_event = { #イタリアがアルバニアの対価の支払いを要求
+    id = ssw_bul.21
+    title = ssw_bul.21.t
+    desc = ssw_bul.21.d
+    picture = GFX_report_event_generic_sign_treaty2
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #それは正当な判断だ
+        name = ssw_bul.21.a
+        ai_chance = {
+            base = 60
+        }
+        ITA = {
+            country_event = {id = ssw_bul.23}
+        }
+        BUL = {
+            set_country_flag = BUL_agree_compromise_consideration
+        }
+    }
+    option = { #それならば諦めよう
+        name = ssw_bul.21.b
+        ai_chance = {
+            base = 40
+        }
+        ITA = {
+            country_event = {id = ssw_bul.24}
+        }
+    }
+}
+
+country_event = { #イタリアが提案を拒否
+    id = ssw_bul.22
+    title = ssw_bul.22.t
+    desc = ssw_bul.22.d
+    picture = GFX_report_event_finnish_letter
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #諦めるしかあるまい
+        name = ssw_bul.22.a
+        ai_chance = {
+            base = 60
+            modifier = {
+                has_opinion = {
+                    target = ITA
+                    value = 50
+                }
+                factor = 1.5
+            }
+        }
+        if = {
+            limit = {
+                BUL = {
+                    has_completed_focus = BUL_from_west
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                    NOT = {
+                        state = 802
+                    }
+                }
+                remove_claim_by = BUL
+            }
+        }
+        else = {
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                    NOT = {
+                        state = 802
+                    }
+                }
+                remove_claim_by = BUL
+            }
+        }
+        set_country_flag = BUL_not_get_ALB
+    }
+    option = { #我々は血によってそれを得る！
+        name = ssw_bul.22.b
+        ai_chance = {
+            base = 40
+            modifier = {
+                OR = {
+                    has_opinion = {
+                        target = ITA
+                        value = -50
+                    }
+                    NOT = {
+                        is_in_faction_with = ITA
+                    }
+                }
+                factor = 2
+            }
+        }
+        create_wargoal = {
+            target = ALB
+            type = annex_everything
+        }
+    }
+}
+
+country_event = { #ブルガリアが提案に合意
+    id = ssw_bul.23
+    title = ssw_bul.23.t
+    desc = ssw_bul.23.d
+    picture = GFX_report_event_generic_read_write
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #どこまで行けるか見ものだな
+        name = ssw_bul.23.a
+        if = {
+            limit = {
+                BUL = {
+                    has_country_flag = BUL_agree_compromise
+                }
+            }
+            BUL = {
+                transfer_state = 807
+                remove_state_claim = 44
+                remove_state_claim = 805
+                if = {
+                    limit = {
+                        NOT = {has_completed_focus = BUL_from_west}
+                    }
+                    remove_state_claim = 802
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                BUL = {
+                    has_country_flag = BUL_agree_compromise_exchange
+                }
+            }
+            BUL = {
+                transfer_state = 807
+                remove_state_claim = 802
+                remove_state_claim = 44
+                remove_state_claim = 805
+            }
+            ALB = {
+                transfer_state = 802
+                remove_state_core = 807
+            }
+        }
+        else_if = {
+            limit = {
+                BUL = {
+                    has_country_flag = BUL_agree_compromise_consideration
+                }
+            }
+            BUL = {
+                add_timed_idea = {
+                    idea = BUL_consideration_pay
+                    days = 365
+                }
+                annex_country = {
+                    target = ALB
+                    transfer_troops = no
+                }
+            }
+            ITA = {
+                add_timed_idea = {
+                    idea = BUL_consideration_pay_ITA
+                    days = 365
+                }
+            }
+        }
+    }
+}
+
+country_event = { #ブルガリアが提案を拒否
+    id = ssw_bul.24
+    title = ssw_bul.24.t
+    desc = ssw_bul.24.d
+    picture = GFX_report_event_finnish_letter
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { #奴らはどこを目指すつもりなのだ？
+        name = ssw_bul.24.a
+        if = {
+            limit = {
+                BUL = {
+                    has_completed_focus = BUL_from_west
+                }
+            }
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                    NOT = {
+                        state = 802
+                    }
+                }
+                remove_claim_by = BUL
+            }
+        }
+        else = {
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                    NOT = {
+                        state = 802
+                    }
+                }
+                remove_claim_by = BUL
+            }
+        }
+        BUL = {
+            set_country_flag = BUL_not_get_ALB
         }
     }
 }

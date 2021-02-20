@@ -144,7 +144,7 @@ add_opinion_modifier = { target = BUL modifier = hostile_status }
 add_opinion_modifier = { target = HUN modifier = hostile_status }
 
 add_ideas = {
-	Lack_Great_Romania
+	#Lack_Great_Romania
 }
 
 set_politics = {

@@ -80,10 +80,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/no_interest.tga"
 	}
 	spriteType = {
-		name = "GFX_NEA_officers"
-		texturefile = "gfx/interface/goals/NEA_officers.dds"
-	}
-	spriteType = {
 		name = "GFX_LTV_ship"
 		texturefile = "gfx/interface/goals/LTV_ship.dds"
 	}
@@ -960,10 +956,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focuse_RUS_got_siberia.dds"
 	}
 	spriteType = {
-		name = "GFX_endelkachew"
-		texturefile = "gfx/interface/goals/endelkachew.dds"
-	}
-	spriteType = {
 		name = "GFX_demobilization"
 		texturefile = "gfx/interface/goals/demobilization.tga"
 	}
@@ -983,8 +975,13 @@ spriteTypes = {
 		name = "GFX_Autonomy_in_the_Greater_East_Asian_Co-Prosperity_Sphere"
 		texturefile = "gfx/interface/goals/Autonomy_in_the_Greater_East_Asian_Co-Prosperity_Sphere.png"
 	}
-	spriteType = {
-		name = "GFX_aklilu"
-		texturefile = "gfx/interface/goals/aklilu.dds"
-	}
+
+	# spriteType = {
+	# 	name = "GFX_endelkachew"
+	# 	texturefile = "gfx/interface/goals/endelkachew.dds"
+	# }
+	# spriteType = {
+	# 	name = "GFX_aklilu"
+	# 	texturefile = "gfx/interface/goals/aklilu.dds"
+	# }
 }

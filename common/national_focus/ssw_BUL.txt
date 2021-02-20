@@ -84,6 +84,7 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_bank
         }
@@ -175,6 +176,7 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_industry_2
         }
@@ -266,6 +268,7 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_add_army_Itali
         }
@@ -374,6 +377,7 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_invite_ita_engineer
         }
@@ -625,6 +629,7 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_Itali_equip
         }
@@ -709,6 +714,14 @@ focus_tree={
         cost = 5
         ai_will_do = {
             factor = 10
+            modifier = {
+                OR = {
+                    has_idea = BUL_martial_law_0
+                    has_idea = BUL_martial_law_1
+                    has_idea = BUL_martial_law_2
+                }
+                factor = 2
+            }
         }
         completion_reward = {
             if = {
@@ -755,6 +768,14 @@ focus_tree={
         cost = 5
         ai_will_do = {
             factor = 10
+            modifier = {
+                OR = {
+                    has_idea = BUL_martial_law_3
+                    has_idea = BUL_martial_law_1
+                    has_idea = BUL_martial_law_2
+                }
+                factor = 2
+            }
         }
         completion_reward = {
             if = {
@@ -798,6 +819,14 @@ focus_tree={
         cost = 5
         ai_will_do = {
             factor = 10
+            modifier = {
+                OR = {
+                    has_idea = BUL_martial_law_0
+                    has_idea = BUL_martial_law_1
+                    has_idea = BUL_martial_law_2
+                }
+                factor = 2
+            }
         }
         completion_reward = {
             if = {
@@ -844,6 +873,14 @@ focus_tree={
         cost = 5
         ai_will_do = {
             factor = 10
+            modifier = {
+                OR = {
+                    has_idea = BUL_martial_law_3
+                    has_idea = BUL_martial_law_1
+                    has_idea = BUL_martial_law_2
+                }
+                factor = 2
+            }
         }
         completion_reward = {
             if = {
@@ -890,6 +927,10 @@ focus_tree={
         cost = 10
         ai_will_do = {
             factor = 10
+            modifier = {
+                has_idea = BUL_political_instability
+                factor = 2
+            }
         }
         completion_reward = {
             country_event = {
@@ -1087,6 +1128,7 @@ focus_tree={
             owns_state = 184
             owns_state = 731
         }
+        available_if_capitulated = yes
         prerequisite = {
             focus = BUL_comrades
         }
@@ -1200,6 +1242,7 @@ focus_tree={
         prerequisite = {
             focus = BUL_the_man_from_Macedonia
         }
+        available_if_capitulated = yes
         cost = 10
         ai_will_do = {
             factor = 10
@@ -1368,6 +1411,7 @@ focus_tree={
         prerequisite = {
             focus = BUL_brainwashing_the_people
         }
+        available_if_capitulated = yes
         cost = 10
         ai_will_do = {
             factor = 10
@@ -1416,6 +1460,9 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            add_war_support = 0.15
+        }
     }
 
     focus = { #北へ
@@ -1433,9 +1480,19 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
+        completion_reward = {
+            803 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
     }
 
-    focus = { #西から
+    focus = { #セルビアから
         id = BUL_from_west
         icon = GFX_goal_demand_sudetenland
         x = 28
@@ -1450,9 +1507,18 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        available_if_capitulated = yes
+        completion_reward = {
+            every_state = {
+                limit = {
+                    is_core_of = SER
+                }
+                add_claim_by = BUL
+            }
+        }
     }
     
-    focus = { #ベオグラードへの進軍
+    focus = { #クルシェドラ作戦
         id = BUL_advance_to_Belgrade
         icon = GFX_focus_generic_air_defense
         x = 28
@@ -1460,6 +1526,20 @@ focus_tree={
         prerequisite = {
             focus = BUL_from_west
         }
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = SER
+                }
+                has_war_with = SER
+            }
+        }
+        available_if_capitulated = yes
+        available = {
+            NOT = {
+                has_non_aggression_pact_with = SER
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
@@ -1467,9 +1547,15 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            declare_war_on = {
+                target = SER
+                type = annex_everything
+            }
+        }
     }
 
-    focus = { #徹底破壊
+    focus = { #クロアチアの抵抗
         id = BUL_thorough_destruction
         icon = GFX_goal_generic_secret_weapon
         x = 27
@@ -1477,12 +1563,16 @@ focus_tree={
         prerequisite = {
             focus = BUL_advance_to_Belgrade
         }
+        available_if_capitulated = yes
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            add_ideas = BUL_suppress_resistance
         }
     }
 
@@ -1497,9 +1587,18 @@ focus_tree={
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
+        available_if_capitulated = yes
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            every_state = {
+                limit = {
+                    is_core_of = CRO
+                }
+                add_claim_by = BUL
+            }
         }
     }
 
@@ -1511,12 +1610,26 @@ focus_tree={
         prerequisite = {
             focus = BUL_advance_to_Belgrade
         }
+        bypass = {
+            NOT = {
+                OR = {
+                    country_exists = HUN
+                    country_exists = CRO
+                }
+            }
+        }
+        available_if_capitulated = yes
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            HUN = {
+                country_event = {id = ssw_bul.11}
+            }
         }
     }
 
@@ -1531,6 +1644,7 @@ focus_tree={
         prerequisite = {
             focus = BUL_cooperate_with_HUN
         }
+        available_if_capitulated = yes
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
@@ -1538,9 +1652,40 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            if = {
+                limit = {
+                    has_global_flag = GER_civil_war
+                    CRO = {
+                        is_puppet = yes
+                    }
+                }
+                CRO = {
+                    end_puppet = GER
+                }
+            }
+            else_if = {
+                limit = {
+                    AND = {
+                        OR = {
+                            NOT = {
+                                has_global_flag = GER_civil_war
+                            }
+                            has_global_flag = GER_civil_war_end
+                        }
+                        CRO = {
+                            is_puppet = yes
+                        }
+                    }
+                }
+                GER = {
+                    country_event = {id = ssw_bul.14}
+                }
+            }
+        }
     }
 
-    focus = { #ズメイ作戦
+    focus = { #ポゾイ作戦
         id = BUL_operation_zmei
         icon = GFX_goal_generic_major_war
         x = 28
@@ -1548,12 +1693,45 @@ focus_tree={
         prerequisite = {
             focus = BUL_end_CRO
         }
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = CRO
+                }
+                has_war_with = CRO
+            }
+        }
+        available_if_capitulated = yes
+        available = {
+            NOT = {
+                has_non_aggression_pact_with = CRO
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            declare_war_on = {
+                target = CRO
+                type = annex_everything
+            }
+            if = {
+                limit = {
+                    has_non_aggression_pact_with = HUN
+                    has_military_access_to = HUN
+                    gives_military_acces_to = HUN
+                }
+                HUN = {
+                    declare_war_on = {
+                        target = CRO
+                        type = annex_everything
+                    }
+                }
+            }
         }
     }
 
@@ -1565,12 +1743,21 @@ focus_tree={
         prerequisite = {
             focus = BUL_operation_zmei
         }
+        available_if_capitulated = yes
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            every_state = {
+                limit = {
+                    is_core_of = HUN
+                }
+                add_claim_by = BUL
+            }
         }
     }
 
@@ -1582,12 +1769,60 @@ focus_tree={
         prerequisite = {
             focus = BUL_get_HUN
         }
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = HUN
+                }
+                AND = {
+                    NOT = {has_non_aggression_pact_with = HUN}
+                    NOT = {has_military_access_to = HUN}
+                    NOT = {gives_military_acces_to = HUN}
+                }
+            }
+        }
+        available_if_capitulated = yes
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            custom_effect_tooltip = BUL_HUN_break_agreement
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_non_aggression_pact_with = HUN
+                    }
+                    diplomatic_relation = {
+                        country = HUN
+                        relation = non_aggression_pact
+                        active = no
+                    }
+                }
+                if = {
+                    limit = {
+                        OR = {
+                            has_military_access_to = HUN
+                            gives_military_acces_to = HUN
+                        }
+                    }
+                    diplomatic_relation = {
+                        country = HUN
+                        relation = military_access
+                        active = no
+                    }
+                    HUN = {
+                        diplomatic_relation = {
+                            country = BUL
+                            relation = military_access
+                            active = no
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1599,12 +1834,32 @@ focus_tree={
         prerequisite = {
             focus = BUL_abandon_nonaggression
         }
+        available = {
+            NOT = {
+                has_non_aggression_pact_with = HUN
+            }
+        }
+        available_if_capitulated = yes
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = HUN
+                }
+                has_war_with = HUN
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            declare_war_on = {
+                target = HUN
+                type = annex_everything
+            }
         }
     }
 
@@ -1619,9 +1874,18 @@ focus_tree={
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
+        available_if_capitulated = yes
         cost = 5
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            341 = {
+                add_claim_by = BUL
+            }
+            797 = {
+                add_claim_by = BUL
+            }
         }
     }
 
@@ -1639,6 +1903,28 @@ focus_tree={
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            341 = {
+                damage_building = {
+                    type = industrial_complex
+                    damage = 2
+                }
+                damage_building = {
+                    type = infrastructure
+                    damage = 2
+                }
+            }
+            797 = {
+                damage_building = {
+                    type = arms_factory
+                    damage = 2
+                }
+                damage_building = {
+                    type = infrastructure
+                    damage = 2
+                }
+            }
         }
     }
 
@@ -1660,6 +1946,14 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = infantry_tech
+                category = artillery
+            }
+        }
     }
 
     focus = { #海から
@@ -1680,6 +1974,14 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1.5
+                uses = 1
+                category = marine_tech
+                category = tp_tech
+            }
+        }
     }
 
     focus = { #火炎放射器の配備
@@ -1690,9 +1992,13 @@ focus_tree={
         prerequisite = {
             focus = BUL_from_land
         }
+        available_if_capitulated = yes
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            add_ideas = BUL_deployment_of_flamthrower
         }
     }
 
@@ -1708,6 +2014,12 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 80
+            }
+        }
     }
 
     focus = { #航空支援
@@ -1721,6 +2033,18 @@ focus_tree={
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = air_equipment
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = air_doctrine
+            }
         }
     }
 
@@ -1736,9 +2060,12 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            add_ideas = BUL_landing_operation_training
+        }
     }
 
-    focus = { #ラミャ作戦
+    focus = { #ズメイ作戦
         id = BUL_operation_lamia
         icon = GFX_focus_BUL_supremacy_on_the_bosporus
         x = 32
@@ -1747,12 +2074,32 @@ focus_tree={
             focus = BUL_air_support
             focus = BUL_exercise
         }
+        available_if_capitulated = yes
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = TUR
+                }
+                has_war_with = TUR
+            }
+        }
+        available = {
+            NOT = {
+                has_non_aggression_pact_with = TUR
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            declare_war_on = {
+                target = TUR
+                type = annex_everything
+            }
         }
     }
 
@@ -1767,9 +2114,26 @@ focus_tree={
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
+        available_if_capitulated = yes
         cost = 5
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            106 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            212 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
 
@@ -1781,8 +2145,14 @@ focus_tree={
         prerequisite = {
             focus = BUL_to_south
         }
+        available_if_capitulated = yes
         mutually_exclusive = {
             focus = BUL_cross_the_border
+        }
+        bypass = {
+            NOT = {
+                country_exists = ALB
+            }
         }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
@@ -1790,6 +2160,17 @@ focus_tree={
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            every_state = {
+                limit = {
+                    is_core_of = ALB
+                }
+                add_claim_by = BUL
+            }
+            ITA = {
+                country_event = {id = ssw_bul.17}
+            }
         }
     }
 
@@ -1801,8 +2182,22 @@ focus_tree={
         prerequisite = {
             focus = BUL_to_south
         }
+        available_if_capitulated = yes
         mutually_exclusive = {
             focus = BUL_request_ALB
+        }
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = GRE
+                }
+                OR = {
+                    controls_state = 731
+                    owns_state = 731
+                    controls_state = 184
+                    owns_state = 184
+                }
+            }
         }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
@@ -1810,6 +2205,9 @@ focus_tree={
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            add_ideas = BUL_border_survey
         }
     }
 
@@ -1821,9 +2219,52 @@ focus_tree={
         prerequisite = {
             focus = BUL_request_ALB
         }
+        available_if_capitulated = yes
+        bypass = {
+            custom_trigger_tooltip = {
+                tooltip = BUL_detour_tt
+                has_country_flag = BUL_not_get_ALB
+            }
+        }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                    owns_state = 807
+                }
+                807 = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 44
+                }
+                44 = {
+                    add_building_construction = {
+                        type = infrastructure
+                        level = 2
+                        instant_build = yes
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 805
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
 
@@ -1835,6 +2276,19 @@ focus_tree={
         prerequisite = {
             focus = BUL_cross_the_border
         }
+        available_if_capitulated = yes
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = GRE
+                }
+                OR = {
+                    owns_state = 731
+                    owns_state = 184
+                }
+                has_war_with = GRE
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
@@ -1842,9 +2296,14 @@ focus_tree={
         ai_will_do = {
             factor = 10
         }
+        completion_reward = {
+            GRE = {
+                country_event = {id = ssw_bul.3}
+            }
+        }
     }
 
-    focus = { #スモク作戦
+    focus = { #ハラ作戦
         id = BUL_operation_smok
         icon = GFX_goal_generic_position_armies
         x = 36
@@ -1853,12 +2312,38 @@ focus_tree={
             focus = BUL_detour
             focus = BUL_request_Thessaloniki
         }
+        available_if_capitulated = yes
+        bypass = {
+            OR = {
+                NOT = {
+                    country_exists = GRE
+                }
+                has_war_with = GRE
+            }
+        }
+        available = {
+            NOT = {
+                has_non_aggression_pact_with = GRE
+            }
+        }
         search_filters = {
             FOCUS_FILTER_ANNEXATION
         }
         cost = 10
         ai_will_do = {
             factor = 10
+        }
+        completion_reward = {
+            every_state = {
+                limit = {
+                    is_core_of = GRE
+                }
+                add_claim_by = BUL
+            }
+            declare_war_on = {
+                target = GRE
+                type = annex_everything
+            }
         }
     }
 }

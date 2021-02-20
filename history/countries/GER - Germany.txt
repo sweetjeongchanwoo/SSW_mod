@@ -135,7 +135,7 @@ add_ideas = {
 	limited_conscription
 	export_focus
 	partial_economic_mobilisation
-	one_party_dictatorship
+	#one_party_dictatorship
 }
 
 create_faction = Germania_Accords
@@ -162,90 +162,27 @@ add_to_faction = MAD
 add_to_faction = CRI
 add_to_faction = PET
 
-set_autonomy = {
-	target = CZE
-	autonomous_state = reichsprotectorate
-}
-set_autonomy = {
-	target = SLO
-	autonomous_state = reichsatellite
-}
-set_autonomy = {
-	target = POL
-	autonomous_state = reichsprotectorate
-}
-set_autonomy = {
-	target = DEN
-	autonomous_state = reichsatellite
-}
-set_autonomy = {
-	target = NOR
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = HOL
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = BEL
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = NFR
-	autonomous_state = military_occupation_territory
-}
-set_autonomy = {
-	target = CRO
-	autonomous_state = reichsatellite
-}
-set_autonomy = {
-	target = BAL
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = UKR
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = MOS
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = CCS
-	autonomous_state = reichskommissariat
-}
-set_autonomy = {
-	target = ATL
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = TOG
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = WAF
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = MAF
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = DJI
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = MAD
-	autonomous_state = reichskolonie
-}
-set_autonomy = {
-	target = CRI
-	autonomous_state = reichsland
-}
-set_autonomy = {
-	target = PET
-	autonomous_state = reichsland
-}
+set_autonomy = {	target = CZE	autonomous_state = reichsprotectorate	}
+set_autonomy = {	target = SLO	autonomous_state = reichsatellite	}
+set_autonomy = {	target = POL	autonomous_state = reichsprotectorate	}
+set_autonomy = {	target = DEN	autonomous_state = reichsatellite	}
+set_autonomy = {	target = NOR	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = HOL	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = BEL	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = NFR	autonomous_state = military_occupation_territory	}
+set_autonomy = {	target = CRO	autonomous_state = reichsatellite	}
+set_autonomy = {	target = BAL	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = UKR	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = MOS	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = CCS	autonomous_state = reichskommissariat	}
+set_autonomy = {	target = ATL	autonomous_state = reichskolonie	}
+set_autonomy = {	target = TOG	autonomous_state = reichskolonie	}
+set_autonomy = {	target = WAF	autonomous_state = reichskolonie	}
+set_autonomy = {	target = MAF	autonomous_state = reichskolonie	}
+set_autonomy = {	target = DJI	autonomous_state = reichskolonie	}
+set_autonomy = {	target = MAD	autonomous_state = reichskolonie	}
+set_autonomy = {	target = CRI	autonomous_state = reichsland	}
+set_autonomy = {	target = PET	autonomous_state = reichsland	}
 
 set_politics = {
 	ruling_party = national_socialism
@@ -522,7 +459,7 @@ create_corps_commander = {
 	name = "Karl-Lothar Schulz"
 	picture = "Portrait_Karl_Lothar_Schulz.dds"
 	traits = {
-		paratroopers
+		#paratroopers
 		trait_engineer
 		career_officer
 	}
@@ -538,7 +475,7 @@ create_corps_commander = {
 	name = "Sebastian Ludwig Heilmann"
 	picture = "Portrait_Sebastian_Ludwig_Heilmann.dds"
 	traits = {
-		paratroopers
+		#paratroopers
 		career_officer
 		trickster
 		Guerilla_Fighter
@@ -555,7 +492,7 @@ create_corps_commander = {
 	name = "Karl-Heinrich Bodenschatz"
 	picture = "Portrait_Karl_Heinrich_Bodenschatz.dds"
 	traits = {
-		paratroopers
+		#paratroopers
 		career_officer
 		trickster
 		Guerilla_Fighter
@@ -739,7 +676,7 @@ create_corps_commander = {
 		war_hero
 		skilled_staffer
 		trickster
-		Improvisation_Expert
+		#Improvisation_Expert
 	}
 	id = 21
 	skill = 3
