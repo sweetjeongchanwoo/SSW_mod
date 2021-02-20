@@ -852,6 +852,32 @@ y = 2
 completion_reward = {
 }
 }
+#資源生産の拡大
+shared_focus = {
+	id = ITA_focus_industry_Expansion_of_resource_production
+	icon = GFX_focus_spa_save_the_alcazar
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_maintenance_of_the_status_quo
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 18
+	y = 2
+	completion_reward = {
+	}
+	}
 #南北企業の連携
 shared_focus = {
 id = ITA_focus_balbo_Cooperation_between_North_and_South_Region_companies
@@ -1261,6 +1287,33 @@ shared_focus = {
 		add_ideas = ITA_idea_38
 	}
 }
+#軍人年金の支払いについて
+shared_focus = {
+	id = ITA_focus_balbo_Payment_of_Military_Pensions
+	icon = GFX_ITA_Military_Pensions
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Improving_the_efficiency_of_conscription
+		}
+	mutually_exclusive = {
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 27
+	y = 4
+	completion_reward = {
+		add_ideas = ITA_idea_38
+	}
+}
 #海軍への注力
 shared_focus = {
 	id = ITA_focus_balbo_Focus_on_Navy
@@ -1355,7 +1408,7 @@ shared_focus = {
 shared_focus = {
 	id = ITA_focus_balbo_Large_fleet_size
 	icon = GFX_ITA_Italian_Naval
-	cost = 3.00
+	cost = 5.00
 	prerequisite = {
 		focus = ITA_focus_balbo_Improving_ships
 		focus = ITA_focus_balbo_Increase_production_capacity
@@ -1377,13 +1430,18 @@ shared_focus = {
 	x = 31
 	y = 3
 	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 2
+			category = fleet_in_being_tree 
+		}
 	}
 }
 #現代海軍への移行
 shared_focus = {
 	id = ITA_focus_balbo_Transition_to_modern_navy
 	icon = GFX_ITA_Italian_Naval
-	cost = 3.00
+	cost = 5.00
 	prerequisite = {
 		focus = ITA_focus_balbo_Improving_ships
 		focus = ITA_focus_balbo_Increase_production_capacity
@@ -1405,5 +1463,38 @@ shared_focus = {
 	x = 33
 	y = 3
 	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 2
+			category = cat_base_strike 
+		}
+	}
+}
+#海軍士官の育成
+shared_focus = {
+	id = ITA_focus_balbo_Training_of_Naval_Officers
+	icon = GFX_ITA_Italian_Naval
+	cost = 4.00
+	prerequisite = {
+		focus = ITA_focus_balbo_Large_fleet_size
+		focus = ITA_focus_balbo_Transition_to_modern_navy
+		}
+	mutually_exclusive = {
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 32
+	y = 4
+	completion_reward = {
+		add_ideas = ITA_idea_40
 	}
 }

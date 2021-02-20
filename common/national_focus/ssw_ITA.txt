@@ -10,7 +10,6 @@ focus_tree = {
 	default = no
 	shared_focus = ITA_focus_Rome_Conquered
 }
-
 focus_tree = {
     id = ITA_Balbo_National_focus_tree
 	country = {
