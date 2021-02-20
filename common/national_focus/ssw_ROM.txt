@@ -13,7 +13,7 @@ focus_tree = {
 ########################
 	
 	focus = {
-		id = Antonescu's_speech
+		id = Antonescu_speech
 		icon = GFX_goal_generic_propaganda
 		cost = 1.00
 		x = 19
@@ -69,10 +69,10 @@ focus_tree = {
 			hidden_trigger = { always = no }
 		}
 		prerequisite = {
-			focus = Antonescu's_speech
+			focus = Antonescu_speech
 		}
 		mutually_exclusive = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 18
 		y = 1
@@ -157,14 +157,14 @@ focus_tree = {
  #IRON GURAD ROUTE
 
 	focus = {
-		id = Codreanu's_children
+		id = Codreanu_children
 		icon = GFX_goal_unknown
 		cost = 5.00
 		available = {
 			hidden_trigger = { always = no }
 		}
 		prerequisite = {
-			focus = Antonescu's_speech
+			focus = Antonescu_speech
 		}
 		mutually_exclusive = {
 			focus = MIlitary_unity
@@ -172,7 +172,7 @@ focus_tree = {
 		x = 20
 		y = 1
 		completion_reward = {
-			add_ideas = Codreanu's_children
+			add_ideas = Codreanu_children
 		}
 
 	}
@@ -181,7 +181,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 20
 		y = 2
@@ -228,7 +228,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 22
 		y = 2
@@ -319,7 +319,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 26
 		y = 2

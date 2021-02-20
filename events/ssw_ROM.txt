@@ -41,7 +41,7 @@ country_event = {
 	}
 	option ={
 		name = SSW_ROM.2.b
-		complete_national_focus = Codreanu's_children
+		complete_national_focus = Codreanu_children
 		hidden_effect = {
 			retire_country_leader = yes
 			create_country_leader = {
