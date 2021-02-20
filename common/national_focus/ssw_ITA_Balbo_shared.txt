@@ -877,7 +877,33 @@ shared_focus = {
 	y = 2
 	completion_reward = {
 	}
+}
+#世界に冠たるイタリア軍事産業
+shared_focus = {
+	id = ITA_focus_industry_Italys_global_Military_Industry
+	icon = GFX_focus_spa_save_the_alcazar
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_industry_Expansion_of_resource_production
+		 }
+	mutually_exclusive = {
+		 }
+	available = {
 	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 18
+	y = 3
+	completion_reward = {
+	}
+}
 #南北企業の連携
 shared_focus = {
 id = ITA_focus_balbo_Cooperation_between_North_and_South_Region_companies
@@ -1017,6 +1043,36 @@ completion_reward = {
 	add_ideas = ITA_idea_27
 }
 }
+#現代的な福祉国家
+shared_focus = {
+	id = ITA_focus_balbo_Modern_welfare_state
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_balbo_Welfare
+		}
+		prerequisite = {
+			focus = ITA_focus_balbo_Restructuring_of_the_social_security_system
+		   }
+	mutually_exclusive = {
+		}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 13
+	y = 4
+	completion_reward = {
+		add_ideas = ITA_idea_27
+	}
+	}
 #ノルマの適正化
 shared_focus = {
 	id = ITA_focus_balbo_Quota_optimization
@@ -1042,6 +1098,35 @@ shared_focus = {
 	y = 3
 	completion_reward = {
 		add_ideas = ITA_idea_28
+	}
+}
+#現代的な軍事国家
+shared_focus = {
+	id = ITA_focus_balbo_modern_military_state
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		 focus = ITA_focus_balbo_Quota_optimization
+		}
+		prerequisite = {
+			focus = ITA_focus_industry_Italys_global_Military_Industry
+		   }
+	mutually_exclusive = {
+		 }
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	  }
+	  bypass = {
+	  }
+	  cancel_if_invalid = yes
+	  continue_if_invalid = no
+	  available_if_capitulated = no
+	  search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 17
+	y = 4
+	completion_reward = {
 	}
 }
 #王立イタリア自由大学の設立

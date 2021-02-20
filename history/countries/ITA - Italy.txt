@@ -270,6 +270,7 @@ create_country_leader = {
 }
 create_field_marshal = {
 	name = "Giuseppe Castellano"	#陸軍元帥
+	id = 46
 	picture = "Portrait_Giuseppe_Castellano.dds"
 	traits = {
 		inflexible_strategist
@@ -283,6 +284,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "Alfredo Agnesi"
+	id = 47
 	picture = "Portrait_Alfredo_Agnesi.dds"
 	traits = {
 		career_officer
@@ -295,6 +297,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Clemente Primieri"
+	id = 48
 	picture = "Portrait_Clemente_Primieri.dds"
 	traits = {
 		career_officer
@@ -307,6 +310,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Enzo Marchesi"
+	id = 49
 	picture = "Portrait_Enzo_Marchesi.dds"
 	traits = {
 		career_officer

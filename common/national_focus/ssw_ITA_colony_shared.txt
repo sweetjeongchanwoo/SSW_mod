@@ -91,6 +91,59 @@ shared_focus = {
 		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
 	}
 }
+#インフラ開発
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_infra_dev
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev_Development_environment
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 8
+	y = 14
+	completion_reward = {
+	}
+}
+#経済基盤の確立
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_Establishing_an_economic_foundation
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev_Development_environment
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 6
+	y = 14
+	completion_reward = {
+		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
+	}
+}
 #政治的影響力の誇示
 shared_focus = {
 	id = ITA_focus_colony_north_africa_dev_Show_of_political_influence
@@ -117,6 +170,58 @@ shared_focus = {
 	completion_reward = {
 	}
 }
+#ファシズム的教育
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_fascist_education
+	icon = GFX_focus_generic_treaty
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev_Show_of_political_influence
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 10
+	y = 14
+	completion_reward = {
+	}
+}
+#研究支援
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_research_support
+	icon = GFX_focus_generic_treaty
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev_Show_of_political_influence
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 10
+	y = 16
+	completion_reward = {
+	}
+}
 ###エジプトルート###
 #エジプトの開発
 shared_focus = {
@@ -140,7 +245,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 14
+	x = 16
 	y = 13
 	completion_reward = {
 		add_ideas = ITA_idea_31
@@ -172,7 +277,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 4
+	x = 2
 	y = 13
 	completion_reward = {
 		add_ideas = ITA_idea_32
@@ -204,7 +309,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = -1
+	x = -3
 	y = 14
 	completion_reward = {
 		add_ideas = ITA_idea_33
@@ -236,7 +341,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 19
+	x = 21
 	y = 14
 	completion_reward = {
 		add_ideas = ITA_idea_34
