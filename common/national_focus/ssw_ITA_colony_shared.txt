@@ -91,6 +91,35 @@ shared_focus = {
 		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
 	}
 }
+#軍事的教導
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_military_education
+	icon = GFX_focus_generic_treaty
+	cost = 5.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 9
+	y = 15
+	completion_reward = {
+		IT2 = {
+			add_ideas = ITA_idea_50
+		}
+	}
+}
 #インフラ開発
 shared_focus = {
 	id = ITA_focus_colony_north_africa_dev_infra_dev
@@ -121,7 +150,7 @@ shared_focus = {
 shared_focus = {
 	id = ITA_focus_colony_north_africa_dev_Establishing_an_economic_foundation
 	icon = GFX_focus_generic_treaty
-	cost = 5.00
+	cost = 3.00
 	prerequisite = {
 		focus = ITA_focus_colony_north_africa_dev_Development_environment
 	}
@@ -141,14 +170,25 @@ shared_focus = {
 	x = 6
 	y = 14
 	completion_reward = {
-		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
+		IT2 = {
+			add_timed_idea = {
+				idea = ITA_idea_44
+				days = 200
+			}
+		}
+		ITA = {
+			add_timed_idea = {
+				idea = ITA_idea_45
+				days = 150
+			}
+		}
 	}
 }
 #政治的影響力の誇示
 shared_focus = {
 	id = ITA_focus_colony_north_africa_dev_Show_of_political_influence
 	icon = GFX_focus_generic_treaty
-	cost = 3.00
+	cost = 2.00
 	prerequisite = {
 		focus = ITA_focus_colony_north_africa_dev
 	}
@@ -168,6 +208,10 @@ shared_focus = {
 	x = 10
 	y = 13
 	completion_reward = {
+		IT2 = {
+			add_political_power = 100
+			add_ideas = ITA_idea_46
+		}
 	}
 }
 #ファシズム的教育
@@ -194,6 +238,12 @@ shared_focus = {
 	x = 10
 	y = 14
 	completion_reward = {
+		IT2 = {
+			add_ideas = ITA_idea_47
+		}
+		ITA = {
+			add_ideas = ITA_idea_48
+		}
 	}
 }
 #研究支援
@@ -217,9 +267,12 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 10
-	y = 16
+	x = 12
+	y = 14
 	completion_reward = {
+		IT2 = {
+			add_ideas = ITA_idea_49
+		}
 	}
 }
 ###エジプトルート###
@@ -245,7 +298,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 16
+	x = 18
 	y = 13
 	completion_reward = {
 		add_ideas = ITA_idea_31
@@ -277,7 +330,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 2
+	x = 0
 	y = 13
 	completion_reward = {
 		add_ideas = ITA_idea_32
@@ -309,7 +362,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = -3
+	x = -9
 	y = 14
 	completion_reward = {
 		add_ideas = ITA_idea_33
@@ -341,7 +394,7 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_POLITICAL }
-	x = 21
+	x = 27
 	y = 14
 	completion_reward = {
 		add_ideas = ITA_idea_34

@@ -321,3 +321,81 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 5
 }
+create_corps_commander = {
+	name = "Ettore Benvenuti"
+	id = 50
+	picture = "Portrait_Ettore_Benvenuti.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Allessandro Melchiori"
+	id = 51
+	picture = "Portrait_Allessandro_Melchiori.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Fausto Vandelli"
+	id = 52
+	picture = "Portrait_Fausto_Vandelli.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Riccardo Bisognlero"
+	id = 53
+	picture = "Portrait_Riccardo_Bisognlero.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = ""
+	id = 54
+	picture = "Portrait_.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = ""
+	id = 55
+	picture = "Portrait_.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}

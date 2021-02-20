@@ -850,6 +850,7 @@ ai_will_do = {
 x = 16
 y = 2
 completion_reward = {
+	add_ideas = ITA_idea_41
 }
 }
 #資源生産の拡大
@@ -1070,7 +1071,10 @@ shared_focus = {
 	x = 13
 	y = 4
 	completion_reward = {
-		add_ideas = ITA_idea_27
+		swap_ideas ={
+			remove_idea = ITA_idea_26
+			add_idea = ITA_idea_42
+		}
 	}
 	}
 #ノルマの適正化
@@ -1127,6 +1131,10 @@ shared_focus = {
 	x = 17
 	y = 4
 	completion_reward = {
+		swap_ideas ={
+			remove_idea = ITA_idea_6
+			add_idea = ITA_idea_43
+		}
 	}
 }
 #王立イタリア自由大学の設立
