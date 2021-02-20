@@ -808,7 +808,11 @@ focus_tree = {
 		x = 6
 		y = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 
 	}
@@ -822,13 +826,17 @@ focus_tree = {
 		x = 6
 		y = 6
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
 		}
 
 	}
 	focus = {
 		id = Improve_Ploeisti_field
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
 			focus = Armor_supremacy
@@ -836,13 +844,18 @@ focus_tree = {
 		x = 6
 		y = 7
 		completion_reward = {
-			
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
 		}
 
 	}
 	focus = {
 		id = More_oil
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 10.00
 		prerequisite = {
 			focus = Improve_Ploeisti_field
@@ -850,7 +863,13 @@ focus_tree = {
 		x = 6
 		y = 8
 		completion_reward = {
-			
+			add_ideas = Oil_producing_efficiency
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 32
+				}
+			}
 		}
 
 	}
@@ -867,9 +886,8 @@ focus_tree = {
 		x = 8
 		y = 5
 		completion_reward = {
-			
+		
 		}
-
 	}
 	focus = {
 		id = Detailed_plan
