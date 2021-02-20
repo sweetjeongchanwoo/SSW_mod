@@ -77,11 +77,71 @@ on_actions = {
 				}
 				set_state_flag = maybe_core_RUSSIA
 			}
+			#ロシア旧領
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = WTR
+						is_core_of = TUV
+						is_core_of = BLR
+						is_core_of = AMR
+						is_core_of = SOV
+						is_fully_controlled_by = UKR
+						is_fully_controlled_by = BAL
+						is_fully_controlled_by = MOS
+						is_fully_controlled_by = PET
+						is_fully_controlled_by = DON
+						is_fully_controlled_by = CRI
+						is_fully_controlled_by = RUS
+						is_fully_controlled_by = SOV
+						is_fully_controlled_by = SIB
+						is_fully_controlled_by = FIN
+						is_fully_controlled_by = CCS
+						state = 10
+						state = 78
+						state = 80
+						state = 87
+						state = 89
+						state = 90
+						state = 91
+						state = 92
+						state = 97
+						state = 98
+						state = 146
+						state = 147
+						state = 188
+						state = 192
+						state = 198
+						state = 213
+						state = 215
+						state = 216
+						state = 537
+						state = 555
+						state = 562
+						state = 637
+						state = 644
+						state = 655
+						state = 722
+						state = 763
+						state = 766
+						state = 1104
+					}
+				}
+				set_state_flag = maybe_old_territory_RUSSIA
+			}
 ##############################   中核州(全体)   ##############################
 			#北フランス(中核州)(ゲーム開始時)
 			every_state = {
 				limit = { is_core_of = NFR }
 				set_state_flag = maybe_core_NFR_GAMESTART
+			}
+			#フランス(中核州)(コルシカ無し)(ゲーム開始時)
+			every_state = {
+				limit = {
+					is_core_of = FRA
+					NOT = { state = 1 }
+				}
+				set_state_flag = maybe_core_FRA_without_COR_GAMESTART
 			}
 			#モスクワ(中核州)(ゲーム開始時)
 			every_state = {
