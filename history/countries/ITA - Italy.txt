@@ -268,3 +268,52 @@ create_country_leader = {
 		Air_Force_founder
 	}
 }
+create_field_marshal = {
+	name = "Giuseppe Castellano"	#陸軍元帥
+	picture = "Portrait_Giuseppe_Castellano.dds"
+	traits = {
+		inflexible_strategist
+		trait_reckless
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Alfredo Agnesi"
+	picture = "Portrait_Alfredo_Agnesi.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Clemente Primieri"
+	picture = "Portrait_Clemente_Primieri.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Enzo Marchesi"
+	picture = "Portrait_Enzo_Marchesi.dds"
+	traits = {
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
+}

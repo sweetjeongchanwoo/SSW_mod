@@ -152,6 +152,7 @@ shared_focus = {
 		   id = SSW_ITA.3
 	  }
 		custom_effect_tooltip = ssw_ITA_making
+		set_country_flag = Italian_future_by_Balbo
 	}
  }
  #ムッソリーニによって
@@ -184,6 +185,7 @@ shared_focus = {
 		   id = SSW_ITA.4
 	  }
 	  custom_effect_tooltip = ssw_ITA_making
+	  set_country_flag = Italian_future_by_Mussolini
 	}
  }
  #サヴォイア家によって
@@ -216,6 +218,7 @@ shared_focus = {
 		   id = SSW_ITA.5
 	  }
 	  custom_effect_tooltip = ssw_ITA_making
+	  set_country_flag = Italian_future_by_Savoia
 	}
  }
  #ジェノヴァ家によって
@@ -248,6 +251,7 @@ shared_focus = {
 		   id = SSW_ITA.6
 	  }
 	  custom_effect_tooltip = ssw_ITA_making
+	  set_country_flag = Italian_future_by_Genoa
 	}
  }
  #カエサルにならう
@@ -280,6 +284,7 @@ shared_focus = {
 		   id = SSW_ITA.7
 	  }
 	  custom_effect_tooltip = ssw_ITA_making
+	  set_country_flag = Italian_future_by_Caesar
 	}
  }
  #平等に
@@ -312,5 +317,6 @@ shared_focus = {
 		   id = SSW_ITA.8
 	  }
 	  custom_effect_tooltip = ssw_ITA_making
+	  set_country_flag = Italian_future_by_equality
 	}
 }

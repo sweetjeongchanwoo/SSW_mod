@@ -179,7 +179,7 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             available = {
                 country_exists = GRE
@@ -200,7 +200,7 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             available = {
                 NOT = {has_war_with = ITA}
@@ -217,7 +217,7 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             picture = generic_monarchist_uprising
             modifier = {
@@ -233,7 +233,7 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             picture = generic_volunteer_expedition_bonus
             modifier = {
@@ -248,7 +248,7 @@ ideas = {
                 always = yes
             }
             allowed_civil_war = {
-                always = yes
+                always = no
             }
             available = {
                 NOT = {has_war_with = GER}
@@ -275,6 +275,100 @@ ideas = {
                 conscription = 0.01
                 army_core_attack_factor = 0.15
                 army_core_defence_factor = 0.15
+            }
+        }
+
+        BUL_deployment_of_flamthrower = { #火炎放射器の配備
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_war_preparation
+            modifier = {
+                army_attack_factor = 0.05
+            }
+        }
+
+        BUL_landing_operation_training = { #上陸作戦の訓練
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = generic_intel_bonus
+            modifier = {
+                extra_marine_supply_grace = 8
+                naval_invasion_penalty = -0.1
+                naval_invasion_capacity = 5
+            }
+        }
+
+        BUL_consideration_pay = { #アルバニア引き渡しの補償
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            picture = generic_flexible_foreign_policy
+            modifier = {
+                consumer_goods_factor = 0.08
+            }
+        }
+
+        BUL_consideration_pay_ITA = { #アルバニア引き渡しの補償
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = yes
+            }
+            picture = tur_balkan_central_bank_wealthy_greece
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+
+        BUL_border_survey = { #国境部の調査
+            allowed = {
+                NOT = {
+                    OR = {
+                        controls_state = 184
+                        owns_state = 184
+                    }
+                    OR = {
+                        controls_state = 731
+                        owns_state = 731
+                    }
+                }
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            picture = ast_naval_auxiliary_patrol
+            modifier = {
+                army_core_defence_factor = 0.1
+            }
+            targeted_modifier = {
+                tag = GRE
+                attack_bonus_against = 0.15
+            }
+        }
+
+        BUL_suppress_resistance = { #抵抗の抑制
+            allowed = {
+                always = yes
+            }
+            allowed_civil_war = {
+                always = no
+            }
+            picture = ast_volunteer_defence_corps
+            modifier = {
+                resistance_damage_to_garrison = -0.1
+                resistance_target = -0.05
             }
         }
     }

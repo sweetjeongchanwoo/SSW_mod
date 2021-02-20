@@ -88,6 +88,33 @@ shared_focus = {
 	x = 8
 	y = 13
 	completion_reward = {
+		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
+	}
+}
+#政治的影響力の誇示
+shared_focus = {
+	id = ITA_focus_colony_north_africa_dev_Show_of_political_influence
+	icon = GFX_focus_generic_treaty
+	cost = 3.00
+	prerequisite = {
+		focus = ITA_focus_colony_north_africa_dev
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 10
+	y = 13
+	completion_reward = {
 	}
 }
 ###エジプトルート###

@@ -92,4 +92,16 @@ spriteTypes = {
 		name = "GFX_ITA_Italian_Naval"
 		texturefile = "gfx/interface/goals/focus_ITA_Italian_Naval.dds"
 	}
+	SpriteType = { 
+		name = "GFX_ITA_Hand_And_carrier"
+		texturefile = "gfx/interface/goals/focus_ITA_Hand_And_carrier.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_Military_Pensions"
+		texturefile = "gfx/interface/goals/focus_ITA_Military_Pensions.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ITA_Tank_Raid"
+		texturefile = "gfx/interface/goals/focus_ITA_Tank_Raid.dds"
+	}
 }
