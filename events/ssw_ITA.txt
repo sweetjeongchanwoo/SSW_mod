@@ -211,26 +211,3 @@ country_event = {
 		name = SSW_ITA.14.a
 	}
 }
-#ドナウ戦争への対応
-country_event = {
-    id = SSW_ITA.15
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event SSW_ITA.15"
-	}
-	title = SSW_ITA.15.t
-	picture = GFX_report_event_generic_ruins
-	fire_only_once = yes
-	desc = SSW_ITA.15.d
-	trigger = {
-		has_global_flag = Danubian_war
-	}
-	option = {
-		name = SSW_ITA.15.a
-		if = {
-			limit = {
-				has_country_flag = Italian_future_by_Balbo
-			}
-		}
-		ITA_focus_reload_Danubian_war_focus = yes
-	}
-}
