@@ -25,6 +25,7 @@ focus_tree = {
 	shared_focus = ITA_focus_balbo_army_Status_of_the_Italian_Army
 	shared_focus = ITA_event_focus_tree_top
 }
+#バルボ・植民地ルート
 focus_tree = {
     id = ITA_focus_colony_dev_tree
 	country = {

@@ -852,12 +852,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				equipment_bonus = {
-					infantry_equipment = {
-						attack = 0.10
-						instant = yes
-					}
-				}
+				offence = 0.10
 			}
 		}
 		#防衛用装備
@@ -870,12 +865,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				equipment_bonus = {
-					infantry_equipment = {
-						defence = 0.10
-						instant = yes
-					}
-				}
+				defence = 0.10
 			}
 		}
 		#開発支援
