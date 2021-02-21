@@ -46,6 +46,7 @@ country_event = {
 		ITA_focus_reload_Balbo_focus_tree = yes
 	}
 }
+
 #ムッソリーニによる栄光
 country_event = {
     id = SSW_ITA.4
