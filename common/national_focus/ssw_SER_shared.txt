@@ -1,0 +1,106 @@
+###SERBIA_NATIONAL_FOCUS_TREE###
+#王室の継続
+shared_focus = {
+    id = SER_Continuity_of_the_Royal_Family
+    icon = GFX_focus_generic_treaty
+    cost = 1.00
+    prerequisite = {
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 0
+    y = 0
+    completion_reward = {
+    }
+}
+#摂政の権限強化
+shared_focus = {
+    id = SER_Strengthening_the_authority_of_the_regent
+    icon = GFX_focus_generic_treaty
+    cost = 1.00
+    prerequisite = {
+        focus = SER_Continuity_of_the_Royal_Family
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 0
+    y = 1
+    completion_reward = {
+    }
+}
+#現実政治
+shared_focus = {
+    id = SER_real_politics
+    icon = GFX_focus_generic_treaty
+    cost = 1.00
+    prerequisite = {
+        focus = SER_Strengthening_the_authority_of_the_regent
+        }
+    mutually_exclusive = {
+        focus = SER_King_Petal_Parental_Rule
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 1
+    y = 2
+    completion_reward = {
+    }
+}
+#ペータル王の親政
+shared_focus = {
+    id = SER_King_Petal_Parental_Rule
+    icon = GFX_focus_generic_treaty
+    cost = 1.00
+    prerequisite = {
+        focus = SER_Strengthening_the_authority_of_the_regent
+        }
+    mutually_exclusive = {
+        focus = SER_real_politics
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -1
+    y = 2
+    completion_reward = {
+    }
+}

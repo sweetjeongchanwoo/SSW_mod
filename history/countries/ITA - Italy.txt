@@ -190,7 +190,6 @@ set_technology = {
 	amphibious_tank = 1
 	basic_medium_tank = 1
 }
-
 add_ideas = {
 	extensive_conscription
 	ITA_Umberto_II_king
