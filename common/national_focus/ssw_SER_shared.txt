@@ -3,7 +3,7 @@
 shared_focus = {
     id = SER_Continuity_of_the_Royal_Family
     icon = GFX_focus_generic_treaty
-    cost = 1.00
+    cost = 8.00
     prerequisite = {
         }
     mutually_exclusive = {
@@ -28,7 +28,7 @@ shared_focus = {
 shared_focus = {
     id = SER_Strengthening_the_authority_of_the_regent
     icon = GFX_focus_generic_treaty
-    cost = 1.00
+    cost = 8.00
     prerequisite = {
         focus = SER_Continuity_of_the_Royal_Family
         }
@@ -54,7 +54,7 @@ shared_focus = {
 shared_focus = {
     id = SER_real_politics
     icon = GFX_focus_generic_treaty
-    cost = 1.00
+    cost = 8.00
     prerequisite = {
         focus = SER_Strengthening_the_authority_of_the_regent
         }
@@ -77,11 +77,143 @@ shared_focus = {
     completion_reward = {
     }
 }
+#靭帯の強化
+shared_focus = {
+    id = SER_Strengthening_of_ligaments
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_real_politics
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 1
+    y = 3
+    completion_reward = {
+    }
+}
+#共和派の排除
+shared_focus = {
+    id = SER_Eliminating_the_Republicans
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Strengthening_of_ligaments
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 1
+    y = 4
+    completion_reward = {
+    }
+}
+#分かたれざる政府
+shared_focus = {
+    id = SER_Divided_Government
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Eliminating_the_Republicans
+        }
+    mutually_exclusive = {
+        focus = SER_Consideration_for_the_King
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 1
+    y = 5
+    completion_reward = {
+    }
+}
+#国王への配慮
+shared_focus = {
+    id = SER_Consideration_for_the_King
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Eliminating_the_Republicans
+        }
+    mutually_exclusive = {
+        focus = SER_Divided_Government
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 3
+    y = 5
+    completion_reward = {
+    }
+}
+#摂政政府
+shared_focus = {
+    id = SER_regency_government
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Consideration_for_the_King
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 3
+    y = 6
+    completion_reward = {
+    }
+}
 #ペータル王の親政
 shared_focus = {
     id = SER_King_Petal_Parental_Rule
     icon = GFX_focus_generic_treaty
-    cost = 1.00
+    cost = 8.00
     prerequisite = {
         focus = SER_Strengthening_the_authority_of_the_regent
         }
@@ -101,6 +233,189 @@ shared_focus = {
     search_filters = { FOCUS_FILTER_POLITICAL }
     x = -1
     y = 2
+    completion_reward = {
+    }
+}
+#権限強化
+shared_focus = {
+    id = SER_strengthening_of_authority
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_King_Petal_Parental_Rule
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -1
+    y = 3
+    completion_reward = {
+    }
+}
+#王のスピーチ
+shared_focus = {
+    id = SER_The_Kings_Speech
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_strengthening_of_authority
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -1
+    y = 4
+    completion_reward = {
+    }
+}
+#王政への人気取り
+shared_focus = {
+    id = SER_Popularity_for_the_monarchy
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_The_Kings_Speech
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -1
+    y = 5
+    completion_reward = {
+    }
+}
+#最良の専制君主
+shared_focus = {
+    id = SER_The_best_tyrant
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Popularity_for_the_monarchy
+        }
+    mutually_exclusive = {
+        focus = SER_Loyal_government_appointments
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -1
+    y = 6
+    completion_reward = {
+    }
+}
+#摂政との妥協
+shared_focus = {
+    id = SER_Compromise_with_the_Regent
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_The_Kings_Speech
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -3
+    y = 5
+    completion_reward = {
+    }
+}
+#忠実な政府の任命
+shared_focus = {
+    id = SER_Loyal_government_appointments
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        focus = SER_Compromise_with_the_Regent
+        }
+    mutually_exclusive = {
+        focus = SER_The_best_tyrant
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = -3
+    y = 6
+    completion_reward = {
+    }
+}
+#軍部のクーデター
+shared_focus = {
+    id = SER_Military_coup
+    icon = GFX_focus_generic_treaty
+    cost = 8.00
+    prerequisite = {
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+      bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 8
+    y = 0
     completion_reward = {
     }
 }
