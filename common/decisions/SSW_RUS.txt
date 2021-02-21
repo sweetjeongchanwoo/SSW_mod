@@ -6,18 +6,7 @@ RUS_reintegrate_states = {
 			hidden_trigger = {
 				FROM = {
 					NOT = { is_core_of = ROOT }
-					OR = {
-						state = 146
-						state = 147
-						state = 213
-						state = 215
-						state = 216
-						state = 537
-						state = 555
-						state = 655
-						state = 722
-						state = 1104
-					}
+					has_state_flag = maybe_old_territory_RUSSIA
 				}
 			}
 		}
@@ -44,18 +33,7 @@ RUS_reintegrate_states = {
 			hidden_trigger = {
 				FROM = {
 					NOT = { is_core_of = ROOT }
-					OR = {
-						state = 146
-						state = 147
-						state = 213
-						state = 215
-						state = 216
-						state = 537
-						state = 555
-						state = 655
-						state = 722
-						state = 1104
-					}
+					has_state_flag = maybe_old_territory_RUSSIA
 				}
 			}
 		}
@@ -83,18 +61,7 @@ RUS_reintegrate_states = {
 			hidden_trigger = {
 				FROM = {
 					NOT = { is_core_of = ROOT }
-					OR = {
-						state = 146
-						state = 147
-						state = 213
-						state = 215
-						state = 216
-						state = 537
-						state = 555
-						state = 655
-						state = 722
-						state = 1104
-					}
+					has_state_flag = maybe_old_territory_RUSSIA
 				}
 			}
 		}

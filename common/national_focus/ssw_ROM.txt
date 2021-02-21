@@ -13,7 +13,7 @@ focus_tree = {
 ########################
 	
 	focus = {
-		id = Antonescu's_speech
+		id = Antonescu_speech
 		icon = GFX_goal_generic_propaganda
 		cost = 1.00
 		x = 19
@@ -69,10 +69,10 @@ focus_tree = {
 			hidden_trigger = { always = no }
 		}
 		prerequisite = {
-			focus = Antonescu's_speech
+			focus = Antonescu_speech
 		}
 		mutually_exclusive = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 18
 		y = 1
@@ -157,14 +157,14 @@ focus_tree = {
  #IRON GURAD ROUTE
 
 	focus = {
-		id = Codreanu's_children
+		id = Codreanu_children
 		icon = GFX_goal_unknown
 		cost = 5.00
 		available = {
 			hidden_trigger = { always = no }
 		}
 		prerequisite = {
-			focus = Antonescu's_speech
+			focus = Antonescu_speech
 		}
 		mutually_exclusive = {
 			focus = MIlitary_unity
@@ -172,7 +172,7 @@ focus_tree = {
 		x = 20
 		y = 1
 		completion_reward = {
-			add_ideas = Codreanu's_children
+			add_ideas = Codreanu_children
 		}
 
 	}
@@ -181,7 +181,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 20
 		y = 2
@@ -228,7 +228,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 22
 		y = 2
@@ -319,7 +319,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Codreanu's_children
+			focus = Codreanu_children
 		}
 		x = 26
 		y = 2
@@ -808,7 +808,11 @@ focus_tree = {
 		x = 6
 		y = 5
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 
 	}
@@ -822,13 +826,17 @@ focus_tree = {
 		x = 6
 		y = 6
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
 		}
 
 	}
 	focus = {
 		id = Improve_Ploeisti_field
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 10.00
 		prerequisite = {
 			focus = Armor_supremacy
@@ -836,13 +844,18 @@ focus_tree = {
 		x = 6
 		y = 7
 		completion_reward = {
-			
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
 		}
 
 	}
 	focus = {
 		id = More_oil
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 10.00
 		prerequisite = {
 			focus = Improve_Ploeisti_field
@@ -850,7 +863,13 @@ focus_tree = {
 		x = 6
 		y = 8
 		completion_reward = {
-			
+			add_ideas = Oil_producing_efficiency
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 32
+				}
+			}
 		}
 
 	}
@@ -867,9 +886,8 @@ focus_tree = {
 		x = 8
 		y = 5
 		completion_reward = {
-			
+		
 		}
-
 	}
 	focus = {
 		id = Detailed_plan
