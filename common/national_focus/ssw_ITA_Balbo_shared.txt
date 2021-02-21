@@ -1804,6 +1804,7 @@ shared_focus = {
 	y = 13
 	completion_reward = {
 		custom_effect_tooltip = ssw_ITA_focus_colony_north_africa_dev_Development_environment
+		add_ideas = ITA_idea_57
 	}
 }
 #軍事的教導
@@ -1859,6 +1860,7 @@ shared_focus = {
 	x = 8
 	y = 14
 	completion_reward = {
+		
 	}
 }
 #経済基盤の確立
@@ -2034,7 +2036,12 @@ shared_focus = {
 	mutually_exclusive = {
 	}
 	available = {
-		IT3 = { is_subject_of = ITA }
+		IT3 = {
+			is_subject_of = ITA
+			NOT = {
+				has_country_flag = ETH_start_indep_war
+			}
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -2052,6 +2059,58 @@ shared_focus = {
 		IT3 = {
 			add_ideas = ITA_idea_32
 		}
+	}
+}
+#工業的開発
+shared_focus = {
+	id = ITA_focus_colony_east_africa_dev_industrial_development
+	icon = GFX_focus_generic_treaty
+	cost = 1.00
+	prerequisite = {
+		focus = ITA_focus_colony_east_africa_dev
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = -1
+	y = 14
+	completion_reward = {
+	}
+}
+#政治的支援
+shared_focus = {
+	id = ITA_focus_colony_east_africa_dev_political_support
+	icon = GFX_focus_generic_treaty
+	cost = 1.00
+	prerequisite = {
+		focus = ITA_focus_colony_east_africa_dev
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	}
+	ai_will_do = {
+		factor = 5
+	}
+	bypass = {
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 1
+	y = 14
+	completion_reward = {
 	}
 }
 ###アルバニアルート###

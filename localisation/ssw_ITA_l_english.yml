@@ -189,6 +189,18 @@
  ITA_focus_colony_north_africa_dev_fascist_education_desc:0""
  ITA_focus_colony_north_africa_dev_research_support:0"研究支援"
  ITA_focus_colony_north_africa_dev_research_support_desc:0""
+ ITA_focus_colony_east_africa_dev_industrial_development:0"工業的開発"
+ ITA_focus_colony_east_africa_dev_industrial_development_desc:0""
+ ITA_focus_colony_east_africa_dev_political_support:0"政治的支援"
+ ITA_focus_colony_east_africa_dev_political_support_desc:0""
+ ITA_event_focus_Italian_East_Africa_ind_war:0"独立戦争への対応"
+ ITA_event_focus_Italian_East_Africa_ind_war_desc:0""
+ ITA_event_focus_tree_top:0"変わりゆく世界情勢"
+ ITA_event_focus_tree_top_desc:0""
+ ITA_event_focus_german_civil_war_tree_top:0"ドイツ内戦への対応"
+ ITA_event_focus_german_civil_war_tree_top_desc:0""
+ ITA_event_focus_Danubian_war_tree:0"ドナウ戦争への対応"
+ ITA_event_focus_Danubian_war_tree_desc:0""
 
  #イベント
 
@@ -236,6 +248,8 @@
  ITA_Harsh_treatment:0"§R移民による暴動が発生するかもしれない§!"
  ssw_ITA_focus_colony_north_africa_dev_Development_environment:0"§G技術者や専門家を派遣し、現地での開発が円滑に進むように努める。§!"
  ssw_ITA_event_focus_Danubian_war_tree:0"§Rドナウ戦争が勃発した。§!"
+ ssw_ITA_event_focus_tree_top_available:0"§B変わりゆく世界情勢によってこのツリーは次第に解放されていく。§!"
+ ssw_ITA_event_focus_tree_top_completion_reward:0"§B各ルートは世界情勢によって解放される。§!"
 
 #localisation_key
 
