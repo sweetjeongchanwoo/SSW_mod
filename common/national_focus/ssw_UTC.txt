@@ -17,13 +17,21 @@ focus_tree = {
 		id = UTC_the_problem
 		icon = GFX_goal_generic_propaganda
 		cost = 5
+
+	ai_will_do = {
+	  factor = 10
+   }
 		x = 7
 		y = 0
-		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 100
 		}
+		completion_reward = {
+		   country_event = {
+				id = SSW_UTC.1
+				}
 	}
+ }
 	focus = {
 		#フォード社重視
 		id = UTC_focus_on_the_ford_company
@@ -39,7 +47,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
+		completion_reward = {
+		add_ideas = UTC_idea_2
+		}
 		ai_will_do = { factor = 10 }
+		available = {
+			hidden_trigger = { always = no }
+		}
 	}
 	focus = {
 		#新型砲戦車の実用化
@@ -99,7 +113,13 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
+		completion_reward = {
+		add_ideas = UTC_idea_3
+		}
 		ai_will_do = { factor = 10 }
+		available = {
+			hidden_trigger = { always = no }
+		}
 	}
 	focus = {
 		#世界各地の支社での販売
@@ -152,7 +172,13 @@ focus_tree = {
 		}
 		x = 9
 		y = 1
+		completion_reward = {
+		add_ideas = UTC_idea_4
+		}
 		ai_will_do = { factor = 10 }
+		available = {
+			hidden_trigger = { always = no }
+		}
 	}
 	focus = {
 		#戦車の需要の調査
@@ -227,7 +253,13 @@ focus_tree = {
 		}
 		x = 13
 		y = 1
+		completion_reward = {
+		add_ideas = UTC_idea_5
+		}
 		ai_will_do = { factor = 10 }
+		available = {
+			hidden_trigger = { always = no }
+		}
 	}
 	focus = {
 		#三社合同会議の開催
@@ -1307,6 +1339,9 @@ focus_tree = {
 		x = 41
 		y = 8
 		ai_will_do = { factor = 10 }
+		completion_reward = {
+			remove_ideas = UTC_debuff_1
+		}
 	}
 	focus = {
 		#完全な監視社会
