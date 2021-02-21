@@ -197,6 +197,7 @@ add_ideas = {
 	ITA_idea_1
 	ITA_idea_2
 	ITA_idea_7
+	ITA_idea_51
 }
 
 create_faction = Rome_entente

@@ -785,5 +785,98 @@ ideas = {
 				army_speed_factor = 0.10
 			}
 		}
+		#軍人年金問題
+		ITA_idea_51 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.3
+				mobilization_speed = -1.0
+				consumer_goods_factor = 0.25
+			}
+		}
+		#軍人年金問題
+		ITA_idea_52 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.20
+				mobilization_speed = -1.0
+				consumer_goods_factor = 0.25
+			}
+		}
+		#軍人年金
+		ITA_idea_53 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		#軍人年金
+		ITA_idea_54 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.20
+				mobilization_speed = -1.0
+			}
+		}
+		#攻勢用装備
+		ITA_idea_55 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				equipment_bonus = {
+					infantry_equipment = {
+						attack = 0.10
+						instant = yes
+					}
+				}
+			}
+		}
+		#防衛用装備
+		ITA_idea_56 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				equipment_bonus = {
+					infantry_equipment = {
+						defence = 0.10
+						instant = yes
+					}
+				}
+			}
+		}
 	}
 }

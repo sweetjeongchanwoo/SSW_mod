@@ -211,3 +211,18 @@ country_event = {
 		name = SSW_ITA.14.a
 	}
 }
+#軍人年金の支払いについて
+country_event = {
+    id = SSW_ITA.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event SSW_ITA.15"
+	}
+	title = SSW_ITA.15.t
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = SSW_ITA.15.d
+	option = {
+		name = SSW_ITA.15.a
+	}
+}
