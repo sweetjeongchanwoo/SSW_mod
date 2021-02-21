@@ -156,7 +156,7 @@ add_to_faction = MOS
 add_to_faction = CCS
 add_to_faction = ATL
 add_to_faction = TOG
-add_to_faction = WAF
+add_to_faction = CMR
 add_to_faction = MAF
 add_to_faction = MAD
 add_to_faction = CRI
@@ -177,7 +177,7 @@ set_autonomy = {	target = MOS	autonomous_state = reichskommissariat	}
 set_autonomy = {	target = CCS	autonomous_state = reichskommissariat	}
 set_autonomy = {	target = ATL	autonomous_state = reichskolonie	}
 set_autonomy = {	target = TOG	autonomous_state = reichskolonie	}
-set_autonomy = {	target = WAF	autonomous_state = reichskolonie	}
+set_autonomy = {	target = CMR	autonomous_state = reichskolonie	}
 set_autonomy = {	target = MAF	autonomous_state = reichskolonie	}
 set_autonomy = {	target = DJI	autonomous_state = reichskolonie	}
 set_autonomy = {	target = MAD	autonomous_state = reichskolonie	}
