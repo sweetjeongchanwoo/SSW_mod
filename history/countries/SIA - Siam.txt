@@ -32,6 +32,7 @@ create_country_leader = {
 	}
 }
 
+
 create_corps_commander = {
 	name = "Sarit Thanarat"
 	picture = "Portrait_Siam_Sarit_Thanarat.dds"
